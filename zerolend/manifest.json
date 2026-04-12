@@ -1,0 +1,235 @@
+{
+  "project": "zerolend",
+  "generated": "2026-04-13T01:19:43.631580",
+  "scope_match_run_id": "scope-match-v1-2026-04-12-af4f4dc6",
+  "total_source_files": 25,
+  "aave_standard_contracts": 12,
+  "zerolend_custom_contracts": 13,
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xff679e5b4178a2f74a56f0e2c0e1fa1c80579385",
+      "contract_name": "Pool",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/Pool_0xff679e.sol",
+      "src_file_count": 46
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbe0ab675a478a759eca580f0d6c9d399085547d8",
+      "contract_name": "LiquidationLogic",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/LiquidationLogic_0xbe0ab6.sol",
+      "src_file_count": 35
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x86b07c01b10545c7e093521cdeacf90d909db5a1",
+      "contract_name": "FlashLoanLogic",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/FlashLoanLogic_0x86b07c.sol",
+      "src_file_count": 38
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4db095bd39bde10a4b9be6ff63d98fceb2381fdc",
+      "contract_name": "SupplyLogic",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/SupplyLogic_0x4db095.sol",
+      "src_file_count": 33
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8676e39b5d2f0d6e0d78a4208a0ccbc50504972e",
+      "contract_name": "BorrowLogic",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/BorrowLogic_0x8676e3.sol",
+      "src_file_count": 35
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb7ed499e7570ee7691eef4df9d708d258de2b512",
+      "contract_name": "AToken",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/AToken_0xb7ed49.sol",
+      "src_file_count": 21
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5d50be703836c330fc2d147a631cdd7bb8d7171c",
+      "contract_name": "VariableDebtToken",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/VariableDebtToken_0x5d50be.sol",
+      "src_file_count": 22
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x47223d4ea966a93b2cc96ffb4d42c22651fadfcf",
+      "contract_name": "AaveProtocolDataProvider",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/AaveProtocolDataProvider_0x47223d.sol",
+      "src_file_count": 16
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1cc993f2c8b6fbc43a9bafd2a44398e739733385",
+      "contract_name": "AaveOracle",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/AaveOracle_0x1cc993.sol",
+      "src_file_count": 7
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb8634e0a320d0f4861062514a63b659e52a87e21",
+      "contract_name": "ConfiguratorLogic",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/ConfiguratorLogic_0xb8634e.sol",
+      "src_file_count": 16
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x78ad3d53045b6582841e2a1a688c52be2ca2a7a7",
+      "contract_name": "EModeLogic",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/EModeLogic_0x78ad3d.sol",
+      "src_file_count": 32
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9c6f1367256be65ee744740c72ad80da5bc96ca6",
+      "contract_name": "PoolConfigurator",
+      "classification": "aave_standard",
+      "source_file": "contracts/ethereum/PoolConfigurator_0x9c6f13.sol",
+      "src_file_count": 22
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2da17faf782ae884faf7db2208bbc66b6e085c22",
+      "contract_name": "LayerZeroCustomOFT",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/ethereum/LayerZeroCustomOFT_0x2da17f.sol",
+      "src_file_count": 1
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc4fcea208cfd121f270f65b8ce002d94e41524fd",
+      "contract_name": "ListingContract",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/ethereum/ListingContract_0xc4fcea.sol",
+      "src_file_count": 1
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xedb357b55bc2da1882b629eadd3df06202092d69",
+      "contract_name": "ZeroLend",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/ethereum/ZeroLend_0xedb357.sol",
+      "src_file_count": 1
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc4d70105af3904a90649323ef34c8b58fc19634f",
+      "contract_name": "ZeroOFT",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/ethereum/ZeroOFT_0xc4d701.sol",
+      "src_file_count": 1
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x420c440d4fce299f9c0ccb9b2de42f5139757265",
+      "contract_name": "ZLShares",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/ethereum/ZLShares_0x420c44.sol",
+      "src_file_count": 1
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x749df84fd6de7c0a67db3827e5118259ed3abba5",
+      "contract_name": "BlastAToken",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/blast/BlastAToken_0x749df8.sol",
+      "src_file_count": 24
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x3fc90e521397b251d4aaa1fbeac7cc32f25e78fa",
+      "contract_name": "BlastPool",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/blast/BlastPool_0x3fc90e.sol",
+      "src_file_count": 50
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x0ecb41f76f8e0daba7b0d27659cd68757e3b7cc8",
+      "contract_name": "OmnichainStaking",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/linea/OmnichainStaking_0x0ecb41.sol",
+      "src_file_count": 5
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xa1a17d3601836b4a881030a7fcb318e47e4d9c91",
+      "contract_name": "StakingBonus",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/linea/StakingBonus_0xa1a17d.sol",
+      "src_file_count": 5
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x3a7a62b76713192343a747c0b165612f8f4a5d6a",
+      "contract_name": "VestedZeroNFT",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/linea/VestedZeroNFT_0x3a7a62.sol",
+      "src_file_count": 2
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x8e5521c624715a681d57b77852946af05b43eb93",
+      "contract_name": "PoolVoter",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/linea/PoolVoter_0x8e5521.sol",
+      "src_file_count": 2
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xc64bac090b1b45eaa2239435d18a4dfb6b4c7075",
+      "contract_name": "LockerToken",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/linea/LockerToken_0xc64bac.sol",
+      "src_file_count": 4
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x1dad693787c5817ef3102f513025fa6a66039e8e",
+      "contract_name": "ZeroOFTAdapter",
+      "classification": "zerolend_custom",
+      "source_file": "contracts/linea/ZeroOFTAdapter_0x1dad69.sol",
+      "src_file_count": 1
+    }
+  ]
+}

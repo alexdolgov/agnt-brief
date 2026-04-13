@@ -1,0 +1,426 @@
+{
+  "queried_at": "2026-04-13T00:00:00Z",
+  "price_source": "hardcoded_estimates",
+  "chains": {
+    "linea": {
+      "chain_id": 59144,
+      "pool_proxy": "0x2f9bb73a8e98793e26cb2f6c4ad037bdf1c6b269",
+      "total_tvl_usd": 1794505.73,
+      "contracts": [
+        {
+          "address": "0x2f9bb73a8e98793e26cb2f6c4ad037bdf1c6b269",
+          "name": "Pool (proxy)",
+          "role": "pool_proxy",
+          "tvl_usd": 0,
+          "note": "Entry point, delegates to ATokens. 20 reserves."
+        },
+        {
+          "address": "0x2e207eca8b6bf77a6ac82763eeed2a94de4f081d",
+          "name": "AToken (z0USDC)",
+          "role": "atoken",
+          "tvl_usd": 11837.35,
+          "note": "Holds 11,837.3513 USDC (~$11,837)"
+        },
+        {
+          "address": "0xa2703dc9fbaccd6ec2e4cbfa700989d0238133f6",
+          "name": "VariableDebtToken (variableDebtz0USDC)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 134,812.1272 USDC (~$134,812)"
+        },
+        {
+          "address": "0x508c39cd02736535d5cb85f3925218e5e0e8f07a",
+          "name": "AToken (z0USDT)",
+          "role": "atoken",
+          "tvl_usd": 21804.79,
+          "note": "Holds 21,804.7945 USDT (~$21,805)"
+        },
+        {
+          "address": "0x476f206511a18c9956fc79726108a03e647a1817",
+          "name": "VariableDebtToken (variableDebtz0USDT)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 43,645.4422 USDT (~$43,645)"
+        },
+        {
+          "address": "0xb4ffef15daf4c02787bc5332580b838ce39805f5",
+          "name": "AToken (z0ETH)",
+          "role": "atoken",
+          "tvl_usd": 570256.52,
+          "note": "Holds 356.4103 WETH (~$570,257)"
+        },
+        {
+          "address": "0xcb2da0f5aece616e2cbf29576cfc795fb15c6133",
+          "name": "VariableDebtToken (variableDebtz0WETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 122.9653 WETH (~$196,745)"
+        },
+        {
+          "address": "0x759cb97fbc452bafd49992ba88d3c5da4dd9b0e7",
+          "name": "AToken (z0MAI)",
+          "role": "atoken",
+          "tvl_usd": 1640.7,
+          "note": "Holds 1,640.6968 MAI (~$1,641)"
+        },
+        {
+          "address": "0xe7e54ca3d6f8a5561f8cee361260e537bdc5be48",
+          "name": "AToken (z0GRAI)",
+          "role": "atoken",
+          "tvl_usd": 3564.09,
+          "note": "Holds 3,564.0928 GRAI (~$3,564)"
+        },
+        {
+          "address": "0x0684fc172a0b8e6a65cf4684edb2082272fe9050",
+          "name": "AToken (z0ezETH)",
+          "role": "atoken",
+          "tvl_usd": 901955.33,
+          "note": "Holds 556.7626 ezETH (~$901,955)"
+        },
+        {
+          "address": "0xcc7b5fd2f290a61587352343b7cf77bb35cb6f00",
+          "name": "VariableDebtToken (variableDebtz0ezETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 5.7323 ezETH (~$9,286)"
+        },
+        {
+          "address": "0x8b6e58ea81679eecd63468c6d4eaefa48a45868d",
+          "name": "AToken (z0WBTC)",
+          "role": "atoken",
+          "tvl_usd": 57920.7,
+          "note": "Holds 0.6895 WBTC (~$57,921)"
+        },
+        {
+          "address": "0xf61a1d02103958b8603f1780702982e2ec9f9e68",
+          "name": "VariableDebtToken (variableDebtz0WBTC)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 0.2085 WBTC (~$17,511)"
+        },
+        {
+          "address": "0x8d8b70a576113feedd7e3810ce61f5e243b01264",
+          "name": "AToken (z0rsETH)",
+          "role": "atoken",
+          "tvl_usd": 107013.14,
+          "note": "Holds 65.6522 wrsETH (~$107,013)"
+        },
+        {
+          "address": "0x3da71ad7e055ee9716bba4dac53e37cddf60d509",
+          "name": "VariableDebtToken (variableDebtz0rsETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 0.4741 wrsETH (~$773)"
+        },
+        {
+          "address": "0x77e305b4d4d3b9da4e82cefd564f5b948366a44b",
+          "name": "AToken (z0weETH)",
+          "role": "atoken",
+          "tvl_usd": 80067.94,
+          "note": "Holds 48.5260 weETH (~$80,068)"
+        },
+        {
+          "address": "0x5f62aea5549cdf5dc309255946d69e516a9c2042",
+          "name": "VariableDebtToken (variableDebtz0weETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 1.5712 weETH (~$2,592)"
+        },
+        {
+          "address": "0x03114e4c29ea95bf26108c2c47338488555ced1a",
+          "name": "AToken (z0uniETH)",
+          "role": "atoken",
+          "tvl_usd": 319.38,
+          "note": "Holds 0.1971 uniETH (~$319)"
+        },
+        {
+          "address": "0x529d26aae1606910ab32e1aeb9dbee8597618f28",
+          "name": "AToken (z0USDe)",
+          "role": "atoken",
+          "tvl_usd": 3223.78,
+          "note": "Holds 3,223.7763 USDe (~$3,224)"
+        },
+        {
+          "address": "0xabe144177c341e30a35cde436ee159cd7c1db77a",
+          "name": "VariableDebtToken (variableDebtz0USDe)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 598.5227 USDe (~$599)"
+        },
+        {
+          "address": "0x5c44c9e5182193ce4e24b8f85c9c914c59d57767",
+          "name": "AToken (z0sUSDe)",
+          "role": "atoken",
+          "tvl_usd": 298.09,
+          "note": "Holds 283.8964 sUSDe (~$298)"
+        },
+        {
+          "address": "0x9eb8879231c71bd739967628ca26b72810beead8",
+          "name": "AToken (z0stETH)",
+          "role": "atoken",
+          "tvl_usd": 9414.17,
+          "note": "Holds 5.0887 wstETH (~$9,414)"
+        },
+        {
+          "address": "0xa26982964e57e8cb5639e3a44c55f085695e0a26",
+          "name": "VariableDebtToken (variableDebtz0stETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 0.7206 wstETH (~$1,333)"
+        },
+        {
+          "address": "0xccf76f25d5cc39db7cd644a5a66eff91b2cdcc25",
+          "name": "AToken (z0STONE)",
+          "role": "atoken",
+          "tvl_usd": 9859.74,
+          "note": "Holds 6.0863 STONE (~$9,860)"
+        },
+        {
+          "address": "0x1820335eba09b72ce46c0de4650f71c7505b4824",
+          "name": "AToken (z0frxETH)",
+          "role": "atoken",
+          "tvl_usd": 408.04,
+          "note": "Holds 0.2550 frxETH (~$408)"
+        },
+        {
+          "address": "0x0f87d0618b873be947ff7d3620c51b832b71c4d0",
+          "name": "AToken (z0DAI)",
+          "role": "atoken",
+          "tvl_usd": 4294.06,
+          "note": "Holds 4,294.0626 DAI (~$4,294)"
+        },
+        {
+          "address": "0x0889b840f9285d790ccd3d09703af347e0299f42",
+          "name": "VariableDebtToken (variableDebtz0DAI)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 1,363.9692 DAI (~$1,364)"
+        },
+        {
+          "address": "0x4585cbe390df68cbaa36c0d0886e8528c31c7c11",
+          "name": "AToken (z0inETH)",
+          "role": "atoken",
+          "tvl_usd": 697.21,
+          "note": "Holds 0.4304 inETH (~$697)"
+        },
+        {
+          "address": "0x5bb96d49de7f1049dabe055d37f1a32f05639756",
+          "name": "AToken (z0LYU)",
+          "role": "atoken",
+          "tvl_usd": 5.26,
+          "note": "Holds 52.6228 LYU (~$5)"
+        },
+        {
+          "address": "0x8fab2e296934d9e930aa6c3150059b0b4adb06f5",
+          "name": "AToken (z0solvBTC.m)",
+          "role": "atoken",
+          "tvl_usd": 3551.49,
+          "note": "Holds 0.0423 SolvBTC.m (~$3,551)"
+        },
+        {
+          "address": "0x537d6dd4e12c16efa951591c66d0c1a14970a980",
+          "name": "AToken (z0M-BTC)",
+          "role": "atoken",
+          "tvl_usd": 6373.94,
+          "note": "Holds 0.0759 M-BTC (~$6,374)"
+        }
+      ]
+    },
+    "blast": {
+      "chain_id": 81457,
+      "pool_proxy": "0xa70b0f3c2470abbe104bdb3f3aaa9c7c54bea7a8",
+      "total_tvl_usd": 334060.14,
+      "contracts": [
+        {
+          "address": "0xa70b0f3c2470abbe104bdb3f3aaa9c7c54bea7a8",
+          "name": "Pool (proxy)",
+          "role": "pool_proxy",
+          "tvl_usd": 0,
+          "note": "Entry point, delegates to ATokens. 4 reserves."
+        },
+        {
+          "address": "0x23a58cbe25e36e26639bdd969b0531d3ad5f9c34",
+          "name": "AToken (z0USDB)",
+          "role": "atoken",
+          "tvl_usd": 114128.69,
+          "note": "Holds 114,128.6898 USDB (~$114,129)"
+        },
+        {
+          "address": "0x0e914b7669e97fd0c2644af60e90ea7ddb4f91d1",
+          "name": "VariableDebtToken (variableDebtz0USDB)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 38,775.1790 USDB (~$38,775)"
+        },
+        {
+          "address": "0x53a3aa617afe3c12550a93ba6262430010037b04",
+          "name": "AToken (z0WETH)",
+          "role": "atoken",
+          "tvl_usd": 204594.63,
+          "note": "Holds 127.8716 WETH (~$204,595)"
+        },
+        {
+          "address": "0x29c2bc372728dacb472a7e90e5fc8aa0f203c8cd",
+          "name": "VariableDebtToken (variableDebtz0WETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 15.8590 WETH (~$25,374)"
+        },
+        {
+          "address": "0xeaad75b283ec8779b9c7b5b2cc245f4755ed4595",
+          "name": "AToken (z0ezETH)",
+          "role": "atoken",
+          "tvl_usd": 13820.43,
+          "note": "Holds 8.5311 ezETH (~$13,820)"
+        },
+        {
+          "address": "0x95241286314b57ebdcdfe7daa0e0bec651e8de61",
+          "name": "VariableDebtToken (variableDebtz0ezETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 0.0053 ezETH (~$9)"
+        },
+        {
+          "address": "0x99b68c56e6c1ac19f52132c3023b5270aadadb07",
+          "name": "AToken (z0weETH)",
+          "role": "atoken",
+          "tvl_usd": 1516.39,
+          "note": "Holds 0.9190 weETH (~$1,516)"
+        },
+        {
+          "address": "0xee09b82100481065bced265bcb35ea4ecb240598",
+          "name": "VariableDebtToken (variableDebtz0weETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 0.0010 weETH (~$2)"
+        }
+      ]
+    },
+    "ethereum": {
+      "chain_id": 1,
+      "pool_proxy": "0x3bc3d34c32cc98bf098d832364df8a222bbab4c0",
+      "total_tvl_usd": 170771.22,
+      "contracts": [
+        {
+          "address": "0x3bc3d34c32cc98bf098d832364df8a222bbab4c0",
+          "name": "Pool (proxy)",
+          "role": "pool_proxy",
+          "tvl_usd": 0,
+          "note": "Entry point, delegates to ATokens. 12 reserves."
+        },
+        {
+          "address": "0x29a3a6af690942a3b7665bb2839a3f563c6f987b",
+          "name": "AToken (z0DAI)",
+          "role": "atoken",
+          "tvl_usd": 1394.16,
+          "note": "Holds 1,394.1573 DAI (~$1,394)"
+        },
+        {
+          "address": "0x0047cac82cf5fb36954de1b9d86d657915ab3b47",
+          "name": "VariableDebtToken (variableDebtz0DAI)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 1,943.4996 DAI (~$1,943)"
+        },
+        {
+          "address": "0xb2feb2c46305329a340e6188532f31fce9347a5c",
+          "name": "AToken (z0USDC)",
+          "role": "atoken",
+          "tvl_usd": 11101.28,
+          "note": "Holds 11,101.2847 USDC (~$11,101)"
+        },
+        {
+          "address": "0x227f86fbfccb5664403b62a5b6d4e0e593968275",
+          "name": "VariableDebtToken (variableDebtz0USDC)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 3,284.1683 USDC (~$3,284)"
+        },
+        {
+          "address": "0x6c735966bc965bd4066c14fca3df443496ce14fb",
+          "name": "AToken (z0USDT)",
+          "role": "atoken",
+          "tvl_usd": 3669.49,
+          "note": "Holds 3,669.4932 USDT (~$3,669)"
+        },
+        {
+          "address": "0xdaccf47046ae4fee3f9f3bcfe68696a95db6ccb7",
+          "name": "VariableDebtToken (variableDebtz0USDT)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 1,152.6370 USDT (~$1,153)"
+        },
+        {
+          "address": "0xfb932a75c5f69d03b0f6e59573fde6976af0d88c",
+          "name": "AToken (z0WETH)",
+          "role": "atoken",
+          "tvl_usd": 49027.82,
+          "note": "Holds 30.6424 WETH (~$49,028)"
+        },
+        {
+          "address": "0x7ef98cd28902ce57b7aeec66dfb06b454cda1941",
+          "name": "VariableDebtToken (variableDebtz0WETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 15.7193 WETH (~$25,151)"
+        },
+        {
+          "address": "0x84e55c6bc5b7e9505d87b3df6ceff7753e15a0c5",
+          "name": "AToken (z0weETH)",
+          "role": "atoken",
+          "tvl_usd": 21706.06,
+          "note": "Holds 13.1552 weETH (~$21,706)"
+        },
+        {
+          "address": "0x53c94fd63ef4001d45744c311d6bbe2171d4a11e",
+          "name": "VariableDebtToken (variableDebtz0weETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 0.0107 weETH (~$18)"
+        },
+        {
+          "address": "0x68fd75cf5a91f49effad0e857ef2e97e5d1f35e7",
+          "name": "AToken (z0ezETH)",
+          "role": "atoken",
+          "tvl_usd": 28059.71,
+          "note": "Holds 17.3208 ezETH (~$28,060)"
+        },
+        {
+          "address": "0x27c1706ddd2467622ca63aaec03332127919a690",
+          "name": "VariableDebtToken (variableDebtz0ezETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 0.6217 ezETH (~$1,007)"
+        },
+        {
+          "address": "0xef4a41e692319ae4aa596314d282b3f2a3830bed",
+          "name": "AToken (z0rsETH)",
+          "role": "atoken",
+          "tvl_usd": 26547.01,
+          "note": "Holds 16.2865 rsETH (~$26,547)"
+        },
+        {
+          "address": "0xe4fe2d282dead5759199df364f3f419dfac17339",
+          "name": "VariableDebtToken (variableDebtz0rsETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 0.0054 rsETH (~$9)"
+        },
+        {
+          "address": "0xdd7afc0f014a1e1716307ff040704fa12e8d33a3",
+          "name": "AToken (z0pufETH)",
+          "role": "atoken",
+          "tvl_usd": 29265.68,
+          "note": "Holds 18.2911 pufETH (~$29,266)"
+        },
+        {
+          "address": "0x8e3e54599d6f40c8306b895214f54882d98cd2b5",
+          "name": "VariableDebtToken (variableDebtz0pzETH)",
+          "role": "debt_token",
+          "tvl_usd": 0,
+          "note": "Outstanding debt: 1.8838 pzETH (~$0)"
+        }
+      ]
+    }
+  }
+}

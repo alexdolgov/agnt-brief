@@ -9,31 +9,57 @@
 
 ZeroLend is an Aave v3 fork with custom additions for cross-chain token bridging (LayerZero OFT), Blast-specific yield integration, and a ve-tokenomics governance/staking layer on Linea. The core lending logic (Pool, AToken, VariableDebtToken, all *Logic libraries) is standard Aave v3. The custom surface is the LayerZero integration, Blast yield hooks, and the staking/governance system.
 
-## TVL Breakdown (DeFi Llama, per chain)
+## On-Chain TVL (queried 2026-04-13, USD estimates from hardcoded prices)
 
-### ZeroLend Lending ($4.3M total)
+**Total lending TVL: $2,299,337** across 3 chains with topography coverage. DeFi Llama reports higher ($4.3M lending) because it includes chains not in our topography (zkSync Era, Base, Manta, etc.).
 
-| Chain | TVL |
-|---|---:|
-| Linea | $2,509,174 |
-| zkSync Era | $873,018 |
-| Blast | $416,964 |
-| Ethereum | $275,455 |
-| Base | $75,673 |
-| Manta | $75,375 |
-| Other (5 chains) | $49,338 |
+In Aave v3 architecture, deposited assets are held by **AToken contracts** (one per reserve per chain). The Pool contract is the entry point but delegates custody to ATokens. Each AToken below holds the actual underlying tokens.
 
-### ZeroLend Vaults ($1.8M total)
+### Linea (chain 59144) — $1,794,506 deposited, $408,644 borrowed
 
-| Chain | TVL |
-|---|---:|
-| Ethereum | $1,775,153 |
-| Linea | $9,509 |
-| Berachain | $4,712 |
+Pool proxy: `0x2f9bb73a8e98793e26cb2f6c4ad037bdf1c6b269` (20 reserves)
 
-**Combined TVL**: ~$6.1M. Linea holds the majority of lending TVL. Ethereum holds the majority of vault TVL.
+| AToken Contract | Underlying | Deposited | USD Value | Outstanding Debt |
+|---|---|---:|---:|---:|
+| `0x0684fc17...` | z0ezETH | 556.76 ezETH | **$901,955** | $9,286 |
+| `0xb4ffef15...` | z0ETH | 356.41 WETH | **$570,257** | $196,745 |
+| `0x8d8b70a5...` | z0rsETH | 65.65 wrsETH | **$107,013** | $773 |
+| `0x77e305b4...` | z0weETH | 48.53 weETH | **$80,068** | $2,592 |
+| `0x8b6e58ea...` | z0WBTC | 0.69 WBTC | **$57,921** | $17,511 |
+| `0x508c39cd...` | z0USDT | 21,805 USDT | **$21,805** | $43,645 |
+| `0x2e207eca...` | z0USDC | 11,837 USDC | **$11,837** | $134,812 |
+| `0xccf76f25...` | z0STONE | 6.09 STONE | **$9,860** | — |
+| `0x9eb88792...` | z0stETH | 5.09 wstETH | **$9,414** | $1,333 |
+| `0x537d6dd4...` | z0M-BTC | 0.08 M-BTC | **$6,374** | — |
+| Other 10 reserves | | | **$18,002** | $1,947 |
 
-**Per-contract TVL assignment**: Not available. DeFi Llama reports TVL at chain level, not per-contract. For lending protocols, TVL concentrates in the Pool contract (which holds all deposited assets) and its associated AToken/VariableDebtToken instances. On each chain, the Pool contract is the primary TVL-bearing contract.
+### Blast (chain 81457) — $334,060 deposited, $64,160 borrowed
+
+Pool proxy: `0xa70b0f3c2470abbe104bdb3f3aaa9c7c54bea7a8` (4 reserves)
+
+| AToken Contract | Underlying | Deposited | USD Value | Outstanding Debt |
+|---|---|---:|---:|---:|
+| `0x53a3aa61...` | z0WETH | 127.87 WETH | **$204,595** | $25,374 |
+| `0x23a58cbe...` | z0USDB | 114,129 USDB | **$114,129** | $38,775 |
+| `0xeaad75b2...` | z0ezETH | 8.53 ezETH | **$13,820** | $9 |
+| `0x99b68c56...` | z0weETH | 0.92 weETH | **$1,516** | $2 |
+
+### Ethereum (chain 1) — $170,771 deposited, $32,565 borrowed
+
+Pool proxy: `0x3bc3d34c32cc98bf098d832364df8a222bbab4c0` (12 reserves)
+
+| AToken Contract | Underlying | Deposited | USD Value | Outstanding Debt |
+|---|---|---:|---:|---:|
+| `0xfb932a75...` | z0WETH | 30.64 WETH | **$49,028** | $25,151 |
+| `0xdd7afc0f...` | z0pufETH | 18.29 pufETH | **$29,266** | — |
+| `0x68fd75cf...` | z0ezETH | 17.32 ezETH | **$28,060** | $1,007 |
+| `0xef4a41e6...` | z0rsETH | 16.29 rsETH | **$26,547** | $9 |
+| `0x84e55c6b...` | z0weETH | 13.16 weETH | **$21,706** | $18 |
+| `0xb2feb2c4...` | z0USDC | 11,101 USDC | **$11,101** | $3,284 |
+| `0x6c735966...` | z0USDT | 3,669 USDT | **$3,669** | $1,153 |
+| `0x29a3a6af...` | z0DAI | 1,394 DAI | **$1,394** | $1,943 |
+
+**Note**: USD prices are hardcoded estimates (ETH~$1,600, BTC~$84,000, stablecoins~$1). See `onchain_tvl.json` for full machine-readable data. Pool proxy addresses were resolved on-chain via `PoolAddressesProvider.getPool()` — they differ from the implementation addresses in our topography.
 
 ## Audit History
 

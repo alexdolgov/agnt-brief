@@ -2,7 +2,7 @@
   "project": "zerolend",
   "generated": "2026-04-13T01:19:43.631580",
   "scope_match_run_id": "scope-match-v1-2026-04-12-af4f4dc6",
-  "total_source_files": 25,
+  "total_source_files": 46,
   "zerolend_custom_contracts": 13,
   "contracts": [
     {
@@ -229,7 +229,196 @@
       "classification": "zerolend_custom",
       "source_file": "contracts/linea/ZeroOFTAdapter_0x1dad69.sol",
       "src_file_count": 1
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfd856e1a33225b86f70d686f9280435e3ff75fcf",
+      "contract_name": "PoolAddressesProvider",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/PoolAddressesProvider_0xfd856e.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7503a8823b523629e28587317901ba4c055791eb",
+      "contract_name": "PoolAddressesProviderRegistry",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/PoolAddressesProviderRegistry_0x7503a8.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb2178109a414c3a869e5104283fcf1a18923d0b8",
+      "contract_name": "PoolLogic",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/PoolLogic_0xb21781.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x749df84fd6de7c0a67db3827e5118259ed3abba5",
+      "contract_name": "ACLManager",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/ACLManager_0x749df8.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcbdc0aed7cdf2472784068abef23a902cafabb98",
+      "contract_name": "DefaultReserveInterestRateStrategy",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/DefaultReserveInterestRateStrategy_0xcbdc0a.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x859c2ca97ead2742a0758bc9dd889e9d0e7e84e8",
+      "contract_name": "EmissionManager",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/EmissionManager_0x859c2c.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x854138f891fe0a86270f6f153a06fbfabf69e0ad",
+      "contract_name": "RewardsController",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/RewardsController_0x854138.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe230cf9cee7b299f69778ef950a61de0de520ba7",
+      "contract_name": "StableDebtTokenDisabled",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/StableDebtTokenDisabled_0xe230cf.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4fcb7f18fa9255b52793dfd865d245bcec871468",
+      "contract_name": "DelegationAwareAToken",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/DelegationAwareAToken_0x4fcb7f.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3365d8691cd54313fa3df201bb33bd1ec37b9f9d",
+      "contract_name": "BridgeLogic",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/BridgeLogic_0x3365d8.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc58715d0046bd873cedcc70fa3656ee2523e8011",
+      "contract_name": "ReservesSetupHelper",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/ReservesSetupHelper_0xc58715.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6ea9d99c6653df987bdea11ffcd56dfb4b5d38b4",
+      "contract_name": "WrappedTokenGatewayV3",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/WrappedTokenGatewayV3_0x6ea9d9.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa6ea08d16d47fee408505fda73520ebefc68ef01",
+      "contract_name": "UiPoolDataProviderV3",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/UiPoolDataProviderV3_0xa6ea08.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0a1198ddb5247a283f76077bb1e45e5858ee100b",
+      "contract_name": "UiIncentiveDataProviderV3",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/UiIncentiveDataProviderV3_0x0a1198.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4b0a70b18c72ea56065d2eb8b483c11d1e8a5bcb",
+      "contract_name": "PullRewardsTransferStrategy",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/PullRewardsTransferStrategy_0x4b0a70.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe00261885600867285a486b0dd07a2484561fdf3",
+      "contract_name": "AaveEcosystemReserveController",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/AaveEcosystemReserveController_0xe00261.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7db270182e12bfe88dca47c98cb1ef563c3ba69b",
+      "contract_name": "AaveEcosystemReserveV2",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/AaveEcosystemReserveV2_0x7db270.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x33b13f46a25d836cc0ce91b370305902ab6cf1be",
+      "contract_name": "EthUsdAggregator",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/EthUsdAggregator_0x33b13f.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x20efeb7de476017b5eef86462af2193a6f0817f6",
+      "contract_name": "MockAggregator",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/MockAggregator_0x20efeb.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x189cfdb4d7a08d926ca209d84a713c4c629645af",
+      "contract_name": "ParaSwapLiquiditySwapAdapter",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/ParaSwapLiquiditySwapAdapter_0x189cfd.sol",
+      "src_file_count": 0
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x80ce5a187e477663fcfe99a108eefd9fbf0acc18",
+      "contract_name": "ParaSwapRepayAdapter",
+      "classification": "unverified_fork",
+      "source_file": "contracts/ethereum/ParaSwapRepayAdapter_0x80ce5a.sol",
+      "src_file_count": 0
     }
   ],
-  "unverified_fork_contracts": 12
+  "unverified_fork_contracts": 33
 }

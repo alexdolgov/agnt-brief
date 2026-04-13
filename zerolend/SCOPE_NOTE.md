@@ -92,9 +92,9 @@ These contracts have no upstream Aave v3 equivalent — they are ZeroLend's own 
 | Contract | Role | Deployed | Audit Status | Source |
 |---|---|---|---|---|
 | Pool | vault_pool | 2024-03-03 | likely in scope | `contracts/ethereum/Pool_0xff679e.sol` |
-| PoolAddressesProvider | vault_pool | 2024-03-03 | likely in scope | — (standard) |
-| PoolAddressesProviderRegistry | vault_pool | 2024-03-03 | likely in scope | — (standard) |
-| PoolLogic | vault_pool | 2024-03-03 | likely in scope | — (standard) |
+| PoolAddressesProvider | vault_pool | 2024-03-03 | likely in scope | source in package |
+| PoolAddressesProviderRegistry | vault_pool | 2024-03-03 | likely in scope | source in package |
+| PoolLogic | vault_pool | 2024-03-03 | likely in scope | source in package |
 | LiquidationLogic | core | 2024-03-03 | **audited (TP)** | `contracts/ethereum/LiquidationLogic_0xbe0ab6.sol` |
 | SupplyLogic | core | 2024-03-03 | no scope data | `contracts/ethereum/SupplyLogic_0x4db095.sol` |
 | BorrowLogic | vault_pool | 2024-03-03 | unmatched (pre-audit) | `contracts/ethereum/BorrowLogic_0x8676e3.sol` |
@@ -106,13 +106,13 @@ These contracts have no upstream Aave v3 equivalent — they are ZeroLend's own 
 | VariableDebtToken | token | 2024-03-03 | no scope data | `contracts/ethereum/VariableDebtToken_0x5d50be.sol` |
 | AaveOracle | oracle | 2024-03-03 | unmatched (pre-audit) | `contracts/ethereum/AaveOracle_0x1cc993.sol` |
 | AaveProtocolDataProvider | core | 2024-03-03 | no scope data | `contracts/ethereum/AaveProtocolDataProvider_0x47223d.sol` |
-| ACLManager | controller | 2024-03-03 | unmatched (pre-audit) | — (standard) |
-| DefaultReserveInterestRateStrategy | strategy | 2024-03-03 | unmatched (pre-audit) | — (standard) |
-| EmissionManager | rewards | 2024-03-03 | unmatched (pre-audit) | — (standard) |
-| RewardsController | rewards | 2024-03-03 | unmatched (pre-audit) | — (standard) |
-| StableDebtTokenDisabled | token | 2024-03-03 | unmatched (pre-audit) | — (standard) |
-| DelegationAwareAToken | token | 2024-03-03 | unmatched (pre-audit) | — (standard) |
-| BridgeLogic | bridge | 2024-03-03 | no scope data | — (standard) |
+| ACLManager | controller | 2024-03-03 | unmatched (pre-audit) | source in package |
+| DefaultReserveInterestRateStrategy | strategy | 2024-03-03 | unmatched (pre-audit) | source in package |
+| EmissionManager | rewards | 2024-03-03 | unmatched (pre-audit) | source in package |
+| RewardsController | rewards | 2024-03-03 | unmatched (pre-audit) | source in package |
+| StableDebtTokenDisabled | token | 2024-03-03 | unmatched (pre-audit) | source in package |
+| DelegationAwareAToken | token | 2024-03-03 | unmatched (pre-audit) | source in package |
+| BridgeLogic | bridge | 2024-03-03 | no scope data | source in package |
 
 **ZeroLend custom contracts (Ethereum):**
 
@@ -177,7 +177,7 @@ The single known audit produced only 1 confirmed TP (LiquidationLogic via name m
 
 25 verified source files organized by chain:
 
-- `contracts/ethereum/` — 17 files (12 unverified Aave v3 fork + 5 ZeroLend custom)
+- `contracts/ethereum/` — 38 files (33 unverified Aave v3 fork + 5 ZeroLend custom)
 - `contracts/linea/` — 6 files (all ZeroLend custom — staking/governance)
 - `contracts/blast/` — 2 files (all ZeroLend custom — Blast yield integration)
 

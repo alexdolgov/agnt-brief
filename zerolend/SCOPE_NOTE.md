@@ -131,7 +131,50 @@ These contracts have no upstream Aave v3 equivalent — they are ZeroLend's own 
 | BlastPool | vault_pool | 2024-03-12 | unmatched (pre-audit) | zerolend_custom | `contracts/blast/BlastPool_0x3fc90e.sol` |
 | BlastAToken | token | 2024-03-12 | unmatched (pre-audit) | zerolend_custom | `contracts/blast/BlastAToken_0x749df8.sol` |
 
-All other Blast contracts are cross-chain duplicates of the Ethereum Aave standard set.
+**Other Blast contracts** (cross-chain duplicates of Ethereum deployment — source in Ethereum package):
+
+| Contract | Role | Verified | Instances |
+|---|---|---|---:|
+| AaveEcosystemReserveController | vault_pool | verified | 1 |
+| AaveEcosystemReserveV2 | vault_pool | verified | 1 |
+| AaveOracle | oracle | verified | 1 |
+| AaveProtocolDataProvider | core | verified | 1 |
+| ACLManager | controller | verified | 1 |
+| AToken | token | verified | 1 |
+| DefaultReserveInterestRateStrategy | strategy | verified | 3 |
+| DelegationAwareAToken | token | verified | 1 |
+| EmissionManager | rewards | verified | 1 |
+| PoolAddressesProvider | vault_pool | verified | 1 |
+| PoolAddressesProviderRegistry | vault_pool | verified | 1 |
+| PoolConfigurator | vault_pool | verified | 1 |
+| PullRewardsTransferStrategy | strategy | verified | 1 |
+| ReservesSetupHelper | vault_pool | verified | 1 |
+| RewardsController | rewards | verified | 1 |
+| StableDebtTokenDisabled | token | verified | 1 |
+| UiIncentiveDataProviderV3 | rewards | verified | 1 |
+| UiPoolDataProviderV3 | vault_pool | verified | 1 |
+| VariableDebtToken | token | verified | 1 |
+| WalletBalanceProvider | core | verified | 1 |
+| WrappedTokenGatewayV3 | token | verified | 1 |
+| TransparentUpgradeableProxy | proxy | — | 8 |
+| InitializableImmutableAdminUpgradeabilityProxy | proxy | verified | 4 |
+
+**Blast-specific contracts** (NOT in Ethereum deployment):
+
+| Contract | Role | Verified | Note |
+|---|---|---|---|
+| BlastLogic | core | — | Blast yield claiming logic |
+| BlastPoints | core | — | Blast points integration |
+| FeesClaimer | core | — | Fee distribution |
+| ListingContract | core | — | 3 instances |
+| TransferStrategyZERO | strategy | — | 2 instances |
+| ZERO | core | — | ZERO token on Blast |
+| ZeroOFT | core | 1 of 3 verified | OFT bridge instances |
+| LayerZeroCustomOFT | core | — | LZ integration |
+| OmnichainStaking | staking | verified | 2 instances |
+| StakingBonus | staking | verified | 2 instances |
+| VestedZeroNFT | token | verified | 2 instances |
+| LockerToken | token | verified | 2 instances |
 
 ### Linea (chain 59144) — TVL: $2.5M lending + $10K vaults
 
@@ -147,7 +190,62 @@ All other Blast contracts are cross-chain duplicates of the Ethereum Aave standa
 | ZeroOFTAdapter | adapter | 1 | unmatched (pre-audit) | `contracts/linea/ZeroOFTAdapter_0x1dad69.sol` |
 | AaveV3LoopingStrategy | strategy | 1 | unmatched (pre-audit) | — (not in source package, unverified) |
 
-All other Linea contracts are cross-chain duplicates of the Ethereum Aave standard set.
+**Other Linea contracts** (cross-chain duplicates of Ethereum deployment — source in Ethereum package):
+
+| Contract | Role | Verified | Instances |
+|---|---|---|---:|
+| AaveEcosystemReserveController | vault_pool | — | 2 |
+| AaveEcosystemReserveV2 | vault_pool | 1 of 2 verified | 2 |
+| AaveOracle | oracle | 1 of 2 verified | 2 |
+| AaveProtocolDataProvider | core | — | 2 |
+| ACLManager | controller | 1 of 2 verified | 2 |
+| AToken | token | 1 of 2 verified | 2 |
+| BorrowLogic | vault_pool | — | 1 |
+| BridgeLogic | bridge | — | 1 |
+| ConfiguratorLogic | core | — | 1 |
+| DelegationAwareAToken | token | 1 of 2 verified | 2 |
+| DefaultReserveInterestRateStrategy | strategy | — | 6 |
+| EmissionManager | rewards | 1 of 2 verified | 2 |
+| EModeLogic | core | — | 1 |
+| FlashLoanLogic | core | — | 1 |
+| LiquidationLogic | core | — | 1 |
+| MockAggregator | router | — | 1 |
+| Pool | vault_pool | verified | 1 |
+| PoolAddressesProvider | vault_pool | 1 of 2 verified | 2 |
+| PoolAddressesProviderRegistry | vault_pool | 1 of 2 verified | 2 |
+| PoolConfigurator | vault_pool | — | 1 |
+| PoolLogic | vault_pool | — | 1 |
+| PullRewardsTransferStrategy | strategy | — | 1 |
+| ReservesSetupHelper | vault_pool | — | 2 |
+| RewardsController | rewards | 2 of 3 verified | 3 |
+| StableDebtTokenDisabled | token | — | 2 |
+| SupplyLogic | core | — | 1 |
+| UiIncentiveDataProviderV3 | rewards | — | 1 |
+| UiPoolDataProviderV3 | vault_pool | — | 2 |
+| VariableDebtToken | token | — | 2 |
+| WalletBalanceProvider | core | — | 2 |
+| WrappedTokenGatewayV3 | token | — | 2 |
+| TransparentUpgradeableProxy | proxy | — | 24 |
+| InitializableImmutableAdminUpgradeabilityProxy | proxy | verified | 2 |
+| InitializableAdminUpgradeabilityProxy | proxy | — | 2 |
+
+**Linea-specific contracts** (NOT in Ethereum deployment):
+
+| Contract | Role | Verified | Note |
+|---|---|---|---|
+| AaveV3LoopingStrategy | strategy | — | 3 instances, leveraged looping |
+| Create2Factory | factory | — | Deployer utility |
+| EarlyZERO | core | — | Early token distribution |
+| EzEthToUsdOracleProxy | proxy | — | Custom oracle proxy |
+| Faucet | core | — | Testnet faucet (may be inactive) |
+| FeesClaimer | core | — | Fee distribution |
+| FixedAggregator | router | — | Fixed-price oracle |
+| LynexSwapper | router | — | DEX integration |
+| PythAggregatorV3 | router | — | 3 instances, Pyth oracle adapter |
+| TestnetERC20 | token | — | 4 instances, test tokens |
+| WETH9Mock | core | — | Mock WETH |
+| ZeroLend | core | — | ZERO token on Linea |
+| ZeroLendTest | core | — | Test contract |
 
 ## Audit Coverage Summary
 

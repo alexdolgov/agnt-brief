@@ -2,7 +2,7 @@
 // Contract: FlashLoanLogic
 // Address: 0x86b07c01b10545c7e093521cdeacf90d909db5a1
 // Compiler: v0.8.12+commit.f00d7308
-// Classification: aave_standard
+// Classification: UNVERIFIED FORK — appears to be Aave v3 based on contract name, but may contain ZeroLend modifications. Diff against upstream Aave v3 before assuming standard.
 // Source: Etherscan verified (project files only, libraries excluded)
 // Extracted: 2026-04-13
 

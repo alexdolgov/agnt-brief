@@ -73,13 +73,15 @@ Single audit from an unidentified auditor. No known coverage of the custom staki
 
 Contracts are classified into two categories:
 
-### `aave_standard` — Upstream Aave v3 code (12 source files)
+### `unverified_fork` — Likely Aave v3 fork (12 source files)
 
-These are standard Aave v3 contracts with minimal or no modification. They are extensively audited upstream by OpenZeppelin, Trail of Bits, Certora, Sigma Prime, and others as part of the Aave v3 audit corpus. An agent should focus on **diffs from upstream Aave v3**, not the full code.
+These contracts share names with the standard Aave v3 codebase (Pool, AToken, LiquidationLogic, etc.) and were likely forked from it. However, **we have not verified they are unmodified**. ZeroLend may have added, removed, or altered logic in any of these contracts. An agent MUST diff these against upstream Aave v3 (branch `main`, release 3.0.2+) before assuming they are standard. Any modifications are high-priority findings — a subtle change to LiquidationLogic or FlashLoanLogic could introduce critical vulnerabilities.
+
+The upstream Aave v3 repo is: `https://github.com/aave/aave-v3-core`
 
 ### `zerolend_custom` — ZeroLend-specific code (13 source files)
 
-These are written by the ZeroLend team and are the **primary audit targets**.
+These contracts have no upstream Aave v3 equivalent — they are ZeroLend's own additions.
 
 ## Per-Contract Audit Coverage
 
@@ -175,30 +177,37 @@ The single known audit produced only 1 confirmed TP (LiquidationLogic via name m
 
 25 verified source files organized by chain:
 
-- `contracts/ethereum/` — 17 files (12 Aave standard + 5 ZeroLend custom)
+- `contracts/ethereum/` — 17 files (12 unverified Aave v3 fork + 5 ZeroLend custom)
 - `contracts/linea/` — 6 files (all ZeroLend custom — staking/governance)
 - `contracts/blast/` — 2 files (all ZeroLend custom — Blast yield integration)
 
-Source files contain only project code (`src/` and `contracts/` directories); standard library dependencies (OpenZeppelin, LayerZero) are excluded. Each file header includes `// Classification: aave_standard` or `// Classification: zerolend_custom`.
+Source files contain only project code (`src/` and `contracts/` directories); standard library dependencies (OpenZeppelin, LayerZero) are excluded.
+
+File headers indicate classification:
+- `// Classification: UNVERIFIED FORK` — contract name matches Aave v3 but source has NOT been diffed against upstream. May contain ZeroLend modifications.
+- `// Classification: zerolend_custom` — no upstream Aave v3 equivalent exists.
 
 ## Assessment Priority
 
+**High priority** (fork verification — any modification to lending core is critical):
+1. Pool, LiquidationLogic, FlashLoanLogic, BorrowLogic, SupplyLogic — diff against `aave/aave-v3-core` (release 3.0.2+). These control all deposits, borrows, and liquidations. A subtle change here could introduce critical vulnerabilities. Upstream repo: `https://github.com/aave/aave-v3-core`
+
 **High priority** (custom code, unique risk):
-1. BlastPool + BlastAToken (Blast yield integration, $417K TVL)
-2. OmnichainStaking (cross-chain staking, controls Linea governance)
-3. VestedZeroNFT + LockerToken + PoolVoter (governance, Linea $2.5M TVL)
+2. BlastPool + BlastAToken (Blast yield integration, $417K TVL at risk)
+3. OmnichainStaking (cross-chain staking, controls Linea governance)
+4. VestedZeroNFT + LockerToken + PoolVoter (governance, Linea $2.5M TVL)
+
+**Medium priority** (fork verification — supporting modules):
+5. AToken, VariableDebtToken, AaveOracle, ConfiguratorLogic, EModeLogic, PoolConfigurator, AaveProtocolDataProvider — diff against upstream
 
 **Medium priority** (custom but lower risk):
-4. LayerZeroCustomOFT + ZeroOFT + ZeroOFTAdapter (token bridging)
-5. ListingContract (asset listing)
-
-**Low priority** (upstream Aave v3, well-audited):
-6. Pool, AToken, VariableDebtToken, *Logic libraries (diff-check only)
+6. LayerZeroCustomOFT + ZeroOFT + ZeroOFTAdapter (token bridging)
+7. ListingContract (asset listing)
 
 ## Caveats
 
 - "Unaudited" means no scope match found — the single known audit may cover some of these contracts but scope data was too sparse to confirm.
-- The Aave v3 standard contracts may have ZeroLend-specific modifications not visible without diffing against upstream Aave v3.3.
+- **The 12 "unverified fork" contracts have NOT been diffed against upstream Aave v3.** The classification is based on contract name matching only. Any of these contracts may contain ZeroLend-specific modifications.
 - Per-contract TVL is not available. TVL figures are per-chain from DeFi Llama. For lending protocols, TVL concentrates in the Pool contract.
 - 207 of 342 topography contracts lack Etherscan verification — these are cross-chain duplicates of code verified on other chains, not distinct unverified contracts.
 - The staking/governance contracts on Linea have 8 instances each, likely from proxy-based upgradeability or multiple deployment versions.

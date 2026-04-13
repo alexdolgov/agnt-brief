@@ -2,7 +2,7 @@
 // Contract: VariableDebtToken
 // Address: 0x5d50be703836c330fc2d147a631cdd7bb8d7171c
 // Compiler: v0.8.12+commit.f00d7308
-// Classification: aave_standard
+// Classification: UNVERIFIED FORK — appears to be Aave v3 based on contract name, but may contain ZeroLend modifications. Diff against upstream Aave v3 before assuming standard.
 // Source: Etherscan verified (project files only, libraries excluded)
 // Extracted: 2026-04-13
 

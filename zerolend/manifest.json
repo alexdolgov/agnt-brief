@@ -3,7 +3,6 @@
   "generated": "2026-04-13T01:19:43.631580",
   "scope_match_run_id": "scope-match-v1-2026-04-12-af4f4dc6",
   "total_source_files": 25,
-  "aave_standard_contracts": 12,
   "zerolend_custom_contracts": 13,
   "contracts": [
     {
@@ -11,7 +10,7 @@
       "chain_name": "ethereum",
       "address": "0xff679e5b4178a2f74a56f0e2c0e1fa1c80579385",
       "contract_name": "Pool",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/Pool_0xff679e.sol",
       "src_file_count": 46
     },
@@ -20,7 +19,7 @@
       "chain_name": "ethereum",
       "address": "0xbe0ab675a478a759eca580f0d6c9d399085547d8",
       "contract_name": "LiquidationLogic",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/LiquidationLogic_0xbe0ab6.sol",
       "src_file_count": 35
     },
@@ -29,7 +28,7 @@
       "chain_name": "ethereum",
       "address": "0x86b07c01b10545c7e093521cdeacf90d909db5a1",
       "contract_name": "FlashLoanLogic",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/FlashLoanLogic_0x86b07c.sol",
       "src_file_count": 38
     },
@@ -38,7 +37,7 @@
       "chain_name": "ethereum",
       "address": "0x4db095bd39bde10a4b9be6ff63d98fceb2381fdc",
       "contract_name": "SupplyLogic",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/SupplyLogic_0x4db095.sol",
       "src_file_count": 33
     },
@@ -47,7 +46,7 @@
       "chain_name": "ethereum",
       "address": "0x8676e39b5d2f0d6e0d78a4208a0ccbc50504972e",
       "contract_name": "BorrowLogic",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/BorrowLogic_0x8676e3.sol",
       "src_file_count": 35
     },
@@ -56,7 +55,7 @@
       "chain_name": "ethereum",
       "address": "0xb7ed499e7570ee7691eef4df9d708d258de2b512",
       "contract_name": "AToken",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/AToken_0xb7ed49.sol",
       "src_file_count": 21
     },
@@ -65,7 +64,7 @@
       "chain_name": "ethereum",
       "address": "0x5d50be703836c330fc2d147a631cdd7bb8d7171c",
       "contract_name": "VariableDebtToken",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/VariableDebtToken_0x5d50be.sol",
       "src_file_count": 22
     },
@@ -74,7 +73,7 @@
       "chain_name": "ethereum",
       "address": "0x47223d4ea966a93b2cc96ffb4d42c22651fadfcf",
       "contract_name": "AaveProtocolDataProvider",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/AaveProtocolDataProvider_0x47223d.sol",
       "src_file_count": 16
     },
@@ -83,7 +82,7 @@
       "chain_name": "ethereum",
       "address": "0x1cc993f2c8b6fbc43a9bafd2a44398e739733385",
       "contract_name": "AaveOracle",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/AaveOracle_0x1cc993.sol",
       "src_file_count": 7
     },
@@ -92,7 +91,7 @@
       "chain_name": "ethereum",
       "address": "0xb8634e0a320d0f4861062514a63b659e52a87e21",
       "contract_name": "ConfiguratorLogic",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/ConfiguratorLogic_0xb8634e.sol",
       "src_file_count": 16
     },
@@ -101,7 +100,7 @@
       "chain_name": "ethereum",
       "address": "0x78ad3d53045b6582841e2a1a688c52be2ca2a7a7",
       "contract_name": "EModeLogic",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/EModeLogic_0x78ad3d.sol",
       "src_file_count": 32
     },
@@ -110,7 +109,7 @@
       "chain_name": "ethereum",
       "address": "0x9c6f1367256be65ee744740c72ad80da5bc96ca6",
       "contract_name": "PoolConfigurator",
-      "classification": "aave_standard",
+      "classification": "unverified_fork",
       "source_file": "contracts/ethereum/PoolConfigurator_0x9c6f13.sol",
       "src_file_count": 22
     },
@@ -231,5 +230,6 @@
       "source_file": "contracts/linea/ZeroOFTAdapter_0x1dad69.sol",
       "src_file_count": 1
     }
-  ]
+  ],
+  "unverified_fork_contracts": 12
 }

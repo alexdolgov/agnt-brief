@@ -2,7 +2,7 @@
 // Contract: PoolConfigurator
 // Address: 0x9c6f1367256be65ee744740c72ad80da5bc96ca6
 // Compiler: v0.8.12+commit.f00d7308
-// Classification: aave_standard
+// Classification: UNVERIFIED FORK — appears to be Aave v3 based on contract name, but may contain ZeroLend modifications. Diff against upstream Aave v3 before assuming standard.
 // Source: Etherscan verified (project files only, libraries excluded)
 // Extracted: 2026-04-13
 

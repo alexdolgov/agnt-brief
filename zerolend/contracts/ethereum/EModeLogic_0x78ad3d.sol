@@ -2,7 +2,7 @@
 // Contract: EModeLogic
 // Address: 0x78ad3d53045b6582841e2a1a688c52be2ca2a7a7
 // Compiler: v0.8.12+commit.f00d7308
-// Classification: aave_standard
+// Classification: UNVERIFIED FORK — appears to be Aave v3 based on contract name, but may contain ZeroLend modifications. Diff against upstream Aave v3 before assuming standard.
 // Source: Etherscan verified (project files only, libraries excluded)
 // Extracted: 2026-04-13
 

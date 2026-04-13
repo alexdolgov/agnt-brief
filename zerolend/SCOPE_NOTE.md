@@ -87,42 +87,58 @@ These contracts have no upstream Aave v3 equivalent — they are ZeroLend's own 
 
 ### Ethereum (chain 1) — TVL: $275K lending + $1.8M vaults
 
-**Aave standard contracts:**
+**Unverified Aave v3 fork contracts (33 source files):**
 
-| Contract | Role | Deployed | Audit Status | Source |
+All of these appear to be forked from Aave v3 based on contract names. NOT diffed against upstream — may contain ZeroLend modifications.
+
+| Contract | Role | Description | Audit Status | Source |
 |---|---|---|---|---|
-| Pool | vault_pool | 2024-03-03 | likely in scope | `contracts/ethereum/Pool_0xff679e.sol` |
-| PoolAddressesProvider | vault_pool | 2024-03-03 | likely in scope | source in package |
-| PoolAddressesProviderRegistry | vault_pool | 2024-03-03 | likely in scope | source in package |
-| PoolLogic | vault_pool | 2024-03-03 | likely in scope | source in package |
-| LiquidationLogic | core | 2024-03-03 | **audited (TP)** | `contracts/ethereum/LiquidationLogic_0xbe0ab6.sol` |
-| SupplyLogic | core | 2024-03-03 | no scope data | `contracts/ethereum/SupplyLogic_0x4db095.sol` |
-| BorrowLogic | vault_pool | 2024-03-03 | unmatched (pre-audit) | `contracts/ethereum/BorrowLogic_0x8676e3.sol` |
-| FlashLoanLogic | core | 2024-03-03 | no scope data | `contracts/ethereum/FlashLoanLogic_0x86b07c.sol` |
-| ConfiguratorLogic | core | 2024-03-03 | unmatched (pre-audit) | `contracts/ethereum/ConfiguratorLogic_0xb8634e.sol` |
-| EModeLogic | core | 2024-03-03 | unmatched (pre-audit) | `contracts/ethereum/EModeLogic_0x78ad3d.sol` |
-| PoolConfigurator | vault_pool | 2024-03-03 | no scope data | `contracts/ethereum/PoolConfigurator_0x9c6f13.sol` |
-| AToken | token | 2024-03-03 | unmatched (pre-audit) | `contracts/ethereum/AToken_0xb7ed49.sol` |
-| VariableDebtToken | token | 2024-03-03 | no scope data | `contracts/ethereum/VariableDebtToken_0x5d50be.sol` |
-| AaveOracle | oracle | 2024-03-03 | unmatched (pre-audit) | `contracts/ethereum/AaveOracle_0x1cc993.sol` |
-| AaveProtocolDataProvider | core | 2024-03-03 | no scope data | `contracts/ethereum/AaveProtocolDataProvider_0x47223d.sol` |
-| ACLManager | controller | 2024-03-03 | unmatched (pre-audit) | source in package |
-| DefaultReserveInterestRateStrategy | strategy | 2024-03-03 | unmatched (pre-audit) | source in package |
-| EmissionManager | rewards | 2024-03-03 | unmatched (pre-audit) | source in package |
-| RewardsController | rewards | 2024-03-03 | unmatched (pre-audit) | source in package |
-| StableDebtTokenDisabled | token | 2024-03-03 | unmatched (pre-audit) | source in package |
-| DelegationAwareAToken | token | 2024-03-03 | unmatched (pre-audit) | source in package |
-| BridgeLogic | bridge | 2024-03-03 | no scope data | source in package |
+| Pool | vault_pool | Main entry point for deposits, borrows, repayments, liquidations. Holds no tokens directly — delegates to ATokens. | likely in scope | `contracts/ethereum/Pool_0xff679e.sol` |
+| PoolAddressesProvider | vault_pool | Registry of protocol contract addresses. Single source of truth for the Pool proxy address. | likely in scope | `contracts/ethereum/PoolAddressesProvider_0xfd856e.sol` |
+| PoolAddressesProviderRegistry | vault_pool | Registry of PoolAddressesProviders across markets. | likely in scope | `contracts/ethereum/PoolAddressesProviderRegistry_0x7503a8.sol` |
+| PoolLogic | vault_pool | Internal library for Pool initialization and reserve management. | likely in scope | `contracts/ethereum/PoolLogic_0xb21781.sol` |
+| PoolConfigurator | vault_pool | Admin interface for configuring reserve parameters, risk settings, and rate strategies. | no scope data | `contracts/ethereum/PoolConfigurator_0x9c6f13.sol` |
+| LiquidationLogic | core | Handles undercollateralized position liquidations. Critical for protocol solvency. | **audited (TP)** | `contracts/ethereum/LiquidationLogic_0xbe0ab6.sol` |
+| SupplyLogic | core | Handles deposit/withdrawal logic for lenders. | no scope data | `contracts/ethereum/SupplyLogic_0x4db095.sol` |
+| BorrowLogic | vault_pool | Handles borrow/repay logic for borrowers. | unmatched (pre-audit) | `contracts/ethereum/BorrowLogic_0x8676e3.sol` |
+| FlashLoanLogic | core | Implements flash loans — uncollateralized single-transaction borrows. | no scope data | `contracts/ethereum/FlashLoanLogic_0x86b07c.sol` |
+| BridgeLogic | bridge | Handles cross-chain minting/burning for bridged aTokens. | no scope data | `contracts/ethereum/BridgeLogic_0x3365d8.sol` |
+| ConfiguratorLogic | core | Internal library for PoolConfigurator — reserve initialization and updates. | unmatched (pre-audit) | `contracts/ethereum/ConfiguratorLogic_0xb8634e.sol` |
+| EModeLogic | core | Efficiency mode — allows higher LTV for correlated assets (e.g., ETH/stETH). | unmatched (pre-audit) | `contracts/ethereum/EModeLogic_0x78ad3d.sol` |
+| AToken | token | Interest-bearing deposit receipt token. Rebases to reflect accrued interest. | unmatched (pre-audit) | `contracts/ethereum/AToken_0xb7ed49.sol` |
+| DelegationAwareAToken | token | AToken variant that supports voting power delegation. | unmatched (pre-audit) | `contracts/ethereum/DelegationAwareAToken_0x4fcb7f.sol` |
+| VariableDebtToken | token | Tracks variable-rate borrow positions. Balance increases with accrued interest. | no scope data | `contracts/ethereum/VariableDebtToken_0x5d50be.sol` |
+| StableDebtTokenDisabled | token | Disabled stable-rate debt token (Aave v3 deprecated stable rates). | unmatched (pre-audit) | `contracts/ethereum/StableDebtTokenDisabled_0xe230cf.sol` |
+| AaveOracle | oracle | Price oracle aggregator — routes asset price queries to underlying feeds. | unmatched (pre-audit) | `contracts/ethereum/AaveOracle_0x1cc993.sol` |
+| AaveProtocolDataProvider | core | Read-only helper for querying reserve data, user positions, and protocol parameters. | no scope data | `contracts/ethereum/AaveProtocolDataProvider_0x47223d.sol` |
+| ACLManager | controller | Role-based access control — manages admin, emergency admin, risk admin, etc. | unmatched (pre-audit) | `contracts/ethereum/ACLManager_0x749df8.sol` |
+| DefaultReserveInterestRateStrategy | strategy | Calculates variable borrow rates based on utilization. Controls lending/borrowing APY. | unmatched (pre-audit) | `contracts/ethereum/DefaultReserveInterestRateStrategy_0xcbdc0a.sol` |
+| EmissionManager | rewards | Configures reward token emission rates per reserve. | unmatched (pre-audit) | `contracts/ethereum/EmissionManager_0x859c2c.sol` |
+| RewardsController | rewards | Distributes incentive rewards (e.g., ZERO tokens) to depositors and borrowers. | unmatched (pre-audit) | `contracts/ethereum/RewardsController_0x854138.sol` |
+| PullRewardsTransferStrategy | strategy | Transfer strategy for pulling reward tokens from a source to users. | no scope data | `contracts/ethereum/PullRewardsTransferStrategy_0x4b0a70.sol` |
+| ReservesSetupHelper | vault_pool | Batch helper for initializing multiple reserves in one transaction. | no scope data | `contracts/ethereum/ReservesSetupHelper_0xc58715.sol` |
+| AaveEcosystemReserveController | vault_pool | Controls the ecosystem reserve (protocol treasury). | no scope data | `contracts/ethereum/AaveEcosystemReserveController_0xe00261.sol` |
+| AaveEcosystemReserveV2 | vault_pool | Treasury contract that holds protocol-owned funds. | no scope data | `contracts/ethereum/AaveEcosystemReserveV2_0x7db270.sol` |
+| UiPoolDataProviderV3 | vault_pool | Read-only UI helper — aggregates pool data for frontend consumption. | no scope data | `contracts/ethereum/UiPoolDataProviderV3_0xa6ea08.sol` |
+| UiIncentiveDataProviderV3 | rewards | Read-only UI helper — aggregates incentive/reward data for frontends. | no scope data | `contracts/ethereum/UiIncentiveDataProviderV3_0x0a1198.sol` |
+| WalletBalanceProvider | core | Read-only helper — batch queries user token balances. | no scope data | `contracts/ethereum/WalletBalanceProvider_0xa1e6bc.sol` |
+| WrappedTokenGatewayV3 | token | ETH↔WETH wrapper — allows users to deposit/withdraw native ETH. | no scope data | `contracts/ethereum/WrappedTokenGatewayV3_0x6ea9d9.sol` |
+| ParaSwapLiquiditySwapAdapter | router | Integrates ParaSwap DEX aggregator for collateral swaps. | no scope data | `contracts/ethereum/ParaSwapLiquiditySwapAdapter_0x189cfd.sol` |
+| ParaSwapRepayAdapter | router | Integrates ParaSwap for swap-and-repay in one transaction. | no scope data | `contracts/ethereum/ParaSwapRepayAdapter_0x80ce5a.sol` |
+| EthUsdAggregator | router | ETH/USD price feed aggregator. | unmatched (pre-audit) | `contracts/ethereum/EthUsdAggregator_0x33b13f.sol` |
+| MockAggregator | router | Mock price feed — used for testing or as fallback oracle. | no scope data | `contracts/ethereum/MockAggregator_0x20efeb.sol` |
 
-**ZeroLend custom contracts (Ethereum):**
+**ZeroLend custom contracts (5 source files):**
 
-| Contract | Role | Deployed | Audit Status | Source |
+These have no upstream Aave v3 equivalent.
+
+| Contract | Role | Description | Audit Status | Source |
 |---|---|---|---|---|
-| LayerZeroCustomOFT | core | 2024-08-28 | no scope data | `contracts/ethereum/LayerZeroCustomOFT_0x2da17f.sol` |
-| ZeroOFT | core | 2024-04-26 | unmatched (pre-audit) | `contracts/ethereum/ZeroOFT_0xc4d701.sol` |
-| ZLShares | core | 2024-03-18 | no scope data | `contracts/ethereum/ZLShares_0x420c44.sol` |
-| ListingContract | core | 2024-08-27 | no scope data | `contracts/ethereum/ListingContract_0xc4fcea.sol` |
-| ZeroLend (token) | core | 2024-03-17 | no scope data | `contracts/ethereum/ZeroLend_0xedb357.sol` |
+| LayerZeroCustomOFT | core | Custom OFT (Omnichain Fungible Token) implementation for cross-chain ZERO token transfers via LayerZero. | no scope data | `contracts/ethereum/LayerZeroCustomOFT_0x2da17f.sol` |
+| ZeroOFT | core | OFT token wrapper — 5 instances on Ethereum for different LayerZero paths. | unmatched (pre-audit) | `contracts/ethereum/ZeroOFT_0xc4d701.sol` |
+| ZLShares | core | Share token representing governance/staking weight in the ZeroLend protocol. | no scope data | `contracts/ethereum/ZLShares_0x420c44.sol` |
+| ListingContract | core | Manages asset listing proposals and execution for adding new reserves. | no scope data | `contracts/ethereum/ListingContract_0xc4fcea.sol` |
+| ZeroLend | core | ZERO governance/utility token (ERC-20). | no scope data | `contracts/ethereum/ZeroLend_0xedb357.sol` |
 
 ### Blast (chain 81457) — TVL: $417K lending
 
@@ -275,7 +291,7 @@ The single known audit produced only 1 confirmed TP (LiquidationLogic via name m
 
 25 verified source files organized by chain:
 
-- `contracts/ethereum/` — 38 files (33 unverified Aave v3 fork + 5 ZeroLend custom)
+- `contracts/ethereum/` — 39 files (34 unverified Aave v3 fork + 5 ZeroLend custom)
 - `contracts/linea/` — 6 files (all ZeroLend custom — staking/governance)
 - `contracts/blast/` — 2 files (all ZeroLend custom — Blast yield integration)
 

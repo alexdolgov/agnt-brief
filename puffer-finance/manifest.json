@@ -1,0 +1,153 @@
+{
+  "project": "puffer-finance",
+  "generated": "2026-05-05T20:48:39.429Z",
+  "scope_match_run_id": null,
+  "protocol_tvl_usd": 68683009.38615301,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": null,
+  "total_contracts": 8,
+  "source_available_contracts": 5,
+  "chains": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum"
+    }
+  ],
+  "proxy_links": [
+    {
+      "chain_id": 1,
+      "proxy_address": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "implementation_address": "0x3b2fdfdefe919dbcce0bc5ac426097d5523b8afa"
+    }
+  ],
+  "contracts": [
+    {
+      "address": "0x170d847a8320f3b6a77ee15b0cae430e3ec933a0",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "BoringVault",
+      "verification_status": "unknown",
+      "source_available": false,
+      "source_origin": "sourcify",
+      "source_path": "contracts/ethereum/UNVERIFIED_0x170d84.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x196ead472583bc1e9af7a05f860d9857e1bd3dcc",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "BoringVault",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/BoringVault_0x196ead.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x2afb28b0561d99b5e00829ec2ef54946a00a35f7",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "AccountantWithRateProviders",
+      "verification_status": "unknown",
+      "source_available": false,
+      "source_origin": "sourcify",
+      "source_path": "contracts/ethereum/UNVERIFIED_0x2afb28.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x3b2fdfdefe919dbcce0bc5ac426097d5523b8afa",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "PufferVaultV5",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/PufferVaultV5_0x3b2fdf.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x82c40e07277ebb92935f79ce92268f80ddc7cab4",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "BoringVault",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/BoringVault_0x82c40e.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xa9fb7e2922216debe3fd5e1bbe7591ee446dc21c",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "AccountantWithRateProviders",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/AccountantWithRateProviders_0xa9fb7e.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "ERC1967Proxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/ERC1967Proxy_0xd9a442.sol",
+      "proxy": true,
+      "implementation_address": "0x3b2fdfdefe919dbcce0bc5ac426097d5523b8afa",
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xe0bdb7b9225a2ceb42998dc2e51d4d3cdeb7e3be",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "AccountantWithRateProviders",
+      "verification_status": "unknown",
+      "source_available": false,
+      "source_origin": "sourcify",
+      "source_path": "contracts/ethereum/UNVERIFIED_0xe0bdb7.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    }
+  ]
+}

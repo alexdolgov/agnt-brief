@@ -1,0 +1,105 @@
+{
+  "project": "contango",
+  "generated": "2026-05-05T20:47:35.639Z",
+  "scope_match_run_id": "recovery-full-v5-fixed-matcher-2026-05-05-bec82ebc",
+  "protocol_tvl_usd": 15848577.373605926,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": null,
+  "total_contracts": 5,
+  "source_available_contracts": 4,
+  "chains": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum"
+    }
+  ],
+  "proxy_links": [
+    {
+      "chain_id": 42161,
+      "proxy_address": "0x007606064f8a40745336f91a1e4345900143756b",
+      "implementation_address": "0xc171c681bfa3720306c1ba695a52b54f3f5d20a7"
+    }
+  ],
+  "contracts": [
+    {
+      "address": "0x007606064f8a40745336f91a1e4345900143756b",
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "contract_name": "ERC1967Proxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/arbitrum/ERC1967Proxy_0x007606.sol",
+      "proxy": true,
+      "implementation_address": "0xc171c681bfa3720306c1ba695a52b54f3f5d20a7",
+      "role_category": null,
+      "audit_coverage": "UC",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x96aa72542ce42f99f93de51e2f24cc2601c6221a",
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "contract_name": "Unknown",
+      "verification_status": "unknown",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/arbitrum/UNVERIFIED_0x96aa72.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xc171c681bfa3720306c1ba695a52b54f3f5d20a7",
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "contract_name": "ContangoPerpetualOption",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/arbitrum/ContangoPerpetualOption_0xc171c6.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xc2462f03920d47fc5b9e2c5f0ba5d2ded058fd78",
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "contract_name": "PositionNFT",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/arbitrum/PositionNFT_0xc2462f.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xc760f9782f8cea5b06d862574464729537159966",
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "contract_name": "ContangoToken",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/arbitrum/ContangoToken_0xc760f9.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    }
+  ]
+}

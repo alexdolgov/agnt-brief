@@ -1,0 +1,118 @@
+{
+  "project": "privacy-pools",
+  "generated": "2026-05-05T20:47:51.716Z",
+  "scope_match_run_id": "recovery-full-v5-fixed-matcher-2026-05-05-95e36788",
+  "protocol_tvl_usd": 5572027.901261757,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": 53.47222222222222,
+  "total_contracts": 5,
+  "source_available_contracts": 4,
+  "chains": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum"
+    }
+  ],
+  "proxy_links": [
+    {
+      "chain_id": 1,
+      "proxy_address": "0x6818809eefce719e480a7526d76bd3e561526b46",
+      "implementation_address": "0x15e355024de1cdc74addea7ebdf98418ba5b1a2c"
+    },
+    {
+      "chain_id": 10,
+      "proxy_address": "0x44192215fed782896be2ce24e0bfbf0bf825d15e",
+      "implementation_address": "0x1cabfda9a9c14d16302dd7c8f4b6e2a57aa7b364"
+    }
+  ],
+  "contracts": [
+    {
+      "address": "0x15e355024de1cdc74addea7ebdf98418ba5b1a2c",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "Entrypoint",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/Entrypoint_0x15e355.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x6818809eefce719e480a7526d76bd3e561526b46",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "ERC1967Proxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/ERC1967Proxy_0x681880.sol",
+      "proxy": true,
+      "implementation_address": "0x15e355024de1cdc74addea7ebdf98418ba5b1a2c",
+      "role_category": null,
+      "audit_coverage": "UC",
+      "contract_tvl_usd": 16063.10991393687,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x1cabfda9a9c14d16302dd7c8f4b6e2a57aa7b364",
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "contract_name": "Entrypoint",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/optimism/Entrypoint_0x1cabfd.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x44192215fed782896be2ce24e0bfbf0bf825d15e",
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "contract_name": "ERC1967Proxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/optimism/ERC1967Proxy_0x441922.sol",
+      "proxy": true,
+      "implementation_address": "0x1cabfda9a9c14d16302dd7c8f4b6e2a57aa7b364",
+      "role_category": null,
+      "audit_coverage": "UC",
+      "contract_tvl_usd": 254.56108065728642,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x44192215fed782896be2ce24e0bfbf0bf825d15e",
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "contract_name": "Unknown",
+      "verification_status": "unknown",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/arbitrum/UNVERIFIED_0x441922.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 494.89805857839184,
+      "contract_tvl_unavailable_reason": null
+    }
+  ]
+}

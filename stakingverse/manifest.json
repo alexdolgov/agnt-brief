@@ -1,0 +1,73 @@
+{
+  "project": "stakingverse",
+  "generated": "2026-05-05T20:47:53.790Z",
+  "scope_match_run_id": "recovery-full-v5-fixed-matcher-2026-05-05-2b686225",
+  "protocol_tvl_usd": 4312959.881443732,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": 70,
+  "total_contracts": 3,
+  "source_available_contracts": 2,
+  "chains": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum"
+    }
+  ],
+  "proxy_links": [
+    {
+      "chain_id": 1,
+      "proxy_address": "0x8a93a876912c9f03f88bc9114847cf5b63c89f56",
+      "implementation_address": "0x927a83c679a5e1a6435d6bfaef7f20d4db23e2cc"
+    }
+  ],
+  "contracts": [
+    {
+      "address": "0x8a93a876912c9f03f88bc9114847cf5b63c89f56",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "ERC1967Proxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/ERC1967Proxy_0x8a93a8.sol",
+      "proxy": true,
+      "implementation_address": "0x927a83c679a5e1a6435d6bfaef7f20d4db23e2cc",
+      "role_category": null,
+      "audit_coverage": "UC",
+      "contract_tvl_usd": 88912.09981490744,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x927a83c679a5e1a6435d6bfaef7f20d4db23e2cc",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "EthVault",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/EthVault_0x927a83.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x9f49a95b0c3c9e2a6c77a16c177928294c0f6f04",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "Unknown",
+      "verification_status": "unverified",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/ethereum/UNVERIFIED_0x9f49a9.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    }
+  ]
+}

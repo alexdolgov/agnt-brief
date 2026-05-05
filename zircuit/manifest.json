@@ -1,0 +1,89 @@
+{
+  "project": "zircuit",
+  "generated": "2026-05-05T20:47:57.293Z",
+  "scope_match_run_id": "recovery-full-v5-fixed-matcher-2026-05-05-0dc929c6",
+  "protocol_tvl_usd": 5409407.198654763,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": 85.5813953488372,
+  "total_contracts": 4,
+  "source_available_contracts": 2,
+  "chains": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum"
+    }
+  ],
+  "proxy_links": [
+    {
+      "chain_id": 1,
+      "proxy_address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "implementation_address": "0x7159107483e623707c18c6e06cbc095bd0717783"
+    }
+  ],
+  "contracts": [
+    {
+      "address": "0x7159107483e623707c18c6e06cbc095bd0717783",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "RSETH",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/RSETH_0x715910.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x7d8311839eb44dd5194abd2dd3998722455a24e0",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "Unknown",
+      "verification_status": "unverified",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/ethereum/UNVERIFIED_0x7d8311.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 58.996448925663884,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "TransparentUpgradeableProxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/TransparentUpgradeableProxy_0xa1290d.sol",
+      "proxy": true,
+      "implementation_address": "0x7159107483e623707c18c6e06cbc095bd0717783",
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 3719.1611724238555,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "ZtakingPool",
+      "verification_status": "unknown",
+      "source_available": false,
+      "source_origin": "sourcify",
+      "source_path": "contracts/ethereum/UNVERIFIED_0xf047ab.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": 53863969.36416419,
+      "contract_tvl_unavailable_reason": null
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "project": "abyss",
+  "generated": "2026-05-05T20:47:22.037Z",
+  "scope_match_run_id": "recovery-full-v5-fixed-matcher-2026-05-05-6b7bbd16",
+  "protocol_tvl_usd": 2224614.4705189443,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": 0,
+  "total_contracts": 1,
+  "source_available_contracts": 1,
+  "chains": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum"
+    }
+  ],
+  "proxy_links": [],
+  "contracts": [
+    {
+      "address": "0xfa5f9eaa65ffb2a75de092eb7f3fc84fc86b5b18",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "AbyssEth2Depositor",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/AbyssEth2Depositor_0xfa5f9e.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    }
+  ]
+}

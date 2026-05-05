@@ -1,0 +1,35 @@
+{
+  "project": "smilee-finance",
+  "generated": "2026-05-05T20:47:52.977Z",
+  "scope_match_run_id": "recovery-full-v5-fixed-matcher-2026-05-05-720c81c2",
+  "protocol_tvl_usd": 1788678.09433851,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": null,
+  "total_contracts": 1,
+  "source_available_contracts": 1,
+  "chains": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum"
+    }
+  ],
+  "proxy_links": [],
+  "contracts": [
+    {
+      "address": "0x110a3b051397956d69733b6fe947648bb9062cf1",
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "contract_name": "AddressProvider",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/arbitrum/AddressProvider_0x110a3b.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    }
+  ]
+}

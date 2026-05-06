@@ -1,0 +1,14 @@
+{
+  "slug": "23_eth_ePendleProxyOFT",
+  "chain_id": 1,
+  "address": "0x6ae382814e24b6ddf588901c597f26a9e945c577",
+  "equilibria_doc_role": "ePendleProxyOFT",
+  "etherscan_contract_name": "EPendleProxyOFT",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "38_arb_eqbZap_proxy",
+  "chain_id": 42161,
+  "address": "0xc7517f481cc0a645e63f870830a4b2e580421e32",
+  "equilibria_doc_role": "eqbZap",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0x39f4789bdc5560ade254fce8b7f221205df6993d"
+}

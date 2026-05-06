@@ -1,0 +1,14 @@
+{
+  "slug": "34_arb_ePendle_proxy",
+  "chain_id": 42161,
+  "address": "0x3eabe18eae267d1b57f917aba085bb5906114600",
+  "equilibria_doc_role": "ePendle",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0xddf45d7493b796ea031969252c6d03032ca15f2b"
+}

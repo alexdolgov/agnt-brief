@@ -35,14 +35,15 @@ Two reasons.
 
 ## Current status
 
-- **swell/** — gold standard prepared 2026-05-06.
+- **swell/** — gold standard prepared 2026-05-06. (Liquid Staking + Liquid Restaking + L2 Pre-Deposit + BTC LRT + Earn / Nucleus white-label + Swellchain L1↔L2 bridge stack — six product lines, single-chain primary surface with L2 extension.)
+- **equilibria/** — gold standard prepared 2026-05-06. (Pendle yield optimizer — one product line, ten-chain deployment surface. Notable for: a TVL methodology defect where DL conflates four asset classes that custody differently, an order-of-magnitude wrong v1 TVL headline, "active but in structured decline" lifecycle posture not captured by the active/dead binary, cross-chain CREATE address-slot reuse.)
 - Other projects — not yet covered. We expect to add gold-standard pairs for ~5–10 high-value projects (Aave, Lido, Pendle, EigenLayer, Curve, Compound, Uniswap, etc.) before treating this as a benchmark set.
 
 ## What "gold standard" does NOT mean
 
 - It does not mean the brief is operator-confirmed. Multisig membership, ProxyAdmin owners, timelock duration, governance-gate parameters are explicitly out of scope here. Those require operator interview.
 - It does not mean every audit→contract mapping has been validated by reading the PDF cover-to-cover. Mappings are reconstructed from filenames + product-line context. Where uncertainty exists, the gold-standard brief flags it.
-- It does not mean the contract list is exhaustive of every Swell-deployed-ever contract on every chain. It is the audit-evaluable surface: contracts holding user funds on the chains DefiLlama enumerates, plus first-order operational periphery and bridge stack.
+- It does not mean the contract list is exhaustive of every project-deployed-ever contract on every chain. It is the audit-evaluable surface: contracts holding user funds on the chains DefiLlama enumerates, plus first-order operational periphery and bridge stack. (For Equilibria, three of the ten DL-listed chains — HyperEVM, Plasma, Berachain — are not yet on the unified Etherscan v2 API, so per-contract source verification on those chains is deferred; the docs links resolve and the addresses remain documented.)
 
 ## Reporting feedback
 

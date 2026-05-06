@@ -1,0 +1,14 @@
+{
+  "slug": "13_eth_EQB_proxy",
+  "chain_id": 1,
+  "address": "0xfe80d611c6403f70e5b1b9b722d2b3510b740b2b",
+  "equilibria_doc_role": "EQB",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0x0cf6ab3c169b0169e35ad58d350cbacdaf80e139"
+}

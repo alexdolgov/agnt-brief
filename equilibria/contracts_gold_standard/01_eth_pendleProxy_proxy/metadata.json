@@ -1,0 +1,14 @@
+{
+  "slug": "01_eth_pendleProxy_proxy",
+  "chain_id": 1,
+  "address": "0x64627901dadb46ed7f275fd4fc87d086cff1e6e3",
+  "equilibria_doc_role": "pendleProxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0xd23935f6ae4f7ee6b2b169b07824dcc7f596c4e7"
+}

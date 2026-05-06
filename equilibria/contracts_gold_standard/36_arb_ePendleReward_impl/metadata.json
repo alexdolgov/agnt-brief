@@ -1,0 +1,14 @@
+{
+  "slug": "36_arb_ePendleReward_impl",
+  "chain_id": 42161,
+  "address": "0x901e8fd1e2d6d1788e5288e967034761ce0e1a88",
+  "equilibria_doc_role": "BaseRewardPoolV2_1",
+  "etherscan_contract_name": "BaseRewardPool",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

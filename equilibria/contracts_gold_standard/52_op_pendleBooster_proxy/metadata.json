@@ -1,0 +1,14 @@
+{
+  "slug": "52_op_pendleBooster_proxy",
+  "chain_id": 10,
+  "address": "0x18c61629e6cbadb85c29ba7993f251b3ebe2b356",
+  "equilibria_doc_role": "pendleBooster",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0x014e8248d3b681d4ed703de60885052ff4321f5d"
+}

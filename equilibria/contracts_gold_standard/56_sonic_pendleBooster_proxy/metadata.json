@@ -1,0 +1,14 @@
+{
+  "slug": "56_sonic_pendleBooster_proxy",
+  "chain_id": 146,
+  "address": "0x920873e5b302a619c54c908adfb77a1c4256a3b8",
+  "equilibria_doc_role": "pendleBooster",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0x5c9c7cc4105f5fe133b7a412055269d8d4f6b676"
+}

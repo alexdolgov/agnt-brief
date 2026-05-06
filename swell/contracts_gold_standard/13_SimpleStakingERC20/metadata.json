@@ -1,0 +1,12 @@
+{
+  "slug": "13_SimpleStakingERC20",
+  "address": "0x38d43a6cb8da0e855a42fb6b0733a0498531d774",
+  "etherscan_contract_name": "SimpleStakingERC20",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "shanghai",
+  "proxy": "0",
+  "implementation": ""
+}

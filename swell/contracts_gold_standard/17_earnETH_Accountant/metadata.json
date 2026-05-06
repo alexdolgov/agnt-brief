@@ -1,0 +1,12 @@
+{
+  "slug": "17_earnETH_Accountant",
+  "address": "0x411c78bc8c36c3c66784514f28c56209e1df2755",
+  "etherscan_contract_name": "AccountantWithRateProviders",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "shanghai",
+  "proxy": "0",
+  "implementation": ""
+}

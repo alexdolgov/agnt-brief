@@ -1,0 +1,12 @@
+{
+  "slug": "01_swETH_proxy",
+  "address": "0xf951E335afb289353dc249e82926178EaC7DEd78",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0xce95ba824ae9a4df9b303c0bbf4d605ba2affbfc"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "19_earnETH_RolesAuthority",
+  "address": "0x1f5dddf627c3796a589c6271b36a570f18d3a016",
+  "etherscan_contract_name": "RolesAuthority",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "shanghai",
+  "proxy": "0",
+  "implementation": ""
+}

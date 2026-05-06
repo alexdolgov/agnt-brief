@@ -1,0 +1,12 @@
+{
+  "slug": "09_AccessControlManager_proxy",
+  "address": "0x625087d72c762254a72CB22cC2ECa40da6b95EAC",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0xbb7b99c2be525c0a6b719344f89a4255ef593e64"
+}

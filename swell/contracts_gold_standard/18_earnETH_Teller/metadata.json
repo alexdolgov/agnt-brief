@@ -1,0 +1,12 @@
+{
+  "slug": "18_earnETH_Teller",
+  "address": "0x6D207874DDc8B1C3954a0BB2b21c6Fce2Aa18Dba",
+  "etherscan_contract_name": "MultiChainLayerZeroTellerWithMultiAssetSupport",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "MIT",
+  "evm_version": "shanghai",
+  "proxy": "0",
+  "implementation": ""
+}

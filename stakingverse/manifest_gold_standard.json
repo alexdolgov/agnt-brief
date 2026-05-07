@@ -1,0 +1,356 @@
+{
+  "project": "stakingverse",
+  "generated_at": "2026-05-07T00:00:00.000Z",
+  "method": "manual_research",
+  "verification_ledger": "docs/gold-standard/stakingverse_verification_ledger.md",
+  "dl_raw_archive": "docs/gold-standard/dl_raw/stakingverse.json",
+  "dl_slugs": ["stakingverse"],
+  "dl_snapshot_date": "2026-05-07",
+  "operator_entity": "Sigmatic B.V. (Netherlands)",
+  "operator_contact": "contact@sigmatic.io",
+  "website": "https://stakingverse.io",
+  "twitter": "stakingverse_io",
+  "github_org": "https://github.com/Stakingverse",
+  "primary_repo": "https://github.com/Stakingverse/pool-contracts",
+  "category_dl": "Liquid Staking",
+  "tier": "Mid-TVL commercial target",
+  "commercial_fit": "mid_tvl_commercial_target",
+  "lifecycle": "alive",
+  "lifecycle_evidence": [
+    "Most recent StakingverseVault impl upgrade 2025-03-31 on LUKSO (block 4,726,637)",
+    "Most recent SLYXToken impl upgrade 2025-04-19 on LUKSO (block 4,857,760)",
+    "Most recent operator transaction on Ethereum proxy 2026-04-26 (~11 days before brief date)",
+    "198 sLYX holders on LUKSO; 420,154.32 sLYX in circulation",
+    "229,015 LYX held directly + 2.1M LYX validator-staked on LUKSO; 37.97 ETH direct + ~1,659 ETH validator-staked on Ethereum"
+  ],
+  "architecture_model": "dual_stack_hybrid",
+  "architecture_summary": "Stakingverse runs a two-chain liquid staking protocol with completely different code on each chain. On Ethereum it operates a permissionless StakeWise V3 vault — the proxy is Stakingverse-deployed but delegates to StakeWise's audited EthVault implementation. On LUKSO it runs original Stakingverse-authored Solidity (StakingverseVault.sol derived from Universal.Page Vault.sol; SLYXToken.sol on LSP7 standard).",
+  "infrastructure_provider_ethereum": "stakewise_v3",
+  "infrastructure_provider_lukso": "self (Universal.Page-derived for vault baseline; otherwise own code)",
+  "total_tvl_usd": 4602120,
+  "tvl_decomposition": {
+    "ethereum_dl_bucket_usd": 3962093,
+    "lukso_dl_bucket_usd": 640027,
+    "ethereum_total_assets_eth": 1697.15,
+    "ethereum_proxy_direct_balance_eth": 37.97,
+    "lukso_total_assets_lyx": 2338742.40,
+    "lukso_proxy_direct_balance_lyx": 229015.28,
+    "method": "DL adapter calls totalAssets() on each chain's proxy. Direct balance reflects un-staked float; remainder is staked into beacon-chain validators. v1 brief reported $88,912 on-chain TVL because it only read the Ethereum proxy's direct balance and never visited LUKSO."
+  },
+  "tvl_methodology_class": "total_assets_call_per_chain",
+  "chains": ["ethereum", "lukso"],
+  "deployers": [
+    {
+      "address": "0x93281072aa2725194e571e7fc924541bccd38819",
+      "chain": "ethereum",
+      "etherscan_label": "(no public label)",
+      "is_eoa": true,
+      "funded_by": "stakingverse.eth",
+      "deploys": "ERC1967Proxy 0x8a93a876…f56 (Stakingverse's StakeWise-V3 vault proxy)",
+      "note": "Stakingverse's Ethereum operator EOA. Deployed only the proxy; the implementation behind it is StakeWise's EthVault."
+    },
+    {
+      "address": "0xe460f0cB1227399B129715895157E8cB443b269E",
+      "chain": "lukso",
+      "lukso_label": "(no public label)",
+      "is_eoa": true,
+      "deploys": "StakingverseVaultProxy 0x9F49a95b…04, Vault impl v1 0x2Cb02ef2…f4, StakingverseVault impl v2 0x1711b2e1…2D, SLYXToken impl v2 0x08b28405…9B; also serves as proxy admin",
+      "note": "Stakingverse's primary LUKSO deployer + admin EOA. No Etherscan-equivalent public-tag system on LUKSO Blockscout."
+    },
+    {
+      "address": "0xc064f535c1E0c2642326446070a10d0452cCf5fF",
+      "chain": "lukso",
+      "lukso_label": "(no public label)",
+      "is_eoa": true,
+      "deploys": "SLYXTokenProxy 0x8A3982f0…7D, original SLYXToken impl 0x30790526…91",
+      "note": "Stakingverse's secondary LUKSO deployer used for the December 2024 sLYX deployment."
+    },
+    {
+      "address": "0x3da6066fecf43e94e0ca78cbaccd5e36fcf69e1d",
+      "chain": "ethereum",
+      "etherscan_label": "(no public label)",
+      "is_eoa": true,
+      "deploys": "EthVault 0x927a83c6…cc, EthGenesisVault, EthBlocklistVault, EthErc20Vault, EthValidatorsChecker, EthPrivVault, EthPrivErc20Vault, EthBlocklistErc20Vault",
+      "note": "**StakeWise's** vault deployer, NOT Stakingverse's. The EthVault implementation Stakingverse delegates to was deployed by this address. Listed here for ownership-trace transparency."
+    }
+  ],
+  "infrastructure_audits_inherited": {
+    "scope": "Cover the StakeWise V3 EthVault implementation 0x927a83c6…cc that Stakingverse's Ethereum proxy delegates to. NOT Stakingverse's own audits.",
+    "source_repo": "https://github.com/stakewise/v3-core/tree/main/audits",
+    "audits": [
+      {"date": "2023-05", "auditor": "Halborn", "filename": "2023-05-Halborn.pdf", "scope_summary": "StakeWise V3 (early)"},
+      {"date": "2023-08", "auditor": "Halborn", "filename": "2023-08-Halborn.pdf", "scope_summary": "StakeWise V3 (EthVault, GnoVault, OsToken)", "v1_misclaim": "v1 brief listed this as Stakingverse's TP audit"},
+      {"date": "2023-08", "auditor": "Sigma Prime", "filename": "2023-08-Sigma-Prime.pdf", "scope_summary": "StakeWise V3"},
+      {"date": "2024-03", "auditor": "ConsenSys Diligence", "filename": "2024-03-Consensys-Diligence.pdf", "scope_summary": "StakeWise V3", "v1_misclaim": "v1 brief listed as Stakingverse audit"},
+      {"date": "2024-06", "auditor": "Sigma Prime", "filename": "2024-06-Sigma-Prime.pdf", "scope_summary": "StakeWise V3"},
+      {"date": "2024-09", "auditor": "Sigma Prime", "filename": "2024-09-Sigma-Prime.pdf", "scope_summary": "StakeWise V3", "v1_misclaim": "v1 brief listed as Stakingverse audit"},
+      {"date": "2025-09", "auditor": "ABDK", "filename": "2025-09-ABDK.pdf", "scope_summary": "StakeWise V3 — directly covers EthVault impl deployed 2025-09-15"},
+      {"date": "2026-04", "auditor": "Statemind", "filename": "2026-04-Statemind.pdf", "scope_summary": "StakeWise V3 (most recent)"}
+    ]
+  },
+  "own_audits": {
+    "scope": "Cover Stakingverse's own LUKSO contracts (StakingverseVault.sol + SLYXToken.sol). Do NOT cover Ethereum side.",
+    "source_repo": "https://github.com/Stakingverse/pool-contracts/tree/main/audits",
+    "audits": [
+      {
+        "date": "2024-10",
+        "auditor": "Extropy",
+        "filename": "Liquid_Staking_Audit_Oct_2024.pdf",
+        "scope_summary": "StakingverseVault.sol + Liquid Staking contracts",
+        "covers_pre_upgrade": true
+      },
+      {
+        "date": "≤ 2024-10 (per README ordering)",
+        "auditor": "MiloTruck",
+        "filename": "Stakingverse_Audit_MiloTruck.pdf",
+        "scope_summary": "StakingverseVault.sol + Liquid Staking contracts",
+        "covers_pre_upgrade": true,
+        "key_finding": "First-depositor exploit (re-confirmed by Nethermind H-1)"
+      },
+      {
+        "date": "(date in PDF, not in filename)",
+        "auditor": "Enigma",
+        "filename": "Stakingverse_LST_Audit.pdf",
+        "scope_summary": "Liquid Staking Token (sLYX) only"
+      },
+      {
+        "date": "post-2024-10",
+        "auditor": "Nethermind AI Agent",
+        "filename": "nethermind-ai-agent-audit-report-stakingverse-pool-contracts.pdf",
+        "scope_summary": "StakingverseVault.sol + Liquid Staking contracts",
+        "findings_breakdown": "1 High, 5 Medium, 12 Low, 3 Info — 21 total",
+        "key_findings": [
+          "H-1 first-depositor exploit (FIXED, also previously found by MiloTruck)",
+          "M-1 single oracle has unilateral power to register validators and rebalance (acknowledged — Stakingverse trusts admin-controlled oracles)",
+          "M-3 pending withdrawal rebalancing vulnerability (acknowledged)",
+          "M-4 reentrancy risk in _afterTokenTransfer during sLYX burn (mitigated via nonReentrant on StakingverseVault.transferStake())"
+        ]
+      }
+    ],
+    "static_analysis_reports": [
+      {"file": "slither_report_StakingverseVault.md", "tool": "Slither", "automated": true},
+      {"file": "slither_report_SLYXToken.md", "tool": "Slither", "automated": true}
+    ],
+    "upstream_audits_note": "The Stakingverse audits README points to the Universal.Page Vault.sol upstream audit history at github.com/Universal-Page/contracts/audits/. Those audits are NOT Stakingverse's; they belong to the upstream codebase and are only relevant to the legacy Vault impl 0x2Cb02ef…f4 that is no longer in production."
+  },
+  "contracts": [
+    {
+      "address": "0x8a93a876912c9f03f88bc9114847cf5b63c89f56",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "ERC1967Proxy",
+      "role": "Stakingverse-deployed proxy → StakeWise V3 EthVault",
+      "verification_status": "verified",
+      "ownership": "stakingverse",
+      "source_origin": "etherscan",
+      "source_path": "contracts_gold_standard/ethereum/ERC1967Proxy_0x8a93a8/",
+      "proxy": true,
+      "implementation_address": "0x927a83c679a5e1a6435d6bfaef7f20d4db23e2cc",
+      "deployer": "0x93281072aa2725194e571e7fc924541bccd38819",
+      "deploy_date": "2023-11-20T15:10:11Z",
+      "tvl_signal": {
+        "direct_eth_balance": 37.97,
+        "total_assets_eth": 1697.15,
+        "usd_at_dl_price": 3962093
+      },
+      "audit_coverage": {
+        "own": "vanilla OZ ERC1967Proxy — no project-specific bytecode at this layer",
+        "inherited": "implementation behind it is audited under StakeWise programme (see infrastructure_audits_inherited)"
+      }
+    },
+    {
+      "address": "0x927a83c679a5e1a6435d6bfaef7f20d4db23e2cc",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "EthVault",
+      "role": "StakeWise V3 EthVault implementation — logic delegate behind Stakingverse's proxy",
+      "verification_status": "verified",
+      "ownership": "stakewise_infrastructure",
+      "source_origin": "etherscan",
+      "source_path": "contracts_gold_standard/ethereum/EthVault_0x927a83/",
+      "proxy": false,
+      "implementation_address": null,
+      "deployer": "0x3da6066fecf43e94e0ca78cbaccd5e36fcf69e1d",
+      "deployer_attribution": "stakewise",
+      "deploy_date": "2025-09-15T23:08:11Z",
+      "tvl_signal": {
+        "direct_eth_balance": 0,
+        "note": "logic-only contract; TVL accrues to the proxy that delegates to this impl"
+      },
+      "audit_coverage": {
+        "own": "n/a — not Stakingverse-authored",
+        "inherited": "audited under StakeWise V3 programme; ABDK 2025-09 most directly covers this impl"
+      }
+    },
+    {
+      "address": "0x9F49a95b0c3c9e2A6c77a16C177928294c0F6F04",
+      "chain_id": 42,
+      "chain_name": "lukso",
+      "contract_name": "TransparentUpgradeableProxy",
+      "role": "Stakingverse Staking Vault Proxy → StakingverseVault",
+      "verification_status": "verified",
+      "ownership": "stakingverse",
+      "source_origin": "lukso_blockscout",
+      "source_path": "contracts_gold_standard/lukso/StakingverseVaultProxy_0x9f49a9/",
+      "proxy": true,
+      "implementation_address": "0x1711b2e1b64F38ca33E51b717CFd27ACD1bd2E2D",
+      "deployer": "0xe460f0cB1227399B129715895157E8cB443b269E",
+      "deploy_date": "2024-02-28T21:47:24Z",
+      "tvl_signal": {
+        "direct_lyx_balance": 229015.28,
+        "total_assets_lyx": 2338742.40,
+        "usd_at_dl_price": 640027
+      },
+      "audit_coverage": {
+        "own": "implicit (OZ TransparentUpgradeableProxy is widely deployed)",
+        "inherited": "n/a"
+      },
+      "v1_attribution_correction": "v1 brief placed this on chain_id 1 (Ethereum) as 'Unknown / unmatched'. No code exists at this hex address on Ethereum (eth_getCode returns 0x). Correct chain is 42 (LUKSO)."
+    },
+    {
+      "address": "0x1711b2e1b64F38ca33E51b717CFd27ACD1bd2E2D",
+      "chain_id": 42,
+      "chain_name": "lukso",
+      "contract_name": "StakingverseVault",
+      "role": "Stakingverse vault logic — current implementation",
+      "verification_status": "verified",
+      "ownership": "stakingverse",
+      "source_origin": "lukso_blockscout",
+      "source_path": "contracts_gold_standard/lukso/StakingverseVault_0x1711b2/",
+      "proxy": false,
+      "implementation_address": null,
+      "deployer": "0xe460f0cB1227399B129715895157E8cB443b269E",
+      "deploy_date": "2025-03-31T19:42:36Z",
+      "tvl_signal": {
+        "note": "logic-only contract; TVL accrues to the proxy that delegates to this impl"
+      },
+      "audit_coverage": {
+        "own": "Extropy (Oct 2024), MiloTruck, Enigma, Nethermind AI Agent — all in github.com/Stakingverse/pool-contracts/audits/",
+        "inherited": "Universal.Page Vault.sol audits cover the upstream baseline (relevant context, not direct coverage)"
+      },
+      "code_lineage": "Derived from Universal.Page Vault.sol (https://github.com/Universal-Page/contracts/blob/main/src/pool/Vault.sol) per the Stakingverse audits README"
+    },
+    {
+      "address": "0x2Cb02ef26aDDAB15686ed634d70699ab64F195f4",
+      "chain_id": 42,
+      "chain_name": "lukso",
+      "contract_name": "Vault",
+      "role": "Original Universal.Page-derived Vault implementation, no longer in production",
+      "verification_status": "verified",
+      "ownership": "stakingverse",
+      "source_origin": "lukso_blockscout",
+      "source_path": "contracts_gold_standard/lukso/Vault_0x2cb02e/",
+      "proxy": false,
+      "implementation_address": null,
+      "deployer": "0xe460f0cB1227399B129715895157E8cB443b269E",
+      "deploy_date": "2024-02-28T21:51:36Z",
+      "lifecycle_status": "deprecated_2025_03_31",
+      "audit_coverage": {
+        "own": "Extropy + MiloTruck (pre-upgrade)",
+        "inherited": "Universal.Page Vault.sol audit history"
+      }
+    },
+    {
+      "address": "0x8A3982f0A7d154D11a5f43EEc7F50E52eBBc8F7D",
+      "chain_id": 42,
+      "chain_name": "lukso",
+      "contract_name": "TransparentUpgradeableProxy",
+      "role": "sLYX liquid staking token proxy → SLYXToken",
+      "verification_status": "verified",
+      "ownership": "stakingverse",
+      "source_origin": "lukso_blockscout",
+      "source_path": "contracts_gold_standard/lukso/SLYXTokenProxy_0x8a3982/",
+      "proxy": true,
+      "implementation_address": "0x08b28405A11348745A3187De2A29C730C53EB29B",
+      "deployer": "0xc064f535c1E0c2642326446070a10d0452cCf5fF",
+      "deploy_date": "2024-12-29T21:24:00Z",
+      "token_metadata": {
+        "name": "Stakingverse Staked LYX (sLYX)",
+        "symbol": "sLYX",
+        "decimals": 18,
+        "type": "LSP7",
+        "holders": 198,
+        "total_supply": 420154.32
+      },
+      "audit_coverage": {
+        "own": "implicit (OZ TransparentUpgradeableProxy)",
+        "inherited": "n/a"
+      }
+    },
+    {
+      "address": "0x08b28405A11348745A3187De2A29C730C53EB29B",
+      "chain_id": 42,
+      "chain_name": "lukso",
+      "contract_name": "SLYXToken",
+      "role": "sLYX token logic — current implementation",
+      "verification_status": "verified",
+      "ownership": "stakingverse",
+      "source_origin": "lukso_blockscout",
+      "source_path": "contracts_gold_standard/lukso/SLYXToken_0x08b284/",
+      "proxy": false,
+      "implementation_address": null,
+      "deployer": "0xe460f0cB1227399B129715895157E8cB443b269E",
+      "deploy_date": "2025-04-19T13:56:24Z",
+      "audit_coverage": {
+        "own": "Enigma (LST-specific), Extropy + Nethermind (combined)",
+        "inherited": "n/a"
+      }
+    },
+    {
+      "address": "0x30790526c7F48E92FAf8772E45c7AeCeeF0B8c91",
+      "chain_id": 42,
+      "chain_name": "lukso",
+      "contract_name": "(Blockscout label: Storage)",
+      "role": "Original sLYX implementation, replaced 2025-04-19",
+      "verification_status": "verified",
+      "ownership": "stakingverse",
+      "source_origin": "lukso_blockscout",
+      "source_path": null,
+      "proxy": false,
+      "implementation_address": null,
+      "deployer": "0xc064f535c1E0c2642326446070a10d0452cCf5fF",
+      "deploy_date": "2024-12-29T20:52:24Z",
+      "lifecycle_status": "deprecated_2025_04_19",
+      "audit_coverage": {
+        "own": "Enigma (pre-upgrade)",
+        "inherited": "n/a"
+      },
+      "note": "Sources NOT fetched into contracts_gold_standard/ (out of production). Address recorded for completeness only."
+    }
+  ],
+  "v1_pipeline_errors": [
+    {
+      "stage": "Stage 2 (topography)",
+      "defect": "LUKSO chain (chain_id 42) not recognized; all Stakingverse contracts placed on chain_id 1 (Ethereum)",
+      "consequence": "Contract 0x9f49a95b…f04 reported as 'unverified Ethereum contract' — actually the LUKSO StakingverseVaultProxy. SLYXToken (0x8A3982f0…7D), current StakingverseVault impl (0x1711b2e1…2D), legacy Vault impl, and current SLYXToken impl all entirely missed. ~5 of 7 production contracts not in v1 inventory."
+    },
+    {
+      "stage": "Stage 5 (audit-link discovery)",
+      "defect": "Substring-matching on the project keyword harvested URLs from both github.com/stakewise/v3-core/audits/ AND github.com/Stakingverse/pool-contracts/audits/ without disambiguation. Both repos contain 'stake' in the path.",
+      "consequence": "3 StakeWise V3 audit URLs (Halborn 2023-08, ConsenSys Diligence 2024-03, Sigma Prime 2024-09) attached to Stakingverse's docs_pages. Harvested as if they were Stakingverse's own audit history."
+    },
+    {
+      "stage": "Stage 15 (scope match)",
+      "defect": "The single TP match — Halborn 2023-08 → EthVault — is technically a match against the correct bytecode (Halborn did audit StakeWise's EthVault) but is mislabeled as a Stakingverse audit when it belongs to StakeWise's audit programme.",
+      "consequence": "v1 reports '33.3% audit coverage' based on this misattribution. The true picture: Stakingverse's own audit programme (Extropy + MiloTruck + Enigma + Nethermind) is none of these matches; v1 missed all four of those audits entirely."
+    },
+    {
+      "stage": "Stage 16 (balance probe)",
+      "defect": "Reads the Ethereum proxy's direct ETH balance (~37.97 ETH ≈ $76K-$88K) instead of calling totalAssets() to capture validator-staked deposits.",
+      "consequence": "Reports '$88,912 on-chain TVL' against DL's $4.3M, flagging a phantom discrepancy. The real TVL is $4.6M with no missing accounting."
+    },
+    {
+      "stage": "(not implemented)",
+      "defect": "No 'operator-of-third-party-bytecode' attribution path. The pipeline cannot represent the StakeWise V3 vault operator pattern where Stakingverse runs but does not author the EthVault bytecode.",
+      "consequence": "EthVault reported as Stakingverse's own contract; StakeWise's audit programme attributed to Stakingverse. This same defect bites Swell (Nucleus boring vault) and stake.link (Chainlink OperatorStakingPool)."
+    }
+  ],
+  "caveats": [
+    "Multisig / timelock posture for the Stakingverse admin EOAs (0xe460f0cB on LUKSO, 0x93281072 on Ethereum) not inspected — both appear to be plain EOAs.",
+    "StakeWise vault admin role membership for the Ethereum proxy not extracted from EthVault storage.",
+    "Universal.Page upstream audit history not enumerated. Relevant only to the legacy 0x2Cb02ef…f4 Vault impl that is no longer in production.",
+    "LYX market price not separately verified — DL's implied $0.27/LYX is consistent with 2026 prices but not confirmed against deep liquidity.",
+    "Off-chain validator key custody and slashing posture (operated via github.com/Stakingverse/cli) is operational, not bytecode-related, and is out of audit scope here."
+  ],
+  "supersedes": "agnt-brief/stakingverse/SCOPE_NOTE.md (v1 brief)"
+}

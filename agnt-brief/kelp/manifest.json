@@ -1,0 +1,222 @@
+{
+  "project": "kelp",
+  "generated": "2026-05-05T20:48:38.016Z",
+  "scope_match_run_id": null,
+  "protocol_tvl_usd": 1594134309.7706668,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": null,
+  "total_contracts": 11,
+  "source_available_contracts": 8,
+  "chains": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum"
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea"
+    },
+    {
+      "chain_id": 534352,
+      "chain_name": "scroll"
+    }
+  ],
+  "proxy_links": [
+    {
+      "chain_id": 1,
+      "proxy_address": "0x036676389e48133b63a802f8635ad39e752d375d",
+      "implementation_address": "0xea38dfa108318288f36f13d06e821a64acda8320"
+    },
+    {
+      "chain_id": 1,
+      "proxy_address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "implementation_address": "0x7159107483e623707c18c6e06cbc095bd0717783"
+    }
+  ],
+  "contracts": [
+    {
+      "address": "0x036676389e48133b63a802f8635ad39e752d375d",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "TransparentUpgradeableProxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/TransparentUpgradeableProxy_0x036676.sol",
+      "proxy": true,
+      "implementation_address": "0xea38dfa108318288f36f13d06e821a64acda8320",
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x0bb9ab78aaf7179b7515e6753d89822b91e670c4",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "kUSD",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/kUSD_0x0bb9ab.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x513d27c94c0d81eed9dc2a88b4531a69993187cf",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "ksETH",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/ksETH_0x513d27.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x7159107483e623707c18c6e06cbc095bd0717783",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "RSETH",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/RSETH_0x715910.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "TransparentUpgradeableProxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/TransparentUpgradeableProxy_0xa1290d.sol",
+      "proxy": true,
+      "implementation_address": "0x7159107483e623707c18c6e06cbc095bd0717783",
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xea38dfa108318288f36f13d06e821a64acda8320",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "LRTDepositPool",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/LRTDepositPool_0xea38df.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xf02c96dbbb92dc0325ad52b3f9f2b951f972bf00",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "krETH",
+      "verification_status": "unknown",
+      "source_available": false,
+      "source_origin": "sourcify",
+      "source_path": "contracts/ethereum/UNVERIFIED_0xf02c96.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xd75787ba9aba324420d522bda84c08c87e5099b1",
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "contract_name": "RSETH_OFT",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/sonic/RSETH_OFT_0xd75787.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x1bc71130a0e39942a7658878169764bbd8a45993",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "contract_name": "RSETH_OFT",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/base/RSETH_OFT_0x1bc711.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x1b3a9a689ba7555f9d7984d7ad4025574ed5a0f9",
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "contract_name": "Unknown",
+      "verification_status": "unverified",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/linea/UNVERIFIED_0x1b3a9a.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x65421ba909200b81640d98b979d07487c9781b66",
+      "chain_id": 534352,
+      "chain_name": "scroll",
+      "contract_name": "RSETH_OFT",
+      "verification_status": "unknown",
+      "source_available": false,
+      "source_origin": "sourcify",
+      "source_path": "contracts/scroll/UNVERIFIED_0x65421b.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    }
+  ]
+}

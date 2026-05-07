@@ -1,0 +1,14 @@
+{
+  "slug": "43_arb_bribeManager_impl",
+  "chain_id": 42161,
+  "address": "0xe5b4b7c575a6ccedc072622b9dcbc11552baef8e",
+  "equilibria_doc_role": "BribeManager",
+  "etherscan_contract_name": "BribeManager",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

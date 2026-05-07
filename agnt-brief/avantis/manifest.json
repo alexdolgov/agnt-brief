@@ -1,0 +1,147 @@
+{
+  "project": "avantis",
+  "generated": "2026-05-05T20:47:33.952Z",
+  "scope_match_run_id": "recovery-full-v5-fixed-matcher-2026-05-05-6b7bbd16",
+  "protocol_tvl_usd": 50424638.281385124,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": 4.311801632366787,
+  "total_contracts": 7,
+  "source_available_contracts": 7,
+  "chains": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base"
+    }
+  ],
+  "proxy_links": [
+    {
+      "chain_id": 8453,
+      "proxy_address": "0x83084cb182162473d6feffcd3aa48ba55a7b66f7",
+      "implementation_address": "0x5d023a1a4fad735ad78a3f9012701b1223637c8f"
+    },
+    {
+      "chain_id": 8453,
+      "proxy_address": "0x944766f715b51967e56afde5f0aa76ceacc9e7f9",
+      "implementation_address": "0xc3769e440e3515ba374372837f76aafdc4fba26d"
+    },
+    {
+      "chain_id": 8453,
+      "proxy_address": "0xe9fb8c70af1b99f2baaa07aa926fcf3d237348dd",
+      "implementation_address": "0xf34e3a38280a7e600cb4aa6d8c2a160d8e16127f"
+    }
+  ],
+  "contracts": [
+    {
+      "address": "0x5d023a1a4fad735ad78a3f9012701b1223637c8f",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "contract_name": "Tranche",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/base/Tranche_0x5d023a.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x696f9436b67233384889472cd7cd58a6fb5df4f1",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "contract_name": "Token",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/base/Token_0x696f94.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 0.0029474999999999996,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x83084cb182162473d6feffcd3aa48ba55a7b66f7",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "contract_name": "TransparentUpgradeableProxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/base/TransparentUpgradeableProxy_0x83084c.sol",
+      "proxy": true,
+      "implementation_address": "0x5d023a1a4fad735ad78a3f9012701b1223637c8f",
+      "role_category": null,
+      "audit_coverage": "UC",
+      "contract_tvl_usd": 0.003670463143458029,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x944766f715b51967e56afde5f0aa76ceacc9e7f9",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "contract_name": "TransparentUpgradeableProxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/base/TransparentUpgradeableProxy_0x944766.sol",
+      "proxy": true,
+      "implementation_address": "0xc3769e440e3515ba374372837f76aafdc4fba26d",
+      "role_category": null,
+      "audit_coverage": "UC",
+      "contract_tvl_usd": 0.0001332500004557,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0xc3769e440e3515ba374372837f76aafdc4fba26d",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "contract_name": "Tranche",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/base/Tranche_0xc3769e.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0xe9fb8c70af1b99f2baaa07aa926fcf3d237348dd",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "contract_name": "TransparentUpgradeableProxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/base/TransparentUpgradeableProxy_0xe9fb8c.sol",
+      "proxy": true,
+      "implementation_address": "0xf34e3a38280a7e600cb4aa6d8c2a160d8e16127f",
+      "role_category": null,
+      "audit_coverage": "UC",
+      "contract_tvl_usd": 0.0001332500004557,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0xf34e3a38280a7e600cb4aa6d8c2a160d8e16127f",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "contract_name": "VaultManager",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/base/VaultManager_0xf34e3a.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    }
+  ]
+}

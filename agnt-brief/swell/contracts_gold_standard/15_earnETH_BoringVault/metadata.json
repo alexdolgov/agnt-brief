@@ -1,0 +1,12 @@
+{
+  "slug": "15_earnETH_BoringVault",
+  "address": "0x9ed15383940cc380faef0a75edace507cc775f22",
+  "etherscan_contract_name": "BoringVault",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "shanghai",
+  "proxy": "0",
+  "implementation": ""
+}

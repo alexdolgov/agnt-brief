@@ -1,0 +1,12 @@
+{
+  "slug": "04_rswETH_impl",
+  "address": "0x4796d939b22027c2876d5ce9fde52da9ec4e2362",
+  "etherscan_contract_name": "RswETH",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

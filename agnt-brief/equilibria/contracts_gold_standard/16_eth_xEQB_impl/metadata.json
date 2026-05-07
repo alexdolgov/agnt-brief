@@ -1,0 +1,14 @@
+{
+  "slug": "16_eth_xEQB_impl",
+  "chain_id": 1,
+  "address": "0x96c4a48abdf781e9c931cfa92ec0167ba219ad8e",
+  "equilibria_doc_role": "XEqbToken",
+  "etherscan_contract_name": "XEqbToken",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

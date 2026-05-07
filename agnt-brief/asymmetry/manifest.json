@@ -1,0 +1,83 @@
+{
+  "project": "asymmetry",
+  "generated": "2026-05-05T20:47:33.435Z",
+  "scope_match_run_id": "recovery-full-v5-fixed-matcher-2026-05-05-6b7bbd16",
+  "protocol_tvl_usd": 2957849.7775972188,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": null,
+  "total_contracts": 4,
+  "source_available_contracts": 2,
+  "chains": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum"
+    }
+  ],
+  "proxy_links": [],
+  "contracts": [
+    {
+      "address": "0x85e30b8b263bc64d94b827ed450f2edfee8579da",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "BoldToken",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/BoldToken_0x85e30b.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xbe83fd842db4937c0c3d15b2aba6af7e854f8dcb",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "CryptoWithStablePriceWBTC",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/CryptoWithStablePriceWBTC_0xbe83fd.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UC",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xbef434e2acf0fbad1f0579d2376fed0d1cfc4217",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "Unknown",
+      "verification_status": "unknown",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/ethereum/UNVERIFIED_0xbef434.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xcff0dcab01563e5324ef9d0adb0677d9c167d791",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "Unknown",
+      "verification_status": "unknown",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/ethereum/UNVERIFIED_0xcff0dc.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    }
+  ]
+}

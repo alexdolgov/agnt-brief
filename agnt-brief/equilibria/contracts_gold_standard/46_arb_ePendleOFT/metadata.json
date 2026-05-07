@@ -1,0 +1,14 @@
+{
+  "slug": "46_arb_ePendleOFT",
+  "chain_id": 42161,
+  "address": "0x8c9b5b2e6e136b6ee66fca6229191e749c0029f5",
+  "equilibria_doc_role": "ePendleOFT",
+  "etherscan_contract_name": "EPendleOFT",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

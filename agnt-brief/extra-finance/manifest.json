@@ -1,0 +1,103 @@
+{
+  "project": "extra-finance",
+  "generated": "2026-05-05T20:47:38.284Z",
+  "scope_match_run_id": "recovery-full-v5-fixed-matcher-2026-05-05-ea32eab5",
+  "protocol_tvl_usd": 29266413.024810288,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": null,
+  "total_contracts": 5,
+  "source_available_contracts": 5,
+  "chains": [
+    {
+      "chain_id": 10,
+      "chain_name": "optimism"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base"
+    }
+  ],
+  "proxy_links": [],
+  "contracts": [
+    {
+      "address": "0xb7d8613728efcfbb18bcd63deec06f64441d322a",
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "contract_name": "RewardDistributor",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/optimism/RewardDistributor_0xb7d861.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xbb505c54d71e9e599cb8435b4f0ceec05fc71cbd",
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "contract_name": "LendingPool",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/optimism/LendingPool_0xbb505c.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xe0bec4f45aef64cec9dcb9010d4beffb13e91466",
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "contract_name": "VeToken",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/optimism/VeToken_0xe0bec4.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xf9cfb8a62f50e10adde5aa888b44cf01c5957055",
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "contract_name": "VeloPositionManager",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/optimism/VeloPositionManager_0xf9cfb8.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x2dad3a13ef0c6366220f989157009e501e7938f8",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "contract_name": "EXTRAoft",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/base/EXTRAoft_0x2dad3a.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "02_swETH_impl",
+  "address": "0xce95ba824ae9a4df9b303c0bbf4d605ba2affbfc",
+  "etherscan_contract_name": "swETH",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

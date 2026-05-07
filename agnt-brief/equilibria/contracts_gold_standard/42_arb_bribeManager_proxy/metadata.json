@@ -1,0 +1,14 @@
+{
+  "slug": "42_arb_bribeManager_proxy",
+  "chain_id": 42161,
+  "address": "0xb3c40b02f38f61f3d141c325c19f35b1f9df99ca",
+  "equilibria_doc_role": "bribeManager",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0xe5b4b7c575a6ccedc072622b9dcbc11552baef8e"
+}

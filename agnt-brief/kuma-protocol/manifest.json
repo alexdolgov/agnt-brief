@@ -1,0 +1,229 @@
+{
+  "project": "kuma-protocol",
+  "generated": "2026-05-05T20:48:38.173Z",
+  "scope_match_run_id": "recovery-full-v5-fixed-matcher-2026-05-05-c067f024",
+  "protocol_tvl_usd": 3083816.515269928,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": null,
+  "total_contracts": 11,
+  "source_available_contracts": 7,
+  "chains": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea"
+    }
+  ],
+  "proxy_links": [
+    {
+      "chain_id": 1,
+      "proxy_address": "0x01bf66becdcfd6d59a5ca18869f494fea086cdfd",
+      "implementation_address": "0x3cd09352eebe8b9e302b83a59d90d19031290f80"
+    },
+    {
+      "chain_id": 1,
+      "proxy_address": "0xf2b5c482358dbaa495d442b57c163dbedbf7868e",
+      "implementation_address": "0x94abc2880f0205ff170d0e6e20a2d9e35a851ab3"
+    },
+    {
+      "chain_id": 137,
+      "proxy_address": "0x2cb7285733a30bb08303b917a7a519c88146c6eb",
+      "implementation_address": "0xedb20e3cd8c7c149ea57fe470fb9685c4b1b8703"
+    },
+    {
+      "chain_id": 137,
+      "proxy_address": "0xa66818b5bda74c081a9582d8aa8929fae77e214a",
+      "implementation_address": "0x197c9eb5fd433e13b5876a4ae47dbcb2e6dd795e"
+    },
+    {
+      "chain_id": 59144,
+      "proxy_address": "0x7a6aa80b49017f3e091574ab5c6977d863ff3865",
+      "implementation_address": "0xfe96850285eea29c754473b95900b7db75f2e8e2"
+    }
+  ],
+  "contracts": [
+    {
+      "address": "0x01bf66becdcfd6d59a5ca18869f494fea086cdfd",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "ERC1967Proxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/ERC1967Proxy_0x01bf66.sol",
+      "proxy": true,
+      "implementation_address": "0x3cd09352eebe8b9e302b83a59d90d19031290f80",
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x3cd09352eebe8b9e302b83a59d90d19031290f80",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "KIBToken",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/KIBToken_0x3cd093.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x94abc2880f0205ff170d0e6e20a2d9e35a851ab3",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "KIBToken",
+      "verification_status": "verified",
+      "source_available": false,
+      "source_origin": "sourcify",
+      "source_path": "contracts/ethereum/UNVERIFIED_0x94abc2.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0xf2b5c482358dbaa495d442b57c163dbedbf7868e",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "contract_name": "ERC1967Proxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/ethereum/ERC1967Proxy_0xf2b5c4.sol",
+      "proxy": true,
+      "implementation_address": "0x94abc2880f0205ff170d0e6e20a2d9e35a851ab3",
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x197c9eb5fd433e13b5876a4ae47dbcb2e6dd795e",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "contract_name": "KIBToken",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/polygon/KIBToken_0x197c9e.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x2cb7285733a30bb08303b917a7a519c88146c6eb",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "contract_name": "ERC1967Proxy",
+      "verification_status": "verified",
+      "source_available": false,
+      "source_origin": "sourcify",
+      "source_path": "contracts/polygon/UNVERIFIED_0x2cb728.md",
+      "proxy": true,
+      "implementation_address": "0xedb20e3cd8c7c149ea57fe470fb9685c4b1b8703",
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0xa66818b5bda74c081a9582d8aa8929fae77e214a",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "contract_name": "ERC1967Proxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/polygon/ERC1967Proxy_0xa66818.sol",
+      "proxy": true,
+      "implementation_address": "0x197c9eb5fd433e13b5876a4ae47dbcb2e6dd795e",
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0xedb20e3cd8c7c149ea57fe470fb9685c4b1b8703",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "contract_name": "KIBToken",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/polygon/KIBToken_0xedb20e.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x09b88f74fb9e243c4a3f4d2ffe3d1ba4287a476c",
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "contract_name": "Unknown",
+      "verification_status": "unverified",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/linea/UNVERIFIED_0x09b88f.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0x7a6aa80b49017f3e091574ab5c6977d863ff3865",
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "contract_name": "ERC1967Proxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/linea/ERC1967Proxy_0x7a6aa8.sol",
+      "proxy": true,
+      "implementation_address": "0xfe96850285eea29c754473b95900b7db75f2e8e2",
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    },
+    {
+      "address": "0xfe96850285eea29c754473b95900b7db75f2e8e2",
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "contract_name": "KIBToken",
+      "verification_status": "verified",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/linea/UNVERIFIED_0xfe9685.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "NO_SCOPE_ROW",
+      "contract_tvl_usd": 0,
+      "contract_tvl_unavailable_reason": null
+    }
+  ]
+}

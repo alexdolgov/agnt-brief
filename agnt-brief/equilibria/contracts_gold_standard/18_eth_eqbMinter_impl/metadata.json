@@ -1,0 +1,14 @@
+{
+  "slug": "18_eth_eqbMinter_impl",
+  "chain_id": 1,
+  "address": "0x09bae4c38b1a9142726c6f08dc4d1260b0c8e94d",
+  "equilibria_doc_role": "EqbMinterMainchain",
+  "etherscan_contract_name": "EqbMinterMainchain",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "24_eth_EqbMsgSendEndpoint",
+  "chain_id": 1,
+  "address": "0x920873e5b302a619c54c908adfb77a1c4256a3b8",
+  "equilibria_doc_role": "EqbMsgSendEndpoint",
+  "etherscan_contract_name": "EqbMsgSendEndpoint",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

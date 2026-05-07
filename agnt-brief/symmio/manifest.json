@@ -1,0 +1,137 @@
+{
+  "project": "symmio",
+  "generated": "2026-05-05T20:47:54.382Z",
+  "scope_match_run_id": "recovery-full-v5-fixed-matcher-2026-05-05-2b686225",
+  "protocol_tvl_usd": 3600525.242958245,
+  "tvl_methodology_class": "direct_balance",
+  "pricing_recall_pct": null,
+  "total_contracts": 7,
+  "source_available_contracts": 4,
+  "chains": [
+    {
+      "chain_id": 137,
+      "chain_name": "polygon"
+    }
+  ],
+  "proxy_links": [
+    {
+      "chain_id": 137,
+      "proxy_address": "0x78174a787914ae4eb8c1eac87fea19c547fd474d",
+      "implementation_address": "0x950baef761a17cd0f77d6db8008ebebd011fca4b"
+    }
+  ],
+  "contracts": [
+    {
+      "address": "0x3b5ac601c7bb74999ab3135fa43cbdbc6ab74570",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "contract_name": "Unknown",
+      "verification_status": "unverified",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/polygon/UNVERIFIED_0x3b5ac6.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x60803461016157601f610e2d3881900391820160",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "contract_name": "Unknown",
+      "verification_status": "unverified",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/polygon/UNVERIFIED_0x608034.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x78174a787914ae4eb8c1eac87fea19c547fd474d",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "contract_name": "TransparentUpgradeableProxy",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/polygon/TransparentUpgradeableProxy_0x78174a.sol",
+      "proxy": true,
+      "implementation_address": "0x950baef761a17cd0f77d6db8008ebebd011fca4b",
+      "role_category": null,
+      "audit_coverage": "UC",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x950baef761a17cd0f77d6db8008ebebd011fca4b",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "contract_name": "MultiAccount",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/polygon/MultiAccount_0x950bae.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "TP",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0x976c87cd3eb2de462db249cca711e4c89154537b",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "contract_name": "Unknown",
+      "verification_status": "unknown",
+      "source_available": false,
+      "source_origin": "none",
+      "source_path": "contracts/polygon/UNVERIFIED_0x976c87.md",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xb3a34b46a9103fb157b5b1af4655ec703b1578d2",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "contract_name": "ProxyAdmin",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/polygon/ProxyAdmin_0xb3a34b.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    },
+    {
+      "address": "0xc0788bb9293e53703a4e3921409849fae006306c",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "contract_name": "ProxyAdmin",
+      "verification_status": "verified",
+      "source_available": true,
+      "source_origin": "etherscan_cache",
+      "source_path": "contracts/polygon/ProxyAdmin_0xc0788b.sol",
+      "proxy": false,
+      "implementation_address": null,
+      "role_category": null,
+      "audit_coverage": "UNMATCHED",
+      "contract_tvl_usd": null,
+      "contract_tvl_unavailable_reason": "not_probed"
+    }
+  ]
+}

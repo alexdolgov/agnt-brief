@@ -1,0 +1,14 @@
+{
+  "slug": "45_arb_vaultEPendle_proxy",
+  "chain_id": 42161,
+  "address": "0x37227785a1f4545ed914690e395e4cfe96b8319f",
+  "equilibria_doc_role": "vaultEPendle",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0x7b9eebd2290f5f85820906f78ca1b721abdae608"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "13_GovernanceTimelock",
+  "address": "0xb72d8F5213b3E52FAf13Aa074b03C4788e78349F",
+  "etherscan_contract_name": "GovernanceTimelock",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "115",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "05_wstLINK",
+  "address": "0x911D86C72155c33993d594B0Ec7E6206B4C803da",
+  "etherscan_contract_name": "WrappedSDToken",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "GNU GPLv3",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

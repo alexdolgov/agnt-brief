@@ -1,0 +1,12 @@
+{
+  "slug": "12_SDLPool_proxy",
+  "address": "0x0B2eF910ad0b34bf575Eb09d37fd7DA6c148CA4d",
+  "etherscan_contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0x88dd5c421f7b9fcdb83fd534bd83d22f8b80ea75"
+}

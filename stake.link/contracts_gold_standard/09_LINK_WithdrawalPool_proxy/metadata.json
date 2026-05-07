@@ -1,0 +1,12 @@
+{
+  "slug": "09_LINK_WithdrawalPool_proxy",
+  "address": "0xa60B5146E44ff755e32BD51532842ceB41D0C248",
+  "etherscan_contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0x9e00fd7e4754cc0deca4d653c61190380318ed17"
+}

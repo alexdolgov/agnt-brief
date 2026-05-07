@@ -1,0 +1,12 @@
+{
+  "slug": "11_SDLToken_StakingAllowance",
+  "address": "0xa95C5ebB86E0dE73B4fB8c47A45B792CFeA28C23",
+  "etherscan_contract_name": "StakingAllowance",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "MIT",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

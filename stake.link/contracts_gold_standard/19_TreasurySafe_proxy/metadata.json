@@ -1,0 +1,12 @@
+{
+  "slug": "19_TreasurySafe_proxy",
+  "address": "0xB351EC0FEaF4B99FdFD36b484d9EC90D0422493D",
+  "etherscan_contract_name": "GnosisSafeProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "0",
+  "runs": "200",
+  "license_type": "GNU LGPLv3",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552"
+}

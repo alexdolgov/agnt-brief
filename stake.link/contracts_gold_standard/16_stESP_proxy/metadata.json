@@ -1,0 +1,12 @@
+{
+  "slug": "16_stESP_proxy",
+  "address": "0x5273a75694311A6c4F2AcF5C5B8566D965cb6e50",
+  "etherscan_contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0x2fe5a394f24b3dec644f982a9bb0bafe57308597"
+}

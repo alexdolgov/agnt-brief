@@ -1,0 +1,12 @@
+{
+  "slug": "06_LINK_CommunityVCS_proxy",
+  "address": "0xAc12290b097f6893322F5430627e472131fBC1B5",
+  "etherscan_contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0x14024f4e7fef08cb19f8051456e39ee899990744"
+}

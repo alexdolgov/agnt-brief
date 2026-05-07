@@ -1,0 +1,12 @@
+{
+  "slug": "15_wstPOL",
+  "address": "0x2091d83592D79B4De5fD2ce3D98679c32A9555e6",
+  "etherscan_contract_name": "WrappedSDToken",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "115",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": ""
+}

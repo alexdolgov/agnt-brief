@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "01_stLINK_proxy",
+    "address": "0xb8b295df2cd735b15BE5Eb419517Aa626fc43cD5",
+    "files": 13,
+    "bytes": 37647,
+    "etherscan_contract_name": "ERC1967Proxy",
+    "compiler_version": "v0.8.9+commit.e5eed63a",
+    "kind": "multi"
+  },
+  {
+    "slug": "02_stLINK_impl",
+    "address": "0x2FE5a394f24b3dec644f982a9bb0bafe57308597",
+    "files": 20,
+    "bytes": 99054,
+    "etherscan_contract_name": "StakingPool",
+    "compiler_version": "v0.8.22+commit.4fc1097e",
+    "kind": "multi"
+  },
+  {
+    "slug": "03_LINK_PriorityPool_proxy",
+    "address": "0xDdC796a66E8b83d0BcCD97dF33A6CcFBA8fd60eA",
+    "files": 14,
+    "bytes": 43290,
+    "etherscan_contract_name": "ERC1967Proxy",
+    "compiler_version": "v0.8.9+commit.e5eed63a",
+    "kind": "multi"
+  },
+  {
+    "slug": "04_LINK_PriorityPool_impl",
+    "address": "0x6Fb9CC7d10A5286A864e760C2756e7F6d44D4d26",
+    "files": 24,
+    "bytes": 120971,
+    "etherscan_contract_name": "PriorityPool",
+    "compiler_version": "v0.8.22+commit.4fc1097e",
+    "kind": "multi"
+  },
+  {
+    "slug": "05_wstLINK",
+    "address": "0x911D86C72155c33993d594B0Ec7E6206B4C803da",
+    "files": 1,
+    "bytes": 23195,
+    "etherscan_contract_name": "WrappedSDToken",
+    "compiler_version": "v0.8.15+commit.e14f2714",
+    "kind": "single"
+  },
+  {
+    "slug": "06_LINK_CommunityVCS_proxy",
+    "address": "0xAc12290b097f6893322F5430627e472131fBC1B5",
+    "files": 14,
+    "bytes": 43290,
+    "etherscan_contract_name": "ERC1967Proxy",
+    "compiler_version": "v0.8.9+commit.e5eed63a",
+    "kind": "multi"
+  },
+  {
+    "slug": "07_LINK_OperatorVCS_proxy",
+    "address": "0x4852e48215A4785eE99B640CACED5378Cc39D2A4",
+    "files": 13,
+    "bytes": 37647,
+    "etherscan_contract_name": "ERC1967Proxy",
+    "compiler_version": "v0.8.9+commit.e5eed63a",
+    "kind": "multi"
+  },
+  {
+    "slug": "08_LINK_RebaseController",
+    "address": "0x1711e93eec78ba83D38C26f0fF284eB478bdbec4",
+    "files": 10,
+    "bytes": 18041,
+    "etherscan_contract_name": "RebaseController",
+    "compiler_version": "v0.8.15+commit.e14f2714",
+    "kind": "multi"
+  },
+  {
+    "slug": "09_LINK_WithdrawalPool_proxy",
+    "address": "0xa60B5146E44ff755e32BD51532842ceB41D0C248",
+    "files": 13,
+    "bytes": 39321,
+    "etherscan_contract_name": "ERC1967Proxy",
+    "compiler_version": "v0.8.20+commit.a1b79de6",
+    "kind": "multi"
+  },
+  {
+    "slug": "10_LINKMigrator",
+    "address": "0x08E11a9A74E7aCc51aCe382b6D02aBE8B7cF7786",
+    "files": 9,
+    "bytes": 34181,
+    "etherscan_contract_name": "LINKMigrator",
+    "compiler_version": "v0.8.22+commit.4fc1097e",
+    "kind": "multi"
+  },
+  {
+    "slug": "11_SDLToken_StakingAllowance",
+    "address": "0xa95C5ebB86E0dE73B4fB8c47A45B792CFeA28C23",
+    "files": 1,
+    "bytes": 24598,
+    "etherscan_contract_name": "StakingAllowance",
+    "compiler_version": "v0.8.15+commit.e14f2714",
+    "kind": "single"
+  },
+  {
+    "slug": "12_SDLPool_proxy",
+    "address": "0x0B2eF910ad0b34bf575Eb09d37fd7DA6c148CA4d",
+    "files": 14,
+    "bytes": 43290,
+    "etherscan_contract_name": "ERC1967Proxy",
+    "compiler_version": "v0.8.9+commit.e5eed63a",
+    "kind": "multi"
+  },
+  {
+    "slug": "13_GovernanceTimelock",
+    "address": "0xb72d8F5213b3E52FAf13Aa074b03C4788e78349F",
+    "files": 12,
+    "bytes": 49590,
+    "etherscan_contract_name": "GovernanceTimelock",
+    "compiler_version": "v0.8.15+commit.e14f2714",
+    "kind": "multi"
+  },
+  {
+    "slug": "14_stPOL_proxy",
+    "address": "0x2ff4390dB61F282Ef4E6D4612c776b809a541753",
+    "files": 13,
+    "bytes": 39321,
+    "etherscan_contract_name": "ERC1967Proxy",
+    "compiler_version": "v0.8.20+commit.a1b79de6",
+    "kind": "multi"
+  },
+  {
+    "slug": "15_wstPOL",
+    "address": "0x2091d83592D79B4De5fD2ce3D98679c32A9555e6",
+    "files": 9,
+    "bytes": 22975,
+    "etherscan_contract_name": "WrappedSDToken",
+    "compiler_version": "v0.8.22+commit.4fc1097e",
+    "kind": "multi"
+  },
+  {
+    "slug": "16_stESP_proxy",
+    "address": "0x5273a75694311A6c4F2AcF5C5B8566D965cb6e50",
+    "files": 13,
+    "bytes": 39321,
+    "etherscan_contract_name": "ERC1967Proxy",
+    "compiler_version": "v0.8.20+commit.a1b79de6",
+    "kind": "multi"
+  },
+  {
+    "slug": "17_ESP_EspressoStrategy_proxy",
+    "address": "0xF0fb3Aa0f6a4B84494B78f81103a789e81540344",
+    "files": 13,
+    "bytes": 39321,
+    "etherscan_contract_name": "ERC1967Proxy",
+    "compiler_version": "v0.8.20+commit.a1b79de6",
+    "kind": "multi"
+  },
+  {
+    "slug": "18_ixETH_proxy",
+    "address": "0x535321013A1E2D5aF3B1853812a64CA3fc6C1fa1",
+    "files": 13,
+    "bytes": 37647,
+    "etherscan_contract_name": "ERC1967Proxy",
+    "compiler_version": "v0.8.9+commit.e5eed63a",
+    "kind": "multi"
+  },
+  {
+    "slug": "19_TreasurySafe_proxy",
+    "address": "0xB351EC0FEaF4B99FdFD36b484d9EC90D0422493D",
+    "files": 1,
+    "bytes": 8046,
+    "etherscan_contract_name": "GnosisSafeProxy",
+    "compiler_version": "v0.7.6+commit.7338295f",
+    "kind": "single"
+  },
+  {
+    "slug": "20_OperationalSafe_proxy",
+    "address": "0xdedA4c43136D4f40F75073B0d815c648330fD072",
+    "files": 1,
+    "bytes": 8046,
+    "etherscan_contract_name": "GnosisSafeProxy",
+    "compiler_version": "v0.7.6+commit.7338295f",
+    "kind": "single"
+  }
+]

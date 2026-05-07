@@ -1,0 +1,12 @@
+{
+  "slug": "08_LINK_RebaseController",
+  "address": "0x1711e93eec78ba83D38C26f0fF284eB478bdbec4",
+  "etherscan_contract_name": "RebaseController",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": "1",
+  "runs": "115",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

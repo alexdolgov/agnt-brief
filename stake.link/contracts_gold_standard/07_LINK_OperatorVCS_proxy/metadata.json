@@ -1,0 +1,12 @@
+{
+  "slug": "07_LINK_OperatorVCS_proxy",
+  "address": "0x4852e48215A4785eE99B640CACED5378Cc39D2A4",
+  "etherscan_contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0x25fb2b9030f8c0002d018bb02b7d86b844baaf57"
+}

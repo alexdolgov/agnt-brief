@@ -1,0 +1,12 @@
+{
+  "slug": "04_LINK_PriorityPool_impl",
+  "address": "0x6Fb9CC7d10A5286A864e760C2756e7F6d44D4d26",
+  "etherscan_contract_name": "PriorityPool",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "115",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": ""
+}

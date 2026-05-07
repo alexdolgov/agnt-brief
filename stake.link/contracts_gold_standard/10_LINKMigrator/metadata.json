@@ -1,0 +1,12 @@
+{
+  "slug": "10_LINKMigrator",
+  "address": "0x08E11a9A74E7aCc51aCe382b6D02aBE8B7cF7786",
+  "etherscan_contract_name": "LINKMigrator",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "115",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": ""
+}

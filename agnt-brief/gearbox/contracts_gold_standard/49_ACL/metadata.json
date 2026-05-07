@@ -1,0 +1,13 @@
+{
+  "slug": "49_ACL",
+  "address": "0x523dA3a8961E4dD4f6206DBf7E6c749f51796bb3",
+  "chain_id": 1,
+  "etherscan_contract_name": "ACL",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "0",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

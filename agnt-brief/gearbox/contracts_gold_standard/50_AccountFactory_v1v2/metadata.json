@@ -1,0 +1,13 @@
+{
+  "slug": "50_AccountFactory_v1v2",
+  "address": "0x444CD42BaEdDEB707eeD823f7177b9ABcC779C04",
+  "chain_id": 1,
+  "etherscan_contract_name": "AccountFactory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "0",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "46_CompositePriceFeed_sample",
+  "address": "0xE72aFa8bA8845Bda2eDf13556C03A1B976bc91ED",
+  "chain_id": 1,
+  "etherscan_contract_name": "CompositePriceFeed",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

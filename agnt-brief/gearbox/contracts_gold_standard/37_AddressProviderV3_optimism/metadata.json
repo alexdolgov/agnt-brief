@@ -1,0 +1,13 @@
+{
+  "slug": "37_AddressProviderV3_optimism",
+  "address": "0x3761ca4bfacfcffc1b8034e69f19116dd6756726",
+  "chain_id": 10,
+  "etherscan_contract_name": "AddressProviderV3",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

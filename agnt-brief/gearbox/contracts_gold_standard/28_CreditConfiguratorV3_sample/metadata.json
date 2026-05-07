@@ -1,0 +1,13 @@
+{
+  "slug": "28_CreditConfiguratorV3_sample",
+  "address": "0x7504B2119710C23818A31a0B5dDA04d84A3DA6C2",
+  "chain_id": 1,
+  "etherscan_contract_name": "CreditConfiguratorV3",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "35_Create2Factory",
+  "address": "0x45d146CAA25aa565Cfc7434926633f4F1C97c873",
+  "chain_id": 1,
+  "etherscan_contract_name": "Create2Factory",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "None",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

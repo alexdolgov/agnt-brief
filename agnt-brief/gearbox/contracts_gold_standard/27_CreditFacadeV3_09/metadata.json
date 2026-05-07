@@ -1,0 +1,13 @@
+{
+  "slug": "27_CreditFacadeV3_09",
+  "address": "0xE1836e82FfF8C179A69D940B9C950d19A50A31f9",
+  "chain_id": 1,
+  "etherscan_contract_name": "CreditFacadeV3",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

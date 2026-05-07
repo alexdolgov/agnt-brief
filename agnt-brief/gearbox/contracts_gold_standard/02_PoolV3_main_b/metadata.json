@@ -1,0 +1,13 @@
+{
+  "slug": "02_PoolV3_main_b",
+  "address": "0xda00010eDA646913F273E10E7A5d1F659242757d",
+  "chain_id": 1,
+  "etherscan_contract_name": "PoolV3",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

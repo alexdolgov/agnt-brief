@@ -1,0 +1,13 @@
+{
+  "slug": "06_PoolQuotaKeeperV3_c",
+  "address": "0x05eF8Da767687c0137aE143EB23883FcaD235ce7",
+  "chain_id": 1,
+  "etherscan_contract_name": "PoolQuotaKeeperV3",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

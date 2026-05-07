@@ -1,0 +1,13 @@
+{
+  "slug": "48_RedstonePriceFeed_sample",
+  "address": "0xB7552ef2A3Db35be75fe1C83BCB99edd2C8A9AAa",
+  "chain_id": 1,
+  "etherscan_contract_name": "RedstonePriceFeed",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

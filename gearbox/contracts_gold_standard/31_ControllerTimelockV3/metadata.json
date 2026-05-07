@@ -1,0 +1,13 @@
+{
+  "slug": "31_ControllerTimelockV3",
+  "address": "0xD8CeB2580F22E13D17031740af2e91e9e7A13347",
+  "chain_id": 1,
+  "etherscan_contract_name": "ControllerTimelockV3",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

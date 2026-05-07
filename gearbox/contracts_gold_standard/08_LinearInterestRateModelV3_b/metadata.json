@@ -1,0 +1,13 @@
+{
+  "slug": "08_LinearInterestRateModelV3_b",
+  "address": "0x86781a14F55677729b1C0394E06966BF8736bbbc",
+  "chain_id": 1,
+  "etherscan_contract_name": "LinearInterestRateModelV3",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

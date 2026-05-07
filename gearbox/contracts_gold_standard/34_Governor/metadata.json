@@ -1,0 +1,13 @@
+{
+  "slug": "34_Governor",
+  "address": "0x29B97F37B3E0C704bCFD785F5b7bBa2A0B7df2c7",
+  "chain_id": 1,
+  "etherscan_contract_name": "Governor",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

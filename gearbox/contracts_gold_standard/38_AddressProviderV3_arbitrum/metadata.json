@@ -1,0 +1,13 @@
+{
+  "slug": "38_AddressProviderV3_arbitrum",
+  "address": "0x7d04ecdb892ae074f03b5d0aba03796f90f3f2af",
+  "chain_id": 42161,
+  "etherscan_contract_name": "AddressProviderV3",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

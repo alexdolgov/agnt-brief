@@ -1,0 +1,13 @@
+{
+  "slug": "41_CurveV1Adapter3Assets_sample",
+  "address": "0xf4E52a80B8C48810822d1FA20716e528d38A6d75",
+  "chain_id": 1,
+  "etherscan_contract_name": "CurveV1Adapter3Assets",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

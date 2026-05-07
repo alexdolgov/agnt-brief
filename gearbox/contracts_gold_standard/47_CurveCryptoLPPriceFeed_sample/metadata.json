@@ -1,0 +1,13 @@
+{
+  "slug": "47_CurveCryptoLPPriceFeed_sample",
+  "address": "0xAA5cBD81aC90c31Ad3E8A6532969D9e7825E4Bab",
+  "chain_id": 1,
+  "etherscan_contract_name": "CurveCryptoLPPriceFeed",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "1000",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": ""
+}

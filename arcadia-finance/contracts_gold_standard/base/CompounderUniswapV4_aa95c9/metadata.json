@@ -1,0 +1,23 @@
+{
+  "address": "0xAA95c9c402b195D8690eCaea2341a76e3266B189",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "CompounderUniswapV4",
+  "onchain_name": "CompounderUniswapV4",
+  "compiler": "v0.8.30+commit.73712a01",
+  "evm_version": "prague",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": false,
+  "implementation": null,
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 62,
+  "source_bytes": 305016,
+  "source_explorer_url": "https://basescan.org/address/0xAA95c9c402b195D8690eCaea2341a76e3266B189#code",
+  "additional_chains": [
+    10,
+    130
+  ]
+}

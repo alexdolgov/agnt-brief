@@ -1,0 +1,20 @@
+{
+  "address": "0xa37e9b4369dc20940009030bfbc2088f09645e3b",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "LendingPool_cbBTC",
+  "onchain_name": "LendingPool",
+  "compiler": "v0.8.22+commit.4fc1097e",
+  "evm_version": "shanghai",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": false,
+  "implementation": null,
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 21,
+  "source_bytes": 168090,
+  "source_explorer_url": "https://basescan.org/address/0xa37e9b4369dc20940009030bfbc2088f09645e3b#code",
+  "additional_chains": []
+}

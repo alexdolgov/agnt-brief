@@ -1,0 +1,20 @@
+{
+  "address": "0xaaa843fb2916c0B57454270418E121C626402AAa",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "AAA_token",
+  "onchain_name": "Arcadia",
+  "compiler": "v0.8.27+commit.40a35a09",
+  "evm_version": "cancun",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": false,
+  "implementation": null,
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 2,
+  "source_bytes": 7491,
+  "source_explorer_url": "https://basescan.org/address/0xaaa843fb2916c0B57454270418E121C626402AAa#code",
+  "additional_chains": []
+}

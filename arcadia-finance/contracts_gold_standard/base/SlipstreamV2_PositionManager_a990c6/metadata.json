@@ -1,0 +1,20 @@
+{
+  "address": "0xa990C6a764b73BF43cee5Bb40339c3322FB9D55F",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "SlipstreamV2_PositionManager",
+  "onchain_name": "NonfungiblePositionManager",
+  "compiler": "v0.7.6+commit.7338295f",
+  "evm_version": "istanbul",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": true,
+  "implementation": "0xa990c6a764b73bf43cee5bb40339c3322fb9d55f",
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 59,
+  "source_bytes": 199092,
+  "source_explorer_url": "https://basescan.org/address/0xa990C6a764b73BF43cee5Bb40339c3322FB9D55F#code",
+  "additional_chains": []
+}

@@ -1,0 +1,20 @@
+{
+  "address": "0xd42A3Ac56456bD5422835B36C35Cacb6448ddCd9",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "CompounderSlipstreamV3",
+  "onchain_name": "CompounderSlipstream",
+  "compiler": "v0.8.34+commit.80d5c536",
+  "evm_version": "osaka",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": false,
+  "implementation": null,
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 34,
+  "source_bytes": 201274,
+  "source_explorer_url": "https://basescan.org/address/0xd42A3Ac56456bD5422835B36C35Cacb6448ddCd9#code",
+  "additional_chains": []
+}

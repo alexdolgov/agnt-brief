@@ -1,0 +1,20 @@
+{
+  "address": "0x9189BC25f8faC157B4D87b0b3c14F56bA1477d53",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "WrappedStakedSlipstream_V3",
+  "onchain_name": "WrappedStakedSlipstream",
+  "compiler": "v0.8.34+commit.80d5c536",
+  "evm_version": "osaka",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": false,
+  "implementation": null,
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 11,
+  "source_bytes": 35696,
+  "source_explorer_url": "https://basescan.org/address/0x9189BC25f8faC157B4D87b0b3c14F56bA1477d53#code",
+  "additional_chains": []
+}

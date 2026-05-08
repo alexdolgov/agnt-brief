@@ -1,0 +1,23 @@
+{
+  "address": "0xDa14Fdd72345c4d2511357214c5B89A919768e59",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "Factory",
+  "onchain_name": "Factory",
+  "compiler": "v0.8.22+commit.4fc1097e",
+  "evm_version": "shanghai",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": false,
+  "implementation": null,
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 13,
+  "source_bytes": 51474,
+  "source_explorer_url": "https://basescan.org/address/0xDa14Fdd72345c4d2511357214c5B89A919768e59#code",
+  "additional_chains": [
+    10,
+    130
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "address": "0xc8bF4B2c740FF665864E9494832520f18822871C",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "YieldClaimerSlipstreamV2",
+  "onchain_name": "YieldClaimerSlipstream",
+  "compiler": "v0.8.30+commit.73712a01",
+  "evm_version": "prague",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": false,
+  "implementation": null,
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 27,
+  "source_bytes": 137227,
+  "source_explorer_url": "https://basescan.org/address/0xc8bF4B2c740FF665864E9494832520f18822871C#code",
+  "additional_chains": []
+}

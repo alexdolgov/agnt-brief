@@ -1,0 +1,23 @@
+{
+  "address": "0xbea2B6d45ACaF62385877D835970a0788719cAe1",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "AccountV1_Margin",
+  "onchain_name": "AccountV1",
+  "compiler": "v0.8.22+commit.4fc1097e",
+  "evm_version": "shanghai",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": false,
+  "implementation": null,
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 14,
+  "source_bytes": 98229,
+  "source_explorer_url": "https://basescan.org/address/0xbea2B6d45ACaF62385877D835970a0788719cAe1#code",
+  "additional_chains": [
+    10,
+    130
+  ]
+}

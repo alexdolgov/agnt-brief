@@ -1,0 +1,23 @@
+{
+  "address": "0x01EDaF0067a10D18c88D2876c0A85Ee0096a5Ac0",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "RebalancerUniswapV4",
+  "onchain_name": "RebalancerUniswapV4",
+  "compiler": "v0.8.30+commit.73712a01",
+  "evm_version": "prague",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": false,
+  "implementation": null,
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 64,
+  "source_bytes": 315370,
+  "source_explorer_url": "https://basescan.org/address/0x01EDaF0067a10D18c88D2876c0A85Ee0096a5Ac0#code",
+  "additional_chains": [
+    10,
+    130
+  ]
+}

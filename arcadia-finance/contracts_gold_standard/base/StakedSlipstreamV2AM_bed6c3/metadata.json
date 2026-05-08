@@ -1,0 +1,20 @@
+{
+  "address": "0xBed6C3E35B9B1e044b3Bc71465769EdFDC0FDD4c",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "StakedSlipstreamV2AM",
+  "onchain_name": "StakedSlipstreamAM",
+  "compiler": "v0.8.30+commit.73712a01",
+  "evm_version": "prague",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": false,
+  "implementation": null,
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 24,
+  "source_bytes": 137774,
+  "source_explorer_url": "https://basescan.org/address/0xBed6C3E35B9B1e044b3Bc71465769EdFDC0FDD4c#code",
+  "additional_chains": []
+}

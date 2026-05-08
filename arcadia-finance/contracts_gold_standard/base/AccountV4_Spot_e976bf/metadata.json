@@ -1,0 +1,23 @@
+{
+  "address": "0xe976BFb44f9322164ca6fdA6C5B84fBb6163D442",
+  "chain_id": 8453,
+  "chain_name": "base",
+  "doc_name": "AccountV4_Spot",
+  "onchain_name": "AccountV4",
+  "compiler": "v0.8.30+commit.73712a01",
+  "evm_version": "prague",
+  "optimization_used": true,
+  "runs": "200",
+  "license": "",
+  "proxy": false,
+  "implementation": null,
+  "fetch_date": "2026-05-08",
+  "fetch_kind": "multi_json_wrapped",
+  "file_count": 14,
+  "source_bytes": 53671,
+  "source_explorer_url": "https://basescan.org/address/0xe976BFb44f9322164ca6fdA6C5B84fBb6163D442#code",
+  "additional_chains": [
+    10,
+    130
+  ]
+}

@@ -9,3 +9,7 @@ tmp/
 .artifacts/
 .cache/
 .claude/
+
+# Generated JS output for v2 TypeScript scripts
+src/scripts/v2/lib/**/*.js
+src/scripts/v2/lib/**/*.js.map

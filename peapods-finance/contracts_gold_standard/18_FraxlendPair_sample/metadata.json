@@ -1,0 +1,13 @@
+{
+  "slug": "18_FraxlendPair_sample",
+  "address": "0x0aa98472e41532546d05232163280495c1b32980",
+  "chain_id": 1,
+  "etherscan_contract_name": "FraxlendPair",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": ""
+}

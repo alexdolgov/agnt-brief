@@ -1,0 +1,13 @@
+{
+  "slug": "07_IndexManagerV3_base",
+  "address": "0x556059e80CB0073D4A9547081Cf0f80cBB94ec30",
+  "chain_id": 8453,
+  "etherscan_contract_name": "IndexManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": ""
+}

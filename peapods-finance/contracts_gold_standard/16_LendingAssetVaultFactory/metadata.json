@@ -1,0 +1,13 @@
+{
+  "slug": "16_LendingAssetVaultFactory",
+  "address": "0xbab29f09f595bf2c8d4142ee544e1bc1db7912c6",
+  "chain_id": 1,
+  "etherscan_contract_name": "LendingAssetVaultFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": ""
+}

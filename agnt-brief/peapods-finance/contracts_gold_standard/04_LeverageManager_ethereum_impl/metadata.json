@@ -1,0 +1,13 @@
+{
+  "slug": "04_LeverageManager_ethereum_impl",
+  "address": "0x4e1086aae93f24404c695db4ae06c9bc43ee403c",
+  "chain_id": 1,
+  "etherscan_contract_name": "LeverageManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": ""
+}

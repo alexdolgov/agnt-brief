@@ -1,0 +1,13 @@
+{
+  "slug": "11_IndexUtils",
+  "address": "0x2bcca7ea2c7eca696ace6d71c9719fb171a1054c",
+  "chain_id": 1,
+  "etherscan_contract_name": "IndexUtils",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": ""
+}

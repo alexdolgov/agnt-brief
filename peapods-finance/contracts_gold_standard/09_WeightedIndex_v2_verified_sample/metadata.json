@@ -1,0 +1,13 @@
+{
+  "slug": "09_WeightedIndex_v2_verified_sample",
+  "address": "0x515e7fd1c29263dff8d987f15fa00c12cd10a49b",
+  "chain_id": 1,
+  "etherscan_contract_name": "WeightedIndex",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

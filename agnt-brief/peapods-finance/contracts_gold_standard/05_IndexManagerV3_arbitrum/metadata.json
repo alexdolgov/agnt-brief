@@ -1,0 +1,13 @@
+{
+  "slug": "05_IndexManagerV3_arbitrum",
+  "address": "0x64511ccE99ab01A6dD136207450eA81263b14FD8",
+  "chain_id": 42161,
+  "etherscan_contract_name": "IndexManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": ""
+}

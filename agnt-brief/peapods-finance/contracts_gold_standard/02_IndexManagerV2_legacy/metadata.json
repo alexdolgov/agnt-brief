@@ -1,0 +1,13 @@
+{
+  "slug": "02_IndexManagerV2_legacy",
+  "address": "0x0Bb39ba2eE60f825348676f9a87B7CD1e3B4AE6B",
+  "chain_id": 1,
+  "etherscan_contract_name": "IndexManager",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

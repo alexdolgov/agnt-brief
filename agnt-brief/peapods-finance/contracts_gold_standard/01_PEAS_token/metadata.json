@@ -1,0 +1,13 @@
+{
+  "slug": "01_PEAS_token",
+  "address": "0x02f92800F57BCD74066F5709F1Daa1A4302Df875",
+  "chain_id": 1,
+  "etherscan_contract_name": "PEAS",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": ""
+}

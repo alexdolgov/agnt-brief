@@ -1,0 +1,13 @@
+{
+  "slug": "08_LeverageManager_base_impl",
+  "address": "0x62eadf4c53f81f334a898ca307d65b402db05f2a",
+  "chain_id": 8453,
+  "etherscan_contract_name": "LeverageManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": ""
+}

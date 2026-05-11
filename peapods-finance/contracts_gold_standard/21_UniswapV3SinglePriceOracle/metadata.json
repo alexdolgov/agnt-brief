@@ -1,0 +1,13 @@
+{
+  "slug": "21_UniswapV3SinglePriceOracle",
+  "address": "0xc3be7832734843410dcf1316b03d948f3d998115",
+  "chain_id": 1,
+  "etherscan_contract_name": "UniswapV3SinglePriceOracle",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": ""
+}

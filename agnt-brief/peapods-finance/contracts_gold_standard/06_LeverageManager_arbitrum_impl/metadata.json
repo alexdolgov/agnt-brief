@@ -1,0 +1,13 @@
+{
+  "slug": "06_LeverageManager_arbitrum_impl",
+  "address": "0xe89c470751e45966d2e156f03adc007991a3ac46",
+  "chain_id": 42161,
+  "etherscan_contract_name": "LeverageManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": ""
+}

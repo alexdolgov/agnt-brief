@@ -1,0 +1,13 @@
+{
+  "slug": "19_VariableInterestRate",
+  "address": "0x823e88f1607f6ffe7b39e06bd4519563e3dfded0",
+  "chain_id": 1,
+  "etherscan_contract_name": "VariableInterestRate",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": ""
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "26_StakingVault_latest",
+  "address": "0xdab17556ae10062f5939e56d44063c12eb7b1ecc",
+  "chain_id": 1,
+  "etherscan_contract_name": "StakingVault",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": ""
+}

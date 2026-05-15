@@ -1,0 +1,14 @@
+{
+  "slug": "41_base_bridgedDEPS",
+  "chain_id": 8453,
+  "address": "0x5f674bf6d559229bdd29d642d2e0978f1e282722",
+  "deuro_doc_role": "BridgedDEPS (OP-stack L2 wrapper of L1 DEPS)",
+  "etherscan_contract_name": "BridgedDEPS",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

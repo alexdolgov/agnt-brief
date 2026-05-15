@@ -1,0 +1,14 @@
+{
+  "slug": "11_eth_mintingHubGateway_v2",
+  "chain_id": 1,
+  "address": "0x8b3c41c649b9c7085c171cbb82337889b3604618",
+  "deuro_doc_role": "MintingHubGateway (V2) \u2014 emits PositionOpened events used by DL TVL adapter",
+  "etherscan_contract_name": "MintingHubGateway",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

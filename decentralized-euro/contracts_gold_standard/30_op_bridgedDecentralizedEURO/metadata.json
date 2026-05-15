@@ -1,0 +1,14 @@
+{
+  "slug": "30_op_bridgedDecentralizedEURO",
+  "chain_id": 10,
+  "address": "0x1b5f7fa46ed0f487f049c42f374ca4827d65a264",
+  "deuro_doc_role": "BridgedDecentralizedEURO (OP-stack L2 wrapper of L1 dEURO)",
+  "etherscan_contract_name": "BridgedDecentralizedEURO",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

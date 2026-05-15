@@ -1,0 +1,14 @@
+{
+  "slug": "13_eth_positionFactory_v2",
+  "chain_id": 1,
+  "address": "0x167144d66ac1d02eaafca3649ef3305ea31ee5a8",
+  "deuro_doc_role": "PositionFactory (V2) \u2014 legacy",
+  "etherscan_contract_name": "PositionFactory",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

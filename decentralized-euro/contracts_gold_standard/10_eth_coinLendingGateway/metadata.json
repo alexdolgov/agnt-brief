@@ -1,0 +1,14 @@
+{
+  "slug": "10_eth_coinLendingGateway",
+  "chain_id": 1,
+  "address": "0x1da37d613fb590eed37520b72e9c6f0f6eee89d2",
+  "deuro_doc_role": "CoinLendingGateway \u2014 EUR-stablecoin \u2192 dEURO routing",
+  "etherscan_contract_name": "CoinLendingGateway",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "07_eth_positionRoller_v3",
+  "chain_id": 1,
+  "address": "0x5c22d5b752b2121fae7f6f0069252b03b2f7c5cd",
+  "deuro_doc_role": "PositionRoller (V3) \u2014 rolls expiring positions",
+  "etherscan_contract_name": "PositionRoller",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

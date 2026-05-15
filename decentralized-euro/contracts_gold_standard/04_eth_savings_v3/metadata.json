@@ -1,0 +1,14 @@
+{
+  "slug": "04_eth_savings_v3",
+  "chain_id": 1,
+  "address": "0x760233b90e45d186a9a98e911b115f7f4b90d3d9",
+  "deuro_doc_role": "Savings (V3) \u2014 Leadrate-integrated savings module",
+  "etherscan_contract_name": "Savings",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

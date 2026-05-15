@@ -1,0 +1,14 @@
+{
+  "slug": "20_eth_bridgeEURA",
+  "chain_id": 1,
+  "address": "0x05620f4bb92246b4e067ebc0b6f5c7ff6b771702",
+  "deuro_doc_role": "StablecoinBridge for Angle EURA",
+  "etherscan_contract_name": "StablecoinBridge",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

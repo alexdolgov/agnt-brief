@@ -1,0 +1,14 @@
+{
+  "slug": "08_eth_savingsVaultDEURO_v3",
+  "chain_id": 1,
+  "address": "0x75beb37a3c86ee4c38931e2a9319e078da612979",
+  "deuro_doc_role": "SavingsVaultDEURO (V3) \u2014 ERC-4626 vault over Savings V3",
+  "etherscan_contract_name": "SavingsVaultDEURO",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

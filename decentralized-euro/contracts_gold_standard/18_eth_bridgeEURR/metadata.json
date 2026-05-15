@@ -1,0 +1,14 @@
+{
+  "slug": "18_eth_bridgeEURR",
+  "chain_id": 1,
+  "address": "0x20b0a153ff16c7b1e962fd3d3352a00cf019f1a7",
+  "deuro_doc_role": "StablecoinBridge for Hadron EURR",
+  "etherscan_contract_name": "StablecoinBridge",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

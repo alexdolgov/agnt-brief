@@ -1,0 +1,14 @@
+{
+  "slug": "05_eth_mintingHub_v3",
+  "chain_id": 1,
+  "address": "0x66acc54a0c64255137b8993cb4972b0901684f7b",
+  "deuro_doc_role": "MintingHub (V3) \u2014 collateralized-mint with native ETH/WETH",
+  "etherscan_contract_name": "MintingHub",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

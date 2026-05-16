@@ -1,0 +1,14 @@
+{
+  "slug": "56_eth_usdafJan_rETH_BorrowerOperations",
+  "chain_id": 1,
+  "address": "0xa351d5b9cda9eb518727c3ceff02208915fda60d",
+  "asymmetry_doc_role": "rETH branch BorrowerOperations",
+  "etherscan_contract_name": "BorrowerOperations",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

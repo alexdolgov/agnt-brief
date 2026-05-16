@@ -1,0 +1,14 @@
+{
+  "slug": "44_eth_usdafJan_ExchangeHelpers",
+  "chain_id": 1,
+  "address": "0x28c9decfacee0e796409b4b63eb263610e5e38dc",
+  "asymmetry_doc_role": "USDaf Jan-2025 HybridCurveUniV3ExchangeHelpers",
+  "etherscan_contract_name": "HybridCurveUniV3ExchangeHelpers",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

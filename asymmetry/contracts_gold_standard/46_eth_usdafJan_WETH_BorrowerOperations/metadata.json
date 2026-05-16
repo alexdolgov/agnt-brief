@@ -1,0 +1,14 @@
+{
+  "slug": "46_eth_usdafJan_WETH_BorrowerOperations",
+  "chain_id": 1,
+  "address": "0x0b995602b5a797823f92027e8b40c0f2d97aff1c",
+  "asymmetry_doc_role": "WETH branch BorrowerOperations",
+  "etherscan_contract_name": "BorrowerOperations",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "06_eth_safETH_StaFi",
+  "chain_id": 1,
+  "address": "0xc9bbccaf813b3329586a2479ff04f1fc794822da",
+  "asymmetry_doc_role": "StaFi derivative wrapper (current; holds rETH StaFi)",
+  "etherscan_contract_name": "Stafi",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "2000",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

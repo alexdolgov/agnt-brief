@@ -1,0 +1,14 @@
+{
+  "slug": "49_eth_usdafJan_WETH_PriceFeed",
+  "chain_id": 1,
+  "address": "0x3279e2b49ff60dafb276fbaff847383b67a7ec2d",
+  "asymmetry_doc_role": "WETH branch PriceFeed",
+  "etherscan_contract_name": "WETHPriceFeed",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

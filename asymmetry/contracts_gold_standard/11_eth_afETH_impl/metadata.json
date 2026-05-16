@@ -1,0 +1,14 @@
+{
+  "slug": "11_eth_afETH_impl",
+  "chain_id": 1,
+  "address": "0x0a36224486d4e49deb27b489233c6b64e0241d6a",
+  "asymmetry_doc_role": "AfEth implementation",
+  "etherscan_contract_name": "AfEth",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "51_eth_usdafJan_wstETH_BorrowerOperations",
+  "chain_id": 1,
+  "address": "0x94c1610a7373919bd9cfb09ded19894601f4a1be",
+  "asymmetry_doc_role": "wstETH branch BorrowerOperations",
+  "etherscan_contract_name": "BorrowerOperations",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

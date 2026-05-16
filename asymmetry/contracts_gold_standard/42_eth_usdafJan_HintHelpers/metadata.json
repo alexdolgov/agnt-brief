@@ -1,0 +1,14 @@
+{
+  "slug": "42_eth_usdafJan_HintHelpers",
+  "chain_id": 1,
+  "address": "0xe3bb97ee79ac4bdfc0c30a95ad82c243c9913ada",
+  "asymmetry_doc_role": "USDaf Jan-2025 HintHelpers",
+  "etherscan_contract_name": "HintHelpers",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

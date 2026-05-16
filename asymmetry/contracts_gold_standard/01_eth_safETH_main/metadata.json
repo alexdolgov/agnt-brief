@@ -1,0 +1,14 @@
+{
+  "slug": "01_eth_safETH_main",
+  "chain_id": 1,
+  "address": "0x6732efaf6f39926346bef8b821a04b6361c4f3e5",
+  "asymmetry_doc_role": "SafEth main aggregator (Transparent proxy, ERC-20 safETH)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0x591c4abf20f61a8b0ee06a5a2d2d2337241fe970"
+}

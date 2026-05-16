@@ -1,0 +1,14 @@
+{
+  "slug": "53_eth_usdafJan_wstETH_StabilityPool",
+  "chain_id": 1,
+  "address": "0xcf46dab575c364a8b91bda147720ff4361f4627f",
+  "asymmetry_doc_role": "wstETH branch StabilityPool",
+  "etherscan_contract_name": "StabilityPool",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

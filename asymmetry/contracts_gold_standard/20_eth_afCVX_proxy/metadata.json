@@ -1,0 +1,14 @@
+{
+  "slug": "20_eth_afCVX_proxy",
+  "chain_id": 1,
+  "address": "0x8668a15b7b023dc77b372a740fcb8939e15257cf",
+  "asymmetry_doc_role": "AfCvx main vault (ERC-4626 over CVX, proxy)",
+  "etherscan_contract_name": "SimpleProxy",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "10000",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "1",
+  "implementation": "0x56664ffccff6bb282cca96808af03d9042e1f799"
+}

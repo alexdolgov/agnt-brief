@@ -1,0 +1,14 @@
+{
+  "slug": "58_eth_usdafJan_rETH_StabilityPool",
+  "chain_id": 1,
+  "address": "0xc4463b26be1a6064000558a84ef9b6a58abe4f7a",
+  "asymmetry_doc_role": "rETH branch StabilityPool",
+  "etherscan_contract_name": "StabilityPool",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

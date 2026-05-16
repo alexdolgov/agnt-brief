@@ -1,0 +1,14 @@
+{
+  "slug": "55_eth_usdafJan_rETH_AddressesRegistry",
+  "chain_id": 1,
+  "address": "0x3b48169809dd827f22c9e0f2d71ff12ea7a94a2f",
+  "asymmetry_doc_role": "rETH branch AddressesRegistry",
+  "etherscan_contract_name": "AddressesRegistry",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "31_eth_usdafV2_CollateralRegistry",
+  "chain_id": 1,
+  "address": "0x33d68055cd54061991b2e98b9ab326ffce4d60fe",
+  "asymmetry_doc_role": "USDaf V2 CollateralRegistry (DL adapter v2 entry; second-generation deployment)",
+  "etherscan_contract_name": "CollateralRegistry",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

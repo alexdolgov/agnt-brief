@@ -1,0 +1,14 @@
+{
+  "slug": "47_eth_usdafJan_WETH_TroveManager",
+  "chain_id": 1,
+  "address": "0x81d78814df42da2cab0e8870c477bc3ed861de66",
+  "asymmetry_doc_role": "WETH branch TroveManager",
+  "etherscan_contract_name": "TroveManager",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

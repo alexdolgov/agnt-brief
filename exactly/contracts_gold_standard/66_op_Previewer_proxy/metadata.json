@@ -1,0 +1,16 @@
+{
+  "slug": "66_op_Previewer_proxy",
+  "chain_id": 10,
+  "chain": "optimism",
+  "address": "0x328834775a18a4c942f30bfd091259ade4355c2a",
+  "exactly_doc_role": "Previewer",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "MIT",
+  "evm_version": "shanghai",
+  "proxy": "1",
+  "implementation": "0x135abf02580ff4f41e6589b0198365d01167a2a2"
+}

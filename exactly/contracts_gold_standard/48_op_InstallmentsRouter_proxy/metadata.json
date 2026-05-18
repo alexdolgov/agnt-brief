@@ -1,0 +1,16 @@
+{
+  "slug": "48_op_InstallmentsRouter_proxy",
+  "chain_id": 10,
+  "chain": "optimism",
+  "address": "0x6e1bb47f2895e84160f61df922e7ff0b656f3cff",
+  "exactly_doc_role": "InstallmentsRouter",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "1111",
+  "license_type": "MIT",
+  "evm_version": "cancun",
+  "proxy": "1",
+  "implementation": "0xce38e4954510ae6c144f6fb8a8ccde35c98d62d7"
+}

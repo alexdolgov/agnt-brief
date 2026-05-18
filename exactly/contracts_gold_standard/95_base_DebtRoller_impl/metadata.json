@@ -1,0 +1,16 @@
+{
+  "slug": "95_base_DebtRoller_impl",
+  "chain_id": 8453,
+  "chain": "base",
+  "address": "0xf7b7a94ecc28a63869bbcf0d061bd5888d7b3d0e",
+  "exactly_doc_role": "DebtRoller",
+  "exactly_kind": "implementation",
+  "etherscan_contract_name": "DebtRoller",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "1111",
+  "license_type": "GNU GPLv3",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

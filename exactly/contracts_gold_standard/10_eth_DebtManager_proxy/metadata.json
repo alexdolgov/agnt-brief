@@ -1,0 +1,16 @@
+{
+  "slug": "10_eth_DebtManager_proxy",
+  "chain_id": 1,
+  "chain": "ethereum",
+  "address": "0xf880bb912b652a594abac1a9d79c968754d09ac0",
+  "exactly_doc_role": "DebtManager",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "MIT",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0x7f8421fe6c09b02eaf6905a27863be66268c6601"
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "110_base_MarketcbXRP_proxy",
+  "chain_id": 8453,
+  "chain": "base",
+  "address": "0x1dcf89dfa88363ef33d49dd591b1ee5e84dd0f75",
+  "exactly_doc_role": "MarketcbXRP",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "1111",
+  "license_type": "MIT",
+  "evm_version": "cancun",
+  "proxy": "1",
+  "implementation": "0xbd1ba78a3976cab420a9203e6ef14d18c2b2e031"
+}

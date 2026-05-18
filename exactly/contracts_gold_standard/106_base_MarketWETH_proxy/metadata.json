@@ -1,0 +1,16 @@
+{
+  "slug": "106_base_MarketWETH_proxy",
+  "chain_id": 8453,
+  "chain": "base",
+  "address": "0x52ee5238e5676598551c8d2bbccb62c72fc3a0c4",
+  "exactly_doc_role": "MarketWETH",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "1111",
+  "license_type": "MIT",
+  "evm_version": "cancun",
+  "proxy": "1",
+  "implementation": "0x03859fa7549449a7dde7663e5c06a38c5b0d4489"
+}

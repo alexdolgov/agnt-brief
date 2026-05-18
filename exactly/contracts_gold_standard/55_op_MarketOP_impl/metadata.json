@@ -1,0 +1,16 @@
+{
+  "slug": "55_op_MarketOP_impl",
+  "chain_id": 10,
+  "chain": "optimism",
+  "address": "0xc3a540d987997dfc01b27479a00cf653f357525e",
+  "exactly_doc_role": "MarketOP",
+  "exactly_kind": "implementation",
+  "etherscan_contract_name": "",
+  "compiler_version": "",
+  "optimization_used": "",
+  "runs": "",
+  "license_type": "Unknown",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

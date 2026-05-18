@@ -1,0 +1,16 @@
+{
+  "slug": "02_eth_InterestRateModelUSDC",
+  "chain_id": 1,
+  "chain": "ethereum",
+  "address": "0xe296e3ae5e1db00f1b9710e6ad885215873cee83",
+  "exactly_doc_role": "InterestRateModelUSDC",
+  "exactly_kind": "single",
+  "etherscan_contract_name": "InterestRateModel",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "BSL 1.1",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

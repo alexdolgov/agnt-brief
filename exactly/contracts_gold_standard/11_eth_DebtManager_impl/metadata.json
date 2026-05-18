@@ -1,0 +1,16 @@
+{
+  "slug": "11_eth_DebtManager_impl",
+  "chain_id": 1,
+  "chain": "ethereum",
+  "address": "0x7f8421fe6c09b02eaf6905a27863be66268c6601",
+  "exactly_doc_role": "DebtManager",
+  "exactly_kind": "implementation",
+  "etherscan_contract_name": "DebtManager",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "BSL 1.1",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": null
+}

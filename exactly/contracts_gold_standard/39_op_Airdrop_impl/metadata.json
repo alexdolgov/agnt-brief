@@ -1,0 +1,16 @@
+{
+  "slug": "39_op_Airdrop_impl",
+  "chain_id": 10,
+  "chain": "optimism",
+  "address": "0xa00e0bac10e4019765235ae0a4d882849e8367da",
+  "exactly_doc_role": "Airdrop",
+  "exactly_kind": "implementation",
+  "etherscan_contract_name": "Airdrop",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "GNU AGPLv3",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": null
+}

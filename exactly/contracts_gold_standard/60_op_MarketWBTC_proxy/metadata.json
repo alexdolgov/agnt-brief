@@ -1,0 +1,16 @@
+{
+  "slug": "60_op_MarketWBTC_proxy",
+  "chain_id": 10,
+  "chain": "optimism",
+  "address": "0x6f748fd65d7c71949ba6641b3248c4c191f3b322",
+  "exactly_doc_role": "MarketWBTC",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "MIT",
+  "evm_version": "london",
+  "proxy": "1",
+  "implementation": "0xcb213af477326a1f1f4473eed673cac49ad8fd52"
+}

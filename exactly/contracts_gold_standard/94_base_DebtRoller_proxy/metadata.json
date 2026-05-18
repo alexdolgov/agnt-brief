@@ -1,0 +1,16 @@
+{
+  "slug": "94_base_DebtRoller_proxy",
+  "chain_id": 8453,
+  "chain": "base",
+  "address": "0xbfc928268ce3536c313a30f509a297b35c590ecb",
+  "exactly_doc_role": "DebtRoller",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "1111",
+  "license_type": "MIT",
+  "evm_version": "cancun",
+  "proxy": "1",
+  "implementation": "0xf7b7a94ecc28a63869bbcf0d061bd5888d7b3d0e"
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "63_op_MarketWETH_impl",
+  "chain_id": 10,
+  "chain": "optimism",
+  "address": "0x833be3f17779387a9988dd7f176083b7c8dad126",
+  "exactly_doc_role": "MarketWETH",
+  "exactly_kind": "implementation",
+  "etherscan_contract_name": "",
+  "compiler_version": "",
+  "optimization_used": "",
+  "runs": "",
+  "license_type": "Unknown",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "15_eth_MarketDAI_impl",
+  "chain_id": 1,
+  "chain": "ethereum",
+  "address": "0x3c6bd2ffb9cb007e469cdd7b08d79102b5ae2b54",
+  "exactly_doc_role": "MarketDAI",
+  "exactly_kind": "implementation",
+  "etherscan_contract_name": "Market",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "BSL 1.1",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

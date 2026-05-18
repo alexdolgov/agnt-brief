@@ -1,0 +1,16 @@
+{
+  "slug": "09_eth_Auditor_impl",
+  "chain_id": 1,
+  "chain": "ethereum",
+  "address": "0xaeb62e6f27bc103702e7bc879ae98bcea56f027e",
+  "exactly_doc_role": "Auditor",
+  "exactly_kind": "implementation",
+  "etherscan_contract_name": "Auditor",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "BSL 1.1",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

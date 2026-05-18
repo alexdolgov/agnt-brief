@@ -1,0 +1,16 @@
+{
+  "slug": "112_base_Previewer_proxy",
+  "chain_id": 8453,
+  "chain": "base",
+  "address": "0xe69aaa5cf5b9a7e813db65544d454e46b28c9a6b",
+  "exactly_doc_role": "Previewer",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "1111",
+  "license_type": "MIT",
+  "evm_version": "cancun",
+  "proxy": "1",
+  "implementation": "0xf8f563e33973d1bdd6c768132bc431ea7a7b56fa"
+}

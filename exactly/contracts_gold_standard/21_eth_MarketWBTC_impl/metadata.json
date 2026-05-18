@@ -1,0 +1,16 @@
+{
+  "slug": "21_eth_MarketWBTC_impl",
+  "chain_id": 1,
+  "chain": "ethereum",
+  "address": "0xf972f71332af1b7967ad21921b8ef4de84c94e72",
+  "exactly_doc_role": "MarketWBTC",
+  "exactly_kind": "implementation",
+  "etherscan_contract_name": "Market",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "BSL 1.1",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

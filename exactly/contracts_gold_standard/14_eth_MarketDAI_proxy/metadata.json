@@ -1,0 +1,16 @@
+{
+  "slug": "14_eth_MarketDAI_proxy",
+  "chain_id": 1,
+  "chain": "ethereum",
+  "address": "0x163538e22f4d38c1eb21b79939f3d2ee274198ff",
+  "exactly_doc_role": "MarketDAI",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "MIT",
+  "evm_version": "Default",
+  "proxy": "1",
+  "implementation": "0x3c6bd2ffb9cb007e469cdd7b08d79102b5ae2b54"
+}

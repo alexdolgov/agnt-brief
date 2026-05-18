@@ -1,0 +1,16 @@
+{
+  "slug": "105_base_MarketUSDC_impl",
+  "chain_id": 8453,
+  "chain": "base",
+  "address": "0xb4b6d4e969001dccc6bf50c4f4bd394fb4ed0b77",
+  "exactly_doc_role": "MarketUSDC",
+  "exactly_kind": "implementation",
+  "etherscan_contract_name": "VerifiedMarket",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "70",
+  "license_type": "BSL 1.1",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "28_op_InterestRateModelOP",
+  "chain_id": 10,
+  "chain": "optimism",
+  "address": "0xb0a0aa8c66d6b8a664911633f7f0bf351588b726",
+  "exactly_doc_role": "InterestRateModelOP",
+  "exactly_kind": "single",
+  "etherscan_contract_name": "InterestRateModel",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "1111",
+  "license_type": "BSL 1.1",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

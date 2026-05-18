@@ -1,0 +1,16 @@
+{
+  "slug": "57_op_MarketUSDC_e_impl",
+  "chain_id": 10,
+  "chain": "optimism",
+  "address": "0x94cba863045672775563dbd40aacc43107c0673a",
+  "exactly_doc_role": "MarketUSDC.e",
+  "exactly_kind": "implementation",
+  "etherscan_contract_name": "",
+  "compiler_version": "",
+  "optimization_used": "",
+  "runs": "",
+  "license_type": "Unknown",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "86_base_InterestRateModelUSDC",
+  "chain_id": 8453,
+  "chain": "base",
+  "address": "0x406e73c6eb2308e0557c031354c4a6f3374e35a4",
+  "exactly_doc_role": "InterestRateModelUSDC",
+  "exactly_kind": "single",
+  "etherscan_contract_name": "InterestRateModel",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "1111",
+  "license_type": "BSL 1.1",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

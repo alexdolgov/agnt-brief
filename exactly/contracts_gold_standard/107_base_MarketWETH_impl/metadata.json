@@ -1,0 +1,16 @@
+{
+  "slug": "107_base_MarketWETH_impl",
+  "chain_id": 8453,
+  "chain": "base",
+  "address": "0x03859fa7549449a7dde7663e5c06a38c5b0d4489",
+  "exactly_doc_role": "MarketWETH",
+  "exactly_kind": "implementation",
+  "etherscan_contract_name": "VerifiedMarket",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "70",
+  "license_type": "BSL 1.1",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

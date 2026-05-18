@@ -1,0 +1,16 @@
+{
+  "slug": "42_op_DebtManager_proxy",
+  "chain_id": 10,
+  "chain": "optimism",
+  "address": "0x057e3efca6f9e7094584b176f3e69a4f4b594d04",
+  "exactly_doc_role": "DebtManager",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "MIT",
+  "evm_version": "london",
+  "proxy": "1",
+  "implementation": "0xd759479b3a07fab64edb668d702293079e8c1bc1"
+}

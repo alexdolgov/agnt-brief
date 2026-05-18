@@ -1,0 +1,16 @@
+{
+  "slug": "98_base_InstallmentsRouter_proxy",
+  "chain_id": 8453,
+  "chain": "base",
+  "address": "0xe1d3d23aa7c0b591f96bfabca188797739e24f00",
+  "exactly_doc_role": "InstallmentsRouter",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "1111",
+  "license_type": "MIT",
+  "evm_version": "cancun",
+  "proxy": "1",
+  "implementation": "0x7bf6d7ad79e14152fad7f48c3cebd796a01d57fd"
+}

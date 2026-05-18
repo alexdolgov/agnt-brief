@@ -1,0 +1,16 @@
+{
+  "slug": "01_eth_InterestRateModelDAI",
+  "chain_id": 1,
+  "chain": "ethereum",
+  "address": "0x1586c0aea22b2a7a943d7af5a097bdab3f809409",
+  "exactly_doc_role": "InterestRateModelDAI",
+  "exactly_kind": "single",
+  "etherscan_contract_name": "InterestRateModel",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "BSL 1.1",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "12_eth_DebtPreviewer_proxy",
+  "chain_id": 1,
+  "chain": "ethereum",
+  "address": "0x9a9baa66bd7239e14f900aed6124446626accfc5",
+  "exactly_doc_role": "DebtPreviewer",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "MIT",
+  "evm_version": "london",
+  "proxy": "1",
+  "implementation": "0x1e5efdf50e47176e062770d5c0eab5a2f196c012"
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "50_op_IntegrationPreviewer_proxy",
+  "chain_id": 10,
+  "chain": "optimism",
+  "address": "0xd557ad9cbddd73570dcd0e00316909fcf62b5997",
+  "exactly_doc_role": "IntegrationPreviewer",
+  "exactly_kind": "proxy",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": "1",
+  "runs": "1111",
+  "license_type": "MIT",
+  "evm_version": "cancun",
+  "proxy": "1",
+  "implementation": "0xd5877c72fddb25ae3a2421182fc74ec0668e012e"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "11_op_xlend_Pool_impl",
+  "chain_id": 10,
+  "address": "0x0353b6221b23b8320202320ca450eeb9fb0de9e5",
+  "extrafi_doc_role": "XLend Pool implementation (OP)",
+  "etherscan_contract_name": "Pool",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "100000",
+  "license_type": "",
+  "evm_version": "shanghai",
+  "proxy": "0",
+  "implementation": null
+}

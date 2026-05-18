@@ -1,0 +1,14 @@
+{
+  "slug": "33_base_xlend_ACLManager",
+  "chain_id": 8453,
+  "address": "0x4b4c8a1841b0e0d2a3af086850d84ff968b8c956",
+  "extrafi_doc_role": "XLend ACL Manager (Base)",
+  "etherscan_contract_name": "ACLManager",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "100000",
+  "license_type": "",
+  "evm_version": "shanghai",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "14_op_xlend_PoolConfigurator_proxy",
+  "chain_id": 10,
+  "address": "0xc1504b3d0e72c717151957ceb0252ff8f93a9a1e",
+  "extrafi_doc_role": "XLend PoolConfigurator (proxy, OP)",
+  "etherscan_contract_name": "InitializableImmutableAdminUpgradeabilityProxy",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "100000",
+  "license_type": "",
+  "evm_version": "shanghai",
+  "proxy": "1",
+  "implementation": "0x9378c2e058d87de7f9edbf3574ed5b4128980adc"
+}

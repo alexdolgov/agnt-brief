@@ -1,0 +1,14 @@
+{
+  "slug": "01_op_EXTRAoft",
+  "chain_id": 10,
+  "address": "0x2dad3a13ef0c6366220f989157009e501e7938f8",
+  "extrafi_doc_role": "EXTRA / EXTRAoft (LayerZero OFT governance token, same address on OP + Base)",
+  "etherscan_contract_name": "EXTRA",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "17_op_xlend_ACLManager",
+  "chain_id": 10,
+  "address": "0x70cdb45f5b0660c122708286198446d23872595f",
+  "extrafi_doc_role": "XLend ACL Manager (OP)",
+  "etherscan_contract_name": "ACLManager",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "100000",
+  "license_type": "",
+  "evm_version": "shanghai",
+  "proxy": "0",
+  "implementation": null
+}

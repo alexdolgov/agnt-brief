@@ -1,0 +1,14 @@
+{
+  "slug": "30_base_xlend_PoolAddressesProvider",
+  "chain_id": 8453,
+  "address": "0x1e35e657d469f134ea9cfe52e28949586f1a9c29",
+  "extrafi_doc_role": "XLend PoolAddressesProvider (Base)",
+  "etherscan_contract_name": "PoolAddressesProvider",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "100000",
+  "license_type": "",
+  "evm_version": "shanghai",
+  "proxy": "0",
+  "implementation": null
+}

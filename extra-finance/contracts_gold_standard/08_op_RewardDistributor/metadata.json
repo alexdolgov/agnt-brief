@@ -1,0 +1,14 @@
+{
+  "slug": "08_op_RewardDistributor",
+  "chain_id": 10,
+  "address": "0xb7d8613728efcfbb18bcd63deec06f64441d322a",
+  "extrafi_doc_role": "Extra Finance RewardDistributor (Optimism only)",
+  "etherscan_contract_name": "RewardDistributor",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

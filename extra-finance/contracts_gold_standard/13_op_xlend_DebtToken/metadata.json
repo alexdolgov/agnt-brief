@@ -1,0 +1,14 @@
+{
+  "slug": "13_op_xlend_DebtToken",
+  "chain_id": 10,
+  "address": "0xc0c88d2752c58263c2b7f4ac6ecbedc78edd5d5e",
+  "extrafi_doc_role": "XLend Variable Debt Token (OP)",
+  "etherscan_contract_name": "VariableDebtToken",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": "1",
+  "runs": "100000",
+  "license_type": "",
+  "evm_version": "shanghai",
+  "proxy": "0",
+  "implementation": null
+}

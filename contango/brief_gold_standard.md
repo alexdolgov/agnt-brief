@@ -48,7 +48,60 @@ DL tracks **deposits** in `chainTvls[chain]` and **borrows** in `chainTvls[chain
 
 The v1 brief reports `$158,485,774` in the SCOPE_NOTE.md and `$15,848,577` in the manifest — **a 10× display bug**. The actual stale snapshot value was ~$15.85M; current fresh DL TVL is $11.23M.
 
-**TVL methodology:** Per the DL adapter (linked from `tvlCodePath`), TVL = sum of collateral balances at the per-chain Contango proxies via the Lens contract reads. The Vault contract holds user-deposited margin; the leveraged positions sit inside money markets (Aave, Compound, Dolomite, etc.) and are tracked via the position-level NFT ID system.
+### TVL Methodology Detail
+
+**Per the DL adapter** (linked from `tvlCodePath`), TVL = sum of collateral balances **read via the ContangoLens** on each chain. The Lens enumerates open positions and queries the corresponding `UnderlyingPositionFactory`-deployed per-position adapter contracts for their collateral balances inside the money market (Aave / Compound / Dolomite / Euler / Morpho / etc.).
+
+**Critical structural point: Contango is a transient-custody protocol.** The user-facing `Vault` proxy at `0x3F37C7d8…F36b` does NOT hold position collateral. It holds tiny margin balances that pass through during position open/close transactions. **All real economic exposure ($11.23M deposited + $58.3M borrowed) sits inside per-position adapter contracts deployed by `UnderlyingPositionFactory` `0xDaBA8381…7F5`, which custody the actual collateral inside Aave/Compound/etc.**
+
+This means an auditor scoping Contango via "what's at the Vault address" sees almost nothing — the actual surface to audit is (a) the position-adapter factory + per-money-market adapters, (b) the Lens read paths, (c) the FlashLoan callback flows that orchestrate position open/close.
+
+### Per-Chain DL TVL (deposit + borrowed, snapshot 2026-05-15)
+
+| Chain | TVL (deposit) | TVL (borrowed) | Leverage | Notes |
+|---|---:|---:|---:|---|
+| Ethereum | $4,709,448 | $38,441,462 | 8.2× | Dominant; Spark + ZeroLend + Morpho Blue + Compound + Aave V3 integrations |
+| Arbitrum | $4,806,450 | $7,367,480 | 1.5× | Dominant by deposit; Aave V3 + Comet + Dolomite + Lodestar + Silo + Camelot + Pendle stack |
+| Base | $860,725 | $5,546,767 | 6.4× | Aerodrome + Moonwell + Morpho Blue + Aave V3 + Compound V3 |
+| OP Mainnet | $477,697 | $4,126,883 | 8.6× | Aave V3 + Velodrome + Sonne + Silo + Canonical + Exactly |
+| Avalanche | $178,270 | $1,535,895 | 8.6× | Aave V3 |
+| Gnosis | $144,406 | $996,527 | 6.9× | Spark + Aave V3 |
+| Polygon | $32,722 | $231,778 | 7.1× | Aave V3 + Compound |
+| Linea | $12,542 | $20,699 | 1.6× | ZeroLend + Aave V3 |
+| BSC | $5,270 | $59,610 | 11.3× | Aave V3 only |
+| Scroll | $1,581 | $9,744 | 6.2× | Aave V3 only |
+| **Total** | **$11,229,111** | **$58,336,845** | **5.2×** | — |
+
+### On-Chain Per-Contract State (queried 2026-05-19 via Alchemy `eth_call`)
+
+**Vault transient balances** (these are the residual margin floats — DL TVL of $11.23M is NOT here):
+
+| Chain | VaultProxy `0x3F37C7d8…F36b` USDC | VaultProxy WETH | Notes |
+|---|---:|---:|---|
+| Ethereum | $25.25 | 0.7132 WETH | Plus DAI $3,993.64 + USDT $605.65 + wstETH 0.802 |
+| Optimism | $48.47 | 0.0869 WETH | — |
+| Arbitrum | $107.04 | 0.3670 WETH | — |
+| Base | $7.49 | 0.0383 WETH | — |
+| Polygon | $16.84 | 0.0052 WETH | — |
+| Gnosis | $135.91 | — | — |
+| Avalanche | $192.62 | — | — |
+| **Total at Vault (across 10 chains)** | **~$533 USDC** | **~1.21 WETH** | **<$10K total** — confirms transient-custody design |
+
+The Vault holds **<$10K** across all chains combined while the protocol has **$11.23M of leveraged position collateral**. **DL TVL is ~99.9% in per-position adapters, not in Vault.**
+
+**Governance + token state:**
+
+| Contract | Address | State | Note |
+|---|---|---:|---|
+| **TANGO** (governance ERC-20) | `0xc760f978…9966` (Arb) | **1,000,000,000 TANGO** totalSupply | Max supply on Arbitrum |
+| **veTANGO** (Voting Escrow) | `0x96aa7254…221a` (Arb) | **22,067.71 veTANGO** current voting weight (decays) · **370,507.15 TANGO** locked (`supply()`) | 370K/1B = **0.037% of TANGO locked** in veToken |
+| **ContangoPerpetualOption** | `0xc171c681…20a7` (Arb) | **0** totalSupply | The Arb-only Perpetual Option product currently has zero outstanding positions |
+| **PositionNFT** (ERC-721) | `0xC2462f03…fD78` (all 10 chains) | Vault holds 0 NFTs on every chain — positions are held by users directly | Doesn't implement `totalSupply()`; per-position tracking requires event indexing |
+| **TimelockController** | `0xc0939a4E…a90D` (all 10 chains) | `getMinDelay() = 259200s (72h)` on all 9 verified chains | Cross-chain governance delay |
+| **CoreMultisig Eth** | `0xe16cfA41…7Ece` | Gnosis Safe **2-of-3** | Per-chain (different multisig per chain) |
+| **CoreMultisig Arb** | `0xE865379A…2759` | Gnosis Safe **2-of-3** | — |
+
+The **0.037% veTANGO lockup ratio** is notable — only ~370K of 1B TANGO is currently locked, meaning the governance voting weight comes from a very small portion of supply. This is worth flagging for any governance-attack scoping.
 
 ---
 

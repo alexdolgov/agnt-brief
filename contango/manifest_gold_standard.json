@@ -39,11 +39,65 @@
     "scroll": 1581
   },
   "on_chain_state_2026_05_19": {
-    "timelock_min_delay_all_9_verified_chains_seconds": 259200,
-    "timelock_min_delay_hours": 72,
-    "core_multisig_threshold_ethereum": 2,
-    "core_multisig_threshold_arbitrum": 2,
-    "core_multisig_owner_count_eth_arb": 3
+    "tvl_methodology_critical_finding": "Contango is a TRANSIENT-CUSTODY protocol. DL TVL of $11.23M is NOT held at any Contango contract address. It sits inside per-position adapter contracts deployed by UnderlyingPositionFactory 0xDaBA8381...7F5, which custody actual collateral inside money markets (Aave/Compound/Dolomite/etc.). The Vault holds <$10K combined across all 10 chains.",
+    "vault_proxy_address_all_chains": "0x3F37C7d8e61C000085AAc0515775b06A3412F36b",
+    "vault_balances_per_chain": {
+      "ethereum": {
+        "usdc": 25.25,
+        "weth": 0.7132,
+        "dai": 3993.64,
+        "usdt": 605.65,
+        "wsteth": 0.802,
+        "approx_total_usd": "<5000"
+      },
+      "optimism": {
+        "usdc": 48.47,
+        "weth": 0.0869,
+        "approx_total_usd": "<300"
+      },
+      "arbitrum": {
+        "usdc": 107.04,
+        "weth": 0.367,
+        "approx_total_usd": "<1500"
+      },
+      "base": {
+        "usdc": 7.49,
+        "weth": 0.0383,
+        "approx_total_usd": "<200"
+      },
+      "polygon": {
+        "usdc": 16.84,
+        "weth": 0.0052,
+        "approx_total_usd": "<50"
+      },
+      "gnosis": {
+        "usdc": 135.91,
+        "approx_total_usd": "<200"
+      },
+      "avalanche": {
+        "usdc": 192.62,
+        "approx_total_usd": "<300"
+      },
+      "total_vault_usdc_all_chains_approx": 533,
+      "total_vault_weth_all_chains_approx": 1.21,
+      "total_vault_combined_usd_approx": "<10000"
+    },
+    "token_state_arbitrum": {
+      "tango_total_supply": 1000000000,
+      "vetango_voting_weight": 22067.71,
+      "vetango_locked_tango": 370507.15,
+      "vetango_lockup_ratio_of_tango_supply_pct": 0.037,
+      "perp_option_total_supply": 0,
+      "position_nft_held_by_vault_each_chain": 0
+    },
+    "governance_state": {
+      "timelock_min_delay_all_9_verified_chains_seconds": 259200,
+      "timelock_min_delay_hours": 72,
+      "core_multisig_threshold_ethereum": 2,
+      "core_multisig_threshold_arbitrum": 2,
+      "core_multisig_owner_count_eth_arb": 3
+    },
+    "governance_attack_surface_note": "veTANGO lockup ratio is 0.037% (370K/1B). Governance voting weight comes from a very small portion of total supply. Worth flagging for any governance-attack scoping."
   },
   "lifecycle": "active_multi_chain_mature_production",
   "lifecycle_evidence": [
@@ -1289,5 +1343,138 @@
     "veTANGO at 0x96aa72...221a is a Vyper 0.3.7 Curve-pattern Voting Escrow \u2014 pipeline doesn't ingest Vyper.",
     "OperatorMultisig shared addresses across multiple chains (0x885eDb1b...74 used on 6 chains; 0x4d7ef6a3...683 on 3 chains) \u2014 interesting cross-chain key management.",
     "ContangoProxy uses ERC1967Proxy (UUPS pattern), not TUP \u2014 admin slot is 0x0; upgrade authority in impl."
-  ]
+  ],
+  "tvl_per_chain_usd_detailed": {
+    "ethereum": {
+      "deposit_usd": 4709448,
+      "borrowed_usd": 38441462,
+      "leverage_ratio": 8.2,
+      "money_markets": [
+        "Aave V3",
+        "Comet (Compound V3)",
+        "Spark",
+        "ZeroLend",
+        "ZeroLend BTC",
+        "Morpho Blue",
+        "Morpho Pendle"
+      ]
+    },
+    "arbitrum": {
+      "deposit_usd": 4806450,
+      "borrowed_usd": 7367480,
+      "leverage_ratio": 1.5,
+      "money_markets": [
+        "Aave V3",
+        "Comet",
+        "Dolomite",
+        "Lodestar",
+        "Silo",
+        "Camelot",
+        "Camelot Pendle",
+        "Uniswap V3 Pendle",
+        "Balancer Pendle"
+      ]
+    },
+    "base": {
+      "deposit_usd": 860725,
+      "borrowed_usd": 5546767,
+      "leverage_ratio": 6.4,
+      "money_markets": [
+        "Aave V3",
+        "Moonwell",
+        "Aerodrome",
+        "Morpho Blue",
+        "Compound",
+        "Sonne"
+      ]
+    },
+    "op_mainnet": {
+      "deposit_usd": 477697,
+      "borrowed_usd": 4126883,
+      "leverage_ratio": 8.6,
+      "money_markets": [
+        "Aave V3",
+        "Velodrome",
+        "Sonne",
+        "Silo",
+        "Canonical",
+        "Exactly"
+      ]
+    },
+    "avalanche": {
+      "deposit_usd": 178270,
+      "borrowed_usd": 1535895,
+      "leverage_ratio": 8.6,
+      "money_markets": [
+        "Aave V3"
+      ]
+    },
+    "gnosis": {
+      "deposit_usd": 144406,
+      "borrowed_usd": 996527,
+      "leverage_ratio": 6.9,
+      "money_markets": [
+        "Spark",
+        "Aave V3"
+      ]
+    },
+    "polygon": {
+      "deposit_usd": 32722,
+      "borrowed_usd": 231778,
+      "leverage_ratio": 7.1,
+      "money_markets": [
+        "Aave V3",
+        "Compound"
+      ]
+    },
+    "linea": {
+      "deposit_usd": 12542,
+      "borrowed_usd": 20699,
+      "leverage_ratio": 1.6,
+      "money_markets": [
+        "ZeroLend",
+        "Aave V3"
+      ]
+    },
+    "bsc": {
+      "deposit_usd": 5270,
+      "borrowed_usd": 59610,
+      "leverage_ratio": 11.3,
+      "money_markets": [
+        "Aave V3"
+      ]
+    },
+    "scroll": {
+      "deposit_usd": 1581,
+      "borrowed_usd": 9744,
+      "leverage_ratio": 6.2,
+      "money_markets": [
+        "Aave V3"
+      ]
+    }
+  },
+  "per_contract_tvl_findings": [
+    "VaultProxy holds <$10K across all 10 chains combined \u2014 confirms transient-custody pattern",
+    "DL TVL of $11.23M is held inside per-position adapter contracts deployed by UnderlyingPositionFactory, which custody collateral inside money markets (Aave/Compound/Dolomite/Euler/Morpho/etc.)",
+    "Highest leverage chain: BSC at 11.3\u00d7 ($5,270 deposit / $59,610 borrowed). Aave V3 only.",
+    "Highest deposit chain: Arbitrum at $4.81M (1.5\u00d7 leverage \u2014 least leveraged, suggests more spot/swap usage)",
+    "Highest borrowed chain: Ethereum at $38.4M (8.2\u00d7 leverage \u2014 dominant by absolute borrow)",
+    "Arbitrum has the most money-market integrations (9 of which 4 are Pendle-focused for fixed-rate strategies)",
+    "veTANGO lockup ratio 0.037% \u2014 only ~370K of 1B TANGO is locked. Low governance participation",
+    "ContangoPerpetualOption (Arb-only) currently has zero outstanding positions",
+    "PositionNFT doesn't implement totalSupply(); enumerating positions requires Transfer event indexing",
+    "TimelockController 72h delay verified on all 9 Etherscan-v2-supported chains"
+  ],
+  "tvl_per_chain_usd_summary": {
+    "ethereum": 4709448,
+    "arbitrum": 4806450,
+    "base": 860725,
+    "op_mainnet": 477697,
+    "avalanche": 178270,
+    "gnosis": 144406,
+    "polygon": 32722,
+    "linea": 12542,
+    "bsc": 5270,
+    "scroll": 1581
+  }
 }

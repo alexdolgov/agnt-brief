@@ -20,6 +20,62 @@ Contango V2 has **480 unique addresses** across 10 chains (739 total entries in 
 
 ---
 
+## Per-Chain TVL + Per-Contract On-Chain State (queried 2026-05-19)
+
+### DL TVL Per Chain (deposit + borrowed, snapshot 2026-05-15)
+
+| Chain | Deposit | Borrowed | Leverage | Money markets integrated |
+|---|---:|---:|---:|---|
+| Ethereum | $4,709,448 | $38,441,462 | 8.2× | Aave V3, Comet, Spark, ZeroLend, ZeroLend BTC, Morpho Blue, Morpho Pendle |
+| Arbitrum | $4,806,450 | $7,367,480 | 1.5× | Aave V3, Comet, Dolomite, Lodestar, Silo, Camelot, Camelot Pendle, Uniswap V3 Pendle, Balancer Pendle |
+| Base | $860,725 | $5,546,767 | 6.4× | Aave V3, Moonwell, Aerodrome, Morpho Blue, Compound, Sonne |
+| OP Mainnet | $477,697 | $4,126,883 | 8.6× | Aave V3, Velodrome, Sonne, Silo, Canonical, Exactly |
+| Avalanche | $178,270 | $1,535,895 | 8.6× | Aave V3 |
+| Gnosis | $144,406 | $996,527 | 6.9× | Spark, Aave V3 |
+| Polygon | $32,722 | $231,778 | 7.1× | Aave V3, Compound |
+| Linea | $12,542 | $20,699 | 1.6× | ZeroLend, Aave V3 |
+| BSC | $5,270 | $59,610 | 11.3× | Aave V3 |
+| Scroll | $1,581 | $9,744 | 6.2× | Aave V3 |
+| **Total** | **$11,229,111** | **$58,336,845** | **5.2×** | — |
+
+### On-Chain Per-Contract State
+
+**Critical structural point**: Contango is a transient-custody protocol. The DL TVL of $11.23M is **NOT held at any Contango contract address**. It sits inside per-position adapter contracts deployed by `UnderlyingPositionFactory` `0xDaBA8381…7F5`, which custody the actual collateral inside the money markets (Aave/Compound/Dolomite/etc.).
+
+**Vault transient balances** (showing the residual margin float — confirms the transient-custody design):
+
+| Chain | VaultProxy USDC | VaultProxy WETH | Vault total | Notes |
+|---|---:|---:|---:|---|
+| Ethereum | $25.25 | 0.7132 WETH | <$5K | Also DAI $3,993.64 + USDT $605.65 + wstETH 0.802 |
+| Optimism | $48.47 | 0.0869 WETH | <$300 | — |
+| Arbitrum | $107.04 | 0.3670 WETH | <$1,500 | — |
+| Base | $7.49 | 0.0383 WETH | <$200 | — |
+| Polygon | $16.84 | 0.0052 WETH | <$50 | — |
+| Gnosis | $135.91 | — | <$200 | — |
+| Avalanche | $192.62 | — | <$300 | — |
+| **Total at Vault** | **~$533 USDC** | **~1.21 WETH** | **<$10K combined** | Compare to DL TVL of $11.23M — 99.9% of TVL is in per-position adapters, not Vault |
+
+**Token + governance state (Arbitrum):**
+
+| Contract | Address | State |
+|---|---|---:|
+| TANGO (governance) | `0xc760f978…9966` | totalSupply **1,000,000,000 TANGO** |
+| veTANGO (Voting Escrow) | `0x96aa7254…221a` | voting weight **22,067.71 veTANGO** · locked **370,507.15 TANGO** (`supply()`) |
+| veTANGO lockup ratio | — | **0.037% of TANGO supply locked** in veToken (governance attack surface) |
+| ContangoPerpetualOption | `0xc171c681…20a7` | totalSupply **0** (no outstanding positions) |
+| PositionNFT (all chains) | `0xC2462f03…fD78` | Vault holds 0 NFTs on every chain (positions held by users) |
+
+**Governance contracts (cross-chain):**
+
+| Contract | Address | State |
+|---|---|---:|
+| TimelockController (all 10 chains) | `0xc0939a4E…a90D` | `getMinDelay() = 259200s (72h)` verified on 9 chains |
+| CoreMultisig Ethereum | `0xe16cfA41…7Ece` | Gnosis Safe 2-of-3 (verified) |
+| CoreMultisig Arbitrum | `0xE865379A…2759` | Gnosis Safe 2-of-3 (verified) |
+| CoreMultisigs on 8 other chains | various per-chain | Per-chain Gnosis Safes; thresholds not enumerated for all but inferred 2-of-3 based on Eth+Arb pattern |
+
+---
+
 ## Lifecycle and Recent Activity
 
 Lifecycle status: **ACTIVE**. Verified by:

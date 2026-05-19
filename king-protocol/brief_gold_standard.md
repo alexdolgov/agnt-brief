@@ -38,15 +38,77 @@ DL adapter ([`projects/king/index.js`](https://github.com/DefiLlama/DefiLlama-Ad
 
 DL counts **Ethereum only** ($1.27M TVL) because the actual restaking-reward AVS tokens accrue at the L1 vault. The L2 contracts (Mantle, Base, Arbitrum, Swell) are **KingOFTL2 bridge endpoints** — they mint/burn local KING ERC-20 representations of the L1 KING token via LayerZero OFT v2. The local KING supply on L2 is bridged-supply, not independent TVL.
 
-**On-chain state (queried 2026-05-19 via Alchemy `eth_call`):**
+### Per-Chain TVL Breakdown (queried 2026-05-19)
+
+| Chain | Chain ID | DL TVL (USD) | KING totalSupply (on-chain) | Share of master | Note |
+|---|---:|---:|---:|---:|---|
+| Ethereum | 1 | **$1,274,136** | **6,629.87 KING** | 100% (master) | All DL-counted TVL is held by the L1 vault as AVS rewards |
+| Mantle | 5000 | $0 | 255.11 KING | 3.85% | LayerZero OFT v2 bridged supply |
+| Base | 8453 | $0 | 159.55 KING | 2.41% | LayerZero OFT v2 bridged supply |
+| Arbitrum | 42161 | $0 | 72.55 KING | 1.09% | LayerZero OFT v2 bridged supply |
+| Swell | 1923 | $0 | (not queryable; chain not on Alchemy / Etherscan v2) | n/a | Bridge target per king-cross-chain README |
+| **Total** | — | **$1,274,136** | **6,629.87 master + ~487 L2 bridged (7.35%)** | — | DL counts L1 only; L2 supplies are bridged-derivative |
+
+**Key finding:** ~7.35% of total KING supply (487/6629.87 KING) sits on L2s as bridged representations. The remaining ~92.65% is held on Ethereum either by the vault itself (as locked OFT collateral) or by L1 KING holders.
+
+### Per-Token AVS Holdings at LRTSquaredProxy (Ethereum, queried 2026-05-19)
+
+Sum of ERC-20 `balanceOf(0x8F08B7…6040)`. Confirmed via Alchemy `eth_call` + cross-checked against DL's `tokensInUsd` snapshot 2026-05-15.
+
+| AVS Token | Contract Address | Balance | USD Value | % of TVL |
+|---|---|---:|---:|---:|
+| **EIGEN** | `0xec53bF…1F83` | **4,690,096.44 EIGEN** | $878,906 | **68.98%** |
+| **WETH** | `0xC02aaA…56Cc2` | **136.54 WETH** | $291,557 | **22.88%** |
+| **ETHFI** | `0xFe0c30…C0eB` | 210,512.91 ETHFI | $79,646 | 6.25% |
+| **MNT** | `0x3c3a81…f354` | 37,188.85 MNT | $23,391 | 1.84% |
+| **KERNEL** | `0x3f80b1…4ccf` | 9,895.23 KERNEL | $637 | 0.05% |
+| **SWELL** | `0x0a6E7B…5676` | 38.72 SWELL | $0.054 | 0.00% |
+| Plus dust (not in DL) | USDC + HEX + yRise + own KING | — | ~$150 | n/a |
+| **DL total** | — | — | **$1,274,136** | **100%** |
+
+**Concentration:** **EIGEN + WETH together = 91.86% of all DL TVL.** A drawdown in either token (or the EIGEN/AVS reward stream stopping) materially affects vault TVL. The 6-token AVS reward mix matches the protocol's purpose (aggregating fragmented restaking rewards) but the concentration into 2 tokens is striking.
+
+### On-Chain Governance + Token State (queried 2026-05-19 via Alchemy `eth_call`)
 
 | Asset | Contract | Value | Note |
 |---|---|---:|---|
-| KING totalSupply | `LRTSquaredProxy` `0x8F08B7…6040` (Ethereum) | **6,629.93 KING** | Share-token supply on L1 |
-| KING owner (core) | `0xF46D37…e2B5` | Gnosis Safe, **4-of-8** | Owns core protocol |
-| KingOFTL1 owner (cross-chain) | `0x360b82…6B11` | Gnosis Safe, **3-of-10** | Owns cross-chain OFT bridge |
+| KING totalSupply (master) | `LRTSquaredProxy` `0x8F08B7…6040` (Ethereum) | **6,629.87 KING** | Share-token supply on L1 (master) |
+| KING totalSupply (Mantle bridged) | `0x548c41…98ed` | 255.11 KING | Bridged supply |
+| KING totalSupply (Base bridged) | `0xe22c24…bac0` | 159.55 KING | Bridged supply |
+| KING totalSupply (Arb bridged) | `0x2e4124…e275` | 72.55 KING | Bridged supply |
+| KingOFTL1 owner (cross-chain Safe) | `0x360b82…6B11` | Gnosis Safe, **3-of-10** | 10 distinct owners |
+| Core Safe (LRTSquared admin + pauser + rebalancer) | `0xF46D37…e2B5` | Gnosis Safe, **4-of-8** | 8 distinct owners |
+| LRTSquaredProxy `owner()` | (returns empty) | — | Uses AccessControl roles, not Ownable |
+| BoringVaultPriceProvider `owner()` | — | `0xF46D37…e2B5` (= core Safe) | Owned by core Safe |
+| Pauser0 EOA | `0x9AF12989…44D` | EOA (no code) | Emergency pause role, not a Safe |
 
-The **two separate multisigs** (4-of-8 for core, 3-of-10 for cross-chain) suggest different operator sets — likely EtherFi team for core + a broader cross-chain ops group for the bridge.
+**Safe overlap finding (governance separation):** Of the 8 core-Safe owners and 10 cross-chain-Safe owners, **3 EOAs sit on both Safes** (`0xcfd4ea…2955`, `0x2210dc…cd02e`, `0x0fce5c…f444`) — **37.5% overlap of core members**. This means that across both governance domains, there are **15 distinct human operators** (not 18). If those 3 shared keys were compromised, they alone are insufficient to execute either Safe (need 4 / 3 respectively), but the governance separation between core and cross-chain is *partially* breached. Worth flagging as a real-world governance-attack-surface finding.
+
+**Proxy impl pointers (all verified 2026-05-19 via `eth_getStorageAt` on ERC1967 impl slot):**
+
+| Proxy | Chain | Storage-slot-verified impl | Matches deployments.json? |
+|---|---|---|---|
+| LRTSquaredProxy `0x8F08B7…6040` | Ethereum | `0x1cb489ef…57de` | ✓ |
+| PriceProviderProxy `0x2B9010…19E3` | Ethereum | `0x28a6e7eb…f32f` | ✓ |
+| KingOFTL1 Proxy `0x4c8A45…707d` | Ethereum | `0xaccec895…9d9d` | ✓ |
+| Mantle KingOFTL2 Proxy `0x548c41…98ed` | Mantle | `0x5a57ebb2…7ab0` | ✓ |
+| Base KingOFTL2 Proxy `0xe22c24…bac0` | Base | `0x4d6a2298…beab` | ✓ |
+| Arb KingOFTL2 Proxy `0x2e4124…e275` | Arbitrum | `0xb57d2086…127f` | ✓ |
+
+All 6 proxy chains are clean — every storage-slot-derived impl matches the canonical `deployments.json` impl. No anomalous proxy bindings.
+
+### Mantle "unknown" 0xe63ba6…e318 — identity resolved
+
+The v1 brief lists this Mantle address as `unverified / unknown source on Etherscan`. On-chain probe identifies it conclusively:
+
+| Field | Value |
+|---|---|
+| `symbol()` | **"MoeLP"** |
+| `name()` | **"Moe LP Token"** |
+| `totalSupply()` | 9.42 LP tokens |
+| `is_contract` | true (95 bytes of bytecode — small, looks like minimal proxy) |
+
+This is a **Merchant Moe** (Mantle's leading DEX, Trader Joe fork) **LP Token** — **NOT King-deployed**. It's another 3rd-party DEX integration (similar to Base Curve V2 + Arb Ramses CL pool). The v1 brief's "unknown" entry resolves to a 5th external DEX integration. Confirmed by: small bytecode, generic LP-style symbol/name, nonzero totalSupply, no King-related fields. Operator should treat this exactly like the Base + Arbitrum DEX pool entries.
 
 ---
 
@@ -122,11 +184,11 @@ The Mantle, Base, and Arbitrum impls are all `KingOFTL2` (compiler 0.8.22) — E
 |---|---|---|---|
 | RamsesBeaconProxy | external | [`0x93e6e571d04848de3ba31525fca36f1e4f7bc942`](https://arbiscan.io/address/0x93e6e571d04848de3ba31525fca36f1e4f7bc942) | Ramses Exchange CL pool beacon proxy — Ramses-owned, not King-deployed |
 
-### Mantle — Unidentified
+### Mantle — DEX Integration (identity resolved 2026-05-19)
 
 | Contract | Role | Address | Notes |
 |---|---|---|---|
-| Unknown `0xe63ba6…e318` | unverified | [`0xe63ba626494f88d5a269b435213f2e8803cce318`](https://mantlescan.xyz/address/0xe63ba626494f88d5a269b435213f2e8803cce318) | Returns empty source on Etherscan; could be an unverified intermediate or external integration |
+| **Merchant Moe LP Token** | external | [`0xe63ba626494f88d5a269b435213f2e8803cce318`](https://mantlescan.xyz/address/0xe63ba626494f88d5a269b435213f2e8803cce318) | symbol=`MoeLP`, name=`Moe LP Token`, totalSupply 9.42 LP. Merchant Moe (Mantle's Trader Joe fork) LP token holding KING/asset liquidity. Etherscan source returned empty but `symbol()`+`name()` calls succeeded. **NOT King-deployed.** |
 
 ---
 
@@ -204,7 +266,7 @@ The v1 brief lists **13 contracts**. Reviewing each:
 | `LRTSquaredCore` Eth `0x1cb489ef…57de` (NO_SCOPE_ROW) | **REAL King** — main vault impl | Listed in manifest with `role_category: excluded` — should be marked core |
 | `ERC1967Proxy` Mantle `0x548c41…98ed` | **REAL King** — Mantle KingOFTL2 proxy | Correctly attributed |
 | `KingOFTL2` Mantle `0x5a57eb…7ab0` | **REAL King** — Mantle KingOFTL2 impl | Correctly attributed |
-| `unnamed unknown` Mantle `0xe63ba6…e318` | **UNVERIFIED** — returns empty source on Etherscan; could be either King or external | Cannot resolve without RPC bytecode probe |
+| `unnamed unknown` Mantle `0xe63ba6…e318` | **NOT KING** — Merchant Moe LP Token (symbol `MoeLP`, name `Moe LP Token`, 9.42 LP supply) | Resolved 2026-05-19 via direct `symbol()`+`name()` eth_call. 3rd-party DEX LP, not King-deployed |
 | `CurveTwocryptoOptimized` Base `0x3253c8…0886` (core unmatched) | **NOT KING** — Curve Finance V2 pool | Pool is Curve-deployed; King uses it but doesn't own it |
 | `KingOFTL2` Base `0x4d6a22…beab` | **REAL King** — Base KingOFTL2 impl | Correctly attributed |
 | `Pool` Base `0xdc5f7c…15ac` | **NOT KING** — likely a DEX pool, contract name is just "Pool" (generic) | Holds $1.4K TVL per v1 manifest — likely a 3rd-party DEX pool |
@@ -215,7 +277,7 @@ The v1 brief lists **13 contracts**. Reviewing each:
 
 **Net of v1 brief defects:**
 
-- **4 false positives** (UniswapV3Pool, CurveTwocryptoOptimized, Base `Pool 0xdc5f7c…`, RamsesBeaconProxy — all DEX pools deployed by their respective DEXes, not King)
+- **5 false positives** (UniswapV3Pool, CurveTwocryptoOptimized, Base `Pool 0xdc5f7c…`, RamsesBeaconProxy, **Mantle MoeLP `0xe63ba6…e318`** — all DEX pools deployed by their respective DEXes, not King)
 - **~9 King contracts missing** from v1 brief but present in canonical deployments:
   - Ethereum: PriceProviderProxy + PriceProvider impl + SEthFiStrategy + EEigenStrategy + BoringVaultPriceProvider + KingOFTL1 proxy + KingOFTL1 impl (7 missing)
   - Swell: KingOFTL2 proxy (chain not in v1 brief)
@@ -265,7 +327,7 @@ That's **5 direct audits + 1 pending**. The v1 brief identifies only 2 (both as 
 - **king-vaults Phase I is pre-launch.** The Veda BoringVault + Concrete integrations are not yet deployed but will require audit before mainnet. Per README "Timeline: ~2-3 weeks to mainnet launch (post-audit)" — operator should track this audit when it publishes.
 - **Cross-chain Swell deployment** is documented in repo but Swell chain (1923) is not on Etherscan v2 — operator should verify source via Swell's explorer directly.
 - **Price providers** (PriceProvider + BoringVaultPriceProvider) and **Swapper1InchV6** are not separately named in any audit URL — operator should confirm they're covered under NM_0314.
-- **Unverified Mantle contract `0xe63ba6…e318`** returns empty Etherscan source. Could be intermediate impl or external integration; operator should pull bytecode + identify.
+- **Mantle `0xe63ba6…e318` resolved** — `symbol()` = "MoeLP", `name()` = "Moe LP Token" via direct eth_call. This is a **Merchant Moe DEX LP** (3rd-party DEX integration; NOT King). Reclassified from unknown to external_dex.
 - **Owner overlap with rebalancer + pauser1**: the same address (`0xF46D37…e2B5` core Safe) holds 4 separate roles (owner, pauser1, rebalancer, plus implied admin). If the Safe is compromised, every privileged role falls together. Worth flagging as concentration risk despite the 4-of-8 threshold.
 
 ---
@@ -278,7 +340,7 @@ In rough priority order:
 2. **king-vaults Phase I audit** — track when the pre-launch audit publishes. The Veda BoringVault + Concrete integration is a new product line.
 3. **Mantle ERC1967Proxy variant** — Mantle uses standard OZ ERC1967Proxy while Base/Arb use custom-named UUPSProxy. Confirm this is intentional and the impls bind correctly.
 4. **Cross-chain ownership concentration** — KingOFTL1 owner Safe is 3-of-10 (lower threshold than core 4-of-8). For a multi-chain bridge holding bridged supply, the lower threshold is worth a review.
-5. **Unverified Mantle `0xe63ba6…e318`** — identify what this contract is.
+5. ~~Unverified Mantle `0xe63ba6…e318`~~ — **resolved 2026-05-19**: Merchant Moe DEX LP (`MoeLP`/`Moe LP Token`, 9.42 LP supply). Reclassified as 5th external DEX integration. No longer an open question.
 6. **Owner role concentration** — the same Safe holds owner + pauser1 + rebalancer + admin. Audit should review whether role separation is needed.
 7. **Diff between LRT² (Nov-2024) and current King protocol** — the rebrand wasn't just cosmetic; operator should check if NM_0314 audit covers the current impl bytecode or if any post-rebrand changes happened.
 8. **Swell deployment verification** — pull source from Swell explorer to confirm KingOFTL2 source matches Base + Arbitrum.
@@ -328,7 +390,7 @@ In rough priority order:
 - **King(Retail)-audit-report-[15-Jul-2025].pdf (11.6MB)** auditor name not in filename. Per the timing (mid-2025) and the consistent Nethermind cadence, most likely Nethermind, but unconfirmed.
 - **king-vaults Phase I (Veda BoringVault + Concrete integrations)** is not yet deployed. Operator should track for pre-launch audit publication.
 - **Swell chain (1923)** is not on Etherscan v2; KingOFTL2 source on Swell not verified in this brief.
-- **Unverified Mantle `0xe63ba6…e318`** returns empty Etherscan source; identity unknown.
+- **Mantle `0xe63ba6…e318` was previously "unidentified"**; resolved 2026-05-19 to Merchant Moe LP Token (3rd-party DEX). Etherscan source is empty but identity is conclusive via `symbol()`+`name()` + bytecode size + totalSupply pattern.
 - **owner() on LRTSquaredProxy returned empty** — possibly the proxy uses access-control roles rather than Ownable. Operator should call the access-control role getters on the impl (`hasRole`) for full governance map.
 
 ### Generation metadata

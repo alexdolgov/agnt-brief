@@ -1,0 +1,14 @@
+{
+  "slug": "006_eth_MaestroProxy",
+  "chain_id": 1,
+  "address": "0xa6a147946facac9e0b99824870b36088764f969f",
+  "contango_doc_role": "Maestro ERC1967Proxy (same address all chains)",
+  "etherscan_contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "1",
+  "implementation": "0x79b2374bd437d031a4561fac55d62ad3e6516276"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "048_bsc_OrderManager_impl",
+  "chain_id": 56,
+  "address": "0x7c357c4c00e790a1256bd623ccd27d5cf92f2ccb",
+  "contango_doc_role": "OrderManager implementation on bsc",
+  "etherscan_contract_name": "OrderManager",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

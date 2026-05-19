@@ -1,0 +1,14 @@
+{
+  "slug": "005_eth_VaultProxy",
+  "chain_id": 1,
+  "address": "0x3f37c7d8e61c000085aac0515775b06a3412f36b",
+  "contango_doc_role": "Vault ERC1967Proxy (same address all chains)",
+  "etherscan_contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "1",
+  "implementation": "0x3cab97f99147012b0b1352e5e1278c933776861a"
+}

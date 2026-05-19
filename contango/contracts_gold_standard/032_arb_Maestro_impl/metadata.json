@@ -1,0 +1,14 @@
+{
+  "slug": "032_arb_Maestro_impl",
+  "chain_id": 42161,
+  "address": "0x6603ee5a5f8bbccda80f19402739874c2b43d2cd",
+  "contango_doc_role": "Maestro implementation on arbitrum-one",
+  "etherscan_contract_name": "Maestro",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

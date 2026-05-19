@@ -1,0 +1,14 @@
+{
+  "slug": "010_eth_IERC721Permit2",
+  "chain_id": 1,
+  "address": "0x6b210f49c0f0c8a008a1a4dc25df2e4473d97d85",
+  "contango_doc_role": "IERC721Permit2 (custom permit2 for NFTs)",
+  "etherscan_contract_name": "ERC721Permit2",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "019_gno_Contango_impl",
+  "chain_id": 100,
+  "address": "0xeaa886daba2b26d962efd7f98bed0e47e9455560",
+  "contango_doc_role": "Contango implementation on gnosis (per-chain because each chain has different money-market integrations)",
+  "etherscan_contract_name": "Contango",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

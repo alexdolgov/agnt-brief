@@ -1,0 +1,14 @@
+{
+  "slug": "050_polygon_OrderManager_impl",
+  "chain_id": 137,
+  "address": "0x9d11793b812e1670a6e1dfbc9fe908821f880b4a",
+  "contango_doc_role": "OrderManager implementation on matic",
+  "etherscan_contract_name": "OrderManager",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

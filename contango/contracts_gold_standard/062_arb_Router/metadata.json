@@ -1,0 +1,14 @@
+{
+  "slug": "062_arb_Router",
+  "chain_id": 42161,
+  "address": "0xab5b13a831cd086f4994ee65d37ba3f4494a3dea",
+  "contango_doc_role": "Spot Router on arbitrum-one",
+  "etherscan_contract_name": "Router",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

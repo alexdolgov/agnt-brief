@@ -1,0 +1,14 @@
+{
+  "slug": "053_avax_OrderManager_impl",
+  "chain_id": 43114,
+  "address": "0x6c38da96acb69048d82f7d801cf55614e7752f39",
+  "contango_doc_role": "OrderManager implementation on avalanche",
+  "etherscan_contract_name": "",
+  "compiler_version": "",
+  "optimization_used": "",
+  "runs": "",
+  "license_type": "Unknown",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

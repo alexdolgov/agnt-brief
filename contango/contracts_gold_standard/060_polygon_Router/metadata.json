@@ -1,0 +1,14 @@
+{
+  "slug": "060_polygon_Router",
+  "chain_id": 137,
+  "address": "0xebd8fe128eabafad42e7e4fe9566160884f06e9a",
+  "contango_doc_role": "Spot Router on matic",
+  "etherscan_contract_name": "Router",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

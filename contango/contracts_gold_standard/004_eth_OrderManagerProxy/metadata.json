@@ -1,0 +1,14 @@
+{
+  "slug": "004_eth_OrderManagerProxy",
+  "chain_id": 1,
+  "address": "0xa64f0dbb10c473978c2efe069da207991e8e3cb3",
+  "contango_doc_role": "OrderManager ERC1967Proxy (same address all chains)",
+  "etherscan_contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "1",
+  "implementation": "0x912105af77ebf02e3389dc74eb83ecdedaaf8e34"
+}

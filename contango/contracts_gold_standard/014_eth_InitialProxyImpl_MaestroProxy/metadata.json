@@ -1,0 +1,14 @@
+{
+  "slug": "014_eth_InitialProxyImpl_MaestroProxy",
+  "chain_id": 1,
+  "address": "0x35e6c82b43b03c15c80a321202e966aaf665b246",
+  "contango_doc_role": "Initial impl behind MaestroProxy",
+  "etherscan_contract_name": "InitialProxyImpl",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": null
+}

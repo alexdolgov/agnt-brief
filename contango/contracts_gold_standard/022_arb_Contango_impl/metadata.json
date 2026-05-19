@@ -1,0 +1,14 @@
+{
+  "slug": "022_arb_Contango_impl",
+  "chain_id": 42161,
+  "address": "0xc3e9446a4191f692f96f3d81878045e86bcd8d37",
+  "contango_doc_role": "Contango implementation on arbitrum-one (per-chain because each chain has different money-market integrations)",
+  "etherscan_contract_name": "Contango",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

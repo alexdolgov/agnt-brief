@@ -1,0 +1,14 @@
+{
+  "slug": "072_arb_ContangoLens_impl",
+  "chain_id": 42161,
+  "address": "0x71ffbcff48c363331977cfd0c6295e7b6d233a0a",
+  "contango_doc_role": "ContangoLens implementation on arbitrum-one",
+  "etherscan_contract_name": "ContangoLens",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "066_eth_ContangoLens_impl",
+  "chain_id": 1,
+  "address": "0x8f9bfeea67e37174fb462674f23caf14fa251f50",
+  "contango_doc_role": "ContangoLens implementation on mainnet",
+  "etherscan_contract_name": "ContangoLens",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

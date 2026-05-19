@@ -1,0 +1,14 @@
+{
+  "slug": "034_linea_Maestro_impl",
+  "chain_id": 59144,
+  "address": "0x01fe7dde6688c92ddacab33bb2df7c20cf8c1702",
+  "contango_doc_role": "Maestro implementation on linea",
+  "etherscan_contract_name": "Maestro",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "044_linea_Vault_impl",
+  "chain_id": 59144,
+  "address": "0xd3c41a41e5430239772a4bcacae89be89dc73e2b",
+  "contango_doc_role": "Vault implementation on linea",
+  "etherscan_contract_name": "Vault",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": null
+}

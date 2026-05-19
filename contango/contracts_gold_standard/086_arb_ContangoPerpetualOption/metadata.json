@@ -1,0 +1,14 @@
+{
+  "slug": "086_arb_ContangoPerpetualOption",
+  "chain_id": 42161,
+  "address": "0xc171c681bfa3720306c1ba695a52b54f3f5d20a7",
+  "contango_doc_role": "ContangoPerpetualOption (perpetual options on Arbitrum; covered by Offbeat Security audit Oct-2024)",
+  "etherscan_contract_name": "ContangoPerpetualOption",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

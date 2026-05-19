@@ -1,0 +1,14 @@
+{
+  "slug": "036_eth_Vault_impl",
+  "chain_id": 1,
+  "address": "0x3cab97f99147012b0b1352e5e1278c933776861a",
+  "contango_doc_role": "Vault implementation on mainnet",
+  "etherscan_contract_name": "Vault",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

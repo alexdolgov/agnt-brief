@@ -1,0 +1,14 @@
+{
+  "slug": "057_op_Router",
+  "chain_id": 10,
+  "address": "0x4ee92ea287f4efa62b2ea6af87c3573e2d530e61",
+  "contango_doc_role": "Spot Router on optimism",
+  "etherscan_contract_name": "Router",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

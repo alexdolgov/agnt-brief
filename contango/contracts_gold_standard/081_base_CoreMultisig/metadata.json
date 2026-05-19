@@ -1,0 +1,14 @@
+{
+  "slug": "081_base_CoreMultisig",
+  "chain_id": 8453,
+  "address": "0xba59f902e3ee431e97c4aca203fd5e6e3d4f8be9",
+  "contango_doc_role": "CoreMultisig (Gnosis Safe) on base",
+  "etherscan_contract_name": "GnosisSafeProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": "0",
+  "runs": "200",
+  "license_type": "GNU GPLv3",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

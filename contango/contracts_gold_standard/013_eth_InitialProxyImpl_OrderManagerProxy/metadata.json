@@ -1,0 +1,14 @@
+{
+  "slug": "013_eth_InitialProxyImpl_OrderManagerProxy",
+  "chain_id": 1,
+  "address": "0x037a5ea2f7fd0160871f09796713c99dd55ac198",
+  "contango_doc_role": "Initial impl behind OrderManagerProxy",
+  "etherscan_contract_name": "InitialProxyImpl",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": null
+}

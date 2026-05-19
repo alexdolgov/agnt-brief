@@ -1,0 +1,14 @@
+{
+  "slug": "040_polygon_Vault_impl",
+  "chain_id": 137,
+  "address": "0x253cfc795f2ca9bd56b217e7b377f98f15f07311",
+  "contango_doc_role": "Vault implementation on matic",
+  "etherscan_contract_name": "Vault",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

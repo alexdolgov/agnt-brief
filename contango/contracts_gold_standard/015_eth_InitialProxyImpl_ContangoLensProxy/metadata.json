@@ -1,0 +1,14 @@
+{
+  "slug": "015_eth_InitialProxyImpl_ContangoLensProxy",
+  "chain_id": 1,
+  "address": "0x5089e6d1c59276f53efcd45aa69cae7b13d44da7",
+  "contango_doc_role": "Initial impl behind ContangoLensProxy",
+  "etherscan_contract_name": "InitialProxyImpl",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "london",
+  "proxy": "0",
+  "implementation": null
+}

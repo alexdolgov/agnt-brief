@@ -1,0 +1,14 @@
+{
+  "slug": "056_eth_Router",
+  "chain_id": 1,
+  "address": "0xdaf4da41aacc0439b412a138fe8274e06341024e",
+  "contango_doc_role": "Spot Router on mainnet",
+  "etherscan_contract_name": "Router",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

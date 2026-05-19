@@ -1,0 +1,14 @@
+{
+  "slug": "02_eth_LRTSquared_impl",
+  "chain_id": 1,
+  "address": "0x1cb489ef513e1cc35c4657c91853a2e6ff1957de",
+  "king_doc_role": "LRTSquaredCore implementation (the main King vault impl, holds AVS rewards as underlying)",
+  "etherscan_contract_name": "LRTSquaredCore",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "10000",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

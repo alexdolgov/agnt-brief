@@ -1,0 +1,14 @@
+{
+  "slug": "07_eth_EEigenStrategy",
+  "chain_id": 1,
+  "address": "0x2f2342bd9fca72887f46de9522014f4cd154cf3e",
+  "king_doc_role": "EEigenStrategy (eEIGEN strategy contract)",
+  "etherscan_contract_name": "EEigenStrategy",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "10000",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

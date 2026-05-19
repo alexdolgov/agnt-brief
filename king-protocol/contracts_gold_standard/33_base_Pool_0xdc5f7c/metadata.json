@@ -1,0 +1,14 @@
+{
+  "slug": "33_base_Pool_0xdc5f7c",
+  "chain_id": 8453,
+  "address": "0xdc5f7c7916c7792603fdc17f05f7929b423015ac",
+  "king_doc_role": "Pool on Base (v1 brief 'likely in scope' \u2014 probably KING/asset DEX pool)",
+  "etherscan_contract_name": "Pool",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "BSL 1.1",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

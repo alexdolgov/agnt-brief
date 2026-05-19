@@ -1,0 +1,14 @@
+{
+  "slug": "20_mantle_KingOFTL2_proxy",
+  "chain_id": 5000,
+  "address": "0x548c4116a97e0138f78000088ea3f155717b98ed",
+  "king_doc_role": "KingOFTL2 ERC1967Proxy (Mantle L2 OFT)",
+  "etherscan_contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "MIT",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0x5a57ebb2c25eb64f05ebb4e07d9de8b3b67a7ab0"
+}

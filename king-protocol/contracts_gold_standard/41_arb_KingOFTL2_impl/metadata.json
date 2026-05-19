@@ -1,0 +1,14 @@
+{
+  "slug": "41_arb_KingOFTL2_impl",
+  "chain_id": 42161,
+  "address": "0xb57d208661adfa911a40ee5a0de6ee0f056d127f",
+  "king_doc_role": "KingOFTL2 implementation (Arbitrum)",
+  "etherscan_contract_name": "KingOFTL2",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

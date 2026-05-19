@@ -1,0 +1,14 @@
+{
+  "slug": "22_mantle_unknown_0xe63ba6",
+  "chain_id": 5000,
+  "address": "0xe63ba626494f88d5a269b435213f2e8803cce318",
+  "king_doc_role": "v1 brief 'unnamed' on Mantle (could be unverified impl or external integration)",
+  "etherscan_contract_name": "",
+  "compiler_version": "",
+  "optimization_used": "",
+  "runs": "",
+  "license_type": "Unknown",
+  "evm_version": "Default",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "01_eth_LRTSquared_proxy",
+  "chain_id": 1,
+  "address": "0x8f08b70456eb22f6109f57b8fafe862ed28e6040",
+  "king_doc_role": "LRTSquared UUPSProxy (the main King vault; v1 brief calls 'UUPSProxy')",
+  "etherscan_contract_name": "UUPSProxy",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "500",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "1",
+  "implementation": "0x1cb489ef513e1cc35c4657c91853a2e6ff1957de"
+}

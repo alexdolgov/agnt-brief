@@ -1,0 +1,14 @@
+{
+  "slug": "09_eth_KingOFTL1_proxy",
+  "chain_id": 1,
+  "address": "0x4c8a4521f2431b0ac003829ac4e6dbc4ed97707d",
+  "king_doc_role": "KingOFTL1 UUPS proxy (LayerZero OFT mainnet, KING token cross-chain anchor; per cross-chain repo README)",
+  "etherscan_contract_name": "UUPS",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0xaccec895650eb692caac4dbfd7ee7b3ee4fb9d9d"
+}

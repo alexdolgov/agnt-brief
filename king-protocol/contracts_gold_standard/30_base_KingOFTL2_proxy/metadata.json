@@ -1,0 +1,14 @@
+{
+  "slug": "30_base_KingOFTL2_proxy",
+  "chain_id": 8453,
+  "address": "0xe22c243c7559c667a1eb94b593369d192c5fbac0",
+  "king_doc_role": "KingOFTL2 UUPS proxy (Base L2 OFT)",
+  "etherscan_contract_name": "UUPS",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0x4d6a22986acca58aa890fbb233f3b4563251beab"
+}

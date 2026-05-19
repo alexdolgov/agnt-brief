@@ -1,0 +1,14 @@
+{
+  "slug": "04_eth_PriceProvider_impl",
+  "chain_id": 1,
+  "address": "0x28a6e7ebb6aca8f64145952a9565245c3dc1f32f",
+  "king_doc_role": "PriceProvider implementation",
+  "etherscan_contract_name": "PriceProvider",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": "1",
+  "runs": "500",
+  "license_type": "",
+  "evm_version": "cancun",
+  "proxy": "0",
+  "implementation": null
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "32_arb_BlackwingVaultToken_USDC",
+  "chain_id": 42161,
+  "address": "0xb943bd7da6948324363025e3fe789cd02c846c86",
+  "blackwing_doc_role": "BlackwingVaultToken USDC (same address as Eth)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0x39c973162f2af3dd7dc8bfbecc7fdc0b8602b979"
+}

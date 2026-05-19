@@ -1,0 +1,14 @@
+{
+  "slug": "21_eth_BlackwingVaultToken_PEPE",
+  "chain_id": 1,
+  "address": "0x33f0d2e2b8588bcddb47728ee25c3ed6e1308cb7",
+  "blackwing_doc_role": "BlackwingVaultToken PEPE (memecoin)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0xd0ffe6c7a7629d3376fed69865bc99f4fd92f205"
+}

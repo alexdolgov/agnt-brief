@@ -1,0 +1,14 @@
+{
+  "slug": "18_eth_BlackwingVaultToken_PT_ENA_29AUG2024",
+  "chain_id": 1,
+  "address": "0xa451169fe5f41474e7a370acbfe390807008fbfe",
+  "blackwing_doc_role": "BlackwingVaultToken PT-ENA-29AUG2024 (Pendle PT)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0x43edc8040b3bb9aecc5871d6d42eedc2385b1533"
+}

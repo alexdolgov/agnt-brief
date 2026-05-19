@@ -1,0 +1,14 @@
+{
+  "slug": "24_eth_BlackwingVaultToken_mstETH",
+  "chain_id": 1,
+  "address": "0x9a597101684cae355c1663ff23f20eb4fcb3a783",
+  "blackwing_doc_role": "BlackwingVaultToken mstETH (Eigenpie mstETH)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0xd9beb11b967b3a96e15df83613951eae61bf8c14"
+}

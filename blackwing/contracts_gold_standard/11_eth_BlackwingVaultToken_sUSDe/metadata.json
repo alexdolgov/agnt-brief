@@ -1,0 +1,14 @@
+{
+  "slug": "11_eth_BlackwingVaultToken_sUSDe",
+  "chain_id": 1,
+  "address": "0x81a3b889b718be0503698e18f836bf44a0a8be22",
+  "blackwing_doc_role": "BlackwingVaultToken sUSDe (Ethena staked USDe)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0x010bd3cfe12cd3f57b7b0dcf23a7a8eb26845ec7"
+}

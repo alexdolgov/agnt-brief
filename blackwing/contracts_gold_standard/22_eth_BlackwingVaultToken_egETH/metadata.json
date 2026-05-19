@@ -1,0 +1,14 @@
+{
+  "slug": "22_eth_BlackwingVaultToken_egETH",
+  "chain_id": 1,
+  "address": "0x533a3a06680db5dafacde57691d3dd2a7f4fe332",
+  "blackwing_doc_role": "BlackwingVaultToken egETH (Eigenpie)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0xf962098614b4d33a3223b56e0f4a83144db7fba1"
+}

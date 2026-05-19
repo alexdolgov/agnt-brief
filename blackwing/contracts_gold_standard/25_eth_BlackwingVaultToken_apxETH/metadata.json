@@ -1,0 +1,14 @@
+{
+  "slug": "25_eth_BlackwingVaultToken_apxETH",
+  "chain_id": 1,
+  "address": "0xbf1253983b930fea513e2437e8d83520d9ddeaee",
+  "blackwing_doc_role": "BlackwingVaultToken apxETH (Dinero auto-pxETH)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0x9a29788d21b424c5356038af5d7f04f03fd6109e"
+}

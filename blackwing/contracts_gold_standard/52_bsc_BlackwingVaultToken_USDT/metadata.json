@@ -1,0 +1,14 @@
+{
+  "slug": "52_bsc_BlackwingVaultToken_USDT",
+  "chain_id": 56,
+  "address": "0xa767c903d8b801a2f3cc451134ead2d7903c0350",
+  "blackwing_doc_role": "BlackwingVaultToken USDT",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0xb943bd7da6948324363025e3fe789cd02c846c86"
+}

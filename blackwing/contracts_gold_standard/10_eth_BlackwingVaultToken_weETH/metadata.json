@@ -1,0 +1,14 @@
+{
+  "slug": "10_eth_BlackwingVaultToken_weETH",
+  "chain_id": 1,
+  "address": "0x28d6f930462299c6597ac40b06f95dad3476477e",
+  "blackwing_doc_role": "BlackwingVaultToken weETH (Ether.fi wrapped)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0x870824f50f0b18c56ebe2f3e9fa2904a4a3ba985"
+}

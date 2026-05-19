@@ -1,0 +1,14 @@
+{
+  "slug": "30_arb_BlackwingVault",
+  "chain_id": 42161,
+  "address": "0xc6ade8a68026d582ab37b879d188caf7e405dd09",
+  "blackwing_doc_role": "BlackwingVault (TransparentUpgradeableProxy; same address slot as Ethereum via CREATE-collision)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0xa92299289361fdcbb4ce9acbb512a84bd5fab37d"
+}

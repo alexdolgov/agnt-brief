@@ -1,0 +1,14 @@
+{
+  "slug": "36_arb_BlackwingVaultToken_PT_weETH_27JUN2024",
+  "chain_id": 42161,
+  "address": "0x761b2ccdd37ef1cac84f8728687a5248c9efb78f",
+  "blackwing_doc_role": "BlackwingVaultToken PT-weETH-27JUN2024 (Pendle PT)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0xcfd90e3b89dcff2d357463f0aafdb175075eab9d"
+}

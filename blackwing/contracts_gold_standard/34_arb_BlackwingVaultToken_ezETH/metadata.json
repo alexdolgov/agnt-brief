@@ -1,0 +1,14 @@
+{
+  "slug": "34_arb_BlackwingVaultToken_ezETH",
+  "chain_id": 42161,
+  "address": "0x27ea06f9e5e4deb9349187a39edadef9142a46ec",
+  "blackwing_doc_role": "BlackwingVaultToken ezETH",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0xa5e5c53edefe4ff90cf9f19edac730fff2b7ca27"
+}

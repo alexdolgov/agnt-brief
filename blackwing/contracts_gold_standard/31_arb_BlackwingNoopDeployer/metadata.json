@@ -1,0 +1,14 @@
+{
+  "slug": "31_arb_BlackwingNoopDeployer",
+  "chain_id": 42161,
+  "address": "0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f",
+  "blackwing_doc_role": "BlackwingNoopDeployer (same address as Eth)",
+  "etherscan_contract_name": "BlackwingNoopDeployer",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": "0",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "0",
+  "implementation": null
+}

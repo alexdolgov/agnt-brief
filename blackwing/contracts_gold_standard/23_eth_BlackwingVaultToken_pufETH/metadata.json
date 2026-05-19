@@ -1,0 +1,14 @@
+{
+  "slug": "23_eth_BlackwingVaultToken_pufETH",
+  "chain_id": 1,
+  "address": "0xf59ab8c53f2075339a1e31c16c227c51264e3359",
+  "blackwing_doc_role": "BlackwingVaultToken pufETH (Puffer LRT)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0x032f155884dcc6b86dd70595cafdee0f7003d322"
+}

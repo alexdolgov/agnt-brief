@@ -1,0 +1,14 @@
+{
+  "slug": "08_eth_BlackwingVaultToken_ezETH",
+  "chain_id": 1,
+  "address": "0xcfd9020f41162eede87252885e2551a9377263a3",
+  "blackwing_doc_role": "BlackwingVaultToken ezETH (Renzo LRT)",
+  "etherscan_contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": "1",
+  "runs": "200",
+  "license_type": "",
+  "evm_version": "paris",
+  "proxy": "1",
+  "implementation": "0xb7f545a9b6a12407d1f20b09f17d8850446f1981"
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "inputs": [],
+    "name": "AlreadyAdded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidChainlinkRate",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidNegativeFees",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidParams",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidRate",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotCollateral",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotGovernor",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAccessControlManager",
+        "name": "_accessControlManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_agToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "dummyImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

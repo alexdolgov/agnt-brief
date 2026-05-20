@@ -1,0 +1,18 @@
+{
+  "address": "0x5052d3cc819f53116641e89b96ff4cd1ee80b182",
+  "chain_id": 1,
+  "contract_name": "FPSWrapper",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T13:25:02.618Z"
+}

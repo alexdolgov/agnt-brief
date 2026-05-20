@@ -1,0 +1,18 @@
+{
+  "address": "0x3899d92041401eb127886689924d637fc28a5b6f",
+  "chain_id": 1,
+  "contract_name": "StETHStrategy",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 3000,
+  "evm_version": "london",
+  "license": "AGPL-3.0, GPL-2.0-or-later, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T13:25:02.542Z"
+}

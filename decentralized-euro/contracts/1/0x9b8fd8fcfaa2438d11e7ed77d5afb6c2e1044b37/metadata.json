@@ -1,0 +1,17 @@
+{
+  "address": "0x9b8fd8fcfaa2438d11e7ed77d5afb6c2e1044b37",
+  "chain_id": 1,
+  "contract_name": null,
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": false,
+  "proxy": false,
+  "source_provider": null,
+  "source_file_count": 0,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T13:25:02.863Z"
+}

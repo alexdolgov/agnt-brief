@@ -1,0 +1,18 @@
+{
+  "address": "0xfd2ccc920d498db30fbe9c13d5705ae2c72670f9",
+  "chain_id": 1,
+  "contract_name": "Savings",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 43,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T13:25:03.187Z"
+}

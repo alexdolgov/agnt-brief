@@ -1,0 +1,18 @@
+{
+  "address": "0x62cba6dcdae5992d44cd9bd8989d27718eff5f73",
+  "chain_id": 1,
+  "contract_name": "PerpetualManagerFront",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 283,
+  "evm_version": "london",
+  "license": "GPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T13:25:02.703Z"
+}

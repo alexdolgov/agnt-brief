@@ -1,194 +1,206 @@
-# Agentic Brief: Swell Network
+# Agentic Audit Brief: Swell Network
 
 ## Project Overview
 
-- **Project:** Swell Network (swell)
-- **Website:** swellnetwork.io
-- **Category:** Farm
-- **Chains (topography):** 1
-- **Chains (DeFiLlama):** 1
-- **TVL:** $220,075,067 (7 DL slug(s), queried 2026-04-29)
-- **Lifecycle:** dead - latest deployment 2025-12-22
-- **Audit history:** 24 audits; most recent 2026-04-30 (5 days ago)
-- **Tier:** 4 - project_dead_or_rugged (Excluded)
-- **Commercial fit:** large_tvl_marketing_asset
+- Project: Swell Network (`swell`)
+- Generated: 2026-05-19T21:44:51.510Z
+- Pipeline run: unknown
+- Chains: ethereum
+- Contract surface: 76 logical contracts (76 raw addresses)
+- On-chain TVL (included contracts): n/a
 
-Swell Network has 30 deployed contract rows in current topography. This brief renders the 23 rows present in scope-match run recovery-full-v5-fixed-matcher-2026-05-05-2b686225; any topography rows absent from that run are outside the visible contract tables until the scope matcher is regenerated over them.
+## Audit Coverage Summary
 
----
+- Audited logical contracts: 41/76 (53.9%)
+- Raw deployed addresses: 76
+- Unaudited contracts: 35
+- Audits discovered: 18
+- Scoreable audits (matched contracts): 11
+- ASD (unaudited native TVL): n/a
 
-## Lifecycle and Recent Activity
+## Contract Surface
 
-**Lifecycle warning:** dead. Source: project_lifecycle_status_v1. Outreach not recommended without operator review.
+### native (49)
 
----
+| Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
+|---|---|---|---|---:|---|---|
+| ethereum | `0x009c9f...629655` | NFTDescriptor | unknown | n/a | no | none |
+| ethereum | `0x02454d...6c8f78` | swEXIT | unknown | n/a | yes | none |
+| ethereum | `0x0a6e7b...b35676` | SwellToken | unknown | n/a | no | none |
+| ethereum | `0x2a41d5...92ea28` | DepositManager | unknown | n/a | yes | none |
+| ethereum | `0x2d3b4b...0211a7` | swETH | unknown | n/a | yes | none |
+| ethereum | `0x3334c0...5a25f7` | RepricingOracle | unknown | n/a | yes | none |
+| ethereum | `0x342f0d...739d75` | CumulativeMerkleDrop | unknown | n/a | no | none |
+| ethereum | `0x351622...11a7f4` | RepricingOracle | unknown | n/a | yes | none |
+| ethereum | `0x38956b...8d80a7` | DepositManager | unknown | n/a | yes | none |
+| ethereum | `0x3b32e9...d15c5d` | EigenLayerManager | unknown | n/a | yes | none |
+| ethereum | `0x411c78...df2755` | AccountantWithRateProviders | unknown | n/a | yes | none |
+| ethereum | `0x4195ed...b6bc56` | AccessControlManager | unknown | n/a | yes | none |
+| ethereum | `0x4796d9...4e2362` | RswETH | unknown | n/a | yes | none |
+| ethereum | `0x527d6d...855d23` | AccessControlManager | unknown | n/a | yes | none |
+| ethereum | `0x584cd3...e7dae2` | SwBtcOFTAdapter | unknown | n/a | no | none |
+| ethereum | `0x677365...65e8af` | BlackPearl | unknown | n/a | no | none |
+| ethereum | `0x685adb...160429` | TellerWithMultiAssetSupport | unknown | n/a | yes | none |
+| ethereum | `0x69fc70...4f50c0` | ManagerWithMerkleVerification | unknown | n/a | yes | none |
+| ethereum | `0x6d8cc0...e8f872` | VaultAdapter | unknown | n/a | no | none |
+| ethereum | `0x728d1d...5d6977` | NodeOperatorRegistry | unknown | n/a | yes | none |
+| ethereum | `0x85befd...25d47a` | RepricingOracle | unknown | n/a | yes | none |
+| ethereum | `0x97d8dd...b5beaf` | NodeOperatorRegistry | unknown | n/a | yes | none |
+| ethereum | `0x9b07fb...33f562` | SwETHOFTAdapter | unknown | n/a | no | none |
+| ethereum | `0x9ed153...775f22` | BoringVault | unknown | n/a | yes | none |
+| ethereum | `0xa35f12...240a14` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0xa3ff11...21a538` | Harvester | unknown | n/a | no | none |
+| ethereum | `0xa41902...605981` | OracleAdapter | unknown | n/a | no | none |
+| ethereum | `0xa5bd95...2aa3e2` | SwBtcOFTAdapter | unknown | n/a | no | none |
+| ethereum | `0xa9bd69...0558d6` | RolesAuthority | unknown | n/a | no | none |
+| ethereum | `0xaa68ca...1875e8` | SwETHSY | unknown | n/a | no | none |
+| ethereum | `0xb68b12...df17a0` | StakerProxy | unknown | n/a | yes | none |
+| ethereum | `0xb987fa...370df6` | DepositManager | unknown | n/a | yes | none |
+| ethereum | `0xba8290...c3073b` | Timelock | unknown | n/a | no | none |
+| ethereum | `0xbb7b99...593e64` | AccessControlManager | unknown | n/a | yes | none |
+| ethereum | `0xbc011a...91cf18` | AccessControlManager | unknown | n/a | yes | none |
+| ethereum | `0xbd6a5e...e06479` | RswEXIT | unknown | n/a | yes | none |
+| ethereum | `0xbd9fc4...2ade0d` | Zap | unknown | n/a | yes | none |
+| ethereum | `0xc2a558...9f182f` | Keeper | unknown | n/a | yes | none |
+| ethereum | `0xc9f6d9...9caf9b` | SWNFTv3 | unknown | n/a | no | none |
+| ethereum | `0xca2df2...deeed4` | Timelock | unknown | n/a | no | none |
+| ethereum | `0xcd284a...38785c` | RswETH | unknown | n/a | yes | none |
+| ethereum | `0xce95ba...affbfc` | swETH | unknown | n/a | yes | none |
+| ethereum | `0xd98f5c...c27b5e` | SwETHOFTAdapter | unknown | n/a | no | none |
+| ethereum | `0xdda46b...81a72f` | swETH | unknown | n/a | yes | none |
+| ethereum | `0xe91302...f5f97e` | RepricingOracle | unknown | n/a | yes | none |
+| ethereum | `0xea6c9a...e0e68a` | NodeOperatorRegistry | unknown | n/a | yes | none |
+| ethereum | `0xeee620...f4524b` | DepositManager | unknown | n/a | yes | none |
+| ethereum | `0xf00e70...c28977` | RepricingOracle | unknown | n/a | yes | none |
+| ethereum | `0xf807bc...64e5a8` | NodeOperatorRegistry | unknown | n/a | yes | none |
 
-## Audit Targeting Recommendation
+### upstream (12)
 
-Audit-evaluable surface in this run: 23 contracts across 1 chains. 1 have TP audit coverage (4.3%); 22 do not.
+| Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
+|---|---|---|---|---:|---|---|
+| ethereum | `0x093410...9d85b7` | SwellOFTAdapter | unknown | n/a | no | none |
+| ethereum | `0x2c1b34...6f94e2` | OFTAdapterSwETH | unknown | n/a | no | none |
+| ethereum | `0x428cda...b2ac58` | RSwellOFTAdapter | unknown | n/a | no | none |
+| ethereum | `0x5bd444...b6c4f6` | ReleaseRegistry | unknown | n/a | yes | none |
+| ethereum | `0x5c6392...ed7b05` | SwETHProxyOFT | unknown | n/a | no | none |
+| ethereum | `0x8db235...864dde` | Yearn V3 Vault | unknown | n/a | no | none |
+| ethereum | `0x939f1c...73bf8c` | RegistryFactory | unknown | n/a | yes | none |
+| ethereum | `0x981771...b17bb0` | Yearn Vault Factory | unknown | n/a | no | none |
+| ethereum | `0xcb6ea7...27b96b` | AuraSwEthBbAWethSYV2 | unknown | n/a | no | none |
+| ethereum | `0xd684c1...c41eda` | SymbioticAdapter | unknown | n/a | no | none |
+| ethereum | `0xe5fcbd...2c5f91` | Registry | unknown | n/a | yes | none |
+| ethereum | `0xecf337...d24121` | Proxy (impl: L1ERC20TokenBridge) | unknown | n/a | no | proxy only (impl: L1ERC20TokenBridge) |
 
-Large-TVL protocol with partial coverage; scope should emphasize high-value uncovered surface.
+### standard_library (10)
 
-Existing coverage by category is summarized below; re-audit of TP-covered rows is lower priority than unmatched and likely-in-scope rows.
+| Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
+|---|---|---|---|---:|---|---|
+| ethereum | `0x1f5ddd...d3a016` | RolesAuthority | unknown | n/a | no | none |
+| ethereum | `0x25eaf5...5b8846` | ProxyAdmin | unknown | n/a | no | none |
+| ethereum | `0x2a6a2b...c0caf8` | Proxy (impl: SymbioticAdapter) | unknown | n/a | no | proxy only (impl: SymbioticAdapter) |
+| ethereum | `0x38d43a...31d774` | SimpleStakingERC20 | unknown | n/a | yes | none |
+| ethereum | `0x674822...0931a9` | ProxyAdmin | unknown | n/a | no | none |
+| ethereum | `0x69dda9...41836a` | Proxy (impl: SymbioticAdapter) | unknown | n/a | no | proxy only (impl: SymbioticAdapter) |
+| ethereum | `0x8d0b4d...ee7258` | Proxy (impl: EigenPod) | unknown | n/a | no | proxy only (impl: EigenPod) |
+| ethereum | `0x95e8ba...151ef6` | ProxyAdmin | unknown | n/a | no | none |
+| ethereum | `0x9e07af...3fdae7` | Proxy (impl: SymbioticAdapter) | unknown | n/a | no | proxy only (impl: SymbioticAdapter) |
+| ethereum | `0xd750b8...9bfd14` | ProxyAdmin | unknown | n/a | no | none |
 
----
+### needs_review (5)
 
-## Scope - Core Logic
+| Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
+|---|---|---|---|---:|---|---|
+| ethereum | `0x48dacb...fb3825` | Accountant | unknown | n/a | yes | none |
+| ethereum | `0x4c86cb...493c22` | WithdrawLimitModule | unknown | n/a | yes | none |
+| ethereum | `0x8041ba...e86ae3` | Proxy (impl: TokenizedStrategy) | unknown | n/a | yes | proxy only (impl: TokenizedStrategy) |
+| ethereum | `0x805c6d...fa55b8` | DelayedWithdraw | unknown | n/a | yes | none |
+| ethereum | `0x975304...5eaa50` | TokenizedStrategy | unknown | n/a | yes | none |
 
-Provenance-based classification not available for this project. The table below shows the flat scope inventory from topography with audit-match verdicts where available; distinguishing core logic from operational periphery requires the provenance pass.
+## Audit Inventory
 
-### ethereum (chain_id 1)
+| Audit | Auditor | Date | Scope Format | Matched Contracts | Extraction Confidence |
+|---|---|---|---|---:|---|
+| ChainSecurity_Swell_swBTC_audit.pdf | ChainSecurity | 2024-07 | MIXED | 9 | high |
+| NM_0273_SWELL_BTC_LRT.pdf | unknown | 2024-08 | EXPLICIT | 2 | high |
+| 0xmacro-boring-vault-arctic-0.pdf | 0xMacro | 2024-03 | MIXED | 4 | high |
+| pashov-boring-vault.pdf | Pashov Audit Group | 2024-07 | MIXED | 1 | high |
+| spearbit-boring-vault-arctic-0.pdf | Spearbit | 2024-04 | EXPLICIT | 4 | high |
+| Audit Reports (GitHub directory) | unknown | n/a | NOT_AUDIT | 0 | low |
+| Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf | Sigma Prime | 2024-01 | REPO_REFERENCE | 0 | low |
+| immunefi.com/bug-bounty/swell/information | Immunefi | n/a | NOT_AUDIT | 0 | low |
+| 2024-02-23-cyfrin-swell-v2.0.pdf | Cyfrin | 2024-02 | EXPLICIT | 21 | high |
+| Sigma_Prime_Swell_Barracuda_Upgrade_Security_Assessment_Report_v2.pdf | Sigma Prime | 2024-02 | MIXED | 17 | high |
+| Swell-audit-jan-2024(Public).pdf | Unknown | 2024-01 | REPO_REFERENCE | 0 | low |
+| NM0231_FINAL_SWELL.pdf | Barracude | 2024-06 | EXPLICIT | 8 | high |
+| Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf | Sigma Prime | 2024-07 | MIXED | 18 | high |
+| Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf | Sigma Prime | 2024-01 | REPO_REFERENCE | 0 | low |
+| Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf | Sigma Prime | 2023-04 | REPO_REFERENCE | 0 | low |
+| Swell Staking Security Audit Report.pdf | yAudit | 2024-04 | EXPLICIT | 2 | high |
+| swell-l2-pre-deposit-audit-april-2024 (Public).pdf | unknown | 2024-04 | MIXED | 2 | high |
+| swell-mar24(Public).pdf | unknown | 2024-03 | REPO_REFERENCE | 0 | low |
 
-| Contract | Role | Description | Audit Status | Address |
-|---|---|---|---|---|
-| AltLayerToken | token | token | likely in scope | [0x8457ca...fbfb](https://etherscan.io/address/0x8457ca5040ad67fdebbcc8edce889a335bc0fbfb) |
-| frxETH | core | core | unmatched | [0x5e8422...aa1f](https://etherscan.io/address/0x5e8422345238f34275888049021821e8e08caa1f) |
-| L1ChugSplashProxy | proxy | proxy | unmatched | [0x7aa496...acc8](https://etherscan.io/address/0x7aa4960908b13d104bf056b23e2c76b43c5aacc8) |
-| MLRT | core | core | unmatched | [0x56cbaf...6c34](https://etherscan.io/address/0x56cbaff47f9ffcbaf248a8483b5d7630b6b36c34) |
-| OssifiableProxy | proxy | proxy | unmatched | [0xecf337...4121](https://etherscan.io/address/0xecf3376512edaca4fbb63d2c67d12a0397d24121) |
-| PendlePrincipalToken | token | token | likely in scope | [0x330c4d...78ea](https://etherscan.io/address/0x330c4dd05db16db6323505262c57cfde5f0a78ea) |
-| PendlePrincipalToken | token | token | likely in scope | [0x5cb12d...bcea](https://etherscan.io/address/0x5cb12d56f5346a016dbba8ca90635d82e6d1bcea) |
-| PendlePrincipalToken | token | token | likely in scope | [0x6ee2b5...0d1d](https://etherscan.io/address/0x6ee2b5e19ecba773a352e5b21415dc419a700d1d) |
-| PendlePrincipalToken | token | token | likely in scope | [0xa0021e...b8e1](https://etherscan.io/address/0xa0021ef8970104c2d008f38d92f115ad56a9b8e1) |
-| PendlePrincipalToken | token | token | likely in scope | [0xac440d...76e4](https://etherscan.io/address/0xac440d0ee23fa69632aa731322c2a480dd1376e4) |
-| PendlePrincipalToken | token | token | likely in scope | [0xc58aa3...bd23](https://etherscan.io/address/0xc58aa33ce619c7f7ac4929df357d0ef762edbd23) |
-| PendlePrincipalToken | token | token | likely in scope | [0xc69ad9...5966](https://etherscan.io/address/0xc69ad9bab1dee23f4605a82b3354f8e40d1e5966) |
-| PendlePrincipalToken | token | token | likely in scope | [0xf7906f...e285](https://etherscan.io/address/0xf7906f274c174a52d444175729e3fa98f9bde285) |
-| Proxy | proxy | proxy | unmatched | [0x758e0e...7812](https://etherscan.io/address/0x758e0ee66102816f5c3ec9ecc1188860fbb87812) |
-| SimpleStakingERC20 | token | token | audited (TP) | [0x38d43a...d774](https://etherscan.io/address/0x38d43a6cb8da0e855a42fb6b0733a0498531d774) |
-| StakedFrax | staking | staking | unmatched | [0xa663b0...1c32](https://etherscan.io/address/0xa663b02cf0a4b149d2ad41910cb81e23e1c41c32) |
-| Stone | core | core | unmatched | [0x712298...bd3c](https://etherscan.io/address/0x7122985656e38bdc0302db86685bb972b145bd3c) |
-| TransparentUpgradeableproxy | proxy | proxy | unmatched | [0x18f313...1dd9](https://etherscan.io/address/0x18f313fc6afc9b5fd6f0908c1b3d476e3fea1dd9) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0x49446a...6bc0](https://etherscan.io/address/0x49446a0874197839d15395b908328a74ccc96bc0) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0x8a0533...ad7c](https://etherscan.io/address/0x8a053350ca5f9352a16ded26ab333e2d251dad7c) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0xe46a5e...bc10](https://etherscan.io/address/0xe46a5e19b19711332e33f33c2db3ea143e86bc10) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0xf951e3...ed78](https://etherscan.io/address/0xf951e335afb289353dc249e82926178eac7ded78) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0xfae103...a6c0](https://etherscan.io/address/0xfae103dc9cf190ed75350761e95403b7b8afa6c0) |
+## Coverage Gaps
 
----
+Unaudited native contracts ranked by TVL:
 
-## Scope - Operational Periphery
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x009c9f...629655` | NFTDescriptor | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0x0a6e7b...b35676` | SwellToken | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0x342f0d...739d75` | CumulativeMerkleDrop | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0x584cd3...e7dae2` | SwBtcOFTAdapter | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0x677365...65e8af` | BlackPearl | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0x6d8cc0...e8f872` | VaultAdapter | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0x9b07fb...33f562` | SwETHOFTAdapter | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0xa35f12...240a14` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0xa3ff11...21a538` | Harvester | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0xa41902...605981` | OracleAdapter | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0xa5bd95...2aa3e2` | SwBtcOFTAdapter | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0xa9bd69...0558d6` | RolesAuthority | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0xaa68ca...1875e8` | SwETHSY | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0xba8290...c3073b` | Timelock | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0xc9f6d9...9caf9b` | SWNFTv3 | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0xca2df2...deeed4` | Timelock | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
+| ethereum | `0xd98f5c...c27b5e` | SwETHOFTAdapter | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact audit coverage |
 
-Operational periphery is not classified for this project. Admin, fee-collection, keeper, and timelock contracts may exist within the flat scope inventory in the core logic section.
+## Origin Classification
 
----
+| Origin Kind | Contracts |
+|---|---:|
+| native | 49 |
+| upstream | 12 |
+| standard_library | 10 |
+| needs_review | 5 |
 
-## Scope - Factory Architecture
+## Scope Matching Notes
 
-No factories detected in topography.
+- Repo-reference audits: 5
+- Not-audit entries: 2
+- Audits with zero matched contracts: 7
+- Extraction confidence breakdown: high=11, low=7
+- Match method counts: extraction_exact=88
 
----
+Zero-match audit list:
 
-## Scope - Proxy and Upgrade Architecture
+- [153] Audit Reports (GitHub directory)
+- [154] Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf
+- [155] immunefi.com/bug-bounty/swell/information
+- [944] Swell-audit-jan-2024(Public).pdf
+- [947] Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf
+- [948] Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf
+- [951] swell-mar24(Public).pdf
 
-Protocol uses 8 proxies on 1. 6 follow EIP-1967 / UUPS patterns; 0 are beacon proxies. 0 proxies share an implementation with other proxies in the project.
+Repo-reference audit list:
 
-Upgrade authority concentrates in 4 distinct deployer addresses: 0x0cdb34...77b8, 0x174ae6...1a08, 0xaf9945...e5f9, 0xc951ce...e91d. Multisig membership, timelock duration, and governance-gate parameters are not extracted by the current pipeline.
+- [154] Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf (repo refs: 1)
+- [944] Swell-audit-jan-2024(Public).pdf (repo refs: 2)
+- [947] Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf (repo refs: 1)
+- [948] Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf (repo refs: 7)
+- [951] swell-mar24(Public).pdf (repo refs: 2)
 
----
+Not-audit entry list:
 
-## Scope - Integration Surface
+- [153] Audit Reports (GitHub directory)
+- [155] immunefi.com/bug-bounty/swell/information
 
-No external integrations detected in topography.
-
----
-
-## Audit Coverage
-
-### Coverage by Scope Category
-
-| Category | Contracts | Audited | Unaudited | Coverage % |
-|---|---:|---:|---:|---:|
-| No provenance | 23 | 1 | 22 | 4.3% |
-| **Total** | 23 | 1 | 22 | 4.3% |
-
-### Past Audits
-
-| Date | Auditor | Scope Described | Coverage Claim | Relationship | Link |
-|---|---|---|---|---|---|
-| 2024-04-03 | Hexens Cyber Security | This audit covered the L2 Pre-Deposit contracts for Swell. The contracts included a simple staking c | unspecified | direct | [report](https://github.com/Hexens/Smart-Contract-Review-Public-Reports/blob/main/swell-l2-pre-deposit-audit-april-2024%20(Public).pdf) |
-| 2024-03-12 | Hexens Cyber Security | swell-mar24(Public) | unspecified | direct | [report](https://github.com/Hexens/Smart-Contract-Review-Public-Reports/blob/main/swell-mar24(Public).pdf) |
-
-### Gap Analysis
-
-Core logic: 0 of 0 contracts covered (0.0%). Operational periphery: 0 of 0 covered (0.0%). Last audit 5 days ago.
-
-7 contracts deployed after the most recent audit. These are by definition not covered by any existing audit.
-
----
-
-## Appendix
-
-### Docs Pages Referenced
-
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Barracuda/2024-02-23-cyfrin-swell-v2.0.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Barracuda/2024-02-23-cyfrin-swell-v2.0.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Barracuda/Sigma_Prime_Swell_Barracuda_Upgrade_Security_Assessment_Report_v2.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Barracuda/Sigma_Prime_Swell_Barracuda_Upgrade_Security_Assessment_Report_v2.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Barracuda/Swell-audit-jan-2024(Public).pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Barracuda/Swell-audit-jan-2024(Public).pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Barracude%20(LRT)/NM0231_FINAL_SWELL.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Barracude%20(LRT)/NM0231_FINAL_SWELL.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Barracude%20(LRT)/Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Barracude%20(LRT)/Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Seawolf/Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Seawolf/Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Swell%20L2%20Pre%20Deposit/swell-l2-pre-deposit-audit-april-2024%20(Public).pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Swell%20L2%20Pre%20Deposit/swell-l2-pre-deposit-audit-april-2024%20(Public).pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Swell%20L2%20Pre%20Deposit/Swell%20Staking%20Security%20Audit%20Report.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/Swell%20L2%20Pre%20Deposit/Swell%20Staking%20Security%20Audit%20Report.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/2024-02-23-cyfrin-swell-v2.0.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/2024-02-23-cyfrin-swell-v2.0.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/Sigma_Prime_Swell_Barracuda_Upgrade_Security_Assessment_Report_v2.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/Sigma_Prime_Swell_Barracuda_Upgrade_Security_Assessment_Report_v2.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/Swell-audit-jan-2024(Public).pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/Swell-audit-jan-2024(Public).pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracude%20(LRT)/NM0231_FINAL_SWELL.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracude%20(LRT)/NM0231_FINAL_SWELL.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracude%20(LRT)/Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracude%20(LRT)/Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Seawolf/Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Seawolf/Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/commits/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf](https://github.com/SwellNetwork/v3-core-public/commits/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf) - audit_report_link
-- [https://github.com/SwellNetwork/v3-core-public/commits/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf](https://github.com/SwellNetwork/v3-core-public/commits/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf) - audit_report_link
-
-### Audit Reports (full list)
-
-- 2024-04-03 - Hexens Cyber Security - This audit covered the L2 Pre-Deposit contracts for Swell. The contracts included a simple staking contract for WETH, wstETH and weETH, as well as a zap contract that interacts with the staking contract for the user by wrapping and staking ETH, stETH and eETH. - https://github.com/Hexens/Smart-Contract-Review-Public-Reports/blob/main/swell-l2-pre-deposit-audit-april-2024%20(Public).pdf
-- 2024-03-12 - Hexens Cyber Security - swell-mar24(Public) - https://github.com/Hexens/Smart-Contract-Review-Public-Reports/blob/main/swell-mar24(Public).pdf
-
-### Contract Inventory (sibling artifact)
-
-- **Structural data:** exports/agentic_briefs_v2/swell.json
-- **Source code:** not fetched in v1
-
-### Excluded Contracts (summary counts)
-
-| Exclusion Reason | Count | Notes |
-|---|---:|---|
-| infrastructure blocklist | 0 | Summary from p2 provenance classifications |
-| shared deployer contamination | 0 | Summary from p2 provenance classifications |
-| opaque enrichment only | 0 | Summary from p2 provenance classifications |
-| deployer expansion untethered | 0 | Summary from p2 provenance classifications |
-| factory rpc expansion untethered | 0 | Summary from p2 provenance classifications |
-| considered but unpromoted docs only | 0 | Summary from p2 provenance classifications |
-| never evaluated docs only | 0 | Summary from p2 provenance classifications |
-| external placeholder docs only | 0 | Summary from p2 provenance classifications |
-
-### Data Availability Notes
-
-- **Provenance classification:** not run for this project.
-- **Multisig / timelock metadata:** not extracted by current pipeline.
-- **Per-contract TVL:** available; latest total on-chain TVL snapshot is $81,586,024.
-- **Docs extraction status:** Call 1 unknown, Call 2 unknown, Call 5 unknown.
-
-### Generation Metadata
-
-- **Generated at:** 2026-05-05T20:36:00.491Z
-- **Scope-match run_id:** recovery-full-v5-fixed-matcher-2026-05-05-2b686225
-- **Brief exporter:** v2
-- **DL snapshot:** defillama_project_enrichment_v1_defillama_20260429T183806Z (2026-04-29)
-- **Topography refresh:** 2026-05-04T12:46:24.531Z
-
----
-
-## Caveats
-
-- **Audit coverage** is derived from scope matching against audit-report extracted scope data, not from operator confirmation. Contracts labeled `unmatched` may still be covered by an audit whose scope data was too sparse to extract structured coverage from.
-- Upgrade admin membership, timelock duration, and governance-gate parameters are NOT extracted by the pipeline. Operator must confirm before scoping.
-- Provenance classification was not run for this project. Role-category distinctions are not available here.
-- Per-contract TVL snapshot available with total on-chain TVL $81,586,024.
+Lifecycle/fork inheritance analysis is not included in this brief build.

@@ -1,0 +1,18 @@
+{
+  "address": "0x6b6d4e2dfcb864c83e29641429c528e8016bacdf",
+  "chain_id": 1,
+  "contract_name": "Liquifier",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, CC0-1.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T19:33:47.379Z"
+}

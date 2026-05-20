@@ -1,0 +1,18 @@
+{
+  "address": "0x8c3bb862bd9375d58e1fee53e3cf6deb10ff522d",
+  "chain_id": 42161,
+  "contract_name": "CCDMClient",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": false,
+  "proxy": true,
+  "source_provider": null,
+  "source_file_count": 0,
+  "constructor_arguments": "",
+  "implementation_address": "0x877b9ea7ce0358ef7982b2967ae7e538530a6031",
+  "fetched_at": "2026-05-20T19:33:41.876Z",
+  "fetch_error": "Explorer request failed for 42161:0x8c3bb862bd9375d58e1fee53e3cf6deb10ff522d: Max calls per sec rate limit reached (3/sec)"
+}

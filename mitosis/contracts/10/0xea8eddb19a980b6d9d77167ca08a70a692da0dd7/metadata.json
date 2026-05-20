@@ -1,0 +1,18 @@
+{
+  "address": "0xea8eddb19a980b6d9d77167ca08a70a692da0dd7",
+  "chain_id": 10,
+  "contract_name": "BeaconProxy",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x4e2293f5a7346aa4047edbac49a458bc8f1690ea",
+  "fetched_at": "2026-05-20T19:33:31.138Z"
+}

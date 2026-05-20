@@ -1,0 +1,17 @@
+{
+  "address": "0x6ff000453a9c14f7d3bf381925c8cde565dbce55",
+  "chain_id": 5000,
+  "contract_name": "BasicVaultMigration",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": false,
+  "proxy": true,
+  "source_provider": null,
+  "source_file_count": 0,
+  "constructor_arguments": "",
+  "implementation_address": "0x68fc16e59f1e58b8d5ea1ae57db0f44f7ce18a36",
+  "fetched_at": "2026-05-20T19:33:27.340Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xddded3b09605ee334e76ac42f6ae2b780edf94d8",
+  "chain_id": 42161,
+  "contract_name": "BasicVaultMigration",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T19:33:44.767Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xc0ad77b6f3eab89ec1043ee7b08c13a8cae93f86",
+  "chain_id": 1,
+  "contract_name": "EtherFiAdmin",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, CC0-1.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T19:33:57.905Z"
+}

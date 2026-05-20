@@ -1,0 +1,18 @@
+{
+  "address": "0x780a6913885988d8f1290da6abccf8d5faf375c5",
+  "chain_id": 1,
+  "contract_name": "uniBTC",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T19:33:48.564Z"
+}

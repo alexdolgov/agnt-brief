@@ -1,0 +1,17 @@
+{
+  "address": "0x8c6653eaada458c84fcf8034aec6c3d7f7bb00cb",
+  "chain_id": 42161,
+  "contract_name": "LiFiMigrationHelper",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "0000000000000000000000001231deb6f5749ef6ce6943a275a1d3e7486f4eae",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T19:33:40.277Z"
+}

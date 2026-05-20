@@ -1,0 +1,17 @@
+{
+  "address": "0xdd8bea689c384cd6de05f44ef2fd0d7aac00d9aa",
+  "chain_id": 42161,
+  "contract_name": "Cap",
+  "compiler_version": null,
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": false,
+  "proxy": true,
+  "source_provider": null,
+  "source_file_count": 0,
+  "constructor_arguments": "",
+  "implementation_address": "0x1d28ded4ff512c0e80af2b459d86a9169cc57c56",
+  "fetched_at": "2026-05-20T19:33:43.689Z"
+}

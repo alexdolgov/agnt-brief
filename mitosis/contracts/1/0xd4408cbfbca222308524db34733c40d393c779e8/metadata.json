@@ -1,0 +1,18 @@
+{
+  "address": "0xd4408cbfbca222308524db34733c40d393c779e8",
+  "chain_id": 1,
+  "contract_name": "RockXStaking",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T19:33:59.738Z"
+}

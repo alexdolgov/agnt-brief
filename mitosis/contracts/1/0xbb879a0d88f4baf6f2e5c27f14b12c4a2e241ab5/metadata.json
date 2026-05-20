@@ -1,0 +1,18 @@
+{
+  "address": "0xbb879a0d88f4baf6f2e5c27f14b12c4a2e241ab5",
+  "chain_id": 1,
+  "contract_name": "RockXRestaking",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T19:33:57.725Z"
+}

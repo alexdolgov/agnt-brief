@@ -1,0 +1,1175 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "CallFailed",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "nodeAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "podAddress",
+        "type": "address"
+      }
+    ],
+    "name": "EigenPodCreated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DEPRECATED_claimDelayedWithdrawalRouterWithdrawals",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEPRECATED_exitRequestTimestamp",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEPRECATED_exitTimestamp",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEPRECATED_ipfsHashForEncryptedValidatorKey",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEPRECATED_localRevenueIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEPRECATED_phase",
+    "outputs": [
+      {
+        "internalType": "enum IEtherFiNode.VALIDATOR_PHASE",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEPRECATED_restakingObservedExitBlock",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEPRECATED_stakingStartTimestamp",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEPRECATED_vestedAuctionRewards",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_startTimestamp",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_endTimestamp",
+        "type": "uint32"
+      }
+    ],
+    "name": "_getDaysPassedSince",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "associatedValidatorIds",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "associatedValidatorIndices",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_beaconBalance",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "validatorIndex",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "exitRequestTimestamp",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "exitTimestamp",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum IEtherFiNode.VALIDATOR_PHASE",
+            "name": "phase",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IEtherFiNodesManager.ValidatorInfo",
+        "name": "_info",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "treasury",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "nodeOperator",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tnft",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "bnft",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct IEtherFiNodesManager.RewardsSplit",
+        "name": "_SRsplits",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bool",
+        "name": "_onlyWithdrawable",
+        "type": "bool"
+      }
+    ],
+    "name": "calculateTVL",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_data",
+        "type": "bytes"
+      }
+    ],
+    "name": "callEigenPod",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "staker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "delegatedTo",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "withdrawer",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "startBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "contract IStrategy[]",
+            "name": "strategies",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "shares",
+            "type": "uint256[]"
+          }
+        ],
+        "internalType": "struct IDelegationManager.Withdrawal",
+        "name": "withdrawals",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "middlewareTimesIndexes",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_receiveAsTokens",
+        "type": "bool"
+      }
+    ],
+    "name": "completeQueuedWithdrawal",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "staker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "delegatedTo",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "withdrawer",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint32",
+            "name": "startBlock",
+            "type": "uint32"
+          },
+          {
+            "internalType": "contract IStrategy[]",
+            "name": "strategies",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "shares",
+            "type": "uint256[]"
+          }
+        ],
+        "internalType": "struct IDelegationManager.Withdrawal[]",
+        "name": "withdrawals",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "middlewareTimesIndexes",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bool",
+        "name": "_receiveAsTokens",
+        "type": "bool"
+      }
+    ],
+    "name": "completeQueuedWithdrawals",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "completedWithdrawalFromRestakingInGwei",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "createEigenPod",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "eigenPod",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "etherFiNodesManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_data",
+        "type": "bytes"
+      }
+    ],
+    "name": "forwardCall",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "validatorIndex",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "exitRequestTimestamp",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "exitTimestamp",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum IEtherFiNode.VALIDATOR_PHASE",
+            "name": "phase",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IEtherFiNodesManager.ValidatorInfo",
+        "name": "_info",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "treasury",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "nodeOperator",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tnft",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "bnft",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct IEtherFiNodesManager.RewardsSplit",
+        "name": "_SRsplits",
+        "type": "tuple"
+      }
+    ],
+    "name": "getFullWithdrawalPayouts",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "toNodeOperator",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "toTnft",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "toBnft",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "toTreasury",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_tNftExitRequestTimestamp",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_bNftExitRequestTimestamp",
+        "type": "uint32"
+      }
+    ],
+    "name": "getNonExitPenalty",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_exitRequestTimestamp",
+        "type": "uint32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "treasury",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "nodeOperator",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tnft",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "bnft",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct IEtherFiNodesManager.RewardsSplit",
+        "name": "_splits",
+        "type": "tuple"
+      }
+    ],
+    "name": "getRewardsPayouts",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "implementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_etherFiNodesManager",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isRestakingEnabled",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_digestHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "isValidSignature",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "magicValue",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_validatorId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "validatorIndex",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "exitRequestTimestamp",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "exitTimestamp",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum IEtherFiNode.VALIDATOR_PHASE",
+            "name": "phase",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IEtherFiNodesManager.ValidatorInfo",
+        "name": "_info",
+        "type": "tuple"
+      }
+    ],
+    "name": "migrateVersion",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "moveFundsToManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "numAssociatedValidators",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "numExitRequestsByTnft",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "numExitedValidators",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingWithdrawalFromRestakingInGwei",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_validatorId",
+        "type": "uint256"
+      }
+    ],
+    "name": "processFullWithdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_validatorId",
+        "type": "uint256"
+      }
+    ],
+    "name": "processNodeExit",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "fullWithdrawalRoots",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "queueEigenpodFullWithdrawal",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "fullWithdrawalRoots",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_validatorId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_enableRestaking",
+        "type": "bool"
+      }
+    ],
+    "name": "registerValidator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newProofSubmitter",
+        "type": "address"
+      }
+    ],
+    "name": "setProofSubmitter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "splitBalanceInExecutionLayer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_withdrawalSafe",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_eigenPod",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_delayedWithdrawalRouter",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_revertIfNoBalance",
+        "type": "bool"
+      }
+    ],
+    "name": "startCheckpoint",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalBalanceInExecutionLayer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_validatorId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "validatorIndex",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "exitRequestTimestamp",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "exitTimestamp",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum IEtherFiNode.VALIDATOR_PHASE",
+            "name": "phase",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IEtherFiNodesManager.ValidatorInfo",
+        "name": "_info",
+        "type": "tuple"
+      }
+    ],
+    "name": "unRegisterValidator",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_up",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_down",
+        "type": "uint16"
+      }
+    ],
+    "name": "updateNumExitRequests",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_up",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_down",
+        "type": "uint16"
+      }
+    ],
+    "name": "updateNumExitedValidators",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_up",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_down",
+        "type": "uint16"
+      }
+    ],
+    "name": "updateNumberOfAssociatedValidators",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum IEtherFiNode.VALIDATOR_PHASE",
+        "name": "_currentPhase",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum IEtherFiNode.VALIDATOR_PHASE",
+        "name": "_newPhase",
+        "type": "uint8"
+      }
+    ],
+    "name": "validatePhaseTransition",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "version",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_treasury",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_treasuryAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_operator",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_operatorAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_tnftHolder",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_tnftAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_bnftHolder",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_bnftAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawFunds",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawableBalanceInExecutionLayer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

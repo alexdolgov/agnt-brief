@@ -1,0 +1,988 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "mailbox",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "ret",
+        "type": "bytes"
+      }
+    ],
+    "name": "EthTransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "typ",
+        "type": "string"
+      }
+    ],
+    "name": "InvalidAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "expected",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "actual",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidMsgLength",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "msgType",
+        "type": "uint8"
+      }
+    ],
+    "name": "InvalidMsgType",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "typ",
+        "type": "string"
+      }
+    ],
+    "name": "InvalidThreshold",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "VaultAlreadyDisconnected",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract IATM",
+        "name": "atm",
+        "type": "address"
+      }
+    ],
+    "name": "ATMSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "l1Asset",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "l2Asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "resolved",
+        "type": "uint256"
+      }
+    ],
+    "name": "Adjusted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "domain",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "addr",
+        "type": "bytes32"
+      }
+    ],
+    "name": "CCDMHostSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "refundTo",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "l1Asset",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "l2Asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "DepositFailure",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "l1Asset",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "l2Asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "DepositSuccess",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "refundTo",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "l1Asset",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "DispatchRefund",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "contract ISudoVault",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "l1Asset",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "l2Asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ratio",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct CCDMClientStorageV1.Threshold",
+        "name": "threshold",
+        "type": "tuple"
+      }
+    ],
+    "name": "VaultConnected",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "contract ISudoVault",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "VaultDisconnected",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "contract ISudoVault",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ratio",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct CCDMClientStorageV1.Threshold",
+        "name": "threshold",
+        "type": "tuple"
+      }
+    ],
+    "name": "VaultThresholdSet",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "StorageV1Location",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "adjust",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "atm",
+    "outputs": [
+      {
+        "internalType": "contract IATM",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ccdmHost",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "domain",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "addr",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct CCDMClientStorageV1.ExtAddr",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISudoVault",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ratio",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct CCDMClientStorageV1.Threshold",
+        "name": "threshold",
+        "type": "tuple"
+      }
+    ],
+    "name": "configureVaultThreshold",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISudoVault",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "l1Asset",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "l2Asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ratio",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct CCDMClientStorageV1.Threshold",
+        "name": "threshold",
+        "type": "tuple"
+      }
+    ],
+    "name": "connectVault",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISudoVault",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "disconnectVault",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "origin",
+        "type": "uint32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "sender",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "message",
+        "type": "bytes"
+      }
+    ],
+    "name": "handle",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "hook",
+    "outputs": [
+      {
+        "internalType": "contract IPostDispatchHook",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "hook",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "ism",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "domain",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "addr",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct CCDMClientStorageV1.ExtAddr",
+        "name": "ccdmHost_",
+        "type": "tuple"
+      },
+      {
+        "internalType": "contract IATM",
+        "name": "atm_",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "interchainSecurityModule",
+    "outputs": [
+      {
+        "internalType": "contract IInterchainSecurityModule",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "localDomain",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "mailbox",
+    "outputs": [
+      {
+        "internalType": "contract IMailbox",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "previewAdjust",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "resolved",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fee",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct CCDMClient.PreviewAdjustElem[]",
+        "name": "",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IATM",
+        "name": "atm_",
+        "type": "address"
+      }
+    ],
+    "name": "setATM",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "domain",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "addr",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct CCDMClientStorageV1.ExtAddr",
+        "name": "ccdmHost_",
+        "type": "tuple"
+      }
+    ],
+    "name": "setCCDMHost",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_hook",
+        "type": "address"
+      }
+    ],
+    "name": "setHook",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_module",
+        "type": "address"
+      }
+    ],
+    "name": "setInterchainSecurityModule",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault_",
+        "type": "address"
+      }
+    ],
+    "name": "vaultInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "l1Asset",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "l2Asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unresolved",
+            "type": "uint256"
+          },
+          {
+            "internalType": "contract ISudoVault",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "ratio",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct CCDMClientStorageV1.Threshold",
+            "name": "threshold",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bool",
+            "name": "connected",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct CCDMClientStorageV1.VaultInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "l1Asset",
+        "type": "bytes32"
+      }
+    ],
+    "name": "vaultInfoByL1Asset",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "l1Asset",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "l2Asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unresolved",
+            "type": "uint256"
+          },
+          {
+            "internalType": "contract ISudoVault",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "ratio",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct CCDMClientStorageV1.Threshold",
+            "name": "threshold",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bool",
+            "name": "connected",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct CCDMClientStorageV1.VaultInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "l2Asset",
+        "type": "address"
+      }
+    ],
+    "name": "vaultInfoByL2Asset",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "l1Asset",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "l2Asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unresolved",
+            "type": "uint256"
+          },
+          {
+            "internalType": "contract ISudoVault",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "ratio",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct CCDMClientStorageV1.Threshold",
+            "name": "threshold",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bool",
+            "name": "connected",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct CCDMClientStorageV1.VaultInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

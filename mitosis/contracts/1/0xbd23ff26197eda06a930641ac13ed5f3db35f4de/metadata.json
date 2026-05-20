@@ -1,0 +1,18 @@
+{
+  "address": "0xbd23ff26197eda06a930641ac13ed5f3db35f4de",
+  "chain_id": 1,
+  "contract_name": "UUPSProxy",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": "0x8d671a0bc6664c2ef71db4bbbacb2a455992920c",
+  "fetched_at": "2026-05-20T19:33:57.524Z"
+}

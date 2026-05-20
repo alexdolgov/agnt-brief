@@ -1,0 +1,17 @@
+{
+  "address": "0x94c7f81e3b0458daa721ca5e29f6ced05ccce2b3",
+  "chain_id": 42161,
+  "contract_name": "uniBTC",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-20T19:33:41.727Z"
+}

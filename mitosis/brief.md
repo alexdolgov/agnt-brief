@@ -1,320 +1,712 @@
-# Agentic Brief: Mitosis
+# Agentic Audit Brief: Mitosis
+
+⚠️ Lifecycle status: DEAD - TVL dropped 33.4% over 90 days
 
 ## Project Overview
 
-- **Project:** Mitosis (mitosis)
-- **Website:** mitosis.org
-- **Category:** Onchain Capital Allocator
-- **Chains (topography):** 1, 10, 56, 5000, 8453, 34443, 42161, 59144, 81457, 534352
-- **Chains (DeFiLlama):** 1, 10, 56, 169, 5000, 8453, 34443, 42161, 59144, 81457, 534352
-- **TVL:** $36,805,928 (1 DL slug(s), queried 2026-04-29)
-- **Lifecycle:** rugged - latest deployment 2025-09-15
-- **Audit history:** 46 audits; most recent 2026-05-03 (2 days ago)
-- **Tier:** 4 - project_dead_or_rugged (Excluded)
-- **Commercial fit:** large_tvl_marketing_asset
-
-Mitosis has 84 deployed contract rows in current topography. This brief renders the 81 rows present in scope-match run recovery-full-v5-fixed-matcher-2026-05-05-c067f024; any topography rows absent from that run are outside the visible contract tables until the scope matcher is regenerated over them.
-
----
-
-## Lifecycle and Recent Activity
-
-**Lifecycle warning:** rugged. Source: project_lifecycle_status_v1. Outreach not recommended without operator review.
-
----
-
-## Audit Targeting Recommendation
-
-Audit-evaluable surface in this run: 81 contracts across 10 chains. 8 have TP audit coverage (9.9%); 73 do not.
-
-Large-TVL protocol with partial coverage; scope should emphasize high-value uncovered surface.
-
-Existing coverage by category is summarized below; re-audit of TP-covered rows is lower priority than unmatched and likely-in-scope rows.
-
----
-
-## Scope - Core Logic
-
-Provenance-based classification not available for this project. The table below shows the flat scope inventory from topography with audit-match verdicts where available; distinguishing core logic from operational periphery requires the provenance pass.
-
-### ethereum (chain_id 1)
-
-| Contract | Role | Description | Audit Status | Address |
-|---|---|---|---|---|
-| ArbitrumBridgeAdapter | bridge | bridge | audited (TP) | [0xb883ee...b1d2](https://etherscan.io/address/0xb883ee478d3b7fea8a5357a3c3e27e2d2292b1d2) |
-| BasicVaultMigration | vault_pool | vault_pool | likely in scope | [0xe322e8...c320](https://etherscan.io/address/0xe322e8c197cf7d83a686bbd1e19f7f0085cdc320) |
-| BeaconProxy | proxy | proxy | likely in scope | [0x0109e9...5358](https://etherscan.io/address/0x0109e9f292516dab3e15efc61811c5e5a7fa5358) |
-| BeaconProxy | proxy | proxy | likely in scope | [0x02ff1f...4cf3](https://etherscan.io/address/0x02ff1f648ff443b5d88214341f0ace6ecfb94cf3) |
-| BeaconProxy | proxy | proxy | likely in scope | [0xa1ebd2...9182](https://etherscan.io/address/0xa1ebd23c4364e7491633237a0d9359d82c629182) |
-| BeaconProxy | proxy | proxy | likely in scope | [0xe4cf2d...a3ec](https://etherscan.io/address/0xe4cf2d4eb9c01784798679f2fed4cf47cc59a3ec) |
-| Cap | core | core | unmatched | [0x7671f4...0c41](https://etherscan.io/address/0x7671f415c76baa3ed21beb8e16a9c971934e0c41) |
-| ERC1967Proxy | proxy | proxy | likely in scope | [0xdfb48a...042d](https://etherscan.io/address/0xdfb48ac96c69aab9e80e02e50f7b371749c1042d) |
-| ExtensibleVaultWithExtraData | vault_pool | vault_pool | audited (TP) | [0x9954c9...ccc1](https://etherscan.io/address/0x9954c95c504f7dd9a072df7b8759a34ec323ccc1) |
-| TheoDepositVault | vault_pool | vault_pool | likely in scope | [0x0b75e1...a2fa](https://etherscan.io/address/0x0b75e167f8a37179b7044414ee43e94cabeaa2fa) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0x451d79...16f9](https://etherscan.io/address/0x451d791b6e9a9b8c9237bb55e58a7757342b16f9) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0xf1376b...51f4](https://etherscan.io/address/0xf1376bcef0f78459c0ed0ba5ddce976f1ddf51f4) |
-| unnamed | unknown | unknown | unmatched | [0x77b6f9...2300](https://etherscan.io/address/0x77b6f99970f488cfa8bd41892900b6ce881c2300) |
-
-### optimism (chain_id 10)
-
-| Contract | Role | Description | Audit Status | Address |
-|---|---|---|---|---|
-| BasicVaultMigration | vault_pool | vault_pool | likely in scope | [0x4e2293...90ea](https://optimistic.etherscan.io/address/0x4e2293f5a7346aa4047edbac49a458bc8f1690ea) |
-| BeaconProxy | proxy | proxy | likely in scope | [0x5616fe...21be](https://optimistic.etherscan.io/address/0x5616fe2762687cd8a9158c27f62aff84e36821be) |
-| BeaconProxy | proxy | proxy | likely in scope | [0xea8edd...0dd7](https://optimistic.etherscan.io/address/0xea8eddb19a980b6d9d77167ca08a70a692da0dd7) |
-| Cap | core | core | unmatched | [0x1d28de...7c56](https://optimistic.etherscan.io/address/0x1d28ded4ff512c0e80af2b459d86a9169cc57c56) |
-| OptimismMintableERC20 | token | token | unmatched | [0x346e03...08f0](https://optimistic.etherscan.io/address/0x346e03f8cce9fe01dcb3d0da3e9d00dc2c0e08f0) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0xb883ee...b1d2](https://optimistic.etherscan.io/address/0xb883ee478d3b7fea8a5357a3c3e27e2d2292b1d2) |
-
-### bsc (chain_id 56)
-
-| Contract | Role | Description | Audit Status | Address |
-|---|---|---|---|---|
-| BasicVaultMigration | vault_pool | vault_pool | likely in scope | [0x7b3117...ed2c](https://bscscan.com/address/0x7b31172106f9eb35cc0e364ca0f07af5fa27ed2c) |
-| BeaconProxy | proxy | proxy | likely in scope | [0xadd585...bfc2](https://bscscan.com/address/0xadd58517c5d45c8ed361986f193785f8ed1abfc2) |
-| ERC1967Proxy | proxy | proxy | likely in scope | [0x4320e5...6de9](https://bscscan.com/address/0x4320e5ae6f08ffcf6175fb558ee4c0ec41b86de9) |
-| ExtensibleVaultWithExtraData | vault_pool | vault_pool | audited (TP) | [0xb9c297...c635](https://bscscan.com/address/0xb9c2970be7e433d1df9e4598e339955a32b3c635) |
-| HypERC20 | token | token | unmatched | [0xb87827...53c1](https://bscscan.com/address/0xb87827592f4f75ec5610751156e4e2044a4853c1) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0x8e1e6b...caef](https://bscscan.com/address/0x8e1e6bf7e13c400269987b65ab2b5724b016caef) |
-
-### mantle (chain_id 5000)
-
-| Contract | Role | Description | Audit Status | Address |
-|---|---|---|---|---|
-| BasicVaultMigration | vault_pool | vault_pool | likely in scope | [0x68fc16...8a36](https://mantlescan.xyz/address/0x68fc16e59f1e58b8d5ea1ae57db0f44f7ce18a36) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0xe6829d...e8fa](https://mantlescan.xyz/address/0xe6829d9a7ee3040e1276fa75293bde931859e8fa) |
-| unnamed | unknown | unknown | likely in scope | [0x6ff000...ce55](https://mantlescan.xyz/address/0x6ff000453a9c14f7d3bf381925c8cde565dbce55) |
-
-### base (chain_id 8453)
-
-| Contract | Role | Description | Audit Status | Address |
-|---|---|---|---|---|
-| ERC1967Proxy | proxy | proxy | unmatched | [0x8a7f54...a98b](https://basescan.org/address/0x8a7f5457eb8dab4d48abb6bd2bdf9ebebe97a98b) |
-| MitosisHypERC20 | token | token | unmatched | [0x40ae80...1d42](https://basescan.org/address/0x40ae801ca27bde15413d4056f041773090901d42) |
-
-### mode (chain_id 34443)
-
-| Contract | Role | Description | Audit Status | Address |
-|---|---|---|---|---|
-| unnamed | unknown | unknown | unmatched | [0xb883ee...b1d2](https://explorer.mode.network/address/0xb883ee478d3b7fea8a5357a3c3e27e2d2292b1d2) |
-| unnamed | unknown | unknown | unmatched | [0xbed575...9471](https://explorer.mode.network/address/0xbed575b0feda4f84b71144634693dacc07749471) |
-
-### arbitrum (chain_id 42161)
-
-| Contract | Role | Description | Audit Status | Address |
-|---|---|---|---|---|
-| BasicVaultMigration | vault_pool | vault_pool | likely in scope | [0x96d98f...7b23](https://arbiscan.io/address/0x96d98f13a1515a65705728703d29b9ede7087b23) |
-| BeaconProxy | proxy | proxy | likely in scope | [0x73981b...a007](https://arbiscan.io/address/0x73981b0496fc08e9136baf74b79d32a4d4f2a007) |
-| BeaconProxy | proxy | proxy | likely in scope | [0x7e8cff...e8ba](https://arbiscan.io/address/0x7e8cffbe165c6905a8acec0f37b341c00353e8ba) |
-| BeaconProxy | proxy | proxy | likely in scope | [0xbed575...9471](https://arbiscan.io/address/0xbed575b0feda4f84b71144634693dacc07749471) |
-| Cap | core | core | unmatched | [0x1d28de...7c56](https://arbiscan.io/address/0x1d28ded4ff512c0e80af2b459d86a9169cc57c56) |
-| MultiBridgeToken | token | token | unmatched | [0x3d15fd...c3a0](https://arbiscan.io/address/0x3d15fd46ce9e551498328b1c83071d9509e2c3a0) |
-| TheoDepositVault | vault_pool | vault_pool | likely in scope | [0x54602e...ee34](https://arbiscan.io/address/0x54602e5cba09e01eee9b2050f1f4f0dc902cee34) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0xb883ee...b1d2](https://arbiscan.io/address/0xb883ee478d3b7fea8a5357a3c3e27e2d2292b1d2) |
-
-### linea (chain_id 59144)
-
-| Contract | Role | Description | Audit Status | Address |
-|---|---|---|---|---|
-| BasicVaultMigration | vault_pool | vault_pool | likely in scope | [0x6000ed...7e9b](https://lineascan.build/address/0x6000edabd1f4ccf538051501d86406ff77487e9b) |
-| BeaconProxy | proxy | proxy | likely in scope | [0x56ced4...8768](https://lineascan.build/address/0x56ced49205e5d9b4d8d9b29f4abfbe7bb8b08768) |
-| BeaconProxy | proxy | proxy | likely in scope | [0x96d6ce...ec2d](https://lineascan.build/address/0x96d6ce4e83db947ff6bd1ab0b377f23cd5d9ec2d) |
-| Cap | core | core | unmatched | [0x3cda62...0f1f](https://lineascan.build/address/0x3cda62917dae24d153c102b3db9bb5c058fc0f1f) |
-| TheoDepositVault | vault_pool | vault_pool | likely in scope | [0xcf101e...b28c](https://lineascan.build/address/0xcf101e13b5181f79094b0726b03e89d1cb95b28c) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0x1bf74c...8aa6](https://lineascan.build/address/0x1bf74c010e6320bab11e2e5a532b5ac15e0b8aa6) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0xcd3287...3a91](https://lineascan.build/address/0xcd32876b9b483eb75e8ca74935e4b51725f33a91) |
-
-### blast (chain_id 81457)
-
-| Contract | Role | Description | Audit Status | Address |
-|---|---|---|---|---|
-| BasicVaultMigration | vault_pool | vault_pool | likely in scope | [0x244cbb...61dd](https://blastscan.io/address/0x244cbbd78c9360772ab64588def9faf4e9f861dd) |
-| BeaconProxy | proxy | proxy | likely in scope | [0x8506fd...60a0](https://blastscan.io/address/0x8506fd66fced711c11f9e837ecaec0f87c3f60a0) |
-| Cap | core | core | unmatched | [0xd1945a...0be2](https://blastscan.io/address/0xd1945acfe40e0a2941d24fc39fb57e5790780be2) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0x096430...69de](https://blastscan.io/address/0x096430ef0a653c067df32e93ff77090e084169de) |
-
-### scroll (chain_id 534352)
-
-| Contract | Role | Description | Audit Status | Address |
-|---|---|---|---|---|
-| ATM | core | core | unmatched | [0x1d28de...7c56](https://scrollscan.com/address/0x1d28ded4ff512c0e80af2b459d86a9169cc57c56) |
-| BasicVault | vault_pool | vault_pool | audited (TP) | [0x3cda62...0f1f](https://scrollscan.com/address/0x3cda62917dae24d153c102b3db9bb5c058fc0f1f) |
-| BasicVaultFactory | factory | factory | audited (TP) | [0x7671f4...0c41](https://scrollscan.com/address/0x7671f415c76baa3ed21beb8e16a9c971934e0c41) |
-| BasicVaultMigration | vault_pool | vault_pool | likely in scope | [0x86fc78...17fb](https://scrollscan.com/address/0x86fc783c579e27c99ec16fe4ac00e49caaef17fb) |
-| BeaconProxy | proxy | proxy | likely in scope | [0xa0eeb4...bd28](https://scrollscan.com/address/0xa0eeb418213f8472cba2c842378e1bb64e28bd28) |
-| BeaconProxy | proxy | proxy | likely in scope | [0xb9ca61...08d6](https://scrollscan.com/address/0xb9ca61a6d5fa0c443f3c48ab1fbf0118964308d6) |
-| Cap | core | core | unmatched | [0x4a6219...a382](https://scrollscan.com/address/0x4a6219e25a41fd4165fbd158d89723a7175ea382) |
-| CCDMClient | core | core | audited (TP) | [0xd1945a...0be2](https://scrollscan.com/address/0xd1945acfe40e0a2941d24fc39fb57e5790780be2) |
-| CCDMHost | core | core | audited (TP) | [0x877b9e...6031](https://scrollscan.com/address/0x877b9ea7ce0358ef7982b2967ae7e538530a6031) |
-| Empty | core | core | unmatched | [0x13cad3...aab4](https://scrollscan.com/address/0x13cad3aa86df1233dc9930a8f88f43237056aab4) |
-| ERC1967Proxy | proxy | proxy | unmatched | [0x2bfbb9...67d4](https://scrollscan.com/address/0x2bfbb9fefd8bdcdc49ed4f5188036f16fff567d4) |
-| LiFiMigrationHelper | migration | migration | unmatched | [0x046076...67a3](https://scrollscan.com/address/0x04607620e45d945af31d42690d0c3a10ec8767a3) |
-| LiFiMigrationHelper | migration | migration | unmatched | [0x34a40e...5923](https://scrollscan.com/address/0x34a40ecd41236b8cfa54fee973196f54445f5923) |
-| LiFiMigrationHelper | migration | migration | unmatched | [0x373c48...ec6d](https://scrollscan.com/address/0x373c48fe7c70414dfd7f9e7f6d2eedc7b8d4ec6d) |
-| LiFiMigrationHelper | migration | migration | unmatched | [0x5d2d6a...a28f](https://scrollscan.com/address/0x5d2d6a15959cdd9610adafca422f135794aaa28f) |
-| ProxyAdmin | proxy | proxy | unmatched | [0x5bd649...b5e2](https://scrollscan.com/address/0x5bd64950b2885070e172d01e49b69842a5a4b5e2) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0x01f0a3...c506](https://scrollscan.com/address/0x01f0a31698c4d065659b9bdc21b3610292a1c506) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0x86c4dc...6e99](https://scrollscan.com/address/0x86c4dc0a667312d2584ba8856257db9a545f6e99) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0xb883ee...b1d2](https://scrollscan.com/address/0xb883ee478d3b7fea8a5357a3c3e27e2d2292b1d2) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0xbc33eb...b46c](https://scrollscan.com/address/0xbc33eb5352a92918c3698e75b573baba25a1b46c) |
-| TransparentUpgradeableProxy | proxy | proxy | unmatched | [0xcd3287...3a91](https://scrollscan.com/address/0xcd32876b9b483eb75e8ca74935e4b51725f33a91) |
-| VaultHub | vault_pool | vault_pool | audited (TP) | [0xf57104...d1b3](https://scrollscan.com/address/0xf57104f5bbb90b27f169361b065a4e88d73ad1b3) |
-| unnamed | unknown | unknown | unmatched | [0x0b75e1...a2fa](https://scrollscan.com/address/0x0b75e167f8a37179b7044414ee43e94cabeaa2fa) |
-| unnamed | unknown | unknown | unmatched | [0x0b8ed2...7c7f](https://scrollscan.com/address/0x0b8ed2102ef99603e1e3d819cf7a46db68467c7f) |
-| unnamed | unknown | unknown | unmatched | [0x1316be...e0fd](https://scrollscan.com/address/0x1316bec12f20d09f6b4c6c0477ea8fa17612e0fd) |
-| unnamed | unknown | unknown | unmatched | [0x512886...ec07](https://scrollscan.com/address/0x5128868509c9663d57a0fc91b465547ae519ec07) |
-| unnamed | unknown | unknown | unmatched | [0x54602e...ee34](https://scrollscan.com/address/0x54602e5cba09e01eee9b2050f1f4f0dc902cee34) |
-| unnamed | unknown | unknown | unmatched | [0x70d7e0...8aa9](https://scrollscan.com/address/0x70d7e0c93d8443325550ba3f71576f5f346b8aa9) |
-| unnamed | unknown | unknown | unmatched | [0x7485e3...2590](https://scrollscan.com/address/0x7485e3746bb5db5330d5b9195f81b984e48c2590) |
-| unnamed | unknown | unknown | unmatched | [0xcf101e...b28c](https://scrollscan.com/address/0xcf101e13b5181f79094b0726b03e89d1cb95b28c) |
-
----
-
-## Scope - Operational Periphery
-
-Operational periphery is not classified for this project. Admin, fee-collection, keeper, and timelock contracts may exist within the flat scope inventory in the core logic section.
-
----
-
-## Scope - Factory Architecture
-
-No factories detected in topography.
-
----
-
-## Scope - Proxy and Upgrade Architecture
-
-Protocol uses 30 proxies on 1, 10, 56, 5000, 8453, 42161, 59144, 81457, 534352. 14 follow EIP-1967 / UUPS patterns; 15 are beacon proxies. 13 proxies share an implementation with other proxies in the project.
-
-Upgrade authority concentrates in 9 distinct deployer addresses: 0x1e4f1d...7b36, 0x207e80...82f8, 0x2ab43e...f0d2, 0x587006...c58a, 0x867270...4c11. Multisig membership, timelock duration, and governance-gate parameters are not extracted by the current pipeline.
-
----
-
-## Scope - Integration Surface
-
-No external integrations detected in topography.
-
----
-
-## Audit Coverage
-
-### Coverage by Scope Category
-
-| Category | Contracts | Audited | Unaudited | Coverage % |
-|---|---:|---:|---:|---:|
-| No provenance | 81 | 8 | 73 | 9.9% |
-| **Total** | 81 | 8 | 73 | 9.9% |
-
-### Past Audits
-
-| Date | Auditor | Scope Described | Coverage Claim | Relationship | Link |
-|---|---|---|---|---|---|
-| 2025-08-13 | Zellic | Extensible Vaults Smart Contract Patch Review | unspecified | direct | [report](https://github.com/Zellic/publications/blob/master/Mitosis%20Extensible%20Vaults%20-%20Zellic%20Audit%20Reports.pdf) |
-| 2025-05-22 | Zellic | Mitosis Smart Contract Security Assessment | unspecified | direct | [report](https://github.com/Zellic/publications/blob/master/Mitosis%20-%20Zellic%20Audit%20Report.pdf) |
-| unknown | Omniscia | omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/CCDMClient-CCM | unspecified | direct | not available |
-
-### Gap Analysis
-
-Core logic: 0 of 0 contracts covered (0.0%). Operational periphery: 0 of 0 covered (0.0%). Last audit 2 days ago.
-
-14 contracts deployed after the most recent audit. These are by definition not covered by any existing audit.
-
----
-
-## Appendix
-
-### Docs Pages Referenced
-
-- [https://docs.mitosis.org/learn/audit-reports](https://docs.mitosis.org/learn/audit-reports) - audit_report_link
-- [https://docs.mitosis.org/learn/audit-reports.md](https://docs.mitosis.org/learn/audit-reports.md) - audit_report_link
-- [https://drive.google.com/drive/folders/1W2m-Fj4e11W23P4FIjJiVbsSvDMV1rZF?usp=drive_link](https://drive.google.com/drive/folders/1W2m-Fj4e11W23P4FIjJiVbsSvDMV1rZF?usp=drive_link) - audit_report_link
-- [https://github.com/mitosis-org/chain/blob/main/audits/2025-05-22_Zellic_Mainnet.pdf](https://github.com/mitosis-org/chain/blob/main/audits/2025-05-22_Zellic_Mainnet.pdf) - audit_report_link
-- [https://github.com/mitosis-org/protocol/blob/main/audits/2025-05-22_Zellic_Mainnet.pdf](https://github.com/mitosis-org/protocol/blob/main/audits/2025-05-22_Zellic_Mainnet.pdf) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/appendix/disclaimer](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/appendix/disclaimer) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/appendix/finding-types](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/appendix/finding-types) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/appendix/severity-definition](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/appendix/severity-definition) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/BasicVault-BVT](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/BasicVault-BVT) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/BasicVaultFactory-BVF](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/BasicVaultFactory-BVF) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/Cap-CPA](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/Cap-CPA) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/CCDMClient-CCM](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/CCDMClient-CCM) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/CCDMHost-CCD](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/CCDMHost-CCD) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/EETHDepositHelper-EET](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/EETHDepositHelper-EET) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/Message-MEG](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/Message-MEG) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/VaultHub-VHB](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/VaultHub-VHB) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/compilation](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/compilation) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/ArbitrumBridgeAdapter-ABA](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/ArbitrumBridgeAdapter-ABA) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/ATM-ATM](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/ATM-ATM) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/BasicVault-BVT](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/BasicVault-BVT) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/BasicVaultFactory-BVF](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/BasicVaultFactory-BVF) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/Cap-CPA](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/Cap-CPA) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/CCDMClient-CCM](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/CCDMClient-CCM) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/CCDMHost-CCD](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/CCDMHost-CCD) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/Conv-CVN](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/Conv-CVN) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/EETHDepositHelper-EET](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/EETHDepositHelper-EET) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/Entrypoint-ETN](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/Entrypoint-ETN) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/Message-MEG](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/Message-MEG) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/OptimismBridgeAdapter-OBA](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/OptimismBridgeAdapter-OBA) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/PolygonZkEvmBridgeAdapter-PZE](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/PolygonZkEvmBridgeAdapter-PZE) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/VaultHub-VHB](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/manual-review/VaultHub-VHB) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/scope](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/scope) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/ArbitrumBridgeAdapter-ABA](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/ArbitrumBridgeAdapter-ABA) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/BasicVault-BVT](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/BasicVault-BVT) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/BasicVaultFactory-BVF](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/BasicVaultFactory-BVF) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/Cap-CPA](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/Cap-CPA) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/EETHDepositHelper-EET](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/EETHDepositHelper-EET) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/OptimismBridgeAdapter-OBA](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/OptimismBridgeAdapter-OBA) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/PolygonZkEvmBridgeAdapter-PZE](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/PolygonZkEvmBridgeAdapter-PZE) - audit_report_link
-- [https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/VaultHub-VHB](https://omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/static-analysis/VaultHub-VHB) - audit_report_link
-
-### Audit Reports (full list)
-
-- 2025-08-13 - Zellic - Extensible Vaults Smart Contract Patch Review - https://github.com/Zellic/publications/blob/master/Mitosis%20Extensible%20Vaults%20-%20Zellic%20Audit%20Reports.pdf
-- 2025-05-22 - Zellic - Mitosis Smart Contract Security Assessment - https://github.com/Zellic/publications/blob/master/Mitosis%20-%20Zellic%20Audit%20Report.pdf
-- unknown - Omniscia - omniscia.io/reports/mitosis-core-protocol-65d72c4f31a85a00186cf5f8/code-style/CCDMClient-CCM
-
-### Contract Inventory (sibling artifact)
-
-- **Structural data:** exports/agentic_briefs_v2/mitosis.json
-- **Source code:** not fetched in v1
-
-### Excluded Contracts (summary counts)
-
-| Exclusion Reason | Count | Notes |
-|---|---:|---|
-| infrastructure blocklist | 0 | Summary from p2 provenance classifications |
-| shared deployer contamination | 0 | Summary from p2 provenance classifications |
-| opaque enrichment only | 0 | Summary from p2 provenance classifications |
-| deployer expansion untethered | 0 | Summary from p2 provenance classifications |
-| factory rpc expansion untethered | 0 | Summary from p2 provenance classifications |
-| considered but unpromoted docs only | 0 | Summary from p2 provenance classifications |
-| never evaluated docs only | 0 | Summary from p2 provenance classifications |
-| external placeholder docs only | 0 | Summary from p2 provenance classifications |
-
-### Data Availability Notes
-
-- **Provenance classification:** not run for this project.
-- **Multisig / timelock metadata:** not extracted by current pipeline.
-- **Per-contract TVL:** available; latest total on-chain TVL snapshot is $234,811.
-- **Docs extraction status:** Call 1 unknown, Call 2 unknown, Call 5 unknown.
-
-### Generation Metadata
-
-- **Generated at:** 2026-05-05T20:46:00.230Z
-- **Scope-match run_id:** recovery-full-v5-fixed-matcher-2026-05-05-c067f024
-- **Brief exporter:** v2
-- **DL snapshot:** defillama_project_enrichment_v1_defillama_20260429T183806Z (2026-04-29)
-- **Topography refresh:** 2026-05-04T12:46:24.531Z
-
----
-
-## Caveats
-
-- **Audit coverage** is derived from scope matching against audit-report extracted scope data, not from operator confirmation. Contracts labeled `unmatched` may still be covered by an audit whose scope data was too sparse to extract structured coverage from.
-- Upgrade admin membership, timelock duration, and governance-gate parameters are NOT extracted by the pipeline. Operator must confirm before scoping.
-- Provenance classification was not run for this project. Role-category distinctions are not available here.
-- Per-contract TVL snapshot available with total on-chain TVL $234,811.
+- Project: Mitosis (`mitosis`)
+- Generated: 2026-05-20T19:33:26.402Z
+- Pipeline run: v2-pipeline-2026-05-20-db37c4
+- Chains: arbitrum one, base, blast, bsc, ethereum, linea, manta, mantle, mode, optimism, scroll
+- Contract surface: 424 logical contracts (483 raw addresses)
+- On-chain TVL (included contracts): $546,543,591.30
+
+## Audit Coverage Summary
+
+- Audited logical contracts: 4/424 (0.9%)
+- Raw deployed addresses: 483
+- Unaudited contracts: 420
+- Audits discovered: 3
+- Scoreable audits (matched contracts): 1
+- ASD (unaudited native TVL): $356,752,218.28
+- Note: This protocol is classified as [dead]. ASD of $356,752,218.28 represents exposure in a protocol with dead activity.
+
+## Contract Surface
+
+### native (208)
+
+| Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
+|---|---|---|---|---:|---|---|
+| ethereum | `0x004e9c...350568` | Proxy (impl: uniBTC) | unknown | n/a | no | proxy only (impl: uniBTC) |
+| ethereum | `0x02656f...bac65b` | LiquidityPool | core_logic | n/a | no | ethereum `0x308861...daf216` |
+| ethereum | `0x047a77...f15889` | MembershipManager | governance | n/a | no | ethereum `0x3d3202...3e3000` |
+| ethereum | `0x04f744...b7b5c0` | Restaking | unknown | n/a | no | ethereum `0x3f4eac...6e9850` |
+| ethereum | `0x078452...98880e` | Vault | core_logic | n/a | no | none |
+| ethereum | `0x07a5d3...0eef57` | DirectStaking | unknown | n/a | no | ethereum `0xe8239b...5c4572` |
+| ethereum | `0x0ac774...e76f52` | PodOwner | unknown | n/a | no | none |
+| ethereum | `0x0b75e1...eaa2fa` | TheoDepositVault | core_logic | n/a | no | none |
+| ethereum | `0x0c4a8a...3d63c4` | MockEtherFiAdmin | unknown | n/a | no | ethereum `0x46c4ab...cc29a8` |
+| ethereum | `0x0c5631...b69295` | EtherFiNodesManager | governance | n/a | no | none |
+| ethereum | `0x0fb6cc...f85fe7` | EtherFiViewer | periphery | n/a | no | ethereum `0x2ecd15...2fab81` |
+| ethereum | `0x10f2c5...c561d6` | depositRootGenerator | unknown | n/a | no | none |
+| ethereum | `0x11858b...21cf63` | LiquidityPool | core_logic | n/a | no | none |
+| ethereum | `0x11964b...09954b` | directBTC | unknown | n/a | no | ethereum `0xa70099...c0b090` |
+| ethereum | `0x130e22...3a0729` | BoringVaultPriceProvider | operational_periphery | n/a | no | none |
+| ethereum | `0x138f08...ea7743` | LRTSquared | unknown | n/a | no | none |
+| ethereum | `0x176bfd...e18bbb` | EtherFiAvsOperatorsManager | governance | n/a | no | none |
+| ethereum | `0x190f44...a3cfee` | MembershipManager | governance | n/a | no | none |
+| ethereum | `0x191a8f...8155c7` | EtherFiNode | unknown | n/a | no | none |
+| ethereum | `0x19c10a...0594d7` | EtherFiViewer | periphery | n/a | no | none |
+| ethereum | `0x1cb489...1957de` | LRTSquaredCore | unknown | n/a | no | ethereum `0x8f08b7...8e6040` |
+| ethereum | `0x1d716d...f2cd24` | LoyaltyPointsMarketSafe | unknown | n/a | no | none |
+| ethereum | `0x1e4d0a...c4e518` | Restaking | unknown | n/a | no | none |
+| ethereum | `0x1fcb83...2cd0b4` | RegulationsManager | governance | n/a | no | ethereum `0xbd23ff...35f4de` |
+| ethereum | `0x20e885...b509ad` | DummyTokenUpgradeable | token | n/a | no | ethereum `0x0295e0...a5ae46`; ethereum `0x4e1da7...04081d`; ethereum `0x61ff31...f9a2bf`; ethereum `0x83998e...2d4b28`; ethereum `0xabc12e...f04ae8`; ethereum `0xdc400f...644cf3` |
+| ethereum | `0x20ee00...e38cc7` | AddressProvider | registry | n/a | no | none |
+| ethereum | `0x20f2a7...ee9073` | EtherFiNodesManager | governance | n/a | no | none |
+| ethereum | `0x2225c9...6b6ed3` | Liquifier | unknown | n/a | no | ethereum `0x9ffdf4...ef764f`; ethereum `0xfdb757...f8ce41` |
+| ethereum | `0x2261ef...280138` | EtherFiAvsOperatorsManager | governance | n/a | no | none |
+| ethereum | `0x26542f...dd0c65` | CumulativeMerkleDrop | operational_periphery | n/a | no | ethereum `0x6db24e...ba6b64` |
+| ethereum | `0x26a2ca...79c22a` | EtherFiViewer | periphery | n/a | no | none |
+| ethereum | `0x274bbd...cb2fc8` | NetworkRestakeResetHook | core_logic | n/a | no | none |
+| ethereum | `0x28a6e7...c1f32f` | PriceProvider | operational_periphery | n/a | no | ethereum `0x2b9010...0f19e3` |
+| ethereum | `0x290d98...307106` | MembershipNFT | token | n/a | no | ethereum `0xb49e44...27e479` |
+| ethereum | `0x29b06c...50a415` | RewardPool | core_logic | $0.00 | no | ethereum `0xb7019c...732064` |
+| ethereum | `0x2b7790...120655` | EtherFiNodesManager | governance | n/a | no | none |
+| ethereum | `0x316554...f4ee24` | LoyaltyPointsMarketSafe | unknown | n/a | no | none |
+| ethereum | `0x317b8e...876ef6` | Vault | core_logic | n/a | no | none |
+| ethereum | `0x325ea0...c85fb9` | globalIndexLibrary | unknown | n/a | no | none |
+| ethereum | `0x35fa16...118ac2` | Proxy (impl: EETH) | unknown | n/a | no | proxy only (impl: EETH) |
+| ethereum | `0x39272e...d334c0` | L1SyncPoolETH | core_logic | n/a | no | ethereum `0x33757a...f43ee7` |
+| ethereum | `0x3dbe6b...a6d4e2` | EtherFiRestaker | core_logic | $217,003,475.84 | no | ethereum `0x1b7a4c...736fff` |
+| ethereum | `0x3ed97c...0a9cd4` | WithdrawRequestNFT | operational_periphery | n/a | no | ethereum `0x7d5706...9d4e2c` |
+| ethereum | `0x403ba4...310cef` | LiquidityPool | core_logic | n/a | no | none |
+| ethereum | `0x40819e...6311ca` | L1ModeReceiverETHUpgradeable | unknown | n/a | no | ethereum `0x27e120...5985c2`; ethereum `0x8963c9...ccbc37` |
+| ethereum | `0x472372...108e45` | Vault | core_logic | n/a | no | none |
+| ethereum | `0x47b091...cc9ebb` | DirectStaking | unknown | n/a | no | none |
+| ethereum | `0x48276d...9f78f8` | Liquifier | unknown | n/a | no | none |
+| ethereum | `0x4ad639...72fa1e` | StakingManager | governance | n/a | no | none |
+| ethereum | `0x4d6c23...7a9f04` | Restaking | unknown | n/a | no | none |
+| ethereum | `0x4d784a...d93860` | LiquidityPool | core_logic | n/a | no | none |
+| ethereum | `0x51a7f8...db6c5e` | uniBTC | unknown | n/a | no | none |
+| ethereum | `0x52bbf2...54e3c0` | EtherFiNode | unknown | n/a | no | none |
+| ethereum | `0x5573d6...e77fa8` | EtherFiViewer | periphery | n/a | no | none |
+| ethereum | `0x5769ff...395455` | Liquifier | unknown | n/a | no | none |
+| ethereum | `0x595994...a0fa96` | Restaking | unknown | n/a | no | none |
+| ethereum | `0x605f17...426399` | LiquidityPool | core_logic | n/a | no | none |
+| ethereum | `0x61e2ca...3f296a` | Liquifier | unknown | n/a | no | none |
+| ethereum | `0x642fb9...0b6583` | EtherFiAvsOperatorsManager | governance | n/a | no | none |
+| ethereum | `0x6494c1...a41042` | NFTExchange | token | n/a | no | ethereum `0x200057...d903a2` |
+| ethereum | `0x6827bf...09b710` | EtherFiViewer | periphery | n/a | no | none |
+| ethereum | `0x683840...2430c1` | EtherFiViewer | periphery | n/a | no | none |
+| ethereum | `0x6882ae...57497d` | Redeem | unknown | n/a | no | ethereum `0x981692...1d3b8d` |
+| ethereum | `0x68fe80...ba5366` | AuctionManager | governance | n/a | no | none |
+| ethereum | `0x6a3938...687242` | BNFT | token | n/a | no | none |
+| ethereum | `0x6b5c61...c929bc` | EtherFiNode | unknown | n/a | no | none |
+| ethereum | `0x6b6d4e...6bacdf` | Liquifier | unknown | n/a | no | none |
+| ethereum | `0x704a2f...9481ee` | DirectBTCMinter | unknown | n/a | no | ethereum `0x91fd8c...d64500` |
+| ethereum | `0x7106e8...6d29dc` | MembershipNFT | token | n/a | no | none |
+| ethereum | `0x720081...eb859d` | DelayRedeemRouter | adapter | n/a | no | ethereum `0xaa732c...f89246` |
+| ethereum | `0x72481f...b97f4a` | LiquidityPool | core_logic | n/a | no | none |
+| ethereum | `0x76c57e...805ad8` | SEthFiStrategy | core_logic | n/a | no | none |
+| ethereum | `0x792ef6...e9b44a` | EtherFiAvsOperator | unknown | n/a | no | none |
+| ethereum | `0x79ef32...f98c0a` | MembershipNFT | token | n/a | no | none |
+| ethereum | `0x7c37cd...bcf63f` | EtherFiAvsOperatorsManager | governance | n/a | no | none |
+| ethereum | `0x7c8efd...1e4543` | NFTExchange | token | n/a | no | none |
+| ethereum | `0x7e8e03...288f20` | PodOwner | unknown | n/a | no | none |
+| ethereum | `0x812e3d...57bfaa` | EtherFiNodesManager | governance | n/a | no | none |
+| ethereum | `0x81be35...31b523` | eBtcRateProvider | unknown | n/a | no | none |
+| ethereum | `0x82c12f...31c4b8` | Liquifier | unknown | n/a | no | none |
+| ethereum | `0x833514...3cc0b8` | LiquidityPool | core_logic | n/a | no | none |
+| ethereum | `0x83dd4b...c43c7f` | EtherFiViewer | periphery | n/a | no | none |
+| ethereum | `0x8487c5...e4a848` | AddressProvider | registry | n/a | no | none |
+| ethereum | `0x8969d7...3960f5` | AvsOperator | unknown | n/a | no | none |
+| ethereum | `0x8b7a14...97ff44` | PreOrder | unknown | n/a | no | none |
+| ethereum | `0x8dac64...43ed6a` | EtherFiNode | unknown | n/a | no | none |
+| ethereum | `0x8e35d6...aa26f5` | EtherFiNodesManager | governance | n/a | no | none |
+| ethereum | `0x91121c...75edcb` | EtherFiAvsOperatorsManager | governance | n/a | no | none |
+| ethereum | `0x942ced...8f4748` | EtherFiNode | unknown | n/a | no | none |
+| ethereum | `0x97176e...de57e9` | EtherFiViewer | periphery | n/a | no | none |
+| ethereum | `0x997c54...1009f7` | EtherFiNodesManager | governance | n/a | no | none |
+| ethereum | `0x9c377a...f11708` | TNFT | token | n/a | no | none |
+| ethereum | `0x9c8725...a5f412` | Restaking | unknown | n/a | no | none |
+| ethereum | `0x9cfbf2...d665d6` | Restaking | unknown | n/a | no | none |
+| ethereum | `0x9f0ae0...982da9` | EtherFiNode | unknown | n/a | no | none |
+| ethereum | `0x9f26d4...d20761` | EtherFiTimelock | governance | n/a | no | none |
+| ethereum | `0x9f4c27...076776` | depositRootGenerator | unknown | n/a | no | none |
+| ethereum | `0xa20caf...d9a8de` | Staking | unknown | n/a | no | ethereum `0x4befa2...269e9d` |
+| ethereum | `0xa2f5e6...1082ae` | NetworkRestakeResetHook | core_logic | n/a | no | none |
+| ethereum | `0xa4ab5e...b7583d` | EtherFiNode | unknown | n/a | no | none |
+| ethereum | `0xa6c706...98f223` | EtherFiViewer | periphery | n/a | no | none |
+| ethereum | `0xa7581e...9b2a0f` | wstETH_Burner | unknown | n/a | no | none |
+| ethereum | `0xa8a8be...4ffb1f` | LiquidityPool | core_logic | n/a | no | none |
+| ethereum | `0xa9094e...acb147` | EtherFiViewer | periphery | n/a | no | none |
+| ethereum | `0xaae009...86fee6` | DummyTokenUpgradeable | token | n/a | no | none |
+| ethereum | `0xab47d7...fbe70d` | EtherFiNode | unknown | n/a | no | none |
+| ethereum | `0xad5074...f2130f` | EtherFiAvsOperator | unknown | n/a | no | none |
+| ethereum | `0xad6ad4...c35599` | BNFT | token | n/a | no | none |
+| ethereum | `0xad8bd6...62b96a` | Restaking | unknown | n/a | no | none |
+| ethereum | `0xaf8749...e0d322` | ProtocolRevenueManager | governance | n/a | no | none |
+| ethereum | `0xafb82c...1afea7` | TNFT | token | n/a | no | none |
+| ethereum | `0xb27b1d...1f02c1` | Liquifier | unknown | n/a | no | none |
+| ethereum | `0xb27d4e...d5868f` | StakingManager | governance | n/a | no | none |
+| ethereum | `0xb27e1b...de3b84` | MembershipManager | governance | n/a | no | none |
+| ethereum | `0xb619f9...6dd42c` | EtherFiViewer | periphery | n/a | no | none |
+| ethereum | `0xb737e9...bf19c3` | EtherFiNode | unknown | n/a | no | none |
+| ethereum | `0xb98331...05dcd2` | PreOrder | unknown | n/a | no | none |
+| ethereum | `0xba4f87...65f10e` | Proxy (impl: DummyTokenUpgradeable) | token | n/a | no | proxy only (impl: DummyTokenUpgradeable) |
+| ethereum | `0xc22c7f...87e691` | Liquifier | unknown | n/a | no | none |
+| ethereum | `0xc2455e...f12aa9` | DummyTokenUpgradeable | token | n/a | no | none |
+| ethereum | `0xc2709a...a3d321` | EtherFiAvsOperatorsManager | governance | n/a | no | none |
+| ethereum | `0xc2743a...6fb5e5` | AvsOperatorManager | governance | n/a | no | ethereum `0x2093bb...a37a6a` |
+| ethereum | `0xc55cfc...af280a` | NetworkRestakeResetHook | core_logic | n/a | no | none |
+| ethereum | `0xc7d81a...8334c7` | brVault | core_logic | $40,632.23 | no | ethereum `0x1419b4...0e3386` |
+| ethereum | `0xc8160b...0569ca` | UnnamedContract | unknown | n/a | no | ethereum `0x6d20bb...76aea9` |
+| ethereum | `0xc8ad09...e1696f` | Proxy (impl: L1ModeReceiverETHUpgradeable) | unknown | n/a | no | proxy only (impl: L1ModeReceiverETHUpgradeable) |
+| ethereum | `0xcb674f...36ba8c` | VaultWithoutNative | core_logic | $24,644.31 | no | ethereum `0x047d41...10d6da`; arbitrum one `0x84e5c8...c26800` |
+| ethereum | `0xcbf18f...6433a0` | AuctionManager | governance | n/a | no | none |
+| ethereum | `0xcd5fe2...59b7ee` | Proxy (impl: WeETH) | unknown | n/a | no | proxy only (impl: WeETH) |
+| ethereum | `0xcef428...cfc474` | LiquidityPool | core_logic | n/a | no | none |
+| ethereum | `0xd27a57...1f5a8b` | LiquidityPool | core_logic | n/a | no | none |
+| ethereum | `0xd2b8c7...d02ff5` | LRTSquaredAdmin | unknown | n/a | no | none |
+| ethereum | `0xd60ec8...0277c7` | TNFT | token | n/a | no | none |
+| ethereum | `0xd88f3f...89fed3` | EtherFiViewer | periphery | n/a | no | none |
+| ethereum | `0xd90c56...725fda` | EtherFiNodesManager | governance | n/a | no | none |
+| ethereum | `0xdaaac9...008ca7` | WithdrawRequestNFT | operational_periphery | n/a | no | none |
+| ethereum | `0xdc9e0d...04fae7` | AvsOperatorManager | governance | n/a | no | none |
+| ethereum | `0xdce5ac...4800f2` | EtherFiAvsOperator | unknown | n/a | no | none |
+| ethereum | `0xe41aea...e33f72` | Liquifier | unknown | n/a | no | none |
+| ethereum | `0xe55eac...008c69` | StakingManager | governance | n/a | no | none |
+| ethereum | `0xe6179d...b144dd` | MembershipNFT | token | n/a | no | none |
+| ethereum | `0xe86922...a5eb79` | LiquidityPool | core_logic | n/a | no | none |
+| ethereum | `0xeda445...419e55` | AvsOperatorManager | governance | n/a | no | none |
+| ethereum | `0xee179d...575b54` | LRTSquared | unknown | n/a | no | none |
+| ethereum | `0xefc323...cf2e8f` | L1ModeReceiverETHUpgradeable | unknown | n/a | no | none |
+| ethereum | `0xf0ab75...bc342b` | TransferProxy | unknown | n/a | no | none |
+| ethereum | `0xf1376b...df51f4` | Proxy (impl: RockXETH) | unknown | n/a | no | proxy only (impl: RockXETH) |
+| ethereum | `0xf38098...248f53` | EtherFiAvsOperator | unknown | n/a | no | none |
+| ethereum | `0xf47187...064d29` | AvsOperator | unknown | n/a | no | none |
+| ethereum | `0xf68f84...9d3d60` | L1ModeReceiverETH | unknown | n/a | no | ethereum `0x3b099b...6b7f24` |
+| ethereum | `0xf710e9...8f5142` | EtherFiNodesManager | governance | n/a | no | none |
+| ethereum | `0xf8208a...9f0625` | EtherFiNodesManager | governance | n/a | no | none |
+| ethereum | `0xfa7ab3...a1c319` | EtherFiNodesManager | governance | n/a | no | none |
+| ethereum | `0xfab5f2...425ed1` | L1ModeReceiverETHUpgradeable | unknown | n/a | no | none |
+| ethereum | `0xfba2e9...2466c1` | EtherFiAvsOperator | unknown | n/a | no | none |
+| ethereum | `0xfc9268...9d4c36` | RewardPool | core_logic | n/a | no | none |
+| ethereum | `0xfca266...c695ae` | EtherFiNode | unknown | n/a | no | none |
+| ethereum | `0xfcc674...ee2caf` | NodeOperatorManager | governance | n/a | no | ethereum `0xd5edf7...54e35e` |
+| ethereum | `0xfdb118...8747fb` | EtherFiNodesManager | governance | n/a | no | none |
+| optimism | `0x346e03...0e08f0` | OptimismMintableERC20 | bridge_template | n/a | no | none |
+| optimism | `0x939197...2b593e` | Proxy (impl: uniBTC) | unknown | n/a | no | proxy only (impl: uniBTC) |
+| mantle | `0x6ff000...dbce55` | BasicVaultMigration | operational_periphery | n/a | no | ethereum `0x0109e9...fa5358`; ethereum `0x02ff1f...b94cf3`; ethereum `0x14c5a9...d8cdbf`; ethereum `0xa1ebd2...629182`; ethereum `0xe4cf2d...59a3ec`; optimism `0x5616fe...6821be`; optimism `0xea8edd...da0dd7`; bsc `0xadd585...1abfc2`; arbitrum one `0x3c09fb...beb0df`; arbitrum one `0x73981b...f2a007`; arbitrum one `0x7e8cff...53e8ba`; arbitrum one `0xbed575...749471` |
+| mode | `0x04c059...6c150a` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0x01f90a...43381d` | TheoDepositVault | core_logic | n/a | no | none |
+| arbitrum one | `0x04af63...e58638` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0x08cb45...46775d` | Vault | core_logic | n/a | no | none |
+| arbitrum one | `0x13cad3...56aab4` | ATM | unknown | n/a | no | arbitrum one `0xbc33eb...a1b46c` |
+| arbitrum one | `0x1d28de...c57c56` | Cap | unknown | n/a | yes | ethereum `0x451d79...2b16f9`; optimism `0xb883ee...92b1d2`; arbitrum one `0xb883ee...92b1d2` |
+| arbitrum one | `0x1f6c2e...257b5a` | Sigma | unknown | n/a | no | arbitrum one `0x8cc6d6...853915` |
+| arbitrum one | `0x263b7b...55da11` | TheoDepositVault | core_logic | n/a | no | none |
+| arbitrum one | `0x2f99b9...9a55e1` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0x357510...cf4dbe` | Proxy (impl: StandardArbERC20) | token | $139,683,465.90 | no | proxy only (impl: StandardArbERC20) |
+| arbitrum one | `0x361a4d...404968` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0x3ca8f1...319009` | TheoDepositVault | core_logic | n/a | no | none |
+| arbitrum one | `0x3cda62...fc0f1f` | BasicVaultFactory | registry | n/a | no | arbitrum one `0x3067f3...db328f` |
+| arbitrum one | `0x472edc...86e584` | BasicVault | core_logic | n/a | no | none |
+| arbitrum one | `0x4a6219...5ea382` | VaultHub | core_logic | n/a | no | arbitrum one `0xcd3287...f33a91` |
+| arbitrum one | `0x4d11a4...9e87ce` | TheoVaultRoundsTracker | core_logic | n/a | no | none |
+| arbitrum one | `0x54602e...2cee34` | TheoDepositVault | core_logic | n/a | no | none |
+| arbitrum one | `0x6712a3...1c9924` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0x67c90f...4dd83a` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0x6b2a01...bd726a` | Proxy (impl: uniBTC) | unknown | n/a | no | proxy only (impl: uniBTC) |
+| arbitrum one | `0x72fb06...be74f2` | LiFiMigrationHelper | operational_periphery | n/a | no | arbitrum one `0x373c48...d4ec6d` |
+| arbitrum one | `0x7401ac...8356e1` | VaultKeeper | operational_periphery | n/a | no | none |
+| arbitrum one | `0x74c691...f38c17` | RefundUSDC | unknown | n/a | no | none |
+| arbitrum one | `0x7671f4...4e0c41` | CCDMHost | unknown | n/a | yes | none |
+| arbitrum one | `0x77ef79...252eb3` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0x7ca71e...4e8225` | TheoVaultRoundsTracker | core_logic | n/a | no | none |
+| arbitrum one | `0x83c6ac...ec19b4` | VaultKeeper | operational_periphery | n/a | no | none |
+| arbitrum one | `0x877b9e...0a6031` | CCDMClient | unknown | n/a | no | arbitrum one `0x8c3bb8...ff522d` |
+| arbitrum one | `0x96d98f...087b23` | BasicVaultMigration | operational_periphery | n/a | no | none |
+| arbitrum one | `0xa1958f...4538f0` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0xa3819f...4bd9c3` | TheoVaultRoundsTracker | core_logic | n/a | no | none |
+| arbitrum one | `0xa79f1f...ff136b` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0xbb691e...9018fb` | VaultKeeper | operational_periphery | n/a | no | none |
+| arbitrum one | `0xbc986f...b158b2` | Proxy (impl: Cap) | unknown | n/a | yes | proxy only (impl: Cap) |
+| arbitrum one | `0xcf101e...95b28c` | TheoVaultRoundsTracker | core_logic | n/a | no | none |
+| arbitrum one | `0xd2b24b...7516d3` | VaultKeeper | operational_periphery | n/a | no | none |
+| arbitrum one | `0xdd8bea...00d9aa` | Proxy (impl: Cap) | unknown | n/a | yes | proxy only (impl: Cap) |
+| arbitrum one | `0xddded3...df94d8` | BasicVaultMigration | operational_periphery | n/a | no | none |
+| arbitrum one | `0xeaf024...9501d3` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0xee518a...d418a3` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0xf57104...3ad1b3` | BasicVault | core_logic | n/a | no | none |
+| arbitrum one | `0xf91d94...f1c2d2` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0xf95d42...b98f2f` | LiFiMigrationHelper | operational_periphery | n/a | no | none |
+| arbitrum one | `0xfa8c3e...f41e5f` | Vault | core_logic | n/a | no | none |
+| arbitrum one | `0xfe5c7e...519f99` | LiFiMigrationHelper | operational_periphery | n/a | no | none |
+| linea | `0x04c059...6c150a` | UnnamedContract | unknown | n/a | no | none |
+
+### upstream (73)
+
+| Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
+|---|---|---|---|---:|---|---|
+| ethereum | `0x11b380...66be7b` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x1a7158...032a38` | EtherFiStaking | unknown | n/a | no | none |
+| ethereum | `0x1b47a6...eff72f` | EETH | unknown | n/a | no | none |
+| ethereum | `0x1df46e...90ad93` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x204d10...08d17d` | DirectStaking | unknown | n/a | no | none |
+| ethereum | `0x285418...363446` | DirectStaking | unknown | n/a | no | none |
+| ethereum | `0x2c28ae...f50155` | EtherfiL1SyncPoolETH | core_logic | n/a | no | none |
+| ethereum | `0x2c3b8c...4a9ff7` | BalancerRateProxy | unknown | n/a | no | none |
+| ethereum | `0x2d12e6...0ee126` | AxelarMintBridge | operational_periphery | n/a | no | none |
+| ethereum | `0x2f2342...54cf3e` | EEigenStrategy | core_logic | n/a | no | none |
+| ethereum | `0x332754...ef27f1` | L1LineaReceiverETH | unknown | n/a | no | none |
+| ethereum | `0x3376eb...61514a` | RockXETH | unknown | n/a | no | none |
+| ethereum | `0x351eea...69a098` | RockXRestaking | unknown | n/a | no | none |
+| ethereum | `0x361a67...d10289` | EtherFiOFTAdapter | adapter | n/a | no | none |
+| ethereum | `0x3774af...4ba818` | RockXRedeem | unknown | n/a | no | none |
+| ethereum | `0x38a3e2...6234e7` | uniBTC | unknown | n/a | no | none |
+| ethereum | `0x3e904a...33eab5` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x3f310c...44c5bd` | uniBTC | unknown | n/a | no | none |
+| ethereum | `0x3f924b...e5791b` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x413c36...4d1247` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x46c51d...c369dd` | EETH | unknown | n/a | no | none |
+| ethereum | `0x56adf8...c334db` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x5c9b33...02cfd7` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x5cb960...648a39` | EtherfiL1SyncPoolETH | core_logic | n/a | no | none |
+| ethereum | `0x5e8fd0...618ae0` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x5e9035...9e5242` | EETH | unknown | n/a | no | none |
+| ethereum | `0x62cea4...f1ca61` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x655bc4...63d5ae` | DirectStaking | unknown | n/a | no | none |
+| ethereum | `0x680d9f...40f565` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x698cb4...781d9a` | EtherFiOracle | operational_periphery | n/a | no | none |
+| ethereum | `0x747cac...52232e` | Swapper1InchV6 | adapter | n/a | no | none |
+| ethereum | `0x755357...48f7c0` | EtherfiL1LineaReceiverETH | unknown | n/a | no | none |
+| ethereum | `0x774c97...f2070d` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x7c3f1f...465c95` | CelerMinterReceiver | unknown | n/a | no | none |
+| ethereum | `0x876868...7de595` | RockXRedeem | unknown | n/a | no | none |
+| ethereum | `0x8a9486...98e590` | RockXETH | unknown | n/a | no | none |
+| ethereum | `0x8d671a...92920c` | RegulationsManager | governance | n/a | no | none |
+| ethereum | `0x8ee512...6779ca` | DirectStaking | unknown | n/a | no | none |
+| ethereum | `0x901043...605945` | EtherFiOperationParameters | unknown | n/a | no | none |
+| ethereum | `0x90687a...2fc487` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x917cee...909d88` | BoringVault | core_logic | $321,567.92 | no | none |
+| ethereum | `0x9203ce...718031` | Payment | unknown | n/a | no | none |
+| ethereum | `0x92c27b...bd3c4c` | EtherFiAdmin | unknown | n/a | no | none |
+| ethereum | `0x92e2bd...e5927e` | EtherFiAdmin | unknown | n/a | no | none |
+| ethereum | `0x99be55...377b70` | EtherFiOracle | operational_periphery | n/a | no | none |
+| ethereum | `0x9a74f7...630560` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x9b9608...9f22f4` | EtherFiOracle | operational_periphery | n/a | no | none |
+| ethereum | `0x9ba573...f7c757` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x9c3749...88d6b2` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x9ca778...3c5f8c` | Redeem | unknown | n/a | no | none |
+| ethereum | `0x9d6fc3...7a4aea` | EtherFiAdmin | unknown | n/a | no | none |
+| ethereum | `0xbb879a...241ab5` | RockXRestaking | unknown | n/a | no | none |
+| ethereum | `0xbc48e8...33d03d` | RockXRedeem | unknown | n/a | no | none |
+| ethereum | `0xbed9c1...7e8259` | DirectStaking | unknown | n/a | no | none |
+| ethereum | `0xc0ad77...e93f86` | EtherFiAdmin | unknown | n/a | no | none |
+| ethereum | `0xc2cba4...221923` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0xc92a22...cd0bde` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0xd4408c...c779e8` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0xd48d3e...905e11` | RockXETH | unknown | n/a | no | none |
+| ethereum | `0xd6e217...fd1c6a` | EtherFiOperationParameters | unknown | n/a | no | none |
+| ethereum | `0xd96849...ff31b1` | Staking | unknown | n/a | no | none |
+| ethereum | `0xdd7835...b08f79` | WeETH | unknown | n/a | no | none |
+| ethereum | `0xde31e6...7f3d5b` | EtherFiOracle | operational_periphery | n/a | no | none |
+| ethereum | `0xdfc7d2...2b511e` | RockXRedeem | unknown | n/a | no | none |
+| ethereum | `0xe629ee...e7d5d9` | WeETH | unknown | n/a | no | none |
+| ethereum | `0xfe7fe0...cf7d0d` | EtherFiOFTAdapter | adapter | n/a | no | none |
+| bsc | `0x55d398...197955` | BEP20USDT | token | n/a | no | none |
+| base | `0x833589...a02913` | Proxy (impl: FiatTokenV2_2) | token | n/a | no | proxy only (impl: FiatTokenV2_2) |
+| arbitrum one | `0x3d15fd...e2c3a0` | MultiBridgeToken | operational_periphery | n/a | no | none |
+| arbitrum one | `0x8c6653...bb00cb` | LiFiMigrationHelper | operational_periphery | n/a | no | none |
+| arbitrum one | `0x91c1f4...e81a67` | LiFiMigrationHelper | operational_periphery | n/a | no | none |
+| arbitrum one | `0xbb4b50...8fc38b` | LiFiMigrationHelper | operational_periphery | n/a | no | none |
+| arbitrum one | `0xedaaf2...bc320a` | LiFiMigrationHelper | operational_periphery | n/a | no | none |
+
+### standard_library (40)
+
+| Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
+|---|---|---|---|---:|---|---|
+| ethereum | `0x02e3e2...af25ea` | Proxy (impl: RockXStaking) | unknown | n/a | no | proxy only (impl: RockXStaking) |
+| ethereum | `0x0ef8fa...42d705` | Proxy (impl: EtherFiAdmin) | unknown | n/a | no | proxy only (impl: EtherFiAdmin) |
+| ethereum | `0x2ec37d...8f6646` | Proxy (impl: brBTC) | unknown | n/a | no | proxy only (impl: brBTC) |
+| ethereum | `0x552b0c...42fa05` | Proxy (impl: Payment) | unknown | n/a | no | proxy only (impl: Payment) |
+| ethereum | `0x55a67c...b60edc` | Proxy (impl: CCIPPeer) | unknown | n/a | no | proxy only (impl: CCIPPeer) |
+| ethereum | `0x57aaf0...bb6a41` | Proxy (impl: EtherFiOracle) | operational_periphery | n/a | no | proxy only (impl: EtherFiOracle) |
+| ethereum | `0x58cb26...9d187d` | Proxy (impl: RockXETH) | unknown | n/a | no | proxy only (impl: RockXETH) |
+| ethereum | `0x595677...9a29a5` | Proxy (impl: L1LineaReceiverETH) | unknown | n/a | no | proxy only (impl: L1LineaReceiverETH) |
+| ethereum | `0x5e3787...58d2f9` | Proxy (impl: RockXRedeem) | unknown | n/a | no | proxy only (impl: RockXRedeem) |
+| ethereum | `0x652199...92ba62` | Create2Factory | registry | n/a | no | none |
+| ethereum | `0x6f149f...94aa35` | Proxy (impl: EtherfiL1LineaReceiverETH) | unknown | n/a | no | proxy only (impl: EtherfiL1LineaReceiverETH) |
+| ethereum | `0x79f2c3...449597` | Proxy (impl: RockXETH) | unknown | n/a | no | proxy only (impl: RockXETH) |
+| ethereum | `0x818116...d4cf3c` | Proxy (impl: GnosisSafe) | governance | n/a | no | proxy only (impl: GnosisSafe) |
+| ethereum | `0x89b2c7...740aeb` | Proxy (impl: RockXRedeem) | unknown | n/a | no | proxy only (impl: RockXRedeem) |
+| ethereum | `0x8e4304...e37638` | Proxy (impl: 0x4af6c5711171de95d5134056abc12b89d84d209f) | proxy | n/a | no | proxy only |
+| ethereum | `0x9f6326...e7f002` | ProxyAdmin | governance | n/a | no | none |
+| ethereum | `0xbf5495...8d2110` | Proxy (impl: EzEthToken) | token | $174,297,166.12 | no | proxy only (impl: EzEthToken) |
+| ethereum | `0xd0ff89...fead1a` | Proxy (impl: EtherFiOperationParameters) | unknown | n/a | no | proxy only (impl: EtherFiOperationParameters) |
+| ethereum | `0xd78987...5da146` | Proxy (impl: EtherfiL1SyncPoolETH) | core_logic | n/a | no | proxy only (impl: EtherfiL1SyncPoolETH) |
+| ethereum | `0xdfb48a...c1042d` | Proxy (impl: ExtensibleVaultWithExtraData) | core_logic | $4,666.70 | no | proxy only (impl: ExtensibleVaultWithExtraData) |
+| ethereum | `0xe54291...abc716` | Proxy (impl: uniBTCRate) | unknown | n/a | no | proxy only (impl: uniBTCRate) |
+| ethereum | `0xf4954a...755024` | TimelockController | governance | n/a | no | none |
+| optimism | `0xce0d51...2e7fa6` | Proxy (impl: GnosisSafeL2) | governance | n/a | no | proxy only (impl: GnosisSafeL2) |
+| bsc | `0x213e5f...aa3bdb` | SafeProxy | unknown | n/a | no | none |
+| bsc | `0x4320e5...b86de9` | Proxy (impl: ExtensibleVaultWithExtraData) | core_logic | $12,419.11 | no | proxy only (impl: ExtensibleVaultWithExtraData) |
+| bsc | `0x6d1703...1a5943` | Proxy (impl: ExtensibleVaultWithExtraData) | core_logic | $142,642.80 | no | proxy only (impl: ExtensibleVaultWithExtraData) |
+| bsc | `0x8e1e6b...16caef` | Proxy (impl: HypERC20) | token | $8,364,751.73 | no | proxy only (impl: HypERC20) |
+| bsc | `0xa5deb1...8df42d` | Proxy (impl: ExtensibleVaultWithExtraData) | core_logic | $1,058,611.82 | no | proxy only (impl: ExtensibleVaultWithExtraData) |
+| mantle | `0x213e5f...aa3bdb` | GnosisSafeProxy | governance | n/a | no | none |
+| mantle | `0xe6829d...59e8fa` | Proxy (impl: L2cmETH) | unknown | n/a | no | proxy only (impl: L2cmETH) |
+| base | `0x420000...000006` | WETH9 | token | n/a | no | none |
+| base | `0x747a3d...809c55` | Proxy (impl: MitosisHypERC20) | token | n/a | no | proxy only (impl: MitosisHypERC20) |
+| base | `0x8a7f54...97a98b` | Proxy (impl: MitosisHypERC20) | token | n/a | no | proxy only (impl: MitosisHypERC20) |
+| mode | `0x978fc4...032701` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0x241609...cceea5` | Proxy (impl: XERC20) | token | $5,589,546.83 | no | proxy only (impl: XERC20) |
+| arbitrum one | `0x5bd649...a4b5e2` | ProxyAdmin | governance | n/a | no | none |
+| arbitrum one | `0x978fc4...032701` | Proxy (impl: GnosisSafeL2) | governance | n/a | no | proxy only (impl: GnosisSafeL2) |
+| linea | `0x213e5f...aa3bdb` | UnnamedContract | unknown | n/a | no | none |
+| blast | `0x213e5f...aa3bdb` | UnnamedContract | unknown | n/a | no | none |
+| scroll | `0x213e5f...aa3bdb` | SafeL2 | unknown | n/a | no | none |
+
+### needs_review (103)
+
+| Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
+|---|---|---|---|---:|---|---|
+| ethereum | `0x073058...23cc42` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x0bd74c...2d97bd` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x0fe418...dc12f8` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x10f91a...7723dc` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0x124816...5b05fa` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x124816...bd5cea` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x17ea3d...908ee1` | CCIPPeer | unknown | n/a | no | none |
+| ethereum | `0x18d0d9...d021b5` | Sigma | unknown | n/a | no | none |
+| ethereum | `0x2da0f5...442e39` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x2e346c...61085e` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x309696...888b16` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x3d987e...9a16a2` | LRTSquare | unknown | n/a | no | none |
+| ethereum | `0x4af6c5...4d209f` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x56ea97...2f999e` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x5bb017...4d809b` | Proxy (impl: EtherFiOracle) | operational_periphery | n/a | no | proxy only (impl: EtherFiOracle) |
+| ethereum | `0x69fd3e...21bbdb` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x6d1703...1a5943` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x747a3d...809c55` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x780a69...f375c5` | uniBTC | unknown | n/a | no | none |
+| ethereum | `0x7997cf...2e7eaa` | Proxy (impl: EtherFiOracle) | operational_periphery | n/a | no | proxy only (impl: EtherFiOracle) |
+| ethereum | `0x857b4f...d16f8b` | Proxy (impl: EtherFiStaking) | unknown | n/a | no | proxy only (impl: EtherFiStaking) |
+| ethereum | `0x8a7f54...97a98b` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0x8f3bcf...75d3f3` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0xa3a30f...85b1ae` | FBTCProxy | unknown | n/a | no | none |
+| ethereum | `0xa5deb1...8df42d` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0xa838b3...03ec54` | LRTSquare | unknown | n/a | no | none |
+| ethereum | `0xac3977...79f4d5` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0xac6f8c...e9f7f0` | brBTC | unknown | n/a | no | none |
+| ethereum | `0xae8afc...3b3cdd` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0xb6b4a4...6c7d36` | Proxy (impl: EtherFiStaking) | unknown | n/a | no | proxy only (impl: EtherFiStaking) |
+| ethereum | `0xb9e834...b86690` | UnnamedContract | unknown | n/a | no | none |
+| ethereum | `0xe8e55a...22e3e6` | EETH | unknown | n/a | no | none |
+| ethereum | `0xf35df2...28a09d` | RockXStaking | unknown | n/a | no | none |
+| ethereum | `0xf50dba...bcdae9` | uniBTCRate | unknown | n/a | no | none |
+| ethereum | `0xf75cf7...e31953` | UnnamedContract | unknown | n/a | no | none |
+| manta | `0x77b6f9...1c2300` | UnnamedContract | unknown | n/a | no | none |
+| manta | `0x8735c8...61981e` | UnnamedContract | unknown | n/a | no | none |
+| manta | `0xb883ee...92b1d2` | UnnamedContract | unknown | n/a | no | none |
+| mode | `0xa30c15...dfa442` | UnnamedContract | unknown | n/a | no | none |
+| mode | `0xb883ee...92b1d2` | UnnamedContract | unknown | n/a | no | none |
+| mode | `0xbed575...749471` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0x8a6abd...170ac3` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0x9002d8...c606ae` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0x94c7f8...cce2b3` | uniBTC | unknown | n/a | no | none |
+| arbitrum one | `0xd1945a...780be2` | UnnamedContract | unknown | n/a | no | none |
+| arbitrum one | `0xf781ac...c3cca6` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x03d020...d2c275` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x13cad3...56aab4` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x1b3588...8a5f12` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x1bf74c...0b8aa6` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x1d28de...c57c56` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x20ee00...e38cc7` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x22c498...30f5dc` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x241a91...518344` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x2bfbb9...f567d4` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x3478de...b5eaa5` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x34a40e...5f5923` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x3a1986...5a3975` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x3cda62...fc0f1f` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x4a6219...5ea382` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x4e2293...1690ea` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x52c422...96623b` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x56ced4...b08768` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x5bd649...a4b5e2` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x5e9035...9e5242` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x6000ed...487e9b` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x60be06...238755` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x632829...cbdb0a` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x666402...d83b73` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x6b8717...f4c4d7` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x6d2cf7...e7e7af` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x6e4b3f...13f425` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x7671f4...4e0c41` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x823106...6d9cca` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x86c4dc...5f6e99` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x877b9e...0a6031` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x8c3bb8...ff522d` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x8f34cf...3ebb4c` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x95f113...c76781` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x96d6ce...d9ec2d` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0x9b6544...cf42e0` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0xb73676...0eb065` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0xb883ee...92b1d2` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0xbb4b50...8fc38b` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0xbc33eb...a1b46c` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0xc42853...087dcb` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0xcd3287...f33a91` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0xcf101e...95b28c` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0xd1945a...780be2` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0xf57104...3ad1b3` | UnnamedContract | unknown | n/a | no | none |
+| linea | `0xfd503f...04402c` | UnnamedContract | unknown | n/a | no | none |
+| blast | `0x0817b8...ae31ef` | UnnamedContract | unknown | n/a | no | none |
+| blast | `0x096430...4169de` | UnnamedContract | unknown | n/a | no | none |
+| blast | `0x8506fd...3f60a0` | UnnamedContract | unknown | n/a | no | none |
+| scroll | `0x01f0a3...a1c506` | TransparentUpgradeableProxy | unknown | n/a | no | none |
+| scroll | `0x0b75e1...eaa2fa` | UnnamedContract | unknown | n/a | no | none |
+| scroll | `0x15eefe...ef4d25` | MultiBridgeToken | unknown | n/a | no | none |
+| scroll | `0x54602e...2cee34` | UnnamedContract | unknown | n/a | no | none |
+| scroll | `0xa0eeb4...28bd28` | BasicVaultMigration | unknown | n/a | no | none |
+| scroll | `0xb9ca61...4308d6` | BeaconProxy | unknown | n/a | no | none |
+| scroll | `0xb9e834...b86690` | UnnamedContract | unknown | n/a | no | none |
+| scroll | `0xcd3287...f33a91` | TransparentUpgradeableProxy | unknown | n/a | no | none |
+| scroll | `0xcf101e...95b28c` | UnnamedContract | unknown | n/a | no | none |
+
+## Audit Inventory
+
+| Audit | Auditor | Date | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
+|---|---|---|---|---|---:|---|
+| Introduction | Code4rena | 2024-04 | Direct | UNKNOWN | 7 | low |
+| : The audit report from [Zellic](https://www.zellic.io/) can be found [here](). (also discovered via alternate URL) | Zellic | 2025-05 | Direct | n/a | 0 | n/a |
+| 2025-09-21_Zenith_Protocol.pdf | Zenith | 2025-09 | Direct | n/a | 0 | n/a |
+
+## Coverage Gaps
+
+Unaudited native contracts ranked by TVL:
+
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x3dbe6b...a6d4e2` | EtherFiRestaker | core_logic | $217,003,475.84 | Native contract with $217,003,475.84 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x357510...cf4dbe` | Proxy (impl: StandardArbERC20) | token | $139,683,465.90 | Native contract with $139,683,465.90 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc7d81a...8334c7` | brVault | core_logic | $40,632.23 | Native contract with $40,632.23 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xcb674f...36ba8c` | VaultWithoutNative | core_logic | $24,644.31 | Native contract with $24,644.31 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x29b06c...50a415` | RewardPool | core_logic | $0.00 | Native contract with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x004e9c...350568` | Proxy (impl: uniBTC) | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x02656f...bac65b` | LiquidityPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x047a77...f15889` | MembershipManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x04f744...b7b5c0` | Restaking | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x078452...98880e` | Vault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x07a5d3...0eef57` | DirectStaking | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0ac774...e76f52` | PodOwner | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0b75e1...eaa2fa` | TheoDepositVault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0c4a8a...3d63c4` | MockEtherFiAdmin | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0c5631...b69295` | EtherFiNodesManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0fb6cc...f85fe7` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x10f2c5...c561d6` | depositRootGenerator | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x11858b...21cf63` | LiquidityPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x11964b...09954b` | directBTC | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x130e22...3a0729` | BoringVaultPriceProvider | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x138f08...ea7743` | LRTSquared | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x176bfd...e18bbb` | EtherFiAvsOperatorsManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x190f44...a3cfee` | MembershipManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x191a8f...8155c7` | EtherFiNode | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x19c10a...0594d7` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1cb489...1957de` | LRTSquaredCore | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1d716d...f2cd24` | LoyaltyPointsMarketSafe | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1e4d0a...c4e518` | Restaking | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1fcb83...2cd0b4` | RegulationsManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x20e885...b509ad` | DummyTokenUpgradeable | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x20ee00...e38cc7` | AddressProvider | registry | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x20f2a7...ee9073` | EtherFiNodesManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2225c9...6b6ed3` | Liquifier | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2261ef...280138` | EtherFiAvsOperatorsManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x26542f...dd0c65` | CumulativeMerkleDrop | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x26a2ca...79c22a` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x274bbd...cb2fc8` | NetworkRestakeResetHook | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x28a6e7...c1f32f` | PriceProvider | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x290d98...307106` | MembershipNFT | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2b7790...120655` | EtherFiNodesManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x316554...f4ee24` | LoyaltyPointsMarketSafe | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x317b8e...876ef6` | Vault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x325ea0...c85fb9` | globalIndexLibrary | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x35fa16...118ac2` | Proxy (impl: EETH) | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x39272e...d334c0` | L1SyncPoolETH | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3ed97c...0a9cd4` | WithdrawRequestNFT | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x403ba4...310cef` | LiquidityPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x40819e...6311ca` | L1ModeReceiverETHUpgradeable | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x472372...108e45` | Vault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x47b091...cc9ebb` | DirectStaking | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x48276d...9f78f8` | Liquifier | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x4ad639...72fa1e` | StakingManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x4d6c23...7a9f04` | Restaking | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x4d784a...d93860` | LiquidityPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x51a7f8...db6c5e` | uniBTC | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x52bbf2...54e3c0` | EtherFiNode | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5573d6...e77fa8` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5769ff...395455` | Liquifier | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x595994...a0fa96` | Restaking | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x605f17...426399` | LiquidityPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x61e2ca...3f296a` | Liquifier | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x642fb9...0b6583` | EtherFiAvsOperatorsManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6494c1...a41042` | NFTExchange | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6827bf...09b710` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x683840...2430c1` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6882ae...57497d` | Redeem | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x68fe80...ba5366` | AuctionManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6a3938...687242` | BNFT | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6b5c61...c929bc` | EtherFiNode | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6b6d4e...6bacdf` | Liquifier | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x704a2f...9481ee` | DirectBTCMinter | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7106e8...6d29dc` | MembershipNFT | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x720081...eb859d` | DelayRedeemRouter | adapter | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x72481f...b97f4a` | LiquidityPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x76c57e...805ad8` | SEthFiStrategy | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x792ef6...e9b44a` | EtherFiAvsOperator | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x79ef32...f98c0a` | MembershipNFT | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7c37cd...bcf63f` | EtherFiAvsOperatorsManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7c8efd...1e4543` | NFTExchange | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7e8e03...288f20` | PodOwner | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x812e3d...57bfaa` | EtherFiNodesManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x81be35...31b523` | eBtcRateProvider | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x82c12f...31c4b8` | Liquifier | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x833514...3cc0b8` | LiquidityPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x83dd4b...c43c7f` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8487c5...e4a848` | AddressProvider | registry | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8969d7...3960f5` | AvsOperator | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8b7a14...97ff44` | PreOrder | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8dac64...43ed6a` | EtherFiNode | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8e35d6...aa26f5` | EtherFiNodesManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x91121c...75edcb` | EtherFiAvsOperatorsManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x942ced...8f4748` | EtherFiNode | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x97176e...de57e9` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x997c54...1009f7` | EtherFiNodesManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9c377a...f11708` | TNFT | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9c8725...a5f412` | Restaking | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9cfbf2...d665d6` | Restaking | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9f0ae0...982da9` | EtherFiNode | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9f26d4...d20761` | EtherFiTimelock | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9f4c27...076776` | depositRootGenerator | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa20caf...d9a8de` | Staking | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa2f5e6...1082ae` | NetworkRestakeResetHook | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa4ab5e...b7583d` | EtherFiNode | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa6c706...98f223` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa7581e...9b2a0f` | wstETH_Burner | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa8a8be...4ffb1f` | LiquidityPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa9094e...acb147` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xaae009...86fee6` | DummyTokenUpgradeable | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xab47d7...fbe70d` | EtherFiNode | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xad5074...f2130f` | EtherFiAvsOperator | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xad6ad4...c35599` | BNFT | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xad8bd6...62b96a` | Restaking | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xaf8749...e0d322` | ProtocolRevenueManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xafb82c...1afea7` | TNFT | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb27b1d...1f02c1` | Liquifier | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb27d4e...d5868f` | StakingManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb27e1b...de3b84` | MembershipManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb619f9...6dd42c` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb737e9...bf19c3` | EtherFiNode | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb98331...05dcd2` | PreOrder | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xba4f87...65f10e` | Proxy (impl: DummyTokenUpgradeable) | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc22c7f...87e691` | Liquifier | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc2455e...f12aa9` | DummyTokenUpgradeable | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc2709a...a3d321` | EtherFiAvsOperatorsManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc2743a...6fb5e5` | AvsOperatorManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc55cfc...af280a` | NetworkRestakeResetHook | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc8160b...0569ca` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc8ad09...e1696f` | Proxy (impl: L1ModeReceiverETHUpgradeable) | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xcbf18f...6433a0` | AuctionManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xcd5fe2...59b7ee` | Proxy (impl: WeETH) | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xcef428...cfc474` | LiquidityPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd27a57...1f5a8b` | LiquidityPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd2b8c7...d02ff5` | LRTSquaredAdmin | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd60ec8...0277c7` | TNFT | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd88f3f...89fed3` | EtherFiViewer | periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd90c56...725fda` | EtherFiNodesManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xdaaac9...008ca7` | WithdrawRequestNFT | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xdc9e0d...04fae7` | AvsOperatorManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xdce5ac...4800f2` | EtherFiAvsOperator | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe41aea...e33f72` | Liquifier | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe55eac...008c69` | StakingManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe6179d...b144dd` | MembershipNFT | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe86922...a5eb79` | LiquidityPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xeda445...419e55` | AvsOperatorManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xee179d...575b54` | LRTSquared | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xefc323...cf2e8f` | L1ModeReceiverETHUpgradeable | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf0ab75...bc342b` | TransferProxy | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf1376b...df51f4` | Proxy (impl: RockXETH) | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf38098...248f53` | EtherFiAvsOperator | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf47187...064d29` | AvsOperator | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf68f84...9d3d60` | L1ModeReceiverETH | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf710e9...8f5142` | EtherFiNodesManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf8208a...9f0625` | EtherFiNodesManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfa7ab3...a1c319` | EtherFiNodesManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfab5f2...425ed1` | L1ModeReceiverETHUpgradeable | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfba2e9...2466c1` | EtherFiAvsOperator | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfc9268...9d4c36` | RewardPool | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfca266...c695ae` | EtherFiNode | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfcc674...ee2caf` | NodeOperatorManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfdb118...8747fb` | EtherFiNodesManager | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x346e03...0e08f0` | OptimismMintableERC20 | bridge_template | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x939197...2b593e` | Proxy (impl: uniBTC) | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mantle | `0x6ff000...dbce55` | BasicVaultMigration | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mode | `0x04c059...6c150a` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x01f90a...43381d` | TheoDepositVault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x04af63...e58638` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x08cb45...46775d` | Vault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x13cad3...56aab4` | ATM | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x1f6c2e...257b5a` | Sigma | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x263b7b...55da11` | TheoDepositVault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x2f99b9...9a55e1` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x361a4d...404968` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x3ca8f1...319009` | TheoDepositVault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x3cda62...fc0f1f` | BasicVaultFactory | registry | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x472edc...86e584` | BasicVault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x4a6219...5ea382` | VaultHub | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x4d11a4...9e87ce` | TheoVaultRoundsTracker | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x54602e...2cee34` | TheoDepositVault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x6712a3...1c9924` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x67c90f...4dd83a` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x6b2a01...bd726a` | Proxy (impl: uniBTC) | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x72fb06...be74f2` | LiFiMigrationHelper | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x7401ac...8356e1` | VaultKeeper | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x74c691...f38c17` | RefundUSDC | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x77ef79...252eb3` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x7ca71e...4e8225` | TheoVaultRoundsTracker | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x83c6ac...ec19b4` | VaultKeeper | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x877b9e...0a6031` | CCDMClient | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0x96d98f...087b23` | BasicVaultMigration | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xa1958f...4538f0` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xa3819f...4bd9c3` | TheoVaultRoundsTracker | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xa79f1f...ff136b` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xbb691e...9018fb` | VaultKeeper | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xcf101e...95b28c` | TheoVaultRoundsTracker | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xd2b24b...7516d3` | VaultKeeper | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xddded3...df94d8` | BasicVaultMigration | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xeaf024...9501d3` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xee518a...d418a3` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xf57104...3ad1b3` | BasicVault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xf91d94...f1c2d2` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xf95d42...b98f2f` | LiFiMigrationHelper | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xfa8c3e...f41e5f` | Vault | core_logic | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum one | `0xfe5c7e...519f99` | LiFiMigrationHelper | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| linea | `0x04c059...6c150a` | UnnamedContract | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+
+## Origin Classification
+
+| Origin Kind | Contracts |
+|---|---:|
+| native | 208 |
+| upstream | 73 |
+| standard_library | 40 |
+| needs_review | 103 |
+
+## Scope Matching Notes
+
+- Repo-reference audits: 0
+- Not-audit entries: 0
+- Audits with zero matched contracts: 2
+- Inherited remapped matches: 0
+- Extraction confidence breakdown: low=1
+- Match method counts: extraction_exact=7
+
+Zero-match audit list:
+
+- [1322] : The audit report from [Zellic](https://www.zellic.io/) can be found [here]().
+- [1324] 2025-09-21_Zenith_Protocol.pdf
+
+Fork inheritance lineage and inherited audits are included when available.

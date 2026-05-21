@@ -5,8 +5,8 @@
 - Project: King Protocol (`king-protocol`)
 - Website: [https://kingprotocol.org/](https://kingprotocol.org/)
 - Lifecycle: active (Tier 0, 94.6% below peak)
-- Generated: 2026-05-21T17:56:06.582Z
-- Pipeline run: v2-pipeline-2026-05-21-df5550-f5af
+- Generated: 2026-05-21T18:33:09.963Z
+- Pipeline run: v2-pipeline-2026-05-21-b212b0-4069
 - Chains: arbitrum, base, ethereum, mantle, swellchain
 - Contract surface: 16 unique implementations (32 raw deployments)
 - DeFi Llama TVL: $1,283,601.34
@@ -25,6 +25,7 @@ The Liquid Restaking family is the core, issuing eETH/weETH and managing staking
 
 - Verified implementations audited: 3/5 (60.0%)
 - Verified + Unaudited implementations: 2
+- Verified by bytecode match: 0
 - Unverified implementations: 11
 - Unique implementations: 16
 - Raw deployments: 32
@@ -57,6 +58,18 @@ The Liquid Restaking family is the core, issuing eETH/weETH and managing staking
 |---|---|---|---|---|
 | KingOFTL2 | unknown | base | 14 deployments: mantle `0x548c41...7b98ed`; mantle `0x5a57eb...7a7ab0`; base [`0x2a57db...9bb283`](./contracts/base-8453/0x2a57db06506ab9764db8dcf06ac17a5fed9bb283/); base `0x4d6a22...51beab`; base `0x6d0431...91570d`; base `0xcc0112...e852a9`; base `0xe22c24...5fbac0`; base `0xf25768...1d689d`; arbitrum [`0x2a57db...9bb283`](./contracts/arbitrum-42161/0x2a57db06506ab9764db8dcf06ac17a5fed9bb283/); arbitrum `0x2e4124...fee275`; arbitrum `0x5df256...e931c3`; arbitrum `0xb57d20...6d127f`; arbitrum `0xbb8660...5329bb`; arbitrum `0xf25768...1d689d` | ⚠️ Unaudited |
 | UniswapV3Plugin | unknown | base | 4 deployments: base [`0x409994...200ec2`](./contracts/base-8453/0x409994fd2fdcfccddea418b7f203b4db51200ec2/); base `0x84acc4...983af0`; base `0x8bd78c...e4a459`; base `0xa12772...675ef7` | ⚠️ Unaudited |
+
+### ✅ Verified by Bytecode + Audited (0)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+- None
+
+### ⚠️ Verified by Bytecode + Unaudited (0)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+- None
 
 ### ❓ Unverified (11)
 

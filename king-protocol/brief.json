@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "king-protocol",
-  "generated_at": "2026-05-21T17:56:06.582Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-21-df5550-f5af",
+  "generated_at": "2026-05-21T18:33:09.963Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-21-b212b0-4069",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "king-protocol",
@@ -30,6 +30,7 @@
     "unaudited_contracts": 2,
     "contracts_verified_audited": 3,
     "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 11,
     "coverage_pct": 60,
     "total_audits": 4,
@@ -87,6 +88,7 @@
           "chain_name": "mantle",
           "address": "0x548c4116a97e0138f78000088ea3f155717b98ed",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -95,6 +97,7 @@
           "chain_name": "mantle",
           "address": "0x5a57ebb2c25eb64f05ebb4e07d9de8b3b67a7ab0",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -103,6 +106,7 @@
           "chain_name": "base",
           "address": "0x2a57db06506ab9764db8dcf06ac17a5fed9bb283",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -111,6 +115,7 @@
           "chain_name": "base",
           "address": "0x4d6a22986acca58aa890fbb233f3b4563251beab",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -119,6 +124,7 @@
           "chain_name": "base",
           "address": "0x6d04314fb449e020bd70ac701dfe0f13b591570d",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -127,6 +133,7 @@
           "chain_name": "base",
           "address": "0xcc011273240610838aea80b485fbdff2b2e852a9",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -135,6 +142,7 @@
           "chain_name": "base",
           "address": "0xe22c243c7559c667a1eb94b593369d192c5fbac0",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -143,6 +151,7 @@
           "chain_name": "base",
           "address": "0xf25768f2ac3a4c349be98c46ee97f59a9b1d689d",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -151,6 +160,7 @@
           "chain_name": "arbitrum",
           "address": "0x2a57db06506ab9764db8dcf06ac17a5fed9bb283",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -159,6 +169,7 @@
           "chain_name": "arbitrum",
           "address": "0x2e412435928efe43b156caa8f4b1068729fee275",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -167,6 +178,7 @@
           "chain_name": "arbitrum",
           "address": "0x5df256caca241adb47c35b16baf3b71109e931c3",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -175,6 +187,7 @@
           "chain_name": "arbitrum",
           "address": "0xb57d208661adfa911a40ee5a0de6ee0f056d127f",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -183,6 +196,7 @@
           "chain_name": "arbitrum",
           "address": "0xbb866024867479b6fe97558abd0d12a9a05329bb",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -191,6 +205,7 @@
           "chain_name": "arbitrum",
           "address": "0xf25768f2ac3a4c349be98c46ee97f59a9b1d689d",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -198,6 +213,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": true,
+      "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
@@ -220,16 +236,18 @@
           "chain_name": "ethereum",
           "address": "0x8f08b70456eb22f6109f57b8fafe862ed28e6040",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
         }
       ],
       "audits_covering": [
-        "audit-1710",
-        "audit-1711"
+        "audit-1717",
+        "audit-1718"
       ],
       "is_audited": true,
       "source_verified": true,
+      "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
@@ -252,16 +270,18 @@
           "chain_name": "ethereum",
           "address": "0x2b90103cdc9bba6c0dbcaaf961f0b5b1920f19e3",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
         }
       ],
       "audits_covering": [
-        "audit-1710",
-        "audit-1711"
+        "audit-1717",
+        "audit-1718"
       ],
       "is_audited": true,
       "source_verified": true,
+      "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
@@ -284,15 +304,17 @@
           "chain_name": "ethereum",
           "address": "0x747cac75776b3a0bba3de3e61ec12a6a7f52232e",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
         }
       ],
       "audits_covering": [
-        "audit-1710"
+        "audit-1717"
       ],
       "is_audited": true,
       "source_verified": true,
+      "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
@@ -315,6 +337,7 @@
           "chain_name": "base",
           "address": "0x409994fd2fdcfccddea418b7f203b4db51200ec2",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -323,6 +346,7 @@
           "chain_name": "base",
           "address": "0x84acc48d3c96728f9572a4f1b8819317de983af0",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -331,6 +355,7 @@
           "chain_name": "base",
           "address": "0x8bd78cc193c01573d4e464e2c3d1514dade4a459",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -339,6 +364,7 @@
           "chain_name": "base",
           "address": "0xa12772103af37270b4a6e68865463ff6ee675ef7",
           "source_verified": true,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -346,6 +372,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": true,
+      "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "review"
     },
@@ -368,6 +395,7 @@
           "chain_name": "swellchain",
           "address": "0xc2606aade4bdd978a4fa5a6edb3b66657acee6f8",
           "source_verified": false,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -375,6 +403,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": false,
+      "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": null
     },
@@ -397,6 +426,7 @@
           "chain_name": "mantle",
           "address": "0x63f23727af926604016ed0856a2390a1e4077c6a",
           "source_verified": false,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -404,6 +434,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": false,
+      "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
     },
@@ -426,6 +457,7 @@
           "chain_name": "base",
           "address": "0x0e9315a7868608e6efc309575fe9fcdc756aca5a",
           "source_verified": false,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -433,6 +465,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": false,
+      "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
     },
@@ -455,6 +488,7 @@
           "chain_name": "base",
           "address": "0x15593877afb1d5ee4b1ea7b31f540e88bda33ac4",
           "source_verified": false,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -462,6 +496,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": false,
+      "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
     },
@@ -484,6 +519,7 @@
           "chain_name": "base",
           "address": "0x34b17b0eaa06bb0f5d3c711627121da747fc1dc9",
           "source_verified": false,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -491,6 +527,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": false,
+      "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
     },
@@ -513,6 +550,7 @@
           "chain_name": "base",
           "address": "0x644403bf932e142b45ca35bdf33d2c45d7436763",
           "source_verified": false,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -520,6 +558,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": false,
+      "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
     },
@@ -542,6 +581,7 @@
           "chain_name": "base",
           "address": "0x7e2a99a7bd0b27945c838ba702342a7acc025844",
           "source_verified": false,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -549,6 +589,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": false,
+      "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
     },
@@ -571,6 +612,7 @@
           "chain_name": "base",
           "address": "0xaeab5e4d4a8ffc01807c1ec3aa11eedfebd12dbe",
           "source_verified": false,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -578,6 +620,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": false,
+      "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
     },
@@ -600,6 +643,7 @@
           "chain_name": "base",
           "address": "0xb7161279dc98a3f09f46c42a77fecc8eafe228e2",
           "source_verified": false,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -607,6 +651,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": false,
+      "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
     },
@@ -629,6 +674,7 @@
           "chain_name": "base",
           "address": "0xbd2e14734ab6634ed91f37dca9b3169b5627586b",
           "source_verified": false,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -636,6 +682,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": false,
+      "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
     },
@@ -658,6 +705,7 @@
           "chain_name": "base",
           "address": "0xe592f9af23a0c51ff59f611698da3833bd3421b5",
           "source_verified": false,
+          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
         }
@@ -665,6 +713,7 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": false,
+      "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
     }
@@ -717,14 +766,14 @@
           "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf"
         },
         {
-          "audit_id": 1709,
+          "audit_id": 1716,
           "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf"
         }
       ]
     },
     {
-      "audit_id": 1710,
-      "audit_key": "audit-1710",
+      "audit_id": 1717,
+      "audit_key": "audit-1717",
       "report_name": "NM_0314_EtherFi_LRT_2.pdf",
       "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf",
       "auditor": "NM",
@@ -758,14 +807,14 @@
           "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf"
         },
         {
-          "audit_id": 1710,
+          "audit_id": 1717,
           "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf"
         }
       ]
     },
     {
-      "audit_id": 1711,
-      "audit_key": "audit-1711",
+      "audit_id": 1718,
+      "audit_key": "audit-1718",
       "report_name": "NM_0390_LRT_Square_Strategies_DRAFT.pdf",
       "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf",
       "auditor": "NM",
@@ -799,7 +848,7 @@
           "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf"
         },
         {
-          "audit_id": 1711,
+          "audit_id": 1718,
           "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf"
         }
       ]

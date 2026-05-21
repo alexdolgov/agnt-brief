@@ -3,36 +3,35 @@
 ## Project Overview
 
 - Project: Swell (`swell`)
-- Generated: 2026-05-21T09:31:31.270Z
-- Pipeline run: v2-pipeline-2026-05-21-35dcc1-7660
+- Generated: 2026-05-21T10:29:03.249Z
+- Pipeline run: v2-pipeline-2026-05-21-b7e540-5727
 - Chains: ethereum
-- Contract surface: 96 logical contracts (111 raw addresses)
-- On-chain TVL (included contracts): $80,594,326.57
+- Contract surface: 96 logical contracts (112 raw addresses)
+- On-chain TVL (included contracts): $83,067,918.26
 
 ## Audit Coverage Summary
 
 - Audited logical contracts: 59/96 (61.5%)
-- Raw deployed addresses: 111
+- Raw deployed addresses: 112
 - Unaudited contracts: 37
 - Audits discovered: 16
 - Scoreable audits (matched contracts): 16
-- ASD (unaudited native TVL): $15,939,614.43
+- ASD (unaudited native TVL): $15,828,808.08
 
 ## Contract Surface
 
-### native (71)
+### native (73)
 
 | Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
 |---|---|---|---|---:|---|---|
 | ethereum | `0x009c9f...629655` | NFTDescriptor | token | n/a | no | none |
 | ethereum | `0x02454d...6c8f78` | swEXIT | operational_periphery | n/a | yes | ethereum `0x48c11b...251663` |
-| ethereum | `0x0a6e7b...b35676` | SwellToken | token | $15,049,655.06 | no | none |
+| ethereum | `0x0a6e7b...b35676` | SwellToken | token | $14,939,176.98 | no | none |
 | ethereum | `0x15a94d...8ba7b6` | Accountant | operational_periphery | n/a | yes | none |
 | ethereum | `0x1bb44f...975bf3` | RoleManager | governance | n/a | yes | none |
 | ethereum | `0x1da9ce...76ece1` | TellerWithMultiAssetSupport | core_logic | n/a | yes | none |
 | ethereum | `0x2a41d5...92ea28` | DepositManager | core_logic | $0.00 | yes | ethereum `0x5e6342...9a4889`; ethereum `0xb3d9cf...5b8f39` |
-| ethereum | `0x2d3b4b...0211a7` | swETH | token | $32,629,450.44 | yes | ethereum `0xf951e3...7ded78` |
-| ethereum | `0x2db758...efa4dd` | RolesAuthority | governance | n/a | no | none |
+| ethereum | `0x2d3b4b...0211a7` | swETH | token | $32,617,414.61 | yes | ethereum `0xf951e3...7ded78` |
 | ethereum | `0x3334c0...5a25f7` | RepricingOracle | operational_periphery | n/a | yes | ethereum `0x289d60...2d2d71`; ethereum `0xd5a73c...d2e959` |
 | ethereum | `0x342f0d...739d75` | CumulativeMerkleDrop | operational_periphery | n/a | yes | none |
 | ethereum | `0x351622...11a7f4` | RepricingOracle | operational_periphery | n/a | yes | none |
@@ -40,14 +39,15 @@
 | ethereum | `0x3b32e9...d15c5d` | EigenLayerManager | governance | n/a | yes | ethereum `0xc94cff...6d0936` |
 | ethereum | `0x411c78...df2755` | AccountantWithRateProviders | operational_periphery | n/a | yes | none |
 | ethereum | `0x4195ed...b6bc56` | AccessControlManager | governance | n/a | yes | ethereum `0x52b5f5...8a7d11`; ethereum `0x625087...b95eac`; ethereum `0x796592...e3333f` |
-| ethereum | `0x4796d9...4e2362` | RswETH | token | $30,538,557.70 | yes | ethereum `0xfae103...afa6c0` |
+| ethereum | `0x4796d9...4e2362` | RswETH | token | $33,142,108.85 | yes | ethereum `0xfae103...afa6c0` |
 | ethereum | `0x48dacb...fb3825` | Accountant | operational_periphery | n/a | yes | none |
 | ethereum | `0x4c86cb...493c22` | WithdrawLimitModule | operational_periphery | n/a | yes | none |
 | ethereum | `0x527d6d...855d23` | AccessControlManager | governance | n/a | yes | none |
 | ethereum | `0x584cd3...e7dae2` | SwBtcOFTAdapter | adapter | n/a | no | none |
 | ethereum | `0x5bd444...b6c4f6` | ReleaseRegistry | registry | n/a | yes | none |
-| ethereum | `0x5c6392...ed7b05` | SwETHProxyOFT | token | $159,080.65 | no | none |
+| ethereum | `0x5c6392...ed7b05` | SwETHProxyOFT | token | $159,021.97 | no | none |
 | ethereum | `0x66e47e...4d831a` | BoringVault | core_logic | n/a | yes | none |
+| ethereum | `0x677365...65e8af` | BlackPearl | unknown | n/a | no | none |
 | ethereum | `0x685adb...160429` | TellerWithMultiAssetSupport | core_logic | n/a | yes | none |
 | ethereum | `0x69fc70...4f50c0` | ManagerWithMerkleVerification | operational_periphery | n/a | yes | none |
 | ethereum | `0x6bbf58...1b1a08` | AccountantWithRateProviders | operational_periphery | n/a | yes | none |
@@ -56,6 +56,8 @@
 | ethereum | `0x70f8ac...1da901` | ReleaseRegistry | registry | n/a | yes | none |
 | ethereum | `0x728d1d...5d6977` | NodeOperatorRegistry | registry | n/a | yes | ethereum `0x46ddc3...1a1a1d`; ethereum `0xaae0b3...a1c524` |
 | ethereum | `0x755a07...05cf85` | DelayedWithdraw | operational_periphery | n/a | yes | none |
+| ethereum | `0x7e9793...5e65a2` | L1ERC20TokenBridge | operational_periphery | n/a | no | ethereum `0xecf337...d24121` |
+| ethereum | `0x8041ba...e86ae3` | Proxy (impl: TokenizedStrategy) | core_logic | $470,047.39 | yes | proxy only (impl: TokenizedStrategy) |
 | ethereum | `0x805c6d...fa55b8` | DelayedWithdraw | operational_periphery | n/a | yes | none |
 | ethereum | `0x8413e6...f4d6af` | RoleManager | governance | n/a | yes | none |
 | ethereum | `0x85befd...25d47a` | RepricingOracle | operational_periphery | n/a | yes | none |
@@ -64,13 +66,13 @@
 | ethereum | `0x97d8dd...b5beaf` | NodeOperatorRegistry | registry | n/a | yes | none |
 | ethereum | `0x9b07fb...33f562` | SwETHOFTAdapter | adapter | n/a | no | none |
 | ethereum | `0x9d663f...68f377` | RolesAuthority | governance | n/a | no | none |
-| ethereum | `0x9ed153...775f22` | BoringVault | core_logic | $31.14 | yes | none |
+| ethereum | `0x9ed153...775f22` | BoringVault | core_logic | $30.99 | yes | none |
 | ethereum | `0xa1a325...b4e7c1` | RoleManager | governance | n/a | yes | none |
 | ethereum | `0xa2ed40...f17216` | WithdrawLimitModule | operational_periphery | n/a | yes | none |
 | ethereum | `0xa3ff11...21a538` | Harvester | operational_periphery | n/a | yes | none |
 | ethereum | `0xa41902...605981` | OracleAdapter | operational_periphery | n/a | no | none |
 | ethereum | `0xa5bd95...2aa3e2` | SwBtcOFTAdapter | adapter | n/a | no | none |
-| ethereum | `0xaa68ca...1875e8` | SwETHSY | token | $730,878.72 | no | none |
+| ethereum | `0xaa68ca...1875e8` | SwETHSY | token | $730,609.12 | no | none |
 | ethereum | `0xb68b12...df17a0` | StakerProxy | core_logic | n/a | yes | ethereum `0xe19466...06e8ae` |
 | ethereum | `0xb987fa...370df6` | DepositManager | core_logic | n/a | yes | none |
 | ethereum | `0xba8290...c3073b` | Timelock | governance | n/a | no | none |
@@ -96,25 +98,28 @@
 | ethereum | `0xf807bc...64e5a8` | NodeOperatorRegistry | registry | n/a | yes | none |
 | ethereum | `0xff22ea...cfb077` | RegistryFactory | registry | n/a | yes | none |
 
-### upstream (6)
+### upstream (8)
 
 | Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
 |---|---|---|---|---:|---|---|
-| ethereum | `0x358d94...acb7b6` | Yearn V3 Vault | core_logic | $157,340.86 | no | none |
-| ethereum | `0x473f0a...cf0e05` | Proxy (impl: TokenizedStrategy) | core_logic | $156,807.64 | yes | proxy only (impl: TokenizedStrategy) |
-| ethereum | `0x8041ba...e86ae3` | Proxy (impl: TokenizedStrategy) | core_logic | $471,917.41 | yes | proxy only (impl: TokenizedStrategy) |
-| ethereum | `0x8db235...864dde` | Yearn V3 Vault | core_logic | $471,917.41 | no | none |
+| ethereum | `0x093410...9d85b7` | SwellOFTAdapter | adapter | n/a | no | none |
+| ethereum | `0x2c1b34...6f94e2` | OFTAdapterSwETH | adapter | n/a | no | none |
+| ethereum | `0x358d94...acb7b6` | Yearn V3 Vault | core_logic | $156,185.83 | no | none |
+| ethereum | `0x428cda...b2ac58` | RSwellOFTAdapter | adapter | n/a | no | none |
+| ethereum | `0x8db235...864dde` | Yearn V3 Vault | core_logic | $470,047.39 | no | none |
+| ethereum | `0x975304...5eaa50` | TokenizedStrategy | core_logic | n/a | yes | none |
 | ethereum | `0x981771...b17bb0` | Yearn Vault Factory | registry | n/a | no | none |
 | ethereum | `0xd684c1...c41eda` | SymbioticAdapter | adapter | n/a | no | none |
 
-### standard_library (11)
+### standard_library (12)
 
 | Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
 |---|---|---|---|---:|---|---|
+| ethereum | `0x05fae2...d1f219` | RolesAuthority | governance | n/a | no | none |
 | ethereum | `0x1f5ddd...d3a016` | RolesAuthority | governance | n/a | no | none |
 | ethereum | `0x25eaf5...5b8846` | ProxyAdmin | governance | n/a | no | none |
 | ethereum | `0x2a6a2b...c0caf8` | Proxy (impl: SymbioticAdapter) | adapter | n/a | no | proxy only (impl: SymbioticAdapter) |
-| ethereum | `0x38d43a...31d774` | SimpleStakingERC20 | token | $228,689.55 | yes | none |
+| ethereum | `0x38d43a...31d774` | SimpleStakingERC20 | token | $227,618.61 | yes | none |
 | ethereum | `0x674822...0931a9` | ProxyAdmin | governance | n/a | no | none |
 | ethereum | `0x69dda9...41836a` | Proxy (impl: SymbioticAdapter) | adapter | n/a | no | proxy only (impl: SymbioticAdapter) |
 | ethereum | `0x8d0b4d...ee7258` | Proxy (impl: EigenPod) | core_logic | n/a | no | proxy only (impl: EigenPod) |
@@ -123,18 +128,13 @@
 | ethereum | `0xa9bd69...0558d6` | RolesAuthority | governance | n/a | no | none |
 | ethereum | `0xd750b8...9bfd14` | ProxyAdmin | governance | n/a | no | none |
 
-### needs_review (8)
+### needs_review (3)
 
 | Chain | Address | Name | Role | TVL USD | Audited | Proxy Metadata |
 |---|---|---|---|---:|---|---|
-| ethereum | `0x05fae2...d1f219` | RolesAuthority | governance | n/a | no | none |
-| ethereum | `0x093410...9d85b7` | SwellOFTAdapter | adapter | n/a | no | none |
-| ethereum | `0x2c1b34...6f94e2` | OFTAdapterSwETH | adapter | n/a | no | none |
-| ethereum | `0x428cda...b2ac58` | RSwellOFTAdapter | adapter | n/a | no | none |
-| ethereum | `0x7e9793...5e65a2` | L1ERC20TokenBridge | operational_periphery | n/a | no | none |
-| ethereum | `0x975304...5eaa50` | TokenizedStrategy | core_logic | n/a | yes | none |
+| ethereum | `0x2db758...efa4dd` | RolesAuthority | governance | n/a | no | none |
+| ethereum | `0x473f0a...cf0e05` | Proxy (impl: TokenizedStrategy) | core_logic | $155,656.53 | yes | proxy only (impl: TokenizedStrategy) |
 | ethereum | `0xa35f12...240a14` | UnnamedContract | unknown | n/a | no | none |
-| ethereum | `0xecf337...d24121` | Proxy (impl: L1ERC20TokenBridge) | operational_periphery | n/a | no | proxy only (impl: L1ERC20TokenBridge) |
 
 ## Audit Inventory
 
@@ -163,13 +163,14 @@ Unaudited native contracts ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x0a6e7b...b35676` | SwellToken | token | $15,049,655.06 | Native contract with $15,049,655.06 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xaa68ca...1875e8` | SwETHSY | token | $730,878.72 | Native contract with $730,878.72 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x5c6392...ed7b05` | SwETHProxyOFT | token | $159,080.65 | Native contract with $159,080.65 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0a6e7b...b35676` | SwellToken | token | $14,939,176.98 | Native contract with $14,939,176.98 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xaa68ca...1875e8` | SwETHSY | token | $730,609.12 | Native contract with $730,609.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5c6392...ed7b05` | SwETHProxyOFT | token | $159,021.97 | Native contract with $159,021.97 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x009c9f...629655` | NFTDescriptor | token | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x2db758...efa4dd` | RolesAuthority | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x584cd3...e7dae2` | SwBtcOFTAdapter | adapter | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x677365...65e8af` | BlackPearl | unknown | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x6d8cc0...e8f872` | VaultAdapter | adapter | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7e9793...5e65a2` | L1ERC20TokenBridge | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x9b07fb...33f562` | SwETHOFTAdapter | adapter | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x9d663f...68f377` | RolesAuthority | governance | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xa41902...605981` | OracleAdapter | operational_periphery | n/a | Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -184,10 +185,10 @@ Unaudited native contracts ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 71 |
-| upstream | 6 |
-| standard_library | 11 |
-| needs_review | 8 |
+| native | 73 |
+| upstream | 8 |
+| standard_library | 12 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

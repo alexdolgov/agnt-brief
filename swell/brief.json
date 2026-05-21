@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "swell",
-  "generated_at": "2026-05-21T09:31:31.270Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-21-35dcc1-7660",
+  "generated_at": "2026-05-21T10:29:03.249Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-21-b7e540-5727",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "swell",
@@ -11,33 +11,33 @@
     "peak_date": "2024-05-28T00:00:00.000Z",
     "tvl_30d_ago": 148457283.19913,
     "tvl_90d_ago": 133782645.16362,
-    "tvl_current": 132872100.63633,
+    "tvl_current": 133048418.47652,
     "tier0_reason": "healthy_tvl_level_and_change",
     "tvl_180d_ago": 204622472.20868,
-    "change_30d_pct": -10.49809226395121,
-    "change_90d_pct": -0.6806148332441623,
+    "change_30d_pct": -10.379325547768275,
+    "change_90d_pct": -0.5488205784853581,
     "days_since_peak": 723,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 95.6743564576133
+    "drop_from_peak_pct": 95.66861644053543
   },
   "summary": {
     "total_contracts": 96,
-    "total_addresses": 111,
+    "total_addresses": 112,
     "audited_contracts": 59,
     "unaudited_contracts": 37,
     "coverage_pct": 61.5,
     "total_audits": 16,
     "scoreable_audits": 16,
-    "tvl_usd": 80594326.56607452,
-    "asd_usd": 15939614.427103227,
+    "tvl_usd": 83067918.26447755,
+    "asd_usd": 15828808.075750228,
     "chains": [
       "ethereum"
     ]
   },
   "topography": {
-    "project_purpose": "Swell is a liquid staking and restaking protocol that issues yield-bearing tokens (swETH, rswETH) representing staked ETH and restaked ETH, and also offers liquid staking for BTC. It provides vault-based yield strategies (Swell Earn, earnETH, earnBTC) and a governance token (SWELL).",
-    "relationship_narrative": "The ETH liquid staking and restaking families share NodeOperatorRegistry patterns and are linked via the swETH and rswETH tokens. The BTC liquid staking and Swell Earn families both use Yearn-based vaults and Aera strategies, with shared governance through RolesAuthority contracts.",
+    "project_purpose": "Swell is a liquid staking and restaking protocol that lets users stake ETH or BTC to receive yield-bearing liquid tokens (swETH, rswETH, swBTC). It also offers yield-optimized vaults (Swell Earn) and L2 farming opportunities, with infrastructure for node operator management and cross-chain bridging.",
+    "relationship_narrative": "The liquid staking and restaking families share NodeOperatorRegistry and DepositManager patterns, while Swell Earn vaults use separate BoringVault/Teller infrastructure. The SWELL token and L2 Farm operate independently, with cross-chain bridging via L1ERC20TokenBridge.",
     "product_family_count": 8
   },
   "fork_lineage": {
@@ -85,9 +85,9 @@
         }
       ],
       "audits_covering": [
-        "audit-1333",
-        "audit-1334",
-        "audit-1335"
+        "audit-1351",
+        "audit-1352",
+        "audit-1353"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -98,8 +98,8 @@
       "address": "0x05fae28773ab9dafd5c8997acee5099fa0d1f219",
       "name": "RolesAuthority",
       "role": "governance",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": "earnBTC",
       "tvl_usd": null,
       "is_proxy": false,
@@ -116,8 +116,8 @@
       "address": "0x09341022ea237a4db1644de7ccf8fa0e489d85b7",
       "name": "SwellOFTAdapter",
       "role": "adapter",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "layer-zero",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -137,7 +137,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "SWELL",
-      "tvl_usd": 15049655.06188161,
+      "tvl_usd": 14939176.984594539,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "SwellToken",
@@ -161,7 +161,7 @@
       "impl_name": "Accountant",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325"
+        "audit-1343"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -181,8 +181,8 @@
       "impl_name": "RoleManager",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325",
-        "audit-1326"
+        "audit-1343",
+        "audit-1344"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -202,9 +202,9 @@
       "impl_name": "TellerWithMultiAssetSupport",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1327",
-        "audit-1328",
-        "audit-1329"
+        "audit-1345",
+        "audit-1346",
+        "audit-1347"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -216,7 +216,7 @@
       "name": "RolesAuthority",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_provider": "solmate",
       "product_line": "earnETH",
       "tvl_usd": null,
       "is_proxy": false,
@@ -254,7 +254,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 0.00021362523860158717,
+      "tvl_usd": 0.0002126339188065641,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "DepositManager",
@@ -273,14 +273,14 @@
         }
       ],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1336",
-        "audit-1337",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1354",
+        "audit-1355",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -309,8 +309,8 @@
       "address": "0x2c1b3426e557d6756d8a8859a0779373236f94e2",
       "name": "OFTAdapterSwETH",
       "role": "adapter",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "layer-zero",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -330,7 +330,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 32629450.43833471,
+      "tvl_usd": 32617414.605258517,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "swETH",
@@ -343,10 +343,10 @@
         }
       ],
       "audits_covering": [
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1339"
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -357,7 +357,7 @@
       "address": "0x2db7583852c700549b710fd79dd1b54af2efa4dd",
       "name": "RolesAuthority",
       "role": "governance",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -397,12 +397,12 @@
         }
       ],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1337",
-        "audit-1338"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1355",
+        "audit-1356"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -422,7 +422,7 @@
       "impl_name": "CumulativeMerkleDrop",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1342"
+        "audit-1360"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -442,12 +442,12 @@
       "impl_name": "RepricingOracle",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1337",
-        "audit-1338"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1355",
+        "audit-1356"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -461,7 +461,7 @@
       "origin_kind": "upstream",
       "origin_provider": "yearn-finance",
       "product_line": "Swell",
-      "tvl_usd": 157340.8557376733,
+      "tvl_usd": 156185.83157604796,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "Yearn V3 Vault",
@@ -485,14 +485,14 @@
       "impl_name": "DepositManager",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1336",
-        "audit-1337",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1354",
+        "audit-1355",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -506,14 +506,14 @@
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
       "product_line": "Swell L2 Farm",
-      "tvl_usd": 228689.54584232066,
+      "tvl_usd": 227618.6124925326,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "SimpleStakingERC20",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1340",
-        "audit-1341"
+        "audit-1358",
+        "audit-1359"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -540,8 +540,8 @@
         }
       ],
       "audits_covering": [
-        "audit-1336",
-        "audit-1337"
+        "audit-1354",
+        "audit-1355"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -561,8 +561,8 @@
       "impl_name": "AccountantWithRateProviders",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1327",
-        "audit-1329"
+        "audit-1345",
+        "audit-1347"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -601,12 +601,12 @@
         }
       ],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -617,8 +617,8 @@
       "address": "0x428cda6c1994b926f75a4830d5baedee9db2ac58",
       "name": "RSwellOFTAdapter",
       "role": "adapter",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "layer-zero",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -635,17 +635,17 @@
       "address": "0x473f0adec308dc82440665d9fc7d5e26ebcf0e05",
       "name": "Proxy (impl: TokenizedStrategy)",
       "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "aera",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": "Swell",
-      "tvl_usd": 156807.63611060046,
+      "tvl_usd": 155656.52626321878,
       "is_proxy": true,
       "impl_address": "0xbb51273d6c746910c7c06fe718f30c936170fed0",
       "impl_name": "TokenizedStrategy",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325",
-        "audit-1326"
+        "audit-1343",
+        "audit-1344"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -659,7 +659,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Swell Earn",
-      "tvl_usd": 30538557.70084617,
+      "tvl_usd": 33142108.850213304,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "RswETH",
@@ -672,10 +672,10 @@
         }
       ],
       "audits_covering": [
-        "audit-1330",
-        "audit-1336",
-        "audit-1337",
-        "audit-1338"
+        "audit-1348",
+        "audit-1354",
+        "audit-1355",
+        "audit-1356"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -695,7 +695,7 @@
       "impl_name": "Accountant",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325"
+        "audit-1343"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -715,8 +715,8 @@
       "impl_name": "WithdrawLimitModule",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325",
-        "audit-1326"
+        "audit-1343",
+        "audit-1344"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -736,12 +736,12 @@
       "impl_name": "AccessControlManager",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -779,7 +779,7 @@
       "impl_name": "ReleaseRegistry",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325"
+        "audit-1343"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -793,7 +793,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 159080.6455613847,
+      "tvl_usd": 159021.96642122424,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "SwETHProxyOFT",
@@ -817,8 +817,8 @@
       "impl_name": "BoringVault",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1327",
-        "audit-1329"
+        "audit-1345",
+        "audit-1347"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -844,6 +844,24 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x677365ac7ca3e9efe12a29a001737a3db265e8af",
+      "name": "BlackPearl",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BlackPearl",
+      "proxy_endpoints": [],
+      "audits_covering": [],
+      "is_audited": false,
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x685adb4797fb38d4fc4a69750aa048b398160429",
       "name": "TellerWithMultiAssetSupport",
       "role": "core_logic",
@@ -856,9 +874,9 @@
       "impl_name": "TellerWithMultiAssetSupport",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1327",
-        "audit-1328",
-        "audit-1329"
+        "audit-1345",
+        "audit-1346",
+        "audit-1347"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -896,8 +914,8 @@
       "impl_name": "ManagerWithMerkleVerification",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1327",
-        "audit-1329"
+        "audit-1345",
+        "audit-1347"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -917,8 +935,8 @@
       "impl_name": "AccountantWithRateProviders",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1327",
-        "audit-1329"
+        "audit-1345",
+        "audit-1347"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -938,8 +956,8 @@
       "impl_name": "ManagerWithMerkleVerification",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1327",
-        "audit-1329"
+        "audit-1345",
+        "audit-1347"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -977,7 +995,7 @@
       "impl_name": "ReleaseRegistry",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325"
+        "audit-1343"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1010,12 +1028,12 @@
         }
       ],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1335",
-        "audit-1337",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1353",
+        "audit-1355",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1035,8 +1053,8 @@
       "impl_name": "DelayedWithdraw",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325",
-        "audit-1326"
+        "audit-1343",
+        "audit-1344"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1047,14 +1065,21 @@
       "address": "0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2",
       "name": "L1ERC20TokenBridge",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "L1ERC20TokenBridge",
-      "proxy_endpoints": [],
+      "proxy_endpoints": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xecf3376512edaca4fbb63d2c67d12a0397d24121",
+          "origin_kind": "upstream"
+        }
+      ],
       "audits_covering": [],
       "is_audited": false,
       "contamination_flag": "cleared"
@@ -1065,17 +1090,17 @@
       "address": "0x8041ba598f0e656ebe80c67289efb42c09e86ae3",
       "name": "Proxy (impl: TokenizedStrategy)",
       "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "aera",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": "Mainnet (BTC Liquid Staking)",
-      "tvl_usd": 471917.4114583373,
+      "tvl_usd": 470047.38716547185,
       "is_proxy": true,
       "impl_address": "0x975304c676eb3dc86cd336138328e107a95eaa50",
       "impl_name": "TokenizedStrategy",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325",
-        "audit-1326"
+        "audit-1343",
+        "audit-1344"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1095,8 +1120,8 @@
       "impl_name": "DelayedWithdraw",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325",
-        "audit-1326"
+        "audit-1343",
+        "audit-1344"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1116,8 +1141,8 @@
       "impl_name": "RoleManager",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325",
-        "audit-1326"
+        "audit-1343",
+        "audit-1344"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1137,12 +1162,12 @@
       "impl_name": "RepricingOracle",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1337",
-        "audit-1338"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1355",
+        "audit-1356"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1162,7 +1187,7 @@
       "impl_name": "Registry",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325"
+        "audit-1343"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1194,7 +1219,7 @@
       "origin_kind": "upstream",
       "origin_provider": "yearn-finance",
       "product_line": "Mainnet (BTC Liquid Staking)",
-      "tvl_usd": 471917.4114583373,
+      "tvl_usd": 470047.38716547185,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "Yearn V3 Vault",
@@ -1218,7 +1243,7 @@
       "impl_name": "RegistryFactory",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325"
+        "audit-1343"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1247,8 +1272,8 @@
       "address": "0x975304c676eb3dc86cd336138328e107a95eaa50",
       "name": "TokenizedStrategy",
       "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "yearn-finance",
       "product_line": "Mainnet (BTC Liquid Staking)",
       "tvl_usd": null,
       "is_proxy": false,
@@ -1256,7 +1281,7 @@
       "impl_name": "TokenizedStrategy",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325"
+        "audit-1343"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1276,12 +1301,12 @@
       "impl_name": "NodeOperatorRegistry",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1335",
-        "audit-1337",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1353",
+        "audit-1355",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1367,14 +1392,14 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "earnETH",
-      "tvl_usd": 31.138969517226233,
+      "tvl_usd": 30.988380116410408,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "BoringVault",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1327",
-        "audit-1329"
+        "audit-1345",
+        "audit-1347"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1394,8 +1419,8 @@
       "impl_name": "RoleManager",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325",
-        "audit-1326"
+        "audit-1343",
+        "audit-1344"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1415,8 +1440,8 @@
       "impl_name": "WithdrawLimitModule",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325",
-        "audit-1326"
+        "audit-1343",
+        "audit-1344"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1454,7 +1479,7 @@
       "impl_name": "Harvester",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1339"
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1522,7 +1547,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 730878.7196602328,
+      "tvl_usd": 730609.1247344649,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "SwETHSY",
@@ -1553,8 +1578,8 @@
         }
       ],
       "audits_covering": [
-        "audit-1336",
-        "audit-1337"
+        "audit-1354",
+        "audit-1355"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1574,14 +1599,14 @@
       "impl_name": "DepositManager",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1336",
-        "audit-1337",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1354",
+        "audit-1355",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1619,12 +1644,12 @@
       "impl_name": "AccessControlManager",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1644,12 +1669,12 @@
       "impl_name": "AccessControlManager",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1676,7 +1701,7 @@
         }
       ],
       "audits_covering": [
-        "audit-1337"
+        "audit-1355"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1696,8 +1721,8 @@
       "impl_name": "Zap",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1340",
-        "audit-1341"
+        "audit-1358",
+        "audit-1359"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1717,7 +1742,7 @@
       "impl_name": "Keeper",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325"
+        "audit-1343"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1774,7 +1799,7 @@
       "proxy_endpoints": [],
       "audits_covering": [],
       "is_audited": false,
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -1791,10 +1816,10 @@
       "impl_name": "RswETH",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1336",
-        "audit-1337",
-        "audit-1338"
+        "audit-1348",
+        "audit-1354",
+        "audit-1355",
+        "audit-1356"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1814,10 +1839,10 @@
       "impl_name": "swETH",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1339"
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1873,8 +1898,8 @@
       "impl_name": "RoleManager",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325",
-        "audit-1326"
+        "audit-1343",
+        "audit-1344"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1912,10 +1937,10 @@
       "impl_name": "swETH",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1339"
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1935,7 +1960,7 @@
       "impl_name": "Registry",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325"
+        "audit-1343"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -1955,12 +1980,12 @@
       "impl_name": "RepricingOracle",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1337",
-        "audit-1338"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1355",
+        "audit-1356"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -1980,12 +2005,12 @@
       "impl_name": "NodeOperatorRegistry",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1335",
-        "audit-1337",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1353",
+        "audit-1355",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -2005,28 +2030,10 @@
       "impl_name": "DelayedWithdraw",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325",
-        "audit-1326"
+        "audit-1343",
+        "audit-1344"
       ],
       "is_audited": true,
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xecf3376512edaca4fbb63d2c67d12a0397d24121",
-      "name": "Proxy (impl: L1ERC20TokenBridge)",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2",
-      "impl_name": "L1ERC20TokenBridge",
-      "proxy_endpoints": [],
-      "audits_covering": [],
-      "is_audited": false,
       "contamination_flag": "cleared"
     },
     {
@@ -2044,14 +2051,14 @@
       "impl_name": "DepositManager",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1336",
-        "audit-1337",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1354",
+        "audit-1355",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -2071,12 +2078,12 @@
       "impl_name": "RepricingOracle",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1334",
-        "audit-1335",
-        "audit-1337",
-        "audit-1338"
+        "audit-1348",
+        "audit-1351",
+        "audit-1352",
+        "audit-1353",
+        "audit-1355",
+        "audit-1356"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -2096,12 +2103,12 @@
       "impl_name": "NodeOperatorRegistry",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1330",
-        "audit-1333",
-        "audit-1335",
-        "audit-1337",
-        "audit-1338",
-        "audit-1339"
+        "audit-1348",
+        "audit-1351",
+        "audit-1353",
+        "audit-1355",
+        "audit-1356",
+        "audit-1357"
       ],
       "is_audited": true,
       "contamination_flag": "cleared"
@@ -2121,7 +2128,7 @@
       "impl_name": "RegistryFactory",
       "proxy_endpoints": [],
       "audits_covering": [
-        "audit-1325"
+        "audit-1343"
       ],
       "is_audited": true,
       "contamination_flag": null
@@ -2129,8 +2136,8 @@
   ],
   "audits": [
     {
-      "audit_id": 1325,
-      "audit_key": "audit-1325",
+      "audit_id": 1343,
+      "audit_key": "audit-1343",
       "report_name": "ChainSecurity_Swell_swBTC_audit.pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf",
       "auditor": "ChainSecurity",
@@ -2166,18 +2173,18 @@
       "repo_reference_count": 0,
       "duplicate_audit_ids": [
         {
-          "audit_id": 1325,
+          "audit_id": 1343,
           "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf"
         },
         {
-          "audit_id": 1331,
+          "audit_id": 1349,
           "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf"
         }
       ]
     },
     {
-      "audit_id": 1326,
-      "audit_key": "audit-1326",
+      "audit_id": 1344,
+      "audit_key": "audit-1344",
       "report_name": "NM_0273_SWELL_BTC_LRT.pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf",
       "auditor": "unknown",
@@ -2200,18 +2207,18 @@
       "repo_reference_count": 0,
       "duplicate_audit_ids": [
         {
-          "audit_id": 1326,
+          "audit_id": 1344,
           "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf"
         },
         {
-          "audit_id": 1332,
+          "audit_id": 1350,
           "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf"
         }
       ]
     },
     {
-      "audit_id": 1327,
-      "audit_key": "audit-1327",
+      "audit_id": 1345,
+      "audit_key": "audit-1345",
       "report_name": "0xmacro-boring-vault-arctic-0.pdf",
       "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf",
       "auditor": "0xMacro",
@@ -2268,8 +2275,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1328,
-      "audit_key": "audit-1328",
+      "audit_id": 1346,
+      "audit_key": "audit-1346",
       "report_name": "pashov-boring-vault.pdf",
       "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf",
       "auditor": "Pashov Audit Group",
@@ -2298,8 +2305,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1329,
-      "audit_key": "audit-1329",
+      "audit_id": 1347,
+      "audit_key": "audit-1347",
       "report_name": "spearbit-boring-vault-arctic-0.pdf",
       "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf",
       "auditor": "Spearbit",
@@ -2328,8 +2335,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1330,
-      "audit_key": "audit-1330",
+      "audit_id": 1348,
+      "audit_key": "audit-1348",
       "report_name": "here",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf",
       "auditor": "Sigma Prime",
@@ -2353,8 +2360,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1333,
-      "audit_key": "audit-1333",
+      "audit_id": 1351,
+      "audit_key": "audit-1351",
       "report_name": "2024-02-23-cyfrin-swell-v2.0.pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/2024-02-23-cyfrin-swell-v2.0.pdf",
       "auditor": "Cyfrin",
@@ -2395,8 +2402,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1334,
-      "audit_key": "audit-1334",
+      "audit_id": 1352,
+      "audit_key": "audit-1352",
       "report_name": "Sigma_Prime_Swell_Barracuda_Upgrade_Security_Assessment_Report_v2.pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/Sigma_Prime_Swell_Barracuda_Upgrade_Security_Assessment_Report_v2.pdf",
       "auditor": "Sigma Prime",
@@ -2421,8 +2428,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1335,
-      "audit_key": "audit-1335",
+      "audit_id": 1353,
+      "audit_key": "audit-1353",
       "report_name": "Swell-audit-jan-2024(Public).pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/Swell-audit-jan-2024(Public).pdf",
       "auditor": "Unknown",
@@ -2448,8 +2455,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1336,
-      "audit_key": "audit-1336",
+      "audit_id": 1354,
+      "audit_key": "audit-1354",
       "report_name": "NM0231_FINAL_SWELL.pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracude%20(LRT)/NM0231_FINAL_SWELL.pdf",
       "auditor": "Barracude",
@@ -2484,8 +2491,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1337,
-      "audit_key": "audit-1337",
+      "audit_id": 1355,
+      "audit_key": "audit-1355",
       "report_name": "Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracude%20(LRT)/Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf",
       "auditor": "Sigma Prime",
@@ -2517,8 +2524,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1338,
-      "audit_key": "audit-1338",
+      "audit_id": 1356,
+      "audit_key": "audit-1356",
       "report_name": "Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf",
       "auditor": "Sigma Prime",
@@ -2542,8 +2549,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1339,
-      "audit_key": "audit-1339",
+      "audit_id": 1357,
+      "audit_key": "audit-1357",
       "report_name": "Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Seawolf/Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf",
       "auditor": "Sigma Prime",
@@ -2573,8 +2580,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1340,
-      "audit_key": "audit-1340",
+      "audit_id": 1358,
+      "audit_key": "audit-1358",
       "report_name": "Swell Staking Security Audit Report.pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Swell%20L2%20Pre%20Deposit/Swell%20Staking%20Security%20Audit%20Report.pdf",
       "auditor": "yAudit",
@@ -2595,8 +2602,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1341,
-      "audit_key": "audit-1341",
+      "audit_id": 1359,
+      "audit_key": "audit-1359",
       "report_name": "swell-l2-pre-deposit-audit-april-2024 (Public).pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Swell%20L2%20Pre%20Deposit/swell-l2-pre-deposit-audit-april-2024%20(Public).pdf",
       "auditor": "unknown",
@@ -2617,8 +2624,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1342,
-      "audit_key": "audit-1342",
+      "audit_id": 1360,
+      "audit_key": "audit-1360",
       "report_name": "swell-mar24(Public).pdf",
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Swell%20Token%20and%20Airdrop/swell-mar24(Public).pdf",
       "auditor": "unknown",
@@ -2647,8 +2654,8 @@
       "name": "SwellToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 15049655.06188161,
-      "risk_note": "Native contract with $15,049,655.06 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 14939176.984594539,
+      "risk_note": "Native contract with $14,939,176.98 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -2657,8 +2664,8 @@
       "name": "SwETHSY",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 730878.7196602328,
-      "risk_note": "Native contract with $730,878.72 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 730609.1247344649,
+      "risk_note": "Native contract with $730,609.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -2667,8 +2674,8 @@
       "name": "SwETHProxyOFT",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 159080.6455613847,
-      "risk_note": "Native contract with $159,080.65 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 159021.96642122424,
+      "risk_note": "Native contract with $159,021.97 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -2676,16 +2683,6 @@
       "address": "0x009c9f7e2709ea488e53c2ab1bf9080547629655",
       "name": "NFTDescriptor",
       "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2db7583852c700549b710fd79dd1b54af2efa4dd",
-      "name": "RolesAuthority",
-      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2703,9 +2700,29 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x677365ac7ca3e9efe12a29a001737a3db265e8af",
+      "name": "BlackPearl",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x6d8cc0262bb3802eafaf4e7dde7afd3383e8f872",
       "name": "VaultAdapter",
       "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2",
+      "name": "L1ERC20TokenBridge",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2802,10 +2819,10 @@
     }
   ],
   "origin_summary": {
-    "native": 71,
-    "upstream": 6,
-    "standard_library": 11,
-    "needs_review": 8
+    "native": 73,
+    "upstream": 8,
+    "standard_library": 12,
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {

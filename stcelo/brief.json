@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stcelo",
-  "generated_at": "2026-05-21T12:39:44.843Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-21-0269ae-fbb3",
+  "generated_at": "2026-05-21T13:21:08.890Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-21-0269ae-df8c",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stcelo",
@@ -30,8 +30,8 @@
     "total_audits": 2,
     "scoreable_audits": 2,
     "dl_tvl_usd": 1701436.55613,
-    "tvl_usd": 1701436.55613,
-    "tvl_source": "defillama",
+    "tvl_usd": 1702333.904594096,
+    "tvl_source": "on_chain",
     "asd_usd": 850718.278065,
     "website_url": "https://stcelo.xyz/",
     "chains": [
@@ -368,11 +368,11 @@
       "chain_name": "celo",
       "address": "0x1b4b48453e3a64eb55d1d30f0f7fa9e2fe32c73d",
       "name": "StakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": null,
+      "tvl_usd": 1702333.904594096,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "StakedCelo",
@@ -420,63 +420,14 @@
       "address": "0x1bb7897a1b023a74d3a439476c52495a2927af07",
       "name": "MultiSig",
       "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "MultiSig",
-      "proxy_endpoints": [
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x13f1f8706710069bc55b71e320a3fb2d3775c27e",
-          "origin_kind": "standard_library"
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x2d952d7a21fbce9d52e62973303908e8fc124cd0",
-          "origin_kind": "standard_library"
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x2e37af02023644a1203d9c3daf96ecd635e9e4df",
-          "origin_kind": "standard_library"
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x78daa21fce4d30e74ff745da3204764a0ad40179",
-          "origin_kind": "standard_library"
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x85a9aa5067dff9745fc32d741cb144bd8c64f3f3",
-          "origin_kind": "standard_library"
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x88d1ae61a25c73e2adffd7b3b58477f42cd48c24",
-          "origin_kind": "standard_library"
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xaab51fc8143d943d74885413064d707fe2d47145",
-          "origin_kind": "standard_library"
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xfb197ea7d72f106a107ddd4d50ba0439d3b374ee",
-          "origin_kind": "standard_library"
-        }
-      ],
+      "proxy_endpoints": [],
       "audits_covering": [],
       "is_audited": false,
       "contamination_flag": "cleared"
@@ -695,7 +646,7 @@
       "chain_name": "celo",
       "address": "0x4387a066e282673f459feeeda3087d29ca4c6429",
       "name": "StakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -733,7 +684,7 @@
       "chain_name": "celo",
       "address": "0x44c2fe995417b528a861e5428dae7358d5f0271f",
       "name": "StakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -837,7 +788,7 @@
       "chain_name": "celo",
       "address": "0x52bb5091b2e2319300b4db33b63d715c89a195c0",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -955,8 +906,8 @@
       "address": "0x55e953bffe423ed7950a392db01f5cdda2b36128",
       "name": "MultiSig",
       "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -972,7 +923,7 @@
       "chain_name": "celo",
       "address": "0x58fc5556dfb1a1b23e32b395f6522aa86c14713c",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Celo Mainnet",
@@ -998,7 +949,56 @@
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "MultiSig",
-      "proxy_endpoints": [],
+      "proxy_endpoints": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x13f1f8706710069bc55b71e320a3fb2d3775c27e",
+          "origin_kind": "standard_library"
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x2d952d7a21fbce9d52e62973303908e8fc124cd0",
+          "origin_kind": "standard_library"
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x2e37af02023644a1203d9c3daf96ecd635e9e4df",
+          "origin_kind": "standard_library"
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x78daa21fce4d30e74ff745da3204764a0ad40179",
+          "origin_kind": "standard_library"
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x85a9aa5067dff9745fc32d741cb144bd8c64f3f3",
+          "origin_kind": "standard_library"
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x88d1ae61a25c73e2adffd7b3b58477f42cd48c24",
+          "origin_kind": "standard_library"
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xaab51fc8143d943d74885413064d707fe2d47145",
+          "origin_kind": "standard_library"
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xfb197ea7d72f106a107ddd4d50ba0439d3b374ee",
+          "origin_kind": "standard_library"
+        }
+      ],
       "audits_covering": [],
       "is_audited": false,
       "contamination_flag": "cleared"
@@ -1048,7 +1048,7 @@
       "address": "0x63af253c645ca35a4a2b35aab30c611abeb3e40a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1147,7 +1147,7 @@
       "chain_name": "celo",
       "address": "0x6b8bb0aca4bde7e844dfa6f6bc90ad0a3d2352aa",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1165,7 +1165,7 @@
       "chain_name": "celo",
       "address": "0x6e17cf4e1a21125d0ce9a1ce4a284ad7bf783b67",
       "name": "StakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Celo Mainnet",
@@ -1203,7 +1203,7 @@
       "chain_name": "celo",
       "address": "0x737bce423d87b8bccb9e2b3b483082a5fd3b2fdf",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1286,7 +1286,7 @@
       "chain_name": "celo",
       "address": "0x809b7ebabb2e4e1e4d1104b3b361b898ae632426",
       "name": "StakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1306,7 +1306,7 @@
       "chain_name": "celo",
       "address": "0x80ef43888b64e4bd60b0e8e28e99716e418f5ac4",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1379,7 +1379,7 @@
       "address": "0x8897ecd44b98a220dbc1a19e668796b123a27f57",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1414,7 +1414,7 @@
       "chain_name": "celo",
       "address": "0x8c89e7ceb22300c43c9118f317d33e9be767c594",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1432,7 +1432,7 @@
       "chain_name": "celo",
       "address": "0x9122855efe96f0f53eda66602ebea000733ddcfc",
       "name": "StakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1452,7 +1452,7 @@
       "chain_name": "celo",
       "address": "0x922333bdcb665e91eef9508de56ab2a3c2794692",
       "name": "StakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1493,7 +1493,7 @@
       "chain_name": "celo",
       "address": "0x95cc0c75015059dd659db9b528101c5ba91c4e49",
       "name": "StakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1571,7 +1571,7 @@
       "chain_name": "celo",
       "address": "0xa97be82bee72a809fe4b3ad158535879028babcb",
       "name": "StakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1629,7 +1629,7 @@
       "chain_name": "celo",
       "address": "0xad3317aecdbc6a92271d9d43c0d157c6404eba11",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1668,7 +1668,7 @@
       "chain_name": "celo",
       "address": "0xafddbc2ce90c66a055e91ccca7bbd08909734a1d",
       "name": "StakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -1987,7 +1987,7 @@
       "chain_name": "celo",
       "address": "0xdfc2daf5ff1bc48ec4518436a015da416745a67c",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -2298,16 +2298,6 @@
     {
       "chain_id": 42220,
       "chain_name": "celo",
-      "address": "0x1bb7897a1b023a74d3a439476c52495a2927af07",
-      "name": "MultiSig",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
       "address": "0x1cf4f97705f812a18830d5be60b8cdfc3543ec90",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -2390,17 +2380,7 @@
       "chain_name": "celo",
       "address": "0x52bb5091b2e2319300b4db33b63d715c89a195c0",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x55e953bffe423ed7950a392db01f5cdda2b36128",
-      "name": "MultiSig",
-      "role": "governance",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2410,7 +2390,7 @@
       "chain_name": "celo",
       "address": "0x58fc5556dfb1a1b23e32b395f6522aa86c14713c",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2438,9 +2418,19 @@
     {
       "chain_id": 42220,
       "chain_name": "celo",
+      "address": "0x63af253c645ca35a4a2b35aab30c611abeb3e40a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
       "address": "0x6b8bb0aca4bde7e844dfa6f6bc90ad0a3d2352aa",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2460,7 +2450,7 @@
       "chain_name": "celo",
       "address": "0x737bce423d87b8bccb9e2b3b483082a5fd3b2fdf",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2480,7 +2470,7 @@
       "chain_name": "celo",
       "address": "0x80ef43888b64e4bd60b0e8e28e99716e418f5ac4",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2518,6 +2508,16 @@
     {
       "chain_id": 42220,
       "chain_name": "celo",
+      "address": "0x8897ecd44b98a220dbc1a19e668796b123a27f57",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
       "address": "0x8bd50c8df89840ca8e78c32a730076397933f818",
       "name": "MultiSig",
       "role": "governance",
@@ -2530,7 +2530,7 @@
       "chain_name": "celo",
       "address": "0x8c89e7ceb22300c43c9118f317d33e9be767c594",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2550,7 +2550,7 @@
       "chain_name": "celo",
       "address": "0xad3317aecdbc6a92271d9d43c0d157c6404eba11",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2610,7 +2610,7 @@
       "chain_name": "celo",
       "address": "0xdfc2daf5ff1bc48ec4518436a015da416745a67c",
       "name": "RebasedStakedCelo",
-      "role": "unknown",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Native contract with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2669,8 +2669,8 @@
   "origin_summary": {
     "native": 89,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 9
+    "standard_library": 2,
+    "needs_review": 7
   },
   "scope_matching_notes": {
     "match_method_counts": {

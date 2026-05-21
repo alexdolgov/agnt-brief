@@ -67,17 +67,10 @@
 | [MultiSig](./celo-42220/0xe57f6f8620fce79c723ed9da69f7e3dd7c07c0c4/) | celo | `0xe57f6f...07c0c4` | ✗ | None |
 | [MultiSig](./celo-42220/0xf385924febb37f96c0a1d609f3c40d71d7128d39/) | celo | `0xf38592...128d39` | ✗ | None |
 
-## unknown (43)
+## token (18)
 
 | Contract | Chain | Address | Audited | Proxy |
 |---|---|---|---|---|
-| [GroupHealth](./celo-42220/0x073bb388eeea656e056c8750494cd0bc460985d9/) | celo | `0x073bb3...0985d9` | ✗ | None |
-| [GroupHealth](./celo-42220/0x193df9d86435e2ef4c75467d0d38c2cf00d556ad/) | celo | `0x193df9...d556ad` | ✗ | None |
-| [GroupHealth](./celo-42220/0x205f4cb670fdbcbda1c14d81fdacd7092bbc64e1/) | celo | `0x205f4c...bc64e1` | ✗ | None |
-| [GroupHealth](./celo-42220/0x2f59796ae74ed01fcf6fbcf79ec7013a571a2f18/) | celo | `0x2f5979...1a2f18` | ✗ | None |
-| [GroupHealth](./celo-42220/0x4443a491f63fd212fd9932c1e27fe60f586ac578/) | celo | `0x4443a4...6ac578` | ✗ | None |
-| [GroupHealth](./celo-42220/0x6f46060c2f760eaba09d972efa74ed6aae09ff3e/) | celo | `0x6f4606...09ff3e` | ✗ | None |
-| [GroupHealth](./celo-42220/0xf8bf1b688a975f12f61f877dd146f03ec8beb878/) | celo | `0xf8bf1b...beb878` | ✗ | None |
 | [RebasedStakedCelo](./celo-42220/0x52bb5091b2e2319300b4db33b63d715c89a195c0/) | celo | `0x52bb50...a195c0` | ✗ | None |
 | [RebasedStakedCelo](./celo-42220/0x58fc5556dfb1a1b23e32b395f6522aa86c14713c/) | celo | `0x58fc55...14713c` | ✗ | None |
 | [RebasedStakedCelo](./celo-42220/0x6b8bb0aca4bde7e844dfa6f6bc90ad0a3d2352aa/) | celo | `0x6b8bb0...2352aa` | ✗ | None |
@@ -96,6 +89,18 @@
 | [StakedCelo](./celo-42220/0x95cc0c75015059dd659db9b528101c5ba91c4e49/) | celo | `0x95cc0c...1c4e49` | ✓ | None |
 | [StakedCelo](./celo-42220/0xa97be82bee72a809fe4b3ad158535879028babcb/) | celo | `0xa97be8...8babcb` | ✓ | None |
 | [StakedCelo](./celo-42220/0xafddbc2ce90c66a055e91ccca7bbd08909734a1d/) | celo | `0xafddbc...734a1d` | ✓ | None |
+
+## unknown (25)
+
+| Contract | Chain | Address | Audited | Proxy |
+|---|---|---|---|---|
+| [GroupHealth](./celo-42220/0x073bb388eeea656e056c8750494cd0bc460985d9/) | celo | `0x073bb3...0985d9` | ✗ | None |
+| [GroupHealth](./celo-42220/0x193df9d86435e2ef4c75467d0d38c2cf00d556ad/) | celo | `0x193df9...d556ad` | ✗ | None |
+| [GroupHealth](./celo-42220/0x205f4cb670fdbcbda1c14d81fdacd7092bbc64e1/) | celo | `0x205f4c...bc64e1` | ✗ | None |
+| [GroupHealth](./celo-42220/0x2f59796ae74ed01fcf6fbcf79ec7013a571a2f18/) | celo | `0x2f5979...1a2f18` | ✗ | None |
+| [GroupHealth](./celo-42220/0x4443a491f63fd212fd9932c1e27fe60f586ac578/) | celo | `0x4443a4...6ac578` | ✗ | None |
+| [GroupHealth](./celo-42220/0x6f46060c2f760eaba09d972efa74ed6aae09ff3e/) | celo | `0x6f4606...09ff3e` | ✗ | None |
+| [GroupHealth](./celo-42220/0xf8bf1b688a975f12f61f877dd146f03ec8beb878/) | celo | `0xf8bf1b...beb878` | ✗ | None |
 | [UnnamedContract](./celo-42220/0x094ee251965823285fd35d70175225cf5f520d67/) | celo | `0x094ee2...520d67` | ✗ | None |
 | [UnnamedContract](./celo-42220/0x1cf4f97705f812a18830d5be60b8cdfc3543ec90/) | celo | `0x1cf4f9...43ec90` | ✗ | None |
 | [UnnamedContract](./celo-42220/0x1f0e8b1f8d39c1bf81311b4bd86337f15bd32cea/) | celo | `0x1f0e8b...d32cea` | ✗ | None |

@@ -4,7 +4,7 @@
 |---|---|
 | Chain | celo (42220) |
 | Address | `0x0251c3224f15e875fe6fbca04c0f9117366cc806` |
-| Role | unknown |
+| Role | token |
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |

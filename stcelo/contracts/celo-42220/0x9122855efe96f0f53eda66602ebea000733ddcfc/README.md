@@ -4,7 +4,7 @@
 |---|---|
 | Chain | celo (42220) |
 | Address | `0x9122855efe96f0f53eda66602ebea000733ddcfc` |
-| Role | unknown |
+| Role | token |
 | Origin | native |
 | Audited | Yes |
 | Audits | [FTI_audit_stCELO.pdf](https://github.com/celo-org/staked-celo/blob/master/audit/FTI_audit_stCELO.pdf) |

@@ -10,6 +10,6 @@
 | Audits | n/a |
 | Proxy | Yes → [`0x6e17cf...783b67`](../0x6e17cf4e1a21125d0ce9a1ce4a284ad7bf783b67/) |
 | Source | Sourcify (full match) |
-| TVL | $1,702,333.90 |
+| TVL | $1,702,335.96 |
 
 [← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

@@ -10,6 +10,6 @@
 | Audits | [FTI_audit_stCELO.pdf](https://github.com/celo-org/staked-celo/blob/master/audit/FTI_audit_stCELO.pdf) |
 | Proxy | No |
 | Source | Sourcify (full match) |
-| TVL | $1,702,333.90 |
+| TVL | $1,702,335.96 |
 
 [← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

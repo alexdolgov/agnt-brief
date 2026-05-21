@@ -5,12 +5,12 @@
 - Project: stCELO (`stcelo`)
 - Website: [https://stcelo.xyz/](https://stcelo.xyz/)
 - Lifecycle: active (Tier 0, 53.9% below peak)
-- Generated: 2026-05-21T13:21:08.890Z
-- Pipeline run: v2-pipeline-2026-05-21-0269ae-df8c
+- Generated: 2026-05-21T13:42:06.104Z
+- Pipeline run: v2-pipeline-2026-05-21-0269ae-1f09
 - Chains: celo
 - Contract surface: 98 logical contracts (144 raw addresses)
 - DeFi Llama TVL: $1,701,436.56
-- On-chain TVL (included contracts): $1,702,333.90
+- On-chain TVL (included contracts): $1,702,335.96
 
 ## Project Description
 
@@ -45,7 +45,7 @@ The Liquid Staking family relies on Manager for administrative control and Accou
 | celo | [`0x13d01f...a419c9`](./contracts/celo-42220/0x13d01fc33da51b1b63bb3bbe2af2ae91b5a419c9/) | Account | core_logic | n/a | yes | none |
 | celo | [`0x18f51d...4f3fcf`](./contracts/celo-42220/0x18f51d47f7cdc9feb8f67cf95d856565584f3fcf/) | Manager | governance | n/a | yes | none |
 | celo | [`0x193df9...d556ad`](./contracts/celo-42220/0x193df9d86435e2ef4c75467d0d38c2cf00d556ad/) | GroupHealth | unknown | n/a | no | none |
-| celo | [`0x1b4b48...32c73d`](./contracts/celo-42220/0x1b4b48453e3a64eb55d1d30f0f7fa9e2fe32c73d/) | StakedCelo | token | $1,702,333.90 | yes | celo `0x085a0d...7f21ca`; celo `0x0b2f88...65f75b`; celo `0x2c2e2b...4edc3a`; celo `0xb59b1c...2c4b61`; celo `0xc66858...fdfc24` |
+| celo | [`0x1b4b48...32c73d`](./contracts/celo-42220/0x1b4b48453e3a64eb55d1d30f0f7fa9e2fe32c73d/) | StakedCelo | token | $1,702,335.96 | yes | celo `0x085a0d...7f21ca`; celo `0x0b2f88...65f75b`; celo `0x2c2e2b...4edc3a`; celo `0xb59b1c...2c4b61`; celo `0xc66858...fdfc24` |
 | celo | [`0x1cf4f9...43ec90`](./contracts/celo-42220/0x1cf4f97705f812a18830d5be60b8cdfc3543ec90/) | UnnamedContract | unknown | n/a | no | none |
 | celo | [`0x1f0e8b...d32cea`](./contracts/celo-42220/0x1f0e8b1f8d39c1bf81311b4bd86337f15bd32cea/) | UnnamedContract | unknown | n/a | no | none |
 | celo | [`0x205f4c...bc64e1`](./contracts/celo-42220/0x205f4cb670fdbcbda1c14d81fdacd7092bbc64e1/) | GroupHealth | unknown | n/a | no | none |

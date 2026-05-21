@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stcelo",
-  "generated_at": "2026-05-21T13:21:08.890Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-21-0269ae-df8c",
+  "generated_at": "2026-05-21T13:42:06.104Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-21-0269ae-1f09",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stcelo",
@@ -30,7 +30,7 @@
     "total_audits": 2,
     "scoreable_audits": 2,
     "dl_tvl_usd": 1701436.55613,
-    "tvl_usd": 1702333.904594096,
+    "tvl_usd": 1702335.9615843482,
     "tvl_source": "on_chain",
     "asd_usd": 850718.278065,
     "website_url": "https://stcelo.xyz/",
@@ -372,7 +372,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 1702333.904594096,
+      "tvl_usd": 1702335.9615843482,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "StakedCelo",

@@ -1,0 +1,17 @@
+{
+  "address": "0x402f38457800c32c67c5983381a685a4a1d4f8bb",
+  "chain_id": 42161,
+  "contract_name": "ExchangeRateUpdater",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000141fa059441e0ca23ce184b6a78bafd2a517dde8000000000000000000000000f97f4df75117a78c1a5a0dbb814af92458539fb4000000000000000000000000788c3efc8182393915e216174a03cd81395f8c7a0000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:22:23.339Z"
+}

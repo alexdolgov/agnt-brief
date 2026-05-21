@@ -1,0 +1,18 @@
+{
+  "address": "0x210ac53b27f16e20a9aa7d16260f84693390258f",
+  "chain_id": 1,
+  "contract_name": "InvFeed",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:22:23.387Z"
+}

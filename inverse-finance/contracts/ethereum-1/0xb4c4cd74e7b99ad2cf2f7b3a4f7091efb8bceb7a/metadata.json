@@ -1,0 +1,18 @@
+{
+  "address": "0xb4c4cd74e7b99ad2cf2f7b3a4f7091efb8bceb7a",
+  "chain_id": 1,
+  "contract_name": "GOhmTokenEscrow",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:22:23.477Z"
+}

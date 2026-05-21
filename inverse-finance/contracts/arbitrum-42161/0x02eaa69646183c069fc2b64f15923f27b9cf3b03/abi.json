@@ -1,0 +1,665 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "dola",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "dolaBptRewardPool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "bpt",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "booster",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "l2Chair",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "l2Guardian",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "arbiFedL1",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "arbiGovMessengerL1",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct AuraFarmer.InitialAddresses",
+        "name": "addresses_",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxLossExpansionBps_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxLossWithdrawBps_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxLossTakeProfitBps_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "poolId_",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AuraWithdrawFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExpansionMaxLossTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "GettingRewardFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MaxLossHigherThanSetableByGuardian",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoProfit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotEnoughBPT",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotEnoughTokens",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NothingWithdrawn",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyChairCanTakeBPTProfit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyGov",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyL2Chair",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyL2Guardian",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TakeProfitMaxLossTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawMaxLossTooHigh",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Deposit",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Withdraw",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DOLAL1",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "arbiFedL1",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "arbiGovMessengerL1",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "aura",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "auraL1",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "bal",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "balL1",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "booster",
+    "outputs": [
+      {
+        "internalType": "contract IAuraBooster",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "dolaAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "bptNeededForDola",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "bptSupply",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newArbiFedL1",
+        "type": "address"
+      }
+    ],
+    "name": "changeArbiFedL1",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newArbiGovMessengerL1",
+        "type": "address"
+      }
+    ],
+    "name": "changeArbiGovMessengerL1",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newL2Chair",
+        "type": "address"
+      }
+    ],
+    "name": "changeL2Chair",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newL2Guardian",
+        "type": "address"
+      }
+    ],
+    "name": "changeL2Guardian",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dolaBptRewardPool",
+    "outputs": [
+      {
+        "internalType": "contract IAuraBalRewardPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dolaDeposited",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dolaProfit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "l2Chair",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "l2GatewayRouter",
+    "outputs": [
+      {
+        "internalType": "contract IL2GatewayRouter",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "l2Guardian",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxLossExpansionBps",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxLossSetableByGuardianBps",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxLossTakeProfitBps",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxLossWithdrawBps",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pid",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "resign",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newMaxLossExpansionBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaxLossExpansionBps",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newMaxLossSetableByGuardianBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaxLossSetableByGuardianBps",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newMaxLossTakeProfitBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaxLossTakeProfitBps",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newMaxLossWithdrawBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaxLossWithdrawBps",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "harvestLP",
+        "type": "bool"
+      }
+    ],
+    "name": "takeProfit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawAllLiquidity",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountDola",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawLiquidity",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "dolaAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawToL1ArbiFed",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "l1Token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "l2Token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawTokensToL1",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

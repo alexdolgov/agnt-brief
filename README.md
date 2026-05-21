@@ -11,7 +11,8 @@ Each project directory contains:
 
 | Project | TVL (DL) | Chains | Implementations | Coverage | Tier 1 | Audits | Freshness | ASD |
 |---|---:|---|---:|---:|---|---:|---|---:|
+| [inverse-finance](./inverse-finance/brief.md) | $44.53M | 5 | 125 | 13.7% | 9.4% (Code4rena, Sherlock) | 5 | fresh | $428.77M |
 | [harmonix-finance](./harmonix-finance/brief.md) | $4.89M | 4 | 126 | 11.1% | 0.0% (-) | 1 | fresh | - |
 
-_Generated: 2026-05-21T22:44:59.781Z_
-_Projects: 1_
+_Generated: 2026-05-21T23:22:26.559Z_
+_Projects: 2_

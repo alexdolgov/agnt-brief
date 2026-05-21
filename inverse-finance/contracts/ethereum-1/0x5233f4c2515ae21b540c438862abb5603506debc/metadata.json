@@ -1,0 +1,18 @@
+{
+  "address": "0x5233f4c2515ae21b540c438862abb5603506debc",
+  "chain_id": 1,
+  "contract_name": "ALE",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "shanghai",
+  "license": "MIT, None, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:22:23.427Z"
+}

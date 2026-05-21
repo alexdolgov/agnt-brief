@@ -1,0 +1,17 @@
+{
+  "address": "0xe928f79d6c7a315ad0a49254015ab8d64dde2f61",
+  "chain_id": 1,
+  "contract_name": "PriceFeedNoStale",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "00000000000000000000000049478e53113ea419519f35ebf7fa6d260585e418",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:22:23.495Z"
+}

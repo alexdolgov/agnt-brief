@@ -3,11 +3,21 @@
 ## Project Overview
 
 - Project: Swell (`swell`)
-- Generated: 2026-05-21T10:29:03.249Z
-- Pipeline run: v2-pipeline-2026-05-21-b7e540-5727
+- Website: [https://www.swellnetwork.io/](https://www.swellnetwork.io/)
+- Lifecycle: active ({"slug":"swell","tier":0,"peak_tvl":3071730237,"peak_date":"2024-05-28T00:00:00.000Z","tvl_30d_ago":148457283.19913,"tvl_90d_ago":133782645.16362,"tvl_current":133048418.47652,"tier0_reason":"healthy_tvl_level_and_change","tvl_180d_ago":204622472.20868,"change_30d_pct":-10.379325547768275,"change_90d_pct":-0.5488205784853581,"days_since_peak":723,"detection_method":"tvl_trajectory","governance_signal":null,"drop_from_peak_pct":95.66861644053543})
+- Generated: 2026-05-21T11:41:38.605Z
+- Pipeline run: v2-pipeline-2026-05-21-7edc4b-bd8c
 - Chains: ethereum
 - Contract surface: 96 logical contracts (112 raw addresses)
 - On-chain TVL (included contracts): $83,067,918.26
+
+## Project Description
+
+Swell is a liquid staking and restaking protocol that lets users stake ETH or BTC to receive yield-bearing liquid tokens (swETH, rswETH, swBTC). It also offers yield-optimized vaults (Swell Earn) and L2 farming opportunities, with infrastructure for node operator management and cross-chain bridging.
+
+### Architecture
+
+The liquid staking and restaking families share NodeOperatorRegistry and DepositManager patterns, while Swell Earn vaults use separate BoringVault/Teller infrastructure. The SWELL token and L2 Farm operate independently, with cross-chain bridging via L1ERC20TokenBridge.
 
 ## Audit Coverage Summary
 
@@ -140,22 +150,22 @@
 
 | Audit | Auditor | Date | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---:|---|
-| ChainSecurity_Swell_swBTC_audit.pdf (also discovered via alternate URL) | ChainSecurity | 2024-08 | Direct | UNKNOWN | 21 | high |
-| NM_0273_SWELL_BTC_LRT.pdf (also discovered via alternate URL) | unknown | 2024-08 | Direct | UNKNOWN | 11 | high |
-| 0xmacro-boring-vault-arctic-0.pdf | 0xMacro | 2024-03 | Direct | UNKNOWN | 8 | high |
-| pashov-boring-vault.pdf | Pashov Audit Group | 2024-07 | Direct | UNKNOWN | 2 | high |
-| spearbit-boring-vault-arctic-0.pdf | Spearbit | 2024-04 | Direct | UNKNOWN | 8 | high |
-| here | Sigma Prime | 2024-01 | Direct | UNKNOWN | 29 | high |
-| 2024-02-23-cyfrin-swell-v2.0.pdf | Cyfrin | 2024-02 | Direct | UNKNOWN | 32 | high |
-| Sigma_Prime_Swell_Barracuda_Upgrade_Security_Assessment_Report_v2.pdf | Sigma Prime | 2024-02 | Direct | UNKNOWN | 26 | high |
-| Swell-audit-jan-2024(Public).pdf | Unknown | 2024-02 | Direct | UNKNOWN | 32 | high |
-| NM0231_FINAL_SWELL.pdf | Barracude | 2024-06 | Direct | UNKNOWN | 13 | high |
-| Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf | Sigma Prime | 2024-07 | Direct | UNKNOWN | 28 | high |
-| Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf | Sigma Prime | 2024-01 | Direct | UNKNOWN | 29 | high |
-| Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf | Sigma Prime | 2023-04 | Direct | UNKNOWN | 24 | high |
-| Swell Staking Security Audit Report.pdf | yAudit | 2024-04 | Direct | UNKNOWN | 2 | high |
-| swell-l2-pre-deposit-audit-april-2024 (Public).pdf | unknown | 2024-04 | Direct | UNKNOWN | 2 | high |
-| swell-mar24(Public).pdf | unknown | 2024-03 | Direct | UNKNOWN | 1 | high |
+| [ChainSecurity_Swell_swBTC_audit.pdf (also discovered via alternate URL)](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf) | ChainSecurity | 2024-08 | Direct | UNKNOWN | 21 | high |
+| [NM_0273_SWELL_BTC_LRT.pdf (also discovered via alternate URL)](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf) | unknown | 2024-08 | Direct | UNKNOWN | 11 | high |
+| [0xmacro-boring-vault-arctic-0.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf) | 0xMacro | 2024-03 | Direct | UNKNOWN | 8 | high |
+| [pashov-boring-vault.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf) | Pashov Audit Group | 2024-07 | Direct | UNKNOWN | 2 | high |
+| [spearbit-boring-vault-arctic-0.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf) | Spearbit | 2024-04 | Direct | UNKNOWN | 8 | high |
+| [here](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf) | Sigma Prime | 2024-01 | Direct | UNKNOWN | 29 | high |
+| [2024-02-23-cyfrin-swell-v2.0.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/2024-02-23-cyfrin-swell-v2.0.pdf) | Cyfrin | 2024-02 | Direct | UNKNOWN | 32 | high |
+| [Sigma_Prime_Swell_Barracuda_Upgrade_Security_Assessment_Report_v2.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/Sigma_Prime_Swell_Barracuda_Upgrade_Security_Assessment_Report_v2.pdf) | Sigma Prime | 2024-02 | Direct | UNKNOWN | 26 | high |
+| [Swell-audit-jan-2024(Public).pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracuda/Swell-audit-jan-2024(Public).pdf) | Unknown | 2024-02 | Direct | UNKNOWN | 32 | high |
+| [NM0231_FINAL_SWELL.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracude%20(LRT)/NM0231_FINAL_SWELL.pdf) | Barracude | 2024-06 | Direct | UNKNOWN | 13 | high |
+| [Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracude%20(LRT)/Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf) | Sigma Prime | 2024-07 | Direct | UNKNOWN | 28 | high |
+| [Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report.pdf) | Sigma Prime | 2024-01 | Direct | UNKNOWN | 29 | high |
+| [Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Seawolf/Sigma_Prime_Swell_Network_Security_Assessment_Report_v2_1.pdf) | Sigma Prime | 2023-04 | Direct | UNKNOWN | 24 | high |
+| [Swell Staking Security Audit Report.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Swell%20L2%20Pre%20Deposit/Swell%20Staking%20Security%20Audit%20Report.pdf) | yAudit | 2024-04 | Direct | UNKNOWN | 2 | high |
+| [swell-l2-pre-deposit-audit-april-2024 (Public).pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Swell%20L2%20Pre%20Deposit/swell-l2-pre-deposit-audit-april-2024%20(Public).pdf) | unknown | 2024-04 | Direct | UNKNOWN | 2 | high |
+| [swell-mar24(Public).pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Swell%20Token%20and%20Airdrop/swell-mar24(Public).pdf) | unknown | 2024-03 | Direct | UNKNOWN | 1 | high |
 
 ## Coverage Gaps
 

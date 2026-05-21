@@ -3,11 +3,21 @@
 ## Project Overview
 
 - Project: stCELO (`stcelo`)
-- Generated: 2026-05-21T11:02:35.723Z
-- Pipeline run: v2-pipeline-2026-05-21-b7e540-ab17
+- Website: [https://stcelo.xyz/](https://stcelo.xyz/)
+- Lifecycle: active ({"slug":"stcelo","tier":0,"peak_tvl":3688204,"peak_date":"2023-07-04T00:00:00.000Z","tvl_30d_ago":2041309,"tvl_90d_ago":1487298,"tvl_current":1701436,"tier0_reason":"healthy_tvl_level_and_change","tvl_180d_ago":366551,"change_30d_pct":-16.649757582022122,"change_90d_pct":14.397787128067138,"days_since_peak":1052,"detection_method":"tvl_trajectory","governance_signal":null,"drop_from_peak_pct":53.868169981920744})
+- Generated: 2026-05-21T11:41:38.582Z
+- Pipeline run: v2-pipeline-2026-05-21-7edc4b-bd8c
 - Chains: celo
 - Contract surface: 98 logical contracts (144 raw addresses)
 - On-chain TVL (included contracts): n/a
+
+## Project Description
+
+stCELO is a liquid staking protocol on Celo that allows users to stake CELO tokens and receive a liquid staking derivative (stCELO) representing their staked position plus rewards. It manages staking through validator group selection and provides governance mechanisms for protocol upgrades.
+
+### Architecture
+
+The Liquid Staking family relies on Manager for administrative control and Account for user staking logic, while Governance multisigs own and upgrade core contracts via ERC1967Proxy. Staking strategies and health checks are modularized into separate contracts used by the core staking system.
 
 ## Audit Coverage Summary
 
@@ -132,8 +142,8 @@
 
 | Audit | Auditor | Date | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---:|---|
-| Celo-staking-audit-mar24(Public).pdf | Unknown | 2024-04 | Direct | UNKNOWN | 35 | high |
-| FTI_audit_stCELO.pdf | FTI | 2022-05 | Direct | UNKNOWN | 53 | high |
+| [Celo-staking-audit-mar24(Public).pdf](https://github.com/celo-org/staked-celo/blob/master/audit/Celo-staking-audit-mar24(Public).pdf) | Unknown | 2024-04 | Direct | UNKNOWN | 35 | high |
+| [FTI_audit_stCELO.pdf](https://github.com/celo-org/staked-celo/blob/master/audit/FTI_audit_stCELO.pdf) | FTI | 2022-05 | Direct | UNKNOWN | 53 | high |
 
 ## Coverage Gaps
 

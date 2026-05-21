@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "swell",
-  "generated_at": "2026-05-21T10:29:03.249Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-21-b7e540-5727",
+  "generated_at": "2026-05-21T11:41:38.605Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-21-7edc4b-bd8c",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "swell",
@@ -30,7 +30,9 @@
     "total_audits": 16,
     "scoreable_audits": 16,
     "tvl_usd": 83067918.26447755,
+    "tvl_source": "on_chain",
     "asd_usd": 15828808.075750228,
+    "website_url": "https://www.swellnetwork.io/",
     "chains": [
       "ethereum"
     ]

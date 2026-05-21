@@ -1,0 +1,18 @@
+{
+  "address": "0x7351623002d53f7ca39a5ed1ea8f1c4dc29a2552",
+  "chain_id": 1,
+  "contract_name": "RevokableVester",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T14:16:39.907Z"
+}

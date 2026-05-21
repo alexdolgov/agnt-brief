@@ -1,0 +1,17 @@
+{
+  "address": "0xf59da245d3d69e5432afd05008e8d332c1bfab4e",
+  "chain_id": 1,
+  "contract_name": "KailuaVerifier",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000008eab2d97dfce405a1692a21b3ff3a172d593d3193768ea4f0e0d940f69c4cc5bd39a9e2772bfe3cb57818ce526bbe68033ee59348afe7ad42347f5d9f9ad307825d14a39630504005cb998d5132dcd0d0485d64d00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T14:16:52.709Z"
+}

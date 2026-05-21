@@ -1,0 +1,17 @@
+{
+  "address": "0x17c64e93846935dfbd281a5540a14d4cd67195f7",
+  "chain_id": 1,
+  "contract_name": "MIPS64",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T14:16:30.593Z"
+}

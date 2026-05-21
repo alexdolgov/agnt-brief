@@ -1,0 +1,18 @@
+{
+  "address": "0xd0216bdcc195abdf77746b6a6347ce85e2535431",
+  "chain_id": 1,
+  "contract_name": "AnchorStateRegistry",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 5000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T14:16:47.959Z"
+}

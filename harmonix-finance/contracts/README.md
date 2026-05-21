@@ -1,14 +1,13 @@
 # harmonix-finance — Contract Index
 
-127 unique implementations across 4 chains · 186 deployments · 1 audited · 9 unaudited · 117 unverified
+126 unique implementations across 4 chains · 184 deployments · 1 audited · 8 unaudited · 117 unverified
 
-## core_logic (3)
+## core_logic (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [KelpRestakingDeltaNeutralVault (7 deployments)](./ethereum-1/0x09f2b45a6677858f016ebef1e8f141d6944429df/) | ethereum | 7 deployments: ethereum [`0x09f2b4...4429df`](./ethereum-1/0x09f2b45a6677858f016ebef1e8f141d6944429df/); arbitrum `0x3c610c...779058`; arbitrum `0x554ef8...815d95`; arbitrum `0x9e2d37...2ea13a`; arbitrum `0xa50169...116b20`; arbitrum `0xbbff0a...07f855`; arbitrum `0xfadf54...d2ac61` | ✅ Audited | Verified |
 | [PendleHedgeVault (3 deployments)](./arbitrum-42161/0x0110bb8d3e530eb9a53f92fe848a06f2c5bfabe0/) | arbitrum | 3 deployments: arbitrum [`0x0110bb...bfabe0`](./arbitrum-42161/0x0110bb8d3e530eb9a53f92fe848a06f2c5bfabe0/); arbitrum `0x561b08...9979fc`; arbitrum `0xc0fa1d...cb50ee` | ⚠️ Unaudited | Verified |
-| [WstEthStakingDeltaNeutralVault (2 deployments)](./base-8453/0x09f2b45a6677858f016ebef1e8f141d6944429df/) | base | 2 deployments: base [`0x09f2b4...4429df`](./base-8453/0x09f2b45a6677858f016ebef1e8f141d6944429df/); base `0xabfa47...57ed86` | ⚠️ Unaudited | Verified |
 
 ## governance (1)
 

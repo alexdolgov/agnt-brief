@@ -11,7 +11,7 @@ Each project directory contains:
 
 | Project | TVL (DL) | Chains | Implementations | Coverage | Tier 1 | Audits | Freshness | ASD |
 |---|---:|---|---:|---:|---|---:|---|---:|
-| [harmonix-finance](./harmonix-finance/brief.md) | $4.89M | 4 | 127 | 10.0% | 0.0% (-) | 1 | fresh | - |
+| [harmonix-finance](./harmonix-finance/brief.md) | $4.89M | 4 | 126 | 11.1% | 0.0% (-) | 1 | fresh | - |
 
-_Generated: 2026-05-21T22:10:55.865Z_
+_Generated: 2026-05-21T22:44:59.781Z_
 _Projects: 1_

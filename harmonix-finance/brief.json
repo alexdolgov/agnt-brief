@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "harmonix-finance",
-  "generated_at": "2026-05-21T22:10:52.518Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-21-75f656-5fed",
+  "generated_at": "2026-05-21T22:44:56.246Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-21-75f656-39bd",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "harmonix-finance",
@@ -22,17 +22,17 @@
     "drop_from_peak_pct": 73.53545407495113
   },
   "summary": {
-    "total_contracts": 127,
-    "total_addresses": 186,
-    "unique_implementations": 127,
-    "total_deployments": 186,
+    "total_contracts": 126,
+    "total_addresses": 184,
+    "unique_implementations": 126,
+    "total_deployments": 184,
     "audited_contracts": 1,
-    "unaudited_contracts": 9,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 8,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 117,
-    "coverage_pct": 10,
+    "coverage_pct": 11.1,
     "total_audits": 4,
     "scoreable_audits": 1,
     "dl_tvl_usd": 4888105.594,
@@ -59,8 +59,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Harmonix Finance is a yield optimization protocol that offers delta-neutral vaults and staking products. It leverages strategies like Kelp restaking and Pendle hedging to generate yield for users.",
-    "relationship_narrative": "All product families share the same proxy infrastructure (TransparentUpgradeableProxy and ERC1967Proxy) for upgradeability. The PoolFactory registries manage vault deployments, while HAR token likely serves as the protocol's governance or reward token across vaults and staking.",
+    "project_purpose": "Harmonix Finance is a yield optimization protocol that deploys user deposits into delta-neutral and hedged strategies across multiple chains. It uses vaults and staking contracts to generate returns while managing risk.",
+    "relationship_narrative": "All product families share the same upgradeable proxy infrastructure (TransparentUpgradeableProxy and ERC1967Proxy) and are deployed by a common set of deployer clusters. The PoolFactory registries manage vault instances, while HAR token and staking contracts provide incentives across the protocol.",
     "product_family_count": 1
   },
   "fork_lineage": {
@@ -276,7 +276,7 @@
         }
       ],
       "audits_covering": [
-        "audit-1753"
+        "audit-1757"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -4497,52 +4497,12 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x09f2b45a6677858f016ebef1e8f141d6944429df",
-      "name": "WstEthStakingDeltaNeutralVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "WstEthStakingDeltaNeutralVault",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x09f2b45a6677858f016ebef1e8f141d6944429df",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xabfa4750e25836eaf305325c581aa56b4457ed86",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
     }
   ],
   "audits": [
     {
-      "audit_id": 1750,
-      "audit_key": "audit-1750",
+      "audit_id": 1754,
+      "audit_key": "audit-1754",
       "report_name": "Harmonix Finance - Zenith Audit Report.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Harmonix%20Finance%20-%20Zenith%20Audit%20Report.pdf",
       "auditor": "Zenith",
@@ -4562,8 +4522,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1751,
-      "audit_key": "audit-1751",
+      "audit_id": 1755,
+      "audit_key": "audit-1755",
       "report_name": "HarmonixFinance-Hyperliquid-Security-Review.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/HarmonixFinance-Hyperliquid-Security-Review.pdf",
       "auditor": "Hyperliquid",
@@ -4583,8 +4543,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1752,
-      "audit_key": "audit-1752",
+      "audit_id": 1756,
+      "audit_key": "audit-1756",
       "report_name": "Verichains Public Report - HarmonixFinance.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Verichains%20Public%20Report%20-%20HarmonixFinance.pdf",
       "auditor": "Verichains",
@@ -4604,8 +4564,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1753,
-      "audit_key": "audit-1753",
+      "audit_id": 1757,
+      "audit_key": "audit-1757",
       "report_name": "Verichains Public Report - Kelp Delta.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Verichains%20Public%20Report%20-%20Kelp%20Delta.pdf",
       "auditor": "Verichains",
@@ -4640,7 +4600,7 @@
       "auditor": "Verichains",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 10,
+      "coverage_pct": 11.1,
       "latest_audit": "2024-08"
     }
   ],
@@ -4664,20 +4624,10 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x09f2b45a6677858f016ebef1e8f141d6944429df",
-      "name": "WstEthStakingDeltaNeutralVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 3,
+    "native": 2,
     "upstream": 0,
     "standard_library": 7,
     "needs_review": 117
@@ -4693,15 +4643,15 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 1750,
+        "audit_id": 1754,
         "report_name": "Harmonix Finance - Zenith Audit Report.pdf"
       },
       {
-        "audit_id": 1751,
+        "audit_id": 1755,
         "report_name": "HarmonixFinance-Hyperliquid-Security-Review.pdf"
       },
       {
-        "audit_id": 1752,
+        "audit_id": 1756,
         "report_name": "Verichains Public Report - HarmonixFinance.pdf"
       }
     ],

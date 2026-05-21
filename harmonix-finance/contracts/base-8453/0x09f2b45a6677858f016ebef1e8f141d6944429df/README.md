@@ -5,10 +5,10 @@
 | Chain | base (8453) |
 | Address | `0x09f2b45a6677858f016ebef1e8f141d6944429df` |
 | Role | core_logic |
-| Origin | native |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (base [`0x09f2b45a6677858f016ebef1e8f141d6944429df`](../0x09f2b45a6677858f016ebef1e8f141d6944429df/); base `0xabfa4750e25836eaf305325c581aa56b4457ed86`) |
+| Deployments | 1 (base [`0x09f2b45a6677858f016ebef1e8f141d6944429df`](../0x09f2b45a6677858f016ebef1e8f141d6944429df/)) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

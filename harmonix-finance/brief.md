@@ -5,30 +5,30 @@
 - Project: Harmonix Finance (`harmonix-finance`)
 - Website: [https://app.harmonix.fi/?ref=s4rk2Hrs](https://app.harmonix.fi/?ref=s4rk2Hrs)
 - Lifecycle: active (Tier 0, 73.5% below peak)
-- Generated: 2026-05-21T22:10:52.518Z
-- Pipeline run: v2-pipeline-2026-05-21-75f656-5fed
+- Generated: 2026-05-21T22:44:56.246Z
+- Pipeline run: v2-pipeline-2026-05-21-75f656-39bd
 - Chains: arbitrum, base, ethereum, hyperliquid
-- Contract surface: 127 unique implementations (186 raw deployments)
+- Contract surface: 126 unique implementations (184 raw deployments)
 - DeFi Llama TVL: $4,888,105.59
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Harmonix Finance is a yield optimization protocol that offers delta-neutral vaults and staking products. It leverages strategies like Kelp restaking and Pendle hedging to generate yield for users.
+Harmonix Finance is a yield optimization protocol that deploys user deposits into delta-neutral and hedged strategies across multiple chains. It uses vaults and staking contracts to generate returns while managing risk.
 
 ### Architecture
 
-All product families share the same proxy infrastructure (TransparentUpgradeableProxy and ERC1967Proxy) for upgradeability. The PoolFactory registries manage vault deployments, while HAR token likely serves as the protocol's governance or reward token across vaults and staking.
+All product families share the same upgradeable proxy infrastructure (TransparentUpgradeableProxy and ERC1967Proxy) and are deployed by a common set of deployer clusters. The PoolFactory registries manage vault instances, while HAR token and staking contracts provide incentives across the protocol.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/10 (10.0%)
-- Verified + Unaudited implementations: 8
+- Verified implementations audited: 1/9 (11.1%)
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 1
 - Unverified implementations: 117
-- Unique implementations: 127
-- Raw deployments: 186
+- Unique implementations: 126
+- Raw deployments: 184
 - Audits discovered: 4
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -40,7 +40,7 @@ All product families share the same proxy infrastructure (TransparentUpgradeable
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Verichains | Tier 2 | 1 | 10.0% | 2024-08 |
+| Verichains | Tier 2 | 1 | 11.1% | 2024-08 |
 
 ## Contract Surface
 
@@ -50,7 +50,7 @@ All product families share the same proxy infrastructure (TransparentUpgradeable
 |---|---|---|---|---|
 | KelpRestakingDeltaNeutralVault | core_logic | ethereum | 7 deployments: ethereum [`0x09f2b4...4429df`](./contracts/ethereum-1/0x09f2b45a6677858f016ebef1e8f141d6944429df/); arbitrum `0x3c610c...779058`; arbitrum `0x554ef8...815d95`; arbitrum `0x9e2d37...2ea13a`; arbitrum `0xa50169...116b20`; arbitrum `0xbbff0a...07f855`; arbitrum `0xfadf54...d2ac61` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (7)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -61,7 +61,6 @@ All product families share the same proxy infrastructure (TransparentUpgradeable
 | PendleHedgeVault | core_logic | arbitrum | 3 deployments: arbitrum [`0x0110bb...bfabe0`](./contracts/arbitrum-42161/0x0110bb8d3e530eb9a53f92fe848a06f2c5bfabe0/); arbitrum `0x561b08...9979fc`; arbitrum `0xc0fa1d...cb50ee` | ⚠️ Unaudited |
 | ProxyAdmin | governance | hyperliquid | [`0x7c95d4...706ada`](./contracts/hyperliquid-999/0x7c95d4c96c410a6e7dedf4bc78eb93b916706ada/) | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | arbitrum | 35 deployments: ethereum `0xcf8be3...dbc820`; arbitrum [`0x05427a...4db7c5`](./contracts/arbitrum-42161/0x05427aa001303115b14634673dd3ff53e94db7c5/); arbitrum `0x0866af...11334e`; arbitrum `0x09873c...44cdf1`; arbitrum `0x13f093...8f3a4c`; arbitrum `0x14d9ed...a5e1df`; arbitrum `0x1d47ca...8e3688`; arbitrum `0x1ef01c...dc31a8`; arbitrum `0x236a88...cdf331`; arbitrum `0x27c6cf...384499`; arbitrum `0x3363a8...420135`; arbitrum `0x346c29...22e322`; arbitrum `0x3b584a...48affd`; arbitrum `0x4d5d7d...b1ec86`; arbitrum `0x58ec43...f553e8`; arbitrum `0x613545...155c23`; arbitrum `0x63cbb4...ba953f`; arbitrum `0x6a0755...f04a13`; arbitrum `0x72b054...179b9d`; arbitrum `0x74cf10...f7f4a2`; arbitrum `0x75fa7c...62c2c6`; arbitrum `0x7d79c8...4a09a3`; arbitrum `0x862102...96c200`; arbitrum `0x89c45b...c81cd4`; arbitrum `0x8f1cb3...de2b87`; arbitrum `0xa28557...d1dc98`; arbitrum `0xbd8c05...7e8d34`; arbitrum `0xc2b64d...efe6dd`; arbitrum `0xc5d824...a64d1b`; arbitrum `0xc61c90...e4ac73`; arbitrum `0xc71ba0...bc590b`; arbitrum `0xc75dee...dc3b74`; arbitrum `0xc96648...66d2c2`; arbitrum `0xca5bff...c9cce5`; arbitrum `0xe46c3b...000705` | ⚠️ Unaudited |
-| WstEthStakingDeltaNeutralVault | core_logic | base | 2 deployments: base [`0x09f2b4...4429df`](./contracts/base-8453/0x09f2b45a6677858f016ebef1e8f141d6944429df/); base `0xabfa47...57ed86` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -218,13 +217,12 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | hyperliquid | [`0x30c9fc...a2111f`](./contracts/hyperliquid-999/0x30c9fc26028c3065e0bfd9b7ba1c7c9984a2111f/) | MultiVestingDistributorMock | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x211876...7c271f`](./contracts/base-8453/0x2118769fd42b6884641d9f0e33278bb5d67c271f/) | PoolFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x09f2b4...4429df`](./contracts/base-8453/0x09f2b45a6677858f016ebef1e8f141d6944429df/) | WstEthStakingDeltaNeutralVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 7 |
 | needs_review | 117 |
@@ -240,8 +238,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [1750] Harmonix Finance - Zenith Audit Report.pdf
-- [1751] HarmonixFinance-Hyperliquid-Security-Review.pdf
-- [1752] Verichains Public Report - HarmonixFinance.pdf
+- [1754] Harmonix Finance - Zenith Audit Report.pdf
+- [1755] HarmonixFinance-Hyperliquid-Security-Review.pdf
+- [1756] Verichains Public Report - HarmonixFinance.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

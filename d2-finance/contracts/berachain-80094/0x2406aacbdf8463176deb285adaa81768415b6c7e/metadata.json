@@ -1,0 +1,17 @@
+{
+  "address": "0x2406aacbdf8463176deb285adaa81768415b6c7e",
+  "chain_id": 80094,
+  "contract_name": "Fix_Module",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T16:00:36.337Z"
+}

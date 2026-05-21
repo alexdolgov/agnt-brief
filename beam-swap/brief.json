@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "project_key": "beam-swap",
+  "generated_at": "2026-05-21T10:55:11.776Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-21-b7e540-ab17",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "tvl_usd": null,
+    "asd_usd": null,
+    "chains": []
+  },
+  "topography": {
+    "project_purpose": "Beam Swap is a decentralized exchange (DEX) protocol that enables trustless token swaps and liquidity provision. It appears to be based on the Uniswap V2 architecture, facilitating automated market making on supported chains.",
+    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no structural relationships can be described.",
+    "product_family_count": 0
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  }
+}

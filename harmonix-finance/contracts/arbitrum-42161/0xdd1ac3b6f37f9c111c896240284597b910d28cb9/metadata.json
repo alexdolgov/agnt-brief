@@ -1,0 +1,17 @@
+{
+  "address": "0xdd1ac3b6f37f9c111c896240284597b910d28cb9",
+  "chain_id": 42161,
+  "contract_name": "GoldLinkVault",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T22:10:53.491Z"
+}

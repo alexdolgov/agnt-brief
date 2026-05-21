@@ -10,6 +10,7 @@ tmp/
 .artifacts/
 .cache/
 .claude/
+exports/
 
 # Generated JS output for v2 TypeScript scripts
 src/scripts/v2/lib/**/*.js

@@ -1,0 +1,16 @@
+# CumulativeMerkleDrop
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x26542fbe5f320f25747e80831acdd1f27cdd0c65` |
+| Role | operational_periphery |
+| Origin | native |
+| Audited | Yes |
+| Audits | [Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf](https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf); [NM_0314_EtherFi_LRT_2.pdf](https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf) |
+| Deployments | 2 (ethereum [`0x26542fbe5f320f25747e80831acdd1f27cdd0c65`](../0x26542fbe5f320f25747e80831acdd1f27cdd0c65/); ethereum `0x6db24ee656843e3fe03eb8762a54d86186ba6b64`) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

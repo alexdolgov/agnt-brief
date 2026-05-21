@@ -7,7 +7,7 @@
 | [d2-finance](./d2-finance/) | $14.9M | 45.8% | $11.5M | active | 3 | 188 | 2026-05-21 |
 | [decentralized-euro](./decentralized-euro/) | $228.8M | 8.6% | $5.8M | active | 14 | 292 | 2026-05-20 |
 | [international-stable-currency](./international-stable-currency/) | ? | 0.0% | ? | unknown | 0 | 0 | 2026-05-21 |
-| [king-protocol](./king-protocol/) | $217.1M | 45.8% | ? | active | 4 | 79 | 2026-05-21 |
+| [king-protocol](./king-protocol/) | $217.1M | 50.9% | ? | active | 4 | 73 | 2026-05-21 |
 | [mitosis](./mitosis/) | $546.5M | 0.9% | $356.8M | dead | 3 | 424 | 2026-05-20 |
 | [stcelo](./stcelo/) | $1.7M | 50.0% | $850.7K | active | 2 | 98 | 2026-05-21 |
 | [swell](./swell/) | $83.1M | 61.5% | $15.8M | active | 16 | 96 | 2026-05-21 |

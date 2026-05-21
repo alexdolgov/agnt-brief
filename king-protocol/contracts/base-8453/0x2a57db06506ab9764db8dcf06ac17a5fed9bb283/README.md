@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| Chain | arbitrum, base, mantle (8453) |
+| Chain | base (8453) |
 | Address | `0x2a57db06506ab9764db8dcf06ac17a5fed9bb283` |
 | Role | unknown |
 | Origin | native |

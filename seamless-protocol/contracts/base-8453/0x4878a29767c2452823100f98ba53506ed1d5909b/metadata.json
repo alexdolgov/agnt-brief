@@ -1,0 +1,17 @@
+{
+  "address": "0x4878a29767c2452823100f98ba53506ed1d5909b",
+  "chain_id": 8453,
+  "contract_name": "ERC20BalanceSplitterTwoPayee",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "000000000000000000000000003ee5e3b38cda6775d20a32080850106321f2f200000000000000000000000082c30b9db2e3b92ace4e1593b32890dcf8612d030000000000000000000000005a47c803488fe2bb0a0eaaf346b420e4df22f3c70000000000000000000000000000000000000000000000000000000000001770",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:30:43.393Z"
+}

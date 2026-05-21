@@ -1,0 +1,223 @@
+[
+  {
+    "inputs": [],
+    "name": "InvalidNumFees",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidNumTicks",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "inputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inputAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minOutputAmount",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "path",
+            "type": "address[]"
+          },
+          {
+            "internalType": "bytes",
+            "name": "encodedPath",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint24[]",
+            "name": "fees",
+            "type": "uint24[]"
+          },
+          {
+            "internalType": "int24[]",
+            "name": "tickSpacing",
+            "type": "int24[]"
+          },
+          {
+            "internalType": "enum ISwapAdapter.Exchange",
+            "name": "exchange",
+            "type": "uint8"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "aerodromeRouter",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "aerodromePoolFactory",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "aerodromeSlipstreamRouter",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "uniswapSwapRouter02",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "uniswapV2Router02",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct ISwapAdapter.ExchangeAddresses",
+            "name": "exchangeAddresses",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bytes",
+            "name": "additionalData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct ISwapAdapter.SwapContext",
+        "name": "swapContext",
+        "type": "tuple"
+      }
+    ],
+    "name": "swapExactInput",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "inputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "outputAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxInputAmount",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "path",
+            "type": "address[]"
+          },
+          {
+            "internalType": "bytes",
+            "name": "encodedPath",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint24[]",
+            "name": "fees",
+            "type": "uint24[]"
+          },
+          {
+            "internalType": "int24[]",
+            "name": "tickSpacing",
+            "type": "int24[]"
+          },
+          {
+            "internalType": "enum ISwapAdapter.Exchange",
+            "name": "exchange",
+            "type": "uint8"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "aerodromeRouter",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "aerodromePoolFactory",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "aerodromeSlipstreamRouter",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "uniswapSwapRouter02",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "uniswapV2Router02",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct ISwapAdapter.ExchangeAddresses",
+            "name": "exchangeAddresses",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bytes",
+            "name": "additionalData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct ISwapAdapter.SwapContext",
+        "name": "swapContext",
+        "type": "tuple"
+      }
+    ],
+    "name": "swapExactOutput",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

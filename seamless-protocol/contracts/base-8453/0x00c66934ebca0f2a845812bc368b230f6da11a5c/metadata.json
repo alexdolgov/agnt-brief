@@ -1,0 +1,18 @@
+{
+  "address": "0x00c66934ebca0f2a845812bc368b230f6da11a5c",
+  "chain_id": 8453,
+  "contract_name": "LeverageRouter",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 19000,
+  "evm_version": "prague",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:30:38.603Z"
+}

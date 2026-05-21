@@ -1,0 +1,17 @@
+{
+  "address": "0xbedb9b2b5c334635b64e3f6de436d082aa8fdde7",
+  "chain_id": 8453,
+  "contract_name": "EsSEAMAirdrop",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "00000000000000000000000078746ac754377808c703a5d7e6d628ef7ac0de81",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:30:45.521Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xb7397f841a449793c634c06cf12751d256b9bf50",
+  "chain_id": 8453,
+  "contract_name": "UiPoolDataProviderV3",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "AGPL-3.0, BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:30:44.992Z"
+}

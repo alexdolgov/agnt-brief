@@ -1,0 +1,17 @@
+{
+  "address": "0x16d02ebd89988cad1ce945807b963ab7a9fd22e1",
+  "chain_id": 1,
+  "contract_name": "MulticallExecutor",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 19000,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:30:38.950Z"
+}

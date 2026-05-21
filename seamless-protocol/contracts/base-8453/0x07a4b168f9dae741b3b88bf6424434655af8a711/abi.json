@@ -1,0 +1,12 @@
+[
+  {
+    "inputs": [],
+    "name": "MathOverflowedMulDiv",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RatioOutsideRange",
+    "type": "error"
+  }
+]

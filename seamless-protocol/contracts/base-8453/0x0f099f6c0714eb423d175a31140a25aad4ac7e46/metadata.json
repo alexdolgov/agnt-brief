@@ -1,0 +1,17 @@
+{
+  "address": "0x0f099f6c0714eb423d175a31140a25aad4ac7e46",
+  "chain_id": 8453,
+  "contract_name": "StakedToken",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 46,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:30:41.359Z"
+}

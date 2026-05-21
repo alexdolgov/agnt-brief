@@ -1,0 +1,18 @@
+{
+  "address": "0x87f8d14a8796b22116d267cfe9a57e986f207468",
+  "chain_id": 8453,
+  "contract_name": "UniversalAerodromeAdapter",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T23:30:44.195Z"
+}

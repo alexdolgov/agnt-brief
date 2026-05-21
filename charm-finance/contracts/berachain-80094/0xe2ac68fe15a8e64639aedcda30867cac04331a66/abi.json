@@ -1,0 +1,236 @@
+[
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "feeGrowthInsideLast",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeGrowthOutsideLower",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeGrowthOutsideUpper",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeGrowthGlobal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "lowerTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "upperTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "performanceFee",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct CalculateFeesParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "calculateFees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "res",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "lowerTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "upperTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "address",
+            "name": "poolAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "vaultAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "performanceFee",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct GetFeesParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "getFees",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fees0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fees1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total1",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PositionAmounts",
+        "name": "positionAmounts",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vaultAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getVaultAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vaultAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getVaultPositions",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fees0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fees1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total1",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PositionAmounts[3]",
+        "name": "results",
+        "type": "tuple[3]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "balance0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "balance1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

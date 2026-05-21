@@ -1,0 +1,18 @@
+{
+  "address": "0x3774af7bb6e792963167588ae85b5ab8664ba818",
+  "chain_id": 1,
+  "contract_name": "RockXRedeem",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T18:46:54.641Z"
+}

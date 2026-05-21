@@ -1,0 +1,18 @@
+{
+  "address": "0x325ea059f11d6860e50a803ae52d49ef35c85fb9",
+  "chain_id": 1,
+  "contract_name": "globalIndexLibrary",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "london",
+  "license": "BUSL-1.1, CC0-1.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 47,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-21T18:46:54.621Z"
+}

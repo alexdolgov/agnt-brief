@@ -1,0 +1,16 @@
+# EtherFiRestaker
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x1b7a4c3797236a1c37f8741c0be35c2c72736fff` |
+| Role | core_logic |
+| Origin | standard_library |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 2 (ethereum [`0x1b7a4c3797236a1c37f8741c0be35c2c72736fff`](../0x1b7a4c3797236a1c37f8741c0be35c2c72736fff/); ethereum `0x3dbe6b40e3b65f2d1f60ea118ccb35df61a6d4e2`) |
+| Proxy | Yes → `0x9d795b...6bd0c6` |
+| Source | Sourcify (full match) |
+| TVL | $217,003,475.84 |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

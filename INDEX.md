@@ -4,4 +4,4 @@
 |---|---|---|---|---|---|---|---|
 | [decentralized-euro](./decentralized-euro/) | $228.8M | 8.6% | $5.8M | active | 14 | 292 | 2026-05-20 |
 | [mitosis](./mitosis/) | $546.5M | 0.9% | $356.8M | dead | 3 | 424 | 2026-05-20 |
-| [swell](./swell/) | ? | 53.9% | ? | unknown | 18 | 76 | 2026-05-19 |
+| [swell](./swell/) | $80.6M | 61.5% | $15.9M | active | 16 | 96 | 2026-05-21 |

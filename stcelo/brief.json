@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stcelo",
-  "generated_at": "2026-05-21T11:41:38.582Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-21-7edc4b-bd8c",
+  "generated_at": "2026-05-21T12:39:44.843Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-21-0269ae-fbb3",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stcelo",
@@ -29,9 +29,10 @@
     "coverage_pct": 50,
     "total_audits": 2,
     "scoreable_audits": 2,
-    "tvl_usd": null,
-    "tvl_source": null,
-    "asd_usd": null,
+    "dl_tvl_usd": 1701436.55613,
+    "tvl_usd": 1701436.55613,
+    "tvl_source": "defillama",
+    "asd_usd": 850718.278065,
     "website_url": "https://stcelo.xyz/",
     "chains": [
       "celo"

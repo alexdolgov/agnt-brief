@@ -1,0 +1,18 @@
+{
+  "address": "0x3fed017ec0f5517cdf2e8a9a4156c64d74252146",
+  "chain_id": 43114,
+  "contract_name": "NonfungiblePositionManager",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 61,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T08:22:55.213Z"
+}

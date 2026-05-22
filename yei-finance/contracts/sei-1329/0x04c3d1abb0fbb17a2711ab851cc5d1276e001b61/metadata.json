@@ -1,0 +1,17 @@
+{
+  "address": "0x04c3d1abb0fbb17a2711ab851cc5d1276e001b61",
+  "chain_id": 1329,
+  "contract_name": "CollectorController",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T08:44:45.115Z"
+}

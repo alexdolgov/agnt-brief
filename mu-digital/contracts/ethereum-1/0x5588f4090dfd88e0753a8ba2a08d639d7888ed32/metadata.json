@@ -1,0 +1,17 @@
+{
+  "address": "0x5588f4090dfd88e0753a8ba2a08d639d7888ed32",
+  "chain_id": 1,
+  "contract_name": "PriceFeed",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T16:50:33.599Z"
+}

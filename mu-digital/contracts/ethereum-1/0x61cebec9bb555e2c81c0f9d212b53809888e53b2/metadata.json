@@ -1,0 +1,18 @@
+{
+  "address": "0x61cebec9bb555e2c81c0f9d212b53809888e53b2",
+  "chain_id": 1,
+  "contract_name": "StakingEscrow",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T16:50:33.404Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x548d3b444da39686d1a6f1544781d154e7cd1ef7",
+  "chain_id": 8453,
+  "contract_name": "StakedKAITO",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T16:43:26.813Z"
+}

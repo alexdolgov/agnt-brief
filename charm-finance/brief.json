@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "charm-finance",
-  "generated_at": "2026-05-21T23:38:46.149Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-21-79adca-8fc5",
+  "generated_at": "2026-05-22T00:52:42.037Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-bcffcb-4895",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "charm-finance",
@@ -16,24 +16,24 @@
     "tvl_180d_ago": 5518241,
     "change_30d_pct": -10.337285100944626,
     "change_90d_pct": -43.806099397204974,
-    "days_since_peak": 1654,
+    "days_since_peak": 1655,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 82.9813351706115
   },
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 12,
-    "unique_implementations": 6,
-    "total_deployments": 12,
+    "total_contracts": 4,
+    "total_addresses": 7,
+    "unique_implementations": 4,
+    "total_deployments": 7,
     "audited_contracts": 0,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 4,
+    "contracts_unverified": 3,
     "coverage_pct": 0,
-    "total_audits": 5,
+    "total_audits": 2,
     "scoreable_audits": 0,
     "dl_tvl_usd": 2195939,
     "tvl_usd": 2195939,
@@ -56,12 +56,12 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 5
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Charm Finance is a liquidity management protocol that automates concentrated liquidity positions on Uniswap V3. It uses vaults to manage user deposits, optimize fee earnings, and rebalance positions to maintain desired price ranges.",
-    "relationship_narrative": "The AlphaProVaultFactory deploys and manages individual vault contracts, which are the primary user-facing contracts. All contracts share the same deployer cluster, indicating a unified development and deployment process.",
+    "project_purpose": "Charm Finance is a liquidity management protocol that automates concentrated liquidity positions on Uniswap V3-style AMMs. It deploys AlphaProVaults that actively rebalance and compound fees to optimize yields for liquidity providers.",
+    "relationship_narrative": "The protocol consists of a single product family centered around the AlphaProVaultFactory, which deploys and manages vault instances. No shared infrastructure or cross-family dependencies are present in the contract surface.",
     "product_family_count": 1
   },
   "fork_lineage": {
@@ -69,64 +69,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x0a4b7ac0723d0d08de255aa9d574958c66e9baea",
-      "name": "AlphaProVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AlphaProVault",
-      "deployments": [
-        {
-          "chain_id": 59144,
-          "chain_name": "linea",
-          "address": "0x8cbc885ece6c515e092ba1b3e24b567a7d91572c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0x0a4b7ac0723d0d08de255aa9d574958c66e9baea",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xf0f42c62923c6e741c64e0163c5c50965c05df61",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 81457,
-          "chain_name": "blast",
-          "address": "0x8cbc885ece6c515e092ba1b3e24b567a7d91572c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
     {
       "chain_id": 80094,
       "chain_name": "berachain",
@@ -191,7 +133,7 @@
       "address": "0xfaf1af4dc761dba157227a3c06cec9a7486d8a07",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Charm Finance V2",
       "tvl_usd": null,
@@ -222,7 +164,7 @@
       "address": "0xc2cc57a62982c4c92c69b856b5d03c6deca32e77",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -248,43 +190,12 @@
       "contamination_flag": "review"
     },
     {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xfcc5d3b0ba012905e149acab826d452e29780d3b",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xfcc5d3b0ba012905e149acab826d452e29780d3b",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
       "chain_id": 81457,
       "chain_name": "blast",
       "address": "0xc2cc57a62982c4c92c69b856b5d03c6deca32e77",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -312,12 +223,12 @@
   ],
   "audits": [
     {
-      "audit_id": 1766,
-      "audit_key": "audit-1766",
-      "report_name": "DL audit link",
-      "report_url": "https://learn.charm.fi/charm/appendix/audit-reports",
-      "auditor": "unknown",
-      "audit_type": "audit",
+      "audit_id": 1778,
+      "audit_key": "audit-1778",
+      "report_name": "Active Bug Bounty Program",
+      "report_url": "https://immunefi.com/bug-bounty/charm/information",
+      "auditor": "Immunefi",
+      "audit_type": "bug_bounty",
       "freshness": "unknown",
       "date": null,
       "is_inherited": false,
@@ -333,74 +244,11 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1767,
-      "audit_key": "audit-1767",
-      "report_name": "GitBook file OaQCjHrFCVhRzEVF9b7E",
-      "report_url": "https://learn.charm.fi/charm/files/oaqcjhrfcvhrzevf9b7e",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1768,
-      "audit_key": "audit-1768",
-      "report_name": "GitBook file AOpzUkn21usMXC4JZ16x",
-      "report_url": "https://learn.charm.fi/charm/files/aopzukn21usmxc4jz16x",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1769,
-      "audit_key": "audit-1769",
-      "report_name": "GitBook file hCl3DoCCCA1oJzhn85Os",
-      "report_url": "https://learn.charm.fi/charm/files/hcl3doccca1ojzhn85os",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 1770,
-      "audit_key": "audit-1770",
-      "report_name": "GitBook file KkW1jpiOJtyXURe0G6bC",
-      "report_url": "https://learn.charm.fi/charm/files/kkw1jpiojtyxure0g6bc",
-      "auditor": "unknown",
+      "audit_id": 1779,
+      "audit_key": "audit-1779",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FIM3bniGpiEo24osqeSJ5%2Freport-cantinacode-charm-0604.pdf",
+      "auditor": "Spearbit",
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
@@ -422,16 +270,6 @@
     {
       "chain_id": 80094,
       "chain_name": "berachain",
-      "address": "0x0a4b7ac0723d0d08de255aa9d574958c66e9baea",
-      "name": "AlphaProVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
       "address": "0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137",
       "name": "AlphaProVaultFactory",
       "role": "registry",
@@ -441,10 +279,10 @@
     }
   ],
   "origin_summary": {
-    "native": 2,
+    "native": 4,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 4
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -453,26 +291,15 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 1766,
-        "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 1767,
-        "report_name": "GitBook file OaQCjHrFCVhRzEVF9b7E"
-      },
-      {
-        "audit_id": 1768,
-        "report_name": "GitBook file AOpzUkn21usMXC4JZ16x"
-      },
-      {
-        "audit_id": 1769,
-        "report_name": "GitBook file hCl3DoCCCA1oJzhn85Os"
-      },
-      {
-        "audit_id": 1770,
-        "report_name": "GitBook file KkW1jpiOJtyXURe0G6bC"
+        "audit_id": 1779,
+        "report_name": "Rendered PDF capture"
       }
     ],
     "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": {
+    "platform": "Immunefi",
+    "url": "https://immunefi.com/bug-bounty/charm/information",
+    "tier": 1
   }
 }

@@ -13,8 +13,8 @@ Each project directory contains:
 |---|---:|---|---:|---:|---|---:|---|---:|
 | [inverse-finance](./inverse-finance/brief.md) | $44.53M | 5 | 125 | 13.7% | 9.4% (Code4rena, Sherlock) | 5 | fresh | $428.77M |
 | [seamless-protocol](./seamless-protocol/brief.md) | $47.56M | base, ethereum | 98 | 0.0% | 0.0% (-) | 0 | unknown | $34.75K |
-| [charm-finance](./charm-finance/brief.md) | $2.20M | 5 | 6 | 0.0% | 0.0% (-) | 0 | unknown | - |
+| [charm-finance](./charm-finance/brief.md) | $2.20M | 5 | 4 | 0.0% | 0.0% (-) | 0 | unknown | - |
 | [harmonix-finance](./harmonix-finance/brief.md) | $4.89M | 4 | 126 | 11.1% | 0.0% (-) | 1 | fresh | - |
 
-_Generated: 2026-05-21T23:38:51.547Z_
+_Generated: 2026-05-22T00:53:09.909Z_
 _Projects: 4_

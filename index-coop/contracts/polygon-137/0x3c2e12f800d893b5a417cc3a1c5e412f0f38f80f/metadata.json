@@ -1,0 +1,18 @@
+{
+  "address": "0x3c2e12f800d893b5a417cc3a1c5e412f0f38f80f",
+  "chain_id": 137,
+  "contract_name": "HolonToken",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "berlin",
+  "license": "MIT AND GPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T22:44:48.383Z"
+}

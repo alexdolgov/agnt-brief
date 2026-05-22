@@ -1,0 +1,18 @@
+{
+  "address": "0x4677f9eac72e10469949d73d8ef71883ce510732",
+  "chain_id": 1,
+  "contract_name": "OptimisticAuctionRebalanceExtensionV1",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0-only, Apache License, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T22:44:51.334Z"
+}

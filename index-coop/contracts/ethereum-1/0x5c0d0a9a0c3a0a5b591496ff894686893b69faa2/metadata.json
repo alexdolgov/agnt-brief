@@ -1,0 +1,18 @@
+{
+  "address": "0x5c0d0a9a0c3a0a5b591496ff894686893b69faa2",
+  "chain_id": 1,
+  "contract_name": "FlashMintWrapped",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "Apache License, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 126,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T22:44:54.063Z"
+}

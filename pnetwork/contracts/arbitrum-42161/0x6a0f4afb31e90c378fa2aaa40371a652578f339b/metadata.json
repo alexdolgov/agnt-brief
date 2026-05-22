@@ -1,0 +1,18 @@
+{
+  "address": "0x6a0f4afb31e90c378fa2aaa40371a652578f339b",
+  "chain_id": 42161,
+  "contract_name": "MarinateStrategyFarm",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 88888,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T22:16:32.543Z"
+}

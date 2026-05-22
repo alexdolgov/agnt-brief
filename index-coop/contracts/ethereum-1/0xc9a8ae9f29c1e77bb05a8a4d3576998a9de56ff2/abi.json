@@ -1,0 +1,699 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IBaseManager",
+        "name": "_manager",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IWrapModuleV2",
+        "name": "_wrapModule",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISetValuer",
+        "name": "_setValuer",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_isRebalanceOpen",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bool",
+        "name": "_status",
+        "type": "bool"
+      }
+    ],
+    "name": "AnyoneCallableUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_caller",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "_status",
+        "type": "bool"
+      }
+    ],
+    "name": "CallerStatusUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isRebalanceOpen",
+        "type": "bool"
+      }
+    ],
+    "name": "RebalanceAccessUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "RebalancePaused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "setValuer",
+        "type": "address"
+      }
+    ],
+    "name": "SetValuerUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "reserveAsset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "minReserveWeight",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "maxReserveWeight",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "targetAssets",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "minTargetWeight",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTargetWeight",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "wrapAdapterName",
+            "type": "string"
+          },
+          {
+            "internalType": "bytes",
+            "name": "wrapData",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "unwrapData",
+            "type": "bytes"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct TargetWeightWrapExtension.TargetWeightWrapParams[]",
+        "name": "executionParams",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "TargetsSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "wrapModule",
+        "type": "address"
+      }
+    ],
+    "name": "WrapModuleUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "anyoneCallable",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "callAllowList",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "executionParams",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "minTargetWeight",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxTargetWeight",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "wrapAdapterName",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes",
+        "name": "wrapData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "unwrapData",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getReserveValuation",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "reserveValuation",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getReserveWeight",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "reserveWeight",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_targetAsset",
+        "type": "address"
+      }
+    ],
+    "name": "getTargetAssetAndReserveWeight",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "targetAssetWeight",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "reserveWeight",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_targetAsset",
+        "type": "address"
+      }
+    ],
+    "name": "getTargetAssetValuation",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "targetAssetValuation",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_targetAsset",
+        "type": "address"
+      }
+    ],
+    "name": "getTargetAssetWeight",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "targetAssetWeight",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTargetAssets",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalValuation",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalValuation",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isRebalanceOpen",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isRebalancingActive",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isReserveOverweight",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isReserveUnderweight",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_targetAsset",
+        "type": "address"
+      }
+    ],
+    "name": "isTargetOverweight",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_targetAsset",
+        "type": "address"
+      }
+    ],
+    "name": "isTargetUnderweight",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "manager",
+    "outputs": [
+      {
+        "internalType": "contract IBaseManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pauseRebalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rebalanceInfo",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "reserveAsset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minReserveWeight",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxReserveWeight",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_isRebalanceOpen",
+        "type": "bool"
+      }
+    ],
+    "name": "setIsRebalanceOpen",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISetValuer",
+        "name": "_setValuer",
+        "type": "address"
+      }
+    ],
+    "name": "setSetValuer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_reserveAsset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minReserveWeight",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxReserveWeight",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_targetAssets",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "minTargetWeight",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTargetWeight",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "wrapAdapterName",
+            "type": "string"
+          },
+          {
+            "internalType": "bytes",
+            "name": "wrapData",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "unwrapData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TargetWeightWrapExtension.TargetWeightWrapParams[]",
+        "name": "_executionParams",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "setTargetWeights",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "setToken",
+    "outputs": [
+      {
+        "internalType": "contract ISetToken",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "setValuer",
+    "outputs": [
+      {
+        "internalType": "contract ISetValuer",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IWrapModuleV2",
+        "name": "_wrapModule",
+        "type": "address"
+      }
+    ],
+    "name": "setWrapModule",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_targetAsset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_targetUnits",
+        "type": "uint256"
+      }
+    ],
+    "name": "unwrap",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_status",
+        "type": "bool"
+      }
+    ],
+    "name": "updateAnyoneCallable",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_callers",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bool[]",
+        "name": "_statuses",
+        "type": "bool[]"
+      }
+    ],
+    "name": "updateCallerStatus",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_targetAsset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_reserveUnits",
+        "type": "uint256"
+      }
+    ],
+    "name": "wrap",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "wrapModule",
+    "outputs": [
+      {
+        "internalType": "contract IWrapModuleV2",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

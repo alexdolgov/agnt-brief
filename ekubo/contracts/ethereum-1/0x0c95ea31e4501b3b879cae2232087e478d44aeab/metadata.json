@@ -1,0 +1,18 @@
+{
+  "address": "0x0c95ea31e4501b3b879cae2232087e478d44aeab",
+  "chain_id": 1,
+  "contract_name": "MEVResistRouter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 9999999,
+  "evm_version": "cancun",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T10:29:13.830Z"
+}

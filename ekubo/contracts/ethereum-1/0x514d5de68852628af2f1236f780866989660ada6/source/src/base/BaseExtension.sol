@@ -1,0 +1,58 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity =0.8.28;
+
+import {ICore, IExtension, UpdatePositionParameters} from "../interfaces/ICore.sol";
+import {CallPoints} from "../types/callPoints.sol";
+import {PoolKey} from "../types/poolKey.sol";
+import {Bounds} from "../types/positionKey.sol";
+import {SqrtRatio} from "../types/sqrtRatio.sol";
+import {UsesCore} from "./UsesCore.sol";
+
+abstract contract BaseExtension is UsesCore, IExtension {
+    error CallPointNotImplemented();
+
+    constructor(ICore core) UsesCore(core) {
+        if (_registerInConstructor()) core.registerExtension(getCallPoints());
+    }
+
+    function _registerInConstructor() internal pure virtual returns (bool) {
+        return true;
+    }
+
+    function getCallPoints() internal virtual returns (CallPoints memory);
+
+    function beforeInitializePool(address, PoolKey calldata, int32) external virtual {
+        revert CallPointNotImplemented();
+    }
+
+    function afterInitializePool(address, PoolKey calldata, int32, SqrtRatio) external virtual {
+        revert CallPointNotImplemented();
+    }
+
+    function beforeUpdatePosition(address, PoolKey memory, UpdatePositionParameters memory) external virtual {
+        revert CallPointNotImplemented();
+    }
+
+    function afterUpdatePosition(address, PoolKey memory, UpdatePositionParameters memory, int128, int128)
+        external
+        virtual
+    {
+        revert CallPointNotImplemented();
+    }
+
+    function beforeSwap(address, PoolKey memory, int128, bool, SqrtRatio, uint256) external virtual {
+        revert CallPointNotImplemented();
+    }
+
+    function afterSwap(address, PoolKey memory, int128, bool, SqrtRatio, uint256, int128, int128) external virtual {
+        revert CallPointNotImplemented();
+    }
+
+    function beforeCollectFees(address, PoolKey memory, bytes32, Bounds memory) external virtual {
+        revert CallPointNotImplemented();
+    }
+
+    function afterCollectFees(address, PoolKey memory, bytes32, Bounds memory, uint128, uint128) external virtual {
+        revert CallPointNotImplemented();
+    }
+}

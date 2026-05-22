@@ -1,0 +1,18 @@
+{
+  "address": "0x1be46c7a40906c19d91d07b3ae69ef5893268f25",
+  "chain_id": 42161,
+  "contract_name": "CamelotExchangeRouter",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T10:41:05.198Z"
+}

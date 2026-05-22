@@ -1,0 +1,17 @@
+{
+  "address": "0x925ab23bfd97fedbc2e41aed0e4057b2eaf26ee4",
+  "chain_id": 1,
+  "contract_name": "LiquidationBot",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T21:24:26.273Z"
+}

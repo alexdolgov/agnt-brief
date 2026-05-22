@@ -1,0 +1,44 @@
+[
+  {
+    "inputs": [],
+    "name": "FLASH_LOAN_FAILED",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TH_SAFE_APPROVE",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TH_SAFE_APPROVE_RESET",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TH_SAFE_TRANSFER_FAILED",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "params",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "flashLoanFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "receiveData",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

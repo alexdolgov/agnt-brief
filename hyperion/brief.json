@@ -1,0 +1,195 @@
+{
+  "schema_version": "2.0",
+  "project_key": "hyperion",
+  "generated_at": "2026-05-22T15:43:34.708Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 5,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 20984714.04112,
+    "tvl_usd": 20984714.04112,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://hyperion.xyz/",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-07",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 2,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 3
+    }
+  },
+  "topography": {
+    "project_purpose": "Hyperion is a decentralized exchange (DEX) protocol enabling trustless token swaps and liquidity provision. It facilitates peer-to-peer trading through automated market-making mechanisms.",
+    "relationship_narrative": "No product families or contracts are defined in the provided metadata, so no structural relationships can be described.",
+    "product_family_count": 0
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 1888,
+      "audit_key": "audit-1888",
+      "report_name": "[Report Link]()",
+      "report_url": "https://github.com/Hyperionxyz/audits/blob/main/Hyperion%20Audit%20Report.pdf",
+      "auditor": "MoveBit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1889,
+      "audit_key": "audit-1889",
+      "report_name": "[Report Link]()",
+      "report_url": "https://github.com/Hyperionxyz/audits/blob/main/ExVul%20Smart%20Contract%20Audit%20Report%20for%20Hyperionxyz%20Vaults.pdf",
+      "auditor": "ExVul",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1890,
+      "audit_key": "audit-1890",
+      "report_name": "Hyperion OFT Audit Report-2025-7-8.pdf",
+      "report_url": "https://github.com/Hyperionxyz/audits/blob/main/Hyperion%20OFT%20Audit%20Report-2025-7-8.pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1891,
+      "audit_key": "audit-1891",
+      "report_name": "Hyperion Token Audit Report.pdf",
+      "report_url": "https://github.com/Hyperionxyz/audits/blob/main/Hyperion%20Token%20Audit%20Report.pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1892,
+      "audit_key": "audit-1892",
+      "report_name": "LaunchPad Audit Report-2025-6-18.pdf",
+      "report_url": "https://github.com/Hyperionxyz/audits/blob/main/LaunchPad%20Audit%20Report-2025-6-18.pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 1888,
+        "report_name": "[Report Link]()"
+      },
+      {
+        "audit_id": 1889,
+        "report_name": "[Report Link]()"
+      },
+      {
+        "audit_id": 1890,
+        "report_name": "Hyperion OFT Audit Report-2025-7-8.pdf"
+      },
+      {
+        "audit_id": 1891,
+        "report_name": "Hyperion Token Audit Report.pdf"
+      },
+      {
+        "audit_id": 1892,
+        "report_name": "LaunchPad Audit Report-2025-6-18.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -7,6 +7,7 @@
 | [ankr](./ankr/) | $47.4 | 0.9% | $47.4 | active | 1 | 147 | 2026-05-22 |
 | [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [bitu-protocol](./bitu-protocol/) | $23.1M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
+| [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [blackhole](./blackhole/) | $29.9M | 31.1% | ? | unknown | 3 | 86 | 2026-05-22 |
 | [bonzo-finance](./bonzo-finance/) | $22.6M | 0.0% | ? | unknown | 4 | 0 | 2026-05-22 |
 | [camelot](./camelot/) | $6.4M | 17.3% | $391.9K | active | 1 | 127 | 2026-05-22 |
@@ -18,6 +19,7 @@
 | [goldfinger](./goldfinger/) | $23.9M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 11.1% | ? | active | 4 | 126 | 2026-05-21 |
+| [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
 | [immutable-zkevm](./immutable-zkevm/) | $29.2M | 18.2% | ? | active | 5 | 11 | 2026-05-22 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 13.7% | $428.8M | unknown | 8 | 125 | 2026-05-21 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
@@ -32,9 +34,11 @@
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 0.0% | $34.8K | declining | 0 | 98 | 2026-05-21 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 9 | 0 | 2026-05-22 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-22 |
+| [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 0 | 43 | 2026-05-22 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-05-22 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | unknown | 2 | 4 | 2026-05-22 |
 | [wrapped](./wrapped/) | $1.7M | 0.0% | $1.7M | active | 0 | 119 | 2026-05-22 |
+| [xsy](./xsy/) | $3.6M | 0.0% | $3.6M | active | 0 | 16 | 2026-05-22 |
 | [yei-finance](./yei-finance/) | $29.8M | 0.0% | ? | declining | 1 | 44 | 2026-05-22 |
 | [yieldnest](./yieldnest/) | $19.2M | 0.0% | $19.2M | declining | 0 | 89 | 2026-05-22 |
 | [zoomex](./zoomex/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |

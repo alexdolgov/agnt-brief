@@ -1,0 +1,18 @@
+{
+  "address": "0xe868427c366ba8f1037b20faafe7f3da3bfe8e68",
+  "chain_id": 42161,
+  "contract_name": "CamelotWhitelistedMultiLiquidityManager",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T15:49:32.073Z"
+}

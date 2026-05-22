@@ -1,0 +1,18 @@
+{
+  "address": "0x66025704d21c154cf1709ca759d4ddb62293b158",
+  "chain_id": 42161,
+  "contract_name": "Core",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T15:49:30.701Z"
+}

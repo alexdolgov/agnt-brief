@@ -1,0 +1,18 @@
+{
+  "address": "0x20d7e6d720e8dc3341e32c3375443969a08f4456",
+  "chain_id": 42161,
+  "contract_name": "ERC1155MaxSupplyMintable",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T15:49:29.906Z"
+}

@@ -1,0 +1,1658 @@
+{
+  "schema_version": "2.0",
+  "project_key": "looping-collective",
+  "generated_at": "2026-05-22T18:38:10.281Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "looping-collective",
+    "tier": 0,
+    "peak_tvl": 58724180,
+    "peak_date": "2025-06-17T00:00:00.000Z",
+    "tvl_30d_ago": 16233934,
+    "tvl_90d_ago": 16573510,
+    "tvl_current": 15297572,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 34218899,
+    "change_30d_pct": -5.767930311900985,
+    "change_90d_pct": -7.698658883966039,
+    "days_since_peak": 339,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 73.9501309341399
+  },
+  "summary": {
+    "total_contracts": 14,
+    "total_addresses": 94,
+    "unique_implementations": 14,
+    "total_deployments": 94,
+    "audited_contracts": 1,
+    "unaudited_contracts": 12,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 11,
+    "contracts_verified_by_bytecode": 1,
+    "contracts_unverified": 1,
+    "coverage_pct": 7.7,
+    "total_audits": 13,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 18116341,
+    "tvl_usd": 11811614.34192763,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 11607539.08,
+      "hyperliquid": 204075.26
+    },
+    "asd_usd": 11811614.34192763,
+    "website_url": "https://www.loopingcollective.org/",
+    "chains": [
+      "ethereum",
+      "hyperliquid"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2026-01",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 3,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 10
+    }
+  },
+  "topography": {
+    "project_purpose": "Looping Collective is a yield protocol that aggregates user deposits into vaults which deploy capital across DeFi strategies, including leveraged looping and integration with Hyperliquid. It offers multiple vault products with rate providers and oracles to optimize and report yields.",
+    "relationship_narrative": "The Vault Infrastructure family provides reusable UltraVault logic and rate providers used by other vault products. Wrapped HLP operates independently as an adapter to Hyperliquid, while Contract Addresses and Looped Hype are separate BoringVault-based products that do not share the UltraVault infrastructure.",
+    "product_family_count": 4
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x26573c17e2399c19f64e61bf295c85e150a95318",
+      "name": "UltraVault",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 11607539.082508128,
+      "is_proxy": true,
+      "impl_address": "0x597768db24cbc1d824b67d8edac5b9db15c4da81",
+      "impl_name": "UltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x26573c17e2399c19f64e61bf295c85e150a95318",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 4.23714716754388,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x36bdaefd92579da58bfe207e16dafa39835bbcb3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 811638.851822,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x472425cc95be779126afa4aa17980210d299914f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 2751544.0969909737,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x48bf9f7ef43799aac9d8647b78410db8f83a14c1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x546329a16dcedc46e93f7b03a65f49a84700bca1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 4635389.675672,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x597768db24cbc1d824b67d8edac5b9db15c4da81",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x599c419e42183e4553036e3775a4347af5afa67e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6860133c130478c132cdaf42507267df29a23832",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6b13ca53fa4c0bc8c0c26aa5c8860195978ca3c6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x776c938f5ab906b872cede6ad590bd5eb0b6c871",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x77e6492477ec87decd9f713eeff040de1986948a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x82157fe14852caecb8e7095a52423213347d391f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x88300e0041cc88bdb1404031b53aa68058ecd847",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8ecc0b419dfe3ae197bc96f2a03636b5e1be91db",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 178217.57221,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xaa3cb36be406e6cf208d218fd214e0f1a71e957d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 329774.15716064355,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbb876b2012af9ca8591723b4fe7f05ac50e6c1ec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 694030.8201173934,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc46efcc8e39c8f02425e367423871cd4633b7908",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 2206844.2391439504,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe66f6a37c807f71591854e22075b3a613b46abe2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xef8699b5f1e970af12c2971f88fe430b42410729",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfacaa225fcfcd8644a77f2cce833907537198ae9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 95.432244,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1359b05241ca5076c9f59605214f4f84114c0de8",
+      "name": "BoringVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Contract Addresses",
+      "tvl_usd": 204075.2594195031,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BoringVault",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x1359b05241ca5076c9f59605214f4f84114c0de8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1949.3731782380837,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x5748ae796ae46a4f1348a1693de4b50560485562",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 202125.88624126502,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x470bd109a24f608590d85fc1f5a4b6e625e8bdff",
+      "name": "AccountantWithRateProviders",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Contract Addresses",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AccountantWithRateProviders",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x470bd109a24f608590d85fc1f5a4b6e625e8bdff",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xce621a3ca6f72706678cff0572ae8d15e5f001c3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1962"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x228c44bb4885c6633f4b6c83f14622f37d5112e5",
+      "name": "AtomicQueueUCP",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Wrapped HLP",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AtomicQueueUCP",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x228c44bb4885c6633f4b6c83f14622f37d5112e5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x036afc9e3498ec863239e9e3f7eeb5af9c44484b",
+      "name": "HyperLiquidComposer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HyperLiquidComposer",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x036afc9e3498ec863239e9e3f7eeb5af9c44484b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xcb768e263fb1c62214e7cab4aa8d036d76dc59cc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+      "name": "HyperliquidExtension",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Wrapped HLP",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf555a12bffaef20cc201a74ae6513cb4aadb34b9",
+      "impl_name": "HyperliquidExtension",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xf555a12bffaef20cc201a74ae6513cb4aadb34b9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2720eaedca08e7ffd05afe8e142ded40c18a6d28",
+      "name": "PermissionedUltraVault",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x91fe2600045846b5ff691325b73e9370adec3b28",
+      "impl_name": "PermissionedUltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2720eaedca08e7ffd05afe8e142ded40c18a6d28",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x91fe2600045846b5ff691325b73e9370adec3b28",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1414c25624a80540cad83f123ff2e0be8925ffd9",
+      "name": "UltraFrontendHelper",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xda4939d25016f0ddf210a6445af59e584ca3f1df",
+      "impl_name": "UltraFrontendHelper",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1414c25624a80540cad83f123ff2e0be8925ffd9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2646382987b7425cfd9a3f3f97b92bd035808921",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2bf69e08b5706abf9abd2281f4760ecd4f7f3e5d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3054fc49b140a26f3a7349840d4a0c6b49817dc9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x481cac2ce2240663045d254ae3db0771072f2a71",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x722b390ba11d27910f38ef99fe30b4949efe4060",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7d159f0356632d3a1a9e794ce265a57164de32e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7de61ee170493248b19988a0e954b2c6855e8b98",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7f37fa970607e1c3dddccec4db763a8a4dd6d1c1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x93bffc921ea6b763fb7c78e22f0793fefc55571b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa2b51ca65e7ef8a46f2506d97953e96b25e5bb6f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa95d73a079c4841676014fbaf61e96496492a778",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xaea48cf2c693069babd5294f1d59b0131f114414",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc1bf23b548655c85d79e3dd372bc6e517fccbbfa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcb38585ebd37f47c52ed4c95f24cc96ae4367bd3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xda4939d25016f0ddf210a6445af59e584ca3f1df",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xea8baf8fde9f48e1d871c9e908e56e39e6bda2a9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf076c4d91c8f9eebbf4c43c07926157710544729",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf1b80769f132da9afda7b7252fc019cfacf362d2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x230f6426987535b2478a7b7470385590b5c172fb",
+      "name": "UltraVaultEthAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x5ccdf3ba212366ec4c888c70f12e5b1935c87212",
+      "impl_name": "UltraVaultEthAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x230f6426987535b2478a7b7470385590b5c172fb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5ccdf3ba212366ec4c888c70f12e5b1935c87212",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x767cafbf9cf58751d788d2dc8e25f8160d92b1e8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9aba33e99444550b8cb040ef625c473017d03122",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1467ce4ad75991303adda4c7ec8e553534246f1d",
+      "name": "UltraVaultOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UltraVaultOracle",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1467ce4ad75991303adda4c7ec8e553534246f1d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x199378c6ea4080948b2a123cb980c29312549032",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2c50ac2b52c747fc3df36000849b0ca5fcbc54aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3adf95df2d4586c16203f3418ddd522f6db848e6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5360803dfa8e73f86e3e39da9799d89e9cf53b07",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6217de15d37810549ddbcf7b34a01e1d41969526",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x74c4bb8819af0779638a6a108150085c9e87dc2b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbae89dc56874ed0f790ce9bc698674b2da947ebf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc9fa759a53aef9f173800f91c4f81dff95487308",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe8149f703198bff42d7d7bdebe48fe43ed351bac",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x152b3f3b2b7bcb00b8ca23136c743ad726c0f55e",
+      "name": "UltraVaultRateProvider",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xd8f8cc78ffdeebe852d35b98a6eabd5a65dcfa6d",
+      "impl_name": "UltraVaultRateProvider",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x152b3f3b2b7bcb00b8ca23136c743ad726c0f55e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x189e4ddf25ec21e3f98e180de3eeccfdcb06e767",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1bf8d6a5b98aaba6d5762f78bda3345a1b434828",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x25b8a339d23358b9d9d2e52981aca01ec3efbf0d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2f1b7cdc97bf10326e1b404700540283f3613cc5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x306269644da8b0e3aedab261ef7ad63a26b1637d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6d4f69dece3abd36a9c333f1d849b0413e5d401e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x740ed28e7314e65ceae39307f2a0e7dc8ba7e474",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x75df902b1d023c8728caf27700ba39ab849fda35",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7a2e3526c663e63b4f9e7b0f9098b584d6b8555b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8bd34774424e5fbe28c5cf9f18b2f62566f2a70e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x92e9f91be50656c1cb6867d3ea211750e027c484",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x94ee5265675db9d085823e28d432fb16b1a6b816",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa333c039e4bbf8417c0947425b6284f49931e39c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa392c6676ae58a30fd25c4a699a1fdc4297df87c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xad4b339966abb404763429a86646fe8dc6a17c38",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd8f8cc78ffdeebe852d35b98a6eabd5a65dcfa6d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfba0f791e650e5cebe63496332814e40c38381ae",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x340c9f6159abc2bdfcc0e2b9fe91d739006b41c1",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Wrapped HLP",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x340c9f6159abc2bdfcc0e2b9fe91d739006b41c1",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0ecb66d64a3c5cc592b72f135f6f317da42396b5",
+      "name": "VaultPriceManager",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultPriceManager",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0ecb66d64a3c5cc592b72f135f6f317da42396b5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0fcea1793e9f98f49bfe33d9f07307b3ff315f86",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2882a1addbdd5f092ee8c1eafcd852c03f58268a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x303ab4d8d4338738f1235487536d1bf01c8a1617",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x525ee8f4dd609b43867a2e5fe09b954fd1b41ad5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6bb07c857b71e8cc6a5afa7d39ab1f152eb2b311",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa5c6d7ceed9388bf517cadfb8e2b6c4e325a75a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd7fc7322751eaf0428dde32f9d32d51c0a864983",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdd508509deaa86e879e8d122c82ac9681a7eb640",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xff5e637726f089884372994c00476114a9e0a5b5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 1952,
+      "audit_key": "audit-1952",
+      "report_name": "0xmacro-boring-vault-arctic-0.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf",
+      "auditor": "0xMacro",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1953,
+      "audit_key": "audit-1953",
+      "report_name": "0xmacro-boring-vault-arctic-1.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-1.pdf",
+      "auditor": "0xMacro",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1954,
+      "audit_key": "audit-1954",
+      "report_name": "pashov-boring-vault.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1955,
+      "audit_key": "audit-1955",
+      "report_name": "pashov-hlp-controller:account.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hlp-controller%3Aaccount.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1956,
+      "audit_key": "audit-1956",
+      "report_name": "pashov-hyperlane.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hyperlane.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1957,
+      "audit_key": "audit-1957",
+      "report_name": "pashov-one-to-one-queue.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-one-to-one-queue.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1958,
+      "audit_key": "audit-1958",
+      "report_name": "pashov-predicate-freeze-supply-cap.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-predicate-freeze-supply-cap.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1959,
+      "audit_key": "audit-1959",
+      "report_name": "pashov-withdraw-queue.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-withdraw-queue.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1960,
+      "audit_key": "audit-1960",
+      "report_name": "spearbit-boring-vault-arctic-0.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1961,
+      "audit_key": "audit-1961",
+      "report_name": "zenith-one-to-one-queue.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-one-to-one-queue.pdf",
+      "auditor": "Zenith",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1962,
+      "audit_key": "audit-1962",
+      "report_name": "zenith-withdraw-queue.pdf",
+      "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-withdraw-queue.pdf",
+      "auditor": "Zenith",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AccountantWithRateProviders",
+        "CrossChainTellerBase",
+        "TellerWithMultiAssetSupport",
+        "WithdrawQueue"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1963,
+      "audit_key": "audit-1963",
+      "report_name": "v1_May_2025_ChainSecurity.pdf",
+      "report_url": "https://github.com/UltraYield/contracts/blob/main/audits/v1_May_2025_ChainSecurity.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1964,
+      "audit_key": "audit-1964",
+      "report_name": "v2_Sep_2025_Omniscia.pdf",
+      "report_url": "https://github.com/UltraYield/contracts/blob/main/audits/v2_Sep_2025_Omniscia.pdf",
+      "auditor": "Omniscia",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Zenith",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 7.7,
+      "latest_audit": "2026-01"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1359b05241ca5076c9f59605214f4f84114c0de8",
+      "name": "BoringVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 204075.2594195031,
+      "risk_note": "Verified native implementation with $204,075.26 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x036afc9e3498ec863239e9e3f7eeb5af9c44484b",
+      "name": "HyperLiquidComposer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1414c25624a80540cad83f123ff2e0be8925ffd9",
+      "name": "UltraFrontendHelper",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x230f6426987535b2478a7b7470385590b5c172fb",
+      "name": "UltraVaultEthAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1467ce4ad75991303adda4c7ec8e553534246f1d",
+      "name": "UltraVaultOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x152b3f3b2b7bcb00b8ca23136c743ad726c0f55e",
+      "name": "UltraVaultRateProvider",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0ecb66d64a3c5cc592b72f135f6f317da42396b5",
+      "name": "VaultPriceManager",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 8,
+    "upstream": 0,
+    "standard_library": 2,
+    "needs_review": 4
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 2
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 1952,
+        "report_name": "0xmacro-boring-vault-arctic-0.pdf"
+      },
+      {
+        "audit_id": 1953,
+        "report_name": "0xmacro-boring-vault-arctic-1.pdf"
+      },
+      {
+        "audit_id": 1954,
+        "report_name": "pashov-boring-vault.pdf"
+      },
+      {
+        "audit_id": 1955,
+        "report_name": "pashov-hlp-controller:account.pdf"
+      },
+      {
+        "audit_id": 1956,
+        "report_name": "pashov-hyperlane.pdf"
+      },
+      {
+        "audit_id": 1957,
+        "report_name": "pashov-one-to-one-queue.pdf"
+      },
+      {
+        "audit_id": 1958,
+        "report_name": "pashov-predicate-freeze-supply-cap.pdf"
+      },
+      {
+        "audit_id": 1959,
+        "report_name": "pashov-withdraw-queue.pdf"
+      },
+      {
+        "audit_id": 1960,
+        "report_name": "spearbit-boring-vault-arctic-0.pdf"
+      },
+      {
+        "audit_id": 1961,
+        "report_name": "zenith-one-to-one-queue.pdf"
+      },
+      {
+        "audit_id": 1963,
+        "report_name": "v1_May_2025_ChainSecurity.pdf"
+      },
+      {
+        "audit_id": 1964,
+        "report_name": "v2_Sep_2025_Omniscia.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

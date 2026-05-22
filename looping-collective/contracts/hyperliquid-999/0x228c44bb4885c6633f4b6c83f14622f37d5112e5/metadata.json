@@ -1,0 +1,17 @@
+{
+  "address": "0x228c44bb4885c6633f4b6c83f14622f37d5112e5",
+  "chain_id": 999,
+  "contract_name": "AtomicQueueUCP",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000006e6a79c033ebee27c80444daca7f9aed8bb060450000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000100000000000000000000000054563d1ddb55b029d6d7acd89c633af746823092",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T18:38:38.041Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x0ecb66d64a3c5cc592b72f135f6f317da42396b5",
+  "chain_id": 1,
+  "contract_name": "VaultPriceManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T18:38:37.868Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x7fc6d48e6e8e8b9505c171325539c651bf1d51d4",
+  "chain_id": 43114,
+  "contract_name": "WAVAX",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T20:17:01.002Z"
+}

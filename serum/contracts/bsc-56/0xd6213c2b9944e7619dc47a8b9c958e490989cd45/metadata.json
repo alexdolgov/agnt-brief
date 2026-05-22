@@ -1,0 +1,17 @@
+{
+  "address": "0xd6213c2b9944e7619dc47a8b9c958e490989cd45",
+  "chain_id": 56,
+  "contract_name": "PMOTNftPromo",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": true,
+  "runs": 1500,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "000000000000000000000000c46889ec6d0deaffbff6545621f82a3e6e0d73a5000000000000000000000000f6583d313a3a74a9dcbf4989bc73b9771da29a0c0000000000000000000000004ba1a141603a39d846afc5468ff6c6309041a830",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T20:27:48.629Z"
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0",
+  "project_key": "morph-bridge",
+  "generated_at": "2026-05-22T20:06:40.238Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "morph-bridge",
+    "tier": 0,
+    "peak_tvl": 37394901,
+    "peak_date": "2025-09-19T00:00:00.000Z",
+    "tvl_30d_ago": 16815112,
+    "tvl_90d_ago": 13172071,
+    "tvl_current": 15739540,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 25028657,
+    "change_30d_pct": -6.396460517182401,
+    "change_90d_pct": 19.4917640513781,
+    "days_since_peak": 245,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 57.90993001960347
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 15793035.39948,
+    "tvl_usd": 15793035.39948,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://bridge.morphl2.io/",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Morph Bridge enables cross-chain messaging and asset transfers between Ethereum and the Morph Layer 2 network, using a secure messenger contract to relay messages and facilitate bridging operations.",
+    "relationship_narrative": "The single product family relies on a proxy-upgradable L1CrossDomainMessenger contract, which serves as the core bridge component; no additional families or shared infrastructure are present.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xdc71366effa760804dcfc3edf87fa2a6f1623304",
+      "name": "L1CrossDomainMessenger",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Morph Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0cc37d5239f9027a1269f53d83c73084d538f3a9",
+      "impl_name": "L1CrossDomainMessenger",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdc71366effa760804dcfc3edf87fa2a6f1623304",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

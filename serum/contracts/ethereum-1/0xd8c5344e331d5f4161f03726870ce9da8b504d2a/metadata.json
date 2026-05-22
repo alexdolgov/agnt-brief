@@ -1,0 +1,18 @@
+{
+  "address": "0xd8c5344e331d5f4161f03726870ce9da8b504d2a",
+  "chain_id": 1,
+  "contract_name": "Controller",
+  "compiler_version": "v0.5.15+commit.6a57276f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T20:27:48.655Z"
+}

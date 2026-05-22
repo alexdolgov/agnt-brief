@@ -1,0 +1,17 @@
+{
+  "address": "0xee3f9add26de00fcc02d4bc0e6d0dbee0e3c25e6",
+  "chain_id": 42161,
+  "contract_name": "WithdrawController",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T20:09:42.547Z"
+}

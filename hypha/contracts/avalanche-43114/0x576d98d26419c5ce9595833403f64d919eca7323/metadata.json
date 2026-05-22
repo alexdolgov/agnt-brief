@@ -1,0 +1,18 @@
+{
+  "address": "0x576d98d26419c5ce9595833403f64d919eca7323",
+  "chain_id": 43114,
+  "contract_name": "TokenggAVAX",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "london",
+  "license": "AGPL-3.0-only, GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T20:16:59.815Z"
+}

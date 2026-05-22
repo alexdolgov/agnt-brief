@@ -1,0 +1,18 @@
+{
+  "address": "0x0266a47314472f295fdb5bb36f784093e69929bc",
+  "chain_id": 42161,
+  "contract_name": "Hasher",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 66,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T16:39:06.502Z"
+}

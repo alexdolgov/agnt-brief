@@ -1,0 +1,18 @@
+{
+  "address": "0x09f62d9f9fe489c2cd460d7be8e78d4ace0a8e60",
+  "chain_id": 1,
+  "contract_name": "L1DepositHelper",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "AGPL-3.0-only, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T16:39:04.553Z"
+}

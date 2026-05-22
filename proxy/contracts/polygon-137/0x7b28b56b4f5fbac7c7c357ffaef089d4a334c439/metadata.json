@@ -1,0 +1,17 @@
+{
+  "address": "0x7b28b56b4f5fbac7c7c357ffaef089d4a334c439",
+  "chain_id": 137,
+  "contract_name": "BTCpx",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T16:13:53.513Z"
+}

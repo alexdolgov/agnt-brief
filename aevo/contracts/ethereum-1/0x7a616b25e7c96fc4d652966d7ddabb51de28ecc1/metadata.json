@@ -1,0 +1,18 @@
+{
+  "address": "0x7a616b25e7c96fc4d652966d7ddabb51de28ecc1",
+  "chain_id": 1,
+  "contract_name": "AddressManager",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T16:39:08.666Z"
+}

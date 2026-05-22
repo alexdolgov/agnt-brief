@@ -3,6 +3,7 @@
 | Project | TVL | Coverage | ASD | Lifecycle | Audits | Contracts | Updated |
 |---|---|---|---|---|---|---|---|
 | [across](./across/) | $28.1M | 0.0% | $28.1M | unknown | 0 | 143 | 2026-05-22 |
+| [aevo](./aevo/) | $98.5M | 9.2% | $1.7M | active | 17 | 331 | 2026-05-22 |
 | [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 2 | 284 | 2026-05-22 |
 | [ankr](./ankr/) | $47.4 | 0.9% | $47.4 | active | 1 | 147 | 2026-05-22 |
 | [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
@@ -30,7 +31,9 @@
 | [mezo-bridge](./mezo-bridge/) | $203.9M | 0.0% | $203.9M | declining | 0 | 138 | 2026-05-22 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-05-22 |
 | [okcoin](./okcoin/) | $26.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
+| [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |
+| [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 0.0% | $34.8K | declining | 0 | 98 | 2026-05-21 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 9 | 0 | 2026-05-22 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-22 |

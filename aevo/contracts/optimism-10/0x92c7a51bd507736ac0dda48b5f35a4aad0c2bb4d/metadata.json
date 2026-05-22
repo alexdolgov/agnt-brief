@@ -1,0 +1,18 @@
+{
+  "address": "0x92c7a51bd507736ac0dda48b5f35a4aad0c2bb4d",
+  "chain_id": 10,
+  "contract_name": "Easter",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": "GPL-3.0-only",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T16:39:09.941Z"
+}

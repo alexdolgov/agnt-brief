@@ -1,0 +1,16 @@
+# PRXYTreasury
+
+| Field | Value |
+|---|---|
+| Chain | polygon (137) |
+| Address | `0x0a1c0672f8a2b9b281c0b24752891e4e6d8a2cb0` |
+| Role | operational_periphery |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 21 (polygon [`0x0a1c0672f8a2b9b281c0b24752891e4e6d8a2cb0`](../0x0a1c0672f8a2b9b281c0b24752891e4e6d8a2cb0/); polygon `0x0f221547f00c9baf802bae4f479facd1c485e86a`; polygon `0x1c08a551945da801dff1c6ea1910763394cafc30`; polygon `0x1ea123b3cd70b569c2d0bfa81bcce45fb1ea1af2`; polygon `0x1f34332cce00a661668d0c3f02a9d05a0cc09945`; polygon `0x2da6b737fedd61ddd706953292f6248a452755af`; polygon `0x3157f71266e788e791a2de3673263bb8088d3cf4`; polygon `0x39b3803ed6b4fc53a6e02c7eba41e564afdfd202`; polygon `0x45f1c555aee42416b2bb0f159a5797c4aef9d85d`; polygon `0x6e48d5e055469dd4bb24c9c74e93a282a50a88ba`; polygon `0x7f0b5efebc28f9965c2e16d1eab01ac5aa2061ca`; polygon `0x950e66b23282439cf0a484c6d3309383c91685a7`; polygon `0xa1d3f5e6c15df0f68ffb07268e84a7b7fe751550`; polygon `0xa6b2787bd94963b49c8be7083f7dfbf4c84cec52`; polygon `0xb9fd567b27199cdf3baf4c194279392d837b81de`; polygon `0xd88b73568a43f544be7f023325b7fc806d67a4d1`; polygon `0xdbbb159a4401703063c1ea3d92ac0d21edf03c53`; polygon `0xedc51a555faf0c19b695778a81dd9991616380a8`; polygon `0xf6ef1c9ff7ace078c956db128d17e3d7dc703baf`; polygon `0xf77ce41391f1fae947d973f11caeea296ae73e55`; polygon `0xffc37301a09196f073d94c46b3cac7f97eb2b974`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

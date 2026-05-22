@@ -1,0 +1,18 @@
+{
+  "address": "0x4e4cba3779d56386ed43631b4dcd6d8eacecbcf6",
+  "chain_id": 1,
+  "contract_name": "SortitionPool",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T15:36:12.298Z"
+}

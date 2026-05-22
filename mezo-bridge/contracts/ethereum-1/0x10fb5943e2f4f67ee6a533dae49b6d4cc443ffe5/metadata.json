@@ -1,0 +1,18 @@
+{
+  "address": "0x10fb5943e2f4f67ee6a533dae49b6d4cc443ffe5",
+  "chain_id": 1,
+  "contract_name": "WalletCoordinator",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "london",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 58,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T15:36:08.923Z"
+}

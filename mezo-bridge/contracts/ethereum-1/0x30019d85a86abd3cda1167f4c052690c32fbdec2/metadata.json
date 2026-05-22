@@ -1,0 +1,18 @@
+{
+  "address": "0x30019d85a86abd3cda1167f4c052690c32fbdec2",
+  "chain_id": 1,
+  "contract_name": "WalletProposalValidator",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "london",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 57,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T15:36:11.185Z"
+}

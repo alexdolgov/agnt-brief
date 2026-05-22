@@ -1,0 +1,735 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deniedForRole",
+        "type": "uint256"
+      }
+    ],
+    "name": "AccessDenied",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "InvalidPoolManagerId",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_length",
+        "type": "uint256"
+      }
+    ],
+    "name": "PoolIdsExist",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "PoolManagerIdExist",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "poolManagerId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "userId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "metaHash",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "country",
+            "type": "string"
+          },
+          {
+            "internalType": "uint64",
+            "name": "onBoardTime",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "enum PoolManagerLib.KYBStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string[]",
+            "name": "poolIds",
+            "type": "string[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "paymentIds",
+            "type": "string[]"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct PoolManagerLib.PoolManager",
+        "name": "poolManager",
+        "type": "tuple"
+      }
+    ],
+    "name": "CreatePoolManagerEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "DeletePoolManagerEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolManagerId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "prevCountry",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "newCountry",
+        "type": "string"
+      }
+    ],
+    "name": "UpdatePoolManagerCountryEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolManagerId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "prevHash",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "newHash",
+        "type": "string"
+      }
+    ],
+    "name": "UpdatePoolManagerHashEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolManagerId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum PoolManagerLib.KYBStatus",
+        "name": "prevStatus",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum PoolManagerLib.KYBStatus",
+        "name": "newStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "UpdatePoolManagerKYBEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolManagerId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "prevTime",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newTime",
+        "type": "uint64"
+      }
+    ],
+    "name": "UpdatePoolManagerOnBoardTimeEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolManagerId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "prevWallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newWallet",
+        "type": "address"
+      }
+    ],
+    "name": "UpdatePoolManagerWalletEvent",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_userId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_metaHash",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_country",
+        "type": "string"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_onBoardTime",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "_wallet",
+        "type": "address"
+      },
+      {
+        "internalType": "enum PoolManagerLib.KYBStatus",
+        "name": "_status",
+        "type": "uint8"
+      }
+    ],
+    "name": "createPoolManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "deletePoolManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "getPoolManager",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "poolManagerId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "userId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "metaHash",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "country",
+            "type": "string"
+          },
+          {
+            "internalType": "uint64",
+            "name": "onBoardTime",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address",
+            "name": "wallet",
+            "type": "address"
+          },
+          {
+            "internalType": "enum PoolManagerLib.KYBStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string[]",
+            "name": "poolIds",
+            "type": "string[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "paymentIds",
+            "type": "string[]"
+          }
+        ],
+        "internalType": "struct PoolManagerLib.PoolManager",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "getPoolManagerCountry",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "getPoolManagerKYBStatus",
+    "outputs": [
+      {
+        "internalType": "enum PoolManagerLib.KYBStatus",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "getPoolManagerMetaHash",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "getPoolManagerMetadataURI",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "getPoolManagerOnBoardTime",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPoolManagerPaymentId",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "getPoolManagerPaymentIdsLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPoolManagerPoolId",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "getPoolManagerPoolIds",
+    "outputs": [
+      {
+        "internalType": "string[]",
+        "name": "",
+        "type": "string[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "getPoolManagerPoolIdsLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "getPoolManagerUserId",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "getPoolManagerWallet",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      }
+    ],
+    "name": "removePoolManagerPaymentId",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_paymentIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "removePoolManagerPaymentIdByIndex",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_country",
+        "type": "string"
+      }
+    ],
+    "name": "updatePoolManagerCountry",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_hash",
+        "type": "string"
+      }
+    ],
+    "name": "updatePoolManagerHash",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "enum PoolManagerLib.KYBStatus",
+        "name": "_status",
+        "type": "uint8"
+      }
+    ],
+    "name": "updatePoolManagerKYB",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_onBoardTime",
+        "type": "uint64"
+      }
+    ],
+    "name": "updatePoolManagerOnBoardTime",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "updatePoolManagerWallet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

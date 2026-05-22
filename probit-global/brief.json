@@ -1,0 +1,180 @@
+{
+  "schema_version": "2.0",
+  "project_key": "probit-global",
+  "generated_at": "2026-05-22T23:03:42.806Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "probit-global",
+    "tier": 0,
+    "peak_tvl": 25734997,
+    "peak_date": "2024-12-04T00:00:00.000Z",
+    "tvl_30d_ago": 10898677,
+    "tvl_90d_ago": 6822388,
+    "tvl_current": 12452771,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 9184913,
+    "change_30d_pct": 14.259473879260758,
+    "change_90d_pct": 82.52803856948623,
+    "days_since_peak": 534,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 51.61153117678623
+  },
+  "summary": {
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 3,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 12651115.586149998,
+    "tvl_usd": 12651115.586149998,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.probit.com",
+    "chains": [
+      "fantom"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "ProBit Global is a centralized exchange (CEX) that provides trading services for digital assets. The contracts listed are likely related to token custody, exchange operations, or liquidity management on the Fantom chain.",
+    "relationship_narrative": "All contracts belong to a single product family with no explicit internal relationships or shared infrastructure identified from the available data.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0x06ffd89a07b078d4a1a1d9947a28e95825f9c35c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "ProBit Global",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x06ffd89a07b078d4a1a1d9947a28e95825f9c35c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0x813e711993fc8ec29e9e45fb3a7e47f8c33ca64f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "ProBit Global",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x813e711993fc8ec29e9e45fb3a7e47f8c33ca64f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0xc78600a92caf0fcf6990e7ea7381bf4297054f86",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "ProBit Global",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0xc78600a92caf0fcf6990e7ea7381bf4297054f86",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 3
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

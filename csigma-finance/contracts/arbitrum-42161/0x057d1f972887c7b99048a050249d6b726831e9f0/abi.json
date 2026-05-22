@@ -1,0 +1,973 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deniedForRole",
+        "type": "uint256"
+      }
+    ],
+    "name": "AccessDenied",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "CreditPoolIdExist",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "poolId",
+        "type": "string"
+      }
+    ],
+    "name": "InvalidPoolId",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_length",
+        "type": "uint256"
+      }
+    ],
+    "name": "LenderIdsExist",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotCreditPoolCall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "NotVerifiedPoolManager",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "PoolIsNotActive",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "creditPoolId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "poolManagerId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "metaHash",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowingAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "inceptionTime",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "expiryTime",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint32",
+            "name": "curingPeriod",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum CreditPoolLib.CreditRatings",
+            "name": "ratings",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint16",
+            "name": "bindingIndex",
+            "type": "uint16"
+          },
+          {
+            "internalType": "enum CreditPoolLib.CreditPoolStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string[]",
+            "name": "lenderIds",
+            "type": "string[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "paymentIds",
+            "type": "string[]"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct CreditPoolLib.CreditPool",
+        "name": "creditPool",
+        "type": "tuple"
+      }
+    ],
+    "name": "CreateCreditPoolEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolId",
+        "type": "string"
+      }
+    ],
+    "name": "DeleteCreditPoolEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "prevAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateCreditPoolBorrowingAmountEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "prevPeriod",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "newPeriod",
+        "type": "uint32"
+      }
+    ],
+    "name": "UpdateCreditPoolCuringPeriodEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "prevTime",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newTime",
+        "type": "uint64"
+      }
+    ],
+    "name": "UpdateCreditPoolExpiryTimeEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "prevHash",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "newHash",
+        "type": "string"
+      }
+    ],
+    "name": "UpdateCreditPoolHashEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "prevTime",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newTime",
+        "type": "uint64"
+      }
+    ],
+    "name": "UpdateCreditPoolInceptionTimeEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum CreditPoolLib.CreditPoolStatus",
+        "name": "prevStatus",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum CreditPoolLib.CreditPoolStatus",
+        "name": "newStatus",
+        "type": "uint8"
+      }
+    ],
+    "name": "UpdateCreditPoolStatusEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum CreditPoolLib.CreditRatings",
+        "name": "prevRatings",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum CreditPoolLib.CreditRatings",
+        "name": "newRatings",
+        "type": "uint8"
+      }
+    ],
+    "name": "UpdateCreditRatingsEvent",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_creditPoolId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_metaHash",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_borrowingAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_inceptionTime",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_expiryTime",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_curingPeriod",
+        "type": "uint32"
+      },
+      {
+        "internalType": "enum CreditPoolLib.CreditPoolStatus",
+        "name": "_status",
+        "type": "uint8"
+      }
+    ],
+    "name": "createCreditPool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_creditPoolId",
+        "type": "string"
+      }
+    ],
+    "name": "deleteCreditPool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPool",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "creditPoolId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "poolManagerId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "metaHash",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowingAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "inceptionTime",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "expiryTime",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint32",
+            "name": "curingPeriod",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum CreditPoolLib.CreditRatings",
+            "name": "ratings",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint16",
+            "name": "bindingIndex",
+            "type": "uint16"
+          },
+          {
+            "internalType": "enum CreditPoolLib.CreditPoolStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string[]",
+            "name": "lenderIds",
+            "type": "string[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "paymentIds",
+            "type": "string[]"
+          }
+        ],
+        "internalType": "struct CreditPoolLib.CreditPool",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolBindingIndex",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolBorrowingAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolCuringPeriod",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolExpiryTime",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolInceptionTime",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getCreditPoolLenderId",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolLenderIdsLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolManagerId",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolMetaHash",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolMetadataURI",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getCreditPoolPaymentId",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolPaymentIdsLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolRatings",
+    "outputs": [
+      {
+        "internalType": "enum CreditPoolLib.CreditRatings",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getCreditPoolStatus",
+    "outputs": [
+      {
+        "internalType": "enum CreditPoolLib.CreditPoolStatus",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "getLenderBinding",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isBound",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint16",
+            "name": "lenderIndexInPool",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "poolIndexInLender",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct CreditPoolLib.Binding",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_creditPoolId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      }
+    ],
+    "name": "removeCreditPoolPaymentId",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_creditPoolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_paymentIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "removeCreditPoolPaymentIdByIndex",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_creditPoolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateCreditPoolBorrowingAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_creditPoolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_curingPeriod",
+        "type": "uint32"
+      }
+    ],
+    "name": "updateCreditPoolCuringPeriod",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_creditPoolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_time",
+        "type": "uint64"
+      }
+    ],
+    "name": "updateCreditPoolExpiryTime",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_creditPoolId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_hash",
+        "type": "string"
+      }
+    ],
+    "name": "updateCreditPoolHash",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_creditPoolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_time",
+        "type": "uint64"
+      }
+    ],
+    "name": "updateCreditPoolInceptionTime",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_creditPoolId",
+        "type": "string"
+      },
+      {
+        "internalType": "enum CreditPoolLib.CreditPoolStatus",
+        "name": "_status",
+        "type": "uint8"
+      }
+    ],
+    "name": "updateCreditPoolStatus",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_creditPoolId",
+        "type": "string"
+      },
+      {
+        "internalType": "enum CreditPoolLib.CreditRatings",
+        "name": "_ratings",
+        "type": "uint8"
+      }
+    ],
+    "name": "updateCreditRatings",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

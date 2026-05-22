@@ -1,0 +1,337 @@
+{
+  "schema_version": "2.0",
+  "project_key": "goose",
+  "generated_at": "2026-05-22T23:01:45.617Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "goose",
+    "tier": 0,
+    "peak_tvl": 13378642,
+    "peak_date": "2025-01-18T00:00:00.000Z",
+    "tvl_30d_ago": 12838826,
+    "tvl_90d_ago": 12815323,
+    "tvl_current": 12796301,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 12821993,
+    "change_30d_pct": -0.3312218734018204,
+    "change_90d_pct": -0.14843168603709794,
+    "days_since_peak": 489,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 4.352766147715141
+  },
+  "summary": {
+    "total_contracts": 7,
+    "total_addresses": 7,
+    "unique_implementations": 7,
+    "total_deployments": 7,
+    "audited_contracts": 0,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 3,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 4,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 12803523.47362,
+    "tvl_usd": 7.867673,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 7.87
+    },
+    "asd_usd": 7.867673,
+    "website_url": null,
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Goose is a CeDeFi protocol that combines centralized and decentralized finance elements to offer yield-bearing vaults. It allows users to deposit assets into vaults that generate returns through managed strategies.",
+    "relationship_narrative": "The USDVault relies on DataStorage for configuration and state management, while the unnamed contract likely serves as an access control or factory component.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe8a01d8dac4af19ec7a22cf87f3d141ce6e7e9fb",
+      "name": "USDVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Goose",
+      "tvl_usd": 7.867673,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "USDVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe8a01d8dac4af19ec7a22cf87f3d141ce6e7e9fb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 7.867673,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x857ab0b4f236f7dd7e5ac5f96c0bbebf230c2d3b",
+      "name": "DataStorage",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Goose",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DataStorage",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x857ab0b4f236f7dd7e5ac5f96c0bbebf230c2d3b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0874f961178879cdbde3500544c49f864f232899",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Goose",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0874f961178879cdbde3500544c49f864f232899",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7da1ea975cfa94c230fe527b9d36a62a77448ef3",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7da1ea975cfa94c230fe527b9d36a62a77448ef3",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa988bfe90492d701069702321e319628c9ae6e3f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa988bfe90492d701069702321e319628c9ae6e3f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf00a143341867b218d3a2c026223f301d4b328de",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf00a143341867b218d3a2c026223f301d4b328de",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x739a8f9cb6ec2b79006554dbc3a42fbf75303d18",
+      "name": "VaultFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x739a8f9cb6ec2b79006554dbc3a42fbf75303d18",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe8a01d8dac4af19ec7a22cf87f3d141ce6e7e9fb",
+      "name": "USDVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 7.867673,
+      "risk_note": "Verified native implementation with $7.87 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x857ab0b4f236f7dd7e5ac5f96c0bbebf230c2d3b",
+      "name": "DataStorage",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x739a8f9cb6ec2b79006554dbc3a42fbf75303d18",
+      "name": "VaultFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 3,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 4
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

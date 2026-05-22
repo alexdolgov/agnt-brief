@@ -20,6 +20,7 @@
 | [camelot](./camelot/) | $6.4M | 17.3% | $391.9K | active | 1 | 127 | 2026-05-22 |
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [charm-finance](./charm-finance/) | $2.2M | 66.7% | ? | unknown | 5 | 7 | 2026-05-22 |
+| [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-05-22 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-05-22 |
 | [dxsale](./dxsale/) | $26.8M | 0.0% | ? | active | 0 | 353 | 2026-05-22 |
 | [egas-swap](./egas-swap/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -29,6 +30,7 @@
 | [fulcrom](./fulcrom/) | $13.5M | 0.0% | ? | active | 0 | 80 | 2026-05-22 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-05-22 |
 | [goldfinger](./goldfinger/) | $23.9M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
+| [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 0 | 7 | 2026-05-22 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 11.1% | ? | active | 4 | 126 | 2026-05-21 |
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
@@ -59,6 +61,7 @@
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
 | [pnetwork](./pnetwork/) | $1.8M | 0.0% | $1.8M | declining | 0 | 355 | 2026-05-22 |
 | [predict-fun](./predict-fun/) | $1.5M | 8.0% | $1.5M | unknown | 9 | 40 | 2026-05-22 |
+| [probit-global](./probit-global/) | $12.7M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | unknown | 0 | 2 | 2026-05-22 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |

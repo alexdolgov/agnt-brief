@@ -1,0 +1,1985 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_coupon",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidInput",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "LenderIdExist",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "LenderIdNotExist",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "PaymentIdExist",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "PoolIdExist",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_id",
+        "type": "string"
+      }
+    ],
+    "name": "PoolIdNotExist",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "previousAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_oldOwner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "AdminTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "beacon",
+        "type": "address"
+      }
+    ],
+    "name": "BeaconUpgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "CreateManagerAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "CreateManagerRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "EditManagerAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "EditManagerRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_userId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_metaHash",
+        "type": "string"
+      }
+    ],
+    "name": "LenderAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_principal",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_coupon",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum CsigmaPDNv1_1.PaymentType",
+        "name": "_paymentType",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "_timeStamp",
+        "type": "uint64"
+      }
+    ],
+    "name": "PaymentAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_metaHash",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "_ratings",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_inceptionTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_expiryTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_poolSize",
+        "type": "uint256"
+      }
+    ],
+    "name": "PoolAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Unpaused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_oldMetaHash",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_newMetaHash",
+        "type": "string"
+      }
+    ],
+    "name": "UpdatedLenderMetaHash",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_oldTotalInvested",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_newTotalInvested",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdatedLenderTotalInvested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_oldTotalReceived",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_newTotalReceived",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdatedLenderTotalReceived",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_oldUserId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_newUserId",
+        "type": "string"
+      }
+    ],
+    "name": "UpdatedLenderUserId",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_oldCoupon",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_newCoupon",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdatedPaymentCoupon",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_oldLenderId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_newLenderId",
+        "type": "string"
+      }
+    ],
+    "name": "UpdatedPaymentLenderId",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_oldPoolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_newPoolId",
+        "type": "string"
+      }
+    ],
+    "name": "UpdatedPaymentPoolId",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_oldPrincipal",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_newPrincipal",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdatedPaymentPrincipal",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "_oldTimeStamp",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "_newTimeStamp",
+        "type": "uint64"
+      }
+    ],
+    "name": "UpdatedPaymentTimeStamp",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum CsigmaPDNv1_1.PaymentType",
+        "name": "_oldPaymentType",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum CsigmaPDNv1_1.PaymentType",
+        "name": "_newPaymentType",
+        "type": "uint8"
+      }
+    ],
+    "name": "UpdatedPaymentType",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_oldExpiryTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_newExpiryTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdatedPoolExpiryTime",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_oldInceptionTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_newInceptionTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdatedPoolInceptionTime",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_oldPoolManagerId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_newPoolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "UpdatedPoolManagerId",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_oldMetaHash",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_newMetaHash",
+        "type": "string"
+      }
+    ],
+    "name": "UpdatedPoolMetaHash",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "_oldRatings",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "_newRatings",
+        "type": "uint8"
+      }
+    ],
+    "name": "UpdatedPoolRatings",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_oldPoolSize",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_newPoolSize",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdatedPoolSize",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "UpgraderAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "UpgraderRemoved",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ROLE_CREATE_MANAGER",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ROLE_EDIT_MANAGER",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ROLE_UPGRADE_MANAGER",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "addCreateManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "addEditManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_timeStamp",
+        "type": "uint64"
+      }
+    ],
+    "name": "addFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "paymentId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "lenderId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "poolId",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "coupon",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum CsigmaPDNv1_1.PaymentType",
+            "name": "paymentType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint64",
+            "name": "timeStamp",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct CsigmaPDNv1_1.PaymentBatch[]",
+        "name": "_paymentBatch",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "addFeeBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_principal",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_coupon",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum CsigmaPDNv1_1.PaymentType",
+        "name": "_paymentType",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_timeStamp",
+        "type": "uint64"
+      }
+    ],
+    "name": "addPayment",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "paymentId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "lenderId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "poolId",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "coupon",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum CsigmaPDNv1_1.PaymentType",
+            "name": "paymentType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint64",
+            "name": "timeStamp",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct CsigmaPDNv1_1.PaymentBatch[]",
+        "name": "_paymentBatch",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "addPaymentBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "addUpgradeManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_userId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_metaHash",
+        "type": "string"
+      }
+    ],
+    "name": "createLender",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "lenderId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "userId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "metaHash",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct CsigmaPDNv1_1.LenderBatch[]",
+        "name": "_lenderBatch",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "createLenderBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_metaHash",
+        "type": "string"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_ratings",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_inceptionTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_expiryTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_poolSize",
+        "type": "uint256"
+      }
+    ],
+    "name": "createPool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "poolId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "poolManagerId",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "metaHash",
+            "type": "string"
+          },
+          {
+            "internalType": "uint8",
+            "name": "ratings",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inceptionTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiryTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolSize",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct CsigmaPDNv1_1.PoolBatch[]",
+        "name": "_poolBatch",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "createPoolBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_createManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_upgradeManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_editManager",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "isCreateManager",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "isUpgradeManager",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "lenders",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "userId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "metaHash",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalInvested",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalReceived",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "paused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "payments",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "lenderId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "principal",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "coupon",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum CsigmaPDNv1_1.PaymentType",
+        "name": "paymentType",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint64",
+        "name": "timeStamp",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "pools",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "poolManagerId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "metaHash",
+        "type": "string"
+      },
+      {
+        "internalType": "uint8",
+        "name": "ratings",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inceptionTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expiryTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "poolSize",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "investmentReceived",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalPayment",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "removeCreateManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "removeEditManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "removeUpgradeManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unpause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_metaHash",
+        "type": "string"
+      }
+    ],
+    "name": "updateLenderMetaHash",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_totalInvested",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateLenderTotalInvested",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_totalReceived",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateLenderTotalReceived",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_userId",
+        "type": "string"
+      }
+    ],
+    "name": "updateLenderUserId",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_coupon",
+        "type": "uint256"
+      }
+    ],
+    "name": "updatePaymentCoupon",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_lenderId",
+        "type": "string"
+      }
+    ],
+    "name": "updatePaymentLenderId",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      }
+    ],
+    "name": "updatePaymentPoolId",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_principal",
+        "type": "uint256"
+      }
+    ],
+    "name": "updatePaymentPrincipal",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_timeStamp",
+        "type": "uint64"
+      }
+    ],
+    "name": "updatePaymentTimeStamp",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_paymentId",
+        "type": "string"
+      },
+      {
+        "internalType": "enum CsigmaPDNv1_1.PaymentType",
+        "name": "_paymentType",
+        "type": "uint8"
+      }
+    ],
+    "name": "updatePaymentType",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_expiryTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "updatePoolExpiryTime",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_inceptionTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "updatePoolInceptionTime",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_poolManagerId",
+        "type": "string"
+      }
+    ],
+    "name": "updatePoolManagerId",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_metaHash",
+        "type": "string"
+      }
+    ],
+    "name": "updatePoolMetaHash",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_ratings",
+        "type": "uint8"
+      }
+    ],
+    "name": "updatePoolRatings",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_poolId",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_poolSize",
+        "type": "uint256"
+      }
+    ],
+    "name": "updatePoolSize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "upgradeTo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,16 @@
+# Universal_SpokePool
+
+| Field | Value |
+|---|---|
+| Chain | plasma (9745) |
+| Address | `0x011a76d5ca7f537b4877d0fb6475065a90638478` |
+| Role | core_logic |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 53 (bsc `0x026ed73a36b37b871be7bfd25d1c62b9bfb358b5`; bsc `0x196767568f848ff7607145a7c1f3cde44bb4ce98`; bsc `0x20e2bf3422290cbadce3289ad3f317ae9e80636d`; bsc `0x4e8e101924ede233c13e2d8622dc8aed2872d505`; bsc `0x5545092553cf5bf786e87a87192e902d50d8f022`; bsc `0x64a14b477d16f1e9d490b00218ada0c142c885dd`; bsc `0x64f4aee94e5b919b0c89fee2cf923ea219686fdd`; bsc `0x76f3fe966f91602129cb278043239afbb7b7646a`; bsc `0x79176279493f58c805648a883056954acaa147f3`; bsc `0x7e6d9618ba8a87421609352d6e711958a97e2512`; bsc `0xad285f02b6853a34660253c643d1c06aec4b1059`; bsc `0xc5c0475f8b2cae8931089459ca20259cf8f9164e`; bsc `0xc5c51b97cd9df7203ee7f6b688c7f3ca172af3ca`; bsc `0xcd23467a80df72b24363da84d07af2b1dfc4de03`; bsc `0xd85630e361cebbc4c7f13e6eed3587050fb81b86`; bsc `0xde7c02ad2b925587bd16724810f994a2948c4a38`; bsc `0xe8ff2a3d5cc19ddcbd93328371e1dd8995e7afaa`; bsc `0xf962e0e485a5b9f8ada9a438ceecc35c0020b6e7`; bsc `0xff0ea019ed1504d34507d99dd54f2339e3b11592`; hyperliquid `0x04959c99222450a7fbb8fd7b9f69e6e7ce67917f`; hyperliquid `0x129b61ce378b2b4b5ebeac648019e2427b74527e`; hyperliquid `0x14e97badf63bdcd669874656d32bf511345bff95`; hyperliquid `0x2beb236d67ae544f48efa55960e06bde8aff8322`; hyperliquid `0x35e63ea3eb0fb7a3bc543c71fb66412e1f6b0e04`; hyperliquid `0x3b8a0cafcdd97e4c5ed3e96aded04db8cc5f377b`; hyperliquid `0x45fa0a76d08725c59936dfcf64ded56f82b5c0a9`; hyperliquid `0x5658b50c2f6426f490ec44355b94b8abe6088a08`; hyperliquid `0x5bee4302ad0498dc0dfa7669e5741fc85637ed68`; hyperliquid `0x719f81838009655840660c7682b600981b4fa2fd`; hyperliquid `0x89cb50586e137a718973f45120954b005b4ebbf0`; hyperliquid `0x9fe3788c73ebf505d07a4a4828d3c5055ea3ee67`; hyperliquid `0xb223a3a70d0e164047c6f0fa0ba57ed635f61cda`; hyperliquid `0xb4ca4312311fb2902cd27870c9dfc499d142342f`; hyperliquid `0xbaca1ec2ebe2c93e13ed643f7559c36e476d0b33`; hyperliquid `0xbbc6009feffc27ce705322832cb2068f8c1e0a58`; hyperliquid `0xbeabc2300271986c672b24732f295bafb21d5316`; hyperliquid `0xbf9949b42a02a167dff350d3ba16b20be53088ff`; hyperliquid `0xc63e56fde7383442993b86b77d432ad350e13e9b`; hyperliquid `0xcf78e38a7309fbecf3d670e8091c4e7e51620a1f`; hyperliquid `0xd2aa779253c0ab194d8c3e6708e5eb4697f13941`; hyperliquid `0xefd7ee5fc0bc42e41d800c4d9db912bc42a4530f`; hyperliquid `0xf633b72a4c2fb73b77a379bf72864a825ad35b6d`; plasma [`0x011a76d5ca7f537b4877d0fb6475065a90638478`](../0x011a76d5ca7f537b4877d0fb6475065a90638478/); plasma `0x053dc4a08302f11d13d8d2b87d8f3c9c28cedeb4`; plasma `0x5d834948e9aed31d9955346269a346baa007b2ea`; plasma `0x98a9703310d1fd0e268ab67917b0e581d295a086`; plasma `0xa0747016cbd78302a1d35f15640528edac1c203a`; plasma `0xb0b9f73b424ad8dc58156c2ae0d7a1115d1eccd1`; plasma `0xbeabc2300271986c672b24732f295bafb21d5316`; plasma `0xcdb25d0a6fffe639bc591a565f2d99507837f2b7`; plasma `0xd29c85f15df544ba632c9e25829fd29d767d7978`; plasma `0xd8866e76441df243fc98b892362fc6264dc3ca80`; plasma `0xe0fe15cf22b9b52b6ae309c7384e03244a6dd985`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | $52,202.87 |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

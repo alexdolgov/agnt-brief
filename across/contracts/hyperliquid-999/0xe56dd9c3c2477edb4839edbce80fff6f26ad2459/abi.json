@@ -1,0 +1,422 @@
+[
+  {
+    "inputs": [],
+    "name": "CoreUserExistsPrecompileCallFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTif",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LimitPxIsZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OrderSizeIsZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SpotBalancePrecompileCallFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SpotPxPrecompileCallFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenInfoPrecompileCallFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amt",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxAmt",
+        "type": "uint256"
+      }
+    ],
+    "name": "TransferAmtExceedsAssetBridgeBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BASE_ASSET_BRIDGE_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BASE_ASSET_BRIDGE_ADDRESS_UINT256",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CANCEL_BY_CLOID_HEADER",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CORE_USER_EXISTS_PRECOMPILE_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CORE_WRITER_PRECOMPILE_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "LIMIT_ORDER_HEADER",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SPOT_BALANCE_PRECOMPILE_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SPOT_PX_PRECOMPILE_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SPOT_SEND_HEADER",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TOKEN_INFO_PRECOMPILE_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "amountDecimalsFrom",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint8",
+        "name": "decimalsFrom",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "decimalsTo",
+        "type": "uint8"
+      }
+    ],
+    "name": "convertCoreDecimalsSimple",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "coreUserExists",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "erc20CoreIndex",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "coreAmount",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "coreBufferAmount",
+        "type": "uint64"
+      }
+    ],
+    "name": "isCoreAmountSafeToBridge",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "maximumEVMSendAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int8",
+        "name": "decimalDiff",
+        "type": "int8"
+      }
+    ],
+    "name": "maximumEVMSendAmountToAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountEVMToSend",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint64",
+        "name": "amountCoreToReceive",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "minimumCoreReceiveAmount",
+        "type": "uint64"
+      },
+      {
+        "internalType": "int8",
+        "name": "decimalDiff",
+        "type": "int8"
+      }
+    ],
+    "name": "minimumCoreReceiveAmountToAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountEVMToSend",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint64",
+        "name": "amountCoreToReceive",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "token",
+        "type": "uint64"
+      }
+    ],
+    "name": "spotBalance",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "balance",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "index",
+        "type": "uint32"
+      }
+    ],
+    "name": "spotPx",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "erc20CoreIndex",
+        "type": "uint32"
+      }
+    ],
+    "name": "tokenInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "uint64[]",
+            "name": "spots",
+            "type": "uint64[]"
+          },
+          {
+            "internalType": "uint64",
+            "name": "deployerTradingFeeShare",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address",
+            "name": "deployer",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "evmContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint8",
+            "name": "szDecimals",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "weiDecimals",
+            "type": "uint8"
+          },
+          {
+            "internalType": "int8",
+            "name": "evmExtraWeiDecimals",
+            "type": "int8"
+          }
+        ],
+        "internalType": "struct HyperCoreLib.TokenInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "total_contracts": 541,
+  "verified_fetched": 84,
+  "fetched_from_sourcify": 70,
+  "fetched_from_etherscan": 14,
+  "sourcify_full_match": 34,
+  "sourcify_partial_match": 36,
+  "unverified_skipped": 232,
+  "fetch_failed": 0,
+  "total_source_files": 1435,
+  "chains": [
+    1,
+    10,
+    56,
+    130,
+    137,
+    146,
+    250,
+    8453,
+    42161,
+    42220,
+    43114,
+    1313161554,
+    1666600000
+  ],
+  "fetched_at": "2026-05-22T10:17:02.114Z"
+}

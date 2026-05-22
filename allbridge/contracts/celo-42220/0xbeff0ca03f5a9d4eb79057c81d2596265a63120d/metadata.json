@@ -1,0 +1,18 @@
+{
+  "address": "0xbeff0ca03f5a9d4eb79057c81d2596265a63120d",
+  "chain_id": 42220,
+  "contract_name": "PortfolioToken",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T10:17:01.721Z"
+}

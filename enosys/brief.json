@@ -1,0 +1,188 @@
+{
+  "schema_version": "2.0",
+  "project_key": "enosys",
+  "generated_at": "2026-05-22T09:46:09.035Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "enosys",
+    "tier": 0,
+    "peak_tvl": 122141831,
+    "peak_date": "2022-01-17T00:00:00.000Z",
+    "tvl_30d_ago": 27951575,
+    "tvl_90d_ago": 16858709,
+    "tvl_current": 22810112,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 6304819,
+    "change_30d_pct": -18.394179934404413,
+    "change_90d_pct": 35.30165328792377,
+    "days_since_peak": 1586,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 81.32489761022168
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 4,
+    "unique_implementations": 2,
+    "total_deployments": 4,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 28007614,
+    "tvl_usd": 28007614,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://enosys.global",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Enosys is a multi-product DeFi protocol on Ethereum offering token bridging, AMM-based decentralized exchange, governance incentives, collateralized debt positions, and yield generation. It enables cross-chain asset transfers, liquidity provision, and lending/borrowing services.",
+    "relationship_narrative": "The bridge family uses StandardToken as the bridged asset representation, while WrapDepositRedeem contracts handle the locking and minting logic. Other families (AMM, loans, governance) likely share the bridged tokens and may depend on the bridge for cross-chain liquidity, though their contracts are not detailed here.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4a220e6096b25eadb88358cb44068a3248254675",
+      "name": "StandardToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Enosys Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StandardToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4a220e6096b25eadb88358cb44068a3248254675",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x37aca97a99d1b4260a5e9821d0ef14947fb68970",
+      "name": "WrapDepositRedeem",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Enosys Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WrapDepositRedeem",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x37aca97a99d1b4260a5e9821d0ef14947fb68970",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8936761f2903ed1af2b269e6fa3a79ebb0162c51",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb3902647015c17fc3c2f5ca5f5cb68bbf2d9b1e2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4a220e6096b25eadb88358cb44068a3248254675",
+      "name": "StandardToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x37aca97a99d1b4260a5e9821d0ef14947fb68970",
+      "name": "WrapDepositRedeem",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

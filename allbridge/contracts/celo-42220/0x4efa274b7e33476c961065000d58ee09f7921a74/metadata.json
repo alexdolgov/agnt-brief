@@ -1,0 +1,18 @@
+{
+  "address": "0x4efa274b7e33476c961065000d58ee09f7921a74",
+  "chain_id": 42220,
+  "contract_name": "MentoFeeHandlerSellerProxy",
+  "compiler_version": "v0.5.13+commit.5b0b510c",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x86142c00b71b504e853e32a768a8b8be61e12b82",
+  "fetched_at": "2026-05-22T10:16:59.987Z"
+}

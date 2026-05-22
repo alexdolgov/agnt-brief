@@ -1,0 +1,18 @@
+{
+  "address": "0x28a5da04a94f0501a6f77df8f8a9529d27b92744",
+  "chain_id": 1,
+  "contract_name": "Migrations",
+  "compiler_version": "v0.5.13+commit.5b0b510c",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T10:14:37.035Z"
+}

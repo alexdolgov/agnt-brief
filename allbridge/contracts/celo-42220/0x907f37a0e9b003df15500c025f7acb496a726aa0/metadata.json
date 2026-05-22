@@ -1,0 +1,18 @@
+{
+  "address": "0x907f37a0e9b003df15500c025f7acb496a726aa0",
+  "chain_id": 42220,
+  "contract_name": "Reserve",
+  "compiler_version": "v0.5.13+commit.5b0b510c",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T10:17:01.287Z"
+}

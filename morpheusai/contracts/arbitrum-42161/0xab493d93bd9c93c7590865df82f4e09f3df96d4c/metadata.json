@@ -1,0 +1,18 @@
+{
+  "address": "0xab493d93bd9c93c7590865df82f4e09f3df96d4c",
+  "chain_id": 42161,
+  "contract_name": "SessionRouter",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "CC0-1.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T09:47:45.727Z"
+}

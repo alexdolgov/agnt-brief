@@ -1,0 +1,106 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "erc20CoreIndex",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "amountCore",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint32",
+        "name": "sourceDex",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "destinationDex",
+        "type": "uint32"
+      }
+    ],
+    "name": "transferERC20CoreToCore",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "erc20EVMAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "erc20CoreIndex",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountEVM",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int8",
+        "name": "decimalDiff",
+        "type": "int8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "destinationDex",
+        "type": "uint32"
+      }
+    ],
+    "name": "transferERC20EVMToCore",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "erc20EVMAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "erc20CoreIndex",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountEVM",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int8",
+        "name": "decimalDiff",
+        "type": "int8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "destinationDex",
+        "type": "uint32"
+      }
+    ],
+    "name": "transferERC20EVMToSelfOnCore",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

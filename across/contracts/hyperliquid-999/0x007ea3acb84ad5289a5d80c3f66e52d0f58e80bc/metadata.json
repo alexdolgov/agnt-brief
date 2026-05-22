@@ -1,0 +1,17 @@
+{
+  "address": "0x007ea3acb84ad5289a5d80c3f66e52d0f58e80bc",
+  "chain_id": 999,
+  "contract_name": "PermissionedMulticallHandler",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 300,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T10:14:36.667Z"
+}

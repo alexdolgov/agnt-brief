@@ -1,0 +1,17 @@
+{
+  "address": "0xe1a2e68c401378050fdba9704fa8bcb1f72b98f4",
+  "chain_id": 81457,
+  "contract_name": "BlastWrappedCollateral",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "000000000000000000000000c31bb90ee75706911faf6b831699026e5eb6f24a00000000000000000000000043000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000012",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T20:56:16.197Z"
+}

@@ -1,0 +1,4254 @@
+{
+  "schema_version": "2.0",
+  "project_key": "layerbank",
+  "generated_at": "2026-05-22T14:23:30.647Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "layerbank",
+    "tier": 1,
+    "peak_tvl": 908695805,
+    "peak_date": "2024-07-28T00:00:00.000Z",
+    "tvl_30d_ago": 5301024,
+    "tvl_90d_ago": 3231096,
+    "tvl_current": 3182803,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 7998905,
+    "change_30d_pct": -39.958713637214245,
+    "change_90d_pct": -1.4946321619660945,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.65% from peak over 663 days, with minimal recent activity and no signs of ongoing development or community engagement.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 663,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.64973944168257,
+    "governance_evidence": "TVL dropped 99.65% from peak over 663 days, with minimal recent activity and no signs of ongoing development or community engagement.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 870,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 91,
+    "total_addresses": 216,
+    "unique_implementations": 91,
+    "total_deployments": 216,
+    "audited_contracts": 7,
+    "unaudited_contracts": 7,
+    "contracts_verified_audited": 6,
+    "contracts_verified_unaudited": 7,
+    "contracts_verified_by_bytecode": 1,
+    "contracts_unverified": 77,
+    "coverage_pct": 50,
+    "total_audits": 4,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 22071742.86274,
+    "tvl_usd": 116735.51977586863,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "linea": 116735.52
+    },
+    "asd_usd": null,
+    "website_url": "https://layerbank.finance",
+    "chains": [
+      "linea",
+      "manta",
+      "mode",
+      "scroll"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-07",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 1,
+      "stale": 2,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "LayerBank is a decentralized lending protocol that allows users to supply and borrow crypto assets across multiple chains. It uses a pooled lending model where suppliers earn interest and borrowers can take out overcollateralized loans.",
+    "relationship_narrative": "The protocol consists of a single product family with multiple Core contract instances deployed across different chains, all sharing the same LABToken for governance or utility. No separate infrastructure contracts were identified.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x0534e5580a07d53e2f8c06368f0d3b8fb022e9ca",
+      "name": "LToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 116735.51977586863,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LToken",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x472d43a8f00a41c3431e549367d2de2e07c5e388",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x604ddc9c59572d197b983f0578e58e61026765ed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x71384b2c17433ba1d8f6fe895e9b2e7953dced68",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x7479c717f2b72116d15b4eaf8d540c497e07e0b6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x7def25c6c2b4bc9e9fb5122d22650f8ecdfeff45",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x9d8ecb502d2ac290644d70a096165188d47e21a4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xdf4b60ce539648ab05541827a3bf0a079a5fc1c2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x59dd441184024a77fd17e68f07e242622806c256",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x66a5e18e36bfea86074a047954fec7c94ced366e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x6a0d9584d88d22bcad7d4f83e7d6ab7949895ddf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xba6e89c9cda3d72b7d8d5b05547a29f9bdbdbaec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xc5b9cb1a26fb1f9b8e26d8d357cb950f53df4959",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xd97905cc56030a6e9b618d6e26cc9ee2eaa15948",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xe855b8018c22a05f84724e93693caf166912add5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xfd160b6818254af48171a7731eba26dee6f16902",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x0534e5580a07d53e2f8c06368f0d3b8fb022e9ca",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x14abc603b6471aae51f92e6f7cc5be7cc6eefd14",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 9096.849171057198,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x1dff581929f8af5dddc1ceac2c28517fe020de2e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x26987881f88772c51e134dbe1027891bbc851755",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x2ad69a0cf272b9941c7ddcada7b0273e9046c4b0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3.5648660611e-8,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x2c88a441418e06b9f3e565c2f866fcb03c9409e2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 57840.74016169189,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x445e3186fa2dfca06a797c5cb66f5c29a3a808ff",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5924117c4a5e000312684a5e76e90cc93addde6b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 8.1044558005e-8,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5a7e47f924056eed8bf073c1a0e53597b7dfe6cf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x67492784ec588681e55b2bfc0118d882a8f23e48",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1346.8447737326321,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x6fe39525298118a6b58646b83f6b23e48208a855",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8be5870a6d68416c559299fa7b13521f1629c277",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8e98c7ec80de49cddec040ddd21cb55e9cc012c4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8fefabe1b9a530d9d0f0ef25e84a9d8b56ab2053",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 6926.203030097747,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9e9aec6a296f94c8530e2dd01ff3e9c61555d39a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9f8b5de4191db60e7b1d2ed448084657c0b46c19",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 11959.93875103543,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xa630475ef1511e54f9b061d6d830e19be182bc79",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb01f9de93374a6b287372008ab8739c7ddb7ce28",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb81b1e2ee4c867c95ec7041f6c22e0e89328d890",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 50.345640978633284,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xbeed4714d4f1bc8bdc74c37f9b9d9231f6467d37",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc7d8489dae3d2ebef075b1db2257e2c231c9d231",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xccba9ac94531e15aa55d9065e398812f06b84f14",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1.3858273007515024e-7,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xcdfcfdb11b75c53e43e4f1f19ecfc16b321d15f8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe33520c74bac3c537bfeee0f65e80471f3d564b9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 29151.064766805528,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xea0f73296a6147fb56bae29306aae0ffaff9de5f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1.3510727429635555e-7,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xf46680e9987f334041656abeb83b87c2494dc751",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 363.53348007919357,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1857"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x009a0b7c38b542208936f1179151cd08e2943833",
+      "name": "Core",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LayerBank",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Core",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xb7a23fc0b066051de58b922dc1a08f33df748bbf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x80980869d90a737aff47aba6fbaa923012c1ff50",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x009a0b7c38b542208936f1179151cd08e2943833",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x43eac5bfea14531b8de0b334e123ea98325de866",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8505150f20cca81f61d967f581bd2c22c60577fb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x887d6412e1839f123adc32943bf103084cfec715",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 534352,
+          "chain_name": "scroll",
+          "address": "0xec53c830f4444a8a56455c6836b5d2aa794289aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x10a26643340791e57920fc0cd519786d3ac21202",
+      "name": "LABDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LABDistributor",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x67c10b7b8eefe92eb4dfdeeedd94263632e483b0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xe8c3ba0c2ac39f9d97bcebf913e480b55d4c1aec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x10a26643340791e57920fc0cd519786d3ac21202",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x3df121931dc2e72dc4746da933126f6d50595605",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5d06067f86946620c326713b846ddc8b97470957",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x928715a1a54ef83052bdd710d08e6156447c1e80",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x20a512dbdc0d006f46e6ca11329034eb3d18c997",
+      "name": "LABToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LABToken",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x20a512dbdc0d006f46e6ca11329034eb3d18c997",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xfe67e16313f4b38743a153f74d5762f7c83e59ae",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb97f21d1f2508ff5c73e7b5af02847640b1ff75d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x06502df8986d53bb44444ba065e42f53f475d7eb",
+      "name": "Leverager",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Leverager",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x4054f478ec834fbdb2b192f144d4615d31bda9a6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xf0dcba2dd51311b5ad5770573edb8d39d39029e5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x06502df8986d53bb44444ba065e42f53f475d7eb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc98b936d7540ba67c2260916ae91b3eeb9eefff3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe10157b95f7c905ae00f3257851f9d8e56c8200a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1857"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x14c5a2b562754ed412708a103fb9cb65b1b16494",
+      "name": "Locker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Locker",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x14c5a2b562754ed412708a103fb9cb65b1b16494",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x310e183416d7f266c150e7244733d1dcb1470172",
+      "name": "PriceCalculator",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PriceCalculator",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x38f4384b457f81a4895c93a7503c255efd0746d2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x90286f894020950981c9e3196bacb03a223e4cfd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x310e183416d7f266c150e7244733d1dcb1470172",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xa6b2535b1c10ca5592be90a01dd1b6018062f7cf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x35a8c6050591c2f65b3e926b4b2ef825e3766bd6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x42e62fec1036f874a7579806530d628a59b6d7fb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x4f5f443fec450fd64dce57ccace8f5ad10b4028f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9798058b8564f706e8c16badf993cd5cb3fd7936",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xd943a018a8042e0bdbc2acf8c56521dfd28ee56a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x01be49c7734673bd407fc54735c2ac02504c27c1",
+      "name": "RateModelSlope",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RateModelSlope",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x01be49c7734673bd407fc54735c2ac02504c27c1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x27f85bd47740139a56e34124b33481ea6e1e660d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x7e76a2112706814477a3f7638a0fcedde85733a6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x7ebf48f06fed5fa165748c7f30337a5d0d65fb14",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x8d965181bdfd026cf5a09889898d70c4afae4684",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x91ad6fb355252f731ecbeb30aeff6464cbbe0c07",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xbea4070909dc939282ecc953d99840e390d891d1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xd30726b29fae71d28c15f5632ec9ab2c2716a2f6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xe8c8cfc7750abaf26e5889c5e3f56d1e5f96902a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xf7e5d5afae27305b371c4d183f887b77f0848acc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xf9a2e1cfa9760a1edc405047df638da71815ef95",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x0442bea39e4307c0523027319e06e2145b7ff62a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x072cd619678efe125099d7d167f6ce6cf3c3bc62",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x16cd8dace8569c7bd4e903c864444367b9f7b1af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x2a0c7d8e23d7be9cc8e7c0b2895299f11690e295",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x7187b3e844589c3c6bd41b56867e269ffbe1dc71",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x83df63c060c248541e93488e94ac55b11efa7ff4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xe71957bffbcdad7278f4dc2cb44aa6e35d0f5967",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x2ad5116293a3f011b0f42e1de05ce05b53f678dd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x33c61097be7b990f52e573584729d4bfdcfac4f9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x44b68e1a4f89e6973ad29612a52393ddb698b305",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x50a2d2339533bf11f4c2a3a288e48b7eafaa5148",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x527b8351e9e10a524f3e665da32189be75941bae",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5aa12782aad9ce43a96c73e0ca057b5543c607b4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x6358da269cd3bae93edd57822ac5a94013c6ad74",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x709be039a87e5c6f1a085de0d167fa0a4e7477fc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x763033e53d8175aa3e1d5adaad3d94738a4a2f3f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x78f8bd9e2310dbbfa3822c57b0f3577ae5790859",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc690549e0215192d1ffb527bb3ca4d4ba638cad2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc6be5f2c561c7f7e981261840baf53a458a1d208",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xd24e30a628ca8ceb6d35d05485e7866de50a8321",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe4297b0644518d2a118cd3abb2a4ff11b3ff82b5",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe7d66729d8e0bc32711a14bd33f717c6181959c5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1857"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x67d21527b227ec286409c6dd28d4704424ce006f",
+      "name": "RebateDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RebateDistributor",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xc85836a3878e4dbbec91ac0701d4f6db08ce616d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x67d21527b227ec286409c6dd28d4704424ce006f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x87bec95c9a414f9a83599138ba9e754d15f855bf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xea01659b66a682d41f4718bb62134ea8109fbfc6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1856"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x31bd8b6a5ff654bb79b484b549205f5173f0b92f",
+      "name": "RewardController",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RewardController",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x68b30d4c712bb9b629eb79595a6c804e5968eb40",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xa2c4ff1500f7e5137d2299642118df7a2c0ba82a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x31bd8b6a5ff654bb79b484b549205f5173f0b92f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x4caddf8c0d19b270f2dc4ebb0e225c20184b80a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc37e5c38bb4a6c0db64cb5f3f36603cd61c8ab6d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1857"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x6474df49abab65c0d06b5b4336fea2f1f9373b51",
+      "name": "SaleLabOverflowFarm",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SaleLabOverflowFarm",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x6474df49abab65c0d06b5b4336fea2f1f9373b51",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1856"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x126eb7b882651c228157fe5aec2be88438d8d118",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x126eb7b882651c228157fe5aec2be88438d8d118",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x147967e44ba47b607aca0cb014c8d359dc14aba6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x147967e44ba47b607aca0cb014c8d359dc14aba6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x21a3d684b32703bb56f308ce5ed79ba42abb5069",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x21a3d684b32703bb56f308ce5ed79ba42abb5069",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x4ad32c69eb3eecbb16d1748fde754b6ad50318d9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x4ad32c69eb3eecbb16d1748fde754b6ad50318d9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x4be8c1da5e38458b16cf476070c526d55af8bb01",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x4be8c1da5e38458b16cf476070c526d55af8bb01",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x90bdfb3a9051288973272b60314239fb11522a43",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x90bdfb3a9051288973272b60314239fb11522a43",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x9cad141b542a46947bcb53121da0334cbb1a5250",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x9cad141b542a46947bcb53121da0334cbb1a5250",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xa28b3b0a10138f49ac7593812d2ffb7bfb73d927",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xa28b3b0a10138f49ac7593812d2ffb7bfb73d927",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xb8eecb81def12113bc163f29a9a8904d23339d44",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xb8eecb81def12113bc163f29a9a8904d23339d44",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xbdaf1446d6064e95c44fe94401fb5dd7a4d48962",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xbdaf1446d6064e95c44fe94401fb5dd7a4d48962",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xc30808b757d59a815da41487e2dd6dea7eb44b50",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xc30808b757d59a815da41487e2dd6dea7eb44b50",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xcd5f48a4a7c5d34aad3f73bd2d63392a15e32d6b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xcd5f48a4a7c5d34aad3f73bd2d63392a15e32d6b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xcec210fd9334686ae8663c05ca4efef32c0fd2bc",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xcec210fd9334686ae8663c05ca4efef32c0fd2bc",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xcf235013efa9b1453f3b7c216b37ff7459c2d7d8",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xcf235013efa9b1453f3b7c216b37ff7459c2d7d8",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xf04ec6dddd4fab38e690e2731973869e953b996a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xf04ec6dddd4fab38e690e2731973869e953b996a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xf3e0707db3282ad53f64cd22d8583c92541df5cf",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xf3e0707db3282ad53f64cd22d8583c92541df5cf",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xf90f48c6f7f37ee73373f6ce06aae9d822994b0e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xf90f48c6f7f37ee73373f6ce06aae9d822994b0e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x0f225d10dd29d4703d42c5e93440f828bf04d150",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LayerBank",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x0f225d10dd29d4703d42c5e93440f828bf04d150",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x2551aedb152b66f5be0b5ded19287f7fcacc557f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x2551aedb152b66f5be0b5ded19287f7fcacc557f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x273a36b282ed96d12666a9bd49298d495a679b8b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x273a36b282ed96d12666a9bd49298d495a679b8b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x2a7efe59431835ea84008b852828808e892f5fa1",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x2a7efe59431835ea84008b852828808e892f5fa1",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x2b8867b0c93dcbefcc69be3eb6176779c23ef169",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x2b8867b0c93dcbefcc69be3eb6176779c23ef169",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x2ba3ade8778808d8d40ddef28fe5b63585779e7b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x2ba3ade8778808d8d40ddef28fe5b63585779e7b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x3a0362a50dd5df5887125ba5f12953989e072977",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x3a0362a50dd5df5887125ba5f12953989e072977",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x4ac518dbf0cc730a1c880739cfa98fe0bb284959",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LayerBank",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x4ac518dbf0cc730a1c880739cfa98fe0bb284959",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x72f7a8eb9f83de366ae166dc50f16074076c3ea6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LayerBank",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x72f7a8eb9f83de366ae166dc50f16074076c3ea6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x77cabfd057bd7c81c011059f1bf74ec1fbeda971",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LayerBank",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x77cabfd057bd7c81c011059f1bf74ec1fbeda971",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x7c57dba8512e2ebeeac37aa65f51256b9326cc4d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x7c57dba8512e2ebeeac37aa65f51256b9326cc4d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x803a61d82bad2743be35be5dc6dea0ccce82c056",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LayerBank",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x803a61d82bad2743be35be5dc6dea0ccce82c056",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x892d09ad4085d214363b06bc0f25654c40d5cba8",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x892d09ad4085d214363b06bc0f25654c40d5cba8",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0xa91a0471593603f2376c2d2571dc122e982153aa",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xa91a0471593603f2376c2d2571dc122e982153aa",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0xab3e7cb8a2dddef2c300e136003b8cde69b97151",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xab3e7cb8a2dddef2c300e136003b8cde69b97151",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0xbd9edf764bc1f219c124ad5cfa7084bbed124aa8",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xbd9edf764bc1f219c124ad5cfa7084bbed124aa8",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0xf1e25704e75da0496b46bf4e3856c5480a3c247f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LayerBank",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xf1e25704e75da0496b46bf4e3856c5480a3c247f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0xfb31a0fc2fd2b786aa54bd155b043f4077f20b99",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xfb31a0fc2fd2b786aa54bd155b043f4077f20b99",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x016aa4299881239c15fea325cdc5e644ae6137b5",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x016aa4299881239c15fea325cdc5e644ae6137b5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x048a6ccb63f4dffac23b8dc724fc4e1a2268d20a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x048a6ccb63f4dffac23b8dc724fc4e1a2268d20a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x0f5bb9c22c9b3ef079d139e52450fd1d9cbecaef",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x0f5bb9c22c9b3ef079d139e52450fd1d9cbecaef",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x1d51ef81a4e45013106b3d34863751e7001d7f51",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x1d51ef81a4e45013106b3d34863751e7001d7f51",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x232780dc4eaf570cdbeafbfd119b65e85edda892",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x232780dc4eaf570cdbeafbfd119b65e85edda892",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x2b46e8625f48bf190b95556c23be607e343545d6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x2b46e8625f48bf190b95556c23be607e343545d6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x2c4cbd05f01e4870197b4bd1fd70538efbf60999",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x2c4cbd05f01e4870197b4bd1fd70538efbf60999",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x2f96c932731e11f2bbaf6997ea21c56e9b9e3e00",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x2f96c932731e11f2bbaf6997ea21c56e9b9e3e00",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x52b47029c19e5c69eb3678a618b46bcd25ac6ae2",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x52b47029c19e5c69eb3678a618b46bcd25ac6ae2",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x57cb249b94f88f30b0a605e23418b53c0b5c29d7",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x57cb249b94f88f30b0a605e23418b53c0b5c29d7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x5e838a74f4e21dc8876bed136fd35c4e960b1448",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5e838a74f4e21dc8876bed136fd35c4e960b1448",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x6749900ebfdf070cd4fb5acbb71db4db3208d2b1",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x6749900ebfdf070cd4fb5acbb71db4db3208d2b1",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x6d1ca2cb0de960dae80f9dde4c9043c66010d43d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x6d1ca2cb0de960dae80f9dde4c9043c66010d43d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x6efb01e09a2d77c73aedf1df185d7213b865fea5",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x6efb01e09a2d77c73aedf1df185d7213b865fea5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x7225e1249152506eaa492df12d571425e93d54ee",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x7225e1249152506eaa492df12d571425e93d54ee",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xa15f453e8bd8bbb28eb599e05ec1fde8956ea816",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xa15f453e8bd8bbb28eb599e05ec1fde8956ea816",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xad8d03c1edf91d4e6153146c67ee7c5eba92a8f3",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xad8d03c1edf91d4e6153146c67ee7c5eba92a8f3",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xae5c5535f475c07315a52b2607cfe7f2d869c552",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xae5c5535f475c07315a52b2607cfe7f2d869c552",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xae79f221284c9a57817ee6e1a8f04967d9ee0bab",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xae79f221284c9a57817ee6e1a8f04967d9ee0bab",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xaeb4afe47f1c92797087378a4c9d5d964b2a29f7",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xaeb4afe47f1c92797087378a4c9d5d964b2a29f7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xafa621a96bd027e26ceb93c37d5a674fb0682e78",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xafa621a96bd027e26ceb93c37d5a674fb0682e78",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xb05fe91f9ad887ab46eccfc5cc4c6e1a6d4ce076",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb05fe91f9ad887ab46eccfc5cc4c6e1a6d4ce076",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xb5b25d9192f582568363243677dd25a939fe7112",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb5b25d9192f582568363243677dd25a939fe7112",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xb9bf4af75179c87aa2356cc3efcc24f10f7ebb8b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb9bf4af75179c87aa2356cc3efcc24f10f7ebb8b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xb9dd38c7ee558633b9498cbbab0eb316c1f58df1",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb9dd38c7ee558633b9498cbbab0eb316c1f58df1",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xbb5fe256f5d68cae11bfd5bd9acdbef8bfdc445d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xbb5fe256f5d68cae11bfd5bd9acdbef8bfdc445d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xc1d76a2ea390d05119b6f7d18bc4b5304db1ec4e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc1d76a2ea390d05119b6f7d18bc4b5304db1ec4e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xc44c04f657012dae504250f8fcc87df1005b151f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc44c04f657012dae504250f8fcc87df1005b151f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xcc77ba41cd1d2c0f04947b23058f2dca2667472c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xcc77ba41cd1d2c0f04947b23058f2dca2667472c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xcd88eea868d3acc500ee3069738c028166c0a620",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xcd88eea868d3acc500ee3069738c028166c0a620",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xd4ac03af102a0f5e008c73cdc4896e3741adb04b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xd4ac03af102a0f5e008c73cdc4896e3741adb04b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xd69fdd02ad3b7b94cae1e5b4330b82e30299fdf8",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xd69fdd02ad3b7b94cae1e5b4330b82e30299fdf8",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xd8385524d566823e7ce1829144fa4b76a613f0df",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xd8385524d566823e7ce1829144fa4b76a613f0df",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xe43976e0ad6ffe02500069ae21e376fb87845ed6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe43976e0ad6ffe02500069ae21e376fb87845ed6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xe937de87cff1b15d6edd56ea39c3a2a3826a6102",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe937de87cff1b15d6edd56ea39c3a2a3826a6102",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xea34ef86661b034d280760c91b589be83ccc1d4c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xea34ef86661b034d280760c91b589be83ccc1d4c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xf90e4e1ead06ae9b2fba4ac3cf42eaa7cba0ee9a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xf90e4e1ead06ae9b2fba4ac3cf42eaa7cba0ee9a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xfbed1737fa12b90b91e86339ca6413e36bca085e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xfbed1737fa12b90b91e86339ca6413e36bca085e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xfc64ac71e97067080bf1ac3bc7b79790f185cc32",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xfc64ac71e97067080bf1ac3bc7b79790f185cc32",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xfd7f7af88c006e9c7aa371b6c94fc04ce80eafb9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xfd7f7af88c006e9c7aa371b6c94fc04ce80eafb9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xfde206138d3314a421de06e4bb9f18f3237a8051",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xfde206138d3314a421de06e4bb9f18f3237a8051",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xff8030c391ec0d89b8fee189721f300b77790053",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xff8030c391ec0d89b8fee189721f300b77790053",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x0ccd703acfe6ce83377243c2dbf9d55a09e12769",
+      "name": "Validator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Validator",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x3447275b4252b7929483528cf966eb466e71277e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xca892a10908a38044e933836c21f28ac34ff157f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xf2c1e27a4bf0d81bb4a6e6e3e5dcd1dc6ed3a7fa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x0ccd703acfe6ce83377243c2dbf9d55a09e12769",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x5ae221cec86bcdd0cdc616b6c2bbd95d0e68030f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0x8acbbeafd432b86a0772a2ae16df87885f062cdb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xec47eb47ff67ec527e72e82d220eb057d69be055",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x3cba4209c03df89060307288fe668198a82cb29c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x3f015570ba5ddfba06347f093f6ff1d4ddb297ff",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x57d8311842f41ec811352f5d68616fd51551a391",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x720a99762bb3d2b98c8ddd64e13b0851355ca0e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x924c23248a9fe58355a89c5129df46ec329daae8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xcef9be627b95a2cd24de5ff1cbf9f816d8964e34",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xdd47e4d0389411de787ea0310f47ae5d321dd6f1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe9e061172117e7bdee0df103e8f697b0858d4ab9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xf8886f5a8de08d48444bbee19b38419dec3c5573",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x683049b66b55a202bfc9a60e954ff9b41ba7b39a",
+      "name": "Vesting",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vesting",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x683049b66b55a202bfc9a60e954ff9b41ba7b39a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x6d28332dda6b38408fec31f775d5b2e6d6c7781e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x9125548148fb44af1e772a6c1f3727a65d043599",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x9fea1782b5deff62e32576cd29993824ecd2c9d3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xc44a204705e0919266aee243df915ec3ae16d9a4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x69e38d781183a52de5e7506cd57bc6c55bb74467",
+      "name": "xLAB",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "xLAB",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x69e38d781183a52de5e7506cd57bc6c55bb74467",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 34443,
+          "chain_name": "mode",
+          "address": "0xd4ab4799e66c40485b136580ffa233f7bd2a9f8b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x88da54181065c8dce9142152cc575791b3d7d09c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1857"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 1856,
+      "audit_key": "audit-1856",
+      "report_name": "PeckShield Audit Report – LineaBank v1.0",
+      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-LineaBank-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Constant",
+        "ILToken",
+        "Liquidation",
+        "RebateDistributor",
+        "SaleLabOverflowFarm"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1857,
+      "audit_key": "audit-1857",
+      "report_name": "PeckShield Audit Report – LayerBank v2.0",
+      "report_url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-LayerBank-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CoreAdmin",
+        "LToken",
+        "Leverager",
+        "Market",
+        "RateModelSlope",
+        "RewardController",
+        "xLAB"
+      ],
+      "matched_contracts": 86,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1858,
+      "audit_key": "audit-1858",
+      "report_name": "MoveBit Final Audit Report – 2025.01.23",
+      "report_url": "https://movebit.xyz/reports/20250123-LayerBank-Final-Audit-Report.pdf",
+      "auditor": "MoveBit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1859,
+      "audit_key": "audit-1859",
+      "report_name": "spaces/vi5sScuffF7lLX6pHEo5/uploads/gSR9vUclew9CtwxZGIL4/AstraSec-AuditReport-Layerbank-V3 (1).pdf",
+      "report_url": "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fvi5sScuffF7lLX6pHEo5%2Fuploads%2FgSR9vUclew9CtwxZGIL4%2FAstraSec-AuditReport-Layerbank-V3%20(1).pdf?alt=media",
+      "auditor": "AstraSec",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 7,
+      "coverage_pct": 50,
+      "latest_audit": "2023-10"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x009a0b7c38b542208936f1179151cd08e2943833",
+      "name": "Core",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x10a26643340791e57920fc0cd519786d3ac21202",
+      "name": "LABDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x20a512dbdc0d006f46e6ca11329034eb3d18c997",
+      "name": "LABToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x14c5a2b562754ed412708a103fb9cb65b1b16494",
+      "name": "Locker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x310e183416d7f266c150e7244733d1dcb1470172",
+      "name": "PriceCalculator",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 34443,
+      "chain_name": "mode",
+      "address": "0x0ccd703acfe6ce83377243c2dbf9d55a09e12769",
+      "name": "Validator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x683049b66b55a202bfc9a60e954ff9b41ba7b39a",
+      "name": "Vesting",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 83,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 8
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 91
+    },
+    "extraction_confidence_counts": {
+      "high": 1,
+      "medium": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 1858,
+        "report_name": "MoveBit Final Audit Report – 2025.01.23"
+      },
+      {
+        "audit_id": 1859,
+        "report_name": "spaces/vi5sScuffF7lLX6pHEo5/uploads/gSR9vUclew9CtwxZGIL4/AstraSec-AuditReport-Layerbank-V3 (1).pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

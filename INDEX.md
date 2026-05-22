@@ -10,6 +10,7 @@
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | unknown | 4 | 3 | 2026-05-22 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 55 | 2026-05-22 |
 | [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
+| [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [bitu-protocol](./bitu-protocol/) | $23.1M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [blackhole](./blackhole/) | $29.9M | 31.1% | ? | unknown | 3 | 86 | 2026-05-22 |
@@ -23,6 +24,7 @@
 | [egas-swap](./egas-swap/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | unknown | 5 | 15 | 2026-05-22 |
 | [enosys](./enosys/) | $28.0M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
+| [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [goldfinger](./goldfinger/) | $23.9M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 11.1% | ? | active | 4 | 126 | 2026-05-21 |

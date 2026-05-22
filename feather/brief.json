@@ -1,0 +1,238 @@
+{
+  "schema_version": "2.0",
+  "project_key": "feather",
+  "generated_at": "2026-05-22T19:34:26.549Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "feather",
+    "tier": 0,
+    "peak_tvl": 16552610,
+    "peak_date": "2026-05-22T00:00:00.000Z",
+    "tvl_30d_ago": 7581134,
+    "tvl_90d_ago": 755641,
+    "tvl_current": 16535893,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 3174246,
+    "change_30d_pct": 118.11899116939497,
+    "change_90d_pct": 2088.326599536023,
+    "days_since_peak": 0,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0.10099313642984399
+  },
+  "summary": {
+    "total_contracts": 3,
+    "total_addresses": 8,
+    "unique_implementations": 3,
+    "total_deployments": 8,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 16552674.51091,
+    "tvl_usd": 16552674.51091,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://app.feather.zone/",
+    "chains": [
+      "celo",
+      "klaytn",
+      "sei"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Feather is a risk curation protocol that deploys and manages MetaMorpho vaults, optimizing yield and risk parameters for users across multiple chains.",
+    "relationship_narrative": "All MetaMorpho vaults are deployed by the same deployer cluster and likely share a common SafeProxy for administrative control, with the unnamed contract possibly serving as a registry or factory.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x015f10a56e97e02437d294815d8e079e1903e41c",
+      "name": "MetaMorphoV1_1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Feather",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MetaMorphoV1_1",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x015f10a56e97e02437d294815d8e079e1903e41c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x50715ae180ff0ea799dc8ab635c2d876e528bfe8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8e181221d5602d4cf2b87f3a817c0dac680a7223",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x948fcc6b7f68f4830cd69db1481a9e1a142a4923",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x94e6a8714f36cd7220560638882fc137ab5eb79c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xbd183661d2e8cefa31799fe3a4cc6f2127963dc5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x81c76f62f7e05dec75800150ba5a23f62e2f091f",
+      "name": "SafeProxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "Feather",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeProxy",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x81c76f62f7e05dec75800150ba5a23f62e2f091f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x6ba8f7039bc7d79c1959cb8e409dff2ba05a133e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Feather",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x6ba8f7039bc7d79c1959cb8e409dff2ba05a133e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x015f10a56e97e02437d294815d8e079e1903e41c",
+      "name": "MetaMorphoV1_1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 1
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

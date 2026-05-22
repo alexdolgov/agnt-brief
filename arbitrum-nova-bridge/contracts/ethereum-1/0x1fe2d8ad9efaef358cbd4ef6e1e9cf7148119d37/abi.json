@@ -1,0 +1,74 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IL1AddressRegistry",
+        "name": "_addressRegistry",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "addressRegistry",
+    "outputs": [
+      {
+        "internalType": "contract IL1AddressRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_l1Tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_l2Tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxGasForRegister",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_gasPriceBidForRegister",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxSubmissionCostForRegister",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxGasForSetGateway",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_gasPriceBidForSetGateway",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxSubmissionCostForSetGateway",
+        "type": "uint256"
+      }
+    ],
+    "name": "perform",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

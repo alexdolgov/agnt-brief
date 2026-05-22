@@ -1,0 +1,850 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "excessStakeReceiver",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IOldRollup",
+            "name": "rollup",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "bridge",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "sequencerInbox",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "rollupEventInbox",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "outbox",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "inbox",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IOneStepProofEntry",
+            "name": "osp",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct BOLDUpgradeAction.Contracts",
+        "name": "contracts",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "outbox",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "bridge",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "rei",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "seqInbox",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "inbox",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct BOLDUpgradeAction.ProxyAdmins",
+        "name": "proxyAdmins",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "bridge",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "seqInbox",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "inbox",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "rei",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "outbox",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "newRollupUser",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "newRollupAdmin",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "challengeManager",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct BOLDUpgradeAction.Implementations",
+        "name": "implementations",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "confirmPeriodBlocks",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "challengePeriodBlocks",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address",
+            "name": "stakeToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "stakeAmt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "miniStakeAmounts",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "chainId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumAssertionPeriod",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "validatorAfkBlocks",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bool",
+            "name": "disableValidatorWhitelist",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "blockLeafSize",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bigStepLeafSize",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "smallStepLeafSize",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "numBigStepLevel",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint64",
+            "name": "challengeGracePeriodBlocks",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bool",
+            "name": "isDelayBufferable",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint64",
+                "name": "threshold",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "max",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "replenishRateInBasis",
+                "type": "uint64"
+              }
+            ],
+            "internalType": "struct BufferConfig",
+            "name": "bufferConfig",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct BOLDUpgradeAction.Settings",
+        "name": "settings",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "rollup",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "challengeManager",
+        "type": "address"
+      }
+    ],
+    "name": "RollupMigrated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "BIGSTEP_LEAF_SIZE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BLOCK_LEAF_SIZE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BRIDGE",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CHAIN_ID",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CHALLENGE_GRACE_PERIOD_BLOCKS",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CHALLENGE_PERIOD_BLOCKS",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CONFIRM_PERIOD_BLOCKS",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DISABLE_VALIDATOR_WHITELIST",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "EXCESS_STAKE_RECEIVER",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "IMPL_BRIDGE",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "IMPL_CHALLENGE_MANAGER",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "IMPL_INBOX",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "IMPL_NEW_ROLLUP_ADMIN",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "IMPL_NEW_ROLLUP_USER",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "IMPL_OUTBOX",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "IMPL_REI",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "IMPL_SEQUENCER_INBOX",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "INBOX",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "IS_DELAY_BUFFERABLE",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MINIMUM_ASSERTION_PERIOD",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MINI_STAKE_AMOUNTS_STORAGE",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "NUM_BIGSTEP_LEVEL",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "OLD_ROLLUP",
+    "outputs": [
+      {
+        "internalType": "contract IOldRollup",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "OSP",
+    "outputs": [
+      {
+        "internalType": "contract IOneStepProofEntry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "OUTBOX",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PREIMAGE_LOOKUP",
+    "outputs": [
+      {
+        "internalType": "contract StateHashPreImageLookup",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PROXY_ADMIN_BRIDGE",
+    "outputs": [
+      {
+        "internalType": "contract ProxyAdmin",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PROXY_ADMIN_INBOX",
+    "outputs": [
+      {
+        "internalType": "contract ProxyAdmin",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PROXY_ADMIN_OUTBOX",
+    "outputs": [
+      {
+        "internalType": "contract ProxyAdmin",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PROXY_ADMIN_REI",
+    "outputs": [
+      {
+        "internalType": "contract ProxyAdmin",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PROXY_ADMIN_SEQUENCER_INBOX",
+    "outputs": [
+      {
+        "internalType": "contract ProxyAdmin",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "REI",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "REPLENISH_RATE_IN_BASIS",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SECONDS_PER_SLOT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SEQ_INBOX",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SMALLSTEP_LEAF_SIZE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "STAKE_AMOUNT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "STAKE_TOKEN",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "THRESHOLD",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VALIDATOR_AFK_BLOCKS",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "deployer",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "expectedRollupAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "validators",
+        "type": "address[]"
+      }
+    ],
+    "name": "perform",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "rollupAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "deployer",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chainId",
+        "type": "uint256"
+      }
+    ],
+    "name": "validateRollupDeployedAtAddress",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

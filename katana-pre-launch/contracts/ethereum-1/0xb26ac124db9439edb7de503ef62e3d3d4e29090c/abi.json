@@ -1,0 +1,470 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "PRICE_RATIO_DENOMINATOR",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "arbitrumPriceExt",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "gasPerL2Tx",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint32",
+        "name": "gasPerL1CallDataByte",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "name": "defaultModelPrice",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "priceRatio",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint64",
+        "name": "gasPriceInUnit",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint32",
+        "name": "gasPerByte",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_dstChainId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_callDataSize",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_gas",
+        "type": "uint256"
+      }
+    ],
+    "name": "estimateFeeByChain",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint128",
+        "name": "priceRatio",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_dstChainId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_callDataSize",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_gas",
+        "type": "uint256"
+      }
+    ],
+    "name": "estimateFeeWithArbitrumModel",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint128",
+        "name": "priceRatio",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_dstChainId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_callDataSize",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_gas",
+        "type": "uint256"
+      }
+    ],
+    "name": "estimateFeeWithDefaultModel",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint128",
+        "name": "priceRatio",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_dstChainId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_callDataSize",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_gas",
+        "type": "uint256"
+      }
+    ],
+    "name": "estimateFeeWithOptimismModel",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint128",
+        "name": "priceRatio",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_dstChainId",
+        "type": "uint16"
+      }
+    ],
+    "name": "getPrice",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "priceRatio",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint64",
+            "name": "gasPriceInUnit",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint32",
+            "name": "gasPerByte",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ILayerZeroPriceFeed.Price",
+        "name": "price",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPriceRatioDenominator",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_priceUpdater",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "onUpgrade",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "priceUpdater",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "chainId",
+            "type": "uint16"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "priceRatio",
+                "type": "uint128"
+              },
+              {
+                "internalType": "uint64",
+                "name": "gasPriceInUnit",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint32",
+                "name": "gasPerByte",
+                "type": "uint32"
+              }
+            ],
+            "internalType": "struct ILayerZeroPriceFeed.Price",
+            "name": "price",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ILayerZeroPriceFeed.UpdatePrice[]",
+        "name": "_price",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "setPrice",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "chainId",
+            "type": "uint16"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "priceRatio",
+                "type": "uint128"
+              },
+              {
+                "internalType": "uint64",
+                "name": "gasPriceInUnit",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint32",
+                "name": "gasPerByte",
+                "type": "uint32"
+              }
+            ],
+            "internalType": "struct ILayerZeroPriceFeed.Price",
+            "name": "price",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint64",
+                "name": "gasPerL2Tx",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint32",
+                "name": "gasPerL1CallDataByte",
+                "type": "uint32"
+              }
+            ],
+            "internalType": "struct ILayerZeroPriceFeed.ArbitrumPriceExt",
+            "name": "extend",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ILayerZeroPriceFeed.UpdatePriceExt[]",
+        "name": "_price",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "setPriceForArbitrum",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "_denominator",
+        "type": "uint128"
+      }
+    ],
+    "name": "setPriceRatioDenominator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_addr",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_active",
+        "type": "bool"
+      }
+    ],
+    "name": "setPriceUpdater",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

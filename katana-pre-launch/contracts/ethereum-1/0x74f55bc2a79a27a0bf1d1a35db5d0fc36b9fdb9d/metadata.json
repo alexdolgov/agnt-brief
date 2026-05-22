@@ -1,0 +1,18 @@
+{
+  "address": "0x74f55bc2a79a27a0bf1d1a35db5d0fc36b9fdb9d",
+  "chain_id": 1,
+  "contract_name": "ReadLib1002",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "paris",
+  "license": "LZBL-1.2, MIT, MIT OR Apache-2.0, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T17:52:06.426Z"
+}

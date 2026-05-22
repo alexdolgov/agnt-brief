@@ -1,0 +1,103 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_endpoint",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "message",
+        "type": "bytes32"
+      }
+    ],
+    "name": "Message",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "endpoint",
+    "outputs": [
+      {
+        "internalType": "contract ILayerZeroEndpoint",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_fromAddress",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_payload",
+        "type": "bytes"
+      }
+    ],
+    "name": "lzReceive",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "messageComplete",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gasAmountForDst",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint16[]",
+        "name": "chainIds",
+        "type": "uint16[]"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "dstAddresses",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "sendFirstMessage",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x449ed7c3e6fee6a97311d4b55475df59c44add33",
+  "chain_id": 1,
+  "contract_name": "SenderCreator",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T17:52:04.874Z"
+}

@@ -6,12 +6,15 @@
 | [aevo](./aevo/) | $98.5M | 9.2% | $1.7M | active | 17 | 331 | 2026-05-22 |
 | [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 2 | 284 | 2026-05-22 |
 | [ankr](./ankr/) | $47.4 | 0.9% | $47.4 | active | 1 | 147 | 2026-05-22 |
+| [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 55 | 2026-05-22 |
 | [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [bitu-protocol](./bitu-protocol/) | $23.1M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [blackhole](./blackhole/) | $29.9M | 31.1% | ? | unknown | 3 | 86 | 2026-05-22 |
+| [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 17 | 2026-05-22 |
 | [bonzo-finance](./bonzo-finance/) | $22.6M | 0.0% | ? | unknown | 4 | 0 | 2026-05-22 |
 | [camelot](./camelot/) | $6.4M | 17.3% | $391.9K | active | 1 | 127 | 2026-05-22 |
+| [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [charm-finance](./charm-finance/) | $2.2M | 66.7% | ? | unknown | 5 | 7 | 2026-05-22 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-05-22 |
 | [dxsale](./dxsale/) | $26.8M | 0.0% | ? | active | 0 | 353 | 2026-05-22 |
@@ -25,6 +28,7 @@
 | [immutable-zkevm](./immutable-zkevm/) | $29.2M | 18.2% | ? | active | 5 | 11 | 2026-05-22 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 13.7% | $428.8M | unknown | 8 | 125 | 2026-05-21 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | unknown | 0 | 2 | 2026-05-22 |
+| [katana-pre-launch](./katana-pre-launch/) | $18.3M | 0.0% | $18.3M | active | 29 | 166 | 2026-05-22 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [liminal](./liminal/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-22 |
 | [llamapay](./llamapay/) | $26.4M | 0.0% | ? | active | 0 | 20 | 2026-05-22 |
@@ -33,6 +37,7 @@
 | [mezo-bridge](./mezo-bridge/) | $203.9M | 0.0% | $203.9M | declining | 0 | 138 | 2026-05-22 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-05-22 |
 | [mu-digital](./mu-digital/) | $19.5M | 100.0% | ? | active | 2 | 12 | 2026-05-22 |
+| [neutral-trade](./neutral-trade/) | $18.8M | 0.0% | ? | unknown | 3 | 0 | 2026-05-22 |
 | [okcoin](./okcoin/) | $26.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |

@@ -1,0 +1,18 @@
+{
+  "address": "0x175bfec21a4949c339d1b9b621ad325d9892888f",
+  "chain_id": 1,
+  "contract_name": "EndpointV2View",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "paris",
+  "license": "LZBL-1.2, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T17:52:02.915Z"
+}

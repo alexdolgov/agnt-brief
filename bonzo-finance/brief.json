@@ -1,0 +1,170 @@
+{
+  "schema_version": "2.0",
+  "project_key": "bonzo-finance",
+  "generated_at": "2026-05-22T13:51:31.006Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 4,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 22597435.025429998,
+    "tvl_usd": 22597435.025429998,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://bonzo.finance/",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025",
+    "audit_freshness": "aging",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 2,
+      "stale": 0,
+      "unknown": 2
+    }
+  },
+  "topography": {
+    "project_purpose": "Bonzo Finance is a lending protocol that enables users to supply and borrow digital assets. It is based on the Aave protocol, as indicated by its adapter registry.",
+    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no relationships can be described.",
+    "product_family_count": 0
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 1852,
+      "audit_key": "audit-1852",
+      "report_name": "www.halborn.com/audits/bonzo/finance-contracts",
+      "report_url": "https://www.halborn.com/audits/bonzo/finance-contracts",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1853,
+      "audit_key": "audit-1853",
+      "report_name": "spaces/RfK3lCSOewdMJ6MlbF1B/uploads/Vzy3zOrWNp6itHRUZP12/Bonzo_Finance_Staking_Module_Smart_Contract_Security_Assessment.pdf",
+      "report_url": "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FRfK3lCSOewdMJ6MlbF1B%2Fuploads%2FVzy3zOrWNp6itHRUZP12%2FBonzo_Finance_Staking_Module_Smart_Contract_Security_Assessment.pdf?alt=media",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1854,
+      "audit_key": "audit-1854",
+      "report_name": "spaces/Rl3dkXEKv1yqGhH70g65/uploads/JXDsFP3pOPr7VUS9BCMx/LayerZero OFT Connector Audit.pdf",
+      "report_url": "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FRl3dkXEKv1yqGhH70g65%2Fuploads%2FJXDsFP3pOPr7VUS9BCMx%2FLayerZero%20OFT%20Connector%20Audit.pdf?alt=media",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1855,
+      "audit_key": "audit-1855",
+      "report_name": "www.halborn.com/audits/bonzo-finance/beefy-hedera-contracts-cae83b",
+      "report_url": "https://www.halborn.com/audits/bonzo-finance/beefy-hedera-contracts-cae83b",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 1852,
+        "report_name": "www.halborn.com/audits/bonzo/finance-contracts"
+      },
+      {
+        "audit_id": 1853,
+        "report_name": "spaces/RfK3lCSOewdMJ6MlbF1B/uploads/Vzy3zOrWNp6itHRUZP12/Bonzo_Finance_Staking_Module_Smart_Contract_Security_Assessment.pdf"
+      },
+      {
+        "audit_id": 1854,
+        "report_name": "spaces/Rl3dkXEKv1yqGhH70g65/uploads/JXDsFP3pOPr7VUS9BCMx/LayerZero OFT Connector Audit.pdf"
+      },
+      {
+        "audit_id": 1855,
+        "report_name": "www.halborn.com/audits/bonzo-finance/beefy-hedera-contracts-cae83b"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x1c3e7f51a9d24e813fa7c2614713b727a4da1a56",
+  "chain_id": 42161,
+  "contract_name": "SwaprLPFarmStrategy",
+  "compiler_version": "v0.8.1+commit.df193b15",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T21:48:32.246Z"
+}

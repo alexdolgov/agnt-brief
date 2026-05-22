@@ -1,0 +1,17 @@
+{
+  "address": "0x0c98e59e8327f156ab12a042f5e1f0adb97c0931",
+  "chain_id": 1284,
+  "contract_name": "TimelockController_RewardsDistributor3",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000acc15dc74880c9944775448304b263d191c6077f000000000000000000000000f482404f0ee4bbc780199b2995a43882a8595ada00000000000000000000000000000000000000000000000000000000000054600000000000000000000000000000000000000000000000000000000000005460",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T21:48:32.216Z"
+}

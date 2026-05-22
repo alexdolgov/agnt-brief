@@ -1,0 +1,17 @@
+{
+  "address": "0x57c90dff593d045f00d56afd2ef00cf7b4258c1e",
+  "chain_id": 5000,
+  "contract_name": "KTX",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T22:01:39.034Z"
+}

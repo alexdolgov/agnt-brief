@@ -1,0 +1,17 @@
+{
+  "address": "0x2132ff9b5dac4a114e02112c20ca81b0d2fd9542",
+  "chain_id": 59144,
+  "contract_name": "WithdrawalFinalizer",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T22:01:36.824Z"
+}

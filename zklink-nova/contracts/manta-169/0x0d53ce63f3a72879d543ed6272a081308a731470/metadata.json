@@ -1,0 +1,17 @@
+{
+  "address": "0x0d53ce63f3a72879d543ed6272a081308a731470",
+  "chain_id": 169,
+  "contract_name": "L1ERC20Bridge",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000d784d7128b46b60ca7d8bdc17dcec94917455657",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T22:01:30.858Z"
+}

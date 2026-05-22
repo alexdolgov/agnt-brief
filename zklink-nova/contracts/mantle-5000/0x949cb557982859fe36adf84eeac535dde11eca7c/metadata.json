@@ -1,0 +1,17 @@
+{
+  "address": "0x949cb557982859fe36adf84eeac535dde11eca7c",
+  "chain_id": 5000,
+  "contract_name": "StakedKlp",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "00000000000000000000000092351c9aed156bc8ec76d52cb1441b93f153e5500000000000000000000000003c4de8fb37055500bb3d18eae8dd0dfff527090e000000000000000000000000b3a5eebf23530165c3a6785400ff5d1700d5c0b3000000000000000000000000fe4169dfafec278c47f10b3409cf6e09406e73f9",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T22:01:41.625Z"
+}

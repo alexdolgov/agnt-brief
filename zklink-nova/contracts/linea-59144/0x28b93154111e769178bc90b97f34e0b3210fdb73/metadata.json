@@ -1,0 +1,17 @@
+{
+  "address": "0x28b93154111e769178bc90b97f34e0b3210fdb73",
+  "chain_id": 59144,
+  "contract_name": "LineaL2Governance",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "000000000000000000000000508ca82df566dcd1b0de8296e70a96332cd644ec000000000000000000000000eb35e7424a0a506d914f49039b5ec9969a576790",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T22:01:40.028Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x509ff56c152315edee91a2e0f059195519507e01",
+  "chain_id": 59144,
+  "contract_name": "ValidatorTimelock",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 9999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "00000000000000000000000034788df312acc671e62c9ab15523f7cdc4d29ba90000000000000000000000005cb18b6e4e6f3b46ce646b0f4704d53724c5df0500000000000000000000000000000000000000000000000000000000000000000000000000000000000000004732015b3b1712a4fc5c059195300d12d529bb77",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T22:01:38.637Z"
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IArbitrator",
+        "name": "_arbitrator",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ARBITRATOR",
+    "outputs": [
+      {
+        "internalType": "contract IArbitrator",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_sourceChainCanonicalMessageService",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_sourceChainClaimCallData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "address",
+        "name": "_secondaryChainL1Gateway",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_secondaryChainL2TxHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_primaryChainL2TxHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_forwardParams",
+        "type": "bytes"
+      }
+    ],
+    "name": "claimPrimaryChainSyncL2TxHashMessage",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

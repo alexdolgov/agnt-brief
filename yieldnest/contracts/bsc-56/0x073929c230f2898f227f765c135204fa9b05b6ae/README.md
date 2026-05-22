@@ -1,0 +1,16 @@
+# KernelStrategy
+
+| Field | Value |
+|---|---|
+| Chain | bsc (56) |
+| Address | `0x073929c230f2898f227f765c135204fa9b05b6ae` |
+| Role | core_logic |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 32 (bsc [`0x073929c230f2898f227f765c135204fa9b05b6ae`](../0x073929c230f2898f227f765c135204fa9b05b6ae/); bsc `0x0e64643d8073b82ac6d6a9e7d1d6b6689a05acb3`; bsc `0x132376b153d3cff94615fe25712db12caaadf547`; bsc `0x1776dea5799fc7ad10b6039f6e1927fefd731e85`; bsc `0x1b015705214bdcaaf43e8edeca13023143224ab7`; bsc `0x1d92795cfdeb1340a5a5a9493de752b39287287d`; bsc `0x3158405b9ad5ba067af116db1846e99f8069db9a`; bsc `0x3936add3617f6f67eb03fd08e5890f36e7228dcc`; bsc `0x40eaa840aeadd377a53124162c29f874b3f1dc22`; bsc `0x43a22463517b57ce4fd52dc6b33f7d58b8a16119`; bsc `0x504a89a3ed6a51d17d4f936e58476c779ee7315b`; bsc `0x517fa790e9bb058910b53e7603900364bcbcc802`; bsc `0x58e11a4aba3809d9011811306e0a281ba313add9`; bsc `0x5a04d49d53572ad0a1dcc29d16802f5518b81cf8`; bsc `0x5de8c7a537e951f4d09ab3366d635f271c29762c`; bsc `0x6254faa72a40d8c1f4051fed8b33689f8d6e30bd`; bsc `0x6a786b8047aec8cc6b05f31351377404286a26e1`; bsc `0x6ec6b7f106674d6d82b7b24446c7ebaf349d59a1`; bsc `0x78839ce14a8213779128ee4da6d75e1326606a56`; bsc `0x7e020a4dd66390c2a0a7c3d36500eb20a865b4cd`; bsc `0x835349a99eec9b34434a33464be85f9b22c98a76`; bsc `0x92e009afea7f598d1b9dfab698a1b05be9d47f97`; bsc `0x99155a7fc5d76114dbb71d7ebcf412ee2fc0ee81`; bsc `0xa0f29c1ef5c43fd213a6cd788f72c9abbc27e04d`; bsc `0xa4087054f4858cb108091b2ca0e52b779430782b`; bsc `0xa5a7a21cde97c6efc65f4b700ad442f799dc186d`; bsc `0xaa33d2bf5f955f503fa0929f037d10a3dbf6465c`; bsc `0xb6582ffc267487418d74c7a9c93b9b8d21f6822f`; bsc `0xc64f2bf22e1e0b579f8676bbe5fb970b0637581d`; bsc `0xebdb3377438d60213dbf6a52ed7102e0cede4b5c`; bsc `0xef2f5b44db8377add06c3fbebee2a5efecb9b9bd`; bsc `0xff25019dd30572dab7b5dc74e991a0bbd0787735`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | $19,292.22 |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

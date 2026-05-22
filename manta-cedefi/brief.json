@@ -1,0 +1,987 @@
+{
+  "schema_version": "2.0",
+  "project_key": "manta-cedefi",
+  "generated_at": "2026-05-22T12:04:57.085Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "manta-cedefi",
+    "tier": 0,
+    "peak_tvl": 142227772,
+    "peak_date": "2024-12-17T00:00:00.000Z",
+    "tvl_30d_ago": 40996676,
+    "tvl_90d_ago": 39691294,
+    "tvl_current": 26782474,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 42844426,
+    "change_30d_pct": -34.6715963021002,
+    "change_90d_pct": -32.523051528629935,
+    "days_since_peak": 521,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 81.16930777766807
+  },
+  "summary": {
+    "total_contracts": 17,
+    "total_addresses": 45,
+    "unique_implementations": 17,
+    "total_deployments": 45,
+    "audited_contracts": 0,
+    "unaudited_contracts": 15,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 15,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 26782474.47555,
+    "tvl_usd": 26782474.47555,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://cedefi.manta.network",
+    "chains": [
+      "manta"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Manta CeDeFi is a basis trading protocol that combines centralized and decentralized finance to generate yield. It allows users to deposit assets into a single vault contract, which then executes basis trading strategies to earn returns.",
+    "relationship_narrative": "The protocol consists of a single product family with one core contract, so there are no inter-family relationships. All functionality is encapsulated within the TransparentUpgradeableProxy vault.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x0f813042a20697d121a18de2f1b4dd3cea686b74",
+      "name": "BatchTransfer",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BatchTransfer",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x0f813042a20697d121a18de2f1b4dd3cea686b74",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x26b16045b60b7dae6e7aed115649bc34843dde94",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x97f62d9b3251d8013f0bef0d0eafeba25557a957",
+      "name": "DepositManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DepositManager",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x97f62d9b3251d8013f0bef0d0eafeba25557a957",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xb82a6f1f16077ca92b6168b3d8d883e7f9ec41b2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x9e7478b044ba9c27948f770e32aa00954e2ef15a",
+      "name": "DepositManagerV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DepositManagerV2",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x9e7478b044ba9c27948f770e32aa00954e2ef15a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xeab833511fd89045f6dddab931cdcd95dd26a5bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x2cf5900d1f47f49ce8d0d08718b88a84db075560",
+      "name": "Manager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Manager",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x2cf5900d1f47f49ce8d0d08718b88a84db075560",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x6523844d7720871bd7d6d82d6af6efc8b1f1fd0a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x1860f0eabc4e4d4955f88dacd1e01ea9a047647e",
+      "name": "MToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MToken",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x1860f0eabc4e4d4955f88dacd1e01ea9a047647e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xc8693e492d1ec721a254daf3c075a440edd4018e",
+      "name": "MTokenDepositEntry",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MTokenDepositEntry",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xc8693e492d1ec721a254daf3c075a440edd4018e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x46df6ba8e85bb6147c241bf3904918a6c800f8a5",
+      "name": "MTokenStake",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MTokenStake",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x46df6ba8e85bb6147c241bf3904918a6c800f8a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x866fe5e7f158ce659051d0cbca58b98ff42e8fbc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x0172881051518db699cbbf5b8493d20a375819ae",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x0172881051518db699cbbf5b8493d20a375819ae",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xefacdd72800324b3e5ff35edaa3de629d30412c9",
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Router",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xefacdd72800324b3e5ff35edaa3de629d30412c9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x8ff636868fec5ad39b7afbcfde2ca9e60d5ff870",
+      "name": "SyncOApp",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SyncOApp",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x8ff636868fec5ad39b7afbcfde2ca9e60d5ff870",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x9286c6fe4e3ec48c77bd75ac1e0f7be7c95aa90e",
+      "name": "SyncOAppV2",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SyncOAppV2",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x9286c6fe4e3ec48c77bd75ac1e0f7be7c95aa90e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x39944059395a387a8ec327b4fb5ab7c5f6d9858c",
+      "name": "TokenDistributer",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenDistributer",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x39944059395a387a8ec327b4fb5ab7c5f6d9858c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x1468177dbcb2a772f3d182d2f1358d442b553089",
+      "name": "TransparentUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Manta CeDeFi",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x1468177dbcb2a772f3d182d2f1358d442b553089",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x1b9bcc6644cc9b5e1f89abaab66904f5a562d4a1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x323446390012a5438bb32f5329d3ab3eef4ffc95",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x38e8381f38cfd313c9ed37190b427a98e1c951da",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x3acb6c0169a37885230852ed0ecf5126bbe8be8a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x47aab167bcaa950fe61aaaee3b14e38c1315dca8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x649d4524897ce85a864dc2a2d5a11adb3044f44a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x6b8f1c84e1f8866532770951d12ba73bb161c624",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x79e41784e4f9db9323cca25ebb8d983d80263fa9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x7c974aa30b2f47b9dcae24ab4a5142250f62dceb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x87b88a619a4b3aaf24619426cc1404ac215bc31d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x91f100fa1515198a1d2af9d14593f8dba44c3e0d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xa18bb7a02593e9ea405aa312c28309415711de6d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xa8c984ed3488a60b084e354082fc25fa9147f9f9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xaccbc418a994a27a75644d8d591afc22faba594e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xb0cbe3581570652d3b6148e213e45ed7efebe12c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xc09ebbff9ac26025081fc57c6115b98d5a69201d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xc0d14a4dc2f91cf0ea761e16474d6e46fa986ee4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xce89622bf2b2b2ece5607c751645706b713cb923",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xd203ee18f414588e0a5faa5e30f978d037bdf0dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xea9d75c90c0879a50c814c6fd1d30c073b2e69d3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xf6dc34f5cb10e7072015bfe181462ac77bf7ab01",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xfbd65ddfa27c3de44e9a84f2da9bf9f235b00495",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x776f71bece4434ef5be2736ef87885b4d514f15f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x776f71bece4434ef5be2736ef87885b4d514f15f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xca69e3d8c2ca253b1fcf1fd1ef525a85a6718b9d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xca69e3d8c2ca253b1fcf1fd1ef525a85a6718b9d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x09f21ae31fb70af04480b5f0811821cce9480931",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vault",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x09f21ae31fb70af04480b5f0811821cce9480931",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x37f1516de5425cdda58c20c6ac29ba775adfbeb0",
+      "name": "WithdrawQueue",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WithdrawQueue",
+      "deployments": [
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0x37f1516de5425cdda58c20c6ac29ba775adfbeb0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 169,
+          "chain_name": "manta",
+          "address": "0xf416488780361ba2ae6c3643bb84788610d1480a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x0f813042a20697d121a18de2f1b4dd3cea686b74",
+      "name": "BatchTransfer",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x97f62d9b3251d8013f0bef0d0eafeba25557a957",
+      "name": "DepositManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x9e7478b044ba9c27948f770e32aa00954e2ef15a",
+      "name": "DepositManagerV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x2cf5900d1f47f49ce8d0d08718b88a84db075560",
+      "name": "Manager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x1860f0eabc4e4d4955f88dacd1e01ea9a047647e",
+      "name": "MToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xc8693e492d1ec721a254daf3c075a440edd4018e",
+      "name": "MTokenDepositEntry",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x46df6ba8e85bb6147c241bf3904918a6c800f8a5",
+      "name": "MTokenStake",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0xefacdd72800324b3e5ff35edaa3de629d30412c9",
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x39944059395a387a8ec327b4fb5ab7c5f6d9858c",
+      "name": "TokenDistributer",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x1468177dbcb2a772f3d182d2f1358d442b553089",
+      "name": "TransparentUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x09f21ae31fb70af04480b5f0811821cce9480931",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x37f1516de5425cdda58c20c6ac29ba775adfbeb0",
+      "name": "WithdrawQueue",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 13,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 3
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

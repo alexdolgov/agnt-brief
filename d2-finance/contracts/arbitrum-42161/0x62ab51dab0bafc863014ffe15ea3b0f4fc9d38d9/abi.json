@@ -1,0 +1,753 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_depositWithdrawalProxy",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_borrowPositionProxy",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ReentrancyGuard__ReentrantCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UintUtils__InsufficientHexLength",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "EXECUTOR_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "borrowPositionProxy",
+    "outputs": [
+      {
+        "internalType": "contract IBorrowPositionProxyV2",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "depositWithdrawalProxy",
+    "outputs": [
+      {
+        "internalType": "contract IDepositWithdrawalProxy",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_borrowAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_toAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_collateralMarketIds",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "dolomite_closeBorrowPosition",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_borrowAccountOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_borrowAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_toAccountOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_toAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_collateralMarketIds",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "dolomite_closeBorrowPositionWithDifferentAccounts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_toAccountNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "dolomite_depositETH",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dolomite_depositETHIntoDefaultAccount",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_toAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountPar",
+        "type": "uint256"
+      }
+    ],
+    "name": "dolomite_depositPar",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountPar",
+        "type": "uint256"
+      }
+    ],
+    "name": "dolomite_depositParIntoDefaultAccount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_toAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountWei",
+        "type": "uint256"
+      }
+    ],
+    "name": "dolomite_depositWei",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountWei",
+        "type": "uint256"
+      }
+    ],
+    "name": "dolomite_depositWeiIntoDefaultAccount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fromAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_toAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_collateralMarketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_openBorrowPosition",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromAccountOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_fromAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_toAccountOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_toAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_collateralMarketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_openBorrowPositionWithDifferentAccounts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fromAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_borrowAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_repayAllForBorrowPosition",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromAccountOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_fromAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_borrowAccountOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_borrowAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_repayAllForBorrowPositionWithDifferentAccounts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fromAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_toAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_transferBetweenAccounts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fromAccountOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_fromAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_toAccountOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_toAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_transferBetweenAccountsWithDifferentAccounts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fromAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_withdrawETH",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amountWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_withdrawETHFromDefaultAccount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fromAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountPar",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_withdrawPar",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountPar",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_withdrawParFromDefaultAccount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fromAccountNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_withdrawWei",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_marketId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum AccountBalanceLib.BalanceCheckFlag",
+        "name": "_balanceCheckFlag",
+        "type": "uint8"
+      }
+    ],
+    "name": "dolomite_withdrawWeiFromDefaultAccount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

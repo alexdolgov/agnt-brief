@@ -1,0 +1,164 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_daoFallbackProposer",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "TIER_NOT_FOUND",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BOND_UNIT",
+    "outputs": [
+      {
+        "internalType": "uint96",
+        "name": "",
+        "type": "uint96"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DAO_FALLBACK_PROPOSER",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GRACE_PERIOD",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_proposer",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_rand",
+        "type": "uint256"
+      }
+    ],
+    "name": "getMinTier",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "getProvider",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_tierId",
+        "type": "uint16"
+      }
+    ],
+    "name": "getTier",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "verifierName",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint96",
+            "name": "validityBond",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint96",
+            "name": "contestBond",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint24",
+            "name": "cooldownWindow",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint16",
+            "name": "provingWindow",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "maxBlocksToVerifyPerProof",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct ITierProvider.Tier",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTierIds",
+    "outputs": [
+      {
+        "internalType": "uint16[]",
+        "name": "tiers_",
+        "type": "uint16[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

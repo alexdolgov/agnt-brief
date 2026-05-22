@@ -1,0 +1,18 @@
+{
+  "address": "0x48a90e85be5c56b0a669985a12ee7c449fc79965",
+  "chain_id": 8453,
+  "contract_name": "VaultV2",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "cancun",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T19:21:26.301Z"
+}

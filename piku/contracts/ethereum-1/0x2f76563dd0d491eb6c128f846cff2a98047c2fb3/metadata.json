@@ -1,0 +1,17 @@
+{
+  "address": "0x2f76563dd0d491eb6c128f846cff2a98047c2fb3",
+  "chain_id": 1,
+  "contract_name": "InverterBeaconProxy_v1",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 750,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0x04fe7f1ced562bd49ceef586a34da912a07ab8e4",
+  "fetched_at": "2026-05-22T19:28:49.289Z"
+}

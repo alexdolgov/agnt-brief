@@ -1,0 +1,1348 @@
+{
+  "schema_version": "2.0",
+  "project_key": "piku",
+  "generated_at": "2026-05-22T19:28:46.152Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "piku",
+    "tier": 0,
+    "peak_tvl": 17131724,
+    "peak_date": "2026-05-22T18:33:47.000Z",
+    "tvl_30d_ago": 16289431,
+    "tvl_90d_ago": 7566897,
+    "tvl_current": 17131724,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 5442498,
+    "change_30d_pct": 5.17079448631447,
+    "change_90d_pct": 126.4035574952322,
+    "days_since_peak": 0,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0
+  },
+  "summary": {
+    "total_contracts": 29,
+    "total_addresses": 52,
+    "unique_implementations": 29,
+    "total_deployments": 52,
+    "audited_contracts": 4,
+    "unaudited_contracts": 23,
+    "contracts_verified_audited": 4,
+    "contracts_verified_unaudited": 23,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 14.8,
+    "total_audits": 3,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 17125567.17164,
+    "tvl_usd": 21373677.08371292,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 21373677.08
+    },
+    "asd_usd": 21373677.08371292,
+    "website_url": "https://piku.co/",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2024-06",
+    "audit_freshness": "aging",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 1,
+      "stale": 0,
+      "unknown": 2
+    }
+  },
+  "topography": {
+    "project_purpose": "Piku is a yield protocol built on Pendle that tokenizes and trades yield-bearing assets. It offers structured products through Standardized Yield (SY) tokens, Principal Tokens (PT), and Yield Tokens (YT), enabling users to speculate on or hedge yield fluctuations.",
+    "relationship_narrative": "The Piku family relies on the Oracle Module for asset pricing and the Token & Workflow Contracts for governance token issuance. All families share the Inverter beacon proxy pattern for upgradeability and access control, with Piku's SY wrappers and market depending on external Pendle infrastructure.",
+    "product_family_count": 3
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x098697ba3fee4ea76294c5d6a466a4e3b3e95fe6",
+      "name": "ERC20IssuanceUpgradeable_Blacklist_v1",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "©️ Token & Workflow Contracts",
+      "tvl_usd": 17164611.277886108,
+      "is_proxy": true,
+      "impl_address": "0x9e40b6be5affc984f36cf118c778f0a83be20370",
+      "impl_name": "ERC20IssuanceUpgradeable_Blacklist_v1",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x098697ba3fee4ea76294c5d6a466a4e3b3e95fe6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 17164611.277886108,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9e40b6be5affc984f36cf118c778f0a83be20370",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x153bd1abe60104bd46aa05a27fa12d1346d64a57",
+      "name": "VaultV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Piku",
+      "tvl_usd": 3667912.051313,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultV2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x153bd1abe60104bd46aa05a27fa12d1346d64a57",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3667912.051313,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3ffaa9ce7cfa5688277b97bf6a8c22249404d129",
+      "name": "PendlePrincipalToken",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "Pendle",
+      "product_line": "Piku",
+      "tvl_usd": 278686.9458739935,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PendlePrincipalToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3ffaa9ce7cfa5688277b97bf6a8c22249404d129",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 278686.9458739935,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x460783e7917b191e80954edd674bf46f66e3015e",
+      "name": "PendleStrataMidasTrancheSY",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 255529.2085641994,
+      "is_proxy": true,
+      "impl_address": "0x81002d18197e239b12c2f7cc4ce32fb71d1eee73",
+      "impl_name": "PendleStrataMidasTrancheSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x460783e7917b191e80954edd674bf46f66e3015e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 122823.9422244235,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfb71d1e85048fbe2149edbf7ca1d7797dfb1fefb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 132705.2663397759,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6354b7dd06050da44a21d680436838a08e7dcec4",
+      "name": "PendleMarketV7",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Pendle",
+      "product_line": "Piku",
+      "tvl_usd": 3548.822773749101,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PendleMarketV7",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6354b7dd06050da44a21d680436838a08e7dcec4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3548.822773749101,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xacd577ccc29e88a2b7aaa15026533abd91fdd6be",
+      "name": "PendleYieldToken",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "Pendle",
+      "product_line": "Piku",
+      "tvl_usd": 3338.299922698993,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PendleYieldToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xacd577ccc29e88a2b7aaa15026533abd91fdd6be",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3338.299922698993,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xadbeb9e3afe0186c57cac78c6a801cc38c82fb62",
+      "name": "PendleERC4626SYYieldTokenScaled18",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 50.47737917241677,
+      "is_proxy": true,
+      "impl_address": "0x43954ea2ae388c3ee82b32c74439b618c75c025c",
+      "impl_name": "PendleERC4626SYYieldTokenScaled18",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xadbeb9e3afe0186c57cac78c6a801cc38c82fb62",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 50.47737917241677,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2f76563dd0d491eb6c128f846cff2a98047c2fb3",
+      "name": "AUT_Roles_v1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Piku",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x04fe7f1ced562bd49ceef586a34da912a07ab8e4",
+      "impl_name": "AUT_Roles_v1",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2f76563dd0d491eb6c128f846cff2a98047c2fb3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1966"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7e0305b212df3fb56366251c054c07748bf9a797",
+      "name": "FM_PC_Oracle_Redeeming_v1",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Piku",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd0c84c4f944e946124031b573a36bfce81d60cf1",
+      "impl_name": "FM_PC_Oracle_Redeeming_v1",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7e0305b212df3fb56366251c054c07748bf9a797",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1966"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x433471901ba1a8bde764e8421790c7d9bab33552",
+      "name": "LM_Oracle_Permissioned_v1",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Oracle Module",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x62c49b6138d9926fcf86bb15b66193fcc9004470",
+      "impl_name": "LM_Oracle_Permissioned_v1",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x433471901ba1a8bde764e8421790c7d9bab33552",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1966"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x514d2ff735434696df3f4e6b73e2c9093fc102cb",
+      "name": "PendleAaveV3MerklRewardsSYUpg",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x592704166357ce86526e717631d80a4d3f803c35",
+      "impl_name": "PendleAaveV3MerklRewardsSYUpg",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x514d2ff735434696df3f4e6b73e2c9093fc102cb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x751d64f7dd4082d95ad90e584857b8313b96940e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x936af9f9dd1f8f1377cdf3063690a9074a773f54",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x095707a011a500b2c2c043473249debb4e9c1dab",
+      "name": "PendleERC20WithOracleSY",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xea8b6cb6157762ad63b9272bd82fc3fc06410c10",
+      "impl_name": "PendleERC20WithOracleSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x095707a011a500b2c2c043473249debb4e9c1dab",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x399e426e6812943ac22976333698e16eaa80a209",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4a312fca9b7e568ab99e4e5ccbfb409221e1ed36",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6231e66491ad4e608a093a8806449fdcbbb9bed4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x725e18142472384e45e15084e308dbeae43381aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x785685b3a6a2af752694fda7058965302e59f8e6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc34e7d9d5ec0626ed14b6b7cee02fe904bec4c8d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdeb45ce184fa26211e07ff8ad842807ad703b75e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xeefa4255ba79ef3f6f769590e41fcfece10447c1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf5145335540c4116956c0936b7db08d1a862a2d9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3f029330c46049f97772295e3fb23721865614b0",
+      "name": "PendleERC4626NoRedeemNoDepositUpgSY",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x48a75315039af95d21e6480bb9f6dedb6f6e999a",
+      "impl_name": "PendleERC4626NoRedeemNoDepositUpgSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3f029330c46049f97772295e3fb23721865614b0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x44a4ff3934cf3833903a04261bd0d962f008d2c3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x47b50da0e1186b27a2413b81a352d05853699629",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc9950c55126c125173e9319077253d633221283a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x10c5e7711eaddc1b6b64e40ef1976fc462666409",
+      "name": "PendleERC4626NoRedeemWithAdapterAndSupplyCapSY",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3afcfc40d40a21bfb9964787ae8a408c9feab1b3",
+      "impl_name": "PendleERC4626NoRedeemWithAdapterAndSupplyCapSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x10c5e7711eaddc1b6b64e40ef1976fc462666409",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x55cb9535aa1ee7c98916b044af5679eb5ea1c171",
+      "name": "PendleLidoGGVSY",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe869dce4cb9b707bf0fe424c306615fb4e4f1a6c",
+      "impl_name": "PendleLidoGGVSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x55cb9535aa1ee7c98916b044af5679eb5ea1c171",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x093bb931965e10af75349b97d133aa8dab81bb4a",
+      "name": "PendleMidasSY",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x2cdc1f23d916e5c38ef20cdb37deaee65a6bde3d",
+      "impl_name": "PendleMidasSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x093bb931965e10af75349b97d133aa8dab81bb4a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x457904b54f47dd7a91253f225237a5b02ca059d6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb3538aab6a46572b118692a05915582857d6bc17",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe1e22d55e23900f30599d8bee74a0801f09b4e58",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x92899026d06343929c61e0987e09caeea6873fe5",
+      "name": "PendleStrataNUSDTrancheSY",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x5890d9f7dd8d7923ac733298f754633297ae67b7",
+      "impl_name": "PendleStrataNUSDTrancheSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x92899026d06343929c61e0987e09caeea6873fe5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdb8f1d15880b97dc38edfa46d8a5a7e5b506c45f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9d0fc59f88acb85520a8cfb74c7fe141d8563185",
+      "name": "PendleStrataUSDatTrancheSY",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x29ba0e1f0cf842224fd7fb9457e94a757059cffb",
+      "impl_name": "PendleStrataUSDatTrancheSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9d0fc59f88acb85520a8cfb74c7fe141d8563185",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa26938b7eb9f097e23e73af30c8f2ad6d06e3c6a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4f6673346ab4813f1665327ab39087008cc7d76f",
+      "name": "PendleStrataUSDETrancheSY",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xff132a94b659978484d18593a02ad476dacf0d95",
+      "impl_name": "PendleStrataUSDETrancheSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4f6673346ab4813f1665327ab39087008cc7d76f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc9bfebc79a722c05dc34bd2a227ef2db19fd1b8e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8d5cf57ee0cd5ae3ace43a7d6a40807c2a9e3908",
+      "name": "PendleUniBTCSYUpgScaled18",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6f656c30389ff35b25c2032ac990cc8f007acf33",
+      "impl_name": "PendleUniBTCSYUpgScaled18",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8d5cf57ee0cd5ae3ace43a7d6a40807c2a9e3908",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb9950954d965550fabbe635a8ccb7ee1fe8d7353",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x832bbd18ba4407baeeb85cec5ceee21477e5ef2e",
+      "name": "PendleUpshiftTokenizedVaultSY",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe0c7fe41bdb326f094a09de4003e18fc41bd9d22",
+      "impl_name": "PendleUpshiftTokenizedVaultSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x832bbd18ba4407baeeb85cec5ceee21477e5ef2e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x84760fda5e2184ab989fffc6d77350fc491dcfdf",
+      "name": "PendleXPRISMSY",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x55709fa234e3e16fd825d0a54e6b134558900083",
+      "impl_name": "PendleXPRISMSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x84760fda5e2184ab989fffc6d77350fc491dcfdf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1c44f9be658bde68e7b4091e9bd349fc64724450",
+      "name": "PendleXStocksSY",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xdac8654b397ced488dce2a5429d1530724857456",
+      "impl_name": "PendleXStocksSY",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1c44f9be658bde68e7b4091e9bd349fc64724450",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2e4039e8e31475d65dc00293c366fdbfbbc02dc3",
+      "name": "PIKU",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Piku",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PIKU",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2e4039e8e31475d65dc00293c366fdbfbbc02dc3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5a2d08b194e1764b0ff271c691b6a46fa10f6fd2",
+      "name": "PP_Queue_ManualExecution_v1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Piku",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc2cc18e15eef56af8ca854871e73888e4d4df993",
+      "impl_name": "PP_Queue_ManualExecution_v1",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5a2d08b194e1764b0ff271c691b6a46fa10f6fd2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1966"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5da17ca137f1128d4be7ce574bc61f3ac4839df8",
+      "name": "StakedPikuV2",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Piku",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakedPikuV2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5da17ca137f1128d4be7ce574bc61f3ac4839df8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9e08c5499f953c6297a7755bcbced383b606896b",
+      "name": "TransparentUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xba8beea6f99895a4bdbc890cd28a49755439d390",
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9e08c5499f953c6297a7755bcbced383b606896b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6f7d5e74cf802c77ec9eb01d828bd7a68141a94f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6f7d5e74cf802c77ec9eb01d828bd7a68141a94f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x83515bff87eaa6f4e888b93f64b27a12fad8cb41",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x83515bff87eaa6f4e888b93f64b27a12fad8cb41",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 1965,
+      "audit_key": "audit-1965",
+      "report_name": "* **Report**: <>",
+      "report_url": "https://drive.google.com/file/d/1qXOajYt-r68EWirW8K2PKKSNVzEZTx38/view",
+      "auditor": "Omega Security",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1966,
+      "audit_key": "audit-1966",
+      "report_name": "* **Report:** <>&#x20;",
+      "report_url": "https://github.com/InverterNetwork/contracts/blob/main/audits/2024-06-19-macro.pdf",
+      "auditor": "0xMacro",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AUT_Roles_v1",
+        "AUT_TokenGated_Roles_v1",
+        "BancorFormula",
+        "BondingCurveBase_v1",
+        "ERC20Issuance_v1",
+        "ERC20PaymentClientBase_v1",
+        "FM_BC_Bancor_Redeeming_VirtualSupply_v1",
+        "FeeManager_v1",
+        "Governor_v1",
+        "InverterBeaconProxy_v1",
+        "InverterBeacon_v1",
+        "LM_PC_KPIRewarder_v1",
+        "LM_PC_Staking_v1",
+        "LibMetadata",
+        "ModuleFactory_v1",
+        "ModuleManagerBase_v1",
+        "Module_v1",
+        "OptimisticOracleIntegrator",
+        "OrchestratorFactory_v1",
+        "Orchestrator_v1",
+        "PP_Simple_v1",
+        "PP_Streaming_v1",
+        "RedeemingBondingCurveBase_v1",
+        "SafeMath",
+        "TransactionForwarder_v1",
+        "Utils",
+        "VirtualCollateralSupplyBase_v1",
+        "VirtualIssuanceSupplyBase_v1"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1967,
+      "audit_key": "audit-1967",
+      "report_name": "* **Report**: <>&#x20;",
+      "report_url": "https://github.com/hats-finance/Inverter-Network-0xe47e52c4fea05e555920f1dcdcc6fb8eca103eeb/blob/main/report.md",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "0xMacro",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 14.8,
+      "latest_audit": "2024-06"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x153bd1abe60104bd46aa05a27fa12d1346d64a57",
+      "name": "VaultV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 3667912.051313,
+      "risk_note": "Verified native implementation with $3,667,912.05 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2e4039e8e31475d65dc00293c366fdbfbbc02dc3",
+      "name": "PIKU",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5da17ca137f1128d4be7ce574bc61f3ac4839df8",
+      "name": "StakedPikuV2",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 7,
+    "upstream": 3,
+    "standard_library": 17,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 4
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 1965,
+        "report_name": "* **Report**: <>"
+      },
+      {
+        "audit_id": 1967,
+        "report_name": "* **Report**: <>&#x20;"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

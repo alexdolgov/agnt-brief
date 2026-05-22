@@ -1,0 +1,18 @@
+{
+  "address": "0x01329a1cde2509421cbe99dd3feb3c1b212332fa",
+  "chain_id": 1,
+  "contract_name": "ERC1155Vault",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T19:25:41.589Z"
+}

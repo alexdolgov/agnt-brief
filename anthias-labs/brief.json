@@ -1,0 +1,225 @@
+{
+  "schema_version": "2.0",
+  "project_key": "anthias-labs",
+  "generated_at": "2026-05-22T19:21:23.627Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "anthias-labs",
+    "tier": 0,
+    "peak_tvl": 25444535,
+    "peak_date": "2026-05-09T00:00:00.000Z",
+    "tvl_30d_ago": null,
+    "tvl_90d_ago": null,
+    "tvl_current": 22395082,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": null,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": 13,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 11.984707128662404
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 9,
+    "unique_implementations": 2,
+    "total_deployments": 9,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 17846295.16905,
+    "tvl_usd": 705349.1696107285,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 705349.17
+    },
+    "asd_usd": 705349.1696107285,
+    "website_url": "https://anthias.xyz",
+    "chains": [
+      "base"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Anthias Labs provides risk curation services for DeFi protocols, deploying and managing vaults that optimize yield and risk parameters. The project operates on Base and utilizes VaultV2 and MetaMorpho contracts to implement these strategies.",
+    "relationship_narrative": "All contracts are deployed under the single Anthias Labs family, with VaultV2 and MetaMorpho contracts likely sharing common risk management logic and infrastructure, though no explicit supporting contracts are identified.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x48a90e85be5c56b0a669985a12ee7c449fc79965",
+      "name": "VaultV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Anthias Labs",
+      "tvl_usd": 705349.1696107285,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultV2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x48a90e85be5c56b0a669985a12ee7c449fc79965",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 10069.333693,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5083b1387ec3d4ee6467b83890d98f1af93f7c48",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 392.04998821422635,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x89bedbb1c4837444da215a377275ff96a84d6f53",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 65447.02808529975,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbb2f06ceae42cbcf5559ed0713538c8892d977c9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 75582.985254,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdba76bc542bb07538e046b40f2e8a215b409f7a8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 553857.7725902145,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x543257ef2161176d7c8cd90ba65c2d4caef5a796",
+      "name": "MetaMorpho",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Anthias Labs",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MetaMorpho",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x543257ef2161176d7c8cd90ba65c2d4caef5a796",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa0e430870c4604ccfc7b38ca7845b1ff653d0ff1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc1256ae5ff1cf2719d4937adb3bbccab2e00a2ca",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf24608e0ccb972b0b0f4a6446a0bbf58c701a026",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x48a90e85be5c56b0a669985a12ee7c449fc79965",
+      "name": "VaultV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 705349.1696107285,
+      "risk_note": "Verified native implementation with $705,349.17 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 1
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

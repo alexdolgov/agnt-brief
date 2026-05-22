@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "charm-finance",
-  "generated_at": "2026-05-22T00:52:42.037Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-bcffcb-4895",
+  "generated_at": "2026-05-22T06:22:54.392Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-630b00-d8ab",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "charm-finance",
@@ -22,19 +22,19 @@
     "drop_from_peak_pct": 82.9813351706115
   },
   "summary": {
-    "total_contracts": 4,
-    "total_addresses": 7,
-    "unique_implementations": 4,
-    "total_deployments": 7,
-    "audited_contracts": 0,
+    "total_contracts": 7,
+    "total_addresses": 15,
+    "unique_implementations": 7,
+    "total_deployments": 15,
+    "audited_contracts": 2,
     "unaudited_contracts": 1,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 2,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 3,
-    "coverage_pct": 0,
-    "total_audits": 2,
-    "scoreable_audits": 0,
+    "contracts_unverified": 4,
+    "coverage_pct": 66.7,
+    "total_audits": 5,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 2195939,
     "tvl_usd": 2195939,
     "tvl_source": "defillama",
@@ -48,20 +48,22 @@
       "linea",
       "scroll"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "tier1_coverage_pct": 66.7,
+    "tier1_auditors": [
+      "Spearbit"
+    ],
+    "latest_audit_date": "2025-06",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 1,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 3,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Charm Finance is a liquidity management protocol that automates concentrated liquidity positions on Uniswap V3-style AMMs. It deploys AlphaProVaults that actively rebalance and compound fees to optimize yields for liquidity providers.",
-    "relationship_narrative": "The protocol consists of a single product family centered around the AlphaProVaultFactory, which deploys and manages vault instances. No shared infrastructure or cross-family dependencies are present in the contract surface.",
+    "project_purpose": "Charm Finance is a liquidity management protocol that automates concentrated liquidity positions on Uniswap V3-style AMMs. It uses AlphaProVaults to manage user deposits, rebalance ranges, and compound fees to optimize yields.",
+    "relationship_narrative": "The protocol consists of a single product family, Charm Finance V2, centered around the AlphaProVaultFactory which deploys and manages vault instances. No shared infrastructure or cross-family dependencies are present.",
     "product_family_count": 1
   },
   "fork_lineage": {
@@ -69,6 +71,108 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0xe2ac68fe15a8e64639aedcda30867cac04331a66",
+      "name": "AlphaProPeriphery",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlphaProPeriphery",
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xe2ac68fe15a8e64639aedcda30867cac04331a66",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xf1b21f82b69b989fdd750623a83b13996539a7ee",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0x0a4b7ac0723d0d08de255aa9d574958c66e9baea",
+      "name": "AlphaProVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlphaProVault",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8cbc885ece6c515e092ba1b3e24b567a7d91572c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0x0a4b7ac0723d0d08de255aa9d574958c66e9baea",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xf0f42c62923c6e741c64e0163c5c50965c05df61",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x8cbc885ece6c515e092ba1b3e24b567a7d91572c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1791",
+        "audit-1792",
+        "audit-1793"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
     {
       "chain_id": 80094,
       "chain_name": "berachain",
@@ -90,7 +194,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -99,7 +203,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0x78f25a5f78092bd13109a2f889cf324907b4ad15",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -108,7 +221,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 534352,
@@ -117,15 +230,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-1791",
+        "audit-1793"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 288,
@@ -133,7 +249,7 @@
       "address": "0xfaf1af4dc761dba157227a3c06cec9a7486d8a07",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Charm Finance V2",
       "tvl_usd": null,
@@ -164,7 +280,7 @@
       "address": "0xc2cc57a62982c4c92c69b856b5d03c6deca32e77",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -190,12 +306,43 @@
       "contamination_flag": "review"
     },
     {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0xfcc5d3b0ba012905e149acab826d452e29780d3b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xfcc5d3b0ba012905e149acab826d452e29780d3b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
       "chain_id": 81457,
       "chain_name": "blast",
       "address": "0xc2cc57a62982c4c92c69b856b5d03c6deca32e77",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -223,8 +370,8 @@
   ],
   "audits": [
     {
-      "audit_id": 1778,
-      "audit_key": "audit-1778",
+      "audit_id": 1790,
+      "audit_key": "audit-1790",
       "report_name": "Active Bug Bounty Program",
       "report_url": "https://immunefi.com/bug-bounty/charm/information",
       "auditor": "Immunefi",
@@ -244,14 +391,85 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1779,
-      "audit_key": "audit-1779",
+      "audit_id": 1791,
+      "audit_key": "audit-1791",
       "report_name": "Rendered PDF capture",
       "report_url": "https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FIM3bniGpiEo24osqeSJ5%2Freport-cantinacode-charm-0604.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2025-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlphaProVault",
+        "AlphaProVaultFactory"
+      ],
+      "matched_contracts": 9,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1792,
+      "audit_key": "audit-1792",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FcDHlWmzrwu3w7pAxW6dG%2FPeckShield-Audit-Report-Charm-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlphaProVault"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1793,
+      "audit_key": "audit-1793",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FLx7bFYx6tcfSpsdqT3jV%2FPeckShield-Audit-Report-Charm-AlphaPro-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlphaProVault",
+        "AlphaProVaultFactory"
+      ],
+      "matched_contracts": 9,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 1794,
+      "audit_key": "audit-1794",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2Fcblzw4RcfNUsNN1dnlPG%2FREP-Charm%20Finance%20Alpha%20Vaults-2021-06-30.pdf",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2021-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -265,33 +483,52 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 66.7,
+      "latest_audit": "2023-06"
+    },
+    {
+      "auditor": "Spearbit",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 66.7,
+      "latest_audit": "2025-06"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 80094,
       "chain_name": "berachain",
-      "address": "0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137",
-      "name": "AlphaProVaultFactory",
-      "role": "registry",
+      "address": "0xe2ac68fe15a8e64639aedcda30867cac04331a66",
+      "name": "AlphaProPeriphery",
+      "role": "periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 4,
+    "native": 3,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 4
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 22
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 1779,
+        "audit_id": 1794,
         "report_name": "Rendered PDF capture"
       }
     ],

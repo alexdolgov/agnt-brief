@@ -5,10 +5,10 @@
 | Chain | berachain (80094) |
 | Address | `0xe2ac68fe15a8e64639aedcda30867cac04331a66` |
 | Role | periphery |
-| Origin | needs_review |
+| Origin | native |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 1 (berachain [`0xe2ac68fe15a8e64639aedcda30867cac04331a66`](../0xe2ac68fe15a8e64639aedcda30867cac04331a66/)) |
+| Deployments | 2 (berachain [`0xe2ac68fe15a8e64639aedcda30867cac04331a66`](../0xe2ac68fe15a8e64639aedcda30867cac04331a66/); berachain `0xf1b21f82b69b989fdd750623a83b13996539a7ee`) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

@@ -1,0 +1,172 @@
+{
+  "schema_version": "2.0",
+  "project_key": "republic-note",
+  "generated_at": "2026-05-22T20:01:24.274Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "republic-note",
+    "tier": 0,
+    "peak_tvl": 29973004,
+    "peak_date": "2025-11-27T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 16309775,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 16654684,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": 176,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 45.58511719412575
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 16309775.07134,
+    "tvl_usd": 51200000,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "avalanche": 51200000
+    },
+    "asd_usd": 51200000,
+    "website_url": "https://republic.com/note",
+    "chains": [
+      "avalanche"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Republic Note is a tokenized real-world asset (RWA) protocol that issues a restricted, lockup-based token representing fractional ownership or revenue-sharing rights in private equity or venture capital assets.",
+    "relationship_narrative": "The protocol consists of a single product family with no shared infrastructure or dependencies beyond the core token contract.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x7c6a937943f135283a2561938de2200994a8f7a7",
+      "name": "RestrictedLockupToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Republic Note",
+      "tvl_usd": 51200000,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RestrictedLockupToken",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x7c6a937943f135283a2561938de2200994a8f7a7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 51200000,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xfb23108ebefcb2079a98aa7b2480307f47cb81e7",
+      "name": "TransferRules",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TransferRules",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xfb23108ebefcb2079a98aa7b2480307f47cb81e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x7c6a937943f135283a2561938de2200994a8f7a7",
+      "name": "RestrictedLockupToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 51200000,
+      "risk_note": "Verified native implementation with $51,200,000.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xfb23108ebefcb2079a98aa7b2480307f47cb81e7",
+      "name": "TransferRules",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

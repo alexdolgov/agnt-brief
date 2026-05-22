@@ -1,0 +1,131 @@
+{
+  "schema_version": "2.0",
+  "project_key": "geth",
+  "generated_at": "2026-05-22T20:03:34.216Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "geth",
+    "tier": 0,
+    "peak_tvl": 33429019,
+    "peak_date": "2025-08-23T00:00:00.000Z",
+    "tvl_30d_ago": 18159781,
+    "tvl_90d_ago": 15078163,
+    "tvl_current": 16229941,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 21474105,
+    "change_30d_pct": -10.627000402703095,
+    "change_90d_pct": 7.638715671133148,
+    "days_since_peak": 272,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 51.4495444810989
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 16270497.69552,
+    "tvl_usd": 16161210.883357283,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 16161210.88
+    },
+    "asd_usd": 16161210.883357283,
+    "website_url": "https://guarda.com/staking/ethereum-staking/",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "GETH is a liquid staking protocol on Ethereum that allows users to stake ETH and receive a liquid staking token (GETH) representing their staked position and accrued rewards.",
+    "relationship_narrative": "The protocol consists of a single product family with one core contract, the StakeToken, which handles both staking and token issuance.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3802c218221390025bceabbad5d8c59f40eb74b8",
+      "name": "StakeToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "GETH",
+      "tvl_usd": 16161210.883357283,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakeToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3802c218221390025bceabbad5d8c59f40eb74b8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 16161210.883357283,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3802c218221390025bceabbad5d8c59f40eb74b8",
+      "name": "StakeToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 16161210.883357283,
+      "risk_note": "Verified native implementation with $16,161,210.88 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

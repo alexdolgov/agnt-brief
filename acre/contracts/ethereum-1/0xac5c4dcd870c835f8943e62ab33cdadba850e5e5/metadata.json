@@ -1,0 +1,17 @@
+{
+  "address": "0xac5c4dcd870c835f8943e62ab33cdadba850e5e5",
+  "chain_id": 1,
+  "contract_name": "MMevDepositVault",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T21:52:55.165Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x0d1c52c7cd203e4f84d084a33a062c61d51762fc",
+  "chain_id": 1,
+  "contract_name": "MSlRedemptionVaultWithSwapper",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T21:52:42.939Z"
+}

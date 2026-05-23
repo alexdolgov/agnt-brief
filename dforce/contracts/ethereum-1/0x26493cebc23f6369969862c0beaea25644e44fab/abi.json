@@ -1,0 +1,299 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_messageBus",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_weth",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_receiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_transferId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "SendIM",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_receiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "TransferFallback",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_receiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "TransferRefund",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "_from",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_minReturn",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Structs.SwapBaseInfo",
+        "name": "_baseInfo",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_crossFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_dstChainId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "_dstContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_crossToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_maxSlippage",
+        "type": "uint32"
+      },
+      {
+        "internalType": "bool",
+        "name": "_swap",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "_swapType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes",
+            "name": "_swapData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct Structs.SwapInfo",
+        "name": "_swapInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "_crossChainSwap",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_transferId",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "bridge",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "_from",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_minReturn",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Structs.SwapBaseInfo",
+        "name": "_baseInfo",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_crossFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_swap",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "_swapType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes",
+            "name": "_swapData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct Structs.SwapInfo",
+        "name": "_swapInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "getFee",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "_sendData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_fee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "messageBus",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "weth",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

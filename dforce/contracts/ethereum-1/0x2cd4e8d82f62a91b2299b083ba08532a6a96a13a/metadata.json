@@ -1,0 +1,18 @@
+{
+  "address": "0x2cd4e8d82f62a91b2299b083ba08532a6a96a13a",
+  "chain_id": 1,
+  "contract_name": "USRProxy",
+  "compiler_version": "v0.5.12+commit.7709ece9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x47992aaada10c4b55659ff5e4d95527b8d50e434",
+  "fetched_at": "2026-05-23T00:26:20.837Z"
+}

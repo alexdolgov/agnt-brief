@@ -1,0 +1,18 @@
+{
+  "address": "0x5c4365be7a01c6f0b8709d3b619ffd26ee072bdc",
+  "chain_id": 56,
+  "contract_name": "DSGuard",
+  "compiler_version": "v0.5.12+commit.7709ece9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:26:18.674Z"
+}

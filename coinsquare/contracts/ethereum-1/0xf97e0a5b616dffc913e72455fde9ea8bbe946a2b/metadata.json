@@ -1,0 +1,18 @@
+{
+  "address": "0xf97e0a5b616dffc913e72455fde9ea8bbe946a2b",
+  "chain_id": 1,
+  "contract_name": "GeneScience",
+  "compiler_version": "v0.4.18+commit.9cf6e910",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-22T23:55:01.146Z"
+}

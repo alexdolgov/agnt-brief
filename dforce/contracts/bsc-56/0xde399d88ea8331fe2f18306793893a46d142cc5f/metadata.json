@@ -1,0 +1,17 @@
+{
+  "address": "0xde399d88ea8331fe2f18306793893a46d142cc5f",
+  "chain_id": 56,
+  "contract_name": "DTokenProxy",
+  "compiler_version": "v0.5.12+commit.7709ece9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x376539c257bc4b125e7279aedf1580bf657b6b41",
+  "fetched_at": "2026-05-23T00:26:21.121Z"
+}

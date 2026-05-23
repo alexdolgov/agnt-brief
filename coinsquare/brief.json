@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0",
+  "project_key": "coinsquare",
+  "generated_at": "2026-05-22T23:54:59.133Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "coinsquare",
+    "tier": 0,
+    "peak_tvl": 180367580,
+    "peak_date": "2023-03-20T00:00:00.000Z",
+    "tvl_30d_ago": 14700051,
+    "tvl_90d_ago": 14907642,
+    "tvl_current": 12150705,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 24309760,
+    "change_30d_pct": -17.34242962830537,
+    "change_90d_pct": -18.49344785714602,
+    "days_since_peak": 1159,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 93.26336528992627
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 12417261.21335,
+    "tvl_usd": 12417261.21335,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://coinsquare.com",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Coinsquare is a centralized exchange (CEX) that facilitates cryptocurrency trading and related financial services. The provided smart contract inventory appears to be a placeholder or misattribution, as it includes only a single unrelated contract (KittyCore) rather than a coherent set of exchange contracts.",
+    "relationship_narrative": "No meaningful relationships can be inferred, as the contract inventory consists of a single unrelated contract with no shared infrastructure or token flows evident.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x06012c8cf97bead5deae237070f9587f8e7a266d",
+      "name": "KittyCore",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "cryptokitties",
+      "product_line": "Examples of smart contracts include the DAO, Propy, and many others",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "KittyCore",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x06012c8cf97bead5deae237070f9587f8e7a266d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 1,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x1ee116b869ecc7cd13c629a8a2ae39fa361265cf",
+  "chain_id": 10,
+  "contract_name": "MainSecondaryInterestModel",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:26:17.207Z"
+}

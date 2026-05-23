@@ -1,0 +1,17 @@
+{
+  "address": "0x10bbb2ba97e612f6da59052d84e2c03bb5ede046",
+  "chain_id": 42161,
+  "contract_name": "iMUSX",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:26:19.440Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x8ec97b879f1c2aaf3a8bc9042560f5e415042d3d",
+  "chain_id": 42161,
+  "contract_name": "iTokenAggregatorSecondModel",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:26:20.916Z"
+}

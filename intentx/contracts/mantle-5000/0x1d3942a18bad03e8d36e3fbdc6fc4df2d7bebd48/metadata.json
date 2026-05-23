@@ -1,0 +1,17 @@
+{
+  "address": "0x1d3942a18bad03e8d36e3fbdc6fc4df2d7bebd48",
+  "chain_id": 5000,
+  "contract_name": "AirdropClaimXINTX",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 2048,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:58:09.424Z"
+}

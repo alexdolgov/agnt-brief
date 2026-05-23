@@ -1,0 +1,18 @@
+{
+  "address": "0x0c18932d6dd86fbea662de6389fae86f5570983c",
+  "chain_id": 1,
+  "contract_name": "FlashSwapRouterV2",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:15:18.922Z"
+}

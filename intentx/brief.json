@@ -1,0 +1,2583 @@
+{
+  "schema_version": "2.0",
+  "project_key": "intentx",
+  "generated_at": "2026-05-23T14:58:04.929Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "intentx",
+    "tier": 0,
+    "peak_tvl": 6314767,
+    "peak_date": "2024-05-21T00:00:00.000Z",
+    "tvl_30d_ago": 5673214,
+    "tvl_90d_ago": 5673214,
+    "tvl_current": 5673214,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 5677395,
+    "change_30d_pct": 0,
+    "change_90d_pct": 0,
+    "days_since_peak": 732,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 10.159567249274597
+  },
+  "summary": {
+    "total_contracts": 56,
+    "total_addresses": 123,
+    "unique_implementations": 56,
+    "total_deployments": 123,
+    "audited_contracts": 0,
+    "unaudited_contracts": 26,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 25,
+    "contracts_verified_by_bytecode": 1,
+    "contracts_unverified": 30,
+    "coverage_pct": 0,
+    "total_audits": 2,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 5673214.30392,
+    "tvl_usd": 10510957.30872,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 21.64,
+      "mantle": 10510935.67
+    },
+    "asd_usd": 10510957.30872,
+    "website_url": "https://intentx.io",
+    "chains": [
+      "base",
+      "mantle"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 2
+    }
+  },
+  "topography": {
+    "project_purpose": "IntentX is a decentralized derivatives trading protocol that enables users to trade perpetual futures and other financial instruments on-chain. It leverages a multi-party computation (MPC) and intent-based architecture to provide efficient, non-custodial trading with features like staking, vesting, and fee rebates.",
+    "relationship_narrative": "All contracts are deployed by a single deployer cluster and share the INTX token as the central economic asset. The SymmExecutor and PartyB contracts form the trading infrastructure, while staking, vesting, and incentive contracts manage token distribution and user rewards, all governed by a Gnosis Safe.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x1cb4b1dcee1ebde41c272c7c14bf55d565e2830c",
+      "name": "IntxToken",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "IntentX",
+      "tvl_usd": 10492800,
+      "is_proxy": false,
+      "impl_address": "0x1cb4b1dcee1ebde41c272c7c14bf55d565e2830c",
+      "impl_name": "IntxToken",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x1cb4b1dcee1ebde41c272c7c14bf55d565e2830c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4b7f28397b4294277e7825f224172944f4f5a877",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 10492800,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x0b5b3f9b727656a254ec1203d8b2a86b4540f5f5",
+      "name": "StakedINTX",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 18135.668963,
+      "is_proxy": false,
+      "impl_address": "0xf8be5779bf58b0cbf6db21feb8d5d89e4f65e9b6",
+      "impl_name": "StakedINTX",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x0b5b3f9b727656a254ec1203d8b2a86b4540f5f5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x2554727881c5fb22965c6fcb7c6042b367845362",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 18135.668963,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x921dd892d67aed3d492f9ad77b30b60160b53fe1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xbc029264eb164f36d7dfefc46a607b66c2b4f379",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xe72284fc2d56be2c1649742fd131bcea41a94a6a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xf8be5779bf58b0cbf6db21feb8d5d89e4f65e9b6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x188ff44e2f3dc62e519a0ff29eda4d7a896c67af",
+      "name": "MultiAccount",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 21.639757000000003,
+      "is_proxy": false,
+      "impl_address": "0xc38342125ded49ea7e62e04a30df29c736ffb47d",
+      "impl_name": "MultiAccount",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x188ff44e2f3dc62e519a0ff29eda4d7a896c67af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x829af7dda2538b78acf64babe683a7eb34ad8373",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2190315d8497b721d28401e4acb268496c9d53e9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x39ecc772f6073242d6fd1646d81fa2d87fe95314",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 21.639757000000003,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x515d4e4a04a9138a2c39b287317c5a0d8c9c6653",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x54a870306b2ed367d135c43f2c2dafa9061bb887",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x921dd892d67aed3d492f9ad77b30b60160b53fe1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9341529a0cf73d6165ed98e5705d8e54f74f1c53",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa784292b2dae2922303a712e039159fe452926c7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb95d177398916b2b1fc1e648717e85115c5be7a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbc029264eb164f36d7dfefc46a607b66c2b4f379",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbcf806cf7d8b4b637e52ef66218539b89bb46e84",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc38342125ded49ea7e62e04a30df29c736ffb47d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc3ecd872c7242b83025657e39b7fda926c6f5896",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xce15dcf16f502b0c58f02a14348cb785a19f37b0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe3337432d80556541fdb3e1cbe2bc8bc454ba7b0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xee93f20713add2a49890da69fe432b37ccb7a63b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x1d3942a18bad03e8d36e3fbdc6fc4df2d7bebd48",
+      "name": "AirdropClaimXINTX",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AirdropClaimXINTX",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x1d3942a18bad03e8d36e3fbdc6fc4df2d7bebd48",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6c81c0efa63cb8c705fb98d79ad88852c5157164",
+      "name": "CarbonFeeRebate",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcb420c74625fec41671458f3ac660616e1ad1357",
+      "impl_name": "CarbonFeeRebate",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6c81c0efa63cb8c705fb98d79ad88852c5157164",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcb420c74625fec41671458f3ac660616e1ad1357",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb49cae38c96f6425ce4a46e8220549c6a13362be",
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe7e526cd5b94ef145fed14296c75415622809ec2",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb49cae38c96f6425ce4a46e8220549c6a13362be",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xef23f554af7fa7421af1ff53f2b4838c05afd7a2",
+      "name": "GnosisSafeProxy",
+      "role": "governance",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "IntentX",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GnosisSafeProxy",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xef23f554af7fa7421af1ff53f2b4838c05afd7a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x229795d6d3f3cb11dd0bb7973038fd2f733c2927",
+      "name": "ICOClaimXINTX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x229795d6d3f3cb11dd0bb7973038fd2f733c2927",
+      "impl_name": "ICOClaimXINTX",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x229795d6d3f3cb11dd0bb7973038fd2f733c2927",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xd4e5aad348a5c5c5411ee404a4ef2c7c24165c10",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x6ed953a7124d77258a6e43a342615d61fb6c5ff6",
+      "name": "IntentXAffiliates",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x6ed953a7124d77258a6e43a342615d61fb6c5ff6",
+      "impl_name": "IntentXAffiliates",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x6ed953a7124d77258a6e43a342615d61fb6c5ff6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x98f632989ddd68be9ffbe8f64f45cd2304a158cf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x01a97c03fce8dce233a269678fb5f9ba6c6a3ab9",
+      "name": "IntentXFeeRebate",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf5a10b4124dc503e79350f81cfa2108eac1964dc",
+      "impl_name": "IntentXFeeRebate",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x01a97c03fce8dce233a269678fb5f9ba6c6a3ab9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x8bb1a5fe8655ecd38de1af9c5f7f4975c24f4fd8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xf5a10b4124dc503e79350f81cfa2108eac1964dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x433be520b115d771d6da17a573fdcb01d69d579d",
+      "name": "IntentXMinigame",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x55477c3dd49e8f5a90b8f3acab6ade2baa8d627d",
+      "impl_name": "IntentXMinigame",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x433be520b115d771d6da17a573fdcb01d69d579d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x55477c3dd49e8f5a90b8f3acab6ade2baa8d627d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x703c4927945aac2b5a76f4c1d85bc85e6faaddb6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7d27187eb33a7b1d99258ff222633670f84fa342",
+      "name": "IntxOFT",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "IntentX",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "IntxOFT",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7d27187eb33a7b1d99258ff222633670f84fa342",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x5d55e52e32266459ecf09684f0abaab6c2acc3c2",
+      "name": "IntxOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "IntxOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x5d55e52e32266459ecf09684f0abaab6c2acc3c2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xc38342125ded49ea7e62e04a30df29c736ffb47d",
+      "name": "MntRewardsClaimXINTX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MntRewardsClaimXINTX",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xc38342125ded49ea7e62e04a30df29c736ffb47d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x324de1e7078b9809b4c17849f3ddbf39befd330d",
+      "name": "NoxPartyB",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xabf0c8b383e02a41b60b833cdcf81c0d464ad914",
+      "impl_name": "NoxPartyB",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x324de1e7078b9809b4c17849f3ddbf39befd330d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9f20bad77cca97f2f96de88b146603ca3f65bad5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x2d2463bb95077eb38b3658d71d299da0f6453188",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x2d2463bb95077eb38b3658d71d299da0f6453188",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x48d0d59b3660f07f85f5b87b65567ed1f322508b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x55df513efa481df6ebdf1661784fa159919bee49",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd0ecc75816cb01b3e904766391cb34214a5458e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf2b9d5462243348d48cc3f9e680fca5727e77637",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x8ed90b74141390f835d0d866790741497c8b0ea1",
+      "name": "SnapshotAPI",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SnapshotAPI",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x8ed90b74141390f835d0d866790741497c8b0ea1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xa2d796aaf5e06e64ebad01f72358aac310717cf0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xa3a93aa0d1b98124e9a48b18f7387ecaedf699bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xd3aadc7645d03d605607acbcfaa2fbc99603b1cf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x25d7572f32d9cfb96799efdf50804a982a983f0a",
+      "name": "SymmExecutorUpgradeable",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x1c529cf1392cde198b5cdac11c7e50780a0686a4",
+      "impl_name": "SymmExecutorUpgradeable",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xeb02a6887a2e0b65ce8d267aad012312db19db05",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xf7b6d079c62a10e2d106113f998520f144a12bcf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x25d7572f32d9cfb96799efdf50804a982a983f0a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2d36f52bfebf74fcc048bae866b54ea685ee5eca",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3c3de3739d1c8092ad378e44220829eebe062855",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x433be520b115d771d6da17a573fdcb01d69d579d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbf41d10016e34ed0b290c45e2a0e0627318155d5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1bd0c5557f63921ad7553b7ad5cce1585a0ed424",
+      "name": "SymmioPartyB",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4a23e09b706e5e930497f723dd412d172e16404e",
+      "impl_name": "SymmioPartyB",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1bd0c5557f63921ad7553b7ad5cce1585a0ed424",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb3ccac825e5515ca6b8d18ceb22a00066793499c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x3256de92e1e2f588950b009346f5c77d07807b66",
+      "name": "TestToken",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xade616c06ec097d5716c5225d7c6b2afb6873fa9",
+      "impl_name": "TestToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3256de92e1e2f588950b009346f5c77d07807b66",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xade616c06ec097d5716c5225d7c6b2afb6873fa9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x319f10d14b5b7195a1693f4f5c015370c4324fa6",
+      "name": "TimelockController",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimelockController",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x7aded3c2d7224495f96d82bf52b6998f230c04f0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x319f10d14b5b7195a1693f4f5c015370c4324fa6",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x49024995376c4218348c5c9f578f8c80a99ed8e2",
+      "name": "TradingCompetitionClaim",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x49024995376c4218348c5c9f578f8c80a99ed8e2",
+      "impl_name": "TradingCompetitionClaim",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x49024995376c4218348c5c9f578f8c80a99ed8e2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x50f1cd5da4fccfe62b8382281007eef5264649b8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x839d230b779f739214a69a2f16c16722760c2be7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x4318fd1edb3ed2b5e018b00fe1b886e85719b672",
+      "name": "TransparentUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb5317e9b93fe8e6873ad6045f8ee617910b7d112",
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4318fd1edb3ed2b5e018b00fe1b886e85719b672",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x73c9c5c09435886e58ba0a4265702cc607cf7529",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x7495e8e4810d7af0be847268cee53c0055e082e9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x77263ff6f88bc1e49feb425aba602dec3e477641",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x8e9342bcbb7d4c875362cc79f2cc212bb818ea82",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xbea14475f6357ac6c16aeb5134f6d7862fa0dfd2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xc7e3f48c050082c4c3db7430348c1786c21ce20c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xec9190e9d88d18aabc5557296b3fdef137e47d22",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xfaf5c6800b5026c500e540bc977cc6025db79aea",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x703c4927945aac2b5a76f4c1d85bc85e6faaddb6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc9f8a55864381d3be28aae79091256448fd8da21",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x01114b93f9bf5c7ebbbc2eb03d7626b761a4fb59",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x01114b93f9bf5c7ebbbc2eb03d7626b761a4fb59",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x0f5af1ab88350cc62875e7c57ebfbb95091e83b2",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x0f5af1ab88350cc62875e7c57ebfbb95091e83b2",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x327945c6acc9d554594666b5e9ebd29a588e7022",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x327945c6acc9d554594666b5e9ebd29a588e7022",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x3499939df75e18839d58b3a57498e85cb4c4d2b6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x3499939df75e18839d58b3a57498e85cb4c4d2b6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x39f64b4abcdba840ced0c9bab25589bd8fdfc024",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x39f64b4abcdba840ced0c9bab25589bd8fdfc024",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x40423ef1fdcc21738a9031d0295b7ce6739cd1ae",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x40423ef1fdcc21738a9031d0295b7ce6739cd1ae",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x41ad9f7c493df4ba80548271c7df78d515e31d60",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x41ad9f7c493df4ba80548271c7df78d515e31d60",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x4458a9603b91c8e1286add0805a3b8e60b72fad5",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4458a9603b91c8e1286add0805a3b8e60b72fad5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x458d175a42049cfb8ddcdc561d1be147da5b3f27",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x458d175a42049cfb8ddcdc561d1be147da5b3f27",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x4d8835046c622ee75968407f6383a7c92d57273c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4d8835046c622ee75968407f6383a7c92d57273c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x4fad271896eaf7228da1d7c23efb63cb62b50d1a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4fad271896eaf7228da1d7c23efb63cb62b50d1a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x5996d87b7d30e2f1c5d5064428335cf7d2f924b3",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x5996d87b7d30e2f1c5d5064428335cf7d2f924b3",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x6d0be4100407b2d198a253ec88efe75e1cd8e7f5",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x6d0be4100407b2d198a253ec88efe75e1cd8e7f5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x6d8a38c8f4a6c999c2dbb004e75032e41281362a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x6d8a38c8f4a6c999c2dbb004e75032e41281362a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x78253f316a42be93e631578f79bd773ad011b4f6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x78253f316a42be93e631578f79bd773ad011b4f6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x9c40113ade0e6d284f2f7f2380f12eb6b62a8ad5",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x9c40113ade0e6d284f2f7f2380f12eb6b62a8ad5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xa6e69fbc45a435410414b4ca23b1eaba6babfa90",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xa6e69fbc45a435410414b4ca23b1eaba6babfa90",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xb5317e9b93fe8e6873ad6045f8ee617910b7d112",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb5317e9b93fe8e6873ad6045f8ee617910b7d112",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xb86b965e95dd21fcdaffd94712fa908b1052d73c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb86b965e95dd21fcdaffd94712fa908b1052d73c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xc1680dcfb47609efc522880cb82972f41b7b7b78",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xc1680dcfb47609efc522880cb82972f41b7b7b78",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xca8e343cf7059345fcb9cc8a59e1a57a630d7bfb",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xca8e343cf7059345fcb9cc8a59e1a57a630d7bfb",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xd008af79f16880029cf1a52cec55de0201adb5d0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xd008af79f16880029cf1a52cec55de0201adb5d0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xd6e1167fe6278a13f365cc8da30eeb4aea1452ac",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xd6e1167fe6278a13f365cc8da30eeb4aea1452ac",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x141269e29a770644c34e05b127ab621511f20109",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x141269e29a770644c34e05b127ab621511f20109",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2d2463bb95077eb38b3658d71d299da0f6453188",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2d2463bb95077eb38b3658d71d299da0f6453188",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x78c98512ba92b8f27557b8861c811343f5905091",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x78c98512ba92b8f27557b8861c811343f5905091",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xa6b67072128d073709b9a83705417489b0619e56",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa6b67072128d073709b9a83705417489b0619e56",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xdc4a6308b505c7d372275648d7b75480755fa725",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdc4a6308b505c7d372275648d7b75480755fa725",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xe6118aa6d0a8ee7a86d12c48a8de4edcb695767a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe6118aa6d0a8ee7a86d12c48a8de4edcb695767a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xf3d7d35ed6346d8078390208b0b6cf7e85a2477c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf3d7d35ed6346d8078390208b0b6cf7e85a2477c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x083e449ac8ddd874efb2d9315301b8188df6366f",
+      "name": "VestingXINTX",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0863c4b573d1a672bab87ea83dd26dce7a508146",
+      "impl_name": "VestingXINTX",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x083e449ac8ddd874efb2d9315301b8188df6366f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x0863c4b573d1a672bab87ea83dd26dce7a508146",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x1c529cf1392cde198b5cdac11c7e50780a0686a4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x388e7afc43a30ed8004b0d61aea1df5f48e55d60",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x805045f5594939bfe3e78c6d21c4e276d21186dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb33b67be2774b6ed634ffd041b6900f5e1dea44b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb98b2499f54745a08423a82c4b3313b3854120cc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xd012ec002bffe0b3d76f7899cd0d6f306d7a5040",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x5a242601270389ce307de3ce2283f7a4b7e97edf",
+      "name": "VestingXINTXAdv",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xef79643cda5a6a9a6bf5a5ea4e85e77bad671ef8",
+      "impl_name": "VestingXINTXAdv",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x5a242601270389ce307de3ce2283f7a4b7e97edf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xef79643cda5a6a9a6bf5a5ea4e85e77bad671ef8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x316cee10dd877c4b503ad50afbbc216b08da653c",
+      "name": "XIntentXTraderIncentives",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd1eb4aaa6cfad466d39371d1d4a909168ab1b95f",
+      "impl_name": "XIntentXTraderIncentives",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x316cee10dd877c4b503ad50afbbc216b08da653c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xd1eb4aaa6cfad466d39371d1d4a909168ab1b95f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2415,
+      "audit_key": "audit-2415",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://audits.sherlock.xyz/contests/85",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2416,
+      "audit_key": "audit-2416",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://certificate.quantstamp.com/full/intent-x/a195e62f-30b6-4219-b9e5-42af8a9e2fd5/index.html",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x0b5b3f9b727656a254ec1203d8b2a86b4540f5f5",
+      "name": "StakedINTX",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 18135.668963,
+      "risk_note": "Verified native implementation with $18,135.67 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x188ff44e2f3dc62e519a0ff29eda4d7a896c67af",
+      "name": "MultiAccount",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 21.639757000000003,
+      "risk_note": "Verified native implementation with $21.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x1d3942a18bad03e8d36e3fbdc6fc4df2d7bebd48",
+      "name": "AirdropClaimXINTX",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x229795d6d3f3cb11dd0bb7973038fd2f733c2927",
+      "name": "ICOClaimXINTX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x6ed953a7124d77258a6e43a342615d61fb6c5ff6",
+      "name": "IntentXAffiliates",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7d27187eb33a7b1d99258ff222633670f84fa342",
+      "name": "IntxOFT",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x5d55e52e32266459ecf09684f0abaab6c2acc3c2",
+      "name": "IntxOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xc38342125ded49ea7e62e04a30df29c736ffb47d",
+      "name": "MntRewardsClaimXINTX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x319f10d14b5b7195a1693f4f5c015370c4324fa6",
+      "name": "TimelockController",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x49024995376c4218348c5c9f578f8c80a99ed8e2",
+      "name": "TradingCompetitionClaim",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 13,
+    "upstream": 0,
+    "standard_library": 13,
+    "needs_review": 30
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2415,
+        "report_name": "{% embed url=\"<>\" %}"
+      },
+      {
+        "audit_id": 2416,
+        "report_name": "{% embed url=\"<>\" %}"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

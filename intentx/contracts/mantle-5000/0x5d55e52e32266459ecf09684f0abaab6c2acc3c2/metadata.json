@@ -1,0 +1,17 @@
+{
+  "address": "0x5d55e52e32266459ecf09684f0abaab6c2acc3c2",
+  "chain_id": 5000,
+  "contract_name": "IntxOFTAdapter",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 41,
+  "constructor_arguments": "0000000000000000000000004b7f28397b4294277e7825f224172944f4f5a8770000000000000000000000001a44076050125825900e736c501f859c50fe728c00000000000000000000000067736569b61bdb7f1a756ef069ab5b9590668e4c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:58:10.336Z"
+}

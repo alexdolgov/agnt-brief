@@ -1,0 +1,18 @@
+{
+  "address": "0x1c529cf1392cde198b5cdac11c7e50780a0686a4",
+  "chain_id": 8453,
+  "contract_name": "SymmExecutorUpgradeable",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 2048,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:58:06.849Z"
+}

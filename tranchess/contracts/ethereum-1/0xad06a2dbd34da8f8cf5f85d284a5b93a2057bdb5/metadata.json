@@ -1,0 +1,18 @@
+{
+  "address": "0xad06a2dbd34da8f8cf5f85d284a5b93a2057bdb5",
+  "chain_id": 1,
+  "contract_name": "WstETHBishopStableSwap",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:15:21.756Z"
+}

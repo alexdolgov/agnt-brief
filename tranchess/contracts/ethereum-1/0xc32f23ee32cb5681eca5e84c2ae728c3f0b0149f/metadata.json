@@ -1,0 +1,18 @@
+{
+  "address": "0xc32f23ee32cb5681eca5e84c2ae728c3f0b0149f",
+  "chain_id": 1,
+  "contract_name": "WstETHPriceOracle",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:15:21.739Z"
+}

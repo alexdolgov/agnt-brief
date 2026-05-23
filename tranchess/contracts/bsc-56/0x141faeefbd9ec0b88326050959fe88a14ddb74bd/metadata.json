@@ -1,0 +1,17 @@
+{
+  "address": "0x141faeefbd9ec0b88326050959fe88a14ddb74bd",
+  "chain_id": 56,
+  "contract_name": "OracleKeeperHelper",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000f0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000c8051d8a62851ad4b99b46d503cb0b0b8c92f35d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:15:23.020Z"
+}

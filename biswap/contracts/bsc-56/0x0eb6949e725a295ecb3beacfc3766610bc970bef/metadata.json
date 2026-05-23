@@ -1,0 +1,17 @@
+{
+  "address": "0x0eb6949e725a295ecb3beacfc3766610bc970bef",
+  "chain_id": 56,
+  "contract_name": "SmartRouter",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "000000000000000000000000858e3312ed3a876947ea49d572a7c42de08af7ee0000000000000000000000007c3d53606f9c03e7f54abddffc3868e1c5466863fea293c909d87cd4153593f077b76bb7e94340200f4ee84211ae8e4f9bd7ffdf712a91d34948c3b3e0b473b519235f7d14dbf2472983bc5d3f7e67c501d7a34800000000000000000000000028fb80b53a3fc27f3c468e34a3b4847fc806f344000000000000000000000000791562dc8f63f58dbf60b4522c6713397c8abf2b",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:06:35.097Z"
+}

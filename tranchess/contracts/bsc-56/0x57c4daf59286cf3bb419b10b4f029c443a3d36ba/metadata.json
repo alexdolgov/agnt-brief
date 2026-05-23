@@ -1,0 +1,18 @@
+{
+  "address": "0x57c4daf59286cf3bb419b10b4f029c443a3d36ba",
+  "chain_id": 56,
+  "contract_name": "FundKeeperHelper",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:15:23.985Z"
+}

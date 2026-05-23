@@ -1,0 +1,17 @@
+{
+  "address": "0x6986498555ead5659e603f410785c6f0e5c16cc2",
+  "chain_id": 56,
+  "contract_name": "ChessControllerV5",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006183e76000000000000000000000000066cae7a198792089060c7d68e31ca7fcf9274377",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:15:25.367Z"
+}

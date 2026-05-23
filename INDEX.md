@@ -30,6 +30,7 @@
 | [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 2 | 2026-05-23 |
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-05-23 |
 | [binaryx-platform](./binaryx-platform/) | $8.6M | 0.0% | ? | active | 2 | 133 | 2026-05-23 |
+| [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | dead | 1 | 84 | 2026-05-23 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [bitu-protocol](./bitu-protocol/) | $23.1M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -45,6 +46,7 @@
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [chainge-finance](./chainge-finance/) | $1.8M | 0.0% | $1.8M | active | 0 | 935 | 2026-05-23 |
 | [charm-finance](./charm-finance/) | $2.2M | 66.7% | ? | unknown | 5 | 7 | 2026-05-22 |
+| [clever](./clever/) | $12.4M | 10.3% | $10.8M | active | 3 | 78 | 2026-05-23 |
 | [coinsquare](./coinsquare/) | $12.4M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [coti-treasury](./coti-treasury/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 935 | 2026-05-23 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-05-23 |
@@ -87,6 +89,7 @@
 | [inception](./inception/) | $15.9M | 27.3% | $15.6M | sunsetting | 11 | 79 | 2026-05-23 |
 | [index-coop](./index-coop/) | $28.2M | 11.7% | $28.2M | declining | 5 | 235 | 2026-05-22 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 9 | 2026-05-22 |
+| [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-05-23 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 13.7% | $428.8M | unknown | 8 | 125 | 2026-05-21 |
 | [juicebox](./juicebox/) | $11.2M | 0.0% | ? | active | 0 | 77 | 2026-05-23 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | unknown | 0 | 2 | 2026-05-22 |
@@ -172,6 +175,7 @@
 | [thruster](./thruster/) | $5.8M | 0.0% | ? | dead | 0 | 20 | 2026-05-23 |
 | [tinyman](./tinyman/) | $1.8M | 0.0% | $1.8M | active | 18 | 904 | 2026-05-23 |
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |
+| [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |
 | [trufin-protocol](./trufin-protocol/) | $6.8M | 66.7% | ? | declining | 12 | 7 | 2026-05-23 |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | unknown | 0 | 150 | 2026-05-23 |

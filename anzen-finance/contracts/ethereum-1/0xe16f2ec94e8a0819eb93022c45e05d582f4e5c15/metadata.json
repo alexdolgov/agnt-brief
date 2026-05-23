@@ -1,0 +1,18 @@
+{
+  "address": "0xe16f2ec94e8a0819eb93022c45e05d582f4e5c15",
+  "chain_id": 1,
+  "contract_name": "PCTPool",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T08:38:21.015Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x8e788484cab6359e65fece14a4d6e510e2efeea5",
+  "chain_id": 8453,
+  "contract_name": "UsdzMarket",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "0000000000000000000000003def017cd003f44aa7b49bdfcf95fd61cf5294cb00000000000000000000000004d5ddf5f3a8939889f11e97f8c4bb48317f1938000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T08:38:21.957Z"
+}

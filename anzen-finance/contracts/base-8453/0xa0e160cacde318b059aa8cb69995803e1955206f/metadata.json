@@ -1,0 +1,18 @@
+{
+  "address": "0xa0e160cacde318b059aa8cb69995803e1955206f",
+  "chain_id": 8453,
+  "contract_name": "VotingResultBroadcaster",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "paris",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T08:38:22.126Z"
+}

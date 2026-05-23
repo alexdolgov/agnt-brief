@@ -1,0 +1,17 @@
+{
+  "address": "0x532dbb9ecfea8d80ce1d78bd484266245d7bdebc",
+  "chain_id": 8453,
+  "contract_name": "StakePoolDistributor",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "0000000000000000000000005eb20b02baff1dd21ddb42d5dd6c5620ee3f96b80000000000000000000000009f6bc4537b36e57aa4ce769f519b52e42ca58eca000000000000000000000000eec468333ccc16d4bf1cef497a56cf8c0aae4ca3",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T08:38:22.911Z"
+}

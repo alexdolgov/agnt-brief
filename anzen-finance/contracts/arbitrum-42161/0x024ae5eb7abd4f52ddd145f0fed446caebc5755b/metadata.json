@@ -1,0 +1,17 @@
+{
+  "address": "0x024ae5eb7abd4f52ddd145f0fed446caebc5755b",
+  "chain_id": 42161,
+  "contract_name": "ChildsUSDzV2",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T08:38:20.930Z"
+}

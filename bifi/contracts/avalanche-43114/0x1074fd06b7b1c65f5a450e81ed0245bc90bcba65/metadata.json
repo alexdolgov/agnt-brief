@@ -1,0 +1,17 @@
+{
+  "address": "0x1074fd06b7b1c65f5a450e81ed0245bc90bcba65",
+  "chain_id": 43114,
+  "contract_name": "MarketHandlerDataStorage",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": "BSD-3-Clause",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T08:35:34.684Z"
+}

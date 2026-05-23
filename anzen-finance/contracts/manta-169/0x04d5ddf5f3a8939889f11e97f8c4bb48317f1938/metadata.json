@@ -1,0 +1,17 @@
+{
+  "address": "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
+  "chain_id": 169,
+  "contract_name": "AnzenLayerZeroAdapter",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x00000000000000000000000073d23f3778a90be8846e172354a115543df2a7e40000000000000000000000001a44076050125825900e736c501f859c50fe728c0000000000000000000000003def017cd003f44aa7b49bdfcf95fd61cf5294cb",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T08:38:21.235Z"
+}

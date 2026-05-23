@@ -1,0 +1,17 @@
+{
+  "address": "0x60ed4bfb90bcbf8b6c16e986f1001215336a4651",
+  "chain_id": 8453,
+  "contract_name": "PointsVault",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "00000000000000000000000004d5ddf5f3a8939889f11e97f8c4bb48317f1938000000000000000000000000000000000000000000027b46536c66c8e3000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T08:38:21.771Z"
+}

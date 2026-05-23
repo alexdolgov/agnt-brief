@@ -1,0 +1,17 @@
+{
+  "address": "0x128ef61fdc9a36240b3372bd226479b66d63db38",
+  "chain_id": 8453,
+  "contract_name": "AnzenVotingControllerUpg",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "000000000000000000000000a90ed3ec34e78fd26d59f43ed67a7cbff4d11ba200000000000000000000000022264d999286db15f56ec1f9fac563422cdb76d300000000000000000000000000000000000000000000000000000000000493e0",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T08:38:21.116Z"
+}

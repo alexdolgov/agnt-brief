@@ -1,0 +1,18 @@
+{
+  "address": "0x3a5a551b41bbe3d3a61ffd8280f6569f6715612a",
+  "chain_id": 1,
+  "contract_name": "ReputationBadge",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:25:39.944Z"
+}

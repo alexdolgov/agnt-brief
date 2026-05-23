@@ -1,0 +1,17 @@
+{
+  "address": "0x49ce2eabdeaf65864a9d6542b2de9d384dfaef15",
+  "chain_id": 1,
+  "contract_name": "BimaToken",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 43,
+  "constructor_arguments": "000000000000000000000000c4bbfb26a2285b3d5e7406f383a676e78b1267990000000000000000000000001a44076050125825900e736c501f859c50fe728c00000000000000000000000009a028587705b49fa162671d2507567cfef75bf7000000000000000000000000aca5d659364636284041b8d3acad8a57f6e7b8a5",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:31:44.884Z"
+}

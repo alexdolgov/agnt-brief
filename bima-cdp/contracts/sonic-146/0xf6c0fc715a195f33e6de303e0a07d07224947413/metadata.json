@@ -1,0 +1,17 @@
+{
+  "address": "0xf6c0fc715a195f33e6de303e0a07d07224947413",
+  "chain_id": 146,
+  "contract_name": "Flags",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 60,
+  "constructor_arguments": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:31:43.521Z"
+}

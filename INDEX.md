@@ -19,6 +19,7 @@
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | unknown | 4 | 3 | 2026-05-22 |
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.0% | $10.9K | declining | 6 | 48 | 2026-05-23 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 55 | 2026-05-22 |
+| [arcade.xyz](./arcade.xyz/) | $240.1K | 0.0% | $240.1K | dead | 0 | 61 | 2026-05-23 |
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-05-23 |
 | [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [atlendis](./atlendis/) | $4.3M | 0.0% | $4.3M | declining | 0 | 43 | 2026-05-23 |
@@ -30,6 +31,7 @@
 | [benddao](./benddao/) | $1.7M | 0.0% | $1.7M | dead | 1 | 67 | 2026-05-23 |
 | [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 2 | 2026-05-23 |
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-05-23 |
+| [bima-cdp](./bima-cdp/) | $5.4M | 50.0% | ? | active | 3 | 38 | 2026-05-23 |
 | [binaryx-platform](./binaryx-platform/) | $8.6M | 0.0% | ? | active | 2 | 133 | 2026-05-23 |
 | [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | dead | 1 | 84 | 2026-05-23 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -82,6 +84,7 @@
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
 | [hemibtc](./hemibtc/) | $46.2K | 2.7% | $46.2K | active | 5 | 47 | 2026-05-22 |
 | [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
+| [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
 | [hyperswap](./hyperswap/) | $1.9M | 0.0% | $1.9M | active | 0 | 940 | 2026-05-22 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 12 | 2026-05-23 |
@@ -156,6 +159,7 @@
 | [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 0 | 111 | 2026-05-23 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-05-23 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 0 | 2 | 2026-05-22 |
+| [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-05-23 |
 | [solayer](./solayer/) | $1.9M | 0.0% | $1.9M | declining | 5 | 935 | 2026-05-22 |
 | [solera](./solera/) | $8.1M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [sophon-farm](./sophon-farm/) | $7.0M | 100.0% | ? | dead | 9 | 1 | 2026-05-23 |

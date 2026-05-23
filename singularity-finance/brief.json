@@ -1,0 +1,193 @@
+{
+  "schema_version": "2.0",
+  "project_key": "singularity-finance",
+  "generated_at": "2026-05-23T16:24:13.433Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "singularity-finance",
+    "tier": 1,
+    "peak_tvl": 761809,
+    "peak_date": "2026-03-17T00:00:00.000Z",
+    "tvl_30d_ago": 528968,
+    "tvl_90d_ago": 553903,
+    "tvl_current": 52882,
+    "tier0_reason": "hard_90d_decline",
+    "tvl_180d_ago": 190065,
+    "change_30d_pct": -90.0027979008182,
+    "change_90d_pct": -90.45284102090078,
+    "governance_raw": {
+      "evidence": "TVL dropped 93% from peak but no shutdown or migration announced, and the protocol still has active communications.",
+      "confidence": 0.85,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 67,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "fallback_mixed",
+    "drop_from_peak_pct": 93.05836502325387,
+    "governance_evidence": "TVL dropped 93% from peak but no shutdown or migration announced, and the protocol still has active communications.",
+    "governance_confidence": 0.85,
+    "governance_text_chars": 58,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 2,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 5364404.022100001,
+    "tvl_usd": 2686081.3224447463,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 2686081.32
+    },
+    "asd_usd": 2686081.3224447463,
+    "website_url": "https://singularityfinance.ai/",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2026-03",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 1,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Singularity Finance is a yield-focused protocol on Ethereum, centered around its native SFI token. The protocol appears to offer yield generation opportunities, likely through staking or farming mechanisms involving the SFI token.",
+    "relationship_narrative": "The protocol consists of a single product family built around the SFI token. All functionality is encapsulated within this token contract, with no additional supporting contracts identified.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7636d8722fdf7cd34232a915e48e96aa3eb386bf",
+      "name": "SFItoken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Singularity Finance",
+      "tvl_usd": 2686081.3224447463,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SFItoken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7636d8722fdf7cd34232a915e48e96aa3eb386bf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 2686081.3224447463,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2478,
+      "audit_key": "audit-2478",
+      "report_name": "DL audit link",
+      "report_url": "https://paladinsec.co/projects/singularitydao",
+      "auditor": "Paladin",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2479,
+      "audit_key": "audit-2479",
+      "report_name": "DL audit link",
+      "report_url": "https://hacken.io/audits/singularitydao",
+      "auditor": "Hacken",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7636d8722fdf7cd34232a915e48e96aa3eb386bf",
+      "name": "SFItoken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 2686081.3224447463,
+      "risk_note": "Verified native implementation with $2,686,081.32 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2478,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 2479,
+        "report_name": "DL audit link"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

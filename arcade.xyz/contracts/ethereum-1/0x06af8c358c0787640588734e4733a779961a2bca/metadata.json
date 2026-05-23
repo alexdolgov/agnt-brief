@@ -1,0 +1,18 @@
+{
+  "address": "0x06af8c358c0787640588734e4733a779961a2bca",
+  "chain_id": 1,
+  "contract_name": "UniswapV2Pair",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:25:37.596Z"
+}

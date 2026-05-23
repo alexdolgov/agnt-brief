@@ -1,0 +1,17 @@
+{
+  "address": "0x227e9323d692578ca3df92b87d06625df22380ab",
+  "chain_id": 1,
+  "contract_name": "BimaCore",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "000000000000000000000000aca5d659364636284041b8d3acad8a57f6e7b8a5000000000000000000000000aca5d659364636284041b8d3acad8a57f6e7b8a50000000000000000000000004b248f3646755f5b71a66bae8c55c568809cbff2000000000000000000000000aca5d659364636284041b8d3acad8a57f6e7b8a5",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:31:42.309Z"
+}

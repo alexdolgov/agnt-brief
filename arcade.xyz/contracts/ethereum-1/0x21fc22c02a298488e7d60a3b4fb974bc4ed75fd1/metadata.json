@@ -1,0 +1,18 @@
+{
+  "address": "0x21fc22c02a298488e7d60a3b4fb974bc4ed75fd1",
+  "chain_id": 1,
+  "contract_name": "ArcadeAirdrop",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:25:39.127Z"
+}

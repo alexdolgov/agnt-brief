@@ -1,0 +1,17 @@
+{
+  "address": "0x5f45344126d6488025b0b84a3a8189f2487a7246",
+  "chain_id": 56,
+  "contract_name": "CTFExecutionEngine",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 80,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 48,
+  "constructor_arguments": "00000000000000000000000055d398326f99059ff775485246999027b3197955000000000000000000000000ad1a38cec043e70e83a3ec30443db285ed10d77400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e76e763c5e57823ee5c7ed8e8d86d4e4938cbb4b",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T08:49:55.110Z"
+}

@@ -1,0 +1,628 @@
+{
+  "schema_version": "2.0",
+  "project_key": "opinion",
+  "generated_at": "2026-05-23T08:49:52.276Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "opinion",
+    "tier": 1,
+    "peak_tvl": 158355316,
+    "peak_date": "2026-01-23T00:00:00.000Z",
+    "tvl_30d_ago": 9595511,
+    "tvl_90d_ago": 114574797,
+    "tvl_current": 7508217,
+    "tier0_reason": "hard_90d_decline",
+    "tvl_180d_ago": 60870360,
+    "change_30d_pct": -21.75281754145246,
+    "change_90d_pct": -93.44688605470537,
+    "governance_raw": {
+      "evidence": "TVL dropped 95% from peak but the protocol still operates with active markets and user engagement.",
+      "confidence": 0.9,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 120,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 95.25862649284221,
+    "governance_evidence": "TVL dropped 95% from peak but the protocol still operates with active markets and user engagement.",
+    "governance_confidence": 0.9,
+    "governance_text_chars": 4037,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 6,
+    "total_addresses": 22,
+    "unique_implementations": 6,
+    "total_deployments": 22,
+    "audited_contracts": 4,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 4,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 100,
+    "total_audits": 5,
+    "scoreable_audits": 4,
+    "dl_tvl_usd": 7536512.33268,
+    "tvl_usd": 142523237.16437164,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 7517658.7,
+      "ethereum": 135005578.47
+    },
+    "asd_usd": null,
+    "website_url": "https://app.opinion.trade?code=hV0KVj",
+    "chains": [
+      "bsc",
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2026-01",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 3,
+      "aging": 2,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "OPINION is a prediction market protocol that allows users to create and trade conditional tokens representing outcomes of future events. It leverages a token-based system to facilitate decentralized betting and forecasting.",
+    "relationship_narrative": "The OpinionToken likely serves as the native utility or governance token, while ConditionalTokens represent positions on event outcomes. They share infrastructure through a common deployer cluster, indicating a unified deployment.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7977bf3e7e0c954d12cdca3e013adaf57e0b06e0",
+      "name": "OpinionToken",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "OPINION",
+      "tvl_usd": 135005578.46575826,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OpinionToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7977bf3e7e0c954d12cdca3e013adaf57e0b06e0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 135005578.46575826,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2181",
+        "audit-2182"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x51d1a62d41e93b983ef29aec04f30ded66c6eb54",
+      "name": "ConditionalTokens",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 7517658.698613365,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ConditionalTokens",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x51d1a62d41e93b983ef29aec04f30ded66c6eb54",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xad1a38cec043e70e83a3ec30443db285ed10d774",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 7517658.698613365,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2178"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1b4922496994f2840e2886cf600c70eb66b25236",
+      "name": "CTFExchangeFeeManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CTFExchangeFeeManager",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1b4922496994f2840e2886cf600c70eb66b25236",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2b14933915a93275df3b54a83a79d9328c70068c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x32b770e46e3d79193f96d92fdf73375bd5428293",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x33d2c9a9a68006d33867053d78bce54b3586afa4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x3bb81f65b0e05e0690bddd74f04254ebf2c17cbc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x3c13ce89d9a1e5fddde4a7e1b8a01ea39bab25a8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6ae1a74303197571db5ac1aa311936049fc9e695",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc9063dc52deefb518e5b6634a6b8d624bc5d7c36",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe9ced7421917665559de4138b001cdeca481ca85",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2180"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5f45344126d6488025b0b84a3a8189f2487a7246",
+      "name": "CTFExecutionEngine",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CTFExecutionEngine",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5f45344126d6488025b0b84a3a8189f2487a7246",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x76527e8b494f6853212474c5fc18f98f8d2b6b12",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x7aeef402cf76b2007ed842ed883f60465b223d1d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x932a47f289a30b0a2ab84d5aadc6ba72127398d3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x95665d44be0f3ad1bbe3b05cd96512d89ce20585",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa26fbc2271703cb59738ad8f0fb38777779cf9b0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd6e1c91559b87a8f07a8377855833f016f3cf2c3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe682cc8ccb6d0a151b88e073d321dfa45624789a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2180"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5948c95a1d5ea58188fde88ff989c473ac1879b9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5948c95a1d5ea58188fde88ff989c473ac1879b9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xd8ac33f4f7cdd48c2bed68d53bf1d4a5bebfce2a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd8ac33f4f7cdd48c2bed68d53bf1d4a5bebfce2a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2178,
+      "audit_key": "audit-2178",
+      "report_name": "DL audit link",
+      "report_url": "https://static.opinion.trade/opinion-v1-scalebit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AssetOperations",
+        "Assets",
+        "Auth",
+        "BaseExchange",
+        "CTFExchange",
+        "CalculatorHelper",
+        "ConditionalTokens",
+        "Fees",
+        "Hashing",
+        "NonceManager",
+        "OLABFactoryHelper",
+        "OLABProxyLib",
+        "OLABSafeLib",
+        "OrderStructs",
+        "Pausable",
+        "Registry",
+        "Signatures",
+        "Trading",
+        "TransferHelper"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2179,
+      "audit_key": "audit-2179",
+      "report_name": "DL audit link",
+      "report_url": "https://static.opinion.trade/opinion-v1-zellic.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2180,
+      "audit_key": "audit-2180",
+      "report_name": "* ScaleBit: <>",
+      "report_url": "https://static.opinion.trade/opinion-v2-scalebit.pdf",
+      "auditor": "ScaleBit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AssetOperations",
+        "Assets",
+        "Auth",
+        "CTFExchangeFeeManager",
+        "CTFExchangeGateway",
+        "CTFExecutionEngine",
+        "CalculatorHelper",
+        "Fees",
+        "Hashing",
+        "NonceManager",
+        "OLABFactoryHelper",
+        "OLABProxyLib",
+        "OLABSafeLib",
+        "OrderStructs",
+        "Pausable",
+        "ReferralManager",
+        "ReferralStructs",
+        "Registry",
+        "Signatures",
+        "SignerManager",
+        "Trading",
+        "TransferHelper",
+        "UserTierManager",
+        "UserTierStructs"
+      ],
+      "matched_contracts": 17,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2181,
+      "audit_key": "audit-2181",
+      "report_name": "* ScaleBit: <>",
+      "report_url": "https://static.opinion.trade/opn-token-scalebit.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "OpinionToken"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2182,
+      "audit_key": "audit-2182",
+      "report_name": "* Pashov: <>",
+      "report_url": "https://static.opinion.trade/opn-token-pashov.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "OpinionToken.sol",
+        "OpinionToken.ts",
+        "layerzero.config.ts"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "ScaleBit",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 50,
+      "latest_audit": "2025-10"
+    },
+    {
+      "auditor": "Pashov Audit Group",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 25,
+      "latest_audit": "2026-01"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 25,
+      "latest_audit": "2024-11"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 4
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 21
+    },
+    "extraction_confidence_counts": {
+      "high": 4
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2179,
+        "report_name": "DL audit link"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x1724768a253476159a622a1689146862d3b762c2",
+  "chain_id": 8453,
+  "contract_name": "VNXProxyAdmin",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000b6622a9ec19561b0a39de87a71b845ffa5cb60ee",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T08:45:55.059Z"
+}

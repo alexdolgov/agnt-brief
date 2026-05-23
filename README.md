@@ -21,6 +21,7 @@ Each project directory contains:
 | [ribbon-finance](./ribbon-finance/brief.md) | $4.96M | avalanche, ethereum | 195 | 130/195 (67%) | 20.6% | 3.1% (OpenZeppelin) | 15 | stale | ⚠️ declining | $148.56M |
 | [zircuit](./zircuit/brief.md) | $13.31M | base, ethereum | 17 | 16/17 (94%) | 25.0% | 0.0% (-) | 3 | aging | ⚠️ declining | $144.24M |
 | [bio-protocol](./bio-protocol/brief.md) | $4.90M | base, ethereum | 41 | 40/41 (98%) | 10.0% | 0.0% (-) | 2 | fresh | ✅ active | $139.62M |
+| [giza](./giza/brief.md) | $4.77M | base, plasma | 16 | 16/16 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $119.21M |
 | [blur](./blur/brief.md) | $18.88M | blast, ethereum | 17 | 12/17 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $91.73M |
 | [zivoe](./zivoe/brief.md) | $13.83M | ethereum | 32 | 31/32 (97%) | 58.1% | 48.4% (Sherlock) | 3 | aging | ✅ active | $87.09M |
 | [the-idols](./the-idols/brief.md) | $5.76M | ethereum | 17 | 13/17 (76%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $85.36M |
@@ -191,6 +192,7 @@ Each project directory contains:
 | [manta-atlantic-stake](./manta-atlantic-stake/brief.md) | $5.22M | ethereum, manta | 112 | 71/112 (63%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-cedefi](./manta-cedefi/brief.md) | $26.78M | manta | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-pacific](./manta-pacific/brief.md) | $25.67M | ethereum, manta | 13 | 12/13 (92%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [matstake](./matstake/brief.md) | $4.77M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [meld-gold](./meld-gold/brief.md) | $11.13M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [merlinswap](./merlinswap/brief.md) | $8.66M | merlin | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [mode-bridge](./mode-bridge/brief.md) | $6.18M | ethereum, mode | 100 | 34/100 (34%) | 2.9% | 0.0% (-) | 1 | aging | ⚠️ declining | - |
@@ -209,6 +211,7 @@ Each project directory contains:
 | [p2pb2b](./p2pb2b/brief.md) | $4.89M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [paragonsdao](./paragonsdao/brief.md) | $6.23M | base | 2 | 2/2 (100%) | 50.0% | 0.0% (-) | 2 | aging | ❓ unknown | - |
 | [polynomial-protocol](./polynomial-protocol/brief.md) | $5.32M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
+| [potatoswap](./potatoswap/brief.md) | $4.83M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [prime-staking](./prime-staking/brief.md) | $5.09M | base | 10 | 3/10 (30%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [privacy-pools](./privacy-pools/brief.md) | $6.66M | arbitrum, ethereum, optimism | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [probit-global](./probit-global/brief.md) | $12.65M | fantom | 3 | 0/3 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -241,5 +244,5 @@ Each project directory contains:
 | [zenlink](./zenlink/brief.md) | $5.52M | moonbeam, moonriver | 226 | 12/226 (5%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-05-23T19:32:50.556Z_
-_Projects: 229_
+_Generated: 2026-05-23T19:42:08.349Z_
+_Projects: 232_

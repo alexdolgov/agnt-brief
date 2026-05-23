@@ -84,6 +84,7 @@
 | [fulcrom](./fulcrom/) | $13.5M | 0.0% | ? | active | 0 | 80 | 2026-05-22 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-05-22 |
 | [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
+| [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-05-23 |
 | [goldfinger](./goldfinger/) | $23.9M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 0 | 7 | 2026-05-22 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
@@ -127,6 +128,7 @@
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.2M | 0.0% | ? | sunsetting | 0 | 112 | 2026-05-23 |
 | [manta-cedefi](./manta-cedefi/) | $26.8M | 0.0% | ? | unknown | 0 | 17 | 2026-05-22 |
 | [manta-pacific](./manta-pacific/) | $25.7M | 0.0% | ? | active | 0 | 13 | 2026-05-22 |
+| [matstake](./matstake/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-23 |
 | [merlinswap](./merlinswap/) | $8.7M | 0.0% | ? | unknown | 0 | 2 | 2026-05-23 |
 | [metadao](./metadao/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-23 |
@@ -157,6 +159,7 @@
 | [pnetwork](./pnetwork/) | $1.8M | 0.0% | $1.8M | declining | 0 | 355 | 2026-05-22 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-05-23 |
 | [pooltogether](./pooltogether/) | $26.9M | 0.0% | $26.9M | declining | 0 | 153 | 2026-05-23 |
+| [potatoswap](./potatoswap/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [predict-fun](./predict-fun/) | $1.5M | 8.0% | $1.5M | unknown | 9 | 40 | 2026-05-22 |
 | [prime-staking](./prime-staking/) | $5.1M | 0.0% | ? | active | 2 | 10 | 2026-05-23 |
 | [privacy-pools](./privacy-pools/) | $6.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |

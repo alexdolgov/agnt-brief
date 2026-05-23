@@ -1,0 +1,18 @@
+{
+  "address": "0x628ff693426583d9a7fb391e54366292f509d457",
+  "chain_id": 8453,
+  "contract_name": "MErc20Delegator",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BSD-3-Clause",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": "0x599d4a1538d686814ee11b331eacbba166d7c41a",
+  "fetched_at": "2026-05-23T19:41:59.666Z"
+}

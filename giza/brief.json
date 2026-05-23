@@ -1,0 +1,746 @@
+{
+  "schema_version": "2.0",
+  "project_key": "giza",
+  "generated_at": "2026-05-23T19:41:57.027Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "giza",
+    "tier": 1,
+    "peak_tvl": 45608455,
+    "peak_date": "2026-01-20T00:00:00.000Z",
+    "tvl_30d_ago": 6288083,
+    "tvl_90d_ago": 20899904,
+    "tvl_current": 4713799,
+    "tier0_reason": "sustained_90d_and_30d_decline",
+    "tvl_180d_ago": 22534773,
+    "change_30d_pct": -25.035992686483304,
+    "change_90d_pct": -77.44583420096093,
+    "governance_raw": {
+      "evidence": "TVL has dropped 89.7% from peak and 77.4% in 90 days, but the protocol's homepage shows active development and upcoming features, indicating it is still operational.",
+      "confidence": 0.7,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 123,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 89.66463783962864,
+    "governance_evidence": "TVL has dropped 89.7% from peak and 77.4% in 90 days, but the protocol's homepage shows active development and upcoming features, indicating it is still operational.",
+    "governance_confidence": 0.7,
+    "governance_text_chars": 2573,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 16,
+    "total_addresses": 28,
+    "unique_implementations": 16,
+    "total_deployments": 28,
+    "audited_contracts": 0,
+    "unaudited_contracts": 16,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 16,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 4769455.7528,
+    "tvl_usd": 119206727.09257129,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 41032669.72,
+      "plasma": 78174057.37
+    },
+    "asd_usd": 119206727.09257129,
+    "website_url": "https://www.gizatech.xyz/",
+    "chains": [
+      "base",
+      "plasma"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Giza is a decentralized lending and borrowing protocol that enables users to supply assets to earn yield and borrow against collateral. It integrates with Morpho Blue and Compound-based markets to offer optimized lending vaults and interest-bearing tokens.",
+    "relationship_narrative": "The Giza family combines Compound-based lending markets (MErc20 tokens) with Morpho vaults (MetaMorpho) to optimize yield. Shared infrastructure includes data providers and a registry beacon proxy, while fTokens represent user positions across these markets.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x1dd4b13fcae900c60a350589be8052959d2ed27b",
+      "name": "fToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Giza",
+      "tvl_usd": 90893238.2897909,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "fToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf42f5795d9ac7e9d757db633d693cd548cfd9169",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 12719180.915059082,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x1dd4b13fcae900c60a350589be8052959d2ed27b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 78174057.37473181,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1fadff493529c3fcc7ee04f1f15d19816dda45b7",
+      "name": "MErc20Delegate",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "compound-finance",
+      "product_line": "Giza",
+      "tvl_usd": 18587321.675915193,
+      "is_proxy": false,
+      "impl_address": "0x1fadff493529c3fcc7ee04f1f15d19816dda45b7",
+      "impl_name": "MErc20Delegate",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1fadff493529c3fcc7ee04f1f15d19816dda45b7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3bf93770f2d4a794c3d9ebefbaebae2a8f09a5e5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3478361.1467375164,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x703843c3379b52f9ff486c9f5892218d2a065cc8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 8073.855643886605,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x73b06d8d18de422e269645eace15400de7462417",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 20532.64464943854,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xedc817a28e8b93b03976fbd4a3ddbc9f7d176c22",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 15080354.028884351,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x628ff693426583d9a7fb391e54366292f509d457",
+      "name": "MWethDelegate",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "compound-finance",
+      "product_line": null,
+      "tvl_usd": 9395884.093578195,
+      "is_proxy": true,
+      "impl_address": "0x599d4a1538d686814ee11b331eacbba166d7c41a",
+      "impl_name": "MWethDelegate",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x628ff693426583d9a7fb391e54366292f509d457",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 9395884.093578195,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0a1a3b5f2041f33522c4efc754a7d096f880ee16",
+      "name": "EVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Giza",
+      "tvl_usd": 330283.033287,
+      "is_proxy": true,
+      "impl_address": "0x30a9a9654804f1e5b3291a86e83eded7cf281618",
+      "impl_name": "EVault",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0a1a3b5f2041f33522c4efc754a7d096f880ee16",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 330283.033287,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xd82a47fdebb5bf5329b09441c3dab4b5df2153ad",
+      "name": "AaveProtocolDataProvider",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
+      "product_line": "Giza",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AaveProtocolDataProvider",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd82a47fdebb5bf5329b09441c3dab4b5df2153ad",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xf2d6e38b407e31e7e7e4a16e6769728b76c7419f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0xb0004ad99f0e383cc413ba69acff7c229d930112",
+      "name": "BeaconProxy",
+      "role": "registry",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Giza",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BeaconProxy",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xb0004ad99f0e383cc413ba69acff7c229d930112",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb125e6687d4313864e53df431d5425969c15eb2f",
+      "name": "CometWithExtendedAssetList",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Giza",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4a89f4ff11fb24333e2d235ab1a0d31d3506e6c0",
+      "impl_name": "CometWithExtendedAssetList",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb125e6687d4313864e53df431d5425969c15eb2f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xfbb21d0380bee3312b33c4353c8936a0f13ef26c",
+      "name": "Comptroller",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "compound-finance",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x73d8a3bf62aaca6690791e57ebaee4e1d875d8fe",
+      "impl_name": "Comptroller",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xfbb21d0380bee3312b33c4353c8936a0f13ef26c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x590830dfdf9a3f68afcdde2694773debdf267774",
+      "name": "GizaSideChain",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Giza",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GizaSideChain",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x590830dfdf9a3f68afcdde2694773debdf267774",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2f903de0e30852f413a7cceae9ca45a66010bc6c",
+      "name": "MErc20Delegator",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "compound-finance",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MErc20Delegator",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2f903de0e30852f413a7cceae9ca45a66010bc6c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xbeef010f9cb27031ad51e3333f9af9c6b1228183",
+      "name": "MetaMorpho",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "morpho",
+      "product_line": "Giza",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MetaMorpho",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbeef010f9cb27031ad51e3333f9af9c6b1228183",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc1256ae5ff1cf2719d4937adb3bbccab2e00a2ca",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xee8f4ec5672f09119b96ab6fb59c27e1b7e44b61",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x616a4e1db48e22028f6bbf20444cd3b8e3273738",
+      "name": "MetaMorphoV1_1",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "morpho",
+      "product_line": "Giza",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MetaMorphoV1_1",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x616a4e1db48e22028f6bbf20444cd3b8e3273738",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbeefe94c8ad530842bfe7d8b397938ffc1cb83b2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xdc649f4fa047a3c98e8705e85b8b1bafcbcfef0f",
+      "name": "MultiRewardDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "upstream",
+      "origin_provider": "compound-finance",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xdc649f4fa047a3c98e8705e85b8b1bafcbcfef0f",
+      "impl_name": "MultiRewardDistributor",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdc649f4fa047a3c98e8705e85b8b1bafcbcfef0f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe9005b078701e2a0948d2eac43010d35870ad9d2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x8d7d2230a2d195f023588edd13dbad56dd69770f",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8d7d2230a2d195f023588edd13dbad56dd69770f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x8b621804a7637b781e2bbd58e256a591f2df7d51",
+      "name": "TemporalGovernor",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TemporalGovernor",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8b621804a7637b781e2bbd58e256a591f2df7d51",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x31ccfb038771d9bf486ef7c7f3a9f91be72124c4",
+      "name": "WETHRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WETHRouter",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x31ccfb038771d9bf486ef7c7f3a9f91be72124c4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x70778cfcfc475c7ea0f24cc625baf6eae475d0c9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdafeccccd549067d924c232872cafd81be7ad0d4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x1dd4b13fcae900c60a350589be8052959d2ed27b",
+      "name": "fToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 90893238.2897909,
+      "risk_note": "Verified native implementation with $90,893,238.29 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x590830dfdf9a3f68afcdde2694773debdf267774",
+      "name": "GizaSideChain",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x8b621804a7637b781e2bbd58e256a591f2df7d51",
+      "name": "TemporalGovernor",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x31ccfb038771d9bf486ef7c7f3a9f91be72124c4",
+      "name": "WETHRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 4,
+    "upstream": 8,
+    "standard_library": 4,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

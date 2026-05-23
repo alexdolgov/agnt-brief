@@ -1,0 +1,18 @@
+{
+  "address": "0x32737a15c40d7d42e6c9013138d3b2a775978ba3",
+  "chain_id": 1,
+  "contract_name": "Hooks",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 50,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T12:55:55.212Z"
+}

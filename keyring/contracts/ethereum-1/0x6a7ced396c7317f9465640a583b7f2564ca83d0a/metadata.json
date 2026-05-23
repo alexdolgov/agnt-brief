@@ -1,0 +1,17 @@
+{
+  "address": "0x6a7ced396c7317f9465640a583b7f2564ca83d0a",
+  "chain_id": 1,
+  "contract_name": "HookTargetAccessControlKeyring",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "0000000000000000000000000c9a3dd6b8f28529d72d7f9ce918d493519ee383000000000000000000000000c75cd6aeef7a09bdde0f61e143fad7aa9eb6f6ee00000000000000000000000029a56a1b8214d9cf7c5561811750d5cbdb45cc8e000000000000000000000000d18d17791f2071bf3c855ba770420a9edea0728d0000000000000000000000000000000000000000000000000000000000a8ad41",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T12:55:55.336Z"
+}

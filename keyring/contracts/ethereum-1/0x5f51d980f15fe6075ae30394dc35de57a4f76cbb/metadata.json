@@ -1,0 +1,18 @@
+{
+  "address": "0x5f51d980f15fe6075ae30394dc35de57a4f76cbb",
+  "chain_id": 1,
+  "contract_name": "ERC4626EVCCollateralSecuritizeFactory",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 53,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T12:55:55.283Z"
+}

@@ -1,0 +1,791 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "prefix",
+        "type": "bytes4"
+      }
+    ],
+    "name": "IncorrectPrefix",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "providedIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "numTransceivers",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidInstructionIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "encodedLength",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expectedLength",
+        "type": "uint256"
+      }
+    ],
+    "name": "LengthMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "size",
+        "type": "uint256"
+      }
+    ],
+    "name": "PayloadTooLong",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "lastIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "instructionIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "UnorderedInstructions",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "prefix",
+        "type": "bytes4"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "sourceNttManagerAddress",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "recipientNttManagerAddress",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "nttManagerMessage",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "transceiverPayload",
+        "type": "bytes"
+      }
+    ],
+    "name": "buildAndEncodeTransceiverMessage",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "sourceNttManagerAddress",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "recipientNttManagerAddress",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "nttManagerPayload",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "transceiverPayload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverMessage",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      }
+    ],
+    "name": "decodeTransceiverInit",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes4",
+            "name": "transceiverIdentifier",
+            "type": "bytes4"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "nttManagerAddress",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "nttManagerMode",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "tokenAddress",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "tokenDecimals",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverInit",
+        "name": "init",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      }
+    ],
+    "name": "decodeTransceiverRegistration",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes4",
+            "name": "transceiverIdentifier",
+            "type": "bytes4"
+          },
+          {
+            "internalType": "uint16",
+            "name": "transceiverChainId",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "transceiverAddress",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverRegistration",
+        "name": "registration",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "TrimmedAmount",
+            "name": "amount",
+            "type": "uint72"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "sourceToken",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "to",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "toChain",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bytes",
+            "name": "additionalPayload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.NativeTokenTransfer",
+        "name": "m",
+        "type": "tuple"
+      }
+    ],
+    "name": "encodeNativeTokenTransfer",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "sender",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "payload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.NttManagerMessage",
+        "name": "m",
+        "type": "tuple"
+      }
+    ],
+    "name": "encodeNttManagerMessage",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes4",
+            "name": "transceiverIdentifier",
+            "type": "bytes4"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "nttManagerAddress",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "nttManagerMode",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "tokenAddress",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "tokenDecimals",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverInit",
+        "name": "init",
+        "type": "tuple"
+      }
+    ],
+    "name": "encodeTransceiverInit",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "index",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes",
+            "name": "payload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverInstruction",
+        "name": "instruction",
+        "type": "tuple"
+      }
+    ],
+    "name": "encodeTransceiverInstruction",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "index",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes",
+            "name": "payload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverInstruction[]",
+        "name": "instructions",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "encodeTransceiverInstructions",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "prefix",
+        "type": "bytes4"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "sourceNttManagerAddress",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "recipientNttManagerAddress",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "nttManagerPayload",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "transceiverPayload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverMessage",
+        "name": "m",
+        "type": "tuple"
+      }
+    ],
+    "name": "encodeTransceiverMessage",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes4",
+            "name": "transceiverIdentifier",
+            "type": "bytes4"
+          },
+          {
+            "internalType": "uint16",
+            "name": "transceiverChainId",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "transceiverAddress",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverRegistration",
+        "name": "registration",
+        "type": "tuple"
+      }
+    ],
+    "name": "encodeTransceiverRegistration",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "sourceChainId",
+        "type": "uint16"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "sender",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "payload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.NttManagerMessage",
+        "name": "m",
+        "type": "tuple"
+      }
+    ],
+    "name": "nttManagerMessageDigest",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      }
+    ],
+    "name": "parseNativeTokenTransfer",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "TrimmedAmount",
+            "name": "amount",
+            "type": "uint72"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "sourceToken",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "to",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "toChain",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bytes",
+            "name": "additionalPayload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.NativeTokenTransfer",
+        "name": "nativeTokenTransfer",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      }
+    ],
+    "name": "parseNttManagerMessage",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "sender",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "payload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.NttManagerMessage",
+        "name": "nttManagerMessage",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "expectedPrefix",
+        "type": "bytes4"
+      },
+      {
+        "internalType": "bytes",
+        "name": "payload",
+        "type": "bytes"
+      }
+    ],
+    "name": "parseTransceiverAndNttManagerMessage",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "sourceNttManagerAddress",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "recipientNttManagerAddress",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "nttManagerPayload",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "transceiverPayload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverMessage",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "sender",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "payload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.NttManagerMessage",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      }
+    ],
+    "name": "parseTransceiverInstructionChecked",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "index",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes",
+            "name": "payload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverInstruction",
+        "name": "instruction",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      }
+    ],
+    "name": "parseTransceiverInstructionUnchecked",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "index",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes",
+            "name": "payload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverInstruction",
+        "name": "instruction",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "nextOffset",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "encoded",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "numRegisteredTransceivers",
+        "type": "uint256"
+      }
+    ],
+    "name": "parseTransceiverInstructions",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "index",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes",
+            "name": "payload",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct TransceiverStructs.TransceiverInstruction[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

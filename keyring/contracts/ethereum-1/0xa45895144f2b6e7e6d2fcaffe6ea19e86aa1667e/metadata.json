@@ -1,0 +1,17 @@
+{
+  "address": "0xa45895144f2b6e7e6d2fcaffe6ea19e86aa1667e",
+  "chain_id": 1,
+  "contract_name": "EulerEarnFactoryPerspective",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "00000000000000000000000059709b029b140c853fe28d277f83c3a65e308af4",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T12:55:55.426Z"
+}

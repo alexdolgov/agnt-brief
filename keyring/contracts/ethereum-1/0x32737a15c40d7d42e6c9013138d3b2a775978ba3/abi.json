@@ -1,0 +1,143 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "evc",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "balanceTracker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "permit2",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isHarvestCoolDownCheckOn",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct Shared.IntegrationsParams",
+        "name": "_integrationsParams",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ControllerDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EVC_InvalidAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidHookedFns",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidHooksTarget",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAuthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotHooksContract",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Reentrancy",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ViewReentrancy",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "hooksTarget",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "hookedFns",
+        "type": "uint32"
+      }
+    ],
+    "name": "SetHooksConfig",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "EVC",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getHooksConfig",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_hooksTarget",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_hookedFns",
+        "type": "uint32"
+      }
+    ],
+    "name": "setHooksConfig",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

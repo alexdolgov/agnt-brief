@@ -1,0 +1,599 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_utilsLens",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "TTL_ERROR",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TTL_INFINITY",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TTL_LIQUIDATION",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TTL_MORE_THAN_ONE_YEAR",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "strategies",
+        "type": "address[]"
+      }
+    ],
+    "name": "getStrategiesInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "allocatedAssets",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableAssets",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "currentAllocationCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingAllocationCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingAllocationCapValidAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "removableAt",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "vault",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "vaultName",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "vaultSymbol",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "vaultDecimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "asset",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "assetName",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "assetSymbol",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "assetDecimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalShares",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalAssets",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "isEVault",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct VaultInfoERC4626",
+            "name": "info",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct EulerEarnVaultStrategyInfo[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_strategy",
+        "type": "address"
+      }
+    ],
+    "name": "getStrategyInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "allocatedAssets",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableAssets",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "currentAllocationCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingAllocationCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingAllocationCapValidAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "removableAt",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "vault",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "vaultName",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "vaultSymbol",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "vaultDecimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "asset",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "assetName",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "assetSymbol",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "assetDecimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalShares",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalAssets",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "isEVault",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct VaultInfoERC4626",
+            "name": "info",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct EulerEarnVaultStrategyInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "getVaultInfoFull",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "vaultName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "vaultSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vaultDecimals",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "assetName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "assetSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetDecimals",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalAssets",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lostAssets",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableAssets",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timelock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "performanceFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "feeReceiver",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "creator",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "curator",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "guardian",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "evc",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "permit2",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingTimelock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingTimelockValidAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "pendingGuardian",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingGuardianValidAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "supplyQueue",
+            "type": "address[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "strategy",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "allocatedAssets",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "availableAssets",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "currentAllocationCap",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pendingAllocationCap",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pendingAllocationCapValidAt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "removableAt",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "uint256",
+                    "name": "timestamp",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "vaultName",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "vaultSymbol",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "vaultDecimals",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "assetName",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "assetSymbol",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "assetDecimals",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "totalShares",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "totalAssets",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isEVault",
+                    "type": "bool"
+                  }
+                ],
+                "internalType": "struct VaultInfoERC4626",
+                "name": "info",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct EulerEarnVaultStrategyInfo[]",
+            "name": "strategies",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct EulerEarnVaultInfoFull",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "utilsLens",
+    "outputs": [
+      {
+        "internalType": "contract UtilsLens",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

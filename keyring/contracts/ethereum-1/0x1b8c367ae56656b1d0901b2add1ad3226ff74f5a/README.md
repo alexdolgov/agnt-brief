@@ -1,0 +1,16 @@
+# TimelockController
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x1b8c367ae56656b1d0901b2add1ad3226ff74f5a` |
+| Role | governance |
+| Origin | standard_library |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 3 (ethereum [`0x1b8c367ae56656b1d0901b2add1ad3226ff74f5a`](../0x1b8c367ae56656b1d0901b2add1ad3226ff74f5a/); ethereum `0xbfee2d937fb9223ffd65b7cdf607bd1da9b97e59`; ethereum `0xfb034c1c6c7f42171b2d1cb8486e0f43ed07a968`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

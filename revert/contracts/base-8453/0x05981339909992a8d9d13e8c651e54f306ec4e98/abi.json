@@ -1,0 +1,718 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract INonfungiblePositionManager",
+        "name": "_nonfungiblePositionManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_universalRouter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_zeroxAllowanceHolder",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyStaked",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AmountError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ChainlinkPriceError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CollateralFactorExceedsMax",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CollateralFail",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CollateralValueLimit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CollectError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DailyDebtIncreaseLimit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DailyLendIncreaseLimit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DebtChanged",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EtherSendFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExceedsMaxReward",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "GaugeManagerNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "GaugeNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "GlobalDebtLimit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "GlobalLendLimit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientLiquidity",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InterestNotUpdated",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidConfig",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPool",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTickSpacing",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MinLoanSize",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MissingSwapData",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NeedsRepay",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoEtherToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoLiquidity",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoSharesRepayed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotConfigured",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotDepositor",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotEnoughReward",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotLiquidatable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotReady",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotStaked",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotSupportedFeeTier",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotSupportedWhatToDo",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotWETH",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PriceDifferenceExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Reentrancy",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RewardClaimFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SameRange",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SameToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SelfSend",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SequencerDown",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SequencerGracePeriodNotOver",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SequencerUptimeFeedInvalid",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SlippageError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SwapAmountTooLarge",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SwapFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TWAPCheckFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TooMuchEtherSent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransferError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransformFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransformNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongContract",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "tokenOut",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      }
+    ],
+    "name": "Swap",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newVault",
+        "type": "address"
+      }
+    ],
+    "name": "VaultSet",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountRemoveMin0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountRemoveMin1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "feeAmount0",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "feeAmount1",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut0Min",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapData0",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut1Min",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapData1",
+            "type": "bytes"
+          },
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LeverageTransformer.LeverageDownParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "leverageDown",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut0Min",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapData0",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut1Min",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "swapData1",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountAddMin0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountAddMin1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LeverageTransformer.LeverageUpParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "leverageUp",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nonfungiblePositionManager",
+    "outputs": [
+      {
+        "internalType": "contract INonfungiblePositionManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vault",
+        "type": "address"
+      }
+    ],
+    "name": "setVault",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "amount0Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "amount1Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "uniswapV3SwapCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "universalRouter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "vaults",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "weth",
+    "outputs": [
+      {
+        "internalType": "contract IWETH9",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "zeroxAllowanceHolder",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x345ab8af61d107c3972f0d73640e33d8ac545a07",
+  "chain_id": 1,
+  "contract_name": "Core",
+  "compiler_version": "v0.5.7+commit.6da8b019",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T01:48:43.614Z"
+}

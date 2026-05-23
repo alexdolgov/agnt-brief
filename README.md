@@ -24,6 +24,7 @@ Each project directory contains:
 | [across](./across/brief.md) | $27.73M | 15 | 143 | 58/143 (41%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $28.14M |
 | [rocksolid-network](./rocksolid-network/brief.md) | $25.01M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $24.96M |
 | [piku](./piku/brief.md) | $17.13M | ethereum | 29 | 27/29 (93%) | 14.8% | 0.0% (-) | 1 | aging | ✅ active | $21.37M |
+| [set-protocol](./set-protocol/brief.md) | $11.62M | ethereum | 111 | 15/111 (14%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $21.20M |
 | [yieldnest](./yieldnest/brief.md) | $23.44M | 7 | 89 | 68/89 (76%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $19.22M |
 | [katana-pre-launch](./katana-pre-launch/brief.md) | $18.64M | base, ethereum | 166 | 97/166 (58%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $18.32M |
 | [hypha](./hypha/brief.md) | $15.29M | avalanche | 84 | 36/84 (43%) | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | $16.37M |
@@ -38,6 +39,7 @@ Each project directory contains:
 | [dforce](./dforce/brief.md) | $12.48M | 7 | 450 | 99/450 (22%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.61M |
 | [xsy](./xsy/brief.md) | $20.97M | avalanche | 16 | 5/16 (31%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.60M |
 | [steer-protocol](./steer-protocol/brief.md) | $20.90M | arbitrum | 43 | 31/43 (72%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.26M |
+| [revert](./revert/brief.md) | $11.61M | 8 | 84 | 18/84 (21%) | 11.1% | 0.0% (-) | 2 | stale | ✅ active | $2.09M |
 | [osmosis-dex](./osmosis-dex/brief.md) | $18.17M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $1.88M |
 | [liminal](./liminal/brief.md) | $23.06M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.86M |
 | [solayer](./solayer/brief.md) | $13.48M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | aging | ⚠️ declining | $1.85M |
@@ -107,5 +109,5 @@ Each project directory contains:
 | [yei-finance](./yei-finance/brief.md) | $29.76M | sei | 44 | 35/44 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-05-23T01:38:37.239Z_
-_Projects: 95_
+_Generated: 2026-05-23T02:16:08.834Z_
+_Projects: 97_

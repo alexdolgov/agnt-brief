@@ -74,10 +74,12 @@
 | [probit-global](./probit-global/) | $12.7M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | unknown | 0 | 2 | 2026-05-22 |
+| [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 0.0% | $34.8K | declining | 0 | 98 | 2026-05-21 |
 | [serum](./serum/) | $1.9M | 0.0% | $1.9M | dead | 0 | 935 | 2026-05-22 |
+| [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 0 | 111 | 2026-05-23 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 0 | 2 | 2026-05-22 |
 | [solayer](./solayer/) | $1.9M | 0.0% | $1.9M | declining | 5 | 935 | 2026-05-22 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 9 | 0 | 2026-05-22 |

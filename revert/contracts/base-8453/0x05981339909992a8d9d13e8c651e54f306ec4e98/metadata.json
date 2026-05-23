@@ -1,0 +1,17 @@
+{
+  "address": "0x05981339909992a8d9d13e8c651e54f306ec4e98",
+  "chain_id": 8453,
+  "contract_name": "LeverageTransformer",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 41,
+  "constructor_arguments": "000000000000000000000000827922686190790b37229fd06084350e74485b720000000000000000000000000000000000001ff3684f28c67538d4d072c227340000000000000000000000006ff5693b99212da76ad316178a184ab56d299b43",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:16:03.293Z"
+}

@@ -1,0 +1,253 @@
+{
+  "schema_version": "2.0",
+  "project_key": "backedfi",
+  "generated_at": "2026-05-23T07:28:48.395Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "backedfi",
+    "tier": 0,
+    "peak_tvl": 48333524,
+    "peak_date": "2023-12-01T00:00:00.000Z",
+    "tvl_30d_ago": 8216370,
+    "tvl_90d_ago": 12516741,
+    "tvl_current": 8244335,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 12259571,
+    "change_30d_pct": 0.3403571163421316,
+    "change_90d_pct": -34.13353364106519,
+    "days_since_peak": 904,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 82.94282246003829
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 11,
+    "unique_implementations": 2,
+    "total_deployments": 11,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 8196448.46125,
+    "tvl_usd": 33347333.847253658,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 33347333.85
+    },
+    "asd_usd": 33347333.847253658,
+    "website_url": "https://backed.fi",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "BackedFi issues tokenized real-world assets (RWAs) on Ethereum, allowing users to gain on-chain exposure to traditional financial instruments like equities and ETFs. Each token is backed 1:1 by the underlying asset held by a licensed custodian.",
+    "relationship_narrative": "All tokens share the same proxy pattern and implementation contracts, with most using BackedTokenImplementation and one using BackedAutoFeeTokenImplementation for automatic fee handling. They are deployed from a single deployer cluster, indicating a unified issuance infrastructure.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0f76d32cdccdcbd602a55af23eaf58fd1ee17245",
+      "name": "BackedTokenImplementation",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "BackedFi",
+      "tvl_usd": 31194508.504722014,
+      "is_proxy": true,
+      "impl_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
+      "impl_name": "BackedTokenImplementation",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0f76d32cdccdcbd602a55af23eaf58fd1ee17245",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1e2c4fb7ede391d116e6b41cd0608260e8801d59",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 2292064.3846357376,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x20c64dee8fda5269a78f2d5bdba861ca1d83df7a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 193020.9443423267,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2f11eeee0bf21e7661a22dbbbb9068f4ad191b86",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2f123cf3f37ce3328cc9b5b8415f9ec5109b45e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 10020084.96182588,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3f95aa88ddbb7d9d484aa3d482bf0a80009c52c9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 11112400,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x52d134c6db5889fad3542a09eaf7aa90c0fdf9e4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 118056.90895437261,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xade6057fcafa57d6d51ffa341c64ce4814995995",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 286474.7837042136,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbbcb0356bb9e6b3faa5cbf9e5f36185d53403ac9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1710526.7597593477,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xca30c93b02514f86d5c86a6e375e3a330b435fb5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5461879.76150014,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa34c5e0abe843e10461e2c9586ea03e55dbcc495",
+      "name": "BackedAutoFeeTokenImplementation",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "BackedFi",
+      "tvl_usd": 2152825.3425316443,
+      "is_proxy": true,
+      "impl_address": "0x4b8c5aa8bc9b5779059496efdab52124d22aad8c",
+      "impl_name": "BackedAutoFeeTokenImplementation",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa34c5e0abe843e10461e2c9586ea03e55dbcc495",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 2152825.3425316443,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0f76d32cdccdcbd602a55af23eaf58fd1ee17245",
+      "name": "BackedTokenImplementation",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 31194508.504722014,
+      "risk_note": "Verified native implementation with $31,194,508.50 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa34c5e0abe843e10461e2c9586ea03e55dbcc495",
+      "name": "BackedAutoFeeTokenImplementation",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 2152825.3425316443,
+      "risk_note": "Verified native implementation with $2,152,825.34 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xa34c5e0abe843e10461e2c9586ea03e55dbcc495",
+  "chain_id": 1,
+  "contract_name": "BackedTokenProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": "0x4b8c5aa8bc9b5779059496efdab52124d22aad8c",
+  "fetched_at": "2026-05-23T07:28:50.298Z"
+}

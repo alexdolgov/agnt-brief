@@ -1,0 +1,18 @@
+{
+  "address": "0x9ad50946f11e5e315c71abba2742c23b302020e8",
+  "chain_id": 8453,
+  "contract_name": "CbBTCOFTUpgradeable",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "LZBL-1.2, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 56,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:53:54.868Z"
+}

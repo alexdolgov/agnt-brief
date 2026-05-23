@@ -50,6 +50,7 @@
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [chainge-finance](./chainge-finance/) | $1.8M | 0.0% | $1.8M | active | 0 | 935 | 2026-05-23 |
 | [charm-finance](./charm-finance/) | $2.2M | 66.7% | ? | unknown | 5 | 7 | 2026-05-22 |
+| [citrea-bridge](./citrea-bridge/) | $5.1M | 33.3% | ? | active | 11 | 4 | 2026-05-23 |
 | [clever](./clever/) | $12.4M | 10.3% | $10.8M | active | 3 | 78 | 2026-05-23 |
 | [coinsquare](./coinsquare/) | $12.4M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [coti-treasury](./coti-treasury/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 935 | 2026-05-23 |
@@ -62,12 +63,14 @@
 | [dexalot](./dexalot/) | $4.2M | 0.0% | $4.2M | active | 0 | 1 | 2026-05-23 |
 | [dforce](./dforce/) | $3.6M | 0.0% | $3.6M | declining | 0 | 450 | 2026-05-23 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | unknown | 4 | 71 | 2026-05-23 |
+| [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [dxsale](./dxsale/) | $26.8M | 0.0% | ? | active | 0 | 353 | 2026-05-22 |
 | [egas-swap](./egas-swap/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | unknown | 5 | 15 | 2026-05-22 |
 | [endur](./endur/) | $9.7M | 0.0% | ? | unknown | 4 | 0 | 2026-05-23 |
 | [enosys](./enosys/) | $28.0M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
+| [etherfuse](./etherfuse/) | $5.1M | 0.0% | ? | unknown | 0 | 25 | 2026-05-23 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
 | [flying-tulip](./flying-tulip/) | $53.1M | 0.0% | $53.1M | unknown | 0 | 152 | 2026-05-23 |
@@ -170,6 +173,7 @@
 | [sophon-farm](./sophon-farm/) | $7.0M | 100.0% | ? | dead | 9 | 1 | 2026-05-23 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 9 | 0 | 2026-05-22 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
+| [splash-protocol](./splash-protocol/) | $1.9M | 0.0% | $1.9M | active | 0 | 904 | 2026-05-23 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-22 |

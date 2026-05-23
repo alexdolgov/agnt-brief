@@ -1,0 +1,18 @@
+{
+  "address": "0x53e0e51b5ed9202110d7ecd637a4581db8b9879f",
+  "chain_id": 56,
+  "contract_name": "DooarSwapV2Router02",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:50:31.371Z"
+}

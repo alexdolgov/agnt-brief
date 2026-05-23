@@ -1,0 +1,563 @@
+{
+  "schema_version": "2.0",
+  "project_key": "citrea-bridge",
+  "generated_at": "2026-05-23T17:59:43.336Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "citrea-bridge",
+    "tier": 0,
+    "peak_tvl": 6530542,
+    "peak_date": "2026-05-23T00:00:00.000Z",
+    "tvl_30d_ago": 3635055,
+    "tvl_90d_ago": 1820953,
+    "tvl_current": 6526535,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": null,
+    "change_30d_pct": 79.54432601432441,
+    "change_90d_pct": 258.41314959804015,
+    "days_since_peak": 0,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0.06135784748034696
+  },
+  "summary": {
+    "total_contracts": 4,
+    "total_addresses": 6,
+    "unique_implementations": 4,
+    "total_deployments": 6,
+    "audited_contracts": 1,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 33.3,
+    "total_audits": 11,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 5132231.80883,
+    "tvl_usd": 5132231.80883,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://citrea.xyz/bridge",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2026-02",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 9,
+      "aging": 1,
+      "stale": 0,
+      "unknown": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "Citrea Bridge enables cross-chain transfers of assets, specifically WBTC, between Ethereum and other networks using LayerZero's OFT standard. It provides adapter contracts that wrap tokens for omnichain fungibility.",
+    "relationship_narrative": "The Bridges family uses proxy contracts pointing to SourceOFTAdapter implementations from the Assets family, while Utility Contracts support deployment and infrastructure. WBTCOFTAdapter likely integrates with the SourceOFTAdapter to handle WBTC-specific bridging logic.",
+    "product_family_count": 3
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xba5ed099633d3b313e4d5f7bdc1305d3c28ba5ed",
+      "name": "CreateX",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "createx",
+      "product_line": "Utility Contracts",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CreateX",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xba5ed099633d3b313e4d5f7bdc1305d3c28ba5ed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6925ccd29e3993c82a574ced4372d8737c6dbba6",
+      "name": "SourceOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Bridges",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x9f3096bac87e7f03dc09b0b416eb0df837304dc4",
+      "impl_name": "SourceOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6925ccd29e3993c82a574ced4372d8737c6dbba6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9f3096bac87e7f03dc09b0b416eb0df837304dc4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdaa289cc487cf95ba99db62f791c7e2d2a4b868e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2508"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4e59b44847b379578588920ca78fbf26c0b4956c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "create2deployer",
+      "product_line": "Utility Contracts",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4e59b44847b379578588920ca78fbf26c0b4956c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2c01390e10e44c968b73a7bcff7e4b4f50ba76ed",
+      "name": "WBTCOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridges",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WBTCOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2c01390e10e44c968b73a7bcff7e4b4f50ba76ed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2504,
+      "audit_key": "audit-2504",
+      "report_name": "| [SigmaPrime](https://sigmaprime.io/) | Citrea | July 2025 | [view]() |",
+      "report_url": "https://github.com/chainwayxyz/citrea/blob/nightly/audits/Sigma_Prime_Chainway_Citrea_Security_Assessment_Report_v2_2.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2505,
+      "audit_key": "audit-2505",
+      "report_name": "| [SigmaPrime](https://sigmaprime.io/) | Clementine | August 2025 | [view]() |",
+      "report_url": "https://github.com/chainwayxyz/clementine/blob/main/audits/Sigma_Prime_Chainway_Labs_Clementine_Security_Assessment_Report_v2_0.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2506,
+      "audit_key": "audit-2506",
+      "report_name": "| [Cantina Competition](https://cantina.xyz/competitions/49b9e08d-4f8f-4103-b6e5-f5f43cf9faa1) | Citrea | Oct 2025 | [view]() |",
+      "report_url": "https://github.com/chainwayxyz/citrea/blob/nightly/audits/cantina_competition_citrea_jul2025.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2507,
+      "audit_key": "audit-2507",
+      "report_name": "| [Cantina Competition](https://cantina.xyz/competitions/ce181972-2b40-4047-8ee9-89ec43527686) | Clementine | Oct 2025 | [view]() |",
+      "report_url": "https://github.com/chainwayxyz/clementine/blob/main/audits/cantina-competition-report.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2508,
+      "audit_key": "audit-2508",
+      "report_name": "| [Guardian](https://guardianaudits.com) | USDT.e & USDC.e Bridge | Oct 2025 | [view]() |",
+      "report_url": "https://github.com/chainwayxyz/token-bridge/blob/main/audits/Guardian_Chainway_Stablecoin_Bridge_Security_Assessment_Report.pdf",
+      "auditor": "Guardian",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ConfigSetup",
+        "DestinationOUSDC",
+        "DestinationOUSDCForTakeover",
+        "DestinationOUSDT",
+        "SourceOFTAdapter",
+        "SourceOFTAdapterForTakeover",
+        "USDCAndBridgeAssignRoles",
+        "USDCBridgeDeploy",
+        "USDCDestBridgePause",
+        "USDCDestBridgePrepareTakeover",
+        "USDCDestBridgeSetBlockedMsgLib",
+        "USDCDestBridgeSetLzConfig",
+        "USDCDestBridgeSetPeer",
+        "USDCDestBridgeUnpause",
+        "USDCProxyAdminTransfer",
+        "USDCRemoveBridgeAsMinter",
+        "USDCRolesHolder",
+        "USDCRolesHolderSetCircle",
+        "USDCSetBridgeAsMinter",
+        "USDCSrcBridgePause",
+        "USDCSrcBridgePrepareTakeover",
+        "USDCSrcBridgeSetBlockedMsgLib",
+        "USDCSrcBridgeSetCircle",
+        "USDCSrcBridgeSetLzConfig",
+        "USDCSrcBridgeSetPeer",
+        "USDCSrcBridgeUnpause",
+        "USDCTransferOwner",
+        "USDTAndBridgeAssignRoles",
+        "USDTBridgeDeploy",
+        "USDTDeploy",
+        "USDTDestBridgeSetLzConfig",
+        "USDTDestBridgeSetPeer",
+        "USDTSetBridgeAsMinter",
+        "USDTSrcBridgeSetLzConfig",
+        "USDTSrcBridgeSetPeer"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2509,
+      "audit_key": "audit-2509",
+      "report_name": "| [OtterSec](https://osec.io) | WBTC.e Bridge | Sept 2024 | [view]() |",
+      "report_url": "https://github.com/LayerZero-Labs/Audits/blob/d98efc2e0c4e6d7137a30529d1e55a9df7a4fbfd/audits/LZ_WBTC-OFT-Conversion_OtterSec_23-Sept-24.pdf",
+      "auditor": "Guardian",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2510,
+      "audit_key": "audit-2510",
+      "report_name": "BitVM - Zellic Audit Report.pdf",
+      "report_url": "https://github.com/BitVM/BitVM/blob/1f42f41c00d935988d87529e79e7d950d3bf9503/aduits/BitVM%20-%20Zellic%20Audit%20Report.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2511,
+      "audit_key": "audit-2511",
+      "report_name": "| [Guardian](https://guardianaudits.com) | CTR & xCTR | Feb 2026 | [view]() |",
+      "report_url": "https://static.citrea.xyz/audits/ctr-xctr-guardian.pdf",
+      "auditor": "Guardian",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2512,
+      "audit_key": "audit-2512",
+      "report_name": "| [Sherlock](https://sherlock.xyz) | CTR & xCTR | Feb 2026 | [view]() |",
+      "report_url": "https://static.citrea.xyz/audits/ctr-xctr-sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2026-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2513,
+      "audit_key": "audit-2513",
+      "report_name": "Sigma_Prime_Chainway_Citrea_Fee_Update_Security_Assessment_Report_v2_0.pdf",
+      "report_url": "https://github.com/chainwayxyz/citrea/blob/nightly/audits/Sigma_Prime_Chainway_Citrea_Fee_Update_Security_Assessment_Report_v2_0.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2514,
+      "audit_key": "audit-2514",
+      "report_name": "cantina_eip6780_fix_feb2026.pdf",
+      "report_url": "https://github.com/chainwayxyz/citrea/blob/nightly/audits/cantina_eip6780_fix_feb2026.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Guardian",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 33.3,
+      "latest_audit": "2026-02"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2c01390e10e44c968b73a7bcff7e4b4f50ba76ed",
+      "name": "WBTCOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 3,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 3
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2504,
+        "report_name": "| [SigmaPrime](https://sigmaprime.io/) | Citrea | July 2025 | [view]() |"
+      },
+      {
+        "audit_id": 2505,
+        "report_name": "| [SigmaPrime](https://sigmaprime.io/) | Clementine | August 2025 | [view]() |"
+      },
+      {
+        "audit_id": 2506,
+        "report_name": "| [Cantina Competition](https://cantina.xyz/competitions/49b9e08d-4f8f-4103-b6e5-f5f43cf9faa1) | Citrea | Oct 2025 | [view]() |"
+      },
+      {
+        "audit_id": 2507,
+        "report_name": "| [Cantina Competition](https://cantina.xyz/competitions/ce181972-2b40-4047-8ee9-89ec43527686) | Clementine | Oct 2025 | [view]() |"
+      },
+      {
+        "audit_id": 2509,
+        "report_name": "| [OtterSec](https://osec.io) | WBTC.e Bridge | Sept 2024 | [view]() |"
+      },
+      {
+        "audit_id": 2510,
+        "report_name": "BitVM - Zellic Audit Report.pdf"
+      },
+      {
+        "audit_id": 2511,
+        "report_name": "| [Guardian](https://guardianaudits.com) | CTR & xCTR | Feb 2026 | [view]() |"
+      },
+      {
+        "audit_id": 2512,
+        "report_name": "| [Sherlock](https://sherlock.xyz) | CTR & xCTR | Feb 2026 | [view]() |"
+      },
+      {
+        "audit_id": 2513,
+        "report_name": "Sigma_Prime_Chainway_Citrea_Fee_Update_Security_Assessment_Report_v2_0.pdf"
+      },
+      {
+        "audit_id": 2514,
+        "report_name": "cantina_eip6780_fix_feb2026.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

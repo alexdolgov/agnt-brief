@@ -1,0 +1,18 @@
+{
+  "address": "0x0a71c167d6fbdb6721f37e1d543b4baccb76a9e0",
+  "chain_id": 1,
+  "contract_name": "Reverter",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:47:31.795Z"
+}

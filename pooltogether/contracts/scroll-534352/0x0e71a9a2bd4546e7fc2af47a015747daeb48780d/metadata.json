@@ -1,0 +1,17 @@
+{
+  "address": "0x0e71a9a2bd4546e7fc2af47a015747daeb48780d",
+  "chain_id": 534352,
+  "contract_name": "TwabRewards",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000005ec48e749768aea9956cb38542a9837ec714537d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:43:34.342Z"
+}

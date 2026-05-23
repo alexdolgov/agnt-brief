@@ -1,0 +1,18 @@
+{
+  "address": "0x253453bc43f0b961528c9cbc18a3ae3de0a4daab",
+  "chain_id": 1,
+  "contract_name": "EulerEarn",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 68,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:47:33.483Z"
+}

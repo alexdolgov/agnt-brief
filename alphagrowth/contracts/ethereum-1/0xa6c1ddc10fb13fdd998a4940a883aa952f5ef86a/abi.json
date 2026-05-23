@@ -1,0 +1,431 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "evc_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyActivated",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AssetsOutOfOrderOrEqual",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BadDynamicParam",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BadFeeRecipient",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BadStaticParam",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ControllerDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CurveViolation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EVC_InvalidAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientCalldata",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAssets",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Locked",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAuthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint112",
+            "name": "equilibriumReserve0",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "equilibriumReserve1",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "minReserve0",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "minReserve1",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint80",
+            "name": "priceX",
+            "type": "uint80"
+          },
+          {
+            "internalType": "uint80",
+            "name": "priceY",
+            "type": "uint80"
+          },
+          {
+            "internalType": "uint64",
+            "name": "concentrationX",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "concentrationY",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "fee0",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "fee1",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint40",
+            "name": "expiration",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint8",
+            "name": "swapHookedOperations",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "swapHook",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IEulerSwap.DynamicParams",
+        "name": "dParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint112",
+            "name": "reserve0",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "reserve1",
+            "type": "uint112"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IEulerSwap.InitialState",
+        "name": "initialState",
+        "type": "tuple"
+      }
+    ],
+    "name": "EulerSwapConfigured",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "manager",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "installed",
+        "type": "bool"
+      }
+    ],
+    "name": "EulerSwapManagerSet",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "EVC",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint112",
+            "name": "equilibriumReserve0",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "equilibriumReserve1",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "minReserve0",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "minReserve1",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint80",
+            "name": "priceX",
+            "type": "uint80"
+          },
+          {
+            "internalType": "uint80",
+            "name": "priceY",
+            "type": "uint80"
+          },
+          {
+            "internalType": "uint64",
+            "name": "concentrationX",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "concentrationY",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "fee0",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "fee1",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint40",
+            "name": "expiration",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint8",
+            "name": "swapHookedOperations",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "swapHook",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IEulerSwap.DynamicParams",
+        "name": "dParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint112",
+            "name": "reserve0",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "reserve1",
+            "type": "uint112"
+          }
+        ],
+        "internalType": "struct IEulerSwap.InitialState",
+        "name": "initialState",
+        "type": "tuple"
+      }
+    ],
+    "name": "activate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint112",
+            "name": "equilibriumReserve0",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "equilibriumReserve1",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "minReserve0",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "minReserve1",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint80",
+            "name": "priceX",
+            "type": "uint80"
+          },
+          {
+            "internalType": "uint80",
+            "name": "priceY",
+            "type": "uint80"
+          },
+          {
+            "internalType": "uint64",
+            "name": "concentrationX",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "concentrationY",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "fee0",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "fee1",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint40",
+            "name": "expiration",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint8",
+            "name": "swapHookedOperations",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "swapHook",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IEulerSwap.DynamicParams",
+        "name": "dParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint112",
+            "name": "reserve0",
+            "type": "uint112"
+          },
+          {
+            "internalType": "uint112",
+            "name": "reserve1",
+            "type": "uint112"
+          }
+        ],
+        "internalType": "struct IEulerSwap.InitialState",
+        "name": "initialState",
+        "type": "tuple"
+      }
+    ],
+    "name": "reconfigure",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "manager",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "installed",
+        "type": "bool"
+      }
+    ],
+    "name": "setManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

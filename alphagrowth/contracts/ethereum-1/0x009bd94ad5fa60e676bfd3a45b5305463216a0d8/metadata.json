@@ -1,0 +1,18 @@
+{
+  "address": "0x009bd94ad5fa60e676bfd3a45b5305463216a0d8",
+  "chain_id": 1,
+  "contract_name": "UtilsLens",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-or-later, GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:47:29.218Z"
+}

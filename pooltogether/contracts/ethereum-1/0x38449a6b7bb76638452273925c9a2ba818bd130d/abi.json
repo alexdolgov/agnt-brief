@@ -1,0 +1,107 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ChainlinkVRFV2Direct",
+        "name": "_chainlinkVrfV2Direct",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IRngAuction",
+        "name": "_rngAuction",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ChainlinkVRFV2DirectZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RngAuctionZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "chainlinkVrfV2Direct",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "activeRngService",
+        "type": "address"
+      }
+    ],
+    "name": "RngServiceNotActive",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "chainlinkVrfV2Direct",
+    "outputs": [
+      {
+        "internalType": "contract ChainlinkVRFV2Direct",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_gasPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "estimateRequestFee",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "_feeToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_requestFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rngAuction",
+    "outputs": [
+      {
+        "internalType": "contract IRngAuction",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_rewardRecipient",
+        "type": "address"
+      }
+    ],
+    "name": "transferFeeAndStartRngRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

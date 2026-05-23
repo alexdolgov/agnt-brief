@@ -1,0 +1,361 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract PrizePool",
+        "name": "prizePool_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "claimer_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "claimer",
+        "type": "address"
+      }
+    ],
+    "name": "CallerNotClaimer",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ClaimRecipientZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ClaimerZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LeaveTheGpInThePrizePool",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PrizePoolZeroAddress",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "claimer",
+        "type": "address"
+      }
+    ],
+    "name": "ClaimerSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "contract PrizePool",
+        "name": "prizePool",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "ContributedPrize",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "useBeforeClaimPrize",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "useAfterClaimPrize",
+            "type": "bool"
+          },
+          {
+            "internalType": "contract IPrizeHooks",
+            "name": "implementation",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct PrizeHooks",
+        "name": "hooks",
+        "type": "tuple"
+      }
+    ],
+    "name": "SetHooks",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "HOOK_GAS",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "prizeAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "prizeRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "afterClaimPrize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "winner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint8",
+        "name": "tier",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint96",
+        "name": "",
+        "type": "uint96"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "beforeClaimPrize",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "prizeRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_winner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_tier",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_prizeIndex",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint96",
+        "name": "_reward",
+        "type": "uint96"
+      },
+      {
+        "internalType": "address",
+        "name": "_rewardRecipient",
+        "type": "address"
+      }
+    ],
+    "name": "claimPrize",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claimer",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "contributePrizeTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getHooks",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "useBeforeClaimPrize",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "useAfterClaimPrize",
+            "type": "bool"
+          },
+          {
+            "internalType": "contract IPrizeHooks",
+            "name": "implementation",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PrizeHooks",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "prizePool",
+    "outputs": [
+      {
+        "internalType": "contract PrizePool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "useBeforeClaimPrize",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "useAfterClaimPrize",
+            "type": "bool"
+          },
+          {
+            "internalType": "contract IPrizeHooks",
+            "name": "implementation",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PrizeHooks",
+        "name": "hooks",
+        "type": "tuple"
+      }
+    ],
+    "name": "setHooks",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

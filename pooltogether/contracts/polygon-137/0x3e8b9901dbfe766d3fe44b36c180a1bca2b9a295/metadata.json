@@ -1,0 +1,17 @@
+{
+  "address": "0x3e8b9901dbfe766d3fe44b36c180a1bca2b9a295",
+  "chain_id": 137,
+  "contract_name": "Reserve",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:43:35.910Z"
+}

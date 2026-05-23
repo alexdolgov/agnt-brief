@@ -1,0 +1,17 @@
+{
+  "address": "0x14e194cf5e1dd73bb46256495aea8ff36a7aa454",
+  "chain_id": 137,
+  "contract_name": "PrizeChunker",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000008f3cf7ad23cd3cadbd9735aff958023239c6a06300000000000000000000000000000000000000000000001a23138611afe8fc5000000000000000000000000007591c981e86dd361101ab088f0f21e9d5b371ab",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:43:34.000Z"
+}

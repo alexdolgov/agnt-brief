@@ -1,0 +1,17 @@
+{
+  "address": "0x07d6b3981cbc1dc34102735b987b175116635091",
+  "chain_id": 1,
+  "contract_name": "EulerEarnVaultLens",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "0000000000000000000000007b89cc2b2607280113c09510353ea6a521e6e0fc",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:47:34.607Z"
+}

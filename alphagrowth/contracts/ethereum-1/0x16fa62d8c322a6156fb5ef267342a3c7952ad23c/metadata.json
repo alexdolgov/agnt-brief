@@ -1,0 +1,18 @@
+{
+  "address": "0x16fa62d8c322a6156fb5ef267342a3c7952ad23c",
+  "chain_id": 1,
+  "contract_name": "Liquidation",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-or-later, BUSL-1.1, GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 43,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:47:32.924Z"
+}

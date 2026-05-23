@@ -1,0 +1,18 @@
+{
+  "address": "0xc57d9e4a688551d99645b49126e93589d4b478c8",
+  "chain_id": 1,
+  "contract_name": "SwapHub",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "london",
+  "license": "AGPL-3.0-or-later, GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:47:39.108Z"
+}

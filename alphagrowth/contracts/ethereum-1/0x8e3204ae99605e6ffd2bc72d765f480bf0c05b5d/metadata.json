@@ -1,0 +1,18 @@
+{
+  "address": "0x8e3204ae99605e6ffd2bc72d765f480bf0c05b5d",
+  "chain_id": 1,
+  "contract_name": "EulDistributorOwner",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "london",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:47:37.514Z"
+}

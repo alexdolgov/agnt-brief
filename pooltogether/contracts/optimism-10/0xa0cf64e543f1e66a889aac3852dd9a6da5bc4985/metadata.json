@@ -1,0 +1,18 @@
+{
+  "address": "0xa0cf64e543f1e66a889aac3852dd9a6da5bc4985",
+  "chain_id": 10,
+  "contract_name": "GenericSwapperHelper",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:43:36.356Z"
+}

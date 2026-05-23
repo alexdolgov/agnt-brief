@@ -1,0 +1,17 @@
+{
+  "address": "0x28e36ea7481934a651da81483358c67a51583b85",
+  "chain_id": 1,
+  "contract_name": "ChronicleOracle",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "GNU GPLv2",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000a3ca88cfb7bbe9cfbd47df053ffa2130c7e6f770000000000000000000000000000000000000000000000000000000000000034800000000000000000000000027c0d69b99e4ea0bf99ebdc07dacbe0b3f068917000000000000000000000000000000000000000000000000000000000000afc8",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:47:33.826Z"
+}

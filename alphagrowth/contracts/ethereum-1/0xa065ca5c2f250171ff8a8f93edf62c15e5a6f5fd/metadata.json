@@ -1,0 +1,18 @@
+{
+  "address": "0xa065ca5c2f250171ff8a8f93edf62c15e5a6f5fd",
+  "chain_id": 1,
+  "contract_name": "EulerKinkIRMFactory",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:47:37.908Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xbe30611ca48d3fc131fdc6006626b90702478dfb",
+  "chain_id": 43114,
+  "contract_name": "EIP2612PermitAndDeposit",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:43:37.525Z"
+}

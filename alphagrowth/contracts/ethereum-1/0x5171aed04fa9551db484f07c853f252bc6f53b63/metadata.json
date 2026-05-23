@@ -1,0 +1,17 @@
+{
+  "address": "0x5171aed04fa9551db484f07c853f252bc6f53b63",
+  "chain_id": 1,
+  "contract_name": "EulerSwapProtocolFeeConfig",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 2500,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "0000000000000000000000000c9a3dd6b8f28529d72d7f9ce918d493519ee383000000000000000000000000cad001c30e96765ac90307669d578219d4fb1dce",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:47:35.624Z"
+}

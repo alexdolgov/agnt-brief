@@ -1,0 +1,17 @@
+{
+  "address": "0x208ff5eb543814789321daa1b5eb551881d16b06",
+  "chain_id": 1,
+  "contract_name": "EulerSwapPeriphery",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:47:33.203Z"
+}

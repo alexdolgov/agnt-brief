@@ -1,0 +1,17 @@
+{
+  "address": "0x259d46f1559e4d41faf61d858b4b439d3962fc57",
+  "chain_id": 137,
+  "contract_name": "TicketProxyFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T06:43:35.736Z"
+}

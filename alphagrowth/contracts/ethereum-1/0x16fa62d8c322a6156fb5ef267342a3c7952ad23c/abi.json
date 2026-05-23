@@ -1,0 +1,733 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "evc",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "protocolConfig",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "sequenceRegistry",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "balanceTracker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "permit2",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct Base.Integrations",
+        "name": "integrations",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "E_AccountLiquidity",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_AmountTooLargeToEncode",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_BadAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_BadAssetReceiver",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_BadBorrowCap",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_BadCollateral",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_BadFee",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_BadMaxLiquidationDiscount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_BadSharesOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_BadSharesReceiver",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_BadSupplyCap",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_BorrowCapExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_CheckUnauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_CollateralDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_ConfigAmountTooLargeToEncode",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_ControllerDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_DebtAmountTooLargeToEncode",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_EmptyError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_ExcessiveRepayAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_FlashLoanNotRepaid",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_Initialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_InsufficientAllowance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_InsufficientAssets",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_InsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_InsufficientCash",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_InsufficientDebt",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_InvalidLTVAsset",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_LTVBorrow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_LTVLiquidation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_LiquidationCoolOff",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_MinYield",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_NoLiability",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_NoPriceOracle",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_NotController",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_NotHookTarget",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_NotSupported",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_OperationDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_OutstandingDebt",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_ProxyMetadata",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_Reentrancy",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_RepayTooMuch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_SelfLiquidation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_SelfTransfer",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_SupplyCapExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_TransientState",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_Unauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_ViolatorLiquidityDeferred",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_ZeroAssets",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "E_ZeroShares",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "spender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "Approval",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "status",
+        "type": "bool"
+      }
+    ],
+    "name": "BalanceForwarderStatus",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "assets",
+        "type": "uint256"
+      }
+    ],
+    "name": "Borrow",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "protocolReceiver",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "governorReceiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "protocolShares",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "governorShares",
+        "type": "uint256"
+      }
+    ],
+    "name": "ConvertFees",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "assets",
+        "type": "uint256"
+      }
+    ],
+    "name": "DebtSocialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "assets",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "shares",
+        "type": "uint256"
+      }
+    ],
+    "name": "Deposit",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "dToken",
+        "type": "address"
+      }
+    ],
+    "name": "EVaultCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "assets",
+        "type": "uint256"
+      }
+    ],
+    "name": "InterestAccrued",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "liquidator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "violator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "collateral",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "repayAssets",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "yieldBalance",
+        "type": "uint256"
+      }
+    ],
+    "name": "Liquidate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "assets",
+        "type": "uint256"
+      }
+    ],
+    "name": "PullDebt",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "assets",
+        "type": "uint256"
+      }
+    ],
+    "name": "Repay",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "Transfer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalShares",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalBorrows",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "accumulatedFees",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "cash",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "interestAccumulator",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "interestRate",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "VaultStatus",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "assets",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "shares",
+        "type": "uint256"
+      }
+    ],
+    "name": "Withdraw",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "liquidator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "violator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "collateral",
+        "type": "address"
+      }
+    ],
+    "name": "checkLiquidation",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "maxRepay",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxYield",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "violator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "collateral",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "repayAssets",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minYieldBalance",
+        "type": "uint256"
+      }
+    ],
+    "name": "liquidate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

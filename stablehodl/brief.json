@@ -1,0 +1,214 @@
+{
+  "schema_version": "2.0",
+  "project_key": "stablehodl",
+  "generated_at": "2026-05-23T10:07:17.435Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "stablehodl",
+    "tier": 0,
+    "peak_tvl": 6963779,
+    "peak_date": "2026-05-13T00:00:00.000Z",
+    "tvl_30d_ago": 5965754,
+    "tvl_90d_ago": 5962153,
+    "tvl_current": 6959519,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 5942968,
+    "change_30d_pct": 16.657827325766366,
+    "change_90d_pct": 16.728285906114788,
+    "days_since_peak": 10,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0.06117368170356929
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 9,
+    "unique_implementations": 2,
+    "total_deployments": 9,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 6959444.61489,
+    "tvl_usd": 6959444.61489,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://stablehodl.com/",
+    "chains": [
+      "bsc",
+      "ethereum",
+      "polygon"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "StableHodl is a yield protocol that allows users to stake assets and earn returns through staking pools and OTC endpoints, deployed across BSC, Polygon, and Ethereum.",
+    "relationship_narrative": "Both families share the ERC1967Proxy infrastructure for upgradeability, with staking pools and OTC endpoints deployed as separate proxy instances pointing to distinct implementations, indicating a modular design where staking and OTC services may interact through shared token flows.",
+    "product_family_count": 2
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x10057f7d9897414d1c84c886e16566dce8d66777",
+      "name": "OTCEndPoint",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x9e53873e4c2cce0873d4ad8946cd6b0ba8755123",
+      "impl_name": "OTCEndPoint",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x10057f7d9897414d1c84c886e16566dce8d66777",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x528d46b5780879e28cf410c0b86d991a38fe64aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x109d3042a3c682f94107b3818e93b3ade2a47544",
+      "name": "stake_pool",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "🔑 Key Addresses",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc34df695167aa2f9571976ffd5e3e0e95a53e470",
+      "impl_name": "stake_pool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x109d3042a3c682f94107b3818e93b3ade2a47544",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc34df695167aa2f9571976ffd5e3e0e95a53e470",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x109d3042a3c682f94107b3818e93b3ade2a47544",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x528d46b5780879e28cf410c0b86d991a38fe64aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc34df695167aa2f9571976ffd5e3e0e95a53e470",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x109d3042a3c682f94107b3818e93b3ade2a47544",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xc34df695167aa2f9571976ffd5e3e0e95a53e470",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 2,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

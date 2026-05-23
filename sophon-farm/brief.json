@@ -1,0 +1,431 @@
+{
+  "schema_version": "2.0",
+  "project_key": "sophon-farm",
+  "generated_at": "2026-05-23T10:09:41.166Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "sophon-farm",
+    "tier": 1,
+    "peak_tvl": 256380353,
+    "peak_date": "2025-01-28T00:00:00.000Z",
+    "tvl_30d_ago": 6990085,
+    "tvl_90d_ago": 7062927,
+    "tvl_current": 6759500,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 14100792,
+    "change_30d_pct": -3.298743863629698,
+    "change_90d_pct": -4.296051764374742,
+    "governance_raw": {
+      "evidence": "TVL is $0 on the homepage, indicating no user funds are deposited, and the protocol appears inactive.",
+      "confidence": 0.9,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 480,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 97.36348752121422,
+    "governance_evidence": "TVL is $0 on the homepage, indicating no user funds are deposited, and the protocol appears inactive.",
+    "governance_confidence": 0.9,
+    "governance_text_chars": 540,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 6,
+    "unique_implementations": 1,
+    "total_deployments": 6,
+    "audited_contracts": 1,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 100,
+    "total_audits": 9,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 7011496.266439999,
+    "tvl_usd": 7011496.266439999,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://farm.sophon.xyz/",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 100,
+    "tier1_auditors": [
+      "Sherlock"
+    ],
+    "latest_audit_date": "2025-05",
+    "audit_freshness": "aging",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 8,
+      "stale": 0,
+      "unknown": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "Sophon Farm is a yield farming protocol on Ethereum that allows users to stake assets and earn rewards. It is managed through a proxy-upgradeable farming contract.",
+    "relationship_narrative": "The protocol consists of a single product family with a core farming contract and its proxy. No shared infrastructure or cross-family dependencies are present.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x52df5e394469743839a47b4d0b1e09b8a84a774a",
+      "name": "SophonFarming",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcea810168c41df6260518b17c64209920b3219b2",
+      "impl_name": "SophonFarming",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x52df5e394469743839a47b4d0b1e09b8a84a774a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x61916427307520be86f7cb53306a443b30e35f31",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x78910e1dfe6df94ea7eec54b25921673db0e2a06",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcea810168c41df6260518b17c64209920b3219b2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xda3bfca50d44b70c7b2f512f676579ea15807de8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xeff8e65ac06d7fe70842a4d54959e8692d6ae064",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2203",
+        "audit-2204",
+        "audit-2207"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2202,
+      "audit_key": "audit-2202",
+      "report_name": "DL audit link",
+      "report_url": "https://docs.sophon.xyz/links/audits",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2203,
+      "audit_key": "audit-2203",
+      "report_name": "Quantstamp Audit Report for Farming on Ethereum",
+      "report_url": "https://github.com/sophon-org/audits/blob/main/Quantstamp%20-%20Sophon%20Farming%20Final%20Report.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "SophonFarming",
+        "SophonFarmingState"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2204,
+      "audit_key": "audit-2204",
+      "report_name": "Sherlock Audit Report for Farming on Ethereum",
+      "report_url": "https://github.com/sophon-org/audits/blob/main/Sherlock%20-%20sophon-farming-contracts-audit-report-1718619027.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "aging",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "SophonFarming"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2205,
+      "audit_key": "audit-2205",
+      "report_name": "Omniscia Audit Report for Custom USDC Bridge",
+      "report_url": "https://github.com/sophon-org/audits/blob/main/Omniscia%20-%20Security%20Review%20-%2011_20_2024.pdf",
+      "auditor": "Omniscia",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2206,
+      "audit_key": "audit-2206",
+      "report_name": "Omniscia Audit Report for Guardian NFT, L1 Paymaster, and SOPH Token",
+      "report_url": "https://github.com/sophon-org/audits/blob/main/Omniscia%20-%20Security%20Review%20-%2011_01_2024.pdf",
+      "auditor": "Guardian",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2207,
+      "audit_key": "audit-2207",
+      "report_name": "Omniscia Audit Report for Farming on layer-2 oracle based allocation reward system",
+      "report_url": "https://github.com/sophon-org/audits/blob/main/Omniscia%20-%20Security%20Review%20-%20Farming%20-%2001_08_2025.pdf",
+      "auditor": "Omniscia",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "MerkleAirdrop",
+        "SophonFarming",
+        "SophonFarmingL2",
+        "SophonFarmingState",
+        "UUPSProxy"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2208,
+      "audit_key": "audit-2208",
+      "report_name": "Omniscia Audit Report for Tokens and BridgeHubWrapper",
+      "report_url": "https://github.com/sophon-org/audits/blob/main/Quantstamp%20-%20Sophon%20tokens%20%26%20BridgeHubWrappe.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2209,
+      "audit_key": "audit-2209",
+      "report_name": "Nethermind - NM0482_FINAL_SOPHON.pdf",
+      "report_url": "https://github.com/sophon-org/audits/blob/main/Nethermind%20-%20NM0482_FINAL_SOPHON.pdf",
+      "auditor": "Nethermind",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2210,
+      "audit_key": "audit-2210",
+      "report_name": "Omniscia - 04_28_2025_SophonNetwork_StakingMerkleContracts_SecurityAudit.pdf",
+      "report_url": "https://github.com/sophon-org/audits/blob/main/Omniscia%20-%2004_28_2025_SophonNetwork_StakingMerkleContracts_SecurityAudit.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Omniscia",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2025-02"
+    },
+    {
+      "auditor": "Quantstamp",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2024-11"
+    },
+    {
+      "auditor": "Sherlock",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2024-06"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 18
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2202,
+        "report_name": "DL audit link"
+      },
+      {
+        "audit_id": 2205,
+        "report_name": "Omniscia Audit Report for Custom USDC Bridge"
+      },
+      {
+        "audit_id": 2206,
+        "report_name": "Omniscia Audit Report for Guardian NFT, L1 Paymaster, and SOPH Token"
+      },
+      {
+        "audit_id": 2208,
+        "report_name": "Omniscia Audit Report for Tokens and BridgeHubWrapper"
+      },
+      {
+        "audit_id": 2209,
+        "report_name": "Nethermind - NM0482_FINAL_SOPHON.pdf"
+      },
+      {
+        "audit_id": 2210,
+        "report_name": "Omniscia - 04_28_2025_SophonNetwork_StakingMerkleContracts_SecurityAudit.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

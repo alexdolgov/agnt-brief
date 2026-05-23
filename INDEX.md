@@ -19,6 +19,7 @@
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-05-23 |
 | [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [atlendis](./atlendis/) | $4.3M | 0.0% | $4.3M | declining | 0 | 43 | 2026-05-23 |
+| [avalaunch](./avalaunch/) | $31.3M | 78.6% | ? | unknown | 13 | 39 | 2026-05-23 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 0 | 2 | 2026-05-23 |
 | [badger-dao](./badger-dao/) | $1.9M | 0.0% | $1.9M | sunsetting | 0 | 330 | 2026-05-23 |
 | [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 2 | 105 | 2026-05-23 |
@@ -56,6 +57,7 @@
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | unknown | 5 | 15 | 2026-05-22 |
 | [endur](./endur/) | $9.7M | 0.0% | ? | unknown | 4 | 0 | 2026-05-23 |
 | [enosys](./enosys/) | $28.0M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
+| [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 11 | 18 | 2026-05-23 |
@@ -132,7 +134,9 @@
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 0 | 2 | 2026-05-22 |
 | [solayer](./solayer/) | $1.9M | 0.0% | $1.9M | declining | 5 | 935 | 2026-05-22 |
 | [solera](./solera/) | $8.1M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
+| [sophon-farm](./sophon-farm/) | $7.0M | 100.0% | ? | dead | 9 | 1 | 2026-05-23 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 9 | 0 | 2026-05-22 |
+| [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-22 |
 | [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 0 | 43 | 2026-05-22 |
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -143,6 +147,7 @@
 | [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |
+| [trufin-protocol](./trufin-protocol/) | $6.8M | 66.7% | ? | declining | 12 | 7 | 2026-05-23 |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | unknown | 0 | 150 | 2026-05-23 |
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-05-23 |

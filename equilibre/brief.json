@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0",
+  "project_key": "equilibre",
+  "generated_at": "2026-05-23T10:03:33.316Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "equilibre",
+    "tier": 0,
+    "peak_tvl": 48417162,
+    "peak_date": "2023-03-15T00:00:00.000Z",
+    "tvl_30d_ago": 6642344,
+    "tvl_90d_ago": 6581006,
+    "tvl_current": 6901350,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 5376078,
+    "change_30d_pct": 3.8993162654629145,
+    "change_90d_pct": 4.8677056364938736,
+    "days_since_peak": 1165,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 85.7460666529773
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 6901350.08278,
+    "tvl_usd": 6901350.08278,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": null,
+    "chains": [
+      "kava"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Equilibre is a decentralized exchange (DEX) on the Kava chain, enabling users to swap tokens and provide liquidity through automated market-making pools.",
+    "relationship_narrative": "The protocol consists of a single contract family with no additional infrastructure or shared components identified.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 2222,
+      "chain_name": "kava",
+      "address": "0xe1da44c0da55b075ae8e2e4b6986adc76ac77d73",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Equilibre",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 2222,
+          "chain_name": "kava",
+          "address": "0xe1da44c0da55b075ae8e2e4b6986adc76ac77d73",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 1
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

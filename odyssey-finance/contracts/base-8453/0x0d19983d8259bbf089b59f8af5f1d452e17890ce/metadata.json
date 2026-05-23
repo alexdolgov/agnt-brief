@@ -1,0 +1,17 @@
+{
+  "address": "0x0d19983d8259bbf089b59f8af5f1d452e17890ce",
+  "chain_id": 8453,
+  "contract_name": "PositionRegistry",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:34:42.037Z"
+}

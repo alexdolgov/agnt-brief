@@ -1,0 +1,18 @@
+{
+  "address": "0x82e6b5675977f0650c88659716a2210f536ac3a2",
+  "chain_id": 1,
+  "contract_name": "Ajna",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:34:48.199Z"
+}

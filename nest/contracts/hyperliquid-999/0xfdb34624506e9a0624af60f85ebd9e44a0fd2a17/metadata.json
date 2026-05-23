@@ -1,0 +1,17 @@
+{
+  "address": "0xfdb34624506e9a0624af60f85ebd9e44a0fd2a17",
+  "chain_id": 999,
+  "contract_name": "RouterV2",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "000000000000000000000000889fd0ada8453c7619cd7f11e9029a1f0848fdf50000000000000000000000005555555555555555555555555555555555555555",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:45:59.642Z"
+}

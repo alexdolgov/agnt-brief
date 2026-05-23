@@ -1,0 +1,18 @@
+{
+  "address": "0x17446e48196ec6ef40f839a4be6df77ac6610f9c",
+  "chain_id": 8453,
+  "contract_name": "FeeProvider",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:34:41.245Z"
+}

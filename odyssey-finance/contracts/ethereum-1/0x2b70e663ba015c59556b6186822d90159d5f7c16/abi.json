@@ -1,0 +1,739 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AmountIsTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AmountIsZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CrossChainRequestCompletedAlready",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CrossChainRequestInvalidKey",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DepositTokenDoesNotExist",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FlashRepaySlippageTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IsShutdown",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LeverageSlippageTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LeverageTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LeverageTooLow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PoolAddressIsNull",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PoolIsNull",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PositionIsNotHealthy",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SenderIsNotAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SenderIsNotCrossChainDispatcher",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SyntheticDoesNotExist",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenInIsNull",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "CrossChainFlashRepayFinished",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "CrossChainFlashRepayStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "CrossChainLeverageFinished",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "CrossChainLeverageStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "contract ISyntheticToken",
+        "name": "syntheticToken",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "contract IDepositToken",
+        "name": "depositToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "withdrawn",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "repaid",
+        "type": "uint256"
+      }
+    ],
+    "name": "FlashRepaid",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "contract IERC20",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "contract IDepositToken",
+        "name": "depositToken",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "contract ISyntheticToken",
+        "name": "syntheticToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "leverage",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "issued",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "deposited",
+        "type": "uint256"
+      }
+    ],
+    "name": "Leveraged",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "crossChainDispatcher",
+    "outputs": [
+      {
+        "internalType": "contract ICrossChainDispatcher",
+        "name": "_crossChainDispatcher",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISyntheticToken",
+        "name": "syntheticToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IDepositToken",
+        "name": "depositToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "withdrawAmount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "bridgeToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bridgeTokenAmountMin_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "swapAmountOutMin_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "repayAmountMin_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "lzArgs_",
+        "type": "bytes"
+      }
+    ],
+    "name": "crossChainFlashRepay",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "id_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "swapAmountOut_",
+        "type": "uint256"
+      }
+    ],
+    "name": "crossChainFlashRepayCallback",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_repaid",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "crossChainFlashRepays",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "dstChainId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "contract ISyntheticToken",
+        "name": "syntheticToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "repayAmountMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "finished",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "tokenIn_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IDepositToken",
+        "name": "depositToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISyntheticToken",
+        "name": "syntheticToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "leverage_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "swapAmountOutMin_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "depositAmountMin_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "lzArgs_",
+        "type": "bytes"
+      }
+    ],
+    "name": "crossChainLeverage",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "id_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "swapAmountOut_",
+        "type": "uint256"
+      }
+    ],
+    "name": "crossChainLeverageCallback",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_deposited",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "crossChainLeverages",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "dstChainId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "bridgeToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IDepositToken",
+        "name": "depositToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISyntheticToken",
+        "name": "syntheticToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bridgeTokenAmountIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "debtAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "depositAmountMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "finished",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "crossChainRequestsLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISyntheticToken",
+        "name": "syntheticToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IDepositToken",
+        "name": "depositToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "withdrawAmount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "repayAmountMin_",
+        "type": "uint256"
+      }
+    ],
+    "name": "flashRepay",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_withdrawn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_repaid",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "governor",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "_governor",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IPool",
+        "name": "pool_",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "tokenIn_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IDepositToken",
+        "name": "depositToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISyntheticToken",
+        "name": "syntheticToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "leverage_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "depositAmountMin_",
+        "type": "uint256"
+      }
+    ],
+    "name": "leverage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_deposited",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_issued",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pool",
+    "outputs": [
+      {
+        "internalType": "contract IPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "srcChainId_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "bytes",
+        "name": "srcAddress_",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint64",
+        "name": "nonce_",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "payload_",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newRepayAmountMin_",
+        "type": "uint256"
+      }
+    ],
+    "name": "retryCrossChainFlashRepayCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "srcChainId_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "bytes",
+        "name": "srcAddress_",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint64",
+        "name": "nonce_",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "token_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "payload_",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newDepositAmountMin_",
+        "type": "uint256"
+      }
+    ],
+    "name": "retryCrossChainLeverageCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "swapper",
+    "outputs": [
+      {
+        "internalType": "contract ISwapper",
+        "name": "_swapper",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

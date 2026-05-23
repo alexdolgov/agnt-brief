@@ -1,0 +1,17 @@
+{
+  "address": "0xd073c875ac73c5b93ec142675bb6a40134c3cc64",
+  "chain_id": 999,
+  "contract_name": "BribeUpgradeable",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:45:59.045Z"
+}

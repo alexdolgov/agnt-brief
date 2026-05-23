@@ -1,0 +1,17 @@
+{
+  "address": "0x92b99da7ded04684fede0e68484dc17b930c3066",
+  "chain_id": 999,
+  "contract_name": "AlgebraEternalFarming",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 14000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 46,
+  "constructor_arguments": "0000000000000000000000003842ce04380b8655a3a47ed87ea0d311adca161f000000000000000000000000eaf58788a405f3253814b4559391a22be8616250",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:45:56.920Z"
+}

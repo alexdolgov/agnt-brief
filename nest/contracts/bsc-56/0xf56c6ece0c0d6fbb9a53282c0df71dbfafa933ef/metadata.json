@@ -1,0 +1,17 @@
+{
+  "address": "0xf56c6ece0c0d6fbb9a53282c0df71dbfafa933ef",
+  "chain_id": 56,
+  "contract_name": "DCU",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 888888,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:45:50.983Z"
+}

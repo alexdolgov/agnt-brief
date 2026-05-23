@@ -1,0 +1,17 @@
+{
+  "address": "0x2f14c835a2e0db38b0db87920a12d3b371080894",
+  "chain_id": 8453,
+  "contract_name": "ProtocolTieredFeePolicy",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:34:45.416Z"
+}

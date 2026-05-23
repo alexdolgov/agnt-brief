@@ -1,0 +1,242 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "AddressInsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AmountIsZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CouldNotBorrow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CouldNotDeposit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CouldNotRedeem",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CouldNotRepay",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedInnerCall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAjnaPool",
+        "name": "ajnaPool_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "borrowerAddress_",
+        "type": "address"
+      }
+    ],
+    "name": "borrowerInfo",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "debt_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collateral_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "t0Np_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "thresholdPrice_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAjnaPool",
+        "name": "ajnaPool_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "borrowerAddress_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountToBorrow_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limitIndex_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collateralToPledge_",
+        "type": "uint256"
+      }
+    ],
+    "name": "drawDebt",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAjnaPool",
+        "name": "ajnaPool_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IMasterOracle",
+        "name": "oracle_",
+        "type": "address"
+      }
+    ],
+    "name": "dynamicMaxLTV",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAjnaPool",
+        "name": "ajnaPool_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user_",
+        "type": "address"
+      }
+    ],
+    "name": "healthFactorOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_healthFactor",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAjnaPool",
+        "name": "ajnaPool_",
+        "type": "address"
+      }
+    ],
+    "name": "interestRateOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_interestRate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAjnaPool",
+        "name": "ajnaPool_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "borrowerAddress_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountToRepay_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collateralAmountToPull_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "collateralReceiver_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limitIndex_",
+        "type": "uint256"
+      }
+    ],
+    "name": "repayDebt",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x98961d85e004b246fcd9a07ac4d6d8169e30b0f8",
+  "chain_id": 999,
+  "contract_name": "FarmingCenter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 99999999,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "00000000000000000000000092b99da7ded04684fede0e68484dc17b930c3066000000000000000000000000eaf58788a405f3253814b4559391a22be8616250",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:45:56.999Z"
+}

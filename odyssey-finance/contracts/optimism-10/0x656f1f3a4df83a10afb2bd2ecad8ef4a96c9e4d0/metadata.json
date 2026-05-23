@@ -1,0 +1,17 @@
+{
+  "address": "0x656f1f3a4df83a10afb2bd2ecad8ef4a96c9e4d0",
+  "chain_id": 10,
+  "contract_name": "FlatDepositFeePolicy",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:34:45.618Z"
+}

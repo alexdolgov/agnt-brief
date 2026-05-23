@@ -1,0 +1,18 @@
+{
+  "address": "0x2f979c933aef4fcddd27c0fa5c54d8a780555b0a",
+  "chain_id": 1,
+  "contract_name": "Nest_3_MiningContract",
+  "compiler_version": "v0.6.0+commit.26b70077",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:45:50.956Z"
+}

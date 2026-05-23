@@ -1,0 +1,17 @@
+{
+  "address": "0xbb3eb334412a8a7e8336ccba98bdce5694708ce0",
+  "chain_id": 999,
+  "contract_name": "VeArtProxyStatic",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:45:58.194Z"
+}

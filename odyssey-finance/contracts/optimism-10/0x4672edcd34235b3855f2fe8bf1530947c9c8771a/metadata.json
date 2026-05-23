@@ -1,0 +1,17 @@
+{
+  "address": "0x4672edcd34235b3855f2fe8bf1530947c9c8771a",
+  "chain_id": 10,
+  "contract_name": "DepositToken",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 42,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:34:43.053Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x4762e77b8f448f0755eca2b6be6cbcd4db0f28a9",
+  "chain_id": 1,
+  "contract_name": "Agent",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 46,
+  "constructor_arguments": "0000000000000000000000001a44076050125825900e736c501f859c50fe728c0000000000000000000000000000000000000000000000000000000000007679",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:34:48.771Z"
+}

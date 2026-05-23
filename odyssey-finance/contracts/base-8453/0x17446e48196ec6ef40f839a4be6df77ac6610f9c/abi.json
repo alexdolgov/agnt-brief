@@ -1,0 +1,550 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "FeeIsGreaterThanTheMax",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NewValueIsSameAsCurrent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PoolRegistryIsNull",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SenderIsNotGovernor",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TierDiscountTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TiersNotOrderedByMin",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldDepositFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newDepositFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "DepositFeeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldIssueFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newIssueFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "IssueFeeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldLiquidatorIncentive",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newLiquidatorIncentive",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidatorIncentiveUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldProtocolLiquidationFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newProtocolLiquidationFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "ProtocolLiquidationFeeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldRepayFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newRepayFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "RepayFeeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldSwapFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newSwapFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "SwapDefaultFeeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "min",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "discount",
+            "type": "uint128"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct FeeProviderStorageV1.Tier[]",
+        "name": "oldTiers",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "min",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "discount",
+            "type": "uint128"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct FeeProviderStorageV1.Tier[]",
+        "name": "newTiers",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "TiersUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldWithdrawFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newWithdrawFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "WithdrawFeeUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "defaultSwapFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "depositFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "esMET",
+    "outputs": [
+      {
+        "internalType": "contract IESMET",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTiers",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "min",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "discount",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct FeeProviderStorageV1.Tier[]",
+        "name": "_tiers",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IPoolRegistry",
+        "name": "poolRegistry_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IESMET",
+        "name": "esMET_",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "issueFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "liquidationFees",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "liquidatorIncentive",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "protocolFee",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "poolRegistry",
+    "outputs": [
+      {
+        "internalType": "contract IPoolRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "repayFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account_",
+        "type": "address"
+      }
+    ],
+    "name": "swapFeeFor",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_swapFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "tiers",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "min",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "discount",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newDefaultSwapFee_",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateDefaultSwapFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newDepositFee_",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateDepositFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newIssueFee_",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateIssueFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "newLiquidatorIncentive_",
+        "type": "uint128"
+      }
+    ],
+    "name": "updateLiquidatorIncentive",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "newProtocolLiquidationFee_",
+        "type": "uint128"
+      }
+    ],
+    "name": "updateProtocolLiquidationFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newRepayFee_",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateRepayFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "min",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "discount",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct FeeProviderStorageV1.Tier[]",
+        "name": "tiers_",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "updateTiers",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newWithdrawFee_",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateWithdrawFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

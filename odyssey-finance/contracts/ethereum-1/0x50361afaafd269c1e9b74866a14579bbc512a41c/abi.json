@@ -1,0 +1,963 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AddressIsNull",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BridgeTokenNotSupported",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BridgingIsPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DestinationChainNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidFromAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidMsgSender",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidOperationType",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPayload",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidSlippageParam",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NewValueIsSameAsCurrent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReentrancyGuardReentrantCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SenderIsNotGovernor",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "newIsActive",
+        "type": "bool"
+      }
+    ],
+    "name": "BridgingIsActiveUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "chainId",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldCrossChainDispatcher",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newCrossChainDispatcher",
+        "type": "address"
+      }
+    ],
+    "name": "CrossChainDispatcherUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "chainId",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "newIsSupported",
+        "type": "bool"
+      }
+    ],
+    "name": "DestinationChainIsActiveUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "oldCallbackTxGasLimit",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newCallbackTxGasLimit",
+        "type": "uint64"
+      }
+    ],
+    "name": "FlashRepayCallbackTxGasLimitUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "oldSwapTxGasLimit",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newSwapTxGasLimit",
+        "type": "uint64"
+      }
+    ],
+    "name": "FlashRepaySwapTxGasLimitUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "oldCallbackTxGasLimit",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newCallbackTxGasLimit",
+        "type": "uint64"
+      }
+    ],
+    "name": "LeverageCallbackTxGasLimitUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "oldSwapTxGasLimit",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "newSwapTxGasLimit",
+        "type": "uint64"
+      }
+    ],
+    "name": "LeverageSwapTxGasLimitUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldLzBaseGasLimit",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newLzBaseGasLimit",
+        "type": "uint256"
+      }
+    ],
+    "name": "LzBaseGasLimitUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract IStargateComposer",
+        "name": "oldStargateComposer",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract IStargateComposer",
+        "name": "newStargateComposer",
+        "type": "address"
+      }
+    ],
+    "name": "StargateComposerUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldPoolId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newPoolId",
+        "type": "uint256"
+      }
+    ],
+    "name": "StargatePoolIdUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldStargateSlippage",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newStargateSlippage",
+        "type": "uint256"
+      }
+    ],
+    "name": "StargateSlippageUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "name": "crossChainDispatcherOf",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "extraCallbackTxNativeFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "flashRepayCallbackTxGasLimit",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "flashRepaySwapTxGasLimit",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IPoolRegistry",
+        "name": "poolRegistry_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "weth_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "sgeth_",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isBridgingActive",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "name": "isDestinationChainSupported",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "leverageCallbackTxGasLimit",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "leverageSwapTxGasLimit",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lzBaseGasLimit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "srcChainId_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bytes",
+        "name": "from_",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "payload_",
+        "type": "bytes"
+      }
+    ],
+    "name": "onOFTReceived",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "poolRegistry",
+    "outputs": [
+      {
+        "internalType": "contract IPoolRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "srcChainId_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "bytes",
+        "name": "srcAddress_",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint64",
+        "name": "nonce_",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "token_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "payload_",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newAmountOutMin_",
+        "type": "uint256"
+      }
+    ],
+    "name": "retrySwapAndTriggerFlashRepayCallback",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "srcChainId_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "bytes",
+        "name": "srcAddress_",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint64",
+        "name": "nonce_",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "payload_",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newAmountOutMin_",
+        "type": "uint256"
+      }
+    ],
+    "name": "retrySwapAndTriggerLeverageCallback",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "srcChainId_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "bytes",
+        "name": "srcAddress_",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "token_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountLD_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "payload_",
+        "type": "bytes"
+      }
+    ],
+    "name": "sgReceive",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sgeth",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stargateComposer",
+    "outputs": [
+      {
+        "internalType": "contract IStargateComposer",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "stargatePoolIdOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stargateSlippage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "swapAmountOutMin",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "toggleBridgingIsActive",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "chainId_",
+        "type": "uint16"
+      }
+    ],
+    "name": "toggleDestinationChainIsActive",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "requestId_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address payable",
+        "name": "account_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenIn_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOut_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOutMin_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "lzArgs_",
+        "type": "bytes"
+      }
+    ],
+    "name": "triggerFlashRepaySwap",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "requestId_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address payable",
+        "name": "account_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenIn_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOut_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOutMin_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "lzArgs_",
+        "type": "bytes"
+      }
+    ],
+    "name": "triggerLeverageSwap",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "chainId_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "address",
+        "name": "crossChainDispatcher_",
+        "type": "address"
+      }
+    ],
+    "name": "updateCrossChainDispatcherOf",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "newFlashRepayCallbackTxGasLimit_",
+        "type": "uint64"
+      }
+    ],
+    "name": "updateFlashRepayCallbackTxGasLimit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "newFlashRepaySwapTxGasLimit_",
+        "type": "uint64"
+      }
+    ],
+    "name": "updateFlashRepaySwapTxGasLimit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "newLeverageCallbackTxGasLimit_",
+        "type": "uint64"
+      }
+    ],
+    "name": "updateLeverageCallbackTxGasLimit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "newLeverageSwapTxGasLimit_",
+        "type": "uint64"
+      }
+    ],
+    "name": "updateLeverageSwapTxGasLimit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newLzBaseGasLimit_",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateLzBaseGasLimit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IStargateComposer",
+        "name": "newStargateComposer_",
+        "type": "address"
+      }
+    ],
+    "name": "updateStargateComposer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newPoolId_",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateStargatePoolIdOf",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newStargateSlippage_",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateStargateSlippage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "weth",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

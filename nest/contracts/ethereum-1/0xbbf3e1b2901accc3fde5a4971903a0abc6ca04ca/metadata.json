@@ -1,0 +1,18 @@
+{
+  "address": "0xbbf3e1b2901accc3fde5a4971903a0abc6ca04ca",
+  "chain_id": 1,
+  "contract_name": "NestVote",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 256,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:45:55.991Z"
+}

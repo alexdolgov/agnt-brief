@@ -1,0 +1,17 @@
+{
+  "address": "0x47f2d9058fe32da17a0f253f70266d9dcd585879",
+  "chain_id": 999,
+  "contract_name": "SecurityRegistry",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 65,
+  "constructor_arguments": "000000000000000000000000f77bd082c627aa54591cf2f2eaa811fd1ab3b1f3",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:45:52.970Z"
+}

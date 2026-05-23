@@ -1,0 +1,17 @@
+{
+  "address": "0x804739d527b550260f633462dedab13399c3953a",
+  "chain_id": 1,
+  "contract_name": "AgentUpgrader",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "000000000000000000000000f5f5195cf6998c57c651f9f0bbfa7cfc72a6fac1",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:34:48.400Z"
+}

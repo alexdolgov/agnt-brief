@@ -1,0 +1,18 @@
+{
+  "address": "0x7eaeba417967614c08cd1f406909cdcde65f10f5",
+  "chain_id": 1,
+  "contract_name": "ExchangeDelegator",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xd06f0780d8d7f1d3f6bd7d4e8c2f0d966e82f365",
+  "fetched_at": "2026-05-23T18:44:17.820Z"
+}

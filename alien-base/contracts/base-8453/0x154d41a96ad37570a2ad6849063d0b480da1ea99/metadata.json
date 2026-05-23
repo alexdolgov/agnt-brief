@@ -1,0 +1,17 @@
+{
+  "address": "0x154d41a96ad37570a2ad6849063d0b480da1ea99",
+  "chain_id": 8453,
+  "contract_name": "EsTokenController",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "000000000000000000000000365c6d588e8611125de3bea5b9280c304fa541130000000000000000000000004ab9070b7680f802cbf8322e597a4409902171e5000000000000000000000000dd3705a1c50fc84b6d31394aa8f4d568b98a8ad50000000000000000000000000000000000000000000000000000000000000048",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T18:44:03.721Z"
+}

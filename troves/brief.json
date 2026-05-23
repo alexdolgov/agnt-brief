@@ -1,0 +1,155 @@
+{
+  "schema_version": "2.0",
+  "project_key": "troves",
+  "generated_at": "2026-05-23T18:36:35.980Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 3,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 4988787.34606,
+    "tvl_usd": 4988787.34606,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.troves.fi/",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-09",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 2
+    }
+  },
+  "topography": {
+    "project_purpose": "Troves is a yield protocol on StarkNet that enables users to deposit assets into vaults to earn yield through automated strategies.",
+    "relationship_narrative": "No product families or contracts are defined in the provided metadata, so no structural relationships can be described.",
+    "product_family_count": 0
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 2517,
+      "audit_key": "audit-2517",
+      "report_name": "3. Audit report: [here](), audited by [Cairo security clan](https://cairosecurityclan.com/).",
+      "report_url": "https://assets.troves.fi/strkfarm/audit_report_vesu_and_ekubo_strats.pdf",
+      "auditor": "Cairo security clan",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 2517,
+          "report_url": "https://assets.troves.fi/strkfarm/audit_report_vesu_and_ekubo_strats.pdf"
+        },
+        {
+          "audit_id": 2520,
+          "report_url": "https://assets.troves.fi/troves/audit_report_vesu_and_ekubo_strats.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 2518,
+      "audit_key": "audit-2518",
+      "report_name": "Audit link - Sherlock",
+      "report_url": "https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2025_09_23_Final_Vesu_Starknet_Vault_Kit_Collaborative_Audit_Report.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2519,
+      "audit_key": "audit-2519",
+      "report_name": "Audit link",
+      "report_url": "https://github.com/zenith-security/reports/blob/main/reports/Forge%20-%20Zenith%20Audit%20Report.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2517,
+        "report_name": "3. Audit report: [here](), audited by [Cairo security clan](https://cairosecurityclan.com/)."
+      },
+      {
+        "audit_id": 2518,
+        "report_name": "Audit link - Sherlock"
+      },
+      {
+        "audit_id": 2519,
+        "report_name": "Audit link"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

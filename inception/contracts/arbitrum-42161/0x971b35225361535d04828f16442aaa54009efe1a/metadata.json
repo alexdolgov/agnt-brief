@@ -1,0 +1,17 @@
+{
+  "address": "0x971b35225361535d04828f16442aaa54009efe1a",
+  "chain_id": 42161,
+  "contract_name": "InETHRateProvider",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "000000000000000000000000fe715358368416e01d3a961d3a037b7359735d5e0000000000000000000000005a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:34:36.068Z"
+}

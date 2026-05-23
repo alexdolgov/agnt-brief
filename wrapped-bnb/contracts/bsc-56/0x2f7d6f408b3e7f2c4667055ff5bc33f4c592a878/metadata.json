@@ -1,0 +1,18 @@
+{
+  "address": "0x2f7d6f408b3e7f2c4667055ff5bc33f4c592a878",
+  "chain_id": 56,
+  "contract_name": "Zap",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": true,
+  "runs": 1500,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:34:18.677Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x1eba85cad86f88746d7085b38c2d9cbdecea9808",
+  "chain_id": 1,
+  "contract_name": "InceptionMellowAdapterV3",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:34:38.249Z"
+}

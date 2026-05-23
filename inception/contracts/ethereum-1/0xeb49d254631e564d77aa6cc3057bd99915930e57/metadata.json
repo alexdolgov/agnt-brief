@@ -1,0 +1,17 @@
+{
+  "address": "0xeb49d254631e564d77aa6cc3057bd99915930e57",
+  "chain_id": 1,
+  "contract_name": "InLBTCsRateProvider",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "000000000000000000000000fd73be536503b5aa80bf99d1fd65b1306c69b191000000000000000000000000f07052b5a61bbcc8d14a8567494ae8ad688641f9",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:34:40.963Z"
+}

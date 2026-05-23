@@ -1,0 +1,18 @@
+{
+  "address": "0x14dc6a564ac137e4017a39657daed582820ebe8d",
+  "chain_id": 1,
+  "contract_name": "VaultZapper",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:34:37.389Z"
+}

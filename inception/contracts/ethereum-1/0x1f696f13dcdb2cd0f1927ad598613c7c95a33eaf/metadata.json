@@ -1,0 +1,18 @@
+{
+  "address": "0x1f696f13dcdb2cd0f1927ad598613c7c95a33eaf",
+  "chain_id": 1,
+  "contract_name": "InceptionBridge",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 56,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:34:37.913Z"
+}

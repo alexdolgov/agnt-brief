@@ -1,0 +1,115 @@
+[
+  {
+    "inputs": [],
+    "name": "AmountGreater",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MaxRateUnderflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MaxRateUnderflowBySubtractor",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OptimalCapacityZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TargetCapacityZero",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "capacity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "optimalCapacity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "optimalBonusRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxDepositBonusRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "targetCapacity",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateDepositBonus",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "bonus",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "capacity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "optimalCapacity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "optimaFeeRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxFlashWithdrawalFeeRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "targetCapacity",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateWithdrawalFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

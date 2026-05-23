@@ -1,0 +1,18 @@
+{
+  "address": "0xc29783738a475112cafe58433dd9d19f3a406619",
+  "chain_id": 1,
+  "contract_name": "GenEthRateProvider",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:34:40.025Z"
+}

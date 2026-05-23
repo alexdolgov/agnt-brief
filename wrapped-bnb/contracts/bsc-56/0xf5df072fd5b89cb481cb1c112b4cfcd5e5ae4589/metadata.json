@@ -1,0 +1,17 @@
+{
+  "address": "0xf5df072fd5b89cb481cb1c112b4cfcd5e5ae4589",
+  "chain_id": 56,
+  "contract_name": "BOGDEXUtils",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:34:18.770Z"
+}

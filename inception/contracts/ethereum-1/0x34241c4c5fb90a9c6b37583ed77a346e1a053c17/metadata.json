@@ -1,0 +1,18 @@
+{
+  "address": "0x34241c4c5fb90a9c6b37583ed77a346e1a053c17",
+  "chain_id": 1,
+  "contract_name": "InLsETHsRateProvider",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:34:38.355Z"
+}

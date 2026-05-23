@@ -3,6 +3,7 @@
 | Project | TVL | Coverage | ASD | Lifecycle | Audits | Contracts | Updated |
 |---|---|---|---|---|---|---|---|
 | [across](./across/) | $28.1M | 0.0% | $28.1M | unknown | 0 | 143 | 2026-05-22 |
+| [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-23 |
 | [aevo](./aevo/) | $98.5M | 9.2% | $1.7M | active | 17 | 331 | 2026-05-22 |
 | [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 2 | 284 | 2026-05-22 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | active | 7 | 124 | 2026-05-22 |
@@ -41,6 +42,7 @@
 | [dxsale](./dxsale/) | $26.8M | 0.0% | ? | active | 0 | 353 | 2026-05-22 |
 | [egas-swap](./egas-swap/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | unknown | 5 | 15 | 2026-05-22 |
+| [endur](./endur/) | $9.7M | 0.0% | ? | unknown | 4 | 0 | 2026-05-23 |
 | [enosys](./enosys/) | $28.0M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
@@ -58,6 +60,7 @@
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
 | [hyperswap](./hyperswap/) | $1.9M | 0.0% | $1.9M | active | 0 | 940 | 2026-05-22 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | unknown | 3 | 84 | 2026-05-22 |
+| [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | dead | 0 | 17 | 2026-05-23 |
 | [immutable-zkevm](./immutable-zkevm/) | $29.2M | 18.2% | ? | active | 5 | 11 | 2026-05-22 |
 | [index-coop](./index-coop/) | $28.2M | 11.7% | $28.2M | declining | 5 | 235 | 2026-05-22 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 9 | 2026-05-22 |
@@ -68,6 +71,7 @@
 | [katana-pre-launch](./katana-pre-launch/) | $18.3M | 0.0% | $18.3M | active | 29 | 166 | 2026-05-22 |
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
+| [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [levex](./levex/) | $11.2M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [liminal](./liminal/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-22 |
 | [llamapay](./llamapay/) | $26.4M | 0.0% | ? | active | 0 | 20 | 2026-05-22 |

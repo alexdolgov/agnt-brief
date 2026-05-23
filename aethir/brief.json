@@ -1,0 +1,294 @@
+{
+  "schema_version": "2.0",
+  "project_key": "aethir",
+  "generated_at": "2026-05-23T05:12:39.585Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "aethir",
+    "tier": 0,
+    "peak_tvl": 0,
+    "peak_date": "2025-10-29T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 0,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": 206,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0
+  },
+  "summary": {
+    "total_contracts": 5,
+    "total_addresses": 6,
+    "unique_implementations": 5,
+    "total_deployments": 6,
+    "audited_contracts": 0,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 5,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 9791765.29818,
+    "tvl_usd": 257030903.7042486,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 257030903.7
+    },
+    "asd_usd": 257030903.7042486,
+    "website_url": "https://aethir.com/",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Aethir provides a token and a wrapper contract that likely enables staking, wrapping, or governance functionality for the AethirToken on Ethereum.",
+    "relationship_narrative": "The TransparentUpgradeableProxy serves as the upgradeable proxy for the AethirWrapper implementation, allowing the wrapper logic to be updated while preserving state. The AethirToken is the core asset that the wrapper likely interacts with.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b",
+      "name": "AethirToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Aethir",
+      "tvl_usd": 257030903.7042486,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AethirToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 257030903.7042486,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1ecb43e02d6573119eaf0e6509a4725b8633a13c",
+      "name": "AethirWrapper",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Aethir",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x1ecb43e02d6573119eaf0e6509a4725b8633a13c",
+      "impl_name": "AethirWrapper",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1ecb43e02d6573119eaf0e6509a4725b8633a13c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3f69bb14860f7f3348ac8a5f0d445322143f7fee",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc96aa65f31e41b4ca6924b86d93e25686019e59c",
+      "name": "StAethir",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StAethir",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc96aa65f31e41b4ca6924b86d93e25686019e59c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1b49f587feca530a7bf7cf2bd3fbda780e1b7490",
+      "name": "VeAethir",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VeAethir",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1b49f587feca530a7bf7cf2bd3fbda780e1b7490",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf9d9f4ae37d09d50a279058c008a4fa98b6336b6",
+      "name": "VestingWallet",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VestingWallet",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf9d9f4ae37d09d50a279058c008a4fa98b6336b6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b",
+      "name": "AethirToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 257030903.7042486,
+      "risk_note": "Verified native implementation with $257,030,903.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1ecb43e02d6573119eaf0e6509a4725b8633a13c",
+      "name": "AethirWrapper",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc96aa65f31e41b4ca6924b86d93e25686019e59c",
+      "name": "StAethir",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1b49f587feca530a7bf7cf2bd3fbda780e1b7490",
+      "name": "VeAethir",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 4,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

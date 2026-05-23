@@ -1,0 +1,18 @@
+{
+  "address": "0xc96aa65f31e41b4ca6924b86d93e25686019e59c",
+  "chain_id": 1,
+  "contract_name": "StAethir",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:12:41.293Z"
+}

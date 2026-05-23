@@ -47,6 +47,7 @@
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-05-23 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-05-22 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-05-22 |
+| [defi-kingdoms](./defi-kingdoms/) | $6.5M | 0.0% | ? | dead | 1 | 5 | 2026-05-23 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | unknown | 0 | 53 | 2026-05-23 |
 | [desyn-protocol](./desyn-protocol/) | $10.8M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
 | [dexalot](./dexalot/) | $4.2M | 0.0% | $4.2M | active | 0 | 1 | 2026-05-23 |
@@ -123,6 +124,7 @@
 | [privacy-pools](./privacy-pools/) | $6.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [probit-global](./probit-global/) | $12.7M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
+| [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | unknown | 0 | 2 | 2026-05-22 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |

@@ -1,0 +1,280 @@
+{
+  "schema_version": "2.0",
+  "project_key": "defi-kingdoms",
+  "generated_at": "2026-05-23T10:48:36.134Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "defi-kingdoms",
+    "tier": 1,
+    "peak_tvl": 901428760,
+    "peak_date": "2022-01-14T00:00:00.000Z",
+    "tvl_30d_ago": 131983,
+    "tvl_90d_ago": 176099,
+    "tvl_current": 75718,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 315562,
+    "change_30d_pct": -42.63049029041619,
+    "change_90d_pct": -57.002595131147814,
+    "governance_raw": {
+      "evidence": "TVL has dropped 99.99% from its peak over 1590 days ago, with no recent communications indicating ongoing development or activity, and the homepage appears to be a static archive.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1590,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.9916002236272,
+    "governance_evidence": "TVL has dropped 99.99% from its peak over 1590 days ago, with no recent communications indicating ongoing development or activity, and the homepage appears to be a static archive.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 3171,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "total_deployments": 5,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 5,
+    "coverage_pct": 0,
+    "total_audits": 1,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 6452595.93859,
+    "tvl_usd": 6452595.93859,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.defikingdoms.com",
+    "chains": [
+      "harmony",
+      "klaytn"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2021-09",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Defi Kingdoms is a decentralized exchange (DEX) that combines liquidity pools with gamified elements, allowing users to swap tokens, provide liquidity, and earn rewards through yield farming.",
+    "relationship_narrative": "All contracts belong to a single product family and likely share infrastructure such as a common router or factory for liquidity pools, though specific relationships are not detailed in the provided data.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x30c103f8f5a3a732dfe2dce1cc9446f545527b43",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Defi Kingdoms",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x30c103f8f5a3a732dfe2dce1cc9446f545527b43",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x36fae766e51f17f8218c735f58426e293498db2b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Defi Kingdoms",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x36fae766e51f17f8218c735f58426e293498db2b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0xaa8548665bcc12c202d5d0c700093123f2463ea6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Defi Kingdoms",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0xaa8548665bcc12c202d5d0c700093123f2463ea6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1666600000,
+      "chain_name": "harmony",
+      "address": "0x72cb10c6bfa5624dd07ef608027e366bd690048f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Defi Kingdoms",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1666600000,
+          "chain_name": "harmony",
+          "address": "0x72cb10c6bfa5624dd07ef608027e366bd690048f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1666600000,
+      "chain_name": "harmony",
+      "address": "0x9014b937069918bd319f80e8b3bb4a2cf6faa5f7",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Defi Kingdoms",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1666600000,
+          "chain_name": "harmony",
+          "address": "0x9014b937069918bd319f80e8b3bb4a2cf6faa5f7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2260,
+      "audit_key": "audit-2260",
+      "report_name": "solidity.finance/audits/DefiKingdoms",
+      "report_url": "https://sourcehat.com/audits/DefiKingdoms",
+      "auditor": "SourceHat",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 5
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2260,
+        "report_name": "solidity.finance/audits/DefiKingdoms"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

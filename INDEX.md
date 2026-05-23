@@ -52,6 +52,7 @@
 | [cex.io](./cex.io/) | $8.6M | 0.0% | ? | active | 1 | 3 | 2026-05-23 |
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [chainge-finance](./chainge-finance/) | $1.8M | 0.0% | $1.8M | active | 0 | 935 | 2026-05-23 |
+| [chaingpt](./chaingpt/) | $4.9M | 0.0% | ? | unknown | 0 | 87 | 2026-05-23 |
 | [charm-finance](./charm-finance/) | $2.2M | 66.7% | ? | unknown | 5 | 7 | 2026-05-22 |
 | [citrea-bridge](./citrea-bridge/) | $5.1M | 33.3% | ? | active | 11 | 4 | 2026-05-23 |
 | [clever](./clever/) | $12.4M | 10.3% | $10.8M | active | 3 | 78 | 2026-05-23 |
@@ -87,7 +88,7 @@
 | [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 0 | 7 | 2026-05-22 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
-| [harmonix-finance](./harmonix-finance/) | $4.9M | 11.1% | ? | active | 4 | 126 | 2026-05-21 |
+| [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-05-23 |
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 0 | 63 | 2026-05-23 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
@@ -112,6 +113,7 @@
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [keyring](./keyring/) | $348.8K | 8.3% | $348.8K | active | 16 | 134 | 2026-05-23 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |
+| [klayswap](./klayswap/) | $4.8M | 0.0% | ? | sunsetting | 4 | 22 | 2026-05-23 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-05-23 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
@@ -148,6 +150,7 @@
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-05-23 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
 | [osmosis-dex](./osmosis-dex/) | $1.9M | 0.0% | $1.9M | declining | 0 | 935 | 2026-05-22 |
+| [p2pb2b](./p2pb2b/) | $4.9M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [paragonsdao](./paragonsdao/) | $6.2M | 50.0% | ? | unknown | 8 | 2 | 2026-05-23 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |

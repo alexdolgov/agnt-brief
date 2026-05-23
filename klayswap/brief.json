@@ -1,0 +1,891 @@
+{
+  "schema_version": "2.0",
+  "project_key": "klayswap",
+  "generated_at": "2026-05-23T19:32:42.289Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "sunsetting",
+  "lifecycle_signal": {
+    "slug": "klayswap",
+    "tier": 1,
+    "peak_tvl": 1342749877,
+    "peak_date": "2021-09-06T00:00:00.000Z",
+    "tvl_30d_ago": 3413840,
+    "tvl_90d_ago": 3539594,
+    "tvl_current": 3646443,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 5026872,
+    "change_30d_pct": 6.8135296323202015,
+    "change_90d_pct": 3.018679543473065,
+    "governance_raw": {
+      "evidence": "The team announced the end of leverage services and migration to a new version, with specific shutdown dates for old features, indicating a planned sunsetting.",
+      "confidence": 0.95,
+      "lifecycle_status": "sunsetting"
+    },
+    "days_since_peak": 1720,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.72843468002046,
+    "governance_evidence": "The team announced the end of leverage services and migration to a new version, with specific shutdown dates for old features, indicating a planned sunsetting.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 2564,
+    "governance_classification": "sunsetting",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 22,
+    "total_addresses": 22,
+    "unique_implementations": 22,
+    "total_deployments": 22,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 22,
+    "coverage_pct": 0,
+    "total_audits": 4,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 4838481,
+    "tvl_usd": 4838481,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://klayswap.com/dashboard",
+    "chains": [
+      "klaytn"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2024-07",
+    "audit_freshness": "aging",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 1,
+      "stale": 3,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "KlaySwap is a decentralized exchange (DEX) on the Klaytn blockchain, enabling users to swap tokens, provide liquidity, and earn fees. It includes both a V1 (likely constant-product AMM) and a V3 (concentrated liquidity) version.",
+    "relationship_narrative": "KlaySwap V1 and V3 are separate product families sharing the same Klaytn deployment but likely operate independently with distinct contract sets. No shared infrastructure contracts are explicitly identified in the provided inventory.",
+    "product_family_count": 2
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x01431f2a0d8c25646d1995e9ad345581d523341d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x01431f2a0d8c25646d1995e9ad345581d523341d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x0363053524610888fb883a5c0b16fb55aa4701cf",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x0363053524610888fb883a5c0b16fb55aa4701cf",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x05343b228d61402e84d973ce114f34bc3f9e5987",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x05343b228d61402e84d973ce114f34bc3f9e5987",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x09067f1b4e1a1cd08c91519d811f3d04c69a5a5f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x09067f1b4e1a1cd08c91519d811f3d04c69a5a5f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x1289550d988177575154c2ca45c95ccfb32f837d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x1289550d988177575154c2ca45c95ccfb32f837d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x19aac5f612f524b754ca7e7c41cbfa2e981a4432",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "KlaySwap V3",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x19aac5f612f524b754ca7e7c41cbfa2e981a4432",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x29990aaf04f3d5ac7d8c88beab1a009c1ab4936e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x29990aaf04f3d5ac7d8c88beab1a009c1ab4936e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x2ce59e21364dca92c90970ad15442146d638997f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x2ce59e21364dca92c90970ad15442146d638997f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x2f3713f388bc4b8b364a7a2d8d57c5ff4e054830",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x2f3713f388bc4b8b364a7a2d8d57c5ff4e054830",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x3c9736ffd8752342ec64328c498ed6878a797887",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x3c9736ffd8752342ec64328c498ed6878a797887",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x3d546560d16846374ed17f2f852251323ea1bc6c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x3d546560d16846374ed17f2f852251323ea1bc6c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x3e8477f4d81090fa55af350c7d31819eed2dc293",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x3e8477f4d81090fa55af350c7d31819eed2dc293",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x51d233b5ae7820030a29c75d6788403b8b5d317b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x51d233b5ae7820030a29c75d6788403b8b5d317b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x689d8ea1bd4e02b9e9cad9dcc871a050ff923593",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x689d8ea1bd4e02b9e9cad9dcc871a050ff923593",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x6c14e2e4bae412137437a8ec9e57263212d141a0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x6c14e2e4bae412137437a8ec9e57263212d141a0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x71b59e4bc2995b57aa03437ed645ada7dd5b1890",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x71b59e4bc2995b57aa03437ed645ada7dd5b1890",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x7a74b3be679e194e1d6a0c29a343ef8d2a5ac876",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x7a74b3be679e194e1d6a0c29a343ef8d2a5ac876",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0xa15be7e90df29a4aead0c7fc86f7a9fbe6502ac9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0xa15be7e90df29a4aead0c7fc86f7a9fbe6502ac9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0xb43879a835fd2097515b7b5c6c549929f1666bfc",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0xb43879a835fd2097515b7b5c6c549929f1666bfc",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0xc6a2ad8cc6e4a7e08fc37cc5954be07d499e7654",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0xc6a2ad8cc6e4a7e08fc37cc5954be07d499e7654",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0xd1890d8f02f4c63553658ba49c53a82eb84009e6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0xd1890d8f02f4c63553658ba49c53a82eb84009e6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0xe0fbb27d0e7f3a397a67a9d4864d4f4dd7cf8cb9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Address",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0xe0fbb27d0e7f3a397a67a9d4864d4f4dd7cf8cb9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2551,
+      "audit_key": "audit-2551",
+      "report_name": "**Read the Smart Contract Audit Reports here (Link)**",
+      "report_url": "https://github.com/KlaySwap/klayswap/blob/master/audit/Smart_Contract_Audit_Report_KlaySwap_ver_2.0.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 2551,
+          "report_url": "https://github.com/KlaySwap/klayswap/blob/master/audit/Smart_Contract_Audit_Report_KlaySwap_ver_2.0.pdf"
+        },
+        {
+          "audit_id": 2555,
+          "report_url": "https://raw.githubusercontent.com/KlaySwap/klayswap/8a31fb382d95af32763979a2793a8056bcf1a809/audit/Smart_Contract_Audit_Report_KlaySwap_ver_2.0.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 2552,
+      "audit_key": "audit-2552",
+      "report_name": "(Theori)_Ozys-KLAYswap_Final_Report-2021_10_07.pdf",
+      "report_url": "https://github.com/KlaySwap/klayswap/blob/master/audit/(Theori)_Ozys-KLAYswap_Final_Report-2021_10_07.pdf",
+      "auditor": "Theori",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2553,
+      "audit_key": "audit-2553",
+      "report_name": "[78ResearchLab] OZYS_KLAYSWAP_V8(Final).pdf",
+      "report_url": "https://github.com/KlaySwap/klayswap/blob/master/audit/%5B78ResearchLab%5D%20OZYS_KLAYSWAP_V8(Final).pdf",
+      "auditor": "78ResearchLab",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2554,
+      "audit_key": "audit-2554",
+      "report_name": "[ChainLight] New KLAYswap Security Audit v1.0.pdf",
+      "report_url": "https://github.com/KlaySwap/klayswap/blob/master/audit/%5BChainLight%5D%20New%20KLAYswap%20Security%20Audit%20v1.0.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 22
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2551,
+        "report_name": "**Read the Smart Contract Audit Reports here (Link)**"
+      },
+      {
+        "audit_id": 2552,
+        "report_name": "(Theori)_Ozys-KLAYswap_Final_Report-2021_10_07.pdf"
+      },
+      {
+        "audit_id": 2553,
+        "report_name": "[78ResearchLab] OZYS_KLAYSWAP_V8(Final).pdf"
+      },
+      {
+        "audit_id": 2554,
+        "report_name": "[ChainLight] New KLAYswap Security Audit v1.0.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

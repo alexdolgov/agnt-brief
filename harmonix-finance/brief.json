@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "harmonix-finance",
-  "generated_at": "2026-05-21T22:44:56.246Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-21-75f656-39bd",
+  "generated_at": "2026-05-23T19:28:18.167Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "harmonix-finance",
@@ -22,17 +22,17 @@
     "drop_from_peak_pct": 73.53545407495113
   },
   "summary": {
-    "total_contracts": 126,
-    "total_addresses": 184,
-    "unique_implementations": 126,
-    "total_deployments": 184,
+    "total_contracts": 127,
+    "total_addresses": 186,
+    "unique_implementations": 127,
+    "total_deployments": 186,
     "audited_contracts": 1,
-    "unaudited_contracts": 8,
+    "unaudited_contracts": 9,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 7,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 117,
-    "coverage_pct": 11.1,
+    "coverage_pct": 10,
     "total_audits": 4,
     "scoreable_audits": 1,
     "dl_tvl_usd": 4888105.594,
@@ -276,7 +276,7 @@
         }
       ],
       "audits_covering": [
-        "audit-1757"
+        "audit-2550"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -4497,12 +4497,52 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x09f2b45a6677858f016ebef1e8f141d6944429df",
+      "name": "WstEthStakingDeltaNeutralVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WstEthStakingDeltaNeutralVault",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x09f2b45a6677858f016ebef1e8f141d6944429df",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xabfa4750e25836eaf305325c581aa56b4457ed86",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
     }
   ],
   "audits": [
     {
-      "audit_id": 1754,
-      "audit_key": "audit-1754",
+      "audit_id": 2547,
+      "audit_key": "audit-2547",
       "report_name": "Harmonix Finance - Zenith Audit Report.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Harmonix%20Finance%20-%20Zenith%20Audit%20Report.pdf",
       "auditor": "Zenith",
@@ -4522,8 +4562,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1755,
-      "audit_key": "audit-1755",
+      "audit_id": 2548,
+      "audit_key": "audit-2548",
       "report_name": "HarmonixFinance-Hyperliquid-Security-Review.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/HarmonixFinance-Hyperliquid-Security-Review.pdf",
       "auditor": "Hyperliquid",
@@ -4543,8 +4583,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1756,
-      "audit_key": "audit-1756",
+      "audit_id": 2549,
+      "audit_key": "audit-2549",
       "report_name": "Verichains Public Report - HarmonixFinance.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Verichains%20Public%20Report%20-%20HarmonixFinance.pdf",
       "auditor": "Verichains",
@@ -4564,8 +4604,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 1757,
-      "audit_key": "audit-1757",
+      "audit_id": 2550,
+      "audit_key": "audit-2550",
       "report_name": "Verichains Public Report - Kelp Delta.pdf",
       "report_url": "https://github.com/harmonixfi/core-smart-contract/blob/main/audits/Verichains%20Public%20Report%20-%20Kelp%20Delta.pdf",
       "auditor": "Verichains",
@@ -4600,7 +4640,7 @@
       "auditor": "Verichains",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 11.1,
+      "coverage_pct": 10,
       "latest_audit": "2024-08"
     }
   ],
@@ -4624,10 +4664,20 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x09f2b45a6677858f016ebef1e8f141d6944429df",
+      "name": "WstEthStakingDeltaNeutralVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 2,
+    "native": 3,
     "upstream": 0,
     "standard_library": 7,
     "needs_review": 117
@@ -4643,18 +4693,19 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 1754,
+        "audit_id": 2547,
         "report_name": "Harmonix Finance - Zenith Audit Report.pdf"
       },
       {
-        "audit_id": 1755,
+        "audit_id": 2548,
         "report_name": "HarmonixFinance-Hyperliquid-Security-Review.pdf"
       },
       {
-        "audit_id": 1756,
+        "audit_id": 2549,
         "report_name": "Verichains Public Report - HarmonixFinance.pdf"
       }
     ],
     "inherited_remapped_matches": []
-  }
+  },
+  "active_bug_bounty": null
 }

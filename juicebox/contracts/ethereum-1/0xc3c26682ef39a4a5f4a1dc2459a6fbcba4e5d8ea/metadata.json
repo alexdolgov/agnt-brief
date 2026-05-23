@@ -1,0 +1,18 @@
+{
+  "address": "0xc3c26682ef39a4a5f4a1dc2459a6fbcba4e5d8ea",
+  "chain_id": 1,
+  "contract_name": "CTDeployer",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 100000000,
+  "evm_version": "shanghai",
+  "license": "MIT, MIT OR Apache-2.0, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 94,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:31:35.357Z"
+}

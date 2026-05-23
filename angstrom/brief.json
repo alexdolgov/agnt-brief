@@ -1,0 +1,718 @@
+{
+  "schema_version": "2.0",
+  "project_key": "angstrom",
+  "generated_at": "2026-05-23T02:24:54.754Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "angstrom",
+    "tier": 0,
+    "peak_tvl": 11383268,
+    "peak_date": "2026-05-21T00:00:00.000Z",
+    "tvl_30d_ago": 10631840,
+    "tvl_90d_ago": 9215427,
+    "tvl_current": 11172540,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 4690789,
+    "change_30d_pct": 5.085667203419163,
+    "change_90d_pct": 21.237355577771925,
+    "days_since_peak": 2,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 1.8512082821910192
+  },
+  "summary": {
+    "total_contracts": 13,
+    "total_addresses": 14,
+    "unique_implementations": 13,
+    "total_deployments": 14,
+    "audited_contracts": 1,
+    "unaudited_contracts": 12,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 12,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 7.7,
+    "total_audits": 3,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 11346885.84739,
+    "tvl_usd": 11346885.84739,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://angstrom.xyz/",
+    "chains": [
+      "base",
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 7.7,
+    "tier1_auditors": [
+      "Spearbit"
+    ],
+    "latest_audit_date": "2025-07",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 2,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Angstrom is a decentralized exchange protocol operating across Ethereum and Base. It provides MEV-aware trading infrastructure with governance controls and L2-specific hook factories.",
+    "relationship_narrative": "The L1 family provides governance and core DEX logic, while L2 instances leverage a factory for deployment and MEV tax features. The AngstromInspector likely serves both layers for trade analysis.",
+    "product_family_count": 3
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000000aa232009084bd71a5797d089aa4edfad4",
+      "name": "Angstrom",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "L1 – Ethereum Mainnet (chain ID 1) ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Angstrom",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0000000aa232009084bd71a5797d089aa4edfad4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2047"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb535aeb27335b91e1b5bccbd64888ba7574efbf8",
+      "name": "AngstromAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AngstromAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb535aeb27335b91e1b5bccbd64888ba7574efbf8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd262c224402e9a7f5e8ad1621be1bb1f3203b6c3",
+      "name": "AngstromInspector",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Angstrom",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AngstromInspector",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd262c224402e9a7f5e8ad1621be1bb1f3203b6c3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7fa49d29481b6d168505ccde26635e204c09e5cf",
+      "name": "AngstromL2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "L2 – MEV Tax Pool & Hook Factory ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AngstromL2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7fa49d29481b6d168505ccde26635e204c09e5cf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcd256a2f4574cb6aca4837313ad225d2fe1de5cf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0000000000fd3b85c30f942e8d878e858e69cd05",
+      "name": "AngstromL2Factory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "L2 – MEV Tax Pool & Hook Factory ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AngstromL2Factory",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0000000000fd3b85c30f942e8d878e858e69cd05",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6582c770fc4167aa807c3846c73e6006e90c169c",
+      "name": "AngstromVaultFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AngstromVaultFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6582c770fc4167aa807c3846c73e6006e90c169c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1746484ea5e11c75e009252c102c8c33e0315fd4",
+      "name": "ControllerV1",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "L1 – Ethereum Mainnet (chain ID 1) ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ControllerV1",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1746484ea5e11c75e009252c102c8c33e0315fd4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb3df869572ac94bb1acf5e9ecbfae3afee8a00df",
+      "name": "EventEmitter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EventEmitter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb3df869572ac94bb1acf5e9ecbfae3afee8a00df",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5d8555f8c710798274a8c655b9a26a3465a65c0b",
+      "name": "PerpsOracleAttested",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PerpsOracleAttested",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5d8555f8c710798274a8c655b9a26a3465a65c0b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4cf26a7e680d5d86232f985b91c6cb9e0774b89d",
+      "name": "PriceOracle",
+      "role": "operational_periphery",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PriceOracle",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4cf26a7e680d5d86232f985b91c6cb9e0774b89d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x814e3b8dfdc2376b59a5ab70e8784dcb3bebf8cc",
+      "name": "Swapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Swapper",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x814e3b8dfdc2376b59a5ab70e8784dcb3bebf8cc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x60d41d9708bbefd29000d1486c6406ef23526c01",
+      "name": "TimelockController",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "L1 – Ethereum Mainnet (chain ID 1) ​",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimelockController",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x60d41d9708bbefd29000d1486c6406ef23526c01",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x06d9f5e807eeca914482bbd8ed3f40c55ce06c79",
+      "name": "VaultExtension",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultExtension",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x06d9f5e807eeca914482bbd8ed3f40c55ce06c79",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2046,
+      "audit_key": "audit-2046",
+      "report_name": "VIEW REPORT",
+      "report_url": "https://cantina.xyz/portfolio/39f1c6a9-dbd5-4322-b6a3-84b794b97cb8?utm_source=x&utm_medium=social&utm_campaign=july",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2047,
+      "audit_key": "audit-2047",
+      "report_name": "VIEW REPORT",
+      "report_url": "https://cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940",
+      "auditor": "Spearbit",
+      "audit_type": "contest",
+      "freshness": "aging",
+      "date": "2024-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Angstrom",
+        "Asset",
+        "CalldataReader",
+        "ConfigEntry",
+        "Constants",
+        "DeltaTracker",
+        "GrowthOutsideUpdater",
+        "HookBuffer",
+        "IAngstromComposable",
+        "IDaiPermit",
+        "IERC2612",
+        "IHooks",
+        "IUniV4",
+        "MixedSignLib",
+        "OrderInvalidation",
+        "Pair",
+        "PermitSubmitterHook",
+        "PoolConfigStore",
+        "PoolRewards",
+        "PoolUpdateVariantMap",
+        "PoolUpdates",
+        "Positions",
+        "Price",
+        "RayMathLib",
+        "Settlement",
+        "SignatureLib",
+        "StoreDeployer",
+        "SwapCall",
+        "TickLib",
+        "ToBOrderBuffer",
+        "ToBOrderVariantMap",
+        "TopLevelAuth",
+        "TypedDataHasher",
+        "UniConsumer",
+        "UserOrderBuffer",
+        "UserOrderVariantMap",
+        "X128MathLib"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2048,
+      "audit_key": "audit-2048",
+      "report_name": "VIEW REPORT",
+      "report_url": "https://cantina.xyz/portfolio/c2fe4e46-66a3-416e-ab26-40dd4b437ff6",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Spearbit",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 7.7,
+      "latest_audit": "2025-07"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb535aeb27335b91e1b5bccbd64888ba7574efbf8",
+      "name": "AngstromAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd262c224402e9a7f5e8ad1621be1bb1f3203b6c3",
+      "name": "AngstromInspector",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7fa49d29481b6d168505ccde26635e204c09e5cf",
+      "name": "AngstromL2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0000000000fd3b85c30f942e8d878e858e69cd05",
+      "name": "AngstromL2Factory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6582c770fc4167aa807c3846c73e6006e90c169c",
+      "name": "AngstromVaultFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1746484ea5e11c75e009252c102c8c33e0315fd4",
+      "name": "ControllerV1",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb3df869572ac94bb1acf5e9ecbfae3afee8a00df",
+      "name": "EventEmitter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x814e3b8dfdc2376b59a5ab70e8784dcb3bebf8cc",
+      "name": "Swapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x06d9f5e807eeca914482bbd8ed3f40c55ce06c79",
+      "name": "VaultExtension",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 10,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 1
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2046,
+        "report_name": "VIEW REPORT"
+      },
+      {
+        "audit_id": 2048,
+        "report_name": "VIEW REPORT"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

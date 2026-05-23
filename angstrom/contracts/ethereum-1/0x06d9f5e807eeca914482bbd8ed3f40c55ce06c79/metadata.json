@@ -1,0 +1,18 @@
+{
+  "address": "0x06d9f5e807eeca914482bbd8ed3f40c55ce06c79",
+  "chain_id": 1,
+  "contract_name": "VaultExtension",
+  "compiler_version": "v0.8.34+commit.80d5c536",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "osaka",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 75,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:24:57.334Z"
+}

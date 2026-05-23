@@ -1,0 +1,154 @@
+{
+  "schema_version": "2.0",
+  "project_key": "meld-gold",
+  "generated_at": "2026-05-23T02:23:25.318Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "meld-gold",
+    "tier": 0,
+    "peak_tvl": 15221579,
+    "peak_date": "2026-01-29T00:00:00.000Z",
+    "tvl_30d_ago": 11492811,
+    "tvl_90d_ago": 12483123,
+    "tvl_current": 11074700,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 8818588,
+    "change_30d_pct": -3.6380220644018246,
+    "change_90d_pct": -11.282617338625919,
+    "days_since_peak": 114,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 27.243421986641465
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 2,
+    "unique_implementations": 1,
+    "total_deployments": 2,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 1,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 11130545.45532,
+    "tvl_usd": 11130545.45532,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://meld.gold",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "Meld Gold provides on-chain price feeds for gold, enabling DeFi protocols to access real-time gold price data on Ethereum.",
+    "relationship_narrative": "The two EACAggregatorProxy contracts likely represent different gold price feeds (e.g., XAU/USD and XAU/ETH) sharing the same oracle infrastructure and deployer.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x214ed9da11d2fbe465a6fc601a91e62ebec1a0d6",
+      "name": "EACAggregatorProxy",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Chainlink",
+      "product_line": "Meld Gold",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EACAggregatorProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x214ed9da11d2fbe465a6fc601a91e62ebec1a0d6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x379589227b15f1a12195d3f2d90bbc9f31f95235",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2045,
+      "audit_key": "audit-2045",
+      "report_name": "Live Audit",
+      "report_url": "https://www.meld.gold/audit",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 1,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2045,
+        "report_name": "Live Audit"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

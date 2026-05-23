@@ -1,0 +1,18 @@
+{
+  "address": "0xea06bd663a1cec97b5bdec9375ab9a63695c9699",
+  "chain_id": 1,
+  "contract_name": "JBArbitrumSuckerDeployer",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 3000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT, MIT OR Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 91,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:31:35.786Z"
+}

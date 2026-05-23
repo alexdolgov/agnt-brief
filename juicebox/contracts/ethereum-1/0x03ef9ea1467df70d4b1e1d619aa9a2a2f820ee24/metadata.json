@@ -1,0 +1,18 @@
+{
+  "address": "0x03ef9ea1467df70d4b1e1d619aa9a2a2f820ee24",
+  "chain_id": 1,
+  "contract_name": "CTPublisher",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 100000000,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 53,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:31:31.413Z"
+}

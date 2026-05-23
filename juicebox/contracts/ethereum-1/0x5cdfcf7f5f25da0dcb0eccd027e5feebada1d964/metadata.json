@@ -1,0 +1,18 @@
+{
+  "address": "0x5cdfcf7f5f25da0dcb0eccd027e5feebada1d964",
+  "chain_id": 1,
+  "contract_name": "JBTerminalStore",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 51,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:31:33.552Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xd4257005ca8d27bbe11f356453b0e4692414b056",
+  "chain_id": 1,
+  "contract_name": "JBRulesets5_1",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:31:35.443Z"
+}

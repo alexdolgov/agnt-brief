@@ -1,0 +1,18 @@
+{
+  "address": "0x1746484ea5e11c75e009252c102c8c33e0315fd4",
+  "chain_id": 1,
+  "contract_name": "ControllerV1",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 22000,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:24:56.956Z"
+}

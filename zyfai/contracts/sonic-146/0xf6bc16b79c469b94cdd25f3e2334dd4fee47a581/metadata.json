@@ -1,0 +1,17 @@
+{
+  "address": "0xf6bc16b79c469b94cdd25f3e2334dd4fee47a581",
+  "chain_id": 146,
+  "contract_name": "SiloVault",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 47,
+  "constructor_arguments": "",
+  "implementation_address": "0x62a788bbdaee15d27e6b7e8d637732d2b93fe4f5",
+  "fetched_at": "2026-05-23T11:41:41.823Z"
+}

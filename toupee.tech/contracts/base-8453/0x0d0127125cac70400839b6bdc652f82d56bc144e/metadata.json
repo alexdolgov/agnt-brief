@@ -1,0 +1,18 @@
+{
+  "address": "0x0d0127125cac70400839b6bdc652f82d56bc144e",
+  "chain_id": 8453,
+  "contract_name": "VelociGaugePlugin",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T11:25:30.235Z"
+}

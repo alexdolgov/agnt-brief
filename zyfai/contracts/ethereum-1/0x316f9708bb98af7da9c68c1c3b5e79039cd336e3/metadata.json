@@ -1,0 +1,18 @@
+{
+  "address": "0x316f9708bb98af7da9c68c1c3b5e79039cd336e3",
+  "chain_id": 1,
+  "contract_name": "ConfiguratorProxy",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": null,
+  "runs": 1,
+  "evm_version": "london",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": "0xcfc1fa6b7ca982176529899d99af6473ad80df4f",
+  "fetched_at": "2026-05-23T11:41:33.274Z"
+}

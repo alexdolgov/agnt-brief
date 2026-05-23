@@ -1,0 +1,17 @@
+{
+  "address": "0x9c27168b15866968b125b0c2657ff9f64704afd0",
+  "chain_id": 146,
+  "contract_name": "ActionSwapYTV3",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T11:41:40.179Z"
+}

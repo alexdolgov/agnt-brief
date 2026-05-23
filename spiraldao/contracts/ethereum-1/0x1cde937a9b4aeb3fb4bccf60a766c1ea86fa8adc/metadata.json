@@ -1,0 +1,18 @@
+{
+  "address": "0x1cde937a9b4aeb3fb4bccf60a766c1ea86fa8adc",
+  "chain_id": 1,
+  "contract_name": "ITO",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T11:31:32.887Z"
+}

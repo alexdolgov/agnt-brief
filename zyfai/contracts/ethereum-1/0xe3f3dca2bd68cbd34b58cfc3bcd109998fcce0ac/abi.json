@@ -1,0 +1,129 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "poolAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "enum WasabiStructs.OptionType",
+            "name": "optionType",
+            "type": "WasabiStructs.OptionType"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strikePrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "premium",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "orderExpiry",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct WasabiStructs.PoolAsk",
+        "name": "_poolAsk",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "getSignerForPoolAsk",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "poolAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "enum WasabiStructs.OptionType",
+            "name": "optionType",
+            "type": "WasabiStructs.OptionType"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strikePrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "premium",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "orderExpiry",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct WasabiStructs.PoolAsk",
+        "name": "_poolAsk",
+        "type": "tuple"
+      }
+    ],
+    "name": "hashForPoolAsk",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x8e2b50413a53f50e2a059142a9be060294961e40",
+  "chain_id": 1,
+  "contract_name": "WasabiPoolFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1500,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T11:41:35.345Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x9d6d509c0354aca187aac6bea7d063d3ef68e2a0",
+  "chain_id": 146,
+  "contract_name": "ActionMarketCoreStatic",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T11:41:40.399Z"
+}

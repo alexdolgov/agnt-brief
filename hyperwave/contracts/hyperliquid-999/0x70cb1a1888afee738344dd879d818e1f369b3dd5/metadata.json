@@ -1,0 +1,17 @@
+{
+  "address": "0x70cb1a1888afee738344dd879d818e1f369b3dd5",
+  "chain_id": 999,
+  "contract_name": "TellerWithMultiAssetSupport",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T11:28:11.750Z"
+}

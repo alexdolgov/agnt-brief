@@ -1,0 +1,18 @@
+{
+  "address": "0x1eeb34b653d396cdc60a9c434c09e1803dd4904e",
+  "chain_id": 8453,
+  "contract_name": "Controller",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T11:25:30.488Z"
+}

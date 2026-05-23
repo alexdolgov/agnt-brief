@@ -1,0 +1,17 @@
+{
+  "address": "0x0218d60051ba3c8d53fd07141b565864262ee098",
+  "chain_id": 137,
+  "contract_name": "CommissionsDistributor",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T07:10:00.545Z"
+}

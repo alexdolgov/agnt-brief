@@ -19,6 +19,7 @@
 | [atlendis](./atlendis/) | $4.3M | 0.0% | $4.3M | declining | 0 | 43 | 2026-05-23 |
 | [badger-dao](./badger-dao/) | $1.9M | 0.0% | $1.9M | sunsetting | 0 | 330 | 2026-05-23 |
 | [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 2 | 105 | 2026-05-23 |
+| [binaryx-platform](./binaryx-platform/) | $8.6M | 0.0% | ? | active | 2 | 133 | 2026-05-23 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [bitu-protocol](./bitu-protocol/) | $23.1M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -30,6 +31,7 @@
 | [btcfi](./btcfi/) | $11.9M | 0.0% | ? | active | 0 | 15 | 2026-05-23 |
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [camelot](./camelot/) | $6.4M | 17.3% | $391.9K | active | 1 | 127 | 2026-05-22 |
+| [cex.io](./cex.io/) | $8.6M | 0.0% | ? | active | 1 | 3 | 2026-05-23 |
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [chainge-finance](./chainge-finance/) | $1.8M | 0.0% | $1.8M | active | 0 | 935 | 2026-05-23 |
 | [charm-finance](./charm-finance/) | $2.2M | 66.7% | ? | unknown | 5 | 7 | 2026-05-22 |
@@ -56,6 +58,7 @@
 | [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [goldfinger](./goldfinger/) | $23.9M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 0 | 7 | 2026-05-22 |
+| [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 11.1% | ? | active | 4 | 126 | 2026-05-21 |
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
@@ -123,6 +126,7 @@
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 22.6% | ? | active | 9 | 158 | 2026-05-23 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-05-22 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-05-22 |
+| [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | unknown | 2 | 4 | 2026-05-22 |

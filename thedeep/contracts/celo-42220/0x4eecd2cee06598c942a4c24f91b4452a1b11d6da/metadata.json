@@ -1,0 +1,17 @@
+{
+  "address": "0x4eecd2cee06598c942a4c24f91b4452a1b11d6da",
+  "chain_id": 42220,
+  "contract_name": "VolatilityCheck",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 51,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T07:00:20.003Z"
+}

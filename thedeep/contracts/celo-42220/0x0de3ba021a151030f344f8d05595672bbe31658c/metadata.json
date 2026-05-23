@@ -1,0 +1,17 @@
+{
+  "address": "0x0de3ba021a151030f344f8d05595672bbe31658c",
+  "chain_id": 42220,
+  "contract_name": "VaultLocker",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "000000000000000000000000d3db0880f7bfca386d37a9f28f6548110e947894",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T07:00:19.620Z"
+}

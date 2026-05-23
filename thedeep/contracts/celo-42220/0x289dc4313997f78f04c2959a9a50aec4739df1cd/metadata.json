@@ -1,0 +1,17 @@
+{
+  "address": "0x289dc4313997f78f04c2959a9a50aec4739df1cd",
+  "chain_id": 42220,
+  "contract_name": "AegisVault",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 49,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T07:00:20.086Z"
+}

@@ -1,0 +1,304 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum IOffPlanStructs.BalanceChangeAction",
+            "name": "action",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "offPlan",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokensAmountD18",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdAmountD18",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "investTokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "avgTokenPriceInUsdD18",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateInUtc",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "referral",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IOffPlanStructs.BalanceChange",
+        "name": "balanceChange",
+        "type": "tuple"
+      }
+    ],
+    "name": "OffPlanBalanceChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum IOffPlanStructs.LifecycleAction",
+            "name": "action",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "offPlan",
+            "type": "address"
+          },
+          {
+            "internalType": "enum IOffPlanStructs.Status",
+            "name": "from",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum IOffPlanStructs.Status",
+            "name": "to",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string[]",
+            "name": "extraStrings",
+            "type": "string[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "extraAddresses",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "extraNumbers",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateInUtc",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IOffPlanStructs.OffPlanLifecycle",
+        "name": "lifecycle",
+        "type": "tuple"
+      }
+    ],
+    "name": "OffPlanLifecycle",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "addressesProvider",
+    "outputs": [
+      {
+        "internalType": "contract IAddressesProvider",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum IOffPlanStructs.BalanceChangeAction",
+            "name": "action",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "offPlan",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "investor",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokensAmountD18",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usdAmountD18",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "investTokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "avgTokenPriceInUsdD18",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateInUtc",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "referral",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IOffPlanStructs.BalanceChange",
+        "name": "balanceChange",
+        "type": "tuple"
+      }
+    ],
+    "name": "emitOffPlanBalanceChanged",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum IOffPlanStructs.LifecycleAction",
+            "name": "action",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "offPlan",
+            "type": "address"
+          },
+          {
+            "internalType": "enum IOffPlanStructs.Status",
+            "name": "from",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum IOffPlanStructs.Status",
+            "name": "to",
+            "type": "uint8"
+          },
+          {
+            "internalType": "string[]",
+            "name": "extraStrings",
+            "type": "string[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "extraAddresses",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "extraNumbers",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dateInUtc",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IOffPlanStructs.OffPlanLifecycle",
+        "name": "lifecycle",
+        "type": "tuple"
+      }
+    ],
+    "name": "emitOffPlanLifecycle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getVersion",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_addressesProvider",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x1785e5efca0bac2098b13aa072598dadeb7ad3d7",
+  "chain_id": 137,
+  "contract_name": "PropertyFactory",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T07:10:00.334Z"
+}

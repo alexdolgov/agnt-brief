@@ -1,0 +1,401 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "pointer",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "OffPlanCreated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "addToPointersList",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "addressesProvider",
+    "outputs": [
+      {
+        "internalType": "contract IAddressesProvider",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxSupplyD18",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IOffPlanStructs.TokenInfo",
+        "name": "tokenInfo",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "country",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "city",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "postalCode",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "line1",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "line2",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct IOffPlanStructs.WorldAddress",
+        "name": "worldAddress",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "enum IOffPlanStructs.Status",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "url",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "hash",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct IOffPlanStructs.Document[]",
+            "name": "documents",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "exitAtInUtc",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "resultingAssetUsdPriceD18",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalUsdToCollectD18",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isTest",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IOffPlanStructs.OffPlanInfo",
+        "name": "offPlanInfo",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountUsdToCollectD18",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buildAtInUtc",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokensMaxSupplyD18",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenStartPriceInUsdD18",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenEndPriceInUsdD18",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IOffPlanStructs.OffPlanPhase[]",
+        "name": "offPlanPhases",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "createItem",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBlueprint",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBlueprintImplementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPointers",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "page",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "perPage",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPointersPaginated",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "pointers",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalCount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getVersion",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_addressesProvider",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_itemImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "isOffPlan",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isPointer",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "pointers",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "rmFromPointersList",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

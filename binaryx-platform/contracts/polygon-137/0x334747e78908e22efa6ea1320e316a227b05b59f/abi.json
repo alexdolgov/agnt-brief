@@ -1,0 +1,1437 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "commissionWallet",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellDiscountPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellCommissionPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyDiscountPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyCommissionPercentageD2",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Commission",
+        "name": "commission",
+        "type": "tuple"
+      }
+    ],
+    "name": "ChangeAssetCommission",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "basePriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferPriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum StatusChangeReason",
+            "name": "statusChangeReason",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fulfilledAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Order",
+        "name": "order",
+        "type": "tuple"
+      }
+    ],
+    "name": "OrderCancelled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "basePriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferPriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum StatusChangeReason",
+            "name": "statusChangeReason",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fulfilledAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Order",
+        "name": "order",
+        "type": "tuple"
+      }
+    ],
+    "name": "OrderCompleted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "basePriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferPriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum StatusChangeReason",
+            "name": "statusChangeReason",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fulfilledAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Order",
+        "name": "order",
+        "type": "tuple"
+      }
+    ],
+    "name": "OrderCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "basePriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferPriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum StatusChangeReason",
+            "name": "statusChangeReason",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fulfilledAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Order",
+        "name": "order",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fulfilledAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "transfer",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "toSeller",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "toPartner",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "toBnrx",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "buyer",
+        "type": "address"
+      }
+    ],
+    "name": "OrderFulfilled",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "activePools",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "activePoolsIds",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "addressesProvider",
+    "outputs": [
+      {
+        "internalType": "contract IAddressesProvider",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "assetCommission",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "commissionWallet",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sellDiscountPercentageD2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sellCommissionPercentageD2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyDiscountPercentageD2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyCommissionPercentageD2",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "orderId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "buyFromOrder",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "fulfillFromThisOrder",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceD6",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "buyFromPool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "fulfillFromThisOrder",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "basePriceD6",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "commissionWallet",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellDiscountPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellCommissionPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyDiscountPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyCommissionPercentageD2",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Commission",
+        "name": "orderCommission",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "commissionWallet",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellDiscountPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellCommissionPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyDiscountPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyCommissionPercentageD2",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Commission",
+        "name": "assetCommission",
+        "type": "tuple"
+      }
+    ],
+    "name": "calculateSellTransfers",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "transferAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "toSeller",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "toPartner",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "toBnrx",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "orderId",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "orderId",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelOrderBySuperOracle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "cancelOrdersForUser",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceD6",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum OrderType",
+        "name": "orderType",
+        "type": "uint8"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "commissionWallet",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellDiscountPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellCommissionPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyDiscountPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyCommissionPercentageD2",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Commission",
+        "name": "commission",
+        "type": "tuple"
+      }
+    ],
+    "name": "createOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getActivePools",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "priceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "enum OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct OrderPoolView[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      }
+    ],
+    "name": "getOrdersByAsset",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "basePriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferPriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum StatusChangeReason",
+            "name": "statusChangeReason",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fulfilledAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct Order[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceD6",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum OrderType",
+        "name": "orderType",
+        "type": "uint8"
+      }
+    ],
+    "name": "getOrdersByPool",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "basePriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferPriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum StatusChangeReason",
+            "name": "statusChangeReason",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fulfilledAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct Order[]",
+        "name": "orders",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getOrdersByUser",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "basePriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferPriceD6",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum StatusChangeReason",
+            "name": "statusChangeReason",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fulfilledAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct Order[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceD6",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum OrderType",
+        "name": "orderType",
+        "type": "uint8"
+      }
+    ],
+    "name": "getOrdersIdsByPool",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "orders",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getVersion",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAddressesProvider",
+        "name": "_addressesProvider",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "_rewardToken",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isLocked",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "orderBnrxCommission",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "commissionWallet",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sellDiscountPercentageD2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sellCommissionPercentageD2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyDiscountPercentageD2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyCommissionPercentageD2",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "orderPartnerCommission",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "commissionWallet",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sellDiscountPercentageD2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sellCommissionPercentageD2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyDiscountPercentageD2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyCommissionPercentageD2",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "orders",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "basePriceD6",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "transferPriceD6",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "initialAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum OrderType",
+        "name": "orderType",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum StatusChangeReason",
+        "name": "statusChangeReason",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "availableAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "fulfilledAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum OrderStatus",
+        "name": "status",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "ordersByAssetMap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "ordersByPoolIdMap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "ordersByUserMap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ordersLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum OrderType",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "name": "poolMainMap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "pools",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceD6",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "internalType": "enum OrderType",
+        "name": "orderType",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "availableAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rewardToken",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "commissionWallet",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellDiscountPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellCommissionPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyDiscountPercentageD2",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyCommissionPercentageD2",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Commission",
+        "name": "commission",
+        "type": "tuple"
+      }
+    ],
+    "name": "setAssetCommission",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_isLocked",
+        "type": "bool"
+      }
+    ],
+    "name": "setIsLocked",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

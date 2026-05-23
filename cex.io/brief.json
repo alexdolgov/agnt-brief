@@ -1,0 +1,217 @@
+{
+  "schema_version": "2.0",
+  "project_key": "cex.io",
+  "generated_at": "2026-05-23T06:57:06.635Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "cex.io",
+    "tier": 0,
+    "peak_tvl": 38759630,
+    "peak_date": "2025-09-06T00:00:00.000Z",
+    "tvl_30d_ago": 9559570,
+    "tvl_90d_ago": 10481116,
+    "tvl_current": 8750073,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 20750325,
+    "change_30d_pct": -8.467922720373405,
+    "change_90d_pct": -16.515827131385628,
+    "days_since_peak": 259,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 77.42477675870487
+  },
+  "summary": {
+    "total_contracts": 3,
+    "total_addresses": 4,
+    "unique_implementations": 3,
+    "total_deployments": 4,
+    "audited_contracts": 0,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 3,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 1,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 8578905.80929,
+    "tvl_usd": 8578905.80929,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "http://cex.io/",
+    "chains": [
+      "ethereum",
+      "polygon"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2026-03",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "CEX.IO is a centralized exchange (CEX) that uses on-chain multisig wallets (Gnosis Safe) for treasury management and operational custody of funds on Ethereum and Polygon.",
+    "relationship_narrative": "All contracts are Gnosis Safe multisig wallets deployed by the same deployer cluster, indicating a single operational entity managing funds across multiple chains.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2818e54e0489274f61f33f163504074bee5932ca",
+      "name": "GnosisSafe",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "CEX.IO",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+      "impl_name": "GnosisSafe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2818e54e0489274f61f33f163504074bee5932ca",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc48c74c4eda47f915e8580391ec2f386f769d996",
+      "name": "Safe",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "CEX.IO",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x41675c099f32341bf84bfc5382af534df5c7461a",
+      "impl_name": "Safe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc48c74c4eda47f915e8580391ec2f386f769d996",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x8e7b542d93901560583c0c22d156ecca5191684d",
+      "name": "SafeProxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "CEX.IO",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeProxy",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x8e7b542d93901560583c0c22d156ecca5191684d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xc48c74c4eda47f915e8580391ec2f386f769d996",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2134,
+      "audit_key": "audit-2134",
+      "report_name": "PCI DSS Level 1 certification",
+      "report_url": "https://static.cex.io/img/legal/pci.pdf",
+      "auditor": "PCI DSS",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 3,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2134,
+        "report_name": "PCI DSS Level 1 certification"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

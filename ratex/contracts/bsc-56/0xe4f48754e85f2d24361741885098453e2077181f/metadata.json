@@ -1,0 +1,17 @@
+{
+  "address": "0xe4f48754e85f2d24361741885098453e2077181f",
+  "chain_id": 56,
+  "contract_name": "clisETH",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:00:51.236Z"
+}

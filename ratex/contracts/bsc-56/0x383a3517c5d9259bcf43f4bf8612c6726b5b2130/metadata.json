@@ -1,0 +1,17 @@
+{
+  "address": "0x383a3517c5d9259bcf43f4bf8612c6726b5b2130",
+  "chain_id": 56,
+  "contract_name": "Jar",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:00:43.698Z"
+}

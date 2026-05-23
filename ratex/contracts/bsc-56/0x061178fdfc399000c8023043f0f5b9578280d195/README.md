@@ -1,0 +1,16 @@
+# clisBNB
+
+| Field | Value |
+|---|---|
+| Chain | bsc (56) |
+| Address | `0x061178fdfc399000c8023043f0f5b9578280d195` |
+| Role | unknown |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 2 (bsc [`0x061178fdfc399000c8023043f0f5b9578280d195`](../0x061178fdfc399000c8023043f0f5b9578280d195/); bsc `0x6c87876b15cbccedec81246af6dc58bd1109e98c`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

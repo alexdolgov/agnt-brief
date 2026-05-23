@@ -1,0 +1,17 @@
+{
+  "address": "0x1101ff0f0545f3e2ed54fd986814295356923dc3",
+  "chain_id": 56,
+  "contract_name": "SnBnbYieldConverterStrategy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:00:41.426Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x77f452a594aa6bf1eb67ceedd941ff14ac070b95",
+  "chain_id": 56,
+  "contract_name": "WstETHOracle",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:00:46.475Z"
+}

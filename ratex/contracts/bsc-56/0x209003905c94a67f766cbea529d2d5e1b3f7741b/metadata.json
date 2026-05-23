@@ -1,0 +1,17 @@
+{
+  "address": "0x209003905c94a67f766cbea529d2d5e1b3f7741b",
+  "chain_id": 56,
+  "contract_name": "EzEthOracle",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:00:41.595Z"
+}

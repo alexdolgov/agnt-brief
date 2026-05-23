@@ -1,0 +1,932 @@
+[
+  {
+    "inputs": [],
+    "name": "InsufficientSwapAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyClearingHouse",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Reentrancy",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isInvest",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "baseAmountFilled",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "quoteAmountFilled",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "baseAmountHeld",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "quoteAmountHeld",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "ptAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "ptAmountHeld",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "marginAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feeAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "rate",
+        "type": "uint256"
+      }
+    ],
+    "name": "EarnRecord",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "NewImplementation",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "marginAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateEarnInvest",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "baseAmountFilled",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "quoteAmountFilled",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "ptAmount",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marginAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeAmountInMargin",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct EarnImp.EarnPreview",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ptAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint160",
+        "name": "sqrtPriceLimitX96",
+        "type": "uint160"
+      }
+    ],
+    "name": "calculateEarnRedeem",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "baseAmountFilled",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "quoteAmountFilled",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "ptAmount",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marginAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeAmountInMargin",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct EarnImp.EarnPreview",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "zeroForOne",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "isEarn",
+        "type": "bool"
+      },
+      {
+        "internalType": "int256",
+        "name": "amountSpecified",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint160",
+        "name": "sqrtPriceLimitX96",
+        "type": "uint160"
+      }
+    ],
+    "name": "calculateSwap",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "amount0",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "amount1",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feeAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint160",
+        "name": "sqrtPriceX96",
+        "type": "uint160"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "clearingHouse",
+    "outputs": [
+      {
+        "internalType": "contract ClearingHouseImp",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "collectEarnFee",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "feeInMargin",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "marginAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "earnInvest",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "earnPosition",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "marginBalance",
+        "type": "int256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "baseAssetAmount",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "quoteAssetAmount",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lastRate",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct YieldPositionLib.YieldPosition",
+        "name": "yieldPosition",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "protocolFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "netQuoteAmountRealized",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ptAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint160",
+        "name": "sqrtPriceLimitX96",
+        "type": "uint160"
+      }
+    ],
+    "name": "earnRedeem",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "epochUpdate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lpAccountsProcessed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "userAccountsProcessed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "impliedRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum IMarketStorage.EpochUpdateStatus",
+        "name": "status",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "epochUpdateEndTs",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "lpBaseAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "lpQuoteAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "totalSlossQuoteQuota",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "slossBaseAmountFilled",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "slossQuoteAmountFilled",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint160",
+        "name": "epochPriceGapX64",
+        "type": "uint160"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "expireUpdate",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "expireTotalDebt",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "expireTotalMargin",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "expireTotalPosQuoteAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "expireTotalDebtCovered",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBasicInfo",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "_factory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_market",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_pool",
+        "type": "address"
+      },
+      {
+        "internalType": "int24",
+        "name": "_tickSpacing",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_activeRatioCoef",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_marketName",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "enum IMarketStorage.MarketType",
+        "name": "_marketType",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPriceConfig",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_maxAllowedRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minAllowedRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint160",
+        "name": "_maxAllowedSqrtPriceX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "uint160",
+        "name": "_minAllowedSqrtPriceX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_boundPercentage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_boundTwapDuration",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTradeParams",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_minOrderSize",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_orderStepSize",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minLpAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_oracle",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_expireTs",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_pToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_baseToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_quoteToken",
+        "type": "address"
+      },
+      {
+        "internalType": "int256",
+        "name": "_keeperFee",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "implementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "insuranceYieldPosition",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "baseAssetAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "quoteAssetAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "lastRate",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "isExpiryOn",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "liquidityPositions",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "lowerTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "upperTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lowerRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "upperRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "reserveQuoteAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "reserveBaseAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "enum IMarketStorage.LpStatus",
+        "name": "state",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint128",
+        "name": "pendingLiquidity",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "pendingFeesOwed",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "socialLossYieldPosition",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "baseAssetAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "quoteAssetAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "lastRate",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stats",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "numberOfActiveUsers",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "numberOfActiveLps",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum IMarketStorage.MarketStatus",
+        "name": "status",
+        "type": "uint8"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "baseAssetAmount",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "quoteAssetAmount",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lastRate",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct YieldPositionLib.YieldPosition",
+        "name": "netPosition",
+        "type": "tuple"
+      },
+      {
+        "internalType": "int256",
+        "name": "netQuoteAmountRealized",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "totalMarginAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "totalQuoteAssetAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "totalReserveBaseAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "totalReserveQuoteAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "totalLiquidationFee",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "totalKeeperFee",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "yieldPosition",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "baseAssetAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "quoteAssetAmount",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "lastRate",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

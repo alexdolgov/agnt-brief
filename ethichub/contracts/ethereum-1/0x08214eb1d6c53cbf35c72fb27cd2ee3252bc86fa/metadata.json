@@ -1,0 +1,18 @@
+{
+  "address": "0x08214eb1d6c53cbf35c72fb27cd2ee3252bc86fa",
+  "chain_id": 1,
+  "contract_name": "InvestorsVestingReserve",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, gpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T23:49:15.361Z"
+}

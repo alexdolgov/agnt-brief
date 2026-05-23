@@ -9,6 +9,7 @@
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-23 |
 | [aevo](./aevo/) | $98.5M | 9.2% | $1.7M | active | 17 | 331 | 2026-05-22 |
 | [aftermath-finance](./aftermath-finance/) | $1.8M | 0.0% | $1.8M | declining | 0 | 904 | 2026-05-23 |
+| [aitech](./aitech/) | $4.0M | 0.0% | ? | unknown | 1 | 2 | 2026-05-23 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 0 | 58 | 2026-05-23 |
 | [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 2 | 284 | 2026-05-22 |
 | [alphagrowth](./alphagrowth/) | $6.7M | 8.3% | $6.7M | active | 16 | 135 | 2026-05-23 |
@@ -70,6 +71,7 @@
 | [dango](./dango/) | $5.9M | 0.0% | $5.9M | unknown | 1 | 906 | 2026-05-23 |
 | [debridge](./debridge/) | $379.5M | 0.0% | $379.5M | declining | 1 | 164 | 2026-05-23 |
 | [defi-kingdoms](./defi-kingdoms/) | $6.5M | 0.0% | ? | dead | 1 | 5 | 2026-05-23 |
+| [defituna](./defituna/) | $1.9M | 0.0% | $1.9M | declining | 11 | 904 | 2026-05-23 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | unknown | 0 | 53 | 2026-05-23 |
 | [desyn-protocol](./desyn-protocol/) | $10.8M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
 | [dexalot](./dexalot/) | $4.2M | 0.0% | $4.2M | active | 0 | 1 | 2026-05-23 |
@@ -84,6 +86,7 @@
 | [enosys](./enosys/) | $28.0M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [etherfuse](./etherfuse/) | $5.1M | 0.0% | ? | unknown | 0 | 25 | 2026-05-23 |
+| [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | unknown | 2 | 58 | 2026-05-23 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-05-23 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
@@ -181,6 +184,7 @@
 | [privacy-pools](./privacy-pools/) | $6.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [probit-global](./probit-global/) | $12.7M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
+| [pumpspace](./pumpspace/) | $4.0M | 28.6% | ? | active | 4 | 763 | 2026-05-23 |
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 168 | 2026-05-23 |
 | [reddex](./reddex/) | $5.3M | 0.0% | ? | declining | 0 | 5 | 2026-05-23 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |
@@ -204,6 +208,7 @@
 | [solayer](./solayer/) | $1.9M | 0.0% | $1.9M | declining | 5 | 935 | 2026-05-22 |
 | [solera](./solera/) | $8.1M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [sophon-farm](./sophon-farm/) | $7.0M | 100.0% | ? | dead | 9 | 1 | 2026-05-23 |
+| [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | active | 0 | 58 | 2026-05-23 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 9 | 0 | 2026-05-22 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
 | [splash-protocol](./splash-protocol/) | $1.9M | 0.0% | $1.9M | active | 0 | 904 | 2026-05-23 |

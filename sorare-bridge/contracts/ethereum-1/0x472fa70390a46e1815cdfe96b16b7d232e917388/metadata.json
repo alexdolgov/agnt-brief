@@ -1,0 +1,18 @@
+{
+  "address": "0x472fa70390a46e1815cdfe96b16b7d232e917388",
+  "chain_id": 1,
+  "contract_name": "GpsFactRegistryAdapter",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0.",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T23:41:02.150Z"
+}

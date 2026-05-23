@@ -1,0 +1,18 @@
+{
+  "address": "0x0fed12bd8b1b11c629001c436b90bcd99f4fec92",
+  "chain_id": 1,
+  "contract_name": "PedersenHashPointsYColumn",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0.",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T23:41:01.038Z"
+}

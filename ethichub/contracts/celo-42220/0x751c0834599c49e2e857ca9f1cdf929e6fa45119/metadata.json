@@ -1,0 +1,17 @@
+{
+  "address": "0x751c0834599c49e2e857ca9f1cdf929e6fa45119",
+  "chain_id": 42220,
+  "contract_name": "UpgradeBeaconProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T23:49:17.086Z"
+}

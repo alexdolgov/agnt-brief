@@ -1,0 +1,18 @@
+{
+  "address": "0x3f4b71f7b81d9829008504b8bfa09d215c4dd673",
+  "chain_id": 1,
+  "contract_name": "StakedUETHIX",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, agpl-3.0, gpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T23:49:16.699Z"
+}

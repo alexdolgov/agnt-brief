@@ -1,0 +1,17 @@
+{
+  "address": "0x6bbf1fa4a7ee6525f36ae8ffb6ee22dd009351e3",
+  "chain_id": 56,
+  "contract_name": "BOGRouterV2",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T20:03:45.072Z"
+}

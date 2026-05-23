@@ -1,0 +1,18 @@
+{
+  "address": "0x158f513096923ff2d3aab2bcf4478536de6725e2",
+  "chain_id": 10,
+  "contract_name": "BitBTCL2BridgeOptimism",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T20:03:44.947Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x147a2ccbaf4521ad209a2875ae0b3c496f4b25a4",
+  "chain_id": 8453,
+  "contract_name": "WrappedStakedSlipstream",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": "AGPL-3.0-only, BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T09:38:42.934Z"
+}

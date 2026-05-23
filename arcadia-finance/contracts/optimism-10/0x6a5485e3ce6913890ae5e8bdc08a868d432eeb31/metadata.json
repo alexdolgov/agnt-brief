@@ -1,0 +1,17 @@
+{
+  "address": "0x6a5485e3ce6913890ae5e8bdc08a868d432eeb31",
+  "chain_id": 10,
+  "contract_name": "ChainlinkOM",
+  "compiler_version": "v0.8.34+commit.80d5c536",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "osaka",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "000000000000000000000000b4d72b1c91e640e4ed7d7397f3244de4d8acc50b000000000000000000000000d0690557600eb8be8391d1d97346e2aab5300d5f",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T09:38:44.717Z"
+}

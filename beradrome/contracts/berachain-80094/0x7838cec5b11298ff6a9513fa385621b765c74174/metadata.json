@@ -1,0 +1,17 @@
+{
+  "address": "0x7838cec5b11298ff6a9513fa385621b765c74174",
+  "chain_id": 80094,
+  "contract_name": "TOKEN",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "000000000000000000000000fcbd14dc51f0a4d49d5e53c2e0950e0bc26d0dce0000000000000000000000000000000000000000000422ca8b0a00a425000000000000000000000000000000bbc46f6dbb199c85cca67ad06c4d4949d09cafc3000000000000000000000000bcda85b9b140ddbf7c1467be867e0274c91977e800000000000000000000000007c2e5ea884c755e374e360bc2815ae28dabcc38000000000000000000000000c831a63931aef4017a9ecb65099f7ec1d367e41400000000000000000000000094ad6ac84f6c6fba8b8ccbd71d9f4f101def52a8",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T09:36:47.313Z"
+}

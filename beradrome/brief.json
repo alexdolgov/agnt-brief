@@ -1,0 +1,190 @@
+{
+  "schema_version": "2.0",
+  "project_key": "beradrome",
+  "generated_at": "2026-05-23T09:36:44.933Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "beradrome",
+    "tier": 1,
+    "peak_tvl": 17824004,
+    "peak_date": "2025-03-30T00:00:00.000Z",
+    "tvl_30d_ago": 745510,
+    "tvl_90d_ago": 1014773,
+    "tvl_current": 675063,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 1663221,
+    "change_30d_pct": -9.449504366138617,
+    "change_90d_pct": -33.476452369150536,
+    "governance_raw": {
+      "evidence": "TVL dropped 96% from peak and 33% in 90 days, but the protocol's homepage shows active features and partnerships, indicating ongoing operations.",
+      "confidence": 0.7,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 419,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 96.21261866862238,
+    "governance_evidence": "TVL dropped 96% from peak and 33% in 90 days, but the protocol's homepage shows active features and partnerships, indicating ongoing operations.",
+    "governance_confidence": 0.7,
+    "governance_text_chars": 1179,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 4,
+    "unique_implementations": 2,
+    "total_deployments": 4,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 7141754.29127,
+    "tvl_usd": 3289417.3733268282,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "berachain": 3289417.37
+    },
+    "asd_usd": 3289417.3733268282,
+    "website_url": "https://www.beradrome.com",
+    "chains": [
+      "berachain"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Beradrome is a yield protocol on Berachain that provides tokenized vaults for automated liquidity management. It uses adapter contracts to integrate with external routers for yield optimization.",
+    "relationship_narrative": "The Vaults family uses adapter contracts to interact with external Kodiak Island routers, while the Beradrome token likely serves as the governance or reward token across these vaults. Both families are deployed by the same deployer, indicating shared ownership and potential integration.",
+    "product_family_count": 2
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0x7838cec5b11298ff6a9513fa385621b765c74174",
+      "name": "TOKEN",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Beradrome",
+      "tvl_usd": 3289417.3733268282,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TOKEN",
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0x7838cec5b11298ff6a9513fa385621b765c74174",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3289417.3733268282,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0x63b0edc427664d4330f72eec890a86b3f98ce225",
+      "name": "KodiakIslandWithRouter",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "kodiak-finance",
+      "product_line": "Vaults",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "KodiakIslandWithRouter",
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0x63b0edc427664d4330f72eec890a86b3f98ce225",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xbfbefcfae7a58c14292b53c2ccd95bf2c5742eb0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xe5a2ab5d2fb268e5ff43a5564e44c3309609aff9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0x7838cec5b11298ff6a9513fa385621b765c74174",
+      "name": "TOKEN",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 3289417.3733268282,
+      "risk_note": "Verified native implementation with $3,289,417.37 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 1,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

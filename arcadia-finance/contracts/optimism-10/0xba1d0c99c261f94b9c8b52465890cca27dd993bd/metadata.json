@@ -1,0 +1,17 @@
+{
+  "address": "0xba1d0c99c261f94b9c8b52465890cca27dd993bd",
+  "chain_id": 10,
+  "contract_name": "RebalancerUniswapV3",
+  "compiler_version": "v0.8.34+commit.80d5c536",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "osaka",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "000000000000000000000000b4d72b1c91e640e4ed7d7397f3244de4d8acc50b000000000000000000000000da14fdd72345c4d2511357214c5b89a919768e59000000000000000000000000354dbba1348985cc952c467b8ddaf5dd07590667000000000000000000000000c36442b4a4522e871399cd717abdd847ab11fe880000000000000000000000001f98431c8ad98523631ae4a59f267346ea31f984",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T09:38:46.774Z"
+}

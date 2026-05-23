@@ -1,0 +1,18 @@
+{
+  "address": "0x3c3ea4b57a46241e54610e5f022e5c45859a1017",
+  "chain_id": 10,
+  "contract_name": "PositionManager",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-only, BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 234,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T09:38:44.417Z"
+}

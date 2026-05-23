@@ -1,0 +1,3392 @@
+{
+  "schema_version": "2.0",
+  "project_key": "arcadia-finance",
+  "generated_at": "2026-05-23T09:38:40.298Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "arcadia-finance",
+    "tier": 0,
+    "peak_tvl": 22047916,
+    "peak_date": "2025-07-11T00:00:00.000Z",
+    "tvl_30d_ago": 6786245,
+    "tvl_90d_ago": 6713438,
+    "tvl_current": 7248847,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 7691408,
+    "change_30d_pct": 6.816759489231526,
+    "change_90d_pct": 7.975183505083386,
+    "days_since_peak": 316,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 67.12230307844061
+  },
+  "summary": {
+    "total_contracts": 55,
+    "total_addresses": 151,
+    "unique_implementations": 55,
+    "total_deployments": 151,
+    "audited_contracts": 33,
+    "unaudited_contracts": 19,
+    "contracts_verified_audited": 33,
+    "contracts_verified_unaudited": 19,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 3,
+    "coverage_pct": 63.5,
+    "total_audits": 13,
+    "scoreable_audits": 12,
+    "dl_tvl_usd": 7256735,
+    "tvl_usd": 6173125.5635418985,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 6106009.25,
+      "optimism": 67116.31
+    },
+    "asd_usd": null,
+    "website_url": "https://arcadia.finance",
+    "chains": [
+      "base",
+      "optimism",
+      "unichain"
+    ],
+    "tier1_coverage_pct": 53.8,
+    "tier1_auditors": [
+      "Sherlock"
+    ],
+    "latest_audit_date": "2026-01",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 2,
+      "aging": 3,
+      "stale": 7,
+      "unknown": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "Arcadia Finance is a DeFi protocol that enables leveraged yield farming and liquidity management across multiple chains. It provides vault-like accounts that can borrow from lending pools, manage concentrated liquidity positions, and compound rewards, all governed by a modular system of adapters and registries.",
+    "relationship_narrative": "The Factory deploys Account contracts that interact with Lending Pools to borrow funds, while Position Managers, Pricing Modules, Compounders, Rebalancers, and Yield Claimers work together as adapters to manage and optimize liquidity positions. The Registry maintains a list of approved modules, and the Liquidator ensures system solvency by closing unhealthy accounts.",
+    "product_family_count": 15
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x393893caeb06b5c16728bb1e354b6c36942b1382",
+      "name": "Tranche",
+      "role": "core_logic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "hashtag Tranches",
+      "tvl_usd": 3693851.900418589,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Tranche",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x393893caeb06b5c16728bb1e354b6c36942b1382",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 21622.80561417398,
+          "is_audited": true
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xefe32813dba3a783059d50e5358b9e3661218dad",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 12387.710019,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x393893caeb06b5c16728bb1e354b6c36942b1382",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xefe32813dba3a783059d50e5358b9e3661218dad",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x393893caeb06b5c16728bb1e354b6c36942b1382",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 869160.2511910404,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9c63a4c499b323a25d389da759c2ac1e385eec92",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 725617.4334363748,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xefe32813dba3a783059d50e5358b9e3661218dad",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 2065063.700158,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2186",
+        "audit-2187",
+        "audit-2188",
+        "audit-2189",
+        "audit-2190"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x3ec4a293fb906dd2cd440c20decb250def141df1",
+      "name": "LendingPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Lending Pools",
+      "tvl_usd": 2131559.2576806652,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LendingPool",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x3ec4a293fb906dd2cd440c20decb250def141df1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 11451.031979,
+          "is_audited": true
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x803ea69c7e87d1d6c86adeb40cb636cc0e6b98e2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 21654.767042552034,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x3ec4a293fb906dd2cd440c20decb250def141df1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x803ea69c7e87d1d6c86adeb40cb636cc0e6b98e2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3ec4a293fb906dd2cd440c20decb250def141df1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1538169.28509,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x803ea69c7e87d1d6c86adeb40cb636cc0e6b98e2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 440244.08339764806,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa37e9b4369dc20940009030bfbc2088f09645e3b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 120040.09017146536,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2186",
+        "audit-2187",
+        "audit-2188",
+        "audit-2189",
+        "audit-2190",
+        "audit-2195"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7cc8013e784418dc9771403dd057f55ceb34ba3a",
+      "name": "TrancheWrapper",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Wrapped Tranches",
+      "tvl_usd": 344977.1998336435,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TrancheWrapper",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xbc10718571fcb3c3f67800e7c0887e450d2ff398",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xd82bfa27d49e5a394ba371b293dae65e9b7a8c60",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xbc10718571fcb3c3f67800e7c0887e450d2ff398",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xd82bfa27d49e5a394ba371b293dae65e9b7a8c60",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7cc8013e784418dc9771403dd057f55ceb34ba3a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 884.1051212711873,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbc10718571fcb3c3f67800e7c0887e450d2ff398",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 336902.559401,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd82bfa27d49e5a394ba371b293dae65e9b7a8c60",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 7190.535311372356,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2192"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xdea1531d8a1505785eb517c7a28526443df223f3",
+      "name": "AAAStaker",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "aerodrome",
+      "product_line": "hashtag Common Tokens",
+      "tvl_usd": 2737.205609,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AAAStaker",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdea1531d8a1505785eb517c7a28526443df223f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 2737.205609,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2194"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xbea2b6d45acaf62385877d835970a0788719cae1",
+      "name": "AccountPlaceholder",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Account Implementations",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AccountPlaceholder",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xbea2b6d45acaf62385877d835970a0788719cae1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xd8af1f1dee6ea38f9c08b5cfa31e01ad2bfbef28",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xbea2b6d45acaf62385877d835970a0788719cae1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xd8af1f1dee6ea38f9c08b5cfa31e01ad2bfbef28",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0x2529ae4a3c9d3285dd06cadfc8516d3fabd6240b",
+      "name": "AccountsGuard",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AccountsGuard",
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x2529ae4a3c9d3285dd06cadfc8516d3fabd6240b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2195"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xd8af1f1dee6ea38f9c08b5cfa31e01ad2bfbef28",
+      "name": "AccountSpot",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Account Implementations",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AccountSpot",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd8af1f1dee6ea38f9c08b5cfa31e01ad2bfbef28",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2193"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xbea2b6d45acaf62385877d835970a0788719cae1",
+      "name": "AccountV1",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Account Implementations",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AccountV1",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbea2b6d45acaf62385877d835970a0788719cae1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2187",
+        "audit-2188",
+        "audit-2189",
+        "audit-2190"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x78db6a136edd0f70bed7a6eb5ca2fdf6ee16e8d6",
+      "name": "AccountV3",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Account Implementations",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AccountV3",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x78db6a136edd0f70bed7a6eb5ca2fdf6ee16e8d6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x78db6a136edd0f70bed7a6eb5ca2fdf6ee16e8d6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x78db6a136edd0f70bed7a6eb5ca2fdf6ee16e8d6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2195"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xe976bfb44f9322164ca6fda6c5b84fbb6163d442",
+      "name": "AccountV4",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Account Implementations",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AccountV4",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xe976bfb44f9322164ca6fda6c5b84fbb6163d442",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xe976bfb44f9322164ca6fda6c5b84fbb6163d442",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe976bfb44f9322164ca6fda6c5b84fbb6163d442",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2195"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x940181a94a35a4569e4529a3cdfb74e38fd98631",
+      "name": "Aero",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "aerodrome",
+      "product_line": "hashtag Common Tokens",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Aero",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x940181a94a35a4569e4529a3cdfb74e38fd98631",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xfe0fa1fd8f8e889062f03e2f126fc7b9de6091a5",
+      "name": "AerodromePoolAM",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "aerodrome",
+      "product_line": "hashtag Pricing Modules",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AerodromePoolAM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xfe0fa1fd8f8e889062f03e2f126fc7b9de6091a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xfe0fa1fd8f8e889062f03e2f126fc7b9de6091a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xfe0fa1fd8f8e889062f03e2f126fc7b9de6091a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xaaa843fb2916c0b57454270418e121c626402aaa",
+      "name": "Arcadia",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Common Tokens",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Arcadia",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xaaa843fb2916c0b57454270418e121c626402aaa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x6a5485e3ce6913890ae5e8bdc08a868d432eeb31",
+      "name": "ChainlinkOM",
+      "role": "operational_periphery",
+      "origin_kind": "upstream",
+      "origin_provider": "Chainlink",
+      "product_line": "hashtag Oracles",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ChainlinkOM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x6a5485e3ce6913890ae5e8bdc08a868d432eeb31",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x6a5485e3ce6913890ae5e8bdc08a868d432eeb31",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6a5485e3ce6913890ae5e8bdc08a868d432eeb31",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2196"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x35e59448c7145482e56212510cc689612ab4f61f",
+      "name": "CompounderSlipstream",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "Compound",
+      "product_line": "hashtag Compounders",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CompounderSlipstream",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x467837f44a71e3eab90aecfc995c84dc6b3cfcf7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x467837f44a71e3eab90aecfc995c84dc6b3cfcf7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x35e59448c7145482e56212510cc689612ab4f61f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x467837f44a71e3eab90aecfc995c84dc6b3cfcf7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd42a3ac56456bd5422835b36c35cacb6448ddcd9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2196"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x02e1fa043214e51edf1f0478c6d0d3d5658a2dc3",
+      "name": "CompounderUniswapV3",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "Compound",
+      "product_line": "hashtag Compounders",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CompounderUniswapV3",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x02e1fa043214e51edf1f0478c6d0d3d5658a2dc3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x02e1fa043214e51edf1f0478c6d0d3d5658a2dc3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x02e1fa043214e51edf1f0478c6d0d3d5658a2dc3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2196"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xaa95c9c402b195d8690ecaea2341a76e3266b189",
+      "name": "CompounderUniswapV4",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "Compound",
+      "product_line": "hashtag Compounders",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CompounderUniswapV4",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xaa95c9c402b195d8690ecaea2341a76e3266b189",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xaa95c9c402b195d8690ecaea2341a76e3266b189",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xaa95c9c402b195d8690ecaea2341a76e3266b189",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2196"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xc928013a219ec9f18de7b2dee6a50ba626811854",
+      "name": "CowSwapper",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "cowswap",
+      "product_line": "hashtag CoW Swapper",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CowSwapper",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc928013a219ec9f18de7b2dee6a50ba626811854",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2196"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xb808971ea73341b0d7286b3d67f08de321f80465",
+      "name": "DefaultUniswapV4AM",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "hashtag Pricing Modules",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DefaultUniswapV4AM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xb808971ea73341b0d7286b3d67f08de321f80465",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xb808971ea73341b0d7286b3d67f08de321f80465",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb808971ea73341b0d7286b3d67f08de321f80465",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2193"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xfbeceafc96ed6fc800753d3ee6782b6f9a60eed7",
+      "name": "ERC20PrimaryAM",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Pricing Modules",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ERC20PrimaryAM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xfbeceafc96ed6fc800753d3ee6782b6f9a60eed7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xfbeceafc96ed6fc800753d3ee6782b6f9a60eed7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xfbeceafc96ed6fc800753d3ee6782b6f9a60eed7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xda14fdd72345c4d2511357214c5b89a919768e59",
+      "name": "Factory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Factory",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xda14fdd72345c4d2511357214c5b89a919768e59",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xda14fdd72345c4d2511357214c5b89a919768e59",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xda14fdd72345c4d2511357214c5b89a919768e59",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2185",
+        "audit-2186",
+        "audit-2187",
+        "audit-2189",
+        "audit-2190",
+        "audit-2195"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+      "name": "FiatTokenV2_1",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "circle",
+      "product_line": "hashtag Common Tokens",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7458bfdc30034eb860b265e6068121d18fa5aa72",
+      "impl_name": "FiatTokenV2_1",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0x078d782b760474a361dda0af3839290b0ef57ad6",
+      "name": "FiatTokenV2_2",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "circle",
+      "product_line": "hashtag Common Tokens",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xbe959c573dc03a18a57e31c9ace210ccf66f0f6e",
+      "impl_name": "FiatTokenV2_2",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x078d782b760474a361dda0af3839290b0ef57ad6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af",
+      "name": "Liquidator",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Liquidator",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2185",
+        "audit-2186",
+        "audit-2187",
+        "audit-2188",
+        "audit-2189",
+        "audit-2190"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af",
+      "name": "LiquidatorL1",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LiquidatorL1",
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2195"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af",
+      "name": "LiquidatorL2",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LiquidatorL2",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x969f0251360b9cf11c68f6ce9587924c1b8b42c6",
+      "name": "MerklOperator",
+      "role": "operational_periphery",
+      "origin_kind": "upstream",
+      "origin_provider": "merkl",
+      "product_line": "hashtag Merkl Operators",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MerklOperator",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x969f0251360b9cf11c68f6ce9587924c1b8b42c6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x969f0251360b9cf11c68f6ce9587924c1b8b42c6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x969f0251360b9cf11c68f6ce9587924c1b8b42c6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2195"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x03a520b32c04bf3beef7beb72e919cf822ed34f1",
+      "name": "NonfungiblePositionManager",
+      "role": "governance",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "hashtag Position Managers",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x03a520b32c04bf3beef7beb72e919cf822ed34f1",
+      "impl_name": "NonfungiblePositionManager",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x416b433906b1b72fa758e166e239c43d68dc6f29",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x943e6e07a7e8e791dafc44083e54041d743c46e9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x03a520b32c04bf3beef7beb72e919cf822ed34f1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x827922686190790b37229fd06084350e74485b72",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa990c6a764b73bf43cee5bb40339c3322fb9d55f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb7996d1ecd07fb227e8dca8cd5214bdfb04534e5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe1f8cd9ac4e4a65f54f38a5cdafca44f6dd68b53",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x3c3ea4b57a46241e54610e5f022e5c45859a1017",
+      "name": "PositionManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Position Managers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x4529a01c7a0410167c5740c487a8de60232617bf",
+      "impl_name": "PositionManager",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x3c3ea4b57a46241e54610e5f022e5c45859a1017",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x4529a01c7a0410167c5740c487a8de60232617bf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7c5f5a4bbd8fd63184577525326123b519429bdc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x37c6258aee125d520b6f03fc2cb490955050d557",
+      "name": "RebalancerSlipstream",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Rebalancers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RebalancerSlipstream",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x5802454749cc0c4a6f28d5001b4cd84432e2b79f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x5802454749cc0c4a6f28d5001b4cd84432e2b79f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x37c6258aee125d520b6f03fc2cb490955050d557",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5802454749cc0c4a6f28d5001b4cd84432e2b79f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x953ff365d0b562cec658dc46b394e9282338d9ea",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2196"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xba1d0c99c261f94b9c8b52465890cca27dd993bd",
+      "name": "RebalancerUniswapV3",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Rebalancers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RebalancerUniswapV3",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xba1d0c99c261f94b9c8b52465890cca27dd993bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xba1d0c99c261f94b9c8b52465890cca27dd993bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xba1d0c99c261f94b9c8b52465890cca27dd993bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2196"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x01edaf0067a10d18c88d2876c0a85ee0096a5ac0",
+      "name": "RebalancerUniswapV4",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Rebalancers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RebalancerUniswapV4",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x01edaf0067a10d18c88d2876c0a85ee0096a5ac0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x01edaf0067a10d18c88d2876c0a85ee0096a5ac0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x01edaf0067a10d18c88d2876c0a85ee0096a5ac0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2196"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xd0690557600eb8be8391d1d97346e2aab5300d5f",
+      "name": "Registry",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Registry",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd0690557600eb8be8391d1d97346e2aab5300d5f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2187",
+        "audit-2188",
+        "audit-2189",
+        "audit-2190"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0xd0690557600eb8be8391d1d97346e2aab5300d5f",
+      "name": "RegistryL1",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RegistryL1",
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xd0690557600eb8be8391d1d97346e2aab5300d5f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2195"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xd0690557600eb8be8391d1d97346e2aab5300d5f",
+      "name": "RegistryL2",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RegistryL2",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xd0690557600eb8be8391d1d97346e2aab5300d5f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0x354dbba1348985cc952c467b8ddaf5dd07590667",
+      "name": "RouterTrampoline",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RouterTrampoline",
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x354dbba1348985cc952c467b8ddaf5dd07590667",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0xd254915fc567865730f0516f8933bc0b96ec3527",
+      "name": "SignatureChecker",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SignatureChecker",
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xd254915fc567865730f0516f8933bc0b96ec3527",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x3ade1f1fdc666b1bfad376345ea878d1c11eb73b",
+      "name": "SlipstreamAM",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "aerodrome",
+      "product_line": "hashtag Pricing Modules",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SlipstreamAM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xd3a7055bbcda4f8f49e5c5de7e83b09a33633f44",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xd3a7055bbcda4f8f49e5c5de7e83b09a33633f44",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3ade1f1fdc666b1bfad376345ea878d1c11eb73b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcaf4167de878cfb23d9912b1ff5869f2b3527189",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd3a7055bbcda4f8f49e5c5de7e83b09a33633f44",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x9f42361b7602df1a8ae28bf63e6cb1883cd44c27",
+      "name": "StakedAerodromeAM",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Position Managers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakedAerodromeAM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x9f42361b7602df1a8ae28bf63e6cb1883cd44c27",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x9f42361b7602df1a8ae28bf63e6cb1883cd44c27",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9f42361b7602df1a8ae28bf63e6cb1883cd44c27",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2195"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x1dc7a0f5336f52724b650e39174cfcbbedd67bf1",
+      "name": "StakedSlipstreamAM",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Position Managers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakedSlipstreamAM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x1dc7a0f5336f52724b650e39174cfcbbedd67bf1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x1dc7a0f5336f52724b650e39174cfcbbedd67bf1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1dc7a0f5336f52724b650e39174cfcbbedd67bf1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbed6c3e35b9b1e044b3bc71465769edfdc0fdd4c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe0f20be5886f11cbcd2cb5ba9987bcbbf1d8ca7b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2195"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xae909e19fd13c01c28d5ee439d403920cf7f9eea",
+      "name": "StakedStargateAM",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "stargate-finance",
+      "product_line": "hashtag Pricing Modules",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakedStargateAM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xae909e19fd13c01c28d5ee439d403920cf7f9eea",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xae909e19fd13c01c28d5ee439d403920cf7f9eea",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2190",
+        "audit-2195"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x20f7903290bf98716b62dc1c9da634291b8cfed4",
+      "name": "StargateAM",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "Stargate",
+      "product_line": "hashtag Pricing Modules",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StargateAM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x20f7903290bf98716b62dc1c9da634291b8cfed4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x20f7903290bf98716b62dc1c9da634291b8cfed4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x21bd524cc54ca78a7c48254d4676184f781667dc",
+      "name": "UniswapV3AM",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "hashtag Pricing Modules",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3AM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x21bd524cc54ca78a7c48254d4676184f781667dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x21bd524cc54ca78a7c48254d4676184f781667dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x21bd524cc54ca78a7c48254d4676184f781667dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x79dd8b8d4abb5deea986db1bf0a02e4ca42ae416",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2190"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x8b0fd5352cae4e7c86632ca791229d132fef5d3c",
+      "name": "UniswapV4HooksRegistry",
+      "role": "registry",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "hashtag Pricing Modules",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV4HooksRegistry",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x8b0fd5352cae4e7c86632ca791229d132fef5d3c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x8b0fd5352cae4e7c86632ca791229d132fef5d3c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8b0fd5352cae4e7c86632ca791229d132fef5d3c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2193"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "hashtag Common Tokens",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x7f9adfbd38b669f03d1d11000bc76b9aaea28a81",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0x991d5546c4b442b4c5fdc4c8b8b8d131deb24702",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Position Managers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x991d5546c4b442b4c5fdc4c8b8b8d131deb24702",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0xd000dfe68362b9a9395af0df9788b1de05bb25d0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xd000dfe68362b9a9395af0df9788b1de05bb25d0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x9560e827af36c94d2ac33a39bce1fe78631088db",
+      "name": "Velo",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "velodrome",
+      "product_line": "hashtag Common Tokens",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Velo",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x9560e827af36c94d2ac33a39bce1fe78631088db",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "WETH",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": null,
+      "product_line": "hashtag Common Tokens",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WETH",
+      "deployments": [
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x4200000000000000000000000000000000000006",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "WETH9",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": null,
+      "product_line": "hashtag Common Tokens",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WETH9",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x4200000000000000000000000000000000000006",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4200000000000000000000000000000000000006",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x17b5826382e3a5257b829cf0546a08bd77409270",
+      "name": "WrappedAerodromeAM",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Position Managers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WrappedAerodromeAM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x17b5826382e3a5257b829cf0546a08bd77409270",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x17b5826382e3a5257b829cf0546a08bd77409270",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x17b5826382e3a5257b829cf0546a08bd77409270",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2191"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x147a2ccbaf4521ad209a2875ae0b3c496f4b25a4",
+      "name": "WrappedStakedSlipstream",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Position Managers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WrappedStakedSlipstream",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xd74339e0f10fce96894916b93e5cc7de89c98272",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xd74339e0f10fce96894916b93e5cc7de89c98272",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x147a2ccbaf4521ad209a2875ae0b3c496f4b25a4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9189bc25f8fac157b4d87b0b3c14f56ba1477d53",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd74339e0f10fce96894916b93e5cc7de89c98272",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x5a8278d37b7a787574b6aa7e18d8c02d994f18ba",
+      "name": "YieldClaimerSlipstream",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Yield Claimers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "YieldClaimerSlipstream",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x5a8278d37b7a787574b6aa7e18d8c02d994f18ba",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x5a8278d37b7a787574b6aa7e18d8c02d994f18ba",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5a8278d37b7a787574b6aa7e18d8c02d994f18ba",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8c1fbf38118fd5a704b6e7babcb7af1a9a291980",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc8bf4b2c740ff665864e9494832520f18822871c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2196"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x75ed28ea8601ce9f5fbcab1c2428f04a57afaa16",
+      "name": "YieldClaimerUniswapV3",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Yield Claimers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "YieldClaimerUniswapV3",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x75ed28ea8601ce9f5fbcab1c2428f04a57afaa16",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x75ed28ea8601ce9f5fbcab1c2428f04a57afaa16",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x75ed28ea8601ce9f5fbcab1c2428f04a57afaa16",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2196"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xd8aa21ab7f9b8601cb7d7a776d3afa1602d5d8d4",
+      "name": "YieldClaimerUniswapV4",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "hashtag Yield Claimers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "YieldClaimerUniswapV4",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xd8aa21ab7f9b8601cb7d7a776d3afa1602d5d8d4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xd8aa21ab7f9b8601cb7d7a776d3afa1602d5d8d4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd8aa21ab7f9b8601cb7d7a776d3afa1602d5d8d4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2196"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2185,
+      "audit_key": "audit-2185",
+      "report_name": "DL audit link",
+      "report_url": "https://sourcehat.com/audits/ArcadiaFinance",
+      "auditor": "SourceHat",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Factory",
+        "FloorERC1155SubRegistry",
+        "FloorERC721SubRegistry",
+        "InterestRateModule",
+        "Liquidator",
+        "MainRegistry",
+        "OracleHub",
+        "Proxy",
+        "StandardERC20SubRegistry",
+        "Vault"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2186,
+      "audit_key": "audit-2186",
+      "report_name": "NM0072-FINAL_ARCADIA.pdf",
+      "report_url": "https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0072-FINAL_ARCADIA.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AbstractPricingModule",
+        "ActionBase",
+        "ActionData",
+        "BaseGuardian",
+        "DataTypes",
+        "DebtToken",
+        "Factory",
+        "FactoryGuardian",
+        "Guardian",
+        "IActionBase",
+        "IChainLinkData",
+        "IERC1155",
+        "IERC20",
+        "IERC4626",
+        "IERC721",
+        "IFactory",
+        "ILendingPool",
+        "IMainRegistry",
+        "IOraclesHub",
+        "IPricingModule",
+        "IStandardERC20PricingModule",
+        "ITrustedCreditor",
+        "IVault",
+        "InterestRateModule",
+        "LendingPool",
+        "Liquidator",
+        "MainRegistry",
+        "MainRegistryGuardian",
+        "MultiCall",
+        "OracleHub",
+        "Proxy",
+        "RiskModule",
+        "StandardERC20PricingModule",
+        "Tranche",
+        "TrustedCreditor",
+        "Vault"
+      ],
+      "matched_contracts": 18,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2187,
+      "audit_key": "audit-2187",
+      "report_name": "2023-12 Trust Security.pdf",
+      "report_url": "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2023-12%20Trust%20Security.pdf",
+      "auditor": "Trust Security",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AbstractAssetModule",
+        "AbstractDerivedAssetModule",
+        "AbstractOracleModule",
+        "AbstractPrimaryAssetModule",
+        "AccountStorageV1",
+        "AccountV1",
+        "AssetValuationLib",
+        "BaseGuardian",
+        "BitPackingLib",
+        "ChainlinkOracleModule",
+        "Creditor",
+        "DebtToken",
+        "Factory",
+        "FactoryGuardian",
+        "LendingPool",
+        "LendingPoolGuardian",
+        "Liquidator",
+        "Proxy",
+        "Registry",
+        "RegistryGuardian",
+        "StandardERC20AssetModule",
+        "Tranche",
+        "UniswapV3AssetModule"
+      ],
+      "matched_contracts": 20,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2188,
+      "audit_key": "audit-2188",
+      "report_name": "2024-01 Pashov Group.pdf",
+      "report_url": "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-01%20Pashov%20Group.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AbstractAssetModule",
+        "AbstractDerivedAssetModule",
+        "AbstractOracleModule",
+        "AbstractPrimaryAssetModule",
+        "AccountStorageV1",
+        "AccountV1",
+        "BaseGuardian",
+        "ChainlinkOracleModule",
+        "Creditor",
+        "DebtToken",
+        "FactoryGuardian",
+        "LendingPool",
+        "LendingPoolGuardian",
+        "Liquidator",
+        "Proxy",
+        "Registry",
+        "RegistryGuardian",
+        "StandardERC20AssetModule",
+        "Tranche",
+        "UniswapV3AssetModule"
+      ],
+      "matched_contracts": 17,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2189,
+      "audit_key": "audit-2189",
+      "report_name": "2024-01 Renascense.pdf",
+      "report_url": "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-01%20Renascense.pdf",
+      "auditor": "Renascense",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AbstractDerivedAssetModule",
+        "AccountStorageV1",
+        "AccountV1",
+        "Creditor",
+        "DebtToken",
+        "ERC4626",
+        "Factory",
+        "IAccount",
+        "ICreditor",
+        "IFactory",
+        "ILendingPool",
+        "ILiquidator",
+        "ITranche",
+        "LendingPool",
+        "LendingPoolGuardian",
+        "Liquidator",
+        "Owned",
+        "Registry",
+        "Tranche",
+        "UniswapV3AssetModule"
+      ],
+      "matched_contracts": 20,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2190,
+      "audit_key": "audit-2190",
+      "report_name": "2024-02 Sherlock.pdf",
+      "report_url": "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-02%20Sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2024-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AccountOwner",
+        "AccountV1",
+        "ActionHandler",
+        "ArcadiaOracle",
+        "AssetValuationLib",
+        "BorrowAndRepay_Scenario_Test",
+        "Constants",
+        "ERC20Mock",
+        "ERC777Mock",
+        "Factory",
+        "Fork_Test",
+        "Fuzz_Lending_Test",
+        "IActionBase",
+        "IERC777Recipient",
+        "IERC777Sender",
+        "ILiquidator",
+        "INonfungiblePositionManager",
+        "INonfungiblePositionManagerExtension",
+        "IPermit2",
+        "ISwapRouter",
+        "IUniswapV3Factory",
+        "IUniswapV3PoolExtension",
+        "LendingPool",
+        "LendingPool_Fuzz_Test",
+        "Liquidator",
+        "LiquidityAmounts",
+        "LiquidityAmountsExtension",
+        "MaliciousCreditor",
+        "MockERC20",
+        "MockOracles",
+        "Proxy",
+        "Rates",
+        "Registry",
+        "StakedStargateAM",
+        "TickMath",
+        "Tranche",
+        "UniswapV3AM",
+        "UniswapV3AM_Fuzz_Test",
+        "UniswapV3Fixture"
+      ],
+      "matched_contracts": 26,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2191,
+      "audit_key": "audit-2191",
+      "report_name": "2024-04 Sherlock.pdf",
+      "report_url": "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-04%20Sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "WrappedAerodromeAM"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2192,
+      "audit_key": "audit-2192",
+      "report_name": "2024-06 Renascense.pdf",
+      "report_url": "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-06%20Renascense.pdf",
+      "auditor": "Renascense",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "StakedSlipstream",
+        "TrancheWrapper",
+        "UniswapV3Compounder"
+      ],
+      "matched_contracts": 7,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2193,
+      "audit_key": "audit-2193",
+      "report_name": "2024-10 Pashov Group.pdf",
+      "report_url": "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-10%20Pashov%20Group.pdf",
+      "auditor": "Pashov Audit Group",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AccountSpot",
+        "BurnLogic",
+        "DefaultUniswapV4AM",
+        "FeeLogic",
+        "MintLogic",
+        "RebalanceLogic",
+        "RebalanceOptimizationMath",
+        "Rebalancer",
+        "SlipstreamLogic",
+        "StakedSlipstreamLogic",
+        "SwapLogic",
+        "UniswapV3Logic",
+        "UniswapV4HooksRegistry"
+      ],
+      "matched_contracts": 7,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2194,
+      "audit_key": "audit-2194",
+      "report_name": "2025-01 Renascense.pdf",
+      "report_url": "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2025-01%20Renascense.pdf",
+      "auditor": "Renascense",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AAAStaker",
+        "AbstractStaker"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2195,
+      "audit_key": "audit-2195",
+      "report_name": "2025-09 Sherlock.pdf",
+      "report_url": "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2025-09%20Sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AccountV3",
+        "AccountV4",
+        "AccountsGuard",
+        "Compounder",
+        "CreateProxyLib",
+        "Factory",
+        "LendingPool",
+        "LiquidatorL1",
+        "MerklOperator",
+        "Rebalancer",
+        "RegistryL1",
+        "StakedAerodromeAM",
+        "StakedSlipstreamAM",
+        "StakedStargateAM",
+        "YieldClaimer"
+      ],
+      "matched_contracts": 32,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2196,
+      "audit_key": "audit-2196",
+      "report_name": "2026-01 Sherlock.pdf",
+      "report_url": "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2026-01%20Sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2026-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AbstractAM",
+        "AbstractBase",
+        "AbstractOM",
+        "AbstractPrimaryAM",
+        "ArcadiaLogic",
+        "CLMath",
+        "ChainlinkOM",
+        "Compounder",
+        "CompounderSlipstream",
+        "CompounderUniswapV3",
+        "CompounderUniswapV4",
+        "CowSwapper",
+        "DefaultOrderHook",
+        "Guardian",
+        "ICLPositionManager",
+        "IPositionManagerV3",
+        "LiquidityAmounts",
+        "NativeTokenAM",
+        "OrderHook",
+        "PositionState",
+        "RebalanceLogic",
+        "RebalanceOptimizationMath",
+        "Rebalancer",
+        "RebalancerSlipstream",
+        "RebalancerUniswapV3",
+        "RebalancerUniswapV4",
+        "RedStonePushOM",
+        "Slipstream",
+        "SlipstreamLogic",
+        "UniswapV3",
+        "UniswapV4",
+        "YieldClaimer",
+        "YieldClaimerSlipstream",
+        "YieldClaimerUniswapV3",
+        "YieldClaimerUniswapV4"
+      ],
+      "matched_contracts": 37,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2197,
+      "audit_key": "audit-2197",
+      "report_name": "{% embed url=\"<>\" %}",
+      "report_url": "https://drive.google.com/file/d/1iBcaE9Qp22pVymmiDckFtfBQ4OLmCLFK/preview",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Sherlock",
+      "tier": 1,
+      "contracts_covered": 28,
+      "coverage_pct": 53.8,
+      "latest_audit": "2026-01"
+    },
+    {
+      "auditor": "Pashov Audit Group",
+      "tier": 2,
+      "contracts_covered": 8,
+      "coverage_pct": 15.4,
+      "latest_audit": "2024-10"
+    },
+    {
+      "auditor": "Renascense",
+      "tier": 2,
+      "contracts_covered": 8,
+      "coverage_pct": 15.4,
+      "latest_audit": "2025-01"
+    },
+    {
+      "auditor": "Trust Security",
+      "tier": 2,
+      "contracts_covered": 6,
+      "coverage_pct": 11.5,
+      "latest_audit": "2023-12"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 7.7,
+      "latest_audit": "2023-03"
+    },
+    {
+      "auditor": "SourceHat",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 3.8,
+      "latest_audit": "2022-06"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xbea2b6d45acaf62385877d835970a0788719cae1",
+      "name": "AccountPlaceholder",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xaaa843fb2916c0b57454270418e121c626402aaa",
+      "name": "Arcadia",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xfbeceafc96ed6fc800753d3ee6782b6f9a60eed7",
+      "name": "ERC20PrimaryAM",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xa4b0b9fd1d91fa2de44f6abfd59cc14ba1e1a7af",
+      "name": "LiquidatorL2",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x3c3ea4b57a46241e54610e5f022e5c45859a1017",
+      "name": "PositionManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xd0690557600eb8be8391d1d97346e2aab5300d5f",
+      "name": "RegistryL2",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 130,
+      "chain_name": "unichain",
+      "address": "0x354dbba1348985cc952c467b8ddaf5dd07590667",
+      "name": "RouterTrampoline",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x147a2ccbaf4521ad209a2875ae0b3c496f4b25a4",
+      "name": "WrappedStakedSlipstream",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 30,
+    "upstream": 21,
+    "standard_library": 1,
+    "needs_review": 3
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 192
+    },
+    "extraction_confidence_counts": {
+      "high": 11,
+      "medium": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2197,
+        "report_name": "{% embed url=\"<>\" %}"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

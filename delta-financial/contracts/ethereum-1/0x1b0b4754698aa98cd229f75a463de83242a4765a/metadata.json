@@ -1,0 +1,18 @@
+{
+  "address": "0x1b0b4754698aa98cd229f75a463de83242a4765a",
+  "chain_id": 1,
+  "contract_name": "DELTA_Rebasing_Liquidity_Token",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T03:46:25.647Z"
+}

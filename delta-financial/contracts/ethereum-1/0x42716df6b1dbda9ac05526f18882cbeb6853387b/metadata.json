@@ -1,0 +1,18 @@
+{
+  "address": "0x42716df6b1dbda9ac05526f18882cbeb6853387b",
+  "chain_id": 1,
+  "contract_name": "OVLTransferHandler",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T03:46:26.928Z"
+}

@@ -1,0 +1,358 @@
+{
+  "schema_version": "2.0",
+  "project_key": "boros",
+  "generated_at": "2026-05-23T03:44:52.408Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "boros",
+    "tier": 0,
+    "peak_tvl": 12345211,
+    "peak_date": "2026-04-18T00:00:00.000Z",
+    "tvl_30d_ago": 11992305,
+    "tvl_90d_ago": 7667023,
+    "tvl_current": 10256997,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 5877117,
+    "change_30d_pct": -14.470179002285215,
+    "change_90d_pct": 33.78069949705381,
+    "days_since_peak": 35,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 16.915174637355328
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 2,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 100,
+    "total_audits": 5,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 10383882.77283,
+    "tvl_usd": 10383882.77283,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://boros.pendle.finance/markets",
+    "chains": [
+      "arbitrum"
+    ],
+    "tier1_coverage_pct": 100,
+    "tier1_auditors": [
+      "ChainSecurity"
+    ],
+    "latest_audit_date": "2025-08",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 5,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Boros is a derivatives protocol on Arbitrum One that enables users to trade perpetual contracts and other derivative products. It provides a market hub for order management and a router for trade execution and liquidity routing.",
+    "relationship_narrative": "The MarketHubEntry serves as the main entry point for user interactions, while the Router handles trade execution and liquidity aggregation. Both contracts are upgradeable proxies, indicating a shared upgrade management pattern.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1080808080f145b14228443212e62447c112adad",
+      "name": "MarketHubEntry",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Boros",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x63b53e49fca8cb315b0a4a2f598ca6943318635c",
+      "impl_name": "MarketHubEntry",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1080808080f145b14228443212e62447c112adad",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2064"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8080808080dab95efed788a9214e400ba552def6",
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Boros",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x2348b91caeb1cb07dd0e8f0cc4216e921fa527e0",
+      "impl_name": "Router",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8080808080dab95efed788a9214e400ba552def6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2065"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2064,
+      "audit_key": "audit-2064",
+      "report_name": "ChainSecurity-Markets.pdf",
+      "report_url": "https://github.com/pendle-finance/boros-core-public/blob/main/audits/ChainSecurity/ChainSecurity-Markets.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Account",
+        "ArrayLib",
+        "CoreOrderUtils",
+        "CoreStateUtils",
+        "Errors",
+        "FIndexOracle",
+        "FixedWindowObservationLib",
+        "LibOrderIdSort",
+        "LiquidationViewUtils",
+        "MarginManager",
+        "MarginViewUtils",
+        "MarketEntry",
+        "MarketFactory",
+        "MarketHub",
+        "MarketHubEntry",
+        "MarketHubRiskManagement",
+        "MarketHubSetAndView",
+        "MarketImpliedRate",
+        "MarketInfoAndState",
+        "MarketOffView",
+        "MarketOrderAndOtc",
+        "MarketRiskManagement",
+        "MarketSetAndView",
+        "MarketTypes",
+        "Order",
+        "OrderBookUtils",
+        "PMath",
+        "PaymentLib",
+        "PendingOIUtils",
+        "ProcessUtils",
+        "RateUtils",
+        "RecentTradeRateLib",
+        "SampleFundingRateUpkeep",
+        "Storage",
+        "StoredOrderIdArr",
+        "SweepProcessUtils",
+        "Tick",
+        "TickBitmap",
+        "TickMath",
+        "Trade",
+        "TransientOrderIdMapping",
+        "createCompute"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2065,
+      "audit_key": "audit-2065",
+      "report_name": "ChainSecurity-Router and AMM.pdf",
+      "report_url": "https://github.com/pendle-finance/boros-core-public/blob/main/audits/ChainSecurity/ChainSecurity-Router%20and%20AMM.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AMMModule",
+        "Account",
+        "AuthBase",
+        "AuthModule",
+        "AuthStorage",
+        "BOROS20",
+        "BaseAMM",
+        "BookAmmSwapBase",
+        "EIP712",
+        "Errors",
+        "LiquidityMath",
+        "MarketTypes",
+        "MiscModule",
+        "NegativeAMM",
+        "NegativeAMMMath",
+        "PaymentLib",
+        "PendleAccessController",
+        "PendleRoles",
+        "PositiveAMM",
+        "PositiveAMMMath",
+        "Router",
+        "RouterAccountBase",
+        "SigningBase",
+        "SwapMath",
+        "TickSweepStateLib",
+        "Trade",
+        "TradeModule",
+        "TradeStorage"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2066,
+      "audit_key": "audit-2066",
+      "report_name": "Pendle-Spearbit-Security-Review-August-2025.pdf",
+      "report_url": "https://github.com/pendle-finance/boros-core-public/blob/main/audits/Spearbit/Pendle-Spearbit-Security-Review-August-2025.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2067,
+      "audit_key": "audit-2067",
+      "report_name": "Pendle___Boros___Market_&_MarketHub_Audit_Report_by_WatchPug_rev2.pdf",
+      "report_url": "https://github.com/pendle-finance/boros-core-public/blob/main/audits/WatchPug/Pendle___Boros___Market_%26_MarketHub_Audit_Report_by_WatchPug_rev2.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2068,
+      "audit_key": "audit-2068",
+      "report_name": "Pendle___Boros___Router_&_AMM_Audit_Report_by_WatchPug_rev2.pdf",
+      "report_url": "https://github.com/pendle-finance/boros-core-public/blob/main/audits/WatchPug/Pendle___Boros___Router_%26_AMM_Audit_Report_by_WatchPug_rev2.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "ChainSecurity",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 100,
+      "latest_audit": "2025-08"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 2
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2066,
+        "report_name": "Pendle-Spearbit-Security-Review-August-2025.pdf"
+      },
+      {
+        "audit_id": 2067,
+        "report_name": "Pendle___Boros___Market_&_MarketHub_Audit_Report_by_WatchPug_rev2.pdf"
+      },
+      {
+        "audit_id": 2068,
+        "report_name": "Pendle___Boros___Router_&_AMM_Audit_Report_by_WatchPug_rev2.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

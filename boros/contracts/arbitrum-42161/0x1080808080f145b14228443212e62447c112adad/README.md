@@ -1,0 +1,16 @@
+# MarketHubEntry
+
+| Field | Value |
+|---|---|
+| Chain | arbitrum (42161) |
+| Address | `0x1080808080f145b14228443212e62447c112adad` |
+| Role | unknown |
+| Origin | native |
+| Audited | Yes |
+| Audits | [ChainSecurity-Markets.pdf](https://github.com/pendle-finance/boros-core-public/blob/main/audits/ChainSecurity/ChainSecurity-Markets.pdf) |
+| Deployments | 1 (arbitrum [`0x1080808080f145b14228443212e62447c112adad`](../0x1080808080f145b14228443212e62447c112adad/)) |
+| Proxy | Yes → `0x63b53e...18635c` |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

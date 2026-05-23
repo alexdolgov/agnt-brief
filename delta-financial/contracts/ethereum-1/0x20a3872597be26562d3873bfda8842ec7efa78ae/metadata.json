@@ -1,0 +1,18 @@
+{
+  "address": "0x20a3872597be26562d3873bfda8842ec7efa78ae",
+  "chain_id": 1,
+  "contract_name": "COREGlobals",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T03:46:26.133Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xa2a09f15c2ec6af1b8f9413c148334b231410bd8",
+  "chain_id": 59144,
+  "contract_name": "SyncSwapFeeRecipient",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000008cdf4ec0d5ee197b00467a720660c44480b3ec60",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:28:49.926Z"
+}

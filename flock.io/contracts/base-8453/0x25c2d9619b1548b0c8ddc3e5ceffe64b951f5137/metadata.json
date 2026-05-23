@@ -1,0 +1,18 @@
+{
+  "address": "0x25c2d9619b1548b0c8ddc3e5ceffe64b951f5137",
+  "chain_id": 8453,
+  "contract_name": "FlockPoolManagerV2Upgradeable",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:24:16.363Z"
+}

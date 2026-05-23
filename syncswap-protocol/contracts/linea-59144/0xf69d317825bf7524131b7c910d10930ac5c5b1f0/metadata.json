@@ -1,0 +1,17 @@
+{
+  "address": "0xf69d317825bf7524131b7c910d10930ac5c5b1f0",
+  "chain_id": 59144,
+  "contract_name": "SyncSwapCryptoBurn_",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:28:51.775Z"
+}

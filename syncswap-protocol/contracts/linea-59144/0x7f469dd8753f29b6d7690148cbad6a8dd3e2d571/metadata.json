@@ -1,0 +1,17 @@
+{
+  "address": "0x7f469dd8753f29b6d7690148cbad6a8dd3e2d571",
+  "chain_id": 59144,
+  "contract_name": "SwapLib",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:28:47.701Z"
+}

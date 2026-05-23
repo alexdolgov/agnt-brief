@@ -1,0 +1,17 @@
+{
+  "address": "0x13afc84eed9ab532eab73d9ff5d3df4bf610aad0",
+  "chain_id": 59144,
+  "contract_name": "SyncSwapPoolMaster",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:28:46.688Z"
+}

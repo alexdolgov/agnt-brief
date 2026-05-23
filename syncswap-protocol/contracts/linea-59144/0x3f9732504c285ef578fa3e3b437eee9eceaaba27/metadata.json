@@ -1,0 +1,17 @@
+{
+  "address": "0x3f9732504c285ef578fa3e3b437eee9eceaaba27",
+  "chain_id": 59144,
+  "contract_name": "SyncSwapRangePool",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:28:46.948Z"
+}

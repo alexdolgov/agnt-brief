@@ -1,0 +1,17 @@
+{
+  "address": "0x60f9b3a705f1fbdcdee1ba2c2331b8aa8f98cf3f",
+  "chain_id": 59144,
+  "contract_name": "SyncSwapRouterV2",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 2000000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:28:48.889Z"
+}

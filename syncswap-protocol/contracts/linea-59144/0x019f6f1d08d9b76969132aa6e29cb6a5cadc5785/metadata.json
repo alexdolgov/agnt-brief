@@ -1,0 +1,17 @@
+{
+  "address": "0x019f6f1d08d9b76969132aa6e29cb6a5cadc5785",
+  "chain_id": 59144,
+  "contract_name": "FeeManagerV3",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "000000000000000000000000a2a09f15c2ec6af1b8f9413c148334b231410bd8",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:28:44.363Z"
+}

@@ -87,6 +87,7 @@
 | [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-05-23 |
 | [goldfinger](./goldfinger/) | $23.9M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 0 | 7 | 2026-05-22 |
+| [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 0 | 124 | 2026-05-23 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [hakka-finance](./hakka-finance/) | $1.7M | 10.7% | $1.7M | active | 7 | 103 | 2026-05-23 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -174,6 +175,7 @@
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 20.6% | $148.6M | declining | 15 | 195 | 2026-05-23 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |
+| [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
 | [saber](./saber/) | $1.9M | 0.0% | $1.9M | dead | 0 | 904 | 2026-05-23 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
@@ -185,6 +187,7 @@
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-05-23 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 0 | 2 | 2026-05-22 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-05-23 |
+| [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
 | [solayer](./solayer/) | $1.9M | 0.0% | $1.9M | declining | 5 | 935 | 2026-05-22 |
 | [solera](./solera/) | $8.1M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [sophon-farm](./sophon-farm/) | $7.0M | 100.0% | ? | dead | 9 | 1 | 2026-05-23 |
@@ -198,6 +201,7 @@
 | [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 0 | 43 | 2026-05-22 |
 | [stfil](./stfil/) | $5.6M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
+| [swapscanner](./swapscanner/) | $4.7M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 134 | 2026-05-23 |
 | [symbiosis](./symbiosis/) | $236.1M | 5.8% | $236.1M | active | 15 | 137 | 2026-05-23 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 22.6% | ? | active | 9 | 158 | 2026-05-23 |

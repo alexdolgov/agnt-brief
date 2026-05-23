@@ -1,0 +1,496 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "bits",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "SafeCastOverflowedUintDowncast",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "SafeCastOverflowedUintToInt",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UsdnProtocolDeadlineExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UsdnProtocolEtherRefundFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UsdnProtocolInsufficientOracleFee",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UsdnProtocolInvalidAddressTo",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UsdnProtocolInvalidAddressValidator",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "liquidationPrice",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "startPrice",
+        "type": "uint128"
+      }
+    ],
+    "name": "UsdnProtocolInvalidLiquidationPrice",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UsdnProtocolInvalidPendingAction",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UsdnProtocolLongPositionTooSmall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UsdnProtocolPaymentCallbackFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UsdnProtocolSecurityDepositTooLow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UsdnProtocolUnexpectedBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UsdnProtocolZeroAmount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "validator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tickVersion",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IUsdnProtocolTypes.PositionId",
+        "name": "posId",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "originalAmount",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "amountToClose",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "totalExpoRemaining",
+        "type": "uint128"
+      }
+    ],
+    "name": "InitiatedClosePosition",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "validator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint40",
+        "name": "timestamp",
+        "type": "uint40"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "totalExpo",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "amount",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "startPrice",
+        "type": "uint128"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tickVersion",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IUsdnProtocolTypes.PositionId",
+        "name": "posId",
+        "type": "tuple"
+      }
+    ],
+    "name": "InitiatedOpenPosition",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tickVersion",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IUsdnProtocolTypes.PositionId",
+        "name": "posId",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "liquidationPrice",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "effectiveTickPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidatedPosition",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tickVersion",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IUsdnProtocolTypes.PositionId",
+        "name": "oldPosId",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tickVersion",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IUsdnProtocolTypes.PositionId",
+        "name": "newPosId",
+        "type": "tuple"
+      }
+    ],
+    "name": "LiquidationPriceUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "feeCollector",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "ProtocolFeeDistributed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "validator",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tickVersion",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IUsdnProtocolTypes.PositionId",
+        "name": "posId",
+        "type": "tuple"
+      }
+    ],
+    "name": "StalePendingActionRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "validator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tickVersion",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IUsdnProtocolTypes.PositionId",
+        "name": "posId",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountReceived",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "profit",
+        "type": "int256"
+      }
+    ],
+    "name": "ValidatedClosePosition",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "validator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "totalExpo",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "newStartPrice",
+        "type": "uint128"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tickVersion",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IUsdnProtocolTypes.PositionId",
+        "name": "posId",
+        "type": "tuple"
+      }
+    ],
+    "name": "ValidatedOpenPosition",
+    "type": "event"
+  }
+]

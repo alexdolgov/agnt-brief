@@ -1,0 +1,509 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IWstETH",
+        "name": "wstETH",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidationRewardsManagerGasUsedPerTickTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidationRewardsManagerMaxRewardTooLow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidationRewardsManagerOtherGasUsedTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidationRewardsManagerRebalancerGasUsedTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidationRewardsManagerRebaseGasUsedTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "gasUsedPerTick",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "otherGasUsed",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "rebaseGasUsed",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "rebalancerGasUsed",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "baseFeeOffset",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "gasMultiplierBps",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "positionBonusMultiplierBps",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "fixedReward",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "maxReward",
+        "type": "uint128"
+      }
+    ],
+    "name": "RewardsParametersUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "BASE_GAS_COST",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BPS_DIVISOR",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_GAS_USED_PER_TICK",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_OTHER_GAS_USED",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_REBALANCER_GAS_USED",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_REBASE_GAS_USED",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "totalPositions",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalExpo",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "remainingCollateral",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "tickPrice",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "priceWithoutPenalty",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct IUsdnProtocolTypes.LiqTickInfo[]",
+        "name": "liquidatedTicks",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "rebased",
+        "type": "bool"
+      },
+      {
+        "internalType": "enum IUsdnProtocolTypes.RebalancerAction",
+        "name": "rebalancerAction",
+        "type": "uint8"
+      },
+      {
+        "internalType": "enum IUsdnProtocolTypes.ProtocolAction",
+        "name": "",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "getLiquidationRewards",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "wstETHRewards_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRewardsParameters",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint32",
+            "name": "gasUsedPerTick",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "otherGasUsed",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "rebaseGasUsed",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "rebalancerGasUsed",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint64",
+            "name": "baseFeeOffset",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint16",
+            "name": "gasMultiplierBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "positionBonusMultiplierBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint128",
+            "name": "fixedReward",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "maxReward",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct ILiquidationRewardsManagerErrorsEventsTypes.RewardsParameters",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "gasUsedPerTick",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "otherGasUsed",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "rebaseGasUsed",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "rebalancerGasUsed",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint64",
+        "name": "baseFeeOffset",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint16",
+        "name": "gasMultiplierBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "positionBonusMultiplierBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint128",
+        "name": "fixedReward",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "maxReward",
+        "type": "uint128"
+      }
+    ],
+    "name": "setRewardsParameters",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

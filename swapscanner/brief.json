@@ -1,0 +1,176 @@
+{
+  "schema_version": "2.0",
+  "project_key": "swapscanner",
+  "generated_at": "2026-05-23T20:21:33.867Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "swapscanner",
+    "tier": 0,
+    "peak_tvl": 19237773,
+    "peak_date": "2024-12-03T00:00:00.000Z",
+    "tvl_30d_ago": 3072726,
+    "tvl_90d_ago": 3542404,
+    "tvl_current": 3380845,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 5173037,
+    "change_30d_pct": 10.027545573539587,
+    "change_90d_pct": -4.56071639485502,
+    "days_since_peak": 536,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 82.4260063781811
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 0,
+    "total_audits": 1,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 4683395,
+    "tvl_usd": 4683395,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://swapscanner.io/",
+    "chains": [
+      "klaytn"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2023-04",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Swapscanner is a DeFi protocol on Klaytn offering a decentralized exchange and liquid staking services, enabling users to trade tokens and stake assets while receiving liquid staking derivatives.",
+    "relationship_narrative": "The protocol consists of a single product family with two core contracts that likely represent the staking pool and the derivative token, sharing infrastructure for liquid staking operations.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x8888888888885b073f3c81258c27e83db228d5f3",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Swapscanner LSD",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x8888888888885b073f3c81258c27e83db228d5f3",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x999999999939ba65abb254339eec0b2a0dac80e9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Swapscanner LSD",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x999999999939ba65abb254339eec0b2a0dac80e9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2563,
+      "audit_key": "audit-2563",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://2552220674-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FB0n61krC2LiDSllARDiL%2Fuploads%2Fd1qZS2rjUPCnHg4A17dJ%2F%5BCertiK%20AUDIT%5DSwapscanner_2023.04.06..pdf",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2563,
+        "report_name": "Rendered PDF capture"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

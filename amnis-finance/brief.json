@@ -1,0 +1,145 @@
+{
+  "schema_version": "2.0",
+  "project_key": "amnis-finance",
+  "generated_at": "2026-05-23T01:38:07.276Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 3,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 11934089.84477,
+    "tvl_usd": 11934089.84477,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://amnis.finance",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2023",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 2
+    }
+  },
+  "topography": {
+    "project_purpose": "Amnis Finance is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens representing their staked positions, enabling participation in DeFi while earning staking rewards.",
+    "relationship_narrative": "No product families or contracts were identified in the provided data, so no relationships can be described.",
+    "product_family_count": 0
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 2040,
+      "audit_key": "audit-2040",
+      "report_name": "<table data-header-hidden><thead><tr><th width=\"82\"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>No.</strong></td><td><strong>Field</strong></td><td><strong>Content</strong></td></tr><tr><td>H.1</td><td>Distributed ledger technology (DTL)</td><td>Deployed on the Aptos Blockchain, a Layer-1 Proof-of-Stake (PoS) network</td></tr><tr><td>H.2</td><td>Protocols and technical standards</td><td>AMI is an Aptos Fungible Asset (FA) token, ensuring compatibility with Aptos wallets, exchanges, and smart contracts built in the Move programming language. The Aptos blockchain is a Layer-1 Proof-of-Stake network (AptosBFT), providing high throughput, low latency, and strong security guarantees.</td></tr><tr><td>H.3</td><td>Technology used</td><td>AMI tokens can be held, stored, and transferred using Aptos-compatible wallets that support Move-based fungible tokens, including both software and hardware wallets. Transfers occur on-chain through the Aptos network, and token holders may also interact with AMI via supported exchanges and DeFi interfaces that comply with applicable laws and platform policies.</td></tr><tr><td>H.4</td><td>Consensus mechanism</td><td>Aptos uses a Proof-of-Stake (PoS) consensus mechanism called AptosBFT**,**a HotStuff-inspired Byzantine Fault Tolerance (BFT) protocol that ensures rapid transaction finality and high security by requiring validators to stake APT tokens to validate transactions. It combines this with a parallel execution engine (Block-STM) and a modular design, allowing independent upgrades and faster, more scalable throughput than traditional chains.</td></tr><tr><td>H.5</td><td>Incentive mechanisms and applicable fees</td><td>Validators on the Aptos network are compensated with APT for securing the blockchain through a Proof-of-Stake (PoS) model. Their income comes from transaction gas fees and staking rewards (emissions). Validators set their own commission rates for delegators. Notably, Aptos does not use \"slashing\" (principal penalty). Instead, poor performance is penalized via missed rewards for that epoch. Every transaction requires gas fees, structured as: -Execution &#x26; IO Fees: Covers CPU work and data reading/writing. It is the product of gas units used and the market gas price. -Storage Fees (Storage Deposit): Covers on-chain data storage. Unique to Aptos, this fee is a refundable deposit; users can receive a 100% refund when the data is deleted from the ledger</td></tr><tr><td>H.6</td><td><p>Use of distributed ledger</p><p>technology</p></td><td>false</td></tr><tr><td>H.7</td><td>DLT functionality description</td><td>N/A</td></tr><tr><td>H.8</td><td>Audit</td><td>true</td></tr><tr><td>H.9</td><td>Audit outcome</td><td><p>OtterSec (<a href=\"https://135941930-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS1BuIoYSwiJZqNrZeQzd%2Fuploads%2FXNDGGecyO1F9NwaIho4j%2Famnis_audit_final.pdf?alt=media&#x26;token=76b9a7f5-13f0-4d41-b169-0d3cb6cedec8\">https://135941930-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS1BuIoYSwiJZqNrZeQzd%2Fuploads%2FXNDGGecyO1F9NwaIho4j</a> <a href=\"https://135941930-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS1BuIoYSwiJZqNrZeQzd%2Fuploads%2FXNDGGecyO1F9NwaIho4j%2Famnis_audit_final.pdf?alt=media&#x26;token=76b9a7f5-13f0-4d41-b169-0d3cb6cedec8\">alt=media&#x26;token=76b9a7f5-13f0-4d41-b169-0d3cb6cedec8</a>)</p><p>Movebit (<a href=\"\">https://movebit.xyz/reports/Amnis-Finance-Final-Audit-Report.pdf</a>)</p><p>Verichain (<a href=\"https://github.com/verichains/public-audit-reports/blob/main/Amnis%20Finance%20-%20Public%20Report%20v1.1.pdf\">https://github.com/verichains/public-audit-reports/blob/main/Amnis%20Finance%20-</a></p></td></tr></tbody></table>",
+      "report_url": "https://movebit.xyz/reports/Amnis-Finance-Final-Audit-Report.pdf",
+      "auditor": "Movebit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2041,
+      "audit_key": "audit-2041",
+      "report_name": "www.verichains.io",
+      "report_url": "https://github.com/verichains/public-audit-reports/blob/main/Amnis%20Finance%20-%20Public%20Report%20v1.1.pdf",
+      "auditor": "Verichains",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2042,
+      "audit_key": "audit-2042",
+      "report_name": "<table data-header-hidden><thead><tr><th width=\"82\"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>No.</strong></td><td><strong>Field</strong></td><td><strong>Content</strong></td></tr><tr><td>H.1</td><td>Distributed ledger technology (DTL)</td><td>Deployed on the Aptos Blockchain, a Layer-1 Proof-of-Stake (PoS) network</td></tr><tr><td>H.2</td><td>Protocols and technical standards</td><td>AMI is an Aptos Fungible Asset (FA) token, ensuring compatibility with Aptos wallets, exchanges, and smart contracts built in the Move programming language. The Aptos blockchain is a Layer-1 Proof-of-Stake network (AptosBFT), providing high throughput, low latency, and strong security guarantees.</td></tr><tr><td>H.3</td><td>Technology used</td><td>AMI tokens can be held, stored, and transferred using Aptos-compatible wallets that support Move-based fungible tokens, including both software and hardware wallets. Transfers occur on-chain through the Aptos network, and token holders may also interact with AMI via supported exchanges and DeFi interfaces that comply with applicable laws and platform policies.</td></tr><tr><td>H.4</td><td>Consensus mechanism</td><td>Aptos uses a Proof-of-Stake (PoS) consensus mechanism called AptosBFT**,**a HotStuff-inspired Byzantine Fault Tolerance (BFT) protocol that ensures rapid transaction finality and high security by requiring validators to stake APT tokens to validate transactions. It combines this with a parallel execution engine (Block-STM) and a modular design, allowing independent upgrades and faster, more scalable throughput than traditional chains.</td></tr><tr><td>H.5</td><td>Incentive mechanisms and applicable fees</td><td>Validators on the Aptos network are compensated with APT for securing the blockchain through a Proof-of-Stake (PoS) model. Their income comes from transaction gas fees and staking rewards (emissions). Validators set their own commission rates for delegators. Notably, Aptos does not use \"slashing\" (principal penalty). Instead, poor performance is penalized via missed rewards for that epoch. Every transaction requires gas fees, structured as: -Execution &#x26; IO Fees: Covers CPU work and data reading/writing. It is the product of gas units used and the market gas price. -Storage Fees (Storage Deposit): Covers on-chain data storage. Unique to Aptos, this fee is a refundable deposit; users can receive a 100% refund when the data is deleted from the ledger</td></tr><tr><td>H.6</td><td><p>Use of distributed ledger</p><p>technology</p></td><td>false</td></tr><tr><td>H.7</td><td>DLT functionality description</td><td>N/A</td></tr><tr><td>H.8</td><td>Audit</td><td>true</td></tr><tr><td>H.9</td><td>Audit outcome</td><td><p>OtterSec (<a href=\">https://135941930-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS1BuIoYSwiJZqNrZeQzd%2Fuploads%2FXNDGGecyO1F9NwaIho4j</a> <a href=\"https://135941930-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS1BuIoYSwiJZqNrZeQzd%2Fuploads%2FXNDGGecyO1F9NwaIho4j%2Famnis_audit_final.pdf?alt=media&#x26;token=76b9a7f5-13f0-4d41-b169-0d3cb6cedec8\">alt=media&#x26;token=76b9a7f5-13f0-4d41-b169-0d3cb6cedec8</a>)</p><p>Movebit (<a href=\"https://movebit.xyz/reports/Amnis-Finance-Final-Audit-Report.pdf\">https://movebit.xyz/reports/Amnis-Finance-Final-Audit-Report.pdf</a>)</p><p>Verichain (<a href=\"https://github.com/verichains/public-audit-reports/blob/main/Amnis%20Finance%20-%20Public%20Report%20v1.1.pdf\">https://github.com/verichains/public-audit-reports/blob/main/Amnis%20Finance%20-</a></p></td></tr></tbody></table>",
+      "report_url": "https://135941930-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS1BuIoYSwiJZqNrZeQzd%2Fuploads%2FXNDGGecyO1F9NwaIho4j%2Famnis_audit_final.pdf",
+      "auditor": "OtterSec",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2040,
+        "report_name": "<table data-header-hidden><thead><tr><th width=\"82\"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>No.</strong></td><td><strong>Field</strong></td><td><strong>Content</strong></td></tr><tr><td>H.1</td><td>Distributed ledger technology (DTL)</td><td>Deployed on the Aptos Blockchain, a Layer-1 Proof-of-Stake (PoS) network</td></tr><tr><td>H.2</td><td>Protocols and technical standards</td><td>AMI is an Aptos Fungible Asset (FA) token, ensuring compatibility with Aptos wallets, exchanges, and smart contracts built in the Move programming language. The Aptos blockchain is a Layer-1 Proof-of-Stake network (AptosBFT), providing high throughput, low latency, and strong security guarantees.</td></tr><tr><td>H.3</td><td>Technology used</td><td>AMI tokens can be held, stored, and transferred using Aptos-compatible wallets that support Move-based fungible tokens, including both software and hardware wallets. Transfers occur on-chain through the Aptos network, and token holders may also interact with AMI via supported exchanges and DeFi interfaces that comply with applicable laws and platform policies.</td></tr><tr><td>H.4</td><td>Consensus mechanism</td><td>Aptos uses a Proof-of-Stake (PoS) consensus mechanism called AptosBFT**,**a HotStuff-inspired Byzantine Fault Tolerance (BFT) protocol that ensures rapid transaction finality and high security by requiring validators to stake APT tokens to validate transactions. It combines this with a parallel execution engine (Block-STM) and a modular design, allowing independent upgrades and faster, more scalable throughput than traditional chains.</td></tr><tr><td>H.5</td><td>Incentive mechanisms and applicable fees</td><td>Validators on the Aptos network are compensated with APT for securing the blockchain through a Proof-of-Stake (PoS) model. Their income comes from transaction gas fees and staking rewards (emissions). Validators set their own commission rates for delegators. Notably, Aptos does not use \"slashing\" (principal penalty). Instead, poor performance is penalized via missed rewards for that epoch. Every transaction requires gas fees, structured as: -Execution &#x26; IO Fees: Covers CPU work and data reading/writing. It is the product of gas units used and the market gas price. -Storage Fees (Storage Deposit): Covers on-chain data storage. Unique to Aptos, this fee is a refundable deposit; users can receive a 100% refund when the data is deleted from the ledger</td></tr><tr><td>H.6</td><td><p>Use of distributed ledger</p><p>technology</p></td><td>false</td></tr><tr><td>H.7</td><td>DLT functionality description</td><td>N/A</td></tr><tr><td>H.8</td><td>Audit</td><td>true</td></tr><tr><td>H.9</td><td>Audit outcome</td><td><p>OtterSec (<a href=\"https://135941930-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS1BuIoYSwiJZqNrZeQzd%2Fuploads%2FXNDGGecyO1F9NwaIho4j%2Famnis_audit_final.pdf?alt=media&#x26;token=76b9a7f5-13f0-4d41-b169-0d3cb6cedec8\">https://135941930-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS1BuIoYSwiJZqNrZeQzd%2Fuploads%2FXNDGGecyO1F9NwaIho4j</a> <a href=\"https://135941930-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS1BuIoYSwiJZqNrZeQzd%2Fuploads%2FXNDGGecyO1F9NwaIho4j%2Famnis_audit_final.pdf?alt=media&#x26;token=76b9a7f5-13f0-4d41-b169-0d3cb6cedec8\">alt=media&#x26;token=76b9a7f5-13f0-4d41-b169-0d3cb6cedec8</a>)</p><p>Movebit (<a href=\"\">https://movebit.xyz/reports/Amnis-Finance-Final-Audit-Report.pdf</a>)</p><p>Verichain (<a href=\"https://github.com/verichains/public-audit-reports/blob/main/Amnis%20Finance%20-%20Public%20Report%20v1.1.pdf\">https://github.com/verichains/public-audit-reports/blob/main/Amnis%20Finance%20-</a></p></td></tr></tbody></table>"
+      },
+      {
+        "audit_id": 2041,
+        "report_name": "www.verichains.io"
+      },
+      {
+        "audit_id": 2042,
+        "report_name": "<table data-header-hidden><thead><tr><th width=\"82\"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>No.</strong></td><td><strong>Field</strong></td><td><strong>Content</strong></td></tr><tr><td>H.1</td><td>Distributed ledger technology (DTL)</td><td>Deployed on the Aptos Blockchain, a Layer-1 Proof-of-Stake (PoS) network</td></tr><tr><td>H.2</td><td>Protocols and technical standards</td><td>AMI is an Aptos Fungible Asset (FA) token, ensuring compatibility with Aptos wallets, exchanges, and smart contracts built in the Move programming language. The Aptos blockchain is a Layer-1 Proof-of-Stake network (AptosBFT), providing high throughput, low latency, and strong security guarantees.</td></tr><tr><td>H.3</td><td>Technology used</td><td>AMI tokens can be held, stored, and transferred using Aptos-compatible wallets that support Move-based fungible tokens, including both software and hardware wallets. Transfers occur on-chain through the Aptos network, and token holders may also interact with AMI via supported exchanges and DeFi interfaces that comply with applicable laws and platform policies.</td></tr><tr><td>H.4</td><td>Consensus mechanism</td><td>Aptos uses a Proof-of-Stake (PoS) consensus mechanism called AptosBFT**,**a HotStuff-inspired Byzantine Fault Tolerance (BFT) protocol that ensures rapid transaction finality and high security by requiring validators to stake APT tokens to validate transactions. It combines this with a parallel execution engine (Block-STM) and a modular design, allowing independent upgrades and faster, more scalable throughput than traditional chains.</td></tr><tr><td>H.5</td><td>Incentive mechanisms and applicable fees</td><td>Validators on the Aptos network are compensated with APT for securing the blockchain through a Proof-of-Stake (PoS) model. Their income comes from transaction gas fees and staking rewards (emissions). Validators set their own commission rates for delegators. Notably, Aptos does not use \"slashing\" (principal penalty). Instead, poor performance is penalized via missed rewards for that epoch. Every transaction requires gas fees, structured as: -Execution &#x26; IO Fees: Covers CPU work and data reading/writing. It is the product of gas units used and the market gas price. -Storage Fees (Storage Deposit): Covers on-chain data storage. Unique to Aptos, this fee is a refundable deposit; users can receive a 100% refund when the data is deleted from the ledger</td></tr><tr><td>H.6</td><td><p>Use of distributed ledger</p><p>technology</p></td><td>false</td></tr><tr><td>H.7</td><td>DLT functionality description</td><td>N/A</td></tr><tr><td>H.8</td><td>Audit</td><td>true</td></tr><tr><td>H.9</td><td>Audit outcome</td><td><p>OtterSec (<a href=\">https://135941930-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS1BuIoYSwiJZqNrZeQzd%2Fuploads%2FXNDGGecyO1F9NwaIho4j</a> <a href=\"https://135941930-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS1BuIoYSwiJZqNrZeQzd%2Fuploads%2FXNDGGecyO1F9NwaIho4j%2Famnis_audit_final.pdf?alt=media&#x26;token=76b9a7f5-13f0-4d41-b169-0d3cb6cedec8\">alt=media&#x26;token=76b9a7f5-13f0-4d41-b169-0d3cb6cedec8</a>)</p><p>Movebit (<a href=\"https://movebit.xyz/reports/Amnis-Finance-Final-Audit-Report.pdf\">https://movebit.xyz/reports/Amnis-Finance-Final-Audit-Report.pdf</a>)</p><p>Verichain (<a href=\"https://github.com/verichains/public-audit-reports/blob/main/Amnis%20Finance%20-%20Public%20Report%20v1.1.pdf\">https://github.com/verichains/public-audit-reports/blob/main/Amnis%20Finance%20-</a></p></td></tr></tbody></table>"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x4151083172b2cefb83a33fd7fc9f6cbabb3fd08d",
+  "chain_id": 80094,
+  "contract_name": "BatchRelayerQueryLibrary",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "0000000000000000000000004be03f781c497a489e3cb0287833452ca9b9e80b",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:40:57.055Z"
+}

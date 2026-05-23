@@ -1,0 +1,17 @@
+{
+  "address": "0x3c612e132624f4bd500ee1495f54565f0bcc9b59",
+  "chain_id": 80094,
+  "contract_name": "BalancerQueries",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "0000000000000000000000004be03f781c497a489e3cb0287833452ca9b9e80b",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:40:56.426Z"
+}

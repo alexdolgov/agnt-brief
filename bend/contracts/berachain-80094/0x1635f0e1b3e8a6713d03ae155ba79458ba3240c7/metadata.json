@@ -1,0 +1,17 @@
+{
+  "address": "0x1635f0e1b3e8a6713d03ae155ba79458ba3240c7",
+  "chain_id": 80094,
+  "contract_name": "ProtocolFeesWithdrawer",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "0000000000000000000000004be03f781c497a489e3cb0287833452ca9b9e80b0000000000000000000000007bb8ddac7fbe3ffc0f4b3c73c4f158b06cf826500000000000000000000000007bb8ddac7fbe3ffc0f4b3c73c4f158b06cf8265000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:40:55.335Z"
+}

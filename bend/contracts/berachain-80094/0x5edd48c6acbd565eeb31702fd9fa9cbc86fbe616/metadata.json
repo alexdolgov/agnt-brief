@@ -1,0 +1,17 @@
+{
+  "address": "0x5edd48c6acbd565eeb31702fd9fa9cbc86fbe616",
+  "chain_id": 80094,
+  "contract_name": "MetaMorphoV1_1Factory",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 44,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:40:58.472Z"
+}

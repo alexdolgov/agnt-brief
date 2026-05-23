@@ -1,0 +1,17 @@
+{
+  "address": "0x23f0e8faee7bbb405e7a7c3d60138fcfd43d7509",
+  "chain_id": 34443,
+  "contract_name": "EntropyUpgradable",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T13:13:58.220Z"
+}

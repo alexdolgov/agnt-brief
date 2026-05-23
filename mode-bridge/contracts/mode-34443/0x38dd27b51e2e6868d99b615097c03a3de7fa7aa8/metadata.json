@@ -1,0 +1,18 @@
+{
+  "address": "0x38dd27b51e2e6868d99b615097c03a3de7fa7aa8",
+  "chain_id": 34443,
+  "contract_name": "RSETHRateReceiver",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T13:13:58.893Z"
+}

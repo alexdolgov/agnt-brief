@@ -92,6 +92,7 @@
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [keyring](./keyring/) | $348.8K | 8.3% | $348.8K | active | 16 | 134 | 2026-05-23 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |
+| [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-05-23 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [levex](./levex/) | $11.2M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
@@ -107,6 +108,7 @@
 | [merlinswap](./merlinswap/) | $8.7M | 0.0% | ? | unknown | 0 | 2 | 2026-05-23 |
 | [metadao](./metadao/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-23 |
 | [mezo-bridge](./mezo-bridge/) | $203.9M | 0.0% | $203.9M | declining | 0 | 138 | 2026-05-22 |
+| [mode-bridge](./mode-bridge/) | $6.2M | 2.9% | ? | declining | 27 | 100 | 2026-05-23 |
 | [mole](./mole/) | $8.8M | 0.0% | ? | active | 0 | 49 | 2026-05-23 |
 | [more-markets](./more-markets/) | $12.0M | 0.0% | ? | unknown | 0 | 21 | 2026-05-23 |
 | [morph-bridge](./morph-bridge/) | $15.8M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
@@ -150,6 +152,7 @@
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-22 |
+| [stargate](./stargate/) | $6.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 0 | 43 | 2026-05-22 |
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [symbiosis](./symbiosis/) | $236.1M | 5.8% | $236.1M | active | 15 | 137 | 2026-05-23 |
@@ -173,6 +176,7 @@
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [wrapped](./wrapped/) | $1.7M | 0.0% | $1.7M | active | 0 | 119 | 2026-05-22 |
 | [xsy](./xsy/) | $3.6M | 0.0% | $3.6M | active | 0 | 16 | 2026-05-22 |
+| [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 1 | 2026-05-23 |
 | [yei-finance](./yei-finance/) | $29.8M | 0.0% | ? | declining | 1 | 44 | 2026-05-22 |
 | [yieldfi](./yieldfi/) | $43.7M | 66.7% | $16.3M | declining | 7 | 23 | 2026-05-23 |
 | [yieldnest](./yieldnest/) | $19.2M | 0.0% | $19.2M | declining | 0 | 89 | 2026-05-22 |

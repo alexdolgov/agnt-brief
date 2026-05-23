@@ -1,0 +1,158 @@
+{
+  "schema_version": "2.0",
+  "project_key": "xwin-finance",
+  "generated_at": "2026-05-23T13:03:32.541Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "xwin-finance",
+    "tier": 0,
+    "peak_tvl": 12551201,
+    "peak_date": "2025-10-07T00:00:00.000Z",
+    "tvl_30d_ago": 5041122,
+    "tvl_90d_ago": 851608,
+    "tvl_current": 5283006,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 8244992,
+    "change_30d_pct": 4.798217539666765,
+    "change_90d_pct": 520.356549022555,
+    "days_since_peak": 228,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 57.90836271365585
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 1,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 6174447.62519,
+    "tvl_usd": 1844863.4020851008,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 1844863.4
+    },
+    "asd_usd": 1844863.4020851008,
+    "website_url": "https://xwin.finance",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2023-06",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "xWin Finance is a DeFi protocol that offers index-like investment products, allowing users to gain diversified exposure to a basket of crypto assets through a single token. The protocol simplifies portfolio management by providing automated, rule-based strategies.",
+    "relationship_narrative": "The project currently consists of a single token contract, with no additional infrastructure or product families identified. All functionality is encapsulated within the XWINToken contract.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xd88ca08d8eec1e9e09562213ae83a7853ebb5d28",
+      "name": "XWINToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "xWin Finance",
+      "tvl_usd": 1844863.4020851008,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "XWINToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd88ca08d8eec1e9e09562213ae83a7853ebb5d28",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1844863.4020851008,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2340,
+      "audit_key": "audit-2340",
+      "report_name": "DL audit link",
+      "report_url": "https://skynet.certik.com/projects/xwinfinance",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xd88ca08d8eec1e9e09562213ae83a7853ebb5d28",
+      "name": "XWINToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 1844863.4020851008,
+      "risk_note": "Verified native implementation with $1,844,863.40 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2340,
+        "report_name": "DL audit link"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

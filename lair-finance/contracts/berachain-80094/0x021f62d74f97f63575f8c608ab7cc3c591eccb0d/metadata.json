@@ -1,0 +1,17 @@
+{
+  "address": "0x021f62d74f97f63575f8c608ab7cc3c591eccb0d",
+  "chain_id": 80094,
+  "contract_name": "WrappedVault",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 72,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T13:12:04.731Z"
+}

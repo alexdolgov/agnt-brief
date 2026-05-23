@@ -1,0 +1,17 @@
+{
+  "address": "0x488cdb57e9a1006ab77730fc8b19e1bb76e1cb97",
+  "chain_id": 34443,
+  "contract_name": "L2ERC20TokenBridge",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000004200000000000000000000000000000000000007000000000000000000000000d0dea0a3bd8e4d55170943129c025d3fe0493f2a0000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca000000000000000000000000098f96a4b34d03a2e6f225b28b8f8cb1279562d81",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T13:14:00.140Z"
+}

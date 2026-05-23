@@ -1,0 +1,493 @@
+[
+  {
+    "inputs": [],
+    "name": "BLSIncorrectInputMessaage",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BLSInvalidPubllicKeyorSignaturePoints",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ClusterNotVerified",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DuplicateCluster",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FreeNodeIsAlreadyWhitelisted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FreeNodeIsNotWhitelisted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTransaction",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "previousAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "beacon",
+        "type": "address"
+      }
+    ],
+    "name": "BeaconUpgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "freeNodeWallet",
+        "type": "address"
+      }
+    ],
+    "name": "FreeNodeRemovedFromWhitelist",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "freeNodeWalletAddress",
+        "type": "address"
+      }
+    ],
+    "name": "FreeNodeWhitelisted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "freeNodeWallets",
+        "type": "address[]"
+      }
+    ],
+    "name": "MultipleFreeNodesWhitelisted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256[4]",
+        "name": "publicKey",
+        "type": "uint256[4]"
+      }
+    ],
+    "name": "PublicKeyUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "checkPublicKey",
+    "outputs": [
+      {
+        "internalType": "uint256[4]",
+        "name": "",
+        "type": "uint256[4]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_domain",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "_supraSValueFeedStorage",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256[4]",
+        "name": "_publicKey",
+        "type": "uint256[4]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_blsPrecompileGasCost",
+        "type": "uint256"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint64",
+                "name": "round",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint128",
+                "name": "timestamp",
+                "type": "uint128"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "author",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "qcHash",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "bytes32[]",
+                "name": "batchHashes",
+                "type": "bytes32[]"
+              }
+            ],
+            "internalType": "struct Smr.MinBlock",
+            "name": "smrBlock",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bytes8",
+            "name": "roundLE",
+            "type": "bytes8"
+          }
+        ],
+        "internalType": "struct Smr.Vote",
+        "name": "vote",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes10",
+            "name": "protocol",
+            "type": "bytes10"
+          },
+          {
+            "internalType": "bytes32[]",
+            "name": "txnHashes",
+            "type": "bytes32[]"
+          }
+        ],
+        "internalType": "struct Smr.MinBatch",
+        "name": "smrBatch",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32[]",
+            "name": "clusterHashes",
+            "type": "bytes32[]"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "sender",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes10",
+            "name": "protocol",
+            "type": "bytes10"
+          },
+          {
+            "internalType": "bytes1",
+            "name": "tx_sub_type",
+            "type": "bytes1"
+          }
+        ],
+        "internalType": "struct Smr.MinTxn",
+        "name": "smrTxn",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "sccR",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "batchIdx",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "txnIdx",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "clusterIdx",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[2]",
+        "name": "sig",
+        "type": "uint256[2]"
+      }
+    ],
+    "name": "processCluster",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_message",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256[2]",
+        "name": "_signature",
+        "type": "uint256[2]"
+      }
+    ],
+    "name": "requireHashVerified",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "supraSValueFeedStorage",
+    "outputs": [
+      {
+        "internalType": "contract ISupraSValueFeed",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[4]",
+        "name": "_publicKey",
+        "type": "uint256[4]"
+      }
+    ],
+    "name": "updatePublicKey",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "upgradeTo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

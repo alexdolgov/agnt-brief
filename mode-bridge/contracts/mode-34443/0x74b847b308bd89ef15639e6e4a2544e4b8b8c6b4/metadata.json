@@ -1,0 +1,17 @@
+{
+  "address": "0x74b847b308bd89ef15639e6e4a2544e4b8b8c6b4",
+  "chain_id": 34443,
+  "contract_name": "ModeLock",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x00000000000000000000000011fd8f7b4e8acf54be24ee85517b90f8755e7a96000000000000000000000000dfc7c877a950e49d2610114102175a06c2e3167a0000000000000000000000000000000000000000000000000000000000093a80",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T13:14:01.780Z"
+}

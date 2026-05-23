@@ -1,0 +1,18 @@
+{
+  "address": "0x4186bfc76e2e237523cbc30fd220fe055156b41f",
+  "chain_id": 34443,
+  "contract_name": "RSETH_OFT",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "LZBL-1.2 AND MIT AND UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T13:13:59.508Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x2b1cbd412565c0a2d32e62ab7304bb464c644cc1",
+  "chain_id": 34443,
+  "contract_name": "RsETHTokenWrapper",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T13:13:58.328Z"
+}

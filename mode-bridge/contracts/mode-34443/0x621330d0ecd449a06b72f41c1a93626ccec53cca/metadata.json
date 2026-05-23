@@ -1,0 +1,17 @@
+{
+  "address": "0x621330d0ecd449a06b72f41c1a93626ccec53cca",
+  "chain_id": 34443,
+  "contract_name": "OpportunityProvider",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x000000000000000000000000f40a1b597b7f26e0a1de6714bb57cb2b6787aaee0000000000000000000000005cc070844e98f4cec5f2fbe1592fb1ed73ab7b48000000000000000000000000000000000022d473030f116ddee9f6b43ac78ba3",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T13:14:01.132Z"
+}

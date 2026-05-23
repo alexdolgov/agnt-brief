@@ -1,0 +1,17 @@
+{
+  "address": "0x9f6cf7acb2f16f7d906eeecb0a6020a5cf91a41d",
+  "chain_id": 80094,
+  "contract_name": "KodiakIslandWithRouter",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T13:12:06.886Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x4ef75d9abf8083d1ff0fc6c0941cde5fd2d194de",
+  "chain_id": 34443,
+  "contract_name": "ModeOKXNFT",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T13:14:00.250Z"
+}

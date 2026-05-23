@@ -1,0 +1,17 @@
+{
+  "address": "0x66e9cba5529824a03b5bc9931d9c63637101d0f7",
+  "chain_id": 34443,
+  "contract_name": "ReceiverImplementation",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T13:14:01.399Z"
+}

@@ -27,6 +27,7 @@
 | [boros](./boros/) | $10.4M | 100.0% | ? | active | 5 | 2 | 2026-05-23 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-05-23 |
 | [btcfi](./btcfi/) | $11.9M | 0.0% | ? | active | 0 | 15 | 2026-05-23 |
+| [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [camelot](./camelot/) | $6.4M | 17.3% | $391.9K | active | 1 | 127 | 2026-05-22 |
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [chainge-finance](./chainge-finance/) | $1.8M | 0.0% | $1.8M | active | 0 | 935 | 2026-05-23 |
@@ -51,6 +52,7 @@
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 11 | 18 | 2026-05-23 |
 | [fulcrom](./fulcrom/) | $13.5M | 0.0% | ? | active | 0 | 80 | 2026-05-22 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-05-22 |
+| [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [goldfinger](./goldfinger/) | $23.9M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 0 | 7 | 2026-05-22 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -90,6 +92,7 @@
 | [mu-digital](./mu-digital/) | $19.5M | 100.0% | ? | active | 2 | 12 | 2026-05-22 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |
 | [neutral-trade](./neutral-trade/) | $18.8M | 0.0% | ? | unknown | 3 | 0 | 2026-05-22 |
+| [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 0 | 19 | 2026-05-23 |
 | [odyssey-finance](./odyssey-finance/) | $9.5M | 0.0% | ? | active | 0 | 79 | 2026-05-23 |
 | [okcoin](./okcoin/) | $26.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |

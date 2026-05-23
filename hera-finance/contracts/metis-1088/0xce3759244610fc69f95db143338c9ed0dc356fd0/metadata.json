@@ -1,0 +1,18 @@
+{
+  "address": "0xce3759244610fc69f95db143338c9ed0dc356fd0",
+  "chain_id": 1088,
+  "contract_name": "HeraAggregator",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T14:42:22.103Z"
+}

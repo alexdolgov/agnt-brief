@@ -77,6 +77,7 @@
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 0 | 63 | 2026-05-23 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
 | [hemibtc](./hemibtc/) | $46.2K | 2.7% | $46.2K | active | 5 | 47 | 2026-05-22 |
+| [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
 | [hyperswap](./hyperswap/) | $1.9M | 0.0% | $1.9M | active | 0 | 940 | 2026-05-22 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 12 | 2026-05-23 |
@@ -119,6 +120,7 @@
 | [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 73 | 2026-05-23 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |
 | [neutral-trade](./neutral-trade/) | $18.8M | 0.0% | ? | unknown | 3 | 0 | 2026-05-22 |
+| [nonkyc](./nonkyc/) | $5.8M | 0.0% | ? | active | 0 | 4 | 2026-05-23 |
 | [nostra](./nostra/) | $7.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [nuls](./nuls/) | $1.8M | 0.0% | $1.8M | active | 0 | 904 | 2026-05-23 |
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 0 | 19 | 2026-05-23 |
@@ -164,8 +166,10 @@
 | [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 4 | 482 | 2026-05-23 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-05-22 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-05-22 |
+| [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-05-23 |
 | [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
+| [thruster](./thruster/) | $5.8M | 0.0% | ? | dead | 0 | 20 | 2026-05-23 |
 | [tinyman](./tinyman/) | $1.8M | 0.0% | $1.8M | active | 18 | 904 | 2026-05-23 |
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |

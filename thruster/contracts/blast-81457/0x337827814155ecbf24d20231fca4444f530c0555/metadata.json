@@ -1,0 +1,17 @@
+{
+  "address": "0x337827814155ecbf24d20231fca4444f530c0555",
+  "chain_id": 81457,
+  "contract_name": "SwapRouter",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "000000000000000000000000a08ae3d3f4da51c22d3c041e468bdf4c61405aab0000000000000000000000004300000000000000000000000000000000000004000000000000000000000000d6b64e44aae0938118ad0dae251b859d85351c22",
+  "implementation_address": "0x337827814155ecbf24d20231fca4444f530c0555",
+  "fetched_at": "2026-05-23T14:38:31.488Z"
+}

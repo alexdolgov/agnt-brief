@@ -1,0 +1,1093 @@
+{
+  "schema_version": "2.0",
+  "project_key": "hera-finance",
+  "generated_at": "2026-05-23T14:42:19.441Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "hera-finance",
+    "tier": 0,
+    "peak_tvl": 0,
+    "peak_date": "2022-11-02T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 0,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": 1298,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0
+  },
+  "summary": {
+    "total_contracts": 28,
+    "total_addresses": 28,
+    "unique_implementations": 28,
+    "total_deployments": 28,
+    "audited_contracts": 3,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 4,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 21,
+    "coverage_pct": 42.9,
+    "total_audits": 3,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 5801066.58462,
+    "tvl_usd": 5801066.58462,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://staking.hera.finance",
+    "chains": [
+      "metis"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2022-10",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 3,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Hera Finance is a decentralized exchange (DEX) on the Metis chain, enabling users to swap tokens and provide liquidity. It features a native token, HeraToken, which likely serves as a governance or utility token within the ecosystem.",
+    "relationship_narrative": "All contracts are deployed by the same deployer cluster, indicating a unified infrastructure. The unnamed contracts likely support the DEX operations, with HeraToken acting as the central token for the protocol.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xce3759244610fc69f95db143338c9ed0dc356fd0",
+      "name": "HeraAggregator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HeraAggregator",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xce3759244610fc69f95db143338c9ed0dc356fd0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xafcb0803f96dc1e9768d14ce55b1a46b26deb24c",
+      "name": "HeraAggregatorV1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HeraAggregatorV1",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xafcb0803f96dc1e9768d14ce55b1a46b26deb24c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2410"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xff2e95d887c426d724b3a873fe33d554a10f2fa5",
+      "name": "HeraFeeOrganizer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HeraFeeOrganizer",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xff2e95d887c426d724b3a873fe33d554a10f2fa5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2411"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x1bd717c5cdd133e1985628e1e194b0ed9c9047e7",
+      "name": "HeraPublicSale",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HeraPublicSale",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x1bd717c5cdd133e1985628e1e194b0ed9c9047e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x1a404ca2f355141eb9ef1d5fe872bfc8511f19e1",
+      "name": "HeraPublicSaleV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HeraPublicSaleV2",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x1a404ca2f355141eb9ef1d5fe872bfc8511f19e1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x6da6317e819d6a19c28f0a59291f85fb41b02225",
+      "name": "HeraSecurity",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HeraSecurity",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x6da6317e819d6a19c28f0a59291f85fb41b02225",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2409"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x6f05709bc91bad933346f9e159f0d3fdbc2c9dce",
+      "name": "HeraToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Hera Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HeraToken",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x6f05709bc91bad933346f9e159f0d3fdbc2c9dce",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x0f236b54bd24ac0c347feb7bcf6ca3d8d57d8da7",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x0f236b54bd24ac0c347feb7bcf6ca3d8d57d8da7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x2117f1e5f6166b10f65d683cb2abec088f083c06",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x2117f1e5f6166b10f65d683cb2abec088f083c06",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x2508965ec75498c451b9e325b7a09288f27762d8",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Hera Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x2508965ec75498c451b9e325b7a09288f27762d8",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x2ec37306801cb2dce6526c71b28916a70a835c03",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Hera Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x2ec37306801cb2dce6526c71b28916a70a835c03",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x748a89dd05b62d876d95e74ab2952ad2f587e3de",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x748a89dd05b62d876d95e74ab2952ad2f587e3de",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x852d1fdd3982d8e21145845af74db7ae37d1f383",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x852d1fdd3982d8e21145845af74db7ae37d1f383",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x863361ce7bf04fdf375dc8134f139ad5435ca041",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x863361ce7bf04fdf375dc8134f139ad5435ca041",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x9abb8642ab4b184f2a56340c2766cdc0f357500e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Hera Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x9abb8642ab4b184f2a56340c2766cdc0f357500e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x9c598da94c840147c9a1eabe1ae8df750674ddf6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x9c598da94c840147c9a1eabe1ae8df750674ddf6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x9fbf118cb402bf43b87abde309d60127a3d3bb6a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x9fbf118cb402bf43b87abde309d60127a3d3bb6a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xb4801c4407d0d967eaf10981fb689c9da50a7127",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xb4801c4407d0d967eaf10981fb689c9da50a7127",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xb4e1096050089bb3ca3a59382c0a580a703e5dde",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xb4e1096050089bb3ca3a59382c0a580a703e5dde",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xbf6ca1b002e7d6d03a96907a6fb401fef6eb47b4",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xbf6ca1b002e7d6d03a96907a6fb401fef6eb47b4",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xcb10b80412976f517d974c075366c69f2f823ad0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xcb10b80412976f517d974c075366c69f2f823ad0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xd51732b8a666831688d0bb20c7907f11119729bf",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xd51732b8a666831688d0bb20c7907f11119729bf",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xd5723d7622ef97aa8d16fc3757b6d24d66fb41d6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xd5723d7622ef97aa8d16fc3757b6d24d66fb41d6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xd778b90c8b836a2075fc3973fe5c50e0a04c87a9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xd778b90c8b836a2075fc3973fe5c50e0a04c87a9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xdbb7333893ebda3a9d11140e6df2e94aea200195",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xdbb7333893ebda3a9d11140e6df2e94aea200195",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xddfbeb8a084add34ca3d30d8026fb9d2ffb400ad",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xddfbeb8a084add34ca3d30d8026fb9d2ffb400ad",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xfd246613628fa1eb189adeb25a2011ff721d0695",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xfd246613628fa1eb189adeb25a2011ff721d0695",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xfdc464d0e8ccee1bb906e740955706d2de895b63",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xfdc464d0e8ccee1bb906e740955706d2de895b63",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2409,
+      "audit_key": "audit-2409",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://468680357-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FRPd6E8y8uIj9QOgICwhl%2Fuploads%2FAYXuPbqH2kInNyfTsUcv%2FHera-AggregatorV2_audit-report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ExecutorManagement",
+        "HeraAggregatorV2",
+        "HeraERC20",
+        "HeraExecutor",
+        "HeraFeeSequencer",
+        "HeraSecurity",
+        "Queen",
+        "RevertReasonForwarder",
+        "RevertReasonParser",
+        "StringUtil"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2410,
+      "audit_key": "audit-2410",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://468680357-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FRPd6E8y8uIj9QOgICwhl%2Fuploads%2FUXpADKAVfIgit4tFsFbq%2FHera%20Aggregatorv1_audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "HeraAggregatorV1"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2411,
+      "audit_key": "audit-2411",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://468680357-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FRPd6E8y8uIj9QOgICwhl%2Fuploads%2FmILY1xtqsQZdQO7FcOjW%2FHera%20Fee%20Organizer_audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "HeraFeeOrganizer"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 42.9,
+      "latest_audit": "2022-10"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xce3759244610fc69f95db143338c9ed0dc356fd0",
+      "name": "HeraAggregator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x1bd717c5cdd133e1985628e1e194b0ed9c9047e7",
+      "name": "HeraPublicSale",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x1a404ca2f355141eb9ef1d5fe872bfc8511f19e1",
+      "name": "HeraPublicSaleV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x6f05709bc91bad933346f9e159f0d3fdbc2c9dce",
+      "name": "HeraToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 28,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 3
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

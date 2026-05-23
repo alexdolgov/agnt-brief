@@ -1,0 +1,18 @@
+{
+  "address": "0x53c9ca5d494b9a41c43637d12e8369db7b4c675b",
+  "chain_id": 42161,
+  "contract_name": "MultiSigPeriodicTimeLock",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GNU GPLv3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:41:51.021Z"
+}

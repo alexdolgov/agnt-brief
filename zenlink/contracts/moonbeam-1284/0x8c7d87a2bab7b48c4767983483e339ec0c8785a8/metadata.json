@@ -1,0 +1,18 @@
+{
+  "address": "0x8c7d87a2bab7b48c4767983483e339ec0c8785a8",
+  "chain_id": 1284,
+  "contract_name": "FeeSettlement",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:30:41.754Z"
+}

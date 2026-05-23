@@ -1,0 +1,18 @@
+{
+  "address": "0x12727d4169a42a9b5e3ecb11a6d2c95553d3f447",
+  "chain_id": 146,
+  "contract_name": "ValidatorsRegistry",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:36:04.182Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x3494764d3be100ba489c8bc5c3438e7629c5e5e5",
+  "chain_id": 1284,
+  "contract_name": "AggregationRouter",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:30:40.899Z"
+}

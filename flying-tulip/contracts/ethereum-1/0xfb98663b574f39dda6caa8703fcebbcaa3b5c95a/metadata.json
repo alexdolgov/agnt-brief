@@ -1,0 +1,17 @@
+{
+  "address": "0xfb98663b574f39dda6caa8703fcebbcaa3b5c95a",
+  "chain_id": 1,
+  "contract_name": "LiquidationHelper",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "000000000000000000000000be4050a73a7fb384c65e885a15c33461a4b200550000000000000000000000007ad77fddef64ec8325e8d2d02c2708aa2a412ef7000000000000000000000000a8777c3d446fa7f0b0fc97a80c1ea1d37f1ca33e0000000000000000000000003682168023e6ba8d1f995fda1d920827c5a8a43e000000000000000000000000eb00b335ca52216fb60fdffa361397367c39dc32",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:36:07.802Z"
+}

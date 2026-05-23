@@ -1,0 +1,17 @@
+{
+  "address": "0x2c64f618f8ce7ea31e9ff1f9022cb1b21a9b8aae",
+  "chain_id": 146,
+  "contract_name": "FtUsdMintRedeemOracleProxy",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "00000000000000000000000002e9bae63509ff46248daddd4041e67ed851f95c0000000000000000000000000c6f8ec81c3ea5bff06f6cd0791780f9f050ee3100000000000000000000000029219dd400f2bf60e5a23d13be72b486d403889400000000000000000000000044820497f8fe95a258a9522f0de2c04ab2bc3da30000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T15:36:02.045Z"
+}

@@ -1,0 +1,1278 @@
+{
+  "schema_version": "2.0",
+  "project_key": "fuel-bridge",
+  "generated_at": "2026-05-23T03:24:09.826Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "fuel-bridge",
+    "tier": 1,
+    "peak_tvl": 318138059,
+    "peak_date": "2024-12-25T00:00:00.000Z",
+    "tvl_30d_ago": 12141061,
+    "tvl_90d_ago": 12473797,
+    "tvl_current": 10650156,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 18783439,
+    "change_30d_pct": -12.279857584110648,
+    "change_90d_pct": -14.619774556215722,
+    "governance_raw": {
+      "evidence": "TVL dropped 96.65% from peak but protocol still operational with active bridge and documentation.",
+      "confidence": 0.8,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 514,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 96.65234771549291,
+    "governance_evidence": "TVL dropped 96.65% from peak but protocol still operational with active bridge and documentation.",
+    "governance_confidence": 0.8,
+    "governance_text_chars": 703,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 18,
+    "total_addresses": 44,
+    "unique_implementations": 18,
+    "total_deployments": 44,
+    "audited_contracts": 4,
+    "unaudited_contracts": 11,
+    "contracts_verified_audited": 4,
+    "contracts_verified_unaudited": 11,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 3,
+    "coverage_pct": 26.7,
+    "total_audits": 11,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 10809346.53734,
+    "tvl_usd": 10748049.186241504,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 10748049.19
+    },
+    "asd_usd": 7633472.421188637,
+    "website_url": "https://app.fuel.network/bridge",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-11",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 5,
+      "stale": 1,
+      "unknown": 4
+    }
+  },
+  "topography": {
+    "project_purpose": "Fuel Bridge enables cross-chain asset transfers between Ethereum and the Fuel network. It provides token bridging, staking, and reward distribution mechanisms to support the Fuel ecosystem.",
+    "relationship_narrative": "The Fuel Bridge family handles cross-chain asset transfers, while the Icon Link family provides staking, rewards, and sequencing infrastructure. Both families share the FuelERC20GatewayV4 and FuelMessagePortalV3 contracts, which are used for bridging and are also part of the Icon Link family's token and message handling.",
+    "product_family_count": 2
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4ced0596344b58dd3b11ffc621da85f7f57a5972",
+      "name": "Token",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 7633472.421188637,
+      "is_proxy": false,
+      "impl_address": "0x4ced0596344b58dd3b11ffc621da85f7f57a5972",
+      "impl_name": "Token",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4ced0596344b58dd3b11ffc621da85f7f57a5972",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x675b68aa4d9c2d3bb3f0397048e62e6b7192079c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 7633472.421188637,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa4ca04d02bfdc3a2df56b9b6994520e69df43f67",
+      "name": "FuelERC20GatewayV4",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Icon Link Ethereum Mainnet",
+      "tvl_usd": 3114576.7650528676,
+      "is_proxy": true,
+      "impl_address": "0xde2d792ca3c4d02de3ce1cd1456d8d0990cc3fab",
+      "impl_name": "FuelERC20GatewayV4",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa4ca04d02bfdc3a2df56b9b6994520e69df43f67",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3114576.7650528676,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb3109036813ff48e523cef3818438e64ee04069d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xde2d792ca3c4d02de3ce1cd1456d8d0990cc3fab",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2056",
+        "audit-2058"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x725b2b1a15d818e1f25c68be77816802e6036559",
+      "name": "FuelChainState",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x621850dbb9160b54002b4a25b9fc9b2f26315f7e",
+      "impl_name": "FuelChainState",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x725b2b1a15d818e1f25c68be77816802e6036559",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf3d20db1d16a4d0ad2f280a5e594ff3c7790f130",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2056",
+        "audit-2058"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x05f886ddee0fe07496f6e38b0e140f8ef4655b16",
+      "name": "FuelMessagePortalV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x2c4df10a82cf077122ed99573aca6dacd76f2e67",
+      "impl_name": "FuelMessagePortalV3",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x05f886ddee0fe07496f6e38b0e140f8ef4655b16",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2c4df10a82cf077122ed99573aca6dacd76f2e67",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5a725f508659f9846e5877e8625f9ea32b57d577",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6d67857224f66d7a677f063b861b6bacafb10639",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xaeb0c00d0125a8a788956ade4f4f12ead9f65ddf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2056",
+        "audit-2058"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x27ee61849f38bb8122ce40f11620d9ff6504df94",
+      "name": "FuelStreamX",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3b9f8edb46c032643dcf25f227c23f21f04a5c8e",
+      "impl_name": "FuelStreamX",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x27ee61849f38bb8122ce40f11620d9ff6504df94",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3b9f8edb46c032643dcf25f227c23f21f04a5c8e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x481aeeb9bdfe08f050d22f0b352356691c4b0b59",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6c644cf9b3ca2afb11f2218ec4a9f2a561c99626",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x19b5cc75846bf6286d599ec116536a333c4c2c14",
+      "name": "PreDeposits",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd2f5cc4a954fe75c736af92c2974c746f0229ddf",
+      "impl_name": "PreDeposits",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x19b5cc75846bf6286d599ec116536a333c4c2c14",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x36fa1d4f525850794463d9bb47fc5a48295a9e45",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd2f5cc4a954fe75c736af92c2974c746f0229ddf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2059"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x33d3b4b66ae89e640d048e10f857ef0e20ed52cb",
+      "name": "ProtobufAnyLib",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProtobufAnyLib",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x33d3b4b66ae89e640d048e10f857ef0e20ed52cb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6d5e306825ea6193ca57f3df754adf36a6a260a6",
+      "name": "RecoveryRegistry",
+      "role": "registry",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe2c3af17f2bfb1b891051e0c072d6654ab6c0cdd",
+      "impl_name": "RecoveryRegistry",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6d5e306825ea6193ca57f3df754adf36a6a260a6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe2c3af17f2bfb1b891051e0c072d6654ab6c0cdd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1cd61731ce62e5691de2e547fa740bcd0663b1a8",
+      "name": "RewardsDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Icon Link Ethereum Mainnet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x1cd61731ce62e5691de2e547fa740bcd0663b1a8",
+      "impl_name": "RewardsDistributor",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1cd61731ce62e5691de2e547fa740bcd0663b1a8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc20c2ea5fc5f26200f3339512f336c2ece41fc18",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9ba9d8781ac7ce5adb8b8ec48aab521d0db5cd7e",
+      "name": "Rig",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Icon Link Ethereum Mainnet",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x2c1899625d270cb3f1a286149fe0b09817d786c7",
+      "impl_name": "Rig",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9ba9d8781ac7ce5adb8b8ec48aab521d0db5cd7e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5865cc20c4ad480ff537c89ae797f26ca6b7f96c",
+      "name": "SequencerInterface",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Icon Link Ethereum Mainnet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x5865cc20c4ad480ff537c89ae797f26ca6b7f96c",
+      "impl_name": "SequencerInterface",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5865cc20c4ad480ff537c89ae797f26ca6b7f96c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb0b005feaeacef201937612e2d7ac8e656c61d7b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xca0c6b264f0f9958ec186eb2eaa208966187d866",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf52f8305c7b61800899dd36d140f6518614ea155",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2972ebb62e95d639d4282f78633f2cd05e5b3714",
+      "name": "SequencerProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Icon Link Ethereum Mainnet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x2972ebb62e95d639d4282f78633f2cd05e5b3714",
+      "impl_name": "SequencerProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2972ebb62e95d639d4282f78633f2cd05e5b3714",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xba0e6bf94580d49b5aaaa54279198d424b23ecc3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd31f45fb6c2011d41e489cb24b45810d578a3279",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0eb53e434854af3d8d24283fe803242e989f027c",
+      "name": "TokenMigrator",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xa02f60b7f7b736e130ab97890110dea8bf03bf9e",
+      "impl_name": "TokenMigrator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0eb53e434854af3d8d24283fe803242e989f027c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x50ed39b58f66338b84e67e6ff9a2bf00725edfe8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x788d6f99bad2ffec53cbb8ea3929b14f6aa6a9c5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa02f60b7f7b736e130ab97890110dea8bf03bf9e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb3a8b7a17a669c55e6e74868076d79f759ad7349",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe384ca20326981cdfe697338f9c141ec41f5ee03",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xde8a1c2d142bc8f3bf3181a2e301a37471508fe1",
+      "name": "TokenRelease",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Icon Link Ethereum Mainnet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenRelease",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xde8a1c2d142bc8f3bf3181a2e301a37471508fe1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5450ff2ea044a2ab16a4e7c4f6e58f9bdece0da9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5450ff2ea044a2ab16a4e7c4f6e58f9bdece0da9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x574051bb22adee7841131da52537d36f9b2c2ac5",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x574051bb22adee7841131da52537d36f9b2c2ac5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb73a8187654baaf7f58ff7866a72d04a5b0395bf",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb73a8187654baaf7f58ff7866a72d04a5b0395bf",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6c1d9710b04a903fcfd61aef43632fd22fc25e71",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Icon Link Ethereum Mainnet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x6c1d9710b04a903fcfd61aef43632fd22fc25e71",
+      "impl_name": "Vault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6c1d9710b04a903fcfd61aef43632fd22fc25e71",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd57d30d06969e5a98516e9f8d009c6f39ec169ee",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2053,
+      "audit_key": "audit-2053",
+      "report_name": "AuditsIcon Link",
+      "report_url": "https://github.com/FuelLabs/audits",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2054,
+      "audit_key": "audit-2054",
+      "report_name": "ChainSecurity_Fuel_Sway_Optimizations_audit.pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/ChainSecurity_Fuel_Sway_Optimizations_audit.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2055,
+      "audit_key": "audit-2055",
+      "report_name": "ChainSecurity_Fuel_Sway_Semantic_Analysis_audit.pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/ChainSecurity_Fuel_Sway_Semantic_Analysis_audit.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2056,
+      "audit_key": "audit-2056",
+      "report_name": "Fuel-Bridge-apr24(Public) (including Diffs).pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/Fuel-Bridge-apr24(Public)%20(including%20Diffs).pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CryptographyLib",
+        "FuelChainState",
+        "FuelERC20Gateway",
+        "FuelERC20GatewayV4",
+        "FuelERC721Gateway",
+        "FuelMessagePortal",
+        "FuelMessagePortalV2",
+        "FuelMessagePortalV3",
+        "MessageReceiver",
+        "bridge-fungible-token"
+      ],
+      "matched_contracts": 10,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2057,
+      "audit_key": "audit-2057",
+      "report_name": "fuel-audit-september-2024(Connectors Predicates)(Public).pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/fuel-audit-september-2024(Connectors%20Predicates)(Public).pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2058,
+      "audit_key": "audit-2058",
+      "report_name": "fuel-audit-september-2024(Diffs on the Bridge and State Contracts)(Public).pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/fuel-audit-september-2024(Diffs%20on%20the%20Bridge%20and%20State%20Contracts)(Public).pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FuelChainState",
+        "FuelERC20GatewayV4",
+        "FuelMessagePortalV3",
+        "proxy"
+      ],
+      "matched_contracts": 10,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2059,
+      "audit_key": "audit-2059",
+      "report_name": "fuel-audit-september-2024(Points Migration Function)(Public).pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/fuel-audit-september-2024(Points%20Migration%20Function)(Public).pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "PreDeposits"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2060,
+      "audit_key": "audit-2060",
+      "report_name": "fuel-sway-standard-audit-july24(Public) (3).pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/fuel-sway-standard-audit-july24(Public)%20(3).pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2061,
+      "audit_key": "audit-2061",
+      "report_name": "fuel_core_audit_report.pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/fuel_core_audit_report.pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2062,
+      "audit_key": "audit-2062",
+      "report_name": "fuel_fast_bridge_audit_final.pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/fuel_fast_bridge_audit_final.pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2063,
+      "audit_key": "audit-2063",
+      "report_name": "fuel_vm_audit_report.pdf",
+      "report_url": "https://github.com/FuelLabs/audits/blob/master/fuel_vm_audit_report.pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 26.7,
+      "latest_audit": "2025-11"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4ced0596344b58dd3b11ffc621da85f7f57a5972",
+      "name": "Token",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 7633472.421188637,
+      "risk_note": "Verified native implementation with $7,633,472.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x33d3b4b66ae89e640d048e10f857ef0e20ed52cb",
+      "name": "ProtobufAnyLib",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1cd61731ce62e5691de2e547fa740bcd0663b1a8",
+      "name": "RewardsDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5865cc20c4ad480ff537c89ae797f26ca6b7f96c",
+      "name": "SequencerInterface",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2972ebb62e95d639d4282f78633f2cd05e5b3714",
+      "name": "SequencerProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0eb53e434854af3d8d24283fe803242e989f027c",
+      "name": "TokenMigrator",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xde8a1c2d142bc8f3bf3181a2e301a37471508fe1",
+      "name": "TokenRelease",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6c1d9710b04a903fcfd61aef43632fd22fc25e71",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 13,
+    "upstream": 0,
+    "standard_library": 5,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 23
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2053,
+        "report_name": "AuditsIcon Link"
+      },
+      {
+        "audit_id": 2054,
+        "report_name": "ChainSecurity_Fuel_Sway_Optimizations_audit.pdf"
+      },
+      {
+        "audit_id": 2055,
+        "report_name": "ChainSecurity_Fuel_Sway_Semantic_Analysis_audit.pdf"
+      },
+      {
+        "audit_id": 2057,
+        "report_name": "fuel-audit-september-2024(Connectors Predicates)(Public).pdf"
+      },
+      {
+        "audit_id": 2060,
+        "report_name": "fuel-sway-standard-audit-july24(Public) (3).pdf"
+      },
+      {
+        "audit_id": 2061,
+        "report_name": "fuel_core_audit_report.pdf"
+      },
+      {
+        "audit_id": 2062,
+        "report_name": "fuel_fast_bridge_audit_final.pdf"
+      },
+      {
+        "audit_id": 2063,
+        "report_name": "fuel_vm_audit_report.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

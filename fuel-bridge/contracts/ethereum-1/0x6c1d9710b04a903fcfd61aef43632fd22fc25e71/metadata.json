@@ -1,0 +1,18 @@
+{
+  "address": "0x6c1d9710b04a903fcfd61aef43632fd22fc25e71",
+  "chain_id": 1,
+  "contract_name": "Vault",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "Apache 2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T03:24:37.412Z"
+}

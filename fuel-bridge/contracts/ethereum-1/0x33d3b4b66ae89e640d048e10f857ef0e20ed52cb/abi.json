@@ -1,0 +1,142 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "InvalidSupplyDeltaTypeUrl",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "InvalidWithdrawalTypeUrl",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "start",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bytes",
+        "name": "buffer",
+        "type": "bytes"
+      }
+    ],
+    "name": "decodeSupplyDelta",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "typeUrl",
+            "type": "string"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "nonce",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "delta",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct SupplyDeltaData",
+            "name": "value",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct SupplyDeltaAny",
+        "name": "supplyDeltaAny",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "start",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bytes",
+        "name": "buffer",
+        "type": "bytes"
+      }
+    ],
+    "name": "decodeWithdrawal",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "typeUrl",
+            "type": "string"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "nonce",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "from",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "to",
+                "type": "string"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "string",
+                    "name": "denom",
+                    "type": "string"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "amount",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct WithdrawalLib.Coin",
+                "name": "amount",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct WithdrawalLib.Data",
+            "name": "value",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct WithdrawalAny",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

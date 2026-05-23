@@ -1,0 +1,18 @@
+{
+  "address": "0x388110217e4d194d501bb52c3ab28dc709eb450d",
+  "chain_id": 1,
+  "contract_name": "MovingAveragePriceProvider",
+  "compiler_version": "v0.5.13+commit.5b0b510c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T03:35:18.036Z"
+}

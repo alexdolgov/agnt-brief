@@ -1,0 +1,18 @@
+{
+  "address": "0x2fad77345e55d3c5dd95ef7594c8c1b214273d3e",
+  "chain_id": 1,
+  "contract_name": "AmmJoinRequest",
+  "compiler_version": "v0.7.0+commit.9e61f92b",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T03:35:17.696Z"
+}

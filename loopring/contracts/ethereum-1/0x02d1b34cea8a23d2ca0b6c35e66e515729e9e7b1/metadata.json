@@ -1,0 +1,18 @@
+{
+  "address": "0x02d1b34cea8a23d2ca0b6c35e66e515729e9e7b1",
+  "chain_id": 1,
+  "contract_name": "AmmExitRequest",
+  "compiler_version": "v0.7.0+commit.9e61f92b",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T03:35:14.840Z"
+}

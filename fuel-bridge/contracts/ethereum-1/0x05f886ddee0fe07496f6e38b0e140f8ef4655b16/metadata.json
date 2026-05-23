@@ -1,0 +1,18 @@
+{
+  "address": "0x05f886ddee0fe07496f6e38b0e140f8ef4655b16",
+  "chain_id": 1,
+  "contract_name": "FuelMessagePortalV3",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "london",
+  "license": "Apache 2.0, Apache-2.0, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T03:24:36.764Z"
+}

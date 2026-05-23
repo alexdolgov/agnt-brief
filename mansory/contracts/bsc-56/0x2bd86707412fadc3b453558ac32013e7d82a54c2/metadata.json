@@ -1,0 +1,17 @@
+{
+  "address": "0x2bd86707412fadc3b453558ac32013e7d82a54c2",
+  "chain_id": 56,
+  "contract_name": "NftTierStakingUpgradeable",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 8387765,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T12:18:25.964Z"
+}

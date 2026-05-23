@@ -2,6 +2,7 @@
 
 | Project | TVL | Coverage | ASD | Lifecycle | Audits | Contracts | Updated |
 |---|---|---|---|---|---|---|---|
+| [abc-pool](./abc-pool/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [across](./across/) | $28.1M | 0.0% | $28.1M | unknown | 0 | 143 | 2026-05-22 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-23 |
 | [aevo](./aevo/) | $98.5M | 9.2% | $1.7M | active | 17 | 331 | 2026-05-22 |
@@ -96,6 +97,8 @@
 | [llamapay](./llamapay/) | $26.4M | 0.0% | ? | active | 0 | 20 | 2026-05-22 |
 | [looping-collective](./looping-collective/) | $11.8M | 7.7% | $11.8M | active | 13 | 14 | 2026-05-22 |
 | [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 0 | 145 | 2026-05-23 |
+| [lumenswap](./lumenswap/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 904 | 2026-05-23 |
+| [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-05-23 |
 | [manta-cedefi](./manta-cedefi/) | $26.8M | 0.0% | ? | unknown | 0 | 17 | 2026-05-22 |
 | [manta-pacific](./manta-pacific/) | $25.7M | 0.0% | ? | active | 0 | 13 | 2026-05-22 |
 | [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-23 |
@@ -147,6 +150,7 @@
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [symbiosis](./symbiosis/) | $236.1M | 5.8% | $236.1M | active | 15 | 137 | 2026-05-23 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 22.6% | ? | active | 9 | 158 | 2026-05-23 |
+| [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 4 | 482 | 2026-05-23 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-05-22 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-05-22 |
 | [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |

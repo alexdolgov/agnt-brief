@@ -1,0 +1,18 @@
+{
+  "address": "0x6461ac51ac85698e3db8b8a666c660c51e9f914c",
+  "chain_id": 56,
+  "contract_name": "WBNB",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T12:34:09.423Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x2c23276107b45e64c8c59482f4a24f4f2e568ea6",
+  "chain_id": 1,
+  "contract_name": "bVault",
+  "compiler_version": "v0.5.15+commit.6a57276f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T12:34:09.385Z"
+}

@@ -1,0 +1,328 @@
+{
+  "schema_version": "2.0",
+  "project_key": "mansory",
+  "generated_at": "2026-05-23T12:18:23.094Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "mansory",
+    "tier": 0,
+    "peak_tvl": 33012528,
+    "peak_date": "2025-09-14T00:00:00.000Z",
+    "tvl_30d_ago": 7236057,
+    "tvl_90d_ago": 8330594,
+    "tvl_current": 6302878,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 15989623,
+    "change_30d_pct": -12.896236168399447,
+    "change_90d_pct": -24.34059323980979,
+    "days_since_peak": 251,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 80.90761785949867
+  },
+  "summary": {
+    "total_contracts": 5,
+    "total_addresses": 12,
+    "unique_implementations": 5,
+    "total_deployments": 12,
+    "audited_contracts": 0,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 5,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 6337619.83971,
+    "tvl_usd": 9.79483737768739e-19,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 0
+    },
+    "asd_usd": 9.79483737768739e-19,
+    "website_url": "https://www.mansory.com/",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Mansory is a Real World Asset (RWA) protocol on BSC that tokenizes assets using LayerZero's Omnichain Fungible Token (OFT) standard, enabling cross-chain transferability. It also includes lottery and NFT staking mechanisms for user engagement and rewards.",
+    "relationship_narrative": "All contracts are deployed by the same deployer and share the TransparentUpgradeableProxy pattern, indicating a unified upgradeable infrastructure. The OFT token likely serves as the core asset used in the lottery and staking contracts.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2bd86707412fadc3b453558ac32013e7d82a54c2",
+      "name": "NftTierStakingUpgradeable",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 9.79483737768739e-19,
+      "is_proxy": false,
+      "impl_address": "0x88fa770e4408b8b5ef7b6d0d42d29d321a31b7a8",
+      "impl_name": "NftTierStakingUpgradeable",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2bd86707412fadc3b453558ac32013e7d82a54c2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x88fa770e4408b8b5ef7b6d0d42d29d321a31b7a8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa033ab0640ed86206aefa73db81b4ee659b7bde3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd6dd93ee31a7ab7c7ee5e05a995d66b486039f2a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 9.79483737768739e-19,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xbc7dee0f48ca7aa4e9b7603329b0fc4b5e462d38",
+      "name": "IpfsProofLotteryUpgradeable",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xda7ac01474da9398bd0b26f9fb62117a13bbac68",
+      "impl_name": "IpfsProofLotteryUpgradeable",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xbc7dee0f48ca7aa4e9b7603329b0fc4b5e462d38",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xda7ac01474da9398bd0b26f9fb62117a13bbac68",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0fcfe33b46e5b21e5e96b722d4c85510198f9255",
+      "name": "MyOFTUpgradeable",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Mansory",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x1ed6051389f66b9d96a7bf2cd7a5e67e708f1a0e",
+      "impl_name": "MyOFTUpgradeable",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x0fcfe33b46e5b21e5e96b722d4c85510198f9255",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1ed6051389f66b9d96a7bf2cd7a5e67e708f1a0e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0238200679ce049f2dc3c335ae817d594885d489",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x0238200679ce049f2dc3c335ae817d594885d489",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xdf07c9c82438e7f53091bf8669ffee9bd256b0e8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x88c5b935c63a047898dbbebc6af294cc7df626e7",
+      "name": "TierStakingTokenUriBuilder",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TierStakingTokenUriBuilder",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x88c5b935c63a047898dbbebc6af294cc7df626e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc5bd1f7a3ea6185a62132b68ac1ade451e6e8ddc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2bd86707412fadc3b453558ac32013e7d82a54c2",
+      "name": "NftTierStakingUpgradeable",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 9.79483737768739e-19,
+      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x88c5b935c63a047898dbbebc6af294cc7df626e7",
+      "name": "TierStakingTokenUriBuilder",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 3,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

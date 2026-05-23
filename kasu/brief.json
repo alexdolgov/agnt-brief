@@ -1,0 +1,1196 @@
+{
+  "schema_version": "2.0",
+  "project_key": "kasu",
+  "generated_at": "2026-05-23T04:06:56.040Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "kasu",
+    "tier": 0,
+    "peak_tvl": 10282477,
+    "peak_date": "2026-05-23T00:00:00.000Z",
+    "tvl_30d_ago": 9441149,
+    "tvl_90d_ago": 6331848,
+    "tvl_current": 10281358,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": null,
+    "change_30d_pct": 8.899435863156063,
+    "change_90d_pct": 62.375312862848254,
+    "days_since_peak": 0,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0.010882591811292162
+  },
+  "summary": {
+    "total_contracts": 22,
+    "total_addresses": 56,
+    "unique_implementations": 22,
+    "total_deployments": 56,
+    "audited_contracts": 0,
+    "unaudited_contracts": 20,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 20,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 10284767.68023,
+    "tvl_usd": 10284767.68023,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://kasu.finance/",
+    "chains": [
+      "base"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Kasu is a real-world asset (RWA) lending protocol on Base that enables users to deposit funds into lending pools and earn yield from off-chain credit facilities. It manages loan origination, clearing, and rewards through a system of upgradeable smart contracts.",
+    "relationship_narrative": "All contracts belong to a single product family and share infrastructure through the KasuController, which likely governs access and configuration. The LendingPoolFactory deploys LendingPool and LendingPoolTranche instances, while the ClearingCoordinator and AcceptedRequestsCalculation handle loan settlement, and the KSU token with its locking and bonus contracts manages incentives.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0133c2ec8a72dec51a9373e4003a2ccf09b3307a",
+      "name": "AcceptedRequestsCalculation",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x1e69dd53b1224ea012086dda11f9b4a23b58bd0e",
+      "impl_name": "AcceptedRequestsCalculation",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0133c2ec8a72dec51a9373e4003a2ccf09b3307a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1e69dd53b1224ea012086dda11f9b4a23b58bd0e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x273597f8cc3a0d87f9e57af1144ca02ca20b556c",
+      "name": "ClearingCoordinator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x2889eafa5732abd724cda4ebc1b9659f90175ed1",
+      "impl_name": "ClearingCoordinator",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x273597f8cc3a0d87f9e57af1144ca02ca20b556c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2889eafa5732abd724cda4ebc1b9659f90175ed1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2cf12a6d91fa4beb5a4c17589a03e78f88f57de2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8d38a2b611e5ac72af1a38a67629322b191737b7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xe2accc83a41f8d5f4baf57be42e9856091227016",
+      "name": "FeeManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xb95834c5610a178be9065dd1ef78258d29879cdb",
+      "impl_name": "FeeManager",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe2accc83a41f8d5f4baf57be42e9856091227016",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xef956c2193e032609da84bec5e5251b28939b6b9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1617b79c57e00c862941eb578fd134c4d1c0f833",
+      "name": "FixedTermDeposit",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x138fcb1d9d921bf49fbd23a82a9c5ac52ef7ea30",
+      "impl_name": "FixedTermDeposit",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1617b79c57e00c862941eb578fd134c4d1c0f833",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x757ab3139e09beb9ccdf59762ad00825efae5ed3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6fd19b47c857640428ba011ff1dc454c5ec479bd",
+      "name": "KasuAllowList",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x6fd19b47c857640428ba011ff1dc454c5ec479bd",
+      "impl_name": "KasuAllowList",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6fd19b47c857640428ba011ff1dc454c5ec479bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x807a7e119ebf0282420b5ca0e0056c0525cbf8bb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb0d7eb2d5036fb85a231d0e243a5b723ba5d2868",
+      "name": "KasuController",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe768e5d17f338df23983876afdcd42ae7d60b052",
+      "impl_name": "KasuController",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb0d7eb2d5036fb85a231d0e243a5b723ba5d2868",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe768e5d17f338df23983876afdcd42ae7d60b052",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f",
+      "name": "KasuPoolExternalTVL",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Kasu",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe477a800c428c7ace5ba2b4cef0be55bca2cb191",
+      "impl_name": "KasuPoolExternalTVL",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe477a800c428c7ace5ba2b4cef0be55bca2cb191",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x5d9b878744dbe721a3f33a60a6b102e289ceadba",
+      "name": "KSU",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7923837dc93d897e12696e0f4fd50b51fbacf693",
+      "impl_name": "KSU",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5d9b878744dbe721a3f33a60a6b102e289ceadba",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7923837dc93d897e12696e0f4fd50b51fbacf693",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x39a4e4df478a792afaa9ff56ca7cd5327a89e41a",
+      "name": "KSULockBonus",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x39a4e4df478a792afaa9ff56ca7cd5327a89e41a",
+      "impl_name": "KSULockBonus",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x39a4e4df478a792afaa9ff56ca7cd5327a89e41a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xeede30acf16caff49c1a48f75185c67be2e20b40",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0b98f531754c55c2c2a084e0ec1647ccee397931",
+      "name": "KSULocking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xd498babcf8d0ec89e129fb874dab9e4c35cd2a52",
+      "impl_name": "KSULocking",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0b98f531754c55c2c2a084e0ec1647ccee397931",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x601eab262ba2ced5be905ad200d451de0ac3d1ef",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb145c061684c701c2c018a3f322aa14f5a553ce1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31",
+      "name": "LendingPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xcdc9b9b475095cb0dcd9e11c5d1c9463c5a1de99",
+      "impl_name": "LendingPool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8855ec34d148fddcd3d536a2eb9c04943e926e8f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9b9ec355b7f11a996b8d483d8608a82785efa621",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcdc9b9b475095cb0dcd9e11c5d1c9463c5a1de99",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x263b5d074584118ff2b65b0125ac8a4529ab05a8",
+      "name": "LendingPoolFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x617b6e6a4f444bbc5dee08193e9597e20603f9f3",
+      "impl_name": "LendingPoolFactory",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x263b5d074584118ff2b65b0125ac8a4529ab05a8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x617b6e6a4f444bbc5dee08193e9597e20603f9f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd8c77e8882f9bada35804625e8264e51cb905190",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2cce4a6d835c60ae98aa2914f0153c354d48e955",
+      "name": "LendingPoolManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x4ae8efbf1c5360ca56c427b7dcf88d313c5dacfc",
+      "impl_name": "LendingPoolManager",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2cce4a6d835c60ae98aa2914f0153c354d48e955",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc94216acef9c3b602f653135434031a87267ebff",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd2812f27ee3d898daef64772e113a13a0f80c229",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe1be322323a412579b4a09fb08ff4bfca12096b5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x31b186049085e7bf5b68c27657bd73b5a5bac13f",
+      "name": "LendingPoolTranche",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x43e1b2d290cda67038e9e2c1c0020149fa0e3747",
+      "impl_name": "LendingPoolTranche",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x31b186049085e7bf5b68c27657bd73b5a5bac13f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8f2b35004fd5fe1b1d649bf52df8fd6ee4467f12",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa2e9992b73be340ec7134e751a4e5358374fb1d0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xec998071e553742596d9971190f13c3dafd9c899",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xef5d123d26280fc96099abf9c86d7b7e5a3033be",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b",
+      "name": "ManualKsuPrice",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb82992c13adee67f43758bce6ff16e32c0ca4dc6",
+      "impl_name": "ManualKsuPrice",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb82992c13adee67f43758bce6ff16e32c0ca4dc6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0c5554058118dba2da4a3ca2a448c5a61bc7f4cc",
+      "name": "PendingPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x9b57df89e59235f0481a5fae942302c8831e1b81",
+      "impl_name": "PendingPool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0c5554058118dba2da4a3ca2a448c5a61bc7f4cc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3cf8562b0a1ff6d6749071e478177ec2ddc7dbf4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6ecd74982433ea8f00fbd879485641c507c8e2e0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc17f46d36de495a866d11e1fc284fa013903e3a9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1ca11edb8d8a57b239925c46be878dc2c9261cf3",
+      "name": "Swapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x1ca11edb8d8a57b239925c46be878dc2c9261cf3",
+      "impl_name": "Swapper",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1ca11edb8d8a57b239925c46be878dc2c9261cf3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe593edf0579cfa8b622c327c05a0070c71baa6d2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x193bb02a24f5562b58feb86550e6f09bb6c41f69",
+      "name": "SystemVariables",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x666b589933965bf8b378ed973f0404b6cae0eb52",
+      "impl_name": "SystemVariables",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x193bb02a24f5562b58feb86550e6f09bb6c41f69",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe91994c546ce95dc4e08b3f9fa44a00271a3cd4a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x59c8ea31bd71fa48e0201a88354b1be26dd0eedc",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x59c8ea31bd71fa48e0201a88354b1be26dd0eedc",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xafb2966dcc3f20ec4412162a8d203247a93a7765",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xafb2966dcc3f20ec4412162a8d203247a93a7765",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb4784f69bb1f1076f50907cb0a815908a719d635",
+      "name": "UserLoyaltyRewards",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb3ee363d1b69f7ebf0460d6f73e3a311f251b2a9",
+      "impl_name": "UserLoyaltyRewards",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb4784f69bb1f1076f50907cb0a815908a719d635",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf0e92ad317a315adb21923aefce66aaf55364be9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x5dc8d315a80fd99abef0f327b9a52a3fbc3c93f3",
+      "name": "UserManager",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x34d17c9dd1f31fb34757de923ec083601d0edffe",
+      "impl_name": "UserManager",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5dc8d315a80fd99abef0f327b9a52a3fbc3c93f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xaa81b50dfba54ae5b5a52c6738249148bc7a5436",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcdb16b0d525ed64ba5f063e3367b934fd648fed0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x273597f8cc3a0d87f9e57af1144ca02ca20b556c",
+      "name": "ClearingCoordinator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xe2accc83a41f8d5f4baf57be42e9856091227016",
+      "name": "FeeManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1617b79c57e00c862941eb578fd134c4d1c0f833",
+      "name": "FixedTermDeposit",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6fd19b47c857640428ba011ff1dc454c5ec479bd",
+      "name": "KasuAllowList",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x39a4e4df478a792afaa9ff56ca7cd5327a89e41a",
+      "name": "KSULockBonus",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0b98f531754c55c2c2a084e0ec1647ccee397931",
+      "name": "KSULocking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31",
+      "name": "LendingPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x263b5d074584118ff2b65b0125ac8a4529ab05a8",
+      "name": "LendingPoolFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2cce4a6d835c60ae98aa2914f0153c354d48e955",
+      "name": "LendingPoolManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x31b186049085e7bf5b68c27657bd73b5a5bac13f",
+      "name": "LendingPoolTranche",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0c5554058118dba2da4a3ca2a448c5a61bc7f4cc",
+      "name": "PendingPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1ca11edb8d8a57b239925c46be878dc2c9261cf3",
+      "name": "Swapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 13,
+    "upstream": 0,
+    "standard_library": 8,
+    "needs_review": 1
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

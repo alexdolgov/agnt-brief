@@ -50,6 +50,7 @@
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 11.1% | ? | active | 4 | 126 | 2026-05-21 |
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
+| [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 0 | 63 | 2026-05-23 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
 | [hemibtc](./hemibtc/) | $46.2K | 2.7% | $46.2K | active | 5 | 47 | 2026-05-22 |
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
@@ -61,6 +62,7 @@
 | [inverse-finance](./inverse-finance/) | $428.8M | 13.7% | $428.8M | unknown | 8 | 125 | 2026-05-21 |
 | [juicebox](./juicebox/) | $11.2M | 0.0% | ? | active | 0 | 77 | 2026-05-23 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | unknown | 0 | 2 | 2026-05-22 |
+| [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 0 | 22 | 2026-05-23 |
 | [katana-pre-launch](./katana-pre-launch/) | $18.3M | 0.0% | $18.3M | active | 29 | 166 | 2026-05-22 |
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
@@ -102,6 +104,7 @@
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-05-22 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-05-22 |
+| [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | unknown | 2 | 4 | 2026-05-22 |
 | [wrapped](./wrapped/) | $1.7M | 0.0% | $1.7M | active | 0 | 119 | 2026-05-22 |

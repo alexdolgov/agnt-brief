@@ -1,0 +1,18 @@
+{
+  "address": "0x84fda63c0769b2478865074a0479d28f1a6003a2",
+  "chain_id": 1,
+  "contract_name": "TSWrapperTCRouterV4_V1",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:10:09.068Z"
+}

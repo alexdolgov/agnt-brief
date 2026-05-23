@@ -1,0 +1,17 @@
+{
+  "address": "0x2cce4a6d835c60ae98aa2914f0153c354d48e955",
+  "chain_id": 8453,
+  "contract_name": "LendingPoolManager",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 34,
+  "constructor_arguments": "000000000000000000000000757ab3139e09beb9ccdf59762ad00825efae5ed3000000000000000000000000833589fcd6edb6e08f4c7c32d4f71b54bda02913000000000000000000000000b0d7eb2d5036fb85a231d0e243a5b723ba5d28680000000000000000000000004200000000000000000000000000000000000006000000000000000000000000e593edf0579cfa8b622c327c05a0070c71baa6d2",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:06:59.390Z"
+}

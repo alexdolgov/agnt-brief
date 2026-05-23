@@ -1,0 +1,18 @@
+{
+  "address": "0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31",
+  "chain_id": 8453,
+  "contract_name": "LendingPool",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:06:58.971Z"
+}

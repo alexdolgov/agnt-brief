@@ -1,0 +1,18 @@
+{
+  "address": "0xd5060ca04efc02c9edc619f9047df1e1cb382d01",
+  "chain_id": 1,
+  "contract_name": "TSFeeDistributor_V2",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:10:09.529Z"
+}

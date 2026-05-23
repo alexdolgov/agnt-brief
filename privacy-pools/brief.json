@@ -1,0 +1,138 @@
+{
+  "schema_version": "2.0",
+  "project_key": "privacy-pools",
+  "generated_at": "2026-05-23T10:21:01.085Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "privacy-pools",
+    "tier": 0,
+    "peak_tvl": 6857760,
+    "peak_date": "2026-05-16T00:00:00.000Z",
+    "tvl_30d_ago": 5603373,
+    "tvl_90d_ago": 2424771,
+    "tvl_current": 6616686,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 2111666,
+    "change_30d_pct": 18.08398262974819,
+    "change_90d_pct": 172.87879968871286,
+    "days_since_peak": 7,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 3.515346118849304
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 3,
+    "unique_implementations": 1,
+    "total_deployments": 3,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 6662101.45432,
+    "tvl_usd": 6662101.45432,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://privacypools.com/",
+    "chains": [
+      "arbitrum",
+      "ethereum",
+      "optimism"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Privacy Pools is a protocol enabling private transactions on Ethereum, Optimism, and Arbitrum One. It allows users to deposit and withdraw funds while preserving privacy through zero-knowledge proofs.",
+    "relationship_narrative": "The protocol consists of a single product family with Entrypoint contracts deployed behind ERC1967Proxy proxies. All contracts share the same deployer and are deployed on multiple chains, indicating a unified infrastructure.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x44192215fed782896be2ce24e0bfbf0bf825d15e",
+      "name": "Entrypoint",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Privacy Pools",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x1cabfda9a9c14d16302dd7c8f4b6e2a57aa7b364",
+      "impl_name": "Entrypoint",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6818809eefce719e480a7526d76bd3e561526b46",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x44192215fed782896be2ce24e0bfbf0bf825d15e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x44192215fed782896be2ce24e0bfbf0bf825d15e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

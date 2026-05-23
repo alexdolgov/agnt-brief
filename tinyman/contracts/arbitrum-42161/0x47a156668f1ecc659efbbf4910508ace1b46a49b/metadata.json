@@ -1,0 +1,18 @@
+{
+  "address": "0x47a156668f1ecc659efbbf4910508ace1b46a49b",
+  "chain_id": 42161,
+  "contract_name": "MIMETHStrategy2",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T10:39:00.112Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x5b49fb340ee2a92ac9b5ae9a6920a54911b5633b",
+  "chain_id": 1,
+  "contract_name": "ERC7540Facet",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 4000,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:58:35.851Z"
+}

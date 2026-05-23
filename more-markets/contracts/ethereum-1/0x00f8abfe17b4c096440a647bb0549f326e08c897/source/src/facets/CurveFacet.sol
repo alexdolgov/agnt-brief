@@ -1,0 +1,436 @@
+// SPDX-License-Identifier: BUSL-1.1
+pragma solidity 0.8.28;
+
+import {MoreVaultsLib, IERC20, IERC20Metadata} from "@More-Vaults-Core/src/libraries/MoreVaultsLib.sol";
+import {AccessControlLib} from "@More-Vaults-Core/src/libraries/AccessControlLib.sol";
+import {ICurveFacet} from "../interfaces/facets/ICurveFacet.sol";
+import {ICurveRouter} from "../interfaces/Curve/ICurveRouter.sol";
+import {ICurvePool} from "../interfaces/Curve/ICurvePool.sol";
+import {BaseFacetInitializer} from "@More-Vaults-Core/src/facets/BaseFacetInitializer.sol";
+import {EnumerableSet} from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {Math} from "@openzeppelin/contracts/utils/math/Math.sol";
+import {ILiquidityGaugeV6} from "../interfaces/Curve/ILiquidityGaugeV6.sol";
+import {IMultiRewards} from "../interfaces/Curve/IMultiRewards.sol";
+import {Math} from "@openzeppelin/contracts/utils/math/Math.sol";
+
+/**
+ * @title CurveFacet
+ * @notice Facet for handling token exchanges through Curve protocol
+ */
+contract CurveFacet is ICurveFacet, BaseFacetInitializer {
+    using SafeERC20 for IERC20;
+    using EnumerableSet for EnumerableSet.Bytes32Set;
+    using EnumerableSet for EnumerableSet.AddressSet;
+    using Math for uint256;
+
+    bytes32 constant CURVE_LP_TOKENS_ID = keccak256("CURVE_LP_TOKENS_ID");
+    bytes32 constant COINS_SELECTOR =
+        0xc661065700000000000000000000000000000000000000000000000000000000;
+
+    uint256 constant STABLE_POOL_DEVIATION = 500; // 5%
+    uint256 constant PRECISION = 10_000; // 100%
+
+    function INITIALIZABLE_STORAGE_SLOT()
+        internal
+        pure
+        override
+        returns (bytes32)
+    {
+        return keccak256("MoreVaults.storage.initializable.CurveFacet");
+    }
+
+    /**
+     * @notice Returns the name of the facet
+     * @return The facet name
+     */
+    function facetName() public pure returns (string memory) {
+        return "CurveFacet";
+    }
+
+    function facetVersion() public pure returns (string memory) {
+        return "1.0.0";
+    }
+
+    function initialize(bytes calldata data) external initializerFacet {
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+        ds.supportedInterfaces[type(ICurveFacet).interfaceId] = true;
+        (address facetAddress, bytes32 facetSelector) = abi.decode(
+            data,
+            (address, bytes32)
+        );
+        ds.facetsForAccounting.push(facetSelector);
+        ds.beforeAccountingFacets.push(facetAddress);
+        ds.vaultExternalAssets[MoreVaultsLib.TokenType.HeldToken].add(
+            CURVE_LP_TOKENS_ID
+        );
+    }
+
+    function onFacetRemoval(bool isReplacing) external {
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+        ds.supportedInterfaces[type(ICurveFacet).interfaceId] = false;
+
+        MoreVaultsLib.removeFromBeforeAccounting(ds, ds.facetOnRemoval, isReplacing);
+        MoreVaultsLib.removeFromFacetsForAccounting(
+            ds,
+            ICurveFacet.accountingCurveFacet.selector,
+            isReplacing
+        );
+
+        if (!isReplacing) {
+            ds.vaultExternalAssets[MoreVaultsLib.TokenType.HeldToken].remove(
+                CURVE_LP_TOKENS_ID
+            );
+        }
+    }
+
+    function beforeAccounting() external {
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+
+        EnumerableSet.AddressSet storage tokensHeld = ds.tokensHeld[
+            CURVE_LP_TOKENS_ID
+        ];
+
+        for (uint256 i = 0; i < tokensHeld.length(); ) {
+            if (ds.isNecessaryToCheckLock[tokensHeld.at(i)]) {
+                // needed to prevent Curve read-only reentrancy attack and check lock with call of remove_liquidity
+                uint256 poolLength = ds.curvePoolLength[tokensHeld.at(i)];
+                if (poolLength == 2) {
+                    uint256[2] memory amounts;
+                    amounts[0] = 0;
+                    amounts[1] = 0;
+                    ICurvePool(tokensHeld.at(i)).remove_liquidity(1, amounts);
+                } else if (poolLength == 3) {
+                    uint256[3] memory amounts;
+                    amounts[0] = 0;
+                    amounts[1] = 0;
+                    amounts[2] = 0;
+                    ICurvePool(tokensHeld.at(i)).remove_liquidity(1, amounts);
+                } else if (poolLength == 4) {
+                    uint256[4] memory amounts;
+                    amounts[0] = 0;
+                    amounts[1] = 0;
+                    amounts[2] = 0;
+                    amounts[3] = 0;
+                    ICurvePool(tokensHeld.at(i)).remove_liquidity(1, amounts);
+                } else if (poolLength == 5) {
+                    uint256[5] memory amounts;
+                    amounts[0] = 0;
+                    amounts[1] = 0;
+                    amounts[2] = 0;
+                    amounts[3] = 0;
+                    amounts[4] = 0;
+                    ICurvePool(tokensHeld.at(i)).remove_liquidity(1, amounts);
+                } else {
+                    revert InvalidPoolLength(poolLength);
+                }
+            }
+            unchecked {
+                ++i;
+            }
+        }
+    }
+
+    function accountingCurveFacet()
+        public
+        view
+        returns (uint256 sum, bool isPositive)
+    {
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+        EnumerableSet.AddressSet storage tokensHeld = ds.tokensHeld[
+            CURVE_LP_TOKENS_ID
+        ];
+        for (uint256 i = 0; i < tokensHeld.length(); ) {
+            address lpToken = tokensHeld.at(i);
+            uint256 poolLength = ds.curvePoolLength[lpToken];
+            // if the lp token is available asset, then it should be already accounted
+            if (ds.isAssetAvailable[lpToken]) {
+                unchecked {
+                    ++i;
+                }
+                continue;
+            }
+
+            // --- LP balance (wallet + staked) ---
+            address gauge = ds.stakingTokenToGauge[lpToken];
+            address multiReward = ds.stakingTokenToMultiRewards[lpToken];
+            uint256 lpTokenBalance = IERC20(lpToken).balanceOf(address(this));
+
+            if (gauge != address(0)) {
+                lpTokenBalance += ILiquidityGaugeV6(gauge).balanceOf(address(this));
+            }
+            if (multiReward != address(0)) {
+                lpTokenBalance += IMultiRewards(multiReward).balanceOf(
+                    address(this)
+                );
+            }
+
+            bool isStable = true;
+            uint256 firstPrice;
+            uint256 minPrice;
+            uint256 totalValue;
+
+            for (uint256 j = 0; j < poolLength; ) {
+                address token = ICurvePool(lpToken).coins(j);
+                uint256 tokenDecimals = IERC20Metadata(token).decimals();
+
+                uint256 price = MoreVaultsLib.convertToUnderlying(
+                    token,
+                    10 ** tokenDecimals,
+                    Math.Rounding.Floor
+                );
+
+                if (j == 0) {
+                    firstPrice = price;
+                } else {
+                    uint256 upper = (firstPrice * (PRECISION + STABLE_POOL_DEVIATION)) / PRECISION;
+                    uint256 lower = (firstPrice * (PRECISION - STABLE_POOL_DEVIATION)) / PRECISION;
+                    if (price < lower || price > upper) {
+                        isStable = false;
+                    }
+                }
+
+                if (price < minPrice || minPrice == 0) {
+                    minPrice = price;
+                }
+
+                uint256 balance = ICurvePool(lpToken).balances(j);
+                totalValue += price.mulDiv(
+                    balance,
+                    10 ** tokenDecimals,
+                    Math.Rounding.Floor
+                );
+
+                unchecked {
+                    ++j;
+                }
+            }
+
+            uint256 pricePerLP;
+
+            if (isStable) {
+                pricePerLP = minPrice.mulDiv(
+                    ICurvePool(lpToken).get_virtual_price(),
+                    1e18,
+                    Math.Rounding.Floor
+                );
+            } else {
+                uint256 totalSupply = IERC20(lpToken).totalSupply();
+
+                uint256 weightedValue = totalValue.mulDiv(
+                    1e18,
+                    totalSupply,
+                    Math.Rounding.Floor
+                );
+
+                uint256 withdrawMin;
+                for (uint256 j = 0; j < poolLength; ) {
+                    uint256 value = ICurvePool(lpToken).calc_withdraw_one_coin(
+                        1e18, // 1 LP
+                        j
+                    );
+                    if (withdrawMin == 0 || value < withdrawMin) {
+                        withdrawMin = value;
+                    }
+                    unchecked {
+                        ++j;
+                    }
+                }
+
+                pricePerLP = weightedValue < withdrawMin
+                    ? weightedValue
+                    : withdrawMin;
+            }
+
+            uint8 lpDecimals = IERC20Metadata(lpToken).decimals();
+            sum += pricePerLP.mulDiv(
+                lpTokenBalance,
+                10 ** lpDecimals,
+                Math.Rounding.Floor
+            );
+
+            unchecked {
+                ++i;
+            }
+        }
+
+        isPositive = true;
+    }
+
+    /**
+     * @inheritdoc ICurveFacet
+     */
+    function exchangeNg(
+        address curveRouter,
+        address[11] calldata _route,
+        uint256[4][5] calldata _swap_params,
+        uint256 _amount,
+        uint256 _min_dy
+    ) external payable returns (uint256) {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(curveRouter);
+        address inputToken = _route[0];
+        (
+            uint256 index,
+            address outputToken
+        ) = _getOutputTokenAddressAndIndexOfLastSwap(_route);
+
+        for (uint256 i = 0; i < _swap_params.length; ) {
+            if (_swap_params[i][2] == 5 || _swap_params[i][2] == 7)
+                revert InvalidSwapType(i);
+            unchecked {
+                ++i;
+            }
+        }
+        // If not remove liquidity - validate input token
+        if (_swap_params[0][2] != 6) {
+            MoreVaultsLib.validateAssetAvailable(inputToken);
+        }
+        // If not add liquidity - validate output token
+        if (_swap_params[index][2] != 4) {
+            MoreVaultsLib.validateAssetAvailable(outputToken);
+        } else {
+            // if add liquidity, validate, that first coin in pool is available in vault
+            MoreVaultsLib.validateAssetAvailable(
+                ICurvePool(outputToken).coins(0)
+            );
+        }
+        IERC20(inputToken).forceApprove(curveRouter, _amount);
+        uint256 receivedAmount = ICurveRouter(curveRouter).exchange(
+            _route,
+            _swap_params,
+            _amount,
+            _min_dy,
+            address(this)
+        );
+
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+        if (_swap_params[index][2] == 4) {
+            ds.tokensHeld[CURVE_LP_TOKENS_ID].add(outputToken);
+            if (ds.curvePoolLength[outputToken] == 0) {
+                ds.curvePoolLength[outputToken] = _getPoolLength(outputToken);
+            }
+        }
+        if (_swap_params[0][2] == 6) {
+            MoreVaultsLib.removeTokenIfnecessary(
+                ds.tokensHeld[CURVE_LP_TOKENS_ID],
+                inputToken
+            );
+        }
+        return receivedAmount;
+    }
+
+    /**
+     * @inheritdoc ICurveFacet
+     */
+    function exchange(
+        address curveRouter,
+        address[11] calldata _route,
+        uint256[5][5] calldata _swap_params,
+        uint256 _amount,
+        uint256 _min_dy,
+        address[5] calldata _pools
+    ) external payable returns (uint256) {
+        AccessControlLib.validateDiamond(msg.sender);
+        MoreVaultsLib.validateAddressWhitelisted(curveRouter);
+        address inputToken = _route[0];
+        (
+            uint256 index,
+            address outputToken
+        ) = _getOutputTokenAddressAndIndexOfLastSwap(_route);
+
+        for (uint256 i = 0; i < _swap_params.length; ) {
+            if (_swap_params[i][2] == 5 || _swap_params[i][2] == 7)
+                revert InvalidSwapType(i);
+            unchecked {
+                ++i;
+            }
+        }
+
+        // If not remove liquidity - validate input token
+        if (_swap_params[0][2] != 6) {
+            MoreVaultsLib.validateAssetAvailable(inputToken);
+        }
+        // If not add liquidity - validate output token
+        if (_swap_params[index][2] != 4) {
+            MoreVaultsLib.validateAssetAvailable(outputToken);
+        } else {
+            // if add liquidity, validate, that first coin in pool is available in vault
+            MoreVaultsLib.validateAssetAvailable(
+                ICurvePool(outputToken).coins(0)
+            );
+        }
+        IERC20(inputToken).forceApprove(curveRouter, _amount);
+        uint256 receivedAmount = ICurveRouter(curveRouter).exchange(
+            _route,
+            _swap_params,
+            _amount,
+            _min_dy,
+            _pools,
+            address(this)
+        );
+
+        MoreVaultsLib.MoreVaultsStorage storage ds = MoreVaultsLib
+            .moreVaultsStorage();
+        if (_swap_params[index][2] == 4) {
+            if (ds.tokensHeld[CURVE_LP_TOKENS_ID].add(outputToken)) {
+                // check if interacting with non NG pools
+                if (_swap_params[index][3] < 10) {
+                    ds.isNecessaryToCheckLock[outputToken] = true;
+                }
+                if (ds.curvePoolLength[outputToken] == 0) {
+                    ds.curvePoolLength[outputToken] = _getPoolLength(
+                        outputToken
+                    );
+                }
+            }
+        }
+        if (_swap_params[0][2] == 6) {
+            MoreVaultsLib.removeTokenIfnecessary(
+                ds.tokensHeld[CURVE_LP_TOKENS_ID],
+                inputToken
+            );
+        }
+        return receivedAmount;
+    }
+
+    /**
+     * @notice Extracts output token address from the swap path
+     * @param _route The swap path containing route information
+     * @return i index of last swap in the route
+     * @return outputToken The address of the output token
+     */
+    function _getOutputTokenAddressAndIndexOfLastSwap(
+        address[11] calldata _route
+    ) internal pure returns (uint256 i, address outputToken) {
+        while (i < 4 && _route[i * 2 + 3] != address(0)) i++;
+        outputToken = _route[(i + 1) * 2];
+    }
+
+    function _getPoolLength(
+        address pool
+    ) internal view returns (uint256 length) {
+        length = 2;
+        assembly {
+            let freePtr := mload(0x40)
+            mstore(freePtr, COINS_SELECTOR)
+            for {
+                let i := 2
+            } 1 {
+                i := add(i, 1)
+            } {
+                mstore(add(freePtr, 4), i)
+                let res := staticcall(gas(), pool, freePtr, 0x24, 0, 0)
+                if iszero(res) {
+                    break
+                }
+                length := add(length, 1)
+            }
+        }
+    }
+}

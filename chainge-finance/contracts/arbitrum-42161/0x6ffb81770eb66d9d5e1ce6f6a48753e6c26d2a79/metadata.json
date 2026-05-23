@@ -1,0 +1,18 @@
+{
+  "address": "0x6ffb81770eb66d9d5e1ce6f6a48753e6c26d2a79",
+  "chain_id": 42161,
+  "contract_name": "Vesting",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GNU GPLv3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T01:04:01.939Z"
+}

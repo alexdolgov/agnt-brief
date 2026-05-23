@@ -1,0 +1,17 @@
+{
+  "address": "0xfa3f78123da6c25548ced8e2e194483a067ea659",
+  "chain_id": 1,
+  "contract_name": "OFTAdapterFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 4000,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 41,
+  "constructor_arguments": "0000000000000000000000001a44076050125825900e736c501f859c50fe728c0000000000000000000000001e8229f31be8dbb068e9125f8c0266cab1066235",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:58:39.397Z"
+}

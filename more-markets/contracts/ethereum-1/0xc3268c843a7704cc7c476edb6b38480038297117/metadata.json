@@ -1,0 +1,17 @@
+{
+  "address": "0xc3268c843a7704cc7c476edb6b38480038297117",
+  "chain_id": 1,
+  "contract_name": "LzAdapter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 4000,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 63,
+  "constructor_arguments": "0000000000000000000000001a44076050125825900e736c501f859c50fe728c0000000000000000000000001e8229f31be8dbb068e9125f8c0266cab106623500000000000000000000000000000000000000000000000000000000ffffffff0000000000000000000000007bdb8b17604b03125efaed33ca0c55fbf856bb0c0000000000000000000000006a0b3724af49ce6f14669d07823650ec26553890",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:58:38.092Z"
+}

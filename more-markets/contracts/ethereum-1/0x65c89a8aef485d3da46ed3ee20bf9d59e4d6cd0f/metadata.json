@@ -1,0 +1,17 @@
+{
+  "address": "0x65c89a8aef485d3da46ed3ee20bf9d59e4d6cd0f",
+  "chain_id": 1,
+  "contract_name": "MultiRewardsFacet",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 3000,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T00:58:36.458Z"
+}

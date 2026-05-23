@@ -1,0 +1,17 @@
+{
+  "address": "0xf34f9b3c2fa603486652f12426fcd9614503a7bc",
+  "chain_id": 56,
+  "contract_name": "MerkleTreeTest",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "0000000000000000000000003fa9c21c585b009972c705c992c5e93a4efd5202",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T21:01:36.943Z"
+}

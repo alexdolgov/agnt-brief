@@ -1,0 +1,18 @@
+{
+  "address": "0x2066e0436f23b98d24aa8c80fa5f21a35519c7c3",
+  "chain_id": 56,
+  "contract_name": "TradingCompetitionPerpetualManager",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT, SYMM-Core-Business-Source-License-1.1, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 39,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T21:01:26.924Z"
+}

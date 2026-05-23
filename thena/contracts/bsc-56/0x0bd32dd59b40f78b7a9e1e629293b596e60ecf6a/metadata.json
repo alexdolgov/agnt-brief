@@ -1,0 +1,17 @@
+{
+  "address": "0x0bd32dd59b40f78b7a9e1e629293b596e60ecf6a",
+  "chain_id": 56,
+  "contract_name": "TradingCompetitionManager",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T21:01:25.015Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xa1f06b96f082c470e9759d1090d281b2493c6a2c",
+  "chain_id": 5000,
+  "contract_name": "METHL2",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T20:48:30.043Z"
+}

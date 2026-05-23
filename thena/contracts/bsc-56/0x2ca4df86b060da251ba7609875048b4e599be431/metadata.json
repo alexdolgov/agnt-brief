@@ -1,0 +1,17 @@
+{
+  "address": "0x2ca4df86b060da251ba7609875048b4e599be431",
+  "chain_id": 56,
+  "contract_name": "AlgebraVaultFactory",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "0000000000000000000000008fbb1ecebb9e9839bc0de00b9c4c585cabdd046200000000000000000000000030055f87716d3dfd0e5198c27024481099fb4a98",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T21:01:28.982Z"
+}

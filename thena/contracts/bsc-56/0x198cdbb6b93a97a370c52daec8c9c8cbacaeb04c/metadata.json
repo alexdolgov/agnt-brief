@@ -1,0 +1,17 @@
+{
+  "address": "0x198cdbb6b93a97a370c52daec8c9c8cbacaeb04c",
+  "chain_id": 56,
+  "contract_name": "ThenaBasePlugin",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T21:01:26.115Z"
+}

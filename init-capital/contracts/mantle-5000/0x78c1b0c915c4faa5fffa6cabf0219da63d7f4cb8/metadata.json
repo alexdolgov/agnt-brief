@@ -1,0 +1,17 @@
+{
+  "address": "0x78c1b0c915c4faa5fffa6cabf0219da63d7f4cb8",
+  "chain_id": 5000,
+  "contract_name": "WMANTLE",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T20:48:27.800Z"
+}

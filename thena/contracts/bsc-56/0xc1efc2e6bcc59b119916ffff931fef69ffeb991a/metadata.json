@@ -1,0 +1,17 @@
+{
+  "address": "0xc1efc2e6bcc59b119916ffff931fef69ffeb991a",
+  "chain_id": 56,
+  "contract_name": "EpochDistributorBSC",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "00000000000000000000000086069feb223ee303085a1a505892c9d4bdbee996000000000000000000000000f4c8e32eadec4bfe97e0f595add0f4450a863a110000000000000000000000008fbb1ecebb9e9839bc0de00b9c4c585cabdd0462",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T21:01:35.853Z"
+}

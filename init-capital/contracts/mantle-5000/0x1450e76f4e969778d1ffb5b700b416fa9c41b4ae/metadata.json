@@ -1,0 +1,17 @@
+{
+  "address": "0x1450e76f4e969778d1ffb5b700b416fa9c41b4ae",
+  "chain_id": 5000,
+  "contract_name": "Api3OracleReader",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "000000000000000000000000ce3292ca5abbdfa1db02142a67cffc708530675a",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T20:48:25.722Z"
+}

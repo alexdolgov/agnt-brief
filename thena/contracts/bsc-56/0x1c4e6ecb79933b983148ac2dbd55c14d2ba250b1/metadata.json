@@ -1,0 +1,17 @@
+{
+  "address": "0x1c4e6ecb79933b983148ac2dbd55c14d2ba250b1",
+  "chain_id": 56,
+  "contract_name": "AlgebraCustomPoolEntryPoint",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T21:01:26.454Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x1927cd283ea8505660616304bc7c36aac4a7e7aa",
+  "chain_id": 56,
+  "contract_name": "IncentiveMaker",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 39,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T21:01:25.636Z"
+}

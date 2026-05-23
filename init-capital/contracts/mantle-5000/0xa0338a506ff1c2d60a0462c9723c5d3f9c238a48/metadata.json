@@ -1,0 +1,17 @@
+{
+  "address": "0xa0338a506ff1c2d60a0462c9723c5d3f9c238a48",
+  "chain_id": 5000,
+  "contract_name": "FusionXSwapHelper",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000005989fb161568b9f133edf5cf6787f5597762797f",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T20:48:28.380Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x30b3059b1e870203aef55b071110b49b22341fc6",
+  "chain_id": 1,
+  "contract_name": "RethPricer",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T19:20:38.497Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x4f0fe57066ab1c84569dc6dd2edfe08b92f97f33",
+  "chain_id": 1,
+  "contract_name": "RibbonHatToken",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T19:20:39.618Z"
+}

@@ -35,6 +35,7 @@
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-05-23 |
 | [bima-cdp](./bima-cdp/) | $5.4M | 50.0% | ? | active | 3 | 38 | 2026-05-23 |
 | [binaryx-platform](./binaryx-platform/) | $8.6M | 0.0% | ? | active | 2 | 133 | 2026-05-23 |
+| [bio-protocol](./bio-protocol/) | $143.8M | 10.0% | $139.6M | active | 6 | 41 | 2026-05-23 |
 | [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | dead | 1 | 84 | 2026-05-23 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [bitu-protocol](./bitu-protocol/) | $23.1M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
@@ -77,6 +78,7 @@
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-05-23 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
 | [flying-tulip](./flying-tulip/) | $53.1M | 0.0% | $53.1M | unknown | 0 | 152 | 2026-05-23 |
+| [four.meme](./four.meme/) | $4.9M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 11 | 18 | 2026-05-23 |
 | [fulcrom](./fulcrom/) | $13.5M | 0.0% | ? | active | 0 | 80 | 2026-05-22 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-05-22 |
@@ -162,6 +164,7 @@
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | unknown | 0 | 2 | 2026-05-22 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |
+| [ribbon-finance](./ribbon-finance/) | $179.3M | 20.6% | $148.6M | declining | 15 | 195 | 2026-05-23 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |

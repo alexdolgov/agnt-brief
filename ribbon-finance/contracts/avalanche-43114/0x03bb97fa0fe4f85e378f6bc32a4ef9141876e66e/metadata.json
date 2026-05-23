@@ -1,0 +1,17 @@
+{
+  "address": "0x03bb97fa0fe4f85e378f6bc32a4ef9141876e66e",
+  "chain_id": 43114,
+  "contract_name": "OptionsPremiumPricer",
+  "compiler_version": "v0.7.3+commit.9bfce1f6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "0000000000000000000000002d8d5a8d1f82b28a6f50674802e39e7bdad466a4000000000000000000000000fda869c4a950bfd2e393ddd45d2062dd4aee0bb30000000000000000000000002779d32d5166baaa2b2b658333ba7e6ec0c65743000000000000000000000000f096872672f44d6eba71458d74fe67f9a77a23b9",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T19:20:35.929Z"
+}

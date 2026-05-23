@@ -1,0 +1,18 @@
+{
+  "address": "0x14416c36428bdf554d3354566259af6bcd03b709",
+  "chain_id": 1,
+  "contract_name": "ManualVolOracle",
+  "compiler_version": "v0.7.3+commit.9bfce1f6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T19:20:35.671Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x03699469849a6cf876a65b4fd01fbd663c401127",
+  "chain_id": 8453,
+  "contract_name": "AgentToken",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T19:02:37.917Z"
+}

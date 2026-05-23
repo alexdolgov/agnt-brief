@@ -1,0 +1,176 @@
+{
+  "schema_version": "2.0",
+  "project_key": "four.meme",
+  "generated_at": "2026-05-23T18:50:22.710Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "four.meme",
+    "tier": 0,
+    "peak_tvl": 10657507,
+    "peak_date": "2025-10-13T00:00:00.000Z",
+    "tvl_30d_ago": 4611453,
+    "tvl_90d_ago": 3752649,
+    "tvl_current": 4823114,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 4931136,
+    "change_30d_pct": 4.5898982381475,
+    "change_90d_pct": 28.5255828615999,
+    "days_since_peak": 222,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 54.74444445591262
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 0,
+    "total_audits": 1,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 4894948.33061,
+    "tvl_usd": 4894948.33061,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://four.meme?code=DZ9DF74J64FA",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "Four.meme is a launchpad protocol on BSC that enables users to create and trade meme tokens. It provides a platform for token launches and initial liquidity events.",
+    "relationship_narrative": "The two proxy contracts likely represent the main launchpad logic and a supporting module (e.g., fee handler or token factory), sharing the same product family with no external dependencies.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xec4549cadce5da21df6e6422d448034b5233bfbc",
+      "name": "Proxy (impl: 0x57df49f5d8412d05e792c30c023ee974c48a90b5)",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "four.meme",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x57df49f5d8412d05e792c30c023ee974c48a90b5",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xec4549cadce5da21df6e6422d448034b5233bfbc",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5c952063c7fc8610ffdb798152d69f0b9550762b",
+      "name": "Proxy (impl: 0xd63cbf542c7096b1df52c7e97644f365c0ebc6fe)",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "four.meme",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd63cbf542c7096b1df52c7e97644f365c0ebc6fe",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5c952063c7fc8610ffdb798152d69f0b9550762b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2522,
+      "audit_key": "audit-2522",
+      "report_name": "DL audit link",
+      "report_url": "https://easy-fight-6a5.notion.site/Salus-Audit-Report-294ce2c0b4e442cb81e090b0232ae243",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2522,
+        "report_name": "DL audit link"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

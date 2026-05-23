@@ -1,0 +1,16 @@
+# StakedToken
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x0bb56479c5d9d253e22380ecfe9a2885aa126cca` |
+| Role | token |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 20 (ethereum [`0x0bb56479c5d9d253e22380ecfe9a2885aa126cca`](../0x0bb56479c5d9d253e22380ecfe9a2885aa126cca/); ethereum `0x3350153900c0bd8dfdbfe77b274ac4e49d002588`; ethereum `0x450ee6af4d54054c069c2471f08478fe3d0ef313`; ethereum `0x67cdf8faf53fe5411940cae499799242c6dfcecc`; ethereum `0x75edde220b82d23f9ef8b38e5c533e8e865e92ba`; ethereum `0x88835d2c6d06759d3b6ea61e6b558f7c42469ad7`; ethereum `0xa41ceaec2b16e32a87e899d514395ecf5b74de48`; ethereum `0xb840c44c4e998bd98702467493b9a8fe88690687`; ethereum `0xb90f1028266210a007780e6a37d2c36738830f69`; ethereum `0xd12e4175619607a39299388d0f8a4233f3121e79`; base `0x6c85e430ac13f6e88c83434b7789b969497ca9f8`; base `0x852c11e88478aafda31950f9e4f4fe86d9342e53`; base `0x85ecbc26f39fdca293d76c40fdd9feadc6a66797`; base `0x9dff3a11f315288cdb100364d6a81088ea9c6a7f`; base `0xafb64ab91da6be665d84016844e5c345399e07d0`; base `0xcbd956381a12cc84302344960c95e4ac313845db`; base `0xe01b67eaca87d742638842fceb9e8c2f006dc29b`; base `0xe1ea71e1c1dc3c2492a4d6b7618840d9f1ebe13f`; base `0xec637540ae2da2b795afe9427b840a827cf72f9a`; base `0xee8ea7c133d986b8d9a2708ef50d83d81ff3b4a1`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

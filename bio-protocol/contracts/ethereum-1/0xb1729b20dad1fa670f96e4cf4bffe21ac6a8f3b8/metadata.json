@@ -1,0 +1,17 @@
+{
+  "address": "0xb1729b20dad1fa670f96e4cf4bffe21ac6a8f3b8",
+  "chain_id": 1,
+  "contract_name": "LockedToken",
+  "compiler_version": "v0.8.33+commit.64118f21",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "osaka",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T19:02:40.855Z"
+}

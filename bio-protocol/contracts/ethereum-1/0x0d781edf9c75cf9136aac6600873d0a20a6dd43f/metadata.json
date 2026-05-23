@@ -1,0 +1,17 @@
+{
+  "address": "0x0d781edf9c75cf9136aac6600873d0a20a6dd43f",
+  "chain_id": 1,
+  "contract_name": "Tokenizer",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 50,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T19:02:38.426Z"
+}

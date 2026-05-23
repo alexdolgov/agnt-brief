@@ -1,0 +1,18 @@
+{
+  "address": "0x8b49fdd0cb50ba6d5c053d844fee55e5076f8504",
+  "chain_id": 1,
+  "contract_name": "ProtocolAdapter",
+  "compiler_version": "v0.7.2+commit.51b20bc0",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T19:20:41.474Z"
+}

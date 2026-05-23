@@ -1,0 +1,15 @@
+[
+  {
+    "inputs": [],
+    "name": "deployRouter",
+    "outputs": [
+      {
+        "internalType": "contract ERC4626Router",
+        "name": "router",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

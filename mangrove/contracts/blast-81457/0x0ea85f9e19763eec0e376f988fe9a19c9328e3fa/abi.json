@@ -1,0 +1,107 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "from",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "to",
+        "type": "uint256"
+      },
+      {
+        "internalType": "Tick",
+        "name": "baseQuoteTickIndex0",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_baseQuoteTickOffset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "firstAskIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bidGives",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "askGives",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pricePoints",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "stepSize",
+        "type": "uint256"
+      }
+    ],
+    "name": "createGeometricDistribution",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "index",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Tick",
+                "name": "tick",
+                "type": "int256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "gives",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DirectWithBidsAndAsksDistribution.DistributionOffer[]",
+            "name": "asks",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "index",
+                "type": "uint256"
+              },
+              {
+                "internalType": "Tick",
+                "name": "tick",
+                "type": "int256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "gives",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DirectWithBidsAndAsksDistribution.DistributionOffer[]",
+            "name": "bids",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct DirectWithBidsAndAsksDistribution.Distribution",
+        "name": "distribution",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

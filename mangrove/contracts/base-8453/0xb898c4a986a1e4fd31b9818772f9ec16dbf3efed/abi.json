@@ -1,0 +1,118 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      }
+    ],
+    "name": "OracleCreated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_oracle1",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_oracle2",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_oracle3",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_oracle4",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_salt",
+        "type": "bytes32"
+      }
+    ],
+    "name": "computeOracleAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_oracle1",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_oracle2",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_oracle3",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_oracle4",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_salt",
+        "type": "bytes32"
+      }
+    ],
+    "name": "create",
+    "outputs": [
+      {
+        "internalType": "contract OracleCombiner",
+        "name": "oracle",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isOracle",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

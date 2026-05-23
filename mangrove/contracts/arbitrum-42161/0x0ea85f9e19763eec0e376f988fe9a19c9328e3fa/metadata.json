@@ -1,0 +1,18 @@
+{
+  "address": "0x0ea85f9e19763eec0e376f988fe9a19c9328e3fa",
+  "chain_id": 42161,
+  "contract_name": "MangroveOrder",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "london",
+  "license": "BSD-2-Clause, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T22:26:11.851Z"
+}

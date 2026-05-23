@@ -1,0 +1,665 @@
+{
+  "schema_version": "2.0",
+  "project_key": "stakingverse",
+  "generated_at": "2026-05-23T22:14:12.419Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "stakingverse",
+    "tier": 0,
+    "peak_tvl": 11018930,
+    "peak_date": "2025-09-18T00:00:00.000Z",
+    "tvl_30d_ago": 4394993,
+    "tvl_90d_ago": 3636244,
+    "tvl_current": 4180716,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 7094051,
+    "change_30d_pct": -4.875479892686974,
+    "change_90d_pct": 14.973472627249437,
+    "days_since_peak": 247,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 62.05878429212274
+  },
+  "summary": {
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 0,
+    "total_audits": 18,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 4195339.39503,
+    "tvl_usd": 3542371.788202899,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 3542371.79
+    },
+    "asd_usd": 3542371.788202899,
+    "website_url": "https://stakingverse.io",
+    "chains": [
+      "ethereum",
+      "lukso"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2026-04",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 2,
+      "aging": 5,
+      "stale": 6,
+      "unknown": 5
+    }
+  },
+  "topography": {
+    "project_purpose": "Stakingverse is a liquid staking protocol that allows users to stake ETH and receive a liquid staking token (SLYX) representing their staked position, while earning staking rewards. It operates on Ethereum and LUKSO, providing a vault-based architecture for managing staked assets.",
+    "relationship_narrative": "The ERC1967Proxy delegates to the EthVault implementation, which likely mints and burns SLYX tokens in response to user deposits and withdrawals. The StakingverseVault may interact with the same SLYX token or share infrastructure with the main vault.",
+    "product_family_count": 3
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8a93a876912c9f03f88bc9114847cf5b63c89f56",
+      "name": "EthVault",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Resources",
+      "tvl_usd": 3542371.788202899,
+      "is_proxy": true,
+      "impl_address": "0x927a83c679a5e1a6435d6bfaef7f20d4db23e2cc",
+      "impl_name": "EthVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8a93a876912c9f03f88bc9114847cf5b63c89f56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3542371.788202899,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42,
+      "chain_name": "lukso",
+      "address": "0x8a3982f0a7d154d11a5f43eec7f50e52ebbc8f7d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "SLYXToken",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42,
+          "chain_name": "lukso",
+          "address": "0x8a3982f0a7d154d11a5f43eec7f50e52ebbc8f7d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42,
+      "chain_name": "lukso",
+      "address": "0x9f49a95b0c3c9e2a6c77a16c177928294c0f6f04",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "StakingverseVault",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42,
+          "chain_name": "lukso",
+          "address": "0x9f49a95b0c3c9e2a6c77a16c177928294c0f6f04",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2610,
+      "audit_key": "audit-2610",
+      "report_name": "Liquid_Staking_Audit_Oct_2024.pdf",
+      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Liquid_Staking_Audit_Oct_2024.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 2610,
+          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Liquid_Staking_Audit_Oct_2024.pdf"
+        },
+        {
+          "audit_id": 2619,
+          "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Liquid_Staking_Audit_Oct_2024.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 2611,
+      "audit_key": "audit-2611",
+      "report_name": "Stakingverse_Audit_MiloTruck.pdf",
+      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_Audit_MiloTruck.pdf",
+      "auditor": "MiloTruck",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 2611,
+          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_Audit_MiloTruck.pdf"
+        },
+        {
+          "audit_id": 2618,
+          "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Stakingverse_Audit_MiloTruck.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 2612,
+      "audit_key": "audit-2612",
+      "report_name": "Stakingverse_LST_Audit.pdf",
+      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_LST_Audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 2612,
+          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_LST_Audit.pdf"
+        },
+        {
+          "audit_id": 2617,
+          "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Stakingverse_LST_Audit.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 2613,
+      "audit_key": "audit-2613",
+      "report_name": "nethermind-ai-agent-audit-report-stakingverse-pool-contracts.pdf",
+      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/nethermind-ai-agent-audit-report-stakingverse-pool-contracts.pdf",
+      "auditor": "Nethermind",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2614,
+      "audit_key": "audit-2614",
+      "report_name": "nethermind-findings.md",
+      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/nethermind-findings.md",
+      "auditor": "Nethermind",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2615,
+      "audit_key": "audit-2615",
+      "report_name": "slither_report_SLYXToken.md",
+      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/slither_report_SLYXToken.md",
+      "auditor": "Slither",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2616,
+      "audit_key": "audit-2616",
+      "report_name": "slither_report_StakingverseVault.md",
+      "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/slither_report_StakingverseVault.md",
+      "auditor": "Slither",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2620,
+      "audit_key": "audit-2620",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://stakingverse.io/Terms.pdf",
+      "auditor": "Nethermind AI Agent",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2621,
+      "audit_key": "audit-2621",
+      "report_name": "2023-1-9-UniversalPage.md",
+      "report_url": "https://github.com/Universal-Page/contracts/blob/main/audits/2023-1-9-UniversalPage.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2622,
+      "audit_key": "audit-2622",
+      "report_name": "2024-2-1-UniversalPage-Vault-security-review.pdf",
+      "report_url": "https://github.com/Universal-Page/contracts/blob/main/audits/2024-2-1-UniversalPage-Vault-security-review.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2623,
+      "audit_key": "audit-2623",
+      "report_name": "2024-09-Sigma-Prime.pdf",
+      "report_url": "https://github.com/stakewise/v3-core/blob/main/audits/2024-09-Sigma-Prime.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2624,
+      "audit_key": "audit-2624",
+      "report_name": "2023-08-Halborn.pdf",
+      "report_url": "https://github.com/stakewise/v3-core/blob/main/audits/2023-08-Halborn.pdf",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2625,
+      "audit_key": "audit-2625",
+      "report_name": "2024-03-Consensys-Diligence.pdf",
+      "report_url": "https://github.com/stakewise/v3-core/blob/main/audits/2024-03-Consensys-Diligence.pdf",
+      "auditor": "Consensys Diligence",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2626,
+      "audit_key": "audit-2626",
+      "report_name": "2023-05-Halborn.pdf",
+      "report_url": "https://github.com/stakewise/v3-core/blob/main/audits/2023-05-Halborn.pdf",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2627,
+      "audit_key": "audit-2627",
+      "report_name": "2023-08-Sigma-Prime.pdf",
+      "report_url": "https://github.com/stakewise/v3-core/blob/main/audits/2023-08-Sigma-Prime.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2628,
+      "audit_key": "audit-2628",
+      "report_name": "2024-06-Sigma-Prime.pdf",
+      "report_url": "https://github.com/stakewise/v3-core/blob/main/audits/2024-06-Sigma-Prime.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2629,
+      "audit_key": "audit-2629",
+      "report_name": "2025-09-ABDK.pdf",
+      "report_url": "https://github.com/stakewise/v3-core/blob/main/audits/2025-09-ABDK.pdf",
+      "auditor": "ABDK",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2630,
+      "audit_key": "audit-2630",
+      "report_name": "2026-04-Statemind.pdf",
+      "report_url": "https://github.com/stakewise/v3-core/blob/main/audits/2026-04-Statemind.pdf",
+      "auditor": "Statemind",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2610,
+        "report_name": "Liquid_Staking_Audit_Oct_2024.pdf"
+      },
+      {
+        "audit_id": 2611,
+        "report_name": "Stakingverse_Audit_MiloTruck.pdf"
+      },
+      {
+        "audit_id": 2612,
+        "report_name": "Stakingverse_LST_Audit.pdf"
+      },
+      {
+        "audit_id": 2613,
+        "report_name": "nethermind-ai-agent-audit-report-stakingverse-pool-contracts.pdf"
+      },
+      {
+        "audit_id": 2614,
+        "report_name": "nethermind-findings.md"
+      },
+      {
+        "audit_id": 2615,
+        "report_name": "slither_report_SLYXToken.md"
+      },
+      {
+        "audit_id": 2616,
+        "report_name": "slither_report_StakingverseVault.md"
+      },
+      {
+        "audit_id": 2620,
+        "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 2621,
+        "report_name": "2023-1-9-UniversalPage.md"
+      },
+      {
+        "audit_id": 2622,
+        "report_name": "2024-2-1-UniversalPage-Vault-security-review.pdf"
+      },
+      {
+        "audit_id": 2623,
+        "report_name": "2024-09-Sigma-Prime.pdf"
+      },
+      {
+        "audit_id": 2624,
+        "report_name": "2023-08-Halborn.pdf"
+      },
+      {
+        "audit_id": 2625,
+        "report_name": "2024-03-Consensys-Diligence.pdf"
+      },
+      {
+        "audit_id": 2626,
+        "report_name": "2023-05-Halborn.pdf"
+      },
+      {
+        "audit_id": 2627,
+        "report_name": "2023-08-Sigma-Prime.pdf"
+      },
+      {
+        "audit_id": 2628,
+        "report_name": "2024-06-Sigma-Prime.pdf"
+      },
+      {
+        "audit_id": 2629,
+        "report_name": "2025-09-ABDK.pdf"
+      },
+      {
+        "audit_id": 2630,
+        "report_name": "2026-04-Statemind.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

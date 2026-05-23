@@ -1,0 +1,18 @@
+{
+  "address": "0x369022670f2c623ee6894ae4053ef54c2c685dd0",
+  "chain_id": 1329,
+  "contract_name": "BalancerV2Swapper",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T22:26:15.128Z"
+}

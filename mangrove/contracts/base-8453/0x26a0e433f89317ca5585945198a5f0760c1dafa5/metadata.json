@@ -1,0 +1,17 @@
+{
+  "address": "0x26a0e433f89317ca5585945198a5f0760c1dafa5",
+  "chain_id": 8453,
+  "contract_name": "MangroveVaultFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 60,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T22:26:14.265Z"
+}

@@ -1,0 +1,686 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vif",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "OfferNotActive",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VIF",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "authorizer",
+        "type": "address"
+      }
+    ],
+    "name": "authorizerNonce",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "fees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "authorizer",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "authorized",
+        "type": "address"
+      }
+    ],
+    "name": "isAuthorized",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "isBlacklisted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isPaused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "marketId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "market",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "outboundToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "outboundUnits",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint32",
+            "name": "minOutboundUnits",
+            "type": "uint32"
+          },
+          {
+            "internalType": "bool",
+            "name": "active",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "inboundToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "inboundUnits",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint16",
+            "name": "tickSpacing",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "fees",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct Market",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minProvision",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "marketId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint40",
+        "name": "offerId",
+        "type": "uint40"
+      }
+    ],
+    "name": "offer",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint40",
+            "name": "prev",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "next",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint32",
+            "name": "expiry",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint48",
+            "name": "gives",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "received",
+            "type": "uint48"
+          },
+          {
+            "internalType": "int24",
+            "name": "tick",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "provision",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "isActive",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct OfferUnpacked",
+        "name": "_offer",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "marketId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint40",
+        "name": "fromId",
+        "type": "uint40"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxOffers",
+        "type": "uint256"
+      }
+    ],
+    "name": "offerListEndPoints",
+    "outputs": [
+      {
+        "internalType": "uint40",
+        "name": "startId",
+        "type": "uint40"
+      },
+      {
+        "internalType": "uint256",
+        "name": "length",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "marketId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint40",
+        "name": "offerId",
+        "type": "uint40"
+      }
+    ],
+    "name": "offerPacked",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_offer",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "from",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxLength",
+        "type": "uint256"
+      }
+    ],
+    "name": "openMarkets",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "outboundToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint64",
+                "name": "outboundUnits",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint32",
+                "name": "minOutboundUnits",
+                "type": "uint32"
+              },
+              {
+                "internalType": "bool",
+                "name": "active",
+                "type": "bool"
+              },
+              {
+                "internalType": "address",
+                "name": "inboundToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint64",
+                "name": "inboundUnits",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint16",
+                "name": "tickSpacing",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "fees",
+                "type": "uint16"
+              }
+            ],
+            "internalType": "struct Market",
+            "name": "market01",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "outboundToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint64",
+                "name": "outboundUnits",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint32",
+                "name": "minOutboundUnits",
+                "type": "uint32"
+              },
+              {
+                "internalType": "bool",
+                "name": "active",
+                "type": "bool"
+              },
+              {
+                "internalType": "address",
+                "name": "inboundToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint64",
+                "name": "inboundUnits",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint16",
+                "name": "tickSpacing",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "fees",
+                "type": "uint16"
+              }
+            ],
+            "internalType": "struct Market",
+            "name": "market10",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct VifReader.OpenMarketsResult[]",
+        "name": "results",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "openMarkets",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "outboundToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint64",
+                "name": "outboundUnits",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint32",
+                "name": "minOutboundUnits",
+                "type": "uint32"
+              },
+              {
+                "internalType": "bool",
+                "name": "active",
+                "type": "bool"
+              },
+              {
+                "internalType": "address",
+                "name": "inboundToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint64",
+                "name": "inboundUnits",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint16",
+                "name": "tickSpacing",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "fees",
+                "type": "uint16"
+              }
+            ],
+            "internalType": "struct Market",
+            "name": "market01",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "outboundToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint64",
+                "name": "outboundUnits",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint32",
+                "name": "minOutboundUnits",
+                "type": "uint32"
+              },
+              {
+                "internalType": "bool",
+                "name": "active",
+                "type": "bool"
+              },
+              {
+                "internalType": "address",
+                "name": "inboundToken",
+                "type": "address"
+              },
+              {
+                "internalType": "uint64",
+                "name": "inboundUnits",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint16",
+                "name": "tickSpacing",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "fees",
+                "type": "uint16"
+              }
+            ],
+            "internalType": "struct Market",
+            "name": "market10",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct VifReader.OpenMarketsResult[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "openMarketsLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "marketId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint24",
+        "name": "fromPricePoint",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint24",
+        "name": "maxPricePoints",
+        "type": "uint24"
+      }
+    ],
+    "name": "packedBook",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "nextPricePoint",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "offerListsPacked",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "marketId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint40",
+        "name": "fromId",
+        "type": "uint40"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxOffers",
+        "type": "uint256"
+      }
+    ],
+    "name": "packedOfferList",
+    "outputs": [
+      {
+        "internalType": "uint40",
+        "name": "nextOfferId",
+        "type": "uint40"
+      },
+      {
+        "internalType": "uint40[]",
+        "name": "offerIds",
+        "type": "uint40[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "offers",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "owners",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token0",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "token1",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "units0",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "units1",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint16",
+        "name": "tickSpacing",
+        "type": "uint16"
+      }
+    ],
+    "name": "updateMarkets",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

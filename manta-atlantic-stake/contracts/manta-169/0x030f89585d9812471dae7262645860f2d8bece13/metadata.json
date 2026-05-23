@@ -1,0 +1,17 @@
+{
+  "address": "0x030f89585d9812471dae7262645860f2d8bece13",
+  "chain_id": 169,
+  "contract_name": "VaultReader",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:05:07.890Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xe84231ae15fea715dbd31b353f5b45bfea967fd9",
+  "chain_id": 169,
+  "contract_name": "VaultUtils",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000ea5c751039e38e1d2c0b8983d4f024e3bc928bc4",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:05:19.912Z"
+}

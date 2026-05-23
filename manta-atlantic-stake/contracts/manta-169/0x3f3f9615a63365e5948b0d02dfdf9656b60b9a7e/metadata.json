@@ -1,0 +1,17 @@
+{
+  "address": "0x3f3f9615a63365e5948b0d02dfdf9656b60b9a7e",
+  "chain_id": 169,
+  "contract_name": "OrderBookReader",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:05:11.547Z"
+}

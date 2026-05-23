@@ -1,0 +1,17 @@
+{
+  "address": "0xbba479d953d012256770e75e2e49af85f17a574b",
+  "chain_id": 169,
+  "contract_name": "GlpManager",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000ea5c751039e38e1d2c0b8983d4f024e3bc928bc40000000000000000000000001a303ea630f054a0b92787a30b03b0920e003e7d0000000000000000000000007d079915b30de18bc866b025cfa278aba2e181970000000000000000000000001017a05dbc857c90457bddc8b2d02940d998b49b0000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:05:17.861Z"
+}

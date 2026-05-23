@@ -1,0 +1,17 @@
+{
+  "address": "0xdc9e8cca39db39ce80bf0486d7a527ad742e75f0",
+  "chain_id": 169,
+  "contract_name": "ReferralReader",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:05:19.381Z"
+}

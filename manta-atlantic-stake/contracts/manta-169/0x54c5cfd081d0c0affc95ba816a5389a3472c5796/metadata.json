@@ -1,0 +1,17 @@
+{
+  "address": "0x54c5cfd081d0c0affc95ba816a5389a3472c5796",
+  "chain_id": 169,
+  "contract_name": "RewardDistributor",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000037cdab54b883d0930bdecd2307971f41684ef3fe00000000000000000000000010e878adbcbd35e4356f5272ae9537814d17a76c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:05:13.817Z"
+}

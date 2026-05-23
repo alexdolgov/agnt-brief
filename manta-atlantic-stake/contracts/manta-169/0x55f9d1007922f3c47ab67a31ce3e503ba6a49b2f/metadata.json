@@ -1,0 +1,17 @@
+{
+  "address": "0x55f9d1007922f3c47ab67a31ce3e503ba6a49b2f",
+  "chain_id": 169,
+  "contract_name": "MantaTokenManager",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x00000000000000000000000095cef13441be50d20ca4558cc0a27b601ac544e5",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:05:12.775Z"
+}

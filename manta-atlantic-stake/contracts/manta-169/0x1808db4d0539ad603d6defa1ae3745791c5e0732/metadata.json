@@ -1,0 +1,17 @@
+{
+  "address": "0x1808db4d0539ad603d6defa1ae3745791c5e0732",
+  "chain_id": 169,
+  "contract_name": "TokensPerIntervalUpdater",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x00000000000000000000000010e878adbcbd35e4356f5272ae9537814d17a76c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:05:08.994Z"
+}

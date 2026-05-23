@@ -1,0 +1,17 @@
+{
+  "address": "0x92b222222265fc8a8b6d473b810177879bf351b0",
+  "chain_id": 169,
+  "contract_name": "PositionUtils",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:05:15.891Z"
+}

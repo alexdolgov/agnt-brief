@@ -1,0 +1,17 @@
+{
+  "address": "0x4ef1eef6778b246bcfd2eee6a7fa6459337e593e",
+  "chain_id": 169,
+  "contract_name": "PythFlags",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:05:13.360Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xd45244ff30150f05906b3f10aa41d2055d1bbaf6",
+  "chain_id": 169,
+  "contract_name": "TokenConfigKeeper",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x00000000000000000000000044ed2c28f610c308f0fe8dbf57e2872ddcb3bc0e000000000000000000000000fa893dd111ccfcbc942576eb02bf313ed5819541",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T17:05:19.188Z"
+}

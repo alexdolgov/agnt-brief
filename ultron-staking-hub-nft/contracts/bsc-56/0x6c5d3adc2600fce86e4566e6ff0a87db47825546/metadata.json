@@ -1,0 +1,17 @@
+{
+  "address": "0x6c5d3adc2600fce86e4566e6ff0a87db47825546",
+  "chain_id": 56,
+  "contract_name": "PrizePoolDispatcher",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T09:04:34.071Z"
+}

@@ -1,0 +1,520 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_indexUtils",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dexAdapter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_indexManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_leverageManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_aspTknFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_aspTknOracleFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_fraxlendPairFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_aspOwnershipTransfer",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_pod",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_aspTkn",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_aspTknOracle",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_lendingPair",
+        "type": "address"
+      }
+    ],
+    "name": "AddLvfSupportForPod",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_pod",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_aspTkn",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_aspTknOracle",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_lendingPair",
+        "type": "address"
+      }
+    ],
+    "name": "CreateLvfPod",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_prevOwner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "SetAspOwnershipTransfer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_ownable",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_currentOwner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "TransferContractOwnership",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_pod",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_aspTknOracleRequiredImmutables",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_aspTknOracleOptionalImmutables",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_fraxlendPairConfigData",
+        "type": "bytes"
+      }
+    ],
+    "name": "addLvfSupportForPod",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "_aspTkn",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_aspTknOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_fraxlendPair",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "aspOwnershipTransfer",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "aspTknFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "aspTknOracleFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_borrowTkn",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_podConstructorArgs",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_aspTknOracleRequiredImmutables",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_aspTknOracleOptionalImmutables",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_fraxlendPairConfigData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bool",
+        "name": "_isSelfLending",
+        "type": "bool"
+      }
+    ],
+    "name": "createPodAndAddLvfSupport",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "_newPod",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_aspTkn",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_aspTknOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_fraxlendPair",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dexAdapter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "fraxlendPairFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "indexManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "indexUtils",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "leverageManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "setAspOwnershipTransfer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_indexUtils",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dexAdapter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_indexManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_leverageManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_aspTknFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_aspTknOracleFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_fraxlendPairFactory",
+        "type": "address"
+      }
+    ],
+    "name": "setLevMgrAndFactories",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_ownable",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferContractOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

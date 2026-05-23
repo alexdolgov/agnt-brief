@@ -105,6 +105,7 @@
 | [mu-digital](./mu-digital/) | $19.5M | 100.0% | ? | active | 2 | 12 | 2026-05-22 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |
 | [neutral-trade](./neutral-trade/) | $18.8M | 0.0% | ? | unknown | 3 | 0 | 2026-05-22 |
+| [nostra](./nostra/) | $7.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [nuls](./nuls/) | $1.8M | 0.0% | $1.8M | active | 0 | 904 | 2026-05-23 |
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 0 | 19 | 2026-05-23 |
 | [odyssey-finance](./odyssey-finance/) | $9.5M | 0.0% | ? | active | 0 | 79 | 2026-05-23 |
@@ -112,6 +113,7 @@
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-05-23 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
 | [osmosis-dex](./osmosis-dex/) | $1.9M | 0.0% | $1.9M | declining | 0 | 935 | 2026-05-22 |
+| [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
 | [pnetwork](./pnetwork/) | $1.8M | 0.0% | $1.8M | declining | 0 | 355 | 2026-05-22 |
 | [pooltogether](./pooltogether/) | $26.9M | 0.0% | $26.9M | declining | 0 | 153 | 2026-05-23 |
@@ -148,6 +150,7 @@
 | [verio](./verio/) | $7.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [verus-market](./verus-market/) | $9.9M | 0.0% | ? | declining | 0 | 32 | 2026-05-23 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |
+| [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [wrapped](./wrapped/) | $1.7M | 0.0% | $1.7M | active | 0 | 119 | 2026-05-22 |
 | [xsy](./xsy/) | $3.6M | 0.0% | $3.6M | active | 0 | 16 | 2026-05-22 |
 | [yei-finance](./yei-finance/) | $29.8M | 0.0% | ? | declining | 1 | 44 | 2026-05-22 |

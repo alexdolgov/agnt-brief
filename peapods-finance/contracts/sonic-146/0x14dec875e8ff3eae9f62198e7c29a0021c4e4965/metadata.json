@@ -1,0 +1,17 @@
+{
+  "address": "0x14dec875e8ff3eae9f62198e7c29a0021c4e4965",
+  "chain_id": 146,
+  "contract_name": "IndirectOFT",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "00000000000000000000000002f92800f57bcd74066f5709f1daa1a4302df8750000000000000000000000006f475642a6e85809b1c36fa62763669b1b48dd5b00000000000000000000000021fe3e26e824783ca7e374355a8d30ae8bbf6e37",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T10:00:47.171Z"
+}

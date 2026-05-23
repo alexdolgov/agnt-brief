@@ -1,0 +1,17 @@
+{
+  "address": "0xf05ef850f9ee3d94c7a5609153a82638d41727cd",
+  "chain_id": 34443,
+  "contract_name": "UniswapDexAdapter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x00000000000000000000000017b55d4ce08a55fe6235149d7b4fe97911a5b6100000000000000000000000005d61c537393cf21893be619e36fc94cd73c77dd3000000000000000000000000b5f00c2c5f8821155d8ed27e31932cfd9db3c5d50000000000000000000000000000000000000000000000000000000000000001",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T10:00:43.820Z"
+}

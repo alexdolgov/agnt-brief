@@ -10,6 +10,7 @@
 | [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | active | 3 | 13 | 2026-05-23 |
 | [ankr](./ankr/) | $47.4 | 0.9% | $47.4 | active | 1 | 147 | 2026-05-22 |
+| [antarctic](./antarctic/) | $9.3M | 0.0% | ? | active | 0 | 11 | 2026-05-23 |
 | [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | unknown | 0 | 2 | 2026-05-22 |
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | unknown | 4 | 3 | 2026-05-22 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 55 | 2026-05-22 |
@@ -37,6 +38,7 @@
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-05-22 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | unknown | 0 | 53 | 2026-05-23 |
 | [desyn-protocol](./desyn-protocol/) | $10.8M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
+| [dexalot](./dexalot/) | $4.2M | 0.0% | $4.2M | active | 0 | 1 | 2026-05-23 |
 | [dforce](./dforce/) | $3.6M | 0.0% | $3.6M | declining | 0 | 450 | 2026-05-23 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | unknown | 4 | 71 | 2026-05-23 |
 | [dxsale](./dxsale/) | $26.8M | 0.0% | ? | active | 0 | 353 | 2026-05-22 |

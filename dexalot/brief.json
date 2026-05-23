@@ -1,0 +1,131 @@
+{
+  "schema_version": "2.0",
+  "project_key": "dexalot",
+  "generated_at": "2026-05-23T05:52:41.829Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "dexalot",
+    "tier": 0,
+    "peak_tvl": 47975214,
+    "peak_date": "2024-12-13T00:00:00.000Z",
+    "tvl_30d_ago": 9654501,
+    "tvl_90d_ago": 10230765,
+    "tvl_current": 9396418,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 14424073,
+    "change_30d_pct": -2.6731883916113324,
+    "change_90d_pct": -8.155274801053489,
+    "days_since_peak": 526,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 80.41401545389667
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 9312662,
+    "tvl_usd": 4212791.983556997,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "avalanche": 4212791.98
+    },
+    "asd_usd": 4212791.983556997,
+    "website_url": "https://app.dexalot.com/",
+    "chains": [
+      "avalanche"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Dexalot is a decentralized exchange (DEX) and bridge protocol on Avalanche, enabling users to trade assets and transfer tokens across chains. Its native token, DexalotToken, serves as the utility and governance token for the ecosystem.",
+    "relationship_narrative": "The Dexalot Portfolio family centers on the DexalotToken, which is the sole contract identified. It likely integrates with the broader Dexalot DEX and bridge infrastructure, though those contracts are not listed in the inventory.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x093783055f9047c2bff99c4e414501f8a147bc69",
+      "name": "DexalotToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Dexalot Portfolio",
+      "tvl_usd": 4212791.983556997,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DexalotToken",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x093783055f9047c2bff99c4e414501f8a147bc69",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 4212791.983556997,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x093783055f9047c2bff99c4e414501f8a147bc69",
+      "name": "DexalotToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 4212791.983556997,
+      "risk_note": "Verified native implementation with $4,212,791.98 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

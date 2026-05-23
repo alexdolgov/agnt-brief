@@ -1,0 +1,18 @@
+{
+  "address": "0x093783055f9047c2bff99c4e414501f8a147bc69",
+  "chain_id": 43114,
+  "contract_name": "DexalotToken",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:52:44.149Z"
+}

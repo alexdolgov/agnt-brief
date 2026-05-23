@@ -1,0 +1,17 @@
+{
+  "address": "0x4f2b3767616ee3523534910176d61ff35224b6a7",
+  "chain_id": 42161,
+  "contract_name": "sAMLP",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T05:51:32.832Z"
+}

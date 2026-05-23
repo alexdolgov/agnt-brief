@@ -1,0 +1,18 @@
+{
+  "address": "0x526d0047725d48bbc6e24c7b82a3e47c1af1f62f",
+  "chain_id": 1,
+  "contract_name": "ERC1967Proxy",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": "0xfa0186c12e5166d02ef871a89349f7c664999f8c",
+  "fetched_at": "2026-05-23T18:29:11.284Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x406812ac6f106f7d53b4181d42342e2565428be1",
+  "chain_id": 1,
+  "contract_name": "AmmPoolsServiceStEth",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T18:29:10.406Z"
+}

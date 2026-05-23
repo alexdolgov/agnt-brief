@@ -1,0 +1,18 @@
+{
+  "address": "0x0aa4a0706fc8196710203ab097db97f96f05f824",
+  "chain_id": 1,
+  "contract_name": "TradingCompetitionRewards",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "london",
+  "license": "BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T18:29:02.483Z"
+}

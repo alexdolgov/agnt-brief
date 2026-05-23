@@ -1,0 +1,18 @@
+{
+  "address": "0x9ac5092e027f0d9f24b4a1065c70973f3afda4cb",
+  "chain_id": 1,
+  "contract_name": "IpToken",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "shanghai",
+  "license": "BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T18:29:16.183Z"
+}

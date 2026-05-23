@@ -1,0 +1,103 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "rEUL_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "EUL_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "RewardEulerTokenClaimFuseInvalidAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RewardEulerTokenClaimFuseInvalidBalanceAfter",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RewardEulerTokenClaimFuseRewardsClaimManagerNotSet",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "rewardsClaimManager",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "eulerRewardsManagerBalance",
+        "type": "uint256"
+      }
+    ],
+    "name": "RewardEulerTokenClaimFuseClaimed",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "EUL",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256[]",
+            "name": "lockTimestamps",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "allowRemainderLoss",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct ClaimData",
+        "name": "data_",
+        "type": "tuple"
+      }
+    ],
+    "name": "claim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rEUL",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

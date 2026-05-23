@@ -1,0 +1,17 @@
+{
+  "address": "0x5d2135fa26a6202f2d39fdba61bcf53bb04b8434",
+  "chain_id": 137,
+  "contract_name": "IdleAdapter",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:43:54.691Z"
+}

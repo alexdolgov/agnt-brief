@@ -1,0 +1,17 @@
+{
+  "address": "0x65d9202b5494450310c43b6b47942305859a349c",
+  "chain_id": 137,
+  "contract_name": "SharePriceThrottledAssetManagerLib",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000005ae15bf655a8f42b9c7d93e64f4476ec1da248f800000000000000000000000000000000000000000000000000000000000004f5000000000000000000000000d70389a7d6171e1dba6c3df4db7331811fd93f08",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:43:54.857Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xf19652f82eeacc4ec2c4284a3632c0e27d76857d",
+  "chain_id": 137,
+  "contract_name": "ConvertedQuoteAggregatorFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": null,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:43:59.494Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x0a03632a634124ee3bba0e9e58f1a48fcf806242",
+  "chain_id": 42161,
+  "contract_name": "OrderProcessor",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:58:29.892Z"
+}

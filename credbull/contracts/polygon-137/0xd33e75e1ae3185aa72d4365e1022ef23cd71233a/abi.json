@@ -1,0 +1,599 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_addressListRegistry",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_globalConfigProxy",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_gsnTrustedForwardersAddressListId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__AddManager__AlreadyManager",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__CancelRequest__MinRequestTimeNotElapsed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__CancelRequest__Unauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__DepositFromQueue__OutOfRange",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__Init__AlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__Init__UndefinedVaultProxy",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__NotShutdown__Shutdown",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__OnlyManagerOrOwner__Unauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__OnlyOwner__Unauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__RemoveManager__NotManager",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__RequestDeposit__DepositAmountEqualsToZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__RequestDeposit__DepositorIsNotAllowlisted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SingleAssetDepositQueue__RequestDeposit__TooLowDepositAmount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint88",
+        "name": "id",
+        "type": "uint88"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "depositAssetAmount",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint96",
+        "name": "canCancelTime",
+        "type": "uint96"
+      }
+    ],
+    "name": "DepositRequestAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "sharesAmountReceived",
+        "type": "uint256"
+      }
+    ],
+    "name": "Deposited",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "depositorAllowlistId",
+        "type": "uint64"
+      }
+    ],
+    "name": "DepositorAllowlistIdSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "vaultProxy",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract IERC20",
+        "name": "depositAsset",
+        "type": "address"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "ManagerAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "ManagerRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "minDepositAssetAmount",
+        "type": "uint128"
+      }
+    ],
+    "name": "MinDepositAssetAmountSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "minRequestTime",
+        "type": "uint64"
+      }
+    ],
+    "name": "MinRequestTimeSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint88",
+        "name": "id",
+        "type": "uint88"
+      }
+    ],
+    "name": "RequestBypassed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint88",
+        "name": "id",
+        "type": "uint88"
+      }
+    ],
+    "name": "RequestCanceled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "Shutdown",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "ADDRESS_LIST_REGISTRY",
+    "outputs": [
+      {
+        "internalType": "contract IAddressListRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GLOBAL_CONFIG",
+    "outputs": [
+      {
+        "internalType": "contract IGlobalConfig2",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_managers",
+        "type": "address[]"
+      }
+    ],
+    "name": "addManagers",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint88",
+        "name": "_id",
+        "type": "uint88"
+      }
+    ],
+    "name": "cancelRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint88",
+        "name": "_endId",
+        "type": "uint88"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_idsToBypass",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "depositFromQueue",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDepositAsset",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "asset_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDepositorAllowlistId",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "depositorAllowlistId_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMinDepositAssetAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "minDepositAssetAmount_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMinRequestTime",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "minRequestTime_",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getNextNewId",
+    "outputs": [
+      {
+        "internalType": "uint88",
+        "name": "id_",
+        "type": "uint88"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getNextQueuedId",
+    "outputs": [
+      {
+        "internalType": "uint88",
+        "name": "id_",
+        "type": "uint88"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRequest",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint96",
+            "name": "canCancelTime",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositAssetAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ISingleAssetDepositQueue.Request",
+        "name": "request_",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getVaultProxy",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "vaultProxy_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultProxy",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "_depositAsset",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_managers",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_minDepositAssetAmount",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_minRequestTime",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_depositorAllowlistId",
+        "type": "uint64"
+      }
+    ],
+    "name": "init",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "isManager",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isManager_",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "queueIsShutdown",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isShutdown_",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_managers",
+        "type": "address[]"
+      }
+    ],
+    "name": "removeManagers",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "_depositAssetAmount",
+        "type": "uint128"
+      }
+    ],
+    "name": "requestDeposit",
+    "outputs": [
+      {
+        "internalType": "uint88",
+        "name": "id_",
+        "type": "uint88"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "_depositorAllowlistId",
+        "type": "uint64"
+      }
+    ],
+    "name": "setDepositorAllowlistId",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "_minDepositAssetAmount",
+        "type": "uint128"
+      }
+    ],
+    "name": "setMinDepositAssetAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "_minRequestTime",
+        "type": "uint64"
+      }
+    ],
+    "name": "setMinRequestTime",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "shutdown",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

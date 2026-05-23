@@ -1,0 +1,18 @@
+{
+  "address": "0x15616a647d6c5dd82132ada8970179fffc2c956c",
+  "chain_id": 42161,
+  "contract_name": "WrappedDShare",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "GPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:58:29.838Z"
+}

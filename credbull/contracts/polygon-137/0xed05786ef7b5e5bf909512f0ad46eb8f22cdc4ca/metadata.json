@@ -1,0 +1,18 @@
+{
+  "address": "0xed05786ef7b5e5bf909512f0ad46eb8f22cdc4ca",
+  "chain_id": 137,
+  "contract_name": "GasRelayPaymasterFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": null,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:43:58.961Z"
+}

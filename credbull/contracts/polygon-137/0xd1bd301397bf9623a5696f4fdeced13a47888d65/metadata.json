@@ -1,0 +1,17 @@
+{
+  "address": "0xd1bd301397bf9623a5696f4fdeced13a47888d65",
+  "chain_id": 137,
+  "contract_name": "VaultProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": "0xddb8ebe5361ca93614e5efb34049e842912e1612",
+  "fetched_at": "2026-05-23T02:43:58.013Z"
+}

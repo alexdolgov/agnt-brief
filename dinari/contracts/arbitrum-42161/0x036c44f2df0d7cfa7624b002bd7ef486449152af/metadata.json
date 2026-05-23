@@ -1,0 +1,18 @@
+{
+  "address": "0x036c44f2df0d7cfa7624b002bd7ef486449152af",
+  "chain_id": 42161,
+  "contract_name": "TransferRestrictor",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:58:29.346Z"
+}

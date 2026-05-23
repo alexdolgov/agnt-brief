@@ -1,0 +1,17 @@
+{
+  "address": "0x2a5106122289d1891abb9b5e69c686680595d616",
+  "chain_id": 137,
+  "contract_name": "ParaSwapV5Adapter",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "00000000000000000000000092fcde09790671cf085864182b9670c77da0884b000000000000000000000000def171fe48cf0115b1d80b88dc8eab59176fee57000000000000000000000000216b4b4ba9f3e719726886d34a177484278bfcae000000000000000000000000f5ac3c711b016d517a280c8ad38be7c2ff460f170000000000000000000000000000000000000000000000000000000000000032",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:43:50.874Z"
+}

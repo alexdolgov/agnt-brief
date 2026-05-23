@@ -13,6 +13,7 @@
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | unknown | 4 | 3 | 2026-05-22 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 55 | 2026-05-22 |
 | [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
+| [atlendis](./atlendis/) | $4.3M | 0.0% | $4.3M | declining | 0 | 43 | 2026-05-23 |
 | [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 2 | 105 | 2026-05-23 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [bitu-protocol](./bitu-protocol/) | $23.1M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
@@ -27,9 +28,11 @@
 | [chainge-finance](./chainge-finance/) | $1.8M | 0.0% | $1.8M | active | 0 | 935 | 2026-05-23 |
 | [charm-finance](./charm-finance/) | $2.2M | 66.7% | ? | unknown | 5 | 7 | 2026-05-22 |
 | [coinsquare](./coinsquare/) | $12.4M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
+| [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-05-23 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-05-22 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-05-22 |
 | [dforce](./dforce/) | $3.6M | 0.0% | $3.6M | declining | 0 | 450 | 2026-05-23 |
+| [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | unknown | 4 | 71 | 2026-05-23 |
 | [dxsale](./dxsale/) | $26.8M | 0.0% | ? | active | 0 | 353 | 2026-05-22 |
 | [egas-swap](./egas-swap/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | unknown | 5 | 15 | 2026-05-22 |

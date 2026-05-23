@@ -1,0 +1,17 @@
+{
+  "address": "0x84fe441719cc9c968e6a9194b61c4db4f27287f7",
+  "chain_id": 137,
+  "contract_name": "EasyLendies",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "00000000000000000000000000000000000000000000000000000000000003e80000000000000000000000000000000000000000000000004563918244f40000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:41:19.106Z"
+}

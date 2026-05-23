@@ -1,0 +1,18 @@
+{
+  "address": "0xcdf038dd3b66506d2e5378aee185b2f0084b7a33",
+  "chain_id": 137,
+  "contract_name": "FundValueCalculator",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": null,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 57,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:43:57.629Z"
+}

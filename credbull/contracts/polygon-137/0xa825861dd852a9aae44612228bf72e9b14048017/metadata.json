@@ -1,0 +1,17 @@
+{
+  "address": "0xa825861dd852a9aae44612228bf72e9b14048017",
+  "chain_id": 137,
+  "contract_name": "DispatcherOwnedBeaconFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "0000000000000000000000002e25271297537b8124b8f883a92ffd95c4032733000000000000000000000000d33e75e1ae3185aa72d4365e1022ef23cd71233a",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:43:56.838Z"
+}

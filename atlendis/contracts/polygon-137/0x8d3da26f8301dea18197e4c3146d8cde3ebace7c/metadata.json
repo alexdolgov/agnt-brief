@@ -1,0 +1,18 @@
+{
+  "address": "0x8d3da26f8301dea18197e4c3146d8cde3ebace7c",
+  "chain_id": 137,
+  "contract_name": "BorrowerPools",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:41:19.047Z"
+}

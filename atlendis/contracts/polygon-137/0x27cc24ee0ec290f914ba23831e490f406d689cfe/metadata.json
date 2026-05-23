@@ -1,0 +1,17 @@
+{
+  "address": "0x27cc24ee0ec290f914ba23831e490f406d689cfe",
+  "chain_id": 137,
+  "contract_name": "PoolCustodian",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 79,
+  "constructor_arguments": "0000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa841740000000000000000000000006534b0bb33503067fa3887ec32a252feb86854140000000000000000000000006534b0bb33503067fa3887ec32a252feb8685414000000000000000000000000b194467578492d7e928300e38ea8ee0cf8e2d457",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T02:41:17.728Z"
+}

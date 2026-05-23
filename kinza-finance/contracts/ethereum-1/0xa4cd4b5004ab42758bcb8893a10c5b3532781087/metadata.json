@@ -1,0 +1,18 @@
+{
+  "address": "0xa4cd4b5004ab42758bcb8893a10c5b3532781087",
+  "chain_id": 1,
+  "contract_name": "WrappedTokenGatewayV3",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "AGPL-3.0, BUSL-1.1, LGPL-3.0-or-later, MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T07:52:52.537Z"
+}

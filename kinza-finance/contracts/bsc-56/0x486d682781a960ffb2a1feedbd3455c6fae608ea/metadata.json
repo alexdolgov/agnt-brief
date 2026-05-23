@@ -1,0 +1,17 @@
+{
+  "address": "0x486d682781a960ffb2a1feedbd3455c6fae608ea",
+  "chain_id": 56,
+  "contract_name": "FlashLoanLogic",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T07:52:53.919Z"
+}

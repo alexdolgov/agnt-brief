@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "project_key": "axc-gift",
+  "generated_at": "2026-05-23T16:39:22.508Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "axc-gift",
+    "tier": 0,
+    "peak_tvl": 5290517,
+    "peak_date": "2026-02-09T00:00:00.000Z",
+    "tvl_30d_ago": 5290517,
+    "tvl_90d_ago": 5290517,
+    "tvl_current": 5290517,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": null,
+    "change_30d_pct": 0,
+    "change_90d_pct": 0,
+    "days_since_peak": 103,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 5290517,
+    "tvl_usd": 5290517,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 5290517
+    },
+    "asd_usd": 5290517,
+    "website_url": "https://axc.xyz",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "AXC GIFT is a tokenized real-world asset (RWA) protocol on BSC, enabling users to hold and transfer shares of an underlying asset via a single token contract.",
+    "relationship_narrative": "The protocol consists of a single product family with one core token contract, so there are no cross-family relationships or shared infrastructure.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x6eca9d3b1ef79f5b45572fb8204835c6a4502be9",
+      "name": "ShareToken",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "AXC GIFT",
+      "tvl_usd": 5290517,
+      "is_proxy": true,
+      "impl_address": "0x4e255f4f1a5575d20e14334c90b9605af3447b75",
+      "impl_name": "ShareToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6eca9d3b1ef79f5b45572fb8204835c6a4502be9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5290517,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xc7409cead5b975e8865db9b3e7717348d753aaec",
+  "chain_id": 146,
+  "contract_name": "CrossAdapter",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "GNU GPLv2",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:52:19.183Z"
+}

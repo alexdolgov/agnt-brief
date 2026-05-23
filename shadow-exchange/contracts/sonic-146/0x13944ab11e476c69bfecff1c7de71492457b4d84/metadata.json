@@ -1,0 +1,17 @@
+{
+  "address": "0x13944ab11e476c69bfecff1c7de71492457b4d84",
+  "chain_id": 146,
+  "contract_name": "XShadow",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1633,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "0000000000000000000000007423e3d8fc6e626be895ee70ae54a68994c4318e000000000000000000000000a3ce58fac4edec6880b185826c405b57300d7d2d0000000000000000000000005be2e859d0c2453c9aa062860ca27711ff5534320000000000000000000000005e7a9eea6988063a4dbb9ccddb3e04c923e8e37f0000000000000000000000001bc0166f81bdfba98aa13493916895e169d10f660000000000000000000000002f7864a1ca29da0396aafa4148bd4169d7639340",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:52:12.012Z"
+}

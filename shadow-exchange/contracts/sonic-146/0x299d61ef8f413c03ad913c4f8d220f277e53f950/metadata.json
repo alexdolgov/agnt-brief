@@ -1,0 +1,17 @@
+{
+  "address": "0x299d61ef8f413c03ad913c4f8d220f277e53f950",
+  "chain_id": 146,
+  "contract_name": "Shadow",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1633,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "0000000000000000000000009bc0b2e3e85128639a45d93f0d636908ed1a1c46",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:52:15.201Z"
+}

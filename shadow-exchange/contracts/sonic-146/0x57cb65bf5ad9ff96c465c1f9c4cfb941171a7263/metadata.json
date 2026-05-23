@@ -1,0 +1,17 @@
+{
+  "address": "0x57cb65bf5ad9ff96c465c1f9c4cfb941171a7263",
+  "chain_id": 146,
+  "contract_name": "MixedRouteQuoterV1",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1633,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "000000000000000000000000cd2d0637c94fe77c2896bbcbb174ceffb08de6d7000000000000000000000000d54aa58eda39230316dc1a949305dd3b4ba8010c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:52:17.399Z"
+}

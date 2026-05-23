@@ -1,0 +1,18 @@
+{
+  "address": "0x994233366c8e11da5c525ab903c04e7afb2915bd",
+  "chain_id": 1,
+  "contract_name": "Proxy",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": "0x8ee6fb13c6c9a7e401531168e196fbf8b05ceabb",
+  "fetched_at": "2026-05-23T16:40:57.648Z"
+}

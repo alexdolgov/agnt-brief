@@ -1,0 +1,18 @@
+{
+  "address": "0xb90e49b7ad733a61eff596e8dffd19aa52e2a13e",
+  "chain_id": 1,
+  "contract_name": "LiquidXv2Zap",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T16:37:47.452Z"
+}

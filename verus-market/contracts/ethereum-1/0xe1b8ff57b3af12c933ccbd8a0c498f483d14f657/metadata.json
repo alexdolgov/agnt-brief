@@ -1,0 +1,18 @@
+{
+  "address": "0xe1b8ff57b3af12c933ccbd8a0c498f483d14f657",
+  "chain_id": 1,
+  "contract_name": "NotarizationSerializer",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-23T04:48:56.300Z"
+}

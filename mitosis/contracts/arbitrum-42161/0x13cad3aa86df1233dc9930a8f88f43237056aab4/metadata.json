@@ -1,0 +1,17 @@
+{
+  "address": "0x13cad3aa86df1233dc9930a8f88f43237056aab4",
+  "chain_id": 42161,
+  "contract_name": "ATM",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:56:55.649Z"
+}

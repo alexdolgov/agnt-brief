@@ -1,0 +1,17 @@
+{
+  "address": "0x3a19866d5e0fae0ce19adda617f9d2b9fd5a3975",
+  "chain_id": 59144,
+  "contract_name": "UUPSProxy",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "00000000000000000000000095f1138837f1158726003251b32ecd8732c7678100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": "0x6d2cf73d4c59364b824cd1c2588213eec4e7e7af",
+  "fetched_at": "2026-05-24T21:56:55.689Z"
+}

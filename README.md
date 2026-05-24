@@ -184,6 +184,7 @@ Each project directory contains:
 | [mansory](./mansory/brief.md) | $6.34M | bsc | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $0.00 |
 | [3f-mutual](./3f-mutual/brief.md) | $4.07M | ethereum | 25 | 22/25 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [abc-pool](./abc-pool/brief.md) | $6.29M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [aegis-markets](./aegis-markets/brief.md) | $2.36M | base, unichain | 15 | 12/15 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [aitech](./aitech/brief.md) | $4.04M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [altitude.fi](./altitude.fi/brief.md) | $13.73M | ethereum | 124 | 18/124 (15%) | 72.2% | 0.0% (-) | 6 | aging | ✅ active | - |
 | [ambient](./ambient/brief.md) | $2.77M | 5 | 30 | 17/30 (57%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -305,6 +306,7 @@ Each project directory contains:
 | [rain](./rain/brief.md) | $3.39M | arbitrum | 28 | 27/28 (96%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [rank-trading](./rank-trading/brief.md) | $2.38M | bsc | 13 | 10/13 (77%) | 30.0% | 0.0% (-) | 1 | aging | ✅ active | - |
 | [reddex](./reddex/brief.md) | $5.25M | ethereum | 5 | 4/5 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [reflexer](./reflexer/brief.md) | $2.37M | ethereum | 64 | 22/64 (34%) | 40.9% | 0.0% (-) | 3 | stale | 💀 dead | - |
 | [rho](./rho/brief.md) | $2.44M | ethereum | 32 | 2/32 (6%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [risex](./risex/brief.md) | $3.93M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ronin-bridge](./ronin-bridge/brief.md) | $4.63M | ethereum | 11 | 5/11 (45%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
@@ -345,5 +347,5 @@ Each project directory contains:
 | [zenlink](./zenlink/brief.md) | $5.52M | moonbeam, moonriver | 226 | 12/226 (5%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-05-24T11:53:58.597Z_
-_Projects: 333_
+_Generated: 2026-05-24T12:07:25.513Z_
+_Projects: 335_

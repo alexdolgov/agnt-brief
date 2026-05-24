@@ -1,0 +1,17 @@
+{
+  "address": "0x16b40ca9b9366aba4cfdb3d6827491b66994d958",
+  "chain_id": 130,
+  "contract_name": "DynamicFeeManager",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "00000000000000000000000036b89a2be57541e9e1f0b44cb085e573192f1514000000000000000000000000a16eb8f1e03696ca0b4acb0085918e2ed77d300600000000000000000000000023ff89455d190e2cff95a65d2ae01d3f170984ba0000000000000000000000000625f7a6eb8a1b1f3c9600ef560e6e782a5cd0cc",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:02:29.275Z"
+}

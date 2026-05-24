@@ -1,0 +1,106 @@
+[
+  {
+    "inputs": [],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IPoolManager",
+        "name": "poolManager",
+        "type": "address"
+      },
+      {
+        "internalType": "uint160",
+        "name": "sqrtPriceX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "contract ISponsorCenter",
+        "name": "sponsorCenter",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "sponsorTba",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "poolId",
+                "type": "bytes32"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "Currency",
+                    "name": "currency0",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "Currency",
+                    "name": "currency1",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint24",
+                    "name": "fee",
+                    "type": "uint24"
+                  },
+                  {
+                    "internalType": "int24",
+                    "name": "tickSpacing",
+                    "type": "int24"
+                  },
+                  {
+                    "internalType": "contract IHooks",
+                    "name": "hooks",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct PoolKey",
+                "name": "key",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "nonce",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "deadline",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ISponsorCenter.SponsorSlotPermit",
+            "name": "permit",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct ISponsorCenter.SignedSponsorSlotPermit",
+        "name": "signed",
+        "type": "tuple"
+      }
+    ],
+    "name": "initializePoolAndBind",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

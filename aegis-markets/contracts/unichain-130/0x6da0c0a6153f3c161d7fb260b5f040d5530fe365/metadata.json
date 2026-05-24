@@ -1,0 +1,17 @@
+{
+  "address": "0x6da0c0a6153f3c161d7fb260b5f040d5530fe365",
+  "chain_id": 130,
+  "contract_name": "FullRangeLiquidityManager",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 93,
+  "constructor_arguments": "0000000000000000000000001f984000000000000000000000000000000000040000000000000000000000004529a01c7a0410167c5740c487a8de60232617bf0000000000000000000000002699565b992723113794679b02eff025bebe054a00000000000000000000000027bfccf7fdd8215ce5dd86c2a36651d05c8450cc",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:02:29.258Z"
+}

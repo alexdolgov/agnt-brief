@@ -6,6 +6,7 @@
 | [abc-pool](./abc-pool/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | unknown | 5 | 220 | 2026-05-23 |
 | [across](./across/) | $28.1M | 0.0% | $28.1M | unknown | 0 | 143 | 2026-05-22 |
+| [aegis-markets](./aegis-markets/) | $2.4M | 0.0% | ? | active | 2 | 15 | 2026-05-24 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-23 |
 | [aevo](./aevo/) | $98.5M | 9.2% | $1.7M | active | 17 | 331 | 2026-05-22 |
 | [aftermath-finance](./aftermath-finance/) | $1.8M | 0.0% | $1.8M | declining | 0 | 904 | 2026-05-23 |
@@ -242,6 +243,7 @@
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-05-24 |
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 168 | 2026-05-23 |
 | [reddex](./reddex/) | $5.3M | 0.0% | ? | declining | 0 | 5 | 2026-05-23 |
+| [reflexer](./reflexer/) | $2.4M | 40.9% | ? | dead | 8 | 64 | 2026-05-24 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | unknown | 0 | 2 | 2026-05-22 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |

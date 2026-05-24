@@ -1,0 +1,17 @@
+{
+  "address": "0x37fcaead6f62bdead5cb2c17f2528fb4965f9332",
+  "chain_id": 130,
+  "contract_name": "PreCcaBonusClaim",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "0000000000000000000000005e006442e82d805c10c7701c5d9ff376a7aaaaaa000000000000000000000000af678e141bc53c821f4e87c90468ee7f2f6a680d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:02:28.942Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x06eaaea0b37badf17e33b0dd99e97c000808b304",
+  "chain_id": 137,
+  "contract_name": "USDG",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "000000000000000000000000e990519f19dcc6c1589a544c331c4ec046593e7a",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T22:47:19.816Z"
+}

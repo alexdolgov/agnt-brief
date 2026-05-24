@@ -1,0 +1,17 @@
+{
+  "address": "0x651393533ccd66b037744900d6663931b78d2849",
+  "chain_id": 137,
+  "contract_name": "Oracle",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "0000000000000000000000007cfb780010e9c861e03bcbc7ac12e013137d47a57ae6954210575e79ea2402d23bc6a59c4146a6e6296118aa8b99c747afec8acf000000000000000000000000d166bcf1d581bb25ab597672ae8a4a02441d2b39",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T22:47:22.349Z"
+}

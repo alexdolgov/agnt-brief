@@ -138,6 +138,7 @@
 | [firebot](./firebot/) | $3.7M | 9.5% | $3.7M | unknown | 3 | 29 | 2026-05-24 |
 | [flamingo](./flamingo/) | $1.9M | 0.0% | $1.9M | dead | 6 | 935 | 2026-05-24 |
 | [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 21 | 3 | 2026-05-24 |
+| [flexa](./flexa/) | $1.7M | 4.1% | $1.7M | dead | 2 | 65 | 2026-05-24 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
 | [flying-tulip](./flying-tulip/) | $53.1M | 0.0% | $53.1M | unknown | 0 | 152 | 2026-05-23 |
 | [fomo3d](./fomo3d/) | $2.6M | 0.0% | ? | active | 0 | 23 | 2026-05-24 |
@@ -219,6 +220,7 @@
 | [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 108 | 2026-05-24 |
 | [levex](./levex/) | $11.2M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [liminal](./liminal/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-22 |
+| [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | declining | 4 | 20 | 2026-05-24 |
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | active | 0 | 93 | 2026-05-24 |
 | [llamapay](./llamapay/) | $26.4M | 0.0% | ? | active | 0 | 20 | 2026-05-22 |
@@ -242,6 +244,7 @@
 | [mezo-bridge](./mezo-bridge/) | $203.9M | 0.0% | $203.9M | declining | 0 | 138 | 2026-05-22 |
 | [minto](./minto/) | $1.7M | 12.5% | $1.7M | unknown | 1 | 11 | 2026-05-24 |
 | [mitosis](./mitosis/) | $329.1M | 2.9% | $329.1M | dead | 3 | 96 | 2026-05-24 |
+| [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | dead | 3 | 192 | 2026-05-24 |
 | [mobox](./mobox/) | $8.5M | 0.0% | $8.5M | unknown | 1 | 1257 | 2026-05-24 |
 | [mode-bridge](./mode-bridge/) | $6.2M | 2.9% | ? | declining | 27 | 100 | 2026-05-23 |
 | [mole](./mole/) | $8.8M | 0.0% | ? | active | 0 | 49 | 2026-05-23 |
@@ -254,6 +257,7 @@
 | [mystic-finance](./mystic-finance/) | $5.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [neemo-finance](./neemo-finance/) | $1.4M | 0.0% | ? | active | 1 | 14 | 2026-05-24 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-05-24 |
 | [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 73 | 2026-05-23 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | dead | 0 | 66 | 2026-05-24 |

@@ -1,0 +1,17 @@
+{
+  "address": "0x07a9aaf9c3d4fc53f112dfe0edffd585fe70b5a0",
+  "chain_id": 137,
+  "contract_name": "LPToken",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 690,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T22:47:19.971Z"
+}

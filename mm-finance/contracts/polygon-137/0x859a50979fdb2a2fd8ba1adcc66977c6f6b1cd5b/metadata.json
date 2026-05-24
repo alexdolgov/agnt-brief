@@ -1,0 +1,18 @@
+{
+  "address": "0x859a50979fdb2a2fd8ba1adcc66977c6f6b1cd5b",
+  "chain_id": 137,
+  "contract_name": "MMOToken",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T22:47:22.421Z"
+}

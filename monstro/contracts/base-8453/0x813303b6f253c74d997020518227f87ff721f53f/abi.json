@@ -1,0 +1,973 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "recipients",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "apr",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "perUnit",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "payoutHolders",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "payoutTeam",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "transactionHash1",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "transactionHash2",
+        "type": "string"
+      }
+    ],
+    "name": "FarmzGlobalStatsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "product",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "recipients",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "apr",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "payoutAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "transactionHash",
+        "type": "string"
+      }
+    ],
+    "name": "GlobalStatsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "product",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "perUnit",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "payout",
+        "type": "uint256"
+      }
+    ],
+    "name": "IndividualStatsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "product",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalInvested",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "currentTVL",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "insurance",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalPaidOut",
+        "type": "uint256"
+      }
+    ],
+    "name": "LatestStatsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "wallets",
+        "type": "address[]"
+      },
+      {
+        "internalType": "string",
+        "name": "product",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "perUnits",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "payouts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "bulkUpdateIndividualStats",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "farmzGlobalStats",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "recipients",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "apr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "perUnit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "payoutHolders",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "payoutTeam",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "transactionHash1",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "transactionHash2",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "farmzLatestStats",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalInvested",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentTVL",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "insurance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalPaidOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      }
+    ],
+    "name": "getFarmzGlobalStats",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "week",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "recipients",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "apr",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "perUnit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "payoutHolders",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "payoutTeam",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "transactionHash1",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "transactionHash2",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct MonstroDataTracker.FarmzStats",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "weekNumbers",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "getFarmzGlobalStats",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "week",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "recipients",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "apr",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "perUnit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "payoutHolders",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "payoutTeam",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "transactionHash1",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "transactionHash2",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct MonstroDataTracker.FarmzStats[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "product",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      }
+    ],
+    "name": "getGlobalStats",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "week",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "recipients",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "apr",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "payoutAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "transactionHash",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct MonstroDataTracker.GlobalStats",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "product",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "weekNumbers",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "getGlobalStatsForWeeks",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "week",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "recipients",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "apr",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "payoutAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "transactionHash",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct MonstroDataTracker.GlobalStats[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "product",
+        "type": "string"
+      }
+    ],
+    "name": "getGlobalStatsWeeks",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "product",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "weekNumbers",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "getIndividualStatsForWeeks",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "week",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "perUnit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "payout",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MonstroDataTracker.IndividualStats[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "product",
+        "type": "string"
+      }
+    ],
+    "name": "getIndividualStatsWeeks",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "golemzGlobalStats",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "recipients",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "apr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "payoutAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "transactionHash",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "golemzLatestStats",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalInvested",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentTVL",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "insurance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalPaidOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "individualStats",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "perUnit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "payout",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "poolzGlobalStats",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "recipients",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "apr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "payoutAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "transactionHash",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "poolzLatestStats",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalInvested",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentTVL",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "insurance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalPaidOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "recipients",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "apr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "perUnit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "payoutHolders",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "payoutTeam",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "transactionHash1",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "transactionHash2",
+        "type": "string"
+      }
+    ],
+    "name": "updateFarmzGlobalStats",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "product",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "week",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "recipients",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "apr",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "payoutAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "transactionHash",
+        "type": "string"
+      }
+    ],
+    "name": "updateGlobalStats",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "product",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalInvested",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentTVL",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "insurance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalPaidOut",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateLatestStats",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

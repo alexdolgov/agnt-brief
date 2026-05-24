@@ -1,0 +1,129 @@
+{
+  "schema_version": "2.0",
+  "project_key": "dnax",
+  "generated_at": "2026-05-24T04:15:37.874Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "dnax",
+    "tier": 0,
+    "peak_tvl": 5843740,
+    "peak_date": "2026-01-06T00:00:00.000Z",
+    "tvl_30d_ago": 4142200,
+    "tvl_90d_ago": 4581436,
+    "tvl_current": 3536117,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 2623249,
+    "change_30d_pct": -14.631910578919417,
+    "change_90d_pct": -22.816405162049627,
+    "days_since_peak": 138,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 39.48880340329994
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 3536934.01354,
+    "tvl_usd": 3536934.01354,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://dnax.us/",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Dnax is a decentralized exchange (DEX) protocol on BSC that facilitates token swaps and liquidity provision. It uses a single upgradeable CarbonController contract to manage its core trading and liquidity logic.",
+    "relationship_narrative": "The protocol consists of a single product family where the OptimizedTransparentUpgradeableProxy serves as the governance-controlled entry point, delegating all logic to the CarbonController implementation.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xafc43fae32302d725fc4d448525c44c522a9a1b9",
+      "name": "CarbonController",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Dnax",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x62b2b60e2112011e5f5c34e3865d83a93c3c7e2f",
+      "impl_name": "CarbonController",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xafc43fae32302d725fc4d448525c44c522a9a1b9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xafc43fae32302d725fc4d448525c44c522a9a1b9",
+      "name": "CarbonController",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

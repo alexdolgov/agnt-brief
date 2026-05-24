@@ -1,0 +1,496 @@
+{
+  "schema_version": "2.0",
+  "project_key": "monstro",
+  "generated_at": "2026-05-24T04:14:58.830Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "transitioning",
+  "lifecycle_signal": {
+    "slug": "monstro",
+    "tier": 1,
+    "peak_tvl": 529039,
+    "peak_date": "2025-11-13T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 409329,
+    "tvl_current": 0,
+    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
+    "tvl_180d_ago": 488688,
+    "change_30d_pct": null,
+    "change_90d_pct": -100,
+    "governance_raw": {
+      "evidence": "The homepage explicitly states 'We've moved' and directs users to a new Monstro DeFi website, indicating an active migration to a new version or protocol.",
+      "confidence": 0.9,
+      "lifecycle_status": "transitioning"
+    },
+    "days_since_peak": 192,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 100,
+    "governance_evidence": "The homepage explicitly states 'We've moved' and directs users to a new Monstro DeFi website, indicating an active migration to a new version or protocol.",
+    "governance_confidence": 0.9,
+    "governance_text_chars": 263,
+    "governance_classification": "transitioning",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 9,
+    "total_addresses": 12,
+    "unique_implementations": 9,
+    "total_deployments": 12,
+    "audited_contracts": 0,
+    "unaudited_contracts": 9,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 9,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 3563283.69524,
+    "tvl_usd": 3433424.500066329,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 3433424.5
+    },
+    "asd_usd": 3433424.500066329,
+    "website_url": "https://v2.monstro.fun",
+    "chains": [
+      "base"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "MONSTRO is a yield protocol on Base that allows users to stake its native token to earn rewards.",
+    "relationship_narrative": "The MonstroToken is the core asset, and MonstroStaking is the contract that manages staking and reward distribution, with no additional shared infrastructure detected.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7",
+      "name": "MonstroToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "MONSTRO",
+      "tvl_usd": 3433424.500066329,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MonstroToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3433424.500066329,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x813303b6f253c74d997020518227f87ff721f53f",
+      "name": "MonstroDataTracker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MonstroDataTracker",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x813303b6f253c74d997020518227f87ff721f53f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0",
+      "name": "MonstroNFT",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MonstroNFT",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d",
+      "name": "MonstroNFTFeatures",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MonstroNFTFeatures",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xbb0c01c090bbf77440119f1e2e83443fb04b3452",
+      "name": "MonstroNFTProps",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MonstroNFTProps",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbb0c01c090bbf77440119f1e2e83443fb04b3452",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x53f3f548f30639d4d0bd6020db7e789ee8f1ec7c",
+      "name": "MonstroNFTSale",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MonstroNFTSale",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x53f3f548f30639d4d0bd6020db7e789ee8f1ec7c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcc0bec85bdaeeea0f41622921441761af929cec1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcd6cdae2f0f9c31de9a682b11b80968a4376c76d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf6509eb1730e18d90f0e024dcacaa722574ddcd4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x37db84b897c6db3e509d74bc009efb9210ecbf6c",
+      "name": "MonstroPayUSDC",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MonstroPayUSDC",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x37db84b897c6db3e509d74bc009efb9210ecbf6c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x99741758a3bcd7a95b80845e124c5c499df4742b",
+      "name": "MonstroStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "MONSTRO",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MonstroStaking",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x99741758a3bcd7a95b80845e124c5c499df4742b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397",
+      "name": "MonstroUSDC",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MonstroUSDC",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7",
+      "name": "MonstroToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 3433424.500066329,
+      "risk_note": "Verified native implementation with $3,433,424.50 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x813303b6f253c74d997020518227f87ff721f53f",
+      "name": "MonstroDataTracker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x553fa1d5e0bc4b1b98fc39c4e01f4b25d8373cf0",
+      "name": "MonstroNFT",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0d949bbe56bffe8d2bc333a6f830e1a8de28041d",
+      "name": "MonstroNFTFeatures",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xbb0c01c090bbf77440119f1e2e83443fb04b3452",
+      "name": "MonstroNFTProps",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x53f3f548f30639d4d0bd6020db7e789ee8f1ec7c",
+      "name": "MonstroNFTSale",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x37db84b897c6db3e509d74bc009efb9210ecbf6c",
+      "name": "MonstroPayUSDC",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x99741758a3bcd7a95b80845e124c5c499df4742b",
+      "name": "MonstroStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397",
+      "name": "MonstroUSDC",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 9,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

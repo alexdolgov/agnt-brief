@@ -79,6 +79,7 @@
 | [dexalot](./dexalot/) | $4.2M | 0.0% | $4.2M | active | 0 | 1 | 2026-05-23 |
 | [dforce](./dforce/) | $3.6M | 0.0% | $3.6M | declining | 0 | 450 | 2026-05-23 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | unknown | 4 | 71 | 2026-05-23 |
+| [dnax](./dnax/) | $3.5M | 0.0% | ? | active | 0 | 1 | 2026-05-24 |
 | [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [dxsale](./dxsale/) | $26.8M | 0.0% | ? | active | 0 | 353 | 2026-05-22 |
 | [easedefi.org](./easedefi.org/) | $4.4M | 0.0% | ? | active | 3 | 1 | 2026-05-23 |
@@ -131,6 +132,7 @@
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 9 | 2026-05-22 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-05-23 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 13.7% | $428.8M | unknown | 8 | 125 | 2026-05-21 |
+| [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 95 | 2026-05-24 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | dead | 0 | 181 | 2026-05-24 |
 | [juicebox](./juicebox/) | $11.2M | 0.0% | ? | active | 0 | 77 | 2026-05-23 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-05-23 |
@@ -165,6 +167,7 @@
 | [minto](./minto/) | $1.7M | 12.5% | $1.7M | unknown | 1 | 11 | 2026-05-24 |
 | [mode-bridge](./mode-bridge/) | $6.2M | 2.9% | ? | declining | 27 | 100 | 2026-05-23 |
 | [mole](./mole/) | $8.8M | 0.0% | ? | active | 0 | 49 | 2026-05-23 |
+| [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-05-24 |
 | [more-markets](./more-markets/) | $12.0M | 0.0% | ? | unknown | 0 | 21 | 2026-05-23 |
 | [morph-bridge](./morph-bridge/) | $15.8M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-05-22 |

@@ -46,6 +46,7 @@
 | [blackhole](./blackhole/) | $29.9M | 31.1% | ? | unknown | 3 | 86 | 2026-05-22 |
 | [blueshift](./blueshift/) | $4.4M | 0.0% | ? | active | 1 | 42 | 2026-05-23 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 17 | 2026-05-22 |
+| [bob-bridge](./bob-bridge/) | $202.9K | 2.0% | $202.9K | declining | 18 | 53 | 2026-05-24 |
 | [bonzo-finance](./bonzo-finance/) | $22.6M | 0.0% | ? | unknown | 4 | 0 | 2026-05-22 |
 | [boros](./boros/) | $10.4M | 100.0% | ? | active | 5 | 2 | 2026-05-23 |
 | [botto](./botto/) | $4.3M | 0.0% | ? | unknown | 3 | 19 | 2026-05-23 |
@@ -113,6 +114,7 @@
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
 | [hemibtc](./hemibtc/) | $46.2K | 2.7% | $46.2K | active | 5 | 47 | 2026-05-22 |
 | [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
+| [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-05-24 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 242 | 2026-05-24 |
@@ -227,6 +229,7 @@
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
 | [splash-protocol](./splash-protocol/) | $1.9M | 0.0% | $1.9M | active | 0 | 904 | 2026-05-23 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
+| [sport.fun](./sport.fun/) | $3.7M | 0.0% | ? | active | 0 | 1 | 2026-05-24 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-05-23 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-22 |
@@ -241,6 +244,7 @@
 | [symbiosis](./symbiosis/) | $236.1M | 5.8% | $236.1M | active | 15 | 137 | 2026-05-23 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 22.6% | ? | active | 9 | 158 | 2026-05-23 |
 | [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 4 | 482 | 2026-05-23 |
+| [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-05-24 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-05-22 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-05-22 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | unknown | 0 | 179 | 2026-05-23 |

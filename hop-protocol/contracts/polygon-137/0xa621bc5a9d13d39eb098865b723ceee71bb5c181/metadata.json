@@ -1,0 +1,18 @@
+{
+  "address": "0xa621bc5a9d13d39eb098865b723ceee71bb5c181",
+  "chain_id": 137,
+  "contract_name": "SyncPlug",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0-only",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T03:45:50.203Z"
+}

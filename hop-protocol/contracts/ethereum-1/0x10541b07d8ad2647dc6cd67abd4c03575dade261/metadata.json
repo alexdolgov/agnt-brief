@@ -1,0 +1,18 @@
+{
+  "address": "0x10541b07d8ad2647dc6cd67abd4c03575dade261",
+  "chain_id": 1,
+  "contract_name": "PolygonMessengerWrapper",
+  "compiler_version": "v0.7.3+commit.9bfce1f6",
+  "optimization_used": true,
+  "runs": 50000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T03:45:41.932Z"
+}

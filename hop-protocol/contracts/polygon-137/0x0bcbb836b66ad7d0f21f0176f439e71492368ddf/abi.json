@@ -1,0 +1,56 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "srcChainSlug_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "srcPlug_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "dstChainSlug_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "dstPlug_",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "msgId_",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "msgGasLimit_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "executionFee_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "payload_",
+        "type": "bytes"
+      }
+    ],
+    "name": "packMessage",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

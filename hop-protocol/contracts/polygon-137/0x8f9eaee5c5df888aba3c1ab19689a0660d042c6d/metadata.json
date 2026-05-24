@@ -1,0 +1,17 @@
+{
+  "address": "0x8f9eaee5c5df888aba3c1ab19689a0660d042c6d",
+  "chain_id": 137,
+  "contract_name": "GasMovr",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T03:45:50.106Z"
+}

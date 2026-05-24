@@ -1,0 +1,149 @@
+{
+  "schema_version": "2.0",
+  "project_key": "syntropia",
+  "generated_at": "2026-05-24T03:14:55.504Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "syntropia",
+    "tier": 0,
+    "peak_tvl": 3842124,
+    "peak_date": "2026-01-18T00:00:00.000Z",
+    "tvl_30d_ago": 2084657,
+    "tvl_90d_ago": 3662958,
+    "tvl_current": 3658642,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 3497283,
+    "change_30d_pct": 75.50330821809055,
+    "change_90d_pct": -0.11782826884719946,
+    "days_since_peak": 126,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 4.775535615196178
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 3,
+    "unique_implementations": 1,
+    "total_deployments": 3,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 3658461.18176,
+    "tvl_usd": 3659411.4402989997,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 3659411.44
+    },
+    "asd_usd": 3659411.4402989997,
+    "website_url": "https://syntropia.ai/",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Syntropia is a yield aggregator on Ethereum that optimizes user deposits across DeFi strategies. It uses Vault contracts to manage funds and generate yield.",
+    "relationship_narrative": "All three OptinProxy contracts share the same Vault implementation, indicating a single product family with multiple instances. No separate infrastructure contracts are identified, suggesting a self-contained vault design.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1b2cb79a4564206f53ba80b4d780f251b4ae6765",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Syntropia",
+      "tvl_usd": 3659411.4402989997,
+      "is_proxy": true,
+      "impl_address": "0xe50554ec802375c9c3f9c087a8a7bb8c26d3dedf",
+      "impl_name": "Vault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1b2cb79a4564206f53ba80b4d780f251b4ae6765",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 996159.919372,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8df3deba711ae4a9af16cbca5e4fbb1402f036d5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 345267.880994,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd17049ed25d8f99fe3bfd10cef2263da9995cfd8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 2317983.639933,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1b2cb79a4564206f53ba80b4d780f251b4ae6765",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 3659411.4402989997,
+      "risk_note": "Verified native implementation with $3,659,411.44 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

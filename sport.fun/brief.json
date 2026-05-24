@@ -1,0 +1,127 @@
+{
+  "schema_version": "2.0",
+  "project_key": "sport.fun",
+  "generated_at": "2026-05-24T03:14:00.527Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "sport.fun",
+    "tier": 0,
+    "peak_tvl": 7248975,
+    "peak_date": "2025-08-25T00:00:00.000Z",
+    "tvl_30d_ago": 3581185,
+    "tvl_90d_ago": 4293529,
+    "tvl_current": 3724380,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 5305968,
+    "change_30d_pct": 3.9985367971774703,
+    "change_90d_pct": -13.255971952209942,
+    "days_since_peak": 272,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 48.62197758993513
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 2,
+    "unique_implementations": 1,
+    "total_deployments": 2,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 3651355.39628,
+    "tvl_usd": 3651355.39628,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://pro.sport.fun/login/?referral_code=UBJWCCSWOVU",
+    "chains": [
+      "base"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Sport.fun is a prediction market protocol on Base that allows users to trade on the outcomes of sports events. It uses a pair-based mechanism where each market is represented by a proxy contract pointing to the FDFPairV3 implementation.",
+    "relationship_narrative": "The protocol consists of a single product family with two proxy contracts sharing the same FDFPairV3 implementation, indicating a standardized market structure. No additional infrastructure contracts are present in the inventory.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x4fdce033b9f30019337ddc5cc028dc023580585e",
+      "name": "FDFPairV3",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Sport.fun",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0a1b8a8dcd25ce607ebd1ccabb67c37621f5599f",
+      "impl_name": "FDFPairV3",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4fdce033b9f30019337ddc5cc028dc023580585e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9da1bb4e725acc0d96010b7ce2a7244cda446617",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

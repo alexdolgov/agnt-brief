@@ -1,0 +1,17 @@
+{
+  "address": "0xdef0bfbdf7530c75ab3c73f8d2f64d9eaa7aa98e",
+  "chain_id": 137,
+  "contract_name": "SwitchboardSimulator",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 73,
+  "constructor_arguments": "0000000000000000000000005fd7d0d6b91cc4787bcb86ca47e0bd4ea0346d34000000000000000000000000b15f962bbad0015f5a9a51e9ef39aeda45bb83fc000000000000000000000000000000000000000000000000000000000000008900000000000000000000000000000000000000000000000000000000000003e80000000000000000000000002f04a8f11691db9e0ee08bf44a7712af8273720d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T03:45:51.409Z"
+}

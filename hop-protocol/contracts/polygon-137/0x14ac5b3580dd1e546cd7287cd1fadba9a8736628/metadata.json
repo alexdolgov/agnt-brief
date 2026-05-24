@@ -1,0 +1,17 @@
+{
+  "address": "0x14ac5b3580dd1e546cd7287cd1fadba9a8736628",
+  "chain_id": 137,
+  "contract_name": "CelerImplL1L2",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "00000000000000000000000088dcdc47d2f83a99cf0000fdf667a468bb958a78000000000000000000000000c30141b657f4216252dc59af2e7cdb9d8792e1b0",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T03:45:46.608Z"
+}

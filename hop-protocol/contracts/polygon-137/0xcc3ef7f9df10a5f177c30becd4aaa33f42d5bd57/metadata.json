@@ -1,0 +1,18 @@
+{
+  "address": "0xcc3ef7f9df10a5f177c30becd4aaa33f42d5bd57",
+  "chain_id": 137,
+  "contract_name": "RefuelBridgeImpl",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T03:45:50.820Z"
+}

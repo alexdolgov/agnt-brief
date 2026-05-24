@@ -1,0 +1,17 @@
+{
+  "address": "0x289d13adee0b7c1128b45825bdd1e5eb648fb926",
+  "chain_id": 137,
+  "contract_name": "ExecutionManager",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 68,
+  "constructor_arguments": "0000000000000000000000005fd7d0d6b91cc4787bcb86ca47e0bd4ea0346d340000000000000000000000000000000000000000000000000000000000000089000000000000000000000000c20687f8dc0ad51d01003013d1c5b02d10ded0010000000000000000000000002f04a8f11691db9e0ee08bf44a7712af8273720d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T03:45:47.456Z"
+}

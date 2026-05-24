@@ -1,0 +1,18 @@
+{
+  "address": "0x0ab4def8d532fcf0302764d6a9bb2f4299550d66",
+  "chain_id": 43114,
+  "contract_name": "ArenaFeeRecipient",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:07:14.907Z"
+}

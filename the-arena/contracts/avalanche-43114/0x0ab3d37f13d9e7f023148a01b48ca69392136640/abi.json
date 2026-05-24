@@ -1,0 +1,348 @@
+[
+  {
+    "inputs": [],
+    "name": "AmountOutZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientLiquidity",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidFee",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTicks",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LiquidityZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PriceNotInRange",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TickSpacingViolation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenManager",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "a",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "b",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint128",
+            "name": "curveScaler",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint8",
+            "name": "creatorFeeBasisPoints",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenSplit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct SingleTxQuoter.QuoteParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "getTokenOutOnCreation",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "preBondTokenOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "preBondCost",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "postBondTokenOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "postBondCost",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalTokenOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "tokenBonds",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct SingleTxQuoter.QuoteResult",
+        "name": "quote",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenManager",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "a",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "b",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint128",
+            "name": "curveScaler",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint8",
+            "name": "creatorFeeBasisPoints",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenSplit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct SingleTxQuoter.QuoteParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "getTokenOutOnCreationForArena",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "preBondTokenOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "preBondCost",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "postBondTokenOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "postBondCost",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalTokenOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "tokenBonds",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct SingleTxQuoter.QuoteResult",
+        "name": "quote",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenManager",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "a",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "b",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint128",
+            "name": "curveScaler",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint8",
+            "name": "creatorFeeBasisPoints",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenSplit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct SingleTxQuoter.QuoteParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "getTokenOutOnCreationForAvax",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "preBondTokenOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "preBondCost",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "postBondTokenOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "postBondCost",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalTokenOut",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "tokenBonds",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct SingleTxQuoter.QuoteResult",
+        "name": "quote",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocolFeePpm",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ITokenManager",
+        "name": "tokenManager",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenAmountToBond",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pairedTokenAmountToBond",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pairedTokenAmountIn",
+        "type": "uint256"
+      }
+    ],
+    "name": "quotePairedTokenAmountOutForExactTokenIn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenAmountOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

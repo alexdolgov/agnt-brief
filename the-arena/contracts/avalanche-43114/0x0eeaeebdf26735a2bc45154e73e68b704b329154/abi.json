@@ -1,0 +1,338 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ArenaToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ERC20_INITIAL_TOKEN_ID",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TokenManager",
+    "outputs": [
+      {
+        "internalType": "contract ITokenManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TokenManagerERC20",
+    "outputs": [
+      {
+        "internalType": "contract ITokenManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "arenaFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "arenaRouter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "avaxArenaLp",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getArenaAvaxReserve",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "arenaReserve",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "avaxReserve",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAvaxUsdPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPairedTokenAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLp",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lpAddress",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct MCHelper.TokenData[]",
+        "name": "data",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "getTokenData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "avaxReserve",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenReserve",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketCapUsd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketCapUsdDenominator",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidity",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MCHelper.Response[]",
+        "name": "response",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pairedTokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getTokenManager",
+    "outputs": [
+      {
+        "internalType": "contract ITokenManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "priceInAvaxDenominator",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "priceInUsdcDenominator",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "usdc",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "wavax",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "wavaxUsdcLp",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

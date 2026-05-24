@@ -1,0 +1,404 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "addToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "arena_token",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "avaxArenaLp",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getArenaAvaxReserve",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "arenaReserve",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "avaxReserve",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAvaxUsdPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getBalances",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "balanceInAvax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "balanceInUsd",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct TokenInfoProvider.TokenBalance[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokenAddresses",
+        "type": "address[]"
+      }
+    ],
+    "name": "getBalancesWithTokenList",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "balance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "balanceInAvax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "balanceInUsd",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct TokenInfoProvider.TokenBalance[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokenAddresses",
+        "type": "address[]"
+      }
+    ],
+    "name": "getTokenPrices",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "priceInAvax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "priceInUsd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct TokenInfoProvider.PriceInfo[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokenAddresses",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTokenPricesWithAmount",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "priceInAvax",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "priceInUsd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct TokenInfoProvider.PriceInfo[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "priceInAvaxDenominator",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "priceInUsdcDenominator",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "tokenList",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "lpAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapRouter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lpAddress",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct TokenInfoProvider.TokenInfo[]",
+        "name": "_tokens",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "updateTokenList",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "usdc",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "wavax",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "wavaxUsdcLp",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

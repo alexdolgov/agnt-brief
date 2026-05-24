@@ -1,0 +1,275 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenManagerAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_inverseHelperAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ARENA_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GRANULARITY_SCALER",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "INVERSE_HELPER",
+    "outputs": [
+      {
+        "internalType": "contract IInverseHelper",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TOKEN_MANAGER",
+    "outputs": [
+      {
+        "internalType": "contract ITokenManagerERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WAVAX_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountOutMin",
+        "type": "uint256"
+      }
+    ],
+    "name": "buyAndCreateLpIfPossibleWithAvax",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "purchaseAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "arenaAmountToSpend",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountOutMin",
+        "type": "uint256"
+      }
+    ],
+    "name": "buyWithArena",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "purchaseAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "arenaAmountToSpend",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountOutMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_referrer",
+        "type": "address"
+      }
+    ],
+    "name": "buyWithArenaWithReferrer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "purchaseAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountOutMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_referrer",
+        "type": "address"
+      }
+    ],
+    "name": "buyWithAvaxWithReferrer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountOutAvaxMin",
+        "type": "uint256"
+      }
+    ],
+    "name": "sellToAvax",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "avaxAmountOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountOutAvaxMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_referrer",
+        "type": "address"
+      }
+    ],
+    "name": "sellWithReferrerToAvax",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "avaxAmountOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapRouter",
+    "outputs": [
+      {
+        "internalType": "contract IUniswapV2Router02",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

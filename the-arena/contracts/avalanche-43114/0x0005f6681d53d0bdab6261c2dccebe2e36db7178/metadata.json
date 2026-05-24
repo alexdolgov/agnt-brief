@@ -1,0 +1,18 @@
+{
+  "address": "0x0005f6681d53d0bdab6261c2dccebe2e36db7178",
+  "chain_id": 43114,
+  "contract_name": "TokenManagerERC20",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "GPL-3.0, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:07:14.846Z"
+}

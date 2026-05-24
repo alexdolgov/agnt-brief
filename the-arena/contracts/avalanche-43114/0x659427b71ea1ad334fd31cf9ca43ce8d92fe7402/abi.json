@@ -1,0 +1,397 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ARENA_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UNISWAP_V4_ROUTER",
+    "outputs": [
+      {
+        "internalType": "contract IUniswapV4Router04",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WAVAX",
+    "outputs": [
+      {
+        "internalType": "contract IWAVAX",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WAVAX_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenManager",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "a",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "b",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint128",
+            "name": "curveScaler",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint8",
+            "name": "creatorFeeBasisPoints",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenCreatorAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenSplit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenOut",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct SingleTxBuyer.BondAndBuyFromLpParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "bondAndBuyFromLpOnCreation",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenManager",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "a",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "b",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint128",
+            "name": "curveScaler",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint8",
+            "name": "creatorFeeBasisPoints",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenCreatorAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenSplit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenOut",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct SingleTxBuyer.BondAndBuyFromLpParams",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "addresses",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startTsOffset",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "duration",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "balanceLimit",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ITokenTemplate.Whitelist",
+        "name": "whitelist",
+        "type": "tuple"
+      }
+    ],
+    "name": "bondAndBuyFromLpOnCreationWithWhitelist",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenManager",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "a",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "b",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint128",
+            "name": "curveScaler",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint8",
+            "name": "creatorFeeBasisPoints",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenCreatorAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenSplit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenOut",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct SingleTxBuyer.BondAndBuyFromLpParams",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "arenaToSpend",
+        "type": "uint256"
+      }
+    ],
+    "name": "bondAndBuyFromLpOnERC20Creation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenManager",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "a",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "b",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint128",
+            "name": "curveScaler",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint8",
+            "name": "creatorFeeBasisPoints",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenCreatorAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenSplit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenOut",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct SingleTxBuyer.BondAndBuyFromLpParams",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "arenaToSpend",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "addresses",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startTsOffset",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "duration",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "balanceLimit",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ITokenTemplate.Whitelist",
+        "name": "whitelist",
+        "type": "tuple"
+      }
+    ],
+    "name": "bondAndBuyFromLpOnERC20CreationWithWhitelist",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

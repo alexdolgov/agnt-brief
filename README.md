@@ -67,6 +67,7 @@ Each project directory contains:
 | [d2-finance](./d2-finance/brief.md) | $24.57M | 5 | 184 | 60/184 (33%) | 48.4% | 11.3% (Cyfrin) | 2 | aging | ✅ active | $11.49M |
 | [clever](./clever/brief.md) | $5.72M | ethereum | 78 | 68/78 (87%) | 10.3% | 0.0% (-) | 3 | stale | ✅ active | $10.78M |
 | [intentx](./intentx/brief.md) | $5.67M | base, mantle | 56 | 25/56 (45%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $10.51M |
+| [the-arena](./the-arena/brief.md) | $2.27M | 17 | 1054 | 214/1054 (20%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $9.62M |
 | [polkastarter](./polkastarter/brief.md) | $2.75M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $9.61M |
 | [kaito](./kaito/brief.md) | $19.86M | base | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $9.48M |
 | [tau-labs](./tau-labs/brief.md) | $5.02M | ethereum, plasma | 179 | 179/179 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $8.07M |
@@ -112,6 +113,7 @@ Each project directory contains:
 | [sunny](./sunny/brief.md) | $2.56M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.86M |
 | [defituna](./defituna/brief.md) | $4.06M | 17 | 904 | 185/904 (20%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $1.86M |
 | [pact](./pact/brief.md) | $2.71M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.86M |
+| [flamingo](./flamingo/brief.md) | $2.27M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $1.86M |
 | [solayer](./solayer/brief.md) | $13.48M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | aging | ⚠️ declining | $1.85M |
 | [hyperswap](./hyperswap/brief.md) | $14.21M | 18 | 940 | 185/940 (20%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.85M |
 | [serum](./serum/brief.md) | $15.45M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.85M |
@@ -293,6 +295,7 @@ Each project directory contains:
 | [nostra](./nostra/brief.md) | $7.03M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [odyssey-finance](./odyssey-finance/brief.md) | $9.47M | base, ethereum, optimism | 79 | 74/79 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [okcoin](./okcoin/brief.md) | $26.01M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [omnibtc](./omnibtc/brief.md) | $2.27M | 6 | 6 | 0/6 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [opinion](./opinion/brief.md) | $7.54M | bsc, ethereum | 6 | 4/6 (67%) | 100.0% | 0.0% (-) | 4 | fresh | ⚠️ declining | - |
 | [p2pb2b](./p2pb2b/brief.md) | $4.89M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pangolin](./pangolin/brief.md) | $3.66M | avalanche | 182 | 28/182 (15%) | 53.6% | 0.0% (-) | 10 | aging | 💀 dead | - |
@@ -350,5 +353,5 @@ Each project directory contains:
 | [zenlink](./zenlink/brief.md) | $5.52M | moonbeam, moonriver | 226 | 12/226 (5%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-05-24T12:46:06.844Z_
-_Projects: 338_
+_Generated: 2026-05-24T13:09:16.603Z_
+_Projects: 341_

@@ -1,0 +1,436 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tokenManagerAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ARENA_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GRANULARITY_SCALER",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TOKEN_MANAGER",
+    "outputs": [
+      {
+        "internalType": "contract ITokenManagerERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WAVAX_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_inputAmountInWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lowerBound",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "a",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "curveScaler",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateBuyAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "purchaseAmountInWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateCostWithFeesInAvax",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "priceInAvax",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sellAmountInWei",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateRewardWithFeesInAvax",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "rewardInAvax",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_avaxAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getArenaAmountForGivenAvax",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "arenaAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_arenaAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAvaxAmountForGivenArenaAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "avaxAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sellAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAvaxAmountForSell",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "avaxAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "arenaAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPurchaseAmountAndPriceWithGivenArena",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "purchaseAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "a",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "curveScaler",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenSplit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "creatorFeeBasisPoints",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "arenaAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPurchaseAmountAndPriceWithGivenArenaForNewToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "purchaseAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "avaxAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPurchaseAmountAndPriceWithGivenAvax",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "purchaseAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceInArena",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "requiredAvax",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "a",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "curveScaler",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenSplit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "creatorFeeBasisPoints",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "avaxAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPurchaseAmountAndPriceWithGivenAvaxForNewToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "purchaseAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalPaid",
+        "type": "uint256"
+      }
+    ],
+    "name": "invertTotalToRaw",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "rawCost",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "protocolFeeBasisPoint",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "referralFeeBasisPoint",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "creatorFeeBasisPoint",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenCreationBuyFeeAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalPaid",
+        "type": "uint256"
+      }
+    ],
+    "name": "invertTotalToRaw",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "rawCost",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapRouter",
+    "outputs": [
+      {
+        "internalType": "contract IUniswapV2Router02",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,698 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "_foundationWallet",
+        "type": "address"
+      },
+      {
+        "internalType": "address payable",
+        "name": "_arenaFeeWallet",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "AggregatorCallFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "requested",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "allowed",
+        "type": "uint256"
+      }
+    ],
+    "name": "AmountExceedsLimits",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "postBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "requiredMinBalance",
+        "type": "uint256"
+      }
+    ],
+    "name": "InsufficientPostSellBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidParams",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LengthMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotSellerAdmin",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReentrancyGuardReentrantCall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lastSwapTs",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "requiredNextTs",
+        "type": "uint256"
+      }
+    ],
+    "name": "SellIntervalNotElapsed",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "TransferFailed",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldAggregator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newAggregator",
+        "type": "address"
+      }
+    ],
+    "name": "AggregatorUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "foundationWallet",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "arenaFeeWallet",
+        "type": "address"
+      }
+    ],
+    "name": "BeneficiariesUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint40",
+        "name": "maxSupplyNumerator",
+        "type": "uint40"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint136",
+        "name": "amountToKeep",
+        "type": "uint136"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "minSellInterval",
+        "type": "uint32"
+      }
+    ],
+    "name": "DefaultParamsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lastSwapTs",
+        "type": "uint256"
+      }
+    ],
+    "name": "LastSwapTsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalProceeds",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "foundationWalletProceeds",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "arenaFeeWalletProceeds",
+        "type": "uint256"
+      }
+    ],
+    "name": "ProceedsSplit",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint40",
+        "name": "maxSupplyNumerator",
+        "type": "uint40"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint136",
+        "name": "amountToKeep",
+        "type": "uint136"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "minSellInterval",
+        "type": "uint32"
+      }
+    ],
+    "name": "TokenParamsUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "avaxProceeds",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "TokensSold",
+    "type": "event"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "fallback"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_SUPPLY_DENOMINATOR",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "aggregator",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokenList",
+        "type": "address[]"
+      }
+    ],
+    "name": "approveTokensIfNeededBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "arenaFeeWallet",
+    "outputs": [
+      {
+        "internalType": "address payable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokenList",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "amountsToSell",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bytes",
+        "name": "aggregatorCalldata",
+        "type": "bytes"
+      }
+    ],
+    "name": "batchSell",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "defaultParams",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "latestSwapTs",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "minSellInterval",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint40",
+        "name": "maxSupplyNumerator",
+        "type": "uint40"
+      },
+      {
+        "internalType": "bool",
+        "name": "individualParamsSet",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint136",
+        "name": "amountToKeep",
+        "type": "uint136"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "emergencyWithdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "emergencyWithdrawAvax",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokenList",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      }
+    ],
+    "name": "emergencyWithdrawTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "foundationWallet",
+    "outputs": [
+      {
+        "internalType": "address payable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokenList",
+        "type": "address[]"
+      }
+    ],
+    "name": "removeApprovalForTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newArenaFeeWallet",
+        "type": "address"
+      }
+    ],
+    "name": "setArenaFeeWallet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint40",
+        "name": "maxSupplyNumerator",
+        "type": "uint40"
+      },
+      {
+        "internalType": "uint136",
+        "name": "amountToKeep",
+        "type": "uint136"
+      },
+      {
+        "internalType": "uint32",
+        "name": "minSellInterval",
+        "type": "uint32"
+      }
+    ],
+    "name": "setDefaultParams",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newFoundationWallet",
+        "type": "address"
+      }
+    ],
+    "name": "setFoundationWallet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newSellerAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "setSellerAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newSplitBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "setSplitBps",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint40",
+        "name": "maxSupplyNumerator",
+        "type": "uint40"
+      },
+      {
+        "internalType": "uint136",
+        "name": "amountToKeep",
+        "type": "uint136"
+      },
+      {
+        "internalType": "uint32",
+        "name": "minSellInterval",
+        "type": "uint32"
+      }
+    ],
+    "name": "setTokenParams",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "tokenParams",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "latestSwapTs",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "minSellInterval",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint40",
+        "name": "maxSupplyNumerator",
+        "type": "uint40"
+      },
+      {
+        "internalType": "bool",
+        "name": "individualParamsSet",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint136",
+        "name": "amountToKeep",
+        "type": "uint136"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

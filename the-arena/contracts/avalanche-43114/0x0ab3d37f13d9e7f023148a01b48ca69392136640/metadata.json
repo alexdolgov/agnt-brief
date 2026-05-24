@@ -1,0 +1,17 @@
+{
+  "address": "0x0ab3d37f13d9e7f023148a01b48ca69392136640",
+  "chain_id": 43114,
+  "contract_name": "SingleTxQuoter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:07:15.899Z"
+}

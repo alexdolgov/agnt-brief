@@ -1,0 +1,18 @@
+{
+  "address": "0x05b7e88e2c57e735bba1b6469138d3f8805392e5",
+  "chain_id": 43114,
+  "contract_name": "TokenManager",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "GPL-3.0, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:07:15.082Z"
+}

@@ -112,6 +112,7 @@
 | [exmo](./exmo/) | $2.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-05-23 |
+| [flamingo](./flamingo/) | $1.9M | 0.0% | $1.9M | dead | 6 | 935 | 2026-05-24 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
 | [flying-tulip](./flying-tulip/) | $53.1M | 0.0% | $53.1M | unknown | 0 | 152 | 2026-05-23 |
 | [fomo3d](./fomo3d/) | $2.6M | 0.0% | ? | active | 0 | 23 | 2026-05-24 |
@@ -214,6 +215,7 @@
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 0 | 19 | 2026-05-23 |
 | [odyssey-finance](./odyssey-finance/) | $9.5M | 0.0% | ? | active | 0 | 79 | 2026-05-23 |
 | [okcoin](./okcoin/) | $26.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
+| [omnibtc](./omnibtc/) | $2.3M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-05-23 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
 | [osmosis-dex](./osmosis-dex/) | $1.9M | 0.0% | $1.9M | declining | 0 | 935 | 2026-05-22 |
@@ -299,6 +301,7 @@
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-05-22 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-05-22 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | unknown | 0 | 179 | 2026-05-23 |
+| [the-arena](./the-arena/) | $9.6M | 0.0% | $9.6M | active | 0 | 1054 | 2026-05-24 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-05-23 |
 | [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |
 | [thena](./thena/) | $208.9 | 7.1% | $208.9 | declining | 3 | 358 | 2026-05-23 |

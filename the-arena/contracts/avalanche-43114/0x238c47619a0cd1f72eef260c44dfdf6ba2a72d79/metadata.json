@@ -1,0 +1,17 @@
+{
+  "address": "0x238c47619a0cd1f72eef260c44dfdf6ba2a72d79",
+  "chain_id": 43114,
+  "contract_name": "TokenManagerPriceHelper",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:07:16.522Z"
+}

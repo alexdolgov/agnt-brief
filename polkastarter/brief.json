@@ -1,0 +1,172 @@
+{
+  "schema_version": "2.0",
+  "project_key": "polkastarter",
+  "generated_at": "2026-05-24T10:01:33.948Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "polkastarter",
+    "tier": 0,
+    "peak_tvl": 0,
+    "peak_date": "2021-12-22T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 0,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": 1614,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 2751983.26656,
+    "tvl_usd": 9606725.608491847,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 9606725.61
+    },
+    "asd_usd": 9606725.608491847,
+    "website_url": "https://polkastarter.com/#upcoming-projects",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Polkastarter is a decentralized launchpad platform that enables early-stage blockchain projects to raise capital through token sales. It provides a permissionless environment for fundraising and token distribution.",
+    "relationship_narrative": "The project consists of a single product family centered around the POLS token, with no additional contracts or families to relate.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa",
+      "name": "PolkastarterToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Polkastarter",
+      "tvl_usd": 9606725.608491847,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PolkastarterToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 9606725.608491847,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa8ff9e209e70ccbde820b75c51ece964ee165e04",
+      "name": "PolkastarterDistributionContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PolkastarterDistributionContract",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa8ff9e209e70ccbde820b75c51ece964ee165e04",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa",
+      "name": "PolkastarterToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 9606725.608491847,
+      "risk_note": "Verified native implementation with $9,606,725.61 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa8ff9e209e70ccbde820b75c51ece964ee165e04",
+      "name": "PolkastarterDistributionContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,213 @@
+{
+  "schema_version": "2.0",
+  "project_key": "hiyield",
+  "generated_at": "2026-05-24T10:02:01.311Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "hiyield",
+    "tier": 0,
+    "peak_tvl": 4106674,
+    "peak_date": "2025-12-01T00:00:00.000Z",
+    "tvl_30d_ago": 2722520,
+    "tvl_90d_ago": 3228460,
+    "tvl_current": 2726885,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 4104908,
+    "change_30d_pct": 0.16032940070229051,
+    "change_90d_pct": -15.536045049342412,
+    "days_since_peak": 174,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 33.5986981192079
+  },
+  "summary": {
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 4,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 2726591.5877900003,
+    "tvl_usd": 2726591.5877900003,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.hiyield.xyz",
+    "chains": [
+      "avalanche",
+      "canto",
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "HiYield is a Real World Asset (RWA) protocol that tokenizes off-chain assets, enabling users to earn yield from real-world financial instruments on-chain.",
+    "relationship_narrative": "The HiYield family represents the core protocol logic, while the Mainnet family contains the deployed instances on Ethereum mainnet, sharing the same deployer cluster and likely interacting through shared token standards or oracle infrastructure.",
+    "product_family_count": 2
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xaf5baa225765b2ef3eb446aeab87e02dfbcfeac2",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mainnet&amp;#x20;",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xaf5baa225765b2ef3eb446aeab87e02dfbcfeac2",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 7700,
+      "chain_name": "canto",
+      "address": "0x0e4289a95207ca653b60b0eb0b5848f29f4c3f72",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "HiYield",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 7700,
+          "chain_name": "canto",
+          "address": "0x0e4289a95207ca653b60b0eb0b5848f29f4c3f72",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x8475509d391e6ee5a8b7133221ce17019d307b3e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mainnet&amp;#x20;",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x8475509d391e6ee5a8b7133221ce17019d307b3e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xce6050625fe3f79bbfc4d236abaabe51ab59e660",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mainnet&amp;#x20;",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xce6050625fe3f79bbfc4d236abaabe51ab59e660",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 4,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

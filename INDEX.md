@@ -14,6 +14,7 @@
 | [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 2 | 284 | 2026-05-22 |
 | [alphagrowth](./alphagrowth/) | $6.7M | 8.3% | $6.7M | active | 16 | 135 | 2026-05-23 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | active | 7 | 124 | 2026-05-22 |
+| [ambient](./ambient/) | $2.8M | 0.0% | ? | declining | 0 | 30 | 2026-05-24 |
 | [ambire-wallet](./ambire-wallet/) | $5.8M | 0.0% | $5.8M | unknown | 12 | 9 | 2026-05-23 |
 | [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | active | 3 | 13 | 2026-05-23 |
@@ -123,12 +124,14 @@
 | [h2-finance](./h2-finance/) | $3.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [hakka-finance](./hakka-finance/) | $1.7M | 10.7% | $1.7M | active | 7 | 103 | 2026-05-23 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
+| [hanji-protocol](./hanji-protocol/) | $2.8M | 16.7% | ? | active | 2 | 289 | 2026-05-24 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-05-23 |
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 0 | 63 | 2026-05-23 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
 | [hemibtc](./hemibtc/) | $46.2K | 2.7% | $46.2K | active | 5 | 47 | 2026-05-22 |
 | [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
+| [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-05-24 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-05-24 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [hyperdrive-hl](./hyperdrive-hl/) | $2.8M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
@@ -213,7 +216,9 @@
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
 | [pnetwork](./pnetwork/) | $1.8M | 0.0% | $1.8M | declining | 0 | 355 | 2026-05-22 |
+| [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | unknown | 0 | 2 | 2026-05-24 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-05-23 |
+| [pond0x](./pond0x/) | $2.8M | 0.0% | ? | unknown | 0 | 14 | 2026-05-24 |
 | [pooltogether](./pooltogether/) | $26.9M | 0.0% | $26.9M | declining | 0 | 153 | 2026-05-23 |
 | [potatoswap](./potatoswap/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [powercity](./powercity/) | $3.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |

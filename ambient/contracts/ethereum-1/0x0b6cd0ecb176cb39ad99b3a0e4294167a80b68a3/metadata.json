@@ -1,0 +1,18 @@
+{
+  "address": "0x0b6cd0ecb176cb39ad99b3a0e4294167a80b68a3",
+  "chain_id": 1,
+  "contract_name": "CrocPolicy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "BSD-3-Clause, GPL-2.0-or-later, GPL-3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 56,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T10:05:09.769Z"
+}

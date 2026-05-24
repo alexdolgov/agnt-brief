@@ -67,6 +67,7 @@ Each project directory contains:
 | [d2-finance](./d2-finance/brief.md) | $24.57M | 5 | 184 | 60/184 (33%) | 48.4% | 11.3% (Cyfrin) | 2 | aging | ✅ active | $11.49M |
 | [clever](./clever/brief.md) | $5.72M | ethereum | 78 | 68/78 (87%) | 10.3% | 0.0% (-) | 3 | stale | ✅ active | $10.78M |
 | [intentx](./intentx/brief.md) | $5.67M | base, mantle | 56 | 25/56 (45%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $10.51M |
+| [polkastarter](./polkastarter/brief.md) | $2.75M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $9.61M |
 | [kaito](./kaito/brief.md) | $19.86M | base | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $9.48M |
 | [tau-labs](./tau-labs/brief.md) | $5.02M | ethereum, plasma | 179 | 179/179 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $8.07M |
 | [fuel-bridge](./fuel-bridge/brief.md) | $10.81M | ethereum | 18 | 15/18 (83%) | 26.7% | 0.0% (-) | 3 | fresh | ⚠️ declining | $7.63M |
@@ -179,6 +180,7 @@ Each project directory contains:
 | [abc-pool](./abc-pool/brief.md) | $6.29M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [aitech](./aitech/brief.md) | $4.04M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [altitude.fi](./altitude.fi/brief.md) | $13.73M | ethereum | 124 | 18/124 (15%) | 72.2% | 0.0% (-) | 6 | aging | ✅ active | - |
+| [ambient](./ambient/brief.md) | $2.77M | 5 | 30 | 17/30 (57%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [amnis-finance](./amnis-finance/brief.md) | $11.93M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [angstrom](./angstrom/brief.md) | $11.35M | base, ethereum | 13 | 13/13 (100%) | 7.7% | 7.7% (Spearbit) | 1 | fresh | ✅ active | - |
 | [antarctic](./antarctic/brief.md) | $9.31M | arbitrum | 11 | 8/11 (73%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -235,10 +237,12 @@ Each project directory contains:
 | [growihf](./growihf/brief.md) | $8.42M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [h2-finance](./h2-finance/brief.md) | $3.69M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [hakutora](./hakutora/brief.md) | $23.76M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [hanji-protocol](./hanji-protocol/brief.md) | $2.76M | base | 289 | 6/289 (2%) | 16.7% | 0.0% (-) | 2 | aging | ✅ active | - |
 | [harmonix-finance](./harmonix-finance/brief.md) | $4.89M | 4 | 127 | 9/127 (7%) | 10.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [hashkey-global](./hashkey-global/brief.md) | $15.15M | scroll | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [helix-finance](./helix-finance/brief.md) | $11.00M | ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [hera-finance](./hera-finance/brief.md) | $5.80M | metis | 28 | 7/28 (25%) | 42.9% | 0.0% (-) | 3 | stale | ❓ unknown | - |
+| [hiyield](./hiyield/brief.md) | $2.73M | avalanche, canto, ethereum | 4 | 0/4 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [hotcoin](./hotcoin/brief.md) | $5.36M | scroll | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [hyperdrive-hl](./hyperdrive-hl/brief.md) | $2.83M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [hyperion](./hyperion/brief.md) | $20.98M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
@@ -279,6 +283,7 @@ Each project directory contains:
 | [pangolin](./pangolin/brief.md) | $3.66M | avalanche | 182 | 28/182 (15%) | 53.6% | 0.0% (-) | 10 | aging | 💀 dead | - |
 | [paragonsdao](./paragonsdao/brief.md) | $6.23M | base | 2 | 2/2 (100%) | 50.0% | 0.0% (-) | 2 | aging | ❓ unknown | - |
 | [polynomial-protocol](./polynomial-protocol/brief.md) | $5.32M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
+| [pond0x](./pond0x/brief.md) | $2.76M | ethereum | 14 | 9/14 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [potatoswap](./potatoswap/brief.md) | $4.83M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [powercity](./powercity/brief.md) | $3.32M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [powh3d](./powh3d/brief.md) | $4.46M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -325,5 +330,5 @@ Each project directory contains:
 | [zenlink](./zenlink/brief.md) | $5.52M | moonbeam, moonriver | 226 | 12/226 (5%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-05-24T09:55:08.117Z_
-_Projects: 313_
+_Generated: 2026-05-24T10:13:12.662Z_
+_Projects: 318_

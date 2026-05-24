@@ -1,0 +1,17 @@
+{
+  "address": "0xfb8e178b8b606da5de7417f476472c695a52695a",
+  "chain_id": 146,
+  "contract_name": "FixOwnerEggs",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:26:44.558Z"
+}

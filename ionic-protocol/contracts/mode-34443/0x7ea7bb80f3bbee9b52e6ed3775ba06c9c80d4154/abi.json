@@ -1,0 +1,325 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "directory",
+    "outputs": [
+      {
+        "internalType": "contract PoolDirectory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getFlywheelsToClaim",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "contract IonicComptroller[]",
+        "name": "",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[][]",
+        "name": "",
+        "type": "address[][]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ICErc20",
+        "name": "cTokenModify",
+        "type": "address"
+      }
+    ],
+    "name": "getMaxBorrow",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ICErc20",
+        "name": "cTokenModify",
+        "type": "address"
+      }
+    ],
+    "name": "getMaxRedeem",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IonicComptroller",
+        "name": "comptroller",
+        "type": "address"
+      }
+    ],
+    "name": "getPoolOwnership",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "cToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "admin",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "adminHasRights",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "ionicAdminHasRights",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct PoolLensSecondary.CTokenOwnership[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IonicComptroller",
+        "name": "comptroller",
+        "type": "address"
+      }
+    ],
+    "name": "getRewardSpeedsByPool",
+    "outputs": [
+      {
+        "internalType": "contract ICErc20[]",
+        "name": "",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[][]",
+        "name": "",
+        "type": "uint256[][]"
+      },
+      {
+        "internalType": "uint256[][]",
+        "name": "",
+        "type": "uint256[][]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IonicComptroller[]",
+        "name": "comptrollers",
+        "type": "address[]"
+      }
+    ],
+    "name": "getRewardSpeedsByPools",
+    "outputs": [
+      {
+        "internalType": "contract ICErc20[][]",
+        "name": "",
+        "type": "address[][]"
+      },
+      {
+        "internalType": "address[][]",
+        "name": "",
+        "type": "address[][]"
+      },
+      {
+        "internalType": "address[][]",
+        "name": "",
+        "type": "address[][]"
+      },
+      {
+        "internalType": "uint256[][][]",
+        "name": "",
+        "type": "uint256[][][]"
+      },
+      {
+        "internalType": "uint256[][][]",
+        "name": "",
+        "type": "uint256[][][]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "supplier",
+        "type": "address"
+      }
+    ],
+    "name": "getRewardsDistributorsBySupplier",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "contract IonicComptroller[]",
+        "name": "",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[][]",
+        "name": "",
+        "type": "address[][]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "holder",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IRewardsDistributor[]",
+        "name": "distributors",
+        "type": "address[]"
+      }
+    ],
+    "name": "getUnclaimedRewardsByDistributors",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "contract ICErc20[][]",
+        "name": "",
+        "type": "address[][]"
+      },
+      {
+        "internalType": "uint256[2][][]",
+        "name": "",
+        "type": "uint256[2][][]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract PoolDirectory",
+        "name": "_directory",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

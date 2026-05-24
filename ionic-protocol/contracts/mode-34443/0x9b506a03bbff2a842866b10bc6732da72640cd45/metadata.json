@@ -1,0 +1,17 @@
+{
+  "address": "0x9b506a03bbff2a842866b10bc6732da72640cd45",
+  "chain_id": 34443,
+  "contract_name": "LeveredPositionFactory",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000008ea3fc79d9e463464c5159578d38870b770f6e57000000000000000000000000c71b968c6c23e2723bae32957d815c9be3ca1b340000000000000000000000000000000000000000000000000000000000f099c0",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:38:05.425Z"
+}

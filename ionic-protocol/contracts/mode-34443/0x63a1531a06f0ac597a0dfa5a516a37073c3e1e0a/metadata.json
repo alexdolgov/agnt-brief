@@ -1,0 +1,17 @@
+{
+  "address": "0x63a1531a06f0ac597a0dfa5a516a37073c3e1e0a",
+  "chain_id": 34443,
+  "contract_name": "RedstoneAdapterPriceOracle",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000007c1daae7bb0688c9bfe3a918a4224041c7177256",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:38:04.334Z"
+}

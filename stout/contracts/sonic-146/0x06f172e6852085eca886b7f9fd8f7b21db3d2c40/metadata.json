@@ -1,0 +1,17 @@
+{
+  "address": "0x06f172e6852085eca886b7f9fd8f7b21db3d2c40",
+  "chain_id": 146,
+  "contract_name": "VaultValueChecker",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "000000000000000000000000a3c0eca00d2b76b4d1f170b0ab3fdea16c180186000000000000000000000000b1e25689d55734fd3fffc939c4c3eb52dff8a794",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:26:33.380Z"
+}

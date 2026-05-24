@@ -1,0 +1,686 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "_getExtensionFunctions",
+    "outputs": [
+      {
+        "internalType": "bytes4[]",
+        "name": "",
+        "type": "bytes4[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IRedemptionStrategy",
+        "name": "strategyToRemove",
+        "type": "address"
+      }
+    ],
+    "name": "_removeRedemptionStrategy",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IRedemptionStrategy[]",
+        "name": "strategies",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "inputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "outputTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "_resetRedemptionStrategies",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "inputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "outputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "int24",
+        "name": "tickSpacing",
+        "type": "int24"
+      }
+    ],
+    "name": "_setAeroCLTickSpacings",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "inputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "outputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isStable",
+        "type": "bool"
+      }
+    ],
+    "name": "_setAeroV2IsStable",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "inputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "outputToken",
+        "type": "address"
+      }
+    ],
+    "name": "_setDefaultOutputToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "inputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "outputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "optimalPath",
+        "type": "address[]"
+      }
+    ],
+    "name": "_setOptimalSwapPath",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IRedemptionStrategy[]",
+        "name": "strategies",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "inputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "outputTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "_setRedemptionStrategies",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IRedemptionStrategy",
+        "name": "strategy",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "inputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "outputToken",
+        "type": "address"
+      }
+    ],
+    "name": "_setRedemptionStrategy",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "inputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "outputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "slippages",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "_setSlippages",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "inputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "outputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint24[]",
+        "name": "fees",
+        "type": "uint24[]"
+      }
+    ],
+    "name": "_setUniswapV3Fees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "inputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "outputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "routers",
+        "type": "address[]"
+      }
+    ],
+    "name": "_setUniswapV3Routers",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wrapped",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "unwrapped",
+        "type": "address"
+      }
+    ],
+    "name": "_setWrappedToUnwrapped4626",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "inputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "outputToken",
+        "type": "address"
+      }
+    ],
+    "name": "aeroCLTickSpacings",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "",
+        "type": "int24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "inputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "outputToken",
+        "type": "address"
+      }
+    ],
+    "name": "aeroV2IsStable",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ap",
+    "outputs": [
+      {
+        "internalType": "contract AddressesProvider",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "customUniV3Router",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "defaultOutputToken",
+    "outputs": [
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllPairsStrategies",
+    "outputs": [
+      {
+        "internalType": "contract IRedemptionStrategy[]",
+        "name": "strategies",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "inputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "outputTokens",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "inputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "outputToken",
+        "type": "address"
+      }
+    ],
+    "name": "optimalSwapPath",
+    "outputs": [
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IRedemptionStrategy[]",
+        "name": "configStrategies",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "configInputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "configOutputTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "pairsStrategiesMatch",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "redemptionStrategiesByName",
+    "outputs": [
+      {
+        "internalType": "contract IRedemptionStrategy",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "redemptionStrategiesByTokens",
+    "outputs": [
+      {
+        "internalType": "contract IRedemptionStrategy",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "configInputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "configOutputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "configFees",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "uniswapPairsFeesMatch",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "configInputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable[]",
+        "name": "configOutputTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "configRouters",
+        "type": "address[]"
+      }
+    ],
+    "name": "uniswapPairsRoutersMatch",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "uniswapV3Fees",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wrapped",
+        "type": "address"
+      }
+    ],
+    "name": "wrappedToUnwrapped4626",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

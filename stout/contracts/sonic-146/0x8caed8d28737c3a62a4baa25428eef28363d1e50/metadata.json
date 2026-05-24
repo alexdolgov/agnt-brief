@@ -1,0 +1,17 @@
+{
+  "address": "0x8caed8d28737c3a62a4baa25428eef28363d1e50",
+  "chain_id": 146,
+  "contract_name": "OraclePythWSTKSCETHReader",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "000000000000000000000000cb32493aed1510c584736a13fbbe42d3f5139953000000000000000000000000cae456f3b6a6dc239eadbbfa47bca4f3da07ee60",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:26:39.871Z"
+}

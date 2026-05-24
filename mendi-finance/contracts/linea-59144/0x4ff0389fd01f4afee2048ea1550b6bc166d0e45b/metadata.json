@@ -1,0 +1,17 @@
+{
+  "address": "0x4ff0389fd01f4afee2048ea1550b6bc166d0e45b",
+  "chain_id": 59144,
+  "contract_name": "VesterSale",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:28:05.625Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xcf9dc9afb93bd3ef4fb3cc4df7843abc3c9e169a",
+  "chain_id": 34443,
+  "contract_name": "DYORRouter",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:19:15.853Z"
+}

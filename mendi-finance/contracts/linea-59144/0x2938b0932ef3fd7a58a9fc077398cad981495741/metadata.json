@@ -1,0 +1,17 @@
+{
+  "address": "0x2938b0932ef3fd7a58a9fc077398cad981495741",
+  "chain_id": 59144,
+  "contract_name": "VesterCliff",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:28:03.708Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xcd4d7c8e2ba627684a9b18f7fe88239341d3ba5c",
+  "chain_id": 34443,
+  "contract_name": "SimplePriceOracle",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:38:06.437Z"
+}

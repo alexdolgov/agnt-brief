@@ -1,0 +1,18 @@
+{
+  "address": "0xb81ab95bee03ed655c8a99d484effcfe335319eb",
+  "chain_id": 34443,
+  "contract_name": "xERC20Hyperlane",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, MIT OR Apache-2.0, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:38:05.684Z"
+}

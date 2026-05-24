@@ -1,0 +1,17 @@
+{
+  "address": "0xd9a5677594694819f69d0907c3094eab480f3a28",
+  "chain_id": 34443,
+  "contract_name": "LeveredPositionsLens",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:38:06.920Z"
+}

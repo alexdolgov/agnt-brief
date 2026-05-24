@@ -1,0 +1,17 @@
+{
+  "address": "0xfa925d48cce408c38872d9e5a907e936661aaa83",
+  "chain_id": 146,
+  "contract_name": "FeesDistributor",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "0000000000000000000000005ce899aed04c656776148fc3b1adbe59e5f13d5c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:26:44.313Z"
+}

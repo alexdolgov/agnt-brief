@@ -1,0 +1,17 @@
+{
+  "address": "0x6524278eb519553f1d8c03e08b840de4d2dbb121",
+  "chain_id": 146,
+  "contract_name": "RepayHelper",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "0000000000000000000000005ce899aed04c656776148fc3b1adbe59e5f13d5c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:26:38.717Z"
+}

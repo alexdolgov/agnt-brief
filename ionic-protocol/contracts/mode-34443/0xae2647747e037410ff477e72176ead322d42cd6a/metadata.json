@@ -1,0 +1,17 @@
+{
+  "address": "0xae2647747e037410ff477e72176ead322d42cd6a",
+  "chain_id": 34443,
+  "contract_name": "LiquidatorsRegistry",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x000000000000000000000000b0033576a9e444dd801d5b69e1b63dbc459a6115",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:38:06.178Z"
+}

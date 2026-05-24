@@ -1,0 +1,17 @@
+{
+  "address": "0x8a89c7f32f0ed4d186eb73d458354fda68e01d2f",
+  "chain_id": 999,
+  "contract_name": "MinterUpgradeable",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:15:33.218Z"
+}

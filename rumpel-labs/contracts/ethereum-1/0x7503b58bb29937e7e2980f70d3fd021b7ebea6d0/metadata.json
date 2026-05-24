@@ -1,0 +1,18 @@
+{
+  "address": "0x7503b58bb29937e7e2980f70d3fd021b7ebea6d0",
+  "chain_id": 1,
+  "contract_name": "FluidVaultT2",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT, MIT OR Apache-2.0",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": "0xdd45fa116159cd029495ca80e628ea166e52a42f",
+  "fetched_at": "2026-05-24T16:28:51.773Z"
+}

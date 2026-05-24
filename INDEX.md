@@ -128,6 +128,7 @@
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
 | [flying-tulip](./flying-tulip/) | $53.1M | 0.0% | $53.1M | unknown | 0 | 152 | 2026-05-23 |
 | [fomo3d](./fomo3d/) | $2.6M | 0.0% | ? | active | 0 | 23 | 2026-05-24 |
+| [forgeyields](./forgeyields/) | $1.9M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
 | [four.meme](./four.meme/) | $4.9M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
 | [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | unknown | 0 | 5 | 2026-05-24 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 11 | 18 | 2026-05-23 |
@@ -157,6 +158,7 @@
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-05-24 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-05-24 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
+| [hybra](./hybra/) | $1.9M | 0.0% | ? | active | 0 | 81 | 2026-05-24 |
 | [hyperdrive-hl](./hyperdrive-hl/) | $2.8M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 242 | 2026-05-24 |
@@ -285,6 +287,7 @@
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [rumpel-labs](./rumpel-labs/) | $1.1B | 1.7% | $1.1B | declining | 4 | 135 | 2026-05-24 |
 | [saber](./saber/) | $1.9M | 0.0% | $1.9M | dead | 0 | 904 | 2026-05-23 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |
@@ -321,6 +324,7 @@
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 132 | 2026-05-24 |
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-24 |
 | [sunny](./sunny/) | $1.9M | 0.0% | $1.9M | dead | 0 | 935 | 2026-05-24 |
 | [supernova](./supernova/) | $2.2M | 48.9% | ? | declining | 1 | 47 | 2026-05-24 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-05-23 |

@@ -1,0 +1,17 @@
+{
+  "address": "0x05db07299ee752aef6aa1b3e895c973a6007dbc0",
+  "chain_id": 999,
+  "contract_name": "PositionValueQuery",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "00000000000000000000000048b88f07f22fcab3b72e5659f94f1bb773097350",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:15:31.040Z"
+}

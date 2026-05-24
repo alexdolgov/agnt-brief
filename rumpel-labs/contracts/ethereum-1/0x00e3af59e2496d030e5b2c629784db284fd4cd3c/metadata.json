@@ -1,0 +1,18 @@
+{
+  "address": "0x00e3af59e2496d030e5b2c629784db284fd4cd3c",
+  "chain_id": 1,
+  "contract_name": "EthBlocklistVault",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "BUSL-1.1, CC0-1.0, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 62,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:28:47.171Z"
+}

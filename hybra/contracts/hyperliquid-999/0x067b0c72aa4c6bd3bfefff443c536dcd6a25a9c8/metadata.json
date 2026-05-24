@@ -1,0 +1,17 @@
+{
+  "address": "0x067b0c72aa4c6bd3bfefff443c536dcd6a25a9c8",
+  "chain_id": 999,
+  "contract_name": "HYBR",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:15:28.907Z"
+}

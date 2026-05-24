@@ -1,0 +1,18 @@
+{
+  "address": "0x84b883f8833e7eefd17b6a5e4e885b22f4acfed6",
+  "chain_id": 1,
+  "contract_name": "TreasuryIntermediateEscrow",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": null,
+  "runs": 20000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:28:51.613Z"
+}

@@ -1,0 +1,145 @@
+{
+  "schema_version": "2.0",
+  "project_key": "sumer.money",
+  "generated_at": "2026-05-24T16:15:46.920Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 3,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 1890655.3431600002,
+    "tvl_usd": 1890655.3431600002,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://sumer.money",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 3
+    }
+  },
+  "topography": {
+    "project_purpose": "Sumer.money is a decentralized lending protocol that allows users to supply and borrow crypto assets. It is based on the Compound Finance codebase, enabling interest accrual and collateralized loans.",
+    "relationship_narrative": "No product families or contracts are defined in the provided inventory, so no relationships can be described.",
+    "product_family_count": 0
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 2950,
+      "audit_key": "audit-2950",
+      "report_name": "SumerAuditReportAnciliav1.3.pdf",
+      "report_url": "https://github.com/meterio/sumer-contracts/blob/main/audits/Ancilia/SumerAuditReportAnciliav1.3.pdf",
+      "auditor": "Ancilia",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2951,
+      "audit_key": "audit-2951",
+      "report_name": "SumerAuditReportAnciliav1.6.pdf",
+      "report_url": "https://github.com/meterio/sumer-contracts/blob/main/audits/Ancilia/SumerAuditReportAnciliav1.6.pdf",
+      "auditor": "Ancilia",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2952,
+      "audit_key": "audit-2952",
+      "report_name": "SumerMoneyAuditCertik.pdf",
+      "report_url": "https://github.com/meterio/sumer-contracts/blob/main/audits/Certik/SumerMoneyAuditCertik.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2950,
+        "report_name": "SumerAuditReportAnciliav1.3.pdf"
+      },
+      {
+        "audit_id": 2951,
+        "report_name": "SumerAuditReportAnciliav1.6.pdf"
+      },
+      {
+        "audit_id": 2952,
+        "report_name": "SumerMoneyAuditCertik.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

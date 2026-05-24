@@ -1,0 +1,17 @@
+{
+  "address": "0x5452f159b48d14a22cbf1988038c41dfec5a0fe8",
+  "chain_id": 56,
+  "contract_name": "stVLXMinterBSC",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GNU GPLv2",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "000000000000000000000000e9c803f48dffe50180bd5b01dc04da939e3445fc000000000000000000000000cba2aeec821b0b119857a9ab39e09b034249681a000000000000000000000000145fb39c9776516e455b7b050330776a1ec2fd020000000000000000000000004781f0c82dc3ab55d79bd3956689d1b65fbd23ad",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:30:52.182Z"
+}

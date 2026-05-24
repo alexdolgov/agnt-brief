@@ -1,0 +1,18 @@
+{
+  "address": "0xa1372eae7acdeaac3aa9b4ab57d5451a83328080",
+  "chain_id": 42161,
+  "contract_name": "wstACME",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:30:51.388Z"
+}

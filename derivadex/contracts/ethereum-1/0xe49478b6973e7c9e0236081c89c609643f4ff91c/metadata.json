@@ -1,0 +1,18 @@
+{
+  "address": "0xe49478b6973e7c9e0236081c89c609643f4ff91c",
+  "chain_id": 1,
+  "contract_name": "DIFundTokenFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": null,
+  "runs": 50000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 56,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:27:49.356Z"
+}

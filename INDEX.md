@@ -4,6 +4,7 @@
 |---|---|---|---|---|---|---|---|
 | [3f-mutual](./3f-mutual/) | $4.1M | 0.0% | ? | active | 0 | 25 | 2026-05-23 |
 | [abc-pool](./abc-pool/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
+| [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 6 | 43 | 2026-05-24 |
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | unknown | 5 | 220 | 2026-05-23 |
 | [across](./across/) | $28.1M | 0.0% | $28.1M | unknown | 0 | 143 | 2026-05-22 |
 | [aegis-markets](./aegis-markets/) | $2.4M | 0.0% | ? | active | 2 | 15 | 2026-05-24 |
@@ -98,6 +99,7 @@
 | [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-05-24 |
 | [defituna](./defituna/) | $1.9M | 0.0% | $1.9M | declining | 11 | 904 | 2026-05-23 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | unknown | 0 | 53 | 2026-05-23 |
+| [derivadex](./derivadex/) | $16.9M | 0.0% | $16.9M | declining | 0 | 9 | 2026-05-24 |
 | [desyn-protocol](./desyn-protocol/) | $10.8M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
 | [dexalot](./dexalot/) | $4.2M | 0.0% | $4.2M | active | 0 | 1 | 2026-05-23 |
 | [dflow](./dflow/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-24 |

@@ -1,0 +1,18 @@
+{
+  "address": "0x4f9ba083132033594326a69fa90ad3f1a84e3a0e",
+  "chain_id": 10,
+  "contract_name": "AirdropController",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:07:18.887Z"
+}

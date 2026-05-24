@@ -1,0 +1,1409 @@
+{
+  "schema_version": "2.0",
+  "project_key": "ethos",
+  "generated_at": "2026-05-24T16:00:51.202Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "ethos",
+    "tier": 0,
+    "peak_tvl": 5627601,
+    "peak_date": "2025-10-07T00:00:00.000Z",
+    "tvl_30d_ago": 2176365,
+    "tvl_90d_ago": 1919389,
+    "tvl_current": 1904891,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 3323069,
+    "change_30d_pct": -12.473734874435124,
+    "change_90d_pct": -0.7553445393299638,
+    "days_since_peak": 229,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 66.1509229243509
+  },
+  "summary": {
+    "total_contracts": 27,
+    "total_addresses": 64,
+    "unique_implementations": 27,
+    "total_deployments": 64,
+    "audited_contracts": 6,
+    "unaudited_contracts": 14,
+    "contracts_verified_audited": 6,
+    "contracts_verified_unaudited": 14,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 7,
+    "coverage_pct": 30,
+    "total_audits": 2,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 1938252,
+    "tvl_usd": 1938252,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.ethos.network/",
+    "chains": [
+      "base",
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 30,
+    "tier1_auditors": [
+      "Sherlock"
+    ],
+    "latest_audit_date": "2024-12",
+    "audit_freshness": "aging",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 2,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Ethos is a decentralized social finance (SoFi) protocol that enables users to build on-chain reputation, vouch for others, and participate in reputation-based markets. It provides a suite of smart contracts for identity, attestations, reviews, voting, and economic incentives like bonding and slashing.",
+    "relationship_narrative": "The Contracts and Ownership family provides shared infrastructure (profiles, attestations, reviews, votes) that underpins both Ethos Markets and Ethos Network. ReputationMarket and EthosVouch rely on identity and attestation contracts to function, while governance is managed via the Safe Harbor multisig.",
+    "product_family_count": 4
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xc31252d6be0252018f1b12def25f6582db0f3e9a",
+      "name": "ContractAddressManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Contracts and Ownership",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ContractAddressManager",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc31252d6be0252018f1b12def25f6582db0f3e9a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe6f811d8aed56d68d2b8658e01519069470b7436",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x78c322314013b5658536929e823be260f9c536a1",
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7c7ad8d1a255e1aef9d8f77ee13f107d49cdfbe0",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x78c322314013b5658536929e823be260f9c536a1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbfced9932c2180d6e3db2f933d5d2512c59e0ec9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x18e76564ecaabde4665b753197df7e514973aade",
+      "name": "EthosAttestation",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4931536fc088037f913521daf0441786f22128c6",
+      "impl_name": "EthosAttestation",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x18e76564ecaabde4665b753197df7e514973aade",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x27499d9a439d1c7b4538f247625cc7aa159d3c14",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4931536fc088037f913521daf0441786f22128c6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xaf35ee91380c928d2752e67d55bb85628c8e1386",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2944"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x21380b24ee8b4a8d809a5049d0a9ac047828384a",
+      "name": "EthosBond",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Contracts and Ownership",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xda592a2c88456dec6d84f8203134303ec66d749a",
+      "impl_name": "EthosBond",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x21380b24ee8b4a8d809a5049d0a9ac047828384a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xda592a2c88456dec6d84f8203134303ec66d749a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x5fab43b6e906f05d5d5e9d4b0582dd7b4eedc7e7",
+      "name": "EthosBroker",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Contracts and Ownership",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6045d0fcfe7a54c85c095a1b2877964baf4aa9bd",
+      "impl_name": "EthosBroker",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5fab43b6e906f05d5d5e9d4b0582dd7b4eedc7e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6045d0fcfe7a54c85c095a1b2877964baf4aa9bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x24935729bbff8d4c6210d769eb058a1733662f42",
+      "name": "EthosDiscussion",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x89fb1c2a52634ac582f4380f29fe7800a9e2e2f0",
+      "impl_name": "EthosDiscussion",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x24935729bbff8d4c6210d769eb058a1733662f42",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2820b3ab3543adb80810f11f2651f0dd9a04e801",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7fdac5e0e137b9299107f4e4f77c315c477e74c9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x89fb1c2a52634ac582f4380f29fe7800a9e2e2f0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2944"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xada5a6e455cb93e8a934d09eb564ff465d923c54",
+      "name": "EthosListingPass",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Contracts and Ownership",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd998f84a46b874ff0f8f5b136f3bf54649d94d60",
+      "impl_name": "EthosListingPass",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xada5a6e455cb93e8a934d09eb564ff465d923c54",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd998f84a46b874ff0f8f5b136f3bf54649d94d60",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1d073a9cb370dd94496f921c17b591cac8126c6f",
+      "name": "EthosProfile",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd31d6486a4ccfc171b7e498fe69ff51feda1e3aa",
+      "impl_name": "EthosProfile",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1d073a9cb370dd94496f921c17b591cac8126c6f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x209820b843900ef77bd639455cde15f38a252a36",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2661710d76c872681efc25300de84138a6369e3a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x311df4d62055064b3047e3535b81f33eeffc255c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd31d6486a4ccfc171b7e498fe69ff51feda1e3aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2944"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x8b92d27846559abd7cee0c01435a35f3d7731c35",
+      "name": "EthosProject",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Contracts and Ownership",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf00b5cf6b357f7fb01721c21f03c5d6bed6aeda4",
+      "impl_name": "EthosProject",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8b92d27846559abd7cee0c01435a35f3d7731c35",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf00b5cf6b357f7fb01721c21f03c5d6bed6aeda4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x3dc2154b35e737dade925893e23068fbb3bb31bd",
+      "name": "EthosReview",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6af8b0fc6998cc4801b9979503df557035e0af03",
+      "impl_name": "EthosReview",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3dc2154b35e737dade925893e23068fbb3bb31bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6af8b0fc6998cc4801b9979503df557035e0af03",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6d3a8fd5cf89f9a429bfadfd970968f646aff325",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf641089aa70d7bdaa2d9c02ca134fb7e014a83dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2944"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb2c41deba270e1ea6abbe0e2fa70432630634a59",
+      "name": "EthosSlash",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Contracts and Ownership",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe4c8fc01b416ee13c8b21171ff90f5274428dc73",
+      "impl_name": "EthosSlash",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb2c41deba270e1ea6abbe0e2fa70432630634a59",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb51b4a6622d591785abcee24060796c5e5dc1f1b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe4c8fc01b416ee13c8b21171ff90f5274428dc73",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x405f85b6670f205252f14064c70b9a980a2c8429",
+      "name": "EthosVote",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x405f85b6670f205252f14064c70b9a980a2c8429",
+      "impl_name": "EthosVote",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x405f85b6670f205252f14064c70b9a980a2c8429",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6f75bfb43a28410c03aa2af4dc0196fa8049d136",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x744bd54140255e7a60a01c14d8fb7706b2e4b317",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x89e6ff2ce8318433e011d848d8a35fbfee60c2ed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xfe086ebd36209bcbbbbe6c4e9af36365222d1d59",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x5a914935c56a9f62417726064a9a9aed5d7ae9c3",
+      "name": "EthosVouch",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x5a914935c56a9f62417726064a9a9aed5d7ae9c3",
+      "impl_name": "EthosVouch",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5a914935c56a9f62417726064a9a9aed5d7ae9c3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x879989c287e2a98a31f04f94eea408f3e1b99d18",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb7866ca9e586118fb7a97b5f198776f86afa53bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbbbdbebc1ad8e1081b31d341123577f1a5827c47",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd89e6b7687f862dd6d24b3b2d4d0dec6a89a6fdd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xebe137ea60f980f40fd30e763d09b9c0ce892801",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2944"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9c98258da66ed095948ce4774e541c9fe978e946",
+      "name": "GnosisSafe",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "Safe Harbor",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+      "impl_name": "GnosisSafe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9c98258da66ed095948ce4774e541c9fe978e946",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0a31c99b8edd563cdf01534a82956eda5cdb4ce5",
+      "name": "InteractionControl",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Contracts and Ownership",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "InteractionControl",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0a31c99b8edd563cdf01534a82956eda5cdb4ce5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4fa6432cd0e2f2b4310c27d80c9726ea41c38b61",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xa65e325f3b788085739b5a0ab366b323d832d164",
+      "name": "ReputationMarket",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xbad687c67afcd6e97e59b93661ccee753c87cd9c",
+      "impl_name": "ReputationMarket",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa65e325f3b788085739b5a0ab366b323d832d164",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbad687c67afcd6e97e59b93661ccee753c87cd9c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc26f339f4e46c776853b1c190ec17173dbe059bf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe0da0eda50376e111e1640db43b0c6a486bc7505",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2944"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x323a8314362a4ce13e26cf67e3590989d143ca2a",
+      "name": "ReverseAuction",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Contracts and Ownership",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x323a8314362a4ce13e26cf67e3590989d143ca2a",
+      "impl_name": "ReverseAuction",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x323a8314362a4ce13e26cf67e3590989d143ca2a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd56695235933ce2d9de477467b44378322ecd194",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7a20d99307172d8f6b80bf1e904bbf069c31c131",
+      "name": "SafeL2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "Contracts and Ownership",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x29fcb43b46531bca003ddc8fcb67ffe91900c762",
+      "impl_name": "SafeL2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7a20d99307172d8f6b80bf1e904bbf069c31c131",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb4a9bc5fb037ebd805a405f2b53cfadf4bcb4774",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x72f04d999e12d456fe7ee0acaa345124a081018d",
+      "name": "SafeProxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "Contracts and Ownership",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeProxy",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x72f04d999e12d456fe7ee0acaa345124a081018d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0992bb163b8f5615258defe98fb8bd63327b5b10",
+      "name": "SignatureVerifier",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SignatureVerifier",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0992bb163b8f5615258defe98fb8bd63327b5b10",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x78a32a705bfc1600e0a2e056316e44877bda7f57",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1a574edc919ddb2ceb192f3623b68ff1c5d63b11",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1a574edc919ddb2ceb192f3623b68ff1c5d63b11",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x354fb4d1e6751dd7f73943f9ebc032d521d29186",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x354fb4d1e6751dd7f73943f9ebc032d521d29186",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x3a9271fe639edd6bfed95357955a378de122f3f9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3a9271fe639edd6bfed95357955a378de122f3f9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x789888ce1e09f3822218eaaef70a6c51b3f241ce",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x789888ce1e09f3822218eaaef70a6c51b3f241ce",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7c7ad8d1a255e1aef9d8f77ee13f107d49cdfbe0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7c7ad8d1a255e1aef9d8f77ee13f107d49cdfbe0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xcaa2dccd4a863f31d66b289a00825f61a49860a9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcaa2dccd4a863f31d66b289a00825f61a49860a9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xd8385ee87471215f56ccd34b1f2b1ee7cb852e3c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd8385ee87471215f56ccd34b1f2b1ee7cb852e3c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2944,
+      "audit_key": "audit-2944",
+      "report_name": "Audit_Report.pdf",
+      "report_url": "https://github.com/sherlock-audit/2024-10-ethos-network-judging/blob/main/Audit_Report.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "aging",
+      "date": "2024-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AccessControl",
+        "Common",
+        "EthosAttestation",
+        "EthosDiscussion",
+        "EthosProfile",
+        "EthosReview",
+        "EthosVouch",
+        "LMSR",
+        "ReputationMarket",
+        "ReputationMarketErrors",
+        "SignatureControl"
+      ],
+      "matched_contracts": 27,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 2944,
+          "report_url": "https://github.com/sherlock-audit/2024-10-ethos-network-judging/blob/main/Audit_Report.pdf"
+        },
+        {
+          "audit_id": 2945,
+          "report_url": "https://github.com/sherlock-audit/2024-11-ethos-network-ii-judging/blob/main/Audit_Report.pdf"
+        },
+        {
+          "audit_id": 2946,
+          "report_url": "https://github.com/sherlock-audit/2024-12-ethos-update-judging/blob/main/Audit_Report.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 2947,
+      "audit_key": "audit-2947",
+      "report_name": "Smart Contract Audits",
+      "report_url": "https://whitepaper.ethos.network/security/smart-contract-audits.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Sherlock",
+      "tier": 1,
+      "contracts_covered": 6,
+      "coverage_pct": 30,
+      "latest_audit": "2024-11"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xc31252d6be0252018f1b12def25f6582db0f3e9a",
+      "name": "ContractAddressManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x405f85b6670f205252f14064c70b9a980a2c8429",
+      "name": "EthosVote",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0a31c99b8edd563cdf01534a82956eda5cdb4ce5",
+      "name": "InteractionControl",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x323a8314362a4ce13e26cf67e3590989d143ca2a",
+      "name": "ReverseAuction",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0992bb163b8f5615258defe98fb8bd63327b5b10",
+      "name": "SignatureVerifier",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 7,
+    "upstream": 0,
+    "standard_library": 13,
+    "needs_review": 7
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 31
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2947,
+        "report_name": "Smart Contract Audits"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

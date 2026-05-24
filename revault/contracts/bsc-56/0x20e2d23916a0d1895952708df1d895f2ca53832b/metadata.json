@@ -1,0 +1,17 @@
+{
+  "address": "0x20e2d23916a0d1895952708df1d895f2ca53832b",
+  "chain_id": 56,
+  "contract_name": "RevaToken",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:01:41.110Z"
+}

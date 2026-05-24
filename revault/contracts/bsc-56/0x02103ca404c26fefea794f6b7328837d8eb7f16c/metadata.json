@@ -1,0 +1,18 @@
+{
+  "address": "0x02103ca404c26fefea794f6b7328837d8eb7f16c",
+  "chain_id": 56,
+  "contract_name": "vRevaToken",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:01:39.752Z"
+}

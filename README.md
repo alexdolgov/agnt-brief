@@ -127,6 +127,7 @@ Each project directory contains:
 | [defituna](./defituna/brief.md) | $4.06M | 17 | 904 | 185/904 (20%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $1.86M |
 | [pact](./pact/brief.md) | $2.71M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.86M |
 | [flamingo](./flamingo/brief.md) | $2.27M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $1.86M |
+| [rex-staking](./rex-staking/brief.md) | $1.94M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.85M |
 | [solayer](./solayer/brief.md) | $13.48M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | aging | ⚠️ declining | $1.85M |
 | [hyperswap](./hyperswap/brief.md) | $14.21M | 18 | 940 | 185/940 (20%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.85M |
 | [serum](./serum/brief.md) | $15.45M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.85M |
@@ -260,6 +261,7 @@ Each project directory contains:
 | [equilibre](./equilibre/brief.md) | $6.90M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [etherex](./etherex/brief.md) | $3.60M | linea | 58 | 45/58 (78%) | 42.6% | 42.6% (Code4rena, ConsenSys Diligence, Spearbit) | 3 | fresh | ⚠️ declining | - |
 | [etherfuse](./etherfuse/brief.md) | $5.11M | base, polygon | 25 | 4/25 (16%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [ethos](./ethos/brief.md) | $1.94M | base, ethereum | 27 | 20/27 (74%) | 30.0% | 30.0% (Sherlock) | 1 | aging | ✅ active | - |
 | [exmo](./exmo/brief.md) | $2.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [feather](./feather/brief.md) | $16.55M | celo, klaytn, sei | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [ferro](./ferro/brief.md) | $5.05M | cronos | 21 | 0/21 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -278,6 +280,7 @@ Each project directory contains:
 | [hanji-protocol](./hanji-protocol/brief.md) | $2.76M | base | 289 | 6/289 (2%) | 16.7% | 0.0% (-) | 2 | aging | ✅ active | - |
 | [harmonix-finance](./harmonix-finance/brief.md) | $4.89M | 4 | 127 | 9/127 (7%) | 10.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [hashkey-global](./hashkey-global/brief.md) | $15.15M | scroll | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [helix](./helix/brief.md) | $1.95M | ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [helix-finance](./helix-finance/brief.md) | $11.00M | ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [hera-finance](./hera-finance/brief.md) | $5.80M | metis | 28 | 7/28 (25%) | 42.9% | 0.0% (-) | 3 | stale | ❓ unknown | - |
 | [hiyield](./hiyield/brief.md) | $2.73M | avalanche, canto, ethereum | 4 | 0/4 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -339,6 +342,7 @@ Each project directory contains:
 | [rank-trading](./rank-trading/brief.md) | $2.38M | bsc | 13 | 10/13 (77%) | 30.0% | 0.0% (-) | 1 | aging | ✅ active | - |
 | [reddex](./reddex/brief.md) | $5.25M | ethereum | 5 | 4/5 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [reflexer](./reflexer/brief.md) | $2.37M | ethereum | 64 | 22/64 (34%) | 40.9% | 0.0% (-) | 3 | stale | 💀 dead | - |
+| [revault](./revault/brief.md) | $1.96M | bsc | 75 | 20/75 (27%) | 45.0% | 0.0% (-) | 1 | stale | ⚠️ declining | - |
 | [rho](./rho/brief.md) | $2.44M | ethereum | 32 | 2/32 (6%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [risex](./risex/brief.md) | $3.93M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ronin-bridge](./ronin-bridge/brief.md) | $4.63M | ethereum | 11 | 5/11 (45%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
@@ -386,5 +390,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-24T15:47:48.254Z_
-_Projects: 374_
+_Generated: 2026-05-24T16:07:33.963Z_
+_Projects: 378_

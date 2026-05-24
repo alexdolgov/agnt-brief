@@ -117,6 +117,7 @@
 | [etherex](./etherex/) | $3.6M | 42.6% | ? | declining | 4 | 58 | 2026-05-24 |
 | [etherfuse](./etherfuse/) | $5.1M | 0.0% | ? | unknown | 0 | 25 | 2026-05-23 |
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | unknown | 2 | 58 | 2026-05-23 |
+| [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-05-24 |
 | [eventum-bridge](./eventum-bridge/) | $1.7M | 2.1% | $1.7M | active | 2 | 74 | 2026-05-24 |
 | [exmo](./exmo/) | $2.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
@@ -150,6 +151,7 @@
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 0 | 63 | 2026-05-23 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
+| [helix](./helix/) | $2.0M | 0.0% | ? | declining | 0 | 9 | 2026-05-24 |
 | [hemibtc](./hemibtc/) | $46.2K | 2.7% | $46.2K | active | 5 | 47 | 2026-05-22 |
 | [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-05-24 |
@@ -272,7 +274,9 @@
 | [reflexer](./reflexer/) | $2.4M | 40.9% | ? | dead | 8 | 64 | 2026-05-24 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | unknown | 0 | 2 | 2026-05-22 |
+| [revault](./revault/) | $2.5K | 45.0% | ? | declining | 1 | 75 | 2026-05-24 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |
+| [rex-staking](./rex-staking/) | $1.9M | 0.0% | $1.9M | dead | 0 | 935 | 2026-05-24 |
 | [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-05-24 |
 | [rho](./rho/) | $2.4M | 0.0% | ? | active | 4 | 32 | 2026-05-24 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 20.6% | $148.6M | declining | 15 | 195 | 2026-05-23 |

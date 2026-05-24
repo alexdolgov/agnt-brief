@@ -1,0 +1,18 @@
+{
+  "address": "0x6e7058c91f85e0f6db4fc9da2ca41241f5e4263f",
+  "chain_id": 1,
+  "contract_name": "nProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0x7cfe986657a2ccb8d7b173976cf78beb3a7b0068",
+  "fetched_at": "2026-05-24T04:09:54.348Z"
+}

@@ -1,0 +1,2982 @@
+{
+  "schema_version": "2.0",
+  "project_key": "etherex",
+  "generated_at": "2026-05-24T04:01:32.838Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "etherex",
+    "tier": 1,
+    "peak_tvl": 285088863,
+    "peak_date": "2025-09-07T00:00:00.000Z",
+    "tvl_30d_ago": 5132042,
+    "tvl_90d_ago": 19806924,
+    "tvl_current": 3560397,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 38944520,
+    "change_30d_pct": -30.624164806133695,
+    "change_90d_pct": -82.02448295353686,
+    "governance_raw": {
+      "evidence": "TVL has dropped 98.75% from its peak and 82% in 90 days, but the protocol still has an active website with trading, liquidity, and earn features, indicating it remains operational.",
+      "confidence": 0.9,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 259,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 98.75112729324681,
+    "governance_evidence": "TVL has dropped 98.75% from its peak and 82% in 90 days, but the protocol still has an active website with trading, liquidity, and earn features, indicating it remains operational.",
+    "governance_confidence": 0.9,
+    "governance_text_chars": 392,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 58,
+    "total_addresses": 130,
+    "unique_implementations": 58,
+    "total_deployments": 130,
+    "audited_contracts": 20,
+    "unaudited_contracts": 27,
+    "contracts_verified_audited": 19,
+    "contracts_verified_unaudited": 26,
+    "contracts_verified_by_bytecode": 2,
+    "contracts_unverified": 11,
+    "coverage_pct": 42.6,
+    "total_audits": 4,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 3600603,
+    "tvl_usd": 3600603,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://etherex.finance/",
+    "chains": [
+      "linea"
+    ],
+    "tier1_coverage_pct": 42.6,
+    "tier1_auditors": [
+      "Code4rena",
+      "ConsenSys Diligence",
+      "Spearbit"
+    ],
+    "latest_audit_date": "2025-10",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 3,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Etherex is a decentralized exchange (DEX) protocol on Linea that offers both classic automated market maker (AMM) pools and concentrated liquidity pools. It enables users to swap tokens, provide liquidity, and participate in governance through voting and fee distribution mechanisms.",
+    "relationship_narrative": "The Core and Concentrated Liquidity families share the Access Control infrastructure for upgrades and governance. Both families use separate but parallel factory and gauge systems, with the Voter contract in Core directing emissions across both pool types.",
+    "product_family_count": 3
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x00cc296010664ff909aa90795a919046d1423b67",
+      "name": "AccessHub",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x9c8b50ceeea730efd386b12b252a38836d3da8aa",
+      "impl_name": "AccessHub",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x00cc296010664ff909aa90795a919046d1423b67",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x09aaa525f9c4e5c5e0ac05a6b994d77e21fbea2a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x09d128e0a38afc9846a9e7ede7d4b76601fc72a3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x0cc5a720004de614ff515d073f362509dd2d666c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x0d8ff344dd3fef004813ff7865e528c63de66422",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x3fd55d05fed2fb9c463b598bc52ab4b5f5d6d071",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x44f5512a453177c686bfcdef62b94ebfbf22f508",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x51a2690132cde2b66a3346932465b89ec3e80006",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x55cab4d2cd21e4fd5abde5667c490b87144b40b1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x582f3f017ba12f142edf56310bdcbf95cc031c7a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5aae85c146bca912f1f7fb43ba3aaa54fbda036b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5e2f4d1b9ed30cdad1cff169562b5356f5e4b4e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x683035188e3670fda1def2a7aa5742dea28ed5f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x6a0673814258a7739241f77540744235321c99c1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x7026f9a84b0727ccf310298065010ab3d18dd004",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x7ac7935df815efe423df95c8a52c35da558c9026",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8af8a09161c4d0ee7e25f778a059dd7bbe71b734",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8e394fb7e802a780958af4215498efd4875b49e1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x93948c03a47b2a812dab7b36c40f982c6b4351ed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x967a7a875a7ac07eb30fd9f6e9353dd4c537854c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9ce2fbc74e04c8b294435308838893ff95709346",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb6139621e96f000e7a6e44d6d6196eb46d31a7b6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb66d0cd955345c270d5e9162e583bc33849fd40b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xbb100bf42997e0d61e89b4a51ef68d93fd008e31",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xd434fe96a2aa23b0fabb07c1f837ff85c006805e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe345ada88f71c1f8215530c862fc6277b5ddc6bc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe6d0d3b6c26c568983ee0f0b6745c33bfacb5298",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x2e5c9e4146f57c5dc6dcb88a86bdf5e8087c10df",
+      "name": "AutomatedFeeNotifier",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AutomatedFeeNotifier",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x2e5c9e4146f57c5dc6dcb88a86bdf5e8087c10df",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x4bc655bce615312fb703fdc3314e39570e6cb1f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x4dd0c28941e9edcca2ed559d4f15768e55ea2a4c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5ad9ec38ba13e493746a48a2bb7680818db0e48c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb0b55dbc4449fb5bcc127e81e3dece0035af5939",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xbf074374ec7307596963384f36fd2e514f780d36",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xd7cb73ffdea0da4d2b3551a30cf75f531a81ac2c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xfd29fadd2c1edd0eb222a31d579c7367d7cf80e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xf7a8b3770f661059f4ea0d79ad7fe8d642f9ea9b",
+      "name": "BribeHolder",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BribeHolder",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xf7a8b3770f661059f4ea0d79ad7fe8d642f9ea9b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xbe8b8dcbc1e5cda63c667e76d539dbf5d369f11d",
+      "name": "Etherex",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Etherex",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xbe8b8dcbc1e5cda63c667e76d539dbf5d369f11d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xefd81eec32b9a8222d1842ec3d99c7532c31e348",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xf0c89c8104707d2698288da2724b05881e0bd9eb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x51a2a0b162d27254e30473b7072d95f4b37f21a1",
+      "name": "FeeCollector",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FeeCollector",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x51a2a0b162d27254e30473b7072d95f4b37f21a1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x532c15d1803f565ad37b77f5b20d9e3a4254e0f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724",
+        "audit-2727"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xc2b256f2977b4c7eff6d39e35dbe245efd767b7c",
+      "name": "FeeDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FeeDistributor",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc2b256f2977b4c7eff6d39e35dbe245efd767b7c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x61c56ad143e364dacbb60fc901f7993e9e6f3f6f",
+      "name": "FeeDistributorFactory",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FeeDistributorFactory",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x61c56ad143e364dacbb60fc901f7993e9e6f3f6f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xfde48794f3ea7f26cd2b00f078366455b1e6b7bf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x3add8307bcc1b6c757cf1d7664b2f37c9bba039b",
+      "name": "FeeLiquidator",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FeeLiquidator",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x3add8307bcc1b6c757cf1d7664b2f37c9bba039b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe789668d8ccf7bac2ee852415e5b55487a98e856",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x75430c78a65bfb7dcdf89a3f0daa8da36402d6a7",
+      "name": "FeeRecipientFactory",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FeeRecipientFactory",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x75430c78a65bfb7dcdf89a3f0daa8da36402d6a7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x97b1b762ae52e1fe4a96dd6db6f15e117ee38912",
+      "name": "FrogAirdrop",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FrogAirdrop",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x97b1b762ae52e1fe4a96dd6db6f15e117ee38912",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xbe9d8709a2f5a7d809de09f6eb48b600673a78c3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x1ddf722c565ed8e9b6918a6bea34e9825a7944b3",
+      "name": "GaugeFactory",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GaugeFactory",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x1ddf722c565ed8e9b6918a6bea34e9825a7944b3",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xd766d9da469c4a7d325b66ffcf33139650c4a200",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x18068c050d237d46310f59f40559bd0c6b3b0b25",
+      "name": "GaugeV3",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x3a91fae86f2218e303a4a42efb10dd8b6e861f57",
+      "impl_name": "GaugeV3",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x18068c050d237d46310f59f40559bd0c6b3b0b25",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x499aed38bdafd972e1cd2926d2b9088547dd8fcb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x84b4654d0451b697b4764eacfbd4a9fdfa04201b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9270d3ccd5af75dfefcd4a4f79aa2ca8dbf81a74",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9d5c0eea4de82aae5b3f71080c65b40806dc9cb4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xeba9eba1be848fbcdcb073dd788e8453d1eacb40",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xfb8561b4d836225d2c82da00a7d4c753e6c4950d",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [
+        "audit-2724",
+        "audit-2727"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x4c4190d22fedd723d7eba37149977767feb224ce",
+      "name": "LGEHelper",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LGEHelper",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x4c4190d22fedd723d7eba37149977767feb224ce",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x6b43ac8f075d325d9b5c8765fe6970dc857c8812",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x614f116c0e64190512d4764b4c2122f9e2703abd",
+      "name": "MevModule",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x4621b8d8a1014231fecdbbca510fb9d5727b1b2d",
+      "impl_name": "MevModule",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x614f116c0e64190512d4764b4c2122f9e2703abd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x90fc1f74cde75122a17db99c11597bf593b4940d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xdf278799d1b15c6cecc5543c17f4821869088d5b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x1b4e17d4263a7f751d8965ae514293c0461c4efb",
+      "name": "MinimalizedFeePusher",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MinimalizedFeePusher",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x1b4e17d4263a7f751d8965ae514293c0461c4efb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x98af61cfd44b5f5c7f4a79ff3492981a3aeb4a8c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x0b6d3b42861ee8abfcaac818033694e758ecc3eb",
+      "name": "Minter",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Minter",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x0b6d3b42861ee8abfcaac818033694e758ecc3eb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x462e26ddf2de188bc75afe74e6a31b2c56d2a966",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x76da798f9813be02d3635eca40ebd3db04da9f8f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xf8396260bdb72b6708b293db3842cdced90b6255",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x59037f2c0337a5150c0cd08cb2df684e043712a6",
+      "name": "MixedRouteQuoterV1",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MixedRouteQuoterV1",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x59037f2c0337a5150c0cd08cb2df684e043712a6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xa04a9f0a961f8fcc4a94bcf53e676b236cbb2f58",
+      "name": "NonfungiblePositionManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa04a9f0a961f8fcc4a94bcf53e676b236cbb2f58",
+      "impl_name": "NonfungiblePositionManager",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xa04a9f0a961f8fcc4a94bcf53e676b236cbb2f58",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724",
+        "audit-2727"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xfc65c6308765ebbb0d87df8b6502674b868453c4",
+      "name": "NonfungibleTokenPositionDescriptor",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NonfungibleTokenPositionDescriptor",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xfc65c6308765ebbb0d87df8b6502674b868453c4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x389df9430143880ddb13bdd5fd30daf2d57e7d55",
+      "name": "Oracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Oracle",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x389df9430143880ddb13bdd5fd30daf2d57e7d55",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2726",
+        "audit-2727"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xc0b920f6f1d6122b8187c031554dc8194f644592",
+      "name": "PairFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PairFactory",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc0b920f6f1d6122b8187c031554dc8194f644592",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x2832e19221631e7082926e2bb354497613bf9d6f",
+      "name": "Position",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Position",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x2832e19221631e7082926e2bb354497613bf9d6f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2726"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x34413f3cddafef7db46f92296a7cea444b3140fd",
+      "name": "ProtocolActions",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProtocolActions",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x34413f3cddafef7db46f92296a7cea444b3140fd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2726"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x3950d9b43c77cf5e165ee9aa5c59efdc5a542dc3",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Access Control",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x3950d9b43c77cf5e165ee9aa5c59efdc5a542dc3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xdc78e9400ba73dad459b6179b06e1e70853d384e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xb593fa9d853ad89bfcf77c9a22d24936774fe335",
+      "name": "Quoter",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Quoter",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb593fa9d853ad89bfcf77c9a22d24936774fe335",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xe660c95e17884b6c81b01445efc24556f8aba037",
+      "name": "QuoterV2",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "QuoterV2",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe660c95e17884b6c81b01445efc24556f8aba037",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x15325a2ec4bf164d47cf48d5d6a9edda385636a5",
+      "name": "RamsesTreasuryHelper",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xbca1f360390570e7b7344a8eae2511e0608461e8",
+      "impl_name": "RamsesTreasuryHelper",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x15325a2ec4bf164d47cf48d5d6a9edda385636a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xae334f70a7fc44fcc2df9e6a37bc032497cf80f1",
+      "name": "RamsesV3Factory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RamsesV3Factory",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xae334f70a7fc44fcc2df9e6a37bc032497cf80f1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724",
+        "audit-2726",
+        "audit-2727"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x80dca113b33ce4da3a7aac15c2e62fc6d6c7bec8",
+      "name": "RamsesV3PoolDeployer",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RamsesV3PoolDeployer",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x80dca113b33ce4da3a7aac15c2e62fc6d6c7bec8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724",
+        "audit-2726"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xb56542bf1822c3fea210d920c8ab0fcaabcd1798",
+      "name": "RamsesV3PositionManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb56542bf1822c3fea210d920c8ab0fcaabcd1798",
+      "impl_name": "RamsesV3PositionManager",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb56542bf1822c3fea210d920c8ab0fcaabcd1798",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x5da9735b19cdd050b6ada1b31ef52ae704c5a3e9",
+      "name": "Revivoor",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Revivoor",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5da9735b19cdd050b6ada1b31ef52ae704c5a3e9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x7930ec744ff2a62c34ac730afd9e7cc462b1e0fc",
+      "name": "RewardValidator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x7930ec744ff2a62c34ac730afd9e7cc462b1e0fc",
+      "impl_name": "RewardValidator",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x7930ec744ff2a62c34ac730afd9e7cc462b1e0fc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe576004e25750d9ec8eb493d0a3684948fc0a97c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x312b67a8de4291ce2c3628d24fa62eb04f433ec0",
+      "name": "REX33",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "REX33",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x312b67a8de4291ce2c3628d24fa62eb04f433ec0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xbf42f61a1f176c43cb6fca7ea5afb55d59639dff",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc4b578ffc2403b3911e233dc939157147f31509c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xccfc11f393a3c7f79ad09c5be2f408215ef15749",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe4eeb461ad1e4ef8b8ef71a33694ccd84af051c4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x32db39c56c171b4c96e974ddede8e42498929c54",
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Router",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x32db39c56c171b4c96e974ddede8e42498929c54",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xde4b22eb9f9c2c55e72e330c87663b28e9d388f7",
+      "name": "SafeL2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "Access Control",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x29fcb43b46531bca003ddc8fcb67ffe91900c762",
+      "impl_name": "SafeL2",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xde4b22eb9f9c2c55e72e330c87663b28e9d388f7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x007e783be0f271510ef919357466c122fd539cce",
+      "name": "SafeProxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "Access Control",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SafeProxy",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x007e783be0f271510ef919357466c122fd539cce",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x8be024b5c546b5d45cbb23163e1a4dca8fa5052a",
+      "name": "SwapRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SwapRouter",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8be024b5c546b5d45cbb23163e1a4dca8fa5052a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x432a5219320d4ae3ebf33a84ae9944f655e8e2b8",
+      "name": "TickLens",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TickLens",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x432a5219320d4ae3ebf33a84ae9944f655e8e2b8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xf9a15373c36f50e0dea03e80a568f03392d89944",
+      "name": "TimeLock",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Access Control",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimeLock",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xf9a15373c36f50e0dea03e80a568f03392d89944",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xf2643190116ed2a9c3cfbd3c489a60d4a51bb458",
+      "name": "TransparentUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4b46415b6605d9882ec8e13addf218551c60efbe",
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xf2643190116ed2a9c3cfbd3c489a60d4a51bb458",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x1211fb02d3c61fd576e76675ce9cb38230ee5b3e",
+      "name": "UniswapInterfaceMulticall",
+      "role": "periphery",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapInterfaceMulticall",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x1211fb02d3c61fd576e76675ce9cb38230ee5b3e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xae16b93d29aadccb9fc616aabfbca95682d13dcf",
+      "name": "UniversalAirdrop",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniversalAirdrop",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xae16b93d29aadccb9fc616aabfbca95682d13dcf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x85974429677c2a701af470b82f3118e74307826e",
+      "name": "UniversalRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Concentrated Liquidity",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniversalRouter",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x85974429677c2a701af470b82f3118e74307826e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x05733c9d96d67f7a572846be2d7105327fec3289",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x05733c9d96d67f7a572846be2d7105327fec3289",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x35e755fac2e275629ff17647dcfad50f6bad5a69",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x35e755fac2e275629ff17647dcfad50f6bad5a69",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x3f91ddca18fc4ece913556012a5567ca013e7ce7",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x3f91ddca18fc4ece913556012a5567ca013e7ce7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x4717509f8e89fa019bfe25191297dc1e19eb3e34",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x4717509f8e89fa019bfe25191297dc1e19eb3e34",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x7601dfc5c4ccac975e8b72f44f7dc5f8c07497b2",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x7601dfc5c4ccac975e8b72f44f7dc5f8c07497b2",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x762e6134583f7ca0d0303ef82bda780d6a7ecb16",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x762e6134583f7ca0d0303ef82bda780d6a7ecb16",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x88c9879e18abbd6ec40ee6be215756a442d56756",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x88c9879e18abbd6ec40ee6be215756a442d56756",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x971634201e37854ea0c72fc652e9b1dbd4461ee0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x971634201e37854ea0c72fc652e9b1dbd4461ee0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xcd73c96e91ad14b4e243e49d5c0eea954e635d61",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xcd73c96e91ad14b4e243e49d5c0eea954e635d61",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xd0dad85f058f2299c3dac8a3440cfd02d51c3f5f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xd0dad85f058f2299c3dac8a3440cfd02d51c3f5f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xf458a2aa188fc043f9b0ef4c729b36f20f7f3d8e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xf458a2aa188fc043f9b0ef4c729b36f20f7f3d8e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x9dec69a9d329b8431070774e299a54c0eb269cad",
+      "name": "VeClaim",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VeClaim",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9dec69a9d329b8431070774e299a54c0eb269cad",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xce65f3dbf8c98d9b250b3540868c3923bd2d4c6d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xedd7cbc9c47547d0b552d5bc2be76135f49c15b1",
+      "name": "VoteModule",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Core",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VoteModule",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xedd7cbc9c47547d0b552d5bc2be76135f49c15b1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xf70dc8cf16ee9a68249f35c36cd1c1ba9c631ee4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x1dac11c6578c3a6ddffcb3bf1741cf3d11a94046",
+      "name": "Voter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x982c01a16dd46670c1be8cead75699815fcaa125",
+      "impl_name": "Voter",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x1dac11c6578c3a6ddffcb3bf1741cf3d11a94046",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x4961f781f6b9c3e795be0e3e550917291afc7679",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x56ebcffb07b86b87d1d344e5c483b18d07dd256f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x5f26a63548f583f2c01669388aeeef5f9506fc19",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x706e4a3ebe40b017ec568d1fecbf20271df157e1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x891d28ea942bb2c48808967af8b579591d45141c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x942117ec0458a8aa08669e94b52001bd43f889c1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x982c01a16dd46670c1be8cead75699815fcaa125",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xa0b937aa848877b98a2c2d799ec3fc10fed4f116",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xade917f16f0aaef80f1ff5939635b18b629d56d1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xe8e8e833f59d8e1fbd7caabe0e766f16a22f8468",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x58d034c3c22851e9dc8fc2f07055659cf9146997",
+      "name": "XRex",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "XRex",
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x58d034c3c22851e9dc8fc2f07055659cf9146997",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc93b315971a4f260875103f5da84cb1e30f366cc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2724,
+      "audit_key": "audit-2724",
+      "report_name": "cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e",
+      "report_url": "https://cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AccessHub",
+        "ClGaugeFactory",
+        "ClGaugeFactoryStorage",
+        "Etherex",
+        "FeeCollector",
+        "FeeDistributor",
+        "FeeDistributorFactory",
+        "Gauge",
+        "GaugeV3",
+        "Minter",
+        "NonfungiblePositionManager",
+        "PositionKey",
+        "REX33",
+        "RamsesTreasuryHelper",
+        "RamsesV3Factory",
+        "RamsesV3Pool",
+        "RamsesV3PoolDeployer",
+        "RamsesV3PositionManager",
+        "RewardValidator",
+        "VoteModule",
+        "Voter",
+        "VoterGovernanceActions",
+        "XRex"
+      ],
+      "matched_contracts": 72,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2725,
+      "audit_key": "audit-2725",
+      "report_name": "cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c",
+      "report_url": "https://cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2726,
+      "audit_key": "audit-2726",
+      "report_name": "diligence.consensys.io/audits/2024/08/ramses-v3",
+      "report_url": "https://diligence.security/audits/2024/08/ramses-v3",
+      "auditor": "Consensys Diligence",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "IERC20Minimal",
+        "IRamsesV3Factory",
+        "IRamsesV3Pool",
+        "IRamsesV3PoolActions",
+        "IRamsesV3PoolDeployer",
+        "IRamsesV3PoolDerivedState",
+        "IRamsesV3PoolImmutables",
+        "IRamsesV3PoolOwnerActions",
+        "IRamsesV3PoolState",
+        "Oracle",
+        "PoolStorage",
+        "Position",
+        "ProtocolActions",
+        "RamsesV3Factory",
+        "RamsesV3Pool",
+        "RamsesV3PoolDeployer",
+        "Tick",
+        "TickBitmap"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2727,
+      "audit_key": "audit-2727",
+      "report_name": "Report",
+      "report_url": "https://code4rena.com/reports/2024-10-ramses-exchange",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FeeCollector",
+        "GaugeV3",
+        "NonfungiblePositionManager",
+        "Oracle",
+        "RamsesV3Factory",
+        "RamsesV3Pool"
+      ],
+      "matched_contracts": 11,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Spearbit",
+      "tier": 1,
+      "contracts_covered": 17,
+      "coverage_pct": 36.2,
+      "latest_audit": "2025-10"
+    },
+    {
+      "auditor": "Code4rena",
+      "tier": 1,
+      "contracts_covered": 5,
+      "coverage_pct": 10.6,
+      "latest_audit": "2024-10"
+    },
+    {
+      "auditor": "Consensys Diligence",
+      "tier": 1,
+      "contracts_covered": 5,
+      "coverage_pct": 10.6,
+      "latest_audit": "2024-08"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x2e5c9e4146f57c5dc6dcb88a86bdf5e8087c10df",
+      "name": "AutomatedFeeNotifier",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xf7a8b3770f661059f4ea0d79ad7fe8d642f9ea9b",
+      "name": "BribeHolder",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x3add8307bcc1b6c757cf1d7664b2f37c9bba039b",
+      "name": "FeeLiquidator",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x75430c78a65bfb7dcdf89a3f0daa8da36402d6a7",
+      "name": "FeeRecipientFactory",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x97b1b762ae52e1fe4a96dd6db6f15e117ee38912",
+      "name": "FrogAirdrop",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x1ddf722c565ed8e9b6918a6bea34e9825a7944b3",
+      "name": "GaugeFactory",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x4c4190d22fedd723d7eba37149977767feb224ce",
+      "name": "LGEHelper",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x614f116c0e64190512d4764b4c2122f9e2703abd",
+      "name": "MevModule",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x1b4e17d4263a7f751d8965ae514293c0461c4efb",
+      "name": "MinimalizedFeePusher",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x59037f2c0337a5150c0cd08cb2df684e043712a6",
+      "name": "MixedRouteQuoterV1",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xfc65c6308765ebbb0d87df8b6502674b868453c4",
+      "name": "NonfungibleTokenPositionDescriptor",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xc0b920f6f1d6122b8187c031554dc8194f644592",
+      "name": "PairFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xb593fa9d853ad89bfcf77c9a22d24936774fe335",
+      "name": "Quoter",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xe660c95e17884b6c81b01445efc24556f8aba037",
+      "name": "QuoterV2",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x5da9735b19cdd050b6ada1b31ef52ae704c5a3e9",
+      "name": "Revivoor",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x32db39c56c171b4c96e974ddede8e42498929c54",
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x8be024b5c546b5d45cbb23163e1a4dca8fa5052a",
+      "name": "SwapRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x432a5219320d4ae3ebf33a84ae9944f655e8e2b8",
+      "name": "TickLens",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xf9a15373c36f50e0dea03e80a568f03392d89944",
+      "name": "TimeLock",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0xae16b93d29aadccb9fc616aabfbca95682d13dcf",
+      "name": "UniversalAirdrop",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x85974429677c2a701af470b82f3118e74307826e",
+      "name": "UniversalRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x9dec69a9d329b8431070774e299a54c0eb269cad",
+      "name": "VeClaim",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 52,
+    "upstream": 1,
+    "standard_library": 5,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 88
+    },
+    "extraction_confidence_counts": {
+      "high": 2,
+      "medium": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2725,
+        "report_name": "cantina.xyz/portfolio/98695d75-ee7d-4e1c-aa96-6379f73c5b2c"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

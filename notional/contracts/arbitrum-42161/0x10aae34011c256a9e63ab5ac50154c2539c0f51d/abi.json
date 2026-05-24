@@ -1,0 +1,1075 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "previousAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "beacon",
+        "type": "address"
+      }
+    ],
+    "name": "BeaconUpgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "nTokenAddress",
+        "type": "address"
+      }
+    ],
+    "name": "DeployNToken",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "newCurrencyId",
+        "type": "uint16"
+      }
+    ],
+    "name": "ListCurrency",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pauseRouter",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pauseGuardian",
+        "type": "address"
+      }
+    ],
+    "name": "PauseRouterAndGuardianUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "proxy",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isCashProxy",
+        "type": "bool"
+      }
+    ],
+    "name": "PrimeProxyDeployed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      }
+    ],
+    "name": "UpdateAssetRate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "approved",
+        "type": "bool"
+      }
+    ],
+    "name": "UpdateAuthorizedCallbackContract",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      }
+    ],
+    "name": "UpdateCashGroup",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      }
+    ],
+    "name": "UpdateDepositParameters",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      }
+    ],
+    "name": "UpdateETHRate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "approved",
+        "type": "bool"
+      }
+    ],
+    "name": "UpdateGlobalTransferOperator",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      }
+    ],
+    "name": "UpdateInitializationParameters",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "marketIndex",
+        "type": "uint8"
+      }
+    ],
+    "name": "UpdateInterestRateCurve",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "maxUnderlyingSupply",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateMaxUnderlyingSupply",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "rewarder",
+        "type": "address"
+      }
+    ],
+    "name": "UpdateSecondaryIncentiveRewarder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      }
+    ],
+    "name": "UpdateTokenCollateralParameters",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "claimOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "maxMarketIndex",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "rateOracleTimeWindow5Min",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "maxDiscountFactor5BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "reserveFeeShare",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "debtBuffer25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "fCashHaircut25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "minOracleRate25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "liquidationfCashHaircut25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "liquidationDebtBuffer25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "maxOracleRate25BPS",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct CashGroupSettings",
+        "name": "cashGroup",
+        "type": "tuple"
+      },
+      {
+        "internalType": "string",
+        "name": "underlyingName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "underlyingSymbol",
+        "type": "string"
+      }
+    ],
+    "name": "enableCashGroup",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "string",
+        "name": "underlyingName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "underlyingSymbol",
+        "type": "string"
+      }
+    ],
+    "name": "enablePrimeDebt",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "hasTransferFee",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum TokenType",
+            "name": "tokenType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "decimalPlaces",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint72",
+            "name": "deprecated_maxCollateralBalance",
+            "type": "uint72"
+          }
+        ],
+        "internalType": "struct TokenStorage",
+        "name": "underlyingToken",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract AggregatorV2V3Interface",
+            "name": "rateOracle",
+            "type": "address"
+          },
+          {
+            "internalType": "uint8",
+            "name": "rateDecimalPlaces",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "mustInvert",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "buffer",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "haircut",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "liquidationDiscount",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct ETHRateStorage",
+        "name": "ethRate",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "kinkUtilization1",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "kinkUtilization2",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "kinkRate1",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "kinkRate2",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "maxRateUnits",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "minFeeRate5BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "maxFeeRate25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "feeRatePercent",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct InterestRateCurveSettings",
+        "name": "primeDebtCurve",
+        "type": "tuple"
+      },
+      {
+        "internalType": "contract IPrimeCashHoldingsOracle",
+        "name": "primeCashHoldingsOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "allowPrimeCashDebt",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint8",
+        "name": "rateOracleTimeWindow5Min",
+        "type": "uint8"
+      },
+      {
+        "internalType": "string",
+        "name": "underlyingName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "underlyingSymbol",
+        "type": "string"
+      }
+    ],
+    "name": "listCurrency",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pauseGuardian",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pauseRouter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxUnderlyingSupply",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaxUnderlyingSupply",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pauseRouter_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "pauseGuardian_",
+        "type": "address"
+      }
+    ],
+    "name": "setPauseRouterAndGuardian",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "direct",
+        "type": "bool"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "approved",
+        "type": "bool"
+      }
+    ],
+    "name": "updateAuthorizedCallbackContract",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "maxMarketIndex",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "rateOracleTimeWindow5Min",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "maxDiscountFactor5BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "reserveFeeShare",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "debtBuffer25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "fCashHaircut25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "minOracleRate25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "liquidationfCashHaircut25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "liquidationDebtBuffer25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "maxOracleRate25BPS",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct CashGroupSettings",
+        "name": "cashGroup",
+        "type": "tuple"
+      }
+    ],
+    "name": "updateCashGroup",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint32[]",
+        "name": "depositShares",
+        "type": "uint32[]"
+      },
+      {
+        "internalType": "uint32[]",
+        "name": "leverageThresholds",
+        "type": "uint32[]"
+      }
+    ],
+    "name": "updateDepositParameters",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "contract AggregatorV2V3Interface",
+        "name": "rateOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "mustInvert",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint8",
+        "name": "buffer",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "haircut",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "liquidationDiscount",
+        "type": "uint8"
+      }
+    ],
+    "name": "updateETHRate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint32[]",
+        "name": "annualizedAnchorRates",
+        "type": "uint32[]"
+      },
+      {
+        "internalType": "uint32[]",
+        "name": "proportions",
+        "type": "uint32[]"
+      }
+    ],
+    "name": "updateInitializationParameters",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint8[]",
+        "name": "marketIndices",
+        "type": "uint8[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "kinkUtilization1",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "kinkUtilization2",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "kinkRate1",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "kinkRate2",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "maxRateUnits",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "minFeeRate5BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "maxFeeRate25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "feeRatePercent",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct InterestRateCurveSettings[]",
+        "name": "settings",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "updateInterestRateCurve",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "kinkUtilization1",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "kinkUtilization2",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "kinkRate1",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "kinkRate2",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "maxRateUnits",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "minFeeRate5BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "maxFeeRate25BPS",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "feeRatePercent",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct InterestRateCurveSettings",
+        "name": "primeDebtCurve",
+        "type": "tuple"
+      }
+    ],
+    "name": "updatePrimeCashCurve",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "contract IPrimeCashHoldingsOracle",
+        "name": "primeCashHoldingsOracle",
+        "type": "address"
+      }
+    ],
+    "name": "updatePrimeCashHoldingsOracle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint8",
+        "name": "residualPurchaseIncentive10BPS",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "pvHaircutPercentage",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "residualPurchaseTimeBufferHours",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "cashWithholdingBuffer10BPS",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "liquidationHaircutPercentage",
+        "type": "uint8"
+      }
+    ],
+    "name": "updateTokenCollateralParameters",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum Deployments.BeaconType",
+        "name": "proxy",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "newBeacon",
+        "type": "address"
+      }
+    ],
+    "name": "upgradeBeacon",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "upgradeTo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

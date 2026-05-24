@@ -1,0 +1,17 @@
+{
+  "address": "0xf9edb34cd302e9bc3e9443beb5eb237cc463fd87",
+  "chain_id": 59144,
+  "contract_name": "KingdomLocker",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 420,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000044376f8f52407ed66e6d3356535410a7dcd4652b000000000000000000000000aaaac83751090c6ea42379626435f805ddf54dc8",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:01:42.284Z"
+}

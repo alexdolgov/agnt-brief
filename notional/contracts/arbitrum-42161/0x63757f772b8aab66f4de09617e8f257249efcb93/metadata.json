@@ -1,0 +1,18 @@
+{
+  "address": "0x63757f772b8aab66f4de09617e8f257249efcb93",
+  "chain_id": 42161,
+  "contract_name": "VaultAction",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BSD-3-Clause, BSD-4-Clause, GPL-3.0-only, GPL-v3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 70,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:09:50.258Z"
+}

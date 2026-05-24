@@ -1,0 +1,18 @@
+{
+  "address": "0x0092a5552162f911ccf7f456e85f473ce259707f",
+  "chain_id": 42161,
+  "contract_name": "BatchAction",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BSD-3-Clause, BSD-4-Clause, GPL-3.0-only, GPL-v3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 74,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:09:48.936Z"
+}

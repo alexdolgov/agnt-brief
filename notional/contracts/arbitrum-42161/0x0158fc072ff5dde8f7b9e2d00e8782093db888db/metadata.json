@@ -1,0 +1,17 @@
+{
+  "address": "0x0158fc072ff5dde8f7b9e2d00e8782093db888db",
+  "chain_id": 42161,
+  "contract_name": "FlashLiquidator",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:09:49.159Z"
+}

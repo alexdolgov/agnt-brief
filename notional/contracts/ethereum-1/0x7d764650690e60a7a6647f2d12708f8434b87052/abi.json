@@ -1,0 +1,726 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "currencyIndex",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "accountDebtUnderlying",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vaultShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "tempCashBalance",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastUpdateBlockTime",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct VaultAccount",
+        "name": "vaultAccount",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "uint16",
+            "name": "flags",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "borrowCurrencyId",
+            "type": "uint16"
+          },
+          {
+            "internalType": "int256",
+            "name": "minAccountBorrowSize",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "feeRate",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "minCollateralRatio",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "liquidationRate",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "reserveFeeShare",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxBorrowMarketIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxDeleverageCollateralRatio",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint16[2]",
+            "name": "secondaryBorrowCurrencies",
+            "type": "uint16[2]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "supplyFactor",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "debtFactor",
+                "type": "int256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "oracleSupplyRate",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct PrimeRate",
+            "name": "primeRate",
+            "type": "tuple"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxRequiredAccountCollateralRatio",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256[2]",
+            "name": "minAccountSecondaryBorrow",
+            "type": "int256[2]"
+          },
+          {
+            "internalType": "int256",
+            "name": "excessCashLiquidationBonus",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct VaultConfig",
+        "name": "vaultConfig",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "totalDebtUnderlying",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVaultShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isSettled",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct VaultState",
+        "name": "vaultState",
+        "type": "tuple"
+      },
+      {
+        "internalType": "int256",
+        "name": "depositUnderlyingInternal",
+        "type": "int256"
+      }
+    ],
+    "name": "calculateDepositAmountInDeleverage",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "supplyFactor",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "debtFactor",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "oracleSupplyRate",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PrimeRate",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "checkDebtCap",
+        "type": "bool"
+      }
+    ],
+    "name": "checkVaultAccountCollateralRatio",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      }
+    ],
+    "name": "getBorrowCapacity",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "currentPrimeDebtUnderlying",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalfCashDebt",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxBorrowCapacity",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSecondaryBorrow",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "totalDebtUnderlying",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "getVaultAccount",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "accountDebtUnderlying",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vaultShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "tempCashBalance",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastUpdateBlockTime",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct VaultAccount",
+        "name": "vaultAccount",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "getVaultAccountHealthFactors",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "collateralRatio",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "totalDebtOutstandingInPrimary",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "vaultShareValueUnderlying",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256[3]",
+            "name": "netDebtOutstanding",
+            "type": "int256[3]"
+          }
+        ],
+        "internalType": "struct VaultAccountHealthFactors",
+        "name": "h",
+        "type": "tuple"
+      },
+      {
+        "internalType": "int256[3]",
+        "name": "maxLiquidatorDepositUnderlying",
+        "type": "int256[3]"
+      },
+      {
+        "internalType": "uint256[3]",
+        "name": "vaultSharesToLiquidator",
+        "type": "uint256[3]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "getVaultAccountSecondaryDebt",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256[2]",
+        "name": "accountSecondaryDebt",
+        "type": "int256[2]"
+      },
+      {
+        "internalType": "int256[2]",
+        "name": "accountSecondaryCashHeld",
+        "type": "int256[2]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "getVaultAccountWithFeeAccrual",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "accountDebtUnderlying",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vaultShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "tempCashBalance",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastUpdateBlockTime",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct VaultAccount",
+        "name": "vaultAccount",
+        "type": "tuple"
+      },
+      {
+        "internalType": "int256",
+        "name": "accruedPrimeVaultFeeInUnderlying",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "getVaultConfig",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "uint16",
+            "name": "flags",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "borrowCurrencyId",
+            "type": "uint16"
+          },
+          {
+            "internalType": "int256",
+            "name": "minAccountBorrowSize",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "feeRate",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "minCollateralRatio",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "liquidationRate",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "reserveFeeShare",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxBorrowMarketIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxDeleverageCollateralRatio",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint16[2]",
+            "name": "secondaryBorrowCurrencies",
+            "type": "uint16[2]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "supplyFactor",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "debtFactor",
+                "type": "int256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "oracleSupplyRate",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct PrimeRate",
+            "name": "primeRate",
+            "type": "tuple"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxRequiredAccountCollateralRatio",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256[2]",
+            "name": "minAccountSecondaryBorrow",
+            "type": "int256[2]"
+          },
+          {
+            "internalType": "int256",
+            "name": "excessCashLiquidationBonus",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct VaultConfig",
+        "name": "vaultConfig",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      }
+    ],
+    "name": "getVaultState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "maturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "totalDebtUnderlying",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVaultShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isSettled",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct VaultState",
+        "name": "vaultState",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "currencyId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "vaultAccountCashBalance",
+        "type": "int256"
+      }
+    ],
+    "name": "getfCashRequiredToLiquidateCash",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "fCashRequired",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "discountFactor",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "signedBalanceOfVaultTokenId",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

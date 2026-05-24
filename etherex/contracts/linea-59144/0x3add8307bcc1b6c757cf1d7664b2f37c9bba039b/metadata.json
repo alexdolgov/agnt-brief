@@ -1,0 +1,17 @@
+{
+  "address": "0x3add8307bcc1b6c757cf1d7664b2f37c9bba039b",
+  "chain_id": 59144,
+  "contract_name": "FeeLiquidator",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000044376f8f52407ed66e6d3356535410a7dcd4652b0000000000000000000000002d8879046f1559e53eb052e949e9544bcb72f414",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:01:37.918Z"
+}

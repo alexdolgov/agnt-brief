@@ -1,0 +1,18 @@
+{
+  "address": "0x111a2f8b843b7a20d9b1a2535c837e6cc23cc5d7",
+  "chain_id": 1,
+  "contract_name": "TradingAction",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BSD-3-Clause, BSD-4-Clause, GPL-3.0-only, GPL-v3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 50,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:09:50.552Z"
+}

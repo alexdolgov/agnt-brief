@@ -1,0 +1,18 @@
+{
+  "address": "0x9dec69a9d329b8431070774e299a54c0eb269cad",
+  "chain_id": 59144,
+  "contract_name": "VeClaim",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 5000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:01:39.808Z"
+}

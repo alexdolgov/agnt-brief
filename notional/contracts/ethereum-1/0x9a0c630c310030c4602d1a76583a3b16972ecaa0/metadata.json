@@ -1,0 +1,17 @@
+{
+  "address": "0x9a0c630c310030c4602d1a76583a3b16972ecaa0",
+  "chain_id": 1,
+  "contract_name": "TimelockUpgradeableProxy",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": "0xb52373f858afc17caf7e168d82d6d28380be5b52",
+  "fetched_at": "2026-05-24T04:09:55.564Z"
+}

@@ -1,0 +1,341 @@
+{
+  "schema_version": "2.0",
+  "project_key": "foxify",
+  "generated_at": "2026-05-24T03:51:37.114Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "foxify",
+    "tier": 0,
+    "peak_tvl": 7200,
+    "peak_date": "2026-03-14T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 829,
+    "tvl_current": 17,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 1896,
+    "change_30d_pct": null,
+    "change_90d_pct": -97.94933655006032,
+    "days_since_peak": 71,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.76388888888889
+  },
+  "summary": {
+    "total_contracts": 5,
+    "total_addresses": 10,
+    "unique_implementations": 5,
+    "total_deployments": 10,
+    "audited_contracts": 0,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 5,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 3579832.61096,
+    "tvl_usd": 72645.214802,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "arbitrum": 72645.21
+    },
+    "asd_usd": 72645.214802,
+    "website_url": "https://www.foxify.trade/",
+    "chains": [
+      "arbitrum",
+      "sonic"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Foxify is a decentralized derivatives protocol enabling users to trade options and perpetuals with leverage. It uses vaults for liquidity and risk management, and controllers to manage trading parameters.",
+    "relationship_narrative": "Vaults hold user funds and are managed by Controllers, which set trading rules. Foxify, FoxifyMaxi, and EBFOX tokens likely represent positions or governance within the ecosystem.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4b91bfdc97690f67c0ba8dc85050f81ce7c2193b",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "foxify",
+      "tvl_usd": 72645.214802,
+      "is_proxy": false,
+      "impl_address": "0x4b91bfdc97690f67c0ba8dc85050f81ce7c2193b",
+      "impl_name": "Vault",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4b91bfdc97690f67c0ba8dc85050f81ce7c2193b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xe5a4f22fcb8893ba0831babf9a15558b5e83446f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 72645.214802,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x0359410be114bea68120641cf6f97d5b4ca24457",
+      "name": "Controller",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Controller",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0359410be114bea68120641cf6f97d5b4ca24457",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x09523a7e6849304398e762e89ec495ca6d056f74",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x97cf7242be4abc804d85b5bd6df4d596f920a38b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc82bd51977d4ef9cfa108d4c3528863544fa4f08",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xda299b391dc9fcfd895d7e4bdd66e6b5cfb96c1e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0xbd87a909f9a40fdad6d9be703e89a0383064d0ab",
+      "name": "EBFOX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "foxify",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EBFOX",
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xbd87a909f9a40fdad6d9be703e89a0383064d0ab",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x261dfa2528dfa19011f10b168c856e02baaf0eb6",
+      "name": "Foxify",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "foxify",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Foxify",
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x261dfa2528dfa19011f10b168c856e02baaf0eb6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x3725b740b33e75898e4e2e616e9bb519884edd37",
+      "name": "FoxifyMaxi",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "foxify",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FoxifyMaxi",
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x3725b740b33e75898e4e2e616e9bb519884edd37",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4b91bfdc97690f67c0ba8dc85050f81ce7c2193b",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 72645.214802,
+      "risk_note": "Verified native implementation with $72,645.21 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x0359410be114bea68120641cf6f97d5b4ca24457",
+      "name": "Controller",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0xbd87a909f9a40fdad6d9be703e89a0383064d0ab",
+      "name": "EBFOX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x261dfa2528dfa19011f10b168c856e02baaf0eb6",
+      "name": "Foxify",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x3725b740b33e75898e4e2e616e9bb519884edd37",
+      "name": "FoxifyMaxi",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 5,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x0519614643a019feb53b9f2c395b243253f75db7",
+  "chain_id": 42161,
+  "contract_name": "nBeaconProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+  "fetched_at": "2026-05-24T04:09:48.360Z"
+}

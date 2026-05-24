@@ -1,0 +1,17 @@
+{
+  "address": "0xde4b22eb9f9c2c55e72e330c87663b28e9d388f7",
+  "chain_id": 59144,
+  "contract_name": "SafeProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GNU LGPLv3",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x29fcb43b46531bca003ddc8fcb67ffe91900c762",
+  "fetched_at": "2026-05-24T04:01:41.306Z"
+}

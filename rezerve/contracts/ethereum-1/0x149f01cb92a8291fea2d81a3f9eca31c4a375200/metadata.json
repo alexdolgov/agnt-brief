@@ -1,0 +1,17 @@
+{
+  "address": "0x149f01cb92a8291fea2d81a3f9eca31c4a375200",
+  "chain_id": 1,
+  "contract_name": "ManualOracle4626E18",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "0000000000000000000000000000000000000000000000000b1a2bc2ec5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000f4ae78cb16f1cd8c5b06843ca2f54ddd7cbad03c000000000000000000000000e1fd04511671e43617e9c7e9759a7e11c8fb6a51",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T10:59:24.142Z"
+}

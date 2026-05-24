@@ -1,0 +1,17 @@
+{
+  "address": "0x4825c54beeb5f4d6110126fa48025316723ebcaf",
+  "chain_id": 146,
+  "contract_name": "SpectraLPOracle",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "00000000000000000000000017cd5228da53f244a96fc6e5415bdcdc06348a46000000000000000000000000f576c9cccb0244b4f0b11a99ecb357ce692d1ebc0000000000000000000000000000000000000000000000000000000000015180",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T10:59:23.996Z"
+}

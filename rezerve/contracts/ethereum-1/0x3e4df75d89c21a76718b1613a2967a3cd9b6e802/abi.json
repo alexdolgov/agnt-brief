@@ -1,0 +1,61 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "yield",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalSupply",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "stakedSupply",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "targetOpsPct",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minFloorPct",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxFloorPct",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "floorSlope",
+        "type": "uint256"
+      }
+    ],
+    "name": "allocate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "toStakers",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "toOps",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "toBurner",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

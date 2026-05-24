@@ -1,0 +1,17 @@
+{
+  "address": "0xc5ea4b3fe030d6da69462d026e4475fe121c2cc9",
+  "chain_id": 1,
+  "contract_name": "ERC4626RateProvider",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "0000000000000000000000003839a0dd920463eb5d8231efe4d8c5edc44145ec",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T10:59:33.554Z"
+}

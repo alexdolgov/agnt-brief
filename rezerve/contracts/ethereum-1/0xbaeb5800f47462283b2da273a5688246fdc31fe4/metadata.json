@@ -1,0 +1,17 @@
+{
+  "address": "0xbaeb5800f47462283b2da273a5688246fdc31fe4",
+  "chain_id": 1,
+  "contract_name": "TwapOracleV3",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "0000000000000000000000006bdd865c63f842aa0d8b5489ad9a4a2c14a84db9000000000000000000000000000000000000000000000000000000000000000300000000000000000000000043a38a7ba3417d675b7a78bf026a9cf6fa45417d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T10:59:33.754Z"
+}

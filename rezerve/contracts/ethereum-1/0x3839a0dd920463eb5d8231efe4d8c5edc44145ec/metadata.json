@@ -1,0 +1,18 @@
+{
+  "address": "0x3839a0dd920463eb5d8231efe4d8c5edc44145ec",
+  "chain_id": 1,
+  "contract_name": "AppProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": "0x448d17d718304a8d1a0cda581961b83ae0555fe5",
+  "fetched_at": "2026-05-24T10:59:27.191Z"
+}

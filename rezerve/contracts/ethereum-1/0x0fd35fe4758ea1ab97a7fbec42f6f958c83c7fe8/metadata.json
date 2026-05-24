@@ -1,0 +1,17 @@
+{
+  "address": "0x0fd35fe4758ea1ab97a7fbec42f6f958c83c7fe8",
+  "chain_id": 1,
+  "contract_name": "USD69Treasury",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T10:59:22.591Z"
+}

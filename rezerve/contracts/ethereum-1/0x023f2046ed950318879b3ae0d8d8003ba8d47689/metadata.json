@@ -1,0 +1,17 @@
+{
+  "address": "0x023f2046ed950318879b3ae0d8d8003ba8d47689",
+  "chain_id": 1,
+  "contract_name": "AppProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0xa0934ab5df1502275bb4a83fde00f259a23ca0a0",
+  "fetched_at": "2026-05-24T10:59:20.155Z"
+}

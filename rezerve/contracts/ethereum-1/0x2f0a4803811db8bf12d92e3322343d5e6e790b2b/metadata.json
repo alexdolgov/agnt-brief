@@ -1,0 +1,17 @@
+{
+  "address": "0x2f0a4803811db8bf12d92e3322343d5e6e790b2b",
+  "chain_id": 1,
+  "contract_name": "BridgeUpdateExecutor",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "00000000000000000000000043a38a7ba3417d675b7a78bf026a9cf6fa45417d000000000000000000000000c38115d85392b1b26b8061c78a4d0ac64ff92f56",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T10:59:25.957Z"
+}

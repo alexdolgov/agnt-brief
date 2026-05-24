@@ -1,0 +1,217 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_appOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_spotOracle",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "appOracle",
+    "outputs": [
+      {
+        "internalType": "contract IAppOracle",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20[]",
+        "name": "forwarders",
+        "type": "address[]"
+      }
+    ],
+    "name": "checkIfHolding",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isHolding",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalUsdValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rzrValue",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "contract IERC20[][]",
+        "name": "forwarders",
+        "type": "address[][]"
+      }
+    ],
+    "name": "checkIfHoldingMultiple",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isHolding",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalUsdValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rzrValue",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "checkIfHoldingWithData",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isHolding",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalUsdValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rzrValue",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "getRzrValue",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalRzrValue",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "getUsdValue",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalUsdValue",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "spotOracle",
+    "outputs": [
+      {
+        "internalType": "contract IOracleV2",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "spotPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

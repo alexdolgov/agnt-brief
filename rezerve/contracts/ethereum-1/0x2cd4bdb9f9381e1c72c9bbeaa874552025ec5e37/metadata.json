@@ -1,0 +1,17 @@
+{
+  "address": "0x2cd4bdb9f9381e1c72c9bbeaa874552025ec5e37",
+  "chain_id": 1,
+  "contract_name": "FixedRateOracle",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T10:59:24.966Z"
+}

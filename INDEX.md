@@ -228,6 +228,7 @@
 | [predict-fun](./predict-fun/) | $1.5M | 8.0% | $1.5M | unknown | 9 | 40 | 2026-05-22 |
 | [prime-staking](./prime-staking/) | $5.1M | 0.0% | ? | active | 2 | 10 | 2026-05-23 |
 | [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | unknown | 2 | 119 | 2026-05-24 |
+| [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-05-24 |
 | [privacy-pools](./privacy-pools/) | $6.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [probit-global](./probit-global/) | $12.7M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
@@ -238,6 +239,7 @@
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | unknown | 0 | 2 | 2026-05-22 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |
+| [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-05-24 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 20.6% | $148.6M | declining | 15 | 195 | 2026-05-23 |
 | [risex](./risex/) | $3.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |

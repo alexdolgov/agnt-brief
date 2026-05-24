@@ -1,0 +1,17 @@
+{
+  "address": "0x9ec2dd4342f2d0840989277a7cb5c1ff557dcd2e",
+  "chain_id": 1,
+  "contract_name": "LoyaltyList",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "00000000000000000000000043a38a7ba3417d675b7a78bf026a9cf6fa45417d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T10:59:32.992Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x61720115a507d7903e5b5cdf9d4644a6b90847bb",
+  "chain_id": 146,
+  "contract_name": "RZRSpotAggregator",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "00000000000000000000000008c5e3b7533ee819a4d1f66e839d0e8f04ae3d0c000000000000000000000000b4444468e444f89e1c2cac2f1d3ee7e336cbd1f5",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T10:59:32.236Z"
+}

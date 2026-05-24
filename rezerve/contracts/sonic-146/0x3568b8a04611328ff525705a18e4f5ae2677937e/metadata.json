@@ -1,0 +1,17 @@
+{
+  "address": "0x3568b8a04611328ff525705a18e4f5ae2677937e",
+  "chain_id": 146,
+  "contract_name": "MoveTreasuryPosition",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T10:59:28.371Z"
+}

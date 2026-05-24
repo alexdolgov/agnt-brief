@@ -1,0 +1,18 @@
+{
+  "address": "0xe2ad581fc01434ee426bb3f471c4cb0317ee672e",
+  "chain_id": 1,
+  "contract_name": "HidingVaultNFTProxy",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "LGPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0xce03849d56d7bf63c5fea2152488ee6d69684cbf",
+  "fetched_at": "2026-05-24T22:08:31.593Z"
+}

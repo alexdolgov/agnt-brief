@@ -1,0 +1,18 @@
+{
+  "address": "0x37a4860728e292e5852b215c46dbe7a18862ef93",
+  "chain_id": 1,
+  "contract_name": "ZECGateway",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": "0x85bde74ca4760587ec9d77f775cb83d4cb76e5ae",
+  "fetched_at": "2026-05-24T22:08:28.489Z"
+}

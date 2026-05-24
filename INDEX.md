@@ -102,6 +102,7 @@
 | [etherex](./etherex/) | $3.6M | 42.6% | ? | declining | 4 | 58 | 2026-05-24 |
 | [etherfuse](./etherfuse/) | $5.1M | 0.0% | ? | unknown | 0 | 25 | 2026-05-23 |
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | unknown | 2 | 58 | 2026-05-23 |
+| [eventum-bridge](./eventum-bridge/) | $1.7M | 2.1% | $1.7M | active | 2 | 74 | 2026-05-24 |
 | [exmo](./exmo/) | $2.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-05-23 |
@@ -130,6 +131,7 @@
 | [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-05-24 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
+| [hyperdrive-hl](./hyperdrive-hl/) | $2.8M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 242 | 2026-05-24 |
 | [hyperswap](./hyperswap/) | $1.9M | 0.0% | $1.9M | active | 0 | 940 | 2026-05-22 |

@@ -1,0 +1,3184 @@
+{
+  "schema_version": "2.0",
+  "project_key": "eventum-bridge",
+  "generated_at": "2026-05-24T09:54:50.263Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "eventum-bridge",
+    "tier": 0,
+    "peak_tvl": 2822424,
+    "peak_date": "2026-05-22T00:00:00.000Z",
+    "tvl_30d_ago": 1476504,
+    "tvl_90d_ago": 1963969,
+    "tvl_current": 2820693,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 1788283,
+    "change_30d_pct": 91.03862908600316,
+    "change_90d_pct": 43.62207346449969,
+    "days_since_peak": 2,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0.06133026079710207
+  },
+  "summary": {
+    "total_contracts": 74,
+    "total_addresses": 137,
+    "unique_implementations": 74,
+    "total_deployments": 137,
+    "audited_contracts": 1,
+    "unaudited_contracts": 46,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 46,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 27,
+    "coverage_pct": 2.1,
+    "total_audits": 2,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 2821871.25621,
+    "tvl_usd": 1730756.4084081862,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "arbitrum": 88916.59,
+      "ethereum": 1641839.82
+    },
+    "asd_usd": 1730756.4084081862,
+    "website_url": "https://evedex.com/en-US/",
+    "chains": [
+      "arbitrum",
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-08",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 2,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Eventum Bridge is a canonical bridge protocol enabling asset transfers between Ethereum and Arbitrum One. It provides vault-based deposit management, token wrapping (aeWETH), and governance-controlled swap and burn mechanisms.",
+    "relationship_narrative": "The Bridge family provides the core cross-chain messaging infrastructure, while the Eventum Bridge family extends it with vault-based asset management, token wrapping, and governance. Both families share proxy patterns and rely on common infrastructure like gateways and routers for asset flow.",
+    "product_family_count": 2
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x10417734001162ea139e8b044dfe28dbb8b28ad0",
+      "name": "DVFDepositContract",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 1730223.9933626761,
+      "is_proxy": true,
+      "impl_address": "0x2ca9f060e4a50434265dc38c7f539c5bc630e368",
+      "impl_name": "DVFDepositContract",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa3db7558260423a539cbdc8aef0de9bc15b93b47",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbca3039a18c0d2f2f84ba8a028c67290bc045afa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1641839.8155404385,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x10417734001162ea139e8b044dfe28dbb8b28ad0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 88384.17782223767,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x54f315607a9b78120a4aa24939b700729b0e2ec9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2e8d8b56821ebb0abd4bb9dcd4703a2df54ca8fe",
+      "name": "VaultV1",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": 532.415045509984,
+      "is_proxy": true,
+      "impl_address": "0xbb99a539b49dc2e28609136bd35bde0c08a32597",
+      "impl_name": "VaultV1",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x2e8d8b56821ebb0abd4bb9dcd4703a2df54ca8fe",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xa526c07f616cfbf20c8a7d35ac2376b9480c9684",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 532.415045509984,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+      "name": "aeWETH",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x8b194beae1d3e0788a1a35173978001acdfba668",
+      "impl_name": "aeWETH",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8b194beae1d3e0788a1a35173978001acdfba668",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4b075f1d7dce6f480bf87e45df2f2e1b1a430184",
+      "name": "AIP1Point1Target",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AIP1Point1Target",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4b075f1d7dce6f480bf87e45df2f2e1b1a430184",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x9e43f733da0445b35f038fb34a6fb8c2947b984c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x6274106eedd4848371d2c09e0352d67b795ed516",
+      "name": "AIP1Point2Action",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AIP1Point2Action",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6274106eedd4848371d2c09e0352d67b795ed516",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xbd0dd2f644fb4eca58e1e73eee2e5e1cc52de79a",
+      "name": "ArbCommunityNFT",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ArbCommunityNFT",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xbd0dd2f644fb4eca58e1e73eee2e5e1cc52de79a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xca7664dca7358704e222a3f801843c938eeea019",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xba4eee20f434bc3908a0b18da496348657133a7e",
+      "name": "ArbitrumExtension",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ArbitrumExtension",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xba4eee20f434bc3908a0b18da496348657133a7e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd80a8890f5b07cffcd5c939f2c63781ef4fe2642",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xf31e1ae27e7cd057c1d6795a5a083e0453d39b50",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+      "name": "ArbitrumExtensionV2",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3263cd783823d04a6b9819517e0e6840d37ca3f4",
+      "impl_name": "ArbitrumExtensionV2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x15533b77981cda0f85c4f9a485237df4285d6844",
+      "name": "ArbitrumFoundationVestingWallet",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x28b72d389d455ce6feef59dd96852200c09d2a14",
+      "impl_name": "ArbitrumFoundationVestingWallet",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x15533b77981cda0f85c4f9a485237df4285d6844",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x28b72d389d455ce6feef59dd96852200c09d2a14",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xcfc79fcd07929467a8e1925e06007de5f047513f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xe3c6c2c46ef64959292820eff943d92a17108659",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2fa063182c6f0f953c99abf46add4d2c9f6ff61a",
+      "name": "ArbUXRNFT",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ArbUXRNFT",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x2fa063182c6f0f953c99abf46add4d2c9f6ff61a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x026968b5ced079eccd6cc78f35a5dfddc13f9af8",
+      "name": "BadgeV1",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xacb13c2a0d08a44807593e50cea2b98b024a4ffd",
+      "impl_name": "BadgeV1",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x026968b5ced079eccd6cc78f35a5dfddc13f9af8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0507389b4cbb043e6d0137b70c40fc2be483919b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1fdf833556d012a7799b22a83bd392e1dc961c01",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x21f69c75d757164137044b235663fec8bec404e5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x372a183192d9f9e978a1c826bc4d3568a2b7b3f8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4b2f4f777e043b470dae9a1bea4874f4be13c2bf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6a457a01b412dfc29c7f48fbdd7cbb35ff7ca3a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6b25e2f731aae133caa12e43fbe89ec6aaca402e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6c015bf728e36712a30f8ab49659a8045ad812e0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x7101f6810ee5af89bc669aff7684e3f3bf30d568",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x77075c627e51145d54e4edd54afa169da7ff8a17",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x86dc076bc83044eebb99a03015b9e130d72e6197",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x948c634086661bda90cd15246ea4fe98b03530a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xa4fbdd48970e4e409da9169767d6b7646b7f6880",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb8d4b99b8af66acf4901e44e0b4446ba88fb2945",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xbe0a8fb9f5943f547d0a3dc06ee5e478c76dda52",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc6bc0e2dac704dc823678b78be82d3ce1240ecfd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xdac651f7a8eef6cb39106a3fc10227cc3cc63dfd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xdb5ea5e5f03a99c6bf4003ab4220d4a293f0586f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xdef2dd8108a0db6bf94c47dff49c659671c697de",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1750e2c9c7e57652ae9f1d5df29cbee967bb892b",
+      "name": "BadgeV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BadgeV2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1750e2c9c7e57652ae9f1d5df29cbee967bb892b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x28d50933d8e280c2b406501744da510ed0094b4f",
+      "name": "BadgeV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BadgeV3",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x28d50933d8e280c2b406501744da510ed0094b4f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6a60af113f182e4ac903508aac3ecce73405a890",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xa2f3876b35e667de72b7856fcfde7cd529704825",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x863491cc6c7275bcc15a386093e92390e2a1bda9",
+      "name": "BeaconProxyFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BeaconProxyFactory",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x863491cc6c7275bcc15a386093e92390e2a1bda9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xad3026961087eccec0508d411bb9fb405e086b38",
+      "name": "Bridge",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb23214f241bdeb275f7dcbfbb1ea79349101d4b0",
+      "impl_name": "Bridge",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xad3026961087eccec0508d411bb9fb405e086b38",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x254e696ae76c17adc4363ae9476ce24ce935be16",
+      "name": "BridgeMiddleware",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BridgeMiddleware",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x254e696ae76c17adc4363ae9476ce24ce935be16",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x26052fb1c47bf499ff67bc966c2aff7a475fa503",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x683c48770210158d6b2d3b565cf45ae1a10e3e40",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4721aee3296f6f34a621d7645ee2fa2ae0b251a9",
+      "name": "BridgeMiddlewareV2",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BridgeMiddlewareV2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4721aee3296f6f34a621d7645ee2fa2ae0b251a9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5fbf447c301e3029b3c3f2a7743a80ae56521b82",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xfdaf745d7b7ada22028b225d33438419ae2826b8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xc7defc896e1dd9d98aea402d928c78c0fd1dc36c",
+      "name": "BurnRegistryV1",
+      "role": "registry",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb35b620f2b57f4f62fb14405b7d091394cba1819",
+      "impl_name": "BurnRegistryV1",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc7defc896e1dd9d98aea402d928c78c0fd1dc36c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x79cec02f44c0855be72b2305d42cff486efe79a5",
+      "name": "BurnRegistryV2",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BurnRegistryV2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x79cec02f44c0855be72b2305d42cff486efe79a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x665842c0ea5e72d985c61faf462cef13a2f8a2d0",
+      "name": "DepositManager",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc142259aee880250e61272188053a777b064562e",
+      "impl_name": "DepositManager",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x665842c0ea5e72d985c61faf462cef13a2f8a2d0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc142259aee880250e61272188053a777b064562e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xf6ec90fe0e413eab2f09bc8fe3e73b6af756d45b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x73699b0c5542472b927dd779f2a1085ac9bd2704",
+      "name": "DVFSunset",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xec909352e059930e74dbefd471d16b9a920cf9b5",
+      "impl_name": "DVFSunset",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x73699b0c5542472b927dd779f2a1085ac9bd2704",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xec909352e059930e74dbefd471d16b9a920cf9b5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x14b9932cc9ac8ee03301665a8644a753f46d8552",
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe15357fb7ab31e091583b9c4b4135bb2f176f38e",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x14b9932cc9ac8ee03301665a8644a753f46d8552",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x378d8771e9c66a2aad370344dfd4b65d1a3c1d8e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x636915338a2f5ff0f332636be44fc124a9842a74",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa78951b6badc9f4740f6f456e9144705d5c5e4b2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a",
+      "name": "FiatTokenV2_1",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "circle",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FiatTokenV2_1",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0f4fb9474303d10905ab86aa8d5a65fe44b6e04a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "name": "FiatTokenV2_2",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "centre",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x86e721b43d4ecfa71119dd38c0f938a75fdb57b3",
+      "impl_name": "FiatTokenV2_2",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xeb71a9c02c1f68a9d7004e74e17c7d62c3291bf8",
+      "name": "GovernorMultisig",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GovernorMultisig",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xeb71a9c02c1f68a9d7004e74e17c7d62c3291bf8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xa0a1b42dcb62d371d5abf4523bd614b0eaa11296",
+      "name": "Inbox",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6c6cf18f13c3e9b969e3ace6b8f21dff95d4d447",
+      "impl_name": "Inbox",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xa0a1b42dcb62d371d5abf4523bd614b0eaa11296",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8d21dfea9231db85dce72b8d9f18e917d833d4b1",
+      "name": "L1ERC20Gateway",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x1d720642e63cb0f50be637e16e0f78b2d1b93f16",
+      "impl_name": "L1ERC20Gateway",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8d21dfea9231db85dce72b8d9f18e917d833d4b1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1628ce6477221fdd1cd88ea3d15d587dfc59e66a",
+      "name": "L1GatewayRouter",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x9c84a387930853d963892d299153b0d5840dc1f5",
+      "impl_name": "L1GatewayRouter",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1628ce6477221fdd1cd88ea3d15d587dfc59e66a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3e84af3743cc4e7f516570b341ced56530d901e8",
+      "name": "L2AddressRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "L2AddressRegistry",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x3e84af3743cc4e7f516570b341ced56530d901e8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x56c4e9eb6c63acdd19aec2b1a00e4f0d7abda9d3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36",
+      "name": "MasterMinter",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MasterMinter",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8aff09e2259cacbf4fc4e3e53f3bf799efeeab36",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1ee981c521f3c6cd520c0a30ef7a1d2910fdd057",
+      "name": "MinimalProxyFactory",
+      "role": "registry",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MinimalProxyFactory",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1ee981c521f3c6cd520c0a30ef7a1d2910fdd057",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x99be07778acd2e8118486eeb6281366eaf52977a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0dbbd1bb03ed63ae2bea0ce892567884dffb70a5",
+      "name": "Multicall2",
+      "role": "periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "multicall",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Multicall2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0dbbd1bb03ed63ae2bea0ce892567884dffb70a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4a9196b06f339ad9f3ee752c987b401f2e1e2718",
+      "name": "MultiSigWallet",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MultiSigWallet",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4a9196b06f339ad9f3ee752c987b401f2e1e2718",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x237b7aff1af5d9f311f830234792d429355a58f3",
+      "name": "OpenfortUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x850af98cfe639bd87f7c5d6366628fab73104aac",
+      "impl_name": "OpenfortUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x237b7aff1af5d9f311f830234792d429355a58f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3a2dd09b4739d905183d503d594c8fb3e3d41820",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x90ec5b8a21349751d0c2654b5f1fbedfd6342d8c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xec32bd08faf9533371384ad13045116930dbc040",
+      "name": "Outbox",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x13be515e44eefaf3ebefad684f1fbb574ac0a494",
+      "impl_name": "Outbox",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xec32bd08faf9533371384ad13045116930dbc040",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x74f09cb3c7e2a01865f424fd14f6dc9a14e3e94e",
+      "name": "Proxy (impl: 0x87047526937246727e4869c5f76a347160e08672)",
+      "role": "proxy",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x87047526937246727e4869c5f76a347160e08672",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x74f09cb3c7e2a01865f424fd14f6dc9a14e3e94e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x38f03b4e740c0b73d857ccd0003362ee4ca036e8",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x70911642e4ea509735e77cba23ce1856abed87bf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x92650ddc467ed628868bdba23cf81eafaab60175",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x38f03b4e740c0b73d857ccd0003362ee4ca036e8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x553ec478a66be27ba25a6bc5db20aec2ed6a1b4a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5db54b55ffd0887bf1634a865db1e7db7a3dd797",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x85ff346f4412b6dc7f6a31ac45ebf38272bb940b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x934452d12b24b834877d6096ebdecbbf0e97adda",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb06fba9db5be606a2b84c7230316bbb1e9cdcf03",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xed9d63a96c27f87b07115b56b2e3572827f21646",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7ad6d5c9435aa7781a817913b3afec2645ef78be",
+      "name": "PythAggregatorV3",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "pyth-network",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PythAggregatorV3",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7ad6d5c9435aa7781a817913b3afec2645ef78be",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x26dd80569a8b23768a1d80869ed7339e07595e85",
+      "name": "PythUpgradable",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "pyth-network",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PythUpgradable",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x26dd80569a8b23768a1d80869ed7339e07595e85",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x35a58beee77a2ad547fcded7e8cb1c6e19746b13",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdd24f84d36bf92c65f92307595335bdfab5bbd21",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xd226bd8d36725f4ce12961370211dfeeef1abbbc",
+      "name": "RollupAdminLogic",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "arbitrum",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xdd91f6e88576fec4a38a518da39c92e13cbb6446",
+      "impl_name": "RollupAdminLogic",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd226bd8d36725f4ce12961370211dfeeef1abbbc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8696d32899e59f8a2ed76463cc0a0b07e56db025",
+      "name": "SequencerInbox",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x066a4d939302470bd83f1868a1ae2485fe75ccf2",
+      "impl_name": "SequencerInbox",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8696d32899e59f8a2ed76463cc0a0b07e56db025",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2f8577f68d8306aeb48f9015ac61744bbadfd713",
+      "name": "SetFiveMillionProposalThresholdAction",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SetFiveMillionProposalThresholdAction",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x2f8577f68d8306aeb48f9015ac61744bbadfd713",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x50e0ca9c38e4700c1c9bc11ce36415f0337f366a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x57e915c05107ff8d9d883052f7c66555c57aa79b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8f89288a199f92cd6c5c9fd97b530ea5e8685563",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "name": "StandardArbERC20",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3f770ac673856f105b586bb393d122721265ad46",
+      "impl_name": "StandardArbERC20",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xc7c1943bccbc81b8de5b7f407c00b7805ea3ea0c",
+      "name": "Storage",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Storage",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc7c1943bccbc81b8de5b7f407c00b7805ea3ea0c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x770722fcaab3c7d46fc1ad679726b232e7def2f6",
+      "name": "SwapManager",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xac3450527b49552380c190c22e1bde2912a22291",
+      "impl_name": "SwapManager",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x770722fcaab3c7d46fc1ad679726b232e7def2f6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xac3450527b49552380c190c22e1bde2912a22291",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xe575f5dd354dc79a8114071992a2ac379a75daa4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x29f86a78551fac44217a8763a45540027c3f7ca5",
+      "name": "TransparentUpgradeableProxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x1313bbf677e8fda5284f714f9c743a55a8b51d9f",
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x29f86a78551fac44217a8763a45540027c3f7ca5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x952a6d5d6757ba28dfe11fc82d85b5880d300e58",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x0a9591c64fd9e8c1f9a81db1b668a5f211b5735a",
+      "name": "TreasuryV1",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa2059370b0896d6c1d3736d51101a0f393bc28f2",
+      "impl_name": "TreasuryV1",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0a9591c64fd9e8c1f9a81db1b668a5f211b5735a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2788"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x19e7e0b6dfd215e546e57e0f00a9ab955f04cec1",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x19e7e0b6dfd215e546e57e0f00a9ab955f04cec1",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2880ab155794e7179c9ee2e38200202908c17b43",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2880ab155794e7179c9ee2e38200202908c17b43",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x438b5a03f6460ccffa62d62f4ab554a740cfde9c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x438b5a03f6460ccffa62d62f4ab554a740cfde9c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5e023c31e1d3dcd08a1b3e8c96f6ef8aa8fcacd1",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Eventum Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5e023c31e1d3dcd08a1b3e8c96f6ef8aa8fcacd1",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5ee2d7398ce35a591c30d736007feda8f4cfec95",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5ee2d7398ce35a591c30d736007feda8f4cfec95",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7c56d119a916da6593e1fd8c1d010161f20afd70",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7c56d119a916da6593e1fd8c1d010161f20afd70",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x850af98cfe639bd87f7c5d6366628fab73104aac",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x850af98cfe639bd87f7c5d6366628fab73104aac",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x87047526937246727e4869c5f76a347160e08672",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x87047526937246727e4869c5f76a347160e08672",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8d289cdd60e7f73f352f42c8524a06ef1ad746f8",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8d289cdd60e7f73f352f42c8524a06ef1ad746f8",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb0d4a9640addd415551b6a4fe75403c9f73a7c49",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb0d4a9640addd415551b6a4fe75403c9f73a7c49",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc643e55ee8944f3017f4cb8c82aa3db1aa2d8941",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc643e55ee8944f3017f4cb8c82aa3db1aa2d8941",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcac639d17193b6ebfe8dd23b07a0c0e7bcf167b8",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcac639d17193b6ebfe8dd23b07a0c0e7bcf167b8",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd35e56c06320b1ed549a8f85d316fec854ff4b71",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd35e56c06320b1ed549a8f85d316fec854ff4b71",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe15357fb7ab31e091583b9c4b4135bb2f176f38e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe15357fb7ab31e091583b9c4b4135bb2f176f38e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe9d69cdd6fe41e7b621b4a688c5d1a68cb5c8adc",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe9d69cdd6fe41e7b621b4a688c5d1a68cb5c8adc",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf192298bed3a411317bb87dc42e71b87dca47a3a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf192298bed3a411317bb87dc42e71b87dca47a3a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1313bbf677e8fda5284f714f9c743a55a8b51d9f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1313bbf677e8fda5284f714f9c743a55a8b51d9f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2babb1567ca95a288dad96ab9ff64bbeb26d3b66",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x2babb1567ca95a288dad96ab9ff64bbeb26d3b66",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x43f9865e9ef6de3c83ccda704766c45e6d53608f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x43f9865e9ef6de3c83ccda704766c45e6d53608f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x59d9e1eea4f512b646b6d32904450579debd5925",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x59d9e1eea4f512b646b6d32904450579debd5925",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x6074515bc580c76c0c68ae2e13408b680d670f8c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x6074515bc580c76c0c68ae2e13408b680d670f8c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x71c0af2144e9cc371a85e838b4a9265312411d88",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x71c0af2144e9cc371a85e838b4a9265312411d88",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xa297ec52ac188f98a5b293bca3ff405643319212",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xa297ec52ac188f98a5b293bca3ff405643319212",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xe42bcd3de3f78505a83f7b0f3f6f5d60c8e06f90",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xe42bcd3de3f78505a83f7b0f3f6f5d60c8e06f90",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xe7a34410a79f73c315fac58d9e690cef79e92c94",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xe7a34410a79f73c315fac58d9e690cef79e92c94",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xed66239c7400f9c29d9127c5c95c18c03ddf3106",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xed66239c7400f9c29d9127c5c95c18c03ddf3106",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xded8823234e28f18a824abe4f64fa7863b626341",
+      "name": "UpgradeableBeacon",
+      "role": "registry",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UpgradeableBeacon",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xded8823234e28f18a824abe4f64fa7863b626341",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2788,
+      "audit_key": "audit-2788",
+      "report_name": "hashex.org/audits/evedex",
+      "report_url": "https://hashex.org/audits/evedex",
+      "auditor": "HashEx",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CashbackVaultV1Vault",
+        "EHMarketV2",
+        "GovernorMultisigAuthorization",
+        "Multicall3",
+        "Multiownable",
+        "StorageConfig",
+        "TreasuryV1",
+        "VaultV2"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2789,
+      "audit_key": "audit-2789",
+      "report_name": "skynet.certik.com/projects/evedex",
+      "report_url": "https://skynet.certik.com/projects/evedex",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "HashEx",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 2.1,
+      "latest_audit": "2025-08"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4b075f1d7dce6f480bf87e45df2f2e1b1a430184",
+      "name": "AIP1Point1Target",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x6274106eedd4848371d2c09e0352d67b795ed516",
+      "name": "AIP1Point2Action",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xbd0dd2f644fb4eca58e1e73eee2e5e1cc52de79a",
+      "name": "ArbCommunityNFT",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xba4eee20f434bc3908a0b18da496348657133a7e",
+      "name": "ArbitrumExtension",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2fa063182c6f0f953c99abf46add4d2c9f6ff61a",
+      "name": "ArbUXRNFT",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1750e2c9c7e57652ae9f1d5df29cbee967bb892b",
+      "name": "BadgeV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x28d50933d8e280c2b406501744da510ed0094b4f",
+      "name": "BadgeV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x863491cc6c7275bcc15a386093e92390e2a1bda9",
+      "name": "BeaconProxyFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x254e696ae76c17adc4363ae9476ce24ce935be16",
+      "name": "BridgeMiddleware",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4721aee3296f6f34a621d7645ee2fa2ae0b251a9",
+      "name": "BridgeMiddlewareV2",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x79cec02f44c0855be72b2305d42cff486efe79a5",
+      "name": "BurnRegistryV2",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xeb71a9c02c1f68a9d7004e74e17c7d62c3291bf8",
+      "name": "GovernorMultisig",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3e84af3743cc4e7f516570b341ced56530d901e8",
+      "name": "L2AddressRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2f8577f68d8306aeb48f9015ac61744bbadfd713",
+      "name": "SetFiveMillionProposalThresholdAction",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+      "name": "StandardArbERC20",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xc7c1943bccbc81b8de5b7f407c00b7805ea3ea0c",
+      "name": "Storage",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 19,
+    "upstream": 5,
+    "standard_library": 24,
+    "needs_review": 26
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 1
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2789,
+        "report_name": "skynet.certik.com/projects/evedex"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

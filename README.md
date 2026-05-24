@@ -48,6 +48,7 @@ Each project directory contains:
 | [republic-note](./republic-note/brief.md) | $16.31M | avalanche | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $51.20M |
 | [stakestone](./stakestone/brief.md) | $26.05M | 8 | 183 | 60/183 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $49.73M |
 | [illuvium](./illuvium/brief.md) | $9.60M | ethereum | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $39.75M |
+| [universe-xyz](./universe-xyz/brief.md) | $1.65M | ethereum | 36 | 25/36 (69%) | 20.0% | 0.0% (-) | 2 | stale | 💀 dead | $38.95M |
 | [carbon-defi](./carbon-defi/brief.md) | $3.51M | 4 | 230 | 72/230 (31%) | 22.4% | 19.7% (ChainSecurity) | 4 | aging | ✅ active | $36.58M |
 | [snowbank](./snowbank/brief.md) | $3.77M | avalanche | 108 | 12/108 (11%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $36.05M |
 | [zklink-nova](./zklink-nova/brief.md) | $13.41M | 11 | 443 | 136/443 (31%) | 12.1% | 2.8% (OpenZeppelin) | 10 | aging | ⚠️ declining | $33.89M |
@@ -342,6 +343,7 @@ Each project directory contains:
 | [neutral-trade](./neutral-trade/brief.md) | $18.84M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [nonkyc](./nonkyc/brief.md) | $5.80M | 4 | 4 | 0/4 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [nostra](./nostra/brief.md) | $7.03M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [obsidian](./obsidian/brief.md) | $1.64M | cronos | 6 | 0/6 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [odyssey-finance](./odyssey-finance/brief.md) | $9.47M | base, ethereum, optimism | 79 | 74/79 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [okcoin](./okcoin/brief.md) | $26.01M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [omnibtc](./omnibtc/brief.md) | $2.27M | 6 | 6 | 0/6 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -394,6 +396,7 @@ Each project directory contains:
 | [swapscanner](./swapscanner/brief.md) | $4.68M | klaytn | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [syncswap-protocol](./syncswap-protocol/brief.md) | $10.03M | linea, scroll, zksync-era | 158 | 31/158 (20%) | 22.6% | 0.0% (-) | 3 | stale | ✅ active | - |
 | [teller](./teller/brief.md) | $1.99M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [tensorplex](./tensorplex/brief.md) | $1.64M | ethereum | 6 | 4/6 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [thedeep](./thedeep/brief.md) | $8.46M | 4 | 164 | 11/164 (7%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [thruster](./thruster/brief.md) | $5.82M | blast | 20 | 14/20 (70%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [tothemoon](./tothemoon/brief.md) | $3.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -417,5 +420,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-24T19:28:01.110Z_
-_Projects: 405_
+_Generated: 2026-05-24T19:40:23.240Z_
+_Projects: 408_

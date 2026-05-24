@@ -249,6 +249,7 @@
 | [notional](./notional/) | $1.2M | 19.2% | $755.7K | dead | 7 | 79 | 2026-05-24 |
 | [nuls](./nuls/) | $1.8M | 0.0% | $1.8M | active | 0 | 904 | 2026-05-23 |
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 0 | 19 | 2026-05-23 |
+| [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
 | [odyssey-finance](./odyssey-finance/) | $9.5M | 0.0% | ? | active | 0 | 79 | 2026-05-23 |
 | [okcoin](./okcoin/) | $26.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [omnibtc](./omnibtc/) | $2.3M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
@@ -359,6 +360,7 @@
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | unknown | 0 | 179 | 2026-05-23 |
 | [teller](./teller/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-05-24 |
+| [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
 | [the-arena](./the-arena/) | $9.6M | 0.0% | $9.6M | active | 0 | 1054 | 2026-05-24 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-05-23 |
 | [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |
@@ -381,6 +383,7 @@
 | [umee](./umee/) | $3.2M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [unichain-bridge](./unichain-bridge/) | $2.9M | 0.0% | ? | dead | 0 | 15 | 2026-05-24 |
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
+| [universe-xyz](./universe-xyz/) | $39.0M | 20.0% | $39.0M | dead | 3 | 36 | 2026-05-24 |
 | [unslashed](./unslashed/) | $4.8M | 0.0% | $4.8M | declining | 0 | 69 | 2026-05-24 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-05-23 |
 | [usx.capital](./usx.capital/) | $1.7M | 0.0% | ? | unknown | 1 | 4 | 2026-05-24 |

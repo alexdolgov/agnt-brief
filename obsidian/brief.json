@@ -1,0 +1,273 @@
+{
+  "schema_version": "2.0",
+  "project_key": "obsidian",
+  "generated_at": "2026-05-24T19:30:55.839Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "obsidian",
+    "tier": 0,
+    "peak_tvl": 516900,
+    "peak_date": "2026-05-12T00:00:00.000Z",
+    "tvl_30d_ago": 495022,
+    "tvl_90d_ago": 310532,
+    "tvl_current": 475579,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 262949,
+    "change_30d_pct": -3.9277042232466433,
+    "change_90d_pct": 53.14975590277331,
+    "days_since_peak": 12,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 7.994002708454246
+  },
+  "summary": {
+    "total_contracts": 6,
+    "total_addresses": 6,
+    "unique_implementations": 6,
+    "total_deployments": 6,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 6,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 1637815.235,
+    "tvl_usd": 1637815.235,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://obsidian.finance",
+    "chains": [
+      "cronos"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Obsidian is a DEX aggregator on Cronos that routes trades across multiple liquidity sources to provide users with optimal swap rates.",
+    "relationship_narrative": "All contracts belong to a single product family with no explicit sub-families or shared infrastructure identified beyond the aggregation logic.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x1215b773d67fd9ed17656b08e223caef4a93904f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Obsidian",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x1215b773d67fd9ed17656b08e223caef4a93904f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x1ec6e891bdaa523da0f538c9556064d909d0c566",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Obsidian",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x1ec6e891bdaa523da0f538c9556064d909d0c566",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x4e5cdf0a7a13f05e4168e3b2b9ba96c740877275",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Obsidian",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x4e5cdf0a7a13f05e4168e3b2b9ba96c740877275",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0x6d5599616732ea278235b47a76cfd398fde00deb",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Obsidian",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0x6d5599616732ea278235b47a76cfd398fde00deb",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0xcd2e5cc83681d62beb066ad0a2ec94bf301570c9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Obsidian",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0xcd2e5cc83681d62beb066ad0a2ec94bf301570c9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 25,
+      "chain_name": "cronos",
+      "address": "0xedc17bf0f27afc2e767ca08ae426d095207a7804",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Obsidian",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 25,
+          "chain_name": "cronos",
+          "address": "0xedc17bf0f27afc2e767ca08ae426d095207a7804",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 6,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

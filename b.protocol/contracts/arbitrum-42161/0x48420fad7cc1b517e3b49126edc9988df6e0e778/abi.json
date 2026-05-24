@@ -1,0 +1,73 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "qty",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "bamm",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "uniFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "doArb",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "bamms",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxEthQty",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minEthQty",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minProfitInBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "findSmallestQty",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

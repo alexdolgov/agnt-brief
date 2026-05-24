@@ -1,0 +1,295 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "fallback"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "gauge",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      }
+    ],
+    "name": "depositEtherToGauge",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "underlying",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "bamm",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "gauge",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "underlyingAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      }
+    ],
+    "name": "depositUnderlyingToBammGauge",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "underlying",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "gauge",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "underlyingAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      }
+    ],
+    "name": "depositUnderlyingToGauge",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "minter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "gaugeFrom",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "gaugeTo",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "gaugeAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      }
+    ],
+    "name": "migrateGauge",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rescueETH",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "rescueErc20",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "minter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "gauge",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "bamm",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "gaugeAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address payable",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "hETH",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawFromBammGaugeToUnderlying",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "minter",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "gauge",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "hToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "gaugeAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address payable",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isCEther",
+        "type": "bool"
+      }
+    ],
+    "name": "withdrawFromGaugeToUnderlying",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

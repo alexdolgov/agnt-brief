@@ -1,0 +1,114 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IComptroller",
+        "name": "comptroller",
+        "type": "address"
+      },
+      {
+        "internalType": "contract BAMMLike",
+        "name": "bamm",
+        "type": "address"
+      }
+    ],
+    "name": "getAccountInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "bamm",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "ctoken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repayAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "underwater",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct CLiquidationBotHelper.Account",
+        "name": "a",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "comptroller",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "bamms",
+        "type": "address[]"
+      }
+    ],
+    "name": "getInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "bamm",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "ctoken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repayAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "underwater",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct CLiquidationBotHelper.Account[]",
+        "name": "unsafeAccounts",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

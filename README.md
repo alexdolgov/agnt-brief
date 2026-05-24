@@ -32,6 +32,7 @@ Each project directory contains:
 | [giza](./giza/brief.md) | $4.77M | base, plasma | 16 | 16/16 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $119.21M |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/brief.md) | $2.25M | ethereum | 112 | 75/112 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $95.88M |
 | [blur](./blur/brief.md) | $18.88M | blast, ethereum | 17 | 12/17 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $91.73M |
+| [b.protocol](./b.protocol/brief.md) | $1.79M | 4 | 186 | 121/186 (65%) | 4.1% | 1.6% (Code4rena) | 5 | stale | 💀 dead | $89.13M |
 | [zivoe](./zivoe/brief.md) | $13.83M | ethereum | 32 | 31/32 (97%) | 58.1% | 48.4% (Sherlock) | 3 | aging | ✅ active | $87.09M |
 | [the-idols](./the-idols/brief.md) | $5.76M | ethereum | 17 | 13/17 (76%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $85.36M |
 | [mendi-finance](./mendi-finance/brief.md) | $2.03M | linea | 39 | 28/39 (72%) | 10.7% | 3.6% (Sherlock) | 2 | fresh | ❓ unknown | $79.07M |
@@ -165,6 +166,7 @@ Each project directory contains:
 | [bunny](./bunny/brief.md) | $3.32M | bsc, polygon | 101 | 73/101 (72%) | 9.6% | 0.0% (-) | 1 | stale | 💀 dead | $1.36M |
 | [rezerve](./rezerve/brief.md) | $2.67M | ethereum, sonic | 104 | 80/104 (77%) | 1.3% | 0.0% (-) | 1 | fresh | ✅ active | $1.34M |
 | [opyn](./opyn/brief.md) | $2.05M | avalanche, ethereum | 103 | 33/103 (32%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.02M |
+| [defil](./defil/brief.md) | $1.80M | ethereum | 51 | 37/51 (73%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.01M |
 | [peapods-finance](./peapods-finance/brief.md) | $7.10M | 6 | 130 | 46/130 (35%) | 53.1% | 0.0% (-) | 4 | aging | ⚠️ declining | $949.46K |
 | [bend](./bend/brief.md) | $12.39M | berachain, ethereum | 105 | 59/105 (56%) | 20.3% | 20.3% (Spearbit) | 2 | fresh | ❓ unknown | $896.83K |
 | [notional](./notional/brief.md) | $3.59M | arbitrum, ethereum | 79 | 73/79 (92%) | 19.2% | 19.2% (Sherlock) | 5 | fresh | 💀 dead | $755.74K |
@@ -304,6 +306,7 @@ Each project directory contains:
 | [kintsu](./kintsu/brief.md) | $2.69M | hyperliquid | 12 | 0/12 (0%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [klaystation](./klaystation/brief.md) | $2.15M | klaytn | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [klayswap](./klayswap/brief.md) | $4.84M | klaytn | 22 | 0/22 (0%) | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [landx-finance](./landx-finance/brief.md) | $1.77M | ethereum | 3 | 3/3 (100%) | 100.0% | 0.0% (-) | 1 | stale | ✅ active | - |
 | [layerbank](./layerbank/brief.md) | $22.07M | 4 | 91 | 13/91 (14%) | 50.0% | 0.0% (-) | 2 | fresh | 💀 dead | - |
 | [lbank](./lbank/brief.md) | $9.76M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [levex](./levex/brief.md) | $11.23M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -382,6 +385,7 @@ Each project directory contains:
 | [thedeep](./thedeep/brief.md) | $8.46M | 4 | 164 | 11/164 (7%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [thruster](./thruster/brief.md) | $5.82M | blast | 20 | 14/20 (70%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [tothemoon](./tothemoon/brief.md) | $3.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [townsquare](./townsquare/brief.md) | $1.75M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [troves](./troves/brief.md) | $4.99M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [truefi](./truefi/brief.md) | $15.40M | arbitrum, ethereum | 8 | 8/8 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [trufin-protocol](./trufin-protocol/brief.md) | $6.84M | ethereum | 7 | 6/7 (86%) | 66.7% | 33.3% (OpenZeppelin) | 7 | fresh | ⚠️ declining | - |
@@ -400,5 +404,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-24T17:20:28.101Z_
-_Projects: 388_
+_Generated: 2026-05-24T17:41:31.660Z_
+_Projects: 392_

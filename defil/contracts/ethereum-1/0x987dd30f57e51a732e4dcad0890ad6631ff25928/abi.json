@@ -1,0 +1,296 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_filst",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_cFILST",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_efil_filst_lp",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_filst_usdt_lp",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_efil_filst_lp_stake",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_filst_usdt_lp_stake",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_filst_stake",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "getCFilstAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "getFilstAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "getFilstEfilLpAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "getFilstEfilLpStakeAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "getFilstStakeAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "getFilstUsdtLpAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "getFilstUsdtLpStakeAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IToken",
+        "name": "lp",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getLpFILSTAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IToken",
+        "name": "lp",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "getLpFILSTAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IStake",
+        "name": "stake",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getStakeFILSTAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IStake",
+        "name": "stake",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "getStakeFILSTAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IToken",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "getTokenAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

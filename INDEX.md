@@ -34,6 +34,7 @@
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | dead | 1 | 426 | 2026-05-23 |
 | [avalaunch](./avalaunch/) | $31.3M | 78.6% | ? | unknown | 13 | 39 | 2026-05-23 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-05-23 |
+| [b.protocol](./b.protocol/) | $89.1M | 4.1% | $89.1M | dead | 5 | 186 | 2026-05-24 |
 | [babydogecoin](./babydogecoin/) | $166.7M | 0.0% | $166.7M | declining | 1 | 936 | 2026-05-24 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 0 | 2 | 2026-05-23 |
 | [badger-dao](./badger-dao/) | $1.9M | 0.0% | $1.9M | sunsetting | 0 | 330 | 2026-05-23 |
@@ -92,6 +93,7 @@
 | [decentralized-euro](./decentralized-euro/) | $230.7M | 8.7% | $230.7M | active | 3 | 174 | 2026-05-24 |
 | [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-05-24 |
 | [defi-kingdoms](./defi-kingdoms/) | $6.5M | 0.0% | ? | dead | 1 | 5 | 2026-05-23 |
+| [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-05-24 |
 | [defituna](./defituna/) | $1.9M | 0.0% | $1.9M | declining | 11 | 904 | 2026-05-23 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | unknown | 0 | 53 | 2026-05-23 |
 | [desyn-protocol](./desyn-protocol/) | $10.8M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
@@ -193,6 +195,7 @@
 | [klayswap](./klayswap/) | $4.8M | 0.0% | ? | sunsetting | 4 | 22 | 2026-05-23 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 34.4% | $23.1K | active | 3 | 53 | 2026-05-24 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-05-23 |
+| [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-05-24 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 108 | 2026-05-24 |
@@ -356,6 +359,7 @@
 | [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-05-24 |
 | [tothemoon](./tothemoon/) | $3.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |
+| [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |

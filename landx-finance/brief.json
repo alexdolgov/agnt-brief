@@ -1,0 +1,234 @@
+{
+  "schema_version": "2.0",
+  "project_key": "landx-finance",
+  "generated_at": "2026-05-24T17:27:36.025Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "landx-finance",
+    "tier": 0,
+    "peak_tvl": 2258999,
+    "peak_date": "2024-10-07T00:00:00.000Z",
+    "tvl_30d_ago": 1765821,
+    "tvl_90d_ago": 1987697,
+    "tvl_current": 1771049,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 2044327,
+    "change_30d_pct": 0.29606624907054563,
+    "change_90d_pct": -10.899447954089583,
+    "days_since_peak": 594,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 21.600275166124465
+  },
+  "summary": {
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
+    "audited_contracts": 3,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 100,
+    "total_audits": 1,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 1770562.70196,
+    "tvl_usd": 1770562.70196,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://landx.fi",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2023-02",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "LandX Finance tokenizes real-world agricultural assets, allowing users to invest in farmland and earn yield from crop rents. It provides on-chain exposure to physical farmland through its CToken and supporting infrastructure.",
+    "relationship_narrative": "CToken represents tokenized farmland shares, OraclePrices provides price feeds for asset valuation, and RentFoundation likely manages rental income distribution, all deployed together as a cohesive unit.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x44c7aca9c406ded532748194da0d691808473ac9",
+      "name": "CToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LandX Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x44c7aca9c406ded532748194da0d691808473ac9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2972"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf49a0863d532e6036d693fbacfd2417aebda8784",
+      "name": "OraclePrices",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LandX Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OraclePrices",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf49a0863d532e6036d693fbacfd2417aebda8784",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2972"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc1b9119ea8f8164be56eb15674107a8d1b09c285",
+      "name": "RentFoundation",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LandX Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RentFoundation",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc1b9119ea8f8164be56eb15674107a8d1b09c285",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2972"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2972,
+      "audit_key": "audit-2972",
+      "report_name": "DL audit link",
+      "report_url": "https://certificate.quantstamp.com/full/land-x-finance.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "KeyProtocolVariables",
+        "LNDX",
+        "LNDXGovernor",
+        "LandXNFT",
+        "OracleMulti",
+        "OraclePrices",
+        "RentFoundation",
+        "cToken",
+        "usdc",
+        "veLNDX",
+        "xBasket",
+        "xToken",
+        "xTokenRouter"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Quantstamp",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 100,
+      "latest_audit": "2023-02"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 3,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 3
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

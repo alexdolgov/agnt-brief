@@ -1,0 +1,46 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "code",
+        "type": "bytes"
+      },
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "comptroller",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "bamms",
+        "type": "address[]"
+      }
+    ],
+    "name": "getInfo",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "users",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "bamm",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "repayAmount",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

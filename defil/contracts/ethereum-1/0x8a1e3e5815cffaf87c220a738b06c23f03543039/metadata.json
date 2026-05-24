@@ -1,0 +1,18 @@
+{
+  "address": "0x8a1e3e5815cffaf87c220a738b06c23f03543039",
+  "chain_id": 1,
+  "contract_name": "StandardPriceOracle",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:29:48.668Z"
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "amount0Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "amount1Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "ramsesV2SwapCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "ethQty",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "redeemer",
+        "type": "address"
+      }
+    ],
+    "name": "swap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "amount0Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "amount1Delta",
+        "type": "int256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "uniswapV3SwapCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "usdcQty",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "internalType": "contract Redeemer",
+        "name": "redeemer",
+        "type": "address"
+      }
+    ],
+    "name": "usdc2GemRedeemer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "gemAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

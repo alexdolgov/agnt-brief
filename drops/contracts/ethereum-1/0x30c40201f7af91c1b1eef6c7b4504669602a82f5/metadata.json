@@ -1,0 +1,18 @@
+{
+  "address": "0x30c40201f7af91c1b1eef6c7b4504669602a82f5",
+  "chain_id": 1,
+  "contract_name": "CErc721ArtBlocksDelegator",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BSD-3-Clause, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": "0x58ff25d5da5fbe3962b239503caecd99f4d63676",
+  "fetched_at": "2026-05-24T05:36:06.126Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x3cb2f8f2312ab981c4da6f98735a2af79e781a3f",
+  "chain_id": 56,
+  "contract_name": "TokenVesting",
+  "compiler_version": "v0.4.26+commit.4563c3fc",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "00000000000000000000000055d166e9b4b20352c18d66bdcc828ed4a9113c19000000000000000000000000000000000000000000000000000000006022b1800000000000000000000000000000000000000000000000000000000000784ce00000000000000000000000000000000000000000000000000000000003c267000000000000000000000000000000000000000000000000000000000000000001",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:17:09.247Z"
+}

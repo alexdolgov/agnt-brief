@@ -1,0 +1,17 @@
+{
+  "address": "0xa4843b1247460dd9a66a70386cb9a5934f67592d",
+  "chain_id": 56,
+  "contract_name": "SquadswapInterfaceMulticallV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:02:07.453Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x126afb5e8218ce49f34317a3f3ffefde5bca2dc4",
+  "chain_id": 100,
+  "contract_name": "GovernedRecipient",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:48:11.151Z"
+}

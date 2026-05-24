@@ -1,0 +1,16 @@
+# CryptoV3Factory
+
+| Field | Value |
+|---|---|
+| Chain | bsc (56) |
+| Address | `0x14af3968913145ee83a64509125a6484262eb28a` |
+| Role | registry |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 27 (bsc [`0x14af3968913145ee83a64509125a6484262eb28a`](../0x14af3968913145ee83a64509125a6484262eb28a/); bsc `0x2110681156bfa4efb94b8d3ba7f75bf0ed0ede52`; bsc `0x2d53ad8eaa92ddbc221f9c691ad4f8ad763380b7`; bsc `0x3152238be04ce0e5b1bf77acd37fd157e0df8140`; bsc `0x3874f3832c77e44b3980749dcc0b2e9fd921af19`; bsc `0x39f4d94ea4413d9ce7cb4c7fa721d52ad66f01e6`; bsc `0x41c9b3c89add331780bf5511ea79d10823756fd0`; bsc `0x423a8372ab496047938b683e6131fa4fd811e6a7`; bsc `0x4645d46a2770554bd46d73ce4756fc357bb4a630`; bsc `0x4bb63aa6da3feea4f170872d04943309e654b572`; bsc `0x514fb38f992fe55987e8b330182a6e6b9b7bf3b6`; bsc `0x817d75a273259859cf233441df943dfebfb02cd1`; bsc `0x8e5c10f55cd728a5f7fececf7bef4657da038826`; bsc `0x9199c39ab122bde29264cd7ff1566b6a790bbdd1`; bsc `0xa1f15e4e182263ec25d4a1b20f487ec1d3844b1a`; bsc `0xa76cc233e9f8296e65ca0654f3904ac4aded40f5`; bsc `0xb249546c4f672a2296583277eb86473906bf7eac`; bsc `0xb4feca656abe3d7d11d51f48318b93a8b15290ec`; bsc `0xc1aa76c93941bb30c34d5b40f9d0b28ff5ef0cb9`; bsc `0xc7c00e2a9183019df1bb063c7f0bcde9e78f93e2`; bsc `0xcb20794b94b2f08d1a39b4f76ab645a915b46c45`; bsc `0xd51b468ff89ed412a3b3ace31dfe979f2301bd8d`; bsc `0xdd344b75d7bf09faa6fe9d6c925d6b6bb0faa980`; bsc `0xe4d84988e8f70b8696d94abfbfdec18327afe50f`; bsc `0xe7745b23d615e8f6b9eac33f9fb53d33719bc32f`; bsc `0xeb051603376a9c3841e42846517c62fef692322f`; bsc `0xf80812520e01bede26252125567670820670623c`) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

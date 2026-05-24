@@ -1,0 +1,17 @@
+{
+  "address": "0x586c7b71721efc126b82acc1f809159acc31b545",
+  "chain_id": 100,
+  "contract_name": "NFTDescriptor",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:48:12.206Z"
+}

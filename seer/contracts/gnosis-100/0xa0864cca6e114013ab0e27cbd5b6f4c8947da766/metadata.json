@@ -1,0 +1,18 @@
+{
+  "address": "0xa0864cca6e114013ab0e27cbd5b6f4c8947da766",
+  "chain_id": 100,
+  "contract_name": "AlgebraFactory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:48:12.470Z"
+}

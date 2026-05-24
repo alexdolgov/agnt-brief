@@ -1,0 +1,18 @@
+{
+  "address": "0x11b7018204cb458741b56725422bc64cf7be7d99",
+  "chain_id": 81457,
+  "contract_name": "V3Migrator",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 45,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:02:03.074Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xf18a78e9e6de7f85af7b1f87b61ed4b4de66f00a",
+  "chain_id": 100,
+  "contract_name": "FarmingCenterVault",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 99999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:48:13.305Z"
+}

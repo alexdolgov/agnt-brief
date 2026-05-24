@@ -67,6 +67,7 @@
 | [bridgers](./bridgers/) | $71.9M | 0.0% | $71.9M | active | 1 | 9 | 2026-05-24 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-05-23 |
 | [btcfi](./btcfi/) | $11.9M | 0.0% | ? | active | 0 | 15 | 2026-05-23 |
+| [btse](./btse/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | dead | 1 | 101 | 2026-05-24 |
 | [camelot](./camelot/) | $6.4M | 17.3% | $391.9K | active | 1 | 127 | 2026-05-22 |
@@ -318,6 +319,7 @@
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
 | [scrub-money](./scrub-money/) | $7.1M | 0.0% | ? | active | 1 | 19 | 2026-05-23 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 0.0% | $34.8K | declining | 0 | 98 | 2026-05-21 |
+| [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-24 |
 | [serum](./serum/) | $1.9M | 0.0% | $1.9M | dead | 0 | 935 | 2026-05-22 |
 | [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 0 | 111 | 2026-05-23 |
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
@@ -340,6 +342,7 @@
 | [splash-protocol](./splash-protocol/) | $1.9M | 0.0% | $1.9M | active | 0 | 904 | 2026-05-23 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
 | [sport.fun](./sport.fun/) | $3.7M | 0.0% | ? | active | 0 | 1 | 2026-05-24 |
+| [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-05-24 |
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-05-24 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-05-23 |
@@ -413,6 +416,7 @@
 | [yieldnest](./yieldnest/) | $19.2M | 0.0% | $19.2M | declining | 0 | 89 | 2026-05-22 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-05-23 |
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |
+| [zircuit-finance](./zircuit-finance/) | $180.1M | 0.0% | $180.1M | unknown | 0 | 3 | 2026-05-24 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-05-22 |
 | [zivoe](./zivoe/) | $87.1M | 58.1% | $87.1M | active | 3 | 32 | 2026-05-22 |
 | [zklink-nova](./zklink-nova/) | $33.9M | 12.1% | $33.9M | declining | 11 | 443 | 2026-05-22 |

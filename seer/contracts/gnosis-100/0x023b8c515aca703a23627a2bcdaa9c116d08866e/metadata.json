@@ -1,0 +1,18 @@
+{
+  "address": "0x023b8c515aca703a23627a2bcdaa9c116d08866e",
+  "chain_id": 100,
+  "contract_name": "NonfungibleTokenPositionDescriptor",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, GPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 41,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:48:10.481Z"
+}

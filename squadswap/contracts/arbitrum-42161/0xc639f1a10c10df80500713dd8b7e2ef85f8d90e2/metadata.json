@@ -1,0 +1,17 @@
+{
+  "address": "0xc639f1a10c10df80500713dd8b7e2ef85f8d90e2",
+  "chain_id": 42161,
+  "contract_name": "TokenValidator",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "000000000000000000000000ba34aa640b8be02a439221bcbea1f48c1035eef9000000000000000000000000d6bd395fca868071edc79fe6242176a48ca83e64",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:02:04.363Z"
+}

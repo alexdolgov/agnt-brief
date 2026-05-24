@@ -25,6 +25,7 @@ Each project directory contains:
 | [symbiosis](./symbiosis/brief.md) | $9.35M | cronos, ethereum, scroll | 137 | 69/137 (50%) | 5.8% | 2.9% (SlowMist) | 5 | fresh | ✅ active | $236.15M |
 | [decentralized-euro](./decentralized-euro/brief.md) | $2.08M | 5 | 174 | 126/174 (72%) | 8.7% | 8.7% (ChainSecurity) | 2 | aging | ✅ active | $230.74M |
 | [mezo-bridge](./mezo-bridge/brief.md) | $21.64M | ethereum | 138 | 110/138 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $203.90M |
+| [zircuit-finance](./zircuit-finance/brief.md) | $1.51M | base, ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $180.12M |
 | [babydogecoin](./babydogecoin/brief.md) | $2.08M | 17 | 936 | 186/936 (20%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $166.72M |
 | [hypersurface](./hypersurface/brief.md) | $4.00M | base, hyperliquid | 242 | 39/242 (16%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $161.03M |
 | [ribbon-finance](./ribbon-finance/brief.md) | $4.96M | avalanche, ethereum | 195 | 130/195 (67%) | 20.6% | 3.1% (OpenZeppelin) | 15 | stale | ⚠️ declining | $148.56M |
@@ -169,6 +170,7 @@ Each project directory contains:
 | [minto](./minto/brief.md) | $3.83M | bsc, ethereum, heco | 11 | 8/11 (73%) | 12.5% | 0.0% (-) | 1 | stale | ❓ unknown | $1.66M |
 | [templar-dao](./templar-dao/brief.md) | $2.21M | bsc | 40 | 25/40 (63%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.55M |
 | [kiloex](./kiloex/brief.md) | $2.94M | base, bsc, manta | 111 | 8/111 (7%) | 12.5% | 0.0% (-) | 1 | aging | ⚠️ declining | $1.54M |
+| [seer](./seer/brief.md) | $1.53M | ethereum, gnosis | 179 | 34/179 (19%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.48M |
 | [predict-fun](./predict-fun/brief.md) | $14.59M | blast, bsc | 40 | 25/40 (63%) | 8.0% | 8.0% (Cyfrin) | 2 | fresh | ❓ unknown | $1.47M |
 | [sashimiswap](./sashimiswap/brief.md) | $5.00M | ethereum, heco | 61 | 31/61 (51%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.44M |
 | [taiko-bridge](./taiko-bridge/brief.md) | $17.26M | ethereum | 52 | 44/52 (85%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.42M |
@@ -256,6 +258,7 @@ Each project directory contains:
 | [botto](./botto/brief.md) | $4.35M | base, ethereum | 19 | 14/19 (74%) | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [bouncebit-prime](./bouncebit-prime/brief.md) | $11.94M | ethereum | 9 | 2/9 (22%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [btcfi](./btcfi/brief.md) | $11.86M | base | 15 | 1/15 (7%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [btse](./btse/brief.md) | $1.55M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [bulbaswap](./bulbaswap/brief.md) | $9.10M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [canto-lending](./canto-lending/brief.md) | $3.01M | canto, ethereum | 84 | 2/84 (2%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [capx-ai](./capx-ai/brief.md) | $2.16M | bsc | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
@@ -393,6 +396,7 @@ Each project directory contains:
 | [spiraldao](./spiraldao/brief.md) | $6.40M | ethereum, zksync-era | 56 | 25/56 (45%) | 44.0% | 0.0% (-) | 3 | stale | 💀 dead | - |
 | [splashing-stake](./splashing-stake/brief.md) | $6.19M | sei | 8 | 4/8 (50%) | 75.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [sport.fun](./sport.fun/brief.md) | $3.65M | base | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [squadswap](./squadswap/brief.md) | $1.54M | 6 | 214 | 37/214 (17%) | 63.2% | 0.0% (-) | 4 | aging | ✅ active | - |
 | [stablehodl](./stablehodl/brief.md) | $6.96M | bsc, ethereum, polygon | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [stargate](./stargate/brief.md) | $6.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [stcelo](./stcelo/brief.md) | $1.70M | celo | 19 | 10/19 (53%) | 50.0% | 0.0% (-) | 2 | stale | ✅ active | - |
@@ -429,5 +433,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-24T20:31:08.380Z_
-_Projects: 417_
+_Generated: 2026-05-24T21:02:22.809Z_
+_Projects: 421_

@@ -1,0 +1,17 @@
+{
+  "address": "0x8c6357575bbe7157612ba763dd5cbdbdfabf83e8",
+  "chain_id": 999,
+  "contract_name": "ATokensAndRatesHelper",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "shanghai",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 58,
+  "constructor_arguments": "00000000000000000000000088b60d926754accb8facadd092f68f066c0bb7d000000000000000000000000007093ca1e6c8c03ff77dea07532f738d88de1d750000000000000000000000006e4d40e224ada733a557f7854e803fa798dcfa12",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T05:54:07.390Z"
+}

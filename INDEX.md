@@ -55,6 +55,7 @@
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-05-23 |
 | [btcfi](./btcfi/) | $11.9M | 0.0% | ? | active | 0 | 15 | 2026-05-23 |
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
+| [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | dead | 1 | 101 | 2026-05-24 |
 | [camelot](./camelot/) | $6.4M | 17.3% | $391.9K | active | 1 | 127 | 2026-05-22 |
 | [carbon-defi](./carbon-defi/) | $41.7M | 22.4% | $36.6M | active | 4 | 230 | 2026-05-24 |
 | [cex.io](./cex.io/) | $8.6M | 0.0% | ? | active | 1 | 3 | 2026-05-23 |
@@ -207,6 +208,7 @@
 | [powh3d](./powh3d/) | $4.5M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [predict-fun](./predict-fun/) | $1.5M | 8.0% | $1.5M | unknown | 9 | 40 | 2026-05-22 |
 | [prime-staking](./prime-staking/) | $5.1M | 0.0% | ? | active | 2 | 10 | 2026-05-23 |
+| [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | unknown | 2 | 119 | 2026-05-24 |
 | [privacy-pools](./privacy-pools/) | $6.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [probit-global](./probit-global/) | $12.7M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |

@@ -1,0 +1,17 @@
+{
+  "address": "0x2eb45a1017e9e0793e05aaf0796298d9b871ecad",
+  "chain_id": 56,
+  "contract_name": "RandomNumberGenerator",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000747973a5a2a4ae1d3a8fdf5479f1514f65db9c31000000000000000000000000404460c6a5ede2d891e8297795264fde62adbb75",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T06:07:12.779Z"
+}

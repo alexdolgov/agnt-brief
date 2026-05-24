@@ -1,0 +1,18 @@
+{
+  "address": "0x4e92ab57653998a33d59ede08d3f4423305d35d1",
+  "chain_id": 56,
+  "contract_name": "BunnyOracle",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T06:07:13.624Z"
+}

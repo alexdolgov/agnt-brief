@@ -1,0 +1,17 @@
+{
+  "address": "0x5dff4ba7a9858a03e7958aba906fdf8d702013cd",
+  "chain_id": 999,
+  "contract_name": "StableDebtToken",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "shanghai",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T05:54:04.342Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x5eb7ed8e58e7ed4509612f3e9ccb5433ee822dc9",
+  "chain_id": 999,
+  "contract_name": "Multicall3",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T05:54:04.515Z"
+}

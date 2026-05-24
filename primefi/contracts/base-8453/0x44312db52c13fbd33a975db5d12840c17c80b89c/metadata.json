@@ -1,0 +1,18 @@
+{
+  "address": "0x44312db52c13fbd33a975db5d12840c17c80b89c",
+  "chain_id": 8453,
+  "contract_name": "PRFIVestingV2Proxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": "0xc7f1716625d999fb8d70b67e47310fe401000c7a",
+  "fetched_at": "2026-05-24T05:53:56.562Z"
+}

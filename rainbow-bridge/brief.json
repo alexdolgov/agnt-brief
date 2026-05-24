@@ -1,0 +1,180 @@
+{
+  "schema_version": "2.0",
+  "project_key": "rainbow-bridge",
+  "generated_at": "2026-05-24T14:19:45.093Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "rainbow-bridge",
+    "tier": 1,
+    "peak_tvl": 701842284,
+    "peak_date": "2024-03-12T00:00:00.000Z",
+    "tvl_30d_ago": 2326805,
+    "tvl_90d_ago": 1872120,
+    "tvl_current": 2126828,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 2964896,
+    "change_30d_pct": -8.594489009607594,
+    "change_90d_pct": 13.605324445014208,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.7% from peak over 803 days, and the homepage shows only a bridge interface with no active development or community signals.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 803,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.6969649665622,
+    "governance_evidence": "TVL dropped 99.7% from peak over 803 days, and the homepage shows only a bridge interface with no active development or community signals.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 5000,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 2145504.83843,
+    "tvl_usd": 2145504.83843,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://rainbowbridge.app/transfer",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Rainbow Bridge is a trustless bridge enabling asset transfers between Ethereum and NEAR Protocol. It uses a custodian contract on Ethereum to lock assets and a corresponding contract on NEAR to mint wrapped tokens, secured by light client verification.",
+    "relationship_narrative": "The EthCustodian contract is the sole Ethereum component, interacting with NEAR's light client and prover contracts to validate transfers. No additional infrastructure contracts are present on Ethereum.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6bfad42cfc4efc96f529d786d643ff4a8b89fa52",
+      "name": "EthCustodian",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Rainbow Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EthCustodian",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6bfad42cfc4efc96f529d786d643ff4a8b89fa52",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0151568af92125fb289f1dd81d9d8f7484efc362",
+      "name": "NearBridge",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NearBridge",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0151568af92125fb289f1dd81d9d8f7484efc362",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6bfad42cfc4efc96f529d786d643ff4a8b89fa52",
+      "name": "EthCustodian",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0151568af92125fb289f1dd81d9d8f7484efc362",
+      "name": "NearBridge",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x486dccaf152b271630216d62c00188f2558f6bec",
+  "chain_id": 56,
+  "contract_name": "RPS",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "Unlicensed",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T14:25:17.624Z"
+}

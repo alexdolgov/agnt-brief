@@ -1,0 +1,128 @@
+{
+  "schema_version": "2.0",
+  "project_key": "klaystation",
+  "generated_at": "2026-05-24T14:20:30.530Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "klaystation",
+    "tier": 1,
+    "peak_tvl": 134944194,
+    "peak_date": "2022-03-30T00:00:00.000Z",
+    "tvl_30d_ago": 1968128,
+    "tvl_90d_ago": 2325372,
+    "tvl_current": 0,
+    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
+    "tvl_180d_ago": 3328142,
+    "change_30d_pct": -100,
+    "change_90d_pct": -100,
+    "governance_raw": {
+      "evidence": "TVL dropped 100% from peak 1516 days ago, homepage shows no active staking or rewards, and the protocol appears abandoned with no recent updates.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 1516,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 100,
+    "governance_evidence": "TVL dropped 100% from peak 1516 days ago, homepage shows no active staking or rewards, and the protocol appears abandoned with no recent updates.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 1626,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 2153436.21485,
+    "tvl_usd": 2153436.21485,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://klaystation.io",
+    "chains": [
+      "klaytn"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "KLAYstation is a liquid staking protocol on Klaytn that allows users to stake KLAY tokens and receive a liquid staking derivative in return, enabling them to earn staking rewards while maintaining liquidity.",
+    "relationship_narrative": "The protocol consists of a single product family with one core contract that handles all liquid staking functionality, with no additional supporting contracts or shared infrastructure identified.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0xa323d7386b671e8799dca3582d6658fdcdcd940a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "KLAYstation",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0xa323d7386b671e8799dca3582d6658fdcdcd940a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

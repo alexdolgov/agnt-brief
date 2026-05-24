@@ -1,0 +1,17 @@
+{
+  "address": "0xa6124221ed6d2e2f18da78c3cce6f52a8eec1a69",
+  "chain_id": 56,
+  "contract_name": "DVM",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T14:25:19.878Z"
+}

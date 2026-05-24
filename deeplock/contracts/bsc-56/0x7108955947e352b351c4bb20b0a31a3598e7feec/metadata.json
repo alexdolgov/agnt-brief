@@ -1,0 +1,18 @@
+{
+  "address": "0x7108955947e352b351c4bb20b0a31a3598e7feec",
+  "chain_id": 56,
+  "contract_name": "BluePill",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T14:25:18.701Z"
+}

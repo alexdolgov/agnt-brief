@@ -1,0 +1,83 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_flETH",
+        "type": "address"
+      },
+      {
+        "internalType": "address payable",
+        "name": "_realYieldReceiver",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "CallerIsNotFLETHOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CannotReceiveETH",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CouldNotSendETH",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "flETH",
+    "outputs": [
+      {
+        "internalType": "contract IFLETH",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "harvest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "realYieldReceiver",
+    "outputs": [
+      {
+        "internalType": "address payable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "_realYieldReceiver",
+        "type": "address"
+      }
+    ],
+    "name": "setRealYieldReceiver",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

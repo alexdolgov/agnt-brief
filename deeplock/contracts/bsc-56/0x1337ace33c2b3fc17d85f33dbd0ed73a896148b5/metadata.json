@@ -1,0 +1,18 @@
+{
+  "address": "0x1337ace33c2b3fc17d85f33dbd0ed73a896148b5",
+  "chain_id": 56,
+  "contract_name": "GRV",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T14:25:16.695Z"
+}

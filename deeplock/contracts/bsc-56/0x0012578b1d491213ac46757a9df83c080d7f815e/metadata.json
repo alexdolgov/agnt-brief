@@ -1,0 +1,17 @@
+{
+  "address": "0x0012578b1d491213ac46757a9df83c080d7f815e",
+  "chain_id": 56,
+  "contract_name": "HelloBEP20",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T14:25:17.104Z"
+}

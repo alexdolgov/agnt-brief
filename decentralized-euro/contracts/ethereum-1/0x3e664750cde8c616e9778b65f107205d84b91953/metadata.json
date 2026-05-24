@@ -1,0 +1,18 @@
+{
+  "address": "0x3e664750cde8c616e9778b65f107205d84b91953",
+  "chain_id": 1,
+  "contract_name": "StakeDAOLUSDv3CRVStaker",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "london",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:09:28.824Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x5ae34974387dfe5b141770274adc7ef5749fc7e1",
+  "chain_id": 8453,
+  "contract_name": "StakingDistributor",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "00000000000000000000000081034fb34009115f215f5d5f564aac9ffa46a1dc",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:07:36.853Z"
+}

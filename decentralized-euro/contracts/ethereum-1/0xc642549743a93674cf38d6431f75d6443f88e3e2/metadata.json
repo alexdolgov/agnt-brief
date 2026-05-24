@@ -1,0 +1,18 @@
+{
+  "address": "0xc642549743a93674cf38d6431f75d6443f88e3e2",
+  "chain_id": 1,
+  "contract_name": "ISK",
+  "compiler_version": "v0.4.24+commit.e67f0147",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:09:28.970Z"
+}

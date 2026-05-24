@@ -1,0 +1,17 @@
+{
+  "address": "0x03b28469a3f5cbdcba91485b82de17d64b9ed931",
+  "chain_id": 43114,
+  "contract_name": "Otoken",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:08:22.587Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x551c441d05e81e5a43cfd5afa7e9589039d67625",
+  "chain_id": 43114,
+  "contract_name": "RibbonDeltaVault",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "000000000000000000000000b31f66aa3c1e785363f0875a1b74e27b85fd66c7000000000000000000000000a7d7079b0fead91f3e65f86e8915cb59c1a4c6640000000000000000000000009e3b94819aaf6de606c4aa844e3215725b997064000000000000000000000000ccf6629aeab734e621cc59ebb0297196774fdb9d000000000000000000000000b5d00f83680ea5e078e911995c64b43fbfd1ee6100000000000000000000000060ae616a2155ee3d9a68541ba4544862310933d40000000000000000000000009ad6c38be94206ca50bb0d90783181662f0cfa10",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:08:26.371Z"
+}

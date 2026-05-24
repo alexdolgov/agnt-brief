@@ -1,0 +1,18 @@
+{
+  "address": "0x2c2b15113ad031ae12e154ee83f16a17dcbd4dbf",
+  "chain_id": 8453,
+  "contract_name": "StakingDistributorV2",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:07:35.770Z"
+}

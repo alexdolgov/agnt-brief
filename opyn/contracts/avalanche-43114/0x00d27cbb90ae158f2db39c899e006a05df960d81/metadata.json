@@ -1,0 +1,17 @@
+{
+  "address": "0x00d27cbb90ae158f2db39c899e006a05df960d81",
+  "chain_id": 43114,
+  "contract_name": "StrikeSelection",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "00000000000000000000000054daf3a63a6cc2e2079031e70b2d35b6083cab8900000000000000000000000000000000000000000000000000000000000003e80000000000000000000000000000000000000000000000000000000000000064",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T15:08:24.147Z"
+}

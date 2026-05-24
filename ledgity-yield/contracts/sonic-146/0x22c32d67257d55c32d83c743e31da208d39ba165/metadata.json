@@ -1,0 +1,17 @@
+{
+  "address": "0x22c32d67257d55c32d83c743e31da208d39ba165",
+  "chain_id": 146,
+  "contract_name": "LedgityYieldVaultSonic",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 43,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T06:42:13.989Z"
+}

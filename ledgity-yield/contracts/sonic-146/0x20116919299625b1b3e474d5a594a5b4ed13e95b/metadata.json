@@ -1,0 +1,17 @@
+{
+  "address": "0x20116919299625b1b3e474d5a594a5b4ed13e95b",
+  "chain_id": 146,
+  "contract_name": "RfqEngine",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "00000000000000000000000031b68b75a817d74fad9a9cb04b63ab9b61ef0303",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T06:42:15.115Z"
+}

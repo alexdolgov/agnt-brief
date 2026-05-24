@@ -151,6 +151,7 @@
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-05-23 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
+| [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 108 | 2026-05-24 |
 | [levex](./levex/) | $11.2M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [liminal](./liminal/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-22 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | declining | 4 | 20 | 2026-05-24 |
@@ -278,6 +279,7 @@
 | [trufin-protocol](./trufin-protocol/) | $6.8M | 66.7% | ? | declining | 12 | 7 | 2026-05-23 |
 | [txflow](./txflow/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 905 | 2026-05-24 |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | unknown | 0 | 150 | 2026-05-23 |
+| [umee](./umee/) | $3.2M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-05-23 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | unknown | 2 | 4 | 2026-05-22 |

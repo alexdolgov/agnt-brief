@@ -1,0 +1,17 @@
+{
+  "address": "0x01798076f71e0e48c37b670af7752d74d6e6bf1b",
+  "chain_id": 146,
+  "contract_name": "SignatureChecker",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T06:42:10.492Z"
+}

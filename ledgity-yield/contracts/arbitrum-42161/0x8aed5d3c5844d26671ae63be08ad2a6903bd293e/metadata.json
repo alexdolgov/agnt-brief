@@ -1,0 +1,18 @@
+{
+  "address": "0x8aed5d3c5844d26671ae63be08ad2a6903bd293e",
+  "chain_id": 42161,
+  "contract_name": "BatchTokenSender",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T06:42:07.948Z"
+}

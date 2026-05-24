@@ -1,0 +1,854 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "HealthFactorMinimum",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBps",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LTVTimelock",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoTimelock",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotGuardian",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyIncrease",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OracleTimelock",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TimelockNotReached",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "irm",
+            "type": "address"
+          },
+          {
+            "internalType": "uint16",
+            "name": "ltvBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "reserveFactorBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bool",
+            "name": "enabled",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IConfigRegistry.AssetCfg",
+        "name": "cfg",
+        "type": "tuple"
+      }
+    ],
+    "name": "AssetSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "delaySec",
+        "type": "uint32"
+      }
+    ],
+    "name": "DelaySet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "g",
+        "type": "address"
+      }
+    ],
+    "name": "GuardianChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "bps",
+        "type": "uint16"
+      }
+    ],
+    "name": "HFSafeSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "bps",
+        "type": "uint16"
+      }
+    ],
+    "name": "HFTargetSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "aaveEnabled",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "aavePool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "aToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashBuffer",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minRebalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxDepositBps",
+            "type": "uint16"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IConfigRegistry.IdleCfg",
+        "name": "cfg",
+        "type": "tuple"
+      }
+    ],
+    "name": "IdleCfgSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "version",
+        "type": "uint64"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "newLtv",
+        "type": "uint16"
+      }
+    ],
+    "name": "LtvChangeExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "oldLtv",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "newLtv",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "eta",
+        "type": "uint64"
+      }
+    ],
+    "name": "LtvChangeProposed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "next",
+        "type": "address"
+      }
+    ],
+    "name": "OracleChangeExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "next",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "eta",
+        "type": "uint64"
+      }
+    ],
+    "name": "OracleChangeProposed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "router",
+        "type": "address"
+      }
+    ],
+    "name": "OracleSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "o",
+        "type": "address"
+      }
+    ],
+    "name": "OwnerChanged",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "assetCfg",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "irm",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "ltvBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "reserveFactorBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "bool",
+        "name": "enabled",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "delay",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      }
+    ],
+    "name": "executeAssetLtv",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "executeOracle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      }
+    ],
+    "name": "getAssetCfg",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "irm",
+            "type": "address"
+          },
+          {
+            "internalType": "uint16",
+            "name": "ltvBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "reserveFactorBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bool",
+            "name": "enabled",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IConfigRegistry.AssetCfg",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      }
+    ],
+    "name": "getIdleCfg",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "aaveEnabled",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "aavePool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "aToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashBuffer",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minRebalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxDepositBps",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct IConfigRegistry.IdleCfg",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "guardian",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "hfSafeBps",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "hfTargetBps",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "idleCfg",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "aaveEnabled",
+        "type": "bool"
+      },
+      {
+        "internalType": "address",
+        "name": "aavePool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "aToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "cashBuffer",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minRebalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint16",
+        "name": "maxDepositBps",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_oracle",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "oracleRouter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "pendingLtv",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "ltvBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint64",
+        "name": "eta",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOracle",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "next",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "eta",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "newLtvBps",
+        "type": "uint16"
+      }
+    ],
+    "name": "proposeAssetLtv",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "next",
+        "type": "address"
+      }
+    ],
+    "name": "proposeOracle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "irm",
+            "type": "address"
+          },
+          {
+            "internalType": "uint16",
+            "name": "ltvBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "reserveFactorBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bool",
+            "name": "enabled",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IConfigRegistry.AssetCfg",
+        "name": "c",
+        "type": "tuple"
+      }
+    ],
+    "name": "setAsset",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "d",
+        "type": "uint32"
+      }
+    ],
+    "name": "setDelay",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "g",
+        "type": "address"
+      }
+    ],
+    "name": "setGuardian",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "bps",
+        "type": "uint16"
+      }
+    ],
+    "name": "setHFSafe",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "bps",
+        "type": "uint16"
+      }
+    ],
+    "name": "setHFTarget",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "aaveEnabled",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "aavePool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "aToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cashBuffer",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minRebalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxDepositBps",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct IConfigRegistry.IdleCfg",
+        "name": "c",
+        "type": "tuple"
+      }
+    ],
+    "name": "setIdleCfg",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "o",
+        "type": "address"
+      }
+    ],
+    "name": "setOracle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "o",
+        "type": "address"
+      }
+    ],
+    "name": "setOwner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

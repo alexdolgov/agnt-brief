@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0",
+  "project_key": "umee",
+  "generated_at": "2026-05-24T06:12:48.488Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "umee",
+    "tier": 0,
+    "peak_tvl": 19958474,
+    "peak_date": "2024-03-07T00:00:00.000Z",
+    "tvl_30d_ago": 293687,
+    "tvl_90d_ago": 296912,
+    "tvl_current": 239201,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 1094012,
+    "change_30d_pct": -18.552404430567236,
+    "change_90d_pct": -19.43707226383575,
+    "days_since_peak": 808,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 98.80150656808732
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 3225411.5553900003,
+    "tvl_usd": 3225411.5553900003,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": null,
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Umee is a decentralized lending protocol that enables users to supply and borrow assets across multiple blockchains. It focuses on cross-chain interoperability and capital efficiency.",
+    "relationship_narrative": "The protocol consists of a single product family with one proxy contract that handles all lending operations. No additional infrastructure contracts are identified.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe296db0a0e9a225202717e9812bf29ca4f333ba6",
+      "name": "Proxy (impl: 0xcecb170a1d54985bf8d0ebb4d6d6d980cdacf992)",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Umee",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcecb170a1d54985bf8d0ebb4d6d6d980cdacf992",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe296db0a0e9a225202717e9812bf29ca4f333ba6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

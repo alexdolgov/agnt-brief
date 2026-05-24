@@ -1,0 +1,372 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "CallLiabilityCleanNotExists",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "InvalidRoleAccess",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "cleanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiabilityCleanSuccessful",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "REENTRANT_STATUS",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "accounts",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "targetToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "minPrice",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxPrice",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct OracleProcess.OracleParam[]",
+        "name": "oracles",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "batchLiquidationAccounts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "positionKeys",
+        "type": "bytes32[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "targetToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "minPrice",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxPrice",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct OracleProcess.OracleParam[]",
+        "name": "oracles",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "batchLiquidationPositions",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "cleanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "callLiabilityClean",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllCleanInfos",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "createTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "liabilityTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "liabilities",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "collaterals",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "collateralsAmount",
+            "type": "uint256[]"
+          }
+        ],
+        "internalType": "struct LiabilityClean.LiabilityCleanInfo[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "cleanId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getCleanInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "createTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "liabilityTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "liabilities",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "collaterals",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "collateralsAmount",
+            "type": "uint256[]"
+          }
+        ],
+        "internalType": "struct LiabilityClean.LiabilityCleanInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "stakeToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "getInsuranceFunds",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "stakeToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "getInsuranceUnsettleFunds",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "targetToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "minPrice",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxPrice",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct OracleProcess.OracleParam[]",
+        "name": "oracles",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "liquidationAccount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "positionKey",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "targetToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "minPrice",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxPrice",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct OracleProcess.OracleParam[]",
+        "name": "oracles",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "liquidationPosition",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

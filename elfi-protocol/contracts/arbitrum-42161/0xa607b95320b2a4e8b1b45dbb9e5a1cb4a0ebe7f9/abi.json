@@ -1,0 +1,456 @@
+[
+  {
+    "inputs": [],
+    "name": "AddMarginTooBig",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "BalanceNotEnough",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyIsolateSupported",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PositionShouldBeLiquidation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReduceMarginTooBig",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenIsNotSupport",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UpdateLeverageWithNoChange",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "requestId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLong",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isExecutionFeeFromTradeVault",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isCrossMargin",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "leverage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "marginToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "addMarginAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "executionFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastBlock",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct UpdateLeverage.Request",
+        "name": "data",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "reasonCode",
+        "type": "bytes32"
+      }
+    ],
+    "name": "CancelUpdateLeverageEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "requestId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "positionKey",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "marginToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "updateMarginAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "executionFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isAdd",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isExecutionFeeFromTradeVault",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastBlock",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct UpdatePositionMargin.Request",
+        "name": "data",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "reasonCode",
+        "type": "bytes32"
+      }
+    ],
+    "name": "CancelUpdatePositionMarginEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "requestId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLong",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isExecutionFeeFromTradeVault",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isCrossMargin",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "leverage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "marginToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "addMarginAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "executionFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastBlock",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct UpdateLeverage.Request",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "name": "CreateUpdateLeverageEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "requestId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "positionKey",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "marginToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "updateMarginAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "executionFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isAdd",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isExecutionFeeFromTradeVault",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastBlock",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct UpdatePositionMargin.Request",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "name": "CreateUpdatePositionMarginEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "requestId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLong",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isExecutionFeeFromTradeVault",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isCrossMargin",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "leverage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "marginToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "addMarginAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "executionFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastBlock",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct UpdateLeverage.Request",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "name": "UpdateLeverageSuccessEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "requestId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "positionKey",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "marginToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "updateMarginAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "executionFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isAdd",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isExecutionFeeFromTradeVault",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastBlock",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct UpdatePositionMargin.Request",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "name": "UpdatePositionMarginSuccessEvent",
+    "type": "event"
+  }
+]

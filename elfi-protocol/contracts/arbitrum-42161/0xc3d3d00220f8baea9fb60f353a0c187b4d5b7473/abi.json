@@ -1,0 +1,38 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "stakeTokens",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "cumulativeRewardsPerStakeToken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupply",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct FeeRewards.CumulativeRewardsPerStakeTokenData[]",
+        "name": "cumulativeRewardsPerStakeToken",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "UpdateFeeRewardsCumulativeEvent",
+    "type": "event"
+  }
+]

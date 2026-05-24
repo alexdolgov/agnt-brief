@@ -1,0 +1,17 @@
+{
+  "address": "0x6fb3b2916add435993c183bfabddcc442f13b471",
+  "chain_id": 42161,
+  "contract_name": "FeeFacet",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 89,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:07:19.808Z"
+}

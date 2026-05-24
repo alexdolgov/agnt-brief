@@ -1,0 +1,78 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "requestId",
+        "type": "uint256"
+      }
+    ],
+    "name": "get",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "stakeToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "requestToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "requestTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minStakeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "executionFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferAmountFromAccount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isCollateral",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isExecutionFeeFromLpVault",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isFromAccount",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isMintMax",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct Mint.Request",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

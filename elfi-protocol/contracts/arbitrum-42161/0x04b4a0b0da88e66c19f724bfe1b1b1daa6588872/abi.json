@@ -1,0 +1,23 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "stakeToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "PoolAmountNotEnough",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PoolValueLessThanZero",
+    "type": "error"
+  }
+]

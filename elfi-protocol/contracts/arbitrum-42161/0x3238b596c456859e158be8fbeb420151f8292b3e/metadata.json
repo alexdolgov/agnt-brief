@@ -1,0 +1,17 @@
+{
+  "address": "0x3238b596c456859e158be8fbeb420151f8292b3e",
+  "chain_id": 42161,
+  "contract_name": "IncreasePositionProcess",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 54,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:07:13.896Z"
+}

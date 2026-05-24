@@ -1,0 +1,17 @@
+{
+  "address": "0x9099824be9ab2b691ce0e478853cb15fb81ff677",
+  "chain_id": 42161,
+  "contract_name": "PortfolioVault",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "0000000000000000000000002c557c7ed5d7bfb3cc519f3a387819a6f8d0c27d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:07:22.474Z"
+}

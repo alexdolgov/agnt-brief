@@ -1,0 +1,132 @@
+[
+  {
+    "inputs": [],
+    "name": "AccountNotExist",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isCrossMargin",
+        "type": "bool"
+      }
+    ],
+    "name": "AccountCrossModeUpdateEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "preOrderHoldInUsd",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "orderHoldInUsd",
+        "type": "uint256"
+      }
+    ],
+    "name": "AccountOrderHoldInUsdUpdateEvent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usedAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "interest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liability",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Account.TokenBalance",
+        "name": "preBalance",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "usedAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "interest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liability",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Account.TokenBalance",
+        "name": "balance",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum Account.UpdateSource",
+        "name": "source",
+        "type": "uint8"
+      }
+    ],
+    "name": "AccountTokenUpdateEvent",
+    "type": "event"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0xd8d812b7873dc309d32560539fd8559dc934a22b",
+  "chain_id": 42161,
+  "contract_name": "LpPool",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:07:27.273Z"
+}

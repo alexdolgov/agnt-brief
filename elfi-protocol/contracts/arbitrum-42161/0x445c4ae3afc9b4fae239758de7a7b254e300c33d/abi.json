@@ -1,0 +1,339 @@
+[
+  {
+    "inputs": [],
+    "name": "AUTO_REDUCE_LIQUIDITY_FACTOR",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "AUTO_REDUCE_PROFIT_FACTOR",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "AVAILABLE_COLLATERAL_RATIO",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BORROWING_FEE_POOL_REWARDS_RATIO",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BORROWING_FEE_STAKING_REWARDS_RATIO",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CROSS_LTV_LIMIT",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FUNDING_FEE_BASE_RATE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_FUNDING_BASE_RATE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_MAINTENANCE_MARGIN_RATE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MIN_ORDER_MARGIN_USD",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SWAP_SLIPPER_TOKEN_FACTOR",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TRADE_TOKENS",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TRADING_FEE_POOL_REWARDS_RATIO",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TRADING_FEE_STAKING_REWARDS_RATIO",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TRADING_FEE_USD_POOL_REWARDS_RATIO",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTradeConfig",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "tradeTokens",
+            "type": "address[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "isSupportCollateral",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "precision",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "discount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralUserCap",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralTotalCap",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liabilityUserCap",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liabilityTotalCap",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "interestRateFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationFactor",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AppTradeTokenConfig.TradeTokenConfig[]",
+            "name": "tradeTokenConfigs",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minOrderMarginUSD",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "availableCollateralRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "crossLtvLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxMaintenanceMarginRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fundingFeeBaseRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxFundingBaseRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tradingFeeStakingRewardsRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tradingFeePoolRewardsRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tradingFeeUsdPoolRewardsRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowingFeeStakingRewardsRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowingFeePoolRewardsRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "autoReduceProfitFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "autoReduceLiquidityFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "swapSlipperTokenFactor",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct AppTradeConfig.TradeConfig",
+        "name": "config",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

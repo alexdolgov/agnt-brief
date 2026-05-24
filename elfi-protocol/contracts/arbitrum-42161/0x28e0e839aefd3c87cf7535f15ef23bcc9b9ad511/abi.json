@@ -1,0 +1,153 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "orderId",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "enum Order.Side",
+            "name": "orderSide",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum Order.PositionSide",
+            "name": "posSide",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum Order.Type",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum Order.StopType",
+            "name": "stopType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "isCrossMargin",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isExecutionFeeFromTradeVault",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "marginToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "qty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "leverage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "orderMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "triggerPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "acceptablePrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "placeTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "executionFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastBlock",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Order.OrderInfo",
+        "name": "data",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "reasonCode",
+        "type": "bytes32"
+      }
+    ],
+    "name": "CancelOrderEvent",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "CANCEL_ORDER_AUTO_REDUCE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CANCEL_ORDER_LIQUIDATION",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CANCEL_ORDER_POSITION_CLOSE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

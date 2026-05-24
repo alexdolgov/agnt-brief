@@ -1,0 +1,58 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "symbol",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "longFundingFeePerQty",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "shortFundingFeePerQty",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "totalLongFundingFee",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "totalShortFundingFee",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "longFundingFeeRate",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "shortFundingFeeRate",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastUpdateTime",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Market.FundingFee",
+        "name": "fundingFee",
+        "type": "tuple"
+      }
+    ],
+    "name": "MarketFundingFeeUpdateEvent",
+    "type": "event"
+  }
+]

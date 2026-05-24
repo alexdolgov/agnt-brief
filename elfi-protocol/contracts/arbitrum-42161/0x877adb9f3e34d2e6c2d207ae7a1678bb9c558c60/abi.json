@@ -1,0 +1,101 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "InvalidRoleAccess",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "REENTRANT_STATUS",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "targetToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "minPrice",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxPrice",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct OracleProcess.OracleParam[]",
+        "name": "oracles",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "autoRebalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "targetToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "minPrice",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxPrice",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct OracleProcess.OracleParam[]",
+        "name": "oracles",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "rebalanceUnsettle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

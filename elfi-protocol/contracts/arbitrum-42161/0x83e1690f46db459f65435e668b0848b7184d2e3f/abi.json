@@ -1,0 +1,382 @@
+[
+  {
+    "inputs": [],
+    "name": "PriceIsZero",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "targetToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "minPrice",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxPrice",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct OracleProcess.OracleParam[]",
+        "name": "params",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetToken",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isMin",
+        "type": "bool"
+      }
+    ],
+    "name": "getIntOraclePrices",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "targetToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "minPrice",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxPrice",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct OracleProcess.OracleParam[]",
+        "name": "params",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isMin",
+        "type": "bool"
+      }
+    ],
+    "name": "getIntOraclePrices",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "min",
+        "type": "bool"
+      }
+    ],
+    "name": "getLatestUsdPrice",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetToken",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "min",
+        "type": "bool"
+      }
+    ],
+    "name": "getLatestUsdPrice",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "getLatestUsdPrice",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "min",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "max",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct OraclePrice.Data",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetToken",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "min",
+        "type": "bool"
+      }
+    ],
+    "name": "getLatestUsdUintPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "min",
+        "type": "bool"
+      }
+    ],
+    "name": "getLatestUsdUintPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "getLatestUsdUintPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "min",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "max",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "targetToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "minPrice",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxPrice",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct OracleProcess.OracleParam[]",
+        "name": "params",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetToken",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isMin",
+        "type": "bool"
+      }
+    ],
+    "name": "getOraclePrices",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "targetToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "minPrice",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxPrice",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct OracleProcess.OracleParam[]",
+        "name": "params",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isMin",
+        "type": "bool"
+      }
+    ],
+    "name": "getOraclePrices",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

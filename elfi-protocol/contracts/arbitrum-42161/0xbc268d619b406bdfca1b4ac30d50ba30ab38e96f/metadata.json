@@ -1,0 +1,18 @@
+{
+  "address": "0xbc268d619b406bdfca1b4ac30d50ba30ab38e96f",
+  "chain_id": 42161,
+  "contract_name": "LpVault",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:07:24.918Z"
+}

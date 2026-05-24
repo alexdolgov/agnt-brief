@@ -1,0 +1,17 @@
+{
+  "address": "0x5e4e6f99a8086cb08af14ca7aeee6a62a2a54ad0",
+  "chain_id": 42161,
+  "contract_name": "FeeProcess",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 46,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:07:18.335Z"
+}

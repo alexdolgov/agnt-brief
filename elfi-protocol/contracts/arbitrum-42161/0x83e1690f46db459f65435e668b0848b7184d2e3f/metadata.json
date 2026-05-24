@@ -1,0 +1,17 @@
+{
+  "address": "0x83e1690f46db459f65435e668b0848b7184d2e3f",
+  "chain_id": 42161,
+  "contract_name": "OracleProcess",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:07:22.959Z"
+}

@@ -251,6 +251,7 @@
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-05-24 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
+| [planet](./planet/) | $778.3M | 7.7% | $778.3M | dead | 1 | 34 | 2026-05-24 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | unknown | 0 | 7 | 2026-05-24 |
 | [pnetwork](./pnetwork/) | $1.8M | 0.0% | $1.8M | declining | 0 | 355 | 2026-05-22 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | unknown | 0 | 2 | 2026-05-24 |

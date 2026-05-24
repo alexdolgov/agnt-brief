@@ -1,0 +1,17 @@
+{
+  "address": "0x0faeab379586404a2a621e25dda195c99dd77ff4",
+  "chain_id": 56,
+  "contract_name": "Reservoir",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000b3cb6d2f8f2fde203a022201c81a96c167607f15",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:49:36.049Z"
+}

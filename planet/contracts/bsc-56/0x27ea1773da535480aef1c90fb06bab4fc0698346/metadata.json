@@ -1,0 +1,17 @@
+{
+  "address": "0x27ea1773da535480aef1c90fb06bab4fc0698346",
+  "chain_id": 56,
+  "contract_name": "ConvertToBoost",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:49:35.456Z"
+}

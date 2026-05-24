@@ -1,0 +1,18 @@
+{
+  "address": "0x108daeb2036addd7fd3676354915c973966893a4",
+  "chain_id": 56,
+  "contract_name": "PlanetZapOneInch",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:49:34.298Z"
+}

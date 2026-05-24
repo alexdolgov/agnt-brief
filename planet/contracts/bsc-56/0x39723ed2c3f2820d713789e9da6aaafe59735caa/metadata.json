@@ -1,0 +1,18 @@
+{
+  "address": "0x39723ed2c3f2820d713789e9da6aaafe59735caa",
+  "chain_id": 56,
+  "contract_name": "BEP20Token",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 5000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:49:36.073Z"
+}

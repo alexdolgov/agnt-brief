@@ -14,6 +14,7 @@ Each project directory contains:
 | [zyfai](./zyfai/brief.md) | $6.38M | 5 | 147 | 130/147 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1557.94M |
 | [rumpel-labs](./rumpel-labs/brief.md) | $1.92M | ethereum | 135 | 120/135 (89%) | 1.7% | 0.0% (-) | 2 | aging | ⚠️ declining | $1070.08M |
 | [bracket-protocol](./bracket-protocol/brief.md) | $3.09M | arbitrum, ethereum | 182 | 146/182 (80%) | 6.2% | 0.0% (-) | 4 | fresh | ✅ active | $920.58M |
+| [planet](./planet/brief.md) | $1.85M | bsc | 34 | 26/34 (76%) | 7.7% | 0.0% (-) | 1 | stale | 💀 dead | $778.29M |
 | [inverse-finance](./inverse-finance/brief.md) | $44.53M | 5 | 125 | 117/125 (94%) | 13.7% | 9.4% (Code4rena, Sherlock) | 5 | fresh | ❓ unknown | $428.77M |
 | [debridge](./debridge/brief.md) | $4.06M | 11 | 164 | 17/164 (10%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $379.52M |
 | [hyperwave](./hyperwave/brief.md) | $6.37M | base, ethereum, hyperliquid | 12 | 8/12 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $322.69M |
@@ -394,5 +395,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-24T16:29:09.697Z_
-_Projects: 382_
+_Generated: 2026-05-24T16:49:51.173Z_
+_Projects: 383_

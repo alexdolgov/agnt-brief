@@ -1,0 +1,17 @@
+{
+  "address": "0x17c1c4888c50c1247011dae2e0d4f0bbf93e5d0c",
+  "chain_id": 56,
+  "contract_name": "PlanetMigrateV3",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "0000000000000000000000001111111254eeb25477b68fb85ed929f73a960582000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c000000000000000000000000405960aeaad7ec8b419dedb511dfe9d112dfc22d000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002328",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:49:34.851Z"
+}

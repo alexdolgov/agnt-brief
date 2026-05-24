@@ -1,0 +1,18 @@
+{
+  "address": "0x03574cb638951ed6f4ee389cac4c58c09956c0e5",
+  "chain_id": 56,
+  "contract_name": "Locked_Strategy_GAMMA",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 3000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T16:49:33.009Z"
+}

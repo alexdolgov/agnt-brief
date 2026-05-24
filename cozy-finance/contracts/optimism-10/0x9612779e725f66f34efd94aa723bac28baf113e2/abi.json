@@ -1,0 +1,425 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IManager",
+        "name": "_manager",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidOraclePair",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "trigger",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "triggerConfigId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "truthOracle",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "trackingOracle",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "priceTolerance",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "truthFrequencyTolerance",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "trackingFrequencyTolerance",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "category",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "logoURI",
+        "type": "string"
+      }
+    ],
+    "name": "TriggerDeployed",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "_price",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_decimals",
+        "type": "uint8"
+      }
+    ],
+    "name": "computeFixedPriceAggregatorAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "_truthOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "_trackingOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_priceTolerance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_truthFrequencyTolerance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_trackingFrequencyTolerance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_triggerCount",
+        "type": "uint256"
+      }
+    ],
+    "name": "computeTriggerAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "_price",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_decimals",
+        "type": "uint8"
+      }
+    ],
+    "name": "deployFixedPriceAggregator",
+    "outputs": [
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "_truthOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "_trackingOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_priceTolerance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_truthFrequencyTolerance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_trackingFrequencyTolerance",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "logoURI",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct TriggerMetadata",
+        "name": "_metadata",
+        "type": "tuple"
+      }
+    ],
+    "name": "deployTrigger",
+    "outputs": [
+      {
+        "internalType": "contract IChainlinkTrigger",
+        "name": "_trigger",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "_price",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_decimals",
+        "type": "uint8"
+      },
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "_trackingOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_priceTolerance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_frequencyTolerance",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "logoURI",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct TriggerMetadata",
+        "name": "_metadata",
+        "type": "tuple"
+      }
+    ],
+    "name": "deployTrigger",
+    "outputs": [
+      {
+        "internalType": "contract IChainlinkTrigger",
+        "name": "_trigger",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "_truthOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "_trackingOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_priceTolerance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_truthFrequencyTolerance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_trackingFrequencyTolerance",
+        "type": "uint256"
+      }
+    ],
+    "name": "findAvailableTrigger",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "manager",
+    "outputs": [
+      {
+        "internalType": "contract IManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "_truthOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AggregatorV3Interface",
+        "name": "_trackingOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_priceTolerance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_truthFrequencyTolerance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_trackingFrequencyTolerance",
+        "type": "uint256"
+      }
+    ],
+    "name": "triggerConfigId",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "triggerCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

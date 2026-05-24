@@ -1,0 +1,18 @@
+{
+  "address": "0x6ba6f2207e343923ba692e5cae646fb0f566db8d",
+  "chain_id": 1,
+  "contract_name": "CryptoPunks",
+  "compiler_version": "v0.4.11+commit.68ef5810",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:14:37.520Z"
+}

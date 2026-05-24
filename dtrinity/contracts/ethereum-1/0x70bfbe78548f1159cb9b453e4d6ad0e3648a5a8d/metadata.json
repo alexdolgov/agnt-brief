@@ -1,0 +1,17 @@
+{
+  "address": "0x70bfbe78548f1159cb9b453e4d6ad0e3648a5a8d",
+  "chain_id": 1,
+  "contract_name": "IssuerV2_2",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "000000000000000000000000349ee07146157648d40fd471380b510b4d56a2f2000000000000000000000000b419ecdd222981e7e54cec316797ecb799c6afdc000000000000000000000000c40f4303505320f782972ad4756ed2a7390a9d9c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:45:47.170Z"
+}

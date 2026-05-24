@@ -1,0 +1,17 @@
+{
+  "address": "0x6eb812c452a20d58f85f010c1f56356df951029c",
+  "chain_id": 146,
+  "contract_name": "DStakeProxyAdmin",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:45:51.329Z"
+}

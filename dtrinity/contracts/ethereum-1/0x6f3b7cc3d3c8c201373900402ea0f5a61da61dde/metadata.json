@@ -1,0 +1,17 @@
+{
+  "address": "0x6f3b7cc3d3c8c201373900402ea0f5a61da61dde",
+  "chain_id": 1,
+  "contract_name": "DStakeRouterV2RebalanceModule",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:45:46.569Z"
+}

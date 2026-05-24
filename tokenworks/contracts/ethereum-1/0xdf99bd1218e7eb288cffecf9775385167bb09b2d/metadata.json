@@ -1,0 +1,18 @@
+{
+  "address": "0xdf99bd1218e7eb288cffecf9775385167bb09b2d",
+  "chain_id": 1,
+  "contract_name": "GlobalDistributorHandler",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:14:39.510Z"
+}

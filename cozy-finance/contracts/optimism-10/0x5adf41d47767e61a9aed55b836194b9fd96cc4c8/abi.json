@@ -1,0 +1,114 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "costModel",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "uLow",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "uHigh",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "costFactorAtZeroUtilization",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "costFactorAtFullUtilization",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "costFactorInOptimalZone",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "optimalZoneRate",
+        "type": "uint256"
+      }
+    ],
+    "name": "DeployedCostModelDynamicLevel",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "uLow_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "uHigh_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "costFactorAtZeroUtilization_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "costFactorAtFullUtilization_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "costFactorInOptimalZone_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "optimalZoneRate_",
+        "type": "uint256"
+      }
+    ],
+    "name": "deployModel",
+    "outputs": [
+      {
+        "internalType": "contract CostModelDynamicLevel",
+        "name": "model_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isDeployed",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

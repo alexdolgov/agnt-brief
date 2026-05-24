@@ -1,0 +1,17 @@
+{
+  "address": "0x9612779e725f66f34efd94aa723bac28baf113e2",
+  "chain_id": 10,
+  "contract_name": "ChainlinkTriggerFactory",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:18:54.779Z"
+}

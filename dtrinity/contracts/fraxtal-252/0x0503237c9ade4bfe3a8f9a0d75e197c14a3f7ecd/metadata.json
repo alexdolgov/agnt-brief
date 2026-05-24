@@ -1,0 +1,18 @@
+{
+  "address": "0x0503237c9ade4bfe3a8f9a0d75e197c14a3f7ecd",
+  "chain_id": 252,
+  "contract_name": "PoolLogic",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, BUSL-1.1, LGPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:45:38.206Z"
+}

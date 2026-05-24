@@ -1,0 +1,17 @@
+{
+  "address": "0x2e89df2934aff1b671923a45bacf2b21f3cf64a8",
+  "chain_id": 1,
+  "contract_name": "DStakeRouterV2",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "00000000000000000000000020b1884c9347bebc13e9aca1965c5ae56b0a8590000000000000000000000000f93fb0add57133aecd56fa48350684b5a7a1a5b9",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:45:42.983Z"
+}

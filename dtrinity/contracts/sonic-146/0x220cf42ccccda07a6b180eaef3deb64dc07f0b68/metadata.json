@@ -1,0 +1,17 @@
+{
+  "address": "0x220cf42ccccda07a6b180eaef3deb64dc07f0b68",
+  "chain_id": 146,
+  "contract_name": "WalletBalanceProvider",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:45:46.972Z"
+}

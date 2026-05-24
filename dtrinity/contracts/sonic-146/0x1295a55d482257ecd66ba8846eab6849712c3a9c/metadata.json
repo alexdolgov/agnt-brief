@@ -1,0 +1,17 @@
+{
+  "address": "0x1295a55d482257ecd66ba8846eab6849712c3a9c",
+  "chain_id": 146,
+  "contract_name": "OracleAggregator",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T12:45:49.931Z"
+}

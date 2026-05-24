@@ -1,0 +1,18 @@
+{
+  "address": "0x4610fc898f94ac0b6bfe2b836fd59f6d03195445",
+  "chain_id": 1,
+  "contract_name": "FeeBurner",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:56:19.042Z"
+}

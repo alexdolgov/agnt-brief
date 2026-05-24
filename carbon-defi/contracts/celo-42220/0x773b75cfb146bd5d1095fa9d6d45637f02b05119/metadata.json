@@ -1,0 +1,18 @@
+{
+  "address": "0x773b75cfb146bd5d1095fa9d6d45637f02b05119",
+  "chain_id": 42220,
+  "contract_name": "WCELO",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:56:17.075Z"
+}

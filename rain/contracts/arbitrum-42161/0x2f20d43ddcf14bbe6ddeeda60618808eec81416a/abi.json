@@ -1,0 +1,159 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum Types.MarketType",
+            "name": "marketType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "positionId",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct Types.ActivityQueueData[]",
+        "name": "activities",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "areActivitiesQueued",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "enum Types.MarketType",
+            "name": "marketType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "positionId",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct Types.ActivityQueueData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cleanQueue",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "filteredActivityQueue",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum Types.MarketType",
+            "name": "marketType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "positionId",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct Types.ActivityQueueData[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getActivityQueue",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum Types.MarketType",
+            "name": "marketType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "positionId",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct Types.ActivityQueueData[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getActivityQueueLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "queueId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "isActivityQueued",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

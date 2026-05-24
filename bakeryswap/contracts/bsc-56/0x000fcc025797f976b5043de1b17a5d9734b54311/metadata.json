@@ -1,0 +1,18 @@
+{
+  "address": "0x000fcc025797f976b5043de1b17a5d9734b54311",
+  "chain_id": 56,
+  "contract_name": "MysteryBox",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:46:02.091Z"
+}

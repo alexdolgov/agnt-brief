@@ -1,0 +1,17 @@
+{
+  "address": "0xcde540d7eafe93ac5fe6233bee57e1270d3e330f",
+  "chain_id": 56,
+  "contract_name": "BakerySwapRouter",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000001bf7c66c6bd861915cdaae475042d3c4bae16a7000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:46:12.759Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x16dc011486d897e76bb239896694ff878b5ae889",
+  "chain_id": 42161,
+  "contract_name": "ResolutionFacet",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 58,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:45:40.405Z"
+}

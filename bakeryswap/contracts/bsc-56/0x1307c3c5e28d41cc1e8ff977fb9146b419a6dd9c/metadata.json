@@ -1,0 +1,17 @@
+{
+  "address": "0x1307c3c5e28d41cc1e8ff977fb9146b419a6dd9c",
+  "chain_id": 56,
+  "contract_name": "CommonMasterFactory",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000006bc509924953c7c7a5d433bcc0b4a96b6c7d61a4",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T04:46:03.736Z"
+}

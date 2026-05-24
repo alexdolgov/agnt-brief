@@ -1,0 +1,586 @@
+{
+  "schema_version": "2.0",
+  "project_key": "kintsu",
+  "generated_at": "2026-05-24T10:22:51.490Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "kintsu",
+    "tier": 0,
+    "peak_tvl": 6133067,
+    "peak_date": "2026-01-07T00:00:00.000Z",
+    "tvl_30d_ago": 3837491,
+    "tvl_90d_ago": 4340167,
+    "tvl_current": 2438677,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 445739,
+    "change_30d_pct": -36.45126464140242,
+    "change_90d_pct": -43.8114478083447,
+    "days_since_peak": 137,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 60.23723530168511
+  },
+  "summary": {
+    "total_contracts": 12,
+    "total_addresses": 12,
+    "unique_implementations": 12,
+    "total_deployments": 12,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 12,
+    "coverage_pct": 0,
+    "total_audits": 5,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 2691031.57992,
+    "tvl_usd": 2691031.57992,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://kintsu.xyz/",
+    "chains": [
+      "hyperliquid"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-11",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 4,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 1
+    }
+  },
+  "topography": {
+    "project_purpose": "Kintsu is a liquid staking protocol on HyperEVM that allows users to stake tokens and receive liquid staking derivatives, enabling them to earn staking rewards while maintaining liquidity.",
+    "relationship_narrative": "The Mainnet family uses a proxy pointing to the Kintsu family's implementation contract, indicating a shared codebase where the Kintsu contracts serve as the logic layer for the mainnet deployment.",
+    "product_family_count": 2
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x2b90055eb5f774f54072c68d09a71c4a18761d04",
+      "name": "Proxy (impl: 0x1ed00e0bb3a7f990d9f803ce0bfc22762bea174b)",
+      "role": "proxy",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x1ed00e0bb3a7f990d9f803ce0bfc22762bea174b",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x2b90055eb5f774f54072c68d09a71c4a18761d04",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1810ae9986fc1a7ef6f3ae20b5e376af58390cbb",
+      "name": "Proxy (impl: 0x46fe710f0a9288160fe43d502d6d5fc85de9c16d)",
+      "role": "proxy",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x46fe710f0a9288160fe43d502d6d5fc85de9c16d",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x1810ae9986fc1a7ef6f3ae20b5e376af58390cbb",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xddc126c12f9f8df5a6fc273f6d43c1e21b4d2945",
+      "name": "Proxy (impl: 0x577635fa486382d139f9e99f32d67e6e041102cb)",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mainnet",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x577635fa486382d139f9e99f32d67e6e041102cb",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xddc126c12f9f8df5a6fc273f6d43c1e21b4d2945",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xf82c9d94ea864890e48380ed731ce58f0a530659",
+      "name": "Proxy (impl: 0xabf96a5c39761cbeddc09f94fb918932091728d8)",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xabf96a5c39761cbeddc09f94fb918932091728d8",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xf82c9d94ea864890e48380ed731ce58f0a530659",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1d0197fe4496bb557a5a8b904ba076629cc57ba3",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x1d0197fe4496bb557a5a8b904ba076629cc57ba3",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1ed00e0bb3a7f990d9f803ce0bfc22762bea174b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x1ed00e0bb3a7f990d9f803ce0bfc22762bea174b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x46fe710f0a9288160fe43d502d6d5fc85de9c16d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x46fe710f0a9288160fe43d502d6d5fc85de9c16d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x478e0162b8ea9bcc8d70cea5247c1baa2104baac",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x478e0162b8ea9bcc8d70cea5247c1baa2104baac",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x577635fa486382d139f9e99f32d67e6e041102cb",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Kintsu",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x577635fa486382d139f9e99f32d67e6e041102cb",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xabf96a5c39761cbeddc09f94fb918932091728d8",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xabf96a5c39761cbeddc09f94fb918932091728d8",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xaeb3b393f061c4a1d84aab695b3c04029929b5f6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xaeb3b393f061c4a1d84aab695b3c04029929b5f6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xbef0142a0955a7d5dcce5c2a13fb84e332669d2d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Kintsu",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xbef0142a0955a7d5dcce5c2a13fb84e332669d2d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2792,
+      "audit_key": "audit-2792",
+      "report_name": "hyperliquid-kintsu-cantina-final.pdf",
+      "report_url": "https://github.com/WaterCoolerStudiosInc/Kintsu-Audits/blob/main/hyperliquid-kintsu-cantina-final.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2793,
+      "audit_key": "audit-2793",
+      "report_name": "monad-kintsu-cantina-final.pdf",
+      "report_url": "https://github.com/WaterCoolerStudiosInc/Kintsu-Audits/blob/main/monad-kintsu-cantina-final.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2794,
+      "audit_key": "audit-2794",
+      "report_name": "monad-kintsu-nethermind-final-2.pdf",
+      "report_url": "https://github.com/WaterCoolerStudiosInc/Kintsu-Audits/blob/main/monad-kintsu-nethermind-final-2.pdf",
+      "auditor": "Nethermind",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2795,
+      "audit_key": "audit-2795",
+      "report_name": "monad-kintsu-nethermind-final.pdf",
+      "report_url": "https://github.com/WaterCoolerStudiosInc/Kintsu-Audits/blob/main/monad-kintsu-nethermind-final.pdf",
+      "auditor": "Nethermind",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2796,
+      "audit_key": "audit-2796",
+      "report_name": "View Audit Reports",
+      "report_url": "https://github.com/WaterCoolerStudiosInc/Kintsu-Audits",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 4,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 8
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2792,
+        "report_name": "hyperliquid-kintsu-cantina-final.pdf"
+      },
+      {
+        "audit_id": 2793,
+        "report_name": "monad-kintsu-cantina-final.pdf"
+      },
+      {
+        "audit_id": 2794,
+        "report_name": "monad-kintsu-nethermind-final-2.pdf"
+      },
+      {
+        "audit_id": 2795,
+        "report_name": "monad-kintsu-nethermind-final.pdf"
+      },
+      {
+        "audit_id": 2796,
+        "report_name": "View Audit Reports"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

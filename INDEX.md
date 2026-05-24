@@ -159,6 +159,7 @@
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [keyring](./keyring/) | $348.8K | 8.3% | $348.8K | active | 16 | 134 | 2026-05-23 |
 | [kiloex](./kiloex/) | $7.3M | 12.5% | $1.5M | declining | 10 | 111 | 2026-05-24 |
+| [kintsu](./kintsu/) | $2.7M | 0.0% | ? | unknown | 5 | 12 | 2026-05-24 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |
 | [klayswap](./klayswap/) | $4.8M | 0.0% | ? | sunsetting | 4 | 22 | 2026-05-23 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 34.4% | $23.1K | active | 3 | 53 | 2026-05-24 |
@@ -209,6 +210,7 @@
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
 | [osmosis-dex](./osmosis-dex/) | $1.9M | 0.0% | $1.9M | declining | 0 | 935 | 2026-05-22 |
 | [p2pb2b](./p2pb2b/) | $4.9M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
+| [pact](./pact/) | $1.9M | 0.0% | $1.9M | active | 1 | 935 | 2026-05-24 |
 | [pangolin](./pangolin/) | $3.7M | 53.6% | ? | dead | 13 | 182 | 2026-05-24 |
 | [paragonsdao](./paragonsdao/) | $6.2M | 50.0% | ? | unknown | 8 | 2 | 2026-05-23 |
 | [parallel-protocol](./parallel-protocol/) | $3.6M | 30.8% | $3.0M | active | 5 | 38 | 2026-05-24 |

@@ -1,0 +1,18 @@
+{
+  "address": "0xd982efe00e48ae19de1d3b7ded0aac2265022548",
+  "chain_id": 1,
+  "contract_name": "OVM_L1MultiMessageRelayerFast",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T07:47:30.099Z"
+}

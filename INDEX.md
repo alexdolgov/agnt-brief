@@ -48,6 +48,7 @@
 | [blueshift](./blueshift/) | $4.4M | 0.0% | ? | active | 1 | 42 | 2026-05-23 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 17 | 2026-05-22 |
 | [bob-bridge](./bob-bridge/) | $202.9K | 2.0% | $202.9K | declining | 18 | 53 | 2026-05-24 |
+| [boba-bridge](./boba-bridge/) | $3.1M | 0.0% | ? | declining | 0 | 53 | 2026-05-24 |
 | [bonzo-finance](./bonzo-finance/) | $22.6M | 0.0% | ? | unknown | 4 | 0 | 2026-05-22 |
 | [boros](./boros/) | $10.4M | 100.0% | ? | active | 5 | 2 | 2026-05-23 |
 | [botto](./botto/) | $4.3M | 0.0% | ? | unknown | 3 | 19 | 2026-05-23 |
@@ -149,6 +150,7 @@
 | [keyring](./keyring/) | $348.8K | 8.3% | $348.8K | active | 16 | 134 | 2026-05-23 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |
 | [klayswap](./klayswap/) | $4.8M | 0.0% | ? | sunsetting | 4 | 22 | 2026-05-23 |
+| [kuma-protocol](./kuma-protocol/) | $3.1M | 34.4% | $23.1K | active | 3 | 53 | 2026-05-24 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-05-23 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |

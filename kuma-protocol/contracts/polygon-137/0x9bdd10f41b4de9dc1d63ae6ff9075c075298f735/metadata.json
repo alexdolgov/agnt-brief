@@ -1,0 +1,17 @@
+{
+  "address": "0x9bdd10f41b4de9dc1d63ae6ff9075c075298f735",
+  "chain_id": 137,
+  "contract_name": "WrappedRebaseTokenFactory",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T08:01:50.564Z"
+}

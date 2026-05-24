@@ -1,0 +1,18 @@
+{
+  "address": "0x72c455c20ef23cce31f47e636bf67a9b8749c8ce",
+  "chain_id": 1,
+  "contract_name": "L1ERC1155Bridge",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T07:47:28.853Z"
+}

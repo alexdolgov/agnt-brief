@@ -155,6 +155,7 @@ Each project directory contains:
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/brief.md) | $7.43M | 5 | 150 | 6/150 (4%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $43.46K |
 | [dinari](./dinari/brief.md) | $10.83M | 4 | 71 | 31/71 (44%) | 37.5% | 15.6% (Sherlock) | 3 | aging | ❓ unknown | $36.60K |
 | [seamless-protocol](./seamless-protocol/brief.md) | $47.56M | base, ethereum | 98 | 87/98 (89%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $34.75K |
+| [kuma-protocol](./kuma-protocol/brief.md) | $3.08M | 4 | 53 | 32/53 (60%) | 34.4% | 34.4% (Code4rena) | 2 | stale | ✅ active | $23.14K |
 | [bscswap](./bscswap/brief.md) | $5.00M | bsc | 30 | 22/30 (73%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $20.27K |
 | [anzen-finance](./anzen-finance/brief.md) | $7.59M | 5 | 48 | 40/48 (83%) | 35.0% | 0.0% (-) | 4 | aging | ⚠️ declining | $10.86K |
 | [injective-bridge](./injective-bridge/brief.md) | $14.89M | ethereum | 9 | 3/9 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.62K |
@@ -190,6 +191,7 @@ Each project directory contains:
 | [bitvenus](./bitvenus/brief.md) | $20.90M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [blackhole](./blackhole/brief.md) | $29.94M | avalanche | 86 | 45/86 (52%) | 31.1% | 31.1% (Code4rena) | 3 | fresh | ❓ unknown | - |
 | [blueshift](./blueshift/brief.md) | $4.38M | kava, polygon | 42 | 8/42 (19%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
+| [boba-bridge](./boba-bridge/brief.md) | $3.08M | ethereum | 53 | 41/53 (77%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [bonzo-finance](./bonzo-finance/brief.md) | $22.60M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [boros](./boros/brief.md) | $10.38M | arbitrum | 2 | 2/2 (100%) | 100.0% | 100.0% (ChainSecurity) | 2 | fresh | ✅ active | - |
 | [botto](./botto/brief.md) | $4.35M | base, ethereum | 19 | 14/19 (74%) | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -313,5 +315,5 @@ Each project directory contains:
 | [zenlink](./zenlink/brief.md) | $5.52M | moonbeam, moonriver | 226 | 12/226 (5%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-05-24T07:39:35.349Z_
-_Projects: 301_
+_Generated: 2026-05-24T08:11:17.045Z_
+_Projects: 303_

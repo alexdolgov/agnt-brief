@@ -1,0 +1,18 @@
+{
+  "address": "0xd8056243180c4b56a7d2ccd5df9c2696e1261826",
+  "chain_id": 1,
+  "contract_name": "OptimismPortal",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T07:47:30.183Z"
+}

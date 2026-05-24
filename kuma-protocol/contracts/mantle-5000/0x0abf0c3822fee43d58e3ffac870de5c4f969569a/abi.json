@@ -1,0 +1,351 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ACCESS_CONTROL_ACCOUNT_IS_MISSING_ROLE",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CANNOT_SET_TO_ADDRESS_ZERO",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CANNOT_SET_TO_ZERO",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ORACLE_ANSWER_IS_STALE",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WRONG_RISK_CATEGORY",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "accessController",
+        "type": "address"
+      }
+    ],
+    "name": "AccessControllerSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "previousAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "beacon",
+        "type": "address"
+      }
+    ],
+    "name": "BeaconUpgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes4",
+        "name": "currency",
+        "type": "bytes4"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "issuer",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "term",
+        "type": "uint64"
+      }
+    ],
+    "name": "OracleSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "stalenessThreshold",
+        "type": "uint256"
+      }
+    ],
+    "name": "StalenessThresholdSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "decimals",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAccessController",
+    "outputs": [
+      {
+        "internalType": "contract IAccessControl",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "riskCategory",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getOracle",
+    "outputs": [
+      {
+        "internalType": "contract MCAGAggregatorInterface",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "riskCategory",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getStalenessThreshold",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IAccessControl",
+        "name": "accessController",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "stalenessThreshold",
+        "type": "uint256"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minRateCoupon",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "currency",
+        "type": "bytes4"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "issuer",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "term",
+        "type": "uint32"
+      },
+      {
+        "internalType": "contract MCAGAggregatorInterface",
+        "name": "oracle",
+        "type": "address"
+      }
+    ],
+    "name": "setOracle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "stalenessThreshold",
+        "type": "uint256"
+      }
+    ],
+    "name": "setStalenessThreshold",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "upgradeTo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

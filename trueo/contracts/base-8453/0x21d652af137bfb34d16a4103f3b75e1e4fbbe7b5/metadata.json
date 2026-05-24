@@ -1,0 +1,17 @@
+{
+  "address": "0x21d652af137bfb34d16a4103f3b75e1e4fbbe7b5",
+  "chain_id": 8453,
+  "contract_name": "TruthMarketManager",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 49,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T01:29:20.018Z"
+}

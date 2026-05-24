@@ -1,0 +1,18 @@
+{
+  "address": "0x11bd737757b86c16646313fdf9e86681dd3f065f",
+  "chain_id": 56,
+  "contract_name": "PancakeV3Pool",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 48,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T01:30:31.911Z"
+}

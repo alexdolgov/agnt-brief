@@ -1,0 +1,18 @@
+{
+  "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+  "chain_id": 1,
+  "contract_name": "OmniServiceProxy",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": "0x12bfb3b58ad02a0df40ee7186d26266c52d0109c",
+  "fetched_at": "2026-05-24T22:54:35.392Z"
+}

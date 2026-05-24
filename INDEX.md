@@ -72,6 +72,7 @@
 | [btse](./btse/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | dead | 1 | 101 | 2026-05-24 |
+| [butter-network](./butter-network/) | $1.4M | 0.0% | ? | declining | 0 | 6 | 2026-05-24 |
 | [camelot](./camelot/) | $6.4M | 17.3% | $391.9K | active | 1 | 127 | 2026-05-22 |
 | [canopy](./canopy/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 4 | 84 | 2026-05-24 |
@@ -242,6 +243,7 @@
 | [metadao](./metadao/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-23 |
 | [metastable](./metastable/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [mezo-bridge](./mezo-bridge/) | $203.9M | 0.0% | $203.9M | declining | 0 | 138 | 2026-05-22 |
+| [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [minto](./minto/) | $1.7M | 12.5% | $1.7M | unknown | 1 | 11 | 2026-05-24 |
 | [mitosis](./mitosis/) | $329.1M | 2.9% | $329.1M | dead | 3 | 96 | 2026-05-24 |
 | [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | dead | 3 | 192 | 2026-05-24 |
@@ -414,6 +416,7 @@
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-05-23 |
 | [usx.capital](./usx.capital/) | $1.7M | 0.0% | ? | unknown | 1 | 4 | 2026-05-24 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | unknown | 0 | 28 | 2026-05-24 |
+| [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-05-24 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | unknown | 2 | 4 | 2026-05-22 |
 | [verio](./verio/) | $7.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [verus-market](./verus-market/) | $9.9M | 0.0% | ? | declining | 0 | 32 | 2026-05-23 |
@@ -425,6 +428,7 @@
 | [xsy](./xsy/) | $3.6M | 0.0% | $3.6M | active | 0 | 16 | 2026-05-22 |
 | [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 1 | 2026-05-23 |
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | dead | 0 | 30 | 2026-05-24 |
+| [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [yei-finance](./yei-finance/) | $29.8M | 0.0% | ? | declining | 1 | 44 | 2026-05-22 |
 | [yieldfi](./yieldfi/) | $43.7M | 66.7% | $16.3M | declining | 7 | 23 | 2026-05-23 |
 | [yieldnest](./yieldnest/) | $19.2M | 0.0% | $19.2M | declining | 0 | 89 | 2026-05-22 |

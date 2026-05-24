@@ -1,0 +1,17 @@
+{
+  "address": "0x1e1287ca35954860d3197bbf22856b27890ccd80",
+  "chain_id": 42161,
+  "contract_name": "BaseHandler",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "0000000000000000000000001623865021c6260aa1fd53a04788e70c0aa0c8bd",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T23:14:04.583Z"
+}

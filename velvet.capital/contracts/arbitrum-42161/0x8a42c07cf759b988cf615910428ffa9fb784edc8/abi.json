@@ -1,0 +1,362 @@
+[
+  {
+    "inputs": [],
+    "name": "AlreadyOngoingOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BalanceTooSmall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ContractNotPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ContractPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInputTokenList",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTokenLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotPrimaryToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OffHandlerNotEnabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OffHandlerNotValid",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ProtocolIsPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenNotApproved",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenNotWhitelisted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokensStaked",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IIndexSwap",
+        "name": "index",
+        "type": "IIndexSwap"
+      },
+      {
+        "internalType": "contract ITokenRegistry",
+        "name": "tokenRegistry",
+        "type": "ITokenRegistry"
+      },
+      {
+        "internalType": "address",
+        "name": "handler",
+        "type": "address"
+      }
+    ],
+    "name": "beforeExternalSell",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IIndexSwap",
+        "name": "index",
+        "type": "IIndexSwap"
+      }
+    ],
+    "name": "beforeRevertCheck",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IIndexSwap",
+        "name": "index",
+        "type": "IIndexSwap"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "checkPrimary",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IIndexSwap",
+        "name": "index",
+        "type": "IIndexSwap"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint96[]",
+        "name": "denorms",
+        "type": "uint96[]"
+      }
+    ],
+    "name": "evaluateNewDenorms",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IIndexSwap",
+        "name": "index",
+        "type": "IIndexSwap"
+      },
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newWeight",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "oldWeight",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAmountToSwap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "portfolioToken",
+        "type": "address"
+      }
+    ],
+    "name": "getNewTokens",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IIndexSwap",
+        "name": "index",
+        "type": "IIndexSwap"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "getOldWeights",
+    "outputs": [
+      {
+        "internalType": "uint96[]",
+        "name": "",
+        "type": "uint96[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IIndexSwap",
+        "name": "index",
+        "type": "IIndexSwap"
+      },
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountB",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSwapAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IHandler",
+        "name": "_handler",
+        "type": "IHandler"
+      },
+      {
+        "internalType": "address",
+        "name": "_contract",
+        "type": "address"
+      }
+    ],
+    "name": "getUnderlyingBalances",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IIndexSwap",
+        "name": "index",
+        "type": "IIndexSwap"
+      },
+      {
+        "internalType": "address[]",
+        "name": "newTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint96[]",
+        "name": "newWeights",
+        "type": "uint96[]"
+      }
+    ],
+    "name": "getUpdateTokenData",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_redeemedTokensUnderlying",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_portfolioTokenUnderlying",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_sellTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_buyTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "verifyAddress",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

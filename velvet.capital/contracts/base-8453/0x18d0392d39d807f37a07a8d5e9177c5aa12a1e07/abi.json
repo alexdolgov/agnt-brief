@@ -1,0 +1,271 @@
+[
+  {
+    "inputs": [],
+    "name": "BalanceOfVaultIsZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidId",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoTokensRemoved",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TOTAL_WEIGHT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_portfolio",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_userShare",
+        "type": "uint256"
+      }
+    ],
+    "name": "getExpectedMintAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_portfolio",
+        "type": "address"
+      }
+    ],
+    "name": "getPerformanceFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "protocolFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "assetManagerFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_portfolio",
+        "type": "address"
+      }
+    ],
+    "name": "getPortfolioData",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "tokenAmountArray",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint8[]",
+        "name": "tokenDecimalArray",
+        "type": "uint8[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "indexTokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalSupply",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_portfolio",
+        "type": "address"
+      }
+    ],
+    "name": "getPortfolioDataByte",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_portfolio",
+        "type": "address"
+      }
+    ],
+    "name": "getProtocolAndManagementFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "assetManagerFeeToMint",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "protocolFeeToMint",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_portfolio",
+        "type": "address"
+      }
+    ],
+    "name": "getTokenBalancesAndDecimals",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint8[]",
+        "name": "",
+        "type": "uint8[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "userAmounts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_portfolio",
+        "type": "address"
+      }
+    ],
+    "name": "getUserAmountToDeposit",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_desiredShare",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_portfolio",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "startId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "endId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getUserTokenClaimBalance",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_portfolioTokenAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_portfolio",
+        "type": "address"
+      }
+    ],
+    "name": "getWithdrawalAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

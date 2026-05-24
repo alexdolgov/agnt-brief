@@ -1,0 +1,18 @@
+{
+  "address": "0x1988b06eae3a742f3128f6e65fa50efe594a45ea",
+  "chain_id": 1,
+  "contract_name": "YamatoWithdrawerV2",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 42,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T23:01:57.060Z"
+}

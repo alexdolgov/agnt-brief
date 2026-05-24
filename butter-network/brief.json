@@ -1,0 +1,377 @@
+{
+  "schema_version": "2.0",
+  "project_key": "butter-network",
+  "generated_at": "2026-05-24T22:54:33.667Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "butter-network",
+    "tier": 1,
+    "peak_tvl": 102486980,
+    "peak_date": "2024-05-21T00:00:00.000Z",
+    "tvl_30d_ago": 1181958,
+    "tvl_90d_ago": 2415670,
+    "tvl_current": 1334806,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 2344671,
+    "change_30d_pct": 12.931762380727571,
+    "change_90d_pct": -44.74385988152355,
+    "governance_raw": {
+      "evidence": "TVL has dropped 98.7% from its peak and continues to decline, but no shutdown or exploit has been announced.",
+      "confidence": 0.85,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 733,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "fallback_mixed",
+    "drop_from_peak_pct": 98.6975848054065,
+    "governance_evidence": "TVL has dropped 98.7% from its peak and continues to decline, but no shutdown or exploit has been announced.",
+    "governance_confidence": 0.85,
+    "governance_text_chars": 47,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 6,
+    "total_addresses": 13,
+    "unique_implementations": 6,
+    "total_deployments": 13,
+    "audited_contracts": 0,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 4,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 1432264.2189500001,
+    "tvl_usd": 1432264.2189500001,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.butterswap.io/swap",
+    "chains": [
+      "arbitrum",
+      "base",
+      "blast",
+      "ethereum",
+      "klaytn",
+      "linea",
+      "mantle",
+      "merlin",
+      "optimism",
+      "polygon",
+      "scroll"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Butter Network is a cross-chain bridge protocol that enables asset transfers across multiple blockchains. It uses a unified OmniServiceProxy architecture to facilitate interoperability between Ethereum, Optimism, Polygon, and other supported chains.",
+    "relationship_narrative": "The protocol consists of a single product family where multiple OmniServiceProxy instances, deployed on different chains, share the same proxy address and implement the Bridge logic. These proxies collectively form the bridging infrastructure, with each instance operating on its respective chain to handle cross-chain messages and asset transfers.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+      "name": "Bridge",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Butter Network",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x12bfb3b58ad02a0df40ee7186d26266c52d0109c",
+      "impl_name": "Bridge",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 534352,
+      "chain_name": "scroll",
+      "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+      "name": "OmniServiceProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Butter Network",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OmniServiceProxy",
+      "deployments": [
+        {
+          "chain_id": 534352,
+          "chain_name": "scroll",
+          "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 4200,
+      "chain_name": "merlin",
+      "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Butter Network",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 4200,
+          "chain_name": "merlin",
+          "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 4200,
+      "chain_name": "merlin",
+      "address": "0x41d9036454be47d3745a823c4aacd0e29cfb0f71",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Butter Network",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 4200,
+          "chain_name": "merlin",
+          "address": "0x41d9036454be47d3745a823c4aacd0e29cfb0f71",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Butter Network",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0xd077a400968890eacc75cdc901f0356c943e4fdb",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Butter Network",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0xd077a400968890eacc75cdc901f0356c943e4fdb",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+      "name": "Bridge",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 534352,
+      "chain_name": "scroll",
+      "address": "0x0000317bec33af037b5fab2028f52d14658f6a56",
+      "name": "OmniServiceProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 4,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

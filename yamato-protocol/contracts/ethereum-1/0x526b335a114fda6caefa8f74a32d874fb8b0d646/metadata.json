@@ -1,0 +1,18 @@
+{
+  "address": "0x526b335a114fda6caefa8f74a32d874fb8b0d646",
+  "chain_id": 1,
+  "contract_name": "TemplateV1",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T23:01:57.518Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x8a42c07cf759b988cf615910428ffa9fb784edc8",
+  "chain_id": 42161,
+  "contract_name": "RebalanceLibrary",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T23:14:04.786Z"
+}

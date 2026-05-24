@@ -1,0 +1,17 @@
+{
+  "address": "0x18439b037dcae4a1528ccc3871d695e61653e617",
+  "chain_id": 1,
+  "contract_name": "EnsoHandler",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000007663fd40081dccd47805c00e613b6beac3b87f08",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T23:14:02.575Z"
+}

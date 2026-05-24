@@ -1,0 +1,18 @@
+{
+  "address": "0xb575244296c27e7897382e6c140708c44a6a4229",
+  "chain_id": 42161,
+  "contract_name": "StableMint",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:04:03.389Z"
+}

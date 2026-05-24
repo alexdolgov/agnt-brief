@@ -1,0 +1,141 @@
+{
+  "schema_version": "2.0",
+  "project_key": "latch",
+  "generated_at": "2026-05-24T19:58:47.702Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "latch",
+    "tier": 1,
+    "peak_tvl": 65580096,
+    "peak_date": "2025-05-07T00:00:00.000Z",
+    "tvl_30d_ago": 3191374,
+    "tvl_90d_ago": 14906178,
+    "tvl_current": 1606188,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 19112061,
+    "change_30d_pct": -49.670956772850815,
+    "change_90d_pct": -89.22468254437858,
+    "governance_raw": {
+      "evidence": "TVL dropped 97.5% from peak and 89% in 90 days, but no shutdown or rug announcement; the site still prompts wallet connection and mentions a mobile version.",
+      "confidence": 0.9,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 382,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "fallback_mixed",
+    "drop_from_peak_pct": 97.55079955967128,
+    "governance_evidence": "TVL dropped 97.5% from peak and 89% in 90 days, but no shutdown or rug announcement; the site still prompts wallet connection and mentions a mobile version.",
+    "governance_confidence": 0.9,
+    "governance_text_chars": 120,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 1610642.69979,
+    "tvl_usd": 189.84696937252363,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 189.85
+    },
+    "asd_usd": 189.84696937252363,
+    "website_url": "https://savings.latch.io/",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Latch is a yield protocol on Ethereum that allows users to deposit assets into a pool to earn yield. The single DepositPool contract manages user deposits and yield generation.",
+    "relationship_narrative": "The protocol consists of a single product family with one core contract, so there are no cross-family relationships or shared infrastructure.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c",
+      "name": "DepositPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Latch",
+      "tvl_usd": 189.84696937252363,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DepositPool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 189.84696937252363,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c",
+      "name": "DepositPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 189.84696937252363,
+      "risk_note": "Verified native implementation with $189.85 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

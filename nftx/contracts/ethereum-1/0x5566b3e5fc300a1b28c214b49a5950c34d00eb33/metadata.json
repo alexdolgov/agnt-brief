@@ -1,0 +1,18 @@
+{
+  "address": "0x5566b3e5fc300a1b28c214b49a5950c34d00eb33",
+  "chain_id": 1,
+  "contract_name": "AppProxyUpgradeable",
+  "compiler_version": "v0.4.24+commit.e67f0147",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xde3a93028f2283cc28756b3674bd657eafb992f4",
+  "fetched_at": "2026-05-24T20:19:38.351Z"
+}

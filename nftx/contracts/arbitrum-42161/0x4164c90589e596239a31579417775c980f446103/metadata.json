@@ -1,0 +1,18 @@
+{
+  "address": "0x4164c90589e596239a31579417775c980f446103",
+  "chain_id": 42161,
+  "contract_name": "NFTXVaultCreationZap",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:19:31.855Z"
+}

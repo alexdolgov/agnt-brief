@@ -1,0 +1,18 @@
+{
+  "address": "0xd4e155135b7dff66c9c3b34eca4ae7d9555fe31f",
+  "chain_id": 42161,
+  "contract_name": "UniswapV3Staker",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 117,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:19:32.986Z"
+}

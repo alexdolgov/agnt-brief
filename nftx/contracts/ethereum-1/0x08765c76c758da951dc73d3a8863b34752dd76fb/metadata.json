@@ -1,0 +1,18 @@
+{
+  "address": "0x08765c76c758da951dc73d3a8863b34752dd76fb",
+  "chain_id": 1,
+  "contract_name": "Create2BeaconProxy",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": "0xaddc3e67a500f7037cd622b11df291a6351bfb64",
+  "fetched_at": "2026-05-24T20:19:32.086Z"
+}

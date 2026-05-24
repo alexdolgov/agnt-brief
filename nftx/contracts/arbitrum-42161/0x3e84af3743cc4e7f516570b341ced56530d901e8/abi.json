@@ -1,0 +1,101 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IL2ArbitrumGoverner",
+        "name": "_coreGov",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IL2ArbitrumGoverner",
+        "name": "_treasuryGov",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IFixedDelegateErc20Wallet",
+        "name": "_treasuryWallet",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "coreGov",
+    "outputs": [
+      {
+        "internalType": "contract IL2ArbitrumGoverner",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "coreGovTimelock",
+    "outputs": [
+      {
+        "internalType": "contract IArbitrumTimelock",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "l2ArbitrumToken",
+    "outputs": [
+      {
+        "internalType": "contract IL2ArbitrumToken",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "treasuryGov",
+    "outputs": [
+      {
+        "internalType": "contract IL2ArbitrumGoverner",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "treasuryGovTimelock",
+    "outputs": [
+      {
+        "internalType": "contract IArbitrumTimelock",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "treasuryWallet",
+    "outputs": [
+      {
+        "internalType": "contract IFixedDelegateErc20Wallet",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

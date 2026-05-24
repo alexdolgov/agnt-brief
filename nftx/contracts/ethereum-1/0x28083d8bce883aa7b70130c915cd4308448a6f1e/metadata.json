@@ -1,0 +1,18 @@
+{
+  "address": "0x28083d8bce883aa7b70130c915cd4308448a6f1e",
+  "chain_id": 1,
+  "contract_name": "NFTXV1Buyout",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:19:35.713Z"
+}

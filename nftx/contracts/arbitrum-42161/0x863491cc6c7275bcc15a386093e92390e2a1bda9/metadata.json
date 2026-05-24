@@ -1,0 +1,18 @@
+{
+  "address": "0x863491cc6c7275bcc15a386093e92390e2a1bda9",
+  "chain_id": 42161,
+  "contract_name": "BeaconProxyFactory",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T20:19:31.980Z"
+}

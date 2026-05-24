@@ -1,0 +1,17 @@
+{
+  "address": "0x6aba65dc38e6ae9ed0d95eb67bf1b524c1e3036a",
+  "chain_id": 146,
+  "contract_name": "MPTProofVerifier",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T23:48:00.171Z"
+}

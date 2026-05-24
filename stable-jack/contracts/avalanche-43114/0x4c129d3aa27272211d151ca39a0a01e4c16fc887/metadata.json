@@ -1,0 +1,17 @@
+{
+  "address": "0x4c129d3aa27272211d151ca39a0a01e4c16fc887",
+  "chain_id": 43114,
+  "contract_name": "RequestsManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "000000000000000000000000dd1cdfa52e7d8474d434cd016fd346701db6b3b9000000000000000000000000fcc1ab0aef7e92eef7acddbf187acdd227aac08100000000000000000000000099f183bb11ae1e88f24b9f44dbecee2158af1d0f0000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000100000000000000000000000024de8771bc5ddb3362db529fc3358f2df3a0e346",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:13:45.271Z"
+}

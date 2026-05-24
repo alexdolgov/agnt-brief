@@ -1,0 +1,478 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_governor",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newGovernor",
+        "type": "address"
+      }
+    ],
+    "name": "GovernorChangeRequested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldGovernor",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newGovernor",
+        "type": "address"
+      }
+    ],
+    "name": "GovernorChanged",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_FEE",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "acceptGovernance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint8",
+                    "name": "decimals",
+                    "type": "uint8"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "underlying",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "uint256",
+                        "name": "priceAtCalibration",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "weightAtCalibration",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "shortFlowMemory",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "shortFlowThreshold",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint64",
+                        "name": "weightTransitionDuration",
+                        "type": "uint64"
+                      },
+                      {
+                        "internalType": "uint64",
+                        "name": "weightAtPreviousCalibration",
+                        "type": "uint64"
+                      },
+                      {
+                        "internalType": "uint64",
+                        "name": "timeOfCalibration",
+                        "type": "uint64"
+                      }
+                    ],
+                    "internalType": "struct DataTypes.PersistedVaultMetadata",
+                    "name": "persistedMetadata",
+                    "type": "tuple"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "reserveBalance",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "currentWeight",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "targetWeight",
+                    "type": "uint256"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "address",
+                        "name": "tokenAddress",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "bool",
+                        "name": "isStable",
+                        "type": "bool"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "price",
+                        "type": "uint256"
+                      },
+                      {
+                        "components": [
+                          {
+                            "internalType": "uint256",
+                            "name": "floor",
+                            "type": "uint256"
+                          },
+                          {
+                            "internalType": "uint256",
+                            "name": "ceiling",
+                            "type": "uint256"
+                          }
+                        ],
+                        "internalType": "struct DataTypes.Range",
+                        "name": "priceRange",
+                        "type": "tuple"
+                      }
+                    ],
+                    "internalType": "struct DataTypes.PricedToken[]",
+                    "name": "pricedTokens",
+                    "type": "tuple[]"
+                  }
+                ],
+                "internalType": "struct DataTypes.VaultInfo",
+                "name": "vaultInfo",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DataTypes.VaultWithAmount[]",
+            "name": "vaultsWithAmount",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "mint",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct DataTypes.Order",
+        "name": "order",
+        "type": "tuple"
+      }
+    ],
+    "name": "applyFees",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "vault",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint8",
+                    "name": "decimals",
+                    "type": "uint8"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "underlying",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "uint256",
+                        "name": "priceAtCalibration",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "weightAtCalibration",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "shortFlowMemory",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "shortFlowThreshold",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "uint64",
+                        "name": "weightTransitionDuration",
+                        "type": "uint64"
+                      },
+                      {
+                        "internalType": "uint64",
+                        "name": "weightAtPreviousCalibration",
+                        "type": "uint64"
+                      },
+                      {
+                        "internalType": "uint64",
+                        "name": "timeOfCalibration",
+                        "type": "uint64"
+                      }
+                    ],
+                    "internalType": "struct DataTypes.PersistedVaultMetadata",
+                    "name": "persistedMetadata",
+                    "type": "tuple"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "reserveBalance",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "currentWeight",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "targetWeight",
+                    "type": "uint256"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "address",
+                        "name": "tokenAddress",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "bool",
+                        "name": "isStable",
+                        "type": "bool"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "price",
+                        "type": "uint256"
+                      },
+                      {
+                        "components": [
+                          {
+                            "internalType": "uint256",
+                            "name": "floor",
+                            "type": "uint256"
+                          },
+                          {
+                            "internalType": "uint256",
+                            "name": "ceiling",
+                            "type": "uint256"
+                          }
+                        ],
+                        "internalType": "struct DataTypes.Range",
+                        "name": "priceRange",
+                        "type": "tuple"
+                      }
+                    ],
+                    "internalType": "struct DataTypes.PricedToken[]",
+                    "name": "pricedTokens",
+                    "type": "tuple[]"
+                  }
+                ],
+                "internalType": "struct DataTypes.VaultInfo",
+                "name": "vaultInfo",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DataTypes.VaultWithAmount[]",
+            "name": "vaultsWithAmount",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "bool",
+            "name": "mint",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct DataTypes.Order",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newGovernor",
+        "type": "address"
+      }
+    ],
+    "name": "changeGovernor",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "governor",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vaultAddress",
+        "type": "address"
+      }
+    ],
+    "name": "isVaultSupported",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingGovernor",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "mintFee",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "redeemFee",
+        "type": "uint64"
+      }
+    ],
+    "name": "setVaultFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "vaultFees",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "exists",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint64",
+        "name": "mint",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "redeem",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x79e435875ccee3cd9e8da23fe34f9a011d05ea6c",
+  "chain_id": 8453,
+  "contract_name": "MockGearboxVault",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:20:00.434Z"
+}

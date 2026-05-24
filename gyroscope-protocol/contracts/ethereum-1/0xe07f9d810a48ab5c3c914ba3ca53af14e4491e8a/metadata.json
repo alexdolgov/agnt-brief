@@ -1,0 +1,18 @@
+{
+  "address": "0xe07f9d810a48ab5c3c914ba3ca53af14e4491e8a",
+  "chain_id": 1,
+  "contract_name": "FreezableTransparentUpgradeableProxy",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "LicenseRef-Gyro-1.0, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": "0x511cc903377ef0fffc10434a8eaa06e63e563471",
+  "fetched_at": "2026-05-24T17:20:08.959Z"
+}

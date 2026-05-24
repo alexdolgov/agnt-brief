@@ -1,0 +1,17 @@
+{
+  "address": "0xdc580ce8e689a49d3ce58fad4c52786c39a923e6",
+  "chain_id": 146,
+  "contract_name": "CombinedRateProviderFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:20:10.314Z"
+}

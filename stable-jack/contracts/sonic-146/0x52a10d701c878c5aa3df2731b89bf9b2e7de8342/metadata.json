@@ -1,0 +1,17 @@
+{
+  "address": "0x52a10d701c878c5aa3df2731b89bf9b2e7de8342",
+  "chain_id": 146,
+  "contract_name": "WOSonicProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:13:45.834Z"
+}

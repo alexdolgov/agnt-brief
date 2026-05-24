@@ -1,0 +1,243 @@
+{
+  "schema_version": "2.0",
+  "project_key": "singularx",
+  "generated_at": "2026-05-24T16:52:45.711Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "singularx",
+    "tier": 0,
+    "peak_tvl": 4133539,
+    "peak_date": "2025-08-23T00:00:00.000Z",
+    "tvl_30d_ago": 1986592,
+    "tvl_90d_ago": 1600351,
+    "tvl_current": 1804830,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 2538334,
+    "change_30d_pct": -9.149437831220503,
+    "change_90d_pct": 12.777134516115526,
+    "days_since_peak": 274,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 56.3369306543376
+  },
+  "summary": {
+    "total_contracts": 4,
+    "total_addresses": 5,
+    "unique_implementations": 4,
+    "total_deployments": 5,
+    "audited_contracts": 0,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 4,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 1829259.39045,
+    "tvl_usd": 21448655.857948124,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 21448655.86
+    },
+    "asd_usd": 21448655.857948124,
+    "website_url": null,
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "SingularX is a decentralized exchange (DEX) protocol on Ethereum that facilitates token swaps and liquidity provision. It includes a custom token bridging mechanism via L1ArbitrumToken and a gateway for cross-chain interactions.",
+    "relationship_narrative": "The DEX contract interacts with the L1ArbitrumToken (via its proxy) for token swaps and liquidity, while the L1ForceOnlyReverseCustomGateway manages cross-chain token movements, sharing the token infrastructure.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7",
+      "name": "L1ArbitrumToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "SingularX",
+      "tvl_usd": 21448655.857948124,
+      "is_proxy": false,
+      "impl_address": "0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7",
+      "impl_name": "L1ArbitrumToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb50721bcf8d664c30412cfbc6cf7a15145234ad1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 21448655.857948124,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9a2d163ab40f88c625fd475e807bbc3556566f80",
+      "name": "Dex",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "SingularX",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Dex",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9a2d163ab40f88c625fd475e807bbc3556566f80",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbbce8aa77782f13d4202a230d978f361b011db27",
+      "name": "L1ForceOnlyReverseCustomGateway",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4e8c24617c4592895d52ac6df29d9647e9d01bb5",
+      "impl_name": "L1ForceOnlyReverseCustomGateway",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbbce8aa77782f13d4202a230d978f361b011db27",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x86f0cf42ad673b3d666d103e009ec142d1298a17",
+      "name": "UpgradeExecutor",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UpgradeExecutor",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x86f0cf42ad673b3d666d103e009ec142d1298a17",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xad0c361ef902a7d9851ca7dcc85535da2d3c6fc7",
+      "name": "L1ArbitrumToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 21448655.857948124,
+      "risk_note": "Verified native implementation with $21,448,655.86 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9a2d163ab40f88c625fd475e807bbc3556566f80",
+      "name": "Dex",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 1
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

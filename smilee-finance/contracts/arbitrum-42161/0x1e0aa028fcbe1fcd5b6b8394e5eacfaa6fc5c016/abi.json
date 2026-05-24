@@ -1,0 +1,1183 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "addressProvider_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AmountZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AsymmetricAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CantBurnMoreThanMinted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EpochFinished",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EpochNotFinished",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MissingFeeManager",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MissingMarketOracle",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MissingPriceOracle",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotEnoughNotional",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyPositionManager",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyVault",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PayoffTooLow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PositionNotFound",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SlippedMarketValue",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VaultDead",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongStrike",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "netFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "vaultFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "Burn",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "ChangedFinanceParameters",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "paused",
+        "type": "bool"
+      }
+    ],
+    "name": "ChangedPauseState",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "previousEpoch",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "currentEpoch",
+        "type": "uint256"
+      }
+    ],
+    "name": "EpochRolled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "netFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "vaultFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "Mint",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "PausedForFinanceApproximation",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Unpaused",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ROLE_ADMIN",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ROLE_EPOCH_ROLLER",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ROLE_GOD",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ROLE_TRADER",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "baseToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "strike",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountUp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountDown",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expectedMarketValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSlippage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "entryPremium",
+        "type": "uint256"
+      }
+    ],
+    "name": "burn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "paidPayoff",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "changePauseState",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      }
+    ],
+    "name": "changeToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "strike",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "name": "computeResidualPayoff",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "payoffUp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "payoffDown",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentStrike",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "strike_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "financeParameters",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "maturity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentStrike",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "up",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "down",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Amount",
+        "name": "initialLiquidity",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "kA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "kB",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "theta",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "safe",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "proposed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "validFrom",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct TimeLockedUInt",
+            "name": "sigmaMultiplier",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "safe",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "proposed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "validFrom",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct TimeLockedUInt",
+            "name": "tradeVolatilityUtilizationRateFactor",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "safe",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "proposed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "validFrom",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct TimeLockedUInt",
+            "name": "tradeVolatilityTimeDecay",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "safe",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "proposed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "validFrom",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct TimeLockedUInt",
+            "name": "volatilityPriceDiscountFactor",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "safe",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "proposed",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "validFrom",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct TimeLockedBool",
+            "name": "useOracleImpliedVolatility",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct TimeLockedFinanceParameters",
+        "name": "timeLocked",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sigmaZero",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "epochStart",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "vegaAdj",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tPrev",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "uPrev",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tvwUr",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "omega",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct VolatilityParameters",
+        "name": "internalVolatilityParameters",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getEpoch",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "current",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "previous",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "frequency",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "numberOfRolledEpochs",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "firstEpochTimespan",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Epoch",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "strike",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "up",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "down",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Amount",
+        "name": "amount",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bool",
+        "name": "tradeIsBuy",
+        "type": "bool"
+      }
+    ],
+    "name": "getPostTradeVolatility",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "sigma",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "postTradeUr",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getUtilizationRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "strike",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountUp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountDown",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expectedPremium",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSlippage",
+        "type": "uint256"
+      }
+    ],
+    "name": "mint",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "premium_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "notional",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "bearNotional",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bullNotional",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bearAvailNotional",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bullAvailNotional",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "optionType",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "paused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "expiry",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "strike",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountUp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountDown",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "entryPremium",
+        "type": "uint256"
+      }
+    ],
+    "name": "payoff",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "payoff_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "fee_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "strike",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountUp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountDown",
+        "type": "uint256"
+      }
+    ],
+    "name": "premium",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "premium_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rollEpoch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "sigmaMultiplier",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tradeVolatilityUtilizationRateFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tradeVolatilityTimeDecay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "volatilityPriceDiscountFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "useOracleImpliedVolatility",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct TimeLockedFinanceValues",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "setParameters",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sideToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vault",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUSDPriceOracle",
+        "name": "_oracle",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IRateManager",
+        "name": "_rateManager",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IReserveSystemRead",
+        "name": "_reserveSystemRead",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IECLP",
+        "name": "pool",
+        "type": "address"
+      }
+    ],
+    "name": "getPriceUSD",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gydAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "oracle",
+    "outputs": [
+      {
+        "internalType": "contract IUSDPriceOracle",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rateManager",
+    "outputs": [
+      {
+        "internalType": "contract IRateManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "reserveSystemRead",
+    "outputs": [
+      {
+        "internalType": "contract IReserveSystemRead",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vault",
+    "outputs": [
+      {
+        "internalType": "contract IVault",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

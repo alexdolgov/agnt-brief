@@ -1,0 +1,163 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "x",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "y",
+        "type": "uint256"
+      }
+    ],
+    "name": "PRBMath_MulDiv18_Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "x",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "y",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "denominator",
+        "type": "uint256"
+      }
+    ],
+    "name": "PRBMath_MulDiv_Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "x",
+        "type": "uint256"
+      }
+    ],
+    "name": "PRBMath_UD60x18_Convert_Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "UD60x18",
+        "name": "x",
+        "type": "uint256"
+      }
+    ],
+    "name": "PRBMath_UD60x18_Sqrt_Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sdivk",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "theta",
+        "type": "uint256"
+      }
+    ],
+    "name": "igPayoffInRange",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "inRangePayoffPerc",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sdivk",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "theta",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "k",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "kbound",
+        "type": "uint256"
+      }
+    ],
+    "name": "igPayoffOutRange",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "outRangePayoffPerc",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "s",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "k",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ka",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "kb",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "theta",
+        "type": "uint256"
+      }
+    ],
+    "name": "igPayoffPerc",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "igPOBull",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "igPOBear",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

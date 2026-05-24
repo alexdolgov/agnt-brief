@@ -1,0 +1,428 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "reason",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "beneficiary",
+        "type": "address"
+      }
+    ],
+    "name": "ExecutionFailed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "beneficiary",
+        "type": "address"
+      }
+    ],
+    "name": "ExecutionFailed",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "poolAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenInAddress",
+        "type": "address"
+      }
+    ],
+    "name": "_getMetadata",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "poolId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "contract IVault",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "scalingRates",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "contract IERC20[]",
+            "name": "poolTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "balances",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint8",
+            "name": "tokenInIx",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenInAmount",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "alpha",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "beta",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "c",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "s",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "lambda",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Params",
+            "name": "eclpParams",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "int256",
+                    "name": "x",
+                    "type": "int256"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "y",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct GyroECLPMath.Vector2",
+                "name": "tauAlpha",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "int256",
+                    "name": "x",
+                    "type": "int256"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "y",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct GyroECLPMath.Vector2",
+                "name": "tauBeta",
+                "type": "tuple"
+              },
+              {
+                "internalType": "int256",
+                "name": "u",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "v",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "w",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "z",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "dSq",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.DerivedParams",
+            "name": "derivedECLPParams",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "swapFeePercentage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpSupply",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct OneSidedECLPJoiner.Metadata",
+        "name": "meta",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "poolAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "beneficiary",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "poolId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "contract IVault",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "scalingRates",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "contract IERC20[]",
+            "name": "poolTokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "balances",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint8",
+            "name": "tokenInIx",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenInAmount",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "alpha",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "beta",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "c",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "s",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "lambda",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Params",
+            "name": "eclpParams",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "int256",
+                    "name": "x",
+                    "type": "int256"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "y",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct GyroECLPMath.Vector2",
+                "name": "tauAlpha",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "int256",
+                    "name": "x",
+                    "type": "int256"
+                  },
+                  {
+                    "internalType": "int256",
+                    "name": "y",
+                    "type": "int256"
+                  }
+                ],
+                "internalType": "struct GyroECLPMath.Vector2",
+                "name": "tauBeta",
+                "type": "tuple"
+              },
+              {
+                "internalType": "int256",
+                "name": "u",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "v",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "w",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "z",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "dSq",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.DerivedParams",
+            "name": "derivedECLPParams",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "swapFeePercentage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpSupply",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct OneSidedECLPJoiner.Metadata",
+        "name": "meta",
+        "type": "tuple"
+      }
+    ],
+    "name": "_joinECLPOneSided",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "poolAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenInAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenInAmountRaw",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "beneficiary",
+        "type": "address"
+      }
+    ],
+    "name": "joinECLPOneSided",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "poolAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenInAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "beneficiary",
+        "type": "address"
+      }
+    ],
+    "name": "joinECLPOneSidedCCIP",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,187 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "x",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "y",
+        "type": "uint256"
+      }
+    ],
+    "name": "PRBMath_MulDiv18_Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "x",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "y",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "denominator",
+        "type": "uint256"
+      }
+    ],
+    "name": "PRBMath_MulDiv_Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "premium",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expectedPremium",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSlippage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "tradeIsBuy",
+        "type": "bool"
+      }
+    ],
+    "name": "checkSlippage",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "ok",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "up",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "down",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Amount",
+        "name": "residualAmount",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "percentageUp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "percentageDown",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "baseTokenDecimals",
+        "type": "uint8"
+      }
+    ],
+    "name": "computeResidualPayoffs",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "payoffUp_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "payoffDown_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "tokensToSwap",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "exchangedTokens",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "swappedTokenDecimals",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "exchangeTokenDecimals",
+        "type": "uint8"
+      }
+    ],
+    "name": "getSwapPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "swapPrice",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "used",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "total",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "tokenDecimals",
+        "type": "uint8"
+      }
+    ],
+    "name": "getUtilizationRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

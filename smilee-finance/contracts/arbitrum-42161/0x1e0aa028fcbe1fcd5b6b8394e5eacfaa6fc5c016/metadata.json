@@ -1,0 +1,18 @@
+{
+  "address": "0x1e0aa028fcbe1fcd5b6b8394e5eacfaa6fc5c016",
+  "chain_id": 42161,
+  "contract_name": "IG",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 73,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:09:24.850Z"
+}

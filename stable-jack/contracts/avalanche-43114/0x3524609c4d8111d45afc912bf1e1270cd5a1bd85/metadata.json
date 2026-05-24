@@ -1,0 +1,17 @@
+{
+  "address": "0x3524609c4d8111d45afc912bf1e1270cd5a1bd85",
+  "chain_id": 43114,
+  "contract_name": "AvantOFTAdapter",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "00000000000000000000000006d47f3fb376649c3a9dafe069b3d6e35572219e0000000000000000000000001a44076050125825900e736c501f859c50fe728c000000000000000000000000a5ab0683d4f4ad107766a9fc4ddd49b5a960e661",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:13:45.050Z"
+}

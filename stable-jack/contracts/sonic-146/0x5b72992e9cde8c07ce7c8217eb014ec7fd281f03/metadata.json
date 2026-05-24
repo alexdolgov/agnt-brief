@@ -1,0 +1,17 @@
+{
+  "address": "0x5b72992e9cde8c07ce7c8217eb014ec7fd281f03",
+  "chain_id": 146,
+  "contract_name": "OSonicDripperProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0xc5685a88569dca11f343db4db50c8e0a7ddad992",
+  "fetched_at": "2026-05-24T17:13:45.839Z"
+}

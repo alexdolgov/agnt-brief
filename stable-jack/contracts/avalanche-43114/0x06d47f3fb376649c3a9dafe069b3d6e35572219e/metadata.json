@@ -1,0 +1,17 @@
+{
+  "address": "0x06d47f3fb376649c3a9dafe069b3d6e35572219e",
+  "chain_id": 43114,
+  "contract_name": "StakedAvUSDV2",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "shanghai",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "00000000000000000000000024de8771bc5ddb3362db529fc3358f2df3a0e346000000000000000000000000a5ab0683d4f4ad107766a9fc4ddd49b5a960e661000000000000000000000000a5ab0683d4f4ad107766a9fc4ddd49b5a960e661",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:13:44.083Z"
+}

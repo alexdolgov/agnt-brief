@@ -1,0 +1,17 @@
+{
+  "address": "0xbf46aef3c4c119495245e6b1911a4a961859038d",
+  "chain_id": 146,
+  "contract_name": "SonicStaking",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:20:09.688Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x455a56994df75ef70795c7a2d6a1d40534b72aeb",
+  "chain_id": 146,
+  "contract_name": "Simple Vesting Escrow",
+  "compiler_version": "vyper:0.3.10",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "GNU LGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:20:06.639Z"
+}

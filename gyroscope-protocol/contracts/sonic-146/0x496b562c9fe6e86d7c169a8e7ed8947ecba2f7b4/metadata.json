@@ -1,0 +1,17 @@
+{
+  "address": "0x496b562c9fe6e86d7c169a8e7ed8947ecba2f7b4",
+  "chain_id": 146,
+  "contract_name": "MaBeetsBoost",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "000000000000000000000000973670ce19594f857a7cd85ee834c7a74a9416840000000000000000000000006daeb8bb06a7cf3475236c6c567029d333455e380000000000000000000000000000000000000000000000000000000000001388000000000000000000000000c5e0250037195850e4d987ca25d6aba68ef5fee80000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:20:07.657Z"
+}

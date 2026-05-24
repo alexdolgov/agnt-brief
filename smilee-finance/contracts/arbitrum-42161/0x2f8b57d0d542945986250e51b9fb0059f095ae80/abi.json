@@ -1,0 +1,146 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "safe",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "proposed",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "validFrom",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct TimeLockedBool",
+        "name": "tl",
+        "type": "tuple"
+      }
+    ],
+    "name": "get",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "safe",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "proposed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "validFrom",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct TimeLockedUInt",
+        "name": "tl",
+        "type": "tuple"
+      }
+    ],
+    "name": "get",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "safe",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "proposed",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "validFrom",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct TimeLockedAddress",
+        "name": "tl",
+        "type": "tuple"
+      }
+    ],
+    "name": "get",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes",
+            "name": "safe",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "proposed",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "validFrom",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct TimeLockedBytes",
+        "name": "tl",
+        "type": "tuple"
+      }
+    ],
+    "name": "get",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

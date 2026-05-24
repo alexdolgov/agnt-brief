@@ -1,0 +1,17 @@
+{
+  "address": "0x07c9707cb86b236cc8cce3f6de41d80baac7467c",
+  "chain_id": 42161,
+  "contract_name": "FinanceIGPayoff",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:09:24.730Z"
+}

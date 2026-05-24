@@ -1,0 +1,17 @@
+{
+  "address": "0x14f6fbd0195db6baf933bc49e5dd6b805c5f0e1a",
+  "chain_id": 146,
+  "contract_name": "VeArtProxy",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:13:45.392Z"
+}

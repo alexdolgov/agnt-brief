@@ -1,0 +1,757 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "balances",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "tokenInIsToken0",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "alpha",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "beta",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "c",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "s",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lambda",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.Params",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauAlpha",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauBeta",
+            "type": "tuple"
+          },
+          {
+            "internalType": "int256",
+            "name": "u",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "v",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "w",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "z",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "dSq",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.DerivedParams",
+        "name": "derived",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "x",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "y",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.Vector2",
+        "name": "invariant",
+        "type": "tuple"
+      }
+    ],
+    "name": "calcInGivenOut",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "balances",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "tokenInIsToken0",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "alpha",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "beta",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "c",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "s",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lambda",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.Params",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauAlpha",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauBeta",
+            "type": "tuple"
+          },
+          {
+            "internalType": "int256",
+            "name": "u",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "v",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "w",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "z",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "dSq",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.DerivedParams",
+        "name": "derived",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "x",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "y",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.Vector2",
+        "name": "invariant",
+        "type": "tuple"
+      }
+    ],
+    "name": "calcOutGivenIn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "balances",
+        "type": "uint256[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "alpha",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "beta",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "c",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "s",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lambda",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.Params",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauAlpha",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauBeta",
+            "type": "tuple"
+          },
+          {
+            "internalType": "int256",
+            "name": "u",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "v",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "w",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "z",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "dSq",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.DerivedParams",
+        "name": "derived",
+        "type": "tuple"
+      },
+      {
+        "internalType": "int256",
+        "name": "invariant",
+        "type": "int256"
+      }
+    ],
+    "name": "calcSpotPrice0in1",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "px",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "balances",
+        "type": "uint256[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "alpha",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "beta",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "c",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "s",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lambda",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.Params",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauAlpha",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauBeta",
+            "type": "tuple"
+          },
+          {
+            "internalType": "int256",
+            "name": "u",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "v",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "w",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "z",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "dSq",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.DerivedParams",
+        "name": "derived",
+        "type": "tuple"
+      }
+    ],
+    "name": "calculateInvariant",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "uinvariant",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "balances",
+        "type": "uint256[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "alpha",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "beta",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "c",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "s",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lambda",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.Params",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauAlpha",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauBeta",
+            "type": "tuple"
+          },
+          {
+            "internalType": "int256",
+            "name": "u",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "v",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "w",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "z",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "dSq",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.DerivedParams",
+        "name": "derived",
+        "type": "tuple"
+      }
+    ],
+    "name": "calculateInvariantWithError",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      },
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "alpha",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "beta",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "c",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "s",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "lambda",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.Params",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauAlpha",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "x",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "y",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct GyroECLPMath.Vector2",
+            "name": "tauBeta",
+            "type": "tuple"
+          },
+          {
+            "internalType": "int256",
+            "name": "u",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "v",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "w",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "z",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "dSq",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct GyroECLPMath.DerivedParams",
+        "name": "derived",
+        "type": "tuple"
+      }
+    ],
+    "name": "validateDerivedParamsLimits",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

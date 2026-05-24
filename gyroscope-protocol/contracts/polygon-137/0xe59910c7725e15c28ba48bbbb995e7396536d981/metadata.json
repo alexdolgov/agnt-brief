@@ -1,0 +1,17 @@
+{
+  "address": "0xe59910c7725e15c28ba48bbbb995e7396536d981",
+  "chain_id": 137,
+  "contract_name": "GyroThreePoolFactory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 52,
+  "constructor_arguments": "000000000000000000000000ba12222222228d8ba445958a75a0704d566bf2c8000000000000000000000000fdc2e9e03f515804744a40d0f8d25c16e93fbe67",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:19:58.524Z"
+}

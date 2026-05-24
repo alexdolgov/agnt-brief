@@ -1,0 +1,18 @@
+{
+  "address": "0x01a0ce0c6351a9b39b2c3c43d5175a11336eefd8",
+  "chain_id": 42161,
+  "contract_name": "WadTime",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:09:24.094Z"
+}

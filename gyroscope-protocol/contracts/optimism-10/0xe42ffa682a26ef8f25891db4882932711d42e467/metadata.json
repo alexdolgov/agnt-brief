@@ -1,0 +1,18 @@
+{
+  "address": "0xe42ffa682a26ef8f25891db4882932711d42e467",
+  "chain_id": 10,
+  "contract_name": "CircuitBreakerLib",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:20:07.025Z"
+}

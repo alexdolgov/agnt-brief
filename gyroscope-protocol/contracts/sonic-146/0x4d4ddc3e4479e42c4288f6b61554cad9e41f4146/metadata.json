@@ -1,0 +1,17 @@
+{
+  "address": "0x4d4ddc3e4479e42c4288f6b61554cad9e41f4146",
+  "chain_id": 146,
+  "contract_name": "ProtocolFeePercentagesProvider",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "000000000000000000000000ba12222222228d8ba445958a75a0704d566bf2c800000000000000000000000000000000000000000000000006f05b59d3b2000000000000000000000000000000000000000000000000000006f05b59d3b20000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:20:07.851Z"
+}

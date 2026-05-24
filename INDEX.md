@@ -144,6 +144,7 @@
 | [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 0 | 124 | 2026-05-23 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [guru-network-dao](./guru-network-dao/) | $2.4M | 0.0% | ? | active | 0 | 54 | 2026-05-24 |
+| [gyroscope-protocol](./gyroscope-protocol/) | $44.6 | 21.3% | ? | dead | 10 | 233 | 2026-05-24 |
 | [h2-finance](./h2-finance/) | $3.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [hakka-finance](./hakka-finance/) | $1.7M | 10.7% | $1.7M | active | 7 | 103 | 2026-05-23 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -228,6 +229,7 @@
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-05-24 |
 | [mystic-finance](./mystic-finance/) | $5.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
+| [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 73 | 2026-05-23 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |
 | [neutral-trade](./neutral-trade/) | $18.8M | 0.0% | ? | unknown | 3 | 0 | 2026-05-22 |
@@ -301,7 +303,9 @@
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-05-23 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 0 | 2 | 2026-05-22 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-05-23 |
+| [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-05-24 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
+| [smilee-finance](./smilee-finance/) | $1.8M | 4.3% | ? | unknown | 3 | 186 | 2026-05-24 |
 | [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 108 | 2026-05-24 |
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
 | [solayer](./solayer/) | $1.9M | 0.0% | $1.9M | declining | 5 | 935 | 2026-05-22 |
@@ -315,6 +319,7 @@
 | [splash-protocol](./splash-protocol/) | $1.9M | 0.0% | $1.9M | active | 0 | 904 | 2026-05-23 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
 | [sport.fun](./sport.fun/) | $3.7M | 0.0% | ? | active | 0 | 1 | 2026-05-24 |
+| [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-05-24 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-05-23 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-22 |

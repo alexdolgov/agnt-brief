@@ -1,0 +1,17 @@
+{
+  "address": "0x0966cae7338518961c2d35493d3eb481a75bb86b",
+  "chain_id": 146,
+  "contract_name": "VotingEscrow",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "0000000000000000000000004d85ba8c3918359c78ed09581e5bc7578ba932ba00000000000000000000000047bf4c2f17c547a3d9052258b91919d09b15d234",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:13:44.251Z"
+}

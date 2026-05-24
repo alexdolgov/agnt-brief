@@ -1,0 +1,17 @@
+{
+  "address": "0x18708a93ad916fcafa4ba365cdc723fcd3d8c65c",
+  "chain_id": 146,
+  "contract_name": "Voter",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "000000000000000000000000a48260f762fe533a6e32cb1cac8f411d19bfb9870000000000000000000000001ec2b9a77a7226acd457954820197f89b3e3a578000000000000000000000000455d5f11fea33a8fa9d3e285930b478b6bf85265",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T17:13:45.816Z"
+}

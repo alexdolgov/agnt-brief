@@ -1,0 +1,1160 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_reliquary",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_protocolFeeBips",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_protocolFeeRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maBeetsPoolId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "BoostToLevelTooLow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BuyerAmountInvariantCheck",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BuyerRelicNotBoostedToDesiredLevel",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BuyerRelicTooLargeToBeBoosted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FeeTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FeeTooLow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MaxSizeCannotBeZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoAddressZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOfferOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotRelicOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OfferAlreadyActive",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OfferNotActive",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OfferNotOrphaned",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OriginalBuyerRelicNotEmpty",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ProtocolFeeTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReentrancyGuardReentrantCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RelicFullyMatured",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RelicNotApproved",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RelicNotFromMaBeetsPool",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RelicNotFullyMatureAfterSplit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RelicNotFullyMatured",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RelicTooSmall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RelicsNotFromSamePool",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SellerAmountInvariantCheck",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SellerNoLongerHoldsRelic",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SkipTooLarge",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WouldDecreaseSellersMaturity",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "seller",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "buyer",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "sellerRelicId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "buyerRelicId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newBuyerRelicId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "offerIdx",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "sellerFeeAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "protocolFeeAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "OfferAccepted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "seller",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "relicId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "offerIdx",
+        "type": "uint256"
+      }
+    ],
+    "name": "OfferCancelled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "seller",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "relicId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "offerIdx",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feePerLevelBips",
+        "type": "uint256"
+      }
+    ],
+    "name": "OfferCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "BIPS_DENOMINATOR",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_FEE_PER_LEVEL_BIPS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_PROTOCOL_FEE_BIPS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MIN_FEE_PER_LEVEL_BIPS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MIN_RELIC_SIZE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sellerRelicId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyerRelicId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "boostToLevel",
+        "type": "uint256"
+      }
+    ],
+    "name": "acceptOffer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "newBuyerRelicId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "sellerRelicId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyerRelicId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "boostToLevel",
+        "type": "uint256"
+      }
+    ],
+    "name": "canRelicBeBoosted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "relicId",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelOffer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "relicId",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelOrphanOffer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "relicId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feePerLevelBips",
+        "type": "uint256"
+      }
+    ],
+    "name": "createOffer",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "skip",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSize",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "reverseOrder",
+        "type": "bool"
+      }
+    ],
+    "name": "getAcceptedOfferRecords",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "idx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "buyer",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyerRelicId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "newBuyerRelicId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "seller",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellerRelicId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feePerLevelBips",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountAfterFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellerFeeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protocolFeeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "numLevelsBoosted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MaBeetsBoost.AcceptedOfferRecord[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAcceptedOfferRecordsCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "relicId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getOffer",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "idx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "seller",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feePerLevelBips",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "active",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOrphan",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "excessMaturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicSize",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicLevel",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicEntry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "acceptedOffersCount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MaBeetsBoost.OfferWithMetadata",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "offerIdx",
+        "type": "uint256"
+      }
+    ],
+    "name": "getOfferByIdx",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "idx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "seller",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feePerLevelBips",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "active",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOrphan",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "excessMaturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicSize",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicLevel",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicEntry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "acceptedOffersCount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MaBeetsBoost.OfferWithMetadata",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getOfferCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "skip",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSize",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "reverseOrder",
+        "type": "bool"
+      }
+    ],
+    "name": "getOffers",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "idx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "seller",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feePerLevelBips",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "active",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isOrphan",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "excessMaturity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicSize",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicLevel",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "relicEntry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "acceptedOffersCount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MaBeetsBoost.OfferWithMetadata[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "skip",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSize",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "reverseOrder",
+        "type": "bool"
+      }
+    ],
+    "name": "getUserAcceptedOfferRecords",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "idx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "buyer",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "buyerRelicId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "newBuyerRelicId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "seller",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellerRelicId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feePerLevelBips",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountAfterFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellerFeeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "protocolFeeAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "numLevelsBoosted",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MaBeetsBoost.AcceptedOfferRecord[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserAcceptedOfferRecordsCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maBeetsMaxMaturityLevel",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maBeetsPoolId",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maBeetsPoolToken",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "onERC721Received",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocolFeeBips",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "protocolFeeRecipient",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "reliquary",
+    "outputs": [
+      {
+        "internalType": "contract IReliquary",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newProtocolFeeBips",
+        "type": "uint256"
+      }
+    ],
+    "name": "setProtocolFeeBips",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newProtocolFeeRecipient",
+        "type": "address"
+      }
+    ],
+    "name": "setProtocolFeeRecipient",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

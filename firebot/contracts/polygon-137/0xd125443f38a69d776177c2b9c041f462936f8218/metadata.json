@@ -1,0 +1,18 @@
+{
+  "address": "0xd125443f38a69d776177c2b9c041f462936f8218",
+  "chain_id": 137,
+  "contract_name": "FireBotToken",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:51:02.398Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x02e219d7b59c43cb012bb87dcab86172ff31dd86",
+  "chain_id": 137,
+  "contract_name": "firebot_market",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:50:59.607Z"
+}

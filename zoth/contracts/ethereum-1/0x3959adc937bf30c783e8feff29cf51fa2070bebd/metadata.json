@@ -1,0 +1,18 @@
+{
+  "address": "0x3959adc937bf30c783e8feff29cf51fa2070bebd",
+  "chain_id": 1,
+  "contract_name": "ZeUSD",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:57:35.542Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x128eeae767040c06211e1cb823f90fbf2ade3754",
+  "chain_id": 1,
+  "contract_name": "USD0PPSubVaultUpgradeable",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:57:34.274Z"
+}

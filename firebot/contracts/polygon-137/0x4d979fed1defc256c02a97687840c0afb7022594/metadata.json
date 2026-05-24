@@ -1,0 +1,17 @@
+{
+  "address": "0x4d979fed1defc256c02a97687840c0afb7022594",
+  "chain_id": 137,
+  "contract_name": "FireVaultFBXV3",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:51:00.860Z"
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IMaverickV2VotingEscrowFactory",
+        "name": "_veFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IMaverickV2RewardFactory",
+        "name": "_rewardFactory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "baseToken",
+        "type": "address"
+      }
+    ],
+    "name": "VotingEscrowTokenDoesNotExists",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract IERC20",
+        "name": "baseToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract IMaverickV2VotingEscrow",
+        "name": "veToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract IMaverickV2IncentiveMatcher",
+        "name": "incentiveMatcher",
+        "type": "address"
+      }
+    ],
+    "name": "CreateIncentiveMatcher",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "baseToken",
+        "type": "address"
+      }
+    ],
+    "name": "createIncentiveMatcher",
+    "outputs": [
+      {
+        "internalType": "contract IMaverickV2VotingEscrow",
+        "name": "veToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IMaverickV2IncentiveMatcher",
+        "name": "incentiveMatcher",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IMaverickV2VotingEscrow",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "incentiveMatcherForVe",
+    "outputs": [
+      {
+        "internalType": "contract IMaverickV2IncentiveMatcher",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "incentiveMatcherParameters",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "baseToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IMaverickV2VotingEscrow",
+        "name": "veToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IMaverickV2RewardFactory",
+        "name": "factory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "startIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "endIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "incentiveMatchers",
+    "outputs": [
+      {
+        "internalType": "contract IMaverickV2IncentiveMatcher[]",
+        "name": "returnElements",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "incentiveMatchersCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "count",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IMaverickV2IncentiveMatcher",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isFactoryIncentiveMatcher",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rewardFactory",
+    "outputs": [
+      {
+        "internalType": "contract IMaverickV2RewardFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "veFactory",
+    "outputs": [
+      {
+        "internalType": "contract IMaverickV2VotingEscrowFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

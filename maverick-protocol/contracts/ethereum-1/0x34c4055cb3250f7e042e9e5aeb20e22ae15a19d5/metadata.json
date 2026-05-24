@@ -1,0 +1,18 @@
+{
+  "address": "0x34c4055cb3250f7e042e9e5aeb20e22ae15a19d5",
+  "chain_id": 1,
+  "contract_name": "PoolPositionBaseDeployerSlim",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "london",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:58:49.545Z"
+}

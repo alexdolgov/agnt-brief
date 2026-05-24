@@ -1,0 +1,18 @@
+{
+  "address": "0xd7fe341fce9f3882d57eba5692221877830a5ddd",
+  "chain_id": 56,
+  "contract_name": "BondingCalculator",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:49:16.932Z"
+}

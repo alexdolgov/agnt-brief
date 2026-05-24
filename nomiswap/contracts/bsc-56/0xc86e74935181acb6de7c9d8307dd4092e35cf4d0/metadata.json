@@ -1,0 +1,18 @@
+{
+  "address": "0xc86e74935181acb6de7c9d8307dd4092e35cf4d0",
+  "chain_id": 56,
+  "contract_name": "MintSchedule",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "BSD-4-Clause, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T23:24:23.422Z"
+}

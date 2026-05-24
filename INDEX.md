@@ -64,6 +64,7 @@
 | [bonzo-finance](./bonzo-finance/) | $22.6M | 0.0% | ? | unknown | 4 | 0 | 2026-05-22 |
 | [boros](./boros/) | $10.4M | 100.0% | ? | active | 5 | 2 | 2026-05-23 |
 | [botto](./botto/) | $4.3M | 0.0% | ? | unknown | 3 | 19 | 2026-05-23 |
+| [bounce.tech](./bounce.tech/) | $1.4M | 0.0% | ? | unknown | 7 | 0 | 2026-05-24 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-05-23 |
 | [bracket-protocol](./bracket-protocol/) | $923.7M | 6.2% | $920.6M | active | 5 | 182 | 2026-05-24 |
 | [bridgers](./bridgers/) | $71.9M | 0.0% | $71.9M | active | 1 | 9 | 2026-05-24 |
@@ -266,6 +267,7 @@
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |
 | [neutral-trade](./neutral-trade/) | $18.8M | 0.0% | ? | unknown | 3 | 0 | 2026-05-22 |
 | [nftx](./nftx/) | $6.3M | 9.6% | $6.3M | declining | 5 | 267 | 2026-05-24 |
+| [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |
 | [nonkyc](./nonkyc/) | $5.8M | 0.0% | ? | active | 0 | 4 | 2026-05-23 |
 | [nostra](./nostra/) | $7.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [notional](./notional/) | $1.2M | 19.2% | $755.7K | dead | 7 | 79 | 2026-05-24 |
@@ -306,6 +308,7 @@
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
 | [pumpspace](./pumpspace/) | $4.0M | 28.6% | ? | active | 4 | 763 | 2026-05-23 |
 | [punks-terminal](./punks-terminal/) | $1.7M | 0.0% | ? | unknown | 0 | 1 | 2026-05-24 |
+| [puzzleswaporg](./puzzleswaporg/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-24 |
 | [rain](./rain/) | $3.4M | 0.0% | ? | active | 1 | 28 | 2026-05-24 |
 | [rainbow-bridge](./rainbow-bridge/) | $2.1M | 0.0% | ? | dead | 0 | 2 | 2026-05-24 |
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-05-24 |

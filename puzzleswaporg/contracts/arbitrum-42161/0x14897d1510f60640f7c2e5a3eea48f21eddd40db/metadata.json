@@ -1,0 +1,18 @@
+{
+  "address": "0x14897d1510f60640f7c2e5a3eea48f21eddd40db",
+  "chain_id": 42161,
+  "contract_name": "Distributor",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GNU GPLv3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T23:32:54.696Z"
+}

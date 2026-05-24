@@ -1,0 +1,18 @@
+{
+  "address": "0xc935285b0d88069305431dace0c3c01d7e793d84",
+  "chain_id": 1,
+  "contract_name": "TokenPool",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T23:32:54.862Z"
+}

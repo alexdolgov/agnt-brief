@@ -1,0 +1,17 @@
+{
+  "address": "0x2d012edbadc37edc2bc62791b666f9193fdf5a55",
+  "chain_id": 534352,
+  "contract_name": "Morpho",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000c8549cb489e4c9fee1ba2ae315b9fc04213efbbb",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T18:19:18.693Z"
+}

@@ -1,0 +1,1861 @@
+{
+  "schema_version": "2.0",
+  "project_key": "stcelo",
+  "generated_at": "2026-05-24T18:21:34.811Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "stcelo",
+    "tier": 0,
+    "peak_tvl": 3688204,
+    "peak_date": "2023-07-04T00:00:00.000Z",
+    "tvl_30d_ago": 2289453,
+    "tvl_90d_ago": 1437213,
+    "tvl_current": 1638822,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 401677,
+    "change_30d_pct": -28.41862226479425,
+    "change_90d_pct": 14.027774588735282,
+    "days_since_peak": 1055,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 55.56585264806394
+  },
+  "summary": {
+    "total_contracts": 19,
+    "total_addresses": 140,
+    "unique_implementations": 19,
+    "total_deployments": 140,
+    "audited_contracts": 5,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 5,
+    "contracts_verified_unaudited": 5,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 9,
+    "coverage_pct": 50,
+    "total_audits": 2,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 1701436.55613,
+    "tvl_usd": 1635081.823928974,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "celo": 1635081.82
+    },
+    "asd_usd": null,
+    "website_url": "https://stcelo.xyz/",
+    "chains": [
+      "celo"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2024-04",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 2,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "stCELO is a liquid staking protocol on Celo that allows users to stake CELO and receive a liquid staking token (stCELO) representing their staked position, while earning staking rewards. It also provides a rebasing variant (rstCELO) that automatically compounds rewards.",
+    "relationship_narrative": "The stCELO family relies on the Account family for user account management and staking logic, with both families using ERC1967Proxy for upgradeability. The Manager contract governs the stCELO system, while StakedCelo and RebasedStakedCelo tokens represent user stakes.",
+    "product_family_count": 2
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x085a0d7612f35a94bd72e9ce2ff8bc86727f21ca",
+      "name": "StakedCelo",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 1635081.823928974,
+      "is_proxy": true,
+      "impl_address": "0x95cc0c75015059dd659db9b528101c5ba91c4e49",
+      "impl_name": "StakedCelo",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x085a0d7612f35a94bd72e9ce2ff8bc86727f21ca",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x0b2f88ce833ecfc84a006a4c6db7ea23d565f75b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x1b4b48453e3a64eb55d1d30f0f7fa9e2fe32c73d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x2c2e2bb4ce3264fc2f70161ba72340b9ee4edc3a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x4387a066e282673f459feeeda3087d29ca4c6429",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x44c2fe995417b528a861e5428dae7358d5f0271f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x6e17cf4e1a21125d0ce9a1ce4a284ad7bf783b67",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x809b7ebabb2e4e1e4d1104b3b361b898ae632426",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x9122855efe96f0f53eda66602ebea000733ddcfc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x922333bdcb665e91eef9508de56ab2a3c2794692",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x95cc0c75015059dd659db9b528101c5ba91c4e49",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xa97be82bee72a809fe4b3ad158535879028babcb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xafddbc2ce90c66a055e91ccca7bbd08909734a1d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xb59b1c36e4466f19c84dd2aeccace718b32c4b61",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xc668583dcbdc9ae6fa3ce46462758188adfdfc24",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1635081.823928974,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2983"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x07550767a1604af3e504749e284792ff30fb4a53",
+      "name": "Account",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xb82dd2d0dd04bf689992cf9006ba2201b8f0bc81",
+      "impl_name": "Account",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x07550767a1604af3e504749e284792ff30fb4a53",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x0a0b728d00f0e3a3d8c6849e76dc98b1d39f3ade",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x13d01fc33da51b1b63bb3bbe2af2ae91b5a419c9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x1edec9c43660ad99040daac4c7451255805d654a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x250c1b903e0a293807d09a6c9f65a35e5ef380d2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x2e1193a4219c5539f8bd5fd1c6e765158caf278c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x4c8eedd889dcc3e7fd15b909d040d1d4e444a1bc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x5b4a33bec1d5bd90f450139cf8d9073566f341a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x694ab80a18c0c0e72e4219c397f23cc99f003cfb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x6a519cd5ffa127dd20406ab4d8b11e91f13c577c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x6bbd91b458b5f687e1090966925867b956ae298d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x95b8f3068ae248b062574a1d977c4503dd6ba914",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xad3df8fc103fd3d91d963dc719d059df2918d52e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xb82dd2d0dd04bf689992cf9006ba2201b8f0bc81",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xc2fd564028536df9fe87de36bbab6ae26b33e3d0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xc667602b4067a759908cd747706f55c77779face",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2982",
+        "audit-2983"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x2f9ba7121ea67436aa7910080b4b68efee539e2d",
+      "name": "DefaultStrategy",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x2f9ba7121ea67436aa7910080b4b68efee539e2d",
+      "impl_name": "DefaultStrategy",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x2f9ba7121ea67436aa7910080b4b68efee539e2d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x5231221d0e45768d6e0315ca2e9eccc1ef466f09",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x5bd084845f8ce18384d361bf8f4742ead18eed3d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x820f7aac0eb929aab930eb0c5d8e286a6671184d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xd1825d874cb920b3a0545aa73f02116a5678c317",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xd54bc0ab3b363a0e34767581daab4a9db1684a09",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xd718b64bc1facbd0087d827c0a3ea144445f5745",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xf0b67ab98dd5725565cf96496b5eda455622f7ff",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xf676df6eb86cca235e2ee67245d2d7ac0f3c3839",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x0239b96d10a434a56cc9e09383077a0490cf9398",
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "stCELO",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x78b405d3a6af7a1f17b74fcea51934f4ee46f38e",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x0239b96d10a434a56cc9e09383077a0490cf9398",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x3a3ed74b1cc543d5eb323f70ac2f19977a0ea088",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x4aad04d41fd7fd495503731c5a2579e19054c432",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x8bd8a8055b4c64753047721f9abd2a82bdd01c89",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xaf37a82d47035ef6d42a6e5588c1e5970b1d33f5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xb88af6eac9cd146d8b03b66708ef76bebd937871",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x004377e7c1c68b97c2e00943b426ba172ff476eb",
+      "name": "GroupHealth",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf8bf1b688a975f12f61f877dd146f03ec8beb878",
+      "impl_name": "GroupHealth",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x004377e7c1c68b97c2e00943b426ba172ff476eb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x073bb388eeea656e056c8750494cd0bc460985d9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x140b36ffc554d174fbf1b436c50d5409bdcecdcf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x193df9d86435e2ef4c75467d0d38c2cf00d556ad",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x205f4cb670fdbcbda1c14d81fdacd7092bbc64e1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x2f59796ae74ed01fcf6fbcf79ec7013a571a2f18",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x4443a491f63fd212fd9932c1e27fe60f586ac578",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x6f46060c2f760eaba09d972efa74ed6aae09ff3e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x9c6c01488dc9c38dd2dc1a6bd7b6b66c70c4cc57",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xbc7c8e2065e7dd573eaa189d932b09c50343051c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xf6bccbba274e16822271315fdd724c7aafa94220",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xf8bf1b688a975f12f61f877dd146f03ec8beb878",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x08a2121c9c143b9b06ffa27269d25af96c5e770d",
+      "name": "Manager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xacd0ad376c5426abf0f81353c227d7512340cb43",
+      "impl_name": "Manager",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x08a2121c9c143b9b06ffa27269d25af96c5e770d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x18f51d47f7cdc9feb8f67cf95d856565584f3fcf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x25b7f372d51e785826fb294f9458892af5bb807f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x2cb8b2e0915629c8999e739932f6a6642600e9af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x2f05b88e89b44e4b57b4ba652cadfa414f31ba0b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x43e55a252d22c01d114ad325fc0a62877346fb58",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x443579fcb9518529d358e0a10e9de42e92de5af7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x534a0b843817679928625063219324902291648b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x548fab1b071dbe542617294ec73d478134837329",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x70b1bde39a387444f5790ec8052ff244e7c72e62",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x78b405d3a6af7a1f17b74fcea51934f4ee46f38e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x954bc8b6afe0e7109ec61b204be01d4bf8c5e5af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xa60fcf6fd40cadca90359bc94ca21bf3b97c70f5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xa7ec4a31ac7f5cec4340bc39d04244a1cba6eb74",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xacd0ad376c5426abf0f81353c227d7512340cb43",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xb3ac6d1c1289ce211cc8197b2e3d1ef446d10774",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xb6316a0241afe66914b56b6242b989ad1e3bd394",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xc9cd085d12e12274ad099b5ece5a744203c6c674",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xe12f7e5c2300b7f79fd8ff7e44b10e66e4dd0312",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xe923a9ee94e006bc0763d3a62d3dcf167cfda387",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xf6aeb1050d9e8151d4a0a5e7144f819f01e13657",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xfea79f2563ffd79f8ef2af190b9bbd75fcc69625",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2983"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x13f1f8706710069bc55b71e320a3fb2d3775c27e",
+      "name": "MultiSig",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x8652ceb3e0edc477f4d0750f2fd5c1e0acae782a",
+      "impl_name": "MultiSig",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x13f1f8706710069bc55b71e320a3fb2d3775c27e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x1bb7897a1b023a74d3a439476c52495a2927af07",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x2d952d7a21fbce9d52e62973303908e8fc124cd0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x2e37af02023644a1203d9c3daf96ecd635e9e4df",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x55e953bffe423ed7950a392db01f5cdda2b36128",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x5aa1c651b864b42c6c6acd1e8a4ee807e4e8f2e3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x78b50bd80ecbd9f44b616d89b835ed8982220cca",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x78daa21fce4d30e74ff745da3204764a0ad40179",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x846b04993f65ea397838568d83b4b956f2d6013f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x85a9aa5067dff9745fc32d741cb144bd8c64f3f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x8652ceb3e0edc477f4d0750f2fd5c1e0acae782a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x88d1ae61a25c73e2adffd7b3b58477f42cd48c24",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x8bd50c8df89840ca8e78c32a730076397933f818",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x98c93ee03873c472d267a6844a4d5ccab714dc67",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xaab51fc8143d943d74885413064d707fe2d47145",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xb05860dd77620793d549fa0dec4989a54e906732",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xb78ab3f89c97c0291b747c3ba8814b5aa47aecf1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xda3eb100c32cd9387a834f9b9fee340300eb2aa8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xe57f6f8620fce79c723ed9da69f7e3dd7c07c0c4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xf385924febb37f96c0a1d609f3c40d71d7128d39",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xfb197ea7d72f106a107ddd4d50ba0439d3b374ee",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x0251c3224f15e875fe6fbca04c0f9117366cc806",
+      "name": "RebasedStakedCelo",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6b8bb0aca4bde7e844dfa6f6bc90ad0a3d2352aa",
+      "impl_name": "RebasedStakedCelo",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x0251c3224f15e875fe6fbca04c0f9117366cc806",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x52bb5091b2e2319300b4db33b63d715c89a195c0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x58fc5556dfb1a1b23e32b395f6522aa86c14713c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x6b8bb0aca4bde7e844dfa6f6bc90ad0a3d2352aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x737bce423d87b8bccb9e2b3b483082a5fd3b2fdf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x80ef43888b64e4bd60b0e8e28e99716e418f5ac4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x8c89e7ceb22300c43c9118f317d33e9be767c594",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x97b5ee93630ac26b581b1c4add966af8f95b795c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xad3317aecdbc6a92271d9d43c0d157c6404eba11",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xdc5762753043327d74e0a538199c1488fc1f44cf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xdfc2daf5ff1bc48ec4518436a015da416745a67c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x003a4c7fda849eeda551f5c995729335d70f54aa",
+      "name": "SpecificGroupStrategy",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x9dd19aa3c4ef6ebd253baf98cb27ea7c792cc4e8",
+      "impl_name": "SpecificGroupStrategy",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x003a4c7fda849eeda551f5c995729335d70f54aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x01a767b740ea021731f0dcbb3992d3c1d0c8b926",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x365e623c568f0e8ee6aa93a5ac42fda9daa58d23",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x52a1d5d90450567bce39fbe3fcabb9a6be34a1f0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x54c819e39fde40aa8fcf1244589ec5aebf32999a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x77744692a673ef93370e996aec1dd04d10fed190",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x9dd19aa3c4ef6ebd253baf98cb27ea7c792cc4e8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xe11359c9cf7256d6791fe0cc7e80379094a71c2f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xee0ba5940b51eb8c7f8ec7f97e8ca87d082055a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xf1c4a8d18229d4dcffa2a5f90d5053a1fd21a947",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2982"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x094ee251965823285fd35d70175225cf5f520d67",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x094ee251965823285fd35d70175225cf5f520d67",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x1cf4f97705f812a18830d5be60b8cdfc3543ec90",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x1cf4f97705f812a18830d5be60b8cdfc3543ec90",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x1f0e8b1f8d39c1bf81311b4bd86337f15bd32cea",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x1f0e8b1f8d39c1bf81311b4bd86337f15bd32cea",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x48b505f1c5b7300de070da9c85324272fc65f187",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x48b505f1c5b7300de070da9c85324272fc65f187",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x63af253c645ca35a4a2b35aab30c611abeb3e40a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x63af253c645ca35a4a2b35aab30c611abeb3e40a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x8897ecd44b98a220dbc1a19e668796b123a27f57",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x8897ecd44b98a220dbc1a19e668796b123a27f57",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0xacf9d7ee602195a87cc4e86cf00186361a045d15",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xacf9d7ee602195a87cc4e86cf00186361a045d15",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0xc053ca07fb7003fd9594154afc1a15573e407207",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xc053ca07fb7003fd9594154afc1a15573e407207",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0xd3188fefca5b9f385caedc0bad67960a3f6f4c69",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xd3188fefca5b9f385caedc0bad67960a3f6f4c69",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x3c6e9000c449d15e584bc1ab98e9aa14a5fcce0f",
+      "name": "Vote",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x3c6e9000c449d15e584bc1ab98e9aa14a5fcce0f",
+      "impl_name": "Vote",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x3c6e9000c449d15e584bc1ab98e9aa14a5fcce0f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x54496eb9b1ec14bf718b5de11f269b23063f83bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x655f0ac07c850412e6499670fdb9cef54c3c70fc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x681db4da2d4d71181657d0c05c1d7e8030f6cc3e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x9760e0ad8ad961dc95a98a8dcdba71870ae7a3d3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xbb4e49d75045803ab76ae8eee2916f0c712e65bf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xcc31206ac415be3396f2df2040495b4dda0237b8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xda30d1f96c17fe7919fc12ea672915c2e0b9ab8e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xfdffa56d70a458777ad1f34e0c5c6ef5de66a28f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2982"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2982,
+      "audit_key": "audit-2982",
+      "report_name": "Celo-staking-audit-mar24(Public).pdf",
+      "report_url": "https://github.com/celo-org/staked-celo/blob/master/audit/Celo-staking-audit-mar24(Public).pdf",
+      "auditor": "Unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Account",
+        "SpecificGroupStrategy",
+        "Vote"
+      ],
+      "matched_contracts": 35,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2983,
+      "audit_key": "audit-2983",
+      "report_name": "FTI_audit_stCELO.pdf",
+      "report_url": "https://github.com/celo-org/staked-celo/blob/master/audit/FTI_audit_stCELO.pdf",
+      "auditor": "FTI",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Account",
+        "Managed",
+        "Manager",
+        "RebasedCelo",
+        "StakedCelo"
+      ],
+      "matched_contracts": 53,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "FTI",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 30,
+      "latest_audit": "2022-05"
+    },
+    {
+      "auditor": "Unknown",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 30,
+      "latest_audit": "2024-04"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x2f9ba7121ea67436aa7910080b4b68efee539e2d",
+      "name": "DefaultStrategy",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 7,
+    "upstream": 0,
+    "standard_library": 5,
+    "needs_review": 7
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 88
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x08a2121c9c143b9b06ffa27269d25af96c5e770d",
+  "chain_id": 42220,
+  "contract_name": "Manager",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "LGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T18:21:35.804Z"
+}

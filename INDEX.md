@@ -128,6 +128,7 @@
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | unknown | 2 | 58 | 2026-05-23 |
 | [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-05-24 |
 | [eventum-bridge](./eventum-bridge/) | $1.7M | 2.1% | $1.7M | active | 2 | 74 | 2026-05-24 |
+| [everrise](./everrise/) | $23.4M | 0.0% | $23.4M | declining | 2 | 258 | 2026-05-24 |
 | [exmo](./exmo/) | $2.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-05-23 |
@@ -221,6 +222,7 @@
 | [looping-collective](./looping-collective/) | $11.8M | 7.7% | $11.8M | active | 13 | 14 | 2026-05-22 |
 | [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 0 | 145 | 2026-05-23 |
 | [lumenswap](./lumenswap/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 904 | 2026-05-23 |
+| [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-05-24 |
 | [mangrove](./mangrove/) | $4.3M | 24.4% | ? | active | 8 | 68 | 2026-05-23 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-05-23 |
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.2M | 0.0% | ? | sunsetting | 0 | 112 | 2026-05-23 |
@@ -250,6 +252,7 @@
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-05-24 |
 | [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 73 | 2026-05-23 |
+| [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | dead | 0 | 66 | 2026-05-24 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |
 | [neutral-trade](./neutral-trade/) | $18.8M | 0.0% | ? | unknown | 3 | 0 | 2026-05-22 |
 | [nftx](./nftx/) | $6.3M | 9.6% | $6.3M | declining | 5 | 267 | 2026-05-24 |
@@ -296,6 +299,7 @@
 | [rain](./rain/) | $3.4M | 0.0% | ? | active | 1 | 28 | 2026-05-24 |
 | [rainbow-bridge](./rainbow-bridge/) | $2.1M | 0.0% | ? | dead | 0 | 2 | 2026-05-24 |
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-05-24 |
+| [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-05-24 |
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 168 | 2026-05-23 |
 | [reddex](./reddex/) | $5.3M | 0.0% | ? | declining | 0 | 5 | 2026-05-23 |
 | [reflexer](./reflexer/) | $2.4M | 40.9% | ? | dead | 8 | 64 | 2026-05-24 |

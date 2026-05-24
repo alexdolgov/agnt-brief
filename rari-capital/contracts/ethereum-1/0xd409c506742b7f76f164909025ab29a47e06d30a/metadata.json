@@ -1,0 +1,18 @@
+{
+  "address": "0xd409c506742b7f76f164909025ab29a47e06d30a",
+  "chain_id": 1,
+  "contract_name": "AdminUpgradeabilityProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x4dc83bfe799358f9487555e1a8d602d234d88ae6",
+  "fetched_at": "2026-05-24T21:37:46.072Z"
+}

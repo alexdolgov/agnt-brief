@@ -1,0 +1,18 @@
+{
+  "address": "0x188bed1968b795d5c9022f6a0bb5931ac4c18f00",
+  "chain_id": 43114,
+  "contract_name": "MasterChefJoeV3",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:38:13.787Z"
+}

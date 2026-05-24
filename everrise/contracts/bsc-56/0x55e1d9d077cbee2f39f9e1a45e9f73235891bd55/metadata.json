@@ -1,0 +1,17 @@
+{
+  "address": "0x55e1d9d077cbee2f39f9e1a45e9f73235891bd55",
+  "chain_id": 56,
+  "contract_name": "MTGYOKLGSwap",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:38:17.829Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xef9bfa18f2c0954f1ff48b5ee9d8efed5975e650",
+  "chain_id": 1,
+  "contract_name": "FYToken",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:37:46.701Z"
+}

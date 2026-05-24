@@ -1,0 +1,18 @@
+{
+  "address": "0x87a69e54d5f8659a178c7a814594489e1c4fccc6",
+  "chain_id": 1,
+  "contract_name": "RUSD",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:13:45.764Z"
+}

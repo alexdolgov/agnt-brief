@@ -1,0 +1,18 @@
+{
+  "address": "0xa7824292efdee1177a1c1bed0649cfdd6114fed5",
+  "chain_id": 1,
+  "contract_name": "RevenueRecipient",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:37:45.556Z"
+}

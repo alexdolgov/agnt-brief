@@ -1,0 +1,18 @@
+{
+  "address": "0x631b0d1c8bd940bfaf59a2d15ce30462962e9bba",
+  "chain_id": 1,
+  "contract_name": "DydxPoolController",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:37:45.136Z"
+}

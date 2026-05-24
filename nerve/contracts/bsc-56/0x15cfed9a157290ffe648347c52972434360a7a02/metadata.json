@@ -1,0 +1,17 @@
+{
+  "address": "0x15cfed9a157290ffe648347c52972434360a7a02",
+  "chain_id": 56,
+  "contract_name": "MasterMind",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:13:46.123Z"
+}

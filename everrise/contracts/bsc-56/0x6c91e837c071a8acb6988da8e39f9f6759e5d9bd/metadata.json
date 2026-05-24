@@ -1,0 +1,18 @@
+{
+  "address": "0x6c91e837c071a8acb6988da8e39f9f6759e5d9bd",
+  "chain_id": 56,
+  "contract_name": "DogeBoy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:38:17.560Z"
+}

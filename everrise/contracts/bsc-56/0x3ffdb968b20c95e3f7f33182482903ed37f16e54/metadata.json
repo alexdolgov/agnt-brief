@@ -1,0 +1,18 @@
+{
+  "address": "0x3ffdb968b20c95e3f7f33182482903ed37f16e54",
+  "chain_id": 56,
+  "contract_name": "ERC721Staking",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:38:15.645Z"
+}

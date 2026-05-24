@@ -1,0 +1,17 @@
+{
+  "address": "0x45e6607a6b1d5374e175b6b237541598ee02fd59",
+  "chain_id": 56,
+  "contract_name": "MetaSwapDeposit",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T21:13:47.203Z"
+}

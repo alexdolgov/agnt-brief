@@ -1,0 +1,18 @@
+{
+  "address": "0x35a398425d9f1029021a92bc3d2557d42c8588d7",
+  "chain_id": 1,
+  "contract_name": "PirexCvx",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 179,
+  "evm_version": "london",
+  "license": "AGPL-3.0-only, LGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 41,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:42:58.680Z"
+}

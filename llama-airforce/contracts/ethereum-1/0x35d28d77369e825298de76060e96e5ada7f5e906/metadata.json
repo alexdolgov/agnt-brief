@@ -1,0 +1,18 @@
+{
+  "address": "0x35d28d77369e825298de76060e96e5ada7f5e906",
+  "chain_id": 1,
+  "contract_name": "stkCvxFxsHarvester",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:42:58.808Z"
+}

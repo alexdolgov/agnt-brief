@@ -1,0 +1,17 @@
+{
+  "address": "0xa3a8749896ef4185a26a2a23f04f722c157288ba",
+  "chain_id": 1,
+  "contract_name": "raac_vault",
+  "compiler_version": "vyper:0.4.3",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:43:02.776Z"
+}

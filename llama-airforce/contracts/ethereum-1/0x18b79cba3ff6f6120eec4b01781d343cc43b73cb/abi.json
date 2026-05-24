@@ -1,0 +1,26 @@
+[
+  {
+    "inputs": [
+      {
+        "name": "_pool_address",
+        "type": "address"
+      },
+      {
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "name": "_token_index",
+        "type": "uint256"
+      },
+      {
+        "name": "_min_amount_out",
+        "type": "uint256"
+      }
+    ],
+    "name": "add_liquidity",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

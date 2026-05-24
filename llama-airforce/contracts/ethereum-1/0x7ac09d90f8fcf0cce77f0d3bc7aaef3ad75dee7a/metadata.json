@@ -1,0 +1,18 @@
+{
+  "address": "0x7ac09d90f8fcf0cce77f0d3bc7aaef3ad75dee7a",
+  "chain_id": 1,
+  "contract_name": "PirexClaims",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:43:01.205Z"
+}

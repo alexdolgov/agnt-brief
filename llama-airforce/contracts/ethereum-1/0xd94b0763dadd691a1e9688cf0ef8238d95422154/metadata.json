@@ -1,0 +1,18 @@
+{
+  "address": "0xd94b0763dadd691a1e9688cf0ef8238d95422154",
+  "chain_id": 1,
+  "contract_name": "PrismaSwapper",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:43:03.463Z"
+}

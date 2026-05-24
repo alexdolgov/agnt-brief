@@ -139,6 +139,7 @@
 | [levex](./levex/) | $11.2M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [liminal](./liminal/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-22 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | declining | 4 | 20 | 2026-05-24 |
+| [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | active | 0 | 93 | 2026-05-24 |
 | [llamapay](./llamapay/) | $26.4M | 0.0% | ? | active | 0 | 20 | 2026-05-22 |
 | [looping-collective](./looping-collective/) | $11.8M | 7.7% | $11.8M | active | 13 | 14 | 2026-05-22 |
 | [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 0 | 145 | 2026-05-23 |
@@ -194,6 +195,7 @@
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | unknown | 0 | 2 | 2026-05-22 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 20.6% | $148.6M | declining | 15 | 195 | 2026-05-23 |
+| [risex](./risex/) | $3.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
 | [saber](./saber/) | $1.9M | 0.0% | $1.9M | dead | 0 | 904 | 2026-05-23 |

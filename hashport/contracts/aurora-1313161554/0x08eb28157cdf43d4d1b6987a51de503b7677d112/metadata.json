@@ -1,0 +1,17 @@
+{
+  "address": "0x08eb28157cdf43d4d1b6987a51de503b7677d112",
+  "chain_id": 1313161554,
+  "contract_name": "ERC721PortalFacet",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T18:44:47.426Z"
+}

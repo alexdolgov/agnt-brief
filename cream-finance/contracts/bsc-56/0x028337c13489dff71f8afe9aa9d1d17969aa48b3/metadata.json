@@ -1,0 +1,18 @@
+{
+  "address": "0x028337c13489dff71f8afe9aa9d1d17969aa48b3",
+  "chain_id": 56,
+  "contract_name": "StableConverter",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GNU, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T18:55:46.075Z"
+}

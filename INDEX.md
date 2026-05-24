@@ -30,6 +30,7 @@
 | [aria-protocol](./aria-protocol/) | $2.0M | 0.0% | ? | dead | 1 | 1 | 2026-05-24 |
 | [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [atlendis](./atlendis/) | $4.3M | 0.0% | $4.3M | declining | 0 | 43 | 2026-05-23 |
+| [augur](./augur/) | $1.7M | 64.1% | ? | active | 7 | 39 | 2026-05-24 |
 | [aurora-plus](./aurora-plus/) | $2.0M | 33.3% | ? | active | 3 | 31 | 2026-05-24 |
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | dead | 1 | 426 | 2026-05-23 |
 | [avalaunch](./avalaunch/) | $31.3M | 78.6% | ? | unknown | 13 | 39 | 2026-05-23 |
@@ -83,6 +84,7 @@
 | [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 9 | 2026-05-24 |
 | [coti-treasury](./coti-treasury/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 935 | 2026-05-23 |
 | [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-05-24 |
+| [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | dead | 2 | 95 | 2026-05-24 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-05-23 |
 | [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | unknown | 3 | 2 | 2026-05-23 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-05-22 |
@@ -153,6 +155,7 @@
 | [hanji-protocol](./hanji-protocol/) | $2.8M | 16.7% | ? | active | 2 | 289 | 2026-05-24 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-05-23 |
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
+| [hashport](./hashport/) | $152.6K | 100.0% | ? | sunsetting | 3 | 21 | 2026-05-24 |
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 0 | 63 | 2026-05-23 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
 | [helix](./helix/) | $2.0M | 0.0% | ? | declining | 0 | 9 | 2026-05-24 |
@@ -160,6 +163,7 @@
 | [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-05-24 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-05-24 |
+| [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 4 | 29 | 2026-05-24 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [hskhodlium](./hskhodlium/) | $1.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [hybra](./hybra/) | $1.9M | 0.0% | ? | active | 0 | 81 | 2026-05-24 |

@@ -1,0 +1,18 @@
+{
+  "address": "0x9e130ec3b6fd96ac7db4076638bd5964ad9e0d13",
+  "chain_id": 1,
+  "contract_name": "TradingEscapeHatch",
+  "compiler_version": "v0.4.20+commit.3155dd80",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T18:31:04.785Z"
+}

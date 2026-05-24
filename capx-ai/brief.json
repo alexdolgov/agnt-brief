@@ -1,0 +1,156 @@
+{
+  "schema_version": "2.0",
+  "project_key": "capx-ai",
+  "generated_at": "2026-05-24T14:07:13.155Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "capx-ai",
+    "tier": 0,
+    "peak_tvl": 2685916,
+    "peak_date": "2026-02-04T00:00:00.000Z",
+    "tvl_30d_ago": 2268830,
+    "tvl_90d_ago": 2417579,
+    "tvl_current": 2170813,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": null,
+    "change_30d_pct": -4.320156203858376,
+    "change_90d_pct": -10.207153520112476,
+    "days_since_peak": 109,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 19.17792663657389
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 1,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 2155363.46804,
+    "tvl_usd": 2155363.46804,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://capx.ai",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-10",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Capx AI is a protocol on BSC that deploys and manages AI agent tokens via a factory contract, enabling the creation and trading of burnable/mintable ERC20 tokens.",
+    "relationship_narrative": "The single product family contains the core factory contract, which serves as the registry and deployer for all AI agent tokens; no additional infrastructure contracts are present.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f",
+      "name": "FactoryBurnMintERC20",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Capx AI",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FactoryBurnMintERC20",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2880,
+      "audit_key": "audit-2880",
+      "report_name": "DL audit link",
+      "report_url": "https://www.capx.ai/openzeppelin-audit-report.pdf",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f",
+      "name": "FactoryBurnMintERC20",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2880,
+        "report_name": "DL audit link"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

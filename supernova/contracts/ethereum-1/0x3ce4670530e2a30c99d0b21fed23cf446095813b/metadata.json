@@ -1,0 +1,18 @@
+{
+  "address": "0x3ce4670530e2a30c99d0b21fed23cf446095813b",
+  "chain_id": 1,
+  "contract_name": "RouterV2",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-2.0-or-later, GPL-3.0-or-later, MIT, MIT OR GPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T14:11:26.041Z"
+}

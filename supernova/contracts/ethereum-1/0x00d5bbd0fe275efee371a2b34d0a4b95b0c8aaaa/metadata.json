@@ -1,0 +1,17 @@
+{
+  "address": "0x00d5bbd0fe275efee371a2b34d0a4b95b0c8aaaa",
+  "chain_id": 1,
+  "contract_name": "NonfungiblePositionManager",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 58,
+  "constructor_arguments": "",
+  "implementation_address": "0x00d5bbd0fe275efee371a2b34d0a4b95b0c8aaaa",
+  "fetched_at": "2026-05-24T14:11:24.567Z"
+}

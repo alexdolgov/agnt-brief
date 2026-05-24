@@ -1,0 +1,389 @@
+{
+  "schema_version": "2.0",
+  "project_key": "plasma-one",
+  "generated_at": "2026-05-24T14:04:40.729Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "plasma-one",
+    "tier": 0,
+    "peak_tvl": 4622160,
+    "peak_date": "2026-05-17T00:00:00.000Z",
+    "tvl_30d_ago": null,
+    "tvl_90d_ago": null,
+    "tvl_current": 2390997,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": null,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": 7,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 48.27100316735033
+  },
+  "summary": {
+    "total_contracts": 7,
+    "total_addresses": 15,
+    "unique_implementations": 7,
+    "total_deployments": 15,
+    "audited_contracts": 0,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 5,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 2165242.83574,
+    "tvl_usd": 0.619928,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "plasma": 0.62
+    },
+    "asd_usd": 0.619928,
+    "website_url": "https://www.plasma.to/one",
+    "chains": [
+      "plasma"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Plasma One is a crypto card issuer that enables users to spend digital assets via a card product. It leverages cross-chain token bridges and yield-bearing vaults to manage and transfer value.",
+    "relationship_narrative": "The BoringVault holds user deposits and generates yield, while ATokenInstance represents tokenized positions. Multiple TetherTokenOFTExtension adapters enable cross-chain USDT transfers, and OUpgradeable contracts likely manage oracle or upgrade logic, all sharing the same deployer cluster.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77",
+      "name": "BoringVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Plasma One",
+      "tvl_usd": 0.619928,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BoringVault",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.619928,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x5d72a9d9a9510cd8cbdba12ac62593a58930a948",
+      "name": "ATokenInstance",
+      "role": "token",
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
+      "product_line": "Plasma One",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
+      "impl_name": "ATokenInstance",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x5d72a9d9a9510cd8cbdba12ac62593a58930a948",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x0200c29006150606b650577bbe7b6248f58470c1",
+      "name": "OUpgradeable",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x4970ea919f0073d4e7c4fa8ec1b8cefaaa0e8752",
+      "impl_name": "OUpgradeable",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x0200c29006150606b650577bbe7b6248f58470c1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x4970ea919f0073d4e7c4fa8ec1b8cefaaa0e8752",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x63ab93cbc9d4ecd9c4947b1a38f458147c08e6f7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xc00e2c0b38082c5b144aa86d0027360dc8ae65c1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x3224831b5f45c616f8accba907798c6236773772",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x3224831b5f45c616f8accba907798c6236773772",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x5be536efb28c8efbd2da6894996f5df88347d8b2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193",
+      "name": "TetherTokenOFTExtension",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Plasma One",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf555a12bffaef20cc201a74ae6513cb4aadb34b9",
+      "impl_name": "TetherTokenOFTExtension",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x1b64b9025eebb9a6239575df9ea4b9ac46d4d193",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x4a5cd36c33d9f2986e5d39ff5b9918af547a6e0e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xcab8f3ed8528655e0c2fad1c504c6cfeccf50b90",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xf555a12bffaef20cc201a74ae6513cb4aadb34b9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x42529da25d82ba7810d7f51d614915b8c7e11acc",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Plasma One",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x42529da25d82ba7810d7f51d614915b8c7e11acc",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77",
+      "name": "BoringVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 0.619928,
+      "risk_note": "Verified native implementation with $0.62 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 1,
+    "standard_library": 3,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

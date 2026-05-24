@@ -1,0 +1,18 @@
+{
+  "address": "0x0fd4a527a4422aca27f48cd79e4093867544a616",
+  "chain_id": 1,
+  "contract_name": "GSCORE",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T14:11:24.183Z"
+}

@@ -64,12 +64,13 @@
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | dead | 1 | 101 | 2026-05-24 |
 | [camelot](./camelot/) | $6.4M | 17.3% | $391.9K | active | 1 | 127 | 2026-05-22 |
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 4 | 84 | 2026-05-24 |
+| [capx-ai](./capx-ai/) | $2.2M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
 | [carbon-defi](./carbon-defi/) | $41.7M | 22.4% | $36.6M | active | 4 | 230 | 2026-05-24 |
 | [cex.io](./cex.io/) | $8.6M | 0.0% | ? | active | 1 | 3 | 2026-05-23 |
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [chainge-finance](./chainge-finance/) | $1.8M | 0.0% | $1.8M | active | 0 | 935 | 2026-05-23 |
 | [chaingpt](./chaingpt/) | $4.9M | 0.0% | ? | unknown | 0 | 87 | 2026-05-23 |
-| [charm-finance](./charm-finance/) | $2.2M | 66.7% | ? | unknown | 5 | 7 | 2026-05-22 |
+| [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | unknown | 6 | 10 | 2026-05-24 |
 | [citrea-bridge](./citrea-bridge/) | $5.1M | 33.3% | ? | active | 11 | 4 | 2026-05-23 |
 | [clever](./clever/) | $12.4M | 10.3% | $10.8M | active | 3 | 78 | 2026-05-23 |
 | [coinsquare](./coinsquare/) | $12.4M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
@@ -232,6 +233,7 @@
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-05-24 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
+| [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | unknown | 0 | 7 | 2026-05-24 |
 | [pnetwork](./pnetwork/) | $1.8M | 0.0% | $1.8M | declining | 0 | 355 | 2026-05-22 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | unknown | 0 | 2 | 2026-05-24 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-05-23 |
@@ -284,6 +286,7 @@
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | active | 0 | 58 | 2026-05-23 |
 | [sovryn-bridge](./sovryn-bridge/) | $3.0M | 0.0% | ? | active | 0 | 47 | 2026-05-24 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 9 | 0 | 2026-05-22 |
+| [sperax](./sperax/) | $14.2M | 47.1% | $2.6M | declining | 9 | 142 | 2026-05-24 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
 | [splash-protocol](./splash-protocol/) | $1.9M | 0.0% | $1.9M | active | 0 | 904 | 2026-05-23 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
@@ -297,6 +300,7 @@
 | [stfil](./stfil/) | $5.6M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [sunny](./sunny/) | $1.9M | 0.0% | $1.9M | dead | 0 | 935 | 2026-05-24 |
+| [supernova](./supernova/) | $2.2M | 48.9% | ? | declining | 1 | 47 | 2026-05-24 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-05-23 |
 | [swapscanner](./swapscanner/) | $4.7M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 134 | 2026-05-23 |

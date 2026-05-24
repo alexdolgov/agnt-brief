@@ -1,12 +1,20 @@
 # charm-finance — Contract Index
 
-7 unique implementations across 5 chains · 15 deployments · 2 audited · 1 unaudited · 4 unverified
+10 unique implementations across 6 chains · 21 deployments · 3 audited · 3 unaudited · 4 unverified
 
-## core_logic (1)
+## core_logic (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AlphaProVault (4 deployments)](./berachain-80094/0x0a4b7ac0723d0d08de255aa9d574958c66e9baea/) | berachain | 4 deployments: linea `0x8cbc88...91572c`; berachain [`0x0a4b7a...e9baea`](./berachain-80094/0x0a4b7ac0723d0d08de255aa9d574958c66e9baea/); berachain `0xf0f42c...05df61`; blast `0x8cbc88...91572c` | ✅ Audited | Verified |
+| [AlphaVault (4 deployments)](./ethereum-1/0x55535c4c56f6bf373e06c43e44c0356aafd0d21a/) | ethereum | 4 deployments: ethereum [`0x55535c...d0d21a`](./ethereum-1/0x55535c4c56f6bf373e06c43e44c0356aafd0d21a/); ethereum `0x9bf7b4...164322`; ethereum `0xbd7c6d...4e8a66`; ethereum `0xe72f3e...2c6c11` | ✅ Audited | Verified |
+| [CubePool](./ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | ethereum | [`0x23f6a2...bc1b67`](./ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | ⚠️ Unaudited | Verified |
+
+## operational_periphery (1)
+
+| Contract | Chain | Deployments | Audit Status | Source |
+|---|---|---|---|---|
+| [TokenVesting](./ethereum-1/0xcb591fa448c9b67e206d404c0d3219011173aff4/) | ethereum | [`0xcb591f...73aff4`](./ethereum-1/0xcb591fa448c9b67e206d404c0d3219011173aff4/) | ⚠️ Unaudited | Verified |
 
 ## periphery (1)
 

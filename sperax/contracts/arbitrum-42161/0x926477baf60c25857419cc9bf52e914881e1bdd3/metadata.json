@@ -1,0 +1,18 @@
+{
+  "address": "0x926477baf60c25857419cc9bf52e914881e1bdd3",
+  "chain_id": 42161,
+  "contract_name": "RewarderFactory",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T14:14:58.652Z"
+}

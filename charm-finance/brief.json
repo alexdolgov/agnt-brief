@@ -1,55 +1,59 @@
 {
   "schema_version": "2.0",
   "project_key": "charm-finance",
-  "generated_at": "2026-05-22T06:22:54.392Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-630b00-d8ab",
+  "generated_at": "2026-05-24T14:07:26.988Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "charm-finance",
     "tier": 0,
     "peak_tvl": 12903145,
     "peak_date": "2021-11-09T00:00:00.000Z",
-    "tvl_30d_ago": 2449115,
-    "tvl_90d_ago": 3907796,
-    "tvl_current": 2195943,
+    "tvl_30d_ago": 2413722,
+    "tvl_90d_ago": 3788496,
+    "tvl_current": 2318818,
     "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 5518241,
-    "change_30d_pct": -10.337285100944626,
-    "change_90d_pct": -43.806099397204974,
-    "days_since_peak": 1655,
+    "tvl_180d_ago": 5695923,
+    "change_30d_pct": -3.9318529640115973,
+    "change_90d_pct": -38.79317808439022,
+    "days_since_peak": 1657,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 82.9813351706115
+    "drop_from_peak_pct": 82.02904795691282
   },
   "summary": {
-    "total_contracts": 7,
-    "total_addresses": 15,
-    "unique_implementations": 7,
-    "total_deployments": 15,
-    "audited_contracts": 2,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 1,
+    "total_contracts": 10,
+    "total_addresses": 21,
+    "unique_implementations": 10,
+    "total_deployments": 21,
+    "audited_contracts": 3,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 4,
-    "coverage_pct": 66.7,
-    "total_audits": 5,
-    "scoreable_audits": 3,
+    "coverage_pct": 50,
+    "total_audits": 6,
+    "scoreable_audits": 4,
     "dl_tvl_usd": 2195939,
-    "tvl_usd": 2195939,
-    "tvl_source": "defillama",
-    "tvl_by_chain": {},
-    "asd_usd": null,
+    "tvl_usd": 14217.518066482353,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 14217.52
+    },
+    "asd_usd": 0.00021113681942639,
     "website_url": "https://www.charm.fi/",
     "chains": [
       "berachain",
       "blast",
       "boba",
+      "ethereum",
       "linea",
       "scroll"
     ],
-    "tier1_coverage_pct": 66.7,
+    "tier1_coverage_pct": 50,
     "tier1_auditors": [
+      "Code4rena",
       "Spearbit"
     ],
     "latest_audit_date": "2025-06",
@@ -57,7 +61,7 @@
     "staleness_breakdown": {
       "fresh": 1,
       "aging": 0,
-      "stale": 3,
+      "stale": 4,
       "unknown": 0
     }
   },
@@ -71,6 +75,97 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x55535c4c56f6bf373e06c43e44c0356aafd0d21a",
+      "name": "AlphaVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Charm Finance V1",
+      "tvl_usd": 14217.517855345533,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlphaVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x55535c4c56f6bf373e06c43e44c0356aafd0d21a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 27.98657554531991,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9bf7b46c7ad5ab62034e9349ab912c0345164322",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 8.021900512529328,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbd7c6d2ede836b6b27c461799c4e9ecb8f4e8a66",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.0026991490866201963,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe72f3e105e475d7db3a003ffa377afae9c2c6c11",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 14181.506680138598,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1794"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67",
+      "name": "CubePool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Charm Finance V1",
+      "tvl_usd": 0.00021113681942639,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CubePool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.00021113681942639,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
     {
       "chain_id": 80094,
       "chain_name": "berachain",
@@ -241,7 +336,38 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcb591fa448c9b67e206d404c0d3219011173aff4",
+      "name": "TokenVesting",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenVesting",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcb591fa448c9b67e206d404c0d3219011173aff4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
     },
     {
       "chain_id": 288,
@@ -280,7 +406,7 @@
       "address": "0xc2cc57a62982c4c92c69b856b5d03c6deca32e77",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -311,7 +437,7 @@
       "address": "0xfcc5d3b0ba012905e149acab826d452e29780d3b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -334,7 +460,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 81457,
@@ -342,7 +468,7 @@
       "address": "0xc2cc57a62982c4c92c69b856b5d03c6deca32e77",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -474,6 +600,30 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlphaStrategy",
+        "AlphaVault"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2881,
+      "audit_key": "audit-2881",
+      "report_name": "Audit Report - Charm Finance [27.10.2020].pdf",
+      "report_url": "https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Charm%20Finance%20%5B27.10.2020%5D.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -488,18 +638,35 @@
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 66.7,
+      "coverage_pct": 33.3,
       "latest_audit": "2023-06"
     },
     {
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 2,
-      "coverage_pct": 66.7,
+      "coverage_pct": 33.3,
       "latest_audit": "2025-06"
+    },
+    {
+      "auditor": "Code4rena",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 16.7,
+      "latest_audit": "2021-06"
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67",
+      "name": "CubePool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 0.00021113681942639,
+      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 80094,
       "chain_name": "berachain",
@@ -509,27 +676,37 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcb591fa448c9b67e206d404c0d3219011173aff4",
+      "name": "TokenVesting",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 3,
+    "native": 9,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 4
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 22
+      "extraction_exact": 26
     },
     "extraction_confidence_counts": {
-      "high": 3
+      "high": 4
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 1794,
-        "report_name": "Rendered PDF capture"
+        "audit_id": 2881,
+        "report_name": "Audit Report - Charm Finance [27.10.2020].pdf"
       }
     ],
     "inherited_remapped_matches": []

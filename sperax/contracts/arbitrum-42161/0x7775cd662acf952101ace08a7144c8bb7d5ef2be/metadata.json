@@ -1,0 +1,18 @@
+{
+  "address": "0x7775cd662acf952101ace08a7144c8bb7d5ef2be",
+  "chain_id": 42161,
+  "contract_name": "Dynamic_APR_Farm",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T14:14:58.466Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xa139841e0d43bab85ddd00469eed93a5a000ca9e",
+  "chain_id": 1,
+  "contract_name": "AssetBond",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:49:35.042Z"
+}

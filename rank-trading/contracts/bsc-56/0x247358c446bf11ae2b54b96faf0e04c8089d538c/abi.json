@@ -1,0 +1,160 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUNCX_LiquidityLocker_UniV3",
+        "name": "_univ3_locker",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "UNIV3_LOCKER",
+    "outputs": [
+      {
+        "internalType": "contract IUNCX_LiquidityLocker_UniV3",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract INonfungiblePositionManager",
+            "name": "nftPositionManager",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nft_id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "dustRecipient",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "additionalCollector",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collectAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unlockDate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "countryCode",
+            "type": "uint16"
+          },
+          {
+            "internalType": "string",
+            "name": "feeName",
+            "type": "string"
+          },
+          {
+            "internalType": "bytes[]",
+            "name": "r",
+            "type": "bytes[]"
+          }
+        ],
+        "internalType": "struct IUNCX_LiquidityLocker_UniV3.LockParams",
+        "name": "_lockParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount0Min",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount1Min",
+        "type": "uint256"
+      }
+    ],
+    "name": "convertToFullRangeAndLock",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "newLockId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "onERC721Received",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int24",
+        "name": "tickSpacing",
+        "type": "int24"
+      }
+    ],
+    "name": "tickSpacingToMaxTick",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "maxTick",
+        "type": "int24"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

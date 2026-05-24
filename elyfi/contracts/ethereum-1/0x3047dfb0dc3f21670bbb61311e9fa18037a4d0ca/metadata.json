@@ -1,0 +1,18 @@
+{
+  "address": "0x3047dfb0dc3f21670bbb61311e9fa18037a4d0ca",
+  "chain_id": 1,
+  "contract_name": "InterestRateModel",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:49:34.446Z"
+}

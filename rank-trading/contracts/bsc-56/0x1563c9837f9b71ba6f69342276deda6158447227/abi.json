@@ -1,0 +1,899 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "implementation",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "assetPriceFeed",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "rankToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "rankTokenPricePair",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "backendAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "managedAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IStakingPool",
+            "name": "rankStakingPool",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rankStakingPoolId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "premiumStakingValue",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint16",
+                "name": "depositFeeBP",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "performanceFeeBP",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "ownerDepositFeeBP",
+                "type": "uint16"
+              }
+            ],
+            "internalType": "struct RankFactory.Fees",
+            "name": "platformFees",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bool",
+            "name": "enabled",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "MAX_DURATION",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct RankFactory.ConstructorParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "CloningFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAssetAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidFees",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTimesBeforeCurrent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTimesDuration",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTimesOutOfRange",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReentrancyGuardReentrantCall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UserNotPremium",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "backendAddress",
+        "type": "address"
+      }
+    ],
+    "name": "BackendAddressSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "enabled",
+        "type": "bool"
+      }
+    ],
+    "name": "EnabledChange",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "requestedBy",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "destination",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "ExtractToken",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "managedAddress",
+        "type": "address"
+      }
+    ],
+    "name": "ManagedAddressSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "maxDuration",
+        "type": "uint256"
+      }
+    ],
+    "name": "MaxDurationSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "payer",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "destination",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "paymentID",
+        "type": "bytes32"
+      }
+    ],
+    "name": "Pay",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "depositFeeBP",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "performanceFeeBP",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "ownerDepositFeeBP",
+            "type": "uint16"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct RankFactory.Fees",
+        "name": "platformFees",
+        "type": "tuple"
+      }
+    ],
+    "name": "PlatformFeesSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "premiumStakingValue",
+        "type": "uint256"
+      }
+    ],
+    "name": "PremiumStakingValueSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "stakingPool",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "stakingPoolId",
+        "type": "uint256"
+      }
+    ],
+    "name": "RankStakingPoolSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "rankStrategy",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "RANcost",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "initialDeposit",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "platformFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "RANprice",
+        "type": "uint256"
+      }
+    ],
+    "name": "RankStrategyCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "rankToken",
+        "type": "address"
+      }
+    ],
+    "name": "RankTokenAddressSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "rankTokenPricePair",
+        "type": "address"
+      }
+    ],
+    "name": "RankTokenPricePairSet",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_text",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_num",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "checksum",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "result",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint16",
+                "name": "depositFeeBP",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "performanceFeeBP",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "ownerDepositFeeBP",
+                "type": "uint16"
+              }
+            ],
+            "internalType": "struct RankFactory.Fees",
+            "name": "userFees",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "start",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "expiration",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastUpdateBlock",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RankFactory.Times",
+            "name": "times",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "creator",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "enabled",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct RankFactory.RankStrategySettings",
+        "name": "args",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "string",
+        "name": "_strategy",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_costRAN",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_checksum",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_initialDeposit",
+        "type": "uint256"
+      }
+    ],
+    "name": "createRankStrategy",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "rankStrategy",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "extractToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factorySettings",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "assetPriceFeed",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "rankToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "rankTokenPricePair",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "backendAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "managedAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IStakingPool",
+        "name": "rankStakingPool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rankStakingPoolId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "premiumStakingValue",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "depositFeeBP",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "performanceFeeBP",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "ownerDepositFeeBP",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct RankFactory.Fees",
+        "name": "platformFees",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "MAX_DURATION",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "enabled",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRankTokenPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "rankTokenPrice",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "isPremiumUser",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "pay",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      }
+    ],
+    "name": "predictDeterministicAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "predictedAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "rankStrategies",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rankStrategiesCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_backendAddress",
+        "type": "address"
+      }
+    ],
+    "name": "setBackendAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_enabled",
+        "type": "bool"
+      }
+    ],
+    "name": "setEnabled",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_managedAddress",
+        "type": "address"
+      }
+    ],
+    "name": "setManagedAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_premiumStakingValue",
+        "type": "uint256"
+      }
+    ],
+    "name": "setPremiumStakingValue",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_rankTokenPricePair",
+        "type": "address"
+      }
+    ],
+    "name": "setRankTokenPricePair",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_stakingPool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_stakingPoolId",
+        "type": "uint256"
+      }
+    ],
+    "name": "setStakingPool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

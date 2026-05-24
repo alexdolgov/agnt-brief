@@ -1,0 +1,18 @@
+{
+  "address": "0xe9b5f4b3d4796bf57dd9f23af09f310e19b4b21f",
+  "chain_id": 56,
+  "contract_name": "FeeResolver",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:50:17.080Z"
+}

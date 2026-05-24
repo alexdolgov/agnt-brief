@@ -1,0 +1,17 @@
+{
+  "address": "0x18c7ad880a07d363f2d034a8523ae34b8068845a",
+  "chain_id": 137,
+  "contract_name": "tvlGuru",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000c2132d05d31c914a87c6611c10748aeb04b58e8f0000000000000000000000000d500b1d8e8ef31e21c99d1db9a6444d3adf1270000000000000000000000000604229c960e5cacf2aaeac8be68ac07ba9df81c30000000000000000000000000000000000000000000000000000000000000006",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:47:51.045Z"
+}

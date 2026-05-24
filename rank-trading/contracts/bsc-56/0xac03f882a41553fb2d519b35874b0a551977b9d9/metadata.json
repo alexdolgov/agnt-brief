@@ -1,0 +1,17 @@
+{
+  "address": "0xac03f882a41553fb2d519b35874b0a551977b9d9",
+  "chain_id": 56,
+  "contract_name": "UNCX_LiquidityLocker_UniV3",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "0000000000000000000000007600265b6713503a52c1d6db31f4c70f8863f99400000000000000000000000012a51944e8349b8e70ed8e2d9bfbc88adb4a8f4e00000000000000000000000004bda42de3bc32abb00df46004204424d4cf828700000000000000000000000012a51944e8349b8e70ed8e2d9bfbc88adb4a8f4e",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:50:17.223Z"
+}

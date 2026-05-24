@@ -1,0 +1,18 @@
+{
+  "address": "0x978ab3d5a5c39bcbb2a15f2ad324187dd7cbf952",
+  "chain_id": 56,
+  "contract_name": "RankToken",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:50:16.595Z"
+}

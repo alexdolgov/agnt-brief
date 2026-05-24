@@ -1,0 +1,221 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collateralVaultFactory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AssetMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BadDebtNotSettled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CallerNotOwnerOrCollateralVaultFactory",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CannotRebalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExternalPositionUnhealthy",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExternallyLiquidated",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "HealthyNotLiquidatable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IncorrectIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IntermediateVaultAlreadySet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IntermediateVaultNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoLiquidationForZeroReserve",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotCollateralVault",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotExternallyLiquidated",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotIntermediateVault",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyWETH",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReceiverNotBorrower",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReceiverNotCollateralVault",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Reentrancy",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RepayingMoreThanMax",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SelfLiquidation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SnapshotNotTaken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T_CV_OperationDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T_CallerNotBorrower",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T_CallerNotMorpho",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T_InvalidCollateralVault",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T_OperationDisabled",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ValueOutOfRange",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VaultStatusLiquidatable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ViolatorNotCollateralVault",
+    "type": "error"
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "fallback"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      }
+    ],
+    "name": "borrow",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isHookTarget",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "violator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "liquidate",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

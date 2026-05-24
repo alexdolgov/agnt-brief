@@ -1,0 +1,17 @@
+{
+  "address": "0x230ae761f2d507e4135fb356a25f64cd9ed42421",
+  "chain_id": 1,
+  "contract_name": "RiskManager",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 39,
+  "constructor_arguments": "000000000000000000000000ef39d6493884c4c84d38a4bff879ce16cede702a000000000000000000000000ff06f28cf0c44cf1e8f03e6835bb2f3a2a752c5c00000000000000000000000084101fdec409e6446263c4738c3ae11166eaa39200000000000000000000000090534ead5021a0c0698afd91091811c1dbecd6bb000000000000000000000000000000000022d473030f116ddee9f6b43ac78ba3",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:40:38.532Z"
+}

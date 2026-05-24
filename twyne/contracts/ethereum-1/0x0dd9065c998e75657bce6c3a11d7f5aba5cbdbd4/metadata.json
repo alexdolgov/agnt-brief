@@ -1,0 +1,17 @@
+{
+  "address": "0x0dd9065c998e75657bce6c3a11d7f5aba5cbdbd4",
+  "chain_id": 1,
+  "contract_name": "HealthStatViewer",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 73,
+  "constructor_arguments": "00000000000000000000000087870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:40:37.626Z"
+}

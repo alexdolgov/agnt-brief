@@ -1,0 +1,17 @@
+{
+  "address": "0x0209798a20d1ee69bbac4c16f095e4e03ba86f0f",
+  "chain_id": 1,
+  "contract_name": "SnapshotRegistry",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:40:36.301Z"
+}

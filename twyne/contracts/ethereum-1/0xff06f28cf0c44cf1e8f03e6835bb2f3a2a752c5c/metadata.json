@@ -1,0 +1,17 @@
+{
+  "address": "0xff06f28cf0c44cf1e8f03e6835bb2f3a2a752c5c",
+  "chain_id": 1,
+  "contract_name": "ProtocolConfig",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "00000000000000000000000005c859bf9424e7c40fed32a2b16ddb8433b44fbf00000000000000000000000005c859bf9424e7c40fed32a2b16ddb8433b44fbf",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:40:45.320Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x03fccb0bf0770d6131f07de1d96b728604aee47f",
+  "chain_id": 1,
+  "contract_name": "AccountLens",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:40:36.137Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x91bb674fcc7ca44ecf97d8330738f8c806318017",
+  "chain_id": 1,
+  "contract_name": "EulerEarnVaultLens",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-or-later, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:40:42.084Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x04f48fc36185aea0d2f2567dbe02ee626d675ae2",
+  "chain_id": 1,
+  "contract_name": "EulerCollateralVault",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 72,
+  "constructor_arguments": "000000000000000000000000ef39d6493884c4c84d38a4bff879ce16cede702a000000000000000000000000d8b27cf359b7d15710a5be299af6e7bf904984c2",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:40:38.338Z"
+}

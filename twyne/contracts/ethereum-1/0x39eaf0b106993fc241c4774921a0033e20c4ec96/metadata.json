@@ -1,0 +1,17 @@
+{
+  "address": "0x39eaf0b106993fc241c4774921a0033e20c4ec96",
+  "chain_id": 1,
+  "contract_name": "EdgeFactory",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "000000000000000000000000b5eb1d005e389bef38161691e2083b4d86ff647a000000000000000000000000928b7d2ccea72268a051a2807f7fd9585861cad90000000000000000000000005b1e75004bff7a59cf7a52b2dc484baa16c8af86",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T11:40:39.675Z"
+}

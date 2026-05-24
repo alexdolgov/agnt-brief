@@ -1,0 +1,18 @@
+{
+  "address": "0x760ea8cfdcc4e78d8b9ca3088ecd460246dc0731",
+  "chain_id": 1,
+  "contract_name": "AssetProxy",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0-or-later",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x61daebeb539a470b79c4be99b06011d83e8bd240",
+  "fetched_at": "2026-05-24T13:25:03.483Z"
+}

@@ -1,0 +1,424 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_yalaCore",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IDebtToken",
+        "name": "_debtToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IStabilityPool",
+        "name": "_stabilityPool",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IBorrowerOperations",
+        "name": "_borrowerOperations",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_troveManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_psm",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract IERC20",
+        "name": "collateral",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract IPriceFeed",
+        "name": "priceFeed",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract ITroveManager",
+        "name": "troveManager",
+        "type": "address"
+      }
+    ],
+    "name": "NewCDPDeployment",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "psm",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract IERC20Metadata",
+        "name": "pegToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feeIn",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feeOut",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "supplyCap",
+        "type": "uint256"
+      }
+    ],
+    "name": "NewPSMDeployment",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "YALA_CORE",
+    "outputs": [
+      {
+        "internalType": "contract IYalaCore",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "borrowerOperations",
+    "outputs": [
+      {
+        "internalType": "contract IBorrowerOperations",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "debtToken",
+    "outputs": [
+      {
+        "internalType": "contract IDebtToken",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "collateral",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "contract IPriceFeed",
+        "name": "priceFeed",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "customTroveManagerImpl",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "interestRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "spYieldPCT",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidationPenaltySP",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidationPenaltyRedistribution",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxCollGasCompensation",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "MCR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "SCR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "CCR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "contract IMetadataNFT",
+            "name": "metadataNFT",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ITroveManager.DeploymentParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "deployNewCDP",
+    "outputs": [
+      {
+        "internalType": "contract ITroveManager",
+        "name": "troveManager",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "customPSMImpl",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20Metadata",
+        "name": "pegToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feeIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feeOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "supplyCap",
+        "type": "uint256"
+      }
+    ],
+    "name": "deployNewPSM",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "psm",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "guardian",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "psmCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "psmImpl",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "psms",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_psmImpl",
+        "type": "address"
+      }
+    ],
+    "name": "setPSMImpl",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_troveManagerImpl",
+        "type": "address"
+      }
+    ],
+    "name": "setTroveMangerImpl",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stabilityPool",
+    "outputs": [
+      {
+        "internalType": "contract IStabilityPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "troveManagerCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "troveManagerImpl",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "troveManagers",
+    "outputs": [
+      {
+        "internalType": "contract ITroveManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x46f3f2f9662f66a6ddd6a8d1ddec3cd9ae5e87b5",
+  "chain_id": 1,
+  "contract_name": "BatchExchange",
+  "compiler_version": "v0.5.6+commit.b259423e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T13:25:01.908Z"
+}

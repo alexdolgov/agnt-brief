@@ -1,0 +1,18 @@
+{
+  "address": "0x33bb024b4276ddfa584bbb8000aa19f475c56b34",
+  "chain_id": 56,
+  "contract_name": "MoboxProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x41c0455f82895d0d02dee0ce8ba0339162653265",
+  "fetched_at": "2026-05-24T13:40:45.005Z"
+}

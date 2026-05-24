@@ -1,0 +1,489 @@
+{
+  "schema_version": "2.0",
+  "project_key": "bridgers",
+  "generated_at": "2026-05-24T14:41:21.329Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "bridgers",
+    "tier": 0,
+    "peak_tvl": 3430147,
+    "peak_date": "2026-02-05T00:00:00.000Z",
+    "tvl_30d_ago": 1682410,
+    "tvl_90d_ago": 1507587,
+    "tvl_current": 2043051,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 1612703,
+    "change_30d_pct": 21.435975772849662,
+    "change_90d_pct": 35.517950207848706,
+    "days_since_peak": 108,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 40.43838354449532
+  },
+  "summary": {
+    "total_contracts": 9,
+    "total_addresses": 13,
+    "unique_implementations": 9,
+    "total_deployments": 13,
+    "audited_contracts": 0,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 4,
+    "contracts_verified_by_bytecode": 1,
+    "contracts_unverified": 4,
+    "coverage_pct": 0,
+    "total_audits": 1,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 2082876.93072,
+    "tvl_usd": 71921779.86332713,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 71921779.86
+    },
+    "asd_usd": 71921779.86332713,
+    "website_url": "https://bridgers.ai/",
+    "chains": [
+      "arbitrum",
+      "avalanche",
+      "base",
+      "ethereum",
+      "fantom",
+      "linea",
+      "optimism",
+      "polygon"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2023-06",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Bridgers is a cross-chain DEX aggregator and bridge that enables users to swap and transfer assets across multiple blockchains. It provides liquidity aggregation and token bridging services through a unified interface.",
+    "relationship_narrative": "The Bridgers family includes core token contracts (HBToken, PepeToken, SwftCoin, WLD) that represent bridged or wrapped assets, while operational periphery contracts handle routing and execution logic. All contracts are deployed across multiple chains to support cross-chain functionality.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6f259637dcd74c767781e37bc6133cd6a68aa161",
+      "name": "HBToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridgers",
+      "tvl_usd": 71921779.86332713,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HBToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6f259637dcd74c767781e37bc6133cd6a68aa161",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 71921779.86332713,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb685760ebd368a891f27ae547391f4e2a289895b",
+      "name": "Bridgers",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridgers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Bridgers",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb685760ebd368a891f27ae547391f4e2a289895b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xb685760ebd368a891f27ae547391f4e2a289895b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xb685760ebd368a891f27ae547391f4e2a289895b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb685760ebd368a891f27ae547391f4e2a289895b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xb685760ebd368a891f27ae547391f4e2a289895b",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
+      "name": "PepeToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridgers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PepeToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0bb217e40f8a5cb79adf04e1aab60e5abd0dfc1e",
+      "name": "SwftCoin",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridgers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SwftCoin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0bb217e40f8a5cb79adf04e1aab60e5abd0dfc1e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0x74b23882a30290451a17c44f4f05243b6b58c76d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridgers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0x74b23882a30290451a17c44f4f05243b6b58c76d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0xb685760ebd368a891f27ae547391f4e2a289895b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridgers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0xb685760ebd368a891f27ae547391f4e2a289895b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xa18968cc31232724f1dbd0d1e8d0b323d89f3501",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridgers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa18968cc31232724f1dbd0d1e8d0b323d89f3501",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x8159891dfe9de7fc3bf1b665eb1adda60f2acd0e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridgers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8159891dfe9de7fc3bf1b665eb1adda60f2acd0e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x163f8c2467924be0ae7b5347228cabf260318753",
+      "name": "WLD",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridgers",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "WLD",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x163f8c2467924be0ae7b5347228cabf260318753",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2918,
+      "audit_key": "audit-2918",
+      "report_name": "DL audit link",
+      "report_url": "https://skynet.certik.com/projects/bridgers",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6f259637dcd74c767781e37bc6133cd6a68aa161",
+      "name": "HBToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 71921779.86332713,
+      "risk_note": "Verified native implementation with $71,921,779.86 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb685760ebd368a891f27ae547391f4e2a289895b",
+      "name": "Bridgers",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
+      "name": "PepeToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0bb217e40f8a5cb79adf04e1aab60e5abd0dfc1e",
+      "name": "SwftCoin",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x163f8c2467924be0ae7b5347228cabf260318753",
+      "name": "WLD",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 9,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2918,
+        "report_name": "DL audit link"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -32,6 +32,7 @@
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | dead | 1 | 426 | 2026-05-23 |
 | [avalaunch](./avalaunch/) | $31.3M | 78.6% | ? | unknown | 13 | 39 | 2026-05-23 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-05-23 |
+| [babydogecoin](./babydogecoin/) | $166.7M | 0.0% | $166.7M | declining | 1 | 936 | 2026-05-24 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 0 | 2 | 2026-05-23 |
 | [badger-dao](./badger-dao/) | $1.9M | 0.0% | $1.9M | sunsetting | 0 | 330 | 2026-05-23 |
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
@@ -58,6 +59,7 @@
 | [botto](./botto/) | $4.3M | 0.0% | ? | unknown | 3 | 19 | 2026-05-23 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-05-23 |
 | [bracket-protocol](./bracket-protocol/) | $923.7M | 6.2% | $920.6M | active | 5 | 182 | 2026-05-24 |
+| [bridgers](./bridgers/) | $71.9M | 0.0% | $71.9M | active | 1 | 9 | 2026-05-24 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-05-23 |
 | [btcfi](./btcfi/) | $11.9M | 0.0% | ? | active | 0 | 15 | 2026-05-23 |
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
@@ -83,6 +85,7 @@
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-05-22 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-05-22 |
 | [dango](./dango/) | $5.9M | 0.0% | $5.9M | unknown | 1 | 906 | 2026-05-23 |
+| [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | dead | 7 | 17 | 2026-05-24 |
 | [debridge](./debridge/) | $379.5M | 0.0% | $379.5M | declining | 1 | 164 | 2026-05-23 |
 | [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-05-24 |
 | [defi-kingdoms](./defi-kingdoms/) | $6.5M | 0.0% | ? | dead | 1 | 5 | 2026-05-23 |
@@ -269,6 +272,7 @@
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
+| [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [saber](./saber/) | $1.9M | 0.0% | $1.9M | dead | 0 | 904 | 2026-05-23 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |

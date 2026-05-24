@@ -189,6 +189,7 @@ Each project directory contains:
 | [csigma-finance](./csigma-finance/brief.md) | $12.66M | arbitrum, base, ethereum | 50 | 38/50 (76%) | 41.0% | 0.0% (-) | 3 | aging | ✅ active | $65.57K |
 | [hegic](./hegic/brief.md) | $10.10M | ethereum | 63 | 26/63 (41%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $54.07K |
 | [privacy-cash](./privacy-cash/brief.md) | $2.62M | base | 6 | 3/6 (50%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $48.09K |
+| [wombat-exchange](./wombat-exchange/brief.md) | $1.65M | 8 | 96 | 50/96 (52%) | 32.7% | 7.3% (SlowMist) | 9 | aging | 💀 dead | $47.82K |
 | [sofa.org](./sofa.org/brief.md) | $2.46M | ethereum | 38 | 36/38 (95%) | 33.3% | 30.6% (Code4rena) | 6 | aging | ⚠️ declining | $46.78K |
 | [hemibtc](./hemibtc/brief.md) | $15.09M | bsc, ethereum, optimism | 47 | 37/47 (79%) | 2.7% | 0.0% (-) | 2 | fresh | ✅ active | $46.20K |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/brief.md) | $7.43M | 5 | 150 | 6/150 (4%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $43.46K |
@@ -292,6 +293,7 @@ Each project directory contains:
 | [hakutora](./hakutora/brief.md) | $23.76M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [hanji-protocol](./hanji-protocol/brief.md) | $2.76M | base | 289 | 6/289 (2%) | 16.7% | 0.0% (-) | 2 | aging | ✅ active | - |
 | [harmonix-finance](./harmonix-finance/brief.md) | $4.89M | 4 | 127 | 9/127 (7%) | 10.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
+| [hashdao-finance](./hashdao-finance/brief.md) | $1.67M | arbitrum, optimism | 51 | 17/51 (33%) | 52.6% | 0.0% (-) | 3 | stale | 💀 dead | - |
 | [hashkey-global](./hashkey-global/brief.md) | $15.15M | scroll | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [hashport](./hashport/brief.md) | $1.69M | 10 | 21 | 13/21 (62%) | 100.0% | 0.0% (-) | 3 | stale | ❓ unknown | - |
 | [helix](./helix/brief.md) | $1.95M | ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -309,6 +311,7 @@ Each project directory contains:
 | [juicebox](./juicebox/brief.md) | $11.15M | 8 | 77 | 68/77 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [k2](./k2/brief.md) | $4.75M | ethereum | 30 | 21/30 (70%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kasu](./kasu/brief.md) | $10.28M | base | 22 | 20/22 (91%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [kava-earn](./kava-earn/brief.md) | $1.66M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [kava-lend](./kava-lend/brief.md) | $11.82M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kintsu](./kintsu/brief.md) | $2.69M | hyperliquid | 12 | 0/12 (0%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [klaystation](./klaystation/brief.md) | $2.15M | klaytn | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
@@ -414,5 +417,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-24T18:56:05.106Z_
-_Projects: 402_
+_Generated: 2026-05-24T19:28:01.110Z_
+_Projects: 405_

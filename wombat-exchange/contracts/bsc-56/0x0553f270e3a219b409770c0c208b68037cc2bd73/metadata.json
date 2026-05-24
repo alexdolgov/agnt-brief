@@ -1,0 +1,17 @@
+{
+  "address": "0x0553f270e3a219b409770c0c208b68037cc2bd73",
+  "chain_id": 56,
+  "contract_name": "UnprotectedDynamicPool",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T19:27:43.483Z"
+}

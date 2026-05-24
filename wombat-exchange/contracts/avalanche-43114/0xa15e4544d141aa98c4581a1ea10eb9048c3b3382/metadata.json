@@ -1,0 +1,18 @@
+{
+  "address": "0xa15e4544d141aa98c4581a1ea10eb9048c3b3382",
+  "chain_id": 43114,
+  "contract_name": "BridgeToken",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "Apache 2",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": "0x0e082f06ff657d94310cb8ce8b0d9a04541d8052",
+  "fetched_at": "2026-05-24T19:27:41.963Z"
+}

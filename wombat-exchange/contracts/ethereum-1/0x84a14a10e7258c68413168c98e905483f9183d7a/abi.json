@@ -1,0 +1,121 @@
+[
+  {
+    "inputs": [],
+    "name": "DynamicFeeHelper__INVALID_TIMEPOINT_LENGTH",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DynamicFeeHelper__VOLATILITY_TOO_LARGE",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DynamicFeeHelper__meanValueInWindow_OVERFLOW",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DynamicFeeHelper__windowStartIndex_OVERFLOW",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "DynamicFeeHelper__LOWER_BOUND_REACHED",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "DynamicFeeHelper__UPPER_BOUND_REACHED",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "TIME_POINT_LENGTH",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WAD_I",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WINDOW",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int32",
+        "name": "valueInLogScale",
+        "type": "int32"
+      },
+      {
+        "internalType": "int256",
+        "name": "dt",
+        "type": "int256"
+      }
+    ],
+    "name": "fromLogScale",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "valueInWad",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "ratioInWad",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "dt",
+        "type": "uint256"
+      }
+    ],
+    "name": "toLogScale",
+    "outputs": [
+      {
+        "internalType": "int32",
+        "name": "valueInLogScale",
+        "type": "int32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

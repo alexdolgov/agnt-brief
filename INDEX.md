@@ -154,6 +154,7 @@
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [hanji-protocol](./hanji-protocol/) | $2.8M | 16.7% | ? | active | 2 | 289 | 2026-05-24 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-05-23 |
+| [hashdao-finance](./hashdao-finance/) | $2.8M | 52.6% | ? | dead | 3 | 51 | 2026-05-24 |
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | sunsetting | 3 | 21 | 2026-05-24 |
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 0 | 63 | 2026-05-23 |
@@ -191,6 +192,7 @@
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | unknown | 0 | 2 | 2026-05-22 |
 | [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 0 | 22 | 2026-05-23 |
 | [katana-pre-launch](./katana-pre-launch/) | $18.3M | 0.0% | $18.3M | active | 29 | 166 | 2026-05-22 |
+| [kava-earn](./kava-earn/) | $1.7M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [keyring](./keyring/) | $348.8K | 8.3% | $348.8K | active | 16 | 134 | 2026-05-23 |
 | [kiloex](./kiloex/) | $7.3M | 12.5% | $1.5M | declining | 10 | 111 | 2026-05-24 |
@@ -387,6 +389,7 @@
 | [verio](./verio/) | $7.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [verus-market](./verus-market/) | $9.9M | 0.0% | ? | declining | 0 | 32 | 2026-05-23 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |
+| [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | dead | 14 | 96 | 2026-05-24 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [wrapped-bnb](./wrapped-bnb/) | $1.8M | 0.0% | $1.8M | declining | 1 | 905 | 2026-05-23 |
 | [wrapped](./wrapped/) | $1.7M | 0.0% | $1.7M | active | 0 | 119 | 2026-05-22 |

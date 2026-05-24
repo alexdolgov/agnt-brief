@@ -1,0 +1,82 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newGlobalEquilCovRatio",
+        "type": "uint256"
+      }
+    ],
+    "name": "Repeg",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract IERC20",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newValue",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateOracle",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract IERC20",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newValue",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdatePriceScale",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IVolatileAsset",
+        "name": "fromAsset",
+        "type": "IVolatileAsset"
+      },
+      {
+        "internalType": "contract IVolatileAsset",
+        "name": "toAsset",
+        "type": "IVolatileAsset"
+      },
+      {
+        "internalType": "uint256",
+        "name": "ampFactor",
+        "type": "uint256"
+      }
+    ],
+    "name": "quoteIdealSwapRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -130,6 +130,7 @@ Each project directory contains:
 | [hakka-finance](./hakka-finance/brief.md) | $4.74M | ethereum | 103 | 84/103 (82%) | 10.7% | 0.0% (-) | 6 | stale | ✅ active | $1.69M |
 | [benddao](./benddao/brief.md) | $7.30M | ethereum | 67 | 51/67 (76%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $1.69M |
 | [minto](./minto/brief.md) | $3.83M | bsc, ethereum, heco | 11 | 8/11 (73%) | 12.5% | 0.0% (-) | 1 | stale | ❓ unknown | $1.66M |
+| [kiloex](./kiloex/brief.md) | $2.94M | base, bsc, manta | 111 | 8/111 (7%) | 12.5% | 0.0% (-) | 1 | aging | ⚠️ declining | $1.54M |
 | [predict-fun](./predict-fun/brief.md) | $14.59M | blast, bsc | 40 | 25/40 (63%) | 8.0% | 8.0% (Cyfrin) | 2 | fresh | ❓ unknown | $1.47M |
 | [sashimiswap](./sashimiswap/brief.md) | $5.00M | ethereum, heco | 61 | 31/61 (51%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.44M |
 | [taiko-bridge](./taiko-bridge/brief.md) | $17.26M | ethereum | 52 | 44/52 (85%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.42M |
@@ -145,6 +146,7 @@ Each project directory contains:
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/brief.md) | $19.20M | arbitrum, ethereum | 55 | 48/55 (87%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $447.17K |
 | [camelot](./camelot/brief.md) | $27.14M | arbitrum | 127 | 52/127 (41%) | 17.3% | 0.0% (-) | 1 | stale | ✅ active | $391.94K |
 | [keyring](./keyring/brief.md) | $6.22M | avalanche, ethereum | 134 | 109/134 (81%) | 8.3% | 6.4% (Certora, ChainSecurity, Cyfrin, Spearbit) | 15 | fresh | ✅ active | $348.76K |
+| [bmx](./bmx/brief.md) | $2.95M | base, mode | 184 | 133/184 (72%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $305.69K |
 | [arcade.xyz](./arcade.xyz/brief.md) | $5.39M | ethereum | 61 | 44/61 (72%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $240.14K |
 | [bob-bridge](./bob-bridge/brief.md) | $3.61M | ethereum | 53 | 49/53 (92%) | 2.0% | 0.0% (-) | 2 | fresh | ⚠️ declining | $202.90K |
 | [ratex](./ratex/brief.md) | $5.39M | bsc | 168 | 91/168 (54%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $98.79K |
@@ -307,6 +309,7 @@ Each project directory contains:
 | [truefi](./truefi/brief.md) | $15.40M | arbitrum, ethereum | 8 | 8/8 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [trufin-protocol](./trufin-protocol/brief.md) | $6.84M | ethereum | 7 | 6/7 (86%) | 66.7% | 33.3% (OpenZeppelin) | 7 | fresh | ⚠️ declining | - |
 | [umee](./umee/brief.md) | $3.23M | ethereum | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [unichain-bridge](./unichain-bridge/brief.md) | $2.92M | ethereum | 15 | 15/15 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [universal-bridge](./universal-bridge/brief.md) | $7.70M | base | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [uranium.io](./uranium.io/brief.md) | $7.36M | ethereum | 3 | 1/3 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [ventuals](./ventuals/brief.md) | $28.76M | hyperliquid | 4 | 4/4 (100%) | 100.0% | 0.0% (-) | 2 | fresh | ❓ unknown | - |
@@ -318,5 +321,5 @@ Each project directory contains:
 | [zenlink](./zenlink/brief.md) | $5.52M | moonbeam, moonriver | 226 | 12/226 (5%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-05-24T09:07:41.876Z_
-_Projects: 306_
+_Generated: 2026-05-24T09:31:59.174Z_
+_Projects: 309_

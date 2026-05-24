@@ -1,0 +1,18 @@
+{
+  "address": "0x7ac5a25952c70ca88273f21e89148f8aba71786d",
+  "chain_id": 8453,
+  "contract_name": "SealedArtMarket",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 4294967,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:31:44.652Z"
+}

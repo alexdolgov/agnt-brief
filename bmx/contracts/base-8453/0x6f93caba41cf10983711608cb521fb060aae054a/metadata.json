@@ -1,0 +1,17 @@
+{
+  "address": "0x6f93caba41cf10983711608cb521fb060aae054a",
+  "chain_id": 8453,
+  "contract_name": "ControlFacet",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:31:44.332Z"
+}

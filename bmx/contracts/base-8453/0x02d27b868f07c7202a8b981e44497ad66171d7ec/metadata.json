@@ -1,0 +1,18 @@
+{
+  "address": "0x02d27b868f07c7202a8b981e44497ad66171d7ec",
+  "chain_id": 8453,
+  "contract_name": "SymmioFeeDistributor",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, SYMM-Core-Business-Source-License-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:31:34.515Z"
+}

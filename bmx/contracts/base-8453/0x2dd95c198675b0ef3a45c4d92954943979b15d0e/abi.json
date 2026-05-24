@@ -1,0 +1,401 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_factoryWrapper",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AllowListHook__UnsupportedNFTInterface",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AllowListHook__WrongOwner",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "ids",
+        "type": "uint256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "allowedBuyers",
+        "type": "address[]"
+      }
+    ],
+    "name": "AllowListModified",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "ids",
+        "type": "uint256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "allowedBuyer",
+        "type": "address"
+      }
+    ],
+    "name": "AllowListModifiedSingleBuyer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newRouter",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "AllowListUpdatedWithNewRouter",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "_oldDelta",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_newDelta",
+        "type": "uint128"
+      }
+    ],
+    "name": "afterDeltaUpdate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint96",
+        "name": "_oldFee",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint96",
+        "name": "_newFee",
+        "type": "uint96"
+      }
+    ],
+    "name": "afterFeeUpdate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_nftsOut",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "afterNFTWithdrawal",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "afterNewPair",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "_oldSpotPrice",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_newSpotPrice",
+        "type": "uint128"
+      }
+    ],
+    "name": "afterSpotPriceUpdate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_nftsIn",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "afterSwapNFTInPair",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_nftsOut",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "afterSwapNFTOutPair",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_tokensOut",
+        "type": "uint256"
+      }
+    ],
+    "name": "afterTokenWithdrawal",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "allowList",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "allowListLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factoryWrapper",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_ids",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_allowedBuyers",
+        "type": "address[]"
+      }
+    ],
+    "name": "modifyAllowList",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_ids",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_allowedBuyer",
+        "type": "address"
+      }
+    ],
+    "name": "modifyAllowListSingleBuyer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pairAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_tokensIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_nftsIn",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "syncForPair",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newRouter",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateAllowListWithNewRouter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

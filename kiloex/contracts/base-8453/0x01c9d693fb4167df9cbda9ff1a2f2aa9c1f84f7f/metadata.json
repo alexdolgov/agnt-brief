@@ -1,0 +1,17 @@
+{
+  "address": "0x01c9d693fb4167df9cbda9ff1a2f2aa9c1f84f7f",
+  "chain_id": 8453,
+  "contract_name": "OBTCOFTAdapter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000e3c0ff176ef92fc225096c6d1788ccb818808b35000000000000000000000000596e2dbd22a27dc54d500676c43be9e40e339fee0000000000000000000000001a44076050125825900e736c501f859c50fe728c000000000000000000000000306631bec6b949c89ec27a7f984d0b5bee3b3d61",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:24:22.017Z"
+}

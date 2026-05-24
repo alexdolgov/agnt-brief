@@ -1,0 +1,18 @@
+{
+  "address": "0x727133bba46e163eb733971e2474d120695f33cd",
+  "chain_id": 8453,
+  "contract_name": "PartyBFacet",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, SYMM-Core-Business-Source-License-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:31:44.344Z"
+}

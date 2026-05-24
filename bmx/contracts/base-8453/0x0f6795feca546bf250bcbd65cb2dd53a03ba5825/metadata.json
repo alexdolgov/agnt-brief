@@ -1,0 +1,18 @@
+{
+  "address": "0x0f6795feca546bf250bcbd65cb2dd53a03ba5825",
+  "chain_id": 8453,
+  "contract_name": "BMXSuperReader",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:31:37.019Z"
+}

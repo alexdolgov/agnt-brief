@@ -1,0 +1,838 @@
+{
+  "schema_version": "2.0",
+  "project_key": "unichain-bridge",
+  "generated_at": "2026-05-24T09:16:34.811Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "unichain-bridge",
+    "tier": 1,
+    "peak_tvl": 785906032,
+    "peak_date": "2025-05-14T00:00:00.000Z",
+    "tvl_30d_ago": 2929406,
+    "tvl_90d_ago": 3549980,
+    "tvl_current": 2847963,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 6984267,
+    "change_30d_pct": -2.780188201976783,
+    "change_90d_pct": -19.775238170355887,
+    "governance_raw": {
+      "evidence": "TVL dropped 99.64% from peak 375 days ago with no recent activity or team communications indicating ongoing operations.",
+      "confidence": 0.95,
+      "lifecycle_status": "dead"
+    },
+    "days_since_peak": 375,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 99.63762041719512,
+    "governance_evidence": "TVL dropped 99.64% from peak 375 days ago with no recent activity or team communications indicating ongoing operations.",
+    "governance_confidence": 0.95,
+    "governance_text_chars": 4587,
+    "governance_classification": "dead",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 15,
+    "total_addresses": 30,
+    "unique_implementations": 15,
+    "total_deployments": 30,
+    "audited_contracts": 0,
+    "unaudited_contracts": 15,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 15,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 2918633.18946,
+    "tvl_usd": 2918633.18946,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.unichain.org",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Unichain Bridge is the canonical bridge for the Unichain network, enabling users to transfer ETH and ERC-20 tokens between Ethereum and Unichain. It uses the OP Stack's standard bridge architecture with a portal, cross-domain messenger, and dispute game factory for secure message passing and fraud proofs.",
+    "relationship_narrative": "The bridge family shares infrastructure through the OP Stack's modular design: the OptimismPortal2 coordinates deposits and withdrawals, relying on the L1CrossDomainMessenger for message passing and the L1StandardBridge for token transfers. Supporting contracts like SystemConfig, DisputeGameFactory, and AnchorStateRegistry provide configuration, fraud proof handling, and state anchoring, all working together to secure the bridge.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7e2e1fe92d67f0199708056a22c34d1331b8def6",
+      "name": "AddressManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AddressManager",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7e2e1fe92d67f0199708056a22c34d1331b8def6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8098f676033a377b9defe302e9fe6877cd63d575",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc9fd0ff9a7aca948fe21cc515e169795179fce07",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x318a642db9e24a85318b8bf18efd5287ba38643b",
+      "name": "AnchorStateRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x43491a8ca2ea77e9af35878409303743facf95a8",
+      "impl_name": "AnchorStateRegistry",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x318a642db9e24a85318b8bf18efd5287ba38643b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x40152233ec04c4c9894ab804f7a932ee8dd76e48",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x35d539d303b1baf30ec59b81044fad70bc4efcd1",
+      "name": "Challenger1of2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Challenger1of2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x35d539d303b1baf30ec59b81044fad70bc4efcd1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4755de7b3ea590d76eb15e1217456e948075826f",
+      "name": "DelayedWETH",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x71e966ae981d1ce531a7b6d23dc0f27b38409087",
+      "impl_name": "DelayedWETH",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4755de7b3ea590d76eb15e1217456e948075826f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7d8ea656d7417229f420b0c87f6428baa8499d70",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x92ac36624399fa4bacf32bdc0f4f0d50cb04230d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc49b2df077ef27847d8ade07fbf734a1fe9a9da2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2f12d621a16e2d3285929c9996f478508951dfe4",
+      "name": "DisputeGameFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc040f392e52cb6970ca8e110c280fe24e07c5e2c",
+      "impl_name": "DisputeGameFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2f12d621a16e2d3285929c9996f478508951dfe4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x86a380b7ce4f036cf7e1a4fb1dd1ed9349989be9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9a3d64e386c18cb1d6d5179a9596a4b5736e98a6",
+      "name": "L1CrossDomainMessenger",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd3494713a5cfad3f5359379dfa074e2ac8c6fd65",
+      "impl_name": "L1CrossDomainMessenger",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9a3d64e386c18cb1d6d5179a9596a4b5736e98a6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3080177e8503b63aa97f15caba69099d7668f339",
+      "name": "L1ERC721Bridge",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xae2af01232a6c4a4d3012c5ec5b1b35059caf10d",
+      "impl_name": "L1ERC721Bridge",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3080177e8503b63aa97f15caba69099d7668f339",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd04d0d87e0bd4d2e50286760a3ef323fea6849cf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x81014f44b0a345033bb2b3b21c7a1a308b35feea",
+      "name": "L1StandardBridge",
+      "role": "bridge_template",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Unichain Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x61525eaacddb97d9184afc205827e6a4fd0bf62a",
+      "impl_name": "L1StandardBridge",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x81014f44b0a345033bb2b3b21c7a1a308b35feea",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9e7569992f417cad770b8114d2df4078f0b98eb5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x98742ec6718b49c32aee6daccf5245980fa5d286",
+      "name": "OptimismMintableERC20Factory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe01efbeb1089d1d1db9c6c8b135c934c0734c846",
+      "impl_name": "OptimismMintableERC20Factory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x98742ec6718b49c32aee6daccf5245980fa5d286",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa2b597eaeacb6f627e088cbead319e934ed5edad",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0bd48f6b86a26d3a217d0fa6ffe2b491b956a7a2",
+      "name": "OptimismPortal2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Unichain Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x97cebbf8959e2a5476fbe9b98a21806ec234609b",
+      "impl_name": "OptimismPortal2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0bd48f6b86a26d3a217d0fa6ffe2b491b956a7a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd3a31c6de8f346e5b456fbc3e4b5eabb3a2b3963",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa35f3d6b5c1ab1de36fe830fc4288fd585685772",
+      "name": "PermissionedDisputeGame",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PermissionedDisputeGame",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa35f3d6b5c1ab1de36fe830fc4288fd585685772",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb2872ec9e7074d5838d9a27ae06c53dba8669e8d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x86b30e3263250c9f947cdb711a2c16cda81d9adf",
+      "name": "Proxy",
+      "role": "proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Proxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x86b30e3263250c9f947cdb711a2c16cda81d9adf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3b73fa8d82f511a3cae17b5a26e4e1a2d5e2f2a4",
+      "name": "ProxyAdmin",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3b73fa8d82f511a3cae17b5a26e4e1a2d5e2f2a4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x48ff88f3e71c05217f6572b735e1cb5f2a80fa9d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb1b8a68841220fa442048f9c2f976315478ab3b9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x374454d6c756c8b594ff9aa799ad8dbfd93f2124",
+      "name": "ResolvedDelegateProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ResolvedDelegateProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x374454d6c756c8b594ff9aa799ad8dbfd93f2124",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1f5ef8626a313a32d314664f6d42431f92f2d6c1",
+      "name": "SystemConfig",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf56d96b2535b932656d3c04ebf51babff241d886",
+      "impl_name": "SystemConfig",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1f5ef8626a313a32d314664f6d42431f92f2d6c1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc407398d063f942febbcc6f80a156b47f3f1bda6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7e2e1fe92d67f0199708056a22c34d1331b8def6",
+      "name": "AddressManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x318a642db9e24a85318b8bf18efd5287ba38643b",
+      "name": "AnchorStateRegistry",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x35d539d303b1baf30ec59b81044fad70bc4efcd1",
+      "name": "Challenger1of2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4755de7b3ea590d76eb15e1217456e948075826f",
+      "name": "DelayedWETH",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2f12d621a16e2d3285929c9996f478508951dfe4",
+      "name": "DisputeGameFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9a3d64e386c18cb1d6d5179a9596a4b5736e98a6",
+      "name": "L1CrossDomainMessenger",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3080177e8503b63aa97f15caba69099d7668f339",
+      "name": "L1ERC721Bridge",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x81014f44b0a345033bb2b3b21c7a1a308b35feea",
+      "name": "L1StandardBridge",
+      "role": "bridge_template",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x98742ec6718b49c32aee6daccf5245980fa5d286",
+      "name": "OptimismMintableERC20Factory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0bd48f6b86a26d3a217d0fa6ffe2b491b956a7a2",
+      "name": "OptimismPortal2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa35f3d6b5c1ab1de36fe830fc4288fd585685772",
+      "name": "PermissionedDisputeGame",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x86b30e3263250c9f947cdb711a2c16cda81d9adf",
+      "name": "Proxy",
+      "role": "proxy",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x374454d6c756c8b594ff9aa799ad8dbfd93f2124",
+      "name": "ResolvedDelegateProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1f5ef8626a313a32d314664f6d42431f92f2d6c1",
+      "name": "SystemConfig",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 14,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

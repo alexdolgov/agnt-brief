@@ -1,0 +1,17 @@
+{
+  "address": "0xd1215e77ed4468a7ec287daec2bc89178a138c9a",
+  "chain_id": 34443,
+  "contract_name": "CloverfieldMultiAccount",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:31:38.547Z"
+}

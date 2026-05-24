@@ -1,0 +1,1788 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "sbfBmx",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "stakedBmxTracker",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "bnBmx",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "bmx",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "weth",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "universalRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "v4PositionManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "treasury",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "fallbackTreasury",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "epochZero",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "epochDuration",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint24",
+            "name": "poolFee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "poolTickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "address",
+            "name": "poolHooks",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "keeper",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct GovernanceVoter.DeployParams",
+        "name": "p",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ActionAlreadyBurned",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ActionIsBurned",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyVoted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EpochAlreadyExecuted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EpochAlreadyFinalized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EpochNotActive",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EpochNotExecutable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EpochNotFinalized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EpochNotOverdue",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FinalizationInProgress",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "GovernanceBurnOutOfRange",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientParticipationPoints",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientVotingWeight",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidOption",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotKeeper",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyWETH",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "option",
+        "type": "uint8"
+      }
+    ],
+    "name": "OptionIneligible",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PeerWiringMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PeersAlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PeersNotInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PreviousEpochNotExecuted",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "bits",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "SafeCastOverflowedUintDowncast",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TimelockDataMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "expiredAt",
+        "type": "uint256"
+      }
+    ],
+    "name": "TimelockExpired",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TimelockNotSignaled",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "executeTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "TimelockTooEarly",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongFinalizeEpoch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroBatch",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ActionBurnCanceled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ActionBurnExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "executeTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "expiresAt",
+        "type": "uint256"
+      }
+    ],
+    "name": "ActionBurnSignaled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ChangeCanceled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ChangeExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "dataHash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "executeTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "expiresAt",
+        "type": "uint256"
+      }
+    ],
+    "name": "ChangeSignaled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "option",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "raiseTokenAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "forced",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "destination",
+        "type": "address"
+      }
+    ],
+    "name": "EpochExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "winningOption",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "quorumMet",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "budget",
+        "type": "uint256"
+      }
+    ],
+    "name": "EpochFinalized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAddress",
+        "type": "address"
+      }
+    ],
+    "name": "FallbackTreasuryChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "GovernanceBurnChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldKeeper",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newKeeper",
+        "type": "address"
+      }
+    ],
+    "name": "KeeperChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "lpLocker",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "participationDistributor",
+        "type": "address"
+      }
+    ],
+    "name": "PeersInitialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAddress",
+        "type": "address"
+      }
+    ],
+    "name": "TreasuryChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "voter",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "option",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "weight",
+        "type": "uint256"
+      }
+    ],
+    "name": "Voted",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_FALLBACK_TREASURY",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_GOVERNANCE_BURN",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_KEEPER",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_TREASURY",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BMX",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BN_BMX",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEAD_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "EPOCH_DURATION",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "EPOCH_ZERO",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FORCE_EXECUTE_DELAY",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "OPTION_BUY_BURN_BMX",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "OPTION_BUY_BURN_LP",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "OPTION_PARTICIPATION",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "OPTION_TREASURY",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "POOL_FEE",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "POOL_HOOKS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "POOL_TICK_SPACING",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "",
+        "type": "int24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SBF_BMX",
+    "outputs": [
+      {
+        "internalType": "contract IRewardTracker",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "STAKED_BMX_TRACKER",
+    "outputs": [
+      {
+        "internalType": "contract IRewardTracker",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TIMELOCK_DELAY",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TIMELOCK_EXPIRY",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UNIVERSAL_ROUTER",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "V4_POSITION_MANAGER",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WETH",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "accountedBudget",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "burnedActions",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "cancelAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "cancelBurnAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "consecutiveWinCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentEpoch",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "epochInfoStorage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "snapshotTotalWeight",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "budget",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalVoteWeight",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint64",
+        "name": "voterCount",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint8",
+        "name": "winningOption",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bool",
+        "name": "snapshotSet",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "finalized",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "executed",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOutMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "liquidity",
+        "type": "uint256"
+      }
+    ],
+    "name": "execute",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "executeBurnAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fallbackTreasury",
+        "type": "address"
+      }
+    ],
+    "name": "executeSetFallbackTreasury",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "executeSetGovernanceBurn",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_keeper",
+        "type": "address"
+      }
+    ],
+    "name": "executeSetKeeper",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_treasury",
+        "type": "address"
+      }
+    ],
+    "name": "executeSetTreasury",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "fallbackTreasury",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "finalizationInProgress",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxBatch",
+        "type": "uint256"
+      }
+    ],
+    "name": "finalize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      }
+    ],
+    "name": "forceMarkExecuted",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      }
+    ],
+    "name": "getEpochInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "snapshotTotalWeight",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "budget",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVoteWeight",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[4]",
+            "name": "optionWeights",
+            "type": "uint256[4]"
+          },
+          {
+            "internalType": "uint64",
+            "name": "voterCount",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint8",
+            "name": "winningOption",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bool",
+            "name": "snapshotSet",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "finalized",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "executed",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct GovernanceVoter.EpochInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      }
+    ],
+    "name": "getEpochVoters",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPendingBurn",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isPending",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "executeTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expiresAt",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPendingChange",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isPending",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "executeTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expiresAt",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "epoch",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserVote",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint248",
+            "name": "weight",
+            "type": "uint248"
+          },
+          {
+            "internalType": "uint8",
+            "name": "option",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct GovernanceVoter.UserVote",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "governanceBurnAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_lpLocker",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_participationDistributor",
+        "type": "address"
+      }
+    ],
+    "name": "initializePeers",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "isActionBurned",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "option",
+        "type": "uint8"
+      }
+    ],
+    "name": "isOptionEligible",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "keeper",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lastFinalizedEpoch",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "lastIneligibleEpoch",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lpLocker",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "participationDistributor",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "peersInitialized",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "pendingBurns",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "dataHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "signalTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "delay",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "pendingChanges",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "dataHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "signalTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "delay",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "dataHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "signalAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "signalBurnAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "treasury",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "userVotes",
+    "outputs": [
+      {
+        "internalType": "uint248",
+        "name": "weight",
+        "type": "uint248"
+      },
+      {
+        "internalType": "uint8",
+        "name": "option",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "option",
+        "type": "uint8"
+      }
+    ],
+    "name": "vote",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

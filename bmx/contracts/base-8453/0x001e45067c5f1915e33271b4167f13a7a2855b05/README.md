@@ -1,0 +1,16 @@
+# DailyEpochGauge
+
+| Field | Value |
+|---|---|
+| Chain | base (8453) |
+| Address | `0x001e45067c5f1915e33271b4167f13a7a2855b05` |
+| Role | operational_periphery |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 10 (base [`0x001e45067c5f1915e33271b4167f13a7a2855b05`](../0x001e45067c5f1915e33271b4167f13a7a2855b05/); base `0x0b14b0afd469011f7e3efb17e1b1d91f620aa959`; base `0x25892ed9cf4cba41ab8630153917cba715f82bfe`; base `0x3656ca017dfaa948e658669b209eceb78c063098`; base `0x39909c3fdb684228e9d2ba31b6d17148b8e3589f`; base `0x4395b5e71e78d810224819e071213f4f3722786b`; base `0x577d956aef52d95707408470c948d495879133f9`; base `0xd8df4f5a4ae2db7ea724d1ee451806167f01f0dc`; base `0xe578cc6d1baf15e43b18fdf8447efa13d39f2261`; base `0xe79dbbcf13f15394ffdc344cac2c11bbcb59d2e1`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

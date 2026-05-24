@@ -1,0 +1,17 @@
+{
+  "address": "0x2954bcf89f115e5f37e385a0fef14eddf79e53ff",
+  "chain_id": 8453,
+  "contract_name": "FeeProcessor",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "000000000000000000000000498581ff718922c3f8e6a244956af099b2652b2b000000000000000000000000c384b99a6e5cd1a800b2d83ab71bab7bd712b0cc0000000000000000000000004e74d4db6c0726ccded4656d0bce448876bb4c7a000000000000000000000000548f93779fbc992010c07467cbaf329dd5f059b7000000000000000000000000001e45067c5f1915e33271b4167f13a7a2855b05",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T09:31:40.802Z"
+}

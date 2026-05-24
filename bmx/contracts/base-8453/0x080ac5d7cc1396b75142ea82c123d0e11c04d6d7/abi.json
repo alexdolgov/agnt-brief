@@ -1,0 +1,2000 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenImpl",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "feeDistributorImpl",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "presaleImpl",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "vestingImpl",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lpStakingImpl",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "bmx",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "raiseToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "boardwalkRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "boardwalkDexFactory",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "boardwalkLpManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "boardwalkFeeCollector",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "integratorCollector",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "integratorBps",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bmxBurnAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "graduationExpress",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "graduationAdvanced",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expressDuration",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "advancedDuration",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "antiWhaleTaxBps",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "antiWhaleDuration",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "issuer",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "boardwalk",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "incentive",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "referrer",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "total",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct LaunchFactory.FeeBpsDefaults",
+            "name": "feeBps",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "nftCollection",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "memberLaunchDiscountBps",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LaunchFactory.DeployParams",
+        "name": "p",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ActionAlreadyBurned",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ActionIsBurned",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ArrayLengthMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "BmxBurnOutOfRange",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DuplicateRoleAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExpressRequiresOneFeeRecipient",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedDeployment",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "needed",
+        "type": "uint256"
+      }
+    ],
+    "name": "InsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IntegratorCollectorMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAntiWhaleConfig",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidDuration",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidFeeDefaults",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "percent",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidPresalePercent",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "min",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "max",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidPresaleRange",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidSplitsSum",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IssuerVestingRecipientsRequired",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "bps",
+        "type": "uint256"
+      }
+    ],
+    "name": "MemberDiscountOutOfRange",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PresalePercentNotDivisibleBy5",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReferrerNotAllowedOnExpressPath",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "bits",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "SafeCastOverflowedUintDowncast",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TimelockDataMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "expiredAt",
+        "type": "uint256"
+      }
+    ],
+    "name": "TimelockExpired",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TimelockNotSignaled",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "executeTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "TimelockTooEarly",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "count",
+        "type": "uint256"
+      }
+    ],
+    "name": "TooManyRecipients",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VestingNotAllowedOnExpressPath",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroGraduation",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ActionBurnCanceled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ActionBurnExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "executeTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "expiresAt",
+        "type": "uint256"
+      }
+    ],
+    "name": "ActionBurnSignaled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldTaxBps",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldDuration",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newTaxBps",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newDuration",
+        "type": "uint256"
+      }
+    ],
+    "name": "AntiWhaleConfigChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "BmxBurnAmountChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ChangeCanceled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ChangeExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "dataHash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "executeTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "expiresAt",
+        "type": "uint256"
+      }
+    ],
+    "name": "ChangeSignaled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldCollector",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newCollector",
+        "type": "address"
+      }
+    ],
+    "name": "FeeCollectorChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "issuer",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "boardwalk",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "incentive",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "referrer",
+        "type": "uint256"
+      }
+    ],
+    "name": "FeeDefaultsChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "enum LaunchFactory.LaunchPath",
+        "name": "path",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldThreshold",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newThreshold",
+        "type": "uint256"
+      }
+    ],
+    "name": "GraduationThresholdChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "issuer",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "ticker",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "category",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum LaunchFactory.LaunchPath",
+        "name": "path",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "string[]",
+        "name": "issuerFeeLabels",
+        "type": "string[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "string[]",
+        "name": "vestingLabels",
+        "type": "string[]"
+      }
+    ],
+    "name": "LaunchCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldDiscount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newDiscount",
+        "type": "uint256"
+      }
+    ],
+    "name": "MemberLaunchDiscountChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldCollection",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newCollection",
+        "type": "address"
+      }
+    ],
+    "name": "NftCollectionChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "enum LaunchFactory.LaunchPath",
+        "name": "path",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldDuration",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newDuration",
+        "type": "uint256"
+      }
+    ],
+    "name": "PresaleDurationChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldMin",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldMax",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newMin",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newMax",
+        "type": "uint256"
+      }
+    ],
+    "name": "PresaleRangeChanged",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_ADVANCED_DURATION",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_ANTI_WHALE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_BMX_BURN",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_EXPRESS_DURATION",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_FEE_COLLECTOR",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_FEE_DEFAULTS",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_GRADUATION_ADVANCED",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_GRADUATION_EXPRESS",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_MEMBER_LAUNCH_DISCOUNT",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_NFT_COLLECTION",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ACTION_SET_PRESALE_RANGE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BMX",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BOARDWALK_DEX_FACTORY",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BOARDWALK_LP_MANAGER",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BOARDWALK_ROUTER",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEAD_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FEE_DISTRIBUTOR_IMPL",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "INTEGRATOR_BPS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "INTEGRATOR_COLLECTOR",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "LP_STAKING_IMPL",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PRESALE_IMPL",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "RAISE_TOKEN",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TIMELOCK_DELAY",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TIMELOCK_EXPIRY",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TOKEN_IMPL",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VESTING_IMPL",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "advancedDuration",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "allLaunches",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "antiWhaleDuration",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "antiWhaleTaxBps",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "bmxBurnAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "boardwalkFeeCollector",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "burnedActions",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "cancelAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "cancelBurnAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "ticker",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "enum LaunchFactory.LaunchPath",
+            "name": "path",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "presalePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "vestingRecipients",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "vestingPercents",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "vestingLabels",
+            "type": "string[]"
+          },
+          {
+            "internalType": "address",
+            "name": "referrer",
+            "type": "address"
+          },
+          {
+            "internalType": "address[]",
+            "name": "issuerFeeRecipients",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "issuerFeeSplits",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "issuerFeeLabels",
+            "type": "string[]"
+          }
+        ],
+        "internalType": "struct LaunchFactory.LaunchConfig",
+        "name": "config",
+        "type": "tuple"
+      }
+    ],
+    "name": "createLaunch",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "tokenAddr",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentFeeBps",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "issuer",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "boardwalk",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "incentive",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "referrer",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "integratorBps",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "total",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "executeBurnAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_taxBps",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_duration",
+        "type": "uint256"
+      }
+    ],
+    "name": "executeSetAntiWhale",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "executeSetBmxBurn",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum LaunchFactory.LaunchPath",
+        "name": "path",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_duration",
+        "type": "uint256"
+      }
+    ],
+    "name": "executeSetDuration",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collector",
+        "type": "address"
+      }
+    ],
+    "name": "executeSetFeeCollector",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "issuer",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "boardwalk",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "incentive",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referrer",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "total",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LaunchFactory.FeeBpsDefaults",
+        "name": "_feeBps",
+        "type": "tuple"
+      }
+    ],
+    "name": "executeSetFeeDefaults",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum LaunchFactory.LaunchPath",
+        "name": "path",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_threshold",
+        "type": "uint256"
+      }
+    ],
+    "name": "executeSetGraduation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_bps",
+        "type": "uint256"
+      }
+    ],
+    "name": "executeSetMemberLaunchDiscount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_nft",
+        "type": "address"
+      }
+    ],
+    "name": "executeSetNftCollection",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_min",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_max",
+        "type": "uint256"
+      }
+    ],
+    "name": "executeSetPresaleRange",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "expressDuration",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPendingBurn",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isPending",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "executeTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expiresAt",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPendingChange",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isPending",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "executeTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expiresAt",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "graduationAdvanced",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "graduationExpress",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "isActionBurned",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "isLaunchToken",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "launchCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "launches",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "feeDistributor",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "presaleManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vestingStream",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "lpStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "issuer",
+        "type": "address"
+      },
+      {
+        "internalType": "enum LaunchFactory.LaunchPath",
+        "name": "path",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "createdAt",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxPresalePercent",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "memberLaunchDiscountBps",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minPresalePercent",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nftCollection",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "pendingBurns",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "dataHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "signalTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "delay",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "pendingChanges",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "dataHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "signalTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "delay",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "dataHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "signalAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "action",
+        "type": "bytes32"
+      }
+    ],
+    "name": "signalBurnAction",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

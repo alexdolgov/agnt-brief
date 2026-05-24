@@ -47,6 +47,7 @@
 | [blackhole](./blackhole/) | $29.9M | 31.1% | ? | unknown | 3 | 86 | 2026-05-22 |
 | [blueshift](./blueshift/) | $4.4M | 0.0% | ? | active | 1 | 42 | 2026-05-23 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 17 | 2026-05-22 |
+| [bmx](./bmx/) | $305.7K | 0.0% | $305.7K | active | 0 | 184 | 2026-05-24 |
 | [bob-bridge](./bob-bridge/) | $202.9K | 2.0% | $202.9K | declining | 18 | 53 | 2026-05-24 |
 | [boba-bridge](./boba-bridge/) | $3.1M | 0.0% | ? | declining | 0 | 53 | 2026-05-24 |
 | [bonzo-finance](./bonzo-finance/) | $22.6M | 0.0% | ? | unknown | 4 | 0 | 2026-05-22 |
@@ -150,6 +151,7 @@
 | [katana-pre-launch](./katana-pre-launch/) | $18.3M | 0.0% | $18.3M | active | 29 | 166 | 2026-05-22 |
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [keyring](./keyring/) | $348.8K | 8.3% | $348.8K | active | 16 | 134 | 2026-05-23 |
+| [kiloex](./kiloex/) | $7.3M | 12.5% | $1.5M | declining | 10 | 111 | 2026-05-24 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |
 | [klayswap](./klayswap/) | $4.8M | 0.0% | ? | sunsetting | 4 | 22 | 2026-05-23 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 34.4% | $23.1K | active | 3 | 53 | 2026-05-24 |
@@ -286,6 +288,7 @@
 | [txflow](./txflow/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 905 | 2026-05-24 |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | unknown | 0 | 150 | 2026-05-23 |
 | [umee](./umee/) | $3.2M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
+| [unichain-bridge](./unichain-bridge/) | $2.9M | 0.0% | ? | dead | 0 | 15 | 2026-05-24 |
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [unslashed](./unslashed/) | $4.8M | 0.0% | $4.8M | declining | 0 | 69 | 2026-05-24 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-05-23 |

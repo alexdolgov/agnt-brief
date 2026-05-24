@@ -1,0 +1,18 @@
+{
+  "address": "0x04830cfced9772b8acbaf76cfc7a630ad82c9148",
+  "chain_id": 1,
+  "contract_name": "SwapProxy",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T02:18:08.857Z"
+}

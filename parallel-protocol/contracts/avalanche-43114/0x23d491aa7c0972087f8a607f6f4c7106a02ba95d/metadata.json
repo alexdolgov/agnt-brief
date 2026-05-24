@@ -1,0 +1,18 @@
+{
+  "address": "0x23d491aa7c0972087f8a607f6f4c7106a02ba95d",
+  "chain_id": 43114,
+  "contract_name": "DiamondLoupe",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T02:10:42.843Z"
+}

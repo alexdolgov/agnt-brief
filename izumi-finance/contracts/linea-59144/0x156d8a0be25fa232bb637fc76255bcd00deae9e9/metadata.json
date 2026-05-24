@@ -1,0 +1,17 @@
+{
+  "address": "0x156d8a0be25fa232bb637fc76255bcd00deae9e9",
+  "chain_id": 59144,
+  "contract_name": "iZiSwapClassicFactory",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000c802a5a140224ed72e7c821f637c1e5759744045000000000000000000000000000000000000000000000000000000000000001e000000000000000000000000000000000000000000000000000000000000001e",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T02:18:09.585Z"
+}

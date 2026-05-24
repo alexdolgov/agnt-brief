@@ -96,6 +96,7 @@
 | [four.meme](./four.meme/) | $4.9M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 11 | 18 | 2026-05-23 |
 | [fulcrom](./fulcrom/) | $13.5M | 0.0% | ? | active | 0 | 80 | 2026-05-22 |
+| [generic.money](./generic.money/) | $3.7M | 75.0% | ? | active | 1 | 13 | 2026-05-24 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-05-22 |
 | [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-05-23 |
@@ -125,6 +126,7 @@
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 9 | 2026-05-22 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-05-23 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 13.7% | $428.8M | unknown | 8 | 125 | 2026-05-21 |
+| [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | dead | 0 | 181 | 2026-05-24 |
 | [juicebox](./juicebox/) | $11.2M | 0.0% | ? | active | 0 | 77 | 2026-05-23 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-05-23 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | unknown | 0 | 2 | 2026-05-22 |
@@ -178,6 +180,7 @@
 | [osmosis-dex](./osmosis-dex/) | $1.9M | 0.0% | $1.9M | declining | 0 | 935 | 2026-05-22 |
 | [p2pb2b](./p2pb2b/) | $4.9M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [paragonsdao](./paragonsdao/) | $6.2M | 50.0% | ? | unknown | 8 | 2 | 2026-05-23 |
+| [parallel-protocol](./parallel-protocol/) | $3.6M | 30.8% | $3.0M | active | 5 | 38 | 2026-05-24 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
 | [pnetwork](./pnetwork/) | $1.8M | 0.0% | $1.8M | declining | 0 | 355 | 2026-05-22 |
@@ -212,6 +215,7 @@
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 0 | 2 | 2026-05-22 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-05-23 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
+| [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 108 | 2026-05-24 |
 | [solayer](./solayer/) | $1.9M | 0.0% | $1.9M | declining | 5 | 935 | 2026-05-22 |
 | [solera](./solera/) | $8.1M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [sophon-farm](./sophon-farm/) | $7.0M | 100.0% | ? | dead | 9 | 1 | 2026-05-23 |
@@ -243,6 +247,7 @@
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
 | [thruster](./thruster/) | $5.8M | 0.0% | ? | dead | 0 | 20 | 2026-05-23 |
 | [tinyman](./tinyman/) | $1.8M | 0.0% | $1.8M | active | 18 | 904 | 2026-05-23 |
+| [tothemoon](./tothemoon/) | $3.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |

@@ -1,0 +1,18 @@
+{
+  "address": "0x12a76434182c8caf7856ce1410cd8abfc5e2639f",
+  "chain_id": 8453,
+  "contract_name": "UniversalSwapRouter",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T02:18:08.881Z"
+}

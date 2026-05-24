@@ -1,0 +1,17 @@
+{
+  "address": "0xb996392302721270609b41f004357c0c4e2ca625",
+  "chain_id": 43114,
+  "contract_name": "StakingWarmup",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU GPLv2",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000085784d5e2ccae89bcb39ebf0ac6cdc93d42d99ad000000000000000000000000e9eb40d52ce4744322204d4a29af63c30f0260a4",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T01:58:52.320Z"
+}

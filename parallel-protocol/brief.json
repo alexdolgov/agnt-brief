@@ -1,0 +1,3368 @@
+{
+  "schema_version": "2.0",
+  "project_key": "parallel-protocol",
+  "generated_at": "2026-05-24T02:10:40.609Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "parallel-protocol",
+    "tier": 0,
+    "peak_tvl": 59962329,
+    "peak_date": "2021-05-12T00:00:00.000Z",
+    "tvl_30d_ago": 4746972,
+    "tvl_90d_ago": 4288611,
+    "tvl_current": 3776531,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 2836659,
+    "change_30d_pct": -20.44336895182866,
+    "change_90d_pct": -11.94046277454402,
+    "days_since_peak": 1838,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 93.701827358974
+  },
+  "summary": {
+    "total_contracts": 38,
+    "total_addresses": 227,
+    "unique_implementations": 38,
+    "total_deployments": 227,
+    "audited_contracts": 8,
+    "unaudited_contracts": 18,
+    "contracts_verified_audited": 8,
+    "contracts_verified_unaudited": 18,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 12,
+    "coverage_pct": 30.8,
+    "total_audits": 5,
+    "scoreable_audits": 5,
+    "dl_tvl_usd": 3794228,
+    "tvl_usd": 3589825.4905949524,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "avalanche": 1944673.36,
+      "base": 182516.35,
+      "ethereum": 707815.46,
+      "hyperliquid": 752312.16,
+      "sonic": 2508.16
+    },
+    "asd_usd": 2983161.1300701415,
+    "website_url": "https://parallel.best/",
+    "chains": [
+      "arbitrum",
+      "avalanche",
+      "base",
+      "berachain",
+      "bsc",
+      "ethereum",
+      "fantom",
+      "fraxtal",
+      "gnosis",
+      "hyperliquid",
+      "ink",
+      "linea",
+      "optimism",
+      "plasma",
+      "polygon",
+      "scroll",
+      "sei",
+      "sonic",
+      "unichain"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-02",
+    "audit_freshness": "aging",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 3,
+      "stale": 2,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Parallel Protocol is a multi-chain DeFi platform that enables users to deposit collateral and mint stablecoins (CDP), earn yield through savings products, and access flash loans. It also provides cross-chain bridging and a modular parallelizer infrastructure for yield optimization.",
+    "relationship_narrative": "The Core Protocol's TokenP stablecoin is used across the Flashloan, Bridging, and Savings modules, creating a unified token economy. The Parallelizer Module operates as a separate yield layer, interacting with external protocols via Swapper adapters and distributing rewards, while governance is shared through ParallelAccessManager instances.",
+    "product_family_count": 6
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x048c4e07d170eedee8772ca76aee1c4e2d133d5c",
+      "name": "TokenP",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Core Protocol",
+      "tvl_usd": 2983161.1300701415,
+      "is_proxy": true,
+      "impl_address": "0x411dc65548c066fb0f85bf48a72306d321c783bd",
+      "impl_name": "TokenP",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9b3a8f7cec208e247d97dee13313690977e24459",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 101151.09646202812,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa19c5d1013a8682ac76206a085ec24ac89f7c025",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x90337e484b1cb02132fc150d3afa262147348545",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xe8a2d848fe656e34a6caa35f375b42979e322135",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x048c4e07d170eedee8772ca76aee1c4e2d133d5c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x411dc65548c066fb0f85bf48a72306d321c783bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x9ee1963f05553ef838604dd39403be21cef26aa4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xcb3e564293393e0d4f43305a250d4e1716de600b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x9ee1963f05553ef838604dd39403be21cef26aa4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xcb3e564293393e0d4f43305a250d4e1716de600b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x1250304f66404cd153fa39388ddcdaec7e0f1707",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xfefc8635edf0faad83312a713cb67722d049c9bc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 2508.1586992698585,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xb3dbece41acdd6ad76d037b8da2e53c58826746c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0x35c6323da7d0a4be33ada37eca81e03bece0f1c7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0x8fcf9118fdd359f6277cdd143c2da206e64140f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x24cef236056834f38e9247a1fff6681dd313d3aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xbe65f0f410a72bec163dc65d46c83699e957d588",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 752312.1628935073,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x048c4e07d170eedee8772ca76aee1c4e2d133d5c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x411dc65548c066fb0f85bf48a72306d321c783bd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x76a9a0062ec6712b99b4f63bd2b4270185759dd5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 182516.35363278165,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xc2f8b5d893217462ae9c9879c9285a5a3aabcb8f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x76a9a0062ec6712b99b4f63bd2b4270185759dd5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x9ee1963f05553ef838604dd39403be21cef26aa4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1944673.3583825545,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xcb3e564293393e0d4f43305a250d4e1716de600b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x35c6323da7d0a4be33ada37eca81e03bece0f1c7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x8fcf9118fdd359f6277cdd143c2da206e64140f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0x9ee1963f05553ef838604dd39403be21cef26aa4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xcb3e564293393e0d4f43305a250d4e1716de600b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 534352,
+          "chain_name": "scroll",
+          "address": "0xcb3e564293393e0d4f43305a250d4e1716de600b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x0a9202c6417a7b6b166e7f7fe2719b09261b400f",
+      "name": "VaultsCore",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallel Protocol V2",
+      "tvl_usd": 606664.3605248109,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultsCore",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x173ae6283a717b6cdd5491eac5f82c082a8c674b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 562577.475118773,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4fbb33fe9fc784ab5a86dc19cce4ecd29c20cd46",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x68e88c802f146ead2f99f3a91fb880d1a2509672",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x78c48a7d7fc69735fdab448fe6068bba44a920e6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x917b9d8e62739986ec182e0f988c7f938651afd7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe26348d30694aa7e879b9335252362df3df93204",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 44086.88540603781,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x0a9202c6417a7b6b166e7f7fe2719b09261b400f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x6cffe4caacddfdc641823c23f49ec71158acd8c5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x78c48a7d7fc69735fdab448fe6068bba44a920e6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x9912c16db85d6075df6f0725a08b95f63a11a172",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xc0459eff90be3dcd1ada71e1e8bdb7619a16c1a4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xcababc1feb7c5298f69b635099d75975ad5e6e5f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xfaee16d1d150107bb19bff0f5c2e302ab76b5711",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2686",
+        "audit-2688"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x1b03d006a47df53b440b9a94af88f38f63583342",
+      "name": "BridgeableToken",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BridgeableToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5208f5de46c25273e2fb8d5a73d605997bc4ca3f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x62461591ffee0c539be1bb51a22624e6f3815bfb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x74e3f9d724da6d7e4db8ecab4f18e6ba44f60e30",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x86afa59ff739b5be56ce8a81a424af17b29668e9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd4dee6e089969600d3359cdbcd34e3111bc838eb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe0a86c3a7038e33cb31531222fae33a51b5022b2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x1b03d006a47df53b440b9a94af88f38f63583342",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x4311321f144e2cf24df87deefe79e9c4e232273b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x5e6c853a308e54282aa4c0ceb721a9cdcdf2be85",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x7e6bc0dc649f5e48842c881e97666c7e21d0a433",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x917b9d8e62739986ec182e0f988c7f938651afd7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xe462df8d4aa7db3aecfe810ec8d1fa4f716bc9a8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2685"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x4dde0e308cfb60515218c6ad2df1134fc48531fc",
+      "name": "BridgeableTokenP",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridging Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BridgeableTokenP",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x78bb4882b77d74ad9b04ab71fe8e61f72595823c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x76a9a0062ec6712b99b4f63bd2b4270185759dd5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x7b54f3d993d3bca077946034ea710f9c07420c72",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x9afdb5a5ec2bbdddaa4573baa25caa4e4e4a2ca9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xda818995ddeee3ac36bf492133e1feae1fa377e6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0x9e79ec4bc3574f2865636aecff44b60a723a9ee7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x7b54f3d993d3bca077946034ea710f9c07420c72",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4dde0e308cfb60515218c6ad2df1134fc48531fc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x9e79ec4bc3574f2865636aecff44b60a723a9ee7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4dde0e308cfb60515218c6ad2df1134fc48531fc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9e79ec4bc3574f2865636aecff44b60a723a9ee7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 534352,
+          "chain_name": "scroll",
+          "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x15452454a9735d68df430879b2941316a09295b1",
+      "name": "DiamondCut",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallelizer Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DiamondCut",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xad58fc13a682a121e5fe2f8e45d4d988a7e51b0d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xe9fe4720fa99f9b28584da44abb8cf91f15990e8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xa65821ffe86e6eb613daa1f70af350c5a21759df",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x15452454a9735d68df430879b2941316a09295b1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x657acb8a3bf9383e561565d422ea9b9a90ce0052",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x056566077da53b0a349af9b9bdbfa2658ccc2c3f",
+      "name": "DiamondInitializer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DiamondInitializer",
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xbe65f0f410a72bec163dc65d46c83699e957d588",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x056566077da53b0a349af9b9bdbfa2658ccc2c3f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x8b899796b4a442e7723e02f8b5b65a39f27edaf1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x506ba37aa8e265be445913b9c4080852277f3c5a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x23d491aa7c0972087f8a607f6f4c7106a02ba95d",
+      "name": "DiamondLoupe",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallelizer Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DiamondLoupe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa360e5ad9f17caff53715346888aa0d13541c2f5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x2b6c7c275404e93a14a05b549af292231d6e4dec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xbefbae2330186f031b469e26283acc66bb5f8826",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x24cef236056834f38e9247a1fff6681dd313d3aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x23d491aa7c0972087f8a607f6f4c7106a02ba95d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1250304f66404cd153fa39388ddcdaec7e0f1707",
+      "name": "DiamondProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallelizer Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DiamondProxy",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x1250304f66404cd153fa39388ddcdaec7e0f1707",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x41d58951cbd12d4ef49b0437897677bbf5547c80",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 534352,
+      "chain_name": "scroll",
+      "address": "0x9e0dcf7a33bbde6689560c5c807dd2a3df991277",
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Flashloan Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 534352,
+          "chain_name": "scroll",
+          "address": "0x9e0dcf7a33bbde6689560c5c807dd2a3df991277",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 534352,
+          "chain_name": "scroll",
+          "address": "0x9ee1963f05553ef838604dd39403be21cef26aa4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182",
+      "name": "FlashParallelToken",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Flashloan Module",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb3dbece41acdd6ad76d037b8da2e53c58826746c",
+      "impl_name": "FlashParallelToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4738682c1d8981ed9583b58f619d91742ad8e74f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc9b6279baa19dbb8bcc3250c89caa093aaba0bfc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x3ebe332d2aa8ccb5ddc051c9925d9a41708e54d9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x4def531c3060686948f00ecc7504f2e0b71eda14",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xc0e62f863bbd9dab9d2f79e4ecc248e60c4fe3fa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x9e0dcf7a33bbde6689560c5c807dd2a3df991277",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0x9e0dcf7a33bbde6689560c5c807dd2a3df991277",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x09f3964874d3c8494f2e98e9e003e53c2750ab72",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xc15fd01a21e8f6625f709b16f6b3562d2848da5f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x2cb56df31b909854b01d4b1ead5676cf90e885e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x4dde0e308cfb60515218c6ad2df1134fc48531fc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0x10eb3f443baa258b3417d6c318f7865ad61b539b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0x46b053ce47f16390574bb8f54caccd04c1e3faf2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x15452454a9735d68df430879b2941316a09295b1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xc0e62f863bbd9dab9d2f79e4ecc248e60c4fe3fa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb3dbece41acdd6ad76d037b8da2e53c58826746c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x10eb3f443baa258b3417d6c318f7865ad61b539b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x46b053ce47f16390574bb8f54caccd04c1e3faf2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x08417cdb7f52a5021bb4eb6e0deaf3f295c3f182",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb3dbece41acdd6ad76d037b8da2e53c58826746c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x9e0dcf7a33bbde6689560c5c807dd2a3df991277",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x10eb3f443baa258b3417d6c318f7865ad61b539b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x46b053ce47f16390574bb8f54caccd04c1e3faf2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0x9e0dcf7a33bbde6689560c5c807dd2a3df991277",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 534352,
+          "chain_name": "scroll",
+          "address": "0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x0d45b129dc868963025db79a9074ea9c9e32cae4",
+      "name": "GenericHarvester",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallelizer Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GenericHarvester",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x36da06796fd9d22bcd6287b66a87ffdadb12636c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x120805265fa944834dc6e930de2995768806a9d2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x57770c1721eb35509f38210a935c8b1911db7e0e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xca43ecfcdfba1fed003649e946ae6091646b410a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x0d45b129dc868963025db79a9074ea9c9e32cae4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x120805265fa944834dc6e930de2995768806a9d2",
+      "name": "Getters",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallelizer Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Getters",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa9c21cf291ad935e0c9b05a55a42254fb159181d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x120805265fa944834dc6e930de2995768806a9d2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xbe65f0f410a72bec163dc65d46c83699e957d588",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xf6cc47e981ed5902be382dbe7b54e3696de22dbb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x90337e484b1cb02132fc150d3afa262147348545",
+      "name": "MainFeeDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MainFeeDistributor",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x90337e484b1cb02132fc150d3afa262147348545",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xb4af56f42e19f6555611c5b2f5075eecd17cbaa1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2684",
+        "audit-2687"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46",
+      "name": "ParallelAccessManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Core Protocol",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ParallelAccessManager",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x94ea8800444017695345156319e96bdb1e355f7a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x8fcf9118fdd359f6277cdd143c2da206e64140f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x8efb3ded78fbaef2a4efe01e01bbd911e4094b78",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xa7eb076f57960e265b91514c03d1d1281055a75c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 534352,
+          "chain_name": "scroll",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x9c68850e18eacd4ea7ca2998b6bbed9cf55316cb",
+      "name": "PeripheralMigrationContract",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PeripheralMigrationContract",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x9c68850e18eacd4ea7ca2998b6bbed9cf55316cb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2684",
+        "audit-2687"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x7790dd69aa10ed3f1271e41cd7222d2a7d2d5948",
+      "name": "PeripheralPRL",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PeripheralPRL",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x7790dd69aa10ed3f1271e41cd7222d2a7d2d5948",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2684"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1bb46fc55e3fd91ca0f162dcc0b3ef574c8ff97e",
+      "name": "Redeemer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallelizer Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Redeemer",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1bb46fc55e3fd91ca0f162dcc0b3ef574c8ff97e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xe5c82b4f09fd4d079757e156db44afd2c8032cc8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xf92ed96c7bec4ad46ff7937cae633c907ebdf594",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe9fe4720fa99f9b28584da44abb8cf91f15990e8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x6efeddf9269c3683ba516cb0e2124fe335f262a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2b6c7c275404e93a14a05b549af292231d6e4dec",
+      "name": "RewardHandler",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallelizer Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RewardHandler",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd8cc2a51556da84b5db309e86f30ff98b5309862",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xa5d9caa2ef06d39d5992b5046e2defff6d5cbd18",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2b6c7c275404e93a14a05b549af292231d6e4dec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x36da06796fd9d22bcd6287b66a87ffdadb12636c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x7b54f3d993d3bca077946034ea710f9c07420c72",
+      "name": "RewardMerkleDistributor",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RewardMerkleDistributor",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x7b54f3d993d3bca077946034ea710f9c07420c72",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2684",
+        "audit-2687"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0d45b129dc868963025db79a9074ea9c9e32cae4",
+      "name": "SavingsNameable",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Savings Module",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x41d58951cbd12d4ef49b0437897677bbf5547c80",
+      "impl_name": "SavingsNameable",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0d45b129dc868963025db79a9074ea9c9e32cae4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x41d58951cbd12d4ef49b0437897677bbf5547c80",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xae2fb66d1989ec1684ff095b75d151ae8e403e2e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xe8a3da6f5ed1cf04c58ac7f6a7383641e877517b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x769f533139eb1723c41cadec243ce10bc4d400fd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x9b3a8f7cec208e247d97dee13313690977e24459",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa65821ffe86e6eb613daa1f70af350c5a21759df",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x3dde241c6263eb0cdf2e09f77cbcf90028a9a6c3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x645feabb38283d13249845881778b6c24a25884d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x9d92c21205383651610f90722131655a5b8ed3e0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7",
+      "name": "SettersGovernor",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallelizer Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SettersGovernor",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xeb197439d1425f3129f01f7763ec511df2489095",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x5beada21a6b9cb229117b3ea2c0d1594785013a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xae2fb66d1989ec1684ff095b75d151ae8e403e2e",
+      "name": "SettersGuardian",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallelizer Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SettersGuardian",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc743bede8412228b42ae755cd64a33cd3ae4a92f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xca43ecfcdfba1fed003649e946ae6091646b410a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xae2fb66d1989ec1684ff095b75d151ae8e403e2e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe5c82b4f09fd4d079757e156db44afd2c8032cc8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xbbc90e685c4a66ebbdc71a3a1437d3111e43fe84",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x01fa35fde0e813e2d6687660a74a313d8d922e48",
+      "name": "sPRL1",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "sPRL1",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xdb7be3a50bdf5641757ebea38e8014e1f0aa9475",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x01fa35fde0e813e2d6687660a74a313d8d922e48",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2684",
+        "audit-2687"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1b2741db9f46a0411852e4cc28ddc476851b5179",
+      "name": "Swapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallelizer Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x506ba37aa8e265be445913b9c4080852277f3c5a",
+      "impl_name": "Swapper",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x506ba37aa8e265be445913b9c4080852277f3c5a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6efeddf9269c3683ba516cb0e2124fe335f262a2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xa65821ffe86e6eb613daa1f70af350c5a21759df",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xbefbae2330186f031b469e26283acc66bb5f8826",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x1b2741db9f46a0411852e4cc28ddc476851b5179",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x57265a3d7db8f4a4a155eadf6c7326926cac1490",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x098e37a2bfac675cf5a5c21d4f10e391d502d8b6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x098e37a2bfac675cf5a5c21d4f10e391d502d8b6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x9e77331a61e05737f41c379c5c7145df802c64ef",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x9e77331a61e05737f41c379c5c7145df802c64ef",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xd4dee6e089969600d3359cdbcd34e3111bc838eb",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xd4dee6e089969600d3359cdbcd34e3111bc838eb",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 250,
+      "chain_name": "fantom",
+      "address": "0xf6abf8a89b3da7c254bb3207e2eba9810bc51f58",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Parallel Protocol V2",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0xf6abf8a89b3da7c254bb3207e2eba9810bc51f58",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xca43ecfcdfba1fed003649e946ae6091646b410a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xca43ecfcdfba1fed003649e946ae6091646b410a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xa360e5ad9f17caff53715346888aa0d13541c2f5",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xa360e5ad9f17caff53715346888aa0d13541c2f5",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 57073,
+      "chain_name": "ink",
+      "address": "0x9e0dcf7a33bbde6689560c5c807dd2a3df991277",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Flashloan Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 57073,
+          "chain_name": "ink",
+          "address": "0x9e0dcf7a33bbde6689560c5c807dd2a3df991277",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 57073,
+      "chain_name": "ink",
+      "address": "0x9ee1963f05553ef838604dd39403be21cef26aa4",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Core Protocol",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 57073,
+          "chain_name": "ink",
+          "address": "0x9ee1963f05553ef838604dd39403be21cef26aa4",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 57073,
+      "chain_name": "ink",
+      "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Bridging Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 57073,
+          "chain_name": "ink",
+          "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 57073,
+      "chain_name": "ink",
+      "address": "0xcb3e564293393e0d4f43305a250d4e1716de600b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Core Protocol",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 57073,
+          "chain_name": "ink",
+          "address": "0xcb3e564293393e0d4f43305a250d4e1716de600b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 57073,
+      "chain_name": "ink",
+      "address": "0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Flashloan Module",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 57073,
+          "chain_name": "ink",
+          "address": "0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 57073,
+      "chain_name": "ink",
+      "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Core Protocol",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 57073,
+          "chain_name": "ink",
+          "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x02c69c480ab4a35f2c7117e2c17c904cd76f25d8",
+      "name": "VaultsCoreState",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultsCoreState",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5362a6bf52b07c3c6a795ab03675f041a3e3de64",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x963d9858651fa21e903e83c5d985fc74f6745249",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdb75531e12ca4bb6cd5cfe77f10522b08806386f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x02c69c480ab4a35f2c7117e2c17c904cd76f25d8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x0f3acbc30da85612588c2e2dfd81ac667b662b48",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xfad382ee9b8229fb9b05df9f9391bac5dd81f346",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2685"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xd8cc2a51556da84b5db309e86f30ff98b5309862",
+      "name": "VaultsV2Feed",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultsV2Feed",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xd8cc2a51556da84b5db309e86f30ff98b5309862",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xeb197439d1425f3129f01f7763ec511df2489095",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2684,
+      "audit_key": "audit-2684",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Bailsec%20-%20Parallel%20Protocol%20-%20PRL%20Token%20-%20Final%20Report%20-%20January%202025.pdf",
+      "auditor": "Guardian",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Auctioneer",
+        "LockBox",
+        "MainFeeDistributor",
+        "OFT",
+        "OFTAdapter",
+        "OFTCore",
+        "PRL",
+        "PeripheralMigrationContract",
+        "PeripheralPRL",
+        "PrincipalMigrationContract",
+        "RewardMerkleDistributor",
+        "SideChainFeeCollector",
+        "TimeLockPenaltyERC20",
+        "sPRL1",
+        "sPRL2"
+      ],
+      "matched_contracts": 12,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2685,
+      "audit_key": "audit-2685",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/parallel-protocol/bridging-module/ad58d439a5e0cae78fa7e53aa0698347bd83b921/docs/audits/Bailsec%20-%20Parallel%20Bridge%20-%20BridgeableToken%20-%20Final%20Report%20-%20December%202024.pdf",
+      "auditor": "Guardian",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BridgeableToken",
+        "VaultsCoreState"
+      ],
+      "matched_contracts": 18,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2686,
+      "audit_key": "audit-2686",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/code-423n4/2022-04-mimo/b18670f44d595483df2c0f76d1c57a7bfbfbc083/core/audits/certik.pdf",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AddressProvider",
+        "AddressProviderV1",
+        "ConfigProvider",
+        "ConfigProviderV1",
+        "DemandMiner",
+        "FeeDistributor",
+        "FeeDistributorV1",
+        "LiquidiationManager",
+        "MIMODistributor",
+        "PreUseAirdrop",
+        "PriceFeed",
+        "RepayVault",
+        "Upgrade",
+        "VaultsCore",
+        "VaultsCoreV1",
+        "VaultsDataProvider",
+        "VaultsDataProviderV1"
+      ],
+      "matched_contracts": 13,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2687,
+      "audit_key": "audit-2687",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Parallel%20Protocol%20-%20Zenith%20Audit%20Report.pdf",
+      "auditor": "Guardian",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseRewardPool",
+        "BoosterLite",
+        "EndpointV2",
+        "IAuraStashToken",
+        "IBridgeableToken",
+        "IDeposit",
+        "IRewards",
+        "ITokenMinter",
+        "IVirtualBalanceRewardPool",
+        "LockBox",
+        "MainFeeDistributor",
+        "OAppSender",
+        "PeripheralMigrationContract",
+        "PrincipalMigrationContract",
+        "RewardMerkleDistributor",
+        "SendLibBaseE2",
+        "SideChainFeeCollector",
+        "TimeLockPenaltyERC20",
+        "sPRL1",
+        "sPRL2"
+      ],
+      "matched_contracts": 7,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2688,
+      "audit_key": "audit-2688",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://certificate.quantstamp.com/full/ten-x-titan.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AccessController",
+        "AddressProvider",
+        "AggregatorV3Interface",
+        "ConfigProvider",
+        "EURX",
+        "FeeDistributor",
+        "IAccessController",
+        "IAddressProvider",
+        "IConfigProvider",
+        "IFeeDistributor",
+        "ILiquidationManager",
+        "IPriceFeed",
+        "IRatesManager",
+        "ISTABLEX",
+        "IVaultsCore",
+        "IVaultsDataProvider",
+        "LiquidationManager",
+        "MathPow",
+        "PriceFeed",
+        "PriceFeedEUR",
+        "RatesManager",
+        "USDX",
+        "VaultsCore",
+        "VaultsDataProvider",
+        "WadRayMath"
+      ],
+      "matched_contracts": 13,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Guardian",
+      "tier": 2,
+      "contracts_covered": 7,
+      "coverage_pct": 26.9,
+      "latest_audit": "2025-02"
+    },
+    {
+      "auditor": "CertiK",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 3.8,
+      "latest_audit": "2021-06"
+    },
+    {
+      "auditor": "Quantstamp",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 3.8,
+      "latest_audit": "2021-01"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x4dde0e308cfb60515218c6ad2df1134fc48531fc",
+      "name": "BridgeableTokenP",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x15452454a9735d68df430879b2941316a09295b1",
+      "name": "DiamondCut",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x056566077da53b0a349af9b9bdbfa2658ccc2c3f",
+      "name": "DiamondInitializer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x23d491aa7c0972087f8a607f6f4c7106a02ba95d",
+      "name": "DiamondLoupe",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1250304f66404cd153fa39388ddcdaec7e0f1707",
+      "name": "DiamondProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x0d45b129dc868963025db79a9074ea9c9e32cae4",
+      "name": "GenericHarvester",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x120805265fa944834dc6e930de2995768806a9d2",
+      "name": "Getters",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46",
+      "name": "ParallelAccessManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1bb46fc55e3fd91ca0f162dcc0b3ef574c8ff97e",
+      "name": "Redeemer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2b6c7c275404e93a14a05b549af292231d6e4dec",
+      "name": "RewardHandler",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x472ed57b376fe400259fb28e5c46eb53f0e3e7e7",
+      "name": "SettersGovernor",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xae2fb66d1989ec1684ff095b75d151ae8e403e2e",
+      "name": "SettersGuardian",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1b2741db9f46a0411852e4cc28ddc476851b5179",
+      "name": "Swapper",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xd8cc2a51556da84b5db309e86f30ff98b5309862",
+      "name": "VaultsV2Feed",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 28,
+    "upstream": 0,
+    "standard_library": 4,
+    "needs_review": 6
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 63
+    },
+    "extraction_confidence_counts": {
+      "high": 5
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

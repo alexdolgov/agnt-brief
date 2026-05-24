@@ -1,0 +1,18 @@
+{
+  "address": "0xb56a454d8dac2ad4cb82337887717a2a427fcd00",
+  "chain_id": 1,
+  "contract_name": "veiZi",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": "0xb56a454d8dac2ad4cb82337887717a2a427fcd00",
+  "fetched_at": "2026-05-24T02:18:08.525Z"
+}

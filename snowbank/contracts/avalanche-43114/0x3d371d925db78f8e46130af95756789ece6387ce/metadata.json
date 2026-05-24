@@ -1,0 +1,17 @@
+{
+  "address": "0x3d371d925db78f8e46130af95756789ece6387ce",
+  "chain_id": 43114,
+  "contract_name": "StakingHelper",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "GNU GPLv2",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000085784d5e2ccae89bcb39ebf0ac6cdc93d42d99ad0000000000000000000000007d1232b90d3f809a54eeaeebc639c62df8a8942f",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T01:58:50.859Z"
+}

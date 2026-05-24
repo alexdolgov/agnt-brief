@@ -34,6 +34,7 @@ Each project directory contains:
 | [republic-note](./republic-note/brief.md) | $16.31M | avalanche | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $51.20M |
 | [stakestone](./stakestone/brief.md) | $26.05M | 8 | 183 | 60/183 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $49.73M |
 | [illuvium](./illuvium/brief.md) | $9.60M | ethereum | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $39.75M |
+| [snowbank](./snowbank/brief.md) | $3.77M | avalanche | 108 | 12/108 (11%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $36.05M |
 | [zklink-nova](./zklink-nova/brief.md) | $13.41M | 11 | 443 | 136/443 (31%) | 12.1% | 2.8% (OpenZeppelin) | 10 | aging | ⚠️ declining | $33.89M |
 | [backedfi](./backedfi/brief.md) | $8.20M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $33.35M |
 | [obeliskbtc](./obeliskbtc/brief.md) | $9.05M | ethereum | 19 | 19/19 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $33.19M |
@@ -84,8 +85,10 @@ Each project directory contains:
 | [beradrome](./beradrome/brief.md) | $7.14M | berachain | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.29M |
 | [steer-protocol](./steer-protocol/brief.md) | $20.90M | arbitrum | 43 | 31/43 (72%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.26M |
 | [liquidloans](./liquidloans/brief.md) | $3.96M | base | 20 | 20/20 (100%) | 30.0% | 0.0% (-) | 2 | fresh | ⚠️ declining | $3.04M |
+| [parallel-protocol](./parallel-protocol/brief.md) | $3.79M | 19 | 38 | 26/38 (68%) | 30.8% | 0.0% (-) | 5 | aging | ✅ active | $2.98M |
 | [gro](./gro/brief.md) | $4.66M | ethereum | 124 | 36/124 (29%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.93M |
 | [alien-base](./alien-base/brief.md) | $4.99M | base | 58 | 47/58 (81%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.92M |
+| [izumi-finance](./izumi-finance/brief.md) | $3.79M | 13 | 181 | 21/181 (12%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $2.76M |
 | [singularity-finance](./singularity-finance/brief.md) | $5.36M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $2.69M |
 | [loopring](./loopring/brief.md) | $10.57M | base, ethereum | 145 | 75/145 (52%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.43M |
 | [revert](./revert/brief.md) | $11.61M | 8 | 84 | 18/84 (21%) | 11.1% | 0.0% (-) | 2 | stale | ✅ active | $2.09M |
@@ -198,6 +201,7 @@ Each project directory contains:
 | [ferro](./ferro/brief.md) | $5.05M | cronos | 21 | 0/21 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [four.meme](./four.meme/brief.md) | $4.89M | bsc | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [fulcrom](./fulcrom/brief.md) | $13.52M | cronos, zksync-era | 80 | 0/80 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [generic.money](./generic.money/brief.md) | $3.74M | ethereum | 13 | 12/13 (92%) | 75.0% | 75.0% (Spearbit) | 1 | fresh | ✅ active | - |
 | [gimo](./gimo/brief.md) | $9.07M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [goldfinger](./goldfinger/brief.md) | $23.90M | bsc | 5 | 4/5 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [growihf](./growihf/brief.md) | $8.42M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -267,6 +271,7 @@ Each project directory contains:
 | [syncswap-protocol](./syncswap-protocol/brief.md) | $10.03M | linea, scroll, zksync-era | 158 | 31/158 (20%) | 22.6% | 0.0% (-) | 3 | stale | ✅ active | - |
 | [thedeep](./thedeep/brief.md) | $8.46M | 4 | 164 | 11/164 (7%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [thruster](./thruster/brief.md) | $5.82M | blast | 20 | 14/20 (70%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
+| [tothemoon](./tothemoon/brief.md) | $3.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [troves](./troves/brief.md) | $4.99M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [truefi](./truefi/brief.md) | $15.40M | arbitrum, ethereum | 8 | 8/8 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [trufin-protocol](./trufin-protocol/brief.md) | $6.84M | ethereum | 7 | 6/7 (86%) | 66.7% | 33.3% (OpenZeppelin) | 7 | fresh | ⚠️ declining | - |
@@ -281,5 +286,5 @@ Each project directory contains:
 | [zenlink](./zenlink/brief.md) | $5.52M | moonbeam, moonriver | 226 | 12/226 (5%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-05-24T01:52:09.214Z_
-_Projects: 269_
+_Generated: 2026-05-24T02:18:20.468Z_
+_Projects: 274_

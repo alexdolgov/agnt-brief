@@ -1,0 +1,17 @@
+{
+  "address": "0x15452454a9735d68df430879b2941316a09295b1",
+  "chain_id": 8453,
+  "contract_name": "DiamondCut",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T02:10:46.341Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xa420aac325ee5b4e7b7b6008e73bb77452ac3f95",
+  "chain_id": 43114,
+  "contract_name": "SnowbankProMaxFactory",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000a82422a5fd4f9cb85cd4aac393cd3296a27dd8730000000000000000000000006a019fac4954af6019836d3769920122fbf3b3be000000000000000000000000bbf060a065c918022006699da8e300b0ca152706000000000000000000000000561c56b6ea927c157a9f51fcccfa50b777c1ea7c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T01:58:51.945Z"
+}

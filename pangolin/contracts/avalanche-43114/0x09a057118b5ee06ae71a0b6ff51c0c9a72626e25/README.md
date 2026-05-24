@@ -1,0 +1,16 @@
+# RewarderViaMultiplier
+
+| Field | Value |
+|---|---|
+| Chain | avalanche (43114) |
+| Address | `0x09a057118b5ee06ae71a0b6ff51c0c9a72626e25` |
+| Role | unknown |
+| Origin | native |
+| Audited | Yes |
+| Audits | [Pangolin_RewarderViaMultiplier_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_RewarderViaMultiplier_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) |
+| Deployments | 35 (avalanche [`0x09a057118b5ee06ae71a0b6ff51c0c9a72626e25`](../0x09a057118b5ee06ae71a0b6ff51c0c9a72626e25/); avalanche `0x13b58aae6bc4196e7dc4315472fdfe9957fd0b65`; avalanche `0x13e349bd7e110effe113b38c879a2a6c5a73c738`; avalanche `0x16ca5886edeeb1e3287332feede25ad1d5e03d87`; avalanche `0x26aaabee13e341ad8219bcf42288b4ec0ab0a34b`; avalanche `0x309f3d81ec57ea9ce10fd3a93b948a1dd9ab1d8c`; avalanche `0x344c5a70b03dea147d3c28c153180fe6358ea0b8`; avalanche `0x34595b8dc66beaa639f7b714bd6b2858167b2158`; avalanche `0x39ccafe11906dc2ed4ddee7b2367e279520a280b`; avalanche `0x4b94cca7b31101c5b65d52ca39d12a3a5d6eaa78`; avalanche `0x4e11b9e0c97995adcba7256174ef264b939aa3d8`; avalanche `0x4f7301de376f66b97ac29bc039024695ff996775`; avalanche `0x510bb2fe06696f45f0010789116ebde9792677f9`; avalanche `0x621c32b8b559d88290f05dac26a667d682c626ed`; avalanche `0x68ed5841521173263aa40062138f36935dbfa4d5`; avalanche `0x6b5f9c8285540475c7187f62ab21f54cd19e08f4`; avalanche `0x6e2b032c6d802153ddec9db63336325bdefebf77`; avalanche `0x6e7eb7516beb6a4f0a65012d6e730976c204365b`; avalanche `0x7a5962291cca5c0963a708b927878efb2356d791`; avalanche `0x87bc67510af6b972f7c55e510aca8a1401644e59`; avalanche `0x8a0a934b2517e6f70b26c254dff6fc70d900e6a0`; avalanche `0x8fc464eac7775cd1d7e7a80364d36223d69fee38`; avalanche `0x95850d5b07ec1b6aaa528d078464d952c4cfc5de`; avalanche `0x99b9af66ac7ae76398f05c251b4c66bab8da1867`; avalanche `0x9e88573afcba43d5e0863e9ed992d8f3135d269d`; avalanche `0xb0f89ff3d43ca34d746d66eee8784afb73d134fa`; avalanche `0xb3e913b6b65d9db7a83d4409a0d1b56257fae25f`; avalanche `0xb9d42d82c485e6d39db2b9957a7b197624d3d632`; avalanche `0xbe09356ce0d549329dbb4bb67dad034b884c3cd8`; avalanche `0xce6726b5b3cf266ccc81639108571d9f6bfa185c`; avalanche `0xdf6e2ca39faad5feb3336d60ed9aab1404f2d36d`; avalanche `0xe13eec4c05d5b964536ab36272f6f5dbd4c6d4cf`; avalanche `0xea4ee2405f18facd7626f5773ea33881fc4060a0`; avalanche `0xeaa3adad7d201577806954b46880cbcc675cdd18`; avalanche `0xeb037024dc060100191a46e404e03f363d8e6281`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

@@ -1,0 +1,17 @@
+{
+  "address": "0x0c58c2041da4cfccf5818bbe3b66dbc23b3902d9",
+  "chain_id": 43114,
+  "contract_name": "Airdrop",
+  "compiler_version": "v0.8.0+commit.c7dfd78e",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000060781c2586d68229fde47564546784ab3faca982000000000000000000000000f39f9671906d8630812f9d9863bbef5d523c84ab00000000000000000000000039cf1bd5f15fb22ec3d9ff86b0727afc203427cc000000000000000000000000808ce8dec9e10bed8d0892aceef9f1b8ec2f52bd000000000000000000000000650f5865541f6d68bddfe977db933c293ea72358",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T02:38:12.852Z"
+}

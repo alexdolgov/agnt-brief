@@ -1,0 +1,17 @@
+{
+  "address": "0x2f017ee436429711698a5f6761fe935f4866ed2f",
+  "chain_id": 1,
+  "contract_name": "GUniFactory",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "0000000000000000000000001f98431c8ad98523631ae4a59f267346ea31f984",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:58:06.429Z"
+}

@@ -86,6 +86,7 @@
 | [endur](./endur/) | $9.7M | 0.0% | ? | unknown | 4 | 0 | 2026-05-23 |
 | [enosys](./enosys/) | $28.0M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
+| [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 49 | 2026-05-24 |
 | [etherfuse](./etherfuse/) | $5.1M | 0.0% | ? | unknown | 0 | 25 | 2026-05-23 |
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | unknown | 2 | 58 | 2026-05-23 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |

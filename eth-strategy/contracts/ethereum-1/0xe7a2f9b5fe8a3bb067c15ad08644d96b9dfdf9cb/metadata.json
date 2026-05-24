@@ -1,0 +1,17 @@
+{
+  "address": "0xe7a2f9b5fe8a3bb067c15ad08644d96b9dfdf9cb",
+  "chain_id": 1,
+  "contract_name": "esETH",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "000000000000000000000000c53cced6332d06972a7eaedc64fdf6d4af5220b8000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2000000000000000000000000328aed8f7a01f45a959c187f3cb97ec508064854000000000000000000000000c53cced6332d06972a7eaedc64fdf6d4af5220b8",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:58:10.185Z"
+}

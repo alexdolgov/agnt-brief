@@ -1,0 +1,18 @@
+{
+  "address": "0x133f33873905d15419859b5a7cafa3757841f01c",
+  "chain_id": 1,
+  "contract_name": "MultiDistro",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "cancun",
+  "license": "UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:58:05.305Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x462f7ec57c6492b983a8c8322b4369a7f149b859",
+  "chain_id": 43114,
+  "contract_name": "MPTValidator01",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000009d1b1669c73b033dfe47ae5a0164ab96df25b9440000000000000000000000002f6f07cdcf3588944bf4c42ac74ff24bf56e7590",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:01:48.699Z"
+}

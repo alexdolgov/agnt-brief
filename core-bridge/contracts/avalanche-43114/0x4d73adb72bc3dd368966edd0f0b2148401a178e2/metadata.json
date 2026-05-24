@@ -1,0 +1,18 @@
+{
+  "address": "0x4d73adb72bc3dd368966edd0f0b2148401a178e2",
+  "chain_id": 43114,
+  "contract_name": "UltraLightNodeV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:01:46.844Z"
+}

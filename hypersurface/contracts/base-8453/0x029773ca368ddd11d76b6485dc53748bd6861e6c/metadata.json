@@ -1,0 +1,17 @@
+{
+  "address": "0x029773ca368ddd11d76b6485dc53748bd6861e6c",
+  "chain_id": 8453,
+  "contract_name": "MamoStrategyRegistry",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:27:11.377Z"
+}

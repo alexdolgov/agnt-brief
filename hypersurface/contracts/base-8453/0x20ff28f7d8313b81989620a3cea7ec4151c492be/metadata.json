@@ -1,0 +1,17 @@
+{
+  "address": "0x20ff28f7d8313b81989620a3cea7ec4151c492be",
+  "chain_id": 8453,
+  "contract_name": "MamoStakingRegistry",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "000000000000000000000000dca82e03057329f53ed4173429d46b0511e46fb8000000000000000000000000dca82e03057329f53ed4173429d46b0511e46fb8000000000000000000000000fe2ff8927ef602ddac27e314a199d16be61778600000000000000000000000007300b37dfdfab110d83290a29dfb31b1740219fe000000000000000000000000be6d8f0d05cc4be24d5167a3ef062215be6d18a5000000000000000000000000254cf9e1e6e233aa1ac962cb9b05b2cfeaae15b00000000000000000000000000000000000000000000000000000000000000064",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:27:23.959Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x7bddc61c2d3de2c48a37e6ae74b93d7888ec13d0",
+  "chain_id": 8453,
+  "contract_name": "MultiVaultGetter",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000006b2983e7d345eea1c385468bc110df94eba4029d0000000000000000000000006f2b2218cc4ffb87d09ee8b3f6543e3d4cdd2b20",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:11:16.250Z"
+}

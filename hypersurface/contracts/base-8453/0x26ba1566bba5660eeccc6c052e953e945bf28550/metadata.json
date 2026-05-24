@@ -1,0 +1,18 @@
+{
+  "address": "0x26ba1566bba5660eeccc6c052e953e945bf28550",
+  "chain_id": 8453,
+  "contract_name": "MamoStakingStrategy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 48,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:27:22.705Z"
+}

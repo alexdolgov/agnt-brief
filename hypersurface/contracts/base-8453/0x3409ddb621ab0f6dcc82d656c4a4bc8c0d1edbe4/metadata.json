@@ -1,0 +1,18 @@
+{
+  "address": "0x3409ddb621ab0f6dcc82d656c4a4bc8c0d1edbe4",
+  "chain_id": 8453,
+  "contract_name": "HedgedPoolLib",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, GPL-2.0-or-later, GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:27:10.857Z"
+}

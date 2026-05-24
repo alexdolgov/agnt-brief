@@ -63,6 +63,7 @@
 | [clever](./clever/) | $12.4M | 10.3% | $10.8M | active | 3 | 78 | 2026-05-23 |
 | [coinsquare](./coinsquare/) | $12.4M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [colend-protocol](./colend-protocol/) | $4.3M | 0.0% | ? | unknown | 7 | 0 | 2026-05-23 |
+| [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 9 | 2026-05-24 |
 | [coti-treasury](./coti-treasury/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 935 | 2026-05-23 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-05-23 |
 | [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | unknown | 3 | 2 | 2026-05-23 |
@@ -111,6 +112,7 @@
 | [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
+| [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 242 | 2026-05-24 |
 | [hyperswap](./hyperswap/) | $1.9M | 0.0% | $1.9M | active | 0 | 940 | 2026-05-22 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 12 | 2026-05-23 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | unknown | 3 | 84 | 2026-05-22 |
@@ -136,6 +138,7 @@
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [levex](./levex/) | $11.2M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [liminal](./liminal/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-22 |
+| [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | declining | 4 | 20 | 2026-05-24 |
 | [llamapay](./llamapay/) | $26.4M | 0.0% | ? | active | 0 | 20 | 2026-05-22 |
 | [looping-collective](./looping-collective/) | $11.8M | 7.7% | $11.8M | active | 13 | 14 | 2026-05-22 |
 | [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 0 | 145 | 2026-05-23 |

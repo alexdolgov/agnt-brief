@@ -1,0 +1,17 @@
+{
+  "address": "0xf6d788dd55738f82d03f97597660221ca8b4c98d",
+  "chain_id": 999,
+  "contract_name": "OtokenFactory",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000dc7f9782970dc0603330ffb4a395b648207c8068",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:27:12.738Z"
+}

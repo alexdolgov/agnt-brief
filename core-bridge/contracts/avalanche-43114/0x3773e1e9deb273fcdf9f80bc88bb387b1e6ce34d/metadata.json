@@ -1,0 +1,18 @@
+{
+  "address": "0x3773e1e9deb273fcdf9f80bc88bb387b1e6ce34d",
+  "chain_id": 43114,
+  "contract_name": "TreasuryV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:01:46.410Z"
+}

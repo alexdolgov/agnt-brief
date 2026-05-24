@@ -19,6 +19,7 @@ Each project directory contains:
 | [aethir](./aethir/brief.md) | $9.79M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $257.03M |
 | [symbiosis](./symbiosis/brief.md) | $9.35M | cronos, ethereum, scroll | 137 | 69/137 (50%) | 5.8% | 2.9% (SlowMist) | 5 | fresh | ✅ active | $236.15M |
 | [mezo-bridge](./mezo-bridge/brief.md) | $21.64M | ethereum | 138 | 110/138 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $203.90M |
+| [hypersurface](./hypersurface/brief.md) | $4.00M | base, hyperliquid | 242 | 39/242 (16%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $161.03M |
 | [ribbon-finance](./ribbon-finance/brief.md) | $4.96M | avalanche, ethereum | 195 | 130/195 (67%) | 20.6% | 3.1% (OpenZeppelin) | 15 | stale | ⚠️ declining | $148.56M |
 | [zircuit](./zircuit/brief.md) | $13.31M | base, ethereum | 17 | 16/17 (94%) | 25.0% | 0.0% (-) | 3 | aging | ⚠️ declining | $144.24M |
 | [bio-protocol](./bio-protocol/brief.md) | $4.90M | base, ethereum | 41 | 40/41 (98%) | 10.0% | 0.0% (-) | 2 | fresh | ✅ active | $139.62M |
@@ -79,6 +80,7 @@ Each project directory contains:
 | [lair-finance](./lair-finance/brief.md) | $6.14M | berachain | 78 | 14/78 (18%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $3.41M |
 | [beradrome](./beradrome/brief.md) | $7.14M | berachain | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.29M |
 | [steer-protocol](./steer-protocol/brief.md) | $20.90M | arbitrum | 43 | 31/43 (72%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.26M |
+| [liquidloans](./liquidloans/brief.md) | $3.96M | base | 20 | 20/20 (100%) | 30.0% | 0.0% (-) | 2 | fresh | ⚠️ declining | $3.04M |
 | [gro](./gro/brief.md) | $4.66M | ethereum | 124 | 36/124 (29%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.93M |
 | [alien-base](./alien-base/brief.md) | $4.99M | base | 58 | 47/58 (81%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.92M |
 | [singularity-finance](./singularity-finance/brief.md) | $5.36M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $2.69M |
@@ -177,6 +179,7 @@ Each project directory contains:
 | [citrea-bridge](./citrea-bridge/brief.md) | $5.13M | ethereum | 4 | 3/4 (75%) | 33.3% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [coinsquare](./coinsquare/brief.md) | $12.42M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [colend-protocol](./colend-protocol/brief.md) | $4.32M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
+| [core-bridge](./core-bridge/brief.md) | $4.01M | avalanche, base | 9 | 5/9 (56%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [defi-kingdoms](./defi-kingdoms/brief.md) | $6.45M | harmony, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | - |
 | [desyn-protocol](./desyn-protocol/brief.md) | $10.82M | ethereum, mode | 11 | 2/11 (18%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [dooar](./dooar/brief.md) | $5.14M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -273,5 +276,5 @@ Each project directory contains:
 | [zenlink](./zenlink/brief.md) | $5.52M | moonbeam, moonriver | 226 | 12/226 (5%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 
-_Generated: 2026-05-23T23:58:28.823Z_
-_Projects: 261_
+_Generated: 2026-05-24T00:32:54.003Z_
+_Projects: 264_

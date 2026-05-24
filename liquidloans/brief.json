@@ -1,0 +1,1151 @@
+{
+  "schema_version": "2.0",
+  "project_key": "liquidloans",
+  "generated_at": "2026-05-24T00:11:06.760Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "declining",
+  "lifecycle_signal": {
+    "slug": "liquidloans",
+    "tier": 1,
+    "peak_tvl": 181922159,
+    "peak_date": "2024-03-04T00:00:00.000Z",
+    "tvl_30d_ago": 3525992,
+    "tvl_90d_ago": 4561922,
+    "tvl_current": 3149283,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 11455391,
+    "change_30d_pct": -10.683773530966604,
+    "change_90d_pct": -30.965873594506878,
+    "governance_raw": {
+      "evidence": "TVL has dropped 98.27% from peak and 30.97% in 90 days, but the protocol's homepage remains active with no shutdown announcement, indicating ongoing but declining operations.",
+      "confidence": 0.7,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 811,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 98.2688843309077,
+    "governance_evidence": "TVL has dropped 98.27% from peak and 30.97% in 90 days, but the protocol's homepage remains active with no shutdown announcement, indicating ongoing but declining operations.",
+    "governance_confidence": 0.7,
+    "governance_text_chars": 5000,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
+  },
+  "summary": {
+    "total_contracts": 20,
+    "total_addresses": 39,
+    "unique_implementations": 20,
+    "total_deployments": 39,
+    "audited_contracts": 6,
+    "unaudited_contracts": 14,
+    "contracts_verified_audited": 6,
+    "contracts_verified_unaudited": 14,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 30,
+    "total_audits": 4,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 3959319.8595200004,
+    "tvl_usd": 3041629.6482,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "base": 3041629.65
+    },
+    "asd_usd": 3041629.6482,
+    "website_url": "https://www.liquidloans.io",
+    "chains": [
+      "base"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-11",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 0,
+      "stale": 3,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "LiquidLoans is a collateralized debt position (CDP) protocol on Base that allows users to deposit collateral and borrow the stablecoin USDL. It manages vaults, liquidations, and stability mechanisms to maintain the peg and solvency of the system.",
+    "relationship_narrative": "The LiquidLoans family shares a single set of core logic contracts that manage vaults, pools, and stability. Supporting contracts like PriceFeed and LockupContractFactory provide oracle data and lockup functionality used across the core operations.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x5ff161b090fa731e6d403e5d1b37a2ef30ee8fb2",
+      "name": "ActivePool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 3041629.6482,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ActivePool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5ff161b090fa731e6d403e5d1b37a2ef30ee8fb2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa7d587fe21392fa6c2c4a0a3357ec8937b393044",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3041629.6482,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x3c7f9041f3043cbb38fdbf244cb0d0f9d0eeef8b",
+      "name": "BorrowerOperations",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BorrowerOperations",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3c7f9041f3043cbb38fdbf244cb0d0f9d0eeef8b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7f6ba848b5dab6ada942f599882bc391cd85f4d6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xf9dea0ff3d899b39ae5ea7ff79965f2675c18d09",
+      "name": "CollSurplusPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LiquidLoans",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CollSurplusPool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf9dea0ff3d899b39ae5ea7ff79965f2675c18d09",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xfc952a253b1deeec66dbd05f9130f34cece76e9a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x025853fafb436ee00542c414bc0292bf5cae2903",
+      "name": "CommunityIssuance",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CommunityIssuance",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x025853fafb436ee00542c414bc0292bf5cae2903",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x40d561a42b36d1906acf0af5edc7896989f39db5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2673"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x529ad5e88c8f53ce6a18b6e874a69c91c53a585e",
+      "name": "DefaultPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LiquidLoans",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DefaultPool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x529ad5e88c8f53ce6a18b6e874a69c91c53a585e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdb7fed419a72129fbaf5d61e612a96db5cba7f0a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xa16770020925f504d9446adf218e91d56833c9af",
+      "name": "ERC20Mock",
+      "role": "token",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ERC20Mock",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa16770020925f504d9446adf218e91d56833c9af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf3c951dfc50dd4c2fb81bd853d7893d00405ad6d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x9ebd99538d7bfd01247ebaedbfe3302f60cc6cde",
+      "name": "GasPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GasPool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9ebd99538d7bfd01247ebaedbfe3302f60cc6cde",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb242c806197a6f490d1d7d2939d8b6d35236478f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x3e30a6625b95cbb9f4ee03bef83a81f652f6f456",
+      "name": "HintHelpers",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HintHelpers",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x3e30a6625b95cbb9f4ee03bef83a81f652f6f456",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x53c4279ced8f64eccaad0a957d1842eb6304df37",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x9e991a40e7d08b8a85ad51a0d00b921b92dc649e",
+      "name": "LOANStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LiquidLoans",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LOANStaking",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9e991a40e7d08b8a85ad51a0d00b921b92dc649e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdc4675e45e05629911deadb7eb123fd8dc2462b0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x00fce0bb56105164a960fccb6e5e23e502fb88bb",
+      "name": "LOANToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LOANToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x00fce0bb56105164a960fccb6e5e23e502fb88bb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x68b8102d404c46b5b4adfcaeeeee415ecfe4203f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0e97a8a5a3b25f1a4a1e133360c5e2622a453a96",
+      "name": "LockupContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LiquidLoans",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LockupContract",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0e97a8a5a3b25f1a4a1e133360c5e2622a453a96",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc0a202b38ecdaca1d9fe8c25feea4f3b97641dd0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2670"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x57ed23f9d729031886ece75c31aef3f41bd58b3f",
+      "name": "LockupContractCreator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LiquidLoans",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LockupContractCreator",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x57ed23f9d729031886ece75c31aef3f41bd58b3f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe0117aa03cc9afa7f960d52cbc15201c9b3c5ca1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2670"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xcc296fb3c1d477129e0d5cfcb4a840f46781aa7e",
+      "name": "LockupContractFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LiquidLoans",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LockupContractFactory",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcc296fb3c1d477129e0d5cfcb4a840f46781aa7e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdfb36345c8d6f993d0a0763ec9f4927582182d27",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2670"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7bddc61c2d3de2c48a37e6ae74b93d7888ec13d0",
+      "name": "MultiVaultGetter",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MultiVaultGetter",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7bddc61c2d3de2c48a37e6ae74b93d7888ec13d0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9a4ac6b4d13dca4083c5225aaad4beede088f016",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x76ada222f62d4709cfcbf5caf57ce8350277d278",
+      "name": "PriceFeed",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LiquidLoans",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PriceFeed",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x76ada222f62d4709cfcbf5caf57ce8350277d278",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc32a3db099cc73a5cea079f10f9d65d6988ac70d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2670"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6f2b2218cc4ffb87d09ee8b3f6543e3d4cdd2b20",
+      "name": "SortedVaults",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LiquidLoans",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SortedVaults",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6f2b2218cc4ffb87d09ee8b3f6543e3d4cdd2b20",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb4d37992785aca0f2029b97ffaf6541eeeb7e52a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x391dc22eecf3f973993d0ecb6eafb1b7927fa6ed",
+      "name": "StabilityPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StabilityPool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x391dc22eecf3f973993d0ecb6eafb1b7927fa6ed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x76826f9be2bbfefac089e9ef016b7e749a4f500e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2670"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x57139483191cd26474c6a26f83ecb89c242d0375",
+      "name": "Uniswappool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": "LiquidLoans",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Uniswappool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x57139483191cd26474c6a26f83ecb89c242d0375",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x46ee4379844a3b1866a546a9be8d47695e9a53c1",
+      "name": "USDLToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "USDLToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x46ee4379844a3b1866a546a9be8d47695e9a53c1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x78e8cf657742e10eac8f64007615aa741fc76414",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6b2983e7d345eea1c385468bc110df94eba4029d",
+      "name": "VaultManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "LiquidLoans",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultManager",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6b2983e7d345eea1c385468bc110df94eba4029d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6c4d82ae688f66beceac77f512ef48b8318fbdc6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 2670,
+      "audit_key": "audit-2670",
+      "report_name": "read and download here",
+      "report_url": "https://llprod-resource.s3.ap-southeast-2.amazonaws.com/Audit/Liquid_Loans_Protocol_Smart_Contract_Security_Assessment_Report_Halborn.pdf",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CommunityPoints",
+        "FetchCaller",
+        "LockupContract",
+        "LockupContractCreator",
+        "LockupContractFactory",
+        "LockupSacrifice",
+        "PriceFeed",
+        "StabilityPool",
+        "UsingFetch"
+      ],
+      "matched_contracts": 10,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2671,
+      "audit_key": "audit-2671",
+      "report_name": "Trail of Bits",
+      "report_url": "https://github.com/trailofbits/publications/blob/master/reviews/Liquity.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2672,
+      "audit_key": "audit-2672",
+      "report_name": "Coinspect",
+      "report_url": "https://www.coinspect.com/blog/liquity-audit",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 2673,
+      "audit_key": "audit-2673",
+      "report_name": "read and download here",
+      "report_url": "https://llprod-resource.s3.ap-southeast-2.amazonaws.com/Audit/Base/Halborn+Audit+Report+-+Liquid+Loans+on+Base.pdf",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CommunityIssuance",
+        "IERC20Metadata",
+        "IPriceFeedSecondaryUpdateable",
+        "ITickMathWrapper",
+        "IUniswapV2Pool",
+        "IUniswapV3Pool",
+        "LockupAirdrop",
+        "SecondaryCallerUpdateable",
+        "TickMathWrapper",
+        "UniswapV2Caller",
+        "UniswapV3Caller"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Halborn",
+      "tier": 2,
+      "contracts_covered": 6,
+      "coverage_pct": 30,
+      "latest_audit": "2025-11"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x5ff161b090fa731e6d403e5d1b37a2ef30ee8fb2",
+      "name": "ActivePool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 3041629.6482,
+      "risk_note": "Verified native implementation with $3,041,629.65 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x3c7f9041f3043cbb38fdbf244cb0d0f9d0eeef8b",
+      "name": "BorrowerOperations",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xf9dea0ff3d899b39ae5ea7ff79965f2675c18d09",
+      "name": "CollSurplusPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x529ad5e88c8f53ce6a18b6e874a69c91c53a585e",
+      "name": "DefaultPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x9ebd99538d7bfd01247ebaedbfe3302f60cc6cde",
+      "name": "GasPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x3e30a6625b95cbb9f4ee03bef83a81f652f6f456",
+      "name": "HintHelpers",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x9e991a40e7d08b8a85ad51a0d00b921b92dc649e",
+      "name": "LOANStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x00fce0bb56105164a960fccb6e5e23e502fb88bb",
+      "name": "LOANToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7bddc61c2d3de2c48a37e6ae74b93d7888ec13d0",
+      "name": "MultiVaultGetter",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6f2b2218cc4ffb87d09ee8b3f6543e3d4cdd2b20",
+      "name": "SortedVaults",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x46ee4379844a3b1866a546a9be8d47695e9a53c1",
+      "name": "USDLToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6b2983e7d345eea1c385468bc110df94eba4029d",
+      "name": "VaultManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 18,
+    "upstream": 1,
+    "standard_library": 0,
+    "needs_review": 1
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 12
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 2671,
+        "report_name": "Trail of Bits"
+      },
+      {
+        "audit_id": 2672,
+        "report_name": "Coinspect"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x0589ac4734527fdb896367665b1ada33503fcd1b",
+  "chain_id": 8453,
+  "contract_name": "TransferAndEarn",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000fe2ff8927ef602ddac27e314a199d16be6177860000000000000000000000000fe2ff8927ef602ddac27e314a199d16be6177860",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:27:12.143Z"
+}

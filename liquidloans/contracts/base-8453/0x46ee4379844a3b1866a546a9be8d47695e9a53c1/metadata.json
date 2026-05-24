@@ -1,0 +1,17 @@
+{
+  "address": "0x46ee4379844a3b1866a546a9be8d47695e9a53c1",
+  "chain_id": 8453,
+  "contract_name": "USDLToken",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 95,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T00:11:10.663Z"
+}

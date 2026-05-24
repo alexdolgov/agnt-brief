@@ -1,0 +1,18 @@
+{
+  "address": "0x6d6453712c6758f548efc2277e8302588cccc5a7",
+  "chain_id": 1,
+  "contract_name": "aMATICb_R3",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T07:39:22.147Z"
+}

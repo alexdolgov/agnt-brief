@@ -1,0 +1,18 @@
+{
+  "address": "0x5184b698c147202621b57878b4f5d1b661115e7b",
+  "chain_id": 1,
+  "contract_name": "AnkrFuture_R0",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "berlin",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T07:39:21.871Z"
+}

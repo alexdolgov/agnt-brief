@@ -52,6 +52,7 @@
 | [boros](./boros/) | $10.4M | 100.0% | ? | active | 5 | 2 | 2026-05-23 |
 | [botto](./botto/) | $4.3M | 0.0% | ? | unknown | 3 | 19 | 2026-05-23 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-05-23 |
+| [bracket-protocol](./bracket-protocol/) | $923.7M | 6.2% | $920.6M | active | 5 | 182 | 2026-05-24 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-05-23 |
 | [btcfi](./btcfi/) | $11.9M | 0.0% | ? | active | 0 | 15 | 2026-05-23 |
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |

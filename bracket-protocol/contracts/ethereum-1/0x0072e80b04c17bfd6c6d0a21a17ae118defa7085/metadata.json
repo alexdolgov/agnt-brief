@@ -1,0 +1,18 @@
+{
+  "address": "0x0072e80b04c17bfd6c6d0a21a17ae118defa7085",
+  "chain_id": 1,
+  "contract_name": "BracketVaultLens",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-24T07:39:19.677Z"
+}

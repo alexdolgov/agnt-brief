@@ -1,0 +1,17 @@
+{
+  "address": "0x8c7d966b6bee480bf96b41870ccb89559ac176f6",
+  "chain_id": 42161,
+  "contract_name": "TreasurySplitter",
+  "compiler_version": "v0.8.33+commit.64118f21",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "000000000000000000000000b30d9e067db53d14ef0c33e69c56b09ecc8c98db00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001388",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T01:28:15.509Z"
+}

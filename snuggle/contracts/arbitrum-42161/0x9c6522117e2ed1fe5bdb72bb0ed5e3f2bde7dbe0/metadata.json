@@ -1,0 +1,18 @@
+{
+  "address": "0x9c6522117e2ed1fe5bdb72bb0ed5e3f2bde7dbe0",
+  "chain_id": 42161,
+  "contract_name": "RouteProcessor",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "london",
+  "license": "GPL-3.0, GPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T01:28:16.225Z"
+}

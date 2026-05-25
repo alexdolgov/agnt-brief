@@ -1,0 +1,17 @@
+{
+  "address": "0xc79ae87e9f55761c08e346b98dddf070c9872787",
+  "chain_id": 42161,
+  "contract_name": "ConstantProductPoolFactory",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T01:28:17.029Z"
+}

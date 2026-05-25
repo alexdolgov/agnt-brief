@@ -1,0 +1,17 @@
+{
+  "address": "0xc2fb256aba36852dccea92181ec6b355f09a0288",
+  "chain_id": 42161,
+  "contract_name": "StablePoolFactory",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T01:28:16.843Z"
+}

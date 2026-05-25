@@ -223,6 +223,7 @@
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [keyring](./keyring/) | $348.8K | 8.3% | $348.8K | active | 16 | 134 | 2026-05-23 |
 | [kiloex](./kiloex/) | $7.3M | 12.5% | $1.5M | declining | 10 | 111 | 2026-05-24 |
+| [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-05-25 |
 | [king-protocol](./king-protocol/) | $1.3M | 60.0% | ? | active | 4 | 16 | 2026-05-25 |
 | [kintsu](./kintsu/) | $2.7M | 0.0% | ? | unknown | 5 | 12 | 2026-05-24 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |
@@ -280,6 +281,7 @@
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-05-22 |
 | [mu-digital](./mu-digital/) | $19.5M | 100.0% | ? | active | 2 | 12 | 2026-05-22 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-05-24 |
+| [mvl-staking](./mvl-staking/) | $38.1M | 33.3% | ? | unknown | 2 | 50 | 2026-05-25 |
 | [mystic-finance](./mystic-finance/) | $5.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
@@ -483,6 +485,7 @@
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [wrapped-bnb](./wrapped-bnb/) | $1.8M | 0.0% | $1.8M | declining | 1 | 905 | 2026-05-23 |
 | [wrapped](./wrapped/) | $1.7M | 0.0% | $1.7M | active | 0 | 119 | 2026-05-22 |
+| [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [xsy](./xsy/) | $3.6M | 0.0% | $3.6M | active | 0 | 16 | 2026-05-22 |
 | [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 1 | 2026-05-23 |
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | dead | 0 | 30 | 2026-05-24 |

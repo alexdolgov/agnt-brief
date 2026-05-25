@@ -1,0 +1,17 @@
+{
+  "address": "0x1568a7f0bdf67d37dc963c345dbc4a598859eba3",
+  "chain_id": 56,
+  "contract_name": "KineExchangeTreasury",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "00000000000000000000000017d04113a3651e79e7d40a40e47aae23046f776100000000000000000000000017d04113a3651e79e7d40a40e47aae23046f776100000000000000000000000017d04113a3651e79e7d40a40e47aae23046f7761",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:43:24.845Z"
+}

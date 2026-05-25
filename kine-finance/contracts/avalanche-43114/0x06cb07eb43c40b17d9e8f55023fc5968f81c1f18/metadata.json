@@ -1,0 +1,17 @@
+{
+  "address": "0x06cb07eb43c40b17d9e8f55023fc5968f81c1f18",
+  "chain_id": 43114,
+  "contract_name": "KineSwap",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "000000000000000000000000b31f66aa3c1e785363f0875a1b74e27b85fd66c700000000000000000000000077427a2e5904d7d59b96ba2e30b9f7a03996d923",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:43:25.650Z"
+}

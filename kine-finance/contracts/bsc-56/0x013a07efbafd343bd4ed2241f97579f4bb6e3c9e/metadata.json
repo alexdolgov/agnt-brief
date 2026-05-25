@@ -1,0 +1,17 @@
+{
+  "address": "0x013a07efbafd343bd4ed2241f97579f4bb6e3c9e",
+  "chain_id": 56,
+  "contract_name": "KMCDDelegate",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:43:24.813Z"
+}

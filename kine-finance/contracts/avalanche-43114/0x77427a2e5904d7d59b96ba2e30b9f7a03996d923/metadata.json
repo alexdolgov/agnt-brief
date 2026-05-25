@@ -1,0 +1,17 @@
+{
+  "address": "0x77427a2e5904d7d59b96ba2e30b9f7a03996d923",
+  "chain_id": 43114,
+  "contract_name": "KineCard",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:43:26.123Z"
+}

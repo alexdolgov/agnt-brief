@@ -1,0 +1,18 @@
+{
+  "address": "0x52a6a05202aa158cc249093b8267fba4388d70f9",
+  "chain_id": 43114,
+  "contract_name": "DisperseTest",
+  "compiler_version": "v0.4.25+commit.59dbf8f1",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:43:25.690Z"
+}

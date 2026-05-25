@@ -1,0 +1,18 @@
+{
+  "address": "0x040007b1804ad78a97f541bebed377dcb60e4138",
+  "chain_id": 1,
+  "contract_name": "MultiSigWallet",
+  "compiler_version": "v0.5.15+commit.6a57276f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "petersburg",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T08:05:12.359Z"
+}

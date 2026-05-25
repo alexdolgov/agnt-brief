@@ -240,6 +240,7 @@
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 34.4% | $23.1K | active | 3 | 53 | 2026-05-24 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-05-23 |
 | [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-05-24 |
+| [larix](./larix/) | $1.9M | 0.0% | $1.9M | dead | 0 | 935 | 2026-05-25 |
 | [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 0 | 1 | 2026-05-24 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
@@ -376,6 +377,7 @@
 | [rook](./rook/) | $6.8M | 0.0% | $6.8M | dead | 0 | 75 | 2026-05-24 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-25 |
 | [rumpel-labs](./rumpel-labs/) | $1.1B | 1.7% | $1.1B | declining | 4 | 135 | 2026-05-24 |
 | [saber](./saber/) | $1.9M | 0.0% | $1.9M | dead | 0 | 904 | 2026-05-23 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |

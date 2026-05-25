@@ -63,7 +63,7 @@
 | [bitu-protocol](./bitu-protocol/) | $23.1M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [blackhole](./blackhole/) | $29.9M | 31.1% | ? | unknown | 3 | 86 | 2026-05-22 |
-| [blueshift](./blueshift/) | $4.4M | 0.0% | ? | active | 1 | 42 | 2026-05-23 |
+| [blueshift](./blueshift/) | $4.4M | 0.0% | ? | active | 1 | 24 | 2026-05-25 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 17 | 2026-05-22 |
 | [bmx](./bmx/) | $305.7K | 0.0% | $305.7K | active | 0 | 184 | 2026-05-24 |
 | [bob-bridge](./bob-bridge/) | $202.9K | 2.0% | $202.9K | declining | 18 | 53 | 2026-05-24 |
@@ -271,11 +271,12 @@
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-05-24 |
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-25 |
 | [magma-staking](./magma-staking/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
+| [magpie-ecosystem](./magpie-ecosystem/) | $27.1M | 0.0% | ? | declining | 4 | 2794 | 2026-05-25 |
 | [mangrove](./mangrove/) | $4.3M | 24.4% | ? | active | 8 | 68 | 2026-05-23 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-05-23 |
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.2M | 0.0% | ? | sunsetting | 0 | 112 | 2026-05-23 |
 | [manta-cedefi](./manta-cedefi/) | $26.8M | 0.0% | ? | unknown | 0 | 17 | 2026-05-22 |
-| [manta-pacific](./manta-pacific/) | $25.7M | 0.0% | ? | active | 0 | 13 | 2026-05-22 |
+| [manta-pacific](./manta-pacific/) | $25.7M | 0.0% | ? | active | 0 | 3 | 2026-05-25 |
 | [mantra-dao](./mantra-dao/) | $612.5M | 0.0% | $612.5M | declining | 1 | 209 | 2026-05-25 |
 | [matstake](./matstake/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-05-24 |
@@ -392,7 +393,7 @@
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-25 |
-| [rumpel-labs](./rumpel-labs/) | $1.1B | 1.7% | $1.1B | declining | 4 | 135 | 2026-05-24 |
+| [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-05-25 |
 | [saber](./saber/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |
@@ -430,7 +431,7 @@
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
 | [splash-protocol](./splash-protocol/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
-| [spookyswap](./spookyswap/) | $172.0K | 0.0% | $172.0K | dead | 1 | 150 | 2026-05-24 |
+| [spookyswap](./spookyswap/) | $841.7 | 0.0% | $841.7 | dead | 1 | 137 | 2026-05-25 |
 | [sport.fun](./sport.fun/) | $3.7M | 0.0% | ? | active | 0 | 1 | 2026-05-24 |
 | [sprinter](./sprinter/) | $1.1M | 100.0% | ? | active | 6 | 4 | 2026-05-25 |
 | [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-05-24 |

@@ -1,0 +1,18 @@
+{
+  "address": "0x91a341e5617070de70f4df6a83cceceea7fd9e57",
+  "chain_id": 1,
+  "contract_name": "NTMigrator",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:03:14.876Z"
+}

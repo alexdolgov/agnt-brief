@@ -1,0 +1,18 @@
+{
+  "address": "0x049c68ef2791488fb94e888d1350f1e78c153fa4",
+  "chain_id": 1,
+  "contract_name": "NTStakedToken",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "paris",
+  "license": "CC0-1.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:03:12.577Z"
+}

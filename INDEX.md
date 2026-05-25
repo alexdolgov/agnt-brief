@@ -90,6 +90,7 @@
 | [citrea-bridge](./citrea-bridge/) | $5.1M | 33.3% | ? | active | 11 | 4 | 2026-05-23 |
 | [clever](./clever/) | $12.4M | 10.3% | $10.8M | active | 3 | 78 | 2026-05-23 |
 | [coinsquare](./coinsquare/) | $12.4M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
+| [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [colend-protocol](./colend-protocol/) | $4.3M | 0.0% | ? | unknown | 7 | 0 | 2026-05-23 |
 | [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 9 | 2026-05-24 |
 | [coti-treasury](./coti-treasury/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 935 | 2026-05-23 |
@@ -287,6 +288,7 @@
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [neemo-finance](./neemo-finance/) | $1.4M | 0.0% | ? | active | 1 | 14 | 2026-05-24 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-05-24 |
+| [neo-tokyo](./neo-tokyo/) | $1.1M | 0.0% | ? | unknown | 0 | 86 | 2026-05-25 |
 | [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 73 | 2026-05-23 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | dead | 0 | 66 | 2026-05-24 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |

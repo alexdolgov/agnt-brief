@@ -1,0 +1,18 @@
+{
+  "address": "0x51b1b64c33d2c4ae52ca40dcaa186e725e9e4b09",
+  "chain_id": 1,
+  "contract_name": "NTConfig",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:03:13.520Z"
+}

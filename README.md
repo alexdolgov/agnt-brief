@@ -315,6 +315,7 @@ Each project directory contains:
 | [chaingpt](./chaingpt/brief.md) | $4.89M | 7 | 87 | 3/87 (3%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [citrea-bridge](./citrea-bridge/brief.md) | $5.13M | ethereum | 4 | 3/4 (75%) | 33.3% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [coinsquare](./coinsquare/brief.md) | $12.42M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [coinw](./coinw/brief.md) | $1.11M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [colend-protocol](./colend-protocol/brief.md) | $4.32M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [core-bridge](./core-bridge/brief.md) | $4.01M | avalanche, base | 9 | 5/9 (56%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [cozy-finance](./cozy-finance/brief.md) | $2.29M | optimism | 48 | 5/48 (10%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
@@ -412,6 +413,7 @@ Each project directory contains:
 | [nawa-protocol](./nawa-protocol/brief.md) | $4.07M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [nbx](./nbx/brief.md) | $1.82M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [neemo-finance](./neemo-finance/brief.md) | $1.44M | ethereum | 14 | 1/14 (7%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
+| [neo-tokyo](./neo-tokyo/brief.md) | $1.11M | ethereum | 86 | 38/86 (44%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [neptune-finance](./neptune-finance/brief.md) | $6.05M | ethereum | 73 | 19/73 (26%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [netswap](./netswap/brief.md) | $1.36M | metis | 48 | 24/48 (50%) | 20.8% | 0.0% (-) | 2 | stale | 💀 dead | - |
 | [neuralai](./neuralai/brief.md) | $1.30M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -514,5 +516,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-25T05:56:08.100Z_
-_Projects: 502_
+_Generated: 2026-05-25T06:09:45.093Z_
+_Projects: 504_

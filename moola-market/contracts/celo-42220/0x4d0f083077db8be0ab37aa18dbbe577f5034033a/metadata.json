@@ -1,0 +1,18 @@
+{
+  "address": "0x4d0f083077db8be0ab37aa18dbbe577f5034033a",
+  "chain_id": 42220,
+  "contract_name": "GenericLogic",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:06:37.386Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x8264147715e6da0900c11143c6e5879aa6598096",
+  "chain_id": 43114,
+  "contract_name": "L1RestakeDelegator",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:05:09.915Z"
+}

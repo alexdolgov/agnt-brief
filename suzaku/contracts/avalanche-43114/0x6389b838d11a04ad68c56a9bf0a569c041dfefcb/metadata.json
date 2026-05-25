@@ -1,0 +1,17 @@
+{
+  "address": "0x6389b838d11a04ad68c56a9bf0a569c041dfefcb",
+  "chain_id": 43114,
+  "contract_name": "LSTWrapperFactory",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "000000000000000000000000f4c0e5e3f49fd3bda1bda911ed69732cdad20fce0000000000000000000000003e669b3aec2227f1454cdad4b475a636e575694a",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:05:09.882Z"
+}

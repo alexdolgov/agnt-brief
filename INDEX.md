@@ -266,6 +266,7 @@
 | [mode-bridge](./mode-bridge/) | $6.2M | 2.9% | ? | declining | 27 | 100 | 2026-05-23 |
 | [mole](./mole/) | $8.8M | 0.0% | ? | active | 0 | 49 | 2026-05-23 |
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-05-24 |
+| [moola-market](./moola-market/) | $73.9K | 10.8% | $73.9K | declining | 3 | 53 | 2026-05-25 |
 | [more-markets](./more-markets/) | $12.0M | 0.0% | ? | unknown | 0 | 21 | 2026-05-23 |
 | [morph-bridge](./morph-bridge/) | $15.8M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-05-22 |
@@ -402,6 +403,7 @@
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-24 |
 | [sunny](./sunny/) | $1.9M | 0.0% | $1.9M | dead | 0 | 935 | 2026-05-24 |
 | [supernova](./supernova/) | $2.2M | 48.9% | ? | declining | 1 | 47 | 2026-05-24 |
+| [suzaku](./suzaku/) | $1.2M | 4.8% | $1.2M | active | 2 | 49 | 2026-05-25 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-05-23 |
 | [swappi](./swappi/) | $2.0M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [swapscanner](./swapscanner/) | $4.7M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
@@ -447,11 +449,13 @@
 | [unslashed](./unslashed/) | $4.8M | 0.0% | $4.8M | declining | 0 | 69 | 2026-05-24 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-05-23 |
 | [usx.capital](./usx.capital/) | $1.7M | 0.0% | ? | unknown | 1 | 4 | 2026-05-24 |
+| [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-25 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | unknown | 0 | 28 | 2026-05-24 |
 | [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-05-24 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | unknown | 2 | 4 | 2026-05-22 |
 | [verio](./verio/) | $7.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [verus-market](./verus-market/) | $9.9M | 0.0% | ? | declining | 0 | 32 | 2026-05-23 |
+| [vest-markets](./vest-markets/) | $1.2M | 0.0% | ? | declining | 0 | 4 | 2026-05-25 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | rugged | 8 | 83 | 2026-05-25 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | dead | 14 | 96 | 2026-05-24 |

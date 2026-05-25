@@ -1,0 +1,17 @@
+{
+  "address": "0x08c1512f016ac9c1f7a3fff0c457d23010a64f81",
+  "chain_id": 43114,
+  "contract_name": "MiddlewareVaultManager",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 60,
+  "constructor_arguments": "0000000000000000000000003e669b3aec2227f1454cdad4b475a636e575694a000000000000000000000000ad1251198815fa263f52bdf15d172bfe1b98de37000000000000000000000000fe9f3a8f004964d7ea843ee725ad972f0fca0cc90000000000000000000000000000000000000000000000000000000000000018",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:05:09.332Z"
+}

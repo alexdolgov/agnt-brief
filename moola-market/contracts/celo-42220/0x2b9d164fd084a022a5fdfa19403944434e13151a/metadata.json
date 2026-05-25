@@ -1,0 +1,18 @@
+{
+  "address": "0x2b9d164fd084a022a5fdfa19403944434e13151a",
+  "chain_id": 42220,
+  "contract_name": "ValidationLogic",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:06:36.893Z"
+}

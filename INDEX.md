@@ -11,7 +11,7 @@
 | [across](./across/) | $28.1M | 0.0% | $28.1M | unknown | 0 | 143 | 2026-05-22 |
 | [aegis-markets](./aegis-markets/) | $2.4M | 0.0% | ? | active | 2 | 15 | 2026-05-24 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-23 |
-| [aevo](./aevo/) | $98.5M | 9.2% | $1.7M | active | 17 | 331 | 2026-05-22 |
+| [aevo](./aevo/) | $98.3M | 12.0% | $1.5M | active | 17 | 271 | 2026-05-25 |
 | [aftermath-finance](./aftermath-finance/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | unknown | 1 | 2 | 2026-05-23 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 0 | 58 | 2026-05-23 |
@@ -50,7 +50,7 @@
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
 | [beanstalk](./beanstalk/) | $142.5M | 20.4% | $142.5M | dead | 7 | 244 | 2026-05-25 |
 | [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 2 | 105 | 2026-05-23 |
-| [benddao](./benddao/) | $1.7M | 0.0% | $1.7M | dead | 1 | 67 | 2026-05-23 |
+| [benddao](./benddao/) | $1.5M | 0.0% | $1.5M | dead | 1 | 15 | 2026-05-25 |
 | [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 2 | 2026-05-23 |
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-05-23 |
 | [bima-cdp](./bima-cdp/) | $5.4M | 50.0% | ? | active | 3 | 38 | 2026-05-23 |
@@ -127,6 +127,7 @@
 | [dforce](./dforce/) | $3.6M | 0.0% | $3.6M | declining | 0 | 450 | 2026-05-23 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | unknown | 4 | 71 | 2026-05-23 |
 | [dnax](./dnax/) | $3.5M | 0.0% | ? | active | 0 | 1 | 2026-05-24 |
+| [dodo](./dodo/) | $20.6M | 0.0% | $20.6M | declining | 1 | 569 | 2026-05-25 |
 | [domination-finance](./domination-finance/) | $1.2M | 75.0% | ? | active | 1 | 30 | 2026-05-25 |
 | [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 0 | 77 | 2026-05-24 |
@@ -232,6 +233,7 @@
 | [kava-earn](./kava-earn/) | $1.7M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
+| [keep-network](./keep-network/) | $27.0M | 15.9% | $26.2M | dead | 18 | 354 | 2026-05-25 |
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-05-25 |
 | [keyring](./keyring/) | $6.2M | 18.6% | ? | active | 16 | 54 | 2026-05-25 |
 | [kiloex](./kiloex/) | $7.3M | 12.5% | $1.5M | declining | 10 | 111 | 2026-05-24 |

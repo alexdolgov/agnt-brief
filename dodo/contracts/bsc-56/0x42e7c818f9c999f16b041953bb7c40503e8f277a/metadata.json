@@ -1,0 +1,18 @@
+{
+  "address": "0x42e7c818f9c999f16b041953bb7c40503e8f277a",
+  "chain_id": 56,
+  "contract_name": "BentoBoxV2",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 51,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:56:05.706Z"
+}

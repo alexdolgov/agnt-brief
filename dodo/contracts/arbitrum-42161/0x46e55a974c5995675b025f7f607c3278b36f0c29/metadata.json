@@ -1,0 +1,17 @@
+{
+  "address": "0x46e55a974c5995675b025f7f607c3278b36f0c29",
+  "chain_id": 42161,
+  "contract_name": "GSPFactory",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "0000000000000000000000001ddd02f6d31c1ef04cfa0a1aa811406b5b2884e7000000000000000000000000710409d2121b7c8ea4acadd6803fde2d85df647300000000000000000000000001d3e7271c278aa3aa56eeba6a109b2c200679fa",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:55:58.863Z"
+}

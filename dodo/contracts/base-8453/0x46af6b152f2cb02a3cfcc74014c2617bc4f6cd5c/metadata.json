@@ -1,0 +1,18 @@
+{
+  "address": "0x46af6b152f2cb02a3cfcc74014c2617bc4f6cd5c",
+  "chain_id": 8453,
+  "contract_name": "DODOV1Adapter",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:55:54.449Z"
+}

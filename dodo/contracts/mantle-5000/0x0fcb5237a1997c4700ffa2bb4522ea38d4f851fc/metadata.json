@@ -1,0 +1,17 @@
+{
+  "address": "0x0fcb5237a1997c4700ffa2bb4522ea38d4f851fc",
+  "chain_id": 5000,
+  "contract_name": "FeeRateModel",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:55:58.057Z"
+}

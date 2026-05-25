@@ -1,0 +1,18 @@
+{
+  "address": "0x0226fce8c969604c3a0ad19c37d1fafac73e13c2",
+  "chain_id": 8453,
+  "contract_name": "DVMFactory",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:55:54.334Z"
+}

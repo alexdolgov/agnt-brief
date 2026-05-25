@@ -1,0 +1,18 @@
+{
+  "address": "0x8f697865fb43236683a174fee87fd84db64c7a6c",
+  "chain_id": 56,
+  "contract_name": "DODONFTApprove",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:56:02.061Z"
+}

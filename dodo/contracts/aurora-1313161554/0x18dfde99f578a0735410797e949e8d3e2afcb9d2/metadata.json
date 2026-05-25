@@ -1,0 +1,17 @@
+{
+  "address": "0x18dfde99f578a0735410797e949e8d3e2afcb9d2",
+  "chain_id": 1313161554,
+  "contract_name": "Migrations",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": false,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:55:57.519Z"
+}

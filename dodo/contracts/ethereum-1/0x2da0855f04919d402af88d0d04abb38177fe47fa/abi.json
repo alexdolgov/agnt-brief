@@ -1,0 +1,45 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "base",
+        "type": "address"
+      }
+    ],
+    "name": "getDecimalCorrect",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "decimalCorrect",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "multiplyOrNot",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "base",
+        "type": "address"
+      }
+    ],
+    "name": "prices",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

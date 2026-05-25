@@ -1,0 +1,17 @@
+{
+  "address": "0x255416bc03b5f5c6fa4425691f3e5dac108f1992",
+  "chain_id": 42161,
+  "contract_name": "BirdlayerRouteProxy",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab1000000000000000000000000311e670c3305a0bd55184c1c6580ebea1fa611f000000000000000000000000022572c29edef16e4ca124966623d96509faad9da000000000000000000000000903cf528c0c54ecb99991a69e0e095589917a0ce",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:55:55.523Z"
+}

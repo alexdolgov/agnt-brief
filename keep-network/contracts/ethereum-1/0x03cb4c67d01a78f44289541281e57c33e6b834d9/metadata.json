@@ -1,0 +1,17 @@
+{
+  "address": "0x03cb4c67d01a78f44289541281e57c33e6b834d9",
+  "chain_id": 1,
+  "contract_name": "EVM2EVMOnRamp",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 4100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:57:30.784Z"
+}

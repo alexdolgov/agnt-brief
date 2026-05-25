@@ -1,0 +1,62 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "bridge",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct LegacyWithdrawData",
+        "name": "withdrawData",
+        "type": "tuple"
+      }
+    ],
+    "name": "FailedWithdrawals",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "bridge",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct LegacyWithdrawData[]",
+        "name": "pendingWithdrawals",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "withdrawBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

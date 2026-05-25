@@ -1,0 +1,17 @@
+{
+  "address": "0x17644d3b366273fac75a07996e2f90a99a2946a7",
+  "chain_id": 59144,
+  "contract_name": "CloneFactory",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:55:56.464Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x0ed46f84ebf8af56eb29644f6a49d184ad771e11",
+  "chain_id": 56,
+  "contract_name": "GovernorAlpha",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:56:04.067Z"
+}

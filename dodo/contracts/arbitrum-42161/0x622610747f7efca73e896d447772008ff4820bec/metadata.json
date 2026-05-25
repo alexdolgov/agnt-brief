@@ -1,0 +1,18 @@
+{
+  "address": "0x622610747f7efca73e896d447772008ff4820bec",
+  "chain_id": 42161,
+  "contract_name": "UserQuota",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:55:58.836Z"
+}

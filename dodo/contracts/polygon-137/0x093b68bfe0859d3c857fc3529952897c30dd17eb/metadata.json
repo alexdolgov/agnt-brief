@@ -1,0 +1,17 @@
+{
+  "address": "0x093b68bfe0859d3c857fc3529952897c30dd17eb",
+  "chain_id": 137,
+  "contract_name": "CustomERC20",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:55:57.679Z"
+}

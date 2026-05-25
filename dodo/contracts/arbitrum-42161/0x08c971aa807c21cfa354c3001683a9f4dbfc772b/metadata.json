@@ -1,0 +1,17 @@
+{
+  "address": "0x08c971aa807c21cfa354c3001683a9f4dbfc772b",
+  "chain_id": 42161,
+  "contract_name": "Vault",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:55:55.548Z"
+}

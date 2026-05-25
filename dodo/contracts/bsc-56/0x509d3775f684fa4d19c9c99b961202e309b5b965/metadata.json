@@ -1,0 +1,17 @@
+{
+  "address": "0x509d3775f684fa4d19c9c99b961202e309b5b965",
+  "chain_id": 56,
+  "contract_name": "DODONFTPoolProxy",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000003e2427859119e497eb856a166f616a2ce5f8c88000000000000000000000000de8a380e84998986a59be6519ff172d40c0f9d410000000000000000000000004187aab02f9e3abdeb9a6cc71397a7a839113634000000000000000000000000caa42f09af66a8bae3a7445a7f63dad97c11638b0000000000000000000000008f697865fb43236683a174fee87fd84db64c7a6c000000000000000000000000a128ba44b2738a558a1fdc06d6303d52d3cef8c1",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:56:00.474Z"
+}

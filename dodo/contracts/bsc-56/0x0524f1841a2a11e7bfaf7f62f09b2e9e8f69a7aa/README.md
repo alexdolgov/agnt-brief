@@ -1,0 +1,16 @@
+# ABep20Delegator
+
+| Field | Value |
+|---|---|
+| Chain | bsc (56) |
+| Address | `0x0524f1841a2a11e7bfaf7f62f09b2e9e8f69a7aa` |
+| Role | unknown |
+| Origin | needs_review |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 16 (bsc [`0x0524f1841a2a11e7bfaf7f62f09b2e9e8f69a7aa`](../0x0524f1841a2a11e7bfaf7f62f09b2e9e8f69a7aa/); bsc `0x12d24438e2c896e78156b50fe8453d7a7d8718cc`; bsc `0x1938150e1b8b04ea8225cc4092dde30ebd160dde`; bsc `0x1d4896d64d96fb00c6619767279f113b479a03e8`; bsc `0x21e7e1c5aba2154f1699086a0cbab983212a7aa1`; bsc `0x33bdc117826df2145fcdf6b3901f7257f6a7a46c`; bsc `0x350bd6efe303f5d6e10bd9e9d6347bc4a3e708c0`; bsc `0x3b1add56dc22f32286a4634a3da8030be43c43b2`; bsc `0x4fd8f9b87263b73c6e88cc425037f5161fa62168`; bsc `0x7044a074fc40e49882b104fa5085fd404888f740`; bsc `0x926437bbf32b6acc577cabccaf41f8dc0221e557`; bsc `0x963125b701470a1dc8962ab2d8f7585e7b3ec84c`; bsc `0xacb6fcbe696d509c68d66d28238cff76eafdb470`; bsc `0xaf089a1acadb7f98fa5aed67a0e9a57347782c5c`; bsc `0xb5d407bd9102eb96f04491c36a8eddb6b642fc00`; bsc `0xfb7112a7ed75b342ceb38447cfe6bc9a2d9bfde4`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

@@ -1,0 +1,18 @@
+{
+  "address": "0x1e5d8ee8fb7f0d791475c59391db8f6cd06aa656",
+  "chain_id": 1,
+  "contract_name": "CrowdPoolingFactory",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:56:00.207Z"
+}

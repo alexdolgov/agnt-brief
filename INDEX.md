@@ -42,7 +42,7 @@
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-05-23 |
 | [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-05-25 |
 | [b.protocol](./b.protocol/) | $89.1M | 4.1% | $89.1M | dead | 5 | 186 | 2026-05-24 |
-| [babydogecoin](./babydogecoin/) | $166.7M | 0.0% | $166.7M | declining | 1 | 936 | 2026-05-24 |
+| [babydogecoin](./babydogecoin/) | $166.4M | 0.0% | $166.4M | declining | 1 | 54 | 2026-05-25 |
 | [babyswap](./babyswap/) | $241.1K | 1.5% | $241.1K | dead | 1 | 113 | 2026-05-25 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 0 | 2 | 2026-05-23 |
 | [badger-dao](./badger-dao/) | $1.9M | 0.0% | $1.9M | sunsetting | 0 | 330 | 2026-05-23 |
@@ -89,7 +89,7 @@
 | [cex.io](./cex.io/) | $8.6M | 0.0% | ? | active | 1 | 3 | 2026-05-23 |
 | [cgo-finance](./cgo-finance/) | $1.3M | 0.0% | ? | declining | 0 | 2 | 2026-05-25 |
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
-| [chainge-finance](./chainge-finance/) | $1.8M | 0.0% | $1.8M | active | 0 | 935 | 2026-05-23 |
+| [chainge-finance](./chainge-finance/) | $1.5M | 0.0% | $1.5M | active | 1 | 53 | 2026-05-25 |
 | [chaingpt](./chaingpt/) | $4.9M | 0.0% | ? | unknown | 0 | 87 | 2026-05-23 |
 | [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | unknown | 6 | 10 | 2026-05-24 |
 | [chateau](./chateau/) | $19.1K | 33.3% | $19.1K | active | 1 | 5 | 2026-05-25 |
@@ -99,7 +99,7 @@
 | [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [colend-protocol](./colend-protocol/) | $4.3M | 0.0% | ? | unknown | 7 | 0 | 2026-05-23 |
 | [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 9 | 2026-05-24 |
-| [coti-treasury](./coti-treasury/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 935 | 2026-05-23 |
+| [coti-treasury](./coti-treasury/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 53 | 2026-05-25 |
 | [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-05-24 |
 | [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | dead | 2 | 95 | 2026-05-24 |
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-05-23 |
@@ -113,7 +113,7 @@
 | [decentralized-euro](./decentralized-euro/) | $230.7M | 8.7% | $230.7M | active | 3 | 174 | 2026-05-24 |
 | [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-05-24 |
 | [defi-kingdoms](./defi-kingdoms/) | $6.5M | 0.0% | ? | dead | 1 | 5 | 2026-05-23 |
-| [defichain-dex](./defichain-dex/) | $1.9M | 0.0% | $1.9M | dead | 0 | 935 | 2026-05-25 |
+| [defichain-dex](./defichain-dex/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-05-24 |
 | [defituna](./defituna/) | $1.9M | 0.0% | $1.9M | declining | 11 | 904 | 2026-05-23 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | unknown | 0 | 53 | 2026-05-23 |
@@ -121,7 +121,7 @@
 | [derivadex](./derivadex/) | $16.9M | 0.0% | $16.9M | declining | 0 | 9 | 2026-05-24 |
 | [desyn-protocol](./desyn-protocol/) | $10.8M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
 | [dexalot](./dexalot/) | $4.2M | 0.0% | $4.2M | active | 0 | 1 | 2026-05-23 |
-| [dflow](./dflow/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-24 |
+| [dflow](./dflow/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [dforce](./dforce/) | $3.6M | 0.0% | $3.6M | declining | 0 | 450 | 2026-05-23 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | unknown | 4 | 71 | 2026-05-23 |
 | [dnax](./dnax/) | $3.5M | 0.0% | ? | active | 0 | 1 | 2026-05-24 |

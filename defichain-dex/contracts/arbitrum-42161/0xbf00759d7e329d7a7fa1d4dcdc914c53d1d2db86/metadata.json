@@ -1,0 +1,18 @@
+{
+  "address": "0xbf00759d7e329d7a7fa1d4dcdc914c53d1d2db86",
+  "chain_id": 42161,
+  "contract_name": "stARBIS",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "GNU GPLv3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T12:07:02.831Z"
+}

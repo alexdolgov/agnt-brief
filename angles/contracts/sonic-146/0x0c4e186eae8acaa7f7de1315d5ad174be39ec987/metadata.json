@@ -1,0 +1,17 @@
+{
+  "address": "0x0c4e186eae8acaa7f7de1315d5ad174be39ec987",
+  "chain_id": 146,
+  "contract_name": "anSProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0x3eac5eb19c1b300e301874e2113bc2eced43ce7a",
+  "fetched_at": "2026-05-25T06:45:48.097Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x546c928b1b2263c292cf45922a48ddfacd9c10b6",
+  "chain_id": 42161,
+  "contract_name": "EthBondDepository",
+  "compiler_version": "v0.7.5+commit.eb77ed08",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "AGPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:51:21.711Z"
+}

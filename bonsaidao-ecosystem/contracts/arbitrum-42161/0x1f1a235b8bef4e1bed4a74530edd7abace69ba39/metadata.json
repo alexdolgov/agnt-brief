@@ -1,0 +1,18 @@
+{
+  "address": "0x1f1a235b8bef4e1bed4a74530edd7abace69ba39",
+  "chain_id": 42161,
+  "contract_name": "GLPDeployment",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:51:19.862Z"
+}

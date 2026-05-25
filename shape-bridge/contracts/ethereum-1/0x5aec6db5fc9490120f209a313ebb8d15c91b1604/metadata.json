@@ -1,0 +1,18 @@
+{
+  "address": "0x5aec6db5fc9490120f209a313ebb8d15c91b1604",
+  "chain_id": 1,
+  "contract_name": "IdentityStaking",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:42:48.458Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x13344d0cb96b17df81c4171ce47e14ff6c1975f7",
+  "chain_id": 1,
+  "contract_name": "Users",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:43:02.054Z"
+}

@@ -87,7 +87,7 @@
 | [canopy](./canopy/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 4 | 84 | 2026-05-24 |
 | [capx-ai](./capx-ai/) | $2.2M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
-| [carbon-defi](./carbon-defi/) | $41.7M | 22.4% | $36.6M | active | 4 | 230 | 2026-05-24 |
+| [carbon-defi](./carbon-defi/) | $41.7M | 29.8% | $36.6M | active | 4 | 157 | 2026-05-25 |
 | [cbridge](./cbridge/) | $18.5M | 0.0% | ? | declining | 12 | 2112 | 2026-05-25 |
 | [cex.io](./cex.io/) | $8.6M | 0.0% | ? | active | 1 | 3 | 2026-05-23 |
 | [cgo-finance](./cgo-finance/) | $1.3M | 0.0% | ? | declining | 0 | 2 | 2026-05-25 |
@@ -290,7 +290,7 @@
 | [mezo-bridge](./mezo-bridge/) | $203.9M | 0.0% | $203.9M | declining | 0 | 138 | 2026-05-22 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [minto](./minto/) | $1.7M | 12.5% | $1.7M | unknown | 1 | 11 | 2026-05-24 |
-| [mitosis](./mitosis/) | $329.1M | 2.9% | $329.1M | dead | 3 | 96 | 2026-05-24 |
+| [mitosis](./mitosis/) | $329.1M | 4.3% | $329.1M | dead | 3 | 72 | 2026-05-25 |
 | [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | dead | 3 | 192 | 2026-05-24 |
 | [mobox](./mobox/) | $8.1M | 0.0% | $8.1M | unknown | 1 | 375 | 2026-05-25 |
 | [mode-bridge](./mode-bridge/) | $6.2M | 2.9% | ? | declining | 27 | 100 | 2026-05-23 |
@@ -310,7 +310,7 @@
 | [neemo-finance](./neemo-finance/) | $1.4M | 0.0% | ? | active | 1 | 14 | 2026-05-24 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-05-24 |
 | [neo-tokyo](./neo-tokyo/) | $1.1M | 0.0% | ? | unknown | 0 | 86 | 2026-05-25 |
-| [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 73 | 2026-05-23 |
+| [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 2 | 2026-05-25 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | dead | 0 | 66 | 2026-05-24 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |
 | [netswap](./netswap/) | $1.4M | 20.8% | ? | dead | 2 | 48 | 2026-05-25 |
@@ -382,7 +382,7 @@
 | [rex-staking](./rex-staking/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-05-24 |
 | [rho](./rho/) | $2.4M | 0.0% | ? | active | 4 | 32 | 2026-05-24 |
-| [ribbon-finance](./ribbon-finance/) | $179.3M | 20.6% | $148.6M | declining | 15 | 195 | 2026-05-23 |
+| [ribbon-finance](./ribbon-finance/) | $179.3M | 31.0% | $148.6M | declining | 15 | 147 | 2026-05-25 |
 | [rip.xyz](./rip.xyz/) | $624.7K | 25.0% | $624.7K | active | 1 | 8 | 2026-05-25 |
 | [risex](./risex/) | $3.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |

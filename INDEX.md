@@ -46,7 +46,7 @@
 | [babydogecoin](./babydogecoin/) | $166.4M | 0.0% | $166.4M | declining | 1 | 54 | 2026-05-25 |
 | [babyswap](./babyswap/) | $241.1K | 1.5% | $241.1K | dead | 1 | 113 | 2026-05-25 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 0 | 2 | 2026-05-23 |
-| [badger-dao](./badger-dao/) | $1.9M | 0.0% | $1.9M | sunsetting | 0 | 330 | 2026-05-23 |
+| [badger-dao](./badger-dao/) | $1.5M | 0.0% | $1.5M | sunsetting | 6 | 27 | 2026-05-25 |
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
 | [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 2 | 105 | 2026-05-23 |
 | [benddao](./benddao/) | $1.7M | 0.0% | $1.7M | dead | 1 | 67 | 2026-05-23 |
@@ -343,7 +343,7 @@
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | dead | 1 | 34 | 2026-05-24 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | unknown | 0 | 7 | 2026-05-24 |
-| [pnetwork](./pnetwork/) | $1.8M | 0.0% | $1.8M | declining | 0 | 355 | 2026-05-22 |
+| [pnetwork](./pnetwork/) | $1.5M | 0.0% | $1.5M | declining | 0 | 25 | 2026-05-25 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | unknown | 0 | 2 | 2026-05-24 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-05-23 |
 | [pond0x](./pond0x/) | $2.8M | 0.0% | ? | unknown | 0 | 14 | 2026-05-24 |
@@ -389,7 +389,7 @@
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |
 | [satlayer](./satlayer/) | $311.4M | 3.6% | $309.1M | declining | 12 | 342 | 2026-05-25 |
-| [satori-finance](./satori-finance/) | $9.3M | 0.0% | $9.3M | active | 1 | 220 | 2026-05-25 |
+| [satori-finance](./satori-finance/) | $40.9K | 0.0% | $40.9K | active | 1 | 40 | 2026-05-25 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 0 | 1 | 2026-05-25 |
 | [scrub-money](./scrub-money/) | $7.1M | 0.0% | ? | active | 1 | 19 | 2026-05-23 |
@@ -470,7 +470,7 @@
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-05-23 |
 | [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |
 | [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
-| [thena](./thena/) | $208.9 | 7.1% | $208.9 | declining | 3 | 358 | 2026-05-23 |
+| [thena](./thena/) | $208.2 | 10.2% | $208.2 | declining | 3 | 131 | 2026-05-25 |
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
 | [thruster](./thruster/) | $5.8M | 0.0% | ? | dead | 0 | 20 | 2026-05-23 |
 | [tinyman](./tinyman/) | $1.5M | 0.0% | $1.5M | active | 18 | 53 | 2026-05-25 |

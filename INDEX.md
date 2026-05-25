@@ -213,12 +213,12 @@
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 242 | 2026-05-24 |
 | [hyperswap](./hyperswap/) | $1.5M | 0.0% | $1.5M | active | 0 | 58 | 2026-05-25 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 12 | 2026-05-23 |
-| [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | unknown | 3 | 84 | 2026-05-22 |
+| [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-05-25 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 45 | 2026-05-24 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | dead | 0 | 17 | 2026-05-23 |
 | [immutable-zkevm](./immutable-zkevm/) | $29.2M | 18.2% | ? | active | 5 | 11 | 2026-05-22 |
 | [inception](./inception/) | $15.9M | 27.3% | $15.6M | sunsetting | 11 | 79 | 2026-05-23 |
-| [index-coop](./index-coop/) | $28.2M | 11.7% | $28.2M | declining | 5 | 235 | 2026-05-22 |
+| [index-coop](./index-coop/) | $28.2M | 13.4% | $28.2M | declining | 7 | 236 | 2026-05-25 |
 | [init-capital](./init-capital/) | $66.5M | 20.0% | $66.2M | declining | 7 | 109 | 2026-05-23 |
 | [initiadex](./initiadex/) | $3.3M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 9 | 2026-05-22 |
@@ -280,7 +280,7 @@
 | [mantra-dao](./mantra-dao/) | $612.5M | 0.0% | $612.5M | declining | 1 | 209 | 2026-05-25 |
 | [matstake](./matstake/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-05-24 |
-| [mcdex](./mcdex/) | $19.3M | 14.9% | $19.3M | dead | 4 | 1492 | 2026-05-25 |
+| [mcdex](./mcdex/) | $19.3M | 15.1% | $19.3M | dead | 4 | 1482 | 2026-05-25 |
 | [mdex](./mdex/) | $235.5K | 85.7% | $20.2K | dead | 3 | 13 | 2026-05-24 |
 | [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 4 | 2026-05-24 |
 | [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-23 |
@@ -389,7 +389,7 @@
 | [risex](./risex/) | $3.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
-| [rook](./rook/) | $6.8M | 0.0% | $6.8M | dead | 0 | 75 | 2026-05-24 |
+| [rook](./rook/) | $6.8M | 0.0% | $6.8M | dead | 0 | 74 | 2026-05-25 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-25 |
@@ -406,7 +406,7 @@
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-24 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | sunsetting | 8 | 297 | 2026-05-25 |
 | [serum](./serum/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
-| [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 0 | 111 | 2026-05-23 |
+| [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 0 | 111 | 2026-05-25 |
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
 | [shape-bridge](./shape-bridge/) | $1.1M | 0.0% | ? | active | 2 | 28 | 2026-05-25 |
 | [shapeshift](./shapeshift/) | $1.3M | 0.0% | $1.3M | unknown | 0 | 40 | 2026-05-25 |

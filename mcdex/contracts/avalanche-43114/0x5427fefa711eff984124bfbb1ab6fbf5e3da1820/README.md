@@ -8,7 +8,7 @@
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 3 (bsc `0x78bc5ee9f11d133a08b331c2e18fe81be0ed02dc`; arbitrum `0xfe31bfc4f7c9b69246a6dc0087d91a91cb040f76`; avalanche [`0x5427fefa711eff984124bfbb1ab6fbf5e3da1820`](../0x5427fefa711eff984124bfbb1ab6fbf5e3da1820/)) |
+| Deployments | 2 (bsc `0x78bc5ee9f11d133a08b331c2e18fe81be0ed02dc`; avalanche [`0x5427fefa711eff984124bfbb1ab6fbf5e3da1820`](../0x5427fefa711eff984124bfbb1ab6fbf5e3da1820/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |
 | TVL | $724,031.28 |

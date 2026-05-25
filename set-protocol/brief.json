@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "set-protocol",
-  "generated_at": "2026-05-23T01:48:41.309Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-25T17:05:02.932Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "set-protocol",

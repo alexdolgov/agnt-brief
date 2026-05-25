@@ -1,6 +1,6 @@
 # rook — Contract Index
 
-75 unique implementations on ethereum · 176 deployments · 0 audited · 67 unaudited · 8 unverified
+74 unique implementations on ethereum · 175 deployments · 0 audited · 66 unaudited · 8 unverified
 
 ## adapter (3)
 
@@ -10,11 +10,10 @@
 | [DEXAdapter (3 deployments)](./ethereum-1/0x9992e9341e496be5bc8f424dfc1f78a7388d3a58/) | ethereum | 3 deployments: ethereum [`0x9992e9...8d3a58`](./ethereum-1/0x9992e9341e496be5bc8f424dfc1f78a7388d3a58/); ethereum `0xaf0efc...5f8042`; ethereum `0xf218f9...176ad5` | ⚠️ Unaudited | Verified |
 | [RenExAtomicSwapper](./ethereum-1/0xc3fed6eb39178a541d274e6fc748d48f0ca01cc3/) | ethereum | [`0xc3fed6...a01cc3`](./ethereum-1/0xc3fed6eb39178a541d274e6fc748d48f0ca01cc3/) | ⚠️ Unaudited | Verified |
 
-## core_logic (5)
+## core_logic (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BorrowerProxy](./ethereum-1/0xde92742213fea5f78c6840b6ecbf214115ea8002/) | ethereum | [`0xde9274...ea8002`](./ethereum-1/0xde92742213fea5f78c6840b6ecbf214115ea8002/) | ⚠️ Unaudited | Verified |
 | [DarknodeRewardVault](./ethereum-1/0x880407c9cd119bef48b1821cdfc434e3ca3cd588/) | ethereum | [`0x880407...3cd588`](./ethereum-1/0x880407c9cd119bef48b1821cdfc434e3ca3cd588/) | ⚠️ Unaudited | Verified |
 | [HidingVaultNFT](./ethereum-1/0xe2ad581fc01434ee426bb3f471c4cb0317ee672e/) | ethereum | [`0xe2ad58...ee672e`](./ethereum-1/0xe2ad581fc01434ee426bb3f471c4cb0317ee672e/) | ⚠️ Unaudited | Verified |
 | [LiquidityPoolV2](./ethereum-1/0x35ffd6e268610e764ff6944d07760d0efe5e40e5/) | ethereum | [`0x35ffd6...5e40e5`](./ethereum-1/0x35ffd6e268610e764ff6944d07760d0efe5e40e5/) | ⚠️ Unaudited | Verified |
@@ -25,7 +24,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [RenProxyAdmin (6 deployments)](./ethereum-1/0x04490672449654b1d9ad6f0aae14e6e4c60ad01c/) | ethereum | 6 deployments: ethereum [`0x044906...0ad01c`](./ethereum-1/0x04490672449654b1d9ad6f0aae14e6e4c60ad01c/); ethereum `0x294b56...4985b8`; ethereum `0x3840c0...1cdfaf`; ethereum `0x521471...074906`; ethereum `0xdf1d8e...530145`; ethereum `0xfc3df9...09bfb5` | ⚠️ Unaudited | Verified |
-| Timelock | ethereum | `0xfe43c3...314fdb` | ⚠️ Unaudited | Verified |
+| [Timelock](./ethereum-1/0xfe43c3a01102eda295333f5ad6cc747f03314fdb/) | ethereum | [`0xfe43c3...314fdb`](./ethereum-1/0xfe43c3a01102eda295333f5ad6cc747f03314fdb/) | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (10)
 
@@ -85,7 +84,7 @@
 | [BCHShifter (3 deployments)](./ethereum-1/0x2095be01f9a30a8ac8302245fdfa524fb20de6cd/) | ethereum | 3 deployments: ethereum [`0x2095be...0de6cd`](./ethereum-1/0x2095be01f9a30a8ac8302245fdfa524fb20de6cd/); ethereum `0xa76bea...021a8c`; ethereum `0xe0926b...cfe771` | ⚠️ Unaudited | Verified |
 | [BTC_DAI_Reserve (3 deployments)](./ethereum-1/0x11716a1f51fad053e9b43da1025e8ace32aee110/) | ethereum | 3 deployments: ethereum [`0x11716a...aee110`](./ethereum-1/0x11716a1f51fad053e9b43da1025e8ace32aee110/); ethereum `0x1c0fdf...930cdd`; ethereum `0x2c4ce4...e292f6` | ⚠️ Unaudited | Verified |
 | [BTCShifter (2 deployments)](./ethereum-1/0x1258d7ff385d1d81017d4a3d464c02f74c61902a/) | ethereum | 2 deployments: ethereum [`0x1258d7...61902a`](./ethereum-1/0x1258d7ff385d1d81017d4a3d464c02f74c61902a/); ethereum `0x2f4657...2d0cd6` | ⚠️ Unaudited | Verified |
-| Comptroller | ethereum | `0x3d9819...c9cd3b` | ⚠️ Unaudited | Verified |
+| [Comptroller](./ethereum-1/0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b/) | ethereum | [`0x3d9819...c9cd3b`](./ethereum-1/0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b/) | ⚠️ Unaudited | Verified |
 | [DarknodePayment (9 deployments)](./ethereum-1/0x098e1708b920efbdd7afe33adb6a4cba30c370b9/) | ethereum | 9 deployments: ethereum [`0x098e17...c370b9`](./ethereum-1/0x098e1708b920efbdd7afe33adb6a4cba30c370b9/); ethereum `0x18e610...1eda41`; ethereum `0x376d83...3e4faa`; ethereum `0x43f370...788e39`; ethereum `0x50190f...4a9123`; ethereum `0x5a7802...0a8b6a`; ethereum `0x989b7c...2ddb10`; ethereum `0xab61ac...82d900`; ethereum `0xdf2a33...085dec` | ⚠️ Unaudited | Verified |
 | [DarknodePaymentStore (6 deployments)](./ethereum-1/0x311999ee72b5826d664fd4f3ac09c0c462effe49/) | ethereum | 6 deployments: ethereum [`0x311999...effe49`](./ethereum-1/0x311999ee72b5826d664fd4f3ac09c0c462effe49/); ethereum `0x731ea4...cbe9d2`; ethereum `0x7546db...316677`; ethereum `0x9c5b07...84742b`; ethereum `0xc9ebe9...fcdc39`; ethereum `0xe33417...be23e7` | ⚠️ Unaudited | Verified |
 | [DarknodeSlasher (6 deployments)](./ethereum-1/0x04ed8f5730dd4d2b2064cdb6a5bffc26a72962f2/) | ethereum | 6 deployments: ethereum [`0x04ed8f...2962f2`](./ethereum-1/0x04ed8f5730dd4d2b2064cdb6a5bffc26a72962f2/); ethereum `0x4e85ac...22b28d`; ethereum `0x64512f...754c0e`; ethereum `0x7add7e...678b16`; ethereum `0x966b2d...3270b5`; ethereum `0xd33cfe...f559aa` | ⚠️ Unaudited | Verified |

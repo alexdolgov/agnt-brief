@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rook",
-  "generated_at": "2026-05-24T22:08:23.472Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-25T17:05:04.523Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "rook",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 99.7609145126022
   },
   "summary": {
-    "total_contracts": 75,
-    "total_addresses": 176,
-    "unique_implementations": 75,
-    "total_deployments": 176,
+    "total_contracts": 74,
+    "total_addresses": 175,
+    "unique_implementations": 74,
+    "total_deployments": 175,
     "audited_contracts": 0,
-    "unaudited_contracts": 67,
+    "unaudited_contracts": 66,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 67,
+    "contracts_verified_unaudited": 66,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 8,
     "coverage_pct": 0,
@@ -433,37 +433,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xe0926b2f1b37c2dae0c5682f5fd75adf83cfe771",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xde92742213fea5f78c6840b6ecbf214115ea8002",
-      "name": "BorrowerProxy",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BorrowerProxy",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xde92742213fea5f78c6840b6ecbf214115ea8002",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1576,7 +1545,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1607,7 +1576,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1638,7 +1607,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1669,7 +1638,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1731,7 +1700,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1824,7 +1793,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1855,7 +1824,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1886,7 +1855,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1917,7 +1886,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1948,7 +1917,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -2161,8 +2130,8 @@
       "address": "0x7a43b06ed73fcd3707f1a681ca645d758a51ee52",
       "name": "Protocol",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -3378,16 +3347,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xde92742213fea5f78c6840b6ecbf214115ea8002",
-      "name": "BorrowerProxy",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x11716a1f51fad053e9b43da1025e8ace32aee110",
       "name": "BTC_DAI_Reserve",
       "role": "unknown",
@@ -3947,10 +3906,10 @@
     }
   ],
   "origin_summary": {
-    "native": 72,
+    "native": 71,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 3
+    "standard_library": 1,
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

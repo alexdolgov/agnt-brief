@@ -6,10 +6,10 @@
 
 - Project: Rook (`rook`)
 - Lifecycle: dead (Tier 0, 99.8% below peak)
-- Generated: 2026-05-24T22:08:23.472Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-25T17:05:04.523Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: ethereum
-- Contract surface: 75 unique implementations (176 raw deployments)
+- Contract surface: 74 unique implementations (175 raw deployments)
 - DeFi Llama TVL: $1,449,666.24
 - On-chain TVL (included contracts): $6,793,617.06
 - TVL by chain: Ethereum $6,793,617.06
@@ -24,12 +24,12 @@ The Rook family shares a common token logic implementation (RenERC20LogicV1) for
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/67 (0.0%)
-- Verified + Unaudited implementations: 67
+- Verified implementations audited: 0/66 (0.0%)
+- Verified + Unaudited implementations: 66
 - Verified by bytecode match: 0
 - Unverified implementations: 8
-- Unique implementations: 75
-- Raw deployments: 176
+- Unique implementations: 74
+- Raw deployments: 175
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $6,793,617.06
@@ -48,7 +48,7 @@ The Rook family shares a common token logic implementation (RenERC20LogicV1) for
 
 - None
 
-### ⚠️ Verified + Unaudited (67)
+### ⚠️ Verified + Unaudited (66)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -59,7 +59,6 @@ The Rook family shares a common token logic implementation (RenERC20LogicV1) for
 | BCH_DAI_Reserve | unknown | ethereum | [`0xa2d578...b69772`](./contracts/ethereum-1/0xa2d578e21f430d7469cbc135952dfe5c34b69772/) | ⚠️ Unaudited |
 | BCHGateway | unknown | ethereum | [`0xcabb5e...e1a461`](./contracts/ethereum-1/0xcabb5e9e48f22cb6736d5f5cd3f1b652d7e1a461/) | ⚠️ Unaudited |
 | BCHShifter | unknown | ethereum | 3 deployments: ethereum [`0x2095be...0de6cd`](./contracts/ethereum-1/0x2095be01f9a30a8ac8302245fdfa524fb20de6cd/); ethereum `0xa76bea...021a8c`; ethereum `0xe0926b...cfe771` | ⚠️ Unaudited |
-| BorrowerProxy | core_logic | ethereum | [`0xde9274...ea8002`](./contracts/ethereum-1/0xde92742213fea5f78c6840b6ecbf214115ea8002/) | ⚠️ Unaudited |
 | BTC_DAI_Reserve | unknown | ethereum | 3 deployments: ethereum [`0x11716a...aee110`](./contracts/ethereum-1/0x11716a1f51fad053e9b43da1025e8ace32aee110/); ethereum `0x1c0fdf...930cdd`; ethereum `0x2c4ce4...e292f6` | ⚠️ Unaudited |
 | BTCShifter | unknown | ethereum | 2 deployments: ethereum [`0x1258d7...61902a`](./contracts/ethereum-1/0x1258d7ff385d1d81017d4a3d464c02f74c61902a/); ethereum `0x2f4657...2d0cd6` | ⚠️ Unaudited |
 | Comptroller | unknown | ethereum | [`0x3d9819...c9cd3b`](./contracts/ethereum-1/0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b/) | ⚠️ Unaudited |
@@ -165,7 +164,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xa2d578...b69772`](./contracts/ethereum-1/0xa2d578e21f430d7469cbc135952dfe5c34b69772/) | BCH_DAI_Reserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xcabb5e...e1a461`](./contracts/ethereum-1/0xcabb5e9e48f22cb6736d5f5cd3f1b652d7e1a461/) | BCHGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2095be...0de6cd`](./contracts/ethereum-1/0x2095be01f9a30a8ac8302245fdfa524fb20de6cd/) | BCHShifter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xde9274...ea8002`](./contracts/ethereum-1/0xde92742213fea5f78c6840b6ecbf214115ea8002/) | BorrowerProxy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x11716a...aee110`](./contracts/ethereum-1/0x11716a1f51fad053e9b43da1025e8ace32aee110/) | BTC_DAI_Reserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1258d7...61902a`](./contracts/ethereum-1/0x1258d7ff385d1d81017d4a3d464c02f74c61902a/) | BTCShifter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x098e17...c370b9`](./contracts/ethereum-1/0x098e1708b920efbdd7afe33adb6a4cba30c370b9/) | DarknodePayment | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -227,10 +225,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 72 |
+| native | 71 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 3 |
+| standard_library | 1 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

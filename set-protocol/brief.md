@@ -6,8 +6,8 @@
 
 - Project: Set Protocol (`set-protocol`)
 - Lifecycle: declining (Tier 0, 98.2% below peak)
-- Generated: 2026-05-23T01:48:41.309Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-25T17:05:02.932Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: ethereum
 - Contract surface: 111 unique implementations (121 raw deployments)
 - DeFi Llama TVL: $11,623,929.34

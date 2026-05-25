@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "index-coop",
-  "generated_at": "2026-05-22T22:44:43.196Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-25T17:10:36.184Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "index-coop",
@@ -32,19 +32,19 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 235,
-    "total_addresses": 600,
-    "unique_implementations": 235,
-    "total_deployments": 600,
-    "audited_contracts": 13,
-    "unaudited_contracts": 98,
-    "contracts_verified_audited": 13,
-    "contracts_verified_unaudited": 98,
+    "total_contracts": 236,
+    "total_addresses": 601,
+    "unique_implementations": 236,
+    "total_deployments": 601,
+    "audited_contracts": 15,
+    "unaudited_contracts": 97,
+    "contracts_verified_audited": 15,
+    "contracts_verified_unaudited": 97,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 124,
-    "coverage_pct": 11.7,
-    "total_audits": 5,
-    "scoreable_audits": 3,
+    "coverage_pct": 13.4,
+    "total_audits": 7,
+    "scoreable_audits": 5,
     "dl_tvl_usd": 13141320.128370002,
     "tvl_usd": 28180066.608991325,
     "tvl_source": "on_chain",
@@ -60,14 +60,16 @@
       "ethereum",
       "polygon"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "tier1_coverage_pct": 0.9,
+    "tier1_auditors": [
+      "Code4rena"
+    ],
     "latest_audit_date": "2024-09",
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 2,
-      "stale": 1,
+      "stale": 3,
       "unknown": 1
     }
   },
@@ -541,8 +543,8 @@
       "address": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
       "name": "CErc20",
       "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "Compound Finance",
       "product_line": "Index Coop",
       "tvl_usd": 8745013.463118859,
       "is_proxy": false,
@@ -2089,7 +2091,7 @@
       "address": "0xbafd0bc01d46302a2eb4c47b1880b86fd3143562",
       "name": "BoundedStepwiseLogarithmicPriceAdapter",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2386,7 +2388,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2395,7 +2397,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2404,7 +2406,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -2413,7 +2415,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -2422,7 +2424,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -2431,14 +2433,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3576"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2983,7 +2987,7 @@
       "address": "0x026aa079c4f9cff80b0521b64f8f2d8ccf135518",
       "name": "FeeSplitExtension",
       "role": "adapter",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3886,7 +3890,7 @@
       "address": "0x097afae7b0e0ea0880c8dba7475c12a1f3d2911f",
       "name": "FlexibleLeverageStrategyExtension",
       "role": "adapter",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4362,6 +4366,37 @@
       "contamination_flag": "cleared"
     },
     {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x3c2e12f800d893b5a417cc3a1c5e412f0f38f80f",
+      "name": "HolonToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HolonToken",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x3c2e12f800d893b5a417cc3a1c5e412f0f38f80f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x32bb838c572faf6c7040a59c8f1ee699862ec9ee",
@@ -4807,7 +4842,7 @@
       "address": "0x3f49c269fd141bd4b9d6de943c2da7fd180de453",
       "name": "MovingAverageOracleV2",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4929,14 +4964,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3581"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4968,7 +5005,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -4976,8 +5013,8 @@
       "address": "0x6da72bef02824eb8da9c572727052d125563b0b0",
       "name": "OneInchExchangeAdapter",
       "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "1inch",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -5330,7 +5367,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -6049,7 +6086,7 @@
       "address": "0x0110959c718f70fd2dc01e86566e694391c0e5c6",
       "name": "SupplyCapIssuanceHook",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -6359,8 +6396,8 @@
       "address": "0x64177fd4dfad1a6cff95e1ebba403bb73c6a8e41",
       "name": "SynthetixExchangeAdapter",
       "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "synthetix",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -9369,7 +9406,7 @@
       "address": "0xc0aafee4b4edc54dd3aea0bf4dbe7bddde6365ca",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -9431,7 +9468,7 @@
       "address": "0xc5d96411341d16c4bd16733500d6ab8c5421097e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -10586,7 +10623,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 137,
@@ -10594,7 +10631,7 @@
       "address": "0x5804831480f6d82f767bb63dd44c77646c3d77fd",
       "name": "ZeroExApiAdapter",
       "role": "adapter",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -10803,6 +10840,60 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3576,
+      "audit_key": "audit-3576",
+      "report_name": "iosiro_set-protocol-aave-leverage-module-audit-draft.md",
+      "report_url": "https://gist.github.com/bernard-wagner/8a96ae7b9746ba8394dc6c16202a6b64",
+      "auditor": "iosiro",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveLeverageModule",
+        "AaveV2",
+        "DebtIssuanceModuleV2",
+        "IssuanceValidationUtils"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3581,
+      "audit_key": "audit-3581",
+      "report_name": "code4rena.com/reports/2022-06-notional-coop",
+      "report_url": "https://code4rena.com/reports/2022-06-notional-coop",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2022-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "DebtIssuanceModule",
+        "NotionalTradeModule",
+        "WrappedfCashFactory",
+        "wfCashBase",
+        "wfCashERC4626",
+        "wfCashLogic"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -10810,8 +10901,22 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 13,
-      "coverage_pct": 11.7,
+      "coverage_pct": 11.6,
       "latest_audit": "2024-09"
+    },
+    {
+      "auditor": "Code4rena",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 0.9,
+      "latest_audit": "2022-06"
+    },
+    {
+      "auditor": "iosiro",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 0.9,
+      "latest_audit": "2021-09"
     }
   ],
   "coverage_gaps": [
@@ -10824,16 +10929,6 @@
       "origin_kind": "native",
       "tvl_usd": 19435053.145872466,
       "risk_note": "Verified native implementation with $19,435,053.15 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x39aa39c021dfbae8fac545936693ac917d5e7563",
-      "name": "CErc20",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 8745013.463118859,
-      "risk_note": "Verified native implementation with $8,745,013.46 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -10988,16 +11083,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xbafd0bc01d46302a2eb4c47b1880b86fd3143562",
-      "name": "BoundedStepwiseLogarithmicPriceAdapter",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x3bdfb71894be66ab5233b2255603dc3e3e73418a",
       "name": "BridgedSetToken",
       "role": "operational_periphery",
@@ -11041,16 +11126,6 @@
       "address": "0x9ca96e28b51cf78bb4faa778eb3aeaf40dc07980",
       "name": "CTokenOracle",
       "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x04b59f9f09750c044d7cfbc177561e409085f0f3",
-      "name": "DebtIssuanceModuleV2",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -11131,16 +11206,6 @@
       "address": "0x0f5c21d4929f6f17119f43b0c51e665f12367a19",
       "name": "ExchangeIssuanceZeroEx",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x026aa079c4f9cff80b0521b64f8f2d8ccf135518",
-      "name": "FeeSplitExtension",
-      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -11258,16 +11323,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x097afae7b0e0ea0880c8dba7475c12a1f3d2911f",
-      "name": "FlexibleLeverageStrategyExtension",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x14d9f0d529e80747b128ac2b145e4208e44e37eb",
       "name": "FLIRebalanceViewer",
       "role": "periphery",
@@ -11356,6 +11411,16 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x3c2e12f800d893b5a417cc3a1c5e412f0f38f80f",
+      "name": "HolonToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x32bb838c572faf6c7040a59c8f1ee699862ec9ee",
@@ -11436,16 +11501,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3f49c269fd141bd4b9d6de943c2da7fd180de453",
-      "name": "MovingAverageOracleV2",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x08d7541094d7eeba614d66fc6402858346d30a15",
@@ -11461,6 +11516,16 @@
       "address": "0x8d97aad71c0ebbcf0099d0435be1b355edc49ce5",
       "name": "NotionalV2Mock",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6da72bef02824eb8da9c572727052d125563b0b0",
+      "name": "OneInchExchangeAdapter",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -11628,9 +11693,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0110959c718f70fd2dc01e86566e694391c0e5c6",
-      "name": "SupplyCapIssuanceHook",
-      "role": "unknown",
+      "address": "0x64177fd4dfad1a6cff95e1ebba403bb73c6a8e41",
+      "name": "SynthetixExchangeAdapter",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -11684,30 +11749,20 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x5804831480f6d82f767bb63dd44c77646c3d77fd",
-      "name": "ZeroExApiAdapter",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 190,
-    "upstream": 8,
+    "native": 184,
+    "upstream": 7,
     "standard_library": 0,
-    "needs_review": 37
+    "needs_review": 45
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 33
+      "extraction_exact": 40
     },
     "extraction_confidence_counts": {
-      "high": 3
+      "high": 5
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

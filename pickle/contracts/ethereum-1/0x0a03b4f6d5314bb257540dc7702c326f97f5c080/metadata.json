@@ -1,0 +1,18 @@
+{
+  "address": "0x0a03b4f6d5314bb257540dc7702c326f97f5c080",
+  "chain_id": 1,
+  "contract_name": "Keep3rV1OracleUSD",
+  "compiler_version": "v0.8.1+commit.df193b15",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "bsl-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:19:44.217Z"
+}

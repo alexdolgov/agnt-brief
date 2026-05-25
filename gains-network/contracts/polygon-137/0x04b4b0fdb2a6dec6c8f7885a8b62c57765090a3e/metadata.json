@@ -1,0 +1,17 @@
+{
+  "address": "0x04b4b0fdb2a6dec6c8f7885a8b62c57765090a3e",
+  "chain_id": 137,
+  "contract_name": "GNSStakingV6_4_1",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 125,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:20:38.523Z"
+}

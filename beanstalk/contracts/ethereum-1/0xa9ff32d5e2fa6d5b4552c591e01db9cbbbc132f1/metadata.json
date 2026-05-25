@@ -1,0 +1,18 @@
+{
+  "address": "0xa9ff32d5e2fa6d5b4552c591e01db9cbbbc132f1",
+  "chain_id": 1,
+  "contract_name": "InitEBip5",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:24:25.302Z"
+}

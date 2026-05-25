@@ -1,0 +1,17 @@
+{
+  "address": "0x04df1ecb95c7bed527f487076f73c6c300d1f612",
+  "chain_id": 56,
+  "contract_name": "NativeUnwrapper",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:22:07.470Z"
+}

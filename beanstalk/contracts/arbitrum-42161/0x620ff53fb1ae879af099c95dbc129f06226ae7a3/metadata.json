@@ -1,0 +1,17 @@
+{
+  "address": "0x620ff53fb1ae879af099c95dbc129f06226ae7a3",
+  "chain_id": 42161,
+  "contract_name": "LibSiloPermit",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:24:28.572Z"
+}

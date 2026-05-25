@@ -1,0 +1,18 @@
+{
+  "address": "0x057997024bcb46986e7f864976846a40d38d8366",
+  "chain_id": 1,
+  "contract_name": "Fertilizer",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:24:18.080Z"
+}

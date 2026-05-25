@@ -1,0 +1,18 @@
+{
+  "address": "0x1523fabcbbcdab95bcec6b8ebecaeabc6b2f7c6b",
+  "chain_id": 137,
+  "contract_name": "GNSTradingCallbacksV6_4",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 125,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:20:40.227Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x016159b6bc7eaa69d2d9d42ef79ab4fe55bf66c1",
+  "chain_id": 42161,
+  "contract_name": "LibFlood",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 64,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:24:22.457Z"
+}

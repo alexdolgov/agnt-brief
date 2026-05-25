@@ -1,0 +1,185 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "nonBeanTokens",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes4",
+            "name": "selector",
+            "type": "bytes4"
+          },
+          {
+            "internalType": "uint32",
+            "name": "stalkEarnedPerSeason",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint48",
+            "name": "stalkIssuedPerBdv",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint32",
+            "name": "milestoneSeason",
+            "type": "uint32"
+          },
+          {
+            "internalType": "int96",
+            "name": "milestoneStem",
+            "type": "int96"
+          },
+          {
+            "internalType": "bytes1",
+            "name": "encodeType",
+            "type": "bytes1"
+          },
+          {
+            "internalType": "int32",
+            "name": "deltaStalkEarnedPerSeason",
+            "type": "int32"
+          },
+          {
+            "internalType": "uint128",
+            "name": "gaugePoints",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint64",
+            "name": "optimalPercentDepositedBdv",
+            "type": "uint64"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes4",
+                "name": "selector",
+                "type": "bytes4"
+              },
+              {
+                "internalType": "bytes1",
+                "name": "encodeType",
+                "type": "bytes1"
+              },
+              {
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct Implementation",
+            "name": "gaugePointImplementation",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes4",
+                "name": "selector",
+                "type": "bytes4"
+              },
+              {
+                "internalType": "bytes1",
+                "name": "encodeType",
+                "type": "bytes1"
+              },
+              {
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct Implementation",
+            "name": "liquidityWeightImplementation",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct AssetSettings[]",
+        "name": "assets",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isWhitelisted",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isWhitelistedLp",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isWhitelistedWell",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isSoppable",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct WhitelistStatus[]",
+        "name": "whitelistStatus",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "target",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes4",
+            "name": "selector",
+            "type": "bytes4"
+          },
+          {
+            "internalType": "bytes1",
+            "name": "encodeType",
+            "type": "bytes1"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct Implementation[]",
+        "name": "oracle",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "init",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "bits",
+        "type": "uint8"
+      },
+      {
+        "internalType": "int256",
+        "name": "value",
+        "type": "int256"
+      }
+    ],
+    "name": "SafeCastOverflowedIntDowncast",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "convertData",
+        "type": "bytes"
+      }
+    ],
+    "name": "getConvertState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "grownStalk",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int256",
+                "name": "beforeInputTokenDeltaB",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "afterInputTokenDeltaB",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "beforeOutputTokenDeltaB",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "afterOutputTokenDeltaB",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "beforeOverallDeltaB",
+                "type": "int256"
+              },
+              {
+                "internalType": "int256",
+                "name": "afterOverallDeltaB",
+                "type": "int256"
+              }
+            ],
+            "internalType": "struct LibConvert.DeltaBStorage",
+            "name": "deltaB",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inputAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "overallConvertCapacity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "stalkPenaltyBdv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "newBdv",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "initialLpSupply",
+            "type": "uint256[]"
+          }
+        ],
+        "internalType": "struct LibPipelineConvert.PipelineConvertData",
+        "name": "pipeData",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

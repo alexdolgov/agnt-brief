@@ -1,0 +1,18 @@
+{
+  "address": "0x22a31bffccd5fa5c45dfae100e2b6f567cbf1d12",
+  "chain_id": 42161,
+  "contract_name": "GNSPriceImpact",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 71,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:20:38.885Z"
+}

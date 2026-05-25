@@ -1,0 +1,18 @@
+{
+  "address": "0x4bed6cb142b7d474242d87f4796387deb9e1e1b4",
+  "chain_id": 1,
+  "contract_name": "BeanstalkPrice",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 45,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:24:23.128Z"
+}

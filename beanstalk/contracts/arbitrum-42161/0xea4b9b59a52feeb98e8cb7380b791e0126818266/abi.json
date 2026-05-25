@@ -1,0 +1,75 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "fid",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "amount",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "lastBpf",
+        "type": "uint128"
+      }
+    ],
+    "name": "FertilizerMigrated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "fertilizerId",
+            "type": "uint128"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              },
+              {
+                "internalType": "uint128",
+                "name": "amount",
+                "type": "uint128"
+              },
+              {
+                "internalType": "uint128",
+                "name": "lastBpf",
+                "type": "uint128"
+              }
+            ],
+            "internalType": "struct ReseedBarn.AccountFertilizerData[]",
+            "name": "accountData",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct ReseedBarn.Fertilizers[]",
+        "name": "fertilizerIds",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "init",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

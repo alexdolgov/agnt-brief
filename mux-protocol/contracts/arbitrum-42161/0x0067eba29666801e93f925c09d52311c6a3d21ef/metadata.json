@@ -1,0 +1,17 @@
+{
+  "address": "0x0067eba29666801e93f925c09d52311c6a3d21ef",
+  "chain_id": 42161,
+  "contract_name": "FacetClose",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:22:07.502Z"
+}

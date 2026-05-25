@@ -1,0 +1,18 @@
+{
+  "address": "0x5c58a8acac721928b6f4495370c10762795d83da",
+  "chain_id": 137,
+  "contract_name": "GNSTradingV6_3_2",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 125,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:20:43.634Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x03c757ccf50607d1d2c4789e1d894716898c5f41",
+  "chain_id": 137,
+  "contract_name": "GNSPairsStorage",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:20:39.524Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x02007a5d5f31a4a27ad7db7f22b3e69265faf882",
+  "chain_id": 8453,
+  "contract_name": "BorrowingFeesUtils",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 70,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:20:38.454Z"
+}

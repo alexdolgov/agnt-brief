@@ -1,0 +1,18 @@
+{
+  "address": "0xad85e25576a4e4ae7423d9c0ee1eccf6c99a20d6",
+  "chain_id": 137,
+  "contract_name": "DevsRevenue",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "london",
+  "license": "UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:20:45.521Z"
+}

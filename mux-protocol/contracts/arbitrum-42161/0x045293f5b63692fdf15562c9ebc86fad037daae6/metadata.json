@@ -1,0 +1,17 @@
+{
+  "address": "0x045293f5b63692fdf15562c9ebc86fad037daae6",
+  "chain_id": 42161,
+  "contract_name": "RouterV1",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 45,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:22:07.579Z"
+}

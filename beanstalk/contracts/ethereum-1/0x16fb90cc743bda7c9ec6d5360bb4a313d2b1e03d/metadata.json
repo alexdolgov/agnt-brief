@@ -1,0 +1,18 @@
+{
+  "address": "0x16fb90cc743bda7c9ec6d5360bb4a313d2b1e03d",
+  "chain_id": 1,
+  "contract_name": "ConvertFacet",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 59,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:24:20.275Z"
+}

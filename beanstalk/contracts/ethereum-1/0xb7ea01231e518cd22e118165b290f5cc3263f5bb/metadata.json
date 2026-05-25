@@ -1,0 +1,18 @@
+{
+  "address": "0xb7ea01231e518cd22e118165b290f5cc3263f5bb",
+  "chain_id": 1,
+  "contract_name": "L2MigrationFacet",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:24:26.035Z"
+}

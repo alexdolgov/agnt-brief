@@ -1,0 +1,1046 @@
+[
+  {
+    "inputs": [],
+    "name": "AboveMax",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BelowMin",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCandle",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCollateralIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPoolType",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OracleAlreadyListed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SourceNotOracleOfRequest",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransferAndCallToOracleFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongCollateralUsdDecimals",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongParams",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroValue",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "id",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ChainlinkFulfilled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "id",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ChainlinkRequested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract ILiquidityPool",
+            "name": "pool",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isGnsToken0InLp",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum IPriceAggregator.PoolType",
+            "name": "poolType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint80",
+            "name": "__placeholder",
+            "type": "uint80"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IPriceAggregator.LiquidityPoolInfo",
+        "name": "newValue",
+        "type": "tuple"
+      }
+    ],
+    "name": "CollateralGnsLiquidityPoolUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "value",
+        "type": "address"
+      }
+    ],
+    "name": "CollateralUsdPriceFeedUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "jobId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "JobIdUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountLink",
+        "type": "uint256"
+      }
+    ],
+    "name": "LinkClaimedBack",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "id",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "callbackAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes4",
+            "name": "callbackFunctionId",
+            "type": "bytes4"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes",
+                "name": "buf",
+                "type": "bytes"
+              },
+              {
+                "internalType": "uint256",
+                "name": "capacity",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct BufferChainlink.buffer",
+            "name": "buf",
+            "type": "tuple"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Chainlink.Request",
+        "name": "request",
+        "type": "tuple"
+      }
+    ],
+    "name": "LinkRequestCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "value",
+        "type": "address"
+      }
+    ],
+    "name": "LinkUsdPriceFeedUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "value",
+        "type": "uint8"
+      }
+    ],
+    "name": "MinAnswersUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "value",
+        "type": "address"
+      }
+    ],
+    "name": "OracleAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldOracle",
+        "type": "address"
+      }
+    ],
+    "name": "OracleRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldOracle",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newOracle",
+        "type": "address"
+      }
+    ],
+    "name": "OracleReplaced",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "orderId",
+        "type": "tuple"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint16",
+        "name": "pairIndex",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "request",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "priceData",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isLookback",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "usedInMedian",
+        "type": "bool"
+      }
+    ],
+    "name": "PriceReceived",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "pairIndex",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "tradeId",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingStorage.Id",
+        "name": "pendingOrderId",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum ITradingStorage.PendingOrderType",
+        "name": "orderType",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fromBlock",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isLookback",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "job",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "linkFeePerNode",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "nodesCount",
+        "type": "uint256"
+      }
+    ],
+    "name": "PriceRequested",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+              },
+              {
+                "internalType": "uint32",
+                "name": "index",
+                "type": "uint32"
+              }
+            ],
+            "internalType": "struct ITradingStorage.Id",
+            "name": "orderId",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "spreadP",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "price",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "open",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "high",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "low",
+            "type": "uint64"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ITradingCallbacks.AggregatorAnswer",
+        "name": "a",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum ITradingStorage.PendingOrderType",
+        "name": "orderType",
+        "type": "uint8"
+      }
+    ],
+    "name": "TradingCallbackExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "newValue",
+        "type": "uint32"
+      }
+    ],
+    "name": "TwapIntervalUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "getChainlinkToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_normalizedValue",
+        "type": "uint256"
+      }
+    ],
+    "name": "getCollateralFromUsdNormalizedValue",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_collateralIndex",
+        "type": "uint8"
+      }
+    ],
+    "name": "getCollateralGnsLiquidityPool",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract ILiquidityPool",
+            "name": "pool",
+            "type": "ILiquidityPool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isGnsToken0InLp",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum IPriceAggregator.PoolType",
+            "name": "poolType",
+            "type": "IPriceAggregator.PoolType"
+          },
+          {
+            "internalType": "uint80",
+            "name": "__placeholder",
+            "type": "uint80"
+          }
+        ],
+        "internalType": "struct IPriceAggregator.LiquidityPoolInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_collateralIndex",
+        "type": "uint8"
+      }
+    ],
+    "name": "getCollateralPriceUsd",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_collateralIndex",
+        "type": "uint8"
+      }
+    ],
+    "name": "getCollateralUsdPriceFeed",
+    "outputs": [
+      {
+        "internalType": "contract IChainlinkFeed",
+        "name": "",
+        "type": "IChainlinkFeed"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collateral",
+        "type": "address"
+      }
+    ],
+    "name": "getGnsPriceCollateralAddress",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_price",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_collateralIndex",
+        "type": "uint8"
+      }
+    ],
+    "name": "getGnsPriceCollateralIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_price",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_gnsPriceCollateral",
+        "type": "uint256"
+      }
+    ],
+    "name": "getGnsPriceUsd",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_collateralIndex",
+        "type": "uint8"
+      }
+    ],
+    "name": "getGnsPriceUsd",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLimitJobId",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "_trader",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "_pairIndex",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_positionSizeCollateral",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLinkFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLinkUsdPriceFeed",
+    "outputs": [
+      {
+        "internalType": "contract IChainlinkFeed",
+        "name": "",
+        "type": "IChainlinkFeed"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMarketJobId",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMinAnswers",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getOracle",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getOracles",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_id",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPendingRequest",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_requestId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPriceAggregatorOrder",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum ITradingStorage.PendingOrderType",
+            "name": "orderType",
+            "type": "ITradingStorage.PendingOrderType"
+          },
+          {
+            "internalType": "uint16",
+            "name": "pairIndex",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLookback",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint32",
+            "name": "__placeholder",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct IPriceAggregator.Order",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "index",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ITradingStorage.Id",
+        "name": "_orderId",
+        "type": "tuple"
+      }
+    ],
+    "name": "getPriceAggregatorOrderAnswers",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "open",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "high",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "low",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "ts",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct IPriceAggregator.OrderAnswer[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRequestCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTwapInterval",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "_collateralIndex",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_collateralValue",
+        "type": "uint256"
+      }
+    ],
+    "name": "getUsdNormalizedValue",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

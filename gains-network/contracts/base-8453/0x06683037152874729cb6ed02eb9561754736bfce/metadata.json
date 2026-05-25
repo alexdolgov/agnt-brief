@@ -1,0 +1,18 @@
+{
+  "address": "0x06683037152874729cb6ed02eb9561754736bfce",
+  "chain_id": 8453,
+  "contract_name": "UpdateLeverageLifecycles",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 70,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:20:37.625Z"
+}

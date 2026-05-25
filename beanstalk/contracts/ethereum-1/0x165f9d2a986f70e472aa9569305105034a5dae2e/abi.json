@@ -1,0 +1,26 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "unripeToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "recapPercentPaid",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLockedUnderlying",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lockedUnderlying",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

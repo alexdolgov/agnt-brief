@@ -1,0 +1,300 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "name": "InvalidAddress",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "orderId",
+        "type": "uint64"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "id",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "enum OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "version",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint64",
+            "name": "placeOrderTime",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "gasFeeGwei",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes",
+            "name": "payload",
+            "type": "bytes"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct OrderData",
+        "name": "orderData",
+        "type": "tuple"
+      }
+    ],
+    "name": "CancelOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "positionId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "marketId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "size",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isUnwrapWeth",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct AdlOrderParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "FillAdlOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "orderId",
+        "type": "uint64"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "id",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "enum OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "version",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint64",
+            "name": "placeOrderTime",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "gasFeeGwei",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes",
+            "name": "payload",
+            "type": "bytes"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct OrderData",
+        "name": "orderData",
+        "type": "tuple"
+      }
+    ],
+    "name": "FillOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "orderId",
+        "type": "uint64"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "positionId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "marketId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "size",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "flags",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "limitPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "expiration",
+            "type": "uint64"
+          },
+          {
+            "internalType": "address",
+            "name": "lastConsumedToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collateralToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "withdrawUsd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "withdrawSwapToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "withdrawSwapSlippage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tpPriceDiff",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "slPriceDiff",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "tpslExpiration",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tpslFlags",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "tpslWithdrawSwapToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tpslWithdrawSwapSlippage",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct PositionOrderParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "NewPositionOrder",
+    "type": "event"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x02cd10923e19b6ba98f745466167694f611a12e3",
+  "chain_id": 137,
+  "contract_name": "PriceAggregatorUtils",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 73,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:20:37.292Z"
+}

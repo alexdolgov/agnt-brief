@@ -1,0 +1,18 @@
+{
+  "address": "0x040375a92da214e396205e95cb162213c574ecb3",
+  "chain_id": 42161,
+  "contract_name": "DiamondInit",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "CC0-1.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:22:07.573Z"
+}

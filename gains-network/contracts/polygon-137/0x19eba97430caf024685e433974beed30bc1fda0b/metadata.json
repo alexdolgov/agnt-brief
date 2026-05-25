@@ -1,0 +1,17 @@
+{
+  "address": "0x19eba97430caf024685e433974beed30bc1fda0b",
+  "chain_id": 137,
+  "contract_name": "ERC721LockingBridge",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:20:42.569Z"
+}

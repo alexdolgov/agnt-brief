@@ -1,0 +1,17 @@
+{
+  "address": "0x1a6b04fb025776013687d90c5d11312e2767e893",
+  "chain_id": 42161,
+  "contract_name": "SeniorVault",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:22:07.697Z"
+}

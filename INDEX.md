@@ -48,6 +48,7 @@
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 0 | 2 | 2026-05-23 |
 | [badger-dao](./badger-dao/) | $1.5M | 0.0% | $1.5M | sunsetting | 6 | 27 | 2026-05-25 |
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
+| [beanstalk](./beanstalk/) | $142.5M | 20.4% | $142.5M | dead | 7 | 244 | 2026-05-25 |
 | [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 2 | 105 | 2026-05-23 |
 | [benddao](./benddao/) | $1.7M | 0.0% | $1.7M | dead | 1 | 67 | 2026-05-23 |
 | [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 2 | 2026-05-23 |
@@ -169,6 +170,7 @@
 | [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | unknown | 0 | 5 | 2026-05-24 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 11 | 18 | 2026-05-23 |
 | [fulcrom](./fulcrom/) | $13.5M | 0.0% | ? | active | 0 | 80 | 2026-05-22 |
+| [gains-network](./gains-network/) | $21.9M | 0.0% | $21.9M | unknown | 1 | 760 | 2026-05-25 |
 | [generic.money](./generic.money/) | $3.7M | 75.0% | ? | active | 1 | 13 | 2026-05-24 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-05-22 |
 | [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
@@ -249,7 +251,7 @@
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 108 | 2026-05-24 |
-| [lendflare](./lendflare/) | $1.1K | 2.7% | $1.1K | declining | 1 | 144 | 2026-05-25 |
+| [lendflare](./lendflare/) | $1.1K | 5.3% | $1.1K | declining | 1 | 74 | 2026-05-25 |
 | [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | sunsetting | 10 | 64 | 2026-05-25 |
 | [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-05-25 |
 | [levex](./levex/) | $11.2M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
@@ -297,6 +299,7 @@
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-05-22 |
 | [mu-digital](./mu-digital/) | $19.5M | 100.0% | ? | active | 2 | 12 | 2026-05-22 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-05-24 |
+| [mux-protocol](./mux-protocol/) | $19.1M | 18.0% | $19.1M | active | 4 | 1225 | 2026-05-25 |
 | [mvl-staking](./mvl-staking/) | $38.1M | 33.3% | ? | unknown | 2 | 50 | 2026-05-25 |
 | [mystic-finance](./mystic-finance/) | $5.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
@@ -340,6 +343,7 @@
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 3 | 21 | 2026-05-25 |
 | [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [phoenix](./phoenix/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 53 | 2026-05-25 |
+| [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-05-25 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | dead | 1 | 34 | 2026-05-24 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | unknown | 0 | 7 | 2026-05-24 |

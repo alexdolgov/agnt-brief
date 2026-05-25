@@ -1,0 +1,18 @@
+{
+  "address": "0x8e6aa47a4f498b0067d2ae011fef4bc3a8d27f37",
+  "chain_id": 1,
+  "contract_name": "InitBip11",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:24:24.807Z"
+}

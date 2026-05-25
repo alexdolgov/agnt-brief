@@ -1,0 +1,17 @@
+{
+  "address": "0x390b023d316c2e92dd96a9bcc7fae8db12a2fbc1",
+  "chain_id": 42161,
+  "contract_name": "SafeProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:24:27.357Z"
+}

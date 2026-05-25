@@ -1,0 +1,18 @@
+{
+  "address": "0x2f977a859ed91c729c781ba0e50927d5da3cb988",
+  "chain_id": 42161,
+  "contract_name": "Diamond",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "CC0-1.0",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x75d1d5c987b9c5a3c4bfa7f878a4139a1102cd7d",
+  "fetched_at": "2026-05-25T14:22:07.758Z"
+}

@@ -73,7 +73,7 @@
 | [botto](./botto/) | $4.3M | 0.0% | ? | unknown | 3 | 19 | 2026-05-23 |
 | [bounce.tech](./bounce.tech/) | $1.4M | 0.0% | ? | unknown | 7 | 0 | 2026-05-24 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-05-23 |
-| [bracket-protocol](./bracket-protocol/) | $923.7M | 6.2% | $920.6M | active | 5 | 182 | 2026-05-24 |
+| [bracket-protocol](./bracket-protocol/) | $923.7M | 16.7% | $920.6M | active | 5 | 60 | 2026-05-25 |
 | [bridgers](./bridgers/) | $71.9M | 0.0% | $71.9M | active | 1 | 9 | 2026-05-24 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-05-23 |
 | [btcfi](./btcfi/) | $11.9M | 0.0% | ? | active | 0 | 15 | 2026-05-23 |
@@ -162,7 +162,7 @@
 | [flamingo](./flamingo/) | $1.5M | 0.0% | $1.5M | dead | 6 | 53 | 2026-05-25 |
 | [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 21 | 3 | 2026-05-24 |
 | [flex](./flex/) | $1.3M | 0.0% | ? | unknown | 0 | 1 | 2026-05-25 |
-| [flexa](./flexa/) | $1.7M | 4.1% | $1.7M | dead | 2 | 65 | 2026-05-24 |
+| [flexa](./flexa/) | $1.5M | 11.8% | $1.5M | dead | 2 | 17 | 2026-05-25 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
 | [flying-tulip](./flying-tulip/) | $52.8M | 0.0% | $52.8M | unknown | 0 | 77 | 2026-05-25 |
 | [fomo3d](./fomo3d/) | $2.6M | 0.0% | ? | active | 0 | 23 | 2026-05-24 |
@@ -186,7 +186,7 @@
 | [guru-network-dao](./guru-network-dao/) | $2.4M | 0.0% | ? | active | 0 | 54 | 2026-05-24 |
 | [gyroscope-protocol](./gyroscope-protocol/) | $44.6 | 21.3% | ? | dead | 10 | 233 | 2026-05-24 |
 | [h2-finance](./h2-finance/) | $3.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [hakka-finance](./hakka-finance/) | $1.7M | 10.7% | $1.7M | active | 7 | 103 | 2026-05-23 |
+| [hakka-finance](./hakka-finance/) | $1.5M | 18.4% | $1.5M | active | 8 | 52 | 2026-05-25 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [hanji-protocol](./hanji-protocol/) | $2.8M | 16.7% | ? | active | 2 | 289 | 2026-05-24 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-05-23 |
@@ -458,7 +458,7 @@
 | [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 0 | 10 | 2026-05-25 |
 | [switcheo-finance](./switcheo-finance/) | $68.4M | 0.0% | $68.4M | active | 0 | 48 | 2026-05-25 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 134 | 2026-05-23 |
-| [symbiosis](./symbiosis/) | $236.1M | 5.8% | $236.1M | active | 15 | 137 | 2026-05-23 |
+| [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-05-25 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 22.6% | ? | active | 9 | 158 | 2026-05-23 |
 | [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 4 | 482 | 2026-05-23 |
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-05-24 |
@@ -501,7 +501,7 @@
 | [unichain-bridge](./unichain-bridge/) | $2.9M | 0.0% | ? | dead | 0 | 15 | 2026-05-24 |
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [universe-xyz](./universe-xyz/) | $39.0M | 20.0% | $39.0M | dead | 3 | 36 | 2026-05-24 |
-| [unslashed](./unslashed/) | $4.8M | 0.0% | $4.8M | declining | 0 | 69 | 2026-05-24 |
+| [unslashed](./unslashed/) | $4.6M | 0.0% | $4.6M | declining | 0 | 16 | 2026-05-25 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-05-23 |
 | [usx.capital](./usx.capital/) | $1.7M | 0.0% | ? | unknown | 1 | 4 | 2026-05-24 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-25 |

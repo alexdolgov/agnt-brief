@@ -1,0 +1,17 @@
+{
+  "address": "0x3445307caed9a144901872380fd5772f71042d80",
+  "chain_id": 59144,
+  "contract_name": "EpochController",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:17:51.727Z"
+}

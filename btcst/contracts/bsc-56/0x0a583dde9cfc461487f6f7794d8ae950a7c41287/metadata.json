@@ -1,0 +1,17 @@
+{
+  "address": "0x0a583dde9cfc461487f6f7794d8ae950a7c41287",
+  "chain_id": 56,
+  "contract_name": "tBTC",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:15:00.884Z"
+}

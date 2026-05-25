@@ -1,0 +1,17 @@
+{
+  "address": "0x0365592c3db1e4fc43b9bac2276605e007f89059",
+  "chain_id": 59144,
+  "contract_name": "LynxClaimToken",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:17:51.054Z"
+}

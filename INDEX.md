@@ -72,6 +72,7 @@
 | [bridgers](./bridgers/) | $71.9M | 0.0% | $71.9M | active | 1 | 9 | 2026-05-24 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-05-23 |
 | [btcfi](./btcfi/) | $11.9M | 0.0% | ? | active | 0 | 15 | 2026-05-23 |
+| [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 0 | 64 | 2026-05-25 |
 | [btse](./btse/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | dead | 1 | 101 | 2026-05-24 |
@@ -250,6 +251,7 @@
 | [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 0 | 145 | 2026-05-23 |
 | [lumenswap](./lumenswap/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 904 | 2026-05-23 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-05-24 |
+| [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-25 |
 | [magma-staking](./magma-staking/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [mangrove](./mangrove/) | $4.3M | 24.4% | ? | active | 8 | 68 | 2026-05-23 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-05-23 |

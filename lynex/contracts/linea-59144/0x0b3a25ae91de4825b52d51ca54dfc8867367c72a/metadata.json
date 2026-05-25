@@ -1,0 +1,17 @@
+{
+  "address": "0x0b3a25ae91de4825b52d51ca54dfc8867367c72a",
+  "chain_id": 59144,
+  "contract_name": "PreMining",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "000000000000000000000000f86381c8c4bbf3d398571e3d904ec04f12ac645a0000000000000000000000000b465444d6860cd8d76459c564c0f7783d51d3800000000000000000000000000000000000000000000000000f4c216ee44f24800000000000000000000000000000000000000000000000000000000064df79600000000000000000000000000000000000000000000000000000000064fb28e0",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:17:52.333Z"
+}

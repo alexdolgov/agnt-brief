@@ -1,0 +1,373 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "permit2",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "weth",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IUniPoolFactory",
+        "name": "unipoolFactory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "BytesLibOutOfBounds",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BytesLibSliceOverflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BytesLibToAddressOutOfBounds",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BytesLibToAddressOverflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ContractLocked",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FromAddressIsNotOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientETH",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientToken",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "commandIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "message",
+        "type": "bytes"
+      }
+    ],
+    "name": "RouterExecutionFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterInvalidEthSender",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLengthMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterTransactionDeadlinePassed",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SliceOutOfBounds",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SweepModuleInsufficientETH",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SweepModuleInsufficientToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SweepModuleZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniPoolModuleExcessiveInputAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniPoolModuleInsufficientOutputAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniPoolModuleInvalidAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniPoolModuleInvalidPair",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniPoolModuleInvalidPath",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniPoolModuleInvalidPaymentType",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniPoolModuleSlippageTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniPoolModuleSpreadTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniPoolModuleZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniPoolPairFeeExceedsMax",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UniPoolPairPairNotFound",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "commands",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "inputs",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "execute",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "commands",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "inputs",
+        "type": "bytes[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deadline",
+        "type": "uint256"
+      }
+    ],
+    "name": "execute",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "supports_",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token0",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "token1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct IUniPoolMintCallback.MintCallbackData",
+        "name": "callbackData",
+        "type": "tuple"
+      }
+    ],
+    "name": "uniPoolMintCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "loanFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "feeTo",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "uniPoolPairBorrowCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "uniPoolPairRepayCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint128",
+        "name": "amount",
+        "type": "uint128"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "uniPoolSwapCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

@@ -145,6 +145,7 @@
 | [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-05-24 |
 | [eventum-bridge](./eventum-bridge/) | $1.7M | 2.1% | $1.7M | active | 2 | 74 | 2026-05-24 |
 | [everrise](./everrise/) | $23.4M | 0.0% | $23.4M | declining | 2 | 258 | 2026-05-24 |
+| [everything](./everything/) | $1.1M | 0.0% | ? | unknown | 0 | 10 | 2026-05-25 |
 | [exmo](./exmo/) | $2.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-05-23 |
@@ -223,6 +224,7 @@
 | [kava-earn](./kava-earn/) | $1.7M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
+| [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-05-25 |
 | [keyring](./keyring/) | $348.8K | 8.3% | $348.8K | active | 16 | 134 | 2026-05-23 |
 | [kiloex](./kiloex/) | $7.3M | 12.5% | $1.5M | declining | 10 | 111 | 2026-05-24 |
 | [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-05-25 |
@@ -320,6 +322,7 @@
 | [paragonsdao](./paragonsdao/) | $6.2M | 50.0% | ? | unknown | 8 | 2 | 2026-05-23 |
 | [parallel-protocol](./parallel-protocol/) | $3.6M | 30.8% | $3.0M | active | 5 | 38 | 2026-05-24 |
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-05-24 |
+| [pay-protocol](./pay-protocol/) | $1.1M | 0.0% | ? | declining | 0 | 8 | 2026-05-25 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 3 | 21 | 2026-05-25 |
 | [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
@@ -443,6 +446,7 @@
 | [teller](./teller/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-05-24 |
 | [tender-finance](./tender-finance/) | $1.3M | 0.0% | ? | declining | 1 | 1 | 2026-05-25 |
+| [tenderize](./tenderize/) | $332.5M | 2.6% | $332.5M | declining | 7 | 43 | 2026-05-25 |
 | [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | unknown | 1 | 15 | 2026-05-25 |
 | [the-arena](./the-arena/) | $9.6M | 0.0% | $9.6M | active | 0 | 1054 | 2026-05-24 |

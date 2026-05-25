@@ -1,0 +1,17 @@
+{
+  "address": "0x2336c10a1d3100343fa9911a2c57b77c333599a3",
+  "chain_id": 1,
+  "contract_name": "TenderToken",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T06:32:08.464Z"
+}

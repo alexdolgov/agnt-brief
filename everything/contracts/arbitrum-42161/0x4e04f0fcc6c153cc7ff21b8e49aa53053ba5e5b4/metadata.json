@@ -1,0 +1,18 @@
+{
+  "address": "0x4e04f0fcc6c153cc7ff21b8e49aa53053ba5e5b4",
+  "chain_id": 42161,
+  "contract_name": "UpgradeableBeacon",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0xb0ef237002250d1f70f01f13fedccd00777bbd02",
+  "fetched_at": "2026-05-25T06:22:44.988Z"
+}

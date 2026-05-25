@@ -8,7 +8,7 @@
 | Origin | upstream |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 2 (ethereum `0xf859a1ad94bcf445a406b892ef0d3082f4174088`; polygon [`0x89db3b59381bc06fe9bf74532afd777e5f78ef02`](../0x89db3b59381bc06fe9bf74532afd777e5f78ef02/)) |
+| Deployments | 1 (polygon [`0x89db3b59381bc06fe9bf74532afd777e5f78ef02`](../0x89db3b59381bc06fe9bf74532afd777e5f78ef02/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
 | TVL | n/a |

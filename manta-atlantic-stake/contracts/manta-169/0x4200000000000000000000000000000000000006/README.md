@@ -5,7 +5,7 @@
 | Chain | manta (169) |
 | Address | `0x4200000000000000000000000000000000000006` |
 | Role | token |
-| Origin | needs_review |
+| Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (manta [`0x4200000000000000000000000000000000000006`](../0x4200000000000000000000000000000000000006/)) |

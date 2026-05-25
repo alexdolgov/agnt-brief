@@ -17,7 +17,7 @@ Each project directory contains:
 | [bracket-protocol](./bracket-protocol/brief.md) | $3.09M | arbitrum, ethereum | 60 | 48/60 (80%) | 16.7% | 0.0% (-) | 4 | fresh | ✅ active | $920.58M |
 | [planet](./planet/brief.md) | $1.85M | bsc | 34 | 26/34 (76%) | 7.7% | 0.0% (-) | 1 | stale | 💀 dead | $778.29M |
 | [mantra-dao](./mantra-dao/brief.md) | $1.75M | ethereum, polygon | 209 | 90/209 (43%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $612.50M |
-| [trevee-earn](./trevee-earn/brief.md) | $1.15M | ethereum, plasma, sonic | 29 | 28/29 (97%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $582.36M |
+| [trevee-earn](./trevee-earn/brief.md) | $1.15M | ethereum, plasma, sonic | 15 | 14/15 (93%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $582.18M |
 | [inverse-finance](./inverse-finance/brief.md) | $44.53M | 5 | 125 | 117/125 (94%) | 13.7% | 9.4% (Code4rena, Sherlock) | 5 | fresh | ❓ unknown | $428.77M |
 | [debridge](./debridge/brief.md) | $4.06M | 11 | 164 | 17/164 (10%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $379.52M |
 | [kine-finance](./kine-finance/brief.md) | $1.11M | 4 | 35 | 33/35 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $351.76M |
@@ -49,7 +49,6 @@ Each project directory contains:
 | [gnosis-protocol-v1](./gnosis-protocol-v1/brief.md) | $2.25M | ethereum | 112 | 75/112 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $95.88M |
 | [velvet.capital](./velvet.capital/brief.md) | $1.44M | 4 | 420 | 44/420 (10%) | 77.8% | 2.2% (Spearbit) | 13 | fresh | ⚠️ declining | $95.22M |
 | [blur](./blur/brief.md) | $18.88M | blast, ethereum | 17 | 12/17 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $91.73M |
-| [b.protocol](./b.protocol/brief.md) | $1.79M | 4 | 186 | 121/186 (65%) | 4.1% | 1.6% (Code4rena) | 5 | stale | 💀 dead | $89.13M |
 | [zivoe](./zivoe/brief.md) | $13.83M | ethereum | 32 | 31/32 (97%) | 58.1% | 48.4% (Sherlock) | 3 | aging | ✅ active | $87.09M |
 | [the-idols](./the-idols/brief.md) | $5.76M | ethereum | 17 | 13/17 (76%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $85.36M |
 | [mendi-finance](./mendi-finance/brief.md) | $2.03M | linea | 39 | 28/39 (72%) | 10.7% | 3.6% (Sherlock) | 2 | fresh | ❓ unknown | $79.07M |
@@ -170,8 +169,8 @@ Each project directory contains:
 | [meeds-finance](./meeds-finance/brief.md) | $1.73M | ethereum | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.84M |
 | [wan-bridge](./wan-bridge/brief.md) | $25.13M | 14 | 153 | 68/153 (44%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.78M |
 | [dtrinity](./dtrinity/brief.md) | $2.32M | ethereum, fraxtal, sonic | 209 | 88/209 (42%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.76M |
-| [eventum-bridge](./eventum-bridge/brief.md) | $2.82M | arbitrum, ethereum | 74 | 47/74 (64%) | 2.1% | 0.0% (-) | 1 | fresh | ✅ active | $1.73M |
 | [minto](./minto/brief.md) | $3.83M | bsc, ethereum, heco | 11 | 8/11 (73%) | 12.5% | 0.0% (-) | 1 | stale | ❓ unknown | $1.66M |
+| [eventum-bridge](./eventum-bridge/brief.md) | $2.82M | arbitrum, ethereum | 30 | 28/30 (93%) | 3.6% | 0.0% (-) | 1 | fresh | ✅ active | $1.64M |
 | [templar-dao](./templar-dao/brief.md) | $2.21M | bsc | 40 | 25/40 (63%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.55M |
 | [kiloex](./kiloex/brief.md) | $2.94M | base, bsc, manta | 111 | 8/111 (7%) | 12.5% | 0.0% (-) | 1 | aging | ⚠️ declining | $1.54M |
 | [osmosis-dex](./osmosis-dex/brief.md) | $18.17M | 17 | 53 | 36/53 (68%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $1.53M |
@@ -231,7 +230,7 @@ Each project directory contains:
 | [bakeryswap](./bakeryswap/brief.md) | $3.41M | bsc | 98 | 52/98 (53%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $612.86K |
 | [biswap](./biswap/brief.md) | $5.70M | 4 | 84 | 13/84 (15%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $609.28K |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/brief.md) | $19.20M | arbitrum, ethereum | 55 | 48/55 (87%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $447.17K |
-| [camelot](./camelot/brief.md) | $27.14M | arbitrum | 127 | 52/127 (41%) | 17.3% | 0.0% (-) | 1 | stale | ✅ active | $391.94K |
+| [camelot](./camelot/brief.md) | $27.14M | arbitrum | 118 | 51/118 (43%) | 17.6% | 0.0% (-) | 1 | stale | ✅ active | $391.94K |
 | [equalizer](./equalizer/brief.md) | $1.27M | base, fantom, sonic | 292 | 50/292 (17%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $374.84K |
 | [bmx](./bmx/brief.md) | $2.95M | base, mode | 184 | 133/184 (72%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $305.69K |
 | [tokenstore](./tokenstore/brief.md) | $1.35M | ethereum | 44 | 2/44 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $265.68K |
@@ -242,6 +241,7 @@ Each project directory contains:
 | [tarot](./tarot/brief.md) | $1.14M | 12 | 139 | 41/139 (29%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $154.44K |
 | [ratex](./ratex/brief.md) | $5.39M | bsc | 168 | 91/168 (54%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $98.79K |
 | [kromatika](./kromatika/brief.md) | $1.10M | 4 | 30 | 16/30 (53%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $83.80K |
+| [b.protocol](./b.protocol/brief.md) | $1.79M | 4 | 162 | 97/162 (60%) | 5.1% | 2.0% (Code4rena) | 5 | stale | 💀 dead | $79.00K |
 | [moola-market](./moola-market/brief.md) | $1.22M | celo | 53 | 37/53 (70%) | 10.8% | 10.8% (OpenZeppelin) | 1 | stale | ⚠️ declining | $73.92K |
 | [foxify](./foxify/brief.md) | $3.58M | arbitrum, sonic | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $72.65K |
 | [csigma-finance](./csigma-finance/brief.md) | $12.66M | arbitrum, base, ethereum | 50 | 38/50 (76%) | 41.0% | 0.0% (-) | 3 | aging | ✅ active | $65.57K |
@@ -427,7 +427,7 @@ Each project directory contains:
 | [magma-staking](./magma-staking/brief.md) | $1.26M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [magpie-ecosystem](./magpie-ecosystem/brief.md) | $27.10M | 8 | 2794 | 0/2794 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [mangrove](./mangrove/brief.md) | $4.25M | 4 | 68 | 41/68 (60%) | 24.4% | 17.1% (ChainSecurity, Code4rena) | 7 | aging | ✅ active | - |
-| [manta-atlantic-stake](./manta-atlantic-stake/brief.md) | $5.22M | ethereum, manta | 112 | 71/112 (63%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [manta-atlantic-stake](./manta-atlantic-stake/brief.md) | $5.22M | ethereum, manta | 109 | 68/109 (62%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-cedefi](./manta-cedefi/brief.md) | $26.78M | manta | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-pacific](./manta-pacific/brief.md) | $25.67M | ethereum, manta | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [matstake](./matstake/brief.md) | $4.77M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -553,5 +553,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-25T16:52:01.942Z_
+_Generated: 2026-05-25T16:59:43.598Z_
 _Projects: 541_

@@ -43,7 +43,7 @@
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-05-23 |
 | [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-05-25 |
 | [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-05-25 |
-| [b.protocol](./b.protocol/) | $89.1M | 4.1% | $89.1M | dead | 5 | 186 | 2026-05-24 |
+| [b.protocol](./b.protocol/) | $79.0K | 5.1% | $79.0K | dead | 5 | 162 | 2026-05-25 |
 | [babydogecoin](./babydogecoin/) | $166.4M | 0.0% | $166.4M | declining | 1 | 54 | 2026-05-25 |
 | [babyswap](./babyswap/) | $241.1K | 1.5% | $241.1K | dead | 1 | 113 | 2026-05-25 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 0 | 2 | 2026-05-23 |
@@ -83,7 +83,7 @@
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | dead | 1 | 101 | 2026-05-24 |
 | [butter-network](./butter-network/) | $1.4M | 0.0% | ? | declining | 0 | 6 | 2026-05-24 |
-| [camelot](./camelot/) | $6.4M | 17.3% | $391.9K | active | 1 | 127 | 2026-05-22 |
+| [camelot](./camelot/) | $6.4M | 17.6% | $391.9K | active | 1 | 118 | 2026-05-25 |
 | [canopy](./canopy/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 4 | 84 | 2026-05-24 |
 | [capx-ai](./capx-ai/) | $2.2M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
@@ -153,7 +153,7 @@
 | [etherfuse](./etherfuse/) | $5.1M | 0.0% | ? | unknown | 0 | 25 | 2026-05-23 |
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | unknown | 2 | 58 | 2026-05-23 |
 | [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-05-24 |
-| [eventum-bridge](./eventum-bridge/) | $1.7M | 2.1% | $1.7M | active | 2 | 74 | 2026-05-24 |
+| [eventum-bridge](./eventum-bridge/) | $1.6M | 3.6% | $1.6M | active | 2 | 30 | 2026-05-25 |
 | [everrise](./everrise/) | $23.4M | 0.0% | $23.4M | declining | 2 | 239 | 2026-05-25 |
 | [everything](./everything/) | $1.1M | 0.0% | ? | unknown | 0 | 10 | 2026-05-25 |
 | [exmo](./exmo/) | $2.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
@@ -274,7 +274,7 @@
 | [magpie-ecosystem](./magpie-ecosystem/) | $27.1M | 0.0% | ? | declining | 4 | 2794 | 2026-05-25 |
 | [mangrove](./mangrove/) | $4.3M | 24.4% | ? | active | 8 | 68 | 2026-05-23 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-05-23 |
-| [manta-atlantic-stake](./manta-atlantic-stake/) | $5.2M | 0.0% | ? | sunsetting | 0 | 112 | 2026-05-23 |
+| [manta-atlantic-stake](./manta-atlantic-stake/) | $5.2M | 0.0% | ? | sunsetting | 0 | 109 | 2026-05-25 |
 | [manta-cedefi](./manta-cedefi/) | $26.8M | 0.0% | ? | unknown | 0 | 17 | 2026-05-22 |
 | [manta-pacific](./manta-pacific/) | $25.7M | 0.0% | ? | active | 0 | 3 | 2026-05-25 |
 | [mantra-dao](./mantra-dao/) | $612.5M | 0.0% | $612.5M | declining | 1 | 209 | 2026-05-25 |
@@ -489,7 +489,7 @@
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
-| [trevee-earn](./trevee-earn/) | $582.4M | 0.0% | $582.4M | transitioning | 0 | 29 | 2026-05-25 |
+| [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | transitioning | 0 | 15 | 2026-05-25 |
 | [trisolaris](./trisolaris/) | $1.3M | 0.0% | ? | dead | 0 | 119 | 2026-05-25 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |

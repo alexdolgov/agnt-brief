@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "trevee-earn",
-  "generated_at": "2026-05-25T05:04:47.535Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-25T16:58:14.433Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
   "lifecycle_status": "transitioning",
   "lifecycle_signal": {
     "slug": "trevee-earn",
@@ -32,28 +32,28 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 29,
-    "total_addresses": 82,
-    "unique_implementations": 29,
-    "total_deployments": 82,
+    "total_contracts": 15,
+    "total_addresses": 29,
+    "unique_implementations": 15,
+    "total_deployments": 29,
     "audited_contracts": 0,
-    "unaudited_contracts": 28,
+    "unaudited_contracts": 14,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 28,
+    "contracts_verified_unaudited": 14,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1149746.7173900001,
-    "tvl_usd": 582358083.6443073,
+    "tvl_usd": 582183821.3376558,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "ethereum": 494043079.39,
       "plasma": 81745549.15,
-      "sonic": 6569455.1
+      "sonic": 6395192.8
     },
-    "asd_usd": 582358083.6443073,
+    "asd_usd": 582183821.3376558,
     "website_url": "https://rings.money/",
     "chains": [
       "ethereum",
@@ -249,208 +249,6 @@
     {
       "chain_id": 146,
       "chain_name": "sonic",
-      "address": "0x0fdbce271bea0d9819034cd09021e0bbe94be3fd",
-      "name": "MintedERC20",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": 174262.30665141894,
-      "is_proxy": true,
-      "impl_address": "0x6c7d5e60b2c49e72e745b2e7e6a253dbd5f354f9",
-      "impl_name": "MintedERC20",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x0fdbce271bea0d9819034cd09021e0bbe94be3fd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x1a08d5f1774252266acbe718c6e1b6a71db336e6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x2fb960611bdc322a9a4a994252658cae9fe2eea1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x309c92261178fa0cf748a855e90ae73fdb79ebc7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 805.8968154497804,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x48540d1140331277b9157a096e40e6f5506fc335",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x50c42deacd8fc9773493ed674b675be577f2634b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x53f753e4b17f4075d6fa2c6909033d224b81e698",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x61647882acf21792e577a963d320d51e2c8f6194",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 271.50840983720815,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x6c7d5e60b2c49e72e745b2e7e6a253dbd5f354f9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x7cb451ce10b578191acf609c41e92d3912e8edb3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x7fff4c4a827c84e32c5e175052834111b2ccd270",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x8f1cbc3ce7c4584ca0610f2a2df8ab0a8ec6544c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x9605cc161d148f665b6d4796131f8f6814abf386",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x9cacb579227d10a9fbe0951861b9fcb4847e8c6b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xa3b9ec0b9ccb54335b617139e55ebc0fec52ce0b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xb026e4cc9025fa72e7fd68b93c08eea0948269fd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xb5f0edecff09081354db252ceec000b213186fac",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xc6915ddeebef0e4c273605f65872b8ee7638030c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xf1ef7d2d4c0c881cd634481e0586ed5d2871a74b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 173184.90142613195,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xffe007336904a5a2c8d6e3c685f2b1d132b864c8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
       "address": "0x64445f0aecc51e94ad52d8ac56b7190e764e561a",
       "name": "WFRAXTokenOFTUpgradeable",
       "role": "token",
@@ -477,7 +275,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -553,153 +351,6 @@
     {
       "chain_id": 146,
       "chain_name": "sonic",
-      "address": "0x0b3fe0c10c050270a9bc34271987989b6cf2107c",
-      "name": "Bridge",
-      "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "layer-zero",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x0c34438efe0e13ad2a64e9ced14bf6bb58b4322d",
-      "impl_name": "Bridge",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x0b3fe0c10c050270a9bc34271987989b6cf2107c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x0c34438efe0e13ad2a64e9ced14bf6bb58b4322d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x9ef7629f9b930168b76283add7120777b3c895b3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xb903716b3dd10b0115e93eb29d8eb99e23336387",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x25c049cadb9bb7cea794dba3b58dfdb1ece400f4",
-      "name": "CircleTokenAdapter",
-      "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "circle",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "CircleTokenAdapter",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x25c049cadb9bb7cea794dba3b58dfdb1ece400f4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x6f0444a3915f63a2bf2677843d9a94c48de28d6a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xe6dcd54b4cde2e9e935c22f57ebbbaaf5cc3bc8a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xfac12d39f830b999d6ebbdf8ce9c7d975b33c59c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x11c224fe2be939718eccc560c4887ef05c322545",
-      "name": "CircleTokenOwner",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "circle",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "CircleTokenOwner",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x11c224fe2be939718eccc560c4887ef05c322545",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
       "address": "0x3ec3849c33291a9ef4c5db86de593eb4a37fde45",
       "name": "FraxOFTUpgradeable",
       "role": "unknown",
@@ -753,7 +404,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -823,8 +474,8 @@
       "address": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
       "name": "GhoToken",
       "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
       "product_line": "Trevee Earn",
       "tvl_usd": null,
       "is_proxy": false,
@@ -847,86 +498,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x332a6211b594fefed5a5d779e51dacd145f9a926",
-      "name": "Liquidator",
-      "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xd8c562474ceac236a3338b10db38aece03558402",
-      "impl_name": "Liquidator",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x332a6211b594fefed5a5d779e51dacd145f9a926",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xd8c562474ceac236a3338b10db38aece03558402",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x4af3397fb17c35ce31bc6e006d60c60136fa0885",
-      "name": "MessageBus",
-      "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "layer-zero",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MessageBus",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x4af3397fb17c35ce31bc6e006d60c60136fa0885",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xb5b371b75f9850ddd6ccb6c436db54972a925308",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -980,70 +551,21 @@
     {
       "chain_id": 146,
       "chain_name": "sonic",
-      "address": "0x6aba65dc38e6ae9ed0d95eb67bf1b524c1e3036a",
-      "name": "MPTProofVerifier",
-      "role": "periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MPTProofVerifier",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x6aba65dc38e6ae9ed0d95eb67bf1b524c1e3036a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xd2f1e904daf7446686f8057b7dfeb068c75d29a9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x4c5683a9ede3c8b4fb5ad2e980bbf88652ad6c6c",
-      "name": "NativeTokenAdapter",
-      "role": "adapter",
+      "address": "0x50c42deacd8fc9773493ed674b675be577f2634b",
+      "name": "MintedERC20",
+      "role": "token",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
-      "product_line": null,
+      "product_line": "Trevee Earn",
       "tvl_usd": null,
       "is_proxy": true,
-      "impl_address": "0x6d9d62a64b50412ee0c41481ffa4d0a8b5e91a1e",
-      "impl_name": "NativeTokenAdapter",
+      "impl_address": "0x9605cc161d148f665b6d4796131f8f6814abf386",
+      "impl_name": "MintedERC20",
       "deployments": [
         {
           "chain_id": 146,
           "chain_name": "sonic",
-          "address": "0x4c5683a9ede3c8b4fb5ad2e980bbf88652ad6c6c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x6d9d62a64b50412ee0c41481ffa4d0a8b5e91a1e",
+          "address": "0x50c42deacd8fc9773493ed674b675be577f2634b",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1055,38 +577,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x90409d5b57e77ca394167b781cfc79a2a0874be3",
-      "name": "ProxyAdmin",
-      "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ProxyAdmin",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x90409d5b57e77ca394167b781cfc79a2a0874be3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -1148,184 +639,6 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x836664b0c0cb29b7877bccf94159cc996528f2c3",
-      "name": "StateOracle",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StateOracle",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x836664b0c0cb29b7877bccf94159cc996528f2c3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xb1703ad070241c862be4053dd9c8440e689c5df9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x1880425307124ce875aac3e9eb47b5a87453d4e4",
-      "name": "TetherTokenAdapter",
-      "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "tether",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x1880425307124ce875aac3e9eb47b5a87453d4e4",
-      "impl_name": "TetherTokenAdapter",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x1880425307124ce875aac3e9eb47b5a87453d4e4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x667e06f17721b571f4b2c1e755a4e7d332aa304a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x6047828dc181963ba44974801ff68e538da5eaf9",
-      "name": "TetherTokenV2",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xc80268ce098296e0e75d925d0d485e7bb4252fad",
-      "impl_name": "TetherTokenV2",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x6047828dc181963ba44974801ff68e538da5eaf9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xc80268ce098296e0e75d925d0d485e7bb4252fad",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x134e4c207ad5a13549de1ebf8d43c1f49b00ba94",
-      "name": "TokenPairs",
-      "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xabf0c96d792491b0b9642c0648ca851a125ebf25",
-      "impl_name": "TokenPairs",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x134e4c207ad5a13549de1ebf8d43c1f49b00ba94",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x9171aca775a164ca906ac7f50a3844b7c6f13d34",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xabf0c96d792491b0b9642c0648ca851a125ebf25",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xe34e6851a4a3763e1d27aa7ac5980d2d33c2d315",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1357,104 +670,6 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x1071405a4736535c545580064039a235827ee6d4",
-      "name": "UpdateManager",
-      "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x7160ec89eaabd75bf8261c6cc3950766d9e4ee53",
-      "impl_name": "UpdateManager",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x1071405a4736535c545580064039a235827ee6d4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x7160ec89eaabd75bf8261c6cc3950766d9e4ee53",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x9a59b249b6ea7aad4a51dca08406ce0a1d6f3b01",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x12727d4169a42a9b5e3ecb11a6d2c95553d3f447",
-      "name": "ValidatorsRegistry",
-      "role": "registry",
-      "origin_kind": "upstream",
-      "origin_provider": "layer-zero",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ValidatorsRegistry",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x12727d4169a42a9b5e3ecb11a6d2c95553d3f447",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xbcba1f21ca212f63f71536128d9e574dc3ae28d9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     }
   ],
@@ -1490,43 +705,13 @@
       "origin_kind": "native",
       "tvl_usd": 51.74613998203224,
       "risk_note": "Verified native implementation with $51.75 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x6aba65dc38e6ae9ed0d95eb67bf1b524c1e3036a",
-      "name": "MPTProofVerifier",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x836664b0c0cb29b7877bccf94159cc996528f2c3",
-      "name": "StateOracle",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x1071405a4736535c545580064039a235827ee6d4",
-      "name": "UpdateManager",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 6,
-    "upstream": 7,
-    "standard_library": 13,
-    "needs_review": 3
+    "native": 3,
+    "upstream": 2,
+    "standard_library": 8,
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

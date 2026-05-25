@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "accumulated-finance",
-  "generated_at": "2026-05-24T20:30:48.579Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-25T20:11:48.265Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "accumulated-finance",
@@ -140,7 +140,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -1506,69 +1506,6 @@
   ],
   "audits": [
     {
-      "audit_id": 3027,
-      "audit_key": "audit-3027",
-      "report_name": "HatsFinance-Audit.md",
-      "report_url": "https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/HatsFinance-Audit.md",
-      "auditor": "HatsFinance",
-      "audit_type": "contest",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3028,
-      "audit_key": "audit-3028",
-      "report_name": "Nethermind-AuditAgent-Audit.md",
-      "report_url": "https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/Nethermind-AuditAgent-Audit.md",
-      "auditor": "Nethermind",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3029,
-      "audit_key": "audit-3029",
-      "report_name": "audit-metatrust-2024-06-29.pdf",
-      "report_url": "https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/audit-metatrust-2024-06-29.pdf",
-      "auditor": "MetaTrust",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-06",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3030,
       "audit_key": "audit-3030",
       "report_name": "hats.finance",
@@ -1619,6 +1556,69 @@
       "audit_type": "audit",
       "freshness": "unknown",
       "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3666,
+      "audit_key": "audit-3666",
+      "report_name": "HatsFinance-Audit.md",
+      "report_url": "https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/HatsFinance-Audit.md",
+      "auditor": "HatsFinance",
+      "audit_type": "contest",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3667,
+      "audit_key": "audit-3667",
+      "report_name": "Nethermind-AuditAgent-Audit.md",
+      "report_url": "https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/Nethermind-AuditAgent-Audit.md",
+      "auditor": "Nethermind",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3668,
+      "audit_key": "audit-3668",
+      "report_name": "audit-metatrust-2024-06-29.pdf",
+      "report_url": "https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/audit-metatrust-2024-06-29.pdf",
+      "auditor": "MetaTrust",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -1968,18 +1968,6 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 3027,
-        "report_name": "HatsFinance-Audit.md"
-      },
-      {
-        "audit_id": 3028,
-        "report_name": "Nethermind-AuditAgent-Audit.md"
-      },
-      {
-        "audit_id": 3029,
-        "report_name": "audit-metatrust-2024-06-29.pdf"
-      },
-      {
         "audit_id": 3030,
         "report_name": "hats.finance"
       },
@@ -1990,6 +1978,18 @@
       {
         "audit_id": 3032,
         "report_name": "auditagent.nethermind.io"
+      },
+      {
+        "audit_id": 3666,
+        "report_name": "HatsFinance-Audit.md"
+      },
+      {
+        "audit_id": 3667,
+        "report_name": "Nethermind-AuditAgent-Audit.md"
+      },
+      {
+        "audit_id": 3668,
+        "report_name": "audit-metatrust-2024-06-29.pdf"
       }
     ],
     "inherited_remapped_matches": []

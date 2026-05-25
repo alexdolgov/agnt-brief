@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ionic-protocol",
-  "generated_at": "2026-05-24T15:37:56.490Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-25T20:09:58.988Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "ionic-protocol",

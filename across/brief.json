@@ -1,40 +1,40 @@
 {
   "schema_version": "2.0",
   "project_key": "across",
-  "generated_at": "2026-05-22T10:14:32.420Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-05-25T20:14:23.124Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "across",
     "tier": 0,
     "peak_tvl": 248881232,
     "peak_date": "2024-12-09T00:00:00.000Z",
-    "tvl_30d_ago": 33368603,
-    "tvl_90d_ago": 40265020,
-    "tvl_current": 27614720,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 45423499,
-    "change_30d_pct": -17.243403926739155,
-    "change_90d_pct": -31.41759273930573,
-    "days_since_peak": 529,
+    "tvl_30d_ago": 26109967,
+    "tvl_90d_ago": 34829058,
+    "tvl_current": 27923314,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 47677012,
+    "change_30d_pct": 6.945037502345369,
+    "change_90d_pct": -19.82753596149514,
+    "days_since_peak": 532,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 88.90445865359587
+    "drop_from_peak_pct": 88.78046617834164
   },
   "summary": {
-    "total_contracts": 143,
+    "total_contracts": 142,
     "total_addresses": 532,
-    "unique_implementations": 143,
+    "unique_implementations": 142,
     "total_deployments": 532,
-    "audited_contracts": 0,
-    "unaudited_contracts": 61,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 58,
+    "audited_contracts": 11,
+    "unaudited_contracts": 50,
+    "contracts_verified_audited": 11,
+    "contracts_verified_unaudited": 47,
     "contracts_verified_by_bytecode": 3,
-    "contracts_unverified": 82,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
+    "contracts_unverified": 81,
+    "coverage_pct": 18,
+    "total_audits": 6,
+    "scoreable_audits": 5,
     "dl_tvl_usd": 27725643.95795,
     "tvl_usd": 28143485.438329387,
     "tvl_source": "on_chain",
@@ -50,7 +50,7 @@
       "plasma": 607.11,
       "unichain": 7905.39
     },
-    "asd_usd": 28143485.438329387,
+    "asd_usd": 28143485.438299388,
     "website_url": "https://across.to",
     "chains": [
       "arbitrum",
@@ -69,14 +69,16 @@
       "zksync-era",
       "zora"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "tier1_coverage_pct": 18,
+    "tier1_auditors": [
+      "OpenZeppelin"
+    ],
+    "latest_audit_date": "2021-12",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
+      "stale": 6,
       "unknown": 0
     }
   },
@@ -1195,7 +1197,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.00003,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1204,7 +1206,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1213,14 +1215,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3678"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1244,7 +1248,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -1253,14 +1257,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3678"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1556,14 +1562,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3674",
+        "audit-3678"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2503,14 +2512,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3675",
+        "audit-3676",
+        "audit-3678"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2531,6 +2544,15 @@
           "chain_id": 130,
           "chain_name": "unichain",
           "address": "0x078d782b760474a361dda0af3839290b0ef57ad6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 130,
+          "chain_name": "unichain",
+          "address": "0xbe959c573dc03a18a57e31c9ace210ccf66f0f6e",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2560,7 +2582,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 1,
@@ -2641,7 +2663,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2650,7 +2672,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -2659,7 +2681,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -2668,14 +2690,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3674",
+        "audit-3676"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2699,7 +2724,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2708,14 +2733,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3674"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3339,7 +3366,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3348,7 +3375,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -3357,14 +3384,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3674"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3750,14 +3779,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3677",
+        "audit-3678"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4264,7 +4296,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -4273,7 +4305,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -4282,7 +4314,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -4291,7 +4323,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -4300,7 +4332,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -4309,7 +4341,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -4318,14 +4350,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3674",
+        "audit-3675"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4388,7 +4423,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 56,
@@ -5214,7 +5249,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -5223,7 +5258,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -5232,7 +5267,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -5241,14 +5276,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3674",
+        "audit-3676"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -6653,7 +6691,7 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": "cleared"
     },
     {
       "chain_id": 324,
@@ -7617,43 +7655,12 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x59d9e1eea4f512b646b6d32904450579debd5925",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x59d9e1eea4f512b646b6d32904450579debd5925",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "review"
-    },
-    {
       "chain_id": 57073,
       "chain_name": "ink",
       "address": "0x0f7ae28de1c8532170ad4ee566b5801485c13a0e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Chains Live on the Swap API",
       "tvl_usd": null,
@@ -7684,7 +7691,7 @@
       "address": "0x10d8b8daa26d307489803e10477de69c0492b610",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Chains Live on the Swap API",
       "tvl_usd": null,
@@ -7839,7 +7846,7 @@
       "address": "0x544f99ae965062b17fe3c3600aba055bdea9d07f",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -7870,7 +7877,7 @@
       "address": "0x0f7ae28de1c8532170ad4ee566b5801485c13a0e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Chains Live on the Swap API",
       "tvl_usd": null,
@@ -7901,7 +7908,7 @@
       "address": "0x10d8b8daa26d307489803e10477de69c0492b610",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Chains Live on the Swap API",
       "tvl_usd": null,
@@ -7932,7 +7939,7 @@
       "address": "0x13fdac9f9b4777705db45291bbff3c972c6d1d97",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Chains Live on the Swap API",
       "tvl_usd": null,
@@ -7978,7 +7985,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -7987,7 +7994,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -7996,7 +8003,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -8005,7 +8012,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -8014,19 +8021,250 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3674"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
+  "audits": [
+    {
+      "audit_id": 3673,
+      "audit_key": "audit-3673",
+      "report_name": "DL audit link",
+      "report_url": "https://www.openzeppelin.com/news/uma-audit-l2-bridges",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3674,
+      "audit_key": "audit-3674",
+      "report_name": "the decentralized oracle",
+      "report_url": "https://www.openzeppelin.com/news/uma-audit-phase-1",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ContractCreator",
+        "DesignatedVoting",
+        "DesignatedVotingFactory",
+        "EncryptedStore",
+        "Exclusive",
+        "ExpandedERC20",
+        "Finder",
+        "FixedPoint",
+        "Governor",
+        "IdentifierWhitelist",
+        "IdentifierWhitelistInterface",
+        "MultiRole",
+        "OracleInterface",
+        "Registry",
+        "ResultComputation",
+        "Shared",
+        "Store",
+        "Testable",
+        "Timer",
+        "VoteTiming",
+        "Voting",
+        "VotingInterface",
+        "Withdrawable"
+      ],
+      "matched_contracts": 26,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3675,
+      "audit_key": "audit-3675",
+      "report_name": "a particular financial contract template",
+      "report_url": "https://www.openzeppelin.com/news/uma-audit-phase-2",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ExpiringMultiParty",
+        "ExpiringMultiPartyCreator",
+        "FeePayer",
+        "Liquidatable",
+        "PricelessPositionManager",
+        "Registry",
+        "SyntheticToken",
+        "TokenFactory"
+      ],
+      "matched_contracts": 8,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3676,
+      "audit_key": "audit-3676",
+      "report_name": "some ad hoc pull requests",
+      "report_url": "https://www.openzeppelin.com/news/uma-audit-phase-3",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ExpiringMultiParty",
+        "ExpiringMultiPartyCreator",
+        "Finder",
+        "Liquidatable",
+        "PricelessPositionManager",
+        "Store"
+      ],
+      "matched_contracts": 9,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3677,
+      "audit_key": "audit-3677",
+      "report_name": "the Perpetual Multiparty template",
+      "report_url": "https://www.openzeppelin.com/news/uma-audit-phase-4",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ConfigStore",
+        "ConfigStoreInterface",
+        "FinancialProductLibrary",
+        "FundingRateApplier",
+        "OptimisticOracle",
+        "Perpetual",
+        "PerpetualCreator",
+        "PerpetualLib",
+        "PerpetualLiquidatable",
+        "PerpetualPositionManager",
+        "PreExpirationIdentifierTransformationFinancialProductLibrary",
+        "StructureNoteFinancialProductLibrary"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3678,
+      "audit_key": "audit-3678",
+      "report_name": "various incremental pull requests over a longer engagement",
+      "report_url": "https://www.openzeppelin.com/news/uma-continuous-audit",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AddressWhitelist",
+        "AncillaryData",
+        "BeaconOracle",
+        "BinaryOptionLongShortPairFinancialProductLibrary",
+        "ContractCreator",
+        "CoveredCallFinancialProductLibrary",
+        "DesignatedVotingFactory",
+        "ExpandedERC20",
+        "ExpiringMultiParty",
+        "ExpiringMultiPartyCreator",
+        "ExpiringMultiPartyLib",
+        "FundingRateApplier",
+        "GovernorChildTunnel",
+        "GovernorRootTunnel",
+        "IERC20Standard",
+        "KPIOptionsFinancialProductLibrary",
+        "LinearLongShortPairFinancialProductLibrary",
+        "Liquidatable",
+        "Lockable",
+        "LongShortPair",
+        "LongShortPairCreator",
+        "MerkleDistributor",
+        "OptimisticOracle",
+        "OptimisticOracleInterface",
+        "OracleBaseTunnel",
+        "OracleChildTunnel",
+        "OracleRootTunnel",
+        "Perpetual",
+        "PostExpirationIdentifierTransformationFinancialProductLibrary",
+        "PreExpirationIdentifierTransformationFinancialProductLibrary",
+        "RangeBondLongShortPairFinancialProductLibrary",
+        "SafeMath",
+        "SinkGovernor",
+        "SinkOracle",
+        "SourceGovernor",
+        "SourceOracle",
+        "SyntheticToken",
+        "Testable",
+        "Timer",
+        "VotingToken"
+      ],
+      "matched_contracts": 8,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "OpenZeppelin",
+      "tier": 1,
+      "contracts_covered": 11,
+      "coverage_pct": 18,
+      "latest_audit": "2021-12"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -8071,26 +8309,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x04fa0d235c4abf4bcf4787af4cf447de572ef828",
-      "name": "VotingToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 0.00003,
-      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 81457,
-      "chain_name": "blast",
-      "address": "0xd85630e361cebbc4c7f13e6eed3587050fb81b86",
-      "name": "AddressWhitelist",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x02fbb64517e1c6ed69a6faa3abf37db0482f1152",
       "name": "BridgePoolProd",
       "role": "operational_periphery",
@@ -8129,16 +8347,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xe81eee5da165fa6863bbc82df66e62d18625d592",
-      "name": "DesignatedVotingFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 999,
       "chain_name": "hyperliquid",
       "address": "0x002e76dc036a1eff1488ee5435ee66c6abf32674",
@@ -8171,39 +8379,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xdebb91ab3e473025bb8ce278c02361a3c4f13124",
-      "name": "ExpiringMultiPartyCreator",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x4e6ccb1da3c7844887f9a5af4e8450d9fd90317a",
       "name": "FinancialContractsAdmin",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 81457,
-      "chain_name": "blast",
-      "address": "0x3bad7ad0728f9917d1bf08af5782dcbd516cdd96",
-      "name": "Finder",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4ca5348aa2ff1e9e854f3a22dc51aa2c70151408",
-      "name": "Governor",
-      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -8254,16 +8432,6 @@
       "address": "0x700f45e64c4a1ec5fef2114b19f87ad1b9876bf0",
       "name": "HyperliquidHelper",
       "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0e808507e1692876ae6bebc35da3e13801e63bfa",
-      "name": "IdentifierWhitelist",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -8321,16 +8489,6 @@
     {
       "chain_id": 81457,
       "chain_name": "blast",
-      "address": "0x3ca11702f7c0f28e0b4e03c31f7492969862c569",
-      "name": "OptimisticOracle",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 81457,
-      "chain_name": "blast",
       "address": "0x4e8e101924ede233c13e2d8622dc8aed2872d505",
       "name": "OptimisticOracleV2",
       "role": "operational_periphery",
@@ -8379,16 +8537,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x07d6a3b7a345576a22b63470c1cbdf133179257c",
-      "name": "Registry",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 999,
       "chain_name": "hyperliquid",
       "address": "0x1037a21a30aeff90c269b01c3933eb9a5285d9b8",
@@ -8414,16 +8562,6 @@
       "address": "0x93e1e5e9d840e758cc016f8b13cdf5dbaeca4b06",
       "name": "SponsoredOFTSrcPeriphery",
       "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x54f44ea3d2e7aa0ac089c4d8f7c93c27844057bf",
-      "name": "Store",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -8477,30 +8615,29 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1d847fb6e04437151736a53f09b6e49713a52aad",
-      "name": "Voting",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 70,
+    "native": 76,
     "upstream": 3,
     "standard_library": 10,
-    "needs_review": 60
+    "needs_review": 53
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 52
+    },
+    "extraction_confidence_counts": {
+      "high": 5
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 3673,
+        "report_name": "DL audit link"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

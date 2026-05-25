@@ -5,8 +5,8 @@
 - Project: Accumulated Finance (`accumulated-finance`)
 - Website: [https://accumulated.finance](https://accumulated.finance)
 - Lifecycle: active (Tier 0, 73.2% below peak)
-- Generated: 2026-05-24T20:30:48.579Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-25T20:11:48.265Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: arbitrum, bsc, ethereum, manta, sei
 - Contract surface: 43 unique implementations (54 raw deployments)
 - DeFi Llama TVL: $1,581,479.00
@@ -117,12 +117,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [HatsFinance-Audit.md](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/HatsFinance-Audit.md) | HatsFinance | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Nethermind-AuditAgent-Audit.md](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/Nethermind-AuditAgent-Audit.md) | Nethermind | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [audit-metatrust-2024-06-29.pdf](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/audit-metatrust-2024-06-29.pdf) | MetaTrust | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
 | [hats.finance](https://hats.finance/) | Hats Finance | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 | [metatrust.io](https://metatrust.io/) | MetaTrust | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [auditagent.nethermind.io](https://auditagent.nethermind.io/) | Nethermind AuditAgent | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [HatsFinance-Audit.md](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/HatsFinance-Audit.md) | HatsFinance | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Nethermind-AuditAgent-Audit.md](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/Nethermind-AuditAgent-Audit.md) | Nethermind | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [audit-metatrust-2024-06-29.pdf](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/audit-metatrust-2024-06-29.pdf) | MetaTrust | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -183,11 +183,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [3027] HatsFinance-Audit.md
-- [3028] Nethermind-AuditAgent-Audit.md
-- [3029] audit-metatrust-2024-06-29.pdf
 - [3030] hats.finance
 - [3031] metatrust.io
 - [3032] auditagent.nethermind.io
+- [3666] HatsFinance-Audit.md
+- [3667] Nethermind-AuditAgent-Audit.md
+- [3668] audit-metatrust-2024-06-29.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

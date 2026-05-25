@@ -1,0 +1,17 @@
+{
+  "address": "0x02b8733763dd76f73b8573e668eca3343a7d65e7",
+  "chain_id": 999,
+  "contract_name": "DstOFTHandler",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "0000000000000000000000003a73033c0b1407574c76bdbac67f126f6b4a9aa9000000000000000000000000904861a24f30ec96ea7cfc3be9ea4b476d237e98000000000000000000000000e58480ca74f1a819fafd777beded4e2d5629943d000000000000000000000000b8ce59fc3717ada4c02eadf9682a9e934f625ebb000000000000000000000000ff0ea019ed1504d34507d99dd54f2339e3b11592",
+  "implementation_address": "0xa02b6628d4a750b1caa1b90a0a352108c715540c",
+  "fetched_at": "2026-05-25T20:14:24.898Z"
+}

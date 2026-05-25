@@ -6,9 +6,9 @@
 | [3f-mutual](./3f-mutual/) | $4.1M | 0.0% | ? | active | 0 | 25 | 2026-05-23 |
 | [abc-pool](./abc-pool/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [abracadabra](./abracadabra/) | $8.4M | 0.0% | ? | dead | 1 | 4388 | 2026-05-25 |
-| [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 6 | 43 | 2026-05-24 |
+| [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 6 | 43 | 2026-05-25 |
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | unknown | 5 | 220 | 2026-05-23 |
-| [across](./across/) | $28.1M | 0.0% | $28.1M | unknown | 0 | 143 | 2026-05-22 |
+| [across](./across/) | $28.1M | 18.0% | $28.1M | active | 6 | 142 | 2026-05-25 |
 | [aegis-markets](./aegis-markets/) | $2.4M | 0.0% | ? | active | 2 | 15 | 2026-05-24 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-23 |
 | [aevo](./aevo/) | $98.3M | 12.0% | $1.5M | active | 17 | 271 | 2026-05-25 |
@@ -138,7 +138,7 @@
 | [easedefi.org](./easedefi.org/) | $4.4M | 0.0% | ? | active | 3 | 1 | 2026-05-23 |
 | [egas-swap](./egas-swap/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | unknown | 5 | 15 | 2026-05-22 |
-| [elfi-protocol](./elfi-protocol/) | $3.0M | 29.8% | ? | unknown | 1 | 2406 | 2026-05-24 |
+| [elfi-protocol](./elfi-protocol/) | $3.0M | 29.2% | ? | unknown | 1 | 2406 | 2026-05-25 |
 | [ellipsis-finance](./ellipsis-finance/) | $59.0K | 29.4% | $9.0K | dead | 3 | 22 | 2026-05-25 |
 | [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
 | [endur](./endur/) | $9.7M | 0.0% | ? | unknown | 4 | 0 | 2026-05-23 |
@@ -224,7 +224,7 @@
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-05-25 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-05-23 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 13.7% | $428.8M | unknown | 8 | 125 | 2026-05-21 |
-| [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-05-24 |
+| [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-05-25 |
 | [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 40 | 2026-05-25 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | dead | 0 | 181 | 2026-05-24 |
 | [juicebox](./juicebox/) | $11.2M | 0.0% | ? | active | 0 | 77 | 2026-05-23 |
@@ -450,7 +450,7 @@
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-24 |
 | [sunny](./sunny/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
-| [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 51 | 2026-05-25 |
+| [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 50 | 2026-05-25 |
 | [superfluid](./superfluid/) | $14.2M | 0.0% | $14.2M | active | 0 | 412 | 2026-05-25 |
 | [supernova](./supernova/) | $2.2M | 48.9% | ? | declining | 1 | 47 | 2026-05-24 |
 | [suzaku](./suzaku/) | $1.2M | 4.8% | $1.2M | active | 2 | 49 | 2026-05-25 |

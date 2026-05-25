@@ -2,13 +2,13 @@
 
 | Field | Value |
 |---|---|
-| Chain | arbitrum (42161) |
+| Chain | base (42161) |
 | Address | `0xcf371c11e11529287d9bc7e268aa55316719a82f` |
-| Role | periphery |
+| Role | unknown |
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 1 (arbitrum [`0xcf371c11e11529287d9bc7e268aa55316719a82f`](../0xcf371c11e11529287d9bc7e268aa55316719a82f/)) |
+| Deployments | 2 (base `0x0c96e0f4240624b489ad8b5b638a70feef9551c5`; arbitrum [`0xcf371c11e11529287d9bc7e268aa55316719a82f`](../0xcf371c11e11529287d9bc7e268aa55316719a82f/)) |
 | Proxy | No |
 | Source | Etherscan |
 | TVL | n/a |

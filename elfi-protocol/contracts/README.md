@@ -1,6 +1,6 @@
 # elfi-protocol — Contract Index
 
-2406 unique implementations across 2 chains · 2469 deployments · 28 audited · 66 unaudited · 2312 unverified
+2406 unique implementations across 2 chains · 2473 deployments · 28 audited · 68 unaudited · 2310 unverified
 
 ## core_logic (15)
 
@@ -49,7 +49,7 @@
 |---|---|---|---|---|
 | [MarketFactoryProcess (2 deployments)](./arbitrum-42161/0x21fd9dc216409bbd2caf2375021ae6015dccaa09/) | arbitrum | 2 deployments: arbitrum [`0x21fd9d...ccaa09`](./arbitrum-42161/0x21fd9dc216409bbd2caf2375021ae6015dccaa09/); arbitrum `0xa13e3b...aa460c` | ⚠️ Unaudited | Verified |
 
-## token (4)
+## token (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -57,8 +57,9 @@
 | [StakeToken (2 deployments)](./arbitrum-42161/0x667edc1789a04e7425966e299493a399a381d2d6/) | arbitrum | 2 deployments: arbitrum [`0x667edc...81d2d6`](./arbitrum-42161/0x667edc1789a04e7425966e299493a399a381d2d6/); arbitrum `0x70b811...45b98c` | ✅ Audited | Verified |
 | [StandardArbERC20](./arbitrum-42161/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f/) | arbitrum | [`0x2f2a25...fc5b0f`](./arbitrum-42161/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f/) | ⚠️ Unaudited | Verified |
 | [TokenUtils](./arbitrum-42161/0x81a0c8f6c5e4d53382ec30c1043991cae3b1a905/) | arbitrum | [`0x81a0c8...b1a905`](./arbitrum-42161/0x81a0c8f6c5e4d53382ec30c1043991cae3b1a905/) | ✅ Audited | Verified |
+| [WETH (4 deployments)](./arbitrum-42161/0x36f32dd52bfc834c40a3f0b3ebb341ff3acc3d4b/) | arbitrum | 4 deployments: base `0x41ba6c...57c61f`; arbitrum [`0x36f32d...cc3d4b`](./arbitrum-42161/0x36f32dd52bfc834c40a3f0b3ebb341ff3acc3d4b/); arbitrum `0x385dd8...7826ff`; arbitrum `0x3a40d1...605f2b` | ⚠️ Unaudited | Verified |
 
-## unknown (2375)
+## unknown (2374)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -97,6 +98,7 @@
 | [MarketQueryProcess (2 deployments)](./arbitrum-42161/0x63c47c4c45c57b659a62f0265f6a05a4e3bbbc61/) | arbitrum | 2 deployments: arbitrum [`0x63c47c...bbbc61`](./arbitrum-42161/0x63c47c4c45c57b659a62f0265f6a05a4e3bbbc61/); arbitrum `0xae7fc3...9941e8` | ✅ Audited | Verified |
 | [Mint](./arbitrum-42161/0x788ee9f856db66a92a89b33d63ab9e2c506136c3/) | arbitrum | [`0x788ee9...6136c3`](./arbitrum-42161/0x788ee9f856db66a92a89b33d63ab9e2c506136c3/) | ⚠️ Unaudited | Verified |
 | [MintProcess (2 deployments)](./arbitrum-42161/0xf1c9ea374a6a5dec9f9bcbbb72688df0aac7bf74/) | arbitrum | 2 deployments: arbitrum [`0xf1c9ea...c7bf74`](./arbitrum-42161/0xf1c9ea374a6a5dec9f9bcbbb72688df0aac7bf74/); arbitrum `0xf5524f...a70bab` | ⚠️ Unaudited | Verified |
+| Multicall3 (2 deployments) | base | 2 deployments: base `0x0c96e0...9551c5`; arbitrum [`0xcf371c...19a82f`](./arbitrum-42161/0xcf371c11e11529287d9bc7e268aa55316719a82f/) | ⚠️ Unaudited | Verified |
 | [OneInchSwapProcess](./arbitrum-42161/0xd56156f09d440ed3f6217bc84e87cb77af59e350/) | arbitrum | [`0xd56156...59e350`](./arbitrum-42161/0xd56156f09d440ed3f6217bc84e87cb77af59e350/) | ⚠️ Unaudited | Verified |
 | [Order](./arbitrum-42161/0xa22ebf8c3c025e5d4c25162cf6a9168d828b348a/) | arbitrum | [`0xa22ebf...8b348a`](./arbitrum-42161/0xa22ebf8c3c025e5d4c25162cf6a9168d828b348a/) | ⚠️ Unaudited | Verified |
 | [OrderFacet (2 deployments)](./arbitrum-42161/0x1ee9d267be9daec4103e559387b08e877a30f27b/) | arbitrum | 2 deployments: arbitrum [`0x1ee9d2...30f27b`](./arbitrum-42161/0x1ee9d267be9daec4103e559387b08e877a30f27b/); arbitrum `0x64c6b3...07cf6f` | ✅ Audited | Verified |
@@ -157,7 +159,6 @@
 | UnnamedContract | base | `0x0b9234...6f25e0` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0b9d00...66cb1d` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0beee4...6b8b7e` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x0c96e0...9551c5` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0d1676...dd87a2` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0dd509...8fadca` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x0e1fdc...c990f2` | ❓ Unverified | Unverified |
@@ -314,7 +315,6 @@
 | UnnamedContract | base | `0x40f477...997513` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x413b17...808f99` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x4194f2...b73739` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x41ba6c...57c61f` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x41d580...3d25c0` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x422555...32472a` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x427957...49abc4` | ❓ Unverified | Unverified |

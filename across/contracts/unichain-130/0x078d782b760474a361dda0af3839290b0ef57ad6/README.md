@@ -8,7 +8,7 @@
 | Origin | upstream |
 | Audited | No |
 | Audits | n/a |
-| Deployments | 3 (unichain [`0x078d782b760474a361dda0af3839290b0ef57ad6`](../0x078d782b760474a361dda0af3839290b0ef57ad6/); base `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913`; arbitrum `0xaf88d065e77c8cc2239327c5edb3a432268e5831`) |
+| Deployments | 4 (unichain [`0x078d782b760474a361dda0af3839290b0ef57ad6`](../0x078d782b760474a361dda0af3839290b0ef57ad6/); unichain `0xbe959c573dc03a18a57e31c9ace210ccf66f0f6e`; base `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913`; arbitrum `0xaf88d065e77c8cc2239327c5edb3a432268e5831`) |
 | Proxy | Yes → `0xbe959c...6f0f6e` |
 | Source | Sourcify (full match) |
 | TVL | n/a |

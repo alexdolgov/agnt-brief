@@ -7,8 +7,8 @@
 - Project: Ionic Protocol (`ionic-protocol`)
 - Website: [https://app.ionic.money/](https://app.ionic.money/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-24T15:37:56.490Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-25T20:09:58.988Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: bsc, mode
 - Contract surface: 420 unique implementations (518 raw deployments)
 - DeFi Llama TVL: $2,042,238.81

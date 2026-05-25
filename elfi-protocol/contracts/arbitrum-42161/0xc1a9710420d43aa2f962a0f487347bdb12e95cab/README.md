@@ -5,7 +5,7 @@
 | Chain | arbitrum (42161) |
 | Address | `0xc1a9710420d43aa2f962a0f487347bdb12e95cab` |
 | Role | unknown |
-| Origin | needs_review |
+| Origin | native |
 | Audited | Yes |
 | Audits | [DL audit link](https://www.elfi.xyz/Sherlock_Elfi_Audit_Report.pdf) |
 | Deployments | 1 (arbitrum [`0xc1a9710420d43aa2f962a0f487347bdb12e95cab`](../0xc1a9710420d43aa2f962a0f487347bdb12e95cab/)) |

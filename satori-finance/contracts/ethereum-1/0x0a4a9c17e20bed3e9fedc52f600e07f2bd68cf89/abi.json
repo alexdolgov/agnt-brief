@@ -1,0 +1,40 @@
+[
+  {
+    "inputs": [],
+    "name": "InvalidRules",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RuleAlreadyExists",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Withdrawer",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "provider",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "timelock",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IActors",
+        "name": "actors",
+        "type": "address"
+      }
+    ],
+    "name": "configure",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

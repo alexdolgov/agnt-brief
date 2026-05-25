@@ -1,0 +1,17 @@
+{
+  "address": "0x26d70b26df8619fd3eeec07e22873b9f617e35da",
+  "chain_id": 146,
+  "contract_name": "eLOCKS",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:09:02.452Z"
+}

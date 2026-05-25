@@ -82,6 +82,7 @@
 | [capx-ai](./capx-ai/) | $2.2M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
 | [carbon-defi](./carbon-defi/) | $41.7M | 22.4% | $36.6M | active | 4 | 230 | 2026-05-24 |
 | [cex.io](./cex.io/) | $8.6M | 0.0% | ? | active | 1 | 3 | 2026-05-23 |
+| [cgo-finance](./cgo-finance/) | $1.3M | 0.0% | ? | declining | 0 | 2 | 2026-05-25 |
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [chainge-finance](./chainge-finance/) | $1.8M | 0.0% | $1.8M | active | 0 | 935 | 2026-05-23 |
 | [chaingpt](./chaingpt/) | $4.9M | 0.0% | ? | unknown | 0 | 87 | 2026-05-23 |
@@ -127,6 +128,7 @@
 | [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
 | [endur](./endur/) | $9.7M | 0.0% | ? | unknown | 4 | 0 | 2026-05-23 |
 | [enosys](./enosys/) | $28.0M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
+| [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 292 | 2026-05-25 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 49 | 2026-05-24 |
 | [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-05-24 |
@@ -214,6 +216,7 @@
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [keyring](./keyring/) | $348.8K | 8.3% | $348.8K | active | 16 | 134 | 2026-05-23 |
 | [kiloex](./kiloex/) | $7.3M | 12.5% | $1.5M | declining | 10 | 111 | 2026-05-24 |
+| [king-protocol](./king-protocol/) | $1.3M | 60.0% | ? | active | 4 | 16 | 2026-05-25 |
 | [kintsu](./kintsu/) | $2.7M | 0.0% | ? | unknown | 5 | 12 | 2026-05-24 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |
 | [klaystation](./klaystation/) | $2.2M | 0.0% | ? | dead | 0 | 1 | 2026-05-24 |
@@ -345,6 +348,7 @@
 | [saber](./saber/) | $1.9M | 0.0% | $1.9M | dead | 0 | 904 | 2026-05-23 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |
+| [satori-finance](./satori-finance/) | $9.3M | 0.0% | $9.3M | active | 1 | 220 | 2026-05-25 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 0 | 1 | 2026-05-25 |
 | [scrub-money](./scrub-money/) | $7.1M | 0.0% | ? | active | 1 | 19 | 2026-05-23 |

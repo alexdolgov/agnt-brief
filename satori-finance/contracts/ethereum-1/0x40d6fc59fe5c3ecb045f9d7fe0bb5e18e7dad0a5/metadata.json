@@ -1,0 +1,18 @@
+{
+  "address": "0x40d6fc59fe5c3ecb045f9d7fe0bb5e18e7dad0a5",
+  "chain_id": 1,
+  "contract_name": "Governance",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T01:59:09.311Z"
+}

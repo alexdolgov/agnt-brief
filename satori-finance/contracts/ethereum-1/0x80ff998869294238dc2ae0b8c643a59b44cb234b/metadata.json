@@ -1,0 +1,18 @@
+{
+  "address": "0x80ff998869294238dc2ae0b8c643a59b44cb234b",
+  "chain_id": 1,
+  "contract_name": "XReferralAdapter",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BSD-3-Clause, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 55,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T01:59:10.910Z"
+}

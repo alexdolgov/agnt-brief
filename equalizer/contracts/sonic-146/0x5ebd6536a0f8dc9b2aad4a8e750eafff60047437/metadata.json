@@ -1,0 +1,17 @@
+{
+  "address": "0x5ebd6536a0f8dc9b2aad4a8e750eafff60047437",
+  "chain_id": 146,
+  "contract_name": "UpgradeableBeacon",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000009a18740dd1938ca5cd7cf1d39c89474dfe3b82090000000000000000000000005c146cd18fa53914580573c9b9604588529406ca",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:09:04.846Z"
+}

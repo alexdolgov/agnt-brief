@@ -1,0 +1,998 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_limitRateM",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_limitRateBase",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_discountRateM",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_discountRateBase",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_lpTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_buyTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_pmTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_cAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_pAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minBuy",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxBuy",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_pmAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_payBaseLimit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[3]",
+        "name": "_idoTimes",
+        "type": "uint256[3]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "userAddr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "refundAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "ClaimFailBuyTokenRefund",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "userAddr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "refundAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "ClaimFailLpRefund",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "lpAddr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "buyAddr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "pmAddr",
+        "type": "address"
+      }
+    ],
+    "name": "LogAddrInit",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "cAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "pAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogAmountInit",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "minBuy",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "maxBuy",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogBuyLintInit",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "userAddr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "userCollectedAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "userMathAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lp_claim",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "buy_claim",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "pm_claim",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogClaimSuccess",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "buyTokenAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "pmTokenAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogPmSettle",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lpStartTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lpEndTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "buyEndTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogTimeConfig",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "userAddr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lpSAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lpRAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "bSAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "bRAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogUserRefund",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Unpaused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateBuyEndTime",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldRateM",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldRateBase",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newRateM",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newRateBase",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateLimitRate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldTime",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateLpEndTime",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldAddr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAddr",
+        "type": "address"
+      }
+    ],
+    "name": "UpdatePmAddr",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "buyAmountCollected",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "calcMyClaimableTokens",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "lpStakingAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "refundBuyToken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pmTokenClaimAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_cAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_pAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "changeIdoAmount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_newTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "changeIdoStepSecStartTime",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_newTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "changeIdoStepThirdStartTime",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_rateM",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_rateBase",
+        "type": "uint256"
+      }
+    ],
+    "name": "changeLpCollectTokenLimitRate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "fail",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getIdoInfo",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "idoStartTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "idoStepSecStartTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "idoStepThirdStartTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "targetTokenAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collectTokenAmounts",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "targetTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "collectTokenAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lpStep2DiscountRateM",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lpStep2DiscountRateBase",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lpCollectTokenLimitRateM",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lpCollectTokenLimitRateBase",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minBuyTokenAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxIdoAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyTokenCollected",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "buyTokenMathed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "idoFailed",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "isPaused",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMyStakingInfo",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "myIdoStatus",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lpStakingAmtStep1",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lpStakingAmtStep2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collectStakingLimit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collectStakingAmt",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "targetAllotAmt",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "refundCollectAmt",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "settleTime",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getUserTokenAmountLimit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "idoFail",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lpAmountCollected",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lpToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "mathAmountCollected",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "mathAmountSpend",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxPerUser",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minBuyAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "paused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "payBaseLimit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pmAddr",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pmClaim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pmRefund",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pmSettled",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "refund",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_bsAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakingCollectToken",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_lpAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakingLp",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unpause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "userAccountMap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "idoStatus",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "userAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "firstStakingLpAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "secondStakingLpAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "stakingBuyAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "claimIdoToken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "claimLpToken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "claimBuyToken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "settleTime",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

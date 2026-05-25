@@ -1,0 +1,18 @@
+{
+  "address": "0x409994fd2fdcfccddea418b7f203b4db51200ec2",
+  "chain_id": 8453,
+  "contract_name": "UniswapV3Plugin",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T01:51:02.973Z"
+}

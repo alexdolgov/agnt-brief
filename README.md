@@ -95,6 +95,7 @@ Each project directory contains:
 | [polkastarter](./polkastarter/brief.md) | $2.75M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $9.61M |
 | [kaito](./kaito/brief.md) | $19.86M | base | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $9.48M |
 | [dao-maker](./dao-maker/brief.md) | $2.10M | ethereum | 17 | 4/17 (24%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $9.34M |
+| [satori-finance](./satori-finance/brief.md) | $1.28M | 6 | 220 | 150/220 (68%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $9.30M |
 | [mobox](./mobox/brief.md) | $2.25M | 17 | 1257 | 196/1257 (16%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $8.49M |
 | [neku](./neku/brief.md) | $1.60M | arbitrum | 17 | 8/17 (47%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $8.38M |
 | [tau-labs](./tau-labs/brief.md) | $5.02M | ethereum, plasma | 179 | 179/179 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $8.07M |
@@ -199,6 +200,7 @@ Each project directory contains:
 | [biswap](./biswap/brief.md) | $5.70M | 4 | 84 | 13/84 (15%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $609.28K |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/brief.md) | $19.20M | arbitrum, ethereum | 55 | 48/55 (87%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $447.17K |
 | [camelot](./camelot/brief.md) | $27.14M | arbitrum | 127 | 52/127 (41%) | 17.3% | 0.0% (-) | 1 | stale | ✅ active | $391.94K |
+| [equalizer](./equalizer/brief.md) | $1.27M | base, fantom, sonic | 292 | 50/292 (17%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $374.84K |
 | [keyring](./keyring/brief.md) | $6.22M | avalanche, ethereum | 134 | 109/134 (81%) | 8.3% | 6.4% (Certora, ChainSecurity, Cyfrin, Spearbit) | 15 | fresh | ✅ active | $348.76K |
 | [bmx](./bmx/brief.md) | $2.95M | base, mode | 184 | 133/184 (72%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $305.69K |
 | [tokenstore](./tokenstore/brief.md) | $1.35M | ethereum | 44 | 2/44 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $265.68K |
@@ -289,6 +291,7 @@ Each project directory contains:
 | [canto-lending](./canto-lending/brief.md) | $3.01M | canto, ethereum | 84 | 2/84 (2%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [capx-ai](./capx-ai/brief.md) | $2.16M | bsc | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [cex.io](./cex.io/brief.md) | $8.58M | ethereum, polygon | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
+| [cgo-finance](./cgo-finance/brief.md) | $1.28M | cronos | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [chain-fusion](./chain-fusion/brief.md) | $19.29M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [chaingpt](./chaingpt/brief.md) | $4.89M | 7 | 87 | 3/87 (3%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [citrea-bridge](./citrea-bridge/brief.md) | $5.13M | ethereum | 4 | 3/4 (75%) | 33.3% | 0.0% (-) | 1 | fresh | ✅ active | - |
@@ -353,6 +356,7 @@ Each project directory contains:
 | [kava-earn](./kava-earn/brief.md) | $1.66M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [kava-lend](./kava-lend/brief.md) | $11.82M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kava-liquid](./kava-liquid/brief.md) | $1.64M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [king-protocol](./king-protocol/brief.md) | $1.28M | 5 | 16 | 5/16 (31%) | 60.0% | 0.0% (-) | 2 | aging | ✅ active | - |
 | [kintsu](./kintsu/brief.md) | $2.69M | hyperliquid | 12 | 0/12 (0%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [klaystation](./klaystation/brief.md) | $2.15M | klaytn | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [klayswap](./klayswap/brief.md) | $4.84M | klaytn | 22 | 0/22 (0%) | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
@@ -473,5 +477,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-25T01:44:02.784Z_
-_Projects: 461_
+_Generated: 2026-05-25T02:09:24.536Z_
+_Projects: 465_

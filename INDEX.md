@@ -110,6 +110,7 @@
 | [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-05-24 |
 | [defituna](./defituna/) | $1.9M | 0.0% | $1.9M | declining | 11 | 904 | 2026-05-23 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | unknown | 0 | 53 | 2026-05-23 |
+| [depth](./depth/) | $1.2M | 0.0% | ? | dead | 0 | 1 | 2026-05-25 |
 | [derivadex](./derivadex/) | $16.9M | 0.0% | $16.9M | declining | 0 | 9 | 2026-05-24 |
 | [desyn-protocol](./desyn-protocol/) | $10.8M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
 | [dexalot](./dexalot/) | $4.2M | 0.0% | $4.2M | active | 0 | 1 | 2026-05-23 |
@@ -312,6 +313,7 @@
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-05-24 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 3 | 21 | 2026-05-25 |
+| [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [phoenix](./phoenix/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 935 | 2026-05-25 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | dead | 1 | 34 | 2026-05-24 |
@@ -409,6 +411,7 @@
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-24 |
 | [sunny](./sunny/) | $1.9M | 0.0% | $1.9M | dead | 0 | 935 | 2026-05-24 |
+| [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 51 | 2026-05-25 |
 | [supernova](./supernova/) | $2.2M | 48.9% | ? | declining | 1 | 47 | 2026-05-24 |
 | [suzaku](./suzaku/) | $1.2M | 4.8% | $1.2M | active | 2 | 49 | 2026-05-25 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-05-23 |
@@ -433,6 +436,7 @@
 | [the-arena](./the-arena/) | $9.6M | 0.0% | $9.6M | active | 0 | 1054 | 2026-05-24 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-05-23 |
 | [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |
+| [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [thena](./thena/) | $208.9 | 7.1% | $208.9 | declining | 3 | 358 | 2026-05-23 |
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
 | [thruster](./thruster/) | $5.8M | 0.0% | ? | dead | 0 | 20 | 2026-05-23 |

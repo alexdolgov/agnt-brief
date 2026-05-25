@@ -1,0 +1,18 @@
+{
+  "address": "0x6110dd87b7a6fbbebb0ea0f0dffb59ae59009af2",
+  "chain_id": 1,
+  "contract_name": "Super1155",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T04:54:30.908Z"
+}

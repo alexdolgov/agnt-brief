@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0",
+  "project_key": "depth",
+  "generated_at": "2026-05-25T04:47:28.305Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "dead",
+  "lifecycle_signal": {
+    "slug": "depth",
+    "tier": 0,
+    "peak_tvl": 372391477,
+    "peak_date": "2021-06-10T00:00:00.000Z",
+    "tvl_30d_ago": 1168379,
+    "tvl_90d_ago": 1157088,
+    "tvl_current": 1173328,
+    "tier0_reason": "catastrophic_collapse_from_peak",
+    "tvl_180d_ago": 1229483,
+    "change_30d_pct": 0.42357830806613267,
+    "change_90d_pct": 1.4035233275256507,
+    "days_since_peak": 1810,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 99.68492082325504
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 1172290.28597,
+    "tvl_usd": 1172290.28597,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": null,
+    "chains": [
+      "heco"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Depth is a decentralized exchange (DEX) protocol operating on the Heco chain, enabling users to swap tokens and provide liquidity.",
+    "relationship_narrative": "The protocol consists of a single product family with one contract, so there are no inter-family relationships or shared infrastructure.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 128,
+      "chain_name": "heco",
+      "address": "0x48c859531254f25e57d1c1a8e030ef0b1c895c27",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Depth",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 128,
+          "chain_name": "heco",
+          "address": "0x48c859531254f25e57d1c1a8e030ef0b1c895c27",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

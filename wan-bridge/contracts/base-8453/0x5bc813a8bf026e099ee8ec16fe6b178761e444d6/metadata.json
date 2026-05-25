@@ -1,0 +1,18 @@
+{
+  "address": "0x5bc813a8bf026e099ee8ec16fe6b178761e444d6",
+  "chain_id": 8453,
+  "contract_name": "CrossSwapEntrance",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:17:32.480Z"
+}

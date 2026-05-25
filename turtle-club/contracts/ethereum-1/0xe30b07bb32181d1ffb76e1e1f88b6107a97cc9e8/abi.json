@@ -1,0 +1,161 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "marketId_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "AddressInsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedInnerCall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TroveNotOpen",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UnsupportedSubstrate",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "troveId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "collChange",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "debtChange",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isCollIncrease",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isDebtIncrease",
+        "type": "bool"
+      }
+    ],
+    "name": "EbisuAdjustTroveFuseEnter",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "MARKET_ID",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "zapper",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "registry",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collChange",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtChange",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isCollIncrease",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isDebtIncrease",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxUpfrontFee",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct EbisuAdjustTroveFuse.EbisuAdjustTroveFuseEnterData",
+        "name": "data_",
+        "type": "tuple"
+      }
+    ],
+    "name": "enter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x1071d94a22e806e6c155ba3b35ffc438d17f54dc",
+  "chain_id": 59144,
+  "contract_name": "AccessManagerUpgradeable",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:24:56.076Z"
+}

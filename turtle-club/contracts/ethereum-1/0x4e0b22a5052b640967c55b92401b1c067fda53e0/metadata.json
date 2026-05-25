@@ -1,0 +1,17 @@
+{
+  "address": "0x4e0b22a5052b640967c55b92401b1c067fda53e0",
+  "chain_id": 1,
+  "contract_name": "UniversalTokenSwapperWithVerificationFuse",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "cancun",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000005e3654082406519e35a5426bb54f29d2651bd1c400000000000000000000000000000000000000000000000000470de4df820000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:24:58.713Z"
+}

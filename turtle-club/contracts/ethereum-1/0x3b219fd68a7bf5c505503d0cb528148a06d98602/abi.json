@@ -1,0 +1,43 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "data_",
+        "type": "bytes"
+      }
+    ],
+    "name": "onEulerFlashLoan",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "addressToApprove",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToApprove",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "actionData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct CallbackData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

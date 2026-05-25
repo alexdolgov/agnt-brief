@@ -1,0 +1,17 @@
+{
+  "address": "0x18e0155c8dbd145bd8ebd32bc4cccdd2fa25a649",
+  "chain_id": 43114,
+  "contract_name": "BIFKN314Mintable",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:24:54.278Z"
+}

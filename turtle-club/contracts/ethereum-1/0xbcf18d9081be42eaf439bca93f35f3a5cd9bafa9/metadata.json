@@ -1,0 +1,17 @@
+{
+  "address": "0xbcf18d9081be42eaf439bca93f35f3a5cd9bafa9",
+  "chain_id": 1,
+  "contract_name": "AutoUSDAdapter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "000000000000000000000000a7569a44f348d3d70d8ad5889e50f78e33d80d35",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:25:04.228Z"
+}

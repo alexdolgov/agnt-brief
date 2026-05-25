@@ -1,0 +1,44 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "plasmaVault_",
+        "type": "address"
+      }
+    ],
+    "name": "getBalanceFuseInfo",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "marketIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "fuseAddresses",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "readMarketIdsAndFuseAddressesForBalanceFuses",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "marketIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "fuseAddresses",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

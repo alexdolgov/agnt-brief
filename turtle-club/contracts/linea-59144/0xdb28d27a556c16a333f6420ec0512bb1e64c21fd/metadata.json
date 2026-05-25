@@ -1,0 +1,17 @@
+{
+  "address": "0xdb28d27a556c16a333f6420ec0512bb1e64c21fd",
+  "chain_id": 59144,
+  "contract_name": "AlgebraV1Twap",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "000000000000000000000000622b2c98123d303ae067db4925cd6282b3a08d0f000000000000000000000000176211869ca2b568f2a7d4ee941e073a821ee1ff0000000000000000000000001a51b19ce03dbe0cb44c1528e34a7edd7771e9af",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:25:05.440Z"
+}

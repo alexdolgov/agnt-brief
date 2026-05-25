@@ -1,0 +1,17 @@
+{
+  "address": "0x3582837738a46985f900e8ab30191198e0af8020",
+  "chain_id": 43114,
+  "contract_name": "GGAVAXPriceFeed",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:24:52.615Z"
+}

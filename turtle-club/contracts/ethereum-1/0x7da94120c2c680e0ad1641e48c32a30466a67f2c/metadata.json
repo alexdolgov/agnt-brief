@@ -1,0 +1,18 @@
+{
+  "address": "0x7da94120c2c680e0ad1641e48c32a30466a67f2c",
+  "chain_id": 1,
+  "contract_name": "VestingWalletFactory",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:25:00.012Z"
+}

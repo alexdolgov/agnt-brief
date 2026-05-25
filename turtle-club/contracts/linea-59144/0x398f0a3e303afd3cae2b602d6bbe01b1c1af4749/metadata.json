@@ -1,0 +1,17 @@
+{
+  "address": "0x398f0a3e303afd3cae2b602d6bbe01b1c1af4749",
+  "chain_id": 59144,
+  "contract_name": "N2MERC721NS",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 151,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "00000000000000000000000000000000001594c61dd8a6804da9ab58ed2483ce00000000000000000000000000000000000000000000000000005af3107a4000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:24:57.908Z"
+}

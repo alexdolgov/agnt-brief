@@ -1,0 +1,18 @@
+{
+  "address": "0x666a53d7025136be4aa651af20fc5245ff2d1909",
+  "chain_id": 43114,
+  "contract_name": "BIFKN314",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:24:56.224Z"
+}

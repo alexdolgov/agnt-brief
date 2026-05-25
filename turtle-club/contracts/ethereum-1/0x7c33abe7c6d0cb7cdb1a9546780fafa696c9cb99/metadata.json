@@ -1,0 +1,18 @@
+{
+  "address": "0x7c33abe7c6d0cb7cdb1a9546780fafa696c9cb99",
+  "chain_id": 1,
+  "contract_name": "ControllerContract",
+  "compiler_version": "v0.4.25+commit.59dbf8f1",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:25:00.184Z"
+}

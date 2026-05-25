@@ -1,0 +1,18 @@
+{
+  "address": "0xb8d531ea16caf1cf7b7cbc333e8963db59e8dad5",
+  "chain_id": 1,
+  "contract_name": "Spread28Days",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:25:02.410Z"
+}

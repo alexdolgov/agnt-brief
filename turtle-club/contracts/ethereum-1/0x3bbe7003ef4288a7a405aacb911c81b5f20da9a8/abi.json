@@ -1,0 +1,230 @@
+[
+  {
+    "inputs": [],
+    "name": "ERC1167FailedCreateClone",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBaseAddress",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "plasmaVault",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "assetName",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "assetSymbol",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "underlyingToken",
+        "type": "address"
+      }
+    ],
+    "name": "PlasmaVaultCreated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "baseAddress_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index_",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "assetName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "assetSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "underlyingToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "priceOracleMiddleware",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "feeFactory",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "iporDaoManagementFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "iporDaoPerformanceFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "iporDaoFeeRecipientAddress",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct FeeConfig",
+            "name": "feeConfig",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "accessManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "plasmaVaultBase",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "withdrawManager",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PlasmaVaultInitData",
+        "name": "initData_",
+        "type": "tuple"
+      }
+    ],
+    "name": "clone",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "plasmaVault",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index_",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "assetName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "assetSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "underlyingToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "priceOracleMiddleware",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "feeFactory",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "iporDaoManagementFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "iporDaoPerformanceFee",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "iporDaoFeeRecipientAddress",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct FeeConfig",
+            "name": "feeConfig",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "accessManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "plasmaVaultBase",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "withdrawManager",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PlasmaVaultInitData",
+        "name": "initData_",
+        "type": "tuple"
+      }
+    ],
+    "name": "create",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "plasmaVault",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

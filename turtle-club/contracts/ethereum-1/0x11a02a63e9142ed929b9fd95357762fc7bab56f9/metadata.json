@@ -1,0 +1,18 @@
+{
+  "address": "0x11a02a63e9142ed929b9fd95357762fc7bab56f9",
+  "chain_id": 1,
+  "contract_name": "AmmCloseSwapServiceUsdt",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 1500,
+  "evm_version": "cancun",
+  "license": "BSD-4-Clause, BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 61,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:24:53.737Z"
+}

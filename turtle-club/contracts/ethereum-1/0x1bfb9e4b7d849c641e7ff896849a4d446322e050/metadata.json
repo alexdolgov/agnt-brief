@@ -1,0 +1,17 @@
+{
+  "address": "0x1bfb9e4b7d849c641e7ff896849a4d446322e050",
+  "chain_id": 1,
+  "contract_name": "MidasBalanceFuse",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "cancun",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000000000000000000000000000000000000000002d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:24:54.036Z"
+}

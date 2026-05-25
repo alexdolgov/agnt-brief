@@ -1,0 +1,18 @@
+{
+  "address": "0x6416e385f08421f524e2c7335444e56e897f7ddd",
+  "chain_id": 1,
+  "contract_name": "AssetManagementUsdt",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:24:59.290Z"
+}

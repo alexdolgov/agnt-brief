@@ -1,0 +1,46 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "lpToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lpTokenBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "ethUsdOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "lpWeEth",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "lpStEth",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "weEth",
+        "type": "address"
+      }
+    ],
+    "name": "_calculateWeightedLpTokenBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

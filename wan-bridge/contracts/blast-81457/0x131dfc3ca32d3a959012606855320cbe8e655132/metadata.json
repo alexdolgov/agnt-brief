@@ -1,0 +1,17 @@
+{
+  "address": "0x131dfc3ca32d3a959012606855320cbe8e655132",
+  "chain_id": 81457,
+  "contract_name": "GroupApprove",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "0000000000000000000000004cf0a877e906dead748a41ae7da8c220e4247d9e00000000000000000000000009cdfc56439643d151585b77899d0dc0f982bcd20000000000000000000000008d42d317b2bd6b60183461ed41bd00f17c3f3fe8000000000000000000000000c21e5553c8dddf2e4a93e5bedbae436d4291f603",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:17:34.514Z"
+}

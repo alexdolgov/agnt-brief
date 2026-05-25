@@ -471,7 +471,7 @@
 | [thena](./thena/) | $208.9 | 7.1% | $208.9 | declining | 3 | 358 | 2026-05-23 |
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
 | [thruster](./thruster/) | $5.8M | 0.0% | ? | dead | 0 | 20 | 2026-05-23 |
-| [tinyman](./tinyman/) | $1.8M | 0.0% | $1.8M | active | 18 | 904 | 2026-05-23 |
+| [tinyman](./tinyman/) | $1.5M | 0.0% | $1.5M | active | 18 | 53 | 2026-05-25 |
 | [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 0 | 44 | 2026-05-25 |
 | [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-05-24 |
 | [tothemoon](./tothemoon/) | $3.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
@@ -484,8 +484,9 @@
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |
 | [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-05-24 |
 | [trufin-protocol](./trufin-protocol/) | $6.8M | 66.7% | ? | declining | 12 | 7 | 2026-05-23 |
+| [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | dead | 2 | 516 | 2026-05-25 |
 | [twyne](./twyne/) | $985.7K | 9.6% | ? | active | 9 | 59 | 2026-05-24 |
-| [txflow](./txflow/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 905 | 2026-05-24 |
+| [txflow](./txflow/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 54 | 2026-05-25 |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | unknown | 0 | 150 | 2026-05-23 |
 | [umee](./umee/) | $3.2M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [unchain-x](./unchain-x/) | $35.1M | 100.0% | ? | active | 2 | 1 | 2026-05-25 |
@@ -503,12 +504,13 @@
 | [verus-market](./verus-market/) | $9.9M | 0.0% | ? | declining | 0 | 32 | 2026-05-23 |
 | [vest-markets](./vest-markets/) | $1.2M | 0.0% | ? | declining | 0 | 4 | 2026-05-25 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |
+| [wan-bridge](./wan-bridge/) | $1.8M | 0.0% | $1.8M | active | 3 | 153 | 2026-05-25 |
 | [wanswap-dex](./wanswap-dex/) | $1.5M | 2.8% | $1.5M | declining | 1 | 53 | 2026-05-25 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | rugged | 8 | 83 | 2026-05-25 |
 | [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | active | 0 | 6 | 2026-05-25 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | dead | 14 | 96 | 2026-05-24 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
-| [wrapped-bnb](./wrapped-bnb/) | $1.8M | 0.0% | $1.8M | declining | 1 | 905 | 2026-05-23 |
+| [wrapped-bnb](./wrapped-bnb/) | $1.5M | 0.0% | $1.5M | declining | 1 | 54 | 2026-05-25 |
 | [wrapped](./wrapped/) | $1.7M | 0.0% | $1.7M | active | 0 | 119 | 2026-05-22 |
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 51 | 2026-05-25 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |

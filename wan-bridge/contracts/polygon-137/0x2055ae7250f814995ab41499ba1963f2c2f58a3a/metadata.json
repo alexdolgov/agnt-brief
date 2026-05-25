@@ -1,0 +1,17 @@
+{
+  "address": "0x2055ae7250f814995ab41499ba1963f2c2f58a3a",
+  "chain_id": 137,
+  "contract_name": "CommonProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:17:34.317Z"
+}

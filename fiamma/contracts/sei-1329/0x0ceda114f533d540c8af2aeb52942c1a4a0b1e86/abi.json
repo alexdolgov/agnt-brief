@@ -1,0 +1,1498 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AccessControlBadConfirmation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "neededRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "AccessControlUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BurnPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientAllowance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBtcAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBtcPegAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBurnAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBurnTime",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidFeeRate",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInclusionProof",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidIntentType",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidLPID",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidLPWithdrawAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidLPWithdrawID",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidLPWithdrawTimeout",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPegAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPegAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPeginAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidVaultRouter",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_provided",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_btcAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "MismatchBtcAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReentrancyGuardReentrantCall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TooManyPegs",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "btc_addr",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fee_rate",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "operator_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "Burn",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "withdraw_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "lp_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "evm_addr",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "ClaimLPWithdraw",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "version",
+        "type": "uint64"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "sidechainUser",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "tx_hash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      }
+    ],
+    "name": "InvestMinted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "lp_manager",
+        "type": "address"
+      }
+    ],
+    "name": "LPManagerUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "Mint",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lp_withdraw_timeout",
+        "type": "uint256"
+      }
+    ],
+    "name": "PWithdrawTimeoutUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "maxPegsPerMint",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "maxBtcPerMint",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "minBtcPerMint",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "maxBtcPerBurn",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "minBtcPerBurn",
+        "type": "uint256"
+      }
+    ],
+    "name": "ParametersChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "withdraw_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "RefundLPWithdraw",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "withdraw_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "btc_addr",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fee_rate",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lp_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "receive_min_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "WithdrawByLP",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "BUSINESS_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "btcPeg",
+    "outputs": [
+      {
+        "internalType": "contract IMintableBurnable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "btcTxVerifier",
+    "outputs": [
+      {
+        "internalType": "contract IBtcTxVerifier",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_btc_addr",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_fee_rate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_value",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_operator_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "burn",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "burnPaused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sidechainUser",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "vaultAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "intentType",
+        "type": "string"
+      }
+    ],
+    "name": "calculateIntentHash",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "hash",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "chainName",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "withdraw_id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "blockNum",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes",
+                "name": "blockHeader",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "txId",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "uint256",
+                "name": "txIndex",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes",
+                "name": "txMerkleProof",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bytes",
+                "name": "rawTx",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct BtcTxProof",
+            "name": "inclusionProof",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "txOutIx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountSats",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LPClaimInfo[]",
+        "name": "_lp_claim_infos",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "claimLPWithdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_txid",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getMinted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_business",
+        "type": "address"
+      }
+    ],
+    "name": "grantBusinessRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_btcPegAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_btcTxVerifierAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_lpManager",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_lpWithdrawTimeout",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minConfirmations",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_chainName",
+        "type": "string"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_intentType",
+        "type": "string"
+      }
+    ],
+    "name": "isValidIntentType",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lpManager",
+    "outputs": [
+      {
+        "internalType": "contract ILPManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lpWithdrawTimeout",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "lpWithdraws",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "withdraw_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "receiver_addr",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "receiver_script_hash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "receive_min_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "fee_rate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lp_id",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxBtcPerBurn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxBtcPerMint",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxFeeRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxPegsPerMint",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minBtcPerBurn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minBtcPerMint",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minConfirmations",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "blockNum",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes",
+                "name": "blockHeader",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "txId",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "uint256",
+                "name": "txIndex",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes",
+                "name": "txMerkleProof",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bytes",
+                "name": "rawTx",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct BtcTxProof",
+            "name": "inclusionProof",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "txOutIx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "destScriptHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountSats",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Peg[]",
+        "name": "pegs",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "mint",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "blockNum",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes",
+                "name": "blockHeader",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "txId",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "uint256",
+                "name": "txIndex",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes",
+                "name": "txMerkleProof",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bytes",
+                "name": "rawTx",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct BtcTxProof",
+            "name": "inclusionProof",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "txOutIx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "destScriptHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountSats",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "sidechainUser",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "opReturnOutIx",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "intentType",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct Invest[]",
+        "name": "invests",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "mint_for_invest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pauseBurn",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_withdraw_id",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_receiver",
+        "type": "address"
+      }
+    ],
+    "name": "refundLPWithdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "callerConfirmation",
+        "type": "address"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_business",
+        "type": "address"
+      }
+    ],
+    "name": "revokeBusinessRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_btcPeg",
+        "type": "address"
+      }
+    ],
+    "name": "setBtcPeg",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_btcTxVerifierAddr",
+        "type": "address"
+      }
+    ],
+    "name": "setBtcTxVerifier",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_chainName",
+        "type": "string"
+      }
+    ],
+    "name": "setChainName",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_lpManager",
+        "type": "address"
+      }
+    ],
+    "name": "setLPManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_lpWithdrawTimeout",
+        "type": "uint256"
+      }
+    ],
+    "name": "setLPWithdrawTimeout",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_maxFeeRate",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaxFeeRate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_minConfirmations",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMinConfirmations",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_maxPegsPerMint",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxBtcPerMint",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minBtcPerMint",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxBtcPerBurn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minBtcPerBurn",
+        "type": "uint256"
+      }
+    ],
+    "name": "setParameters",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultRouter",
+        "type": "address"
+      }
+    ],
+    "name": "setVaultRouter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unpauseBurn",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vaultRouter",
+    "outputs": [
+      {
+        "internalType": "contract IVaultRouter",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_withdraw_id",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_btc_addr",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_receiver_script_hash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_receive_min_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_lp_id",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_value",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_fee_rate",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawByLP",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

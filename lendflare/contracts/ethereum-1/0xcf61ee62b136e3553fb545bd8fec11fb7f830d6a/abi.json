@@ -1,0 +1,83 @@
+[
+  {
+    "inputs": [
+      {
+        "name": "amm",
+        "type": "address"
+      },
+      {
+        "name": "controller",
+        "type": "address"
+      },
+      {
+        "name": "collateral_token",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "name": "d_collateral",
+        "type": "int256"
+      },
+      {
+        "name": "d_debt",
+        "type": "int256"
+      },
+      {
+        "name": "full",
+        "type": "bool"
+      }
+    ],
+    "name": "health_calculator",
+    "outputs": [
+      {
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "name": "d_collateral",
+        "type": "int256"
+      },
+      {
+        "name": "d_debt",
+        "type": "int256"
+      },
+      {
+        "name": "full",
+        "type": "bool"
+      },
+      {
+        "name": "N",
+        "type": "uint256"
+      }
+    ],
+    "name": "health_calculator",
+    "outputs": [
+      {
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x63ec0656ce47061d2b811050d0bcff8a7f59d45f",
+  "chain_id": 1,
+  "contract_name": "BtcPegUpgradeable",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:03:56.393Z"
+}

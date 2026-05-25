@@ -1,0 +1,17 @@
+{
+  "address": "0x1dd4b13fcae900c60a350589be8052959d2ed27b",
+  "chain_id": 9745,
+  "contract_name": "fToken",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "paris",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "00000000000000000000000052aa899454998be5b000ad077a46bbe360f4e49700000000000000000000000054b91a0d94cb471f37f949c60f7fa7935b551d03000000000000000000000000b8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:04:48.487Z"
+}

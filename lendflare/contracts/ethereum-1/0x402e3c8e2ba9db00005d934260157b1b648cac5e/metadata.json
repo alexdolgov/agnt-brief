@@ -1,0 +1,18 @@
+{
+  "address": "0x402e3c8e2ba9db00005d934260157b1b648cac5e",
+  "chain_id": 1,
+  "contract_name": "LendFlareProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": "0xa7c45ba4476949a2bc8a7318f62bb12fdd5e88c0",
+  "fetched_at": "2026-05-25T05:23:28.273Z"
+}

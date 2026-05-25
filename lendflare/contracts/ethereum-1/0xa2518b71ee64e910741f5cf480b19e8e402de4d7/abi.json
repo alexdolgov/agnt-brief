@@ -1,0 +1,312 @@
+[
+  {
+    "inputs": [
+      {
+        "name": "_controller",
+        "type": "address"
+      },
+      {
+        "name": "_collateral",
+        "type": "address"
+      },
+      {
+        "name": "_router",
+        "type": "address"
+      },
+      {
+        "name": "_routes",
+        "type": "address[9][]"
+      },
+      {
+        "name": "_route_params",
+        "type": "uint256[3][4][]"
+      },
+      {
+        "name": "_route_pools",
+        "type": "address[4][]"
+      },
+      {
+        "name": "_route_names",
+        "type": "string[]"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "name": "stablecoin",
+        "type": "uint256"
+      },
+      {
+        "name": "route_idx",
+        "type": "uint256"
+      }
+    ],
+    "name": "get_collateral",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "stablecoin",
+        "type": "uint256"
+      },
+      {
+        "name": "route_idx",
+        "type": "uint256"
+      }
+    ],
+    "name": "get_collateral_underlying",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "collateral",
+        "type": "uint256"
+      },
+      {
+        "name": "debt",
+        "type": "uint256"
+      },
+      {
+        "name": "N",
+        "type": "uint256"
+      },
+      {
+        "name": "route_idx",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculate_debt_n1",
+    "outputs": [
+      {
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "collateral",
+        "type": "uint256"
+      },
+      {
+        "name": "N",
+        "type": "uint256"
+      },
+      {
+        "name": "route_idx",
+        "type": "uint256"
+      }
+    ],
+    "name": "max_borrowable",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "collateral",
+        "type": "uint256"
+      },
+      {
+        "name": "N",
+        "type": "uint256"
+      },
+      {
+        "name": "route_idx",
+        "type": "uint256"
+      }
+    ],
+    "name": "max_collateral",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "collateral",
+        "type": "uint256"
+      },
+      {
+        "name": "N",
+        "type": "uint256"
+      },
+      {
+        "name": "route_idx",
+        "type": "uint256"
+      }
+    ],
+    "name": "max_borrowable_and_collateral",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256[2]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "name": "stablecoins",
+        "type": "uint256"
+      },
+      {
+        "name": "collateral",
+        "type": "uint256"
+      },
+      {
+        "name": "debt",
+        "type": "uint256"
+      },
+      {
+        "name": "callback_args",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "callback_deposit",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256[2]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "uint256"
+      }
+    ],
+    "name": "routes",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "uint256"
+      },
+      {
+        "name": "arg2",
+        "type": "uint256"
+      }
+    ],
+    "name": "route_params",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "uint256"
+      }
+    ],
+    "name": "route_pools",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      }
+    ],
+    "name": "route_names",
+    "outputs": [
+      {
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "routes_count",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

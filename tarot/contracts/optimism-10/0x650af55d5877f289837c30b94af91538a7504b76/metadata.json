@@ -1,0 +1,18 @@
+{
+  "address": "0x650af55d5877f289837c30b94af91538a7504b76",
+  "chain_id": 10,
+  "contract_name": "ValueRouter",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x32710814cf055366e98093e969f078c4d864971c",
+  "fetched_at": "2026-05-25T05:23:24.753Z"
+}

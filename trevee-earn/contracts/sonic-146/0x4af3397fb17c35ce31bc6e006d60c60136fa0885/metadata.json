@@ -1,0 +1,17 @@
+{
+  "address": "0x4af3397fb17c35ce31bc6e006d60c60136fa0885",
+  "chain_id": 146,
+  "contract_name": "MessageBus",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "000000000000000000000000bcba1f21ca212f63f71536128d9e574dc3ae28d9",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:04:48.509Z"
+}

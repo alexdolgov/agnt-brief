@@ -1,0 +1,17 @@
+{
+  "address": "0x5098aa08546728d13fb5801b8eb893e724680661",
+  "chain_id": 999,
+  "contract_name": "FiaBTCOFTAdapter",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 41,
+  "constructor_arguments": "0000000000000000000000000ceda114f533d540c8af2aeb52942c1a4a0b1e860000000000000000000000003a73033c0b1407574c76bdbac67f126f6b4a9aa9000000000000000000000000a9ffc52b6408691b836e6c2886f07ee3fe0c2b4d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:03:57.163Z"
+}

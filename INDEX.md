@@ -146,6 +146,7 @@
 | [exmo](./exmo/) | $2.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-05-23 |
+| [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 0 | 33 | 2026-05-25 |
 | [firebot](./firebot/) | $3.7M | 9.5% | $3.7M | unknown | 3 | 29 | 2026-05-24 |
 | [flamingo](./flamingo/) | $1.9M | 0.0% | $1.9M | dead | 6 | 935 | 2026-05-24 |
 | [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 21 | 3 | 2026-05-24 |
@@ -234,6 +235,7 @@
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 108 | 2026-05-24 |
+| [lendflare](./lendflare/) | $1.1K | 2.7% | $1.1K | declining | 1 | 144 | 2026-05-25 |
 | [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | sunsetting | 10 | 64 | 2026-05-25 |
 | [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-05-25 |
 | [levex](./levex/) | $11.2M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
@@ -260,6 +262,7 @@
 | [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-23 |
 | [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | sunsetting | 6 | 39 | 2026-05-24 |
 | [merlinswap](./merlinswap/) | $8.7M | 0.0% | ? | unknown | 0 | 2 | 2026-05-23 |
+| [meson](./meson/) | $1.1M | 0.0% | ? | active | 4 | 129 | 2026-05-25 |
 | [metadao](./metadao/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-23 |
 | [metastable](./metastable/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [mezo-bridge](./mezo-bridge/) | $203.9M | 0.0% | $203.9M | declining | 0 | 138 | 2026-05-22 |
@@ -427,6 +430,7 @@
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-05-24 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-05-22 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-05-22 |
+| [tarot](./tarot/) | $22.9M | 0.0% | $22.9M | dead | 1 | 152 | 2026-05-25 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | unknown | 0 | 179 | 2026-05-23 |
 | [teller](./teller/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-05-24 |
@@ -447,6 +451,7 @@
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
+| [trevee-earn](./trevee-earn/) | $582.4M | 0.0% | $582.4M | transitioning | 0 | 29 | 2026-05-25 |
 | [trisolaris](./trisolaris/) | $1.3M | 0.0% | ? | dead | 0 | 226 | 2026-05-25 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |

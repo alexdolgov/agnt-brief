@@ -1,0 +1,18 @@
+{
+  "address": "0xb556fa4c4752321b3154f08dfbdfcf34847f2eac",
+  "chain_id": 1,
+  "contract_name": "LeveragezapforcrvUSDcontroller(sfrxETHmarket)",
+  "compiler_version": "v0.3.7+commit.6020b8bb",
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:23:30.789Z"
+}

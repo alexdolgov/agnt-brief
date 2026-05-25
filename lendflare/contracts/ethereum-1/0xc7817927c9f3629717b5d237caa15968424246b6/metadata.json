@@ -1,0 +1,18 @@
+{
+  "address": "0xc7817927c9f3629717b5d237caa15968424246b6",
+  "chain_id": 1,
+  "contract_name": "LendFlareGaugeModel",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:23:30.683Z"
+}

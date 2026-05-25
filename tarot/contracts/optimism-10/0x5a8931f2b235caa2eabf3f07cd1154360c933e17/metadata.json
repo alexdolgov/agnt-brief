@@ -1,0 +1,18 @@
+{
+  "address": "0x5a8931f2b235caa2eabf3f07cd1154360c933e17",
+  "chain_id": 10,
+  "contract_name": "TarotSolidlyPriceOracle",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:23:24.292Z"
+}

@@ -41,6 +41,7 @@
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-05-23 |
 | [b.protocol](./b.protocol/) | $89.1M | 4.1% | $89.1M | dead | 5 | 186 | 2026-05-24 |
 | [babydogecoin](./babydogecoin/) | $166.7M | 0.0% | $166.7M | declining | 1 | 936 | 2026-05-24 |
+| [babyswap](./babyswap/) | $241.1K | 1.5% | $241.1K | dead | 1 | 113 | 2026-05-25 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 0 | 2 | 2026-05-23 |
 | [badger-dao](./badger-dao/) | $1.9M | 0.0% | $1.9M | sunsetting | 0 | 330 | 2026-05-23 |
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
@@ -286,6 +287,7 @@
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
 | [osmosis-dex](./osmosis-dex/) | $1.9M | 0.0% | $1.9M | declining | 0 | 935 | 2026-05-22 |
 | [p2pb2b](./p2pb2b/) | $4.9M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
+| [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | unknown | 0 | 3 | 2026-05-25 |
 | [pact](./pact/) | $1.9M | 0.0% | $1.9M | active | 1 | 935 | 2026-05-24 |
 | [pangolin](./pangolin/) | $3.7M | 53.6% | ? | dead | 13 | 182 | 2026-05-24 |
 | [paragonsdao](./paragonsdao/) | $6.2M | 50.0% | ? | unknown | 8 | 2 | 2026-05-23 |
@@ -404,6 +406,7 @@
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
 | [thruster](./thruster/) | $5.8M | 0.0% | ? | dead | 0 | 20 | 2026-05-23 |
 | [tinyman](./tinyman/) | $1.8M | 0.0% | $1.8M | active | 18 | 904 | 2026-05-23 |
+| [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 0 | 44 | 2026-05-25 |
 | [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-05-24 |
 | [tothemoon](./tothemoon/) | $3.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |

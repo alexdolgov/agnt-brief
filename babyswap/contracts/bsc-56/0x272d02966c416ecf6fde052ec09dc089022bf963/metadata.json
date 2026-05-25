@@ -1,0 +1,17 @@
+{
+  "address": "0x272d02966c416ecf6fde052ec09dc089022bf963",
+  "chain_id": 56,
+  "contract_name": "VBabyFarmer",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "000000000000000000000000dfaa0e08e357db0153927c7eabb492d1f60ac730000000000000000000000000ec6113ba8968bd4da9f7c909a0c42085a0594a73",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:34:12.565Z"
+}

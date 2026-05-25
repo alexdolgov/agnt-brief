@@ -1,0 +1,18 @@
+{
+  "address": "0x3e1ead5cbe817689f4bdb96bceeb112fdbe94dbc",
+  "chain_id": 56,
+  "contract_name": "AutoBabyPool",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:34:13.162Z"
+}

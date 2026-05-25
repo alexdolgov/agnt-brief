@@ -1,0 +1,17 @@
+{
+  "address": "0x0e15b08b3a370dd8d115c7ad38b09b69f25d0eb6",
+  "chain_id": 56,
+  "contract_name": "BabyWonderlandAirdrop",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "0000000000000000000000001fe7f243eb49f3b9575f51a2f9fba9fc2c1dd68d00000000000000000000000000000000000000000000000000000000631b54f0",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:34:10.132Z"
+}

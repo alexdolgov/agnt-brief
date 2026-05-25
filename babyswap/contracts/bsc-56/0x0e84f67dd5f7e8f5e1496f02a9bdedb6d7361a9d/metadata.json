@@ -1,0 +1,17 @@
+{
+  "address": "0x0e84f67dd5f7e8f5e1496f02a9bdedb6d7361a9d",
+  "chain_id": 56,
+  "contract_name": "TokenLocker",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "00000000000000000000000053e562b9b7e5e94b81f10e96ee70ad06df3d2657000000000000000000000000b8b0da08d7ecdaa8cdce3f1d859a0988bd8b92360000000000000000000000000000000000000000000000000000000000278d000000000000000000000000000000000000000000000422ca8b0a00a425000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:34:11.968Z"
+}

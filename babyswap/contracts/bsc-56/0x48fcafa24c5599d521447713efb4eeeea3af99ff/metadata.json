@@ -1,0 +1,17 @@
+{
+  "address": "0x48fcafa24c5599d521447713efb4eeeea3af99ff",
+  "chain_id": 56,
+  "contract_name": "MasterChefTimelock",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "000000000000000000000000dfaa0e08e357db0153927c7eabb492d1f60ac730000000000000000000000000c0a56aee755bd397235367008f7c2c4599768395000000000000000000000000000000000000000000000000000000000002a300",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:34:13.942Z"
+}

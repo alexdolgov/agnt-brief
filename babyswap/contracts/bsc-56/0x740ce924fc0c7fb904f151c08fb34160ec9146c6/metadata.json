@@ -1,0 +1,18 @@
+{
+  "address": "0x740ce924fc0c7fb904f151c08fb34160ec9146c6",
+  "chain_id": 56,
+  "contract_name": "VBabyDonateSchedule",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:34:14.816Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x540a805dcb1b06820f1361c3ec3e89ba2273c86b",
+  "chain_id": 56,
+  "contract_name": "BabyRegistry",
+  "compiler_version": "v0.4.26+commit.4563c3fc",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:34:14.314Z"
+}

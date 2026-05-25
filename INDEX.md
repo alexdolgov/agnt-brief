@@ -221,7 +221,7 @@
 | [index-coop](./index-coop/) | $28.2M | 13.4% | $28.2M | declining | 7 | 236 | 2026-05-25 |
 | [init-capital](./init-capital/) | $66.5M | 21.4% | $66.2M | declining | 7 | 102 | 2026-05-25 |
 | [initiadex](./initiadex/) | $3.3M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
-| [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 9 | 2026-05-22 |
+| [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-05-25 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-05-23 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 13.7% | $428.8M | unknown | 8 | 125 | 2026-05-21 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-05-24 |
@@ -530,7 +530,7 @@
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | dead | 0 | 30 | 2026-05-24 |
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [yei-finance](./yei-finance/) | $29.8M | 0.0% | ? | declining | 1 | 44 | 2026-05-22 |
-| [yieldfi](./yieldfi/) | $43.7M | 66.7% | $16.3M | declining | 7 | 23 | 2026-05-23 |
+| [yieldfi](./yieldfi/) | $43.7M | 66.7% | $16.3M | declining | 7 | 23 | 2026-05-25 |
 | [yieldnest](./yieldnest/) | $19.2M | 0.0% | $19.2M | declining | 0 | 45 | 2026-05-25 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | unknown | 1 | 191 | 2026-05-25 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-05-23 |

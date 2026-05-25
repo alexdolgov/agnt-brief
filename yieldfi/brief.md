@@ -7,8 +7,8 @@
 - Project: YieldFi (`yieldfi`)
 - Website: [https://yield.fi/](https://yield.fi/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T01:05:13.080Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-25T18:38:18.742Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, optimism, plasma, sonic
 - Contract surface: 23 unique implementations (113 raw deployments)
 - DeFi Llama TVL: $12,104,433.96

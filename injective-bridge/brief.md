@@ -5,10 +5,10 @@
 - Project: Injective Bridge (`injective-bridge`)
 - Website: [https://injective.com](https://injective.com)
 - Lifecycle: active (Tier 0, 67.2% below peak)
-- Generated: 2026-05-22T20:33:52.931Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-25T18:36:26.191Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: ethereum
-- Contract surface: 9 unique implementations (10 raw deployments)
+- Contract surface: 3 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $14,890,031.72
 - On-chain TVL (included contracts): $2,617.33
 - TVL by chain: Ethereum $2,617.33
@@ -26,9 +26,9 @@ The TransparentUpgradeableProxy delegates to the Peggy implementation, which man
 - Verified implementations audited: 0/3 (0.0%)
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 9
-- Raw deployments: 10
+- Unverified implementations: 0
+- Unique implementations: 3
+- Raw deployments: 4
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $2,617.33
@@ -66,18 +66,11 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | `0x038023...1bae08` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x10fdb1...9b5d96` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0x5869b6...c7d155` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xafc407...e5bb5a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xb6c2bc...7039ab` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | `0xbdf230...2fb10d` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
@@ -100,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 6 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

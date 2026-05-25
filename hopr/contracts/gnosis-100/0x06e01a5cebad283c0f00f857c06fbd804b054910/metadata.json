@@ -1,0 +1,17 @@
+{
+  "address": "0x06e01a5cebad283c0f00f857c06fbd804b054910",
+  "chain_id": 100,
+  "contract_name": "HoprNodeSafeMigration",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000003b008cb90d252b731ceb8952a6ed78b84ab31ea300000000000000000000000063e44a4e1349d1c3f0cfc52c4dae7710a6345761",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T04:18:58.686Z"
+}

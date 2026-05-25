@@ -1,0 +1,17 @@
+{
+  "address": "0x0f6f337b09cb5131cf0ce9df3beb295b8e728f3b",
+  "chain_id": 80094,
+  "contract_name": "BeaconProxy",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0xa45716a26274d4c5f12ced534fb6b1fa9ef7acf8",
+  "fetched_at": "2026-05-25T04:44:21.471Z"
+}

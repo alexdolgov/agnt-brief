@@ -1,0 +1,17 @@
+{
+  "address": "0x223c4fe6d9c19cbdc6c66aa9a6b7ce5a445bf884",
+  "chain_id": 100,
+  "contract_name": "ERC677Mock",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T04:19:00.576Z"
+}

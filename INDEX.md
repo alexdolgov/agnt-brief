@@ -188,6 +188,7 @@
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-05-24 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-05-24 |
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 4 | 29 | 2026-05-24 |
+| [hopr](./hopr/) | $1.2M | 4.3% | ? | unknown | 2 | 81 | 2026-05-25 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [hskhodlium](./hskhodlium/) | $1.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [hybra](./hybra/) | $1.9M | 0.0% | ? | active | 0 | 81 | 2026-05-24 |
@@ -311,6 +312,7 @@
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-05-24 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 3 | 21 | 2026-05-25 |
+| [phoenix](./phoenix/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 935 | 2026-05-25 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | dead | 1 | 34 | 2026-05-24 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | unknown | 0 | 7 | 2026-05-24 |
@@ -357,6 +359,7 @@
 | [saber](./saber/) | $1.9M | 0.0% | $1.9M | dead | 0 | 904 | 2026-05-23 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |
+| [satlayer](./satlayer/) | $311.4M | 3.6% | $309.1M | declining | 12 | 342 | 2026-05-25 |
 | [satori-finance](./satori-finance/) | $9.3M | 0.0% | $9.3M | active | 1 | 220 | 2026-05-25 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 0 | 1 | 2026-05-25 |
@@ -412,6 +415,7 @@
 | [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-05-25 |
 | [swappi](./swappi/) | $2.0M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [swapscanner](./swapscanner/) | $4.7M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
+| [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 0 | 10 | 2026-05-25 |
 | [switcheo-finance](./switcheo-finance/) | $68.4M | 0.0% | $68.4M | active | 0 | 48 | 2026-05-25 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 134 | 2026-05-23 |
 | [symbiosis](./symbiosis/) | $236.1M | 5.8% | $236.1M | active | 15 | 137 | 2026-05-23 |

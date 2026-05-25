@@ -1,0 +1,18 @@
+{
+  "address": "0x306691425babb4b6cd515dba3a714160354bda9c",
+  "chain_id": 100,
+  "contract_name": "HoprToken",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T04:19:00.892Z"
+}

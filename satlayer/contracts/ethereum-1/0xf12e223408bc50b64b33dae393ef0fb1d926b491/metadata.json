@@ -1,0 +1,18 @@
+{
+  "address": "0xf12e223408bc50b64b33dae393ef0fb1d926b491",
+  "chain_id": 1,
+  "contract_name": "StrategyPumpBTC",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T04:44:27.578Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x7b32acda3efaf549e4fca0f898cf280b40ba3342",
+  "chain_id": 1088,
+  "contract_name": "UnlimitedModel",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:00:18.409Z"
+}

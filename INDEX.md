@@ -239,6 +239,7 @@
 | [manta-pacific](./manta-pacific/) | $25.7M | 0.0% | ? | active | 0 | 13 | 2026-05-22 |
 | [matstake](./matstake/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-05-24 |
+| [mdex](./mdex/) | $235.5K | 85.7% | $20.2K | dead | 3 | 13 | 2026-05-24 |
 | [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 4 | 2026-05-24 |
 | [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-23 |
 | [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | sunsetting | 6 | 39 | 2026-05-24 |
@@ -267,6 +268,7 @@
 | [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 73 | 2026-05-23 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | dead | 0 | 66 | 2026-05-24 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |
+| [netswap](./netswap/) | $1.4M | 20.8% | ? | dead | 2 | 48 | 2026-05-25 |
 | [neutral-trade](./neutral-trade/) | $18.8M | 0.0% | ? | unknown | 3 | 0 | 2026-05-22 |
 | [nftx](./nftx/) | $6.3M | 9.6% | $6.3M | declining | 5 | 267 | 2026-05-24 |
 | [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |

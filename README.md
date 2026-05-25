@@ -153,6 +153,7 @@ Each project directory contains:
 | [defituna](./defituna/brief.md) | $4.06M | 17 | 904 | 185/904 (20%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $1.86M |
 | [pact](./pact/brief.md) | $2.71M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $1.86M |
 | [flamingo](./flamingo/brief.md) | $2.27M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $1.86M |
+| [defichain-dex](./defichain-dex/brief.md) | $1.18M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.86M |
 | [puzzleswaporg](./puzzleswaporg/brief.md) | $1.41M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.85M |
 | [dflow](./dflow/brief.md) | $1.61M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.85M |
 | [rex-staking](./rex-staking/brief.md) | $1.94M | 17 | 935 | 185/935 (20%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $1.85M |
@@ -253,6 +254,7 @@ Each project directory contains:
 | [goose](./goose/brief.md) | $12.80M | ethereum | 7 | 3/7 (43%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $7.87 |
 | [acre](./acre/brief.md) | $4.30M | ethereum | 220 | 207/220 (94%) | 0.5% | 0.0% (-) | 2 | aging | ❓ unknown | $3.02 |
 | [plasma-one](./plasma-one/brief.md) | $2.17M | plasma | 7 | 5/7 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $0.62 |
+| [swamp-finance](./swamp-finance/brief.md) | $1.20M | bsc | 11 | 7/11 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $0.09 |
 | [kinza-finance](./kinza-finance/brief.md) | $7.84M | 4 | 154 | 50/154 (32%) | 2.0% | 0.0% (-) | 1 | stale | ⚠️ declining | $0.01 |
 | [tokenworks](./tokenworks/brief.md) | $2.32M | ethereum | 60 | 33/60 (55%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $0.00 |
 | [charm-finance](./charm-finance/brief.md) | $2.20M | 6 | 10 | 6/10 (60%) | 50.0% | 50.0% (Code4rena, Spearbit) | 4 | fresh | ❓ unknown | $0.00 |
@@ -465,6 +467,7 @@ Each project directory contains:
 | [teller](./teller/brief.md) | $1.99M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [tender-finance](./tender-finance/brief.md) | $1.29M | arbitrum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [tensorplex](./tensorplex/brief.md) | $1.64M | ethereum | 6 | 4/6 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [tg-casino](./tg-casino/brief.md) | $1.18M | ethereum | 15 | 15/15 (100%) | 6.7% | 0.0% (-) | 1 | stale | ❓ unknown | - |
 | [thedeep](./thedeep/brief.md) | $8.46M | 4 | 164 | 11/164 (7%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [thruster](./thruster/brief.md) | $5.82M | blast | 20 | 14/20 (70%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [tothemoon](./tothemoon/brief.md) | $3.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -493,5 +496,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-25T03:42:56.432Z_
-_Projects: 481_
+_Generated: 2026-05-25T04:04:31.543Z_
+_Projects: 484_

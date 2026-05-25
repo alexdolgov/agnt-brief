@@ -106,6 +106,7 @@
 | [decentralized-euro](./decentralized-euro/) | $230.7M | 8.7% | $230.7M | active | 3 | 174 | 2026-05-24 |
 | [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-05-24 |
 | [defi-kingdoms](./defi-kingdoms/) | $6.5M | 0.0% | ? | dead | 1 | 5 | 2026-05-23 |
+| [defichain-dex](./defichain-dex/) | $1.9M | 0.0% | $1.9M | dead | 0 | 935 | 2026-05-25 |
 | [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-05-24 |
 | [defituna](./defituna/) | $1.9M | 0.0% | $1.9M | declining | 11 | 904 | 2026-05-23 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | unknown | 0 | 53 | 2026-05-23 |
@@ -408,6 +409,7 @@
 | [supernova](./supernova/) | $2.2M | 48.9% | ? | declining | 1 | 47 | 2026-05-24 |
 | [suzaku](./suzaku/) | $1.2M | 4.8% | $1.2M | active | 2 | 49 | 2026-05-25 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-05-23 |
+| [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 0 | 11 | 2026-05-25 |
 | [swappi](./swappi/) | $2.0M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [swapscanner](./swapscanner/) | $4.7M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
 | [switcheo-finance](./switcheo-finance/) | $68.4M | 0.0% | $68.4M | active | 0 | 48 | 2026-05-25 |
@@ -423,6 +425,7 @@
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-05-24 |
 | [tender-finance](./tender-finance/) | $1.3M | 0.0% | ? | declining | 1 | 1 | 2026-05-25 |
 | [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
+| [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | unknown | 1 | 15 | 2026-05-25 |
 | [the-arena](./the-arena/) | $9.6M | 0.0% | $9.6M | active | 0 | 1054 | 2026-05-24 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-05-23 |
 | [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |

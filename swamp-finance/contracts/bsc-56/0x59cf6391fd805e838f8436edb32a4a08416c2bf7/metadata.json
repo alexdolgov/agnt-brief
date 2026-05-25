@@ -1,0 +1,17 @@
+{
+  "address": "0x59cf6391fd805e838f8436edb32a4a08416c2bf7",
+  "chain_id": 56,
+  "contract_name": "TimelockController",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:49:47.837Z"
+}

@@ -108,7 +108,7 @@
 | [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-05-23 |
 | [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | unknown | 3 | 2 | 2026-05-23 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-05-22 |
-| [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 3 | 86 | 2026-05-25 |
+| [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 3 | 64 | 2026-05-25 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-05-22 |
 | [dango](./dango/) | $5.6M | 0.0% | $5.6M | unknown | 1 | 56 | 2026-05-25 |
 | [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | dead | 7 | 17 | 2026-05-24 |
@@ -145,6 +145,7 @@
 | [enosys](./enosys/) | $28.0M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
 | [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 292 | 2026-05-25 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
+| [equilibria](./equilibria/) | $26.9M | 17.4% | $15.7M | declining | 6 | 120 | 2026-05-25 |
 | [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 49 | 2026-05-24 |
 | [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-05-24 |
 | [etherex](./etherex/) | $3.6M | 42.6% | ? | declining | 4 | 58 | 2026-05-24 |
@@ -153,7 +154,7 @@
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | unknown | 2 | 58 | 2026-05-23 |
 | [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-05-24 |
 | [eventum-bridge](./eventum-bridge/) | $1.7M | 2.1% | $1.7M | active | 2 | 74 | 2026-05-24 |
-| [everrise](./everrise/) | $23.4M | 0.0% | $23.4M | declining | 2 | 258 | 2026-05-24 |
+| [everrise](./everrise/) | $23.4M | 0.0% | $23.4M | declining | 2 | 239 | 2026-05-25 |
 | [everything](./everything/) | $1.1M | 0.0% | ? | unknown | 0 | 10 | 2026-05-25 |
 | [exmo](./exmo/) | $2.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
@@ -224,7 +225,7 @@
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-05-23 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 13.7% | $428.8M | unknown | 8 | 125 | 2026-05-21 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-05-24 |
-| [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 95 | 2026-05-24 |
+| [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 40 | 2026-05-25 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | dead | 0 | 181 | 2026-05-24 |
 | [juicebox](./juicebox/) | $11.2M | 0.0% | ? | active | 0 | 77 | 2026-05-23 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-05-23 |
@@ -465,7 +466,7 @@
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-05-24 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-05-22 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-05-22 |
-| [tarot](./tarot/) | $22.9M | 0.0% | $22.9M | dead | 1 | 152 | 2026-05-25 |
+| [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-25 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | unknown | 0 | 179 | 2026-05-23 |
 | [teller](./teller/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-05-24 |

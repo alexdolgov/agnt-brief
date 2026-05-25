@@ -1,0 +1,17 @@
+{
+  "address": "0x2e42452396a8f091703c0ed3c86ef4e3de8264a5",
+  "chain_id": 42161,
+  "contract_name": "MerkleDistributorFactory",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T16:32:29.171Z"
+}

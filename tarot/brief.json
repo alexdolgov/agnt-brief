@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tarot",
-  "generated_at": "2026-05-25T05:23:21.157Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-25T16:17:29.811Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "tarot",
@@ -32,26 +32,26 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 152,
-    "total_addresses": 368,
-    "unique_implementations": 152,
-    "total_deployments": 368,
+    "total_contracts": 139,
+    "total_addresses": 283,
+    "unique_implementations": 139,
+    "total_deployments": 283,
     "audited_contracts": 0,
-    "unaudited_contracts": 48,
+    "unaudited_contracts": 41,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 48,
+    "contracts_verified_unaudited": 41,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 104,
+    "contracts_unverified": 98,
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1144454.4868700001,
-    "tvl_usd": 22861962.672811884,
+    "tvl_usd": 154441.76602856693,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "optimism": 22861962.67
+      "optimism": 154441.77
     },
-    "asd_usd": 22861962.672811884,
+    "asd_usd": 154441.76602856693,
     "website_url": "https://www.tarot.to",
     "chains": [
       "arbitrum",
@@ -91,116 +91,17 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0x05e481b19129b560e921e487adb281e70bdba463",
+      "address": "0x375488f097176507e39b9653b88fdc52cde736bf",
       "name": "AnyswapV6ERC20",
       "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 22845305.76169166,
+      "origin_kind": "upstream",
+      "origin_provider": "anyswap",
+      "product_line": "Tarot",
+      "tvl_usd": 137907.70613766805,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "AnyswapV6ERC20",
       "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x05e481b19129b560e921e487adb281e70bdba463",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x0b322577569418b166cd98ea8ae7c681e4a820eb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x130966628846bfd36ff31a822705796e8cb8c18d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 5026.861194612105,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x165dbb08de0476271714952c3c1f068693bd60d7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x173fd7434b8b50df08e3298f173487ebdb35fd14",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 172.9317279504135,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x1ccca1ce62c62f7be95d4a67722a8fdbed6eecb4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1827284.0384366978,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x22648c12acd87912ea1710357b1302c6a4154ebc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x2823d10da533d9ee873fed7b16f4a962b2b7f181",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 27.18821402881107,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x2a9ad452af412d62eff7080c846c52bf9b1c9e91",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 841.3318283458876,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x338726dd694db9e2230ec2bb8624a2d7f566c96d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 763.9405968923394,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x340fe1d898eccaad394e2ba0fc1f93d27c7b717a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1419553.8424471414,
-          "is_audited": false
-        },
         {
           "chain_id": 10,
           "chain_name": "optimism",
@@ -209,519 +110,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": 137907.70613766805,
           "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x39fde572a18448f8139b7788099f0a0740f51205",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x3bd2dfd03bc7c3011ed7fb8c4d0949b382726cee",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x3d4e1981f822e87a1a4c05f2e4b3bcade5406ae3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2487.016,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x3d51a9fb5dcc87f7b237b04975559b920a9a56ff",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4518231a8fdf6ac553b9bbd51bbb86825b583263",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x461d52769884ca6235b685ef2040f47d30c94eb5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 8637.37999862,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x47536f17f4ff30e64a96a7555826b8f9e66ec468",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 4324.3149194313,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4e720dd3ac5cfe1e1fbde4935f386bb1c66f4642",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4f3aff3a747fcade12598081e80c6605a8be192f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 10.481258169050308,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x5d47baba0d66083c52009271faf3f50dcc01023c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x5fcb9de282af6122ce3518cde28b7089c9f97b26",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 10.932135529352278,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x65e66a61d0a8f1e686c2d6083ad611a10d84d97a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 46942.858601009844,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x6633c083f54bb65f702f9f276319bb24b65fec18",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3730.355588048622,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x667fd83e24ca1d935d36717d305d54fa0cac991c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x6b26780e74cfc64b88c9e1ebc33ffae29c1679ea",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x6b7a87899490ece95443e979ca9485cbe7e71522",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x739ca6d71365a08f584c8fc4e1029045fa8abc4b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.054071609426230176,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x76a3d96726c0ed756ea420d239d3feb998ebf528",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x7ae97042a4a0eb4d1eb370c34bfec71042a056b7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x7f8bc696bebbbd29255f871cbef55b74e8f10e57",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x82f0b8b456c1a451378467398982d4834b6829c1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x855d4248672a1fce482165e8dbe1207b94b1968a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x86b3f23b6e90f5bbfac59b5b2661134ef8ffd255",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 15661.988467,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x8e680018d67c57889083c23786c225f730c54fb5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x922d641a426dcffaef11680e5358f34d97d112e1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 12.950812610422094,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x965f84d915a9efa2dd81b653e3ae736555d945f4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1076.978157410508,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x97513e975a7fa9072c72c92d8000b0db90b163c5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 18790.27331291616,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x99c409e5f62e4bd2ac142f17cafb6810b8f0baae",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2799.892696203141,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x9d3e3624b3de482331f4f091fd8b76d3f344bd8c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2890.28873272311,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x9fda7ceec4c18008096c2fe2b85f05dc300f94d0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xa649325aa7c5093d12d6f98eb4378deae68ce23f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1914.2634134692175,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xaab1688899a833d0b6e0226afcd9a4c1128a5a77",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1236.4316474349519,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xabd380327fe66724ffda91a87c772fb8d00be488",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xb0ae108669ceb86e9e98e8fe9e40d98b867855fd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 85497.80565544346,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xb12c13e66ade1f72f71834f2fc5082db8c091358",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7140.685420360959,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xb153fb3d196a8eb25522705560ac152eeec57901",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 17858537.309114538,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xb2c22a9fb4fc02eb9d1d337655ce079a04a526c7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1354137.3856046577,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xb72842d6f5fedf91d22d56202802bb9a79c6322e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xbfc044a234e45412ecfec2cd6aae2dd0c083a7cd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 25951.552790617196,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xc1be9a4d5d45beeacae296a7bd5fadbfc14602c4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xc46fedc533e9f14c99c4c5124e2085701fa9b255",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xcaf870dad882b00f4b20d714bbf7fceada5e4195",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.2526826822674859,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xce1bffbd5374dac86a2893119683f4911a2f7814",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xd1a891e6eccb7471ebd6bc352f57150d4365db21",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xd1c5966f9f5ee6881ff6b261bbeda45972b1b5f3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xd22a58f79e9481d1a88e00c343885a588b34b68b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xd652776de7ad802be5ec7bebfafda37600222b48",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3355.4427081815256,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xe069af87450fb51fc0d0e044617f1c134163e591",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xe0ce60af0850bf54072635e66e79df17082a1109",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xe3ab61371ecc88534c522922a026f2296116c109",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xe56979f6ada241c1bed92e68535dcead9de2a5ef",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xe6bf0e14e33a469f2b0640b53949a9f90e675135",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2194.22833400834,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xe6cdd3a275c976bca5d3de4f96c7514b899f0434",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.1627061277684104,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.8163201240326758,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xf1b7980826cd89a99e45eb4236492fd42d463660",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xf2b3e3fa33232c639d4ca5a26e4e95c490417c84",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 129.5,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xf390830df829cf22c53c8840554b98eafc5dcbc2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 6255.319959396249,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -729,7 +117,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 10,
@@ -779,37 +167,6 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 5728.518549460605,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0xb44a9b6905af7c801311e8f4e76932ee959c663c",
-      "name": "AnyswapV5ERC20",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "anyswap",
-      "product_line": null,
-      "tvl_usd": 122.85122932407529,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AnyswapV5ERC20",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xb44a9b6905af7c801311e8f4e76932ee959c663c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 122.85122932407529,
           "is_audited": false
         }
       ],
@@ -974,8 +331,8 @@
       "address": "0xa516b9c7378799799e6dfadbdabf45d5b584405f",
       "name": "AeroDexHandler",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "aerodrome",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1005,8 +362,8 @@
       "address": "0x82d973434a509f7fe919a8e03a8113be64cdc245",
       "name": "AeroVaultTokenFactory",
       "role": "registry",
-      "origin_kind": "upstream",
-      "origin_provider": "aerodrome",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1017,64 +374,6 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x82d973434a509f7fe919a8e03a8113be64cdc245",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x80a16016cc4a2e6a2caca8a4a498b1699ff0f844",
-      "name": "AnyswapV6Router",
-      "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "anyswap",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "AnyswapV6Router",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x80a16016cc4a2e6a2caca8a4a498b1699ff0f844",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xa125bcfd2bb91a207fcc54595a19d9cc29a9476c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xdc42728b0ea910349ed3c6e1c9dc06b5fb591f98",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xf480f38c366daac4305dc484b2ad7a496ff00cea",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1314,7 +613,7 @@
       "address": "0x15ff312a9930a6499e4d747773a098b013e05a66",
       "name": "CDeployer",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1565,7 +864,7 @@
       "address": "0x1967c70031e8b562a2738d22e95a049bebfe5883",
       "name": "Factory",
       "role": "registry",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1780,37 +1079,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x1f3ba804efb9cfe17d595e7262cea4782dbf6e4e",
-      "name": "HappyPuppyClub",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "happy-puppy-club",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "HappyPuppyClub",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x1f3ba804efb9cfe17d595e7262cea4782dbf6e4e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x36df0a76a124d8b2205fa11766ec2eff8ce38a35",
@@ -1859,77 +1127,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x54950cae3d8513ea041066f31697903de5909f57",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0xfbdd194376de19a88118e84e279b977f165d01b8",
-      "name": "Multicall2",
-      "role": "periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "multicall",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Multicall2",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xfbdd194376de19a88118e84e279b977f165d01b8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x750bfe8490175c2a9a9387b19aa2aae2d75db638",
-      "name": "MultichainVerseExplore",
-      "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x94977c9888f3d2fafae290d33fab4a5a598ad764",
-      "impl_name": "MultichainVerseExplore",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x750bfe8490175c2a9a9387b19aa2aae2d75db638",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x94977c9888f3d2fafae290d33fab4a5a598ad764",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2427,8 +1624,8 @@
       "address": "0x21d1ed29bcd89e1e07058575ee48ddaf02418cd3",
       "name": "SolidLizardVaultTokenFactory",
       "role": "registry",
-      "origin_kind": "upstream",
-      "origin_provider": "solid-lizard",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -2685,8 +1882,8 @@
       "address": "0x255f549ae4fddaf22b2d75fc8344c1352a28233d",
       "name": "SterlingVaultTokenFactory",
       "role": "registry",
-      "origin_kind": "upstream",
-      "origin_provider": "sterling-finance",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -2747,7 +1944,7 @@
       "address": "0x1753f90acc5ff758eb621f935ef0f99254289fb1",
       "name": "SupplyVaultStrategyV4",
       "role": "core_logic",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3326,7 +2523,7 @@
       "address": "0x2217aec3440e8fd6d49a118b1502e539f88dba55",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3357,7 +2554,7 @@
       "address": "0x232e84eaa8938676289d9ee651e80ed369609a66",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3388,7 +2585,7 @@
       "address": "0x3b47f0e57a6c537ecc198833728ccd5d02e29771",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3605,7 +2802,7 @@
       "address": "0x6e4c88ca7b80dd8fcd629eb720c3ea33ecc08d9d",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3636,7 +2833,7 @@
       "address": "0x76d553faa56e1d9d09927bfc23fbf3d4a4d0cd01",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3667,7 +2864,7 @@
       "address": "0x7c00dac770e0644ab16d85670215c1d96ba155e9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3698,7 +2895,7 @@
       "address": "0x82b3413d575aa93806308a04b53c78ae2037da11",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3726,41 +2923,10 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0x84ec1592eba02db09de04774ef79a1a1e328bce0",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x84ec1592eba02db09de04774ef79a1a1e328bce0",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
       "address": "0x875f4ed8cb5f30c87c708d04d4fb9dc560738bb6",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3791,7 +2957,7 @@
       "address": "0x8a5226cc1ed9645bb2f90a9ef4cf889fe8e97615",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3822,7 +2988,7 @@
       "address": "0x8df7da49a0344fe656b7f34b5767e6eadb568ad7",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3881,68 +3047,6 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0xa384bc7cdc0a93e686da9e7b8c0807cd040f4e0b",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xa384bc7cdc0a93e686da9e7b8c0807cd040f4e0b",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0xab41861399eb56896b24fbaabaa8bce45e4a626b",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xab41861399eb56896b24fbaabaa8bce45e4a626b",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
       "address": "0xc20099a3f0728634c1136489074508be7b406d3a",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -3974,72 +3078,10 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0xcceaed1f682ef03dd35708e1cbaddd725f8df8a9",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xcceaed1f682ef03dd35708e1cbaddd725f8df8a9",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0xd96ddb35c6268cb3085003248853c39f3bfffb4b",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xd96ddb35c6268cb3085003248853c39f3bfffb4b",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
       "address": "0xe0374614ca02012963f22807d374a39c49dea803",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4067,41 +3109,10 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0xebf1f92d4384118bfb91b4496660a95931c92861",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xebf1f92d4384118bfb91b4496660a95931c92861",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
       "address": "0xfe9cc1de5011a14ae61368f59c9daa8d27f49fa9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4132,7 +3143,7 @@
       "address": "0x2973c9d7b6d1ce2aa9abbde9670a5f431e58d21c",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4163,7 +3174,7 @@
       "address": "0x2e4c7bf66d0484e44fea0ec273b85a00af92b2e3",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4194,7 +3205,7 @@
       "address": "0xda0428e5081b2672f2fdd95134f4f3bbd0267a0e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4597,7 +3608,7 @@
       "address": "0x3303a565741d0d41d026c12259ff2d4772d3622e",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Distribution Claims",
       "tvl_usd": null,
@@ -4907,7 +3918,7 @@
       "address": "0x4c093134657904a7c3f1e47a6d9a38955094ebef",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Distribution Claims",
       "tvl_usd": null,
@@ -5124,7 +4135,7 @@
       "address": "0x6caa3e5feba1f83ec1d80ea2eaca37c3421c33a8",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Tokens",
       "tvl_usd": null,
@@ -5155,7 +4166,7 @@
       "address": "0x74d1d2a851e339b8cb953716445be7e8abdf92f4",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Tokens",
       "tvl_usd": null,
@@ -5248,7 +4259,7 @@
       "address": "0x80fe671e580cd1d95b2dcd8ea09233df06c81c7b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Tokens",
       "tvl_usd": null,
@@ -5465,7 +4476,7 @@
       "address": "0xbf76f858b42bb9b196a87e43235c2f0058cf7322",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "upstream",
       "origin_provider": null,
       "product_line": "Contracts",
       "tvl_usd": null,
@@ -5527,7 +4538,7 @@
       "address": "0xc5e2b037d30a390e62180970b3aa4e91868764cd",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": "Tokens",
       "tvl_usd": null,
@@ -5620,7 +4631,7 @@
       "address": "0xd4fcd1d1252bf4a3134e0e848479ad90a60979ef",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Distribution Claims",
       "tvl_usd": null,
@@ -5713,7 +4724,7 @@
       "address": "0xe1fe8b5c3f5b592613305fc6ff551c67cbe40e17",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Distribution Claims",
       "tvl_usd": null,
@@ -5837,7 +4848,7 @@
       "address": "0xf6d943c8904195d0f69ba03d97c0baf5bbdcd01b",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "upstream",
       "origin_provider": null,
       "product_line": "Contracts",
       "tvl_usd": null,
@@ -6023,7 +5034,7 @@
       "address": "0x3b47f0e57a6c537ecc198833728ccd5d02e29771",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -6452,68 +5463,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x650af55d5877f289837c30b94af91538a7504b76",
-      "name": "ValueRouter",
-      "role": "adapter",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x32710814cf055366e98093e969f078c4d864971c",
-      "impl_name": "ValueRouter",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x650af55d5877f289837c30b94af91538a7504b76",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x546d10c1378febef063b72ae4865496ad801c386",
-      "name": "ValueRouterImpl",
-      "role": "adapter",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x1466ae8fe7a814e5b2db0248579cfbdd40b15dfc",
-      "impl_name": "ValueRouterImpl",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x546d10c1378febef063b72ae4865496ad801c386",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xfb3017116a516898af427bdfe3aeb130f2c898e7",
@@ -6791,6 +5740,16 @@
       "risk_note": "Verified native implementation with $34.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x82d973434a509f7fe919a8e03a8113be64cdc245",
+      "name": "AeroVaultTokenFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x1d90fdac4dd30c3ba38d53f52a884f6e75d0989e",
@@ -6803,9 +5762,29 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
+      "address": "0x15ff312a9930a6499e4d747773a098b013e05a66",
+      "name": "CDeployer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
       "address": "0xa782b2a4fb8b329f257e58122cda55310d7e6e1d",
       "name": "ClaimAggregator",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1967c70031e8b562a2738d22e95a049bebfe5883",
+      "name": "Factory",
+      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -6871,6 +5850,16 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x21d1ed29bcd89e1e07058575ee48ddaf02418cd3",
+      "name": "SolidLizardVaultTokenFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 43114,
       "chain_name": "avalanche",
       "address": "0x4b6dae049a35196a773028b2e835cccce9dd4723",
@@ -6891,11 +5880,11 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x539fcd9adbe7473768beb87bed88988b532b36c9",
-      "name": "SupplyVaultRouter01",
-      "role": "adapter",
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x255f549ae4fddaf22b2d75fc8344c1352a28233d",
+      "name": "SterlingVaultTokenFactory",
+      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -6903,9 +5892,9 @@
     {
       "chain_id": 10,
       "chain_name": "optimism",
-      "address": "0x1753f90acc5ff758eb621f935ef0f99254289fb1",
-      "name": "SupplyVaultStrategyV4",
-      "role": "core_logic",
+      "address": "0x539fcd9adbe7473768beb87bed88988b532b36c9",
+      "name": "SupplyVaultRouter01",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -7042,10 +6031,10 @@
     }
   ],
   "origin_summary": {
-    "native": 70,
-    "upstream": 7,
-    "standard_library": 2,
-    "needs_review": 73
+    "native": 90,
+    "upstream": 3,
+    "standard_library": 0,
+    "needs_review": 46
   },
   "scope_matching_notes": {
     "match_method_counts": {},

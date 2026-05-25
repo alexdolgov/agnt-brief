@@ -1,0 +1,18 @@
+{
+  "address": "0x02e666f32979c973a0978d04a1c8fe33a35f25b6",
+  "chain_id": 42161,
+  "contract_name": "ArbVester",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T16:32:28.805Z"
+}

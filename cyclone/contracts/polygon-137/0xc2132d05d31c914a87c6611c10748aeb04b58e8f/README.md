@@ -5,7 +5,7 @@
 | Chain | polygon (137) |
 | Address | `0xc2132d05d31c914a87c6611c10748aeb04b58e8f` |
 | Role | token |
-| Origin | needs_review |
+| Origin | upstream |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (polygon [`0xc2132d05d31c914a87c6611c10748aeb04b58e8f`](../0xc2132d05d31c914a87c6611c10748aeb04b58e8f/)) |

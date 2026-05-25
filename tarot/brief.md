@@ -7,13 +7,13 @@
 - Project: Tarot (`tarot`)
 - Website: [https://www.tarot.to](https://www.tarot.to)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-25T05:23:21.157Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-25T16:17:29.811Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: arbitrum, avalanche, base, bsc, canto, ethereum, fantom, kava, linea, optimism, polygon, scroll
-- Contract surface: 152 unique implementations (368 raw deployments)
+- Contract surface: 139 unique implementations (283 raw deployments)
 - DeFi Llama TVL: $1,144,454.49
-- On-chain TVL (included contracts): $22,861,962.67
-- TVL by chain: Optimism $22,861,962.67
+- On-chain TVL (included contracts): $154,441.77
+- TVL by chain: Optimism $154,441.77
 
 ## Project Description
 
@@ -25,19 +25,19 @@ Lending pools and leveraged yield vaults share the same factory and router infra
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/48 (0.0%)
-- Verified + Unaudited implementations: 48
+- Verified implementations audited: 0/41 (0.0%)
+- Verified + Unaudited implementations: 41
 - Verified by bytecode match: 0
-- Unverified implementations: 104
-- Unique implementations: 152
-- Raw deployments: 368
+- Unverified implementations: 98
+- Unique implementations: 139
+- Raw deployments: 283
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $22,861,962.67
+- ASD (verified + unaudited TVL): $154,441.77
 - Latest audit: 2022-08 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $22,861,962.67 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [dead]. ASD of $154,441.77 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -49,26 +49,21 @@ Lending pools and leveraged yield vaults share the same factory and router infra
 
 - None
 
-### ⚠️ Verified + Unaudited (48)
+### ⚠️ Verified + Unaudited (41)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| AnyswapV6ERC20 | token | optimism | 69 deployments: optimism [`0x05e481...dba463`](./contracts/optimism-10/0x05e481b19129b560e921e487adb281e70bdba463/); optimism `0x0b3225...a820eb`; optimism `0x130966...b8c18d`; optimism `0x165dbb...bd60d7`; optimism `0x173fd7...35fd14`; optimism `0x1ccca1...6eecb4`; optimism `0x22648c...154ebc`; optimism `0x2823d1...b7f181`; optimism `0x2a9ad4...1c9e91`; optimism `0x338726...66c96d`; optimism `0x340fe1...7b717a`; optimism `0x375488...e736bf`; optimism `0x39fde5...f51205`; optimism `0x3bd2df...726cee`; optimism `0x3d4e19...406ae3`; optimism `0x3d51a9...9a56ff`; optimism `0x451823...583263`; optimism `0x461d52...c94eb5`; optimism `0x47536f...6ec468`; optimism `0x4e720d...6f4642`; optimism `0x4f3aff...be192f`; optimism `0x5d47ba...01023c`; optimism `0x5fcb9d...f97b26`; optimism `0x65e66a...84d97a`; optimism `0x6633c0...5fec18`; optimism `0x667fd8...ac991c`; optimism `0x6b2678...1679ea`; optimism `0x6b7a87...e71522`; optimism `0x739ca6...8abc4b`; optimism `0x76a3d9...ebf528`; optimism `0x7ae970...a056b7`; optimism `0x7f8bc6...f10e57`; optimism `0x82f0b8...6829c1`; optimism `0x855d42...b1968a`; optimism `0x86b3f2...ffd255`; optimism `0x8e6800...c54fb5`; optimism `0x922d64...d112e1`; optimism `0x965f84...d945f4`; optimism `0x97513e...b163c5`; optimism `0x99c409...f0baae`; optimism `0x9d3e36...44bd8c`; optimism `0x9fda7c...0f94d0`; optimism `0xa64932...8ce23f`; optimism `0xaab168...8a5a77`; optimism `0xabd380...0be488`; optimism `0xb0ae10...7855fd`; optimism `0xb12c13...091358`; optimism `0xb153fb...c57901`; optimism `0xb2c22a...a526c7`; optimism `0xb72842...c6322e`; optimism `0xbfc044...83a7cd`; optimism `0xc1be9a...4602c4`; optimism `0xc46fed...a9b255`; optimism `0xcaf870...5e4195`; optimism `0xce1bff...2f7814`; optimism `0xd1a891...65db21`; optimism `0xd1c596...b1b5f3`; optimism `0xd22a58...34b68b`; optimism `0xd65277...222b48`; optimism `0xe069af...63e591`; optimism `0xe0ce60...2a1109`; optimism `0xe3ab61...16c109`; optimism `0xe56979...e2a5ef`; optimism `0xe6bf0e...675135`; optimism `0xe6cdd3...9f0434`; optimism `0xefaeee...d40d73`; optimism `0xf1b798...463660`; optimism `0xf2b3e3...417c84`; optimism `0xf39083...5dcbc2` | ⚠️ Unaudited |
+| AnyswapV6ERC20 | token | optimism | [`0x375488...e736bf`](./contracts/optimism-10/0x375488f097176507e39b9653b88fdc52cde736bf/) | ⚠️ Unaudited |
 | SupplyVaultV2 | core_logic | optimism | 4 deployments: optimism [`0x4ac8af...8de471`](./contracts/optimism-10/0x4ac8af23f3ef7ededb3dc45c091406aeee8de471/); optimism `0x550d17...a0465d`; optimism `0x811c27...cdd744`; optimism `0x8d3474...cd03f8` | ⚠️ Unaudited |
-| AnyswapV5ERC20 | token | optimism | [`0xb44a9b...9c663c`](./contracts/optimism-10/0xb44a9b6905af7c801311e8f4e76932ee959c663c/) | ⚠️ Unaudited |
 | FarmingPool | core_logic | optimism | 14 deployments: optimism [`0x01d7e3...bf661c`](./contracts/optimism-10/0x01d7e3bd5d8ea31cd1cee653576f185abdbf661c/); optimism `0x21ee3e...bfcbb8`; optimism `0x378304...0da606`; optimism `0x3c9de6...644865`; optimism `0x4d791a...134a1d`; optimism `0x5751c0...56ea74`; optimism `0x5afbef...59791b`; optimism `0x7c91f5...699d62`; optimism `0x8dbde8...22cc2c`; optimism `0x93dd5d...ae86a4`; optimism `0xc319a1...c7ace2`; optimism `0xd64a1f...cb718d`; optimism `0xd883b9...8f1742`; optimism `0xf465ef...6b9bd7` | ⚠️ Unaudited |
 | AeroDexHandler | unknown | base | [`0xa516b9...84405f`](./contracts/base-8453/0xa516b9c7378799799e6dfadbdabf45d5b584405f/) | ⚠️ Unaudited |
 | AeroVaultTokenFactory | registry | base | [`0x82d973...cdc245`](./contracts/base-8453/0x82d973434a509f7fe919a8e03a8113be64cdc245/) | ⚠️ Unaudited |
-| AnyswapV6Router | adapter | optimism | 4 deployments: optimism [`0x80a160...f0f844`](./contracts/optimism-10/0x80a16016cc4a2e6a2caca8a4a498b1699ff0f844/); optimism `0xa125bc...a9476c`; optimism `0xdc4272...591f98`; optimism `0xf480f3...f00cea` | ⚠️ Unaudited |
 | BDeployer | unknown | polygon | 22 deployments: ethereum `0x82b341...37da11`; ethereum `0xb092e1...e36ac2`; optimism `0x304069...55dd24`; optimism `0x3cba82...277a7d`; optimism `0x54b006...7d5420`; optimism `0x952e9c...30335a`; optimism `0xbdb7c9...579252`; optimism `0xcaefa7...2bbc57`; optimism `0xe092a4...2894aa`; optimism `0xecbca7...afdac3`; bsc `0x35c052...3432ea`; bsc `0x6108fe...121834`; polygon [`0x1d90fd...d0989e`](./contracts/polygon-137/0x1d90fdac4dd30c3ba38d53f52a884f6e75d0989e/); base `0x5a8931...933e17`; arbitrum `0x35c052...3432ea`; arbitrum `0x455a76...ab8959`; arbitrum `0x6108fe...121834`; arbitrum `0xb092e1...e36ac2`; arbitrum `0xc5a397...51382a`; arbitrum `0xe1ac0c...c9d452`; avalanche [`0x1d90fd...d0989e`](./contracts/avalanche-43114/0x1d90fdac4dd30c3ba38d53f52a884f6e75d0989e/); linea `0x36df0a...e38a35` | ⚠️ Unaudited |
 | CDeployer | unknown | optimism | 22 deployments: ethereum `0xb3f352...0b6252`; ethereum `0xc20099...406d3a`; optimism [`0x15ff31...e05a66`](./contracts/optimism-10/0x15ff312a9930a6499e4d747773a098b013e05a66/); optimism `0x17abab...0a147b`; optimism `0x2ddb64...eec67e`; optimism `0x3e6c79...509c12`; optimism `0x5658dc...6fea48`; optimism `0x5f90e2...e46401`; optimism `0xeb5809...dfc12d`; optimism `0xf32db3...81a2b0`; bsc `0x82b341...37da11`; bsc `0xb6193d...bd1bf2`; polygon `0xd4a6a0...e01741`; base `0x952e9c...30335a`; arbitrum `0x6b8095...7c7227`; arbitrum `0x82b341...37da11`; arbitrum `0x82d973...cdc245`; arbitrum `0xb3f352...0b6252`; arbitrum `0xb6193d...bd1bf2`; arbitrum `0xee618c...6c64bd`; avalanche `0xd4a6a0...e01741`; linea `0x6108fe...121834` | ⚠️ Unaudited |
 | ClaimAggregator | unknown | optimism | [`0xa782b2...7e6e1d`](./contracts/optimism-10/0xa782b2a4fb8b329f257e58122cda55310d7e6e1d/) | ⚠️ Unaudited |
 | Factory | registry | arbitrum | 22 deployments: ethereum `0x1cafcb...54b653`; ethereum `0x4b6dae...dd4723`; optimism `0x1d90fd...d0989e`; optimism `0x49df1f...db62bf`; optimism `0x8b2e28...9f0723`; optimism `0x9d1a28...7cb88f`; optimism `0xba4731...e4da04`; optimism `0xd7cabe...5fc83c`; optimism `0xd7cb84...4fc5a4`; bsc `0x2217ae...8dba55`; bsc `0xc20099...406d3a`; polygon `0x36df0a...e38a35`; base `0xeb5809...dfc12d`; arbitrum [`0x1967c7...fe5883`](./contracts/arbitrum-42161/0x1967c70031e8b562a2738d22e95a049bebfe5883/); arbitrum `0x1bbd56...553f80`; arbitrum `0x2217ae...8dba55`; arbitrum `0x4b6dae...dd4723`; arbitrum `0x8cec72...2fe526`; arbitrum `0xc20099...406d3a`; avalanche `0x36df0a...e38a35`; linea `0xb6193d...bd1bf2`; scroll `0x2217ae...8dba55` | ⚠️ Unaudited |
-| HappyPuppyClub | unknown | base | [`0x1f3ba8...bf6e4e`](./contracts/base-8453/0x1f3ba804efb9cfe17d595e7262cea4782dbf6e4e/) | ⚠️ Unaudited |
 | MonolithRewardTokenHelper | token | ethereum | [`0x36df0a...e38a35`](./contracts/ethereum-1/0x36df0a76a124d8b2205fa11766ec2eff8ce38a35/) | ⚠️ Unaudited |
 | MonolithVaultTokenFactory | registry | ethereum | [`0x54950c...909f57`](./contracts/ethereum-1/0x54950cae3d8513ea041066f31697903de5909f57/) | ⚠️ Unaudited |
-| Multicall2 | periphery | optimism | [`0xfbdd19...5d01b8`](./contracts/optimism-10/0xfbdd194376de19a88118e84e279b977f165d01b8/) | ⚠️ Unaudited |
-| MultichainVerseExplore | unknown | optimism | 2 deployments: optimism [`0x750bfe...5db638`](./contracts/optimism-10/0x750bfe8490175c2a9a9387b19aa2aae2d75db638/); optimism `0x94977c...8ad764` | ⚠️ Unaudited |
 | OptiSwap | unknown | optimism | 8 deployments: ethereum `0xf54425...952691`; optimism [`0x6108fe...121834`](./contracts/optimism-10/0x6108feaa628155b073150f408d0b390ec3121834/); bsc `0xf54425...952691`; polygon `0x981bd9...c29af5`; base `0xf6e008...b7d697`; arbitrum `0x981bd9...c29af5`; avalanche `0x981bd9...c29af5`; linea `0x981bd9...c29af5` | ⚠️ Unaudited |
 | OwnedDistributor | operational_periphery | optimism | [`0xadad28...84af55`](./contracts/optimism-10/0xadad288bd35434d37f79e2050a7776891384af55/) | ⚠️ Unaudited |
 | RamsesVaultTokenFactory | registry | linea | 2 deployments: arbitrum `0x6eb099...084e24`; linea [`0x35c052...3432ea`](./contracts/linea-59144/0x35c052bbf8338b06351782a565aa9aad173432ea/) | ⚠️ Unaudited |
@@ -93,8 +88,6 @@ Lending pools and leveraged yield vaults share the same factory and router infra
 | ThenaV2VaultTokenFactory | registry | bsc | [`0x7c00da...a155e9`](./contracts/bsc-56/0x7c00dac770e0644ab16d85670215c1d96ba155e9/) | ⚠️ Unaudited |
 | TowerLongPoolFactory | registry | optimism | [`0x8d92b5...c2ff05`](./contracts/optimism-10/0x8d92b5f12c1beba3583861e9c3067d088bc2ff05/) | ⚠️ Unaudited |
 | TowerPoolFactory | registry | arbitrum | 4 deployments: optimism `0x8f5301...7dfe50`; base `0xb0d74d...f57bee`; arbitrum [`0x27eef1...ca1b14`](./contracts/arbitrum-42161/0x27eef135dbc00e5c3cdf5658d690d4c05dca1b14/); linea `0x46fcde...301f30` | ⚠️ Unaudited |
-| ValueRouter | adapter | optimism | [`0x650af5...504b76`](./contracts/optimism-10/0x650af55d5877f289837c30b94af91538a7504b76/) | ⚠️ Unaudited |
-| ValueRouterImpl | adapter | optimism | [`0x546d10...01c386`](./contracts/optimism-10/0x546d10c1378febef063b72ae4865496ad801c386/) | ⚠️ Unaudited |
 | VaultTokenFactoryV2 | registry | arbitrum | [`0xfb3017...c898e7`](./contracts/arbitrum-42161/0xfb3017116a516898af427bdfe3aeb130f2c898e7/) | ⚠️ Unaudited |
 | VeloStableVaultTokenFactory | registry | bsc | 4 deployments: optimism `0x66e9b3...9f4859`; optimism `0x987ef1...e089bf`; optimism `0xee1ecc...96cf70`; bsc [`0x54950c...909f57`](./contracts/bsc-56/0x54950cae3d8513ea041066f31697903de5909f57/) | ⚠️ Unaudited |
 | VeloV2VaultTokenFactory | registry | optimism | [`0xbcb9da...bc89c5`](./contracts/optimism-10/0xbcb9da603a0a53272b61cb84ac0163ec8abc89c5/) | ⚠️ Unaudited |
@@ -114,7 +107,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (104)
+### ❓ Unverified (98)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -136,18 +129,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | optimism | `0x76d553...d0cd01` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x7c00da...a155e9` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x82b341...37da11` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0x84ec15...28bce0` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x875f4e...738bb6` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x8a5226...e97615` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x8df7da...568ad7` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0x9ec30a...516863` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xa384bc...0f4e0b` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xab4186...4a626b` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0xc20099...406d3a` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xcceaed...8df8a9` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xd96ddb...fffb4b` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0xe03746...dea803` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | `0xebf1f9...c92861` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | `0xfe9cc1...f49fa9` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0x2973c9...58d21c` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0x2e4c7b...92b2e3` | ❓ Unverified |
@@ -239,18 +226,22 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | optimism | [`0x4ac8af...8de471`](./contracts/optimism-10/0x4ac8af23f3ef7ededb3dc45c091406aeee8de471/) | SupplyVaultV2 | core_logic | $16,499.94 | Verified native implementation with $16,499.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x01d7e3...bf661c`](./contracts/optimism-10/0x01d7e3bd5d8ea31cd1cee653576f185abdbf661c/) | FarmingPool | core_logic | $34.12 | Verified native implementation with $34.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x82d973...cdc245`](./contracts/base-8453/0x82d973434a509f7fe919a8e03a8113be64cdc245/) | AeroVaultTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x1d90fd...d0989e`](./contracts/polygon-137/0x1d90fdac4dd30c3ba38d53f52a884f6e75d0989e/) | BDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x15ff31...e05a66`](./contracts/optimism-10/0x15ff312a9930a6499e4d747773a098b013e05a66/) | CDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0xa782b2...7e6e1d`](./contracts/optimism-10/0xa782b2a4fb8b329f257e58122cda55310d7e6e1d/) | ClaimAggregator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x1967c7...fe5883`](./contracts/arbitrum-42161/0x1967c70031e8b562a2738d22e95a049bebfe5883/) | Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x6108fe...121834`](./contracts/optimism-10/0x6108feaa628155b073150f408d0b390ec3121834/) | OptiSwap | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0xadad28...84af55`](./contracts/optimism-10/0xadad288bd35434d37f79e2050a7776891384af55/) | OwnedDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0x35c052...3432ea`](./contracts/linea-59144/0x35c052bbf8338b06351782a565aa9aad173432ea/) | RamsesVaultTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x002235...1d07b4`](./contracts/arbitrum-42161/0x0022358ebfd5261c325f8160c7c17bc8671d07b4/) | Router02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x82b341...37da11`](./contracts/polygon-137/0x82b3413d575aa93806308a04b53c78ae2037da11/) | SatinVaultTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x4775aa...ae3bb3`](./contracts/arbitrum-42161/0x4775aa12c9e0bb95f3b35139a4f22a886eae3bb3/) | SolidLizardStableVaultTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x21d1ed...418cd3`](./contracts/arbitrum-42161/0x21d1ed29bcd89e1e07058575ee48ddaf02418cd3/) | SolidLizardVaultTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x4b6dae...dd4723`](./contracts/avalanche-43114/0x4b6dae049a35196a773028b2e835cccce9dd4723/) | SoliSnekVaultTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x416ae1...4830c9`](./contracts/arbitrum-42161/0x416ae142dbbe08531be93a83b13d93837a4830c9/) | SterlingStableVaultTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x255f54...28233d`](./contracts/arbitrum-42161/0x255f549ae4fddaf22b2d75fc8344c1352a28233d/) | SterlingVaultTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x539fcd...2b36c9`](./contracts/optimism-10/0x539fcd9adbe7473768beb87bed88988b532b36c9/) | SupplyVaultRouter01 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x1753f9...289fb1`](./contracts/optimism-10/0x1753f90acc5ff758eb621f935ef0f99254289fb1/) | SupplyVaultStrategyV4 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x07b414...604602`](./contracts/arbitrum-42161/0x07b414ad4e9b0866a30a05c6bc38fa48f7604602/) | TarotMigrator | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x13278c...deebf7`](./contracts/arbitrum-42161/0x13278cd824d33a7adb9f0a9a84aca7c0d2deebf7/) | TarotOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x981bd9...c29af5`](./contracts/optimism-10/0x981bd9f77c8aafc14ebc86769503f86a3cc29af5/) | TarotPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -269,10 +260,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 70 |
-| upstream | 7 |
-| standard_library | 2 |
-| needs_review | 73 |
+| native | 90 |
+| upstream | 3 |
+| standard_library | 0 |
+| needs_review | 46 |
 
 ## Scope Matching Notes
 

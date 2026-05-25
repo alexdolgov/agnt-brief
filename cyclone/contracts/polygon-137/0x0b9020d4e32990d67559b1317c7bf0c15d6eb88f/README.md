@@ -5,7 +5,7 @@
 | Chain | polygon (137) |
 | Address | `0x0b9020d4e32990d67559b1317c7bf0c15d6eb88f` |
 | Role | token |
-| Origin | needs_review |
+| Origin | upstream |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 16 (polygon [`0x0b9020d4e32990d67559b1317c7bf0c15d6eb88f`](../0x0b9020d4e32990d67559b1317c7bf0c15d6eb88f/); polygon `0x46ca157573005281774be9be9a4187cce4ec1871`; polygon `0x4a8766156f3614731614bb4573a3bd245de1f2b9`; polygon `0x4e5612d10ccbe6a029b8e5258f1a191eea1f6db6`; polygon `0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39`; polygon `0x556f501cf8a43216df5bc9cc57eb04d4ffaa9e6d`; polygon `0x578360adf0bbb2f10ec9cec7ef89ef495511ed5f`; polygon `0x5fab5764f263c5ce93424f8c45e46a742cc5c8d6`; polygon `0x6bfb5bfa7753ba1ce0f60017a16d8dd67aa19243`; polygon `0x71b821aa52a49f32eed535fca6eb5aa130085978`; polygon `0x8484ef722627bf18ca5ae6bcf031c23e6e922b30`; polygon `0xadc0c4a3d39bb1107bfe86099dd855360e69ea73`; polygon `0xb6a508b418d49080ce4ae4f140e585a0f95c1326`; polygon `0xca34415601f4f050d77bfe939ba68c96e228a223`; polygon `0xeffdcb49c2d0ef813764b709ca3c6fe71f230e3e`; polygon `0xf2f3bd7ca5746c5fac518f67d1be87805a2be82a`) |

@@ -7,10 +7,10 @@
 - Project: EverRise (`everrise`)
 - Website: [https://www.everrise.com](https://www.everrise.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T21:38:09.662Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-25T16:22:20.286Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: avalanche, bsc, ethereum, fantom, polygon
-- Contract surface: 258 unique implementations (566 raw deployments)
+- Contract surface: 239 unique implementations (505 raw deployments)
 - DeFi Llama TVL: $1,504,465.48
 - On-chain TVL (included contracts): $23,379,153.27
 - TVL by chain: Avalanche $21,534,575.07 | Bsc $1,844,578.20
@@ -25,12 +25,12 @@ The EverRise family provides foundational bridging and liquidity infrastructure,
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/111 (0.0%)
-- Verified + Unaudited implementations: 108
+- Verified implementations audited: 0/105 (0.0%)
+- Verified + Unaudited implementations: 102
 - Verified by bytecode match: 3
-- Unverified implementations: 147
-- Unique implementations: 258
-- Raw deployments: 566
+- Unverified implementations: 134
+- Unique implementations: 239
+- Raw deployments: 505
 - Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $23,379,153.27
@@ -49,7 +49,7 @@ The EverRise family provides foundational bridging and liquidity infrastructure,
 
 - None
 
-### ⚠️ Verified + Unaudited (108)
+### ⚠️ Verified + Unaudited (102)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -81,7 +81,6 @@ The EverRise family provides foundational bridging and liquidity infrastructure,
 | DiamondQ | unknown | bsc | [`0xbd573d...4d24e3`](./contracts/bsc-56/0xbd573ddc3ab93d7984012b897821f6c09f4d24e3/) | ⚠️ Unaudited |
 | DittoInu | unknown | bsc | [`0x02e81c...d6ab5b`](./contracts/bsc-56/0x02e81cc68c8528b380dc722b98c02ee642d6ab5b/) | ⚠️ Unaudited |
 | DogeBoy | unknown | bsc | [`0x6c91e8...e5d9bd`](./contracts/bsc-56/0x6c91e837c071a8acb6988da8e39f9f6759e5d9bd/) | ⚠️ Unaudited |
-| DragonLair | unknown | polygon | 2 deployments: polygon [`0xf28164...8a16b1`](./contracts/polygon-137/0xf28164a485b0b2c90639e47b0f377b4a438a16b1/); polygon `0xf3e851...953d22` | ⚠️ Unaudited |
 | EFT | unknown | bsc | [`0xb72962...b187e6`](./contracts/bsc-56/0xb72962568345253f71a18318d67e13a282b187e6/) | ⚠️ Unaudited |
 | ERC20Mock | token | avalanche | 2 deployments: avalanche [`0x72281a...106587`](./contracts/avalanche-43114/0x72281a435fe5a9945e04ef4d0a32771430106587/); avalanche `0x9e6cab...c05b09` | ⚠️ Unaudited |
 | EverOwn | unknown | ethereum | 2 deployments: ethereum [`0x78ab99...d3a69d`](./contracts/ethereum-1/0x78ab99dae7302ea91e36962f4b23418a89d3a69d/); polygon `0x7dd45e...62fdef` | ⚠️ Unaudited |
@@ -132,8 +131,6 @@ The EverRise family provides foundational bridging and liquidity infrastructure,
 | PigToken | token | ethereum | [`0x92446b...fe820e`](./contracts/ethereum-1/0x92446b00281dc85185053fe4d7e5062f65fe820e/) | ⚠️ Unaudited |
 | PriceOracleProxyUSD | operational_periphery | avalanche | 4 deployments: avalanche [`0x107b31...b8555a`](./contracts/avalanche-43114/0x107b31d84bf6cec672f3af924471bb6f4fb8555a/); avalanche `0x99f873...ec2bd3`; avalanche `0xd7ae65...10bc2e`; avalanche `0xe34309...114482` | ⚠️ Unaudited |
 | ProxyAdmin | governance | avalanche | [`0x1035b0...c3d784`](./contracts/avalanche-43114/0x1035b0c31d92d5a8cd9efcc9ed240aaa64c3d784/) | ⚠️ Unaudited |
-| Quick | unknown | polygon | [`0x831753...33dc13`](./contracts/polygon-137/0x831753dd7087cac61ab5644b308642cc1c33dc13/) | ⚠️ Unaudited |
-| QuickConverter | unknown | polygon | 3 deployments: polygon [`0x38e8d7...5239ea`](./contracts/polygon-137/0x38e8d77f4b651fb989c8b5ad274346dd5b5239ea/); polygon `0x66f312...6990e9`; polygon `0x8e396f...f5e758` | ⚠️ Unaudited |
 | ramx | unknown | bsc | [`0x48f8aa...a4986b`](./contracts/bsc-56/0x48f8aabe54397f24b7eae3f0da39f1e2a2a4986b/) | ⚠️ Unaudited |
 | RewardDistributor | operational_periphery | avalanche | 4 deployments: avalanche [`0x227449...a14885`](./contracts/avalanche-43114/0x2274491950b2d6d79b7e69b683b482282ba14885/); avalanche `0x45b2c4...420324`; avalanche `0x7dcdb8...ec03b6`; avalanche `0xe72438...4d3f99` | ⚠️ Unaudited |
 | SharkGirl | unknown | bsc | [`0x2f2b08...c4d269`](./contracts/bsc-56/0x2f2b08d78cdec1d610f1356175ff14e0cbc4d269/) | ⚠️ Unaudited |
@@ -145,7 +142,6 @@ The EverRise family provides foundational bridging and liquidity infrastructure,
 | Spooky | unknown | bsc | 6 deployments: bsc [`0x016484...71e011`](./contracts/bsc-56/0x0164845b9ebeefb0888728013f0b727a1671e011/); bsc `0x3f4cdb...16a647`; bsc `0x5c2723...b9ebe4`; bsc `0x612e35...8ddc93`; bsc `0x6c19e8...76ce70`; bsc `0x7818bd...eed948` | ⚠️ Unaudited |
 | SpookyShiba | unknown | bsc | 4 deployments: bsc [`0x68e858...90314c`](./contracts/bsc-56/0x68e85862a4c48cc5697c31e6609d13f86f90314c/); bsc `0xad1bb8...9c597d`; bsc `0xe3a551...7783f7`; bsc `0xed74bc...4334a4` | ⚠️ Unaudited |
 | SpookyShiba_V2 | unknown | bsc | 2 deployments: bsc [`0x7ea299...24ce21`](./contracts/bsc-56/0x7ea29936a330844f307d4e0af9c1b9182424ce21/); bsc `0x9c2b1b...1bf25a` | ⚠️ Unaudited |
-| StakingRewardsFactory | registry | polygon | 30 deployments: polygon [`0x02a2d8...537e1c`](./contracts/polygon-137/0x02a2d80ce5c021a40aec9062a6273bbc33537e1c/); polygon `0x122cfe...94bef6`; polygon `0x17d0a9...331e39`; polygon `0x29d051...17d503`; polygon `0x3b8fed...9a3417`; polygon `0x3d2360...2c83b6`; polygon `0x421267...809e16`; polygon `0x54806f...f35291`; polygon `0x6a0517...43de22`; polygon `0x6a1b56...551548`; polygon `0x729129...32c4ae`; polygon `0x80f130...67eb49`; polygon `0x8a121a...7d990d`; polygon `0x91f16b...c3908e`; polygon `0x9d451d...f11e80`; polygon `0x9f1700...aab86c`; polygon `0xa239ac...2705b4`; polygon `0xa7f8ea...97486b`; polygon `0xacd9d3...440197`; polygon `0xad41f5...edbffe`; polygon `0xbd20fa...102b69`; polygon `0xbd4b6c...1e7e30`; polygon `0xce2944...e3a354`; polygon `0xe592ed...e00d8f`; polygon `0xe8af51...8ea4a6`; polygon `0xe9944f...42df09`; polygon `0xeaff1f...723d8c`; polygon `0xeba917...f64162`; polygon `0xed113a...42efaf`; polygon `0xf48ac6...3acd02` | ⚠️ Unaudited |
 | TokenPresaleBridge | operational_periphery | bsc | [`0x72684b...b2d7cb`](./contracts/bsc-56/0x72684be0d98ef4f725c915622be4eb1d49b2d7cb/) | ⚠️ Unaudited |
 | TokenVesting | operational_periphery | avalanche | 126 deployments: avalanche [`0x0147c0...0ef296`](./contracts/avalanche-43114/0x0147c0212ca4aba29d26dffd3c800893080ef296/); avalanche `0x01b269...2145e3`; avalanche `0x02d632...cab641`; avalanche `0x0473f2...2465a9`; avalanche `0x0584e6...2fd302`; avalanche `0x072c47...6f97f6`; avalanche `0x076917...72cd75`; avalanche `0x089ec7...c22dcc`; avalanche `0x0a3b77...972c0e`; avalanche `0x0a64e8...3b0d7b`; avalanche `0x0cc47a...66a557`; avalanche `0x0f9e96...06e27b`; avalanche `0x0fb72b...faf162`; avalanche `0x0fefca...fb54b0`; avalanche `0x10f672...cb5029`; avalanche `0x123780...dfb337`; avalanche `0x132492...ce10d3`; avalanche `0x14d458...664301`; avalanche `0x14f28f...36e08a`; avalanche `0x156539...0feae4`; avalanche `0x16f419...8ed79e`; avalanche `0x1771ba...dba954`; avalanche `0x1a7727...4c30a9`; avalanche `0x1b2d91...9b440c`; avalanche `0x1fcfde...5501ad`; avalanche `0x23eb41...18f628`; avalanche `0x25dd4a...29d7cc`; avalanche `0x2a834d...086401`; avalanche `0x2aa5ee...75d2da`; avalanche `0x2cd215...1de38b`; avalanche `0x2d92ee...e048eb`; avalanche `0x31ba32...d859ce`; avalanche `0x357211...f67b1c`; avalanche `0x386fbf...122329`; avalanche `0x3c3246...0354ec`; avalanche `0x3c9211...d7b5d9`; avalanche `0x3cb560...eaad04`; avalanche `0x3ccfc1...2f8e24`; avalanche `0x3dca53...a60a63`; avalanche `0x3e6125...01acd1`; avalanche `0x3e9263...ff864d`; avalanche `0x43feff...682414`; avalanche `0x444d68...6890fe`; avalanche `0x45acb6...587d87`; avalanche `0x4d0b73...377313`; avalanche `0x4e931f...112538`; avalanche `0x52d69a...5ea435`; avalanche `0x5410c2...e4c118`; avalanche `0x5caaf1...006e22`; avalanche `0x5d57f6...899c7c`; avalanche `0x5da155...5405ca`; avalanche `0x5f0902...865095`; avalanche `0x5fe9ad...5ec7ec`; avalanche `0x61ecdb...ff90e2`; avalanche `0x627237...7e9f80`; avalanche `0x650967...76f430`; avalanche `0x66b145...f3142d`; avalanche `0x66fa31...7efb63`; avalanche `0x670968...198eec`; avalanche `0x68b28f...264bff`; avalanche `0x6af7e2...eec3a5`; avalanche `0x6baa88...3a4db8`; avalanche `0x6d3431...368edb`; avalanche `0x6ee70b...031ec7`; avalanche `0x703473...b96460`; avalanche `0x70466e...ad27cc`; avalanche `0x70a5e4...be307b`; avalanche `0x70f7d4...5ac7da`; avalanche `0x73cd07...6e9ca0`; avalanche `0x763dc8...e64864`; avalanche `0x76eaa1...f63008`; avalanche `0x770b6e...b264f3`; avalanche `0x7a609a...dc490e`; avalanche `0x7d0a30...311326`; avalanche `0x7e4d8a...31c1d4`; avalanche `0x7e9499...22063f`; avalanche `0x7ef4e0...b975e0`; avalanche `0x7fa453...bcb6fe`; avalanche `0x810998...cbf66d`; avalanche `0x815cbe...a2c9ee`; avalanche `0x81a003...98237e`; avalanche `0x8637eb...08636d`; avalanche `0x868848...43cc3b`; avalanche `0x872f15...f8030f`; avalanche `0x895a53...1c02e7`; avalanche `0x8b58a5...662afc`; avalanche `0x90bbc3...1f6fce`; avalanche `0x927be1...50848b`; avalanche `0x948cf2...566e8f`; avalanche `0x952d82...56d57e`; avalanche `0x96a6b2...c20718`; avalanche `0x971156...997c50`; avalanche `0x99727c...f4e01e`; avalanche `0x9b711b...f3bc5c`; avalanche `0x9c5b9e...0e135d`; avalanche `0x9eb54a...793200`; avalanche `0x9f8c00...b7c983`; avalanche `0x9fcb6b...63fa1c`; avalanche `0xa526c8...419d97`; avalanche `0xafb2aa...c7fe8b`; avalanche `0xb2d98a...191cf1`; avalanche `0xb31a19...0dfec0`; avalanche `0xb3d05b...b8a30e`; avalanche `0xb7b46f...693e26`; avalanche `0xb864ba...3d274e`; avalanche `0xc3e997...2b3429`; avalanche `0xc6001b...669249`; avalanche `0xc698d4...74673c`; avalanche `0xcbaf30...c15965`; avalanche `0xcdac33...30fbeb`; avalanche `0xd60366...fa5360`; avalanche `0xdc0d42...a187a7`; avalanche `0xddf06d...a4fd9d`; avalanche `0xde8cb3...79d652`; avalanche `0xdf1339...ef8fe7`; avalanche `0xdf781b...242aa4`; avalanche `0xe5ba4d...cd298b`; avalanche `0xea347e...d6d0c3`; avalanche `0xec8184...dd7d1a`; avalanche `0xf19c35...ecb452`; avalanche `0xf2eb59...734279`; avalanche `0xfa4329...6abf9b`; avalanche `0xfa4ceb...0a1846`; avalanche `0xfb0586...1a3fe9`; avalanche `0xfc22e8...d56a25`; avalanche `0xfc2f38...747bbb` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | avalanche | 2 deployments: avalanche [`0x2f4391...bb5140`](./contracts/avalanche-43114/0x2f4391579839c5e3bcd6d471ea4aab3de0bb5140/); avalanche `0x592f70...419f37` | ⚠️ Unaudited |
@@ -153,12 +149,10 @@ The EverRise family provides foundational bridging and liquidity infrastructure,
 | UniswapV2Factory | registry | polygon | 2 deployments: ethereum `0x5c69be...c5aa6f`; polygon [`0x575737...d3ab32`](./contracts/polygon-137/0x5757371414417b8c6caad45baef941abc7d3ab32/) | ⚠️ Unaudited |
 | UniswapV2Pair | unknown | ethereum | 2 deployments: ethereum [`0x7250f7...7dc1f9`](./contracts/ethereum-1/0x7250f7e97a4338d2bd72abc4b010d7a8477dc1f9/); polygon `0xf3c62d...c224e2` | ⚠️ Unaudited |
 | Uptrend | unknown | bsc | [`0xc4ed75...552d23`](./contracts/bsc-56/0xc4ed752d658989fe86db8ddad3f6f19271552d23/) | ⚠️ Unaudited |
-| VamToken | token | polygon | 11 deployments: polygon [`0x1512d2...9cfbc8`](./contracts/polygon-137/0x1512d268a94ce119eacbf80139ad7910eb9cfbc8/); polygon `0x1bd1fa...9a7fda`; polygon `0x1c165a...be6eec`; polygon `0x4b44cd...bcab4b`; polygon `0x4e1470...5263ef`; polygon `0x547620...fd33e8`; polygon `0x7732d1...9fdcee`; polygon `0xa3900a...59b542`; polygon `0xbee2bd...5adca5`; polygon `0xd8e8b9...6d20e7`; polygon `0xe6df55...24b291` | ⚠️ Unaudited |
 | VeJoeStaking | unknown | avalanche | 2 deployments: avalanche [`0x4b4e08...7fbc17`](./contracts/avalanche-43114/0x4b4e0888091fb1de74a7e7404b2dc4eb897fbc17/); avalanche `0xdefdbe...e4e933` | ⚠️ Unaudited |
 | veRise | unknown | ethereum | 4 deployments: ethereum [`0xdba7b2...072f1b`](./contracts/ethereum-1/0xdba7b24257fc6e397cb7368b4bc922e944072f1b/); bsc [`0xdba7b2...072f1b`](./contracts/bsc-56/0xdba7b24257fc6e397cb7368b4bc922e944072f1b/); polygon [`0xdba7b2...072f1b`](./contracts/polygon-137/0xdba7b24257fc6e397cb7368b4bc922e944072f1b/); avalanche [`0xdba7b2...072f1b`](./contracts/avalanche-43114/0xdba7b24257fc6e397cb7368b4bc922e944072f1b/) | ⚠️ Unaudited |
 | VOLT | unknown | ethereum | 2 deployments: ethereum [`0x7db5af...6a58ac`](./contracts/ethereum-1/0x7db5af2b9624e1b3b4bb69d6debd9ad1016a58ac/); bsc [`0x7db5af...6a58ac`](./contracts/bsc-56/0x7db5af2b9624e1b3b4bb69d6debd9ad1016a58ac/) | ⚠️ Unaudited |
 | VoltInu | unknown | ethereum | 2 deployments: ethereum [`0x7f792d...799aca`](./contracts/ethereum-1/0x7f792db54b0e580cdc755178443f0430cf799aca/); bsc [`0x7f792d...799aca`](./contracts/bsc-56/0x7f792db54b0e580cdc755178443f0430cf799aca/) | ⚠️ Unaudited |
-| WMATIC | unknown | polygon | [`0x0d500b...df1270`](./contracts/polygon-137/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270/) | ⚠️ Unaudited |
 | Zap | adapter | avalanche | [`0x2c7b8e...d02027`](./contracts/avalanche-43114/0x2c7b8e971c704371772edaf16e0db381a8d02027/) | ⚠️ Unaudited |
 | ZillaPump | unknown | bsc | [`0x129107...e6a9e7`](./contracts/bsc-56/0x1291072002b37410573c5bc856e7c33830e6a9e7/) | ⚠️ Unaudited |
 
@@ -178,7 +172,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 | MTGYFaaS | unknown | bsc | 12 deployments: ethereum `0x207b1a...1d3c39`; ethereum `0x306996...d4aab7`; ethereum `0x5cfc47...3534e1`; ethereum `0x7c20db...c0c51d`; ethereum `0xf99693...89b32a`; bsc [`0x117247...20c94f`](./contracts/bsc-56/0x1172476e8dbb8dfe6ea0bd9d312f85c9da20c94f/); bsc `0x1b4349...cbdba3`; bsc `0x1e0110...a3fda4`; bsc `0x1e07f7...48a878`; bsc `0x30f401...43d35e`; bsc `0xaa0c28...5fe7e7`; bsc `0xac2f4e...426d56` | ⚠️ Unaudited (bytecode match) |
 | MTGYPasswordManager | unknown | bsc | 3 deployments: ethereum `0xc8dd32...6619e2`; bsc [`0x2f74df...86b28f`](./contracts/bsc-56/0x2f74dfc0753d9dd7e67a27ef8789745a8086b28f/); bsc `0xf67f6a...a04524` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (147)
+### ❓ Unverified (134)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -255,19 +249,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | bsc | `0xf7ca44...8199c5` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0xfdac84...28ae89` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | `0xfe1490...82d7d9` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x019901...554481` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x4087f5...4eaea8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x55bee1...a3ef1d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x56c216...4e181e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x5eced2...8c91d6` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x6207a6...af1c8c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0x82831e...3e22a4` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xb28862...2f8bfb` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xc7efb3...a918ca` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xc91572...f6f690` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xe86ba9...d32599` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xf134b2...8c771b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | `0xf6ad3c...59adcd` | ❓ Unverified |
 | UnnamedContract | unknown | fantom | `0x152ee6...e61be3` | ❓ Unverified |
 | UnnamedContract | unknown | fantom | `0x595036...f4d32b` | ❓ Unverified |
 | UnnamedContract | unknown | fantom | `0xde62a6...299383` | ❓ Unverified |
@@ -362,12 +343,10 @@ Verified + unaudited native implementations ranked by TVL:
 | bsc | [`0x65bf1d...3a4462`](./contracts/bsc-56/0x65bf1d8f715c9a602c02adc91a231e5cd43a4462/) | CoinSackEverOwnWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x31c46c...172684`](./contracts/bsc-56/0x31c46cf200b0e7cb6eca777f79bd9327e9172684/) | CS721Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x2cefa0...6d456d`](./contracts/bsc-56/0x2cefa0dd58aa85a4085f28056a96b0c5446d456d/) | CS721Listings | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0xadaf18...e6e398`](./contracts/avalanche-43114/0xadaf18d79f316005542da4ecb1624b59c4e6e398/) | CustomMasterChefJoeV2Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x199f78...db33de`](./contracts/bsc-56/0x199f788ddb566b7ebb59bf35b36914f2acdb33de/) | DeFido | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x4883bd...131f12`](./contracts/bsc-56/0x4883bd9e85a0737f3141b613ff80ce00fa131f12/) | DexUtils | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xbd573d...4d24e3`](./contracts/bsc-56/0xbd573ddc3ab93d7984012b897821f6c09f4d24e3/) | DiamondQ | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x02e81c...d6ab5b`](./contracts/bsc-56/0x02e81cc68c8528b380dc722b98c02ee642d6ab5b/) | DittoInu | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0xf28164...8a16b1`](./contracts/polygon-137/0xf28164a485b0b2c90639e47b0f377b4a438a16b1/) | DragonLair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xb72962...b187e6`](./contracts/bsc-56/0xb72962568345253f71a18318d67e13a282b187e6/) | EFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x78ab99...d3a69d`](./contracts/ethereum-1/0x78ab99dae7302ea91e36962f4b23418a89d3a69d/) | EverOwn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xb5d68d...4af2d9`](./contracts/bsc-56/0xb5d68dad8761edefcf111b1f33146c4aa24af2d9/) | FirstFeg | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -403,34 +382,30 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x24bc6f...d668c4`](./contracts/ethereum-1/0x24bc6f1f7d954345c989be71934d2396c0d668c4/) | OKLGRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xa03c49...fa91c8`](./contracts/bsc-56/0xa03c494ed39aa54f9b1d85647a54670f54fa91c8/) | PabloEscoMars | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x92446b...fe820e`](./contracts/ethereum-1/0x92446b00281dc85185053fe4d7e5062f65fe820e/) | PigToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x831753...33dc13`](./contracts/polygon-137/0x831753dd7087cac61ab5644b308642cc1c33dc13/) | Quick | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x38e8d7...5239ea`](./contracts/polygon-137/0x38e8d77f4b651fb989c8b5ad274346dd5b5239ea/) | QuickConverter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x48f8aa...a4986b`](./contracts/bsc-56/0x48f8aabe54397f24b7eae3f0da39f1e2a2a4986b/) | ramx | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x227449...a14885`](./contracts/avalanche-43114/0x2274491950b2d6d79b7e69b683b482282ba14885/) | RewardDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x2f2b08...c4d269`](./contracts/bsc-56/0x2f2b08d78cdec1d610f1356175ff14e0cbc4d269/) | SharkGirl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x5efe9c...d40651`](./contracts/bsc-56/0x5efe9c3e5b43580328104da18a091ce6a3d40651/) | ShepherdInu | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x190803...e38340`](./contracts/bsc-56/0x1908036ae6324ed8e38e5884dcced4a943e38340/) | ShibFenInu | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x05d06a...5a3388`](./contracts/avalanche-43114/0x05d06afb994047acee8c205500ab1aa25c5a3388/) | SimpleRewarderPerSec | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xaa9b83...06f569`](./contracts/bsc-56/0xaa9b835784d0f9ff2a2a14dd1c395ca58e06f569/) | SimpleToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x4925cb...ef6d28`](./contracts/bsc-56/0x4925cb9390a3e4bd3f43f8a208e437f65aef6d28/) | SplitBuysAndSells | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x02a2d8...537e1c`](./contracts/polygon-137/0x02a2d80ce5c021a40aec9062a6273bbc33537e1c/) | StakingRewardsFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x72684b...b2d7cb`](./contracts/bsc-56/0x72684be0d98ef4f725c915622be4eb1d49b2d7cb/) | TokenPresaleBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x0147c0...0ef296`](./contracts/avalanche-43114/0x0147c0212ca4aba29d26dffd3c800893080ef296/) | TokenVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xc4ed75...552d23`](./contracts/bsc-56/0xc4ed752d658989fe86db8ddad3f6f19271552d23/) | Uptrend | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x1512d2...9cfbc8`](./contracts/polygon-137/0x1512d268a94ce119eacbf80139ad7910eb9cfbc8/) | VamToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdba7b2...072f1b`](./contracts/ethereum-1/0xdba7b24257fc6e397cb7368b4bc922e944072f1b/) | veRise | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7db5af...6a58ac`](./contracts/ethereum-1/0x7db5af2b9624e1b3b4bb69d6debd9ad1016a58ac/) | VOLT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7f792d...799aca`](./contracts/ethereum-1/0x7f792db54b0e580cdc755178443f0430cf799aca/) | VoltInu | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x2c7b8e...d02027`](./contracts/avalanche-43114/0x2c7b8e971c704371772edaf16e0db381a8d02027/) | Zap | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x129107...e6a9e7`](./contracts/bsc-56/0x1291072002b37410573c5bc856e7c33830e6a9e7/) | ZillaPump | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 138 |
-| upstream | 13 |
+| native | 97 |
+| upstream | 12 |
 | standard_library | 9 |
-| needs_review | 98 |
+| needs_review | 121 |
 
 ## Scope Matching Notes
 
@@ -444,6 +419,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [3046] DL audit link
-- [3047] 02_Smart_Contract_Audit_EverRise_Token_Staking_v3.pdf
+- [3548] 02_Smart_Contract_Audit_EverRise_Token_Staking_v3.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

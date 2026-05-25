@@ -1,6 +1,6 @@
 # everrise — Contract Index
 
-258 unique implementations across 5 chains · 566 deployments · 0 audited · 111 unaudited · 147 unverified
+239 unique implementations across 5 chains · 505 deployments · 0 audited · 105 unaudited · 134 unverified
 
 ## adapter (2)
 
@@ -40,16 +40,15 @@
 |---|---|---|---|---|
 | [TransparentUpgradeableProxy (2 deployments)](./avalanche-43114/0x2f4391579839c5e3bcd6d471ea4aab3de0bb5140/) | avalanche | 2 deployments: avalanche [`0x2f4391...bb5140`](./avalanche-43114/0x2f4391579839c5e3bcd6d471ea4aab3de0bb5140/); avalanche `0x592f70...419f37` | ⚠️ Unaudited | Verified |
 
-## registry (4)
+## registry (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [CS721Factory (6 deployments)](./bsc-56/0x31c46cf200b0e7cb6eca777f79bd9327e9172684/) | bsc | 6 deployments: bsc [`0x31c46c...172684`](./bsc-56/0x31c46cf200b0e7cb6eca777f79bd9327e9172684/); bsc `0xbb065b...e81ed5`; bsc `0xc105f2...52a950`; bsc `0xc94530...202fe4`; bsc `0xdb5dd8...36517c`; bsc `0xdc307b...45fade` | ⚠️ Unaudited | Verified |
 | [JoeFactory (2 deployments)](./avalanche-43114/0x9ad6c38be94206ca50bb0d90783181662f0cfa10/) | avalanche | 2 deployments: avalanche [`0x9ad6c3...0cfa10`](./avalanche-43114/0x9ad6c38be94206ca50bb0d90783181662f0cfa10/); avalanche `0xe2ecc2...e75eb8` | ⚠️ Unaudited | Verified |
-| [StakingRewardsFactory (30 deployments)](./polygon-137/0x02a2d80ce5c021a40aec9062a6273bbc33537e1c/) | polygon | 30 deployments: polygon [`0x02a2d8...537e1c`](./polygon-137/0x02a2d80ce5c021a40aec9062a6273bbc33537e1c/); polygon `0x122cfe...94bef6`; polygon `0x17d0a9...331e39`; polygon `0x29d051...17d503`; polygon `0x3b8fed...9a3417`; polygon `0x3d2360...2c83b6`; polygon `0x421267...809e16`; polygon `0x54806f...f35291`; polygon `0x6a0517...43de22`; polygon `0x6a1b56...551548`; polygon `0x729129...32c4ae`; polygon `0x80f130...67eb49`; polygon `0x8a121a...7d990d`; polygon `0x91f16b...c3908e`; polygon `0x9d451d...f11e80`; polygon `0x9f1700...aab86c`; polygon `0xa239ac...2705b4`; polygon `0xa7f8ea...97486b`; polygon `0xacd9d3...440197`; polygon `0xad41f5...edbffe`; polygon `0xbd20fa...102b69`; polygon `0xbd4b6c...1e7e30`; polygon `0xce2944...e3a354`; polygon `0xe592ed...e00d8f`; polygon `0xe8af51...8ea4a6`; polygon `0xe9944f...42df09`; polygon `0xeaff1f...723d8c`; polygon `0xeba917...f64162`; polygon `0xed113a...42efaf`; polygon `0xf48ac6...3acd02` | ⚠️ Unaudited | Verified |
 | [UniswapV2Factory (2 deployments)](./polygon-137/0x5757371414417b8c6caad45baef941abc7d3ab32/) | polygon | 2 deployments: ethereum `0x5c69be...c5aa6f`; polygon [`0x575737...d3ab32`](./polygon-137/0x5757371414417b8c6caad45baef941abc7d3ab32/) | ⚠️ Unaudited | Verified |
 
-## token (15)
+## token (14)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -67,9 +66,8 @@
 | [MetaFloki (2 deployments)](./bsc-56/0x1931461c770509cc20aca503d3c5637e7b6c5220/) | bsc | 2 deployments: bsc [`0x193146...6c5220`](./bsc-56/0x1931461c770509cc20aca503d3c5637e7b6c5220/); bsc `0x8fc2b4...b9041f` | ⚠️ Unaudited | Verified |
 | [PigToken](./ethereum-1/0x92446b00281dc85185053fe4d7e5062f65fe820e/) | ethereum | [`0x92446b...fe820e`](./ethereum-1/0x92446b00281dc85185053fe4d7e5062f65fe820e/) | ⚠️ Unaudited | Verified |
 | [SimpleToken (2 deployments)](./bsc-56/0xaa9b835784d0f9ff2a2a14dd1c395ca58e06f569/) | bsc | 2 deployments: bsc [`0xaa9b83...06f569`](./bsc-56/0xaa9b835784d0f9ff2a2a14dd1c395ca58e06f569/); bsc `0xc3ae8d...02fa20` | ⚠️ Unaudited | Verified |
-| [VamToken (11 deployments)](./polygon-137/0x1512d268a94ce119eacbf80139ad7910eb9cfbc8/) | polygon | 11 deployments: polygon [`0x1512d2...9cfbc8`](./polygon-137/0x1512d268a94ce119eacbf80139ad7910eb9cfbc8/); polygon `0x1bd1fa...9a7fda`; polygon `0x1c165a...be6eec`; polygon `0x4b44cd...bcab4b`; polygon `0x4e1470...5263ef`; polygon `0x547620...fd33e8`; polygon `0x7732d1...9fdcee`; polygon `0xa3900a...59b542`; polygon `0xbee2bd...5adca5`; polygon `0xd8e8b9...6d20e7`; polygon `0xe6df55...24b291` | ⚠️ Unaudited | Verified |
 
-## unknown (226)
+## unknown (209)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -90,7 +88,6 @@
 | [DiamondQ](./bsc-56/0xbd573ddc3ab93d7984012b897821f6c09f4d24e3/) | bsc | [`0xbd573d...4d24e3`](./bsc-56/0xbd573ddc3ab93d7984012b897821f6c09f4d24e3/) | ⚠️ Unaudited | Verified |
 | [DittoInu](./bsc-56/0x02e81cc68c8528b380dc722b98c02ee642d6ab5b/) | bsc | [`0x02e81c...d6ab5b`](./bsc-56/0x02e81cc68c8528b380dc722b98c02ee642d6ab5b/) | ⚠️ Unaudited | Verified |
 | [DogeBoy](./bsc-56/0x6c91e837c071a8acb6988da8e39f9f6759e5d9bd/) | bsc | [`0x6c91e8...e5d9bd`](./bsc-56/0x6c91e837c071a8acb6988da8e39f9f6759e5d9bd/) | ⚠️ Unaudited | Verified |
-| [DragonLair (2 deployments)](./polygon-137/0xf28164a485b0b2c90639e47b0f377b4a438a16b1/) | polygon | 2 deployments: polygon [`0xf28164...8a16b1`](./polygon-137/0xf28164a485b0b2c90639e47b0f377b4a438a16b1/); polygon `0xf3e851...953d22` | ⚠️ Unaudited | Verified |
 | [EFT](./bsc-56/0xb72962568345253f71a18318d67e13a282b187e6/) | bsc | [`0xb72962...b187e6`](./bsc-56/0xb72962568345253f71a18318d67e13a282b187e6/) | ⚠️ Unaudited | Verified |
 | [EverOwn (2 deployments)](./ethereum-1/0x78ab99dae7302ea91e36962f4b23418a89d3a69d/) | ethereum | 2 deployments: ethereum [`0x78ab99...d3a69d`](./ethereum-1/0x78ab99dae7302ea91e36962f4b23418a89d3a69d/); polygon `0x7dd45e...62fdef` | ⚠️ Unaudited | Verified |
 | [FirstFeg (2 deployments)](./bsc-56/0xb5d68dad8761edefcf111b1f33146c4aa24af2d9/) | bsc | 2 deployments: bsc [`0xb5d68d...4af2d9`](./bsc-56/0xb5d68dad8761edefcf111b1f33146c4aa24af2d9/); bsc `0xe9dc00...180097` | ⚠️ Unaudited | Verified |
@@ -133,8 +130,6 @@
 | [MyContractOwn (3 deployments)](./bsc-56/0x21e9d965404befefb80ea7bae582ab3c4c8d75e0/) | bsc | 3 deployments: bsc [`0x21e9d9...8d75e0`](./bsc-56/0x21e9d965404befefb80ea7bae582ab3c4c8d75e0/); bsc `0x75a6bf...e037be`; bsc `0xa8b978...919139` | ⚠️ Unaudited | Verified |
 | [OKLGRewards](./ethereum-1/0x24bc6f1f7d954345c989be71934d2396c0d668c4/) | ethereum | [`0x24bc6f...d668c4`](./ethereum-1/0x24bc6f1f7d954345c989be71934d2396c0d668c4/) | ⚠️ Unaudited | Verified |
 | [PabloEscoMars](./bsc-56/0xa03c494ed39aa54f9b1d85647a54670f54fa91c8/) | bsc | [`0xa03c49...fa91c8`](./bsc-56/0xa03c494ed39aa54f9b1d85647a54670f54fa91c8/) | ⚠️ Unaudited | Verified |
-| [Quick](./polygon-137/0x831753dd7087cac61ab5644b308642cc1c33dc13/) | polygon | [`0x831753...33dc13`](./polygon-137/0x831753dd7087cac61ab5644b308642cc1c33dc13/) | ⚠️ Unaudited | Verified |
-| [QuickConverter (3 deployments)](./polygon-137/0x38e8d77f4b651fb989c8b5ad274346dd5b5239ea/) | polygon | 3 deployments: polygon [`0x38e8d7...5239ea`](./polygon-137/0x38e8d77f4b651fb989c8b5ad274346dd5b5239ea/); polygon `0x66f312...6990e9`; polygon `0x8e396f...f5e758` | ⚠️ Unaudited | Verified |
 | [ramx](./bsc-56/0x48f8aabe54397f24b7eae3f0da39f1e2a2a4986b/) | bsc | [`0x48f8aa...a4986b`](./bsc-56/0x48f8aabe54397f24b7eae3f0da39f1e2a2a4986b/) | ⚠️ Unaudited | Verified |
 | [SharkGirl](./bsc-56/0x2f2b08d78cdec1d610f1356175ff14e0cbc4d269/) | bsc | [`0x2f2b08...c4d269`](./bsc-56/0x2f2b08d78cdec1d610f1356175ff14e0cbc4d269/) | ⚠️ Unaudited | Verified |
 | [ShepherdInu](./bsc-56/0x5efe9c3e5b43580328104da18a091ce6a3d40651/) | bsc | [`0x5efe9c...d40651`](./bsc-56/0x5efe9c3e5b43580328104da18a091ce6a3d40651/) | ⚠️ Unaudited | Verified |
@@ -216,19 +211,6 @@
 | UnnamedContract | bsc | `0xf7ca44...8199c5` | ❓ Unverified | Unverified |
 | UnnamedContract | bsc | `0xfdac84...28ae89` | ❓ Unverified | Unverified |
 | UnnamedContract | bsc | `0xfe1490...82d7d9` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x019901...554481` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x4087f5...4eaea8` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x55bee1...a3ef1d` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x56c216...4e181e` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x5eced2...8c91d6` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x6207a6...af1c8c` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x82831e...3e22a4` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xb28862...2f8bfb` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xc7efb3...a918ca` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xc91572...f6f690` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xe86ba9...d32599` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xf134b2...8c771b` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0xf6ad3c...59adcd` | ❓ Unverified | Unverified |
 | UnnamedContract | fantom | `0x152ee6...e61be3` | ❓ Unverified | Unverified |
 | UnnamedContract | fantom | `0x595036...f4d32b` | ❓ Unverified | Unverified |
 | UnnamedContract | fantom | `0xde62a6...299383` | ❓ Unverified | Unverified |
@@ -297,5 +279,4 @@
 | [veRise (4 deployments)](./ethereum-1/0xdba7b24257fc6e397cb7368b4bc922e944072f1b/) | ethereum | 4 deployments: ethereum [`0xdba7b2...072f1b`](./ethereum-1/0xdba7b24257fc6e397cb7368b4bc922e944072f1b/); bsc `0xdba7b2...072f1b`; polygon `0xdba7b2...072f1b`; avalanche `0xdba7b2...072f1b` | ⚠️ Unaudited | Verified |
 | [VOLT (2 deployments)](./ethereum-1/0x7db5af2b9624e1b3b4bb69d6debd9ad1016a58ac/) | ethereum | 2 deployments: ethereum [`0x7db5af...6a58ac`](./ethereum-1/0x7db5af2b9624e1b3b4bb69d6debd9ad1016a58ac/); bsc `0x7db5af...6a58ac` | ⚠️ Unaudited | Verified |
 | [VoltInu (2 deployments)](./ethereum-1/0x7f792db54b0e580cdc755178443f0430cf799aca/) | ethereum | 2 deployments: ethereum [`0x7f792d...799aca`](./ethereum-1/0x7f792db54b0e580cdc755178443f0430cf799aca/); bsc `0x7f792d...799aca` | ⚠️ Unaudited | Verified |
-| [WMATIC](./polygon-137/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270/) | polygon | [`0x0d500b...df1270`](./polygon-137/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270/) | ⚠️ Unaudited | Verified |
 | [ZillaPump](./bsc-56/0x1291072002b37410573c5bc856e7c33830e6a9e7/) | bsc | [`0x129107...e6a9e7`](./bsc-56/0x1291072002b37410573c5bc856e7c33830e6a9e7/) | ⚠️ Unaudited | Verified |

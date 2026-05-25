@@ -5,10 +5,10 @@
 - Project: WavesBridge (`wavesbridge`)
 - Website: [https://wavesbridge.io/](https://wavesbridge.io/)
 - Lifecycle: active (Tier 0, 78.9% below peak)
-- Generated: 2026-05-25T07:15:42.244Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-25T20:23:51.264Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: ethereum
-- Contract surface: 6 unique implementations (6 raw deployments)
+- Contract surface: 5 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $1,039,122.48
 - On-chain TVL (included contracts): $136,632,939.38
 - TVL by chain: Ethereum $136,632,939.38
@@ -23,12 +23,12 @@ The Bridge contract serves as the operational core, interacting with token contr
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/6 (0.0%)
-- Verified + Unaudited implementations: 6
+- Verified implementations audited: 0/5 (0.0%)
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 6
+- Unique implementations: 5
+- Raw deployments: 5
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $136,632,939.38
@@ -46,7 +46,7 @@ The Bridge contract serves as the operational core, interacting with token contr
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -55,7 +55,6 @@ The Bridge contract serves as the operational core, interacting with token contr
 | Neiro | unknown | ethereum | [`0x812ba4...a853ee`](./contracts/ethereum-1/0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee/) | ⚠️ Unaudited |
 | PepeToken | token | ethereum | [`0x698250...311933`](./contracts/ethereum-1/0x6982508145454ce325ddbe47a25d4ec3d2311933/) | ⚠️ Unaudited |
 | RealGames | unknown | ethereum | [`0x1a920b...e04882`](./contracts/ethereum-1/0x1a920b0eae5b49c51ebf042a61c3fa58dae04882/) | ⚠️ Unaudited |
-| Validator | unknown | ethereum | [`0xf78712...2097fb`](./contracts/ethereum-1/0xf787128e3eb8161174944117b9fe1204a22097fb/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,13 +86,12 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x3ac7a6...9c3a55`](./contracts/ethereum-1/0x3ac7a6635d99f376c3c05442f7eef62d349c3a55/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xf78712...2097fb`](./contracts/ethereum-1/0xf787128e3eb8161174944117b9fe1204a22097fb/) | Validator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 1 |
 | upstream | 2 |
 | standard_library | 0 |
 | needs_review | 2 |

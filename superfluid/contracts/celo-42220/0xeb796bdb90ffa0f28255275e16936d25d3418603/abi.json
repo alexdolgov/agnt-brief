@@ -1,0 +1,134 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract ISuperToken",
+            "name": "inToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract ISuperToken",
+            "name": "outToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract ITwapObserver",
+            "name": "observer",
+            "type": "address"
+          },
+          {
+            "internalType": "DiscountFactor",
+            "name": "discountFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "Scaler",
+            "name": "twapScaler",
+            "type": "int256"
+          },
+          {
+            "internalType": "Scaler",
+            "name": "outTokenDistributionPoolScaler",
+            "type": "int256"
+          },
+          {
+            "internalType": "contract ITorexController",
+            "name": "controller",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxAllowedFeePM",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct Torex.Config",
+        "name": "config",
+        "type": "tuple"
+      }
+    ],
+    "name": "createTorex",
+    "outputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniswapV3Pool",
+        "name": "uniV3Pool",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "inverseOrder",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract ISuperToken",
+            "name": "inToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract ISuperToken",
+            "name": "outToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract ITwapObserver",
+            "name": "observer",
+            "type": "address"
+          },
+          {
+            "internalType": "DiscountFactor",
+            "name": "discountFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "Scaler",
+            "name": "twapScaler",
+            "type": "int256"
+          },
+          {
+            "internalType": "Scaler",
+            "name": "outTokenDistributionPoolScaler",
+            "type": "int256"
+          },
+          {
+            "internalType": "contract ITorexController",
+            "name": "controller",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "maxAllowedFeePM",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct Torex.Config",
+        "name": "config",
+        "type": "tuple"
+      }
+    ],
+    "name": "createUniV3PoolTwapObserverAndTorex",
+    "outputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

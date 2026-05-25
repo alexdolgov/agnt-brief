@@ -1,0 +1,17 @@
+{
+  "address": "0x8b0e044e364f2ce913799d53b300e15a6974dc97",
+  "chain_id": 1,
+  "contract_name": "EulerSwap",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 2500,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 54,
+  "constructor_arguments": "0000000000000000000000000c9a3dd6b8f28529d72d7f9ce918d493519ee3830000000000000000000000005171aed04fa9551db484f07c853f252bc6f53b63000000000000000000000000000000000004444c5dc75cb358380d2e3de08a90000000000000000000000000a6c1ddc10fb13fdd998a4940a883aa952f5ef86a",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:33:44.238Z"
+}

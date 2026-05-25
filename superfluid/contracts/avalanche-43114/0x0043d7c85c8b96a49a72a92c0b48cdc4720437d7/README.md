@@ -1,0 +1,16 @@
+# SuperfluidGovernanceII
+
+| Field | Value |
+|---|---|
+| Chain | avalanche (43114) |
+| Address | `0x0043d7c85c8b96a49a72a92c0b48cdc4720437d7` |
+| Role | unknown |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 46 (ethereum `0x3024a39099d4fae7c9ea8329fafe05576aed2c00`; ethereum `0x835e58065fb76cd51e6fdd156a7c2240194dc27c`; ethereum `0x87e00dced5670e01bee33a9a724b1dac790937ef`; ethereum `0xe2e14e2c4518cb06c32cd0818b4c01f53e1ba653`; optimism `0x0170ffcc75d178d426ebad5b1a31451d00ddbd0d`; optimism `0x2e4861b1f56a67473b7bf0dd1ef85e9e9fa5ad75`; optimism `0x9b815f3b8a0ce0ced76bb652f4b9e9a473d1dd04`; optimism `0xbe11276f730de9584c82a528da5bec8407fb892e`; optimism `0xdaa54c18ce99b84ce718f56f7e6f70e243550c70`; optimism `0xee07d9fce4cf2a891bc979e9d365929506c2982f`; bsc `0x0fb7694c990cf19001127391dbe53924dd7a61c7`; bsc `0x1bf9d75d50fd828a93f69ecb06f2b85767792ceb`; bsc `0x5fa875d8d95f0167f44777e0cef730261898ce37`; bsc `0x9a65e8d1115d246130bad2f1162ca69c5fee7b3d`; bsc `0xee07d9fce4cf2a891bc979e9d365929506c2982f`; polygon `0x21181a5e24119054991d0d3a1c24f4f52cdccbc3`; polygon `0x3998d3f96d75e091c086fa97537b3ee5f8f0428c`; polygon `0x3ad3f7a0965ce6f9358ad5cce86bc2b05f1ee087`; polygon `0x41cdbf9bf562c5964f06c7e4d356607f18f97af7`; polygon `0x491b808fbc0d8972bd5c88a533da9cab98447382`; polygon `0x6a304ca68995ee44591b1c8587d13f7774b7490a`; polygon `0xacc7380323681fdb8a0b9f2fe7d69ddff0664478`; polygon `0xad0a83ef63a4cb62631c23bde5d52b29ab0bd6af`; polygon `0xd80cc8350dcd71a6c136b5453f11ece601ce3ac3`; base `0x4e89088cd14064f38e5b2f309cfab9c864f9a8e6`; base `0x55f7758dd99d5e185f4cc08d4ad95b71f598264d`; base `0x6813ede4e78ecb830d380d0f7f684c12aac95f02`; base `0x777be25f9fdca87e8a0e06ad4be93d65429fcb9f`; base `0xcfe6382b33f2adafbe46e6a26a88e0182ae32b0c`; base `0xe6c8d111337d0052b9d88bf5d7d55b7f8385acd3`; base `0xee07d9fce4cf2a891bc979e9d365929506c2982f`; arbitrum `0x0170ffcc75d178d426ebad5b1a31451d00ddbd0d`; arbitrum `0x2e4861b1f56a67473b7bf0dd1ef85e9e9fa5ad75`; arbitrum `0x87e00dced5670e01bee33a9a724b1dac790937ef`; arbitrum `0xa2b6470c467c696b7250cd1093a197186ff30ae0`; arbitrum `0xdf3f4b9e4e67a21c868d043a92ae921ff0ebadbb`; arbitrum `0xee07d9fce4cf2a891bc979e9d365929506c2982f`; celo `0x0170ffcc75d178d426ebad5b1a31451d00ddbd0d`; celo `0x2aa431706dc48805d7c73f12210254da5eb7eebf`; celo `0xadcf0ac9f2aa04a79fc64a1fdf0a0c9f3ae0556a`; celo `0xee07d9fce4cf2a891bc979e9d365929506c2982f`; avalanche [`0x0043d7c85c8b96a49a72a92c0b48cdc4720437d7`](../0x0043d7c85c8b96a49a72a92c0b48cdc4720437d7/); avalanche `0x1127bec0645efef17210a5f80d2ef0d54fa74c2c`; avalanche `0x24849c01f16de01061d2eea1678082d44d9a7f80`; avalanche `0x6345aa6cec42a85160cf436810f97661e28c1876`; avalanche `0xf74390baba510ec2fe196c2e02b037380d7a6f12`) |
+| Proxy | No (implementation for 1 proxy: `0xf74390...7a6f12`) |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

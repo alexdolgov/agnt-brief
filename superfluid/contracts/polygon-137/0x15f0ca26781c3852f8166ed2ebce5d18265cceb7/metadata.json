@@ -1,0 +1,17 @@
+{
+  "address": "0x15f0ca26781c3852f8166ed2ebce5d18265cceb7",
+  "chain_id": 137,
+  "contract_name": "SuperfluidLoader",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "000000000000000000000000e0cc76334405ee8b39213e620587d815967af39c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:44:23.128Z"
+}

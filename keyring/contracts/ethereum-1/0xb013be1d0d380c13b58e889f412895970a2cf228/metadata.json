@@ -1,0 +1,18 @@
+{
+  "address": "0xb013be1d0d380c13b58e889f412895970a2cf228",
+  "chain_id": 1,
+  "contract_name": "EulerSwapFactory",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-only, BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 58,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:33:45.029Z"
+}

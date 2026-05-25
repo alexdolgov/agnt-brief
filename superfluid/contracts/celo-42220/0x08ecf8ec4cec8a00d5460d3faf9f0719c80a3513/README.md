@@ -1,0 +1,16 @@
+# SimpleForwarder
+
+| Field | Value |
+|---|---|
+| Chain | celo (42220) |
+| Address | `0x08ecf8ec4cec8a00d5460d3faf9f0719c80a3513` |
+| Role | unknown |
+| Origin | needs_review |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 52 (ethereum `0x1f73832d4d4992ae0fcc181139e4bc88afb43694`; ethereum `0x31523ed22209ad58a442b0a2fa130660d8c4dcd7`; ethereum `0x347632db0d791b2ef1e24470841cff47106759cc`; ethereum `0x8405c5bb7292f5e181d0870ddcb4a51efaf7e074`; ethereum `0x998595e3001691ae4257bd5d2bb97284b09001c6`; ethereum `0xb3ea690ca837379935aea5028077cace6a0a2cdb`; optimism `0x5a2362c459006836de9ef9de8c3a0180a2f6ed42`; optimism `0x91671794411c34942121140771f389fa3e9e723d`; optimism `0xd6dd1361dcff32c60bcc0715641e1376327644ad`; optimism `0xe342b83600467456ba775019e7f6497e30b4dc64`; optimism `0xf7ba9a0c80d5136005a1ec13010f4df8d611e715`; bsc `0x22b06d3ead2d720a2a86c3fabe424cddbbeba5fa`; bsc `0x34b70600b0d9068ebf82d715db8066d14017e17c`; bsc `0x534247e709ad9c84a0094b24ffc52adc16989d46`; bsc `0x91671794411c34942121140771f389fa3e9e723d`; bsc `0x9785d546f14253c46aedd1bd0ca167d10ec446c1`; bsc `0xa55632254bc9f739bde7191c8a4510addae3ef6d`; bsc `0xd226e7c591f6ae719079b8a31654221d980db5ce`; bsc `0xdcf916cf9d2a8184c3d8f62efe5cfbd5eb3fcbe8`; polygon `0x1c9a68578b9f7a2c20abe9eecc9457e08bab2164`; polygon `0x60e59059f32cdecf58d8ddfb16ba00e3dddf361f`; polygon `0x791111b25a12e5cb54508f3a7ad1701f75956166`; polygon `0x8997a1a73dd2ea37771111cf172c66aae4feb0ea`; polygon `0x8a333909b2da7ada3a21f9b79528850371424e11`; polygon `0xd4610e071ed0d1d96b1a6b5d5e16dbfb2581c9d1`; polygon `0xd7d52155ee2aea564ecd1b2ec2b96b8b4caeefcb`; polygon `0xf94c3df7165914881045165c216e94b0f6f050ca`; base `0x329114df8d12398584d9d5d8749e525609170218`; base `0x4dd7be818402bd109e55f958af44c8caf80bf94b`; base `0x7940d9805b430a7e60bb59e6d2512678865525c9`; base `0x862f59081fc7907f940be4227b9f485d700e6cdd`; base `0xb8065d19060a7ee66a61e1216702c199c68584eb`; base `0xda368df1eaa1d2526ace84be42fede1a88a60032`; base `0xebd331e2cc8ca8e779a24556b5de931c5fb60032`; base `0xf220de474b59a4ac76e59e786b69b67e01076b8f`; arbitrum `0x23e9a1d629ac39e60c60c7592eb12fb8247bd52a`; arbitrum `0x3b5889d700d06ee054672e41bdb3c95191918d9c`; arbitrum `0x5b81ffb2677f38ed3cb0771d02cc19cfff41e9ed`; arbitrum `0xd1d06bb11f5cf8d52b538220fd09dbece250b022`; arbitrum `0xef8038c30925131e109f88d7a522d1d2ab6d6caa`; celo [`0x08ecf8ec4cec8a00d5460d3faf9f0719c80a3513`](../0x08ecf8ec4cec8a00d5460d3faf9f0719c80a3513/); celo `0x25382fdc6a862809eefe918d065339cfa9227b9e`; celo `0x2616c0ab36cac1e6df7f79ae7c3e297d579fe547`; celo `0x80f053d8fe83819590a4715e968b21738d66ba1d`; celo `0x8ca3027f38732828d00cfe0a2c0f73c69c37f226`; avalanche `0x25456ab28afc368c39e5274af59c4028e85718bf`; avalanche `0x466be9ef50dec3c22eaa4f070e9c9ceaaccd1e75`; avalanche `0x80f053d8fe83819590a4715e968b21738d66ba1d`; avalanche `0x878d431c3617924103d991acd7110bbb857ab064`; avalanche `0xb66334f0965a7fd8bfb5471066676caeada1432b`; avalanche `0xebd331e2cc8ca8e779a24556b5de931c5fb60032`; avalanche `0xf3218d5380799b9d8c81b9180d0a31e4d8c53947`) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

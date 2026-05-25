@@ -1,0 +1,18 @@
+{
+  "address": "0x036ea0dca13615c2a8b48b7a3407cc255d50ff74",
+  "chain_id": 137,
+  "contract_name": "SuperToken",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "AGPLv3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 43,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:44:21.313Z"
+}

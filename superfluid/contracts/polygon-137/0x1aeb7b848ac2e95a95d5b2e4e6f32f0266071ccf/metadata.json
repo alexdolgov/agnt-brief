@@ -1,0 +1,17 @@
+{
+  "address": "0x1aeb7b848ac2e95a95d5b2e4e6f32f0266071ccf",
+  "chain_id": 137,
+  "contract_name": "ERC20Program",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "None",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x7cd35c98bb1d316be4c11d2231ac754ccb39d7aa",
+  "fetched_at": "2026-05-25T13:44:24.487Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x073d19652a66675b0e92b2c3099f1efceabb9185",
+  "chain_id": 42220,
+  "contract_name": "Minimal",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:44:24.282Z"
+}

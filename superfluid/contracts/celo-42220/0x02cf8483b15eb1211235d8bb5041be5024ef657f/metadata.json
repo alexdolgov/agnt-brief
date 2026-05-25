@@ -1,0 +1,18 @@
+{
+  "address": "0x02cf8483b15eb1211235d8bb5041be5024ef657f",
+  "chain_id": 42220,
+  "contract_name": "ERC2771Forwarder",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "AGPLv3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:44:21.205Z"
+}

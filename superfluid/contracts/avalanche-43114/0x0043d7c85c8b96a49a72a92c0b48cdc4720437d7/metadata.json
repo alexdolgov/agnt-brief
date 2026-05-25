@@ -1,0 +1,18 @@
+{
+  "address": "0x0043d7c85c8b96a49a72a92c0b48cdc4720437d7",
+  "chain_id": 43114,
+  "contract_name": "SuperfluidGovernanceII",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPLv3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:44:23.755Z"
+}

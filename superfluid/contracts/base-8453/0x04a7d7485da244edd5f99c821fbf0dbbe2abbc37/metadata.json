@@ -1,0 +1,17 @@
+{
+  "address": "0x04a7d7485da244edd5f99c821fbf0dbbe2abbc37",
+  "chain_id": 8453,
+  "contract_name": "FluidLocker",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 45,
+  "constructor_arguments": "000000000000000000000000a69f80524381275a7ffdb3ae01c54150644c8792000000000000000000000000f0f494f4bd2c3a6bf8b49e6f798875301d944c0a0000000000000000000000001e32cf099992e9d3b17edddfffeb2d07aed95c6a000000000000000000000000b19ae25a98d352b36ced60f93db926247535048b000000000000000000000000a26fba47da24f7df11b3e4cf60dcf7d1691ae47d0000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:44:25.054Z"
+}

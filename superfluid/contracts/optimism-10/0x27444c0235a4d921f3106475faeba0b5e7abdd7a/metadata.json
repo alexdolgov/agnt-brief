@@ -1,0 +1,18 @@
+{
+  "address": "0x27444c0235a4d921f3106475faeba0b5e7abdd7a",
+  "chain_id": 10,
+  "contract_name": "VestingSchedulerV2",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPLv3, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:44:23.832Z"
+}

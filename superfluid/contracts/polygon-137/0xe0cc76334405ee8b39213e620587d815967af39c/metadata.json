@@ -1,0 +1,17 @@
+{
+  "address": "0xe0cc76334405ee8b39213e620587d815967af39c",
+  "chain_id": 137,
+  "contract_name": "TestResolver",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T13:44:26.252Z"
+}

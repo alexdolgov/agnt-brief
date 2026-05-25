@@ -1,0 +1,368 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniswapSwapRouter",
+        "name": "_swapRouter02",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISETH",
+        "name": "_nativeAssetSuperToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "_nativeAssetERC20",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "torex",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "rewardAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "inToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "inAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "outToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "minOutAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "outAmountActual",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "rewardAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidityMoverFinished",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "ERC20ETH",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SETH",
+    "outputs": [
+      {
+        "internalType": "contract ISETH",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "WETH",
+    "outputs": [
+      {
+        "internalType": "contract IWETH9",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      }
+    ],
+    "name": "moveLiquidity",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISuperToken",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISuperToken",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minOutAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "moverData",
+        "type": "bytes"
+      }
+    ],
+    "name": "moveLiquidityCallback",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "rewardAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rewardAmountMinimum",
+        "type": "uint256"
+      }
+    ],
+    "name": "moveLiquidityForReward",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      }
+    ],
+    "name": "moveLiquidityForReward",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "rewardAddress",
+        "type": "address"
+      }
+    ],
+    "name": "moveLiquidityForReward",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rewardAmountMinimum",
+        "type": "uint256"
+      }
+    ],
+    "name": "moveLiquidityForReward",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "rewardAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "swapPath",
+        "type": "bytes"
+      }
+    ],
+    "name": "moveLiquidityForRewardWithPath",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rewardAmountMinimum",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "swapPath",
+        "type": "bytes"
+      }
+    ],
+    "name": "moveLiquidityForRewardWithPath",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "rewardAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rewardAmountMinimum",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "swapPath",
+        "type": "bytes"
+      }
+    ],
+    "name": "moveLiquidityForRewardWithPath",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "swapPath",
+        "type": "bytes"
+      }
+    ],
+    "name": "moveLiquidityForRewardWithPath",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Torex",
+        "name": "torex",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "swapPath",
+        "type": "bytes"
+      }
+    ],
+    "name": "moveLiquidityWithPath",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "swapRouter",
+    "outputs": [
+      {
+        "internalType": "contract IUniswapSwapRouter",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

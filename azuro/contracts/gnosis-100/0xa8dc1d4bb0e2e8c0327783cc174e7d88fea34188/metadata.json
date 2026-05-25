@@ -1,0 +1,17 @@
+{
+  "address": "0xa8dc1d4bb0e2e8c0327783cc174e7d88fea34188",
+  "chain_id": 100,
+  "contract_name": "DevOpsTools",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T15:27:34.667Z"
+}

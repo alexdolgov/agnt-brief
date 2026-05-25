@@ -1,0 +1,18 @@
+{
+  "address": "0xdaae5c80cb578b084fcbe0e959d98f57997b3474",
+  "chain_id": 100,
+  "contract_name": "SimpleAccount",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 2,
+  "evm_version": "london",
+  "license": "GPL-3.0, GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T15:27:34.118Z"
+}

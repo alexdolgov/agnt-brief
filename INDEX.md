@@ -24,7 +24,7 @@
 | [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | declining | 1 | 40 | 2026-05-25 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | active | 3 | 13 | 2026-05-23 |
-| [ankr](./ankr/) | $47.4 | 0.9% | $47.4 | active | 1 | 147 | 2026-05-22 |
+| [ankr](./ankr/) | $47.4 | 13.6% | $47.4 | active | 14 | 32 | 2026-05-25 |
 | [antarctic](./antarctic/) | $9.3M | 0.0% | ? | active | 0 | 11 | 2026-05-23 |
 | [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | unknown | 0 | 2 | 2026-05-22 |
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | unknown | 4 | 3 | 2026-05-22 |
@@ -41,6 +41,7 @@
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | dead | 1 | 10 | 2026-05-25 |
 | [avalaunch](./avalaunch/) | $31.3M | 78.6% | ? | unknown | 13 | 39 | 2026-05-23 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-05-23 |
+| [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-05-25 |
 | [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-05-25 |
 | [b.protocol](./b.protocol/) | $89.1M | 4.1% | $89.1M | dead | 5 | 186 | 2026-05-24 |
 | [babydogecoin](./babydogecoin/) | $166.4M | 0.0% | $166.4M | declining | 1 | 54 | 2026-05-25 |
@@ -315,7 +316,7 @@
 | [netswap](./netswap/) | $1.4M | 20.8% | ? | dead | 2 | 48 | 2026-05-25 |
 | [neuralai](./neuralai/) | $1.3M | 0.0% | ? | unknown | 1 | 3 | 2026-05-25 |
 | [neutral-trade](./neutral-trade/) | $18.8M | 0.0% | ? | unknown | 3 | 0 | 2026-05-22 |
-| [nftx](./nftx/) | $6.3M | 9.6% | $6.3M | declining | 5 | 267 | 2026-05-24 |
+| [nftx](./nftx/) | $6.3M | 11.1% | $6.3M | declining | 5 | 184 | 2026-05-25 |
 | [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |
 | [nonkyc](./nonkyc/) | $5.8M | 0.0% | ? | active | 0 | 4 | 2026-05-23 |
 | [nostra](./nostra/) | $7.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
@@ -487,7 +488,7 @@
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
 | [trevee-earn](./trevee-earn/) | $582.4M | 0.0% | $582.4M | transitioning | 0 | 29 | 2026-05-25 |
-| [trisolaris](./trisolaris/) | $1.3M | 0.0% | ? | dead | 0 | 226 | 2026-05-25 |
+| [trisolaris](./trisolaris/) | $1.3M | 0.0% | ? | dead | 0 | 119 | 2026-05-25 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |
 | [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-05-24 |

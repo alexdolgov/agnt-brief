@@ -1,0 +1,13 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "enum SafeCast.Type",
+        "name": "to",
+        "type": "uint8"
+      }
+    ],
+    "name": "SafeCastError",
+    "type": "error"
+  }
+]

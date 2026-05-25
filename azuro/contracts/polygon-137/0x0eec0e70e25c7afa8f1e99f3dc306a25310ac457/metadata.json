@@ -1,0 +1,17 @@
+{
+  "address": "0x0eec0e70e25c7afa8f1e99f3dc306a25310ac457",
+  "chain_id": 137,
+  "contract_name": "Azuro",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T15:27:32.336Z"
+}

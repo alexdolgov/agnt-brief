@@ -1,0 +1,18 @@
+{
+  "address": "0xde78c1d094ff062b9173cff4142a54971a789934",
+  "chain_id": 43114,
+  "contract_name": "FutureBondAVAX_R1",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T15:15:45.804Z"
+}

@@ -40,6 +40,7 @@
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | dead | 1 | 426 | 2026-05-23 |
 | [avalaunch](./avalaunch/) | $31.3M | 78.6% | ? | unknown | 13 | 39 | 2026-05-23 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-05-23 |
+| [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-05-25 |
 | [b.protocol](./b.protocol/) | $89.1M | 4.1% | $89.1M | dead | 5 | 186 | 2026-05-24 |
 | [babydogecoin](./babydogecoin/) | $166.7M | 0.0% | $166.7M | declining | 1 | 936 | 2026-05-24 |
 | [babyswap](./babyswap/) | $241.1K | 1.5% | $241.1K | dead | 1 | 113 | 2026-05-25 |
@@ -90,6 +91,7 @@
 | [chainge-finance](./chainge-finance/) | $1.8M | 0.0% | $1.8M | active | 0 | 935 | 2026-05-23 |
 | [chaingpt](./chaingpt/) | $4.9M | 0.0% | ? | unknown | 0 | 87 | 2026-05-23 |
 | [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | unknown | 6 | 10 | 2026-05-24 |
+| [chateau](./chateau/) | $19.1K | 33.3% | $19.1K | active | 1 | 5 | 2026-05-25 |
 | [citrea-bridge](./citrea-bridge/) | $5.1M | 33.3% | ? | active | 11 | 4 | 2026-05-23 |
 | [clever](./clever/) | $12.4M | 10.3% | $10.8M | active | 3 | 78 | 2026-05-23 |
 | [coinsquare](./coinsquare/) | $12.4M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
@@ -495,6 +497,7 @@
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |
 | [wanswap-dex](./wanswap-dex/) | $1.9M | 1.1% | $1.9M | declining | 1 | 935 | 2026-05-25 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | rugged | 8 | 83 | 2026-05-25 |
+| [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | active | 0 | 6 | 2026-05-25 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | dead | 14 | 96 | 2026-05-24 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [wrapped-bnb](./wrapped-bnb/) | $1.8M | 0.0% | $1.8M | declining | 1 | 905 | 2026-05-23 |

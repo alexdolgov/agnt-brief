@@ -1,0 +1,17 @@
+{
+  "address": "0x888888bab58a7bd3068110749bc7b63b62ce874d",
+  "chain_id": 9745,
+  "contract_name": "StakedchUSDV2",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "shanghai",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "00000000000000000000000022222215d4edc5510d23d0886133e7ece7f5fdc1000000000000000000000000d9911e44c0a3476892e1c1b79f3f25809cd80861000000000000000000000000d9911e44c0a3476892e1c1b79f3f25809cd80861",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T07:19:29.600Z"
+}

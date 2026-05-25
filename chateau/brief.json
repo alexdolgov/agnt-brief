@@ -1,0 +1,317 @@
+{
+  "schema_version": "2.0",
+  "project_key": "chateau",
+  "generated_at": "2026-05-25T07:19:27.137Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "chateau",
+    "tier": 0,
+    "peak_tvl": 1250394,
+    "peak_date": "2026-01-10T00:00:00.000Z",
+    "tvl_30d_ago": 1036536,
+    "tvl_90d_ago": 1142228,
+    "tvl_current": 1036454,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": null,
+    "change_30d_pct": -0.007910964983367678,
+    "change_90d_pct": -9.260322807705643,
+    "days_since_peak": 135,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 17.109806988837118
+  },
+  "summary": {
+    "total_contracts": 5,
+    "total_addresses": 6,
+    "unique_implementations": 5,
+    "total_deployments": 6,
+    "audited_contracts": 1,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 2,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 33.3,
+    "total_audits": 1,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 1036447.87805,
+    "tvl_usd": 19062.448015579543,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "plasma": 19062.45
+    },
+    "asd_usd": 19062.448015579543,
+    "website_url": "https://www.chateau.capital",
+    "chains": [
+      "hyperliquid",
+      "plasma"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-08",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "CHATEAU is a real-world asset (RWA) protocol that issues the chUSD stablecoin backed by real-world assets and offers staking derivatives (StakedchUSDOFT, StakedchUSDV2) to earn yield on chUSD deposits.",
+    "relationship_narrative": "The two chUSD instances likely represent the same stablecoin across different chains or pools, while StakedchUSDOFT and StakedchUSDV2 are staking derivatives that depend on chUSD as the underlying asset. The unnamed contracts likely provide infrastructure such as staking logic or access control shared between the staking tokens.",
+    "product_family_count": 2
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x888888bab58a7bd3068110749bc7b63b62ce874d",
+      "name": "StakedchUSDV2",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "CHATEAU",
+      "tvl_usd": 19062.448015579543,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakedchUSDV2",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x888888bab58a7bd3068110749bc7b63b62ce874d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 19062.448015579543,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x22222215d4edc5510d23d0886133e7ece7f5fdc1",
+      "name": "chUSD",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Smart Contracts",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "chUSD",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x2222227d90046f1483b3fb37990dea31fcabea02",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x22222215d4edc5510d23d0886133e7ece7f5fdc1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3236"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x888888facb316879129e1eee2451260e44b93aa8",
+      "name": "StakedchUSDOFT",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "CHATEAU",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakedchUSDOFT",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x888888facb316879129e1eee2451260e44b93aa8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x14e445182c2e281cf839eb0e9a12359653525658",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "CHATEAU",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x14e445182c2e281cf839eb0e9a12359653525658",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0xea6709c29d4d4b5162d8c55d0c28c5ced6cd7296",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "CHATEAU",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xea6709c29d4d4b5162d8c55d0c28c5ced6cd7296",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 3236,
+      "audit_key": "audit-3236",
+      "report_name": "Chateau - Zenith Audit Report.pdf",
+      "report_url": "https://github.com/zenith-security/reports/blob/main/reports/Chateau%20-%20Zenith%20Audit%20Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CHT",
+        "ChateauMinting",
+        "RateLimiter",
+        "chUSD",
+        "chUSDOFT"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 33.3,
+      "latest_audit": "2025-08"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x888888bab58a7bd3068110749bc7b63b62ce874d",
+      "name": "StakedchUSDV2",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 19062.448015579543,
+      "risk_note": "Verified native implementation with $19,062.45 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x888888facb316879129e1eee2451260e44b93aa8",
+      "name": "StakedchUSDOFT",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 5,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 2
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

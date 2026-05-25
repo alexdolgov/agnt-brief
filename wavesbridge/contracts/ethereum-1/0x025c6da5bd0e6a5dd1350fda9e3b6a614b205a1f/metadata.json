@@ -1,0 +1,18 @@
+{
+  "address": "0x025c6da5bd0e6a5dd1350fda9e3b6a614b205a1f",
+  "chain_id": 1,
+  "contract_name": "AirdropGrapesToken",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T07:15:43.262Z"
+}

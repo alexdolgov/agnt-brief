@@ -1,0 +1,99 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "orderExpiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionId",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct WasabiStructs.PoolBid",
+        "name": "_poolBid",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_signature",
+        "type": "bytes"
+      }
+    ],
+    "name": "getSignerForPoolBid",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "orderExpiry",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "optionId",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct WasabiStructs.PoolBid",
+        "name": "_poolBid",
+        "type": "tuple"
+      }
+    ],
+    "name": "hashForPoolBid",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

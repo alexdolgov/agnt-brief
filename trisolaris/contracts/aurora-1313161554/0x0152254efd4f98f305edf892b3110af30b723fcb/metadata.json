@@ -1,0 +1,17 @@
+{
+  "address": "0x0152254efd4f98f305edf892b3110af30b723fcb",
+  "chain_id": 1313161554,
+  "contract_name": "StableLPMakerV4",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x00000000000000000000000051d96ef6960cc7b4c884e1215564f926011a4064000000000000000000000000e559092d2e80d9b1d91a641ce25bacc3cfdcf6890000000000000000000000004988a896b1227218e4a686fde5eabdcabd91571f000000000000000000000000b12bfca5a55806aaf64e99521918a4bf0fc408020000000000000000000000003fade6094373f7a91a91d4607b226791fb3bceaf000000000000000000000000f86119de6ee8d4447c8219eec20e7561d09816d3",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:45:11.358Z"
+}

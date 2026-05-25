@@ -294,6 +294,7 @@
 | [parallel-protocol](./parallel-protocol/) | $3.6M | 30.8% | $3.0M | active | 5 | 38 | 2026-05-24 |
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-05-24 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
+| [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 3 | 21 | 2026-05-25 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | dead | 1 | 34 | 2026-05-24 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | unknown | 0 | 7 | 2026-05-24 |
@@ -412,6 +413,7 @@
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
+| [trisolaris](./trisolaris/) | $1.3M | 0.0% | ? | dead | 0 | 226 | 2026-05-25 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |
 | [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-05-24 |
@@ -432,6 +434,7 @@
 | [verio](./verio/) | $7.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [verus-market](./verus-market/) | $9.9M | 0.0% | ? | declining | 0 | 32 | 2026-05-23 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |
+| [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | rugged | 8 | 83 | 2026-05-25 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | dead | 14 | 96 | 2026-05-24 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [wrapped-bnb](./wrapped-bnb/) | $1.8M | 0.0% | $1.8M | declining | 1 | 905 | 2026-05-23 |

@@ -1,0 +1,17 @@
+{
+  "address": "0xfe1f3d4d7c09d2d3f959d9f77405f1e102c5d65b",
+  "chain_id": 1313161554,
+  "contract_name": "UniswapV2Router02",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000c906cf5b816e75d5e352b305673e4c64fc821bdc000000000000000000000000c9bdeed33cd01541e1eed10f90519d2c06fe3feb",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:45:13.143Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xe793455c9728fc91a3e5a33faff9eb2f228ae151",
+  "chain_id": 1313161554,
+  "contract_name": "TriMaker",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:45:12.659Z"
+}

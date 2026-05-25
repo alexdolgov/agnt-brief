@@ -1,0 +1,17 @@
+{
+  "address": "0x00b6c4e0d058d726316ae1666e353ec72598e7af",
+  "chain_id": 80094,
+  "contract_name": "WasabiShortPool",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 41,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:59:16.255Z"
+}

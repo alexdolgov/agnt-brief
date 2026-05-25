@@ -1,0 +1,18 @@
+{
+  "address": "0x802119e4e253d5c19aa06a5d567c5a41596d6803",
+  "chain_id": 1313161554,
+  "contract_name": "TriBar",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:45:12.127Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x19c804aa2782561ff03ee3b18f3ca50975c01e08",
+  "chain_id": 80094,
+  "contract_name": "PerpManager",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:59:16.107Z"
+}

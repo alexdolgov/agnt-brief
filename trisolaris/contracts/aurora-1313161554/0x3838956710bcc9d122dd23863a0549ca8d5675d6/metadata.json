@@ -1,0 +1,18 @@
+{
+  "address": "0x3838956710bcc9d122dd23863a0549ca8d5675d6",
+  "chain_id": 1313161554,
+  "contract_name": "MasterChefV2",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:45:11.128Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x4b4a53c722d54a21fa848fe72e638ee2550833c9",
+  "chain_id": 80094,
+  "contract_name": "RecoveryStrategy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000c95ab9eff8fb48760703c74416764b8f898afa1b00000000000000000000000069696969696969696969696969696969696969690000000000000000000000007b4150e0085c53dd18b235c1efe92e4b57497619",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T00:59:19.266Z"
+}

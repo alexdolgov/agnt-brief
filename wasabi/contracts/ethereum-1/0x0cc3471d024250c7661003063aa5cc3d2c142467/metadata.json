@@ -1,0 +1,18 @@
+{
+  "address": "0x0cc3471d024250c7661003063aa5cc3d2c142467",
+  "chain_id": 1,
+  "contract_name": "WASABI",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 300,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0x5133522ea5a0494ecb83f26311a095ddd7a9d4b6",
+  "fetched_at": "2026-05-25T00:59:14.135Z"
+}

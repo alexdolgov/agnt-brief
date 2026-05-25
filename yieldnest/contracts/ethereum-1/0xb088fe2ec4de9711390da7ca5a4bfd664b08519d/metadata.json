@@ -1,0 +1,18 @@
+{
+  "address": "0xb088fe2ec4de9711390da7ca5a4bfd664b08519d",
+  "chain_id": 1,
+  "contract_name": "ynViewer",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BSD 3-Clause License, BUSL-1.1, CC0-1.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 41,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T14:32:42.268Z"
+}

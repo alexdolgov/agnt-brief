@@ -112,7 +112,7 @@
 | [dango](./dango/) | $5.6M | 0.0% | $5.6M | unknown | 1 | 56 | 2026-05-25 |
 | [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | dead | 7 | 17 | 2026-05-24 |
 | [debridge](./debridge/) | $379.5M | 0.0% | $379.5M | declining | 1 | 164 | 2026-05-23 |
-| [decentralized-euro](./decentralized-euro/) | $230.7M | 8.7% | $230.7M | active | 3 | 174 | 2026-05-24 |
+| [decentralized-euro](./decentralized-euro/) | $230.4M | 28.2% | $230.4M | active | 3 | 72 | 2026-05-25 |
 | [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-05-24 |
 | [defi-kingdoms](./defi-kingdoms/) | $6.5M | 0.0% | ? | dead | 1 | 5 | 2026-05-23 |
 | [defichain-dex](./defichain-dex/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
@@ -163,7 +163,7 @@
 | [flex](./flex/) | $1.3M | 0.0% | ? | unknown | 0 | 1 | 2026-05-25 |
 | [flexa](./flexa/) | $1.7M | 4.1% | $1.7M | dead | 2 | 65 | 2026-05-24 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
-| [flying-tulip](./flying-tulip/) | $53.1M | 0.0% | $53.1M | unknown | 0 | 152 | 2026-05-23 |
+| [flying-tulip](./flying-tulip/) | $52.8M | 0.0% | $52.8M | unknown | 0 | 77 | 2026-05-25 |
 | [fomo3d](./fomo3d/) | $2.6M | 0.0% | ? | active | 0 | 23 | 2026-05-24 |
 | [forgeyields](./forgeyields/) | $1.9M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
 | [four.meme](./four.meme/) | $4.9M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
@@ -517,7 +517,7 @@
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | dead | 14 | 96 | 2026-05-24 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [wrapped-bnb](./wrapped-bnb/) | $1.5M | 0.0% | $1.5M | declining | 1 | 54 | 2026-05-25 |
-| [wrapped](./wrapped/) | $1.7M | 0.0% | $1.7M | active | 0 | 119 | 2026-05-22 |
+| [wrapped](./wrapped/) | $1.5M | 0.0% | $1.5M | active | 0 | 16 | 2026-05-25 |
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 51 | 2026-05-25 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [xsy](./xsy/) | $3.6M | 0.0% | $3.6M | active | 0 | 16 | 2026-05-22 |
@@ -526,7 +526,7 @@
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [yei-finance](./yei-finance/) | $29.8M | 0.0% | ? | declining | 1 | 44 | 2026-05-22 |
 | [yieldfi](./yieldfi/) | $43.7M | 66.7% | $16.3M | declining | 7 | 23 | 2026-05-23 |
-| [yieldnest](./yieldnest/) | $19.2M | 0.0% | $19.2M | declining | 0 | 89 | 2026-05-22 |
+| [yieldnest](./yieldnest/) | $19.2M | 0.0% | $19.2M | declining | 0 | 45 | 2026-05-25 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | unknown | 1 | 191 | 2026-05-25 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-05-23 |
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |

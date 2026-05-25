@@ -1,0 +1,18 @@
+{
+  "address": "0xedbdfe07af988906cc031a4fbfcbf6a23c7bc222",
+  "chain_id": 137,
+  "contract_name": "StakingBalanceOracle",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "london",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T11:18:21.449Z"
+}

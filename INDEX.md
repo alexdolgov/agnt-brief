@@ -85,6 +85,7 @@
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 4 | 84 | 2026-05-24 |
 | [capx-ai](./capx-ai/) | $2.2M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
 | [carbon-defi](./carbon-defi/) | $41.7M | 22.4% | $36.6M | active | 4 | 230 | 2026-05-24 |
+| [cbridge](./cbridge/) | $18.5M | 0.0% | ? | declining | 12 | 2112 | 2026-05-25 |
 | [cex.io](./cex.io/) | $8.6M | 0.0% | ? | active | 1 | 3 | 2026-05-23 |
 | [cgo-finance](./cgo-finance/) | $1.3M | 0.0% | ? | declining | 0 | 2 | 2026-05-25 |
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -237,6 +238,7 @@
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |
 | [klaystation](./klaystation/) | $2.2M | 0.0% | ? | dead | 0 | 1 | 2026-05-24 |
 | [klayswap](./klayswap/) | $4.8M | 0.0% | ? | sunsetting | 4 | 22 | 2026-05-23 |
+| [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-05-25 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 34.4% | $23.1K | active | 3 | 53 | 2026-05-24 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-05-23 |
 | [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-05-24 |
@@ -317,6 +319,7 @@
 | [odyssey-finance](./odyssey-finance/) | $9.5M | 0.0% | ? | active | 0 | 79 | 2026-05-23 |
 | [okcoin](./okcoin/) | $26.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [omnibtc](./omnibtc/) | $2.3M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
+| [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | unknown | 0 | 24 | 2026-05-25 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-05-23 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | dead | 0 | 103 | 2026-05-24 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |

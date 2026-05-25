@@ -1,0 +1,17 @@
+{
+  "address": "0x75099a54f72ef1ae33f89e57157de8c205b72b54",
+  "chain_id": 137,
+  "contract_name": "Memories",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T11:18:20.935Z"
+}

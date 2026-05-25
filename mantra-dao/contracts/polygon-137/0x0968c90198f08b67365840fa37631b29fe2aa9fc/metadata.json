@@ -1,0 +1,18 @@
+{
+  "address": "0x0968c90198f08b67365840fa37631b29fe2aa9fc",
+  "chain_id": 137,
+  "contract_name": "JumpRateModel",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "constantinople",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T11:59:46.199Z"
+}

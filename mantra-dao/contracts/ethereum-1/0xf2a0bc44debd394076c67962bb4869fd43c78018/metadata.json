@@ -1,0 +1,17 @@
+{
+  "address": "0xf2a0bc44debd394076c67962bb4869fd43c78018",
+  "chain_id": 1,
+  "contract_name": "DynamicFeePluginImplementation",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T11:59:54.162Z"
+}

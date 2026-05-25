@@ -1,0 +1,17 @@
+{
+  "address": "0xaaa81db3cb943c20b032d16d9cbf471a3757931d",
+  "chain_id": 1,
+  "contract_name": "AlgebraUpgradeablePlugin",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 48,
+  "constructor_arguments": "000000000000000000000000d265f57c36ac60d3f7931ec5c7396966f0c246a7000000000000000000000000893388ba29248261a0f13371bd4ae3700ce06ec90000000000000000000000005aefba317baba46eaf98fd6f381d07673bca6467000000000000000000000000f2a0bc44debd394076c67962bb4869fd43c7801800000000000000000000000049a390a3dfd2d01389f799965f3af5961f87d22800000000000000000000000037a4950b4ea0c46596404895c5027b088b0e70e70000000000000000000000001b3b62b519a60e8927d4ffbb54681871e1bb6f11",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T11:59:52.953Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x76d4d1eaa0c4b3645e75c46e573c1d4f75e9041e",
+  "chain_id": 42161,
+  "contract_name": "UniswapV3Pool",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T11:40:38.778Z"
+}

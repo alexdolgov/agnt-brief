@@ -1,0 +1,17 @@
+{
+  "address": "0x5aefba317baba46eaf98fd6f381d07673bca6467",
+  "chain_id": 1,
+  "contract_name": "VolatilityOraclePluginImplementation",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T11:59:53.414Z"
+}

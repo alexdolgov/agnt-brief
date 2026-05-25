@@ -1,0 +1,17 @@
+{
+  "address": "0x1b3b62b519a60e8927d4ffbb54681871e1bb6f11",
+  "chain_id": 1,
+  "contract_name": "SecurityPluginImplementation",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T11:59:50.809Z"
+}

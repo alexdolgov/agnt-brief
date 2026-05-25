@@ -1,0 +1,119 @@
+[
+  {
+    "inputs": [],
+    "name": "targetIsTooOld",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "volatilityOracleAlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "period",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "currentTime",
+        "type": "uint32"
+      }
+    ],
+    "name": "canGetTwap",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "period",
+        "type": "uint32"
+      },
+      {
+        "internalType": "int24",
+        "name": "currentTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint32",
+        "name": "currentTime",
+        "type": "uint32"
+      }
+    ],
+    "name": "getTwapTick",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "timeWeightedAverageTick",
+        "type": "int24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "time",
+        "type": "uint32"
+      },
+      {
+        "internalType": "int24",
+        "name": "tick",
+        "type": "int24"
+      }
+    ],
+    "name": "initializeTWAP",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "startIndex",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "amount",
+        "type": "uint16"
+      }
+    ],
+    "name": "prepayTimepointsSlots",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "currentTimestamp",
+        "type": "uint32"
+      },
+      {
+        "internalType": "int24",
+        "name": "tick",
+        "type": "int24"
+      }
+    ],
+    "name": "writeTimepoint",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

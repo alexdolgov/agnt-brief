@@ -1,0 +1,131 @@
+[
+  {
+    "inputs": [],
+    "name": "getFastTwapPeriod",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRebalanceManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getSlowTwapPeriod",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_rebalanceManager",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_slowTwapPeriod",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_fastTwapPeriod",
+        "type": "uint32"
+      }
+    ],
+    "name": "initializeALM",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int24",
+        "name": "currentTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "slowTwapTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "fastTwapTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint32",
+        "name": "lastBlockTimestamp",
+        "type": "uint32"
+      }
+    ],
+    "name": "obtainTWAPAndRebalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_fastTwapPeriod",
+        "type": "uint32"
+      }
+    ],
+    "name": "setFastTwapPeriod",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_rebalanceManager",
+        "type": "address"
+      }
+    ],
+    "name": "setRebalanceManager",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_slowTwapPeriod",
+        "type": "uint32"
+      }
+    ],
+    "name": "setSlowTwapPeriod",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

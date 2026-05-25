@@ -1,0 +1,164 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "alpha1",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "alpha2",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint32",
+            "name": "beta1",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "beta2",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "gamma1",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "gamma2",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "baseFee",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct AlgebraFeeConfiguration",
+        "name": "config",
+        "type": "tuple"
+      }
+    ],
+    "name": "changeFeeConfiguration",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint88",
+        "name": "volatilityAverage",
+        "type": "uint88"
+      }
+    ],
+    "name": "getCurrentFee",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "fee",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getFeeConfig",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "alpha1",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "alpha2",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint32",
+        "name": "beta1",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "beta2",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint16",
+        "name": "gamma1",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "gamma2",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "baseFee",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "alpha1",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "alpha2",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint32",
+            "name": "beta1",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "beta2",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint16",
+            "name": "gamma1",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "gamma2",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "baseFee",
+            "type": "uint16"
+          }
+        ],
+        "internalType": "struct AlgebraFeeConfiguration",
+        "name": "config",
+        "type": "tuple"
+      }
+    ],
+    "name": "initializeDynamicFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

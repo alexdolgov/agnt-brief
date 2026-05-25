@@ -1,0 +1,17 @@
+{
+  "address": "0x7d98346b3b000c55904918e3d9e2fc3f94683b01",
+  "chain_id": 1,
+  "contract_name": "AlgebraUpgradeablePluginFactory",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T11:59:52.661Z"
+}

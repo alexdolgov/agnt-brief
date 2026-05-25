@@ -11,7 +11,7 @@
 | [aegis-markets](./aegis-markets/) | $2.4M | 0.0% | ? | active | 2 | 15 | 2026-05-24 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-23 |
 | [aevo](./aevo/) | $98.5M | 9.2% | $1.7M | active | 17 | 331 | 2026-05-22 |
-| [aftermath-finance](./aftermath-finance/) | $1.8M | 0.0% | $1.8M | declining | 0 | 904 | 2026-05-23 |
+| [aftermath-finance](./aftermath-finance/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | unknown | 1 | 2 | 2026-05-23 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 0 | 58 | 2026-05-23 |
 | [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 2 | 284 | 2026-05-22 |
@@ -107,7 +107,7 @@
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-05-22 |
 | [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 3 | 86 | 2026-05-25 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-05-22 |
-| [dango](./dango/) | $5.9M | 0.0% | $5.9M | unknown | 1 | 906 | 2026-05-23 |
+| [dango](./dango/) | $5.6M | 0.0% | $5.6M | unknown | 1 | 56 | 2026-05-25 |
 | [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | dead | 7 | 17 | 2026-05-24 |
 | [debridge](./debridge/) | $379.5M | 0.0% | $379.5M | declining | 1 | 164 | 2026-05-23 |
 | [decentralized-euro](./decentralized-euro/) | $230.7M | 8.7% | $230.7M | active | 3 | 174 | 2026-05-24 |
@@ -464,7 +464,7 @@
 | [tenderize](./tenderize/) | $332.5M | 2.6% | $332.5M | declining | 7 | 43 | 2026-05-25 |
 | [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | unknown | 1 | 15 | 2026-05-25 |
-| [the-arena](./the-arena/) | $9.6M | 0.0% | $9.6M | active | 0 | 1054 | 2026-05-24 |
+| [the-arena](./the-arena/) | $9.3M | 0.0% | $9.3M | active | 0 | 172 | 2026-05-25 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-05-23 |
 | [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |
 | [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
@@ -503,7 +503,7 @@
 | [verus-market](./verus-market/) | $9.9M | 0.0% | ? | declining | 0 | 32 | 2026-05-23 |
 | [vest-markets](./vest-markets/) | $1.2M | 0.0% | ? | declining | 0 | 4 | 2026-05-25 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |
-| [wanswap-dex](./wanswap-dex/) | $1.9M | 1.1% | $1.9M | declining | 1 | 935 | 2026-05-25 |
+| [wanswap-dex](./wanswap-dex/) | $1.5M | 2.8% | $1.5M | declining | 1 | 53 | 2026-05-25 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | rugged | 8 | 83 | 2026-05-25 |
 | [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | active | 0 | 6 | 2026-05-25 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | dead | 14 | 96 | 2026-05-24 |

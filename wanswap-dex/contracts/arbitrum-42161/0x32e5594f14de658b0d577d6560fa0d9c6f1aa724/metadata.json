@@ -1,0 +1,17 @@
+{
+  "address": "0x32e5594f14de658b0d577d6560fa0d9c6f1aa724",
+  "chain_id": 42161,
+  "contract_name": "NyanRewards",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000ed3fb761414da74b74f33e5c5a1f78104b188dfc00000000000000000000000070df9dd83be2a9f9fcc58dd7c00d032d007b7859",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T12:46:43.899Z"
+}

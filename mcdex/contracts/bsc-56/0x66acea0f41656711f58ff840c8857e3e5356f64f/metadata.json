@@ -1,0 +1,17 @@
+{
+  "address": "0x66acea0f41656711f58ff840c8857e3e5356f64f",
+  "chain_id": 56,
+  "contract_name": "SingleBridgeToken",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "Default",
+  "license": "GNU GPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:42:23.214Z"
+}

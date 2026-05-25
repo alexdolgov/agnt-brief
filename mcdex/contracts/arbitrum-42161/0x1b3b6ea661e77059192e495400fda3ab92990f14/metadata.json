@@ -1,0 +1,18 @@
+{
+  "address": "0x1b3b6ea661e77059192e495400fda3ab92990f14",
+  "chain_id": 42161,
+  "contract_name": "MuxDistributor",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:42:29.103Z"
+}

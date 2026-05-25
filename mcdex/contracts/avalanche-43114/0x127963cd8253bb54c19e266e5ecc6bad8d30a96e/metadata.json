@@ -1,0 +1,17 @@
+{
+  "address": "0x127963cd8253bb54c19e266e5ecc6bad8d30a96e",
+  "chain_id": 43114,
+  "contract_name": "ReferralManager",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:42:20.345Z"
+}

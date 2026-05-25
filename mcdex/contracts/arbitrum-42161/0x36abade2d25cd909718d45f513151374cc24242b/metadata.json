@@ -1,0 +1,17 @@
+{
+  "address": "0x36abade2d25cd909718d45f513151374cc24242b",
+  "chain_id": 42161,
+  "contract_name": "CollateralPoolEventEmitter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:42:32.383Z"
+}

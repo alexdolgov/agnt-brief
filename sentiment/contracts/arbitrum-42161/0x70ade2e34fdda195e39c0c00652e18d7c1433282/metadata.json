@@ -1,0 +1,17 @@
+{
+  "address": "0x70ade2e34fdda195e39c0c00652e18d7c1433282",
+  "chain_id": 42161,
+  "contract_name": "AccountFactory",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:31:16.742Z"
+}

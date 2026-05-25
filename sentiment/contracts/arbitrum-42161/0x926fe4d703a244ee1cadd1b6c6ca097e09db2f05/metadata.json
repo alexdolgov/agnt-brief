@@ -1,0 +1,17 @@
+{
+  "address": "0x926fe4d703a244ee1cadd1b6c6ca097e09db2f05",
+  "chain_id": 42161,
+  "contract_name": "StableSwap2PoolController",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:31:16.777Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x179340fb5eb9c82b7c76a9a8f5512271b7cfb9c5",
+  "chain_id": 42161,
+  "contract_name": "SusdcOracleL2",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:42:28.205Z"
+}

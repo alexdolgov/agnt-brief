@@ -1,0 +1,421 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "tokenId",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint96",
+        "name": "wadFeeCollateral",
+        "type": "uint96"
+      }
+    ],
+    "name": "CollectedFee",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "sequence",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateSequence",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "diamondOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "assetId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getAssetFlags",
+    "outputs": [
+      {
+        "internalType": "uint56",
+        "name": "",
+        "type": "uint56"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "assetId",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getAssetParameter",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "assetId",
+        "type": "uint8"
+      }
+    ],
+    "name": "getAssetStorageV2",
+    "outputs": [
+      {
+        "internalType": "uint56",
+        "name": "flags",
+        "type": "uint56"
+      },
+      {
+        "internalType": "uint96",
+        "name": "spotLiquidity",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint96",
+        "name": "totalLongPosition",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint96",
+        "name": "averageLongPrice",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint96",
+        "name": "totalShortPosition",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint96",
+        "name": "averageShortPrice",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint128",
+        "name": "longCumulativeFunding",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "shortCumulativeFunding",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getMaintenanceParameter",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint96[]",
+        "name": "markPrices",
+        "type": "uint96[]"
+      }
+    ],
+    "name": "getMlpPrice",
+    "outputs": [
+      {
+        "internalType": "uint96",
+        "name": "mlpPrice",
+        "type": "uint96"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getPoolParameter",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPoolStorage",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "assetsCount",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "sequence",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "lastFundingTime",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "brokerTransactions",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "subAccountId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getSubAccount",
+    "outputs": [
+      {
+        "internalType": "uint96",
+        "name": "collateral",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint96",
+        "name": "size",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint32",
+        "name": "lastIncreasedTime",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint96",
+        "name": "entryPrice",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint128",
+        "name": "entryFunding",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "begin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "end",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSubAccountIds",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "subAccountIds",
+        "type": "bytes32[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalCount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "trader",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "begin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "end",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSubAccountIdsOf",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "subAccountIds",
+        "type": "bytes32[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalCount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "subAccountId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint96",
+        "name": "markPrice",
+        "type": "uint96"
+      }
+    ],
+    "name": "isDeleverageAllowed",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "maintainer",
+        "type": "address"
+      }
+    ],
+    "name": "isMaintainer",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "subAccountId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint96",
+        "name": "price",
+        "type": "uint96"
+      }
+    ],
+    "name": "traderPnl",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "hasProfit",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint96",
+        "name": "positionPnlUsd",
+        "type": "uint96"
+      },
+      {
+        "internalType": "uint96",
+        "name": "cappedPnlUsd",
+        "type": "uint96"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

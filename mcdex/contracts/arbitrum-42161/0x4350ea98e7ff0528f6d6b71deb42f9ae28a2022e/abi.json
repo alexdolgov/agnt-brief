@@ -1,0 +1,1210 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxy",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "collateralPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "indexTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "longTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "shortTokenPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IGmxV2Adatper.Prices",
+            "name": "prices",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "secondaryTokenBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fundingFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "boostFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidationFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidDebtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidDebtSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidFeeSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unpaidDebtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unpaidFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedCollateralAmount",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IGmxV2Adatper.DebtResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "name": "BorrowCollateral",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxy",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      }
+    ],
+    "name": "CancelOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxy",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "collateralPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "indexTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "longTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "shortTokenPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IGmxV2Adatper.Prices",
+            "name": "prices",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "gasToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "orderKey",
+            "type": "bytes32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IGmxV2Adatper.PositionResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "name": "PlaceLiquidateOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxy",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes",
+            "name": "swapPath",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenOutMinAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sizeDeltaUsd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "triggerPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "acceptablePrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "executionFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "callbackGasLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum IOrder.OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IGmxV2Adatper.OrderCreateParams",
+        "name": "createParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "collateralPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "indexTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "longTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "shortTokenPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IGmxV2Adatper.Prices",
+            "name": "prices",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "gasToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "orderKey",
+            "type": "bytes32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IGmxV2Adatper.PositionResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "name": "PlacePositionOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxy",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "collateralPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "indexTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "longTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "shortTokenPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IGmxV2Adatper.Prices",
+            "name": "prices",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "secondaryTokenBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fundingFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "boostFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidationFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidDebtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidDebtSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidFeeSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unpaidDebtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unpaidFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedCollateralAmount",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IGmxV2Adatper.DebtResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "name": "RepayCollateral",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxy",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldDebtCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldInflightDebtCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldPendingFeeCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldDebtEntryFunding",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newDebtCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newInflightDebtCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newPendingFeeCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newDebtEntryFunding",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateDebt",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxy",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "sizeDeltaUsd",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "acceptablePrice",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "triggerPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateOrder",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "proxyFactory_",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "collateralPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "indexTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "longTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "shortTokenPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IGmxV2Adatper.Prices",
+            "name": "prices",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "secondaryTokenBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fundingFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "boostFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidationFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidDebtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidDebtSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidFeeSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unpaidDebtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unpaidFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedCollateralAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IGmxV2Adatper.DebtResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "name": "onBorrowCollateral",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      }
+    ],
+    "name": "onCancelOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "collateralPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "indexTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "longTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "shortTokenPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IGmxV2Adatper.Prices",
+            "name": "prices",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "gasToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "orderKey",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct IGmxV2Adatper.PositionResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "name": "onPlaceLiquidateOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes",
+            "name": "swapPath",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenOutMinAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sizeDeltaUsd",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "triggerPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "acceptablePrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "executionFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "callbackGasLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum IOrder.OrderType",
+            "name": "orderType",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IGmxV2Adatper.OrderCreateParams",
+        "name": "createParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "collateralPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "indexTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "longTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "shortTokenPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IGmxV2Adatper.Prices",
+            "name": "prices",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "gasToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "orderKey",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct IGmxV2Adatper.PositionResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "name": "onPlacePositionOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "collateralPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "indexTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "longTokenPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "shortTokenPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IGmxV2Adatper.Prices",
+            "name": "prices",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "secondaryTokenBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fundingFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "boostFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidationFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidDebtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidDebtSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "repaidFeeSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unpaidDebtCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "unpaidFeeCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundCollateralAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "refundSecondaryTokenAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowedCollateralAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IGmxV2Adatper.DebtResult",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "name": "onRepayCollateral",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "oldDebtCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "oldInflightDebtCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "oldPendingFeeCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "oldDebtEntryFunding",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newDebtCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newInflightDebtCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newPendingFeeCollateralAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newDebtEntryFunding",
+        "type": "uint256"
+      }
+    ],
+    "name": "onUpdateDebt",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sizeDeltaUsd",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "acceptablePrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "triggerPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "onUpdateOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxyFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "indexPrice",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "position",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "positionValue",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "squareValue",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "positionMargin",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "availableCash",
+            "type": "int256"
+          }
+        ],
+        "internalType": "struct AMMModule.Context",
+        "name": "context",
+        "type": "tuple"
+      },
+      {
+        "internalType": "int256",
+        "name": "poolMargin",
+        "type": "int256"
+      }
+    ],
+    "name": "calculateCashToReturn",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "cashToReturn",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

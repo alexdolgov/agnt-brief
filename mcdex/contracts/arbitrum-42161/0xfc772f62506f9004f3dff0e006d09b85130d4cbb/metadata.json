@@ -1,0 +1,17 @@
+{
+  "address": "0xfc772f62506f9004f3dff0e006d09b85130d4cbb",
+  "chain_id": 42161,
+  "contract_name": "TrancheReader",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:42:37.445Z"
+}

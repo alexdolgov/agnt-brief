@@ -1,0 +1,18 @@
+{
+  "address": "0xa0a78899cd5c093f563ef22e86b68bbc44845fa1",
+  "chain_id": 10,
+  "contract_name": "GlobalSettlementActions",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:19:28.080Z"
+}

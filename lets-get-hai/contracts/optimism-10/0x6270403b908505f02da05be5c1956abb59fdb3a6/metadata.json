@@ -1,0 +1,18 @@
+{
+  "address": "0x6270403b908505f02da05be5c1956abb59fdb3a6",
+  "chain_id": 10,
+  "contract_name": "OracleRelayer",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:19:26.806Z"
+}

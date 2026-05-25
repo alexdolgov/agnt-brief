@@ -1,0 +1,409 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "positionRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "orderBook",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "referralCode",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "marketOrderTimeoutSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "limitOrderTimeoutSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "fundingAssetId",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32[19]",
+            "name": "reserved",
+            "type": "bytes32[19]"
+          }
+        ],
+        "internalType": "struct ProjectConfigs",
+        "name": "projectConfigs",
+        "type": "tuple"
+      }
+    ],
+    "name": "getObExecutionFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "positionRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "orderBook",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "referralCode",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "marketOrderTimeoutSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "limitOrderTimeoutSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "fundingAssetId",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32[19]",
+            "name": "reserved",
+            "type": "bytes32[19]"
+          }
+        ],
+        "internalType": "struct ProjectConfigs",
+        "name": "projectConfigs",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "key",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getOrder",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isFilled",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "enum LibGmx.OrderCategory",
+            "name": "category",
+            "type": "LibGmx.OrderCategory"
+          },
+          {
+            "internalType": "enum LibGmx.OrderReceiver",
+            "name": "receiver",
+            "type": "LibGmx.OrderReceiver"
+          },
+          {
+            "internalType": "uint64",
+            "name": "index",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint96",
+            "name": "borrow",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint88",
+            "name": "timestamp",
+            "type": "uint88"
+          }
+        ],
+        "internalType": "struct LibGmx.OrderHistory",
+        "name": "history",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "positionRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "orderBook",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "referralCode",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "marketOrderTimeoutSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "limitOrderTimeoutSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "fundingAssetId",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32[19]",
+            "name": "reserved",
+            "type": "bytes32[19]"
+          }
+        ],
+        "internalType": "struct ProjectConfigs",
+        "name": "projectConfigs",
+        "type": "tuple"
+      },
+      {
+        "internalType": "enum LibGmx.OrderReceiver",
+        "name": "receiver",
+        "type": "LibGmx.OrderReceiver"
+      }
+    ],
+    "name": "getOrderIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "positionRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "orderBook",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "referralCode",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "marketOrderTimeoutSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "limitOrderTimeoutSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "fundingAssetId",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32[19]",
+            "name": "reserved",
+            "type": "bytes32[19]"
+          }
+        ],
+        "internalType": "struct ProjectConfigs",
+        "name": "projectConfigs",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "indexToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "size",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "averagePriceUsd",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isLong",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceUsd",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lastIncreasedTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPnl",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "vault",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "positionRouter",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "orderBook",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "referralCode",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "marketOrderTimeoutSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "limitOrderTimeoutSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint8",
+            "name": "fundingAssetId",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32[19]",
+            "name": "reserved",
+            "type": "bytes32[19]"
+          }
+        ],
+        "internalType": "struct ProjectConfigs",
+        "name": "projectConfigs",
+        "type": "tuple"
+      }
+    ],
+    "name": "getPrExecutionFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

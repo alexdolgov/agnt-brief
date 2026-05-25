@@ -1,0 +1,17 @@
+{
+  "address": "0x13465f4cb3a993f72a8e2dd45ab7f1103b82a97d",
+  "chain_id": 42161,
+  "contract_name": "GmxV2Adapter",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:42:26.443Z"
+}

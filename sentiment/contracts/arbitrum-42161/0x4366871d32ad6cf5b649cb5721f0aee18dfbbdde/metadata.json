@@ -1,0 +1,18 @@
+{
+  "address": "0x4366871d32ad6cf5b649cb5721f0aee18dfbbdde",
+  "chain_id": 42161,
+  "contract_name": "UniV3TWAPOracle",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "AGPL-3.0-only, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T03:31:15.414Z"
+}

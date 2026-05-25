@@ -1,0 +1,17 @@
+{
+  "address": "0x3e5239b8b19f2610769a7bcb5e9c876bf90cb362",
+  "chain_id": 146,
+  "contract_name": "ZFSwap2EarnRewarder",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "0000000000000000000000002f2f2f74ab5db61ae8bd3c13ccd4dc8c9e8a2f2f0000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:51:53.204Z"
+}

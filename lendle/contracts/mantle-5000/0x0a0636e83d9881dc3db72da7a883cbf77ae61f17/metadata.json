@@ -1,0 +1,17 @@
+{
+  "address": "0x0a0636e83d9881dc3db72da7a883cbf77ae61f17",
+  "chain_id": 5000,
+  "contract_name": "PythPriceFeed",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "000000000000000000000000a2aa501b19aff244d90cc15a4cf739d2725b5729e62df6c8b4a85fe1a67db44dc12de5db330f7ac66b72dc658afedf0f4a415b430000000000000000000000000000000000000000000000000000000000001c20",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:50:54.242Z"
+}

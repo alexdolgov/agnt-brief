@@ -1,0 +1,17 @@
+{
+  "address": "0x49685fbdb0ebd013d1c157dfb0c7cdafc3835af5",
+  "chain_id": 146,
+  "contract_name": "NonfungibleTokenPositionDescriptor",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:51:54.549Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xc7f65c6b94a8a1c0977add58b6799ad456d72392",
+  "chain_id": 5000,
+  "contract_name": "LendingRateOracle",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:51:02.219Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x3a76e377ed58c8731f9df3a36155942438744ce3",
+  "chain_id": 324,
+  "contract_name": "ZFFactory",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000013bd7a61b46950ff0e9b41571dc4c503ee854042",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:51:52.792Z"
+}

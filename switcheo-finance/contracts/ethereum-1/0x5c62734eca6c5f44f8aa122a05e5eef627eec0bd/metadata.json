@@ -1,0 +1,17 @@
+{
+  "address": "0x5c62734eca6c5f44f8aa122a05e5eef627eec0bd",
+  "chain_id": 1,
+  "contract_name": "AlephPaymentProcessor",
+  "compiler_version": "v0.8.33+commit.64118f21",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 88,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:40:28.608Z"
+}

@@ -181,6 +181,7 @@
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 0 | 63 | 2026-05-23 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
 | [helix](./helix/) | $2.0M | 0.0% | ? | declining | 0 | 9 | 2026-05-24 |
+| [hemi](./hemi/) | $49.6K | 2.7% | $49.6K | unknown | 5 | 47 | 2026-05-25 |
 | [hemibtc](./hemibtc/) | $46.2K | 2.7% | $46.2K | active | 5 | 47 | 2026-05-22 |
 | [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-05-24 |
@@ -230,6 +231,7 @@
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 108 | 2026-05-24 |
+| [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | sunsetting | 10 | 64 | 2026-05-25 |
 | [levex](./levex/) | $11.2M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
 | [liminal](./liminal/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-22 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
@@ -403,6 +405,7 @@
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-05-23 |
 | [swappi](./swappi/) | $2.0M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [swapscanner](./swapscanner/) | $4.7M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
+| [switcheo-finance](./switcheo-finance/) | $68.4M | 0.0% | $68.4M | active | 0 | 48 | 2026-05-25 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 134 | 2026-05-23 |
 | [symbiosis](./symbiosis/) | $236.1M | 5.8% | $236.1M | active | 15 | 137 | 2026-05-23 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 22.6% | ? | active | 9 | 158 | 2026-05-23 |
@@ -437,6 +440,7 @@
 | [txflow](./txflow/) | $1.9M | 0.0% | $1.9M | unknown | 0 | 905 | 2026-05-24 |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | unknown | 0 | 150 | 2026-05-23 |
 | [umee](./umee/) | $3.2M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
+| [unchain-x](./unchain-x/) | $35.1M | 100.0% | ? | active | 2 | 1 | 2026-05-25 |
 | [unichain-bridge](./unichain-bridge/) | $2.9M | 0.0% | ? | dead | 0 | 15 | 2026-05-24 |
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [universe-xyz](./universe-xyz/) | $39.0M | 20.0% | $39.0M | dead | 3 | 36 | 2026-05-24 |
@@ -468,6 +472,7 @@
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-05-22 |
 | [zivoe](./zivoe/) | $87.1M | 58.1% | $87.1M | active | 3 | 32 | 2026-05-22 |
 | [zklink-nova](./zklink-nova/) | $33.9M | 12.1% | $33.9M | declining | 11 | 443 | 2026-05-22 |
+| [zkswap-finance](./zkswap-finance/) | $1.3M | 11.1% | ? | active | 8 | 98 | 2026-05-25 |
 | [zoomex](./zoomex/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [zoth](./zoth/) | $6.5 | 78.1% | ? | active | 5 | 43 | 2026-05-24 |
 | [zyfai](./zyfai/) | $1.6B | 0.0% | $1.6B | active | 0 | 147 | 2026-05-23 |

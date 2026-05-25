@@ -1,0 +1,18 @@
+{
+  "address": "0x047f18e7f21aa714c6a5f4b346318eb384434a4b",
+  "chain_id": 1,
+  "contract_name": "LogERC20",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:40:25.849Z"
+}

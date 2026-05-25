@@ -1,0 +1,17 @@
+{
+  "address": "0xec831f8710c6286a91a348928600157f07ac55c2",
+  "chain_id": 5000,
+  "contract_name": "WETHGateway",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "00000000000000000000000078c1b0c915c4faa5fffa6cabf0219da63d7f4cb8",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:51:02.850Z"
+}

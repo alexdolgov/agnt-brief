@@ -1,0 +1,18 @@
+{
+  "address": "0x0faa28da415abdda123233a00b7cc7f8c56445b1",
+  "chain_id": 1,
+  "contract_name": "Vesting",
+  "compiler_version": "v0.4.25+commit.59dbf8f1",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:40:25.847Z"
+}

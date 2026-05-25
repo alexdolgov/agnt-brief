@@ -1,0 +1,18 @@
+{
+  "address": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
+  "chain_id": 1,
+  "contract_name": "KyberNetworkCrystal",
+  "compiler_version": "v0.4.15+commit.bbb8e64f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:40:30.295Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xa9902e4ba29ec28a0f06f9fbd04ddbc6087facfa",
+  "chain_id": 5000,
+  "contract_name": "ReserveLogic",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:51:01.057Z"
+}

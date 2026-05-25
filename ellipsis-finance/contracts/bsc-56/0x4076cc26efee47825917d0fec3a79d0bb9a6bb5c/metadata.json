@@ -1,0 +1,18 @@
+{
+  "address": "0x4076cc26efee47825917d0fec3a79d0bb9a6bb5c",
+  "chain_id": 56,
+  "contract_name": "MultiFeeDistribution",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "NONE",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:26:36.677Z"
+}

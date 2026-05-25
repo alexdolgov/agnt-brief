@@ -1,0 +1,17 @@
+{
+  "address": "0x12cce472430f7f5071375cc0a1aab717310be116",
+  "chain_id": 137,
+  "contract_name": "LongShortPair",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 199,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:21:49.388Z"
+}

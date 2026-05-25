@@ -1,0 +1,18 @@
+{
+  "address": "0x2182b5532d8eb4b614031ac68924975100b84684",
+  "chain_id": 8453,
+  "contract_name": "DebtController",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:33:21.549Z"
+}

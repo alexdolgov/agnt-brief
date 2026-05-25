@@ -1,0 +1,87 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_l1Authority",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IDSRAuthOracle",
+        "name": "_oracle",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "l1Authority",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "l2CrossDomain",
+    "outputs": [
+      {
+        "internalType": "contract ICrossDomainOptimism",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "oracle",
+    "outputs": [
+      {
+        "internalType": "contract IDSRAuthOracle",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint96",
+            "name": "dsr",
+            "type": "uint96"
+          },
+          {
+            "internalType": "uint120",
+            "name": "chi",
+            "type": "uint120"
+          },
+          {
+            "internalType": "uint40",
+            "name": "rho",
+            "type": "uint40"
+          }
+        ],
+        "internalType": "struct IDSROracle.PotData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "name": "setPotData",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

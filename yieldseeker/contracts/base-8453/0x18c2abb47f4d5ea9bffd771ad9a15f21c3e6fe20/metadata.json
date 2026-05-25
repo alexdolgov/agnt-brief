@@ -1,0 +1,17 @@
+{
+  "address": "0x18c2abb47f4d5ea9bffd771ad9a15f21c3e6fe20",
+  "chain_id": 8453,
+  "contract_name": "CommunityRewards",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T02:33:22.040Z"
+}

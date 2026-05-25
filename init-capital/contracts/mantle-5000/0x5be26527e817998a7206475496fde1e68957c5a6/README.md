@@ -5,7 +5,7 @@
 | Chain | mantle (5000) |
 | Address | `0x5be26527e817998a7206475496fde1e68957c5a6` |
 | Role | unknown |
-| Origin | native |
+| Origin | standard_library |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (mantle [`0x5be26527e817998a7206475496fde1e68957c5a6`](../0x5be26527e817998a7206475496fde1e68957c5a6/)) |

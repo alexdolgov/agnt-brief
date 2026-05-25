@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "init-capital",
-  "generated_at": "2026-05-23T20:47:56.602Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-25T17:26:47.361Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "init-capital",
@@ -32,27 +32,27 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 109,
-    "total_addresses": 175,
-    "unique_implementations": 109,
-    "total_deployments": 175,
+    "total_contracts": 102,
+    "total_addresses": 167,
+    "unique_implementations": 102,
+    "total_deployments": 167,
     "audited_contracts": 6,
-    "unaudited_contracts": 24,
+    "unaudited_contracts": 22,
     "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 23,
+    "contracts_verified_unaudited": 21,
     "contracts_verified_by_bytecode": 2,
-    "contracts_unverified": 79,
-    "coverage_pct": 20,
+    "contracts_unverified": 74,
+    "coverage_pct": 21.4,
     "total_audits": 7,
     "scoreable_audits": 4,
     "dl_tvl_usd": 4514490.46227,
-    "tvl_usd": 66516111.79006728,
+    "tvl_usd": 66515699.02789203,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "blast": 3190.47,
-      "mantle": 66512921.32
+      "mantle": 66512508.56
     },
-    "asd_usd": 66153112.49870279,
+    "asd_usd": 66152699.73652754,
     "website_url": "https://app.init.capital",
     "chains": [
       "blast",
@@ -306,76 +306,14 @@
         }
       ],
       "audits_covering": [
-        "audit-2575",
-        "audit-2579"
+        "audit-3589",
+        "audit-3593"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
       "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0x49397ac9cb061152b770b1d274a5682155f20099",
-      "name": "TokenMintERC20Token",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 408.6560956429612,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TokenMintERC20Token",
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0x49397ac9cb061152b770b1d274a5682155f20099",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 408.6560956429612,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0x3e65ac1dd4938e02301c4869d3043903f5deb474",
-      "name": "CoinToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 4.106079601103977,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "CoinToken",
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0x3e65ac1dd4938e02301c4869d3043903f5deb474",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 4.106079601103977,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
     },
     {
       "chain_id": 5000,
@@ -442,7 +380,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2579"
+        "audit-3593"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -456,8 +394,8 @@
       "address": "0xdeaddeaddeaddeaddeaddeaddeaddeaddead1111",
       "name": "BVM_ETH",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "bvm",
       "product_line": "INIT Capital",
       "tvl_usd": null,
       "is_proxy": false,
@@ -515,8 +453,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2575",
-        "audit-2579"
+        "audit-3589",
+        "audit-3593"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -615,8 +553,8 @@
       "address": "0xc96de26018a54d51c097160568752c4e3bd6c364",
       "name": "FBTC",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "fbtc",
       "product_line": "INIT Capital",
       "tvl_usd": null,
       "is_proxy": false,
@@ -662,15 +600,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0x9aff718f2a4ed4c310d6d2da0d2fb30a5f6a9ddc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -678,7 +607,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 81457,
@@ -732,8 +661,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2575",
-        "audit-2579"
+        "audit-3589",
+        "audit-3593"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -815,7 +744,7 @@
         }
       ],
       "audits_covering": [
-        "audit-2579"
+        "audit-3593"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -991,8 +920,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2577",
-        "audit-2578"
+        "audit-3591",
+        "audit-3592"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1122,7 +1051,7 @@
       "address": "0x5313428df205273dcd4100b2fbc0803aba13ff28",
       "name": "Proxy (impl: 0xd9c0154a09f09988e8f4be6d1e8d8bc9bd805640)",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Core Contracts",
       "tvl_usd": null,
@@ -1153,7 +1082,7 @@
       "address": "0x85babafa73c3499247d937f7abb877e0e6250f68",
       "name": "Proxy (impl: 0xd9c0154a09f09988e8f4be6d1e8d8bc9bd805640)",
       "role": "proxy",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Core Contracts",
       "tvl_usd": null,
@@ -1746,37 +1675,6 @@
     {
       "chain_id": 5000,
       "chain_name": "mantle",
-      "address": "0x1cc57dce39176c5ab33f9b88b8bbac43b10c76b9",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0x1cc57dce39176c5ab33f9b88b8bbac43b10c76b9",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
       "address": "0x1fe6b7cab3df27058ba3a8f60acbf0a0322b5d14",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -1997,7 +1895,7 @@
       "address": "0x573f4e5cd1c33f71312ec482e131f6e4f80380cb",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2028,7 +1926,7 @@
       "address": "0x574341cfa97c1097bf85149c124725971f083432",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2102,37 +2000,6 @@
           "chain_id": 5000,
           "chain_name": "mantle",
           "address": "0x607c87b8c13e36378135b34488740516414bf23f",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0x636d4073738c071326aa70c9e5db7c334beb87be",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0x636d4073738c071326aa70c9e5db7c334beb87be",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2350,37 +2217,6 @@
           "chain_id": 5000,
           "chain_name": "mantle",
           "address": "0x90772ccfad764a8ef30c635367ec13b5d4274ef8",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0x9d42f4ad208636523d3bc3ce3f5883d04b478fe8",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0x9d42f4ad208636523d3bc3ce3f5883d04b478fe8",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2803,7 +2639,7 @@
       "address": "0xdc9fd55e2905a21dd7f5fbb1d4ea3d1da69193fb",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2924,37 +2760,6 @@
     {
       "chain_id": 5000,
       "chain_name": "mantle",
-      "address": "0xf259e640c7429cac5db761557803f06a120a54e8",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0xf259e640c7429cac5db761557803f06a120a54e8",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
       "address": "0xf42c7ba5e3f555b56b7765269fa8f2605e40995f",
       "name": "UnnamedContract",
       "role": "unknown",
@@ -2970,37 +2775,6 @@
           "chain_id": 5000,
           "chain_name": "mantle",
           "address": "0xf42c7ba5e3f555b56b7765269fa8f2605e40995f",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0xf50d60714255364f3366ad8a4e15ca4d2000d49d",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 5000,
-          "chain_name": "mantle",
-          "address": "0xf50d60714255364f3366ad8a4e15ca4d2000d49d",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -3082,7 +2856,7 @@
       "address": "0x126dcccf3d49c9cd1ab94fb52f0302128c29a957",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3144,7 +2918,7 @@
       "address": "0x2529c5e48ddcec4c235f7dba6cf3ce994899ddad",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3175,7 +2949,7 @@
       "address": "0x265daa697489968aebd650c665f4fb241b560785",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": "Core Contracts",
       "tvl_usd": null,
@@ -3206,7 +2980,7 @@
       "address": "0x3816edcf24f0717db08e50725e55bdf084ae697a",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3299,7 +3073,7 @@
       "address": "0x5468516592b98f60f5416cc4544932656ac834f2",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3454,7 +3228,7 @@
       "address": "0x7971ad62c585ff0fe042792ffd7005a3c2172df9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3485,7 +3259,7 @@
       "address": "0x812607160c85139e67031486b60309525e095afe",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3516,7 +3290,7 @@
       "address": "0x8aa1cff97dd5746529eddd19519c76deed0cb288",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3547,7 +3321,7 @@
       "address": "0x92aa51001f0bcc060e3b3d1824a79f4b5bcee445",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3671,7 +3445,7 @@
       "address": "0xcd8175f1e567ccae4543fd1af192a3ecf9dde280",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3702,7 +3476,7 @@
       "address": "0xd23ec372a82d199872dd45fe4e3241cee30b08e9",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3764,7 +3538,7 @@
       "address": "0xd9bb55f09cccaf68cde12a7a999c71d0e9ea5cfa",
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3981,8 +3755,8 @@
       "address": "0x5be26527e817998a7206475496fde1e68957c5a6",
       "name": "USDYW",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": "INIT Capital",
       "tvl_usd": null,
       "is_proxy": true,
@@ -4071,8 +3845,8 @@
   ],
   "audits": [
     {
-      "audit_id": 2573,
-      "audit_key": "audit-2573",
+      "audit_id": 3587,
+      "audit_key": "audit-3587",
       "report_name": "Code4rena_Audit_Report_1.md",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Code4rena_Audit_Report_1.md",
       "auditor": "Code4rena",
@@ -4092,8 +3866,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2574,
-      "audit_key": "audit-2574",
+      "audit_id": 3588,
+      "audit_key": "audit-3588",
       "report_name": "Code4rena_Audit_Report_2.md",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Code4rena_Audit_Report_2.md",
       "auditor": "Code4rena",
@@ -4113,8 +3887,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2575,
-      "audit_key": "audit-2575",
+      "audit_id": 3589,
+      "audit_key": "audit-3589",
       "report_name": "PeckShield_Audit_Report_v1.pdf",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/PeckShield_Audit_Report_v1.pdf",
       "auditor": "PeckShield",
@@ -4141,8 +3915,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2576,
-      "audit_key": "audit-2576",
+      "audit_id": 3590,
+      "audit_key": "audit-3590",
       "report_name": "Sparkware_Security_Audit_Report_1.pdf",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Sparkware_Security_Audit_Report_1.pdf",
       "auditor": "Sparkware",
@@ -4162,8 +3936,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2577,
-      "audit_key": "audit-2577",
+      "audit_id": 3591,
+      "audit_key": "audit-3591",
       "report_name": "Sparkware_Security_Audit_Report_2.pdf",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Sparkware_Security_Audit_Report_2.pdf",
       "auditor": "Sparkware",
@@ -4188,8 +3962,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2578,
-      "audit_key": "audit-2578",
+      "audit_id": 3592,
+      "audit_key": "audit-3592",
       "report_name": "Sparkware_Security_Audit_Report_3.pdf",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Sparkware_Security_Audit_Report_3.pdf",
       "auditor": "Sparkware",
@@ -4214,8 +3988,8 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2579,
-      "audit_key": "audit-2579",
+      "audit_id": 3593,
+      "audit_key": "audit-3593",
       "report_name": "Trust_Security_Audit_Report_v1.pdf",
       "report_url": "https://github.com/init-capital/init-core-public/blob/master/audits/Trust_Security_Audit_Report_v1.pdf",
       "auditor": "Trust Security",
@@ -4251,45 +4025,25 @@
       "auditor": "Trust Security",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 16.7,
+      "coverage_pct": 17.9,
       "latest_audit": "2023-12"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 10,
+      "coverage_pct": 10.7,
       "latest_audit": "2024-01"
     },
     {
       "auditor": "Sparkware",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 3.3,
+      "coverage_pct": 3.6,
       "latest_audit": null
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0x49397ac9cb061152b770b1d274a5682155f20099",
-      "name": "TokenMintERC20Token",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 408.6560956429612,
-      "risk_note": "Verified native implementation with $408.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0x3e65ac1dd4938e02301c4869d3043903f5deb474",
-      "name": "CoinToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 4.106079601103977,
-      "risk_note": "Verified native implementation with $4.11 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 5000,
       "chain_name": "mantle",
@@ -4339,23 +4093,13 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 5000,
-      "chain_name": "mantle",
-      "address": "0x5be26527e817998a7206475496fde1e68957c5a6",
-      "name": "USDYW",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 48,
-    "upstream": 5,
-    "standard_library": 11,
-    "needs_review": 45
+    "native": 33,
+    "upstream": 7,
+    "standard_library": 12,
+    "needs_review": 50
   },
   "scope_matching_notes": {
     "match_method_counts": {
@@ -4369,15 +4113,15 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 2573,
+        "audit_id": 3587,
         "report_name": "Code4rena_Audit_Report_1.md"
       },
       {
-        "audit_id": 2574,
+        "audit_id": 3588,
         "report_name": "Code4rena_Audit_Report_2.md"
       },
       {
-        "audit_id": 2576,
+        "audit_id": 3590,
         "report_name": "Sparkware_Security_Audit_Report_1.pdf"
       }
     ],

@@ -1,4 +1,4 @@
-# BEP20TokenImplementationV2
+# BEP20UpgradeableProxy
 
 | Field | Value |
 |---|---|

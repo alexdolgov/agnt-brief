@@ -7,13 +7,13 @@
 - Project: deBridge (`debridge`)
 - Website: [https://app.debridge.com/r/32425](https://app.debridge.com/r/32425)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T23:23:57.049Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-25T17:28:22.227Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: arbitrum, avalanche, base, bsc, cronos, ethereum, hyperliquid, linea, optimism, polygon, sei
-- Contract surface: 164 unique implementations (450 raw deployments)
+- Contract surface: 161 unique implementations (436 raw deployments)
 - DeFi Llama TVL: $4,060,254.66
-- On-chain TVL (included contracts): $379,516,334.36
-- TVL by chain: Bsc $379,516,334.36
+- On-chain TVL (included contracts): $263,879,740.52
+- TVL by chain: Bsc $263,879,740.52
 
 ## Project Description
 
@@ -25,20 +25,20 @@ The EVM Bridge Core provides foundational cross-chain messaging and token infras
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/22 (0.0%)
-- Verified + Unaudited implementations: 17
+- Verified implementations audited: 0/21 (0.0%)
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 5
-- Unverified implementations: 142
-- Unique implementations: 164
-- Raw deployments: 450
+- Unverified implementations: 140
+- Unique implementations: 161
+- Raw deployments: 436
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/debridge/information))
-- ASD (verified + unaudited TVL): $379,516,334.36
+- ASD (verified + unaudited TVL): $263,879,740.52
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $379,516,334.36 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $263,879,740.52 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -50,12 +50,11 @@ The EVM Bridge Core provides foundational cross-chain messaging and token infras
 
 - None
 
-### ⚠️ Verified + Unaudited (17)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| BEP20TokenImplementation | token | bsc | 13 deployments: bsc [`0x1fa4a7...ee5d63`](./contracts/bsc-56/0x1fa4a73a3f0133f0025378af00236f3abdee5d63/); bsc `0x3d6545...e3c25e`; bsc `0x795086...f210f7`; bsc `0x8ac76a...cd580d`; bsc `0x947950...9124c4`; bsc `0x9a2f55...a1d8a2`; bsc `0xa2b726...e4d495`; bsc `0xb7f8cd...e5e094`; bsc `0xba2ae4...744c43`; bsc `0xbf7c81...1337fe`; bsc `0xd475c9...185b92`; bsc `0xdd3c81...50385a`; bsc `0xfb6115...58f802` | ⚠️ Unaudited |
-| BEP20TokenImplementationV2 | token | bsc | [`0x250632...0aa91b`](./contracts/bsc-56/0x250632378e573c6be1ac2f97fcdf00515d0aa91b/) | ⚠️ Unaudited |
+| BEP20TokenImplementation | token | bsc | 2 deployments: bsc [`0x8ac76a...cd580d`](./contracts/bsc-56/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d/); bsc `0xba2ae4...744c43` | ⚠️ Unaudited |
 | BatchBalance | periphery | ethereum | 5 deployments: ethereum [`0x501886...98c814`](./contracts/ethereum-1/0x50188692d5549386d102642036bab916b998c814/); bsc [`0x501886...98c814`](./contracts/bsc-56/0x50188692d5549386d102642036bab916b998c814/); polygon [`0x501886...98c814`](./contracts/polygon-137/0x50188692d5549386d102642036bab916b998c814/); arbitrum [`0x501886...98c814`](./contracts/arbitrum-42161/0x50188692d5549386d102642036bab916b998c814/); avalanche `0x55c93b...91654a` | ⚠️ Unaudited |
 | CallProxy | unknown | ethereum | 39 deployments: ethereum [`0x0c4b79...e3b67a`](./contracts/ethereum-1/0x0c4b79205f6cc20c0e0201b61b99e77f3ce3b67a/); ethereum `0x4e446b...41c391`; ethereum `0x752a9e...861fef`; ethereum `0x8a0c79...28a824`; ethereum `0xbd3d65...a9b6f8`; ethereum `0xd5317e...c7d63b`; ethereum `0xe5a04b...845c7e`; optimism `0x4e446b...41c391`; optimism `0x8a0c79...28a824`; bsc [`0x0c4b79...e3b67a`](./contracts/bsc-56/0x0c4b79205f6cc20c0e0201b61b99e77f3ce3b67a/); bsc `0x4e446b...41c391`; bsc `0x752a9e...861fef`; bsc `0x8a0c79...28a824`; bsc `0xbd3d65...a9b6f8`; bsc `0xd5317e...c7d63b`; bsc `0xe5a04b...845c7e`; polygon [`0x0c4b79...e3b67a`](./contracts/polygon-137/0x0c4b79205f6cc20c0e0201b61b99e77f3ce3b67a/); polygon `0x4e446b...41c391`; polygon `0x752a9e...861fef`; polygon `0x8a0c79...28a824`; polygon `0xbd3d65...a9b6f8`; polygon `0xd5317e...c7d63b`; polygon `0xe5a04b...845c7e`; base `0x4e446b...41c391`; base `0x8a0c79...28a824`; arbitrum [`0x0c4b79...e3b67a`](./contracts/arbitrum-42161/0x0c4b79205f6cc20c0e0201b61b99e77f3ce3b67a/); arbitrum `0x4e446b...41c391`; arbitrum `0x752a9e...861fef`; arbitrum `0x8a0c79...28a824`; arbitrum `0xbd3d65...a9b6f8`; arbitrum `0xd5317e...c7d63b`; arbitrum `0xe5a04b...845c7e`; avalanche `0x1e4823...0570bc`; avalanche `0x4e446b...41c391`; avalanche `0x8a0c79...28a824`; avalanche `0x8b0e35...b01278`; avalanche `0xd34c23...5044d6`; linea `0x4e446b...41c391`; linea `0x8a0c79...28a824` | ⚠️ Unaudited |
 | CrosschainForwarderProxy | periphery | optimism | 2 deployments: optimism [`0x663dc1...83c251`](./contracts/optimism-10/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/); linea [`0x663dc1...83c251`](./contracts/linea-59144/0x663dc15d3c1ac63ff12e45ab68fea3f0a883c251/) | ⚠️ Unaudited |
@@ -90,7 +89,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 | ExternalCallExecutor | unknown | ethereum | 7 deployments: ethereum [`0xae0361...4c7974`](./contracts/ethereum-1/0xae0361b1c3454b297129e01046057f1d294c7974/); optimism [`0xae0361...4c7974`](./contracts/optimism-10/0xae0361b1c3454b297129e01046057f1d294c7974/); bsc [`0xae0361...4c7974`](./contracts/bsc-56/0xae0361b1c3454b297129e01046057f1d294c7974/); polygon [`0xae0361...4c7974`](./contracts/polygon-137/0xae0361b1c3454b297129e01046057f1d294c7974/); base [`0xae0361...4c7974`](./contracts/base-8453/0xae0361b1c3454b297129e01046057f1d294c7974/); arbitrum [`0xae0361...4c7974`](./contracts/arbitrum-42161/0xae0361b1c3454b297129e01046057f1d294c7974/); linea [`0xae0361...4c7974`](./contracts/linea-59144/0xae0361b1c3454b297129e01046057f1d294c7974/) | ⚠️ Unaudited (bytecode match) |
 | SimpleFeeProxy | unknown | ethereum | 13 deployments: ethereum [`0x27406e...f11f87`](./contracts/ethereum-1/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); ethereum `0x37a52d...caa83c`; ethereum `0xc2bac0...623636`; optimism [`0x27406e...f11f87`](./contracts/optimism-10/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); bsc [`0x27406e...f11f87`](./contracts/bsc-56/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); bsc `0x37a52d...caa83c`; polygon [`0x27406e...f11f87`](./contracts/polygon-137/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); polygon `0x37a52d...caa83c`; base [`0x27406e...f11f87`](./contracts/base-8453/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); arbitrum [`0x27406e...f11f87`](./contracts/arbitrum-42161/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); arbitrum `0x37a52d...caa83c`; avalanche [`0x27406e...f11f87`](./contracts/avalanche-43114/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/); linea [`0x27406e...f11f87`](./contracts/linea-59144/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87/) | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (142)
+### ❓ Unverified (140)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -199,13 +198,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | sei | `0xf0bbd6...22d2a3` | ❓ Unverified |
 | UnnamedContract | unknown | sei | `0xf7399c...902688` | ❓ Unverified |
 | UnnamedContract | unknown | sei | `0xfcf836...4d6a59` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x202ef2...1c70a4` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x4a8112...e22180` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x570687...3d2728` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x584049...d50336` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x60e501...57b91f` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0x95c99e...c53a30` | ❓ Unverified |
-| UnnamedContract | unknown | base | `0x9944e6...3a3b76` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0xafcfda...686892` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0xcb8e9e...6970bf` | ❓ Unverified |
 | UnnamedContract | unknown | base | `0xeae935...e7e000` | ❓ Unverified |
@@ -251,8 +248,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x1fa4a7...ee5d63`](./contracts/bsc-56/0x1fa4a73a3f0133f0025378af00236f3abdee5d63/) | BEP20TokenImplementation | token | $368,967,122.05 | Verified native implementation with $368,967,122.05 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x250632...0aa91b`](./contracts/bsc-56/0x250632378e573c6be1ac2f97fcdf00515d0aa91b/) | BEP20TokenImplementationV2 | token | $10,549,212.32 | Verified native implementation with $10,549,212.32 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x8ac76a...cd580d`](./contracts/bsc-56/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d/) | BEP20TokenImplementation | token | $263,879,740.52 | Verified native implementation with $263,879,740.52 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x501886...98c814`](./contracts/ethereum-1/0x50188692d5549386d102642036bab916b998c814/) | BatchBalance | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0c4b79...e3b67a`](./contracts/ethereum-1/0x0c4b79205f6cc20c0e0201b61b99e77f3ce3b67a/) | CallProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | linea | [`0x4084fd...b0d55d`](./contracts/linea-59144/0x4084fdaa5088427496102a994b079c6018b0d55d/) | CrosschainForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -271,10 +267,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 92 |
+| native | 84 |
 | upstream | 2 |
 | standard_library | 7 |
-| needs_review | 63 |
+| needs_review | 68 |
 
 ## Scope Matching Notes
 

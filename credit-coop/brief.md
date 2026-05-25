@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Credit Coop
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 34.9% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 35.1% over 90 days
 
 ## Project Overview
 
 - Project: Credit Coop (`credit-coop`)
 - Website: [https://www.creditcoop.xyz/](https://www.creditcoop.xyz/)
-- Lifecycle: unknown (Tier 0, 48.9% below peak)
-- Generated: 2026-05-23T20:45:49.500Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: unknown (Tier 0, 48.8% below peak)
+- Generated: 2026-05-25T17:28:35.089Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: base, ethereum
 - Contract surface: 2 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $4,554,277.04

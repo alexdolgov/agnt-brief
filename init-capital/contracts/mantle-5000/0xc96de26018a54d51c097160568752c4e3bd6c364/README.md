@@ -5,7 +5,7 @@
 | Chain | mantle (5000) |
 | Address | `0xc96de26018a54d51c097160568752c4e3bd6c364` |
 | Role | unknown |
-| Origin | needs_review |
+| Origin | upstream |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 1 (mantle [`0xc96de26018a54d51c097160568752c4e3bd6c364`](../0xc96de26018a54d51c097160568752c4e3bd6c364/)) |

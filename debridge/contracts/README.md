@@ -1,6 +1,6 @@
 # debridge — Contract Index
 
-164 unique implementations across 11 chains · 450 deployments · 0 audited · 22 unaudited · 142 unverified
+161 unique implementations across 11 chains · 436 deployments · 0 audited · 21 unaudited · 140 unverified
 
 ## adapter (1)
 
@@ -37,17 +37,16 @@
 |---|---|---|---|---|
 | [TransparentUpgradeableProxy (52 deployments)](./ethereum-1/0x413dddce3d0ead2489648e482d192a7758c2b1b4/) | ethereum | 52 deployments: ethereum [`0x413ddd...c2b1b4`](./ethereum-1/0x413dddce3d0ead2489648e482d192a7758c2b1b4/); ethereum `0x8b0e35...b01278`; optimism `0x413ddd...c2b1b4`; optimism `0x61ef2e...8f6cf9`; optimism `0xc2bac0...623636`; bsc `0x413ddd...c2b1b4`; bsc `0x61ef2e...8f6cf9`; bsc `0x8b0e35...b01278`; bsc `0xc2bac0...623636`; polygon `0x413ddd...c2b1b4`; polygon `0x61ef2e...8f6cf9`; polygon `0x663dc1...83c251`; polygon `0x8b0e35...b01278`; polygon `0xc2bac0...623636`; hyperliquid `0x43de2d...8398aa`; hyperliquid `0x663dc1...83c251`; hyperliquid `0x8244d6...4ea464`; hyperliquid `0x8a0c79...28a824`; hyperliquid `0x949b3b...9c8a8c`; hyperliquid `0xa7b88a...95f46b`; hyperliquid `0xc2bac0...623636`; hyperliquid `0xc86ab7...997130`; hyperliquid `0xe4427a...7494fe`; hyperliquid `0xe7351f...d6dd7f`; hyperliquid `0xe93356...cb624a`; hyperliquid `0xef4fb2...30eb66`; hyperliquid `0xfebdc8...1be0a1`; sei `0x43de2d...8398aa`; sei `0x663dc1...83c251`; sei `0x8244d6...4ea464`; sei `0x8a0c79...28a824`; sei `0x949b3b...9c8a8c`; sei `0xa7b88a...95f46b`; sei `0xc2bac0...623636`; sei `0xc86ab7...997130`; sei `0xe4427a...7494fe`; sei `0xe7351f...d6dd7f`; sei `0xe93356...cb624a`; sei `0xef4fb2...30eb66`; sei `0xfebdc8...1be0a1`; base `0x413ddd...c2b1b4`; base `0x61ef2e...8f6cf9`; base `0xc2bac0...623636`; arbitrum `0x413ddd...c2b1b4`; arbitrum `0x61ef2e...8f6cf9`; arbitrum `0x663dc1...83c251`; arbitrum `0x8b0e35...b01278`; arbitrum `0xc2bac0...623636`; avalanche `0xc2bac0...623636`; linea `0x413ddd...c2b1b4`; linea `0x61ef2e...8f6cf9`; linea `0xc2bac0...623636` | ⚠️ Unaudited | Verified |
 
-## token (5)
+## token (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BEP20TokenImplementation (13 deployments)](./bsc-56/0x1fa4a73a3f0133f0025378af00236f3abdee5d63/) | bsc | 13 deployments: bsc [`0x1fa4a7...ee5d63`](./bsc-56/0x1fa4a73a3f0133f0025378af00236f3abdee5d63/); bsc `0x3d6545...e3c25e`; bsc `0x795086...f210f7`; bsc `0x8ac76a...cd580d`; bsc `0x947950...9124c4`; bsc `0x9a2f55...a1d8a2`; bsc `0xa2b726...e4d495`; bsc `0xb7f8cd...e5e094`; bsc `0xba2ae4...744c43`; bsc `0xbf7c81...1337fe`; bsc `0xd475c9...185b92`; bsc `0xdd3c81...50385a`; bsc `0xfb6115...58f802` | ⚠️ Unaudited | Verified |
-| [BEP20TokenImplementationV2](./bsc-56/0x250632378e573c6be1ac2f97fcdf00515d0aa91b/) | bsc | [`0x250632...0aa91b`](./bsc-56/0x250632378e573c6be1ac2f97fcdf00515d0aa91b/) | ⚠️ Unaudited | Verified |
+| BEP20TokenImplementation (2 deployments) | bsc | 2 deployments: bsc `0x8ac76a...cd580d`; bsc `0xba2ae4...744c43` | ⚠️ Unaudited | Verified |
 | [FiatTokenV2_2](./ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ethereum | [`0xa0b869...06eb48`](./ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited | Verified |
-| TetherToken | ethereum | `0xdac17f...831ec7` | ⚠️ Unaudited | Verified |
+| [TetherToken](./ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ethereum | [`0xdac17f...831ec7`](./ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited | Verified |
 | [WethGate (4 deployments)](./ethereum-1/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59/) | ethereum | 4 deployments: ethereum [`0xfcf836...4d6a59`](./ethereum-1/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59/); bsc `0xfcf836...4d6a59`; polygon `0xfcf836...4d6a59`; avalanche `0xfcf836...4d6a59` | ⚠️ Unaudited | Verified |
 
-## unknown (149)
+## unknown (147)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -161,13 +160,11 @@
 | UnnamedContract | sei | `0xf0bbd6...22d2a3` | ❓ Unverified | Unverified |
 | UnnamedContract | sei | `0xf7399c...902688` | ❓ Unverified | Unverified |
 | UnnamedContract | sei | `0xfcf836...4d6a59` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x202ef2...1c70a4` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x4a8112...e22180` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x570687...3d2728` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x584049...d50336` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x60e501...57b91f` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x95c99e...c53a30` | ❓ Unverified | Unverified |
-| UnnamedContract | base | `0x9944e6...3a3b76` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xafcfda...686892` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xcb8e9e...6970bf` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0xeae935...e7e000` | ❓ Unverified | Unverified |

@@ -1,6 +1,6 @@
 # init-capital — Contract Index
 
-109 unique implementations across 2 chains · 175 deployments · 6 audited · 24 unaudited · 79 unverified
+102 unique implementations across 2 chains · 167 deployments · 6 audited · 22 unaudited · 74 unverified
 
 ## core_logic (1)
 
@@ -41,18 +41,16 @@
 | [TransparentUpgradeableProxyBlast (7 deployments)](./blast-81457/0x0c2da1659c2351d504c80e60c6077d971b96fc06/) | blast | 7 deployments: blast [`0x0c2da1...96fc06`](./blast-81457/0x0c2da1659c2351d504c80e60c6077d971b96fc06/); blast `0x4b246c...f0993a`; blast `0x57200d...cea2f7`; blast `0xd97bb3...4c68c1`; blast `0xe31686...75e2ef`; blast `0xed9d7e...11904b`; blast `0xf683ce...f33d21` | ⚠️ Unaudited | Verified |
 | [TransparentUpgradeableProxyReceiveETH (4 deployments)](./mantle-5000/0x0bddc3c0669aeb9dc00a9f4c8e2e8c38f59a22f3/) | mantle | 4 deployments: mantle [`0x0bddc3...9a22f3`](./mantle-5000/0x0bddc3c0669aeb9dc00a9f4c8e2e8c38f59a22f3/); mantle `0x49a69a...e883c5`; mantle `0x7dac40...534a09`; mantle `0x7fa704...408eaa` | ⚠️ Unaudited | Verified |
 
-## token (6)
+## token (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [CoinToken](./mantle-5000/0x3e65ac1dd4938e02301c4869d3043903f5deb474/) | mantle | [`0x3e65ac...deb474`](./mantle-5000/0x3e65ac1dd4938e02301c4869d3043903f5deb474/) | ⚠️ Unaudited | Verified |
-| [FiatTokenV2_1_1 (2 deployments)](./mantle-5000/0x09bc4e0d864854c6afb6eb9a9cdf58ac190d0df9/) | mantle | 2 deployments: mantle [`0x09bc4e...0d0df9`](./mantle-5000/0x09bc4e0d864854c6afb6eb9a9cdf58ac190d0df9/); mantle `0x9aff71...6a9ddc` | ⚠️ Unaudited | Verified |
+| [FiatTokenV2_1_1](./mantle-5000/0x09bc4e0d864854c6afb6eb9a9cdf58ac190d0df9/) | mantle | [`0x09bc4e...0d0df9`](./mantle-5000/0x09bc4e0d864854c6afb6eb9a9cdf58ac190d0df9/) | ⚠️ Unaudited | Verified |
 | METHL2 | mantle | `0xcda86a...b90bb0` | ⚠️ Unaudited | Verified |
-| [TokenMintERC20Token](./mantle-5000/0x49397ac9cb061152b770b1d274a5682155f20099/) | mantle | [`0x49397a...f20099`](./mantle-5000/0x49397ac9cb061152b770b1d274a5682155f20099/) | ⚠️ Unaudited | Verified |
 | [USDT](./mantle-5000/0x201eba5cc46d216ce6dc03f6a759e8e766e956ae/) | mantle | [`0x201eba...e956ae`](./mantle-5000/0x201eba5cc46d216ce6dc03f6a759e8e766e956ae/) | ⚠️ Unaudited | Verified |
 | [WBTC](./mantle-5000/0xcabae6f6ea1ecab08ad02fe02ce9a44f09aebfa2/) | mantle | [`0xcabae6...aebfa2`](./mantle-5000/0xcabae6f6ea1ecab08ad02fe02ce9a44f09aebfa2/) | ⚠️ Unaudited | Verified |
 
-## unknown (89)
+## unknown (84)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -72,7 +70,6 @@
 | UnnamedContract | mantle | `0x137f43...b31634` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x196d4e...4367e9` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x197109...be1a3b` | ❓ Unverified | Unverified |
-| UnnamedContract | mantle | `0x1cc57d...0c76b9` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x1fe6b7...2b5d14` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x2a81ff...d0bd7d` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x32f533...618b62` | ❓ Unverified | Unverified |
@@ -84,7 +81,6 @@
 | UnnamedContract | mantle | `0x574341...083432` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x58fb83...7ae7ec` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x607c87...4bf23f` | ❓ Unverified | Unverified |
-| UnnamedContract | mantle | `0x636d40...eb87be` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x6859b1...85df2e` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x73e29d...1bc979` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x7ae574...9f9915` | ❓ Unverified | Unverified |
@@ -92,7 +88,6 @@
 | UnnamedContract | mantle | `0x7f610e...7a5012` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x84bfa4...e08375` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x90772c...274ef8` | ❓ Unverified | Unverified |
-| UnnamedContract | mantle | `0x9d42f4...478fe8` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xa757cd...ad02a0` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xa912a2...4a5c41` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xac5e09...a3ce81` | ❓ Unverified | Unverified |
@@ -110,9 +105,7 @@
 | UnnamedContract | mantle | `0xe73955...2a0cf5` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xee6194...c9eaf0` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xeed8a0...d9be34` | ❓ Unverified | Unverified |
-| UnnamedContract | mantle | `0xf259e6...0a54e8` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xf42c7b...40995f` | ❓ Unverified | Unverified |
-| UnnamedContract | mantle | `0xf50d60...00d49d` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xf525f9...977a0c` | ❓ Unverified | Unverified |
 | UnnamedContract | blast | `0x0d87d1...365d32` | ❓ Unverified | Unverified |
 | UnnamedContract | blast | `0x126dcc...29a957` | ❓ Unverified | Unverified |

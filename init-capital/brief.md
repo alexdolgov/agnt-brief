@@ -7,13 +7,13 @@
 - Project: INIT Capital (`init-capital`)
 - Website: [https://app.init.capital](https://app.init.capital)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T20:47:56.602Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-25T17:26:47.361Z
+- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
 - Chains: blast, mantle
-- Contract surface: 109 unique implementations (175 raw deployments)
+- Contract surface: 102 unique implementations (167 raw deployments)
 - DeFi Llama TVL: $4,514,490.46
-- On-chain TVL (included contracts): $66,516,111.79
-- TVL by chain: Mantle $66,512,921.32 | Blast $3,190.47
+- On-chain TVL (included contracts): $66,515,699.03
+- TVL by chain: Mantle $66,512,508.56 | Blast $3,190.47
 
 ## Project Description
 
@@ -25,27 +25,27 @@ Lending Pools rely on Core Contracts for governance (Config, RiskManager), posit
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 6/30 (20.0%)
-- Verified + Unaudited implementations: 23
+- Verified implementations audited: 6/28 (21.4%)
+- Verified + Unaudited implementations: 21
 - Verified by bytecode match: 2
-- Unverified implementations: 79
-- Unique implementations: 109
-- Raw deployments: 175
+- Unverified implementations: 74
+- Unique implementations: 102
+- Raw deployments: 167
 - Audits discovered: 7
 - Scoreable audits (matched contracts): 4
-- ASD (verified + unaudited TVL): $66,153,112.50
+- ASD (verified + unaudited TVL): $66,152,699.74
 - Latest audit: 2024-01 (stale)
 - Staleness: 0 fresh, 0 aging, 2 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $66,153,112.50 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $66,152,699.74 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Trust Security | Tier 2 | 5 | 16.7% | 2023-12 |
-| PeckShield | Tier 2 | 3 | 10.0% | 2024-01 |
-| Sparkware | Tier 2 | 1 | 3.3% | n/a |
+| Trust Security | Tier 2 | 5 | 17.9% | 2023-12 |
+| PeckShield | Tier 2 | 3 | 10.7% | 2024-01 |
+| Sparkware | Tier 2 | 1 | 3.6% | n/a |
 
 ## Contract Surface
 
@@ -59,18 +59,16 @@ Lending Pools rely on Core Contracts for governance (Config, RiskManager), posit
 | InitOracle | operational_periphery | mantle | 2 deployments: mantle [`0x4e195a...2c0350`](./contracts/mantle-5000/0x4e195a32b2f6eba9c4565ba49bef34f23c2c0350/); mantle `0x792841...b14f81` | ✅ Audited |
 | MarginTradingHook | unknown | mantle | 10 deployments: mantle [`0x213754...9718b5`](./contracts/mantle-5000/0x2137546635595919a66468cf08cb9e9e879718b5/); mantle `0x42aa4e...6aa7f9`; mantle `0x497949...1c94bd`; mantle `0x8bc7df...4dfcbb`; mantle `0x917a9f...d3dc14`; mantle `0x956794...ae7d33`; mantle `0xe4fe22...1ad1ad`; mantle `0xebf3ed...8cdefd`; mantle `0xefb43e...000763`; mantle `0xfd5c7d...b21aa7` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (23)
+### ⚠️ Verified + Unaudited (21)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | METHL2 | token | mantle | [`0xcda86a...b90bb0`](./contracts/mantle-5000/0xcda86a272531e8640cd7f1a92c01839911b90bb0/) | ⚠️ Unaudited |
-| TokenMintERC20Token | token | mantle | [`0x49397a...f20099`](./contracts/mantle-5000/0x49397ac9cb061152b770b1d274a5682155f20099/) | ⚠️ Unaudited |
-| CoinToken | token | mantle | [`0x3e65ac...deb474`](./contracts/mantle-5000/0x3e65ac1dd4938e02301c4869d3043903f5deb474/) | ⚠️ Unaudited |
 | AccessControlManager | governance | mantle | [`0xce3292...30675a`](./contracts/mantle-5000/0xce3292ca5abbdfa1db02142a67cffc708530675a/) | ⚠️ Unaudited |
 | BVM_ETH | unknown | mantle | [`0xdeadde...ad1111`](./contracts/mantle-5000/0xdeaddeaddeaddeaddeaddeaddeaddeaddead1111/) | ⚠️ Unaudited |
 | DoubleSlopeIRM | unknown | mantle | 7 deployments: mantle [`0x00fa41...4748ec`](./contracts/mantle-5000/0x00fa41248f6c3a26863ec56634fe78ad4e4748ec/); mantle `0x0959a6...1ae7e4`; mantle `0x204e80...712255`; mantle `0x594485...d1fdbf`; mantle `0x71e0b2...8b2cf6`; mantle `0xb4d787...bb640b`; mantle `0xf25e43...18398e` | ⚠️ Unaudited |
 | FBTC | unknown | mantle | [`0xc96de2...d6c364`](./contracts/mantle-5000/0xc96de26018a54d51c097160568752c4e3bd6c364/) | ⚠️ Unaudited |
-| FiatTokenV2_1_1 | token | mantle | 2 deployments: mantle [`0x09bc4e...0d0df9`](./contracts/mantle-5000/0x09bc4e0d864854c6afb6eb9a9cdf58ac190d0df9/); mantle `0x9aff71...6a9ddc` | ⚠️ Unaudited |
+| FiatTokenV2_1_1 | token | mantle | [`0x09bc4e...0d0df9`](./contracts/mantle-5000/0x09bc4e0d864854c6afb6eb9a9cdf58ac190d0df9/) | ⚠️ Unaudited |
 | InitLens | periphery | blast | 2 deployments: mantle `0x7d2b27...456042`; blast [`0x56fba2...b2860e`](./contracts/blast-81457/0x56fba2cc045c02d7adae5a9dfdce795900b2860e/) | ⚠️ Unaudited |
 | L2cmETH | unknown | mantle | [`0xe6829d...59e8fa`](./contracts/mantle-5000/0xe6829d9a7ee3040e1276fa75293bde931859e8fa/) | ⚠️ Unaudited |
 | LiqIncentiveCalculator | unknown | mantle | [`0xddc99a...0dacf3`](./contracts/mantle-5000/0xddc99aeef7d5f87118a3a2636f7d0fb6c60dacf3/) | ⚠️ Unaudited |
@@ -103,7 +101,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 |---|---|---|---|---|
 | ProxyAdmin | unknown | blast | 2 deployments: mantle `0xa55a59...e26f7a`; blast [`0x340b6c...d8d1f4`](./contracts/blast-81457/0x340b6c30e012ec9903ebb6b8d468576e60d8d1f4/) | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (79)
+### ❓ Unverified (74)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -118,7 +116,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | mantle | `0x137f43...b31634` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x196d4e...4367e9` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x197109...be1a3b` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | `0x1cc57d...0c76b9` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x1fe6b7...2b5d14` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x2a81ff...d0bd7d` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x32f533...618b62` | ❓ Unverified |
@@ -130,7 +127,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | mantle | `0x574341...083432` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x58fb83...7ae7ec` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x607c87...4bf23f` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | `0x636d40...eb87be` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x6859b1...85df2e` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x73e29d...1bc979` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x7ae574...9f9915` | ❓ Unverified |
@@ -138,7 +134,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | mantle | `0x7f610e...7a5012` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x84bfa4...e08375` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0x90772c...274ef8` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | `0x9d42f4...478fe8` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0xa757cd...ad02a0` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0xa912a2...4a5c41` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0xac5e09...a3ce81` | ❓ Unverified |
@@ -156,9 +151,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | mantle | `0xe73955...2a0cf5` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0xee6194...c9eaf0` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0xeed8a0...d9be34` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | `0xf259e6...0a54e8` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0xf42c7b...40995f` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | `0xf50d60...00d49d` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | `0xf525f9...977a0c` | ❓ Unverified |
 | UnnamedContract | unknown | blast | `0x0d87d1...365d32` | ❓ Unverified |
 | UnnamedContract | unknown | blast | `0x126dcc...29a957` | ❓ Unverified |
@@ -207,23 +200,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| mantle | [`0x49397a...f20099`](./contracts/mantle-5000/0x49397ac9cb061152b770b1d274a5682155f20099/) | TokenMintERC20Token | token | $408.66 | Verified native implementation with $408.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | [`0x3e65ac...deb474`](./contracts/mantle-5000/0x3e65ac1dd4938e02301c4869d3043903f5deb474/) | CoinToken | token | $4.11 | Verified native implementation with $4.11 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | mantle | [`0xce3292...30675a`](./contracts/mantle-5000/0xce3292ca5abbdfa1db02142a67cffc708530675a/) | AccessControlManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mantle | [`0x00fa41...4748ec`](./contracts/mantle-5000/0x00fa41248f6c3a26863ec56634fe78ad4e4748ec/) | DoubleSlopeIRM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | blast | [`0x56fba2...b2860e`](./contracts/blast-81457/0x56fba2cc045c02d7adae5a9dfdce795900b2860e/) | InitLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mantle | [`0xddc99a...0dacf3`](./contracts/mantle-5000/0xddc99aeef7d5f87118a3a2636f7d0fb6c60dacf3/) | LiqIncentiveCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mantle | [`0x06cab8...24da84`](./contracts/mantle-5000/0x06cab8cbd9bb02db40eba963a8c38d4c5924da84/) | MoneyMarketHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | [`0x5be265...57c5a6`](./contracts/mantle-5000/0x5be26527e817998a7206475496fde1e68957c5a6/) | USDYW | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 48 |
-| upstream | 5 |
-| standard_library | 11 |
-| needs_review | 45 |
+| native | 33 |
+| upstream | 7 |
+| standard_library | 12 |
+| needs_review | 50 |
 
 ## Scope Matching Notes
 
@@ -236,8 +226,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2573] Code4rena_Audit_Report_1.md
-- [2574] Code4rena_Audit_Report_2.md
-- [2576] Sparkware_Security_Audit_Report_1.pdf
+- [3587] Code4rena_Audit_Report_1.md
+- [3588] Code4rena_Audit_Report_2.md
+- [3590] Sparkware_Security_Audit_Report_1.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

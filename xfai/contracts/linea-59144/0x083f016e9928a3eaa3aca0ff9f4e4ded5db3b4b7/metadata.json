@@ -1,0 +1,17 @@
+{
+  "address": "0x083f016e9928a3eaa3aca0ff9f4e4ded5db3b4b7",
+  "chain_id": 59144,
+  "contract_name": "Exchange",
+  "compiler_version": "v0.8.6+commit.11564f7e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T07:03:27.412Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x63005bb8daa3774af731f7f8b0d7a8790eb35f50",
+  "chain_id": 137,
+  "contract_name": "PositionUnitAdjusterModule",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "0000000000000000000000008031d61faf20b6d0f178737b28488c8a4c4cc91500000000000000000000000049edb901e213bc12387eac85d7fc5486cd56a49b",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T07:09:37.809Z"
+}

@@ -156,7 +156,7 @@
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-05-23 |
 | [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 0 | 33 | 2026-05-25 |
 | [firebot](./firebot/) | $3.7M | 9.5% | $3.7M | unknown | 3 | 29 | 2026-05-24 |
-| [flamingo](./flamingo/) | $1.9M | 0.0% | $1.9M | dead | 6 | 935 | 2026-05-24 |
+| [flamingo](./flamingo/) | $1.5M | 0.0% | $1.5M | dead | 6 | 53 | 2026-05-25 |
 | [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 21 | 3 | 2026-05-24 |
 | [flex](./flex/) | $1.3M | 0.0% | ? | unknown | 0 | 1 | 2026-05-25 |
 | [flexa](./flexa/) | $1.7M | 4.1% | $1.7M | dead | 2 | 65 | 2026-05-24 |
@@ -205,7 +205,7 @@
 | [hyperdrive-hl](./hyperdrive-hl/) | $2.8M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 242 | 2026-05-24 |
-| [hyperswap](./hyperswap/) | $1.9M | 0.0% | $1.9M | active | 0 | 940 | 2026-05-22 |
+| [hyperswap](./hyperswap/) | $1.5M | 0.0% | $1.5M | active | 0 | 58 | 2026-05-25 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 12 | 2026-05-23 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | unknown | 3 | 84 | 2026-05-22 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 45 | 2026-05-24 |
@@ -238,11 +238,12 @@
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |
 | [klaystation](./klaystation/) | $2.2M | 0.0% | ? | dead | 0 | 1 | 2026-05-24 |
 | [klayswap](./klayswap/) | $4.8M | 0.0% | ? | sunsetting | 4 | 22 | 2026-05-23 |
+| [kodiak](./kodiak/) | $1.5M | 2.8% | $1.5M | declining | 7 | 53 | 2026-05-25 |
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-05-25 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 34.4% | $23.1K | active | 3 | 53 | 2026-05-24 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-05-23 |
 | [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-05-24 |
-| [larix](./larix/) | $1.9M | 0.0% | $1.9M | dead | 0 | 935 | 2026-05-25 |
+| [larix](./larix/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 0 | 1 | 2026-05-24 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
@@ -251,7 +252,7 @@
 | [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | sunsetting | 10 | 64 | 2026-05-25 |
 | [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-05-25 |
 | [levex](./levex/) | $11.2M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
-| [liminal](./liminal/) | $1.9M | 0.0% | $1.9M | active | 0 | 935 | 2026-05-22 |
+| [liminal](./liminal/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | declining | 4 | 20 | 2026-05-24 |
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | active | 0 | 93 | 2026-05-24 |

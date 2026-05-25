@@ -1,0 +1,18 @@
+{
+  "address": "0x7c255279c098fdf6c3116d2becd9978002c09f4b",
+  "chain_id": 8453,
+  "contract_name": "LiquidityPoolAave",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, BUSL-1.1, LGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-25T05:33:17.253Z"
+}

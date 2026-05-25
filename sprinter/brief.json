@@ -1,0 +1,401 @@
+{
+  "schema_version": "2.0",
+  "project_key": "sprinter",
+  "generated_at": "2026-05-25T05:33:15.369Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "sprinter",
+    "tier": 0,
+    "peak_tvl": 2723235,
+    "peak_date": "2026-04-08T00:00:00.000Z",
+    "tvl_30d_ago": 1683206,
+    "tvl_90d_ago": 1335989,
+    "tvl_current": 1096906,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 1342910,
+    "change_30d_pct": -34.832337812484035,
+    "change_90d_pct": -17.895581475595982,
+    "days_since_peak": 47,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 59.720479503237875
+  },
+  "summary": {
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
+    "audited_contracts": 4,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 4,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 100,
+    "total_audits": 6,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 1139008.44018,
+    "tvl_usd": 1139008.44018,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://sprinter.tech/",
+    "chains": [
+      "base"
+    ],
+    "tier1_coverage_pct": 50,
+    "tier1_auditors": [
+      "Spearbit"
+    ],
+    "latest_audit_date": "2026-03",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 3,
+      "aging": 3,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Sprinter is a yield protocol on Base that aggregates liquidity into ERC-4626 vaults and optimizes yield through strategies like Aave integration. It also includes liquidity mining incentives to reward depositors.",
+    "relationship_narrative": "The LiquidityPool and LiquidityPoolAave contracts serve as the core vaults, while SprinterLiquidityMining distributes incentives to depositors. The TransparentUpgradeableProxy points to a LiquidityHub implementation, likely managing shared logic or access control across the system.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xa593a9bbbc65be342ff610a01e96da2eb8539ff2",
+      "name": "LiquidityHub",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Sprinter",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6bd380415cd045525f284b7c0e8a02030159998b",
+      "impl_name": "LiquidityHub",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa593a9bbbc65be342ff610a01e96da2eb8539ff2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3206",
+        "audit-3208"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb58bb9643884abbbad64fa7ebc874c5481e5c032",
+      "name": "LiquidityPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Sprinter",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LiquidityPool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb58bb9643884abbbad64fa7ebc874c5481e5c032",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3207"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7c255279c098fdf6c3116d2becd9978002c09f4b",
+      "name": "LiquidityPoolAave",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Sprinter",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LiquidityPoolAave",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7c255279c098fdf6c3116d2becd9978002c09f4b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3207"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x479d158959b59328e89f0fbf7dfebb198c313c21",
+      "name": "SprinterLiquidityMining",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Sprinter",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SprinterLiquidityMining",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x479d158959b59328e89f0fbf7dfebb198c313c21",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3206",
+        "audit-3208"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 3205,
+      "audit_key": "audit-3205",
+      "report_name": "Sprinter remote collateral security review Cantina - final.pdf",
+      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/Sprinter%20remote%20collateral%20security%20review%20Cantina%20-%20final.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3206,
+      "audit_key": "audit-3206",
+      "report_name": "VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf",
+      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf",
+      "auditor": "Sygma Labs",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "LiquidityHub",
+        "LiquidityMining",
+        "ManagedToken",
+        "Rebalancer.sol",
+        "SprinterLiquidityMining"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3207,
+      "audit_key": "audit-3207",
+      "report_name": "VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf",
+      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf",
+      "auditor": "Sygma Labs",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "LiquidityPool",
+        "LiquidityPoolAave",
+        "Rebalancer"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3208,
+      "audit_key": "audit-3208",
+      "report_name": "cantina_sprinter_may2025.pdf",
+      "report_url": "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/cantina_sprinter_may2025.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CCTPAdapter",
+        "CensoredTransferFromMulticall",
+        "LiquidityHub",
+        "LiquidityMining",
+        "ManagedToken",
+        "Repayer",
+        "SprinterLiquidityMining"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3209,
+      "audit_key": "audit-3209",
+      "report_name": "* **Secure & Credible:** MPC-secured multi-party threshold signing, risk mitigation mechanisms, and smart contract audits by [Veridise](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf) and [Spearbit/Cantina]() make Sprinter Stash a secure platform. Built in partnership with [ChainSafe](https://chainsafe.io), a team with 7+ years of industry expertise across core protocol development, standardization/EIPs and security audits/council work.",
+      "report_url": "https://cantina.xyz/portfolio/fe3c634c-d06d-47c2-a70a-f19d2f820f58",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3210,
+      "audit_key": "audit-3210",
+      "report_name": "* [Sprinter Credit]() - Spearbit/Cantina",
+      "report_url": "https://cantina.xyz/portfolio/2a4c73be-7566-4d0b-af12-d94a037c4b01",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Sygma Labs",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 100,
+      "latest_audit": "2025-03"
+    },
+    {
+      "auditor": "Spearbit",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 50,
+      "latest_audit": "2026-03"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 3,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 6
+    },
+    "extraction_confidence_counts": {
+      "high": 2,
+      "medium": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 3205,
+        "report_name": "Sprinter remote collateral security review Cantina - final.pdf"
+      },
+      {
+        "audit_id": 3209,
+        "report_name": "* **Secure & Credible:** MPC-secured multi-party threshold signing, risk mitigation mechanisms, and smart contract audits by [Veridise](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf) and [Spearbit/Cantina]() make Sprinter Stash a secure platform. Built in partnership with [ChainSafe](https://chainsafe.io), a team with 7+ years of industry expertise across core protocol development, standardization/EIPs and security audits/council work."
+      },
+      {
+        "audit_id": 3210,
+        "report_name": "* [Sprinter Credit]() - Spearbit/Cantina"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -354,6 +354,7 @@
 | [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-05-24 |
 | [rho](./rho/) | $2.4M | 0.0% | ? | active | 4 | 32 | 2026-05-24 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 20.6% | $148.6M | declining | 15 | 195 | 2026-05-23 |
+| [rip.xyz](./rip.xyz/) | $624.7K | 25.0% | $624.7K | active | 1 | 8 | 2026-05-25 |
 | [risex](./risex/) | $3.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
@@ -398,6 +399,7 @@
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
 | [spookyswap](./spookyswap/) | $172.0K | 0.0% | $172.0K | dead | 1 | 150 | 2026-05-24 |
 | [sport.fun](./sport.fun/) | $3.7M | 0.0% | ? | active | 0 | 1 | 2026-05-24 |
+| [sprinter](./sprinter/) | $1.1M | 100.0% | ? | active | 6 | 4 | 2026-05-25 |
 | [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-05-24 |
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-05-24 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |

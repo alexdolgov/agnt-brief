@@ -202,7 +202,7 @@
 | [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
 | [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-05-24 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-05-24 |
-| [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 4 | 29 | 2026-05-24 |
+| [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 4 | 2 | 2026-05-25 |
 | [hopr](./hopr/) | $1.2M | 4.3% | ? | unknown | 2 | 81 | 2026-05-25 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [hskhodlium](./hskhodlium/) | $1.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
@@ -365,7 +365,7 @@
 | [privacy-pools](./privacy-pools/) | $6.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [probit-global](./probit-global/) | $12.7M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
-| [pumpspace](./pumpspace/) | $4.0M | 28.6% | ? | active | 4 | 763 | 2026-05-23 |
+| [pumpspace](./pumpspace/) | $4.0M | 28.6% | ? | active | 4 | 667 | 2026-05-25 |
 | [punks-terminal](./punks-terminal/) | $1.7M | 0.0% | ? | unknown | 0 | 1 | 2026-05-24 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [rain](./rain/) | $3.4M | 0.0% | ? | active | 1 | 28 | 2026-05-24 |
@@ -395,7 +395,7 @@
 | [saber](./saber/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |
-| [satlayer](./satlayer/) | $311.4M | 3.6% | $309.1M | declining | 12 | 342 | 2026-05-25 |
+| [satlayer](./satlayer/) | $289.5M | 4.4% | $287.2M | declining | 12 | 313 | 2026-05-25 |
 | [satori-finance](./satori-finance/) | $40.9K | 0.0% | $40.9K | active | 1 | 40 | 2026-05-25 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 0 | 1 | 2026-05-25 |
@@ -415,7 +415,7 @@
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-05-24 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
 | [smilee-finance](./smilee-finance/) | $1.8M | 4.3% | ? | unknown | 3 | 186 | 2026-05-24 |
-| [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 108 | 2026-05-24 |
+| [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 12 | 2026-05-25 |
 | [snuggle](./snuggle/) | $0.0 | 23.1% | $0.0 | active | 3 | 89 | 2026-05-25 |
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
 | [solayer](./solayer/) | $1.5M | 0.0% | $1.5M | declining | 5 | 53 | 2026-05-25 |
@@ -536,7 +536,7 @@
 | [zircuit-finance](./zircuit-finance/) | $180.1M | 0.0% | $180.1M | unknown | 0 | 3 | 2026-05-24 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-05-22 |
 | [zivoe](./zivoe/) | $87.1M | 58.1% | $87.1M | active | 3 | 32 | 2026-05-22 |
-| [zklink-nova](./zklink-nova/) | $33.9M | 12.1% | $33.9M | declining | 11 | 443 | 2026-05-22 |
+| [zklink-nova](./zklink-nova/) | $33.9M | 15.3% | $33.9M | declining | 11 | 381 | 2026-05-25 |
 | [zkswap-finance](./zkswap-finance/) | $1.3M | 11.1% | ? | active | 8 | 98 | 2026-05-25 |
 | [zoomex](./zoomex/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [zoth](./zoth/) | $6.5 | 78.1% | ? | active | 5 | 43 | 2026-05-24 |

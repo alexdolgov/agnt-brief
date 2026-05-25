@@ -5,7 +5,7 @@
 | Chain | ethereum (1) |
 | Address | `0xa230758d179e25072493c9fe33f5c2f915738361` |
 | Role | operational_periphery |
-| Origin | upstream |
+| Origin | needs_review |
 | Audited | No |
 | Audits | n/a |
 | Deployments | 2 (ethereum [`0xa230758d179e25072493c9fe33f5c2f915738361`](../0xa230758d179e25072493c9fe33f5c2f915738361/); ethereum `0xfa06713bbe38180ae1c8c5e5db423e2fdea3f7ae`) |

@@ -1,6 +1,6 @@
 # zklink-nova — Contract Index
 
-443 unique implementations across 11 chains · 948 deployments · 17 audited · 124 unaudited · 302 unverified
+381 unique implementations across 11 chains · 848 deployments · 17 audited · 94 unaudited · 270 unverified
 
 ## adapter (7)
 
@@ -30,39 +30,31 @@
 | [Vault (5 deployments)](./mantle-5000/0x08231bcd66c5e4d2d1d4ad2bc24bfb4477af27b3/) | mantle | 5 deployments: mantle [`0x08231b...af27b3`](./mantle-5000/0x08231bcd66c5e4d2d1d4ad2bc24bfb4477af27b3/); mantle `0x2e488d...50dae1`; mantle `0x88ceb7...533fd8`; mantle `0xac5b26...253daf`; mantle `0xf627c5...263d87` | ⚠️ Unaudited | Verified |
 | [VaultManager (3 deployments)](./ethereum-1/0x3ad85a55904b8ef62f30b5811717d6982a99f700/) | ethereum | 3 deployments: ethereum [`0x3ad85a...99f700`](./ethereum-1/0x3ad85a55904b8ef62f30b5811717d6982a99f700/); ethereum `0xdb4209...a40913`; ethereum `0xdbbad2...04057a` | ⚠️ Unaudited | Verified |
 
-## governance (9)
+## governance (7)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [ETHRegistrarController](./linea-59144/0xdb75db974b1f2bd3b5916d503036208064d18295/) | linea | [`0xdb75db...d18295`](./linea-59144/0xdb75db974b1f2bd3b5916d503036208064d18295/) | ⚠️ Unaudited | Verified |
 | [KlpManager (4 deployments)](./mantle-5000/0x3c4de8fb37055500bb3d18eae8dd0dfff527090e/) | mantle | 4 deployments: mantle [`0x3c4de8...27090e`](./mantle-5000/0x3c4de8fb37055500bb3d18eae8dd0dfff527090e/); mantle `0x7ea781...7bd7a1`; mantle `0xcf5e1c...ef24f0`; mantle `0xf91e7d...e73f10` | ⚠️ Unaudited | Verified |
-| [MantaTokenManager](./manta-169/0x55f9d1007922f3c47ab67a31ce3e503ba6a49b2f/) | manta | [`0x55f9d1...a49b2f`](./manta-169/0x55f9d1007922f3c47ab67a31ce3e503ba6a49b2f/) | ⚠️ Unaudited | Verified |
 | [PositionManager (4 deployments)](./mantle-5000/0x4b1dbc2d67980996e7e10bc1a55c2be0e703e347/) | mantle | 4 deployments: mantle [`0x4b1dbc...03e347`](./mantle-5000/0x4b1dbc2d67980996e7e10bc1a55c2be0e703e347/); mantle `0x4d59ea...9b4d69`; mantle `0x9831aa...f677a0`; mantle `0xaf6f7d...46431f` | ⚠️ Unaudited | Verified |
-| [ProxyAdmin (5 deployments)](./linea-59144/0x1e1f6f22f97b4a7522d8b62e983953639239774e/) | linea | 5 deployments: arbitrum `0xbcf5eb...da237d`; linea [`0x1e1f6f...39774e`](./linea-59144/0x1e1f6f22f97b4a7522d8b62e983953639239774e/); linea `0x34bc8b...338fa2`; linea `0xa11ba9...b370d6`; linea `0xcb04d0...7ea30c` | ⚠️ Unaudited | Verified |
+| [ProxyAdmin](./arbitrum-42161/0xbcf5eb280f6c476dd57bacbdec8d6b984ada237d/) | arbitrum | [`0xbcf5eb...da237d`](./arbitrum-42161/0xbcf5eb280f6c476dd57bacbdec8d6b984ada237d/) | ⚠️ Unaudited | Verified |
 | [Timelock (4 deployments)](./mantle-5000/0x63a14cc9baa8fd9da49c42ff2f8a3da4b147574e/) | mantle | 4 deployments: mantle [`0x63a14c...47574e`](./mantle-5000/0x63a14cc9baa8fd9da49c42ff2f8a3da4b147574e/); mantle `0xc9ef72...c99bad`; mantle `0xe7a108...403aa1`; mantle `0xf399f6...535e05` | ⚠️ Unaudited | Verified |
 | [TimelockController (2 deployments)](./ethereum-1/0x16f692525f3b8c8a96f8c945d365da958fb5735b/) | ethereum | 2 deployments: ethereum [`0x16f692...b5735b`](./ethereum-1/0x16f692525f3b8c8a96f8c945d365da958fb5735b/); ethereum `0xe4c555...312f20` | ⚠️ Unaudited | Verified |
 | [TokenAuthority](./ethereum-1/0x6fdfd096687a2d7b83e4afdc05c43519166d74a7/) | ethereum | [`0x6fdfd0...6d74a7`](./ethereum-1/0x6fdfd096687a2d7b83e4afdc05c43519166d74a7/) | ⚠️ Unaudited | Verified |
 | [ValidatorTimelock](./linea-59144/0x509ff56c152315edee91a2e0f059195519507e01/) | linea | [`0x509ff5...507e01`](./linea-59144/0x509ff56c152315edee91a2e0f059195519507e01/) | ✅ Audited | Verified |
 
-## operational_periphery (20)
+## operational_periphery (14)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Airdrop](./mantle-5000/0x8551d2141a755ed8ca3a9e4bd9977dadf300fdb2/) | mantle | [`0x8551d2...00fdb2`](./mantle-5000/0x8551d2141a755ed8ca3a9e4bd9977dadf300fdb2/) | ⚠️ Unaudited | Verified |
 | [BeaconOracle](./ethereum-1/0x2369624dba451447d629687ab660b6dfd3740bd6/) | ethereum | [`0x236962...740bd6`](./ethereum-1/0x2369624dba451447d629687ab660b6dfd3740bd6/) | ⚠️ Unaudited | Verified |
-| [BridgedToken (11 deployments)](./linea-59144/0x05f5198b1d4a37e07ac510fc7a207e1499e8aef7/) | linea | 11 deployments: linea [`0x05f519...e8aef7`](./linea-59144/0x05f5198b1d4a37e07ac510fc7a207e1499e8aef7/); linea `0x166868...c75bf9`; linea `0x17db45...f9e3ad`; linea `0x23fd0c...4ff796`; linea `0x435c9b...72a7fb`; linea `0x84f3b3...511208`; linea `0xbe641f...c76d04`; linea `0xc0729f...72a9d4`; linea `0xc55c05...6226c3`; linea `0xda8aef...2d49df`; linea `0xe840c5...ae197b` | ⚠️ Unaudited | Verified |
 | [CumulativeMerkleDrop (2 deployments)](./ethereum-1/0x1349a8d352b1971cbebeacf55fb75526f47b6610/) | ethereum | 2 deployments: ethereum [`0x1349a8...7b6610`](./ethereum-1/0x1349a8d352b1971cbebeacf55fb75526f47b6610/); ethereum `0x4d68f9...a1bfd6` | ⚠️ Unaudited | Verified |
-| [CustomBridgedToken (9 deployments)](./linea-59144/0x0ece76334fb560f2b1a49a60e38cf726b02203f0/) | linea | 9 deployments: linea [`0x0ece76...2203f0`](./linea-59144/0x0ece76334fb560f2b1a49a60e38cf726b02203f0/); linea `0x37cc52...ead306`; linea `0x3aab22...05a9b4`; linea `0x4af15e...6b00d5`; linea `0x5b1622...dcfa2d`; linea `0x6baa31...017acb`; linea `0xa21943...e12b93`; linea `0xb5bedd...68fc8f`; linea `0xc0583e...30b010` | ⚠️ Unaudited | Verified |
+| [CustomBridgedToken (2 deployments)](./linea-59144/0x3aab2285ddcddad8edf438c1bab47e1a9d05a9b4/) | linea | 2 deployments: linea [`0x3aab22...05a9b4`](./linea-59144/0x3aab2285ddcddad8edf438c1bab47e1a9d05a9b4/); linea `0xb5bedd...68fc8f` | ⚠️ Unaudited | Verified |
 | [FastPriceFeed (2 deployments)](./mantle-5000/0x391536d06480e554cfa60f9e2be0f3bbe5a377ca/) | mantle | 2 deployments: mantle [`0x391536...a377ca`](./mantle-5000/0x391536d06480e554cfa60f9e2be0f3bbe5a377ca/); mantle `0x70c3de...18f979` | ⚠️ Unaudited | Verified |
 | [L1ERC20Bridge (20 deployments)](./manta-169/0x0d53ce63f3a72879d543ed6272a081308a731470/) | manta | 20 deployments: ethereum `0x3203e8...307352`; ethereum `0xad16ed...44b6b6`; ethereum `0xc271a8...669d2e`; optimism `0x21fe89...86c3b8`; optimism `0x5bd512...326eaa`; optimism `0x683669...2216f5`; manta [`0x0d53ce...731470`](./manta-169/0x0d53ce63f3a72879d543ed6272a081308a731470/); manta `0x5f58bc...fef28c`; mantle `0x62351b...a5f2b2`; mantle `0x7769c1...3ea458`; base `0x413552...374b1d`; base `0x80d12a...1674d5`; base `0xa89aa7...9ce715`; arbitrum `0x1202e0...685ffb`; arbitrum `0x5f58bc...fef28c`; arbitrum `0xfb0ad0...8f5585`; linea `0x62ce24...e630f8`; blast `0x4d7012...fd3dec`; blast `0x8df0c2...9f500b`; blast `0xc24864...5503f5` | ✅ Audited | Verified |
-| [L2USDCBridge (6 deployments)](./linea-59144/0x1998108fa7993ea67a8b1a99d392a3288c5a5521/) | linea | 6 deployments: linea [`0x199810...5a5521`](./linea-59144/0x1998108fa7993ea67a8b1a99d392a3288c5a5521/); linea `0x3c5cac...d924ca`; linea `0x6990d3...0b418c`; linea `0x6d967f...d7a43c`; linea `0x71e4db...220b81`; linea `0xa2ee6f...62504a` | ⚠️ Unaudited | Verified |
 | [LargeStakeOracle (2 deployments)](./ethereum-1/0x116d631583026799d61a284518762cf3923d5f6d/) | ethereum | 2 deployments: ethereum [`0x116d63...3d5f6d`](./ethereum-1/0x116d631583026799d61a284518762cf3923d5f6d/); ethereum `0x5f1725...6b8495` | ⚠️ Unaudited | Verified |
 | [MantaMintableERC20WithBridgeFlag (6 deployments)](./manta-169/0x34c7ad65e4163306f8745996688b476914201ce0/) | manta | 6 deployments: manta [`0x34c7ad...201ce0`](./manta-169/0x34c7ad65e4163306f8745996688b476914201ce0/); manta `0x77b6f9...1c2300`; manta `0x9bf486...7a2c6c`; manta `0xa53e00...b6527e`; manta `0xbdad40...61fb07`; manta `0xc8d4bc...45b986` | ⚠️ Unaudited | Verified |
-| [MJAirdrop](./mantle-5000/0x532e522964cba02be18f767e4c0e39188894163f/) | mantle | [`0x532e52...94163f`](./mantle-5000/0x532e522964cba02be18f767e4c0e39188894163f/) | ⚠️ Unaudited | Verified |
 | [NodeDaoTreasury (3 deployments)](./ethereum-1/0x520b826e8d0fdfd8e0cdb1b2243f6648cc6dabd1/) | ethereum | 3 deployments: ethereum [`0x520b82...6dabd1`](./ethereum-1/0x520b826e8d0fdfd8e0cdb1b2243f6648cc6dabd1/); ethereum `0x79285f...567afc`; ethereum `0x876ef3...24b019` | ⚠️ Unaudited | Verified |
-| [OptimismBridgeExecutor](./mantle-5000/0x3a7b055bf88cdc59d20d0245809c6e6b3c5819dd/) | mantle | [`0x3a7b05...5819dd`](./mantle-5000/0x3a7b055bf88cdc59d20d0245809c6e6b3c5819dd/) | ⚠️ Unaudited | Verified |
 | [RewardDistributor (12 deployments)](./mantle-5000/0x02170fea1fd31a26aaf6dd06adf01b36db2e0a5f/) | mantle | 12 deployments: mantle [`0x02170f...2e0a5f`](./mantle-5000/0x02170fea1fd31a26aaf6dd06adf01b36db2e0a5f/); mantle `0x05e423...4876af`; mantle `0x08dcc0...0b447c`; mantle `0x37bb75...a309f1`; mantle `0x39bc24...2c2729`; mantle `0x487f6b...3ded27`; mantle `0x592f29...ac3a6e`; mantle `0x86056f...49648f`; mantle `0x9c5582...32733c`; mantle `0xb9c70c...af2961`; mantle `0xe2bef3...5d87e3`; mantle `0xebeea5...fe4b0c` | ⚠️ Unaudited | Verified |
-| [TokenBridge (4 deployments)](./linea-59144/0x0ffcbe98041b77bd87c38e2d0a6b473e7703444e/) | linea | 4 deployments: linea [`0x0ffcbe...03444e`](./linea-59144/0x0ffcbe98041b77bd87c38e2d0a6b473e7703444e/); linea `0x2bfdf4...ee97a9`; linea `0x353012...a8ceb9`; linea `0xd90ed3...777137` | ⚠️ Unaudited | Verified |
 | [VaultPriceFeed (5 deployments)](./mantle-5000/0x3a1c8d18cddfefd4499684e670c99f4cfc1d9687/) | mantle | 5 deployments: mantle [`0x3a1c8d...1d9687`](./mantle-5000/0x3a1c8d18cddfefd4499684e670c99f4cfc1d9687/); mantle `0x973623...1f8826`; mantle `0xbaa9f1...6cdb26`; mantle `0xcabdd7...3e14fe`; mantle `0xedd1e8...3fe4b7` | ⚠️ Unaudited | Verified |
 | [Vester (6 deployments)](./mantle-5000/0x2e4f63c3ffdf457ff210a29ef10ce3b12c132f0c/) | mantle | 6 deployments: mantle [`0x2e4f63...132f0c`](./mantle-5000/0x2e4f63c3ffdf457ff210a29ef10ce3b12c132f0c/); mantle `0xb1fd68...a7771a`; mantle `0xb6f417...6d227c`; mantle `0xb98de1...79d9be`; mantle `0xc4c67c...aad74f`; mantle `0xcc0246...4e249d` | ⚠️ Unaudited | Verified |
 | [WithdrawalFinalizer (2 deployments)](./linea-59144/0x2132ff9b5dac4a114e02112c20ca81b0d2fd9542/) | linea | 2 deployments: linea [`0x2132ff...fd9542`](./linea-59144/0x2132ff9b5dac4a114e02112c20ca81b0d2fd9542/); linea `0x6fe38b...f414a2` | ⚠️ Unaudited | Verified |
@@ -85,39 +77,29 @@
 | [Proxy (37 deployments)](./manta-169/0x028781ceed4a2264466ef5ab73c91603087fa131/) | manta | 37 deployments: ethereum `0x381b76...0770c9`; optimism `0x0c0f72...4190b0`; optimism `0x4c5629...27c563`; optimism `0x649dfa...7cd82d`; optimism `0x67ebb0...accb3e`; optimism `0xa194fb...dd3a2e`; optimism `0xaa46d9...81865a`; optimism `0xee7981...fd59d7`; manta [`0x028781...7fa131`](./manta-169/0x028781ceed4a2264466ef5ab73c91603087fa131/); manta `0x5bc75b...a73e61`; mantle `0x0c0f72...4190b0`; mantle `0x437a10...2bbcac`; mantle `0xc6d124...918184`; base `0x09cb6c...ee1c72`; base `0x161f4b...0477f0`; base `0x683669...2216f5`; base `0x7769c1...3ea458`; base `0x83bc73...c0055c`; base `0xa84860...256cd6`; base `0xaa46d9...81865a`; base `0xe4589e...a1be0d`; arbitrum `0x0c0404...f1e821`; arbitrum `0x2b73ab...e33fe6`; arbitrum `0x43bcb7...b7a7a6`; arbitrum `0x46c8d0...a3fa1b`; arbitrum `0x69bdfb...00688c`; arbitrum `0x95fb80...e85f3c`; arbitrum `0x996bae...6ea506`; arbitrum `0xe469c1...6d344f`; arbitrum `0xed5d1e...082ac3`; linea `0x08884b...6b7600`; linea `0x2fad6c...7fa6fd`; linea `0x3e9856...0c2fa1`; linea `0x42b43b...569e42`; linea `0x986c90...388e92`; linea `0xaedfed...bf0809`; linea `0xb98ffd...30c9cc` | ⚠️ Unaudited | Verified |
 | [TransparentUpgradeableProxy (4 deployments)](./arbitrum-42161/0x0304565ad321bb5613af5956a95eff205333c8c2/) | arbitrum | 4 deployments: manta `0x44a65d...7168ff`; arbitrum [`0x030456...33c8c2`](./arbitrum-42161/0x0304565ad321bb5613af5956a95eff205333c8c2/); arbitrum `0x733af6...32294f`; scroll `0x3c7c0e...db976c` | ⚠️ Unaudited | Verified |
 
-## registry (5)
+## registry (3)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [ELRewardFactory](./ethereum-1/0x7699fb48e19bc72e80a3b40d7e88c42256eeec7b/) | ethereum | [`0x7699fb...eeec7b`](./ethereum-1/0x7699fb48e19bc72e80a3b40d7e88c42256eeec7b/) | ⚠️ Unaudited | Verified |
 | [ELVaultFactory (2 deployments)](./ethereum-1/0x6e8104bc3e58296934984e15df1879537c766fca/) | ethereum | 2 deployments: ethereum [`0x6e8104...766fca`](./ethereum-1/0x6e8104bc3e58296934984e15df1879537c766fca/); ethereum `0xf5c560...442145` | ⚠️ Unaudited | Verified |
-| [ENSRegistry](./linea-59144/0x50130b669b28c339991d8676fa73cf122a121267/) | linea | [`0x50130b...121267`](./linea-59144/0x50130b669b28c339991d8676fa73cf122a121267/) | ⚠️ Unaudited | Verified |
 | [NodeOperatorRegistry (5 deployments)](./ethereum-1/0x37d815d5c96d4d9807b5b6e8294343dbb4c38cf1/) | ethereum | 5 deployments: ethereum [`0x37d815...c38cf1`](./ethereum-1/0x37d815d5c96d4d9807b5b6e8294343dbb4c38cf1/); ethereum `0xc65e0a...e9d88e`; ethereum `0xe2964b...f8963f`; ethereum `0xe7cdb8...8cea46`; ethereum `0xf64555...c02ede` | ⚠️ Unaudited | Verified |
-| [UpgradeableBeacon](./linea-59144/0xe798695d2e78f7caeb5bbf3385433959324c02c0/) | linea | [`0xe79869...4c02c0`](./linea-59144/0xe798695d2e78f7caeb5bbf3385433959324c02c0/) | ⚠️ Unaudited | Verified |
 
-## token (17)
+## token (9)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [CoinToken](./mantle-5000/0x3e65ac1dd4938e02301c4869d3043903f5deb474/) | mantle | [`0x3e65ac...deb474`](./mantle-5000/0x3e65ac1dd4938e02301c4869d3043903f5deb474/) | ⚠️ Unaudited | Verified |
-| [FiatTokenV1 (3 deployments)](./linea-59144/0x0e57c8d26671e267c3c971824b93343bb75c2dc8/) | linea | 3 deployments: linea [`0x0e57c8...5c2dc8`](./linea-59144/0x0e57c8d26671e267c3c971824b93343bb75c2dc8/); linea `0x3e3ef7...d27982`; linea `0xd13ea2...33a605` | ⚠️ Unaudited | Verified |
-| [FiatTokenV2_1 (3 deployments)](./linea-59144/0x176211869ca2b568f2a7d4ee941e073a821ee1ff/) | linea | 3 deployments: linea [`0x176211...1ee1ff`](./linea-59144/0x176211869ca2b568f2a7d4ee941e073a821ee1ff/); linea `0x6cda5d...f8dc9a`; linea `0xab838f...a2e0d3` | ⚠️ Unaudited | Verified |
-| [FLOKI](./mantle-5000/0x6efff76acf1698a6a215eca7d632991678ec673b/) | mantle | [`0x6efff7...ec673b`](./mantle-5000/0x6efff76acf1698a6a215eca7d632991678ec673b/) | ⚠️ Unaudited | Verified |
 | [FrogRichToken](./blast-81457/0x038f1c6ed5fccf690a920a27b39366eeef27efce/) | blast | [`0x038f1c...27efce`](./blast-81457/0x038f1c6ed5fccf690a920a27b39366eeef27efce/) | ⚠️ Unaudited | Verified |
-| [LUSDStablecoin](./mantle-5000/0xf93a85d53e4af0d62bdf3a83ccfc1ecf3eaf9f32/) | mantle | [`0xf93a85...af9f32`](./mantle-5000/0xf93a85d53e4af0d62bdf3a83ccfc1ecf3eaf9f32/) | ⚠️ Unaudited | Verified |
-| [METHL2](./mantle-5000/0xeb0c390b1fb2b63d5ed257b822a1cbbff87956ce/) | mantle | [`0xeb0c39...7956ce`](./mantle-5000/0xeb0c390b1fb2b63d5ed257b822a1cbbff87956ce/) | ⚠️ Unaudited | Verified |
 | [MintableBaseToken (5 deployments)](./mantle-5000/0x0ce206b1d2aecb40d3abb667c5f92f197a0a5b2d/) | mantle | 5 deployments: mantle [`0x0ce206...0a5b2d`](./mantle-5000/0x0ce206b1d2aecb40d3abb667c5f92f197a0a5b2d/); mantle `0x245ad6...629245`; mantle `0x5d11b9...6fce31`; mantle `0x9d0162...589177`; mantle `0xb44cba...d296b7` | ⚠️ Unaudited | Verified |
 | [ReferralStorage (4 deployments)](./mantle-5000/0x0c4c754df42cef3aaaff414dbdd321313d11c676/) | mantle | 4 deployments: mantle [`0x0c4c75...11c676`](./mantle-5000/0x0c4c754df42cef3aaaff414dbdd321313d11c676/); mantle `0xbf0d05...2d4937`; mantle `0xcc15ad...69b988`; mantle `0xe38824...6f03be` | ⚠️ Unaudited | Verified |
 | [StakedKlp](./mantle-5000/0x949cb557982859fe36adf84eeac535dde11eca7c/) | mantle | [`0x949cb5...1eca7c`](./mantle-5000/0x949cb557982859fe36adf84eeac535dde11eca7c/) | ⚠️ Unaudited | Verified |
 | [TinyTigerCatToken](./blast-81457/0xf782e172a14ee1c85cd980c15375ba0e87957028/) | blast | [`0xf782e1...957028`](./blast-81457/0xf782e172a14ee1c85cd980c15375ba0e87957028/) | ⚠️ Unaudited | Verified |
-| [TokenMintERC20Token](./mantle-5000/0x49397ac9cb061152b770b1d274a5682155f20099/) | mantle | [`0x49397a...f20099`](./mantle-5000/0x49397ac9cb061152b770b1d274a5682155f20099/) | ⚠️ Unaudited | Verified |
-| [USDT](./mantle-5000/0x201eba5cc46d216ce6dc03f6a759e8e766e956ae/) | mantle | [`0x201eba...e956ae`](./mantle-5000/0x201eba5cc46d216ce6dc03f6a759e8e766e956ae/) | ⚠️ Unaudited | Verified |
 | [VNFT (3 deployments)](./ethereum-1/0x13bc536722779508ef5d9994e2fa616553698a69/) | ethereum | 3 deployments: ethereum [`0x13bc53...698a69`](./ethereum-1/0x13bc536722779508ef5d9994e2fa616553698a69/); ethereum `0xa6911b...de6359`; ethereum `0xb4f3e1...193cbf` | ⚠️ Unaudited | Verified |
 | [WBTC](./mantle-5000/0xcabae6f6ea1ecab08ad02fe02ce9a44f09aebfa2/) | mantle | [`0xcabae6...aebfa2`](./mantle-5000/0xcabae6f6ea1ecab08ad02fe02ce9a44f09aebfa2/) | ⚠️ Unaudited | Verified |
 | [WETH9 (2 deployments)](./linea-59144/0x72343e8e448fa539a1f118f870a1de1132f2fcad/) | linea | 2 deployments: linea [`0x72343e...f2fcad`](./linea-59144/0x72343e8e448fa539a1f118f870a1de1132f2fcad/); linea `0xee7981...fd59d7` | ⚠️ Unaudited | Verified |
 | [ZkLinkToken (4 deployments)](./ethereum-1/0x0b703aecf1ad4c053c15c49b08c94767f73707c5/) | ethereum | 4 deployments: ethereum [`0x0b703a...3707c5`](./ethereum-1/0x0b703aecf1ad4c053c15c49b08c94767f73707c5/); ethereum `0xa30602...933218`; ethereum `0xe1eb64...53bc9d`; ethereum `0xfc385a...0fcede` | ⚠️ Unaudited | Verified |
 
-## unknown (368)
+## unknown (324)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -128,7 +110,6 @@
 | [ArbitrumL2Gateway (3 deployments)](./arbitrum-42161/0x413552461b0b2c13f117d885b52aaa2f23374b1d/) | arbitrum | 3 deployments: arbitrum [`0x413552...374b1d`](./arbitrum-42161/0x413552461b0b2c13f117d885b52aaa2f23374b1d/); arbitrum `0x7bd79d...18483a`; arbitrum `0xa194fb...dd3a2e` | ✅ Audited | Verified |
 | [Array](./ethereum-1/0x926cf8c6c07beaba0ecf55c9c41443614c4bedf1/) | ethereum | [`0x926cf8...4bedf1`](./ethereum-1/0x926cf8c6c07beaba0ecf55c9c41443614c4bedf1/) | ⚠️ Unaudited | Verified |
 | [Baja](./blast-81457/0x5fe8534a6f96cb01261bd96e98c17c2c1cab3204/) | blast | [`0x5fe853...ab3204`](./blast-81457/0x5fe8534a6f96cb01261bd96e98c17c2c1cab3204/) | ⚠️ Unaudited | Verified |
-| [BaseRegistrarImplementation](./linea-59144/0x6e84390dcc5195414ec91a8c56a5c91021b95704/) | linea | [`0x6e8439...b95704`](./linea-59144/0x6e84390dcc5195414ec91a8c56a5c91021b95704/) | ⚠️ Unaudited | Verified |
 | [BrokerAccepter (6 deployments)](./linea-59144/0x139abb67a33f6ddcf00fbab5e321184f4e5c22e1/) | linea | 6 deployments: ethereum `0xe473ce...7264dd`; ethereum `0xf8fe43...e843f5`; optimism `0x9dc756...bbc88c`; base `0x7c56da...bc88b3`; arbitrum `0xd5941f...d35bd2`; linea [`0x139abb...5c22e1`](./linea-59144/0x139abb67a33f6ddcf00fbab5e321184f4e5c22e1/) | ⚠️ Unaudited | Verified |
 | [DeployProxy](./ethereum-1/0x178b7401c32a4aab5ef128458888779eaaf4e78a/) | ethereum | [`0x178b74...f4e78a`](./ethereum-1/0x178b7401c32a4aab5ef128458888779eaaf4e78a/) | ⚠️ Unaudited | Verified |
 | [ELReward](./ethereum-1/0x38260cbdd0adceab714335a0e3937ac35e28e70b/) | ethereum | [`0x38260c...28e70b`](./ethereum-1/0x38260cbdd0adceab714335a0e3937ac35e28e70b/) | ⚠️ Unaudited | Verified |
@@ -141,14 +122,10 @@
 | [Governance (2 deployments)](./ethereum-1/0xeb35e7424a0a506d914f49039b5ec9969a576790/) | ethereum | 2 deployments: ethereum [`0xeb35e7...576790`](./ethereum-1/0xeb35e7424a0a506d914f49039b5ec9969a576790/); linea `0xef528a...7454ec` | ✅ Audited | Verified |
 | [HashConsensus](./ethereum-1/0x301365f7334be7e4e32ef4a1d3040c9a476da6a5/) | ethereum | [`0x301365...6da6a5`](./ethereum-1/0x301365f7334be7e4e32ef4a1d3040c9a476da6a5/) | ⚠️ Unaudited | Verified |
 | [KTX (5 deployments)](./mantle-5000/0x57c90dff593d045f00d56afd2ef00cf7b4258c1e/) | mantle | 5 deployments: mantle [`0x57c90d...258c1e`](./mantle-5000/0x57c90dff593d045f00d56afd2ef00cf7b4258c1e/); mantle `0x779f4e...61159a`; mantle `0x8231e7...63a3fd`; mantle `0x98e34d...6d0ee1`; mantle `0xfe8470...631f30` | ⚠️ Unaudited | Verified |
-| [L2MessageService (6 deployments)](./linea-59144/0x05d43713b7e333d2d54be65ce3b5f3698ab960fd/) | linea | 6 deployments: linea [`0x05d437...b960fd`](./linea-59144/0x05d43713b7e333d2d54be65ce3b5f3698ab960fd/); linea `0x2c4f0e...3589af`; linea `0x508ca8...d644ec`; linea `0x89e70e...25147d`; linea `0x9899f2...c3b54d`; linea `0xdc36f3...fe8d3d` | ⚠️ Unaudited | Verified |
 | [LargeStaking (2 deployments)](./ethereum-1/0x87fdece127aa31f4708975b49a3450d7544d9a7b/) | ethereum | 2 deployments: ethereum [`0x87fdec...4d9a7b`](./ethereum-1/0x87fdece127aa31f4708975b49a3450d7544d9a7b/); ethereum `0xa20353...93dfe6` | ⚠️ Unaudited | Verified |
 | [LineaL1Gateway (17 deployments)](./ethereum-1/0x0594d9fa7de1bea967bf45a625c5f52bb94b13b9/) | ethereum | 17 deployments: ethereum [`0x0594d9...4b13b9`](./ethereum-1/0x0594d9fa7de1bea967bf45a625c5f52bb94b13b9/); ethereum `0x119b94...4fd1a2`; ethereum `0x238715...e7053c`; ethereum `0x3c3f4b...9aa98e`; ethereum `0x504bea...64585e`; ethereum `0x5b884c...63f190`; ethereum `0x67ebb0...accb3e`; ethereum `0x803460...f2809b`; ethereum `0x80d12a...1674d5`; ethereum `0x9e761d...d2c7a1`; ethereum `0xac3941...64657b`; ethereum `0xad5d72...25b51c`; ethereum `0xd2ed3f...c18c29`; ethereum `0xdae123...f88c91`; ethereum `0xe469c1...6d344f`; ethereum `0xf2801f...6e35c9`; ethereum `0xfe3e63...96709f` | ✅ Audited | Verified |
 | [LineaL2Gateway (12 deployments)](./linea-59144/0x0c25f3accb17a9d60408d1c79bd7218073dad518/) | linea | 12 deployments: linea [`0x0c25f3...dad518`](./linea-59144/0x0c25f3accb17a9d60408d1c79bd7218073dad518/); linea `0x1ee09a...4c6002`; linea `0x216319...d70c8d`; linea `0x2e8ad1...f4a190`; linea `0x316984...c8466a`; linea `0x3c3f4b...9aa98e`; linea `0x7b5780...e937db`; linea `0x7f9de3...8a4c0d`; linea `0xa89aa7...9ce715`; linea `0xad5d72...25b51c`; linea `0xafc54e...89df0a`; linea `0xb6b969...c3d78b` | ✅ Audited | Verified |
 | [LineaL2Governance](./linea-59144/0x28b93154111e769178bc90b97f34e0b3210fdb73/) | linea | [`0x28b931...0fdb73`](./linea-59144/0x28b93154111e769178bc90b97f34e0b3210fdb73/) | ⚠️ Unaudited | Verified |
-| [LineaSurgeXP](./linea-59144/0x96b3a15257c4983a6fe9073d8c91763433124b82/) | linea | [`0x96b3a1...124b82`](./linea-59144/0x96b3a15257c4983a6fe9073d8c91763433124b82/) | ⚠️ Unaudited | Verified |
-| [LineaVoyageXP](./linea-59144/0xd83af4fbd77f3ab65c3b1dc4b38d7e67aecf599a/) | linea | [`0xd83af4...cf599a`](./linea-59144/0xd83af4fbd77f3ab65c3b1dc4b38d7e67aecf599a/) | ⚠️ Unaudited | Verified |
-| [LineaXP](./linea-59144/0xc24e7b826b3c1e8918843baf7abd2e51399cfc13/) | linea | [`0xc24e7b...9cfc13`](./linea-59144/0xc24e7b826b3c1e8918843baf7abd2e51399cfc13/) | ⚠️ Unaudited | Verified |
 | [LsdETH](./ethereum-1/0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b/) | ethereum | [`0x9dc7e1...b97c5b`](./ethereum-1/0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b/) | ⚠️ Unaudited | Verified |
 | [MailboxFacet](./linea-59144/0x11bf5bc6327f7becb0ae753932a181c8fb5780ba/) | linea | [`0x11bf5b...5780ba`](./linea-59144/0x11bf5bc6327f7becb0ae753932a181c8fb5780ba/) | ⚠️ Unaudited | Verified |
 | [Manta](./manta-169/0x95cef13441be50d20ca4558cc0a27b601ac544e5/) | manta | [`0x95cef1...c544e5`](./manta-169/0x95cef13441be50d20ca4558cc0a27b601ac544e5/) | ⚠️ Unaudited | Verified |
@@ -156,7 +133,6 @@
 | [MintSecurity (2 deployments)](./ethereum-1/0xa57dc79b2852415448b66100bf59753318f9d25f/) | ethereum | 2 deployments: ethereum [`0xa57dc7...f9d25f`](./ethereum-1/0xa57dc79b2852415448b66100bf59753318f9d25f/); ethereum `0xd297dc...befb57` | ⚠️ Unaudited | Verified |
 | MultiCall (14 deployments) | linea | 14 deployments: ethereum [`0x0c0404...f1e821`](./ethereum-1/0x0c04046546c46652969aa9eb4bfb758cfdf1e821/); ethereum `0x0dad20...90bac2`; ethereum `0x4be8a6...f75200`; optimism `0x79926e...410db0`; optimism `0x87743f...9a43fb`; manta `0xdc0771...d2208b`; mantle `0x0d53ce...731470`; base `0x85079c...8b1f4e`; base `0x98ceda...00673b`; arbitrum `0x7769c1...3ea458`; arbitrum `0xa00509...36fb60`; linea `0x04bf7c...14d716`; linea `0x0c89bc...2907aa`; linea `0xeb79fe...39f4ad` | ⚠️ Unaudited | Verified |
 | [MultiHashConsensus](./ethereum-1/0x2eb71040c0a24fe10194aec2f0a8b264ae9820f9/) | ethereum | [`0x2eb710...9820f9`](./ethereum-1/0x2eb71040c0a24fe10194aec2f0a8b264ae9820f9/) | ⚠️ Unaudited | Verified |
-| [NameWrapper](./linea-59144/0xa53cca02f98d590819141aa85c891e2af713c223/) | linea | [`0xa53cca...13c223`](./linea-59144/0xa53cca02f98d590819141aa85c891e2af713c223/) | ⚠️ Unaudited | Verified |
 | [NETH](./ethereum-1/0xc6572019548dfeba782ba5a2093c836626c7789a/) | ethereum | [`0xc65720...c7789a`](./ethereum-1/0xc6572019548dfeba782ba5a2093c836626c7789a/) | ⚠️ Unaudited | Verified |
 | [NodeDAOView (2 deployments)](./ethereum-1/0x857bf02b1f5fd85e064e6726658ea1864a14d948/) | ethereum | 2 deployments: ethereum [`0x857bf0...14d948`](./ethereum-1/0x857bf02b1f5fd85e064e6726658ea1864a14d948/); ethereum `0xd7c049...812121` | ⚠️ Unaudited | Verified |
 | [ObeliskCustody (2 deployments)](./ethereum-1/0x385d894a946be929cc1ba1a26331fd4ccd93b4e3/) | ethereum | 2 deployments: ethereum [`0x385d89...93b4e3`](./ethereum-1/0x385d894a946be929cc1ba1a26331fd4ccd93b4e3/); ethereum `0x9f836f...8b1a2c` | ⚠️ Unaudited | Verified |
@@ -166,21 +142,15 @@
 | [OptimismL1Gateway (15 deployments)](./ethereum-1/0x01334df58fee28db184ae9d11467f38f7437fd80/) | ethereum | 15 deployments: ethereum [`0x01334d...37fd80`](./ethereum-1/0x01334df58fee28db184ae9d11467f38f7437fd80/); ethereum `0x0c25f3...dad518`; ethereum `0x161f4b...0477f0`; ethereum `0x1dff9a...cf4c9e`; ethereum `0x2e8ad1...f4a190`; ethereum `0x41faf4...bb1158`; ethereum `0x4eea93...1d2b7e`; ethereum `0x649dfa...7cd82d`; ethereum `0x668e8f...af3026`; ethereum `0x6d6ce5...927962`; ethereum `0xa86ef3...ce9637`; ethereum `0xc284c3...c338e4`; ethereum `0xde1ce7...3be269`; ethereum `0xe98edd...dc2951`; ethereum `0xfc5c2b...5f2b7d` | ✅ Audited | Verified |
 | [OptimismL2Gateway (10 deployments)](./base-8453/0x1054ff8b3b7b9f68d2e55c4a42e8952332c69011/) | base | 10 deployments: optimism `0x3c3f4b...9aa98e`; optimism `0xad5d72...25b51c`; manta `0x50efc7...726211`; manta `0x55fa52...52235e`; manta `0xbfa352...63283f`; base [`0x1054ff...c69011`](./base-8453/0x1054ff8b3b7b9f68d2e55c4a42e8952332c69011/); base `0x12abac...5a5cb4`; base `0x7f0013...36e356`; blast `0x3f64e2...e66af1`; blast `0xd1dcd0...4eccad` | ✅ Audited | Verified |
 | [OrderBook (4 deployments)](./mantle-5000/0x548f29394c98e92789e5f9528cbcead0d87fd6f9/) | mantle | 4 deployments: mantle [`0x548f29...7fd6f9`](./mantle-5000/0x548f29394c98e92789e5f9528cbcead0d87fd6f9/); mantle `0x661d88...471e7c`; mantle `0x87a1c0...24a1a0`; mantle `0x983a26...cc27f7` | ⚠️ Unaudited | Verified |
-| [OwnedResolver](./linea-59144/0x9453dc2dddf2a19951e708b4ff8d5f5e38f4c06f/) | linea | [`0x9453dc...f4c06f`](./linea-59144/0x9453dc2dddf2a19951e708b4ff8d5f5e38f4c06f/) | ⚠️ Unaudited | Verified |
 | [OYBTCB2](./ethereum-1/0x7f58f8d540324a7a895794bb819f2d635c3d24b6/) | ethereum | [`0x7f58f8...3d24b6`](./ethereum-1/0x7f58f8d540324a7a895794bb819f2d635c3d24b6/) | ⚠️ Unaudited | Verified |
 | [OYBTCBBN](./ethereum-1/0x587fa54a1682ae73ecc709e1439d096ff0c0f887/) | ethereum | [`0x587fa5...c0f887`](./ethereum-1/0x587fa54a1682ae73ecc709e1439d096ff0c0f887/) | ⚠️ Unaudited | Verified |
 | [OYBTCFBTC](./ethereum-1/0xc47a9dce0192e0d82c0b6f8f75c1881df32ce338/) | ethereum | [`0xc47a9d...2ce338`](./ethereum-1/0xc47a9dce0192e0d82c0b6f8f75c1881df32ce338/) | ⚠️ Unaudited | Verified |
-| [PublicResolver](./linea-59144/0x86c5aed9f27837074612288610fb98ccc1733126/) | linea | [`0x86c5ae...733126`](./linea-59144/0x86c5aed9f27837074612288610fb98ccc1733126/) | ⚠️ Unaudited | Verified |
 | [RadiantOFT](./arbitrum-42161/0x3082cc23568ea640225c2467653db90e9250aaa0/) | arbitrum | [`0x3082cc...50aaa0`](./arbitrum-42161/0x3082cc23568ea640225c2467653db90e9250aaa0/) | ⚠️ Unaudited | Verified |
 | [Reader](./mantle-5000/0x650e8847aa247f189de852da1c821a13c51d9e87/) | mantle | [`0x650e88...1d9e87`](./mantle-5000/0x650e8847aa247f189de852da1c821a13c51d9e87/) | ⚠️ Unaudited | Verified |
 | [RestakingPod (3 deployments)](./ethereum-1/0x9efdeb695f1e3f0ad3bcfb1e07d2749b50a3b75c/) | ethereum | 3 deployments: ethereum [`0x9efdeb...a3b75c`](./ethereum-1/0x9efdeb695f1e3f0ad3bcfb1e07d2749b50a3b75c/); ethereum `0xd58c55...9a0932`; ethereum `0xe2a700...be7be5` | ⚠️ Unaudited | Verified |
-| [ReverseRegistrar](./linea-59144/0x08d3ff6e65f680844fd2465393ff6f0d742b67d5/) | linea | [`0x08d3ff...2b67d5`](./linea-59144/0x08d3ff6e65f680844fd2465393ff6f0d742b67d5/) | ⚠️ Unaudited | Verified |
 | [RewardTracker (15 deployments)](./mantle-5000/0x1d29411f42bed70d1567b4b6b4638ee46bae7146/) | mantle | 15 deployments: mantle [`0x1d2941...ae7146`](./mantle-5000/0x1d29411f42bed70d1567b4b6b4638ee46bae7146/); mantle `0x2e564d...cae6c9`; mantle `0x315f1f...84470c`; mantle `0x4368fc...f6b6b2`; mantle `0x57acdf...81f7ab`; mantle `0x699d08...c8ade9`; mantle `0x7524b7...692d43`; mantle `0x756f1d...60609c`; mantle `0x846e58...11a189`; mantle `0x9484f8...7bd201`; mantle `0xb3a5ee...d5c0b3`; mantle `0xc18e29...562861`; mantle `0xee4d71...a8fdd7`; mantle `0xf04b22...eec632`; mantle `0xfe4169...6e73f9` | ⚠️ Unaudited | Verified |
-| [Root](./linea-59144/0xfbf795ead640e261868eb200ed2850eb9c151e7d/) | linea | [`0xfbf795...151e7d`](./linea-59144/0xfbf795ead640e261868eb200ed2850eb9c151e7d/) | ⚠️ Unaudited | Verified |
 | [ScrollL1Gateway](./ethereum-1/0x986c905087a663db3c81ad319b94c1e9dd388e92/) | ethereum | [`0x986c90...388e92`](./ethereum-1/0x986c905087a663db3c81ad319b94c1e9dd388e92/) | ✅ Audited | Verified |
-| [StaticMetadataService](./linea-59144/0x18703d0117121f6a7476221e2afc57faf9866e4c/) | linea | [`0x18703d...866e4c`](./linea-59144/0x18703d0117121f6a7476221e2afc57faf9866e4c/) | ⚠️ Unaudited | Verified |
 | [SyncL2TxHashRelayer](./ethereum-1/0x0fdc28e64772a70109d10fd068f859cfa7dea2c6/) | ethereum | [`0x0fdc28...dea2c6`](./ethereum-1/0x0fdc28e64772a70109d10fd068f859cfa7dea2c6/) | ⚠️ Unaudited | Verified |
-| [UniversalResolver](./linea-59144/0x3aa974fb3f8c1e02796048bdcded79e9d53a6965/) | linea | [`0x3aa974...3a6965`](./linea-59144/0x3aa974fb3f8c1e02796048bdcded79e9d53a6965/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x139abb...5c22e1` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x3782f9...25c7e8` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x47767b...d783c8` | ❓ Unverified | Unverified |
@@ -233,7 +203,6 @@
 | UnnamedContract | mantle | `0x198fba...ee6c20` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x1bf0c8...f17d63` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x1ca858...d6b694` | ❓ Unverified | Unverified |
-| UnnamedContract | mantle | `0x1cc57d...0c76b9` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x1f10e4...1ea481` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x1f8866...c0ba24` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x2108e7...de9c9f` | ❓ Unverified | Unverified |
@@ -266,7 +235,6 @@
 | UnnamedContract | mantle | `0x588354...a8cc6f` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x5d2445...c9b2f0` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x5e9012...4dd2d8` | ❓ Unverified | Unverified |
-| UnnamedContract | mantle | `0x636d40...eb87be` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x654e7d...199212` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x664d6b...4290a5` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x679505...84fa63` | ❓ Unverified | Unverified |
@@ -299,7 +267,6 @@
 | UnnamedContract | mantle | `0x99875e...143564` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x9c338e...bb0ef8` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x9ce150...f07084` | ❓ Unverified | Unverified |
-| UnnamedContract | mantle | `0x9d42f4...478fe8` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0x9f0239...03c8bf` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xa01c3f...4a1242` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xa1819b...ae61a1` | ❓ Unverified | Unverified |
@@ -344,9 +311,7 @@
 | UnnamedContract | mantle | `0xea0aad...93405c` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xf1b4a1...e4cf6e` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xf1eefa...76a4a3` | ❓ Unverified | Unverified |
-| UnnamedContract | mantle | `0xf259e6...0a54e8` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xf30c8c...222024` | ❓ Unverified | Unverified |
-| UnnamedContract | mantle | `0xf50d60...00d49d` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xf54f65...3616a4` | ❓ Unverified | Unverified |
 | UnnamedContract | mantle | `0xf9b603...91c0c4` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x067c71...ea47ca` | ❓ Unverified | Unverified |
@@ -416,26 +381,16 @@
 | UnnamedContract | arbitrum | `0xfcf873...969110` | ❓ Unverified | Unverified |
 | UnnamedContract | arbitrum | `0xfeaec8...2ae1c0` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x0b703a...3707c5` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x103bd3...578511` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x1434e4...8bcfd4` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x16397b...a8dd1c` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x213f44...44d00f` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x236eaa...ac79dc` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x337636...6c5212` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x369db6...a7d126` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x3782f9...25c7e8` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x381b76...0770c9` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x440ca0...f34020` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x4516a3...b17f2a` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x479c25...9e4beb` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x47b1bd...470ae8` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x47d141...637ae5` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x49b620...c79e8c` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x4ac2cc...bee425` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x50764c...dbf2a3` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x50efc7...726211` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x51ed2d...207723` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x55c7ac...6f2e48` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x55fa52...52235e` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x582b2e...fc2f8a` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x5b884c...63f190` | ❓ Unverified | Unverified |
@@ -449,35 +404,18 @@
 | UnnamedContract | linea | `0x7769c1...3ea458` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x7bd79d...18483a` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x7c56da...bc88b3` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x848710...05a1bd` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x86a760...1ea7ed` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0x875896...be5ef3` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x928732...88bc8d` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0x94f2eb...acac07` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xa107b6...a689d7` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xa194fb...dd3a2e` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xa84860...256cd6` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xa86936...c17754` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xb92ada...8d6a92` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xba7b8a...00128a` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xbe4c2c...678204` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xbeec2b...a2241c` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xc7b2a2...e90a57` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xca57c2...5e24ce` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xcf2579...d4cdbb` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xcf7e00...2ba30e` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xd8428a...f1bce7` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xd90bbc...82e378` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xdaca52...e332d6` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xdb97db...7ecdfb` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xdc0771...d2208b` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xdd5097...7a3545` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xe3488f...a56246` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xe37f90...43a31d` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xe53fcc...42a19b` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xe6e947...785809` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xeba3f0...2dd278` | ❓ Unverified | Unverified |
-| UnnamedContract | linea | `0xef95f4...9d408d` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xf2801f...6e35c9` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xf8fe43...e843f5` | ❓ Unverified | Unverified |
 | UnnamedContract | linea | `0xff73a1...d5420a` | ❓ Unverified | Unverified |

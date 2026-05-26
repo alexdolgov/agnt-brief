@@ -1,0 +1,18 @@
+{
+  "address": "0x0cf9a84bb9e916229f3037dc079ef418b97bb0cf",
+  "chain_id": 8453,
+  "contract_name": "YoGateway",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T13:24:12.105Z"
+}

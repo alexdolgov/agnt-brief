@@ -1,0 +1,16 @@
+# SupporterVester
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x0302f75047aa0935052275e77d15c40bee7b63b2` |
+| Role | operational_periphery |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 53 (ethereum [`0x0302f75047aa0935052275e77d15c40bee7b63b2`](../0x0302f75047aa0935052275e77d15c40bee7b63b2/); ethereum `0x09de35fbbd04e347368f65997a88121e3acfa232`; ethereum `0x140dca39e274397acaf3fd955af31400091a1c49`; ethereum `0x153db97d1adbda7ff6dda87e002544e0f5747cb2`; ethereum `0x174da672c3b8c45619910fd22b8df57111ea128b`; ethereum `0x1f3473b2369dbbead23d4ba7327013eb6a1082ed`; ethereum `0x216cef65bd8eac33fb08a42032913aad26c7a1e1`; ethereum `0x21ea8bbf6c5badea97367f7f5dc0773da2b4621d`; ethereum `0x273e9a126ec9609f4d82f27d9e2a29b70225d087`; ethereum `0x2f76a1dfafc7dd90060bc3f04a9c698ccff29f49`; ethereum `0x333c5c6e88fc0ad8c9523be2aa5c29345977bf92`; ethereum `0x4e1adfd70cb9fbbe78e3a0d7f3d995cdc31abe02`; ethereum `0x4f113098d798e7444255c0d0be7c64a1508fd0ba`; ethereum `0x59fbb80184cec833981d0940044bb59a69e5e7cd`; ethereum `0x5a6d5344b786d96fe4237f8fe75e11e4b6f2fbd9`; ethereum `0x5adc091c463291a425763c5c225a8dd04a10ac42`; ethereum `0x5c6a76a0217d41a5f7c4132b042b0b2cdfd488cf`; ethereum `0x5d15048211ea6614593bb2ec432316f89c07b4b0`; ethereum `0x5e0f9be7bccbcf500fa1a586a8781a44a35a3e32`; ethereum `0x6a9a903c82f662d07497cd066b134e000b1f06a6`; ethereum `0x6cba14acf33de1e581774e7b6b33dd1810a3d956`; ethereum `0x6d9fa95c2c78c5dcea102cae8a4ac597066d2f32`; ethereum `0x6ed13b9bdfea976d6e9e1d509f4eb1abb84c584c`; ethereum `0x773b6601f5bbbede75006a728bb22d5efbea7744`; ethereum `0x7a06b23e138f2cc2a5ccec7e0648f589fbc8cede`; ethereum `0x839fd7873702c2cc238dc87338ff3cbf4ee33d66`; ethereum `0x8aa593464d906512372ddb2a5719f2ecbec49a56`; ethereum `0x93a70c645c70307ca47bad645706c9d9aa429cf2`; ethereum `0x9977936a421f9b06c81afc0ccf1988b92decb31f`; ethereum `0x9b1ab202831417076e4d8a4e1650b8bc4eecd0c0`; ethereum `0x9cc1277bb9b9335f7299d03a86bd80f6f28ec3b0`; ethereum `0x9dda29c60a2739ef92cd4b3a27f3ba4ccd245c16`; ethereum `0x9f99e8821813e043a2ded641a3d130cbba3e0c66`; ethereum `0xa7675ec8b81639caa8a6bd61138d8a45aed297bb`; ethereum `0xa8e1b76426ac2b1b93502b30b92445d504d5e9da`; ethereum `0xad8a0432b0d78189adae17b535f1e9e110920aa2`; ethereum `0xbe48fb5d4d1cf72f77685b943a291c7293490164`; ethereum `0xc2391b7307c783d3c8c93de55c6ea3f7e94f075c`; ethereum `0xc6441cb2d7620c92b636be864c35da068f73d157`; ethereum `0xcc3eb61737b3161438ab859d1d0dd1a1138c30ab`; ethereum `0xcfffbd937a2b03808a5582b550e9f8f151a463ab`; ethereum `0xd6acca55ec6adf37b114a5fa10414d290c7c773f`; ethereum `0xe05685cd4b6b3f120ee7539c6c44647caa413ab8`; ethereum `0xe711a0489deae50340e9950fa14072ab40a75d95`; ethereum `0xe7ef4a761f195c5c6e9574d874b6a82d9caa6423`; ethereum `0xef0d1247f9fb0148a85bb342eb8b98b56ba338d3`; ethereum `0xef98e4cad451f55178e3af2fca79e67b9d4c587b`; ethereum `0xf12de004d643a8e942267a1f0a1933ec4168312e`; ethereum `0xf1b86628c060603d213d23076df06abbf86a2b6f`; ethereum `0xf2748c4bc1842b38f466a860d30de2330203c0e0`; ethereum `0xf4232686a18468fdd4c60b69033235e6c61e4f22`; ethereum `0xfa1807d861cad31255bf75534e41e7115d498ed7`; ethereum `0xfc19ce8f91955458ad135beddd201d554db4cd09`) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

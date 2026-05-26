@@ -101,6 +101,7 @@
 | [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | unknown | 6 | 10 | 2026-05-24 |
 | [chateau](./chateau/) | $19.1K | 33.3% | $19.1K | active | 1 | 5 | 2026-05-25 |
 | [citrea-bridge](./citrea-bridge/) | $5.1M | 33.3% | ? | active | 11 | 4 | 2026-05-23 |
+| [clearpool](./clearpool/) | $10.7K | 0.0% | $10.7K | active | 0 | 61 | 2026-05-26 |
 | [clever](./clever/) | $12.4M | 10.3% | $10.8M | active | 3 | 78 | 2026-05-23 |
 | [coinsquare](./coinsquare/) | $12.4M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
@@ -229,7 +230,7 @@
 | [initiadex](./initiadex/) | $3.3M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-05-25 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-05-23 |
-| [inverse-finance](./inverse-finance/) | $428.8M | 13.7% | $428.8M | unknown | 8 | 125 | 2026-05-21 |
+| [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | unknown | 9 | 154 | 2026-05-26 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-05-25 |
 | [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 40 | 2026-05-25 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | dead | 0 | 181 | 2026-05-24 |
@@ -549,6 +550,7 @@
 | [yieldfi](./yieldfi/) | $43.7M | 66.7% | $16.3M | declining | 7 | 23 | 2026-05-25 |
 | [yieldnest](./yieldnest/) | $19.2M | 0.0% | $19.2M | declining | 0 | 45 | 2026-05-25 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | unknown | 1 | 191 | 2026-05-25 |
+| [yo-protocol](./yo-protocol/) | $40.9M | 0.0% | $40.9M | active | 0 | 32 | 2026-05-26 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-05-23 |
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |
 | [zircuit-finance](./zircuit-finance/) | $180.1M | 0.0% | $180.1M | unknown | 0 | 3 | 2026-05-24 |

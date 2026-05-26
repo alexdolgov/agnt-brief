@@ -1,0 +1,17 @@
+{
+  "address": "0x0fc1a124af80535747c5439c3e0667146a0a2ff3",
+  "chain_id": 8453,
+  "contract_name": "PoolMaster",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T13:33:25.649Z"
+}

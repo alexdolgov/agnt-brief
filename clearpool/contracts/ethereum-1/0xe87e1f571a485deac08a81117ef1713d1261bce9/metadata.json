@@ -1,0 +1,18 @@
+{
+  "address": "0xe87e1f571a485deac08a81117ef1713d1261bce9",
+  "chain_id": 1,
+  "contract_name": "HexTrustUSD",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T13:33:25.585Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x3db3260fff8f5f97c96ae2fe871a9359d46eb566",
+  "chain_id": 1,
+  "contract_name": "RedeemHandlerV2",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 30,
+  "constructor_arguments": "000000000000000000000000da67b4284609d2d48e5d10cfac411572727dc1ed",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T19:48:19.283Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x6e498b02c0036235c8164a502b0eecc7660bd889",
+  "chain_id": 999,
+  "contract_name": "UpgradeableStork",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T19:48:17.578Z"
+}

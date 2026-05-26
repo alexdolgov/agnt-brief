@@ -1,0 +1,18 @@
+{
+  "address": "0x6e46353f6ba66e22289aae9ffa79e1bfd593219e",
+  "chain_id": 1,
+  "contract_name": "StorkChainlinkAdapter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "Apache 2",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T19:48:19.219Z"
+}

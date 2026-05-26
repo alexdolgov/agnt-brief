@@ -55,6 +55,7 @@
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 0 | 2 | 2026-05-23 |
 | [badger-dao](./badger-dao/) | $1.5M | 0.0% | $1.5M | sunsetting | 6 | 27 | 2026-05-25 |
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
+| [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-05-26 |
 | [beanstalk](./beanstalk/) | $142.5M | 20.4% | $142.5M | dead | 7 | 244 | 2026-05-25 |
 | [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 2 | 105 | 2026-05-23 |
 | [benddao](./benddao/) | $1.5M | 0.0% | $1.5M | dead | 1 | 15 | 2026-05-25 |
@@ -349,6 +350,7 @@
 | [nodedao](./nodedao/) | $33.3M | 38.9% | $33.3M | active | 5 | 18 | 2026-05-26 |
 | [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |
 | [nonkyc](./nonkyc/) | $5.8M | 0.0% | ? | active | 0 | 4 | 2026-05-23 |
+| [noon](./noon/) | $20.4M | 3.3% | $18.0 | active | 5 | 40 | 2026-05-26 |
 | [nostra](./nostra/) | $7.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [notional](./notional/) | $1.2M | 19.2% | $755.7K | dead | 7 | 79 | 2026-05-24 |
 | [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-05-26 |

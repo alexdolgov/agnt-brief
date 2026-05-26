@@ -1,0 +1,18 @@
+{
+  "address": "0x39198fd6a016e0fb17370b58916801d59fe321f3",
+  "chain_id": 1,
+  "contract_name": "BancorX",
+  "compiler_version": "v0.4.26+commit.4563c3fc",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T19:56:58.057Z"
+}

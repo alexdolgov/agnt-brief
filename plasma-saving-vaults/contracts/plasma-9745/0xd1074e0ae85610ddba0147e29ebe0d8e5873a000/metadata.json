@@ -1,0 +1,17 @@
+{
+  "address": "0xd1074e0ae85610ddba0147e29ebe0d8e5873a000",
+  "chain_id": 9745,
+  "contract_name": "BoringVault",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:44:53.502Z"
+}

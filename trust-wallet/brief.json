@@ -1,0 +1,332 @@
+{
+  "schema_version": "2.0",
+  "project_key": "trust-wallet",
+  "generated_at": "2026-05-26T15:10:16.495Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "trust-wallet",
+    "tier": 0,
+    "peak_tvl": 0,
+    "peak_date": "2024-07-23T00:00:00.000Z",
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
+    "tvl_current": 0,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
+    "days_since_peak": 672,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0
+  },
+  "summary": {
+    "total_contracts": 6,
+    "total_addresses": 10,
+    "unique_implementations": 6,
+    "total_deployments": 10,
+    "audited_contracts": 0,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 4,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 39041004,
+    "tvl_usd": 470218283.11077726,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 470218283.11
+    },
+    "asd_usd": 470218283.11077726,
+    "website_url": "https://trustwallet.com/",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Trust Wallet is a multi-chain self-custody wallet that allows users to store, send, receive, and manage cryptocurrencies and NFTs. It also provides access to decentralized applications and DeFi services.",
+    "relationship_narrative": "The TrustWalletToken and TokenLocker contracts form the core token management system, with the TokenLocker likely interacting with the TrustWalletToken for staking or vesting purposes.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x4b0f1812e5df2a09796481ff14017e6005508003",
+      "name": "TrustWalletToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Trust Wallet Wallet",
+      "tvl_usd": 450719842.94320893,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TrustWalletToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x4b0f1812e5df2a09796481ff14017e6005508003",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 450719842.94320893,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0e7dd56f7d2cadc066b992cec58253190f002c25",
+      "name": "TokenLocker",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 19498440.1675683,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenLocker",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x0e7dd56f7d2cadc066b992cec58253190f002c25",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 5828.922773851056,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x3bffd2ee930c506e91453b74e7c0214da60146b9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 70.41053006201818,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5029f49585d57ed770d2194841b5a0be06bfc2ed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 19492536.32611381,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x63dc02bb25e7bf7eaa0e42e71d785a388acd740b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 4.508150575782946,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1c6f6e2b226d99af2c34d875a03e055492914442",
+      "name": "RadiantMerklTokenWrapper",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 1.7152454331633666e-20,
+      "is_proxy": true,
+      "impl_address": "0x954ec713a3915b504a6f288563e5218f597e1895",
+      "impl_name": "RadiantMerklTokenWrapper",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1c6f6e2b226d99af2c34d875a03e055492914442",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1.7152454331633666e-20,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x147f4163756db2eee9092bb848603a9e7054c52d",
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x147f4163756db2eee9092bb848603a9e7054c52d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xedbebe204ef070b6880e07a28b55edc7748c24ba",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x22b0ac22d5d58f05873e470bca5db7ceb5c47f5e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x22b0ac22d5d58f05873e470bca5db7ceb5c47f5e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe0e2a29b69e6600e37000d1bdbccbe523f0a32e3",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe0e2a29b69e6600e37000d1bdbccbe523f0a32e3",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x4b0f1812e5df2a09796481ff14017e6005508003",
+      "name": "TrustWalletToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 450719842.94320893,
+      "risk_note": "Verified native implementation with $450,719,842.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0e7dd56f7d2cadc066b992cec58253190f002c25",
+      "name": "TokenLocker",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 19498440.1675683,
+      "risk_note": "Verified native implementation with $19,498,440.17 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 2,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

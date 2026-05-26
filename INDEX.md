@@ -346,6 +346,7 @@
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | unknown | 0 | 24 | 2026-05-25 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-05-23 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | dead | 0 | 103 | 2026-05-24 |
+| [orangex](./orangex/) | $39.8M | 0.0% | ? | active | 0 | 3 | 2026-05-26 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
 | [osl](./osl/) | $41.5M | 0.0% | ? | active | 0 | 4 | 2026-05-26 |
 | [osmosis-dex](./osmosis-dex/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
@@ -519,6 +520,7 @@
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |
 | [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-05-24 |
 | [trufin-protocol](./trufin-protocol/) | $6.8M | 66.7% | ? | declining | 12 | 7 | 2026-05-23 |
+| [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | unknown | 0 | 6 | 2026-05-26 |
 | [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 0 | 4 | 2026-05-26 |
 | [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | dead | 2 | 516 | 2026-05-25 |
 | [twyne](./twyne/) | $985.7K | 9.6% | ? | active | 9 | 59 | 2026-05-24 |

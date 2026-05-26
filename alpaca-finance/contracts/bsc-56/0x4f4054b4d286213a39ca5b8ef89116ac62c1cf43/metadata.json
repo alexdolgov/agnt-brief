@@ -1,0 +1,17 @@
+{
+  "address": "0x4f4054b4d286213a39ca5b8ef89116ac62c1cf43",
+  "chain_id": 56,
+  "contract_name": "TransparentUpgradeableProxy",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0x7e6f681df3210fba706fc2f8c59cadbede7227f7",
+  "fetched_at": "2026-05-26T12:29:20.087Z"
+}

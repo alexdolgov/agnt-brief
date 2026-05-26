@@ -1,0 +1,17 @@
+{
+  "address": "0xb7f7118b1a50a088fe50b335f743ccfbc2765013",
+  "chain_id": 56,
+  "contract_name": "StrategyWithdrawMinimizeTrading",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:29:26.295Z"
+}

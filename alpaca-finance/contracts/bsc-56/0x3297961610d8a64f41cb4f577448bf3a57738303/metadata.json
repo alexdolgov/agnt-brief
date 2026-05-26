@@ -1,0 +1,17 @@
+{
+  "address": "0x3297961610d8a64f41cb4f577448bf3a57738303",
+  "chain_id": 56,
+  "contract_name": "OracleMedianizer",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:29:17.213Z"
+}

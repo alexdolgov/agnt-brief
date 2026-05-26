@@ -1,0 +1,18 @@
+{
+  "address": "0x696f9436b67233384889472cd7cd58a6fb5df4f1",
+  "chain_id": 8453,
+  "contract_name": "Token",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:15:46.364Z"
+}

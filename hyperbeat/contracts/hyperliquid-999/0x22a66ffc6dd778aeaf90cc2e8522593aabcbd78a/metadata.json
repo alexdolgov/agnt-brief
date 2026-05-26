@@ -1,0 +1,17 @@
+{
+  "address": "0x22a66ffc6dd778aeaf90cc2e8522593aabcbd78a",
+  "chain_id": 999,
+  "contract_name": "ExchangeRateUpdater",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:38:26.791Z"
+}

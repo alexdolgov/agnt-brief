@@ -16,6 +16,7 @@
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | unknown | 1 | 2 | 2026-05-23 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 0 | 58 | 2026-05-23 |
 | [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 2 | 284 | 2026-05-22 |
+| [alpaca-finance](./alpaca-finance/) | $11.5M | 0.0% | $11.5M | declining | 0 | 144 | 2026-05-26 |
 | [alphagrowth](./alphagrowth/) | $6.3M | 18.2% | $6.3M | active | 16 | 56 | 2026-05-25 |
 | [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-05-24 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | active | 7 | 124 | 2026-05-22 |
@@ -41,6 +42,7 @@
 | [aurora-plus](./aurora-plus/) | $2.0M | 33.3% | ? | active | 3 | 31 | 2026-05-24 |
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | dead | 1 | 10 | 2026-05-25 |
 | [avalaunch](./avalaunch/) | $31.3M | 78.6% | ? | unknown | 13 | 39 | 2026-05-23 |
+| [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | unknown | 3 | 61 | 2026-05-26 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-05-23 |
 | [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-05-25 |
 | [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-05-25 |
@@ -211,6 +213,7 @@
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [hskhodlium](./hskhodlium/) | $1.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [hybra](./hybra/) | $1.9M | 0.0% | ? | active | 0 | 81 | 2026-05-24 |
+| [hyperbeat](./hyperbeat/) | $22.6M | 10.6% | $22.6M | active | 14 | 222 | 2026-05-26 |
 | [hyperdrive-hl](./hyperdrive-hl/) | $2.8M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 0 | 242 | 2026-05-24 |
@@ -407,7 +410,7 @@
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 0 | 1 | 2026-05-25 |
 | [scrub-money](./scrub-money/) | $7.1M | 0.0% | ? | active | 1 | 19 | 2026-05-23 |
-| [seamless-protocol](./seamless-protocol/) | $34.8K | 0.0% | $34.8K | declining | 0 | 98 | 2026-05-21 |
+| [seamless-protocol](./seamless-protocol/) | $34.8K | 8.0% | $34.8K | declining | 2 | 99 | 2026-05-26 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-24 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | sunsetting | 8 | 297 | 2026-05-25 |
 | [serum](./serum/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |

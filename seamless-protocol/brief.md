@@ -7,11 +7,11 @@
 - Project: Seamless Protocol (`seamless-protocol`)
 - Website: [https://www.seamlessprotocol.com](https://www.seamlessprotocol.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-21T23:30:36.320Z
-- Pipeline run: v2-pipeline-2026-05-21-79adca-707a
+- Generated: 2026-05-26T12:14:12.728Z
+- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
 - Chains: base, ethereum
-- Contract surface: 98 unique implementations (318 raw deployments)
-- DeFi Llama TVL: $47,561,044.00
+- Contract surface: 99 unique implementations (321 raw deployments)
+- DeFi Llama TVL: $46,492,107.00
 - On-chain TVL (included contracts): $34,752.77
 - TVL by chain: Base $34,752.77
 
@@ -25,31 +25,41 @@ The Governance family controls protocol parameters and emissions that affect all
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/87 (0.0%)
-- Verified + Unaudited implementations: 87
+- Verified implementations audited: 7/88 (8.0%)
+- Verified + Unaudited implementations: 81
 - Verified by bytecode match: 0
 - Unverified implementations: 11
-- Unique implementations: 98
-- Raw deployments: 318
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
+- Unique implementations: 99
+- Raw deployments: 321
+- Audits discovered: 2
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $34,752.77
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
-- Tier 1 coverage: No Tier 1 coverage
+- Latest audit: 2025-05 (aging)
+- Staleness: 0 fresh, 2 aging, 0 stale, 0 unknown
+- Tier 1 coverage: 8.0% (Spearbit)
 - Note: This protocol is classified as [declining]. ASD of $34,752.77 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Spearbit | Tier 1 | 7 | 8.0% | 2025-05 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (7)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| LeverageManager | governance | base | 5 deployments: ethereum `0x5c37eb...b3e351`; ethereum `0x9d04f6...64220e`; base [`0x38ba21...5ec3a8`](./contracts/base-8453/0x38ba21c6bf31df1b1798fced07b4e9b07c5ec3a8/); base `0xeb0221...bb2b7c`; base `0xfe9101...2e1856` | ✅ Audited |
+| LeverageRouter | adapter | base | 3 deployments: ethereum `0xb0764d...6e6dba`; base [`0x00c669...a11a5c`](./contracts/base-8453/0x00c66934ebca0f2a845812bc368b230f6da11a5c/); base `0xdba92f...9a887c` | ✅ Audited |
+| LeverageToken | token | base | 10 deployments: ethereum `0x603da7...ff0a82`; ethereum `0x604d37...0b97a3`; ethereum `0x642681...c0fc3d`; ethereum `0x98c4e4...3ed1bf`; ethereum `0xc73ce5...b3033f`; ethereum `0xfe9101...2e1856`; base [`0x057a2a...537673`](./contracts/base-8453/0x057a2a1cc13a9af430976af912a27a05de537673/); base `0x603da7...ff0a82`; base `0xa2fcee...1dbb8c`; base `0xe0b2e4...1abe57` | ✅ Audited |
+| MorphoLendingAdapter | adapter | ethereum | 7 deployments: ethereum [`0x00c669...a11a5c`](./contracts/ethereum-1/0x00c66934ebca0f2a845812bc368b230f6da11a5c/); ethereum `0xb224f5...129817`; ethereum `0xcb1eff...3aee58`; ethereum `0xe33eaf...9bd809`; ethereum `0xe9a32a...298f1f`; base `0x585cc1...f65c51`; base `0x9558b3...ab253f` | ✅ Audited |
+| MorphoLendingAdapterFactory | adapter | ethereum | 2 deployments: ethereum [`0xce05fb...7ded71`](./contracts/ethereum-1/0xce05fbed9260810bdded179adfdaf737be7ded71/); base `0xdd3341...e68e61` | ✅ Audited |
+| RebalanceAdapter | adapter | ethereum | 8 deployments: ethereum [`0x0a4490...d6c127`](./contracts/ethereum-1/0x0a4490233fd6ea02873af11c744d286dc3d6c127/); ethereum `0x1d0c19...efaec8`; ethereum `0x42fc03...d081af`; ethereum `0x5e6b01...c30110`; ethereum `0x821ded...615bd7`; ethereum `0xf7356e...d6a69f`; base `0xa530e6...46dd32`; base `0xd923b2...c24912` | ✅ Audited |
+| SwapAdapter | adapter | base | [`0xfdf71e...e38942`](./contracts/base-8453/0xfdf71e2c2b34cd1f8bb852e7c55e8b926fe38942/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (87)
+### ⚠️ Verified + Unaudited (81)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -86,15 +96,10 @@ The Governance family controls protocol parameters and emissions that affect all
 | ILMRegistry | registry | base | [`0x36291d...f859b3`](./contracts/base-8453/0x36291d2d51a0122b9facbe3c3f989cc6b1f859b3/) | ⚠️ Unaudited |
 | L2Encoder | unknown | base | [`0xcecef4...3cd7cf`](./contracts/base-8453/0xcecef475167f7bfd8995c0cbb577644b623cd7cf/) | ⚠️ Unaudited |
 | L2Pool | core_logic | base | [`0x918e3d...174323`](./contracts/base-8453/0x918e3dfabd8c69a54d542cdeea4a3e0616174323/) | ⚠️ Unaudited |
-| LeverageManager | governance | base | 5 deployments: ethereum `0x5c37eb...b3e351`; ethereum `0x9d04f6...64220e`; base [`0x38ba21...5ec3a8`](./contracts/base-8453/0x38ba21c6bf31df1b1798fced07b4e9b07c5ec3a8/); base `0xeb0221...bb2b7c`; base `0xfe9101...2e1856` | ⚠️ Unaudited |
-| LeverageRouter | adapter | base | 3 deployments: ethereum `0xb0764d...6e6dba`; base [`0x00c669...a11a5c`](./contracts/base-8453/0x00c66934ebca0f2a845812bc368b230f6da11a5c/); base `0xdba92f...9a887c` | ⚠️ Unaudited |
-| LeverageToken | token | base | 10 deployments: ethereum `0x603da7...ff0a82`; ethereum `0x604d37...0b97a3`; ethereum `0x642681...c0fc3d`; ethereum `0x98c4e4...3ed1bf`; ethereum `0xc73ce5...b3033f`; ethereum `0xfe9101...2e1856`; base [`0x057a2a...537673`](./contracts/base-8453/0x057a2a1cc13a9af430976af912a27a05de537673/); base `0x603da7...ff0a82`; base `0xa2fcee...1dbb8c`; base `0xe0b2e4...1abe57` | ⚠️ Unaudited |
 | LeverageTokenDeploymentBatcher | token | ethereum | [`0x4466d5...0a0352`](./contracts/ethereum-1/0x4466d52b714ef32657db89ec61fab1b7e30a0352/) | ⚠️ Unaudited |
 | LiquidationLogic | unknown | base | 2 deployments: base [`0x44659e...cf2dfa`](./contracts/base-8453/0x44659e741a09c0d3c4756e04c559772596cf2dfa/); base `0x524adc...44b837` | ⚠️ Unaudited |
 | LoanLogic | unknown | base | 4 deployments: base [`0x31da38...a378d6`](./contracts/base-8453/0x31da38f0eb1528212de20a3668b795e83ea378d6/); base `0x3e61ba...e4acd0`; base `0x7cbb6f...0ca955`; base `0x9bb43b...904c0e` | ⚠️ Unaudited |
 | MetaMorphoV1_1 | unknown | base | 3 deployments: base [`0x27d8c7...c65c18`](./contracts/base-8453/0x27d8c7273fd3fcc6956a0b370ce5fd4a7fc65c18/); base `0x5a47c8...22f3c7`; base `0x616a4e...273738` | ⚠️ Unaudited |
-| MorphoLendingAdapter | adapter | ethereum | 7 deployments: ethereum [`0x00c669...a11a5c`](./contracts/ethereum-1/0x00c66934ebca0f2a845812bc368b230f6da11a5c/); ethereum `0xb224f5...129817`; ethereum `0xcb1eff...3aee58`; ethereum `0xe33eaf...9bd809`; ethereum `0xe9a32a...298f1f`; base `0x585cc1...f65c51`; base `0x9558b3...ab253f` | ⚠️ Unaudited |
-| MorphoLendingAdapterFactory | adapter | ethereum | 2 deployments: ethereum [`0xce05fb...7ded71`](./contracts/ethereum-1/0xce05fbed9260810bdded179adfdaf737be7ded71/); base `0xdd3341...e68e61` | ⚠️ Unaudited |
 | MulticallExecutor | periphery | ethereum | 2 deployments: ethereum [`0x16d02e...fd22e1`](./contracts/ethereum-1/0x16d02ebd89988cad1ce945807b963ab7a9fd22e1/); base `0x9d04f6...64220e` | ⚠️ Unaudited |
 | Pool | core_logic | base | [`0x16e485...bda6cf`](./contracts/base-8453/0x16e48501634dfbb52f556430d788c110e5bda6cf/) | ⚠️ Unaudited |
 | PoolAddressesProvider | core_logic | base | [`0x0e02eb...39f3a0`](./contracts/base-8453/0x0e02eb705be325407707662c6f6d3466e939f3a0/) | ⚠️ Unaudited |
@@ -102,12 +107,10 @@ The Governance family controls protocol parameters and emissions that affect all
 | PoolConfigurator | core_logic | base | [`0xbfb739...b086cf`](./contracts/base-8453/0xbfb7391282a3576892bd1da328269ebac1b086cf/) | ⚠️ Unaudited |
 | PoolLogic | core_logic | base | 2 deployments: base [`0xdd59cd...11dd6b`](./contracts/base-8453/0xdd59cd12c455a1c091331c55423c9e4e5111dd6b/); base `0xe51329...309805` | ⚠️ Unaudited |
 | PriceOracleSentinel | operational_periphery | base | 3 deployments: base [`0x23dc16...a0ee45`](./contracts/base-8453/0x23dc1656251f27327783f750fab5797a03a0ee45/); base `0x46f157...ede8bf`; base `0xd228ed...b65571` | ⚠️ Unaudited |
-| PricingAdapter | adapter | ethereum | 2 deployments: ethereum [`0x44cceb...76c88f`](./contracts/ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/); base `0xce05fb...7ded71` | ⚠️ Unaudited |
+| PricingAdapter | adapter | ethereum | 3 deployments: ethereum [`0x44cceb...76c88f`](./contracts/ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/); base `0x94e337...b92c4c`; base `0xce05fb...7ded71` | ⚠️ Unaudited |
 | PullRewardsTransferStrategy | core_logic | base | 3 deployments: base [`0x073d08...5a2634`](./contracts/base-8453/0x073d0850be622deaab113e582a599c15895a2634/); base `0xdbe56b...cdc4af`; base `0xf54f6e...955b05` | ⚠️ Unaudited |
-| RebalanceAdapter | adapter | ethereum | 8 deployments: ethereum [`0x0a4490...d6c127`](./contracts/ethereum-1/0x0a4490233fd6ea02873af11c744d286dc3d6c127/); ethereum `0x1d0c19...efaec8`; ethereum `0x42fc03...d081af`; ethereum `0x5e6b01...c30110`; ethereum `0x821ded...615bd7`; ethereum `0xf7356e...d6a69f`; base `0xa530e6...46dd32`; base `0xd923b2...c24912` | ⚠️ Unaudited |
 | RebalanceLogic | unknown | base | 4 deployments: base [`0x07a4b1...f8a711`](./contracts/base-8453/0x07a4b168f9dae741b3b88bf6424434655af8a711/); base `0x3f7dd8...ad0223`; base `0xab965e...51ea3e`; base `0xc2cecb...4dfaae` | ⚠️ Unaudited |
 | ReservesSetupHelper | periphery | base | [`0xb49db8...a2c91f`](./contracts/base-8453/0xb49db8f1b197c91fa01a870d827187e400a2c91f/) | ⚠️ Unaudited |
-| RewardPoolFactory | registry | base | [`0x56908a...28ff5e`](./contracts/base-8453/0x56908a201eb6a4c4a35b833e5e9749650228ff5e/) | ⚠️ Unaudited |
 | RewardsController | governance | base | 6 deployments: base [`0x2c6dc2...2adb93`](./contracts/base-8453/0x2c6dc2ce7747e726a590082adb3d7d08f52adb93/); base `0x32688c...ae794d`; base `0x36321e...d1bd89`; base `0x3dc440...35409d`; base `0x76e720...ca9049`; base `0x8243de...fc2850` | ⚠️ Unaudited |
 | RouterV1 | adapter | base | [`0x59a11c...36bdc8`](./contracts/base-8453/0x59a11c2f543790b8ce1a2dc46c4ad08a4536bdc8/) | ⚠️ Unaudited |
 | Seam | adapter | base | 7 deployments: base [`0x1c7a46...88cd85`](./contracts/base-8453/0x1c7a460413dd4e964f96d8dfc56e7223ce88cd85/); base `0x213fb4...513d24`; base `0x57b4b7...aefd3f`; base `0x5d0ee4...da76ec`; base `0xa900d0...54b8c4`; base `0xbf20ba...3895c1`; base `0xff7c1f...5e7847` | ⚠️ Unaudited |
@@ -115,7 +118,7 @@ The Governance family controls protocol parameters and emissions that affect all
 | SeamEmissionManager | operational_periphery | base | 4 deployments: base [`0x03eeed...dd9cfa`](./contracts/base-8453/0x03eeedf76a007dce47b3a0044d9f0a04badd9cfa/); base `0x1fdfc3...e38f9c`; base `0x57460d...1b3955`; base `0x785c97...b90778` | ⚠️ Unaudited |
 | SeamGovernor | governance | base | 2 deployments: base [`0x5acb96...996317`](./contracts/base-8453/0x5acb96aac90bf545500251d1eed10bf47e996317/); base `0xc8a0e0...607bfc` | ⚠️ Unaudited |
 | SeamGovernorV2 | governance | base | 3 deployments: base [`0x04faa2...e761b6`](./contracts/base-8453/0x04faa2826dbb38a7a4e9a5e3db26b9e389e761b6/); base `0x8768c7...0db294`; base `0xc3a36d...a9baef` | ⚠️ Unaudited |
-| SeamL1 | unknown | ethereum | [`0x6b66cc...e726ba`](./contracts/ethereum-1/0x6b66ccd1340c479b07b390d326eadcbb84e726ba/) | ⚠️ Unaudited |
+| SeamL1 | unknown | ethereum | 2 deployments: ethereum [`0x4fdf85...417708`](./contracts/ethereum-1/0x4fdf852d7ce01b1594d38808be5cca9812417708/); ethereum `0x6b66cc...e726ba` | ⚠️ Unaudited |
 | SeamTimelockController | governance | base | 4 deployments: base [`0x13f5b4...b35e6f`](./contracts/base-8453/0x13f5b49217f330167d6350530f6185a75ab35e6f/); base `0x639d2d...925fee`; base `0xa96448...b16718`; base `0xbe170d...ff790d` | ⚠️ Unaudited |
 | SeamTransferStrategy | core_logic | base | [`0x2b1bde...fd154c`](./contracts/base-8453/0x2b1bdefce33f34128759f71076ebd62637fd154c/) | ⚠️ Unaudited |
 | SeamVestingWallet | operational_periphery | base | 69 deployments: base [`0x0f471d...107f54`](./contracts/base-8453/0x0f471d88f31ab0be2ff1d0b1ff5f30a2e3107f54/); base `0x0fedae...13dbc2`; base `0x204fe7...b5406a`; base `0x216cc6...80d5b0`; base `0x260fc8...ea8147`; base `0x290067...1f0d72`; base `0x316c05...fe9d6a`; base `0x33e372...01c261`; base `0x348c2e...164408`; base `0x35aa3c...2efffe`; base `0x37e3f6...92d33c`; base `0x393267...bad29f`; base `0x3b5e0a...42a691`; base `0x430d6f...ebacb7`; base `0x435846...f18514`; base `0x4b5bb8...2adedb`; base `0x4e7fad...6332ea`; base `0x511f23...1ec7ac`; base `0x51ddfe...a14e04`; base `0x597ce0...3952b6`; base `0x5a61a1...ec5713`; base `0x5f8a82...7b5408`; base `0x61380a...809726`; base `0x614703...c9396f`; base `0x66345a...c8a5dc`; base `0x67e0ea...961ab0`; base `0x6ae5d8...2a4289`; base `0x6f4146...e11b0a`; base `0x734614...735254`; base `0x77d004...16451a`; base `0x78718b...0a6993`; base `0x7acd19...485903`; base `0x7b1293...5d973a`; base `0x7b2159...d10e03`; base `0x8023d7...bd908b`; base `0x80fad4...4e4f52`; base `0x81b50b...6dda5b`; base `0x91a2fb...846235`; base `0x91f7d6...35a9c1`; base `0x932d77...29d19c`; base `0x93b1d6...d838fb`; base `0x93f499...773d49`; base `0x96bbed...4f49e9`; base `0x96de17...5661bb`; base `0xa9d2a0...947168`; base `0xac3121...38ce0f`; base `0xb2118b...a07e8b`; base `0xb44e36...0a1a80`; base `0xb4f203...d6859e`; base `0xb5dd3b...e03808`; base `0xb7c6d0...7a48b5`; base `0xb8835b...660492`; base `0xbac77f...e08b8a`; base `0xbfbc3b...3f430c`; base `0xc0e23f...635285`; base `0xc4ae2b...122151`; base `0xc5a269...5c8103`; base `0xcbc784...391d6e`; base `0xd81335...85af2f`; base `0xdc37b7...dfa399`; base `0xdf90ed...4dff9f`; base `0xe15943...0a0427`; base `0xe423f4...59f972`; base `0xf1c220...01e14c`; base `0xf4c7d3...2d5c32`; base `0xf61fbc...bfd675`; base `0xf71f91...71ace1`; base `0xfbe83d...904f75`; base `0xfc233c...80f2eb` | ⚠️ Unaudited |
@@ -125,12 +128,13 @@ The Governance family controls protocol parameters and emissions that affect all
 | StaticATokenFactory | registry | base | [`0x0a0c2e...715e21`](./contracts/base-8453/0x0a0c2e2b287ef159adece3e657e12e7d53715e21/) | ⚠️ Unaudited |
 | StaticATokenLM | token | base | [`0xb11d23...4a352a`](./contracts/base-8453/0xb11d239a6007c4d8cc0fd6794e71b80bb14a352a/) | ⚠️ Unaudited |
 | SupplyLogic | unknown | base | 2 deployments: base [`0xcc76e7...56f54b`](./contracts/base-8453/0xcc76e71283963a72d005c5b48f4ab2218d56f54b/); base `0xff017d...af4bb8` | ⚠️ Unaudited |
-| SwapAdapter | adapter | base | [`0xfdf71e...e38942`](./contracts/base-8453/0xfdf71e2c2b34cd1f8bb852e7c55e8b926fe38942/) | ⚠️ Unaudited |
 | Swapper | adapter | base | 5 deployments: base [`0x04550e...62c54e`](./contracts/base-8453/0x04550e50f4753352f233aba53f094fc3cd62c54e/); base `0x08561d...dc479d`; base `0x293982...55839e`; base `0xc9be03...9f2fc0`; base `0xe314ae...addabc` | ⚠️ Unaudited |
 | Token | token | base | 5 deployments: base [`0x0e09f5...61fd5c`](./contracts/base-8453/0x0e09f59754b4f3695553e2f37f08cc987361fd5c/); base `0x4db264...1dd531`; base `0x560771...82c7c6`; base `0xc4d677...183b52`; base `0xe3b0f5...042b5c` | ⚠️ Unaudited |
 | TransparentProxyFactory | registry | base | [`0x71d90c...cf1b5d`](./contracts/base-8453/0x71d90c266b9eb9a41fe8f875ddbddc3fadcf1b5d/) | ⚠️ Unaudited |
 | UiIncentiveDataProviderV3 | unknown | base | [`0x3f5a90...f71ce8`](./contracts/base-8453/0x3f5a90ef7bc3ee64e1e95b850dbbc2469ff71ce8/) | ⚠️ Unaudited |
 | UiPoolDataProviderV3 | core_logic | base | [`0xb7397f...b9bf50`](./contracts/base-8453/0xb7397f841a449793c634c06cf12751d256b9bf50/) | ⚠️ Unaudited |
+| UnbuttonToken | token | base | [`0xf9a5d2...4ba2aa`](./contracts/base-8453/0xf9a5d255220e14e69475c1180640eab3f14ba2aa/) | ⚠️ Unaudited |
+| UnbuttonTokenFactory | registry | base | [`0x613379...3dc138`](./contracts/base-8453/0x613379008101df98d4ce5a1819e9f53fe33dc138/) | ⚠️ Unaudited |
 | UniversalAerodromeAdapter | adapter | base | [`0x87f8d1...207468`](./contracts/base-8453/0x87f8d14a8796b22116d267cfe9a57e986f207468/) | ⚠️ Unaudited |
 | UniversalVault | core_logic | base | [`0xe8bb3f...38af77`](./contracts/base-8453/0xe8bb3fc413114efbaeeecbb16a96cdde4938af77/) | ⚠️ Unaudited |
 | V3RateStrategyFactory | registry | base | [`0xc19dd3...c1fed2`](./contracts/base-8453/0xc19dd38d22600202fbdb36584981b9a55ec1fed2/) | ⚠️ Unaudited |
@@ -174,7 +178,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---:|---|
+|---|---|---|---|---|---|---|---|---|
+| [Cantina](https://cantina.xyz/portfolio/16200c4b-d088-49b7-9a3f-b7c227ea416b) | Spearbit | Audit | 2025-04 | aging | Direct | contract_name | 22 | medium |
+| [Sherlock](https://github.com/sherlock-protocol/sherlock-reports/blob/ef0f3da32ef7305f21ad93d510765a8803a66d3b/audits/2025.05.19%20-%20Final%20-%20Seamless%20Protocol%20Collaborative%20Audit%20Report.pdf) | Spearbit | Audit | 2025-05 | aging | Direct | contract_name | 36 | high |
 
 ## Coverage Gaps
 
@@ -185,6 +191,7 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x3e8707...da2c5f`](./contracts/base-8453/0x3e8707557d4ad25d6042f590bcf8a06071da2c5f/) | WrappedERC20PermissionedDeposit | token | $14,727.45 | Verified native implementation with $14,727.45 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x0fbc23...1b255e`](./contracts/base-8453/0x0fbc23eefeae1ae5cc929b97bce88b11261b255e/) | LoopStrategy | core_logic | $14,706.05 | Verified native implementation with $14,706.05 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x0f099f...ac7e46`](./contracts/base-8453/0x0f099f6c0714eb423d175a31140a25aad4ac7e46/) | StakedToken | token | $5,319.26 | Verified native implementation with $5,319.26 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x982f3a...af1089`](./contracts/base-8453/0x982f3a0e3183896f9970b8a9ea6b69cd53af1089/) | AaveEcosystemReserveV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x27076a...27a8db`](./contracts/base-8453/0x27076a995387458da63b23d9afe3df851727a8db/) | AToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xa40949...43d6fb`](./contracts/base-8453/0xa409495a6fb69b06b82f7a68766266357743d6fb/) | BorrowLogic | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x1d9eca...d44551`](./contracts/base-8453/0x1d9eca99a4b4ab73fa1181f617107c66e1d44551/) | BridgeLogic | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -207,35 +214,35 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x36291d...f859b3`](./contracts/base-8453/0x36291d2d51a0122b9facbe3c3f989cc6b1f859b3/) | ILMRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xcecef4...3cd7cf`](./contracts/base-8453/0xcecef475167f7bfd8995c0cbb577644b623cd7cf/) | L2Encoder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x918e3d...174323`](./contracts/base-8453/0x918e3dfabd8c69a54d542cdeea4a3e0616174323/) | L2Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x00c669...a11a5c`](./contracts/base-8453/0x00c66934ebca0f2a845812bc368b230f6da11a5c/) | LeverageRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x057a2a...537673`](./contracts/base-8453/0x057a2a1cc13a9af430976af912a27a05de537673/) | LeverageToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4466d5...0a0352`](./contracts/ethereum-1/0x4466d52b714ef32657db89ec61fab1b7e30a0352/) | LeverageTokenDeploymentBatcher | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x44659e...cf2dfa`](./contracts/base-8453/0x44659e741a09c0d3c4756e04c559772596cf2dfa/) | LiquidationLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x31da38...a378d6`](./contracts/base-8453/0x31da38f0eb1528212de20a3668b795e83ea378d6/) | LoanLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x16d02e...fd22e1`](./contracts/ethereum-1/0x16d02ebd89988cad1ce945807b963ab7a9fd22e1/) | MulticallExecutor | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x16e485...bda6cf`](./contracts/base-8453/0x16e48501634dfbb52f556430d788c110e5bda6cf/) | Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x90c505...53ef99`](./contracts/base-8453/0x90c5055530c0465abb077fa016a3699a3f53ef99/) | PoolAddressesProviderRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xbfb739...b086cf`](./contracts/base-8453/0xbfb7391282a3576892bd1da328269ebac1b086cf/) | PoolConfigurator | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xdd59cd...11dd6b`](./contracts/base-8453/0xdd59cd12c455a1c091331c55423c9e4e5111dd6b/) | PoolLogic | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x23dc16...a0ee45`](./contracts/base-8453/0x23dc1656251f27327783f750fab5797a03a0ee45/) | PriceOracleSentinel | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x44cceb...76c88f`](./contracts/ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/) | PricingAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x07a4b1...f8a711`](./contracts/base-8453/0x07a4b168f9dae741b3b88bf6424434655af8a711/) | RebalanceLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xb49db8...a2c91f`](./contracts/base-8453/0xb49db8f1b197c91fa01a870d827187e400a2c91f/) | ReservesSetupHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x56908a...28ff5e`](./contracts/base-8453/0x56908a201eb6a4c4a35b833e5e9749650228ff5e/) | RewardPoolFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x59a11c...36bdc8`](./contracts/base-8453/0x59a11c2f543790b8ce1a2dc46c4ad08a4536bdc8/) | RouterV1 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xb7a653...5c702b`](./contracts/base-8453/0xb7a6531665c5e2b2d5b9aa04636847c8f45c702b/) | SeamAirdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x03eeed...dd9cfa`](./contracts/base-8453/0x03eeedf76a007dce47b3a0044d9f0a04badd9cfa/) | SeamEmissionManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x5acb96...996317`](./contracts/base-8453/0x5acb96aac90bf545500251d1eed10bf47e996317/) | SeamGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x6b66cc...e726ba`](./contracts/ethereum-1/0x6b66ccd1340c479b07b390d326eadcbb84e726ba/) | SeamL1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4fdf85...417708`](./contracts/ethereum-1/0x4fdf852d7ce01b1594d38808be5cca9812417708/) | SeamL1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x13f5b4...b35e6f`](./contracts/base-8453/0x13f5b49217f330167d6350530f6185a75ab35e6f/) | SeamTimelockController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x2b1bde...fd154c`](./contracts/base-8453/0x2b1bdefce33f34128759f71076ebd62637fd154c/) | SeamTransferStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x017167...eafa7f`](./contracts/base-8453/0x017167a33aa3665e90ccc21fd35aef60deeafa7f/) | SeamVestingWalletV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x5c24d7...653163`](./contracts/base-8453/0x5c24d71f079443384fd47cdad2372c9aed653163/) | StataOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x0a0c2e...715e21`](./contracts/base-8453/0x0a0c2e2b287ef159adece3e657e12e7d53715e21/) | StaticATokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xb11d23...4a352a`](./contracts/base-8453/0xb11d239a6007c4d8cc0fd6794e71b80bb14a352a/) | StaticATokenLM | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xcc76e7...56f54b`](./contracts/base-8453/0xcc76e71283963a72d005c5b48f4ab2218d56f54b/) | SupplyLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0xfdf71e...e38942`](./contracts/base-8453/0xfdf71e2c2b34cd1f8bb852e7c55e8b926fe38942/) | SwapAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x04550e...62c54e`](./contracts/base-8453/0x04550e50f4753352f233aba53f094fc3cd62c54e/) | Swapper | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x0e09f5...61fd5c`](./contracts/base-8453/0x0e09f59754b4f3695553e2f37f08cc987361fd5c/) | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x3f5a90...f71ce8`](./contracts/base-8453/0x3f5a90ef7bc3ee64e1e95b850dbbc2469ff71ce8/) | UiIncentiveDataProviderV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xb7397f...b9bf50`](./contracts/base-8453/0xb7397f841a449793c634c06cf12751d256b9bf50/) | UiPoolDataProviderV3 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x613379...3dc138`](./contracts/base-8453/0x613379008101df98d4ce5a1819e9f53fe33dc138/) | UnbuttonTokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x87f8d1...207468`](./contracts/base-8453/0x87f8d14a8796b22116d267cfe9a57e986f207468/) | UniversalAerodromeAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xe8bb3f...38af77`](./contracts/base-8453/0xe8bb3fc413114efbaeeecbb16a96cdde4938af77/) | UniversalVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xc19dd3...c1fed2`](./contracts/base-8453/0xc19dd38d22600202fbdb36584981b9a55ec1fed2/) | V3RateStrategyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -244,15 +251,16 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x5c37eb...b3e351`](./contracts/base-8453/0x5c37eb148d4a261acd101e2b997a0f163fb3e351/) | VeloraAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xdb0f02...ed5cf7`](./contracts/base-8453/0xdb0f02421f830398d7b59dae8d385e2cd5ed5cf7/) | WalletBalanceProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x1508f1...6d2a6d`](./contracts/base-8453/0x1508f1b71210593406f8b614dcc41cdf3e6d2a6d/) | WrappedTokenAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xaeeb38...aa1af3`](./contracts/base-8453/0xaeeb3898ede6a6e86864688383e211132baa1af3/) | WrappedTokenGatewayV3 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 69 |
-| upstream | 9 |
+| native | 75 |
+| upstream | 7 |
 | standard_library | 11 |
-| needs_review | 9 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 
@@ -260,7 +268,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=1, medium=1
+- Match method counts: extraction_exact=58
 
 Fork inheritance lineage and inherited audits are included when available.

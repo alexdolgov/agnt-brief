@@ -1,0 +1,17 @@
+{
+  "address": "0xe9005e936d7d8d28b7c8151be39195744ae515b7",
+  "chain_id": 56,
+  "contract_name": "MdexWorker02",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:29:27.816Z"
+}

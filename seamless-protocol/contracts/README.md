@@ -1,6 +1,6 @@
 # seamless-protocol — Contract Index
 
-98 unique implementations across 2 chains · 318 deployments · 0 audited · 87 unaudited · 11 unverified
+99 unique implementations across 2 chains · 321 deployments · 7 audited · 81 unaudited · 11 unverified
 
 ## adapter (14)
 
@@ -8,14 +8,14 @@
 |---|---|---|---|---|
 | [AerodromeAdapter](./base-8453/0x6cfc78c96f87e522ebfdf86995609414cfb1dcb2/) | base | [`0x6cfc78...b1dcb2`](./base-8453/0x6cfc78c96f87e522ebfdf86995609414cfb1dcb2/) | ⚠️ Unaudited | Verified |
 | [DeployUniversalAerodromeAdapterGuardianPayload](./base-8453/0x8e269a45ad61a08c74e1ab3587821705a5b07eea/) | base | [`0x8e269a...b07eea`](./base-8453/0x8e269a45ad61a08c74e1ab3587821705a5b07eea/) | ⚠️ Unaudited | Verified |
-| [LeverageRouter (3 deployments)](./base-8453/0x00c66934ebca0f2a845812bc368b230f6da11a5c/) | base | 3 deployments: ethereum `0xb0764d...6e6dba`; base [`0x00c669...a11a5c`](./base-8453/0x00c66934ebca0f2a845812bc368b230f6da11a5c/); base `0xdba92f...9a887c` | ⚠️ Unaudited | Verified |
-| [MorphoLendingAdapter (7 deployments)](./ethereum-1/0x00c66934ebca0f2a845812bc368b230f6da11a5c/) | ethereum | 7 deployments: ethereum [`0x00c669...a11a5c`](./ethereum-1/0x00c66934ebca0f2a845812bc368b230f6da11a5c/); ethereum `0xb224f5...129817`; ethereum `0xcb1eff...3aee58`; ethereum `0xe33eaf...9bd809`; ethereum `0xe9a32a...298f1f`; base `0x585cc1...f65c51`; base `0x9558b3...ab253f` | ⚠️ Unaudited | Verified |
-| [MorphoLendingAdapterFactory (2 deployments)](./ethereum-1/0xce05fbed9260810bdded179adfdaf737be7ded71/) | ethereum | 2 deployments: ethereum [`0xce05fb...7ded71`](./ethereum-1/0xce05fbed9260810bdded179adfdaf737be7ded71/); base `0xdd3341...e68e61` | ⚠️ Unaudited | Verified |
-| [PricingAdapter (2 deployments)](./ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/) | ethereum | 2 deployments: ethereum [`0x44cceb...76c88f`](./ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/); base `0xce05fb...7ded71` | ⚠️ Unaudited | Verified |
-| [RebalanceAdapter (8 deployments)](./ethereum-1/0x0a4490233fd6ea02873af11c744d286dc3d6c127/) | ethereum | 8 deployments: ethereum [`0x0a4490...d6c127`](./ethereum-1/0x0a4490233fd6ea02873af11c744d286dc3d6c127/); ethereum `0x1d0c19...efaec8`; ethereum `0x42fc03...d081af`; ethereum `0x5e6b01...c30110`; ethereum `0x821ded...615bd7`; ethereum `0xf7356e...d6a69f`; base `0xa530e6...46dd32`; base `0xd923b2...c24912` | ⚠️ Unaudited | Verified |
+| [LeverageRouter (3 deployments)](./base-8453/0x00c66934ebca0f2a845812bc368b230f6da11a5c/) | base | 3 deployments: ethereum `0xb0764d...6e6dba`; base [`0x00c669...a11a5c`](./base-8453/0x00c66934ebca0f2a845812bc368b230f6da11a5c/); base `0xdba92f...9a887c` | ✅ Audited | Verified |
+| [MorphoLendingAdapter (7 deployments)](./ethereum-1/0x00c66934ebca0f2a845812bc368b230f6da11a5c/) | ethereum | 7 deployments: ethereum [`0x00c669...a11a5c`](./ethereum-1/0x00c66934ebca0f2a845812bc368b230f6da11a5c/); ethereum `0xb224f5...129817`; ethereum `0xcb1eff...3aee58`; ethereum `0xe33eaf...9bd809`; ethereum `0xe9a32a...298f1f`; base `0x585cc1...f65c51`; base `0x9558b3...ab253f` | ✅ Audited | Verified |
+| [MorphoLendingAdapterFactory (2 deployments)](./ethereum-1/0xce05fbed9260810bdded179adfdaf737be7ded71/) | ethereum | 2 deployments: ethereum [`0xce05fb...7ded71`](./ethereum-1/0xce05fbed9260810bdded179adfdaf737be7ded71/); base `0xdd3341...e68e61` | ✅ Audited | Verified |
+| [PricingAdapter (3 deployments)](./ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/) | ethereum | 3 deployments: ethereum [`0x44cceb...76c88f`](./ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/); base `0x94e337...b92c4c`; base `0xce05fb...7ded71` | ⚠️ Unaudited | Verified |
+| [RebalanceAdapter (8 deployments)](./ethereum-1/0x0a4490233fd6ea02873af11c744d286dc3d6c127/) | ethereum | 8 deployments: ethereum [`0x0a4490...d6c127`](./ethereum-1/0x0a4490233fd6ea02873af11c744d286dc3d6c127/); ethereum `0x1d0c19...efaec8`; ethereum `0x42fc03...d081af`; ethereum `0x5e6b01...c30110`; ethereum `0x821ded...615bd7`; ethereum `0xf7356e...d6a69f`; base `0xa530e6...46dd32`; base `0xd923b2...c24912` | ✅ Audited | Verified |
 | [RouterV1](./base-8453/0x59a11c2f543790b8ce1a2dc46c4ad08a4536bdc8/) | base | [`0x59a11c...36bdc8`](./base-8453/0x59a11c2f543790b8ce1a2dc46c4ad08a4536bdc8/) | ⚠️ Unaudited | Verified |
 | [Seam (7 deployments)](./base-8453/0x1c7a460413dd4e964f96d8dfc56e7223ce88cd85/) | base | 7 deployments: base [`0x1c7a46...88cd85`](./base-8453/0x1c7a460413dd4e964f96d8dfc56e7223ce88cd85/); base `0x213fb4...513d24`; base `0x57b4b7...aefd3f`; base `0x5d0ee4...da76ec`; base `0xa900d0...54b8c4`; base `0xbf20ba...3895c1`; base `0xff7c1f...5e7847` | ⚠️ Unaudited | Verified |
-| [SwapAdapter](./base-8453/0xfdf71e2c2b34cd1f8bb852e7c55e8b926fe38942/) | base | [`0xfdf71e...e38942`](./base-8453/0xfdf71e2c2b34cd1f8bb852e7c55e8b926fe38942/) | ⚠️ Unaudited | Verified |
+| [SwapAdapter](./base-8453/0xfdf71e2c2b34cd1f8bb852e7c55e8b926fe38942/) | base | [`0xfdf71e...e38942`](./base-8453/0xfdf71e2c2b34cd1f8bb852e7c55e8b926fe38942/) | ✅ Audited | Verified |
 | [Swapper (5 deployments)](./base-8453/0x04550e50f4753352f233aba53f094fc3cd62c54e/) | base | 5 deployments: base [`0x04550e...62c54e`](./base-8453/0x04550e50f4753352f233aba53f094fc3cd62c54e/); base `0x08561d...dc479d`; base `0x293982...55839e`; base `0xc9be03...9f2fc0`; base `0xe314ae...addabc` | ⚠️ Unaudited | Verified |
 | [UniversalAerodromeAdapter](./base-8453/0x87f8d14a8796b22116d267cfe9a57e986f207468/) | base | [`0x87f8d1...207468`](./base-8453/0x87f8d14a8796b22116d267cfe9a57e986f207468/) | ⚠️ Unaudited | Verified |
 | [VeloraAdapter (2 deployments)](./base-8453/0x5c37eb148d4a261acd101e2b997a0f163fb3e351/) | base | 2 deployments: ethereum `0xc4e581...7db6ba`; base [`0x5c37eb...b3e351`](./base-8453/0x5c37eb148d4a261acd101e2b997a0f163fb3e351/) | ⚠️ Unaudited | Verified |
@@ -47,7 +47,7 @@
 | [ACLManager (2 deployments)](./base-8453/0x003c2aa63fec8118297535350a66e7a53be3d0b5/) | base | 2 deployments: base [`0x003c2a...e3d0b5`](./base-8453/0x003c2aa63fec8118297535350a66e7a53be3d0b5/); base `0x38f5c0...dfc184` | ⚠️ Unaudited | Verified |
 | [ConfiguratorLogic](./base-8453/0x5d6fcde71293286ccd4418bbba444f2d67f17895/) | base | [`0x5d6fcd...f17895`](./base-8453/0x5d6fcde71293286ccd4418bbba444f2d67f17895/) | ⚠️ Unaudited | Verified |
 | [GnosisSafeL2](./base-8453/0xa1b5f2cc9b407177cd8a4acf1699fa0b99955a22/) | base | [`0xa1b5f2...955a22`](./base-8453/0xa1b5f2cc9b407177cd8a4acf1699fa0b99955a22/) | ⚠️ Unaudited | Verified |
-| [LeverageManager (5 deployments)](./base-8453/0x38ba21c6bf31df1b1798fced07b4e9b07c5ec3a8/) | base | 5 deployments: ethereum `0x5c37eb...b3e351`; ethereum `0x9d04f6...64220e`; base [`0x38ba21...5ec3a8`](./base-8453/0x38ba21c6bf31df1b1798fced07b4e9b07c5ec3a8/); base `0xeb0221...bb2b7c`; base `0xfe9101...2e1856` | ⚠️ Unaudited | Verified |
+| [LeverageManager (5 deployments)](./base-8453/0x38ba21c6bf31df1b1798fced07b4e9b07c5ec3a8/) | base | 5 deployments: ethereum `0x5c37eb...b3e351`; ethereum `0x9d04f6...64220e`; base [`0x38ba21...5ec3a8`](./base-8453/0x38ba21c6bf31df1b1798fced07b4e9b07c5ec3a8/); base `0xeb0221...bb2b7c`; base `0xfe9101...2e1856` | ✅ Audited | Verified |
 | [RewardsController (6 deployments)](./base-8453/0x2c6dc2ce7747e726a590082adb3d7d08f52adb93/) | base | 6 deployments: base [`0x2c6dc2...2adb93`](./base-8453/0x2c6dc2ce7747e726a590082adb3d7d08f52adb93/); base `0x32688c...ae794d`; base `0x36321e...d1bd89`; base `0x3dc440...35409d`; base `0x76e720...ca9049`; base `0x8243de...fc2850` | ⚠️ Unaudited | Verified |
 | [SeamGovernor (2 deployments)](./base-8453/0x5acb96aac90bf545500251d1eed10bf47e996317/) | base | 2 deployments: base [`0x5acb96...996317`](./base-8453/0x5acb96aac90bf545500251d1eed10bf47e996317/); base `0xc8a0e0...607bfc` | ⚠️ Unaudited | Verified |
 | [SeamGovernorV2 (3 deployments)](./base-8453/0x04faa2826dbb38a7a4e9a5e3db26b9e389e761b6/) | base | 3 deployments: base [`0x04faa2...e761b6`](./base-8453/0x04faa2826dbb38a7a4e9a5e3db26b9e389e761b6/); base `0x8768c7...0db294`; base `0xc3a36d...a9baef` | ⚠️ Unaudited | Verified |
@@ -92,24 +92,25 @@
 |---|---|---|---|---|
 | [ILMRegistry](./base-8453/0x36291d2d51a0122b9facbe3c3f989cc6b1f859b3/) | base | [`0x36291d...f859b3`](./base-8453/0x36291d2d51a0122b9facbe3c3f989cc6b1f859b3/) | ⚠️ Unaudited | Verified |
 | [PoolAddressesProviderRegistry](./base-8453/0x90c5055530c0465abb077fa016a3699a3f53ef99/) | base | [`0x90c505...53ef99`](./base-8453/0x90c5055530c0465abb077fa016a3699a3f53ef99/) | ⚠️ Unaudited | Verified |
-| [RewardPoolFactory](./base-8453/0x56908a201eb6a4c4a35b833e5e9749650228ff5e/) | base | [`0x56908a...28ff5e`](./base-8453/0x56908a201eb6a4c4a35b833e5e9749650228ff5e/) | ⚠️ Unaudited | Verified |
 | [StaticATokenFactory](./base-8453/0x0a0c2e2b287ef159adece3e657e12e7d53715e21/) | base | [`0x0a0c2e...715e21`](./base-8453/0x0a0c2e2b287ef159adece3e657e12e7d53715e21/) | ⚠️ Unaudited | Verified |
 | [TransparentProxyFactory](./base-8453/0x71d90c266b9eb9a41fe8f875ddbddc3fadcf1b5d/) | base | [`0x71d90c...cf1b5d`](./base-8453/0x71d90c266b9eb9a41fe8f875ddbddc3fadcf1b5d/) | ⚠️ Unaudited | Verified |
+| [UnbuttonTokenFactory](./base-8453/0x613379008101df98d4ce5a1819e9f53fe33dc138/) | base | [`0x613379...3dc138`](./base-8453/0x613379008101df98d4ce5a1819e9f53fe33dc138/) | ⚠️ Unaudited | Verified |
 | [V3RateStrategyFactory](./base-8453/0xc19dd38d22600202fbdb36584981b9a55ec1fed2/) | base | [`0xc19dd3...c1fed2`](./base-8453/0xc19dd38d22600202fbdb36584981b9a55ec1fed2/) | ⚠️ Unaudited | Verified |
 | [VaultFactory](./base-8453/0x40292d35b48ff625c648c2a7f0c9e42cd07cd0b0/) | base | [`0x40292d...7cd0b0`](./base-8453/0x40292d35b48ff625c648c2a7f0c9e42cd07cd0b0/) | ⚠️ Unaudited | Verified |
 
-## token (11)
+## token (12)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [AToken](./base-8453/0x27076a995387458da63b23d9afe3df851727a8db/) | base | [`0x27076a...27a8db`](./base-8453/0x27076a995387458da63b23d9afe3df851727a8db/) | ⚠️ Unaudited | Verified |
 | [DelegationAwareAToken](./base-8453/0x34697a08b7a14f12a1d926d31bc8c2eab5f654a6/) | base | [`0x34697a...f654a6`](./base-8453/0x34697a08b7a14f12a1d926d31bc8c2eab5f654a6/) | ⚠️ Unaudited | Verified |
-| [LeverageToken (10 deployments)](./base-8453/0x057a2a1cc13a9af430976af912a27a05de537673/) | base | 10 deployments: ethereum `0x603da7...ff0a82`; ethereum `0x604d37...0b97a3`; ethereum `0x642681...c0fc3d`; ethereum `0x98c4e4...3ed1bf`; ethereum `0xc73ce5...b3033f`; ethereum `0xfe9101...2e1856`; base [`0x057a2a...537673`](./base-8453/0x057a2a1cc13a9af430976af912a27a05de537673/); base `0x603da7...ff0a82`; base `0xa2fcee...1dbb8c`; base `0xe0b2e4...1abe57` | ⚠️ Unaudited | Verified |
+| [LeverageToken (10 deployments)](./base-8453/0x057a2a1cc13a9af430976af912a27a05de537673/) | base | 10 deployments: ethereum `0x603da7...ff0a82`; ethereum `0x604d37...0b97a3`; ethereum `0x642681...c0fc3d`; ethereum `0x98c4e4...3ed1bf`; ethereum `0xc73ce5...b3033f`; ethereum `0xfe9101...2e1856`; base [`0x057a2a...537673`](./base-8453/0x057a2a1cc13a9af430976af912a27a05de537673/); base `0x603da7...ff0a82`; base `0xa2fcee...1dbb8c`; base `0xe0b2e4...1abe57` | ✅ Audited | Verified |
 | [LeverageTokenDeploymentBatcher](./ethereum-1/0x4466d52b714ef32657db89ec61fab1b7e30a0352/) | ethereum | [`0x4466d5...0a0352`](./ethereum-1/0x4466d52b714ef32657db89ec61fab1b7e30a0352/) | ⚠️ Unaudited | Verified |
 | [StableDebtToken](./base-8453/0xb4d5e163738682a955404737f88fdcf15c1391bf/) | base | [`0xb4d5e1...1391bf`](./base-8453/0xb4d5e163738682a955404737f88fdcf15c1391bf/) | ⚠️ Unaudited | Verified |
 | [StakedToken (3 deployments)](./base-8453/0x0f099f6c0714eb423d175a31140a25aad4ac7e46/) | base | 3 deployments: base [`0x0f099f...ac7e46`](./base-8453/0x0f099f6c0714eb423d175a31140a25aad4ac7e46/); base `0x73f084...7172a4`; base `0xc45f94...8773de` | ⚠️ Unaudited | Verified |
 | [StaticATokenLM](./base-8453/0xb11d239a6007c4d8cc0fd6794e71b80bb14a352a/) | base | [`0xb11d23...4a352a`](./base-8453/0xb11d239a6007c4d8cc0fd6794e71b80bb14a352a/) | ⚠️ Unaudited | Verified |
 | [Token (5 deployments)](./base-8453/0x0e09f59754b4f3695553e2f37f08cc987361fd5c/) | base | 5 deployments: base [`0x0e09f5...61fd5c`](./base-8453/0x0e09f59754b4f3695553e2f37f08cc987361fd5c/); base `0x4db264...1dd531`; base `0x560771...82c7c6`; base `0xc4d677...183b52`; base `0xe3b0f5...042b5c` | ⚠️ Unaudited | Verified |
+| [UnbuttonToken](./base-8453/0xf9a5d255220e14e69475c1180640eab3f14ba2aa/) | base | [`0xf9a5d2...4ba2aa`](./base-8453/0xf9a5d255220e14e69475c1180640eab3f14ba2aa/) | ⚠️ Unaudited | Verified |
 | [VariableDebtToken](./base-8453/0x3800da378e17a5b8d07d0144c321163591475977/) | base | [`0x3800da...475977`](./base-8453/0x3800da378e17a5b8d07d0144c321163591475977/) | ⚠️ Unaudited | Verified |
 | [WrappedERC20PermissionedDeposit (4 deployments)](./base-8453/0x3e8707557d4ad25d6042f590bcf8a06071da2c5f/) | base | 4 deployments: base [`0x3e8707...da2c5f`](./base-8453/0x3e8707557d4ad25d6042f590bcf8a06071da2c5f/); base `0x85082b...d062be`; base `0x9660af...645755`; base `0xc9ae3b...98c9e4` | ⚠️ Unaudited | Verified |
 | [WrappedTokenGatewayV3](./base-8453/0xaeeb3898ede6a6e86864688383e211132baa1af3/) | base | [`0xaeeb38...aa1af3`](./base-8453/0xaeeb3898ede6a6e86864688383e211132baa1af3/) | ⚠️ Unaudited | Verified |
@@ -129,7 +130,7 @@
 | [LoanLogic (4 deployments)](./base-8453/0x31da38f0eb1528212de20a3668b795e83ea378d6/) | base | 4 deployments: base [`0x31da38...a378d6`](./base-8453/0x31da38f0eb1528212de20a3668b795e83ea378d6/); base `0x3e61ba...e4acd0`; base `0x7cbb6f...0ca955`; base `0x9bb43b...904c0e` | ⚠️ Unaudited | Verified |
 | [MetaMorphoV1_1 (3 deployments)](./base-8453/0x27d8c7273fd3fcc6956a0b370ce5fd4a7fc65c18/) | base | 3 deployments: base [`0x27d8c7...c65c18`](./base-8453/0x27d8c7273fd3fcc6956a0b370ce5fd4a7fc65c18/); base `0x5a47c8...22f3c7`; base `0x616a4e...273738` | ⚠️ Unaudited | Verified |
 | [RebalanceLogic (4 deployments)](./base-8453/0x07a4b168f9dae741b3b88bf6424434655af8a711/) | base | 4 deployments: base [`0x07a4b1...f8a711`](./base-8453/0x07a4b168f9dae741b3b88bf6424434655af8a711/); base `0x3f7dd8...ad0223`; base `0xab965e...51ea3e`; base `0xc2cecb...4dfaae` | ⚠️ Unaudited | Verified |
-| SeamL1 | ethereum | `0x6b66cc...e726ba` | ⚠️ Unaudited | Verified |
+| [SeamL1 (2 deployments)](./ethereum-1/0x4fdf852d7ce01b1594d38808be5cca9812417708/) | ethereum | 2 deployments: ethereum [`0x4fdf85...417708`](./ethereum-1/0x4fdf852d7ce01b1594d38808be5cca9812417708/); ethereum `0x6b66cc...e726ba` | ⚠️ Unaudited | Verified |
 | [SupplyLogic (2 deployments)](./base-8453/0xcc76e71283963a72d005c5b48f4ab2218d56f54b/) | base | 2 deployments: base [`0xcc76e7...56f54b`](./base-8453/0xcc76e71283963a72d005c5b48f4ab2218d56f54b/); base `0xff017d...af4bb8` | ⚠️ Unaudited | Verified |
 | [UiIncentiveDataProviderV3](./base-8453/0x3f5a90ef7bc3ee64e1e95b850dbbc2469ff71ce8/) | base | [`0x3f5a90...f71ce8`](./base-8453/0x3f5a90ef7bc3ee64e1e95b850dbbc2469ff71ce8/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | base | `0x00f033...494a9d` | ❓ Unverified | Unverified |

@@ -1,0 +1,17 @@
+{
+  "address": "0x6707d9630531debca91a353838f6e30bf1a60294",
+  "chain_id": 999,
+  "contract_name": "KitBtcCustomAggregatorFeed",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:38:35.884Z"
+}

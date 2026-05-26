@@ -1,0 +1,31 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "diamondCutFacet",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ALP",
+        "name": "alp",
+        "type": "address"
+      },
+      {
+        "internalType": "contract PoolOracle",
+        "name": "poolOracle",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "constructor"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "fallback"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

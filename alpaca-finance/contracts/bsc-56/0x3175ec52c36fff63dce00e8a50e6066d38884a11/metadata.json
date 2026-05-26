@@ -1,0 +1,18 @@
+{
+  "address": "0x3175ec52c36fff63dce00e8a50e6066d38884a11",
+  "chain_id": 56,
+  "contract_name": "WorkerConfig",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:29:17.043Z"
+}

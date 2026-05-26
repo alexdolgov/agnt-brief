@@ -1,0 +1,18 @@
+{
+  "address": "0x64fe10f7afbc6ffbd8f849b7a36a3295c45284ae",
+  "chain_id": 56,
+  "contract_name": "EmissionBridgeKeepers",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BUSL, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:29:22.348Z"
+}

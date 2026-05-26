@@ -1,0 +1,17 @@
+{
+  "address": "0x7e54526ccbc0e16c1d02cacd5227c01a1bdb98fd",
+  "chain_id": 999,
+  "contract_name": "DnHypeRedemptionVaultWithSwapper",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:38:39.543Z"
+}

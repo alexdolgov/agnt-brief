@@ -1,0 +1,17 @@
+{
+  "address": "0x67de622bc5ba753142f2599b66edb88b40248124",
+  "chain_id": 999,
+  "contract_name": "USDGWithdrawalHypeSponsor",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "0000000000000000000000009522133c663ba8c2a8a7b4f63dd2ac8dccce15050000000000000000000000006aa37a0cd0c45ac4260a99d43e71fc4d42cbec73000000000000000000000000a8a94da411425634e3ed6c331a32ab4fd774aa43",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:38:36.319Z"
+}

@@ -1,0 +1,16 @@
+# WithdrawalQueue
+
+| Field | Value |
+|---|---|
+| Chain | hyperliquid (999) |
+| Address | `0x0d30b29042e2d6802689be6ade022a0c4d4b9e0e` |
+| Role | operational_periphery |
+| Origin | needs_review |
+| Audited | Yes |
+| Audits | [Certora.pdf](https://github.com/0xhyperbeat/Audits/blob/main/Vault-Infra/Certora.pdf); [Nethermind.pdf](https://github.com/0xhyperbeat/Audits/blob/main/Vault-Infra/Nethermind.pdf) |
+| Deployments | 29 (hyperliquid [`0x0d30b29042e2d6802689be6ade022a0c4d4b9e0e`](../0x0d30b29042e2d6802689be6ade022a0c4d4b9e0e/); hyperliquid `0x0d7f3d551edb80b950db723c19792fa4547aad82`; hyperliquid `0x0dfe20ed46668288230001d17af70f0b9bbcb423`; hyperliquid `0x10024239474120ce410dd7ce203793c81d438be3`; hyperliquid `0x1cc393c1c97033a58fcdd8c0580035eb4d8e5869`; hyperliquid `0x1d749eac4bcbdac4dd7f9c5076cda9b1cd4fc4bf`; hyperliquid `0x202b343d273b87bf2f38ef2dc8569baa66a2511c`; hyperliquid `0x240e0b2cb615ded2fe90fde265b15988dc45b1c6`; hyperliquid `0x261a2b2060d30086e6bef50a093c6f479f49f906`; hyperliquid `0x36899580dec1c0ad1b5ffa9316ebe12e952134d6`; hyperliquid `0x43cacceb4ce9082a6c36b0fec60df487b08f8e8c`; hyperliquid `0x5236b7de041244dd93d3bafa0776b9e2826e5bd6`; hyperliquid `0x52784bdee58b39cfaecb8f5522ed1b9613ba7c4a`; hyperliquid `0x667859bb7df3494d4349ae0d55fa79b157bec1b7`; hyperliquid `0x66d9bec8364fccb49ef20128b00fb14cd57449f0`; hyperliquid `0x6b68c4459e0f76244e4f0a87e3202d31869c1089`; hyperliquid `0x70bc294f3a2937af8fcc8448817352c168109f39`; hyperliquid `0x73905d5a8b6010552ebba8f34c00e7fdb83d3949`; hyperliquid `0x788c7c34489738af7d0246b3e93bdccd1543a143`; hyperliquid `0x8b04cd6561abf2de78112da30ccb919fe8d09d98`; hyperliquid `0x9d90b2f171bb7143fdc2e0a161cdf7cbf8a0e294`; hyperliquid `0xa03e0e3b7e6204c9a8d237c4fbd30793555a84fe`; hyperliquid `0xb62b287d5a80afab99218f1c2cffcbadb4bf085e`; hyperliquid `0xbc63a6057eaead49ea4ec1f07c28659e01058dd1`; hyperliquid `0xbe2f8986f368d531dbe446b6a1696e86998f16bc`; hyperliquid `0xc7becb5346fac6ebd20afb368e1b61cc994b8225`; hyperliquid `0xda768edfbac696fb31502945ce6791ffad157a38`; hyperliquid `0xdac07cf2a26a52f8c2fc89dbc244a83f0236094c`; hyperliquid `0xe73722fda598895030bcb3d445825556f2df7507`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

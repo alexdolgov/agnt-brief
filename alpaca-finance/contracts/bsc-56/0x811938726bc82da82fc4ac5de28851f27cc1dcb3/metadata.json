@@ -1,0 +1,17 @@
+{
+  "address": "0x811938726bc82da82fc4ac5de28851f27cc1dcb3",
+  "chain_id": 56,
+  "contract_name": "PancakeswapV2StrategyWithdrawMinimizeTrading",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T12:29:23.494Z"
+}

@@ -208,6 +208,7 @@
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 0 | 63 | 2026-05-23 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
 | [helix](./helix/) | $2.0M | 0.0% | ? | declining | 0 | 9 | 2026-05-24 |
+| [hemi-staking](./hemi-staking/) | $16.5M | 1.6% | $16.5M | active | 5 | 141 | 2026-05-26 |
 | [hemi](./hemi/) | $49.6K | 2.7% | $49.6K | unknown | 5 | 47 | 2026-05-25 |
 | [hemibtc](./hemibtc/) | $46.2K | 2.7% | $46.2K | active | 5 | 47 | 2026-05-22 |
 | [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
@@ -285,6 +286,7 @@
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-25 |
 | [magma-staking](./magma-staking/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [magpie-ecosystem](./magpie-ecosystem/) | $27.1M | 0.0% | ? | declining | 4 | 2794 | 2026-05-25 |
+| [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 10 | 36 | 2026-05-26 |
 | [mangrove](./mangrove/) | $4.3M | 24.4% | ? | active | 8 | 68 | 2026-05-23 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-05-23 |
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.2M | 0.0% | ? | sunsetting | 0 | 109 | 2026-05-25 |
@@ -369,6 +371,7 @@
 | [phoenix](./phoenix/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 53 | 2026-05-25 |
 | [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-05-25 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
+| [pionex](./pionex/) | $37.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | dead | 1 | 34 | 2026-05-24 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | unknown | 0 | 7 | 2026-05-24 |
 | [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 0 | 6 | 2026-05-26 |
@@ -512,6 +515,7 @@
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
 | [thruster](./thruster/) | $5.8M | 0.0% | ? | dead | 0 | 20 | 2026-05-23 |
 | [tinyman](./tinyman/) | $1.5M | 0.0% | $1.5M | active | 18 | 53 | 2026-05-25 |
+| [tokenlon](./tokenlon/) | $37.2M | 0.0% | ? | declining | 0 | 21 | 2026-05-26 |
 | [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 0 | 44 | 2026-05-25 |
 | [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-05-24 |
 | [tothemoon](./tothemoon/) | $3.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |

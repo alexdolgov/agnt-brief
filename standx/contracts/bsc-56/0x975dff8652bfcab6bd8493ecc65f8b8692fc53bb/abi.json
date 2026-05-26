@@ -1,0 +1,2099 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AccessControlBadConfirmation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "neededRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "AccessControlUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BlockIsNotOpen",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DuplicateOrderId",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "ERC1967InvalidImplementation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ERC1967NonPayable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EnforcedPause",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      }
+    ],
+    "name": "EnumerableMapNonexistentKey",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "key",
+        "type": "uint256"
+      }
+    ],
+    "name": "EnumerableMapNonexistentKey",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExpectedPause",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FillQtyBelowMin",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FillQtyExceedsRemaining",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBatchSize",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBlockId",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCaller",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidChainId",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidContract",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidLeverage",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidMinQty",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidOrderId",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPrice",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidQty",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidRole",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidSide",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidSignature",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidStatus",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidSymbol",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MakerCannotBeTaker",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OutOfBuffer",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OutOfOrderMax",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReentrancyGuardReentrantCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Timeout",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UUPSUnauthorizedCallContext",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "slot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "UUPSUnsupportedProxiableUUID",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "blockId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "orderId",
+        "type": "uint64"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "orderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint8",
+            "name": "position",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Role",
+            "name": "role",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Side",
+            "name": "side",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "qty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "leverage",
+            "type": "uint16"
+          },
+          {
+            "internalType": "enum BlockTradeLib.OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.MatchPolicy",
+            "name": "policy",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct OrderLib.Order",
+        "name": "order",
+        "type": "tuple"
+      }
+    ],
+    "name": "AckOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "blockId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "orderId",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "makerRemainingQty",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "orderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint8",
+            "name": "position",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Role",
+            "name": "role",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Side",
+            "name": "side",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "qty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "leverage",
+            "type": "uint16"
+          },
+          {
+            "internalType": "enum BlockTradeLib.OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.MatchPolicy",
+            "name": "policy",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct OrderLib.Order",
+        "name": "order",
+        "type": "tuple"
+      }
+    ],
+    "name": "ArchiveOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "blockId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "makerOrderId",
+        "type": "uint64"
+      }
+    ],
+    "name": "CloseBlock",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "blockId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "orderId",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "makerRemainingQty",
+        "type": "uint256"
+      }
+    ],
+    "name": "CloseOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "blockId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "makerOrderId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "maker",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "taker",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "qty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "orderId",
+            "type": "uint64"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct BlockTradeLib.MatchedOrder[]",
+        "name": "matchedOrders",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "FillBlock",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "version",
+        "type": "uint64"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "blockId",
+        "type": "uint64"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "remainingQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "takerMinQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum BlockTradeLib.PriceType",
+            "name": "priceType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum BlockTradeLib.BlockStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.MatchPolicy",
+            "name": "policy",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint64",
+            "name": "makerOrderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64[25]",
+            "name": "takerOrderList",
+            "type": "uint64[25]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiredAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "blockFee",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "makerBlockMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "takerBlockMargin",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct BlockLib.Block",
+        "name": "blockInfo",
+        "type": "tuple"
+      }
+    ],
+    "name": "NewBlock",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "blockId",
+        "type": "uint64"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint64",
+        "name": "orderId",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "makerRemainingQty",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "orderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint8",
+            "name": "position",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Role",
+            "name": "role",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Side",
+            "name": "side",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "qty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "leverage",
+            "type": "uint16"
+          },
+          {
+            "internalType": "enum BlockTradeLib.OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.MatchPolicy",
+            "name": "policy",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct OrderLib.Order",
+        "name": "order",
+        "type": "tuple"
+      }
+    ],
+    "name": "NewOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Unpaused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UPGRADE_INTERFACE_VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VALIDATOR_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "orderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "enum BlockTradeLib.OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.OrderAckParams[]",
+        "name": "ackParams",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "ackOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "qty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "takerMinQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Role",
+            "name": "role",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Side",
+            "name": "side",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.MatchPolicy",
+            "name": "policy",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.PriceType",
+            "name": "priceType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "orderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint16",
+            "name": "leverage",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiredAt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.Message",
+        "name": "orderMsg",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "expiredAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "chainId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "contractAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.MessageSignature",
+        "name": "signature",
+        "type": "tuple"
+      }
+    ],
+    "name": "archiveOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "orderId",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.CloseOrderMessage",
+        "name": "closeMsg",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "expiredAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "chainId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "contractAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.MessageSignature",
+        "name": "signature",
+        "type": "tuple"
+      }
+    ],
+    "name": "closeOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "qty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "takerMinQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Role",
+            "name": "role",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Side",
+            "name": "side",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.MatchPolicy",
+            "name": "policy",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.PriceType",
+            "name": "priceType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "orderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint16",
+            "name": "leverage",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiredAt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.Message",
+        "name": "makerMsg",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "expiredAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "chainId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "contractAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.MessageSignature",
+        "name": "signature",
+        "type": "tuple"
+      }
+    ],
+    "name": "createMakerOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "qty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "takerMinQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Role",
+            "name": "role",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Side",
+            "name": "side",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.MatchPolicy",
+            "name": "policy",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.PriceType",
+            "name": "priceType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "orderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint16",
+            "name": "leverage",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiredAt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.Message",
+        "name": "takerMsg",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "expiredAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "chainId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "contractAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.MessageSignature",
+        "name": "signature",
+        "type": "tuple"
+      }
+    ],
+    "name": "createTakerOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "blockId",
+        "type": "uint64"
+      }
+    ],
+    "name": "getBlockInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "remainingQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "takerMinQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum BlockTradeLib.PriceType",
+            "name": "priceType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum BlockTradeLib.BlockStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.MatchPolicy",
+            "name": "policy",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint64",
+            "name": "makerOrderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64[25]",
+            "name": "takerOrderList",
+            "type": "uint64[25]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiredAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "blockFee",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "makerBlockMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "takerBlockMargin",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct BlockLib.Block",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "orderId",
+        "type": "uint64"
+      }
+    ],
+    "name": "getOrderInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "orderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint8",
+            "name": "position",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "caller",
+            "type": "address"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Role",
+            "name": "role",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.Side",
+            "name": "side",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "qty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "leverage",
+            "type": "uint16"
+          },
+          {
+            "internalType": "enum BlockTradeLib.OrderStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.MatchPolicy",
+            "name": "policy",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct OrderLib.Order",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRoleMember",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleMemberCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleMembers",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "validator",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "messageSigner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint256[32]",
+            "name": "_reserved",
+            "type": "uint256[32]"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.State",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      }
+    ],
+    "name": "getUserInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint64",
+                "name": "blockId",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64",
+                "name": "orderId",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint8",
+                "name": "position",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "caller",
+                "type": "address"
+              },
+              {
+                "internalType": "enum BlockTradeLib.Role",
+                "name": "role",
+                "type": "uint8"
+              },
+              {
+                "internalType": "enum BlockTradeLib.Side",
+                "name": "side",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint256",
+                "name": "qty",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint16",
+                "name": "leverage",
+                "type": "uint16"
+              },
+              {
+                "internalType": "enum BlockTradeLib.OrderStatus",
+                "name": "status",
+                "type": "uint8"
+              },
+              {
+                "internalType": "enum BlockTradeLib.MatchPolicy",
+                "name": "policy",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct OrderLib.Order[]",
+            "name": "orders",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint64",
+                "name": "blockId",
+                "type": "uint64"
+              },
+              {
+                "internalType": "bytes32",
+                "name": "symbol",
+                "type": "bytes32"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalQty",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "remainingQty",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "takerMinQty",
+                "type": "uint256"
+              },
+              {
+                "internalType": "enum BlockTradeLib.PriceType",
+                "name": "priceType",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint256",
+                "name": "price",
+                "type": "uint256"
+              },
+              {
+                "internalType": "enum BlockTradeLib.BlockStatus",
+                "name": "status",
+                "type": "uint8"
+              },
+              {
+                "internalType": "enum BlockTradeLib.MatchPolicy",
+                "name": "policy",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint64",
+                "name": "makerOrderId",
+                "type": "uint64"
+              },
+              {
+                "internalType": "uint64[25]",
+                "name": "takerOrderList",
+                "type": "uint64[25]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "expiredAt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "int256",
+                "name": "blockFee",
+                "type": "int256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "makerBlockMargin",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "takerBlockMargin",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct BlockLib.Block[]",
+            "name": "blocks",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct BlockTrade.UserInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      }
+    ],
+    "name": "getUserOrders",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64[32]",
+            "name": "orderIdList",
+            "type": "uint64[32]"
+          }
+        ],
+        "internalType": "struct UserOrderBufferLib.UserOrder",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "validator",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "messageSigner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint256[32]",
+            "name": "_reserved",
+            "type": "uint256[32]"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.State",
+        "name": "initState",
+        "type": "tuple"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "blockId",
+        "type": "uint64"
+      }
+    ],
+    "name": "isBlockOpen",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "paused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "callerConfirmation",
+        "type": "address"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "validator",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "messageSigner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint256[32]",
+            "name": "_reserved",
+            "type": "uint256[32]"
+          }
+        ],
+        "internalType": "struct BlockTradeLib.State",
+        "name": "newState",
+        "type": "tuple"
+      }
+    ],
+    "name": "setState",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unpause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint64",
+            "name": "blockId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbol",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "remainingQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "takerMinQty",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum BlockTradeLib.PriceType",
+            "name": "priceType",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum BlockTradeLib.BlockStatus",
+            "name": "status",
+            "type": "uint8"
+          },
+          {
+            "internalType": "enum BlockTradeLib.MatchPolicy",
+            "name": "policy",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint64",
+            "name": "makerOrderId",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64[25]",
+            "name": "takerOrderList",
+            "type": "uint64[25]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiredAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "blockFee",
+            "type": "int256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "makerBlockMargin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "takerBlockMargin",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct BlockLib.Block",
+        "name": "blockToUpdate",
+        "type": "tuple"
+      }
+    ],
+    "name": "updateBlock",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newValidator",
+        "type": "address"
+      }
+    ],
+    "name": "updateValidator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

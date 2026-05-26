@@ -1,0 +1,17 @@
+{
+  "address": "0x7160287da4c544907011c0548c0818f7a9dba7d1",
+  "chain_id": 146,
+  "contract_name": "FleetCommanderRewardsManagerFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 54,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T11:52:47.241Z"
+}

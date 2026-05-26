@@ -64,6 +64,7 @@
 | [bitu-protocol](./bitu-protocol/) | $23.1M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [blackhole](./blackhole/) | $29.9M | 31.1% | ? | unknown | 3 | 86 | 2026-05-22 |
+| [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | unknown | 0 | 19 | 2026-05-26 |
 | [blueshift](./blueshift/) | $4.4M | 0.0% | ? | active | 1 | 24 | 2026-05-25 |
 | [blur](./blur/) | $91.7M | 0.0% | $91.7M | active | 0 | 17 | 2026-05-22 |
 | [bmx](./bmx/) | $305.7K | 0.0% | $305.7K | active | 0 | 184 | 2026-05-24 |
@@ -445,6 +446,7 @@
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-05-23 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-22 |
 | [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 18 | 3 | 2026-05-23 |
+| [standx](./standx/) | $12.7M | 50.0% | $12.7M | unknown | 6 | 18 | 2026-05-26 |
 | [stargate](./stargate/) | $6.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [stcelo](./stcelo/) | $1.6M | 50.0% | ? | active | 2 | 19 | 2026-05-24 |
 | [stcyber](./stcyber/) | $51.4M | 0.0% | $51.4M | active | 1 | 31 | 2026-05-24 |
@@ -500,6 +502,7 @@
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |
 | [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-05-24 |
 | [trufin-protocol](./trufin-protocol/) | $6.8M | 66.7% | ? | declining | 12 | 7 | 2026-05-23 |
+| [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 0 | 4 | 2026-05-26 |
 | [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | dead | 2 | 516 | 2026-05-25 |
 | [twyne](./twyne/) | $985.7K | 9.6% | ? | active | 9 | 59 | 2026-05-24 |
 | [txflow](./txflow/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 54 | 2026-05-25 |

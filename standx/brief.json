@@ -1,0 +1,927 @@
+{
+  "schema_version": "2.0",
+  "project_key": "standx",
+  "generated_at": "2026-05-26T11:54:50.607Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "standx",
+    "tier": 0,
+    "peak_tvl": 106644434,
+    "peak_date": "2026-01-17T00:00:00.000Z",
+    "tvl_30d_ago": 53650033,
+    "tvl_90d_ago": 72026125,
+    "tvl_current": 48272336,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": null,
+    "change_30d_pct": -10.023660190479285,
+    "change_90d_pct": -32.97940712484533,
+    "days_since_peak": 129,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 54.73525041166236
+  },
+  "summary": {
+    "total_contracts": 18,
+    "total_addresses": 27,
+    "unique_implementations": 18,
+    "total_deployments": 27,
+    "audited_contracts": 4,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 4,
+    "contracts_verified_unaudited": 4,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 10,
+    "coverage_pct": 50,
+    "total_audits": 6,
+    "scoreable_audits": 5,
+    "dl_tvl_usd": 48272335,
+    "tvl_usd": 12710657.83887345,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 12710657.84
+    },
+    "asd_usd": 12710657.83887345,
+    "website_url": "https://standx.com/referral?code=defillama",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-11",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 2,
+      "aging": 4,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "StandX is a DeFi protocol on BSC that provides a canonical bridge for cross-chain asset transfers and a derivatives platform for trading perpetual contracts. It issues a stablecoin (StandDUSD) and uses proxy-based upgradeable contracts for core logic.",
+    "relationship_narrative": "The BSC family provides the core stablecoin (StandDUSD) and settlement logic, which is used by both the Pools family for liquidity and the StandX Bridge family for cross-chain transfers. The bridge relies on the same StandDUSD token contract and uses a Safe multisig for governance, while pools facilitate trading of the stablecoin.",
+    "product_family_count": 3
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb67e5eaf770a384ab28029d08b9bc5ebe32beb0f",
+      "name": "PancakeV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "pancakeswap",
+      "product_line": "Pools",
+      "tvl_usd": 12710657.83887345,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakeV3Pool",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb67e5eaf770a384ab28029d08b9bc5ebe32beb0f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 12710657.83887345,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x00b4f9b510893505acefb10ec91cbc972185088e",
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "BSC",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb69f4f80ec472ff9fe86933ac739329f8f72dc3b",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x00b4f9b510893505acefb10ec91cbc972185088e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x84603ca30da1ae131f624a4edf2d8ac8a030766f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x90bb5bdc6acd166237640c8707a694f1fc3aab84",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x22d957163d6a075cf05474ccd2633c27c134deda",
+      "name": "Gateway",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Gateway",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x22d957163d6a075cf05474ccd2633c27c134deda",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x54b1cc926d4dd26cbad0d15758b87c333a29f23e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb6820fb2ab3572cdadde31844679d4e9adb66760",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3856",
+        "audit-3857",
+        "audit-3861"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x7f5a8ee5149b9bbc462b2f4d5b03cb56ce12e419",
+      "name": "Highway",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Highway",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x7f5a8ee5149b9bbc462b2f4d5b03cb56ce12e419",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xfdf12f819647d0fde50d6aafd08dafe880d29649",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3858"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2ad9c1ad5b06f953b69d39d6685d725cd330b9c5",
+      "name": "PancakePair",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "pancakeswap",
+      "product_line": "Pools",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakePair",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2ad9c1ad5b06f953b69d39d6685d725cd330b9c5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x11b660397382ae3a83c4ad80e2f791189b39e433",
+      "name": "SafeL2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "StandX Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x29fcb43b46531bca003ddc8fcb67ffe91900c762",
+      "impl_name": "SafeL2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x11b660397382ae3a83c4ad80e2f791189b39e433",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x23fd9dfb3f5772034ed677aeb15f048da53a04ed",
+      "name": "Settler",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "BSC",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x23fd9dfb3f5772034ed677aeb15f048da53a04ed",
+      "impl_name": "Settler",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x23fd9dfb3f5772034ed677aeb15f048da53a04ed",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2c02f575cdd0cc87de89ae6a493b05a5ed95065a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xdf09ebf9a24080deedb0a9a85db0b3aa9a90caa1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3857",
+        "audit-3859"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2e8749ea4b3324376fa740f63abba2993d1ffdb2",
+      "name": "StandDUSD",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "StandX Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x2e8749ea4b3324376fa740f63abba2993d1ffdb2",
+      "impl_name": "StandDUSD",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2e8749ea4b3324376fa740f63abba2993d1ffdb2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x57f4dff6f9404c1c89d5d0457e26c87ffbd9e22d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xaf44a1e76f56ee12adbb7ba8acd3cbd474888122",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3861"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x77cf4ef909a1a80e3681a043b7aa5bacbe554915",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x77cf4ef909a1a80e3681a043b7aa5bacbe554915",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x79864daef3f6d3b27d94a84869bb0d175d63d771",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x79864daef3f6d3b27d94a84869bb0d175d63d771",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x79d4d85225e235e59967e2090a3075716c7c9223",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x79d4d85225e235e59967e2090a3075716c7c9223",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8c69ac1be58e92a701e0d8c0d125e77103843053",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8c69ac1be58e92a701e0d8c0d125e77103843053",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x96a4a8215354df98cac5fe639fdeea83e4b71652",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x96a4a8215354df98cac5fe639fdeea83e4b71652",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb69f4f80ec472ff9fe86933ac739329f8f72dc3b",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "BSC",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb69f4f80ec472ff9fe86933ac739329f8f72dc3b",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xcb5f1543f076181a290d49ca9bc8b838e5066874",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xcb5f1543f076181a290d49ca9bc8b838e5066874",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe17f50caf270e46b0217bb966765b3d3f239074f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe17f50caf270e46b0217bb966765b3d3f239074f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe202fb00309c7e2322ca4cde977bc56f51a14f1c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "StandX Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe202fb00309c7e2322ca4cde977bc56f51a14f1c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xfb558c0ff96f333e9b77cd9e995d95396c5ac10f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xfb558c0ff96f333e9b77cd9e995d95396c5ac10f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 3856,
+      "audit_key": "audit-3856",
+      "report_name": "WatchPug StandX DUSD Solana Audit Report",
+      "report_url": "https://github.com/standx-labs/stand_audit/blob/main/WatchPug_StandX_DUSD_Solana_Audit.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Gateway",
+        "MultiToken",
+        "PartialGatewayState",
+        "User",
+        "WithdrawReq"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3857,
+      "audit_key": "audit-3857",
+      "report_name": "WatchPug StandX DUSD EVM Audit Report",
+      "report_url": "https://github.com/standx-labs/stand_audit/blob/main/WatchPug_StandX_DUSD_EVM_Audit.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Gateway",
+        "GatewayLib",
+        "IGateway",
+        "PriceOracle",
+        "Settler",
+        "TokenLib",
+        "UserLib"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3858,
+      "audit_key": "audit-3858",
+      "report_name": "WatchPug StandX Highway EVM Audit Report",
+      "report_url": "https://github.com/standx-labs/stand_audit/blob/main/WatchPug_StandX_Highway_EVM_Audit.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Highway",
+        "HighwayCaller",
+        "HighwayCallerLib",
+        "HighwayCallerMap",
+        "HighwayLib",
+        "HighwayState"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3859,
+      "audit_key": "audit-3859",
+      "report_name": "WatchPug StandX Highway SVM Audit Report",
+      "report_url": "https://github.com/standx-labs/stand_audit/blob/main/WatchPug_StandX_Highway_SVM_Audit.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "HighwayCaller",
+        "HighwayState",
+        "Message",
+        "MessageEvent",
+        "MessageSignature",
+        "MessageStatus",
+        "MultisigConfig",
+        "Settler",
+        "WithdrawMsg"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3860,
+      "audit_key": "audit-3860",
+      "report_name": "RigSec StandX DUSD Solana Audit Report",
+      "report_url": "https://github.com/standx-labs/stand_audit/blob/main/RigSec_StandX_DUSD_Solana_Audit.pdf",
+      "auditor": "RigSec",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3861,
+      "audit_key": "audit-3861",
+      "report_name": "RigSec StandX DUSD EVM Audit Report",
+      "report_url": "https://github.com/standx-labs/stand_audit/blob/main/RigSec_StandX_DUSD_EVM_Audit.pdf",
+      "auditor": "RigSec",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Gateway",
+        "GatewayLib",
+        "PriceOracle",
+        "StandDUSD",
+        "UserLib"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "WatchPug",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 37.5,
+      "latest_audit": "2025-11"
+    },
+    {
+      "auditor": "RigSec",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 25,
+      "latest_audit": "2025-05"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 14,
+    "upstream": 2,
+    "standard_library": 2,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 20
+    },
+    "extraction_confidence_counts": {
+      "high": 5
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 3860,
+        "report_name": "RigSec StandX DUSD Solana Audit Report"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

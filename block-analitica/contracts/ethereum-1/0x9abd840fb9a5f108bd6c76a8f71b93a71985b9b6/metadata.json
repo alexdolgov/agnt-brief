@@ -1,0 +1,18 @@
+{
+  "address": "0x9abd840fb9a5f108bd6c76a8f71b93a71985b9b6",
+  "chain_id": 1,
+  "contract_name": "TipJar",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 62,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T11:52:46.714Z"
+}

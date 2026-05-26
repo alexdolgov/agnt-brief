@@ -1,0 +1,16 @@
+# SummerTimelockController
+
+| Field | Value |
+|---|---|
+| Chain | sonic (146) |
+| Address | `0x363139edcb1994e6f9f928ceb33b431e9db53ac5` |
+| Role | governance |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 3 (sonic [`0x363139edcb1994e6f9f928ceb33b431e9db53ac5`](../0x363139edcb1994e6f9f928ceb33b431e9db53ac5/); sonic `0x4c32a28ad95deabc06bf7c83adebcf6fe6721ed9`; sonic `0xc5cab79a195497ec19495a7ffa8e263557c41aac`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

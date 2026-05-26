@@ -1,0 +1,17 @@
+{
+  "address": "0x355e2e10a0056a0ae18f5f67925b74fdd9ba87d7",
+  "chain_id": 146,
+  "contract_name": "DutchAuctionLibrary",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 45,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T11:52:46.903Z"
+}

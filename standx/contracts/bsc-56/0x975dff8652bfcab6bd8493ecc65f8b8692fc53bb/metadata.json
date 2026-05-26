@@ -1,0 +1,17 @@
+{
+  "address": "0x975dff8652bfcab6bd8493ecc65f8b8692fc53bb",
+  "chain_id": 56,
+  "contract_name": "BlockTrade",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "f0c57e16840df040f15088dc2f81fe391c3923bec73e23a9662efc9c229c6a00",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T11:54:54.354Z"
+}

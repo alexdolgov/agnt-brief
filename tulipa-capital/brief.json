@@ -1,0 +1,464 @@
+{
+  "schema_version": "2.0",
+  "project_key": "tulipa-capital",
+  "generated_at": "2026-05-26T11:49:27.169Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "tulipa-capital",
+    "tier": 0,
+    "peak_tvl": 190347290,
+    "peak_date": "2025-07-18T00:00:00.000Z",
+    "tvl_30d_ago": 53360738,
+    "tvl_90d_ago": 50922986,
+    "tvl_current": 49287690,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 90564399,
+    "change_30d_pct": -7.633042856341304,
+    "change_90d_pct": -3.2113120782037408,
+    "days_since_peak": 312,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 74.10643986578427
+  },
+  "summary": {
+    "total_contracts": 4,
+    "total_addresses": 28,
+    "unique_implementations": 4,
+    "total_deployments": 28,
+    "audited_contracts": 0,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 4,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 49287690.73545,
+    "tvl_usd": 55689527.8473784,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "avalanche": 336780.01,
+      "base": 1.04,
+      "ethereum": 55352746.8
+    },
+    "asd_usd": 55689527.8473784,
+    "website_url": "https://www.tulipa.capital",
+    "chains": [
+      "avalanche",
+      "base",
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Tulipa Capital is a risk curation protocol that deploys user deposits into yield-bearing strategies via a system of upgradeable vaults and proxies. It operates across Ethereum, Base, and Avalanche, offering structured products that optimize returns while managing risk.",
+    "relationship_narrative": "All product families share the same proxy-based upgradeability pattern, with BeaconProxy and OptinProxy instances pointing to a small set of Vault implementations. The TokenizedAccount contract likely serves as a user-facing entry point or receipt token, while BoringVault and LendingVault represent specialized strategy vaults within the same infrastructure.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x065ef71bcdc43adb76bd0585d02ffe7c9e0d8950",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 55662011.94615971,
+      "is_proxy": false,
+      "impl_address": "0x33f65c8d025b5418c7f8dd248c2ec1d31881d465",
+      "impl_name": "Vault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x065ef71bcdc43adb76bd0585d02ffe7c9e0d8950",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x097c94fbf0afa1b994af7ea13ecb5ab609602976",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x16648324d68b86e341051767e749f9f074714228",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x45b6969152a186bafc524048f36a160fac096d50",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x652716fad571f04d26a3c8ffd9e593f17123ab20",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x66dcb62da5430d800a1c807822c25be17138fda8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 240557.595375,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6a5ea384e394083149ce39db29d5787a658aa98a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x71652d4898de9a7dd35e472a5fe4577ec69d82f2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 928960,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7895a046b26cc07272b022a0c9bafc046e6f6396",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 7127711.412518659,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7a12d4b719f5aa479ecd60defed909fb2a37e428",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 4139038.091957002,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7efa7a56fb8409a964fedae1a6302c9f6093e7d8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8092ca384d44260ea4feaf7457b629b8dc6f88f0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 189827.0981061867,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x936facdf10c8c36294e7b9d28345255539d81bc7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 20241153.34315839,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xab4ac28d10a4bc279ad073b1d74bfa0e385c010c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xaba1a2e157dae248f8630ca550bd826725ff745c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb09f761cb13baca8ec087ac476647361b6314f98",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 13750583.803579593,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb60d5aab5ce7696da071d5a9787b3eaeed6d165f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbb7568d355172ce2e967d5d048746b736bca8f31",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbc29b6c682c447ddc3143b3d8ba781163fc8a6f2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xce0b790ae0d8cf91e01f3fb69025e14569b574f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 8707400.141588,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdc7312936185e126a5336ad823163f1000fc0766",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe296195cbd7affb6477c527dcc626a278c389560",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xee6a60be216058afd7a0643795b4f1e197c8b150",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.44647037237168297,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x3048925b3ea5a8c12eecccb8810f5f7544db54af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 116677.91856068457,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xb893c8d7000e0408eb7d168152ec7fefdd0d25e3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 220102.09484582036,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6bf340db729d82af1f6443a0ea0d79647b1c3ddf",
+      "name": "BoringVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Tulipa Capital",
+      "tvl_usd": 18913.08475231007,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BoringVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6bf340db729d82af1f6443a0ea0d79647b1c3ddf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 18913.08475231007,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x686c83aa81ba206354fdcbc2cd282b4531365e29",
+      "name": "TokenizedAccount",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Tulipa Capital",
+      "tvl_usd": 8601.780271370848,
+      "is_proxy": true,
+      "impl_address": "0x1175f223c088d3583ce76f6766778a848d1b8ae7",
+      "impl_name": "TokenizedAccount",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x686c83aa81ba206354fdcbc2cd282b4531365e29",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 8601.780271370848,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x61a8606e04d350dfa1d1aaa68b37260746ae47d4",
+      "name": "LendingVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Tulipa Capital",
+      "tvl_usd": 1.036195,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LendingVault",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x61a8606e04d350dfa1d1aaa68b37260746ae47d4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 1.036195,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x065ef71bcdc43adb76bd0585d02ffe7c9e0d8950",
+      "name": "Vault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 55662011.94615971,
+      "risk_note": "Verified native implementation with $55,662,011.95 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6bf340db729d82af1f6443a0ea0d79647b1c3ddf",
+      "name": "BoringVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 18913.08475231007,
+      "risk_note": "Verified native implementation with $18,913.08 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x61a8606e04d350dfa1d1aaa68b37260746ae47d4",
+      "name": "LendingVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 1.036195,
+      "risk_note": "Verified native implementation with $1.04 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 3,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

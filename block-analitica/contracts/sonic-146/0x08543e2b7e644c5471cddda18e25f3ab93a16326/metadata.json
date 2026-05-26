@@ -1,0 +1,17 @@
+{
+  "address": "0x08543e2b7e644c5471cddda18e25f3ab93a16326",
+  "chain_id": 146,
+  "contract_name": "SummerRewardsRedeemer",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "0000000000000000000000004e0037f487bbb588bf1b7a83bde6c34fed6099e3000000000000000000000000afb8a8bea8f7cdb4b65437b0c5963dc7cd270bc6",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T11:52:47.809Z"
+}

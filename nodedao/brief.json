@@ -1,0 +1,1062 @@
+{
+  "schema_version": "2.0",
+  "project_key": "nodedao",
+  "generated_at": "2026-05-26T18:17:45.606Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "nodedao",
+    "tier": 0,
+    "peak_tvl": 93317938,
+    "peak_date": "2025-08-23T00:00:00.000Z",
+    "tvl_30d_ago": 38003842,
+    "tvl_90d_ago": 32979270,
+    "tvl_current": 33415309,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 58606251,
+    "change_30d_pct": -12.073866110694809,
+    "change_90d_pct": 1.3221608604435453,
+    "days_since_peak": 276,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 64.19197668083922
+  },
+  "summary": {
+    "total_contracts": 18,
+    "total_addresses": 36,
+    "unique_implementations": 18,
+    "total_deployments": 36,
+    "audited_contracts": 7,
+    "unaudited_contracts": 11,
+    "contracts_verified_audited": 7,
+    "contracts_verified_unaudited": 11,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 38.9,
+    "total_audits": 5,
+    "scoreable_audits": 4,
+    "dl_tvl_usd": 33688344.48856,
+    "tvl_usd": 33267260.92433454,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 33267260.92
+    },
+    "asd_usd": 33267260.923920944,
+    "website_url": "https://www.nodedao.com",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2024-08",
+    "audit_freshness": "aging",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 1,
+      "stale": 4,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "NodeDAO is a liquid staking protocol that allows users to stake ETH and receive liquid staking tokens while earning staking rewards. It also provides restaking and DeFi strategy integration to optimize yields.",
+    "relationship_narrative": "The NodeDAOView contract serves as a read-only aggregation point for the protocol, while the ERC1967Proxy enables upgradeability. Other contracts like RestakingPool, ELVault, and DefiStrategy likely interact with the view contract to provide data to users.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0d6f764452ca43eb8bd22788c9db43e4b5a725bc",
+      "name": "RestakingPool",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": 21766528.29788321,
+      "is_proxy": true,
+      "impl_address": "0x80c1ef2e1bc5c2adfe1d245e1c1c4969156bd0fc",
+      "impl_name": "RestakingPool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0d6f764452ca43eb8bd22788c9db43e4b5a725bc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 21766528.29788321,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x512d8b575ce2a5bd21721ba05773e420ba90285b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x80c1ef2e1bc5c2adfe1d245e1c1c4969156bd0fc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9c6f151ff54b9820d4c54335369b76729e6503fa",
+      "name": "NethPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 11500732.626037734,
+      "is_proxy": false,
+      "impl_address": "0x9c6f151ff54b9820d4c54335369b76729e6503fa",
+      "impl_name": "NethPool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9c6f151ff54b9820d4c54335369b76729e6503fa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa1ed350cc219a4cafb0f3574cd42982c3f82629a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf3c79408164abfb6fd5ddfe33b084e4ad2c07c18",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 11500732.626037734,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3dd8d9074f2a2656144125a3dd04abce01afac23",
+      "name": "ELVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 0.0004135970992820593,
+      "is_proxy": false,
+      "impl_address": "0x3dd8d9074f2a2656144125a3dd04abce01afac23",
+      "impl_name": "ELVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3dd8d9074f2a2656144125a3dd04abce01afac23",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x96714ca83bdabd4d45ccf61e171d81178fc3f04e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa9d21395a58d832d2c44605d286560876ddee8f3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.00020679854964102964,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbdfe7fc2caac000e8436c72c104d611277def3d8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.00020679854964102964,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3977",
+        "audit-3980"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1349a8d352b1971cbebeacf55fb75526f47b6610",
+      "name": "CumulativeMerkleDrop",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CumulativeMerkleDrop",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1349a8d352b1971cbebeacf55fb75526f47b6610",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4d68f9a9ec6606351a22da1f67a38a01cca1bfd6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x174799af838f3883e88161f04011e2a316bfc410",
+      "name": "DefiStrategy",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x59c384c83bd1fba9e5784f7e47f90007de73382d",
+      "impl_name": "DefiStrategy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x174799af838f3883e88161f04011e2a316bfc410",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x59c384c83bd1fba9e5784f7e47f90007de73382d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5b14afdb6cbab7289e7d73df7d3dbad48aa7f503",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x75b2e41c6096eb4a8110e0d23c3eeb749e775bae",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8446c9251ccaf284c91c16b50c09f25f60ddf8f5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfc2891f2fe03d8601647451bcd095bf62814c4a7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3976"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b",
+      "name": "LsdETH",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LsdETH",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa57dc79b2852415448b66100bf59753318f9d25f",
+      "name": "MintSecurity",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd297dce721db26122db66193310b94586bbefb57",
+      "impl_name": "MintSecurity",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa57dc79b2852415448b66100bf59753318f9d25f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd297dce721db26122db66193310b94586bbefb57",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3976"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb97ab3198f6117d2d093807faa670eb1c11f67a0",
+      "name": "MintStrategy",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xdd2d806f82549689673eeca72233c07ae543e6fe",
+      "impl_name": "MintStrategy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb97ab3198f6117d2d093807faa670eb1c11f67a0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdd2d806f82549689673eeca72233c07ae543e6fe",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3976"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3343f9de5612b6f8a433abc3eaae245cfa3283ce",
+      "name": "NethOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "layer-zero",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NethOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3343f9de5612b6f8a433abc3eaae245cfa3283ce",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x857bf02b1f5fd85e064e6726658ea1864a14d948",
+      "name": "NodeDAOView",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "NodeDAO",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x857bf02b1f5fd85e064e6726658ea1864a14d948",
+      "impl_name": "NodeDAOView",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x857bf02b1f5fd85e064e6726658ea1864a14d948",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd7c049cd4ba216679ecc04eb2767cc5e39812121",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9f836f8a27f1579258388bfab16ab16e278b1a2c",
+      "name": "ObeliskCustody",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x385d894a946be929cc1ba1a26331fd4ccd93b4e3",
+      "impl_name": "ObeliskCustody",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9f836f8a27f1579258388bfab16ab16e278b1a2c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe423b99af103c4423ce9edf37d4790e9ab1cd999",
+      "name": "ObeliskNetwork",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xef2df476221df34865570597a6e0bc9ddc43e80b",
+      "impl_name": "ObeliskNetwork",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe423b99af103c4423ce9edf37d4790e9ab1cd999",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3976"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x54f661260dd47b6178cf4f6f3e90cc30d8d1ea62",
+      "name": "PoolConfig",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xea66a662823e14a7e8ff7737703b225e84ad497a",
+      "impl_name": "PoolConfig",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x54f661260dd47b6178cf4f6f3e90cc30d8d1ea62",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xea66a662823e14a7e8ff7737703b225e84ad497a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9efdeb695f1e3f0ad3bcfb1e07d2749b50a3b75c",
+      "name": "RestakingPod",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe2a70010eff48c983d2472250c290b0324be7be5",
+      "impl_name": "RestakingPod",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9efdeb695f1e3f0ad3bcfb1e07d2749b50a3b75c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcea3681131dd151ee72a5c8dbba555cb8b8ded56",
+      "name": "RNethOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RNethOFTAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcea3681131dd151ee72a5c8dbba555cb8b8ded56",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x36f57f0379cb36e54248d219954274ee86a16e16",
+      "name": "StrategyManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x36f57f0379cb36e54248d219954274ee86a16e16",
+      "impl_name": "StrategyManager",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x36f57f0379cb36e54248d219954274ee86a16e16",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x995f4e4c75d6eb1764557299933a4e633c8d5e38",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3976"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe4c555c2aa8f7fdb7baf90039b3a583c8e312f20",
+      "name": "TimelockController",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimelockController",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe4c555c2aa8f7fdb7baf90039b3a583c8e312f20",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3978"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6fdfd096687a2d7b83e4afdc05c43519166d74a7",
+      "name": "TokenAuthority",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenAuthority",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6fdfd096687a2d7b83e4afdc05c43519166d74a7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 3976,
+      "audit_key": "audit-3976",
+      "report_name": "CertiK-Obelisk-final-20240805T174639Z.pdf",
+      "report_url": "https://github.com/NodeDAO/audit/blob/main/CertiK-Obelisk-final-20240805T174639Z.pdf",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Assets",
+        "BaseStrategy",
+        "BaseToken",
+        "BlackList",
+        "CefiStrategy",
+        "Dao",
+        "DefiStrategy",
+        "MintSecurity",
+        "MintStrategy",
+        "OBTC",
+        "OLTC",
+        "OYBTCB2",
+        "OYBTCBBL",
+        "ObeliskNetwork",
+        "Strategy",
+        "StrategyManager",
+        "Version",
+        "WithdrawalRequest"
+      ],
+      "matched_contracts": 13,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3977,
+      "audit_key": "audit-3977",
+      "report_name": "Beosin_NodeDAO-Protocol_202302011759.pdf",
+      "report_url": "https://github.com/NodeDAO/audits/blob/main/Beosin_NodeDAO-Protocol_202302011759.pdf",
+      "auditor": "Beosin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BeaconOracle",
+        "ELVault",
+        "LiquidStaking",
+        "NodeOperatorRegistry",
+        "ReportUtils"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3978,
+      "audit_key": "audit-3978",
+      "report_name": "Beosin_NodeDAO-Protocol_202302161759.pdf",
+      "report_url": "https://github.com/NodeDAO/audits/blob/main/Beosin_NodeDAO-Protocol_202302161759.pdf",
+      "auditor": "Beosin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "LiquidStaking",
+        "NodeOperatorRegistry",
+        "Oracle",
+        "Registry",
+        "TimelockController",
+        "Vault"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3979,
+      "audit_key": "audit-3979",
+      "report_name": "Beosin_Validator-NFT_202210251808.pdf",
+      "report_url": "https://github.com/NodeDAO/audits/blob/main/Beosin_Validator-NFT_202210251808.pdf",
+      "auditor": "Beosin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 3980,
+      "audit_key": "audit-3980",
+      "report_name": "MetaScan_Report_NodeDAO_20230301.pdf",
+      "report_url": "https://github.com/NodeDAO/audits/blob/main/MetaScan_Report_NodeDAO_20230301.pdf",
+      "auditor": "MetaScan",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BeaconOracle",
+        "ConsensusVault",
+        "ELVault",
+        "ELVaultFactory",
+        "LiquidStaking",
+        "NodeOperatorRegistry",
+        "VNFT"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "CertiK",
+      "tier": 2,
+      "contracts_covered": 5,
+      "coverage_pct": 27.8,
+      "latest_audit": "2024-08"
+    },
+    {
+      "auditor": "Beosin",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 11.1,
+      "latest_audit": "2023-02"
+    },
+    {
+      "auditor": "MetaScan",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 5.6,
+      "latest_audit": "2023-03"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9c6f151ff54b9820d4c54335369b76729e6503fa",
+      "name": "NethPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 11500732.626037734,
+      "risk_note": "Verified native implementation with $11,500,732.63 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1349a8d352b1971cbebeacf55fb75526f47b6610",
+      "name": "CumulativeMerkleDrop",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b",
+      "name": "LsdETH",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x857bf02b1f5fd85e064e6726658ea1864a14d948",
+      "name": "NodeDAOView",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcea3681131dd151ee72a5c8dbba555cb8b8ded56",
+      "name": "RNethOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6fdfd096687a2d7b83e4afdc05c43519166d74a7",
+      "name": "TokenAuthority",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 8,
+    "upstream": 1,
+    "standard_library": 9,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 22
+    },
+    "extraction_confidence_counts": {
+      "high": 4
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 3979,
+        "report_name": "Beosin_Validator-NFT_202210251808.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

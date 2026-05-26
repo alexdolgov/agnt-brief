@@ -60,6 +60,7 @@
 | [benddao](./benddao/) | $1.5M | 0.0% | $1.5M | dead | 1 | 15 | 2026-05-25 |
 | [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 2 | 2026-05-23 |
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-05-23 |
+| [bigone](./bigone/) | $35.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [bima-cdp](./bima-cdp/) | $5.4M | 50.0% | ? | active | 3 | 38 | 2026-05-23 |
 | [binaryx-platform](./binaryx-platform/) | $8.6M | 0.0% | ? | active | 2 | 133 | 2026-05-23 |
 | [bio-protocol](./bio-protocol/) | $143.8M | 10.0% | $139.6M | active | 6 | 41 | 2026-05-23 |
@@ -192,6 +193,7 @@
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-05-22 |
 | [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-05-23 |
+| [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-05-26 |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/) | $95.9M | 0.0% | $95.9M | declining | 0 | 112 | 2026-05-24 |
 | [goldfinger](./goldfinger/) | $23.9M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [goldstation](./goldstation/) | $2.3M | 0.0% | ? | active | 3 | 5 | 2026-05-24 |
@@ -340,6 +342,7 @@
 | [neuralai](./neuralai/) | $1.3M | 0.0% | ? | unknown | 1 | 3 | 2026-05-25 |
 | [neutral-trade](./neutral-trade/) | $18.8M | 0.0% | ? | unknown | 3 | 0 | 2026-05-22 |
 | [nftx](./nftx/) | $6.3M | 11.1% | $6.3M | declining | 5 | 184 | 2026-05-25 |
+| [nodedao](./nodedao/) | $33.3M | 38.9% | $33.3M | active | 5 | 18 | 2026-05-26 |
 | [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |
 | [nonkyc](./nonkyc/) | $5.8M | 0.0% | ? | active | 0 | 4 | 2026-05-23 |
 | [nostra](./nostra/) | $7.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |

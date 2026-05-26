@@ -1,0 +1,18 @@
+{
+  "address": "0x5be1630b4241ebb479b2dd3a1917e3c4253be65f",
+  "chain_id": 1,
+  "contract_name": "OBTCOFTAdapter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-3.0, LZBL-1.2, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 44,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T18:17:46.551Z"
+}

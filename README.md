@@ -81,6 +81,7 @@ Each project directory contains:
 | [snowbank](./snowbank/brief.md) | $3.77M | avalanche | 12 | 12/12 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $36.05M |
 | [zklink-nova](./zklink-nova/brief.md) | $13.41M | 11 | 381 | 106/381 (28%) | 15.3% | 3.6% (OpenZeppelin) | 10 | aging | ⚠️ declining | $33.89M |
 | [backedfi](./backedfi/brief.md) | $8.20M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $33.35M |
+| [nodedao](./nodedao/brief.md) | $33.69M | ethereum | 18 | 18/18 (100%) | 38.9% | 0.0% (-) | 4 | aging | ✅ active | $33.27M |
 | [obeliskbtc](./obeliskbtc/brief.md) | $9.05M | ethereum | 19 | 19/19 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $33.19M |
 | [eth-strategy](./eth-strategy/brief.md) | $3.88M | ethereum | 49 | 41/49 (84%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $30.76M |
 | [index-coop](./index-coop/brief.md) | $13.14M | 4 | 236 | 112/236 (47%) | 13.4% | 0.9% (Code4rena) | 5 | aging | ⚠️ declining | $28.18M |
@@ -244,6 +245,7 @@ Each project directory contains:
 | [bend](./bend/brief.md) | $12.39M | berachain, ethereum | 105 | 59/105 (56%) | 20.3% | 20.3% (Spearbit) | 2 | fresh | ❓ unknown | $896.83K |
 | [paal-ai](./paal-ai/brief.md) | $1.36M | ethereum | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $830.13K |
 | [notional](./notional/brief.md) | $3.59M | arbitrum, ethereum | 79 | 73/79 (92%) | 19.2% | 19.2% (Sherlock) | 5 | fresh | 💀 dead | $755.74K |
+| [glif](./glif/brief.md) | $33.72M | base | 6 | 6/6 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $726.98K |
 | [anthias-labs](./anthias-labs/brief.md) | $17.85M | base | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $705.35K |
 | [vesper](./vesper/brief.md) | $44.44M | ethereum | 44 | 39/44 (89%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $693.98K |
 | [orbit-bridge](./orbit-bridge/brief.md) | $17.87M | 5 | 22 | 5/22 (23%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $640.23K |
@@ -345,6 +347,7 @@ Each project directory contains:
 | [autofarm](./autofarm/brief.md) | $6.10M | 13 | 10 | 2/10 (20%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [avalaunch](./avalaunch/brief.md) | $6.95M | avalanche | 39 | 14/39 (36%) | 78.6% | 0.0% (-) | 13 | stale | ❓ unknown | - |
 | [bifi](./bifi/brief.md) | $7.54M | avalanche, ethereum, klaytn | 170 | 45/170 (26%) | 30.4% | 0.0% (-) | 3 | stale | ✅ active | - |
+| [bigone](./bigone/brief.md) | $35.10M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [bima-cdp](./bima-cdp/brief.md) | $5.36M | bsc, ethereum, sonic | 38 | 30/38 (79%) | 50.0% | 50.0% (Cyfrin, Spearbit) | 3 | fresh | ✅ active | - |
 | [binaryx-platform](./binaryx-platform/brief.md) | $8.64M | polygon | 133 | 25/133 (19%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [bitlo](./bitlo/brief.md) | $16.66M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -602,5 +605,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-26T18:06:08.319Z_
-_Projects: 590_
+_Generated: 2026-05-26T18:18:09.601Z_
+_Projects: 593_

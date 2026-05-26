@@ -1,0 +1,18 @@
+{
+  "address": "0x13bac78046b5625167c1c3542b0f8656df1d7164",
+  "chain_id": 100,
+  "contract_name": "RewardHandler",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": false,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:20:07.166Z"
+}

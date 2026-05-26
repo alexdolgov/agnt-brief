@@ -1,0 +1,17 @@
+{
+  "address": "0xdf64be0f92b40255457283f1ff0ce0b456b932aa",
+  "chain_id": 59144,
+  "contract_name": "Vote",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0x868a6302aa9452fc05737f04924acae0e7b8afa7",
+  "fetched_at": "2026-05-26T05:22:24.252Z"
+}

@@ -1,0 +1,375 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "manager_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenB0_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "AddressInsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedInnerCall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gatewayIdx",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pTokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "claimUnusedIChainExecutionFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gatewayIdx",
+        "type": "uint256"
+      }
+    ],
+    "name": "getGateway",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "opIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "getOpGas",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "manager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "onERC721Received",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gatewayIdx",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pTokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "requestAddMargin",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gatewayIdx",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pTokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "symbolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "int256[]",
+        "name": "tradeParams",
+        "type": "int256[]"
+      }
+    ],
+    "name": "requestAddMarginAndTrade",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gatewayIdx",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pTokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "requestRemoveMargin",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gatewayIdx",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pTokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "symbolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "int256[]",
+        "name": "tradeParams",
+        "type": "int256[]"
+      }
+    ],
+    "name": "requestTrade",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gatewayIdx",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pTokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "bAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "symbolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "int256[]",
+        "name": "tradeParams",
+        "type": "int256[]"
+      }
+    ],
+    "name": "requestTradeAndRemoveMargin",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "tokenB0",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawEthAndB0",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0xc15259474390dd31dfb854f0684d642df1df6589",
+  "chain_id": 8453,
+  "contract_name": "ProtocolFeeManagerImplementationBase",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "0000000000000000000000009518dc115bf7abd278434bf1b55b6eb9c2ba7d61",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:22:26.873Z"
+}

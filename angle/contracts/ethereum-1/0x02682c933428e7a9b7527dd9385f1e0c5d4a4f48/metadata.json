@@ -1,0 +1,18 @@
+{
+  "address": "0x02682c933428e7a9b7527dd9385f1e0c5d4a4f48",
+  "chain_id": 1,
+  "contract_name": "LockedIDLE",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:20:06.655Z"
+}

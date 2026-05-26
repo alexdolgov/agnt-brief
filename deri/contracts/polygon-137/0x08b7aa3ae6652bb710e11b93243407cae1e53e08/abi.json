@@ -1,0 +1,306 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "router_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "pair_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "addressBX_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "addressB0_",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isBXToken0_",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSlippageRatio_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "liquidityLimitRatio_",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "addressB0",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "addressBX",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "decimalsB0",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "decimalsBX",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLimitBX",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isBXToken0",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "liquidityLimitRatio",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxSlippageRatio",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pair",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "router",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountB0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountBX",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "referencePrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "swapB0ForExactBX",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "resultB0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "resultBX",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountB0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountBX",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "referencePrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "swapBXForExactB0",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "resultB0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "resultBX",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountB0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "referencePrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "swapExactB0ForBX",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "resultB0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "resultBX",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountBX",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "referencePrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "swapExactBXForB0",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "resultB0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "resultBX",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sync",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x12d895ea4f79b1920bfbe26b14013c60f1eaf8cd",
+  "chain_id": 56,
+  "contract_name": "OrderbookImplementation",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "00000000000000000000000028a41c9eb8d0a9055de1644f9c4408f873c8550f0000000000000000000000002c2e1ee20c633eae18239c0bf59cef1fc44939ac",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:22:29.295Z"
+}

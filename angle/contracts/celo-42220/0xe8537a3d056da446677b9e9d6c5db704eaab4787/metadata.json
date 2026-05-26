@@ -1,0 +1,18 @@
+{
+  "address": "0xe8537a3d056da446677b9e9d6c5db704eaab4787",
+  "chain_id": 42220,
+  "contract_name": "StableTokenBRLProxy",
+  "compiler_version": "v0.5.13+commit.5b0b510c",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0x434563b0604be100f04b7ae485bcafe3c9d8850e",
+  "fetched_at": "2026-05-26T05:20:05.074Z"
+}

@@ -1,0 +1,836 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pToken_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "gateway_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "name": "AbsOverflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExecutorOnly",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "name": "IToUOverflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientBAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientExecutionFee",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientValue",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NonExistedOrder",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOrderOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOrderOwnerOrExecutor",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyAdmin",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SendEthFail",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongTokenInAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongTokenOutAmount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "orderIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isLite",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "pTokenId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "symbolId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "bAmount",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256[]",
+        "name": "orderParams",
+        "type": "int256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256[]",
+        "name": "tradeParams",
+        "type": "int256[]"
+      }
+    ],
+    "name": "CancelOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "orderIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isLite",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "pTokenId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "symbolId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "bAmount",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256[]",
+        "name": "orderParams",
+        "type": "int256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256[]",
+        "name": "tradeParams",
+        "type": "int256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "executionFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "CreateOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "orderIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isLite",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "pTokenId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "symbolId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "bAmount",
+        "type": "int256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256[]",
+        "name": "orderParams",
+        "type": "int256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "int256[]",
+        "name": "tradeParams",
+        "type": "int256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "executionFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "ExecuteOrder",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "NewAdmin",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "admin",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      }
+    ],
+    "name": "approveBToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "associatedOrder",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "orderIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelOrder",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isLite",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pTokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbolId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "bToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "bAmount",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256[]",
+            "name": "orderParams",
+            "type": "int256[]"
+          },
+          {
+            "internalType": "int256[]",
+            "name": "tradeParams",
+            "type": "int256[]"
+          }
+        ],
+        "internalType": "struct OrderbookStorage.Order",
+        "name": "order",
+        "type": "tuple"
+      }
+    ],
+    "name": "createOrder",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "orderIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "positionVolume",
+        "type": "int256"
+      }
+    ],
+    "name": "executeOrder",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "executionFees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "executor",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "implementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "onERC721Received",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "orders",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isLite",
+        "type": "bool"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pTokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "symbolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "bToken",
+        "type": "address"
+      },
+      {
+        "internalType": "int256",
+        "name": "bAmount",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "ordersIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isLite",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pTokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbolId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "bToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "bAmount",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256[]",
+            "name": "orderParams",
+            "type": "int256[]"
+          },
+          {
+            "internalType": "int256[]",
+            "name": "tradeParams",
+            "type": "int256[]"
+          }
+        ],
+        "internalType": "struct OrderbookStorage.Order",
+        "name": "marketOrder",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "cancelOrderIndexes",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "processMarketAndCancelOrders",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isLite",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pTokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbolId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "bToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "bAmount",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256[]",
+            "name": "orderParams",
+            "type": "int256[]"
+          },
+          {
+            "internalType": "int256[]",
+            "name": "tradeParams",
+            "type": "int256[]"
+          }
+        ],
+        "internalType": "struct OrderbookStorage.Order",
+        "name": "marketOrder",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isLite",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pTokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbolId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "bToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "bAmount",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256[]",
+            "name": "orderParams",
+            "type": "int256[]"
+          },
+          {
+            "internalType": "int256[]",
+            "name": "tradeParams",
+            "type": "int256[]"
+          }
+        ],
+        "internalType": "struct OrderbookStorage.Order",
+        "name": "stopLossOrder",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isLite",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pTokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "symbolId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "bToken",
+            "type": "address"
+          },
+          {
+            "internalType": "int256",
+            "name": "bAmount",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256[]",
+            "name": "orderParams",
+            "type": "int256[]"
+          },
+          {
+            "internalType": "int256[]",
+            "name": "tradeParams",
+            "type": "int256[]"
+          }
+        ],
+        "internalType": "struct OrderbookStorage.Order",
+        "name": "takeProfitOrder",
+        "type": "tuple"
+      }
+    ],
+    "name": "processMarketAndCreateOrders",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "setAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "executor_",
+        "type": "address"
+      }
+    ],
+    "name": "setExecutor",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x07637d9bd47090e6e3a87f230ba53520d2a42d4e",
+  "chain_id": 56,
+  "contract_name": "Broker",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0x16d9ded6721be9db636ad579570d3e5693da2f5e",
+  "fetched_at": "2026-05-26T05:22:27.850Z"
+}

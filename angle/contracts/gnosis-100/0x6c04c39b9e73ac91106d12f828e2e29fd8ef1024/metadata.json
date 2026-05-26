@@ -1,0 +1,17 @@
+{
+  "address": "0x6c04c39b9e73ac91106d12f828e2e29fd8ef1024",
+  "chain_id": 100,
+  "contract_name": "Savings",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:20:07.931Z"
+}

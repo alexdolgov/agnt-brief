@@ -1,0 +1,18 @@
+{
+  "address": "0x01fb47225db4a0fdcd407c9f6806944f87f13904",
+  "chain_id": 42161,
+  "contract_name": "StakerImplementation",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 36,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:22:23.635Z"
+}

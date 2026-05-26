@@ -1,0 +1,17 @@
+{
+  "address": "0x05eaad6bf9b91cceb32f256ad2d171790dd4bc04",
+  "chain_id": 56,
+  "contract_name": "SymbolManagerImplementation",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000004ad5cb09171275a4f4fbcf348837c63a91ffab04",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:22:27.662Z"
+}

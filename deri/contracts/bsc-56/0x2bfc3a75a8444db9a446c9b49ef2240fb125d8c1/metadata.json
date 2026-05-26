@@ -1,0 +1,18 @@
+{
+  "address": "0x2bfc3a75a8444db9a446c9b49ef2240fb125d8c1",
+  "chain_id": 56,
+  "contract_name": "GatewayHelper",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:22:30.368Z"
+}

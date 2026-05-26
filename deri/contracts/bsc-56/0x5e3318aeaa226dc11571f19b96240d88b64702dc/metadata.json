@@ -1,0 +1,17 @@
+{
+  "address": "0x5e3318aeaa226dc11571f19b96240d88b64702dc",
+  "chain_id": 56,
+  "contract_name": "PerpetualPoolLiteManager",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "000000000000000000000000c1b427e149f5eff6178ea19ca61075376a5dfa87000000000000000000000000cd2cde862e91ec22ac269fca566ab1b541adef4b00000000000000000000000000000000000000000000000002c68af0bb140000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:22:32.465Z"
+}

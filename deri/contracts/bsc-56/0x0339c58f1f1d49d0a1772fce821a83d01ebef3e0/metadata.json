@@ -1,0 +1,17 @@
+{
+  "address": "0x0339c58f1f1d49d0a1772fce821a83d01ebef3e0",
+  "chain_id": 56,
+  "contract_name": "DToken",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:22:25.853Z"
+}

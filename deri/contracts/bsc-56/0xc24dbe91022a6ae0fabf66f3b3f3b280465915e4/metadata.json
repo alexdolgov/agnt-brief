@@ -1,0 +1,18 @@
+{
+  "address": "0xc24dbe91022a6ae0fabf66f3b3f3b280465915e4",
+  "chain_id": 56,
+  "contract_name": "Vote",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0xe09cf2e82976d462b7a700448640b91d7b1c9d72",
+  "fetched_at": "2026-05-26T05:22:32.685Z"
+}

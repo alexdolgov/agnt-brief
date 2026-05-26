@@ -1,0 +1,160 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "proxy",
+        "type": "address"
+      }
+    ],
+    "name": "CreditVaultDeployed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "proxy",
+        "type": "address"
+      }
+    ],
+    "name": "QueueDeployed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "proxy",
+        "type": "address"
+      }
+    ],
+    "name": "StrategyDeployed",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "implementation",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "proxyAdmin",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "initializeData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct IdleCreditVaultFactory.TransparentProxyData",
+        "name": "cvData",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "implementation",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "proxyAdmin",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "initializeData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct IdleCreditVaultFactory.TransparentProxyData",
+        "name": "strategyData",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "apr",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "epochDuration",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bufferPeriod",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "instantWithdrawDelay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "instantWithdrawAprDelta",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "disableInstantWithdraw",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "keyring",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "keyringPolicy",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "keyringAllowWithdraw",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fees",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IdleCreditVaultFactory.CreditVaultParams",
+        "name": "cvParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "queueImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "deployCreditVault",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

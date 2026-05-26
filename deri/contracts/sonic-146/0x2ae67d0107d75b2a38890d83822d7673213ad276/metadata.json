@@ -1,0 +1,17 @@
+{
+  "address": "0x2ae67d0107d75b2a38890d83822d7673213ad276",
+  "chain_id": 146,
+  "contract_name": "TradeRewardImplementation",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "00000000000000000000000029219dd400f2bf60e5a23d13be72b486d4038894",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:22:25.273Z"
+}

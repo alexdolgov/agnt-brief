@@ -1,0 +1,18 @@
+{
+  "address": "0x5cb87996bf3ba84e01b25787904a72f424db63e4",
+  "chain_id": 56,
+  "contract_name": "StakeStaderImplementation",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:22:31.541Z"
+}

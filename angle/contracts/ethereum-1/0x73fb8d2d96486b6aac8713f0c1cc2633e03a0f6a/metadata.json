@@ -1,0 +1,17 @@
+{
+  "address": "0x73fb8d2d96486b6aac8713f0c1cc2633e03a0f6a",
+  "chain_id": 1,
+  "contract_name": "IdleCDOEpochVariantPrefunded",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T05:20:21.284Z"
+}

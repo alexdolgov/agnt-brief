@@ -1,0 +1,18 @@
+{
+  "address": "0x275da8e61ea8e02d51edd8d0dc5c0e62b4cdb0be",
+  "chain_id": 1,
+  "contract_name": "Unitroller",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 30000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": "0xf66b8c3d9933a8f9362b4d30f2b918cc97e5a31e",
+  "fetched_at": "2026-05-26T05:20:15.249Z"
+}

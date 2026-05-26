@@ -22,6 +22,7 @@
 | [ambient](./ambient/) | $2.8M | 0.0% | ? | declining | 0 | 30 | 2026-05-24 |
 | [ambire-wallet](./ambire-wallet/) | $5.8M | 0.0% | $5.8M | unknown | 12 | 9 | 2026-05-23 |
 | [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
+| [angle](./angle/) | $1.4B | 1.8% | $1.4B | dead | 3 | 624 | 2026-05-26 |
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | declining | 1 | 40 | 2026-05-25 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | active | 3 | 13 | 2026-05-23 |
 | [ankr](./ankr/) | $47.4 | 13.6% | $47.4 | active | 14 | 32 | 2026-05-25 |
@@ -121,6 +122,7 @@
 | [defituna](./defituna/) | $1.5M | 0.0% | $1.5M | declining | 11 | 53 | 2026-05-25 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | unknown | 0 | 53 | 2026-05-23 |
 | [depth](./depth/) | $1.2M | 0.0% | ? | dead | 0 | 1 | 2026-05-25 |
+| [deri](./deri/) | $2.4K | 13.9% | $2.4K | active | 8 | 868 | 2026-05-26 |
 | [derivadex](./derivadex/) | $16.9M | 0.0% | $16.9M | declining | 0 | 9 | 2026-05-24 |
 | [desyn-protocol](./desyn-protocol/) | $10.8M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
 | [dexalot](./dexalot/) | $4.2M | 0.0% | $4.2M | active | 0 | 1 | 2026-05-23 |

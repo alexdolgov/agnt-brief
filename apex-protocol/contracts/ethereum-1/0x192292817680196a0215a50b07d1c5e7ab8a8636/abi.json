@@ -1,0 +1,15 @@
+[
+  {
+    "inputs": [],
+    "name": "getCompiledProgram",
+    "outputs": [
+      {
+        "internalType": "uint256[1164]",
+        "name": "",
+        "type": "uint256[1164]"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

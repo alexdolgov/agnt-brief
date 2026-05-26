@@ -1,0 +1,18 @@
+{
+  "address": "0x16397b59fa555cd75861127523918a185da8dd1c",
+  "chain_id": 1,
+  "contract_name": "FastSettlementMiddleware",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, MIT OR Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T16:59:26.130Z"
+}

@@ -1,0 +1,149 @@
+{
+  "schema_version": "2.0",
+  "project_key": "flipster",
+  "generated_at": "2026-05-26T16:49:06.982Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "flipster",
+    "tier": 0,
+    "peak_tvl": 253090931,
+    "peak_date": "2025-06-04T00:00:00.000Z",
+    "tvl_30d_ago": 37753537,
+    "tvl_90d_ago": 47487881,
+    "tvl_current": 36072070,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 63149685,
+    "change_30d_pct": -4.453799918137472,
+    "change_90d_pct": -24.039419657406906,
+    "days_since_peak": 356,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 85.74738736885045
+  },
+  "summary": {
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 35950555.70261,
+    "tvl_usd": 35950555.70261,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://flipster.io",
+    "chains": [
+      "klaytn"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Flipster is a centralized exchange (CEX) that operates on the Klaytn blockchain, providing trading services for digital assets.",
+    "relationship_narrative": "The two contracts are part of the single Flipster product family and likely share infrastructure for exchange operations, though specific relationships are not detailed.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x61e57f94fd0239ec568db7c4dd778f168c737682",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Flipster",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x61e57f94fd0239ec568db7c4dd778f168c737682",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x987753779885d0cb90e368070f54f220ae93e698",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Flipster",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x987753779885d0cb90e368070f54f220ae93e698",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 2
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

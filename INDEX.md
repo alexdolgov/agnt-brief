@@ -32,6 +32,7 @@
 | [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | unknown | 0 | 2 | 2026-05-22 |
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | unknown | 4 | 3 | 2026-05-22 |
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.0% | $10.9K | declining | 6 | 48 | 2026-05-23 |
+| [apex-protocol](./apex-protocol/) | $436.4K | 0.0% | $436.4K | active | 0 | 206 | 2026-05-26 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 55 | 2026-05-22 |
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 0.0% | $240.1K | dead | 0 | 61 | 2026-05-23 |
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-05-23 |
@@ -175,6 +176,7 @@
 | [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 21 | 3 | 2026-05-24 |
 | [flex](./flex/) | $1.3M | 0.0% | ? | unknown | 0 | 1 | 2026-05-25 |
 | [flexa](./flexa/) | $1.5M | 11.8% | $1.5M | dead | 2 | 17 | 2026-05-25 |
+| [flipster](./flipster/) | $36.0M | 0.0% | ? | active | 0 | 2 | 2026-05-26 |
 | [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
 | [flying-tulip](./flying-tulip/) | $52.8M | 0.0% | $52.8M | unknown | 0 | 77 | 2026-05-25 |
 | [fomo3d](./fomo3d/) | $2.6M | 0.0% | ? | active | 0 | 23 | 2026-05-24 |
@@ -410,6 +412,7 @@
 | [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-05-24 |
 | [rho](./rho/) | $2.4M | 0.0% | ? | active | 4 | 32 | 2026-05-24 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 31.0% | $148.6M | declining | 15 | 147 | 2026-05-25 |
+| [ring-protocol](./ring-protocol/) | $354.9M | 10.4% | $83.5M | active | 9 | 91 | 2026-05-26 |
 | [rip.xyz](./rip.xyz/) | $624.7K | 25.0% | $624.7K | active | 1 | 8 | 2026-05-25 |
 | [risex](./risex/) | $3.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |

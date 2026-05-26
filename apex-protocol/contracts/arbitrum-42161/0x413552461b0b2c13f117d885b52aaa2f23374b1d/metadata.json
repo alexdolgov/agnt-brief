@@ -1,0 +1,18 @@
+{
+  "address": "0x413552461b0b2c13f117d885b52aaa2f23374b1d",
+  "chain_id": 42161,
+  "contract_name": "ArbitrumL2Gateway",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "Apache-2.0, BUSL-1.1, MIT, MIT OR Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T16:59:26.101Z"
+}

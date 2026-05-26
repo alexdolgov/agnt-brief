@@ -1,0 +1,17 @@
+{
+  "address": "0x74a3555e5819e174aa19d2d34530fd45064be077",
+  "chain_id": 56,
+  "contract_name": "BondFixedTermTeller",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T18:54:36.934Z"
+}

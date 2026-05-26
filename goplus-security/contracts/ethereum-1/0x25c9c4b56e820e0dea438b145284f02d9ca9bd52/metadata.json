@@ -1,0 +1,18 @@
+{
+  "address": "0x25c9c4b56e820e0dea438b145284f02d9ca9bd52",
+  "chain_id": 1,
+  "contract_name": "UniV3LPLocker",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T18:54:35.984Z"
+}

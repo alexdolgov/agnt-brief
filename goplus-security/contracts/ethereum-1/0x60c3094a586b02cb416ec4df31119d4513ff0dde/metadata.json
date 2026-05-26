@@ -1,0 +1,18 @@
+{
+  "address": "0x60c3094a586b02cb416ec4df31119d4513ff0dde",
+  "chain_id": 1,
+  "contract_name": "BreePurchase",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T18:54:36.417Z"
+}

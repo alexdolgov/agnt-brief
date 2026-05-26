@@ -1,0 +1,415 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "InterestRateTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RAY",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_interestRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_estimatedDailyRate",
+        "type": "uint256"
+      }
+    ],
+    "name": "annualAPRToDailyRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "poolAddr",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "accountAddr",
+        "type": "address"
+      }
+    ],
+    "name": "getPoolAccountState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "poolAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "accountAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxWithdrawRequest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxRedeemRequest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "requestedSharesOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "requestedAssetsOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "principalEarningInterest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "interestAccrued",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetsDeposited",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetsWithdrawn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sharesTransitioningIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetsTransitioningIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "assetsDueForWithdraws",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sharesDueForWithdraws",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IPoolAccountStateFlex",
+        "name": "_poolAccountState",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      }
+    ],
+    "name": "getPoolFlexConfigurationState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "poolAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dailyOriginationFeeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "originationFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "closeOfDepositTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "closeOfWithdrawTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferInDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "transferOutDays",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "liquidityAssetAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolAdminAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "poolControllerAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "withdrawControllerAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowerVaultAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowerManagerAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "borrowerWalletAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxCapacity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64[]",
+            "name": "nonBusinessDays",
+            "type": "uint64[]"
+          },
+          {
+            "internalType": "address",
+            "name": "businessDayRegistryAddr",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IPoolConfigurationStateFlex",
+        "name": "_poolConfigurationState",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "poolAddr",
+        "type": "address"
+      }
+    ],
+    "name": "getPoolFlexOverviewState",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "poolAddr",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "interestRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "dailyInterestRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalPrincipalEarningInterest",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalInterestAccrued",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalAssetsDeposited",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalAssetsWithdrawn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "exchangeRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalRequestedShares",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalRequestedAssets",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalAssetsTransitioningIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSharesTransitioningIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalAssetsDueForWithdraws",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feesOutstanding",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64[]",
+            "name": "nonBusinessDays",
+            "type": "uint64[]"
+          },
+          {
+            "internalType": "uint8",
+            "name": "state",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastDayAccrued",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IPoolOverviewStateFlex",
+        "name": "_poolOverviewState",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_interestRate",
+        "type": "uint256"
+      }
+    ],
+    "name": "originalAnnualAPRToDailyRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "version",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x7212d98a88d44f714fd29dd980cb846be8e7491a",
+  "chain_id": 146,
+  "contract_name": "WrappedVaultFactory",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": false,
+  "runs": 5000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "000000000000000000000000b0a3960b115e0999f33e8afd4a11f16e04e2bf330000000000000000000000000e27ee92e591d4fb7a6237cba4c7b4b81bbbdca800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011c37937e080000000000000000000000000000e27ee92e591d4fb7a6237cba4c7b4b81bbbdca8000000000000000000000000d3b5bed62038d520fe659c01b03e2727377c8b8d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T18:05:44.349Z"
+}

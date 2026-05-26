@@ -11,6 +11,7 @@
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | unknown | 5 | 220 | 2026-05-23 |
 | [across](./across/) | $28.1M | 18.0% | $28.1M | active | 6 | 142 | 2026-05-25 |
 | [aegis-markets](./aegis-markets/) | $2.4M | 0.0% | ? | active | 2 | 15 | 2026-05-24 |
+| [aegis](./aegis/) | $35.8M | 0.0% | ? | active | 0 | 5 | 2026-05-26 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-23 |
 | [aevo](./aevo/) | $98.3M | 12.0% | $1.5M | active | 17 | 271 | 2026-05-25 |
 | [aftermath-finance](./aftermath-finance/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
@@ -100,6 +101,7 @@
 | [cex.io](./cex.io/) | $8.6M | 0.0% | ? | active | 1 | 3 | 2026-05-23 |
 | [cgo-finance](./cgo-finance/) | $1.3M | 0.0% | ? | declining | 0 | 2 | 2026-05-25 |
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
+| [chainflip](./chainflip/) | $3.7M | 23.1% | ? | active | 3 | 14 | 2026-05-26 |
 | [chainge-finance](./chainge-finance/) | $1.5M | 0.0% | $1.5M | active | 1 | 53 | 2026-05-25 |
 | [chaingpt](./chaingpt/) | $4.9M | 0.0% | ? | unknown | 0 | 87 | 2026-05-23 |
 | [charm-finance](./charm-finance/) | $14.2K | 50.0% | $0.0 | unknown | 6 | 10 | 2026-05-24 |
@@ -420,6 +422,7 @@
 | [rook](./rook/) | $6.8M | 0.0% | $6.8M | dead | 0 | 74 | 2026-05-25 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | declining | 0 | 14 | 2026-05-26 |
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-25 |
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-05-25 |
 | [saber](./saber/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |

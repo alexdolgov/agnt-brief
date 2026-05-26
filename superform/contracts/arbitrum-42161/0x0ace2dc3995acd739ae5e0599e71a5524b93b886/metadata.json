@@ -1,0 +1,17 @@
+{
+  "address": "0x0ace2dc3995acd739ae5e0599e71a5524b93b886",
+  "chain_id": 42161,
+  "contract_name": "nBeaconProxy",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": "0xa40f569d1d3fd36c4b8d2fd64b7440a3edd7ce0c",
+  "fetched_at": "2026-05-26T18:43:20.188Z"
+}

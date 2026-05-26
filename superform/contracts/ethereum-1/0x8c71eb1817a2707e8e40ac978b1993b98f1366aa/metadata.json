@@ -1,0 +1,17 @@
+{
+  "address": "0x8c71eb1817a2707e8e40ac978b1993b98f1366aa",
+  "chain_id": 1,
+  "contract_name": "SuperSponsorshipPaymaster",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "0000000000000000000000000000000071727de22e5e9d8baf0edac6f37da0320000000000000000000000006e3dadcaf328ebb58753e89a3e589f5c5e988df8",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T18:43:30.319Z"
+}

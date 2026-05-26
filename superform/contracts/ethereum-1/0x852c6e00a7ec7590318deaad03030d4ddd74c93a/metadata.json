@@ -1,0 +1,17 @@
+{
+  "address": "0x852c6e00a7ec7590318deaad03030d4ddd74c93a",
+  "chain_id": 1,
+  "contract_name": "BatchTransferHook",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T18:43:28.985Z"
+}

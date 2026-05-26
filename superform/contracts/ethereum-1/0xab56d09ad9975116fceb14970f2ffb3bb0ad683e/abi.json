@@ -1,0 +1,373 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ledgerConfiguration_",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "allowedExecutors_",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "FEE_NOT_SET",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "HOOK_NOT_FOUND",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_FEE_PERCENT",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_LEDGER",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_PRICE",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MANAGER_NOT_SET",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NOT_AUTHORIZED",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NOT_MANAGER",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZERO_ADDRESS_NOT_ALLOWED",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZERO_ID_NOT_ALLOWED",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZERO_LENGTH",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "yieldSourceOracle",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "yieldSource",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "pps",
+        "type": "uint256"
+      }
+    ],
+    "name": "AccountingInflow",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "yieldSourceOracle",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "yieldSource",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feeAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "AccountingOutflow",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "originalVal",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "cappedVal",
+        "type": "uint256"
+      }
+    ],
+    "name": "UsedSharesCapped",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "SUPER_LEDGER_CONFIGURATION",
+    "outputs": [
+      {
+        "internalType": "contract ISuperLedgerConfiguration",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "executor",
+        "type": "address"
+      }
+    ],
+    "name": "allowedExecutors",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isAllowed",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "yieldSource",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "usedShares",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateCostBasisView",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "costBasis",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "shares",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "yieldSourceAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountAssets",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "usedShares",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feePercent",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pps",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "decimals",
+        "type": "uint256"
+      }
+    ],
+    "name": "previewFees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "feeAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "yieldSource",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "yieldSourceOracleId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bool",
+        "name": "isInflow",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountSharesOrAssets",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "usedShares",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateAccounting",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "feeAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "yieldSource",
+        "type": "address"
+      }
+    ],
+    "name": "usersAccumulatorCostBasis",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "costBasis",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "yieldSource",
+        "type": "address"
+      }
+    ],
+    "name": "usersAccumulatorShares",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "shares",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

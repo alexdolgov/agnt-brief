@@ -1,0 +1,17 @@
+{
+  "address": "0x8a3a6698c3d142b9dad80f114947d46671a5290e",
+  "chain_id": 1,
+  "contract_name": "NexusProxy",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 777,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0xa3aa31f8d4da6005aafb0d61e5012a64d15f5b3a",
+  "fetched_at": "2026-05-26T18:43:29.804Z"
+}

@@ -1,0 +1,300 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "superLedgerConfiguration_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ARRAY_LENGTH_MISMATCH",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_BASE_ASSET",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SUPER_LEDGER_CONFIGURATION",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ptAddress",
+        "type": "address"
+      }
+    ],
+    "name": "decimals",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ptAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "sharesIn",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAssetOutput",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "yieldSourceOracleId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "yieldSourceAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "assetOut",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "usedShares",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAssetOutputWithFees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ptAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "ownerOfShares",
+        "type": "address"
+      }
+    ],
+    "name": "getBalanceOfOwner",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ptAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getPricePerShare",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "yieldSourceAddresses",
+        "type": "address[]"
+      }
+    ],
+    "name": "getPricePerShareMultiple",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "pricesPerShare",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ptAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "assetsIn",
+        "type": "uint256"
+      }
+    ],
+    "name": "getShareOutput",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ptAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getTVL",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ptAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "ownerOfShares",
+        "type": "address"
+      }
+    ],
+    "name": "getTVLByOwnerOfShares",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "yieldSourceAddresses",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[][]",
+        "name": "ownersOfShares",
+        "type": "address[][]"
+      }
+    ],
+    "name": "getTVLByOwnerOfSharesMultiple",
+    "outputs": [
+      {
+        "internalType": "uint256[][]",
+        "name": "userTvls",
+        "type": "uint256[][]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "yieldSourceAddresses",
+        "type": "address[]"
+      }
+    ],
+    "name": "getTVLMultiple",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "tvls",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

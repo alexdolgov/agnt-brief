@@ -1,0 +1,148 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "dlnDestination",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "superDestinationExecutor_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ADDRESS_NOT_VALID",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ONLY_EXTERNAL_CALL_ADAPTER",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ON_ETHER_RECEIVED_FAILED",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DLN_DESTINATION",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SUPER_DESTINATION_EXECUTOR",
+    "outputs": [
+      {
+        "internalType": "contract ISuperDestinationExecutor",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_transferredAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_payload",
+        "type": "bytes"
+      }
+    ],
+    "name": "onERC20Received",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "callSucceeded",
+        "type": "bool"
+      },
+      {
+        "internalType": "bytes",
+        "name": "callResult",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_payload",
+        "type": "bytes"
+      }
+    ],
+    "name": "onEtherReceived",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "callSucceeded",
+        "type": "bool"
+      },
+      {
+        "internalType": "bytes",
+        "name": "callResult",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0xadeff5a0684392c4c273a9c638d1db8c5dfd0098",
+  "chain_id": 1,
+  "contract_name": "SuperDestinationValidator",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 66,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T18:43:32.505Z"
+}

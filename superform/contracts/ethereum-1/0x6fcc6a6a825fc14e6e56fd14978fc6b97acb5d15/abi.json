@@ -1,0 +1,225 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "superGovernor_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "HOOK_EXECUTION_FAILED",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "HOOK_NOT_REGISTERED",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "HOOK_VALIDATION_FAILED",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_ADDRESS",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_ARRAY_LENGTH",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_BANK_MANAGER",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_HOOK",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_MERKLE_PROOF",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_REVENUE_SHARE",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "INVALID_UP_AMOUNT_TO_DISTRIBUTE",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MINIMUM_OUTPUT_AMOUNT_NOT_MET",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ReentrancyGuardReentrantCall",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TRANSFER_FAILED",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZERO_ADDRESS",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZERO_AMOUNT",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZERO_LENGTH_ARRAY",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "hooks",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes[]",
+        "name": "data",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "HooksExecuted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "upToken",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "supStrategyVault",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "treasury",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "supAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "treasuryAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "RevenueDistributed",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "SUPER_GOVERNOR",
+    "outputs": [
+      {
+        "internalType": "contract ISuperGovernor",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "upAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "distribute",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "hooks",
+            "type": "address[]"
+          },
+          {
+            "internalType": "bytes[]",
+            "name": "data",
+            "type": "bytes[]"
+          },
+          {
+            "internalType": "bytes32[][]",
+            "name": "merkleProofs",
+            "type": "bytes32[][]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "expectedAssetsOrSharesOut",
+            "type": "uint256[]"
+          }
+        ],
+        "internalType": "struct IHookExecutionData.HookExecutionData",
+        "name": "executionData",
+        "type": "tuple"
+      }
+    ],
+    "name": "executeHooks",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

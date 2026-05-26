@@ -1,0 +1,17 @@
+{
+  "address": "0xb0b61275dec07b3e8035cad6ccd17233d0cbb29d",
+  "chain_id": 42161,
+  "contract_name": "GlmFeeCalculator",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T18:43:23.990Z"
+}

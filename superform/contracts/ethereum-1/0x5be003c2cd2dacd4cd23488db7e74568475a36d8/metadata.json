@@ -1,0 +1,17 @@
+{
+  "address": "0x5be003c2cd2dacd4cd23488db7e74568475a36d8",
+  "chain_id": 1,
+  "contract_name": "DebridgeAdapter",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T18:43:25.410Z"
+}

@@ -1,0 +1,16 @@
+# SetOperator7540Hook
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x86f9dce0a1a83c501ba95a1ab1088d67978636a8` |
+| Role | unknown |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (ethereum [`0x86f9dce0a1a83c501ba95a1ab1088d67978636a8`](../0x86f9dce0a1a83c501ba95a1ab1088d67978636a8/)) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

@@ -1,0 +1,18 @@
+{
+  "address": "0xaf92175d43472124990d965d6e6858effd4e5e35",
+  "chain_id": 42161,
+  "contract_name": "SakeVaultV2",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "paris",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T18:43:23.357Z"
+}

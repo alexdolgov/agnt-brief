@@ -368,6 +368,7 @@
 | [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | unknown | 0 | 3 | 2026-05-25 |
 | [pact](./pact/) | $1.5M | 0.0% | $1.5M | active | 1 | 53 | 2026-05-25 |
 | [pangolin](./pangolin/) | $3.7M | 53.8% | ? | dead | 13 | 163 | 2026-05-25 |
+| [paradex](./paradex/) | $33.3M | 0.0% | ? | declining | 0 | 5 | 2026-05-26 |
 | [paragonsdao](./paragonsdao/) | $6.2M | 50.0% | ? | unknown | 8 | 2 | 2026-05-23 |
 | [parallel-protocol](./parallel-protocol/) | $3.6M | 30.8% | $3.0M | active | 5 | 38 | 2026-05-24 |
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-05-24 |
@@ -492,6 +493,7 @@
 | [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 1 | 94 | 2026-05-26 |
 | [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 50 | 2026-05-25 |
 | [superfluid](./superfluid/) | $14.2M | 0.0% | $14.2M | active | 0 | 412 | 2026-05-25 |
+| [superform](./superform/) | $2.0M | 40.7% | $28.8K | active | 9 | 159 | 2026-05-26 |
 | [supernova](./supernova/) | $2.2M | 48.9% | ? | declining | 1 | 47 | 2026-05-24 |
 | [suzaku](./suzaku/) | $1.2M | 4.8% | $1.2M | active | 2 | 49 | 2026-05-25 |
 | [swaap](./swaap/) | $3.8M | 25.0% | $3.8M | declining | 7 | 128 | 2026-05-23 |

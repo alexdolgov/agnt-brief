@@ -1,0 +1,17 @@
+{
+  "address": "0x15a0358cf225f8ec884e353a8acc081d3b1d0e74",
+  "chain_id": 42161,
+  "contract_name": "WooBuybackSwap",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "00000000000000000000000018556da13313f3532c54711497a8fedac273220e",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:51:27.289Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xf5d215d9c84778f85746d15762daf39b9e83a2d6",
+  "chain_id": 137,
+  "contract_name": "WooGuardian",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:51:26.889Z"
+}

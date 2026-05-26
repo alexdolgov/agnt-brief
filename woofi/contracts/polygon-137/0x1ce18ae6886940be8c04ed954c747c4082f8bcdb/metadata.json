@@ -1,0 +1,17 @@
+{
+  "address": "0x1ce18ae6886940be8c04ed954c747c4082f8bcdb",
+  "chain_id": 137,
+  "contract_name": "DataProvider",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:51:23.712Z"
+}

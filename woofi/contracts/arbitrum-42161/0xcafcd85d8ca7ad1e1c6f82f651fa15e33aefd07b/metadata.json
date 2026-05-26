@@ -1,0 +1,18 @@
+{
+  "address": "0xcafcd85d8ca7ad1e1c6f82f651fa15e33aefd07b",
+  "chain_id": 42161,
+  "contract_name": "ClonableBeaconProxy",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0x3f770ac673856f105b586bb393d122721265ad46",
+  "fetched_at": "2026-05-26T06:51:28.920Z"
+}

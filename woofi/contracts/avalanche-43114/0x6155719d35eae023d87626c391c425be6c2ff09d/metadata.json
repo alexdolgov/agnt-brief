@@ -1,0 +1,17 @@
+{
+  "address": "0x6155719d35eae023d87626c391c425be6c2ff09d",
+  "chain_id": 43114,
+  "contract_name": "MasterChefWoo",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": true,
+  "runs": 20000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "000000000000000000000000cd1b9810872aec66d450c761e93638fb9fe09db00000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:51:22.872Z"
+}

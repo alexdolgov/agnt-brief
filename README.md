@@ -529,6 +529,7 @@ Each project directory contains:
 | [solera](./solera/brief.md) | $8.09M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [sophon-farm](./sophon-farm/brief.md) | $7.01M | ethereum | 1 | 1/1 (100%) | 100.0% | 100.0% (Sherlock) | 3 | aging | 💀 dead | - |
 | [sorare-bridge](./sorare-bridge/brief.md) | $4.03M | ethereum | 58 | 38/58 (66%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [sovryn](./sovryn/brief.md) | $38.32M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [sovryn-bridge](./sovryn-bridge/brief.md) | $2.96M | ethereum | 47 | 5/47 (11%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [spacefi](./spacefi/brief.md) | $1.48M | scroll, zksync-era | 38 | 0/38 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [sparkdex](./sparkdex/brief.md) | $29.43M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
@@ -577,6 +578,7 @@ Each project directory contains:
 | [verio](./verio/brief.md) | $7.49M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [verus-market](./verus-market/brief.md) | $9.85M | ethereum | 32 | 0/32 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [vest-markets](./vest-markets/brief.md) | $1.23M | 5 | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [wemix.fi](./wemix.fi/brief.md) | $38.18M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [woo-x](./woo-x/brief.md) | $7.08M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/brief.md) | $1.11M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [yei-finance](./yei-finance/brief.md) | $29.76M | sei | 44 | 35/44 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -586,5 +588,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-26T15:10:44.187Z_
-_Projects: 574_
+_Generated: 2026-05-26T15:24:39.507Z_
+_Projects: 576_

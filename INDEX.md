@@ -445,6 +445,7 @@
 | [sophon-farm](./sophon-farm/) | $7.0M | 100.0% | ? | dead | 9 | 1 | 2026-05-23 |
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | active | 0 | 58 | 2026-05-23 |
 | [sovryn-bridge](./sovryn-bridge/) | $3.0M | 0.0% | ? | active | 0 | 47 | 2026-05-24 |
+| [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-05-26 |
 | [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-05-24 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 9 | 0 | 2026-05-22 |
 | [sperax](./sperax/) | $14.2M | 47.1% | $2.6M | declining | 9 | 142 | 2026-05-24 |
@@ -549,6 +550,7 @@
 | [wanswap-dex](./wanswap-dex/) | $1.5M | 2.8% | $1.5M | declining | 1 | 53 | 2026-05-25 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | rugged | 8 | 83 | 2026-05-25 |
 | [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | active | 0 | 5 | 2026-05-25 |
+| [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | dead | 14 | 96 | 2026-05-24 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [woofi](./woofi/) | $11.3M | 13.2% | $11.2M | declining | 8 | 253 | 2026-05-26 |

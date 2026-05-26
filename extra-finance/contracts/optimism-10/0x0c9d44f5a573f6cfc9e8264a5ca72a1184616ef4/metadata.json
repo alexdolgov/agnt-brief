@@ -1,0 +1,18 @@
+{
+  "address": "0x0c9d44f5a573f6cfc9e8264a5ca72a1184616ef4",
+  "chain_id": 10,
+  "contract_name": "EXTRAoftProxy",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, MIT OR Apache-2.0, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T19:33:10.591Z"
+}

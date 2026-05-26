@@ -1,0 +1,18 @@
+{
+  "address": "0x155620a2e6a9392c754b73296d9655061525729b",
+  "chain_id": 8453,
+  "contract_name": "VaultFactory",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T19:33:10.868Z"
+}

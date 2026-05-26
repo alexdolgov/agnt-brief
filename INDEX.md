@@ -161,6 +161,7 @@
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [equilibria](./equilibria/) | $26.9M | 17.4% | $15.7M | declining | 6 | 120 | 2026-05-25 |
 | [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 49 | 2026-05-24 |
+| [ethereal-dex](./ethereal-dex/) | $30.7M | 0.0% | ? | unknown | 3 | 0 | 2026-05-26 |
 | [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-05-24 |
 | [etherex](./etherex/) | $3.6M | 42.6% | ? | declining | 4 | 58 | 2026-05-24 |
 | [etherflip](./etherflip/) | $1.6M | 0.0% | ? | active | 0 | 7 | 2026-05-24 |
@@ -171,6 +172,7 @@
 | [everrise](./everrise/) | $23.4M | 0.0% | $23.4M | declining | 2 | 239 | 2026-05-25 |
 | [everything](./everything/) | $1.1M | 0.0% | ? | unknown | 0 | 10 | 2026-05-25 |
 | [exmo](./exmo/) | $2.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [extra-finance](./extra-finance/) | $100.0 | 21.1% | ? | active | 4 | 268 | 2026-05-26 |
 | [feather](./feather/) | $16.6M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-05-23 |
 | [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 0 | 33 | 2026-05-25 |
@@ -323,6 +325,7 @@
 | [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 13 | 0 | 2026-05-26 |
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-05-24 |
 | [moola-market](./moola-market/) | $73.9K | 10.8% | $73.9K | declining | 3 | 53 | 2026-05-25 |
+| [moonlander](./moonlander/) | $31.4M | 0.0% | ? | active | 0 | 11 | 2026-05-26 |
 | [more-markets](./more-markets/) | $12.0M | 0.0% | ? | unknown | 0 | 21 | 2026-05-23 |
 | [morph-bridge](./morph-bridge/) | $15.8M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-05-22 |

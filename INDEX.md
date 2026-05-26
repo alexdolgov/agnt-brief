@@ -87,6 +87,7 @@
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | dead | 1 | 101 | 2026-05-24 |
 | [butter-network](./butter-network/) | $1.4M | 0.0% | ? | declining | 0 | 6 | 2026-05-24 |
+| [byte-exchange](./byte-exchange/) | $41.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [camelot](./camelot/) | $6.4M | 17.6% | $391.9K | active | 1 | 118 | 2026-05-25 |
 | [canopy](./canopy/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [canto-lending](./canto-lending/) | $3.0M | 0.0% | ? | declining | 4 | 84 | 2026-05-24 |
@@ -119,6 +120,7 @@
 | [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | dead | 7 | 17 | 2026-05-24 |
 | [debridge](./debridge/) | $263.9M | 0.0% | $263.9M | declining | 1 | 161 | 2026-05-25 |
 | [decentralized-euro](./decentralized-euro/) | $230.4M | 28.2% | $230.4M | active | 3 | 72 | 2026-05-25 |
+| [decibel](./decibel/) | $41.9M | 0.0% | ? | unknown | 4 | 0 | 2026-05-26 |
 | [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-05-24 |
 | [defi-kingdoms](./defi-kingdoms/) | $6.5M | 0.0% | ? | dead | 1 | 5 | 2026-05-23 |
 | [defichain-dex](./defichain-dex/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
@@ -344,6 +346,7 @@
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | dead | 0 | 103 | 2026-05-24 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
 | [osmosis-dex](./osmosis-dex/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
+| [ostium](./ostium/) | $29.1M | 47.1% | ? | unknown | 1 | 17 | 2026-05-26 |
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | dead | 0 | 3 | 2026-05-25 |
 | [p2pb2b](./p2pb2b/) | $4.9M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | unknown | 0 | 3 | 2026-05-25 |
@@ -390,6 +393,7 @@
 | [reflexer](./reflexer/) | $2.4M | 40.9% | ? | dead | 8 | 64 | 2026-05-24 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | unknown | 0 | 2 | 2026-05-22 |
+| [resupply](./resupply/) | $41.8M | 0.0% | ? | active | 0 | 1 | 2026-05-26 |
 | [revault](./revault/) | $2.5K | 45.0% | ? | declining | 1 | 75 | 2026-05-24 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |
 | [rex-staking](./rex-staking/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
@@ -461,6 +465,7 @@
 | [stobox](./stobox/) | $15.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 132 | 2026-05-24 |
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [suibridge](./suibridge/) | $41.9M | 0.0% | ? | unknown | 0 | 5 | 2026-05-26 |
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-24 |
 | [sunny](./sunny/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 50 | 2026-05-25 |

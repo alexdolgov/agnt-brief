@@ -12,6 +12,7 @@ Each project directory contains:
 | Project | TVL (DL) | Chains | Implementations | Verified | Coverage | Tier 1 | Audits | Freshness | Status | ASD |
 |---|---:|---|---:|---|---:|---|---:|---|---|---:|
 | [cream-finance](./cream-finance/brief.md) | $1.68M | 4 | 95 | 63/95 (66%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $2280.01M |
+| [keep3r-network](./keep3r-network/brief.md) | $4.00M | ethereum | 481 | 368/481 (77%) | 0.3% | 0.0% (-) | 1 | stale | 💀 dead | $2070.48M |
 | [zyfai](./zyfai/brief.md) | $6.38M | 5 | 147 | 130/147 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1557.94M |
 | [angle](./angle/brief.md) | $3.46M | 7 | 624 | 331/624 (53%) | 1.8% | 0.0% (-) | 2 | stale | 💀 dead | $1397.79M |
 | [rumpel-labs](./rumpel-labs/brief.md) | $1.92M | ethereum | 115 | 101/115 (88%) | 2.0% | 0.0% (-) | 2 | aging | ⚠️ declining | $1039.27M |
@@ -33,6 +34,7 @@ Each project directory contains:
 | [aethir](./aethir/brief.md) | $9.79M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $257.03M |
 | [symbiosis](./symbiosis/brief.md) | $9.35M | cronos, ethereum, scroll | 40 | 26/40 (65%) | 15.4% | 7.7% (SlowMist) | 5 | fresh | ✅ active | $236.15M |
 | [decentralized-euro](./decentralized-euro/brief.md) | $2.08M | 5 | 72 | 39/72 (54%) | 28.2% | 28.2% (ChainSecurity) | 2 | aging | ✅ active | $230.43M |
+| [sphere](./sphere/brief.md) | $6.71M | 5 | 217 | 109/217 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $229.38M |
 | [superfarm](./superfarm/brief.md) | $1.16M | ethereum | 50 | 43/50 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $211.05M |
 | [mezo-bridge](./mezo-bridge/brief.md) | $21.64M | ethereum | 138 | 110/138 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $203.90M |
 | [zircuit-finance](./zircuit-finance/brief.md) | $1.51M | base, ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $180.12M |
@@ -230,6 +232,7 @@ Each project directory contains:
 | [rip.xyz](./rip.xyz/brief.md) | $1.14M | hyperliquid | 8 | 4/8 (50%) | 25.0% | 0.0% (-) | 1 | fresh | ✅ active | $624.72K |
 | [bakeryswap](./bakeryswap/brief.md) | $3.41M | bsc | 98 | 52/98 (53%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $612.86K |
 | [biswap](./biswap/brief.md) | $5.70M | 4 | 84 | 13/84 (15%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $609.28K |
+| [radiant](./radiant/brief.md) | $3.85M | 4 | 390 | 147/390 (38%) | 31.6% | 26.3% (OpenZeppelin) | 6 | fresh | 💀 dead | $515.03K |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/brief.md) | $19.20M | arbitrum, ethereum | 55 | 48/55 (87%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $447.17K |
 | [camelot](./camelot/brief.md) | $27.14M | arbitrum | 118 | 51/118 (43%) | 17.6% | 0.0% (-) | 1 | stale | ✅ active | $391.94K |
 | [equalizer](./equalizer/brief.md) | $1.27M | base, fantom, sonic | 292 | 50/292 (17%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $374.84K |
@@ -555,5 +558,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-26T06:15:54.496Z_
-_Projects: 543_
+_Generated: 2026-05-26T06:41:35.743Z_
+_Projects: 546_

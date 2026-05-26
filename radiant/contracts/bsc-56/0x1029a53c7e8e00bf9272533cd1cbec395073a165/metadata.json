@@ -1,0 +1,17 @@
+{
+  "address": "0x1029a53c7e8e00bf9272533cd1cbec395073a165",
+  "chain_id": 56,
+  "contract_name": "OracleRouter",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:45.595Z"
+}

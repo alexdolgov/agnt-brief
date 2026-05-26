@@ -1,0 +1,17 @@
+{
+  "address": "0x4e78453e2540e996a6cd9ddf1649a7694b75e200",
+  "chain_id": 137,
+  "contract_name": "GyroECLPOracle",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:28:03.849Z"
+}

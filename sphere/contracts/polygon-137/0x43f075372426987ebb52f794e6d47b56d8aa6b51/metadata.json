@@ -1,0 +1,17 @@
+{
+  "address": "0x43f075372426987ebb52f794e6d47b56d8aa6b51",
+  "chain_id": 137,
+  "contract_name": "MultiRewards",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:28:01.592Z"
+}

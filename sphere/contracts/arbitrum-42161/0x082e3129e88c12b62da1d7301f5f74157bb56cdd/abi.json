@@ -1,0 +1,521 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniV3Vault",
+        "name": "_dysonUniVault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getUniPoolData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "pool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "strategyAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastHarvested",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "inRange",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeDivisor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "basisPointFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token0Amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token1Amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "upperTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "lowerTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "innerUpperTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "innerLowerTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "currentTick",
+            "type": "int24"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "token0Balance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "token0Allowance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "token1Balance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "token1Allowance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "depositBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "depositAllowance",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DysonGetter.UniUserData",
+            "name": "userData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "decimals",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DysonGetter.TokenData",
+            "name": "token0Data",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "decimals",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DysonGetter.TokenData",
+            "name": "token1Data",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "decimals",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DysonGetter.TokenData",
+            "name": "depositData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct DysonGetter.UniPoolData",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IUniV3Vault[]",
+        "name": "_dysonUniVaults",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getUniPoolDatas",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "pool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "strategyAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastHarvested",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "inRange",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "strategyFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeDivisor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "basisPointFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token0Amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token1Amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "upperTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "lowerTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "innerUpperTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "innerLowerTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "currentTick",
+            "type": "int24"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "token0Balance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "token0Allowance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "token1Balance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "token1Allowance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "depositBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "depositAllowance",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DysonGetter.UniUserData",
+            "name": "userData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "decimals",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DysonGetter.TokenData",
+            "name": "token0Data",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "decimals",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DysonGetter.TokenData",
+            "name": "token1Data",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "decimals",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DysonGetter.TokenData",
+            "name": "depositData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct DysonGetter.UniPoolData[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_uniswapCalculator",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapCalculator",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

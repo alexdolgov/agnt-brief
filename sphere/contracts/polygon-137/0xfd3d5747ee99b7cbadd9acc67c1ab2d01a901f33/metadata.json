@@ -1,0 +1,18 @@
+{
+  "address": "0xfd3d5747ee99b7cbadd9acc67c1ab2d01a901f33",
+  "chain_id": 137,
+  "contract_name": "PenLens",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT, MITsolid",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:28:06.200Z"
+}

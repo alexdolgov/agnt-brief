@@ -1,0 +1,18 @@
+{
+  "address": "0xc76ff99be4c6871d53b41ef8ab85493ed673365f",
+  "chain_id": 1,
+  "contract_name": "PrivateMulticall",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:35:29.654Z"
+}

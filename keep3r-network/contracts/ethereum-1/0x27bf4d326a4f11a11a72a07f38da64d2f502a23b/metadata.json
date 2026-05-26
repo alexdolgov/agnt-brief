@@ -1,0 +1,18 @@
+{
+  "address": "0x27bf4d326a4f11a11a72a07f38da64d2f502a23b",
+  "chain_id": 1,
+  "contract_name": "StrategyAlchemixALCX",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:35:20.085Z"
+}

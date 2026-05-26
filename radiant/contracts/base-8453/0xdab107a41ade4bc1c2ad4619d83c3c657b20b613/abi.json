@@ -1,0 +1,303 @@
+[
+  {
+    "inputs": [],
+    "name": "R",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UnsafeCast",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_SQRT_RATIO",
+    "outputs": [
+      {
+        "internalType": "uint160",
+        "name": "",
+        "type": "uint160"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MIN_SQRT_RATIO",
+    "outputs": [
+      {
+        "internalType": "uint160",
+        "name": "",
+        "type": "uint160"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_pool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_twapPeriod",
+        "type": "uint32"
+      }
+    ],
+    "name": "consult",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "timeWeightedAverageTick",
+        "type": "int24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "reserve0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "reserve1",
+        "type": "uint256"
+      }
+    ],
+    "name": "encodePriceSqrtX96",
+    "outputs": [
+      {
+        "internalType": "uint160",
+        "name": "",
+        "type": "uint160"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint160",
+        "name": "sqrtRatioX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "uint160",
+        "name": "sqrtRatioAX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "uint160",
+        "name": "sqrtRatioBX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "uint128",
+        "name": "liquidity",
+        "type": "uint128"
+      }
+    ],
+    "name": "getAmountsForLiquidity",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint160",
+        "name": "sqrtRatioX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "uint160",
+        "name": "sqrtRatioAX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "uint160",
+        "name": "sqrtRatioBX96",
+        "type": "uint160"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLiquidityForAmounts",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "liquidity",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int24",
+        "name": "tick",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint128",
+        "name": "baseAmount",
+        "type": "uint128"
+      },
+      {
+        "internalType": "address",
+        "name": "baseToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "quoteToken",
+        "type": "address"
+      }
+    ],
+    "name": "getQuoteAtTick",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "quoteAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int24",
+        "name": "currentTick",
+        "type": "int24"
+      }
+    ],
+    "name": "getSqrtRatioAtTick",
+    "outputs": [
+      {
+        "internalType": "uint160",
+        "name": "sqrtPriceX96",
+        "type": "uint160"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint160",
+        "name": "sqrtPriceX96",
+        "type": "uint160"
+      }
+    ],
+    "name": "getTickAtSqrtRatio",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "currentTick",
+        "type": "int24"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "int24",
+        "name": "tick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "tickSpacing",
+        "type": "int24"
+      }
+    ],
+    "name": "roundTick",
+    "outputs": [
+      {
+        "internalType": "int24",
+        "name": "",
+        "type": "int24"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "x",
+        "type": "uint256"
+      }
+    ],
+    "name": "uint128Safe",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "x",
+        "type": "uint256"
+      }
+    ],
+    "name": "uint160Safe",
+    "outputs": [
+      {
+        "internalType": "uint160",
+        "name": "",
+        "type": "uint160"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

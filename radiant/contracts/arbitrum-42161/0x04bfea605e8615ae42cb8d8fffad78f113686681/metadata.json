@@ -1,0 +1,17 @@
+{
+  "address": "0x04bfea605e8615ae42cb8d8fffad78f113686681",
+  "chain_id": 42161,
+  "contract_name": "InverseWETHChainlinkAdapter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "00000000000000000000000020d0fcab0ecfd078b036b6caf1fac69a6453b352000000000000000000000000639fe6ab55c921f74e7fac1ee960c0b6293ba6120000000000000000000000000000000000000000000000000000000000015180",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:49.803Z"
+}

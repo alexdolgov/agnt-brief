@@ -1,0 +1,18 @@
+{
+  "address": "0x32df62dc3aed2cd6224193052ce665dc18165841",
+  "chain_id": 42161,
+  "contract_name": "WeightedPool",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 58,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:45.787Z"
+}

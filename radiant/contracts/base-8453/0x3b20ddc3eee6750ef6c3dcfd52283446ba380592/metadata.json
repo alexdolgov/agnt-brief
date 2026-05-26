@@ -1,0 +1,18 @@
+{
+  "address": "0x3b20ddc3eee6750ef6c3dcfd52283446ba380592",
+  "chain_id": 8453,
+  "contract_name": "Swapper",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "Apache-2.0, BUSL-1.1, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:47.166Z"
+}

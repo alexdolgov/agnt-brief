@@ -1,0 +1,17 @@
+{
+  "address": "0xa16b27372bdf1cfbe11a2a37e9a3f6adbec25edc",
+  "chain_id": 42161,
+  "contract_name": "MockCLAggregatorV2",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "000000000000000000000000395d5c5d552df670dc4b2b1cef0c4eabffba492f",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:54.005Z"
+}

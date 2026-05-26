@@ -1,0 +1,17 @@
+{
+  "address": "0x3052a0f6ab15b4ae1df39962d5ddefaca86dab47",
+  "chain_id": 56,
+  "contract_name": "LPStaking",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "000000000000000000000000b0d502e938ed5f4df2e681fe6e419ff29631d62b0000000000000000000000000000000000000000000000002cbfae998ae754500000000000000000000000000000000000000000000000000000000000f628820000000000000000000000000000000000000000000000000000000000f62882",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:46.033Z"
+}

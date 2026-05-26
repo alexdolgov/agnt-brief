@@ -1,0 +1,18 @@
+{
+  "address": "0x3b3812bb9f6151beb6fa10783f1ae848a77a0d46",
+  "chain_id": 1,
+  "contract_name": "CollateralErc20",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:35:20.918Z"
+}

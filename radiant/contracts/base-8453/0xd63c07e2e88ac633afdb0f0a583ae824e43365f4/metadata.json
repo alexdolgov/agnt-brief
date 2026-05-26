@@ -1,0 +1,17 @@
+{
+  "address": "0xd63c07e2e88ac633afdb0f0a583ae824e43365f4",
+  "chain_id": 8453,
+  "contract_name": "ProductionSidechain",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:52.826Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x0768967f5a8fa1be73324e48f2d7ba0b4e6dc018",
+  "chain_id": 42161,
+  "contract_name": "PriceFeedPythWrapper",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:47.802Z"
+}

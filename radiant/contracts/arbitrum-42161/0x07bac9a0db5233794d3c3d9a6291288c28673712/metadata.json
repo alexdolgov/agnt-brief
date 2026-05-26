@@ -1,0 +1,18 @@
+{
+  "address": "0x07bac9a0db5233794d3c3d9a6291288c28673712",
+  "chain_id": 42161,
+  "contract_name": "EligibilityDataProvider",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": "MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:42.684Z"
+}

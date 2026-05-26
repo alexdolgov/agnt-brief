@@ -1,0 +1,18 @@
+{
+  "address": "0x07d2dc09a1cbdd01e5f6ca984b060a3ff31b9eaf",
+  "chain_id": 8453,
+  "contract_name": "AaveProtocolDataProvider",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "london",
+  "license": "AGPL-3.0, MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:43.141Z"
+}

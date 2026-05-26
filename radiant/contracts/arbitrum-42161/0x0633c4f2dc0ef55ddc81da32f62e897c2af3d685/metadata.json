@@ -1,0 +1,18 @@
+{
+  "address": "0x0633c4f2dc0ef55ddc81da32f62e897c2af3d685",
+  "chain_id": 42161,
+  "contract_name": "MiddleFeeDistribution",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "london",
+  "license": "MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:42.773Z"
+}

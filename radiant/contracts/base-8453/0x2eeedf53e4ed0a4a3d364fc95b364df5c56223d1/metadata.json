@@ -1,0 +1,17 @@
+{
+  "address": "0x2eeedf53e4ed0a4a3d364fc95b364df5c56223d1",
+  "chain_id": 8453,
+  "contract_name": "Yearn Vault Factory",
+  "compiler_version": "vyper:0.3.7",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "GNU AGPLv3",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:44.824Z"
+}

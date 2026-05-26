@@ -1,0 +1,18 @@
+{
+  "address": "0xeae4365f8714b8fdc66ed0f2a3d90338c9dd84eb",
+  "chain_id": 1,
+  "contract_name": "YVCrvStETHOracle2",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 690,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:35:31.141Z"
+}

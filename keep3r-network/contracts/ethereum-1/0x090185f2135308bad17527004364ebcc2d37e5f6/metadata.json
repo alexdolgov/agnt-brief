@@ -1,0 +1,18 @@
+{
+  "address": "0x090185f2135308bad17527004364ebcc2d37e5f6",
+  "chain_id": 1,
+  "contract_name": "Spell",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 99999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:35:15.562Z"
+}

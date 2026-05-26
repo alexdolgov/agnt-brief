@@ -1,0 +1,18 @@
+{
+  "address": "0x0691cf9d171d6c9c3876598b14732248b204c2cf",
+  "chain_id": 1,
+  "contract_name": "SynthetixExchange",
+  "compiler_version": "v0.8.1+commit.df193b15",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "bsl-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:35:15.195Z"
+}

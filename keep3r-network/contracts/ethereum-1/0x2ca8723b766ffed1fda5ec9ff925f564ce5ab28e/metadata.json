@@ -1,0 +1,18 @@
+{
+  "address": "0x2ca8723b766ffed1fda5ec9ff925f564ce5ab28e",
+  "chain_id": 1,
+  "contract_name": "MerkleClaimTree",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:35:20.313Z"
+}

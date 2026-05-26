@@ -1,0 +1,833 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "treasuryFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "riskFreeValueFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IAstroSettings.BuyFees",
+        "name": "fees",
+        "type": "tuple"
+      }
+    ],
+    "name": "SetBuyFees",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "burnFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "galaxyBondFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "realFeePartyArray",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isTaxBracketEnabledInMoveFee",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IAstroSettings.Fees",
+        "name": "fees",
+        "type": "tuple"
+      }
+    ],
+    "name": "SetFees",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "stakeFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositLimit",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IAstroSettings.GameFees",
+        "name": "fees",
+        "type": "tuple"
+      }
+    ],
+    "name": "SetGameFees",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "treasuryFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "riskFreeValueFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IAstroSettings.SellFees",
+        "name": "fees",
+        "type": "tuple"
+      }
+    ],
+    "name": "SetSellFees",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "treasuryFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "riskFreeValueFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IAstroSettings.TransferFees",
+        "name": "fees",
+        "type": "tuple"
+      }
+    ],
+    "name": "SetTransferFees",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "SPHERE_SETTINGS_VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "allCurrentFees",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "treasuryFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "riskFreeValueFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IAstroSettings.BuyFees",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "treasuryFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "riskFreeValueFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IAstroSettings.SellFees",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "stakeFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositLimit",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IAstroSettings.GameFees",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "burnFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "galaxyBondFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "realFeePartyArray",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isTaxBracketEnabledInMoveFee",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IAstroSettings.Fees",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "buyFees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "liquidityFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "treasuryFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "riskFreeValueFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalFees",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentBuyFees",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "treasuryFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "riskFreeValueFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IAstroSettings.BuyFees",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentFees",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "burnFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "galaxyBondFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "realFeePartyArray",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isTaxBracketEnabledInMoveFee",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IAstroSettings.Fees",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentGameFees",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "stakeFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositLimit",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IAstroSettings.GameFees",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentSellFees",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "treasuryFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "riskFreeValueFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IAstroSettings.SellFees",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "currentTransferFees",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "treasuryFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "riskFreeValueFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IAstroSettings.TransferFees",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "fees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "burnFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "galaxyBondFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "realFeePartyArray",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isTaxBracketEnabledInMoveFee",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "gameFees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "stakeFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "depositLimit",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "sellFees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "liquidityFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "treasuryFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "riskFreeValueFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalFees",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "treasuryFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "riskFreeValueFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IAstroSettings.BuyFees",
+        "name": "_buyFees",
+        "type": "tuple"
+      }
+    ],
+    "name": "setBuyFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "burnFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "galaxyBondFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "realFeePartyArray",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isTaxBracketEnabledInMoveFee",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IAstroSettings.Fees",
+        "name": "_fees",
+        "type": "tuple"
+      }
+    ],
+    "name": "setFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "stakeFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "depositLimit",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IAstroSettings.GameFees",
+        "name": "_gameFees",
+        "type": "tuple"
+      }
+    ],
+    "name": "setGameFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "treasuryFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "riskFreeValueFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IAstroSettings.SellFees",
+        "name": "_sellFees",
+        "type": "tuple"
+      }
+    ],
+    "name": "setSellFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "liquidityFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "treasuryFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "riskFreeValueFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalFees",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IAstroSettings.TransferFees",
+        "name": "_transferFees",
+        "type": "tuple"
+      }
+    ],
+    "name": "setTransferFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "transferFees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "liquidityFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "treasuryFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "riskFreeValueFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalFees",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

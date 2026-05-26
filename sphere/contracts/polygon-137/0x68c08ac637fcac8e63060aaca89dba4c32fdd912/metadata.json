@@ -1,0 +1,18 @@
+{
+  "address": "0x68c08ac637fcac8e63060aaca89dba4c32fdd912",
+  "chain_id": 137,
+  "contract_name": "PenDystRewards",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:28:03.697Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x0689b1f72930eb25cacb99f790d2778e713a2c33",
+  "chain_id": 1,
+  "contract_name": "Issuer",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:35:15.558Z"
+}

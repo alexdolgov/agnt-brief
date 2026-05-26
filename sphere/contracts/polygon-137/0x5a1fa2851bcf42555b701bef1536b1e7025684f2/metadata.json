@@ -1,0 +1,17 @@
+{
+  "address": "0x5a1fa2851bcf42555b701bef1536b1e7025684f2",
+  "chain_id": 137,
+  "contract_name": "UserProxyNftInteractions",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:28:03.054Z"
+}

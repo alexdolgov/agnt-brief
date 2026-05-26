@@ -1,0 +1,18 @@
+{
+  "address": "0x6ac30e227468773af2f70cd0f3a0375520885610",
+  "chain_id": 42161,
+  "contract_name": "WalletBalanceProvider",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "london",
+  "license": "MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:44.666Z"
+}

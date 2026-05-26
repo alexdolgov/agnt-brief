@@ -1,0 +1,17 @@
+{
+  "address": "0x0ca0f068edad122f09a39f99e7e89e705d6f6ace",
+  "chain_id": 1,
+  "contract_name": "Vyper_contract",
+  "compiler_version": "vyper:0.2.7",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "petersburg",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:35:16.700Z"
+}

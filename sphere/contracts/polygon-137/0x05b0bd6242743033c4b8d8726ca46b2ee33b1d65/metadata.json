@@ -1,0 +1,17 @@
+{
+  "address": "0x05b0bd6242743033c4b8d8726ca46b2ee33b1d65",
+  "chain_id": 137,
+  "contract_name": "IchiVaultOracle",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:27:59.497Z"
+}

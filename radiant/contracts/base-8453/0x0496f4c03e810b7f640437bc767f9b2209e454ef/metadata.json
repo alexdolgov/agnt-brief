@@ -1,0 +1,17 @@
+{
+  "address": "0x0496f4c03e810b7f640437bc767f9b2209e454ef",
+  "chain_id": 8453,
+  "contract_name": "RizLendingPoolAddressesProvider",
+  "compiler_version": "v0.8.12+commit.f00d7308",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:40:44.230Z"
+}

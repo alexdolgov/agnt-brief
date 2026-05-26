@@ -238,6 +238,7 @@
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [keep-network](./keep-network/) | $27.0M | 15.9% | $26.2M | dead | 18 | 354 | 2026-05-25 |
+| [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | dead | 1 | 481 | 2026-05-26 |
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-05-25 |
 | [keyring](./keyring/) | $6.2M | 18.6% | ? | active | 16 | 54 | 2026-05-25 |
 | [kiloex](./kiloex/) | $7.3M | 12.5% | $1.5M | declining | 10 | 111 | 2026-05-24 |
@@ -372,6 +373,7 @@
 | [pumpspace](./pumpspace/) | $4.0M | 28.6% | ? | active | 4 | 667 | 2026-05-25 |
 | [punks-terminal](./punks-terminal/) | $1.7M | 0.0% | ? | unknown | 0 | 1 | 2026-05-24 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
+| [radiant](./radiant/) | $1.1M | 31.6% | $515.0K | dead | 94 | 390 | 2026-05-26 |
 | [rain](./rain/) | $3.4M | 0.0% | ? | active | 1 | 28 | 2026-05-24 |
 | [rainbow-bridge](./rainbow-bridge/) | $2.1M | 0.0% | ? | dead | 0 | 2 | 2026-05-24 |
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-05-24 |
@@ -430,6 +432,7 @@
 | [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-05-24 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 9 | 0 | 2026-05-22 |
 | [sperax](./sperax/) | $14.2M | 47.1% | $2.6M | declining | 9 | 142 | 2026-05-24 |
+| [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 217 | 2026-05-26 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |
 | [splash-protocol](./splash-protocol/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |

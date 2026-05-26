@@ -1,0 +1,17 @@
+{
+  "address": "0x4e4de8594ad39cd21971775504702d4b00a1451e",
+  "chain_id": 137,
+  "contract_name": "UserProxyInterface",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:28:02.018Z"
+}

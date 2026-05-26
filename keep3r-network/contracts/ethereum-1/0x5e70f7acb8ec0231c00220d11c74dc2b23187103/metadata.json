@@ -1,0 +1,18 @@
+{
+  "address": "0x5e70f7acb8ec0231c00220d11c74dc2b23187103",
+  "chain_id": 1,
+  "contract_name": "PrivilegedCheckpointCauldronV4",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T06:35:23.783Z"
+}

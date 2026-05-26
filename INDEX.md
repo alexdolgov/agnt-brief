@@ -4,6 +4,7 @@
 |---|---|---|---|---|---|---|---|
 | [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [3f-mutual](./3f-mutual/) | $4.1M | 0.0% | ? | active | 0 | 25 | 2026-05-23 |
+| [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-05-26 |
 | [abc-pool](./abc-pool/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [abracadabra](./abracadabra/) | $8.4M | 0.0% | ? | dead | 1 | 4388 | 2026-05-25 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 6 | 43 | 2026-05-25 |
@@ -79,6 +80,7 @@
 | [bounce.tech](./bounce.tech/) | $1.4M | 0.0% | ? | unknown | 7 | 0 | 2026-05-24 |
 | [bouncebit-prime](./bouncebit-prime/) | $11.9M | 0.0% | ? | active | 0 | 9 | 2026-05-23 |
 | [bracket-protocol](./bracket-protocol/) | $923.7M | 16.7% | $920.6M | active | 5 | 60 | 2026-05-25 |
+| [brickken](./brickken/) | $41.7M | 0.0% | ? | active | 0 | 29 | 2026-05-26 |
 | [bridgers](./bridgers/) | $71.9M | 0.0% | $71.9M | active | 1 | 9 | 2026-05-24 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-05-23 |
 | [btcfi](./btcfi/) | $11.9M | 0.0% | ? | active | 0 | 15 | 2026-05-23 |
@@ -345,6 +347,7 @@
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-05-23 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | dead | 0 | 103 | 2026-05-24 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
+| [osl](./osl/) | $41.5M | 0.0% | ? | active | 0 | 4 | 2026-05-26 |
 | [osmosis-dex](./osmosis-dex/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
 | [ostium](./ostium/) | $29.1M | 47.1% | ? | unknown | 1 | 17 | 2026-05-26 |
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | dead | 0 | 3 | 2026-05-25 |
@@ -482,6 +485,7 @@
 | [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-05-25 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 22.6% | ? | active | 9 | 158 | 2026-05-23 |
 | [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 4 | 482 | 2026-05-23 |
+| [synthetix](./synthetix/) | $10.3M | 0.0% | $10.3M | declining | 0 | 13 | 2026-05-26 |
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 0 | 1 | 2026-05-24 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 0 | 1 | 2026-05-22 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-05-22 |

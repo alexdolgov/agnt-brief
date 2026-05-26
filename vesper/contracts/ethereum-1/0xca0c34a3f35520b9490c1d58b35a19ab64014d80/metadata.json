@@ -1,0 +1,18 @@
+{
+  "address": "0xca0c34a3f35520b9490c1d58b35a19ab64014d80",
+  "chain_id": 1,
+  "contract_name": "VDAI",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-26T13:11:38.642Z"
+}

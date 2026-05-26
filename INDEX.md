@@ -304,6 +304,7 @@
 | [mobox](./mobox/) | $8.1M | 0.0% | $8.1M | unknown | 1 | 375 | 2026-05-25 |
 | [mode-bridge](./mode-bridge/) | $6.2M | 2.9% | ? | declining | 27 | 100 | 2026-05-23 |
 | [mole](./mole/) | $8.8M | 0.0% | ? | active | 0 | 49 | 2026-05-23 |
+| [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 13 | 0 | 2026-05-26 |
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-05-24 |
 | [moola-market](./moola-market/) | $73.9K | 10.8% | $73.9K | declining | 3 | 53 | 2026-05-25 |
 | [more-markets](./more-markets/) | $12.0M | 0.0% | ? | unknown | 0 | 21 | 2026-05-23 |
@@ -522,9 +523,11 @@
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-25 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | unknown | 0 | 28 | 2026-05-24 |
 | [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-05-24 |
+| [veno-finance](./veno-finance/) | $42.8M | 0.0% | ? | active | 0 | 49 | 2026-05-26 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | unknown | 2 | 4 | 2026-05-22 |
 | [verio](./verio/) | $7.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [verus-market](./verus-market/) | $9.9M | 0.0% | ? | declining | 0 | 32 | 2026-05-23 |
+| [vesper](./vesper/) | $694.0K | 0.0% | $694.0K | declining | 0 | 44 | 2026-05-26 |
 | [vest-markets](./vest-markets/) | $1.2M | 0.0% | ? | declining | 0 | 4 | 2026-05-25 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |
 | [wan-bridge](./wan-bridge/) | $1.8M | 0.0% | $1.8M | active | 3 | 153 | 2026-05-25 |

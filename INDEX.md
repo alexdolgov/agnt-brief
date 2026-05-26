@@ -274,6 +274,7 @@
 | [liminal](./liminal/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | declining | 4 | 20 | 2026-05-24 |
+| [lisk-bridge](./lisk-bridge/) | $51.1M | 0.0% | $51.1M | active | 0 | 97 | 2026-05-26 |
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | active | 0 | 93 | 2026-05-24 |
 | [llamapay](./llamapay/) | $26.4M | 0.0% | ? | active | 0 | 20 | 2026-05-22 |
 | [lockon](./lockon/) | $1.1M | 56.3% | ? | active | 7 | 23 | 2026-05-25 |
@@ -297,6 +298,7 @@
 | [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 4 | 2026-05-24 |
 | [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-23 |
 | [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | sunsetting | 6 | 39 | 2026-05-24 |
+| [merchant-moe](./merchant-moe/) | $37.3M | 50.0% | ? | unknown | 1 | 53 | 2026-05-26 |
 | [merlinswap](./merlinswap/) | $8.7M | 0.0% | ? | unknown | 0 | 2 | 2026-05-23 |
 | [meson](./meson/) | $1.1M | 0.0% | ? | active | 4 | 129 | 2026-05-25 |
 | [metadao](./metadao/) | $1.5M | 0.0% | $1.5M | active | 10 | 53 | 2026-05-25 |
@@ -336,6 +338,7 @@
 | [nonkyc](./nonkyc/) | $5.8M | 0.0% | ? | active | 0 | 4 | 2026-05-23 |
 | [nostra](./nostra/) | $7.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [notional](./notional/) | $1.2M | 19.2% | $755.7K | dead | 7 | 79 | 2026-05-24 |
+| [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-05-26 |
 | [nuls](./nuls/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 0 | 19 | 2026-05-23 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
@@ -545,6 +548,7 @@
 | [verus-market](./verus-market/) | $9.9M | 0.0% | ? | declining | 0 | 32 | 2026-05-23 |
 | [vesper](./vesper/) | $694.0K | 0.0% | $694.0K | declining | 0 | 44 | 2026-05-26 |
 | [vest-markets](./vest-markets/) | $1.2M | 0.0% | ? | declining | 0 | 4 | 2026-05-25 |
+| [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-05-26 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |
 | [wan-bridge](./wan-bridge/) | $1.8M | 0.0% | $1.8M | active | 3 | 153 | 2026-05-25 |
 | [wanswap-dex](./wanswap-dex/) | $1.5M | 2.8% | $1.5M | declining | 1 | 53 | 2026-05-25 |

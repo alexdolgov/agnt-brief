@@ -1,0 +1,2645 @@
+{
+  "schema_version": "2.0",
+  "project_key": "merchant-moe",
+  "generated_at": "2026-05-26T15:43:31.482Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "merchant-moe",
+    "tier": 0,
+    "peak_tvl": 173662904,
+    "peak_date": "2024-11-12T00:00:00.000Z",
+    "tvl_30d_ago": 38259792,
+    "tvl_90d_ago": 59668546,
+    "tvl_current": 37431604,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 60888339,
+    "change_30d_pct": -2.164643236952255,
+    "change_90d_pct": -37.26744405670619,
+    "days_since_peak": 560,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 78.4458262888429
+  },
+  "summary": {
+    "total_contracts": 53,
+    "total_addresses": 133,
+    "unique_implementations": 53,
+    "total_deployments": 133,
+    "audited_contracts": 14,
+    "unaudited_contracts": 14,
+    "contracts_verified_audited": 12,
+    "contracts_verified_unaudited": 14,
+    "contracts_verified_by_bytecode": 2,
+    "contracts_unverified": 25,
+    "coverage_pct": 50,
+    "total_audits": 1,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 37263684,
+    "tvl_usd": 37263684,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://merchantmoe.com/",
+    "chains": [
+      "mantle"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2023-12",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Merchant Moe is a decentralized exchange (DEX) on Mantle that uses a Liquidity Book model for efficient trading. It also offers staking and yield farming through its MOE token and related contracts.",
+    "relationship_narrative": "The LBFactory creates and manages liquidity pools, while the Moe token is used for governance and incentives. Staking and farming contracts (MasterChef, MoeStaking, VeMoe) interact with the Moe token to distribute rewards, and the JoeDexLens provides on-chain data for the DEX.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x97c62c289e3a76104f0e73db62bfa05fb9658b63",
+      "name": "FeeCollector",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FeeCollector",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x97c62c289e3a76104f0e73db62bfa05fb9658b63",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xae63213b0c22f0e7fff46c1b1cdf9d07ed307298",
+      "name": "FeeConverterOdos",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "odos",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FeeConverterOdos",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xae63213b0c22f0e7fff46c1b1cdf9d07ed307298",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xf4a9292d2192bfa7740647f8d06762d0e9124e8c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x982ce53ab2c9d7b841af04d8df87879f73929b12",
+      "name": "FeeManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FeeManager",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x982ce53ab2c9d7b841af04d8df87879f73929b12",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xb0787776ff90881cec3a0b8e3e91973e6183c146",
+      "name": "ForwarderLogic",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ForwarderLogic",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb0787776ff90881cec3a0b8e3e91973e6183c146",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xc04f291347d21dc663f7646056db22bff8ce8430",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x7fb0fc8514d817c655276a2895307176f253d303",
+      "name": "JoeStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "JoeStaking",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x7fb0fc8514d817c655276a2895307176f253d303",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x1d16326ba904546b4da88d357dd556ebe1f08dd6",
+      "name": "JoeStakingRewarder",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "JoeStakingRewarder",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x1d16326ba904546b4da88d357dd556ebe1f08dd6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xa6630671775c4ea2743840f9a5016dcf2a104054",
+      "name": "LBFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Merchant Moe Liquidity Book",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LBFactory",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xa6630671775c4ea2743840f9a5016dcf2a104054",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x501b8afd35df20f531ff45f6f695793ac3316c85",
+      "name": "LBQuoter",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LBQuoter",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x501b8afd35df20f531ff45f6f695793ac3316c85",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x013e138ef6008ae5fdfde29700e3f2bc61d21e3a",
+      "name": "LBRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LBRouter",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x013e138ef6008ae5fdfde29700e3f2bc61d21e3a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x10cc20df4f69bfeca8283d68c48fa5b1d4a3e9e6",
+      "name": "MasterChef",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xdc8913760ae5941dee4d1c257305c5f01f68ce5e",
+      "impl_name": "MasterChef",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x10cc20df4f69bfeca8283d68c48fa5b1d4a3e9e6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x76d8d0e37f697cc95c87f0ba9512701cf19b0cb5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xa756f7d419e1a5cbd656a438443011a7de1955b5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xd4bd5e47548d8a6ba2a0bf4ce073cbf8fa523dcc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xeb1d0861f15675f6550f167388479491fa73ce2a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x2759a51fc109bc7c4d227e526e148e22f90a2678",
+      "name": "MasterChefRewarder",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MasterChefRewarder",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x2759a51fc109bc7c4d227e526e148e22f90a2678",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x3b3a66124db1d4dfaebd1a537740dbc0bb9a5181",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4141bec8a681aa3c803b1233e30c5a9cca11b61a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x6b9b717e56bb1c432115d748fc6cf40cbd132b33",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x75f0d016f85268991141164cd1144f855c5a0875",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb02e02993fa715e29319435636fd49d6567167fd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xcc076c7c657dcafc738991297903610896d2e938",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xf5d738a8e03fc100fc23c25bb4678ed1aa310012",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x4515a45337f461a11ff0fe8abf3c606ae5dc00c9",
+      "name": "Moe",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Merchant Moe Liquidity Book",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Moe",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4515a45337f461a11ff0fe8abf3c606ae5dc00c9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x8764ab3d025351839c8972919e1608425d161494",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x5bef015ca9424a7c07b68490616a4c1f094bedec",
+      "name": "MoeFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MoeFactory",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x5bef015ca9424a7c07b68490616a4c1f094bedec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xc850df60d45c2845580e255191f1f469f592c5d2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xea2a8c55c6df7267c778e4d26cd3877d006846e0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x3f0e209213d93508a451d521fd758cbc3b78ca90",
+      "name": "MoeHelper",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MoeHelper",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x3f0e209213d93508a451d521fd758cbc3b78ca90",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xfe8b6aaf50212939b52558e8813b62c9212d2d7a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x768571ab818d5fae3bf7b137f7364e6148c8de7a",
+      "name": "MoeLens",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MoeLens",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x768571ab818d5fae3bf7b137f7364e6148c8de7a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xaa61e8db8983582bfd7786fea681e7bb237698ba",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xdab59901c1cd2c43a63b575704d150c777da1f55",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x08477e01a19d44c31e4c11dc2ac86e3bbe69c28b",
+      "name": "MoePair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MoePair",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x08477e01a19d44c31e4c11dc2ac86e3bbe69c28b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xcb61a1a9c21fb30b95fa4118c97da350f6c8468b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x1d0657af320b7108919e4ef0616ef6cd005be1a4",
+      "name": "MoeQuoter",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MoeQuoter",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x1d0657af320b7108919e4ef0616ef6cd005be1a4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x1e47b39840b8b766ef33af58bd38c41c6831e99d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x72b507a4799815adc30083925f748210e92b59f4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xaf627839850143043415925bc77c00c01effdeb8",
+      "name": "MoeRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MoeRouter",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xaf627839850143043415925bc77c00c01effdeb8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xeaee7ee68874218c3558b40063c42b82d3e7232a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xf311d54d81ea264d217e0e67442785d132376ce5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xb3938e6ee233e7847a5f17bb843e9bd0aa07e116",
+      "name": "MoeStaking",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe92249760e1443fbbea45b03f607ba84471fa793",
+      "impl_name": "MoeStaking",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb3938e6ee233e7847a5f17bb843e9bd0aa07e116",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xe92249760e1443fbbea45b03f607ba84471fa793",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xd9f4e85489adcd0baf0cd63b4231c6af58c26745",
+      "name": "OdosRouterV2",
+      "role": "adapter",
+      "origin_kind": "upstream",
+      "origin_provider": "odos",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "OdosRouterV2",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xd9f4e85489adcd0baf0cd63b4231c6af58c26745",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x886523e92c7624825307626bdf5cbabc6ff6af2a",
+      "name": "ProxyAdmin2Step",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin2Step",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x886523e92c7624825307626bdf5cbabc6ff6af2a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xc96543130015b69ec282668f0f82195a87c06429",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x18d3f4df4959503c5f2c8b562da3118939890025",
+      "name": "RewarderFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x18d3f4df4959503c5f2c8b562da3118939890025",
+      "impl_name": "RewarderFactory",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x18d3f4df4959503c5f2c8b562da3118939890025",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xe283db759720982094de7fc6edc49d3adf848943",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x45a62b090df48243f12a21897e7ed91863e2c86b",
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Router",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x45a62b090df48243f12a21897e7ed91863e2c86b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x4e2abccf08bb2103f5dc9c6517fcf34cc163ff20",
+      "name": "RouterLogic",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RouterLogic",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4e2abccf08bb2103f5dc9c6517fcf34cc163ff20",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb35033d71cf5e13cab5eb8618260f94363dff9cf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x5ab84d68892e565a8bf077a39481d5f69edaac02",
+      "name": "StableMoe",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x5ab84d68892e565a8bf077a39481d5f69edaac02",
+      "impl_name": "StableMoe",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x5ab84d68892e565a8bf077a39481d5f69edaac02",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb5bd280567c5a62df1a5570c88e63a5670cba22d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x0318394084c5da8c35a6a2d274518a4a1eb89eef",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x0318394084c5da8c35a6a2d274518a4a1eb89eef",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x0980d129a85659cc4e40e5db6d9926472e658aa6",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x0980d129a85659cc4e40e5db6d9926472e658aa6",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x1f8642a8bc400385f6b8888b2568207c38a0bf68",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x1f8642a8bc400385f6b8888b2568207c38a0bf68",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x227dfd9fa88bfe186682f3a45597bac051742e5f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x227dfd9fa88bfe186682f3a45597bac051742e5f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x28104d4f703ee5b5011cefe106f54efd56f33f95",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x28104d4f703ee5b5011cefe106f54efd56f33f95",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x2d8879046f1559e53eb052e949e9544bcb72f414",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x2d8879046f1559e53eb052e949e9544bcb72f414",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x4e3288c9ca110bcc82bf38f09a7b425c095d92bf",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4e3288c9ca110bcc82bf38f09a7b425c095d92bf",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x4e90421bc4ab6cb764824ca3126ffa95bcb1f5a7",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4e90421bc4ab6cb764824ca3126ffa95bcb1f5a7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x5cf0dc0fd208f8f1b386792eeb22125c2ec0049e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x5cf0dc0fd208f8f1b386792eeb22125c2ec0049e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x654677554c9b81263b638c2d6d78d6b7322944c1",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x654677554c9b81263b638c2d6d78d6b7322944c1",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x7097f097ca0e3a3ed7ba23116b8ba14c37e61476",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x7097f097ca0e3a3ed7ba23116b8ba14c37e61476",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x794373811a81a25afe479171486e65d6eb941579",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x794373811a81a25afe479171486e65d6eb941579",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x7d2b63a9ab475397d9c247468803f25cf6523b76",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x7d2b63a9ab475397d9c247468803f25cf6523b76",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x85bd14359cb96fd8e308262726ba6b1aee5fdba9",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x85bd14359cb96fd8e308262726ba6b1aee5fdba9",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x88de50b233052e4fb783d4f6db78cc34fea3e9fc",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x88de50b233052e4fb783d4f6db78cc34fea3e9fc",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x8c5ee215d665fc2cc8e2b96a22b9d44912af58ab",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x8c5ee215d665fc2cc8e2b96a22b9d44912af58ab",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x8d3d65f675f096db9f27fc4162757a5162ef103a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x8d3d65f675f096db9f27fc4162757a5162ef103a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x926faafce6148884cd5cf98cd1878f865e8911bf",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x926faafce6148884cd5cf98cd1878f865e8911bf",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xa669e7a0d4b3e4fa48af2de86bd4cd7126be4e13",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xa669e7a0d4b3e4fa48af2de86bd4cd7126be4e13",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xac041df48df9791b0654f1dbbf2cc8450c5f2e9d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xac041df48df9791b0654f1dbbf2cc8450c5f2e9d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xca423977156bb05b13a2ba3b76bc5419e2fe9680",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xca423977156bb05b13a2ba3b76bc5419e2fe9680",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xcefcc8fd00d874522edbe25a2cdc9178f4ca9159",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xcefcc8fd00d874522edbe25a2cdc9178f4ca9159",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xcf5540fffcdc3d510b18bfca6d2b9987b0772559",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xcf5540fffcdc3d510b18bfca6d2b9987b0772559",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xcfe3d300a9f9c7e3dd74007f8a46055efc493e5e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xcfe3d300a9f9c7e3dd74007f8a46055efc493e5e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xd804ba88371a3f00ddaca03cbc2b6c47f38105fc",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xd804ba88371a3f00ddaca03cbc2b6c47f38105fc",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x240616e2448e078934863fb6eb5133834bf14ef1",
+      "name": "VeMoe",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xc9d7035a91f95638dd070e2e73f80cc5170502ba",
+      "impl_name": "VeMoe",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x240616e2448e078934863fb6eb5133834bf14ef1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4ceabd15438b52ce553d740b27ec2cd27f920e4c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x55160b0f39848a7b844f3a562210489df301dee7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x79f316c45e9b62638a8304ffffa9806439b69d44",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x151b82ca3a0c9da9dfde200f9c527cd89dd6aea8",
+      "name": "VeMoeRewarder",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VeMoeRewarder",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x151b82ca3a0c9da9dfde200f9c527cd89dd6aea8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x247af24753e2f7320bf4e66853216fd50abfdcf1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x7399aa9d2b71fdb943f6328a88b47502cb55b1e5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x8eb08451b9062fffc0fc62ad9d54669c931ee254",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xa3a1a6300adb65a5141808b9997a4cf4c12daaa5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xbbf381aaeed7941907444675dc30acb79c28136c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xda781a8f8fb5fffd3d9ead0e84e26e8e6c84f2c4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x057b2f6cc9b17497613435c6590d2e601ad47494",
+      "name": "VestingContract",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VestingContract",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x057b2f6cc9b17497613435c6590d2e601ad47494",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x0a7a826a2777039a1f176de90a13221795712048",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x1549de86b2de4f619663841b276b1a62002a14f6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x183d63d64a315f014364b783247590895cc1b02c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x1c6c83e02f04da4b0db2b717ebdd1407290c87e8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x1fbfc1a4806bb73ed72993dbfa0a34cda51e9fec",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x3152999f15a1e3edccdd05eed143b02d7905a8c5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x3905f58e6cf1d43b113ec29f89b679ac87c157cd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x3f6cc17c2264602eb23ee94388f04741deeec185",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4281776370021340a177fa6ccb402af2e6deb515",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4a984bdb9c3afaf9ce4ce5395a574626b1e8cb8e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4d46b8ddb2933ad38ec8348acf00ecc61870f0b5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x50554cd786afae7a8227ad21f4b8500212c62fe7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x55d86a8f06856a902e2724cb8467c61bff7bb554",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x55e5838e92fc2d6fb46eeae211c0bfa93783b689",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x55edc7181ff91b877831955e44af9694f3993fbb",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x60fded031978c746aba21332772732a1ac332d7c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x62fb9b611be09721868a667265c14b15e2314a75",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x70cd9e5b1e1a1ab35c4144e8769b3b3996be6c2f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x7520ae33119050974c27ced58585f8c50c267c85",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x78bb8f32bbcf2fb36d66508361a5f003fe02894f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x7c70188b5c38eb8e6cfc6cb46c12311e5302dd8b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x82e8aef80ba26a87ee051eecbf28ce4da9d6855b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x83d76d96340f39b2fd2d8b1867d6488933e64d0b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x8d8d3bdd4d8973ea4aca9e7d699e1c7d711b00ce",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x9208032889f9379b0b34ad10f31dc88dd0a925da",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x9b5b4c16dd7f5d7c378d5ac739060e4f3d93de31",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x9b86c2338ede1722a0dd4941561cd8e19080300f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xa0e97c9ee82cbfc5c5da12152d7a23b88d89dde1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb342bff904dbc952771ce03ec76c980f9a695554",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb9e9dc0f31f6756558686a8f6948bdbd1798f4c4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xb9f72c2e027a7edc4596159c1e77d53d8e512295",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xc20ba477ad531427ca82dc83beb96c272143dc9f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xd9ecef5b44482834c101bf8e96a71814a8726ef0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xe273bf03c2278fa8889748e2b1af2006fc6f9c22",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xe4d55ad239fd84fde69c98c2c96596eef0b9c747",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xe660b72d30b89e4be2a2c89263bd6b7147d544a9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xe887789bfd5f9b6e664bc12adc1dfe692e5d2948",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xeff8ee9e20ebf6b12dc091ae3771fcd1c5047c1c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xfbdd0927dc70076810888242ed104995d98161f0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xfd0adbac0a68082bcaaa8d4cbab85b8d5a01a291",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xfd40854b1f9113fd574640a6ef9fa55efa4afde3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xffdeab5342e5370773a88b4fe0a6016c0f741602",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3948"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_audited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 3948,
+      "audit_key": "audit-3948",
+      "report_name": "Merchant Moe Audit Report",
+      "report_url": "https://paladinsec.co/projects/merchant-moe",
+      "auditor": "Paladin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Amounts",
+        "BaseRewarder",
+        "Constants",
+        "JoeStaking",
+        "JoeStakingRewarder",
+        "MasterChef",
+        "MasterChefRewarder",
+        "Math",
+        "Moe",
+        "MoeERC20",
+        "MoeFactory",
+        "MoeLibrary",
+        "MoePair",
+        "MoeRouter",
+        "MoeStaking",
+        "Rewarder",
+        "RewarderFactory",
+        "StableMoe",
+        "VeMoe",
+        "VeMoeRewarder",
+        "VestingContract"
+      ],
+      "matched_contracts": 83,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Paladin",
+      "tier": 2,
+      "contracts_covered": 14,
+      "coverage_pct": 50,
+      "latest_audit": "2023-12"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x97c62c289e3a76104f0e73db62bfa05fb9658b63",
+      "name": "FeeCollector",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x982ce53ab2c9d7b841af04d8df87879f73929b12",
+      "name": "FeeManager",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xb0787776ff90881cec3a0b8e3e91973e6183c146",
+      "name": "ForwarderLogic",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0xa6630671775c4ea2743840f9a5016dcf2a104054",
+      "name": "LBFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x501b8afd35df20f531ff45f6f695793ac3316c85",
+      "name": "LBQuoter",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x013e138ef6008ae5fdfde29700e3f2bc61d21e3a",
+      "name": "LBRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x3f0e209213d93508a451d521fd758cbc3b78ca90",
+      "name": "MoeHelper",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x768571ab818d5fae3bf7b137f7364e6148c8de7a",
+      "name": "MoeLens",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x1d0657af320b7108919e4ef0616ef6cd005be1a4",
+      "name": "MoeQuoter",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x45a62b090df48243f12a21897e7ed91863e2c86b",
+      "name": "Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x4e2abccf08bb2103f5dc9c6517fcf34cc163ff20",
+      "name": "RouterLogic",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 32,
+    "upstream": 2,
+    "standard_library": 1,
+    "needs_review": 18
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 83
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

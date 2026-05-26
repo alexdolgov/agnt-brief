@@ -71,6 +71,7 @@ Each project directory contains:
 | [synfutures](./synfutures/brief.md) | $6.31M | 6 | 482 | 4/482 (1%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | $52.44M |
 | [stcyber](./stcyber/brief.md) | $1.63M | 4 | 31 | 26/31 (84%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | $51.36M |
 | [republic-note](./republic-note/brief.md) | $16.31M | avalanche | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $51.20M |
+| [lisk-bridge](./lisk-bridge/brief.md) | $38.11M | base, ethereum | 97 | 88/97 (91%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $51.13M |
 | [stakestone](./stakestone/brief.md) | $26.05M | 8 | 183 | 60/183 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $49.73M |
 | [yo-protocol](./yo-protocol/brief.md) | $42.39M | arbitrum, base, ethereum | 32 | 26/32 (81%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $40.94M |
 | [illuvium](./illuvium/brief.md) | $9.60M | ethereum | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $39.75M |
@@ -311,6 +312,7 @@ Each project directory contains:
 | [xfai](./xfai/brief.md) | $1.04M | linea | 51 | 20/51 (39%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.00 |
 | [plasma-one](./plasma-one/brief.md) | $2.17M | plasma | 7 | 5/7 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $0.62 |
 | [swamp-finance](./swamp-finance/brief.md) | $1.20M | bsc | 11 | 7/11 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $0.09 |
+| [virtuals-protocol](./virtuals-protocol/brief.md) | $37.95M | base | 65 | 57/65 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $0.04 |
 | [kinza-finance](./kinza-finance/brief.md) | $7.84M | 4 | 154 | 50/154 (32%) | 2.0% | 0.0% (-) | 1 | stale | ⚠️ declining | $0.01 |
 | [tokenworks](./tokenworks/brief.md) | $2.32M | ethereum | 60 | 33/60 (55%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $0.00 |
 | [charm-finance](./charm-finance/brief.md) | $2.20M | 6 | 10 | 6/10 (60%) | 50.0% | 50.0% (Code4rena, Spearbit) | 4 | fresh | ❓ unknown | $0.00 |
@@ -457,6 +459,7 @@ Each project directory contains:
 | [manta-pacific](./manta-pacific/brief.md) | $25.67M | ethereum, manta | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [matstake](./matstake/brief.md) | $4.77M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [meld-gold](./meld-gold/brief.md) | $11.13M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [merchant-moe](./merchant-moe/brief.md) | $37.26M | mantle | 53 | 26/53 (49%) | 50.0% | 0.0% (-) | 1 | stale | ❓ unknown | - |
 | [merlinswap](./merlinswap/brief.md) | $8.66M | merlin | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [meson](./meson/brief.md) | $1.14M | blast, merlin | 129 | 2/129 (2%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [metastable](./metastable/brief.md) | $2.54M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -481,6 +484,7 @@ Each project directory contains:
 | [nomiswap](./nomiswap/brief.md) | $1.42M | bsc | 47 | 19/47 (40%) | 15.8% | 0.0% (-) | 1 | stale | ⚠️ declining | - |
 | [nonkyc](./nonkyc/brief.md) | $5.80M | 4 | 4 | 0/4 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [nostra](./nostra/brief.md) | $7.03M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [nucleus](./nucleus/brief.md) | $38.09M | ethereum | 6 | 6/6 (100%) | 50.0% | 33.3% (Spearbit) | 5 | fresh | ✅ active | - |
 | [obsidian](./obsidian/brief.md) | $1.64M | cronos | 6 | 0/6 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [odyssey-finance](./odyssey-finance/brief.md) | $9.47M | base, ethereum, optimism | 79 | 74/79 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [okcoin](./okcoin/brief.md) | $26.01M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -588,5 +592,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-26T15:24:39.507Z_
-_Projects: 576_
+_Generated: 2026-05-26T16:06:51.399Z_
+_Projects: 580_

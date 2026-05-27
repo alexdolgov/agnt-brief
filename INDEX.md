@@ -476,6 +476,7 @@
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
 | [solayer](./solayer/) | $1.5M | 0.0% | $1.5M | declining | 5 | 53 | 2026-05-25 |
 | [solera](./solera/) | $8.1M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
+| [sophon-bridge](./sophon-bridge/) | $5.5M | 0.0% | $5.5M | active | 8 | 10 | 2026-05-27 |
 | [sophon-farm](./sophon-farm/) | $7.0M | 100.0% | ? | dead | 9 | 1 | 2026-05-23 |
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | active | 0 | 58 | 2026-05-23 |
 | [sovryn-bridge](./sovryn-bridge/) | $3.0M | 0.0% | ? | active | 0 | 47 | 2026-05-24 |

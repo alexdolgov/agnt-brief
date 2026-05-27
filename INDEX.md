@@ -44,6 +44,7 @@
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 0.0% | $240.1K | dead | 0 | 61 | 2026-05-23 |
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-05-23 |
 | [aria-protocol](./aria-protocol/) | $2.0M | 0.0% | ? | dead | 1 | 1 | 2026-05-24 |
+| [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | unknown | 0 | 1 | 2026-05-27 |
 | [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-05-24 |
 | [atlendis](./atlendis/) | $4.3M | 0.0% | $4.3M | declining | 0 | 43 | 2026-05-23 |
@@ -279,6 +280,7 @@
 | [kava-earn](./kava-earn/) | $1.7M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
+| [kava-mint](./kava-mint/) | $52.2M | 0.0% | ? | active | 1 | 1 | 2026-05-27 |
 | [keep-network](./keep-network/) | $27.0M | 15.9% | $26.2M | dead | 18 | 354 | 2026-05-25 |
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | dead | 1 | 481 | 2026-05-26 |
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-05-25 |
@@ -437,6 +439,8 @@
 | [probit-global](./probit-global/) | $12.7M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
 | [puffer-finance](./puffer-finance/) | $225.1M | 36.4% | $169.2M | active | 4 | 65 | 2026-05-27 |
+| [pulsechain-bridge](./pulsechain-bridge/) | $52.0M | 0.0% | ? | active | 0 | 5 | 2026-05-27 |
+| [pulsechain](./pulsechain/) | $52.0M | 0.0% | ? | active | 0 | 5 | 2026-05-27 |
 | [pumpspace](./pumpspace/) | $4.0M | 28.6% | ? | active | 4 | 667 | 2026-05-25 |
 | [punks-terminal](./punks-terminal/) | $1.7M | 0.0% | ? | unknown | 0 | 1 | 2026-05-24 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
@@ -565,6 +569,7 @@
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 0 | 52 | 2026-05-22 |
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-25 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | unknown | 0 | 179 | 2026-05-23 |
+| [team-finance](./team-finance/) | $4.8K | 0.0% | $4.8K | active | 0 | 66 | 2026-05-27 |
 | [teller](./teller/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-05-24 |
 | [tender-finance](./tender-finance/) | $1.3M | 0.0% | ? | declining | 1 | 1 | 2026-05-25 |

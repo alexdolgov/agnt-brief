@@ -23,6 +23,7 @@
 | [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 2 | 284 | 2026-05-22 |
 | [alpaca-finance](./alpaca-finance/) | $11.5M | 0.0% | $11.5M | declining | 0 | 144 | 2026-05-26 |
 | [alphagrowth](./alphagrowth/) | $6.3M | 18.2% | $6.3M | active | 16 | 56 | 2026-05-25 |
+| [alphaping](./alphaping/) | $67.9M | 0.0% | ? | active | 0 | 1 | 2026-05-27 |
 | [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-05-24 |
 | [altitude.fi](./altitude.fi/) | $16.1M | 72.2% | ? | active | 7 | 124 | 2026-05-22 |
 | [ambient](./ambient/) | $2.8M | 0.0% | ? | declining | 0 | 30 | 2026-05-24 |
@@ -59,6 +60,7 @@
 | [badger-dao](./badger-dao/) | $1.5M | 0.0% | $1.5M | sunsetting | 6 | 27 | 2026-05-25 |
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
 | [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-05-26 |
+| [baseline-protocol](./baseline-protocol/) | $997.7K | 14.3% | $997.7K | declining | 9 | 115 | 2026-05-27 |
 | [beanstalk](./beanstalk/) | $142.5M | 20.4% | $142.5M | dead | 7 | 244 | 2026-05-25 |
 | [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 2 | 105 | 2026-05-23 |
 | [benddao](./benddao/) | $1.5M | 0.0% | $1.5M | dead | 1 | 15 | 2026-05-25 |
@@ -199,6 +201,7 @@
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 11 | 18 | 2026-05-23 |
 | [fulcrom](./fulcrom/) | $13.5M | 0.0% | ? | active | 0 | 80 | 2026-05-22 |
 | [gains-network](./gains-network/) | $21.9M | 0.0% | $21.9M | unknown | 1 | 760 | 2026-05-25 |
+| [galaxy-curation](./galaxy-curation/) | $67.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [gearbox](./gearbox/) | $8.0M | 0.0% | $8.0M | declining | 1 | 197 | 2026-05-27 |
 | [generic.money](./generic.money/) | $3.7M | 75.0% | ? | active | 1 | 13 | 2026-05-24 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-05-22 |
@@ -561,6 +564,7 @@
 | [tokenlon](./tokenlon/) | $37.2M | 0.0% | ? | declining | 0 | 21 | 2026-05-26 |
 | [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 0 | 44 | 2026-05-25 |
 | [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-05-24 |
+| [toobit](./toobit/) | $69.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [tothemoon](./tothemoon/) | $3.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |

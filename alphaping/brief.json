@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0",
+  "project_key": "alphaping",
+  "generated_at": "2026-05-27T14:43:19.330Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "alphaping",
+    "tier": 0,
+    "peak_tvl": 110472563,
+    "peak_date": "2025-10-28T00:00:00.000Z",
+    "tvl_30d_ago": 38233386,
+    "tvl_90d_ago": 23564235,
+    "tvl_current": 71513879,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 33813467,
+    "change_30d_pct": 87.04563336346929,
+    "change_90d_pct": 203.48483199221192,
+    "days_since_peak": 211,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 35.2654839736089
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 67874222.06524,
+    "tvl_usd": 67874222.06524,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://alphaping.ch/",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "AlphaPing is a risk curation protocol that likely manages or assesses risk for DeFi positions, using a single Safe multisig contract to execute curated strategies or safeguard assets.",
+    "relationship_narrative": "The protocol consists of a single product family centered on a Safe multisig, which serves as the core infrastructure for risk curation activities.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645",
+      "name": "Safe",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": "AlphaPing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x41675c099f32341bf84bfc5382af534df5c7461a",
+      "impl_name": "Safe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

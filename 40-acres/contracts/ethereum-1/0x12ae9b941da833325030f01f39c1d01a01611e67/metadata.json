@@ -1,0 +1,17 @@
+{
+  "address": "0x12ae9b941da833325030f01f39c1d01a01611e67",
+  "chain_id": 1,
+  "contract_name": "YieldBasisLpFacet",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 46,
+  "constructor_arguments": "0000000000000000000000008f1f0270bf0a547925945997e3ad53967dcf4ffe000000000000000000000000bc56e3edb67b56d598ace07668b138815f45d7aa00000000000000000000000001791f726b4103694969820be083196cc7c045ff",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T06:58:50.904Z"
+}

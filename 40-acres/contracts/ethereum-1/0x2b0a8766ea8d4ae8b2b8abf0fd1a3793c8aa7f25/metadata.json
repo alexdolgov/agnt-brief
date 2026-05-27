@@ -1,0 +1,17 @@
+{
+  "address": "0x2b0a8766ea8d4ae8b2b8abf0fd1a3793c8aa7f25",
+  "chain_id": 1,
+  "contract_name": "FortyAcresMarketplaceFacet",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 45,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T06:58:53.080Z"
+}

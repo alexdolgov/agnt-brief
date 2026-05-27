@@ -1,0 +1,18 @@
+{
+  "address": "0x097ee00f42f9d7512929a6434185ae94ac6dafd7",
+  "chain_id": 1,
+  "contract_name": "PaymentSplitter",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:01:21.358Z"
+}

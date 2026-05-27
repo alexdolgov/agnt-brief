@@ -1,0 +1,18 @@
+{
+  "address": "0xdc1046dbb73e7be8c0b2b72a4987522d425bc93c",
+  "chain_id": 1,
+  "contract_name": "EarnVesperStrategyDAIVSP",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:01:32.983Z"
+}

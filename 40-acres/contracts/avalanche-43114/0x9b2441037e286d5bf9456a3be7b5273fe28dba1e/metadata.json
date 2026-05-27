@@ -1,0 +1,18 @@
+{
+  "address": "0x9b2441037e286d5bf9456a3be7b5273fe28dba1e",
+  "chain_id": 43114,
+  "contract_name": "AlgebraPoolDeployer",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 41,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T06:58:58.152Z"
+}

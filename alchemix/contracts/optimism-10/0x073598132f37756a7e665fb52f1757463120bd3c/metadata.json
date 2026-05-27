@@ -1,0 +1,18 @@
+{
+  "address": "0x073598132f37756a7e665fb52f1757463120bd3c",
+  "chain_id": 10,
+  "contract_name": "AlchemistV3",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": null,
+  "runs": 800,
+  "evm_version": "cancun",
+  "license": "GPL-2.0-or-later, GPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:01:20.598Z"
+}

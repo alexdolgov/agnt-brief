@@ -1,0 +1,243 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_space",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_quorum",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "CallerNotSpaceException",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExecutionFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidDelegateCallOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "enum ProposalStatus",
+        "name": "status",
+        "type": "uint8"
+      }
+    ],
+    "name": "InvalidProposalStatus",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "author",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "startBlockNumber",
+            "type": "uint32"
+          },
+          {
+            "internalType": "address",
+            "name": "executionStrategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "minEndBlockNumber",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "maxEndBlockNumber",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum FinalizationStatus",
+            "name": "finalizationStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "executionPayloadHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activeVotingStrategies",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Proposal",
+        "name": "proposal",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "votesFor",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "votesAgainst",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "votesAbstain",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "payload",
+        "type": "bytes"
+      }
+    ],
+    "name": "execute",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "author",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "startBlockNumber",
+            "type": "uint32"
+          },
+          {
+            "internalType": "address",
+            "name": "executionStrategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "minEndBlockNumber",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "maxEndBlockNumber",
+            "type": "uint32"
+          },
+          {
+            "internalType": "enum FinalizationStatus",
+            "name": "finalizationStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "executionPayloadHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint256",
+            "name": "activeVotingStrategies",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Proposal",
+        "name": "proposal",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "votesFor",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "votesAgainst",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "votesAbstain",
+        "type": "uint256"
+      }
+    ],
+    "name": "getProposalStatus",
+    "outputs": [
+      {
+        "internalType": "enum ProposalStatus",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getStrategyType",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "quorum",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "space",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

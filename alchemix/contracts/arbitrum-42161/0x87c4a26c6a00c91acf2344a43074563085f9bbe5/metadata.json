@@ -1,0 +1,17 @@
+{
+  "address": "0x87c4a26c6a00c91acf2344a43074563085f9bbe5",
+  "chain_id": 42161,
+  "contract_name": "JonesUSDCAdapter",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000009c895ccdd1da452eb390803d48155e38f9fc2e4d000000000000000000000000af88d065e77c8cc2239327c5edb3a432268e5831000000000000000000000000b0bde111812eac913b392d80d51966ec977be3a2",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:01:24.209Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x175a7815393d4f2e71ba37f53afdf96278df18ce",
+  "chain_id": 1,
+  "contract_name": "VesperEarnDrip",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:01:23.746Z"
+}

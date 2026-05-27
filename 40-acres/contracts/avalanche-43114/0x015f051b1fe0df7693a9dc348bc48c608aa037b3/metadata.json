@@ -1,0 +1,17 @@
+{
+  "address": "0x015f051b1fe0df7693a9dc348bc48c608aa037b3",
+  "chain_id": 43114,
+  "contract_name": "DLMMRewarder",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 300,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T06:58:48.689Z"
+}

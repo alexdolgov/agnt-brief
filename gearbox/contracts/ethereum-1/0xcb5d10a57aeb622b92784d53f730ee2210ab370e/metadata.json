@@ -1,0 +1,18 @@
+{
+  "address": "0xcb5d10a57aeb622b92784d53f730ee2210ab370e",
+  "chain_id": 1,
+  "contract_name": "StakingRewardsPhantomToken",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "shanghai",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:11:56.454Z"
+}

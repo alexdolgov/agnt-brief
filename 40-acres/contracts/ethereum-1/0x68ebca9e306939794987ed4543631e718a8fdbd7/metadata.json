@@ -1,0 +1,17 @@
+{
+  "address": "0x68ebca9e306939794987ed4543631e718a8fdbd7",
+  "chain_id": 1,
+  "contract_name": "ClaimingFacet",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 55,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T06:58:57.300Z"
+}

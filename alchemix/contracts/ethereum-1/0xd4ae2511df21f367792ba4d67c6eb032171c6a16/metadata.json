@@ -1,0 +1,18 @@
+{
+  "address": "0xd4ae2511df21f367792ba4d67c6eb032171c6a16",
+  "chain_id": 1,
+  "contract_name": "AddressSetStorage",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 15000,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:01:32.816Z"
+}

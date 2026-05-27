@@ -1,0 +1,17 @@
+{
+  "address": "0x14b58f61042293aafcfbc051721c21e41306ddef",
+  "chain_id": 1,
+  "contract_name": "RewardsConfigFacet",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "000000000000000000000000a28e921fabd32d0ab557e673f5dbb75cdb6962a0",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T06:58:51.873Z"
+}

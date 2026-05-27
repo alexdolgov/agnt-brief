@@ -5,6 +5,7 @@
 | [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [3f-mutual](./3f-mutual/) | $4.1M | 0.0% | ? | active | 0 | 25 | 2026-05-23 |
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-05-26 |
+| [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-05-27 |
 | [abc-pool](./abc-pool/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [abracadabra](./abracadabra/) | $8.4M | 0.0% | ? | dead | 1 | 4388 | 2026-05-25 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 6 | 43 | 2026-05-25 |
@@ -16,6 +17,7 @@
 | [aevo](./aevo/) | $98.3M | 12.0% | $1.5M | active | 17 | 271 | 2026-05-25 |
 | [aftermath-finance](./aftermath-finance/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | unknown | 1 | 2 | 2026-05-23 |
+| [alchemix](./alchemix/) | $340.7M | 1.0% | $340.7M | declining | 2 | 388 | 2026-05-27 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 0 | 58 | 2026-05-23 |
 | [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 2 | 284 | 2026-05-22 |
 | [alpaca-finance](./alpaca-finance/) | $11.5M | 0.0% | $11.5M | declining | 0 | 144 | 2026-05-26 |
@@ -192,6 +194,7 @@
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 11 | 18 | 2026-05-23 |
 | [fulcrom](./fulcrom/) | $13.5M | 0.0% | ? | active | 0 | 80 | 2026-05-22 |
 | [gains-network](./gains-network/) | $21.9M | 0.0% | $21.9M | unknown | 1 | 760 | 2026-05-25 |
+| [gearbox](./gearbox/) | $8.0M | 0.0% | $8.0M | declining | 1 | 197 | 2026-05-27 |
 | [generic.money](./generic.money/) | $3.7M | 75.0% | ? | active | 1 | 13 | 2026-05-24 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-05-22 |
 | [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |

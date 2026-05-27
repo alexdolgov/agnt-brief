@@ -1,0 +1,17 @@
+{
+  "address": "0x2421cfd0b6f92418b64e7edb30d22734cf8c86dc",
+  "chain_id": 10,
+  "contract_name": "VeloLoanNative",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T06:58:50.273Z"
+}

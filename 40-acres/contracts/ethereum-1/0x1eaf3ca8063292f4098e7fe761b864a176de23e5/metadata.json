@@ -1,0 +1,17 @@
+{
+  "address": "0x1eaf3ca8063292f4098e7fe761b864a176de23e5",
+  "chain_id": 1,
+  "contract_name": "VotingFacet",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 47,
+  "constructor_arguments": "000000000000000000000000581333879b1b6726dd92a740da0109193640a3950000000000000000000000008a66bc8f873c541043347fc9d712f8d4a0c6730e0000000000000000000000004c3e7640b3e3a39a2e5d030a0c1412d80fee1d440000000000000000000000001c7bf2532dfa34eeea02c3759e0ca8d87b1d8171",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T06:58:52.301Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x36033e1fd88470a5192692e01150c3593847fca5",
+  "chain_id": 1,
+  "contract_name": "VesperAdapterV1",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:01:25.933Z"
+}

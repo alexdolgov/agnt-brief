@@ -1,0 +1,17 @@
+{
+  "address": "0x329f7a20eae3eea7d300d85eb300bc4f2caf7d41",
+  "chain_id": 1,
+  "contract_name": "ERC4626LendingFacet",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 45,
+  "constructor_arguments": "0000000000000000000000008f1f0270bf0a547925945997e3ad53967dcf4ffe0000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c5990000000000000000000000009c4c3202d6518dadbc6a7b973646c22a24a06d55",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T06:58:54.278Z"
+}

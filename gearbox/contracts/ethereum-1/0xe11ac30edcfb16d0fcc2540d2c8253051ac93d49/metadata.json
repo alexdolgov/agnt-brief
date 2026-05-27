@@ -1,0 +1,18 @@
+{
+  "address": "0xe11ac30edcfb16d0fcc2540d2c8253051ac93d49",
+  "chain_id": 1,
+  "contract_name": "LeveragedActions",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT, UNLICENSED, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 42,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:11:57.085Z"
+}

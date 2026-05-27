@@ -1,0 +1,17 @@
+{
+  "address": "0x81cb9ea2d59414ab13ec0567efb09767ddbe897a",
+  "chain_id": 146,
+  "contract_name": "DefillamaCompressor",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "000000000000000000000000f7f0a609bfab9a0a98786951ef10e5fe26cc1e38",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:11:49.706Z"
+}

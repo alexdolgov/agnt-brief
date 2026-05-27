@@ -1,0 +1,17 @@
+{
+  "address": "0x1eeb875dd64f6313ff315679791ae1a27c19a5df",
+  "chain_id": 1,
+  "contract_name": "DualAggregator",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:11:52.481Z"
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_creditManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_booster",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "CallerNotConfiguratorException",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CallerNotCreditFacadeException",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAddressException",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "pid",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "phantomToken",
+        "type": "address"
+      }
+    ],
+    "name": "SetPidToPhantomToken",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "_gearboxAdapterType",
+    "outputs": [
+      {
+        "internalType": "enum AdapterType",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "_gearboxAdapterVersion",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "acl",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "addressProvider",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "creditManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_pid",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_stake",
+        "type": "bool"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokensToEnable",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokensToDisable",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_pid",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "leftoverAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_stake",
+        "type": "bool"
+      }
+    ],
+    "name": "depositDiff",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokensToEnable",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokensToDisable",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "pidToPhantomToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "targetContract",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "updateStakedPhantomTokensMap",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_pid",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokensToEnable",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokensToDisable",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_pid",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "leftoverAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawDiff",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokensToEnable",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokensToDisable",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

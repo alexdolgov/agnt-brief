@@ -1,0 +1,163 @@
+// SPDX-License-Identifier: BUSL-1.1
+pragma solidity ^0.8.28;
+
+import {PortfolioFactory} from "../../../accounts/PortfolioFactory.sol";
+import {PortfolioFactoryConfig} from "../config/PortfolioFactoryConfig.sol";
+import {IVoter} from "../../../interfaces/IVoter.sol";
+import {IVotingEscrow} from "../../../interfaces/IVotingEscrow.sol";
+import {IRewardsDistributor} from "../../../interfaces/IRewardsDistributor.sol";
+import {CollateralManager} from "../collateral/CollateralManager.sol";
+import {ILoanConfig} from "../config/ILoanConfig.sol";
+import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {ILoan} from "../../../interfaces/ILoan.sol";
+import {UserClaimingConfig} from "./UserClaimingConfig.sol";
+import {ILendingVault} from "../../../interfaces/ILendingVault.sol";
+import {SwapConfig} from "../config/SwapConfig.sol";
+import {AccessControl} from "../utils/AccessControl.sol";
+import {SwapMod} from "../swap/SwapMod.sol";
+import {ILendingPool} from "../../../interfaces/ILendingPool.sol";
+/**
+ * @title ClaimingFacet
+ * @dev Facet that interfaces with voting escrow NFTs
+ */
+contract ClaimingFacet is AccessControl {
+    using SafeERC20 for IERC20;
+    PortfolioFactory public immutable _portfolioFactory;
+    IVotingEscrow public immutable _votingEscrow;
+    IVoter public immutable _voter;
+    IRewardsDistributor public immutable _rewardsDistributor;
+    ILoanConfig public immutable _loanConfig;
+    SwapConfig public immutable _swapConfig;
+    ILendingVault public immutable _vault;
+    error InvalidClaim(address token);
+
+    event RebaseClaimed(uint256 indexed tokenId, uint256 amount);
+
+    constructor(address portfolioFactory, address votingEscrow, address voter, address rewardsDistributor, address loanConfig, address swapConfig, address vault) {
+        require(portfolioFactory != address(0));
+        _portfolioFactory = PortfolioFactory(portfolioFactory);
+        _votingEscrow = IVotingEscrow(votingEscrow);
+        _voter = IVoter(voter);
+        _rewardsDistributor = IRewardsDistributor(rewardsDistributor);
+        _loanConfig = ILoanConfig(loanConfig);
+        _swapConfig = SwapConfig(swapConfig);
+        // vault can be zero address if there is no vault (no lending)
+        _vault = ILendingVault(vault);
+    }
+
+    function claimFees(address[] calldata fees, address[][] calldata tokens, uint256 tokenId) public virtual {
+        // do not claim launchpad token in this method
+        address launchpadToken = UserClaimingConfig.getLaunchPadTokenForCurrentEpoch(tokenId);
+        if(launchpadToken != address(0) && UserClaimingConfig.getReceiveLaunchPadTokenForThisEpoch()) {
+            for(uint256 i = 0; i < tokens.length; i++) {
+                for(uint256 j = 0; j < tokens[i].length; j++) {
+                    if(tokens[i][j] == launchpadToken) {
+                        revert InvalidClaim(tokens[i][j]);
+                    }
+                }
+            }
+        }
+        _voter.claimFees(fees, tokens, tokenId);
+
+        claimRebase(tokenId);
+    }
+
+    function claimRebase(uint256 tokenId) public virtual {
+        uint256 claimable = _rewardsDistributor.claimable(tokenId);
+        if (claimable > 0) {
+            try _rewardsDistributor.claim(tokenId) {
+                emit RebaseClaimed(tokenId, claimable);
+            } catch {
+            }
+        }
+        _updateLockedCollateral(tokenId);
+    }
+
+    function _updateLockedCollateral(uint256 tokenId) internal virtual {
+        CollateralManager.updateLockedCollateral(address(_portfolioFactory.portfolioFactoryConfig()), tokenId, address(_votingEscrow));
+    }
+
+    function _getTotalDebt() internal virtual view returns (uint256) {
+        return CollateralManager.getTotalDebt();
+    }
+
+    function _decreaseTotalDebt(uint256 amount) internal virtual returns (uint256 excess) {
+        return CollateralManager.decreaseTotalDebt(address(_portfolioFactory.portfolioFactoryConfig()), amount);
+    }
+
+    /*
+    @dev Claims launchpad token rewards, swaps to vault token if there is an active loan, and pays treasury/lenders.
+     */
+    function claimLaunchpadToken(address[] calldata fees, address[][] calldata tokens, uint256 tokenId, SwapMod.RouteParams memory swapParams) virtual external onlyAuthorizedCaller(_portfolioFactory) {
+        IERC20 launchpadToken = IERC20(UserClaimingConfig.getLaunchPadTokenForCurrentEpoch(tokenId));
+        if(address(launchpadToken) == address(0)) {
+            revert("Launchpad token not set");
+        }
+
+        uint256 launchpadTokenBalanceBefore = launchpadToken.balanceOf(address(this));
+        // claim fees for launchpad token
+        _voter.claimFees(fees, tokens, tokenId);
+
+        // ensure only launchpad token is being claimed
+        for(uint256 i = 0; i < tokens.length; i++) {
+            for(uint256 j = 0; j < tokens[i].length; j++) {
+                require(tokens[i][j] == address(launchpadToken), InvalidClaim(tokens[i][j]));
+            }
+        }
+
+        // keep token on contract if user does not want to receive launchpad token, will go through normal claiming process
+        if(!UserClaimingConfig.getReceiveLaunchPadTokenForThisEpoch()) {
+            return;
+        }
+
+        uint256 totalDebt = _getTotalDebt();
+        // if account has a balance, swap and pay lenders/treasury
+        if(totalDebt > 0) {
+            require(swapParams.swapTarget != address(0));
+            require(swapParams.swapData.length > 0);
+            require(swapParams.minimumOutputAmount > 0);
+            ILendingVault vault = _vault;
+            address outputToken = vault.asset();
+            // Calculate the actual amount of launchpad token received after claiming fees
+            uint256 launchpadTokenBalanceAfter = launchpadToken.balanceOf(address(this));
+            uint256 launchpadTokenAmountToSwap = launchpadTokenBalanceAfter - launchpadTokenBalanceBefore;
+            require(launchpadTokenAmountToSwap > 0, "No launchpad token to swap");
+            uint256 outputAmount = SwapMod.swap(SwapMod.RouteParams({
+                swapConfig: address(_swapConfig),
+                swapTarget: swapParams.swapTarget,
+                swapData: swapParams.swapData,
+                inputToken: address(launchpadToken),
+                inputAmount: launchpadTokenAmountToSwap,
+                outputToken: outputToken,
+                minimumOutputAmount: swapParams.minimumOutputAmount
+            }));
+            require(address(vault) != address(0), "Vault not set");
+
+            // get treasury fee and lender premium (BPS, consistent with RewardsProcessingFacet)
+            (uint256 lenderPremium, uint256 treasuryFee) = _loanConfig.getActiveRates();
+
+            uint256 treasuryFeeAmount = (outputAmount * treasuryFee) / 10000;
+            uint256 lenderPremiumAmount = (outputAmount * lenderPremium) / 10000;
+            uint256 borrowerAmount = outputAmount - treasuryFeeAmount - lenderPremiumAmount;
+
+            address loanContract = _portfolioFactory.portfolioFactoryConfig().getLoanContract();
+            IERC20(outputToken).safeTransfer(ILoan(loanContract).owner(), treasuryFeeAmount);
+            IERC20(outputToken).forceApprove(loanContract, lenderPremiumAmount);
+            ILendingPool(loanContract).depositRewards(lenderPremiumAmount);
+            IERC20(outputToken).approve(loanContract, 0);
+
+            // Pay down borrower debt with remaining proceeds; send excess to owner
+            if (borrowerAmount > 0) {
+                uint256 excess = _decreaseTotalDebt(borrowerAmount);
+                if (excess > 0) {
+                    IERC20(outputToken).safeTransfer(_portfolioFactory.ownerOf(address(this)), excess);
+                }
+            }
+        }
+
+        // send remaining launchpad token to portfolio owner
+        address portfolioOwner = _portfolioFactory.ownerOf(address(this));
+        launchpadToken.safeTransfer(portfolioOwner, launchpadToken.balanceOf(address(this)));
+    }
+}

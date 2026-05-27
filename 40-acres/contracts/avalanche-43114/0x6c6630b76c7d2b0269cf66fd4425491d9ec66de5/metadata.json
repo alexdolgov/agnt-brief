@@ -1,0 +1,18 @@
+{
+  "address": "0x6c6630b76c7d2b0269cf66fd4425491d9ec66de5",
+  "chain_id": 43114,
+  "contract_name": "GaugeOwner",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T06:58:57.530Z"
+}

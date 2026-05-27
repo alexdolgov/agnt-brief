@@ -1,0 +1,16 @@
+# ConvexV1BoosterAdapter
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x1b22e5ceb3a81d53b9a2d938c814b60b0baf65dd` |
+| Role | adapter |
+| Origin | upstream |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 3 (ethereum [`0x1b22e5ceb3a81d53b9a2d938c814b60b0baf65dd`](../0x1b22e5ceb3a81d53b9a2d938c814b60b0baf65dd/); ethereum `0x266ce84604e9df3667fc642e1ddfa3de896beca9`; ethereum `0x98d063d8ea7ed01febcbd70b32082de9f39586bb`) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

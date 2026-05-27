@@ -1,0 +1,17 @@
+{
+  "address": "0x0715f175c2bc67a4b6b8f119111524559d46974b",
+  "chain_id": 1,
+  "contract_name": "DynamicFeesVault",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 500,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T06:58:47.602Z"
+}

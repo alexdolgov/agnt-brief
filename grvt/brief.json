@@ -1,0 +1,390 @@
+{
+  "schema_version": "2.0",
+  "project_key": "grvt",
+  "generated_at": "2026-05-27T17:43:29.471Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "grvt",
+    "tier": 0,
+    "peak_tvl": 113672152,
+    "peak_date": "2026-03-22T00:00:00.000Z",
+    "tvl_30d_ago": 64031100,
+    "tvl_90d_ago": 94943521,
+    "tvl_current": 54275620,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 44676211,
+    "change_30d_pct": -15.23553398270528,
+    "change_90d_pct": -42.833782201947194,
+    "days_since_peak": 66,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 52.252491885611526
+  },
+  "summary": {
+    "total_contracts": 7,
+    "total_addresses": 12,
+    "unique_implementations": 7,
+    "total_deployments": 12,
+    "audited_contracts": 0,
+    "unaudited_contracts": 7,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 7,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 55387476,
+    "tvl_usd": 55387476,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://grvt.io/?ref=WCDISXW",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Grvt is a DeFi protocol on Ethereum that provides a bridge for cross-chain asset transfers and a derivatives platform for perpetual trading. It uses treasury vaults to manage bridged assets and integrates with lending strategies like Aave to generate yield.",
+    "relationship_narrative": "The Grvt Bridge family relies on the NativeBridgeGateway to handle cross-chain messages and the GRVTL1TreasuryVault to secure assets. The AaveV3Strategy is used as a supporting contract to deploy vault funds into Aave for yield generation.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1ff873538e62ba19cd36ce97e48f6fc84d07a5e4",
+      "name": "AaveV3Strategy",
+      "role": "core_logic",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xac2b5c60fc27fb47333f0416f8f2dae600ee50fb",
+      "impl_name": "AaveV3Strategy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1ff873538e62ba19cd36ce97e48f6fc84d07a5e4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x11f6ee88e10f3ac0c1560b5fd43300f6dda4ef2e",
+      "name": "GRVTL1TreasuryVault",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Grvt Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x11f6ee88e10f3ac0c1560b5fd43300f6dda4ef2e",
+      "impl_name": "GRVTL1TreasuryVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x11f6ee88e10f3ac0c1560b5fd43300f6dda4ef2e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc95fedb8bdc763e4ef093d14e8196afafbb48f45",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x17cbac7631063d8a79ddb5c3fc7c2336f0161915",
+      "name": "NativeBridgeGateway",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf1d59a0d1ec7c0b66b9e04bcae0130302b3c599c",
+      "impl_name": "NativeBridgeGateway",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x17cbac7631063d8a79ddb5c3fc7c2336f0161915",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6e93c940830df3ae9a82937b96a9bf7108864473",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa0b497d5fe1635a1246273b75e5c34d1f2761f8d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa20697e4219884128e0c880825280a4d29aebf65",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf1d59a0d1ec7c0b66b9e04bcae0130302b3c599c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x81ef29d82c5232627976d182c0a2be177412c7b9",
+      "name": "NativeVaultGateway",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "NativeVaultGateway",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x81ef29d82c5232627976d182c0a2be177412c7b9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4e29715b7ca2569678027c01627d936235ea36de",
+      "name": "TimelockController",
+      "role": "governance",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimelockController",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4e29715b7ca2569678027c01627d936235ea36de",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xff61d6c6e8334d8cf73011c1069b411f4789a915",
+      "name": "VaultBridgeLib",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultBridgeLib",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xff61d6c6e8334d8cf73011c1069b411f4789a915",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xff41bb293a6eb4bda4f799137be5aa781dc8d86f",
+      "name": "VaultStrategyOpsLib",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultStrategyOpsLib",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xff41bb293a6eb4bda4f799137be5aa781dc8d86f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x11f6ee88e10f3ac0c1560b5fd43300f6dda4ef2e",
+      "name": "GRVTL1TreasuryVault",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x81ef29d82c5232627976d182c0a2be177412c7b9",
+      "name": "NativeVaultGateway",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xff61d6c6e8334d8cf73011c1069b411f4789a915",
+      "name": "VaultBridgeLib",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xff41bb293a6eb4bda4f799137be5aa781dc8d86f",
+      "name": "VaultStrategyOpsLib",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 4,
+    "upstream": 0,
+    "standard_library": 3,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

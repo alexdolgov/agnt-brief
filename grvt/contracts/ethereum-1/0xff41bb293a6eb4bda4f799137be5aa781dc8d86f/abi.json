@@ -1,0 +1,262 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "requested",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "beforeBal",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "afterBal",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidAllocationBalanceDelta",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidParam",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      }
+    ],
+    "name": "InvalidStrategyExposureRead",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      }
+    ],
+    "name": "InvalidStrategyTokenRead",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NativeTransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "strategies",
+        "type": "address[]"
+      }
+    ],
+    "name": "hasAnyAccountingExposure",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      }
+    ],
+    "name": "readStrategyExactTokenBalance",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "ok",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      }
+    ],
+    "name": "readStrategyExposure",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "ok",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "exposure",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      }
+    ],
+    "name": "readStrategyExposureOrRevert",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "exposure",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vaultToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      }
+    ],
+    "name": "readStrategyPositionBreakdownOrRevert",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum PositionComponentKind",
+            "name": "kind",
+            "type": "PositionComponentKind"
+          }
+        ],
+        "internalType": "struct PositionComponent[]",
+        "name": "components",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "tryBalanceOf",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "ok",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -38,6 +38,7 @@
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | unknown | 4 | 3 | 2026-05-22 |
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.0% | $10.9K | declining | 6 | 48 | 2026-05-23 |
 | [apex-protocol](./apex-protocol/) | $436.4K | 0.0% | $436.4K | active | 0 | 206 | 2026-05-26 |
+| [api3](./api3/) | $55.2M | 21.4% | $55.2M | unknown | 6 | 28 | 2026-05-27 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 55 | 2026-05-22 |
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 0.0% | $240.1K | dead | 0 | 61 | 2026-05-23 |
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-05-23 |
@@ -220,6 +221,7 @@
 | [goplus-security](./goplus-security/) | $3.4M | 0.0% | $3.4M | active | 0 | 26 | 2026-05-26 |
 | [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 0 | 124 | 2026-05-23 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
+| [grvt](./grvt/) | $55.4M | 0.0% | ? | unknown | 0 | 7 | 2026-05-27 |
 | [guru-network-dao](./guru-network-dao/) | $2.4M | 0.0% | ? | active | 0 | 54 | 2026-05-24 |
 | [gyroscope-protocol](./gyroscope-protocol/) | $44.6 | 21.3% | ? | dead | 10 | 233 | 2026-05-24 |
 | [h2-finance](./h2-finance/) | $3.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
@@ -335,6 +337,7 @@
 | [metadao](./metadao/) | $1.5M | 0.0% | $1.5M | active | 10 | 53 | 2026-05-25 |
 | [metastable](./metastable/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [mezo-bridge](./mezo-bridge/) | $203.9M | 0.0% | $203.9M | declining | 0 | 138 | 2026-05-22 |
+| [mezo-earn](./mezo-earn/) | $55.2M | 0.0% | ? | unknown | 0 | 1 | 2026-05-27 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [minto](./minto/) | $1.7M | 12.5% | $1.7M | unknown | 1 | 11 | 2026-05-24 |
 | [mitosis](./mitosis/) | $329.1M | 4.3% | $329.1M | dead | 3 | 72 | 2026-05-25 |
@@ -361,6 +364,7 @@
 | [neemo-finance](./neemo-finance/) | $1.4M | 0.0% | ? | active | 1 | 14 | 2026-05-24 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-05-24 |
 | [neo-tokyo](./neo-tokyo/) | $1.1M | 0.0% | ? | unknown | 0 | 86 | 2026-05-25 |
+| [neopin](./neopin/) | $55.4M | 0.0% | ? | active | 3 | 100 | 2026-05-27 |
 | [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 2 | 2026-05-25 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | dead | 0 | 66 | 2026-05-24 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |

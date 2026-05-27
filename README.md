@@ -78,6 +78,7 @@ Each project directory contains:
 | [turtle-club](./turtle-club/brief.md) | $1.29M | 4 | 516 | 340/516 (66%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $59.81M |
 | [deeplock](./deeplock/brief.md) | $2.15M | bsc | 70 | 38/70 (54%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $56.17M |
 | [tulipa-capital](./tulipa-capital/brief.md) | $49.29M | avalanche, base, ethereum | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $55.69M |
+| [api3](./api3/brief.md) | $55.28M | ethereum, mantle | 28 | 14/28 (50%) | 21.4% | 7.1% (Trail of Bits) | 3 | aging | ❓ unknown | $55.23M |
 | [flying-tulip](./flying-tulip/brief.md) | $5.48M | 5 | 77 | 74/77 (96%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $52.76M |
 | [synfutures](./synfutures/brief.md) | $6.31M | 6 | 482 | 4/482 (1%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | $52.44M |
 | [stcyber](./stcyber/brief.md) | $1.63M | 4 | 31 | 26/31 (84%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | $51.36M |
@@ -460,6 +461,7 @@ Each project directory contains:
 | [goldfinger](./goldfinger/brief.md) | $23.90M | bsc | 5 | 4/5 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [goldstation](./goldstation/brief.md) | $2.26M | avalanche, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [growihf](./growihf/brief.md) | $8.42M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [grvt](./grvt/brief.md) | $55.39M | ethereum | 7 | 7/7 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [guru-network-dao](./guru-network-dao/brief.md) | $2.40M | 8 | 54 | 21/54 (39%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [gyroscope-protocol](./gyroscope-protocol/brief.md) | $1.81M | 10 | 233 | 148/233 (64%) | 21.3% | 1.3% (Trail of Bits) | 6 | fresh | 💀 dead | - |
 | [h2-finance](./h2-finance/brief.md) | $3.69M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -517,6 +519,7 @@ Each project directory contains:
 | [merlinswap](./merlinswap/brief.md) | $8.66M | merlin | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [meson](./meson/brief.md) | $1.14M | blast, merlin | 129 | 2/129 (2%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [metastable](./metastable/brief.md) | $2.54M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [mezo-earn](./mezo-earn/brief.md) | $55.18M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [minefi](./minefi/brief.md) | $1.43M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [mode-bridge](./mode-bridge/brief.md) | $6.18M | ethereum, mode | 100 | 34/100 (34%) | 2.9% | 0.0% (-) | 1 | aging | ⚠️ declining | - |
 | [mole](./mole/brief.md) | $8.84M | avalanche | 49 | 3/49 (6%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -532,6 +535,7 @@ Each project directory contains:
 | [nbx](./nbx/brief.md) | $1.82M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [neemo-finance](./neemo-finance/brief.md) | $1.44M | ethereum | 14 | 1/14 (7%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
 | [neo-tokyo](./neo-tokyo/brief.md) | $1.11M | ethereum | 86 | 38/86 (44%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [neopin](./neopin/brief.md) | $55.37M | ethereum, klaytn, polygon | 100 | 1/100 (1%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [neptune-finance](./neptune-finance/brief.md) | $6.05M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [netswap](./netswap/brief.md) | $1.36M | metis | 48 | 24/48 (50%) | 20.8% | 0.0% (-) | 2 | stale | 💀 dead | - |
 | [neuralai](./neuralai/brief.md) | $1.30M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -659,5 +663,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-27T17:38:44.039Z_
-_Projects: 647_
+_Generated: 2026-05-27T17:50:23.671Z_
+_Projects: 651_

@@ -1,0 +1,17 @@
+{
+  "address": "0xe4a10951f962e6cb93cb843a4ef05d2f99db1f94",
+  "chain_id": 1,
+  "contract_name": "FolioProxy",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": "0xb6b35b2c7032e00baa2535ba480d461321b7e0a6",
+  "fetched_at": "2026-05-27T14:39:40.964Z"
+}

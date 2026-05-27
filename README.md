@@ -441,6 +441,7 @@ Each project directory contains:
 | [fomo3d](./fomo3d/brief.md) | $2.55M | ethereum | 23 | 10/23 (43%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [forgeyields](./forgeyields/brief.md) | $1.89M | ethereum | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [four.meme](./four.meme/brief.md) | $4.89M | bsc | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [frankencoin](./frankencoin/brief.md) | $70.00M | ethereum | 6 | 6/6 (100%) | 66.7% | 66.7% (ChainSecurity, Code4rena) | 8 | aging | ✅ active | - |
 | [fulcrom](./fulcrom/brief.md) | $13.52M | cronos, zksync-era | 80 | 0/80 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [generic.money](./generic.money/brief.md) | $3.74M | ethereum | 13 | 12/13 (92%) | 75.0% | 75.0% (Spearbit) | 1 | fresh | ✅ active | - |
 | [gimo](./gimo/brief.md) | $9.07M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -642,5 +643,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-27T14:29:04.567Z_
-_Projects: 630_
+_Generated: 2026-05-27T14:40:05.680Z_
+_Projects: 631_

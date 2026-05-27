@@ -1,0 +1,170 @@
+{
+  "schema_version": "2.0",
+  "project_key": "scallop",
+  "generated_at": "2026-05-27T05:54:55.283Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-a9ad",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 0,
+    "total_addresses": 0,
+    "unique_implementations": 0,
+    "total_deployments": 0,
+    "audited_contracts": 0,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 4,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 38174851,
+    "tvl_usd": 38174851,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://app.scallop.io/referral?ref=692ecd3798f63b5f44c040f9",
+    "chains": [],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-12",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 3
+    }
+  },
+  "topography": {
+    "project_purpose": "Scallop is a DeFi protocol on Sui that combines a DEX aggregator and a lending market. It enables users to swap tokens across multiple liquidity sources and to supply or borrow assets in a pooled lending environment.",
+    "relationship_narrative": "The DEX Aggregator and Lending families share the same underlying token and oracle infrastructure, enabling seamless asset flows between swapping and lending operations.",
+    "product_family_count": 2
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [],
+  "audits": [
+    {
+      "audit_id": 4276,
+      "audit_key": "audit-4276",
+      "report_name": "spaces/-M_cZOX56Trwl8x8qGSm/uploads/ML3TtKSS9XEW6WOc9Fv2/Scallop Smart Contract Audit Report.pdf",
+      "report_url": "https://496184472-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M_cZOX56Trwl8x8qGSm%2Fuploads%2FML3TtKSS9XEW6WOc9Fv2%2FScallop%20Smart%20Contract%20Audit%20Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4277,
+      "audit_key": "audit-4277",
+      "report_name": "spaces/-M_cZOX56Trwl8x8qGSm/uploads/qKB9NYW44A6be3a6TiT0/Scallop_Audit.pdf",
+      "report_url": "https://496184472-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M_cZOX56Trwl8x8qGSm%2Fuploads%2FqKB9NYW44A6be3a6TiT0%2FScallop_Audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4278,
+      "audit_key": "audit-4278",
+      "report_name": "spaces/-M_cZOX56Trwl8x8qGSm/uploads/JuBrRTdiahwciNZclaiq/Scallop - Zellic Audit Report.pdf",
+      "report_url": "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M_cZOX56Trwl8x8qGSm%2Fuploads%2FJuBrRTdiahwciNZclaiq%2FScallop%20-%20Zellic%20Audit%20Report.pdf?alt=media",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4279,
+      "audit_key": "audit-4279",
+      "report_name": "spaces/-M_cZOX56Trwl8x8qGSm/uploads/dIYt2iklAVbPJGceFTT9/scallop-audit-2025-12-02.pdf",
+      "report_url": "https://2786784229-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-M_cZOX56Trwl8x8qGSm%2Fuploads%2FdIYt2iklAVbPJGceFTT9%2Fscallop-audit-2025-12-02.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 4276,
+        "report_name": "spaces/-M_cZOX56Trwl8x8qGSm/uploads/ML3TtKSS9XEW6WOc9Fv2/Scallop Smart Contract Audit Report.pdf"
+      },
+      {
+        "audit_id": 4277,
+        "report_name": "spaces/-M_cZOX56Trwl8x8qGSm/uploads/qKB9NYW44A6be3a6TiT0/Scallop_Audit.pdf"
+      },
+      {
+        "audit_id": 4278,
+        "report_name": "spaces/-M_cZOX56Trwl8x8qGSm/uploads/JuBrRTdiahwciNZclaiq/Scallop - Zellic Audit Report.pdf"
+      },
+      {
+        "audit_id": 4279,
+        "report_name": "spaces/-M_cZOX56Trwl8x8qGSm/uploads/dIYt2iklAVbPJGceFTT9/scallop-audit-2025-12-02.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

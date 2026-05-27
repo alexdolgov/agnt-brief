@@ -440,6 +440,8 @@
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |
 | [satlayer](./satlayer/) | $289.5M | 4.4% | $287.2M | declining | 12 | 313 | 2026-05-25 |
 | [satori-finance](./satori-finance/) | $40.9K | 0.0% | $40.9K | active | 1 | 40 | 2026-05-25 |
+| [saucerswap](./saucerswap/) | $32.9M | 0.0% | ? | unknown | 8 | 0 | 2026-05-27 |
+| [scallop](./scallop/) | $38.2M | 0.0% | ? | unknown | 4 | 0 | 2026-05-27 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 0 | 1 | 2026-05-25 |
 | [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 32 | 2026-05-26 |

@@ -1,0 +1,18 @@
+{
+  "address": "0x156269966404ca72f6721c3228676c56412c058c",
+  "chain_id": 1,
+  "contract_name": "UnstUSDTProxy",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xa5a49f108ac7ac6bfe57328159288376ea19314b",
+  "fetched_at": "2026-05-27T14:59:11.267Z"
+}

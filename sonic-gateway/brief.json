@@ -1,0 +1,172 @@
+{
+  "schema_version": "2.0",
+  "project_key": "sonic-gateway",
+  "generated_at": "2026-05-27T15:02:35.471Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "sonic-gateway",
+    "tier": 0,
+    "peak_tvl": 1230036159,
+    "peak_date": "2025-05-03T00:00:00.000Z",
+    "tvl_30d_ago": 69005100,
+    "tvl_90d_ago": 65693203,
+    "tvl_current": 66105364,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 153609839,
+    "change_30d_pct": -4.202205344242672,
+    "change_90d_pct": 0.6274028075629072,
+    "days_since_peak": 389,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 94.62573815279198
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 2,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 67153153.2322,
+    "tvl_usd": 7800454.703418822,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 7800454.7
+    },
+    "asd_usd": 7800454.703418822,
+    "website_url": "https://gateway.soniclabs.com/ethereum/sonic/s",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2018-06",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 2,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Sonic Gateway is a canonical bridge that enables users to deposit tokens on Ethereum and receive equivalent tokens on the Sonic network, facilitating cross-chain asset transfers.",
+    "relationship_narrative": "The protocol consists of a single product family with one core proxy contract that delegates to a TokenDeposit implementation, with no additional supporting contracts or shared infrastructure identified.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa1e2481a9cd0cb0447eeb1cbc26f1b3fff3bec20",
+      "name": "TokenDeposit",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Sonic Gateway",
+      "tvl_usd": 7800454.703418822,
+      "is_proxy": true,
+      "impl_address": "0xade2ef0101278fe11490f2ee2aad7915a094ade9",
+      "impl_name": "TokenDeposit",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa1e2481a9cd0cb0447eeb1cbc26f1b3fff3bec20",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 7800454.703418822,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 4670,
+      "audit_key": "audit-4670",
+      "report_name": "fantom-audit-first.pdf",
+      "report_url": "https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-first.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2018-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4671,
+      "audit_key": "audit-4671",
+      "report_name": "fantom-audit-second.pdf",
+      "report_url": "https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-second.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2018-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 4670,
+        "report_name": "fantom-audit-first.pdf"
+      },
+      {
+        "audit_id": 4671,
+        "report_name": "fantom-audit-second.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

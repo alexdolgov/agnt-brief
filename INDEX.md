@@ -95,6 +95,7 @@
 | [btcfi](./btcfi/) | $11.9M | 0.0% | ? | active | 0 | 15 | 2026-05-23 |
 | [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 0 | 64 | 2026-05-25 |
 | [btse](./btse/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [bucket-protocol](./bucket-protocol/) | $65.1M | 0.0% | ? | unknown | 7 | 0 | 2026-05-27 |
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | dead | 1 | 101 | 2026-05-24 |
 | [butter-network](./butter-network/) | $1.4M | 0.0% | ? | declining | 0 | 6 | 2026-05-24 |
@@ -489,6 +490,7 @@
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
 | [solayer](./solayer/) | $1.5M | 0.0% | $1.5M | declining | 5 | 53 | 2026-05-25 |
 | [solera](./solera/) | $8.1M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
+| [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | active | 2 | 1 | 2026-05-27 |
 | [sophon-bridge](./sophon-bridge/) | $5.5M | 0.0% | $5.5M | active | 8 | 10 | 2026-05-27 |
 | [sophon-farm](./sophon-farm/) | $7.0M | 100.0% | ? | dead | 9 | 1 | 2026-05-23 |
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | active | 0 | 58 | 2026-05-23 |
@@ -522,6 +524,7 @@
 | [stout](./stout/) | $12.6K | 0.0% | $12.6K | declining | 0 | 132 | 2026-05-24 |
 | [strata](./strata/) | $97.2M | 31.6% | $289.6K | unknown | 8 | 39 | 2026-05-27 |
 | [stratis-mstrax](./stratis-mstrax/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 0 | 10 | 2026-05-27 |
 | [suibridge](./suibridge/) | $41.9M | 0.0% | ? | unknown | 0 | 5 | 2026-05-26 |
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-24 |
 | [sunny](./sunny/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |

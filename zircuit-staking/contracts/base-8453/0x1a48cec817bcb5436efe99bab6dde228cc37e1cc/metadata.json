@@ -1,0 +1,18 @@
+{
+  "address": "0x1a48cec817bcb5436efe99bab6dde228cc37e1cc",
+  "chain_id": 8453,
+  "contract_name": "InstitutionLender",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": "0xc6d5f878d8d865cbbf5ad69f3a501dcf5cc78632",
+  "fetched_at": "2026-05-27T18:01:47.374Z"
+}

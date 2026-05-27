@@ -1,0 +1,18 @@
+{
+  "address": "0x0278d076edccb596fca5de58e7e8e70d2a906a32",
+  "chain_id": 1,
+  "contract_name": "Refunder",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T17:57:22.091Z"
+}

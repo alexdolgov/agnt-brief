@@ -37,6 +37,7 @@
 | [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | unknown | 0 | 2 | 2026-05-22 |
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | unknown | 4 | 3 | 2026-05-22 |
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.0% | $10.9K | declining | 6 | 48 | 2026-05-23 |
+| [ao-bridge](./ao-bridge/) | $54.0M | 0.0% | ? | active | 0 | 3 | 2026-05-27 |
 | [apex-protocol](./apex-protocol/) | $436.4K | 0.0% | $436.4K | active | 0 | 206 | 2026-05-26 |
 | [api3](./api3/) | $55.2M | 21.4% | $55.2M | unknown | 6 | 28 | 2026-05-27 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 55 | 2026-05-22 |
@@ -121,6 +122,7 @@
 | [citrea-bridge](./citrea-bridge/) | $5.1M | 33.3% | ? | active | 11 | 4 | 2026-05-23 |
 | [clearpool](./clearpool/) | $10.7K | 0.0% | $10.7K | active | 0 | 61 | 2026-05-26 |
 | [clever](./clever/) | $12.4M | 10.3% | $10.8M | active | 3 | 78 | 2026-05-23 |
+| [coin8](./coin8/) | $53.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [coinsquare](./coinsquare/) | $12.4M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [coinstore](./coinstore/) | $62.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
@@ -358,6 +360,7 @@
 | [mux-protocol](./mux-protocol/) | $19.1M | 18.0% | $19.1M | active | 4 | 1225 | 2026-05-25 |
 | [mvl-staking](./mvl-staking/) | $38.1M | 33.3% | ? | unknown | 2 | 50 | 2026-05-25 |
 | [mystic-finance](./mystic-finance/) | $5.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
+| [nado](./nado/) | $55.0M | 0.0% | ? | active | 0 | 23 | 2026-05-27 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 0 | 7 | 2026-05-27 |
@@ -645,6 +648,7 @@
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-05-27 |
 | [zircuit-finance](./zircuit-finance/) | $180.1M | 0.0% | $180.1M | unknown | 0 | 3 | 2026-05-24 |
+| [zircuit-staking](./zircuit-staking/) | $178.4M | 21.1% | $140.4M | declining | 10 | 20 | 2026-05-27 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-05-22 |
 | [zivoe](./zivoe/) | $87.1M | 58.1% | $87.1M | active | 3 | 32 | 2026-05-22 |
 | [zklink-nova](./zklink-nova/) | $33.9M | 15.3% | $33.9M | declining | 11 | 381 | 2026-05-25 |

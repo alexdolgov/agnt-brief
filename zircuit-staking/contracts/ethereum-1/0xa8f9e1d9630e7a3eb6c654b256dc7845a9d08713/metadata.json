@@ -1,0 +1,18 @@
+{
+  "address": "0xa8f9e1d9630e7a3eb6c654b256dc7845a9d08713",
+  "chain_id": 1,
+  "contract_name": "GUD",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T18:01:47.410Z"
+}

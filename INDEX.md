@@ -432,6 +432,7 @@
 | [reflexer](./reflexer/) | $2.4M | 40.9% | ? | dead | 8 | 64 | 2026-05-24 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | unknown | 0 | 2 | 2026-05-22 |
+| [reservoir-protocol](./reservoir-protocol/) | $2.1B | 0.0% | $2.1B | active | 0 | 278 | 2026-05-27 |
 | [resupply](./resupply/) | $41.8M | 0.0% | ? | active | 0 | 1 | 2026-05-26 |
 | [revault](./revault/) | $2.5K | 45.0% | ? | declining | 1 | 75 | 2026-05-24 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |
@@ -462,6 +463,7 @@
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 0 | 1 | 2026-05-25 |
 | [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 32 | 2026-05-26 |
 | [scrub-money](./scrub-money/) | $7.1M | 0.0% | ? | active | 1 | 19 | 2026-05-23 |
+| [sdai](./sdai/) | $3.8K | 0.0% | $3.8K | active | 0 | 93 | 2026-05-27 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 8.0% | $34.8K | declining | 2 | 99 | 2026-05-26 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-24 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | sunsetting | 8 | 297 | 2026-05-25 |

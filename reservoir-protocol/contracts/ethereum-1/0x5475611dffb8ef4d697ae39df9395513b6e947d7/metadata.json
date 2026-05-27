@@ -1,0 +1,18 @@
+{
+  "address": "0x5475611dffb8ef4d697ae39df9395513b6e947d7",
+  "chain_id": 1,
+  "contract_name": "SavingModule",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T14:23:35.561Z"
+}

@@ -1,0 +1,36 @@
+// SPDX-License-Identifier: AGPL-3.0
+pragma solidity ^0.8.19;
+
+import "../libraries/GPv2Order.sol";
+
+interface IUserProxyImplementation {
+
+    function proxyName() external view returns (string memory);
+
+    /**
+     * @dev Starts coordinator after an order has been executed.
+     */
+    function afterSettlement(address token) external;
+
+    /**
+     * @dev Starts coordinator before an order has been executed.
+     */
+    function beforeSettlement(address token) external;
+
+    // function initialize(address _owner, string calldata _proxyName) external;
+    function initialize(string calldata _proxyName) external;
+
+    function addSelfOrder(GPv2Order.Data memory order, bytes memory apiOrderUid, 
+      address[] memory beforeActionsTo, bytes[] memory beforeActionsData,
+      address[] memory afterActionsTo, bytes[] memory afterActionsData) external;
+
+    function addDelegateOrder(GPv2Order.Data memory order, bytes memory apiOrderUid, 
+      address[] memory beforeActionsTo, bytes[] memory beforeActionsData,
+      address[] memory afterActionsTo, bytes[] memory afterActionsData) external;
+
+    function addOrder(GPv2Order.Data memory order, bytes memory apiOrderUid, 
+      address[] memory beforeActionsTo, bytes[] memory beforeActionsData,
+      address[] memory afterActionsTo, bytes[] memory afterActionsData) external;
+
+    function virtualBalance(address wagToken) external view returns(uint256);
+}

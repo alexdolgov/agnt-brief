@@ -1,0 +1,174 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ghoToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "ghoTokenPool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "riskCouncil",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "bridgeLimitEnabled",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "BRIDGE_LIMIT_ENABLED",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GHO_TOKEN",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "GHO_TOKEN_POOL",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MINIMUM_DELAY",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "RISK_COUNCIL",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getCcipTimelocks",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint40",
+            "name": "bridgeLimitLastUpdate",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "rateLimitLastUpdate",
+            "type": "uint40"
+          }
+        ],
+        "internalType": "struct IGhoCcipSteward.CcipDebounce",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newBridgeLimit",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateBridgeLimit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "remoteChainSelector",
+        "type": "uint64"
+      },
+      {
+        "internalType": "bool",
+        "name": "outboundEnabled",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint128",
+        "name": "outboundCapacity",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "outboundRate",
+        "type": "uint128"
+      },
+      {
+        "internalType": "bool",
+        "name": "inboundEnabled",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint128",
+        "name": "inboundCapacity",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "inboundRate",
+        "type": "uint128"
+      }
+    ],
+    "name": "updateRateLimit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

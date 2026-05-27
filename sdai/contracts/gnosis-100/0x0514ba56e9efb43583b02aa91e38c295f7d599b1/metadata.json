@@ -1,0 +1,17 @@
+{
+  "address": "0x0514ba56e9efb43583b02aa91e38c295f7d599b1",
+  "chain_id": 100,
+  "contract_name": "DefaultReserveInterestRateStrategy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T14:06:01.177Z"
+}

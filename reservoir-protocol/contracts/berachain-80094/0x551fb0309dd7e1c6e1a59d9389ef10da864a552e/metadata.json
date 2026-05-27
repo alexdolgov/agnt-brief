@@ -1,0 +1,17 @@
+{
+  "address": "0x551fb0309dd7e1c6e1a59d9389ef10da864a552e",
+  "chain_id": 80094,
+  "contract_name": "CollateralVault",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 666,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T14:23:33.435Z"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "assets",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "users",
+        "type": "address[]"
+      }
+    ],
+    "name": "bulkClaimRewardsOnBehalf",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "incentivesContract",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

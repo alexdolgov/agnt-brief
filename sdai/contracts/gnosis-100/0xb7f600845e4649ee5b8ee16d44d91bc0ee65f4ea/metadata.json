@@ -1,0 +1,18 @@
+{
+  "address": "0xb7f600845e4649ee5b8ee16d44d91bc0ee65f4ea",
+  "chain_id": 100,
+  "contract_name": "Erc20AMBOracle",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T14:06:04.624Z"
+}

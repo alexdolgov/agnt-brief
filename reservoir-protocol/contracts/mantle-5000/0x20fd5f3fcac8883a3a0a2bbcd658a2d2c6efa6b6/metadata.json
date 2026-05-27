@@ -1,0 +1,17 @@
+{
+  "address": "0x20fd5f3fcac8883a3a0a2bbcd658a2d2c6efa6b6",
+  "chain_id": 5000,
+  "contract_name": "GhoCcipSteward",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "000000000000000000000000fc421ad3c883bf9e7c4f42de845c4e4405799e73000000000000000000000000de6539018b095353a40753dc54c91c68c9487d4e0000000000000000000000008513e6f37dbc52de87b166980fa3f50639694b600000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T14:23:34.980Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x6c1878a83884b9f14a342c7d96fc00c9a0d434d2",
+  "chain_id": 100,
+  "contract_name": "WrappedAgTokenFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, AGPL-3.0-only, LGPL-3.0-or-later, MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T14:06:03.209Z"
+}

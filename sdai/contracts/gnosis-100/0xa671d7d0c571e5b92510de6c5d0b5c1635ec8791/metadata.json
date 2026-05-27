@@ -1,0 +1,17 @@
+{
+  "address": "0xa671d7d0c571e5b92510de6c5d0b5c1635ec8791",
+  "chain_id": 100,
+  "contract_name": "AgaveHoldingsOracle",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T14:06:04.571Z"
+}

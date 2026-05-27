@@ -12,6 +12,7 @@ Each project directory contains:
 | Project | TVL (DL) | Chains | Implementations | Verified | Coverage | Tier 1 | Audits | Freshness | Status | ASD |
 |---|---:|---|---:|---|---:|---|---:|---|---|---:|
 | [cream-finance](./cream-finance/brief.md) | $1.68M | 4 | 95 | 63/95 (66%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $2280.01M |
+| [reservoir-protocol](./reservoir-protocol/brief.md) | $75.10M | 9 | 278 | 265/278 (95%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2082.66M |
 | [keep3r-network](./keep3r-network/brief.md) | $4.00M | ethereum | 481 | 368/481 (77%) | 0.3% | 0.0% (-) | 1 | stale | 💀 dead | $2070.48M |
 | [zyfai](./zyfai/brief.md) | $6.38M | 5 | 147 | 130/147 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1557.94M |
 | [angle](./angle/brief.md) | $3.46M | 7 | 624 | 331/624 (53%) | 1.8% | 0.0% (-) | 2 | stale | 💀 dead | $1397.79M |
@@ -311,6 +312,7 @@ Each project directory contains:
 | [clearpool](./clearpool/brief.md) | $42.18M | 7 | 61 | 21/61 (34%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $10.71K |
 | [ellipsis-finance](./ellipsis-finance/brief.md) | $1.27M | bsc | 22 | 17/22 (77%) | 29.4% | 0.0% (-) | 2 | stale | 💀 dead | $8.97K |
 | [lendle](./lendle/brief.md) | $1.25M | mantle | 64 | 44/64 (69%) | 43.2% | 0.0% (-) | 1 | fresh | ❓ unknown | $5.56K |
+| [sdai](./sdai/brief.md) | $72.00M | gnosis | 93 | 48/93 (52%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.82K |
 | [azuro](./azuro/brief.md) | $1.04M | 6 | 304 | 55/304 (18%) | 6.6% | 0.0% (-) | 3 | aging | ✅ active | $3.14K |
 | [injective-bridge](./injective-bridge/brief.md) | $14.89M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.62K |
 | [deri](./deri/brief.md) | $7.44M | 12 | 868 | 94/868 (11%) | 13.9% | 0.0% (-) | 6 | aging | ✅ active | $2.40K |
@@ -640,5 +642,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-27T13:55:45.666Z_
-_Projects: 628_
+_Generated: 2026-05-27T14:29:04.567Z_
+_Projects: 630_

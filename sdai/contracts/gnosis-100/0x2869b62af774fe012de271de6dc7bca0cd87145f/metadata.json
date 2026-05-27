@@ -1,0 +1,18 @@
+{
+  "address": "0x2869b62af774fe012de271de6dc7bca0cd87145f",
+  "chain_id": 100,
+  "contract_name": "Swapper_UserProxyImplementation",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, AGPL-3.0-only, LGPL-3.0-or-later, MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T14:06:01.593Z"
+}

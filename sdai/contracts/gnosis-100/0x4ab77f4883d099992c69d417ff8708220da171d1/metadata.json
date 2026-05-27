@@ -1,0 +1,17 @@
+{
+  "address": "0x4ab77f4883d099992c69d417ff8708220da171d1",
+  "chain_id": 100,
+  "contract_name": "SavingsXDai",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T14:06:02.514Z"
+}

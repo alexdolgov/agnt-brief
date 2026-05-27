@@ -1,0 +1,17 @@
+{
+  "address": "0x4be8be2b72638f87c76f738cc1341665ed2f5876",
+  "chain_id": 1,
+  "contract_name": "StakingWithUnbonding",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T14:23:36.004Z"
+}

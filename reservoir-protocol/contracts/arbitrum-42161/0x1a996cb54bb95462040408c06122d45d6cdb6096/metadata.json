@@ -1,0 +1,18 @@
+{
+  "address": "0x1a996cb54bb95462040408c06122d45d6cdb6096",
+  "chain_id": 42161,
+  "contract_name": "fToken",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, BUSL-1.1, MIT, MIT OR Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T14:23:30.445Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x61d7f5c2821416600651e72ee4c9cc286b7527e2",
+  "chain_id": 146,
+  "contract_name": "EqualizerRouterConnector",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:23.916Z"
+}

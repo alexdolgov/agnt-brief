@@ -1,0 +1,17 @@
+{
+  "address": "0x178800c74dc32cb6814b5a3ffe2b7e68c85d0acc",
+  "chain_id": 146,
+  "contract_name": "FeeRecipientFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1633,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "0000000000000000000000005be2e859d0c2453c9aa062860ca27711ff55343200000000000000000000000027ffc897ce020fd0547492d4a1f8e4dad0f7fdf30000000000000000000000005e7a9eea6988063a4dbb9ccddb3e04c923e8e37f",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:13.937Z"
+}

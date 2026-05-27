@@ -335,6 +335,7 @@
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-05-22 |
 | [mu-digital](./mu-digital/) | $19.5M | 100.0% | ? | active | 2 | 12 | 2026-05-22 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-05-24 |
+| [multichain](./multichain/) | $12.5M | 35.3% | $128.8 | dead | 16 | 20 | 2026-05-27 |
 | [mux-protocol](./mux-protocol/) | $19.1M | 18.0% | $19.1M | active | 4 | 1225 | 2026-05-25 |
 | [mvl-staking](./mvl-staking/) | $38.1M | 33.3% | ? | unknown | 2 | 50 | 2026-05-25 |
 | [mystic-finance](./mystic-finance/) | $5.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
@@ -575,6 +576,7 @@
 | [verus-market](./verus-market/) | $9.9M | 0.0% | ? | declining | 0 | 32 | 2026-05-23 |
 | [vesper](./vesper/) | $694.0K | 0.0% | $694.0K | declining | 0 | 44 | 2026-05-26 |
 | [vest-markets](./vest-markets/) | $1.2M | 0.0% | ? | declining | 0 | 4 | 2026-05-25 |
+| [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-05-27 |
 | [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-05-26 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |
 | [wan-bridge](./wan-bridge/) | $1.8M | 0.0% | $1.8M | active | 3 | 153 | 2026-05-25 |

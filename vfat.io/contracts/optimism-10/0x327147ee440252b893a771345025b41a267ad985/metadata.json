@@ -1,0 +1,18 @@
+{
+  "address": "0x327147ee440252b893a771345025b41a267ad985",
+  "chain_id": 10,
+  "contract_name": "CLGaugeFactory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 42,
+  "constructor_arguments": "",
+  "implementation_address": "0x7155b84a704f0657975827c65ff6fe42e3a962bb",
+  "fetched_at": "2026-05-27T07:30:13.579Z"
+}

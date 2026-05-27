@@ -1,0 +1,17 @@
+{
+  "address": "0x2b03020ee29c66e518f73683d7788732d4289856",
+  "chain_id": 146,
+  "contract_name": "Minter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1633,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "0000000000000000000000005e7a9eea6988063a4dbb9ccddb3e04c923e8e37f0000000000000000000000005be2e859d0c2453c9aa062860ca27711ff553432",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:09.531Z"
+}

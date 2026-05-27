@@ -1,0 +1,17 @@
+{
+  "address": "0x1d368773735ee1e678950b7a97bca2cafb330cdc",
+  "chain_id": 146,
+  "contract_name": "Router",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1633,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "0000000000000000000000002da25e7446a70d7be65fd4c053948becaa6374c8000000000000000000000000039e2fb66102314ce7b64ce5ce3e5183bc94ad38",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:09.545Z"
+}

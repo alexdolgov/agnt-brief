@@ -1,0 +1,1434 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract SickleFactory",
+        "name": "factory_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract FeesLib",
+        "name": "feesLib_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ConnectorRegistry",
+        "name": "connectorRegistry_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "wrappedNativeAddress_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ApproveFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ETHTransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "GasCostExceedsEstimate",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IncorrectMsgValue",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LiquidityAmountError",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "NotOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOwnerOrApproved",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOwnerOrApprovedOrInternal",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOwnerOrInternal",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotRegisteredSickle",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SickleNotDeployed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SwapAmountZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransferFromFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "wrappedNative",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountToCharge",
+        "type": "uint256"
+      }
+    ],
+    "name": "_sickle_chargeTransactionCost",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes4",
+        "name": "feeDescriptor",
+        "type": "bytes4"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOut",
+        "type": "address"
+      }
+    ],
+    "name": "_sickle_charge_fees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes4",
+        "name": "feeSelector",
+        "type": "bytes4"
+      }
+    ],
+    "name": "_sickle_transfer_from_user",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "_sickle_transfer_to_user",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sickleAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "claimContractAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "depositContractAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "desiredAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct AddLiquidityData",
+            "name": "addLiquidityData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapInData",
+        "name": "zapData",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "claimExtraData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "depositExtraData",
+        "type": "bytes"
+      }
+    ],
+    "name": "compound",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sickleAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "claimContractAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "depositContractAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "desiredAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct AddLiquidityData",
+            "name": "addLiquidityData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapInData",
+        "name": "feeZapData",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "desiredAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct AddLiquidityData",
+            "name": "addLiquidityData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapInData",
+        "name": "compoundZapData",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "claimExtraData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "depositExtraData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "estimateCost",
+        "type": "uint256"
+      }
+    ],
+    "name": "compoundFor",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "stakingContractAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "desiredAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct AddLiquidityData",
+            "name": "addLiquidityData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapInData",
+        "name": "zapData",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "extraData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "address",
+        "name": "approved",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "referralCode",
+        "type": "bytes32"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "stakingContractAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lpAmountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmountsOut",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct RemoveLiquidityData",
+            "name": "removeLiquidityData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapOutData",
+        "name": "harvestZapData",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lpAmountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmountsOut",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct RemoveLiquidityData",
+            "name": "removeLiquidityData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapOutData",
+        "name": "withdrawZapData",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "extraData",
+        "type": "bytes"
+      }
+    ],
+    "name": "exit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factory",
+    "outputs": [
+      {
+        "internalType": "contract SickleFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "feesLib",
+    "outputs": [
+      {
+        "internalType": "contract FeesLib",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "stakingContractAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lpAmountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmountsOut",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct RemoveLiquidityData",
+            "name": "removeLiquidityData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapOutData",
+        "name": "zapData",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "extraData",
+        "type": "bytes"
+      }
+    ],
+    "name": "harvest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "fromStakingContractAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lpAmountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmountsOut",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct RemoveLiquidityData",
+            "name": "removeLiquidityData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapOutData",
+        "name": "withdrawZapData",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "withdrawExtraData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "address",
+        "name": "toStakingContractAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "desiredAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct AddLiquidityData",
+            "name": "addLiquidityData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapInData",
+        "name": "depositZapData",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "depositExtraData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "address[]",
+        "name": "sweepTokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "rebalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "stakingContractAddress",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lpAmountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmountsOut",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct RemoveLiquidityData",
+            "name": "removeLiquidityData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapOutData",
+        "name": "zapData",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "extraData",
+        "type": "bytes"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "wrappedNativeAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "desiredAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmounts",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct AddLiquidityData",
+            "name": "addLiquidityData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapInData",
+        "name": "zapData",
+        "type": "tuple"
+      }
+    ],
+    "name": "zapIn",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lpAmountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "minAmountsOut",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct RemoveLiquidityData",
+            "name": "removeLiquidityData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "extraData",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ZapModule.ZapOutData",
+        "name": "zapData",
+        "type": "tuple"
+      }
+    ],
+    "name": "zapOut",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x351591b9af4b61fcca9bbb4b0c5dbf000fd232f7",
+  "chain_id": 8453,
+  "contract_name": "PlunderV3Factory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 157,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:16.567Z"
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IPositionSettingsRegistry",
+        "name": "positionSettingsRegistry",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "stakingContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolIndex",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Farm",
+        "name": "farm",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "pool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "automateRewards",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum RewardBehavior",
+                "name": "rewardBehavior",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "harvestTokenOut",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct RewardConfig",
+            "name": "rewardConfig",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoExit",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "baseTokenIndex",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "quoteTokenIndex",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerPriceLow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "exitTokenOutLow",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerPriceHigh",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "exitTokenOutHigh",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "triggerReservesLow",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "address[]",
+                "name": "triggerReservesTokensOut",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "priceImpactBP",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "slippageBP",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ExitConfig",
+            "name": "exitConfig",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bytes",
+            "name": "extraData",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct PositionSettings",
+        "name": "settings",
+        "type": "tuple"
+      }
+    ],
+    "name": "setPositionSettings",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

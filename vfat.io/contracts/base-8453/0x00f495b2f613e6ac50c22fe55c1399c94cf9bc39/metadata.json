@@ -1,0 +1,17 @@
+{
+  "address": "0x00f495b2f613e6ac50c22fe55c1399c94cf9bc39",
+  "chain_id": 8453,
+  "contract_name": "AggregatorConnector",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "000000000000000000000000f2614a233c7c3e7f08b1f887ba133a13f1eb2c55",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:10.894Z"
+}

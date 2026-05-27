@@ -1,0 +1,17 @@
+{
+  "address": "0xae63213b0c22f0e7fff46c1b1cdf9d07ed307298",
+  "chain_id": 5000,
+  "contract_name": "FeeConverterOdos",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "000000000000000000000000982ce53ab2c9d7b841af04d8df87879f73929b12000000000000000000000000d9f4e85489adcd0baf0cd63b4231c6af58c26745000000000000000000000000cda86a272531e8640cd7f1a92c01839911b90bb0000000000000000000000000b5bd280567c5a62df1a5570c88e63a5670cba22d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:24.904Z"
+}

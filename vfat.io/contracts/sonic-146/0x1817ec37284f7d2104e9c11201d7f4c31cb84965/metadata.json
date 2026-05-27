@@ -1,0 +1,17 @@
+{
+  "address": "0x1817ec37284f7d2104e9c11201d7f4c31cb84965",
+  "chain_id": 146,
+  "contract_name": "DustSwapper",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1633,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 42,
+  "constructor_arguments": "00000000000000000000000007712d748c40608810a0305751e35f0eedef70d2",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:13.944Z"
+}

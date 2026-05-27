@@ -1,0 +1,63 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IStakingRewardsFactory",
+        "name": "stakingRewardsFactory_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AerodromeGaugeConnector",
+        "name": "aerodromeGaugeConnector_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "aerodromeGaugeConnector",
+    "outputs": [
+      {
+        "internalType": "contract AerodromeGaugeConnector",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "connectorOf",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stakingRewardsFactory",
+    "outputs": [
+      {
+        "internalType": "contract IStakingRewardsFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

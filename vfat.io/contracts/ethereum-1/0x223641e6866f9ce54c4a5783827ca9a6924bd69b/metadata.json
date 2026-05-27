@@ -1,0 +1,18 @@
+{
+  "address": "0x223641e6866f9ce54c4a5783827ca9a6924bd69b",
+  "chain_id": 1,
+  "contract_name": "SimpleLendingStrategy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, GPL-2.0-or-later, GPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 44,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:10.894Z"
+}

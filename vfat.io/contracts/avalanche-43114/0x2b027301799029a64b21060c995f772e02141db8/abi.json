@@ -1,0 +1,269 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "stakingContract",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "poolIndex",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Farm",
+            "name": "farm",
+            "type": "tuple"
+          },
+          {
+            "internalType": "contract INonfungiblePositionManager",
+            "name": "nft",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct NftPosition",
+        "name": "position",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint128",
+        "name": "",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "",
+        "type": "uint128"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "claim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "stakingContract",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "poolIndex",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Farm",
+            "name": "farm",
+            "type": "tuple"
+          },
+          {
+            "internalType": "contract INonfungiblePositionManager",
+            "name": "nft",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct NftPosition",
+        "name": "position",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "depositExistingNft",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "stakingContract",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "poolIndex",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Farm",
+            "name": "farm",
+            "type": "tuple"
+          },
+          {
+            "internalType": "contract INonfungiblePositionManager",
+            "name": "nft",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct NftPosition",
+        "name": "position",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "name": "earned",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "stakingContract",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "poolIndex",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Farm",
+            "name": "farm",
+            "type": "tuple"
+          },
+          {
+            "internalType": "contract INonfungiblePositionManager",
+            "name": "nft",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct NftPosition",
+        "name": "position",
+        "type": "tuple"
+      }
+    ],
+    "name": "isStaked",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "stakingContract",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "poolIndex",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct Farm",
+            "name": "farm",
+            "type": "tuple"
+          },
+          {
+            "internalType": "contract INonfungiblePositionManager",
+            "name": "nft",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct NftPosition",
+        "name": "position",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "withdrawNft",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

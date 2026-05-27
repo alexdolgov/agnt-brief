@@ -1,0 +1,18 @@
+{
+  "address": "0x6b25532e1060ce10cc3b0a99e5683b91bfde6982",
+  "chain_id": 43114,
+  "contract_name": "TokenMessenger",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:23:44.148Z"
+}

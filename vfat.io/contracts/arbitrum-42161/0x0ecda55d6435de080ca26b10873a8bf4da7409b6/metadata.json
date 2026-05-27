@@ -1,0 +1,17 @@
+{
+  "address": "0x0ecda55d6435de080ca26b10873a8bf4da7409b6",
+  "chain_id": 42161,
+  "contract_name": "SimpleFarmStrategy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "00000000000000000000000053d9780dbd3831e3a797fd215be4131636cd5fdf00000000000000000000000064f4354023bff20d73b5774e01ed80d59c7403ce00000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab1000000000000000000000000f3442bb9f63d35e668dde0abf61b7f716156d204",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:11.540Z"
+}

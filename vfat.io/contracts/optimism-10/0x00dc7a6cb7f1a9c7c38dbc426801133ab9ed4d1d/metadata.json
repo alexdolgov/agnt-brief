@@ -1,0 +1,18 @@
+{
+  "address": "0x00dc7a6cb7f1a9c7c38dbc426801133ab9ed4d1d",
+  "chain_id": 10,
+  "contract_name": "OmniV3Connector",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:10.037Z"
+}

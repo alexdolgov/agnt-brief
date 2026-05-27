@@ -1,0 +1,117 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IGaugeRegistryVoter",
+        "name": "voter_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IV2PoolFactory",
+        "name": "v2PoolFactory_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ICLPoolFactory",
+        "name": "slipstreamPoolFactory_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AerodromeGaugeConnector",
+        "name": "v2GaugeConnector_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract SlipstreamGaugeConnector",
+        "name": "slipstreamGaugeConnector_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "connectorOf",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "slipstreamGaugeConnector",
+    "outputs": [
+      {
+        "internalType": "contract SlipstreamGaugeConnector",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "slipstreamPoolFactory",
+    "outputs": [
+      {
+        "internalType": "contract ICLPoolFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "v2GaugeConnector",
+    "outputs": [
+      {
+        "internalType": "contract AerodromeGaugeConnector",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "v2PoolFactory",
+    "outputs": [
+      {
+        "internalType": "contract IV2PoolFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "voter",
+    "outputs": [
+      {
+        "internalType": "contract IGaugeRegistryVoter",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

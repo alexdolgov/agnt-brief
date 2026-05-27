@@ -1,0 +1,17 @@
+{
+  "address": "0x0ecda55d6435de080ca26b10873a8bf4da7409b6",
+  "chain_id": 146,
+  "contract_name": "ShadowGaugeRegistry",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 33,
+  "constructor_arguments": "0000000000000000000000009f59398d0a397b2eeb8a6123a6c7295cb0b0062d000000000000000000000000bd89f4c0726afa67afcef8aab171108514a9bfb80000000000000000000000006eedd06ebe34cd1e8722961215abed38011a8ce5",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:21.707Z"
+}

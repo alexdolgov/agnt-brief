@@ -1,0 +1,17 @@
+{
+  "address": "0x2edcc187e0eb6a04d792ceaa1a1b7ad537295bd1",
+  "chain_id": 42161,
+  "contract_name": "RebalanceStrategy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "00000000000000000000000053d9780dbd3831e3a797fd215be4131636cd5fdf000000000000000000000000f3442bb9f63d35e668dde0abf61b7f716156d204000000000000000000000000c0c3e0a8e4979ece2aa98370b091fd9586d412b7000000000000000000000000df70bbcf26dfa446f0f492ec0fe054966e31691600000000000000000000000019a2ddd33b0acf84fe9dd5256ff339e9e63388de0000000000000000000000004f025aba4887631a6d601ae3156bf53568f5a5fd",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:11.738Z"
+}

@@ -1,0 +1,1405 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IMasterChef",
+        "name": "masterchef",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IJoeStaking",
+        "name": "joeStaking",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "nativeSymbol",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "start",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "nb",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getFarmData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "masterChef",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "moe",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVotes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalMoePerSec",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalNumberOfFarms",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userTotalVeMoe",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userTotalVotes",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "pid",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "isRewardable",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "votesOnFarm",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "moePerSec",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalVotesOnFarm",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "decimals",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct MoeLens.Token",
+                "name": "lpToken",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalStaked",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalSupply",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "decimals",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "string",
+                        "name": "symbol",
+                        "type": "string"
+                      }
+                    ],
+                    "internalType": "struct MoeLens.Token",
+                    "name": "token0",
+                    "type": "tuple"
+                  },
+                  {
+                    "components": [
+                      {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "decimals",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "string",
+                        "name": "symbol",
+                        "type": "string"
+                      }
+                    ],
+                    "internalType": "struct MoeLens.Token",
+                    "name": "token1",
+                    "type": "tuple"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "reserve0",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "reserve1",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct MoeLens.Reserves",
+                "name": "reserves",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bool",
+                    "name": "isSet",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isStarted",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isEnded",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "pid",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "totalDeposited",
+                    "type": "uint256"
+                  },
+                  {
+                    "components": [
+                      {
+                        "components": [
+                          {
+                            "internalType": "address",
+                            "name": "token",
+                            "type": "address"
+                          },
+                          {
+                            "internalType": "uint256",
+                            "name": "decimals",
+                            "type": "uint256"
+                          },
+                          {
+                            "internalType": "string",
+                            "name": "symbol",
+                            "type": "string"
+                          }
+                        ],
+                        "internalType": "struct MoeLens.Token",
+                        "name": "token",
+                        "type": "tuple"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "userPendingAmount",
+                        "type": "uint256"
+                      }
+                    ],
+                    "internalType": "struct MoeLens.Reward",
+                    "name": "reward",
+                    "type": "tuple"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "rewardPerSec",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "lastUpdateTimestamp",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "endUpdateTimestamp",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct MoeLens.Rewarder",
+                "name": "rewarder",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "userVotesOnFarm",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "userAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "userPendingMoeReward",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct MoeLens.Farm[]",
+            "name": "farms",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct MoeLens.FarmData",
+        "name": "farms",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "pid",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getFarmDataAt",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "pid",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isRewardable",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "votesOnFarm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "moePerSec",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVotesOnFarm",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "decimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct MoeLens.Token",
+            "name": "lpToken",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalStaked",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupply",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "decimals",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct MoeLens.Token",
+                "name": "token0",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "decimals",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct MoeLens.Token",
+                "name": "token1",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "reserve0",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "reserve1",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct MoeLens.Reserves",
+            "name": "reserves",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "isSet",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isStarted",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isEnded",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pid",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalDeposited",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "decimals",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "string",
+                        "name": "symbol",
+                        "type": "string"
+                      }
+                    ],
+                    "internalType": "struct MoeLens.Token",
+                    "name": "token",
+                    "type": "tuple"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "userPendingAmount",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct MoeLens.Reward",
+                "name": "reward",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardPerSec",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastUpdateTimestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "endUpdateTimestamp",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct MoeLens.Rewarder",
+            "name": "rewarder",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userVotesOnFarm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userPendingMoeReward",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MoeLens.Farm",
+        "name": "farm",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getJoeStakingData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "joeStakingAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "joeAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "rewarderAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalStaked",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userStaked",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "decimals",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct MoeLens.Token",
+                "name": "token",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "userPendingAmount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct MoeLens.Reward",
+            "name": "userReward",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct MoeLens.JoeStakingData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "pid",
+        "type": "uint256"
+      }
+    ],
+    "name": "getMasterChefPendingRewardsAt",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "moeReward",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "extraToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "extraReward",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "lpToken",
+        "type": "address"
+      }
+    ],
+    "name": "getPoolDataAt",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "decimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct MoeLens.Token",
+            "name": "token0",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "decimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct MoeLens.Token",
+            "name": "token1",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserve0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserve1",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MoeLens.Reserves",
+        "name": "reserves",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRewardData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "decimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct MoeLens.Token",
+            "name": "token",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userPendingAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MoeLens.Reward",
+        "name": "reward",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getStakingData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "moeStakingAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "veMoeAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "sMoeAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalStaked",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVotes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userStaked",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userTotalVeMoe",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userTotalVotes",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "decimals",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct MoeLens.Token",
+                "name": "token",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "userPendingAmount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct MoeLens.Reward[]",
+            "name": "userRewards",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct MoeLens.MoeStakingData",
+        "name": "staking",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "start",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "nb",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getVeMoeData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "moeStakingAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "veMoeAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVotes",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxVeMoe",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "veMoePerSecondPerMoe",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "topPoolsIds",
+            "type": "uint256[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "pid",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalVotesOnFarm",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "bool",
+                    "name": "isSet",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isStarted",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "isEnded",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "pid",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "totalDeposited",
+                    "type": "uint256"
+                  },
+                  {
+                    "components": [
+                      {
+                        "components": [
+                          {
+                            "internalType": "address",
+                            "name": "token",
+                            "type": "address"
+                          },
+                          {
+                            "internalType": "uint256",
+                            "name": "decimals",
+                            "type": "uint256"
+                          },
+                          {
+                            "internalType": "string",
+                            "name": "symbol",
+                            "type": "string"
+                          }
+                        ],
+                        "internalType": "struct MoeLens.Token",
+                        "name": "token",
+                        "type": "tuple"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "userPendingAmount",
+                        "type": "uint256"
+                      }
+                    ],
+                    "internalType": "struct MoeLens.Reward",
+                    "name": "reward",
+                    "type": "tuple"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "rewardPerSec",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "lastUpdateTimestamp",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "endUpdateTimestamp",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct MoeLens.Rewarder",
+                "name": "rewarder",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "userVotesOnFarm",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "userPendingReward",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct MoeLens.Vote[]",
+            "name": "votes",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userTotalVeMoe",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userTotalVotes",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MoeLens.VeMoeData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "pid",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getVeMoeDataAt",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "pid",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVotesOnFarm",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "isSet",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isStarted",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isEnded",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pid",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalDeposited",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "decimals",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "string",
+                        "name": "symbol",
+                        "type": "string"
+                      }
+                    ],
+                    "internalType": "struct MoeLens.Token",
+                    "name": "token",
+                    "type": "tuple"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "userPendingAmount",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct MoeLens.Reward",
+                "name": "reward",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardPerSec",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastUpdateTimestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "endUpdateTimestamp",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct MoeLens.Rewarder",
+            "name": "rewarder",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userVotesOnFarm",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userPendingReward",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MoeLens.Vote",
+        "name": "vote",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "start",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "nb",
+        "type": "uint256"
+      }
+    ],
+    "name": "getVeMoeRewarderData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "rewarderFactory",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalNumberOfRewarders",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bool",
+                "name": "isSet",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isStarted",
+                "type": "bool"
+              },
+              {
+                "internalType": "bool",
+                "name": "isEnded",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "pid",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalDeposited",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "components": [
+                      {
+                        "internalType": "address",
+                        "name": "token",
+                        "type": "address"
+                      },
+                      {
+                        "internalType": "uint256",
+                        "name": "decimals",
+                        "type": "uint256"
+                      },
+                      {
+                        "internalType": "string",
+                        "name": "symbol",
+                        "type": "string"
+                      }
+                    ],
+                    "internalType": "struct MoeLens.Token",
+                    "name": "token",
+                    "type": "tuple"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "userPendingAmount",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct MoeLens.Reward",
+                "name": "reward",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "rewardPerSec",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lastUpdateTimestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "endUpdateTimestamp",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct MoeLens.Rewarder[]",
+            "name": "rewarders",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct MoeLens.VeMoeRewarderData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getVeMoeRewarderDataAt",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isSet",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isStarted",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isEnded",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pid",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalDeposited",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "token",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "decimals",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "string",
+                    "name": "symbol",
+                    "type": "string"
+                  }
+                ],
+                "internalType": "struct MoeLens.Token",
+                "name": "token",
+                "type": "tuple"
+              },
+              {
+                "internalType": "uint256",
+                "name": "userPendingAmount",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct MoeLens.Reward",
+            "name": "reward",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "rewardPerSec",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastUpdateTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "endUpdateTimestamp",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct MoeLens.Rewarder",
+        "name": "rewarder",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

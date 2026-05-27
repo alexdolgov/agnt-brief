@@ -1,0 +1,17 @@
+{
+  "address": "0x02427335676a5bef943eb20b73caaae08936e46c",
+  "chain_id": 59144,
+  "contract_name": "FarmStrategy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "00000000000000000000000053d9780dbd3831e3a797fd215be4131636cd5fdf00000000000000000000000008f0f10ef017cc57d2af1e1c2365807bdff99e9c0000000000000000000000003575aa02ae85d8cd2aae6dcaa5d8750cfc9622e6000000000000000000000000e5d7c2a44ffddf6b295a15c148167daaaf5cf34f",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:08.696Z"
+}

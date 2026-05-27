@@ -1,0 +1,17 @@
+{
+  "address": "0x08fc606dd7f714d4cdce4d97c0d5ec8377c33c95",
+  "chain_id": 1,
+  "contract_name": "FlashloanLib",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "000000000000000000000000c6aacd959b35c6062ed422dd1537fb9cb61fc2e6000000000000000000000000dadd28bc1b2fb90b9cd07877ab38e08cab79d99500000000000000000000000000891bf78983e277c11aa758eb807e104fc1af7f0000000000000000000000004a695de5c6d2e12a76a4ee6ab7b7ce704a73058c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:08.688Z"
+}

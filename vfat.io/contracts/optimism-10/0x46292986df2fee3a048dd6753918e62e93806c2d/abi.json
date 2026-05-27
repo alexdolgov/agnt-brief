@@ -1,0 +1,1085 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "factory_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "feesLib",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "wrappedNativeAddress_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ApproveFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ETHTransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "IncorrectMsgValue",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOwnerOrApproved",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOwnerOrApprovedOrInternal",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotOwnerOrInternal",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotRegisteredSickle",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SickleNotDeployed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TransferFromFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetGauge",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "factory",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct IRouter.Route[]",
+                "name": "route",
+                "type": "tuple[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "isStablePool",
+                "type": "bool"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenA",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenB",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "desiredAmountA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "desiredAmountB",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountB",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AddLiquidityData",
+            "name": "addLiquidityData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ZapInData",
+        "name": "zapData",
+        "type": "tuple"
+      }
+    ],
+    "name": "_delegatecall_aerodrome_compound",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetGauge",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "factory",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct IRouter.Route[]",
+                "name": "route",
+                "type": "tuple[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "isStablePool",
+                "type": "bool"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenA",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenB",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "desiredAmountA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "desiredAmountB",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountB",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AddLiquidityData",
+            "name": "addLiquidityData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ZapInData",
+        "name": "zapData",
+        "type": "tuple"
+      }
+    ],
+    "name": "_delegatecall_aerodrome_deposit",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetGauge",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "isStablePool",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lpAmountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOutA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOutB",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RemoveLiquidityData",
+            "name": "removeLiquidityData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "factory",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct IRouter.Route[]",
+                "name": "route",
+                "type": "tuple[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "feeToken",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ZapOutData",
+        "name": "zapData",
+        "type": "tuple"
+      }
+    ],
+    "name": "_delegatecall_aerodrome_harvest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetGauge",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "isStablePool",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lpAmountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOutA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOutB",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RemoveLiquidityData",
+            "name": "removeLiquidityData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "factory",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct IRouter.Route[]",
+                "name": "route",
+                "type": "tuple[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "feeToken",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ZapOutData",
+        "name": "zapData",
+        "type": "tuple"
+      }
+    ],
+    "name": "_delegatecall_aerodrome_withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sickleAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetGauge",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "factory",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct IRouter.Route[]",
+                "name": "route",
+                "type": "tuple[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "isStablePool",
+                "type": "bool"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenA",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenB",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "desiredAmountA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "desiredAmountB",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountB",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AddLiquidityData",
+            "name": "addLiquidityData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ZapInData",
+        "name": "zapData",
+        "type": "tuple"
+      }
+    ],
+    "name": "aerodrome_compound",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sickleAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetGauge",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "factory",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct IRouter.Route[]",
+                "name": "route",
+                "type": "tuple[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "isStablePool",
+                "type": "bool"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenA",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenB",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "desiredAmountA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "desiredAmountB",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountB",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AddLiquidityData",
+            "name": "addLiquidityData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ZapInData",
+        "name": "zapData",
+        "type": "tuple"
+      }
+    ],
+    "name": "aerodrome_deposit",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sickleAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetGauge",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "isStablePool",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lpAmountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOutA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOutB",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RemoveLiquidityData",
+            "name": "removeLiquidityData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "factory",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct IRouter.Route[]",
+                "name": "route",
+                "type": "tuple[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "feeToken",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ZapOutData",
+        "name": "zapData",
+        "type": "tuple"
+      }
+    ],
+    "name": "aerodrome_harvest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sickleAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetGauge",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "lpToken",
+                "type": "address"
+              },
+              {
+                "internalType": "bool",
+                "name": "isStablePool",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "lpAmountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOutA",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOutB",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RemoveLiquidityData",
+            "name": "removeLiquidityData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "bool",
+                    "name": "stable",
+                    "type": "bool"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "factory",
+                    "type": "address"
+                  }
+                ],
+                "internalType": "struct IRouter.Route[]",
+                "name": "route",
+                "type": "tuple[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct SwapData[]",
+            "name": "swaps",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address",
+            "name": "feeToken",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ZapOutData",
+        "name": "zapData",
+        "type": "tuple"
+      }
+    ],
+    "name": "aerodrome_withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "feesLib",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "wrappedNativeAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

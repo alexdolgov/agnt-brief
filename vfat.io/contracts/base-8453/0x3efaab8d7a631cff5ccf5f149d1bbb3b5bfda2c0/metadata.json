@@ -1,0 +1,18 @@
+{
+  "address": "0x3efaab8d7a631cff5ccf5f149d1bbb3b5bfda2c0",
+  "chain_id": 8453,
+  "contract_name": "PancakeInterfaceMulticallV2",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:16.344Z"
+}

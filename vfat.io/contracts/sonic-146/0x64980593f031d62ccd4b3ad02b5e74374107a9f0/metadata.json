@@ -1,0 +1,17 @@
+{
+  "address": "0x64980593f031d62ccd4b3ad02b5e74374107a9f0",
+  "chain_id": 146,
+  "contract_name": "Gems",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 1633,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "0000000000000000000000005e7a9eea6988063a4dbb9ccddb3e04c923e8e37f",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:24.554Z"
+}

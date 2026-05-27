@@ -1,0 +1,18 @@
+{
+  "address": "0x0cfed16b402116eacac8b0e85bb46530a7c55302",
+  "chain_id": 10,
+  "contract_name": "ExactTransferLib",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:07.327Z"
+}

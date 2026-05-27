@@ -1,0 +1,18 @@
+{
+  "address": "0x08f0f10ef017cc57d2af1e1c2365807bdff99e9c",
+  "chain_id": 146,
+  "contract_name": "SickleRegistry",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:09.478Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x1e2bc5c694af33a3dd8dc8f06b7b959e70612f72",
+  "chain_id": 146,
+  "contract_name": "ThenaV3Connector",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:12.342Z"
+}

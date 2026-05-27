@@ -1,0 +1,16 @@
+# ZapLib
+
+| Field | Value |
+|---|---|
+| Chain | polygon (137) |
+| Address | `0x0f6abc6b808b377d6aed8da1fad5e135c99c81a3` |
+| Role | adapter |
+| Origin | needs_review |
+| Audited | Yes |
+| Audits | [ackee-blockchain-vfat-farm-strategies-report.pdf](https://github.com/Ackee-Blockchain/public-audit-reports/blob/master/2025/ackee-blockchain-vfat-farm-strategies-report.pdf) |
+| Deployments | 50 (ethereum `0x5310bc35dab81be7a5cd34546b8a186d2604687a`; ethereum `0xa573369b71509e992809bd01e41e1d13c1d8d15e`; ethereum `0xa66aef2c2d4d0dbdcd3dabdbb068ab700ac8293a`; ethereum `0xafcb6b953db124a279b2af6fae92a68ae6a12bd4`; optimism `0x3747fd29c21eb76ddff850ae67b420bf96af9f38`; optimism `0x4763ebb49b5f6c3990e1976d34e4fb75b1d78fd9`; optimism `0x6a7bbf6819f41015acacd81d47a553962f7de5cf`; optimism `0x97e7e35406953630ff206e66d527f3821aceec69`; optimism `0xb1e94d83333ad79ab74fc8ca6f4fafff5fbac6da`; optimism `0xcaa3a49a3b1fc0c9727d9e5f936891ddd55885fd`; optimism `0xf2cfa4f61e4b4bd9fb7bcda693fc939b681a8832`; unichain `0xed21763d21c09c6518e200d45ec6ce48c8274314`; unichain `0xf501a9eb16665657dd5493a59f821b1f5bdec3a9`; polygon [`0x0f6abc6b808b377d6aed8da1fad5e135c99c81a3`](../0x0f6abc6b808b377d6aed8da1fad5e135c99c81a3/); polygon `0x64dab15f98aa201a68707a40043aa57e749a4641`; polygon `0xbbddb992caf83388b216af8aeb8a0ac8a4bdd932`; sonic `0x46292986df2fee3a048dd6753918e62e93806c2d`; sonic `0x50f3c65c6b2c754fd1a3c86c61284c631e6f493f`; sonic `0xf9340fa6831bd14facbe4be3019a0152b33e06c8`; fraxtal `0x46292986df2fee3a048dd6753918e62e93806c2d`; fraxtal `0x83631c1dd38a48589622784c30f3119859590c4a`; fraxtal `0xf501a9eb16665657dd5493a59f821b1f5bdec3a9`; mantle `0x16a54ae47b7e2eea0ed60438ab5d970c284ffcf0`; mantle `0x76384443b91a576809dfc2cdc0f7ae8f3148147a`; mantle `0x9b14c4dd71fc3b22a35c920abf320af475b3f557`; mantle `0xba38483d78d56e63248e876bf59c01601b8f6ba5`; base `0x2d1732d585e15276592e0074c360f2f2a2413d0f`; base `0x7eb798450484be0b042d5219ac77ed40a239b4d4`; base `0xf5f3b916bb1d182f6fc3e0fa9b76823986c991a3`; base `0xf8bd6d974039b6f49c7d2e74f0a0bd48e0a3669a`; mode `0x54d81f06f7ee744a46048d0edd9983e69994eacf`; mode `0x72b10dc817658293b3703e9e8eb069e1627bef2e`; mode `0x79768339555e213d32642ac94089ab584d9b4c9e`; mode `0x99800fb693322210cb4f175194807eb14436a8ed`; mode `0xb61c567ee2d90be26adeaef632fdedd97689bf86`; mode `0xc0c3e0a8e4979ece2aa98370b091fd9586d412b7`; arbitrum `0x5c7077c9a4708a57e21de73f5636c769938b508e`; arbitrum `0xbdb926f4f05c9af08af3d36df37127a396cb719f`; arbitrum `0xc0c3e0a8e4979ece2aa98370b091fd9586d412b7`; arbitrum `0xfb578a147bdea6320eaf1d6714b7099a737dd953`; avalanche `0x46292986df2fee3a048dd6753918e62e93806c2d`; avalanche `0xb7c1be5b2caabaf4f638d6c9d10d662f27d9ab95`; avalanche `0xf6d5c2240d078ad72c842137db2fbda86d7db262`; linea `0x48ea9dc1cde3063bc7ae1c4e5973a6224e6bee4d`; linea `0x5bc457e175f89594e7f25d199bec0550ae472566`; linea `0x71de28cc40154a6f198cfef48476c60d2a07be8f`; linea `0x9774e26f467f1ac603b63444bcdeb4b519a4f3ea`; linea `0xab2ee5770becce48cd5c18b92c9bae317a3518be`; linea `0xcaa3a49a3b1fc0c9727d9e5f936891ddd55885fd`; linea `0xef54970d9e11f36abb3f5635728f00852e3854ac`) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

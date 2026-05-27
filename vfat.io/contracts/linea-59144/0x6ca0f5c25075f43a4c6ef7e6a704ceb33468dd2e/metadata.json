@@ -1,0 +1,17 @@
+{
+  "address": "0x6ca0f5c25075f43a4c6ef7e6a704ceb33468dd2e",
+  "chain_id": 59144,
+  "contract_name": "MasterChefV3KeeperV2",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "00000000000000000000000022e2f236065b780fa33ec8c4e58b99ebc8b55c570000000000000000000000001c1081e2bb3c2f3805bc89e1951c15be551d7ecd0000000000000000000000000d1e753a25ebda689453309112904807625befbe",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:15.693Z"
+}

@@ -1,0 +1,117 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IGaugeRegistryVoter",
+        "name": "voter_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPoolFactory",
+        "name": "v2PairFactory_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPoolFactory",
+        "name": "slipstreamPairFactory_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AerodromeGaugeConnector",
+        "name": "v2GaugeConnector_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AerodromeSlipstreamGaugeConnector",
+        "name": "slipstreamGaugeConnector_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "connectorOf",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "slipstreamGaugeConnector",
+    "outputs": [
+      {
+        "internalType": "contract AerodromeSlipstreamGaugeConnector",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "slipstreamPairFactory",
+    "outputs": [
+      {
+        "internalType": "contract IPoolFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "v2GaugeConnector",
+    "outputs": [
+      {
+        "internalType": "contract AerodromeGaugeConnector",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "v2PairFactory",
+    "outputs": [
+      {
+        "internalType": "contract IPoolFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "voter",
+    "outputs": [
+      {
+        "internalType": "contract IGaugeRegistryVoter",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,819 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract SickleFactory",
+        "name": "_factory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ConnectorRegistry",
+        "name": "connectorRegistry",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "timelockAdmin",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AutoCompoundNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AutoExitNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AutoHarvestNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ConditionsNotMet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExitTriggersNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidExitTriggers",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPrice",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidPriceImpactBP",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidSlippageBP",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTokenOut",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NonZeroExitConfig",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NonZeroRewardConfig",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotTimelockAdminError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlySickle",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RewardBehaviorNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SickleNotDeployed",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "connectorRegistry",
+        "type": "address"
+      }
+    ],
+    "name": "ConnectionRegistrySet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract Sickle",
+            "name": "sickle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "stakingContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolIndex",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct PositionKey",
+        "name": "key",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract IPool",
+            "name": "pair",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "automateRewards",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum RewardBehavior",
+                "name": "rewardBehavior",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "harvestTokenOut",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct RewardConfig",
+            "name": "rewardConfig",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoExit",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "triggerPriceHigh",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerPriceLow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerReserves0",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerReserves1",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "exitTokenOutLow",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "exitTokenOutHigh",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "priceImpactBP",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "slippageBP",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ExitConfig",
+            "name": "exitConfig",
+            "type": "tuple"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct PositionSettings",
+        "name": "settings",
+        "type": "tuple"
+      }
+    ],
+    "name": "PositionSettingsSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldTimelockAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newTimelockAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "TimelockAdminSet",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "_get_sickle_by_owner",
+    "outputs": [
+      {
+        "internalType": "contract Sickle",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factory",
+    "outputs": [
+      {
+        "internalType": "contract SickleFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract Sickle",
+            "name": "sickle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "stakingContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolIndex",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PositionKey",
+        "name": "key",
+        "type": "tuple"
+      }
+    ],
+    "name": "getPositionSettings",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IPool",
+            "name": "pair",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "automateRewards",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum RewardBehavior",
+                "name": "rewardBehavior",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "harvestTokenOut",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct RewardConfig",
+            "name": "rewardConfig",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoExit",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "triggerPriceHigh",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerPriceLow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerReserves0",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerReserves1",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "exitTokenOutLow",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "exitTokenOutHigh",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "priceImpactBP",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "slippageBP",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ExitConfig",
+            "name": "exitConfig",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct PositionSettings",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ConnectorRegistry",
+        "name": "connectorRegistry",
+        "type": "address"
+      }
+    ],
+    "name": "setConnectorRegistry",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "stakingContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolIndex",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Farm",
+        "name": "farm",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract IPool",
+            "name": "pair",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "automateRewards",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum RewardBehavior",
+                "name": "rewardBehavior",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "harvestTokenOut",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct RewardConfig",
+            "name": "rewardConfig",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoExit",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "triggerPriceHigh",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerPriceLow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerReserves0",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerReserves1",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "exitTokenOutLow",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "exitTokenOutHigh",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "priceImpactBP",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "slippageBP",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ExitConfig",
+            "name": "exitConfig",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct PositionSettings",
+        "name": "settings",
+        "type": "tuple"
+      }
+    ],
+    "name": "setPositionSettings",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "stakingContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolIndex",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Farm[]",
+        "name": "farms",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "enum RewardBehavior",
+            "name": "rewardBehavior",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "harvestTokenOut",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct RewardConfig",
+        "name": "rewardConfig",
+        "type": "tuple"
+      }
+    ],
+    "name": "setPositionSettings",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract Sickle",
+            "name": "sickle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "stakingContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolIndex",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PositionKey",
+        "name": "key",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract IPool",
+            "name": "pair",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "automateRewards",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum RewardBehavior",
+                "name": "rewardBehavior",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "harvestTokenOut",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct RewardConfig",
+            "name": "rewardConfig",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bool",
+            "name": "autoExit",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "triggerPriceHigh",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerPriceLow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerReserves0",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "triggerReserves1",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "exitTokenOutLow",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "exitTokenOutHigh",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "priceImpactBP",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "slippageBP",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct ExitConfig",
+            "name": "exitConfig",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct PositionSettings",
+        "name": "settings",
+        "type": "tuple"
+      }
+    ],
+    "name": "setPositionSettings",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newTimelockAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "setTimelockAdmin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "timelockAdmin",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract Sickle",
+            "name": "sickle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "stakingContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolIndex",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PositionKey",
+        "name": "key",
+        "type": "tuple"
+      }
+    ],
+    "name": "validateCompoundFor",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract Sickle",
+            "name": "sickle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "stakingContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolIndex",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PositionKey",
+        "name": "key",
+        "type": "tuple"
+      }
+    ],
+    "name": "validateExitFor",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract Sickle",
+            "name": "sickle",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "stakingContract",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolIndex",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PositionKey",
+        "name": "key",
+        "type": "tuple"
+      }
+    ],
+    "name": "validateHarvestFor",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

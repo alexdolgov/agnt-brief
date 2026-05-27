@@ -1,0 +1,17 @@
+{
+  "address": "0x04448ed523730142b1eaf647123d9029e8da74fa",
+  "chain_id": 59144,
+  "contract_name": "MasterchefV3Connector",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T07:30:08.890Z"
+}

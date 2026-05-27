@@ -1,0 +1,17 @@
+{
+  "address": "0xb1eead6959cb5bb9b20417d6689922523b2b86c3",
+  "chain_id": 146,
+  "contract_name": "FiatTokenV2_2",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T11:40:08.016Z"
+}

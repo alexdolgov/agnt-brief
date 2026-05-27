@@ -1,0 +1,18 @@
+{
+  "address": "0x0eb74491493e9722cd876ada671ff8a62650ad83",
+  "chain_id": 1088,
+  "contract_name": "EnumerableSet",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 5000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T11:40:06.176Z"
+}

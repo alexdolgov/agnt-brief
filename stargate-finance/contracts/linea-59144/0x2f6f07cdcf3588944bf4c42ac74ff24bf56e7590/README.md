@@ -1,0 +1,16 @@
+# Router
+
+| Field | Value |
+|---|---|
+| Chain | linea (59144) |
+| Address | `0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590` |
+| Role | adapter |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 9 (ethereum `0x8731d54e9d02c286767d56ac03e8037c07e01e98`; optimism `0xaf5191b0de278c7286d6c7cc6ab6bb8a73ba2cd6`; optimism `0xb0d502e938ed5f4df2e681fe6e419ff29631d62b`; polygon `0x45a01e4e04f14f7a4a6702c74187c5f6222033cd`; base `0x45f1a95a4d3f3836523f5c83673c797f4d4d263b`; arbitrum `0x45a01e4e04f14f7a4a6702c74187c5f6222033cd`; arbitrum `0x53bf833a5d6c4dda888f69c22c88c9f356a41614`; avalanche `0x45a01e4e04f14f7a4a6702c74187c5f6222033cd`; linea [`0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590`](../0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590/)) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

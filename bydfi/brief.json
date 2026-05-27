@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0",
+  "project_key": "bydfi",
+  "generated_at": "2026-05-27T11:01:36.743Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "bydfi",
+    "tier": 0,
+    "peak_tvl": 135355937,
+    "peak_date": "2026-01-15T00:00:00.000Z",
+    "tvl_30d_ago": 94970662,
+    "tvl_90d_ago": 86187989,
+    "tvl_current": 91934595,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": null,
+    "change_30d_pct": -3.1968472537340005,
+    "change_90d_pct": 6.667525332329078,
+    "days_since_peak": 132,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 32.07937750081845
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 92693923.21157,
+    "tvl_usd": 92693923.21157,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.bydfi.com/en",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "BYDFi is a centralized exchange (CEX) that uses a Gnosis Safe multisig wallet on Ethereum to manage its on-chain funds and operations.",
+    "relationship_narrative": "The single product family consists of a Gnosis Safe proxy, which serves as the core on-chain infrastructure for the exchange's Ethereum operations.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x845dfa5366776fe44aa49e630c0c86a069d5acd4",
+      "name": "Safe",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "gnosis-safe",
+      "product_line": "BYDFi",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x41675c099f32341bf84bfc5382af534df5c7461a",
+      "impl_name": "Safe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x845dfa5366776fe44aa49e630c0c86a069d5acd4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 1,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

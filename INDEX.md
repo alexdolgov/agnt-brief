@@ -95,6 +95,7 @@
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | dead | 1 | 101 | 2026-05-24 |
 | [butter-network](./butter-network/) | $1.4M | 0.0% | ? | declining | 0 | 6 | 2026-05-24 |
+| [bydfi](./bydfi/) | $92.7M | 0.0% | ? | active | 0 | 1 | 2026-05-27 |
 | [byte-exchange](./byte-exchange/) | $41.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [camelot](./camelot/) | $6.4M | 17.6% | $391.9K | active | 1 | 118 | 2026-05-25 |
 | [canopy](./canopy/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
@@ -494,6 +495,7 @@
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-22 |
 | [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 18 | 3 | 2026-05-23 |
 | [standx](./standx/) | $12.7M | 50.0% | $12.7M | unknown | 6 | 18 | 2026-05-26 |
+| [stargate-finance](./stargate-finance/) | $203.9M | 23.1% | $171.9M | active | 2 | 294 | 2026-05-27 |
 | [stargate](./stargate/) | $6.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [stcelo](./stcelo/) | $1.6M | 50.0% | ? | active | 2 | 19 | 2026-05-24 |
 | [stcyber](./stcyber/) | $51.4M | 0.0% | $51.4M | active | 1 | 31 | 2026-05-24 |

@@ -1,0 +1,16 @@
+# CreditMessaging
+
+| Field | Value |
+|---|---|
+| Chain | metis (1088) |
+| Address | `0x0535d19ca4ef74119c31e1347d5f85232955cd31` |
+| Role | unknown |
+| Origin | native |
+| Audited | Yes |
+| Audits | [Stargate V2 - Zellic FINAL Audit Report.pdf](https://github.com/stargate-protocol/stargate-v2/blob/main/audits/Stargate%20V2%20-%20Zellic%20FINAL%20Audit%20Report.pdf) |
+| Deployments | 34 (ethereum `0x5489ddab89609580835ee6d655cd9b3503e7f97d`; ethereum `0x5c386d85b1b82fd9db681b9176c8a4248bb6345b`; ethereum `0x6b8ad17795d89b283e6d0362a87a403f3544bb9d`; ethereum `0xf5bba76476274762649bb22e08c6950dd681e202`; optimism `0x4694900bdba99edf07a2e46c4093f88f9106a90d`; optimism `0x5eb3bbd97f8e0b612733f11c9eb33356ecf874b5`; optimism `0xda82a31df339bfdf0123661134b4db63cb1706f5`; gnosis `0xe1ad845d93853fff44990ae0dcecd8575293681e`; unichain `0xaf368c91793cb22739386dfcbbb2f1a9e4bcbebf`; polygon `0x27a16dc786820b16e5c9028b75b99f6f604b5d26`; polygon `0x3aa9fd32fc5c28e1e5f8725cff5c2a607b8303d3`; polygon `0xc2b638cb5042c1b3c5d5c969361fb50569840583`; sonic `0x3a1293bdb83bbbdd5ebf4fac96605ad2021bbc0f`; manta `0x102d758f688a4c1c5a80b116bd945d4455460282`; metis [`0x0535d19ca4ef74119c31e1347d5f85232955cd31`](../0x0535d19ca4ef74119c31e1347d5f85232955cd31/); metis `0xa45b5130f36cdca45667738e2a258ab09f4a5f7f`; metis `0xd47b03ee6d86cf251ee7860fb2acf9f91b9fd4d7`; sei `0x13379b489fb2e76cedf96bceaa2441e5930d75e1`; mantle `0x1f605162282570dfa6255d27895587f4117f52fa`; mantle `0x317d8bfc7f6d5f74ede9d9da3b7bbff9cbe90f14`; mantle `0x4141eb977a8646ec60c4c2891aea645118183221`; base `0x12dc9256acc9895b076f6638d628382881e62cee`; base `0x21e6738985aea7d8c547616ffb52d4fe56d92b9e`; base `0x6b73d3cbbb278ce2e8698e983aeccdd94dc4594b`; plasma `0x43f2376d5d03553ae72f4a8093bbe9de4336eb08`; arbitrum `0x4e422b0acb2bd7e3ac70b5c0e5eb806e86a94038`; arbitrum `0x585138287a60ae9ee232238f31e8613ffd7e8c81`; arbitrum `0xf1fcb4cbd57b67d683972a59b6a7b1e2e8bf27e6`; avalanche `0x08bacc0ba73681af12e3df616010032422ae75d3`; avalanche `0x08ed1d79d509a6f1020685535028ae60c144441e`; avalanche `0xa76cd3a43751090c40a35c37b38aa06973cc6184`; linea `0x138eb30f73bc423c6455c53df6d89cb01d9ebc63`; linea `0x73a755894394429a68ad2474981780e0e2429ece`; linea `0x794fe59f3427b89271868c0e2da4e343a9680c32`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

@@ -1,0 +1,550 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoUnbondingNeeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SenderNotAuthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "previousAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "beacon",
+        "type": "address"
+      }
+    ],
+    "name": "BeaconUpgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "depositController",
+        "type": "address"
+      }
+    ],
+    "name": "SetDepositController",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "minTimeBetweenUnbonding",
+        "type": "uint64"
+      }
+    ],
+    "name": "SetMinTimeBetweenUnbonding",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "depositController",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_vaultIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "depositQueuedTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_vaultIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "forceUnbondVaults",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getInactiveVaults",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getInactiveWithdrawableVaults",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getUnbondingVaults",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getVaultDeposits",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getVaultRewards",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getWithdrawableVaults",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_strategy",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_withdrawalPool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_depositController",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_minTimeBetweenUnbonding",
+        "type": "uint64"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minTimeBetweenUnbonding",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_vaultIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_lifetimeRewards",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "_authData",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "restakeRewards",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_depositController",
+        "type": "address"
+      }
+    ],
+    "name": "setDepositController",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "_minTimeBetweenUnbonding",
+        "type": "uint64"
+      }
+    ],
+    "name": "setMinTimeBetweenUnbonding",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "shouldDepositQueuedTokens",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "shouldUnbondVaults",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "shouldWithdrawVaults",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "strategy",
+    "outputs": [
+      {
+        "internalType": "contract IEspressoStrategy",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "timeOfLastUnbond",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unbondVaults",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "upgradeTo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_vaultIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_lifetimeRewards",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "_authData",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "withdrawRewards",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_vaultIds",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "withdrawVaults",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawalPool",
+    "outputs": [
+      {
+        "internalType": "contract IWithdrawalPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

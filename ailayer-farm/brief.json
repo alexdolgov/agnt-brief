@@ -1,0 +1,131 @@
+{
+  "schema_version": "2.0",
+  "project_key": "ailayer-farm",
+  "generated_at": "2026-05-27T13:19:35.805Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "ailayer-farm",
+    "tier": 0,
+    "peak_tvl": 721063885,
+    "peak_date": "2024-06-05T00:00:00.000Z",
+    "tvl_30d_ago": 80888441,
+    "tvl_90d_ago": 70263912,
+    "tvl_current": 78760340,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 92509229,
+    "change_30d_pct": -2.630908660979138,
+    "change_90d_pct": 12.092164751658006,
+    "days_since_peak": 721,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 89.07720361005184
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 79723526.46756,
+    "tvl_usd": 211858.7133419305,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 211858.71
+    },
+    "asd_usd": 211858.7133419305,
+    "website_url": "https://ailayer.xyz/",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "AILayer farm is a yield farming protocol on BSC that allows users to stake or farm AILayer tokens to earn rewards.",
+    "relationship_narrative": "The protocol consists of a single product family centered around the AILayerToken contract, with no additional infrastructure or shared components identified.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x66e3daa0c86e0ad56302d36af0e7c1ba24442244",
+      "name": "AILayerToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "AILayer farm",
+      "tvl_usd": 211858.7133419305,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AILayerToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x66e3daa0c86e0ad56302d36af0e7c1ba24442244",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 211858.7133419305,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x66e3daa0c86e0ad56302d36af0e7c1ba24442244",
+      "name": "AILayerToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 211858.7133419305,
+      "risk_note": "Verified native implementation with $211,858.71 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 1,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

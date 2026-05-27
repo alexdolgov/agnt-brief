@@ -1,0 +1,1121 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "FeesTooLarge",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidParamLengths",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidVaultIds",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MustWithdrawAllVaults",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoRemovalQueued",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoVaultsUnbonding",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RemovalAlreadyQueued",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SenderNotAuthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UnbondingInProgress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ValidatorAlreadyAdded",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feeBasisPoints",
+        "type": "uint256"
+      }
+    ],
+    "name": "AddFee",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "rewardsReceiver",
+        "type": "address"
+      }
+    ],
+    "name": "AddValidator",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "previousAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "beacon",
+        "type": "address"
+      }
+    ],
+    "name": "BeaconUpgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "int256",
+        "name": "balanceChange",
+        "type": "int256"
+      }
+    ],
+    "name": "DepositQueuedTokens",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      }
+    ],
+    "name": "FinalizeValidatorRemoval",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "ForceUnbond",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "rewardsReceiver",
+        "type": "address"
+      }
+    ],
+    "name": "QueueValidatorRemoval",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feeBasisPoints",
+        "type": "uint256"
+      }
+    ],
+    "name": "RemoveFee",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "RestakeRewards",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "validatorMEVRewardsPercentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "SetValidatorMEVRewardsPercentage",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "vaultImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "SetVaultImplementation",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Unbond",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "UnstakeClaim",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feeBasisPoints",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateFee",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "vaults",
+        "type": "address[]"
+      }
+    ],
+    "name": "UpgradedVaults",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_stakingPool",
+        "type": "address"
+      }
+    ],
+    "name": "__Strategy_init",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_receiver",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_feeBasisPoints",
+        "type": "uint256"
+      }
+    ],
+    "name": "addFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_pool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_rewardsReceiver",
+        "type": "address"
+      }
+    ],
+    "name": "addValidator",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "canDeposit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "canWithdraw",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_vaultIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "depositQueuedTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "finalizeValidatorRemoval",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_vaultIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "forceUnbond",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "fundFlowController",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDepositChange",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getFees",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "basisPoints",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PolygonStrategy.Fee[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMaxDeposits",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMinDeposits",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalDeposits",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getValidators",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "pool",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "rewardsReceiver",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PolygonStrategy.Validator[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getVaults",
+    "outputs": [
+      {
+        "internalType": "contract IPolygonVault[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_stakingPool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_stakeManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_vaultImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_validatorMEVRewardsPercentage",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "basisPoints",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PolygonStrategy.Fee[]",
+        "name": "_fees",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "numVaultsUnbonding",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_validatorId",
+        "type": "uint256"
+      }
+    ],
+    "name": "queueValidatorRemoval",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_vaultIds",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "restakeRewards",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_fundFlowController",
+        "type": "address"
+      }
+    ],
+    "name": "setFundFlowController",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_validatorMEVRewardsPercentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "setValidatorMEVRewardsPercentage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_validatorMEVRewardsPool",
+        "type": "address"
+      }
+    ],
+    "name": "setValidatorMEVRewardsPool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "setVaultImplementation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stakeManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "staked",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stakingPool",
+    "outputs": [
+      {
+        "internalType": "contract IStakingPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "token",
+    "outputs": [
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalQueued",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalStaked",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_toUnbond",
+        "type": "uint256"
+      }
+    ],
+    "name": "unbond",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_vaultIds",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "unstakeClaim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "updateDeposits",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "depositChange",
+        "type": "int256"
+      },
+      {
+        "internalType": "address[]",
+        "name": "receivers",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_index",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_receiver",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_feeBasisPoints",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "upgradeTo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_vaults",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "_data",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "upgradeVaults",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "validatorMEVRewardsPercentage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "validatorMEVRewardsPool",
+    "outputs": [
+      {
+        "internalType": "contract IRewardsPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "validatorRemoval",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isActive",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint64",
+        "name": "validatorId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint128",
+        "name": "queuedWithdrawals",
+        "type": "uint128"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "validatorWithdrawalIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vaultImplementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

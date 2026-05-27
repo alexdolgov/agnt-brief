@@ -1,0 +1,440 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_sdlToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_sdlPool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_beneficiary",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_start",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_duration",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_lockTime",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "_staker",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidLockTime",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoTokensReleasable",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SenderNotAuthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VestingAlreadyTerminated",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Released",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "lockTime",
+        "type": "uint64"
+      }
+    ],
+    "name": "SetLockTime",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Staked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "VestingTerminated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_LOCK_TIME",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "beneficiary",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_tokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "claimRESDLRewards",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "duration",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRESDLPositions",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "boostAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint64",
+            "name": "startTime",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "duration",
+            "type": "uint64"
+          },
+          {
+            "internalType": "uint64",
+            "name": "expiry",
+            "type": "uint64"
+          }
+        ],
+        "internalType": "struct ISDLPool.RESDLToken[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lockTime",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "releasable",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "release",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "released",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sdlPool",
+    "outputs": [
+      {
+        "internalType": "contract ISDLPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sdlToken",
+    "outputs": [
+      {
+        "internalType": "contract IERC677",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "_lockTime",
+        "type": "uint64"
+      }
+    ],
+    "name": "setLockTime",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_staker",
+        "type": "address"
+      }
+    ],
+    "name": "setStaker",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stakeReleasableTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "staker",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "start",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "terminateVesting",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "_timestamp",
+        "type": "uint64"
+      }
+    ],
+    "name": "vestedAmount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vestingTerminated",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_lockTimes",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "withdrawRESDLPositions",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

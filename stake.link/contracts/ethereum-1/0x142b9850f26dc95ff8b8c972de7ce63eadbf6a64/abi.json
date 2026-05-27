@@ -1,0 +1,698 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AddressNotContract",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FeesTooLarge",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SenderNotAuthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "previousAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "beacon",
+        "type": "address"
+      }
+    ],
+    "name": "BeaconUpgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "operatorRewardPercentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "SetOperatorRewardPercentage",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "vaultImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "SetVaultImplementation",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "vaults",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "UpgradedVaults",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "signer",
+        "type": "address"
+      }
+    ],
+    "name": "VaultAdded",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_pubkey",
+        "type": "bytes"
+      },
+      {
+        "internalType": "address",
+        "name": "_signer",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_rewardsReceiver",
+        "type": "address"
+      }
+    ],
+    "name": "addVault",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "canWithdraw",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_vaults",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "depositQueuedTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_vaultId",
+        "type": "uint256"
+      }
+    ],
+    "name": "finalizeExit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDepositChange",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMaxDeposits",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMinDeposits",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalDeposits",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalQueuedTokens",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getVaultDepositMax",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getVaultDepositMin",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getVaultDeposits",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getVaults",
+    "outputs": [
+      {
+        "internalType": "contract ISequencerVault[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_lockingInfo",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_vaultImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_rewardRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minRewardsToClaim",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_operatorRewardPercentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_vaultId",
+        "type": "uint256"
+      }
+    ],
+    "name": "initiateExit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "l1Transmitter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lockingInfo",
+    "outputs": [
+      {
+        "internalType": "contract IMetisLockingInfo",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minRewardsToClaim",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "operatorRewardPercentage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rewardRecipient",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_l1Transmitter",
+        "type": "address"
+      }
+    ],
+    "name": "setL1Transmitter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_minRewardsToClaim",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMinRewardsToClaim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_operatorRewardPercentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "setOperatorRewardPercentage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vaultImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "setVaultImplementation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "token",
+    "outputs": [
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_l2Gas",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_l2Fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "updateDeposits",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address[]",
+        "name": "opRewardReceivers",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "opRewardAmounts",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "upgradeTo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_vaults",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "_data",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "upgradeVaults",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vaultImplementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

@@ -1,0 +1,593 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTokenId",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidValue",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SenderNotAuthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "previousAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "beacon",
+        "type": "address"
+      }
+    ],
+    "name": "BeaconUpgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_sharesAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "_merkleProof",
+        "type": "bytes32[]"
+      }
+    ],
+    "name": "claimLSTs",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_tokens",
+        "type": "address[]"
+      }
+    ],
+    "name": "claimRESDLRewards",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "_data",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "deposit",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getMerkleIPFSHash",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRESDLTokenIds",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_distributionSharesAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTotalClaimableLSTs",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalDeposits",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_distributionAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTotalQueuedForDeposit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalQueuedForWithdrawal",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_distributionAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTotalWithdrawable",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_lst",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_priorityPool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_withdrawalPool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_sdlPool",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_staker",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lst",
+    "outputs": [
+      {
+        "internalType": "contract IStakingPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "onERC721Received",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_sender",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_value",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_calldata",
+        "type": "bytes"
+      }
+    ],
+    "name": "onTokenTransfer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "priorityPool",
+    "outputs": [
+      {
+        "internalType": "contract IPriorityPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "proxiableUUID",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sdlPool",
+    "outputs": [
+      {
+        "internalType": "contract ISDLPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "staker",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "token",
+    "outputs": [
+      {
+        "internalType": "contract IERC20Upgradeable",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "upgradeTo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amountToWithdraw",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_distributionAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_distributionSharesAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32[]",
+        "name": "_merkleProof",
+        "type": "bytes32[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_withdrawalIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_batchIds",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "_data",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_tokenId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_receiver",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawRESDLToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawalPool",
+    "outputs": [
+      {
+        "internalType": "contract IWithdrawalPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

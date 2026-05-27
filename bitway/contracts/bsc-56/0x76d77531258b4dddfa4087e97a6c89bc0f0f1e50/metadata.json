@@ -1,0 +1,18 @@
+{
+  "address": "0x76d77531258b4dddfa4087e97a6c89bc0f0f1e50",
+  "chain_id": 56,
+  "contract_name": "BitwayOFTAdapter",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": "LZBL-1.2, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 41,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T16:36:37.624Z"
+}

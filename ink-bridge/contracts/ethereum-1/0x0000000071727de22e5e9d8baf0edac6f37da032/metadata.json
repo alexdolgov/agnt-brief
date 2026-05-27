@@ -1,0 +1,18 @@
+{
+  "address": "0x0000000071727de22e5e9d8baf0edac6f37da032",
+  "chain_id": 1,
+  "contract_name": "EntryPoint",
+  "compiler_version": "v0.8.23+commit.f704f362",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "GPL-3.0, GPL-3.0-only, LGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T16:35:11.381Z"
+}

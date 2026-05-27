@@ -75,6 +75,8 @@
 | [bitomato](./bitomato/) | $2.6M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [bitu-protocol](./bitu-protocol/) | $23.1M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
+| [bitway-earn](./bitway-earn/) | $136.4M | 0.0% | $136.4M | unknown | 3 | 8 | 2026-05-27 |
+| [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | unknown | 3 | 8 | 2026-05-27 |
 | [blackhole](./blackhole/) | $29.9M | 31.1% | ? | unknown | 3 | 86 | 2026-05-22 |
 | [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | unknown | 0 | 19 | 2026-05-26 |
 | [blueshift](./blueshift/) | $4.4M | 0.0% | ? | active | 1 | 24 | 2026-05-25 |
@@ -119,6 +121,7 @@
 | [clearpool](./clearpool/) | $10.7K | 0.0% | $10.7K | active | 0 | 61 | 2026-05-26 |
 | [clever](./clever/) | $12.4M | 10.3% | $10.8M | active | 3 | 78 | 2026-05-23 |
 | [coinsquare](./coinsquare/) | $12.4M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
+| [coinstore](./coinstore/) | $62.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [colend-protocol](./colend-protocol/) | $4.3M | 0.0% | ? | unknown | 7 | 0 | 2026-05-23 |
 | [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 9 | 2026-05-24 |
@@ -257,6 +260,7 @@
 | [init-capital](./init-capital/) | $66.5M | 21.4% | $66.2M | declining | 7 | 102 | 2026-05-25 |
 | [initiadex](./initiadex/) | $3.3M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-05-25 |
+| [ink-bridge](./ink-bridge/) | $59.3M | 0.0% | ? | active | 0 | 68 | 2026-05-27 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-05-23 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | unknown | 9 | 154 | 2026-05-26 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-05-25 |
@@ -264,6 +268,7 @@
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | dead | 0 | 181 | 2026-05-24 |
 | [juicebox](./juicebox/) | $11.2M | 0.0% | ? | active | 0 | 77 | 2026-05-23 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-05-23 |
+| [kaio](./kaio/) | $60.8M | 0.0% | ? | unknown | 0 | 35 | 2026-05-27 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | unknown | 0 | 2 | 2026-05-22 |
 | [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 0 | 22 | 2026-05-23 |
 | [katana-pre-launch](./katana-pre-launch/) | $18.3M | 0.0% | $18.3M | active | 29 | 166 | 2026-05-22 |

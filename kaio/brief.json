@@ -1,0 +1,2725 @@
+{
+  "schema_version": "2.0",
+  "project_key": "kaio",
+  "generated_at": "2026-05-27T16:38:46.081Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "lifecycle_status": "unknown",
+  "lifecycle_signal": {
+    "slug": "kaio",
+    "tier": 0,
+    "peak_tvl": 120131185,
+    "peak_date": "2025-03-06T00:00:00.000Z",
+    "tvl_30d_ago": 89386905,
+    "tvl_90d_ago": 89380971,
+    "tvl_current": 60799208,
+    "tier0_reason": "no_rule_matched",
+    "tvl_180d_ago": 71719263,
+    "change_30d_pct": -31.98197431715529,
+    "change_90d_pct": -31.977458602458007,
+    "days_since_peak": 447,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 49.38932134899027
+  },
+  "summary": {
+    "total_contracts": 35,
+    "total_addresses": 206,
+    "unique_implementations": 35,
+    "total_deployments": 206,
+    "audited_contracts": 0,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 4,
+    "contracts_verified_by_bytecode": 1,
+    "contracts_unverified": 30,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 60800519.13132001,
+    "tvl_usd": 60800519.13132001,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://www.kaio.xyz/",
+    "chains": [
+      "avalanche",
+      "ethereum",
+      "polygon",
+      "sei"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "KAIO is a real-world asset (RWA) tokenization protocol that enables the issuance and management of security tokens representing off-chain assets. It provides mirrored token contracts and receipt tokens across multiple chains, allowing compliant transfer and ownership tracking of tokenized securities.",
+    "relationship_narrative": "All contracts belong to a single product family, KAIO, which uses ERC1967Proxy for upgradeability across its core token contracts. SecurityTokenMirror and LibreReceiptToken instances are deployed via proxies and share supporting infrastructure like InvestorRegistryMirror for compliance and LibreEdgeGateway for cross-chain interactions.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x000a71e5a0014dff449fcd3146af4f2e26c65839",
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd2bc19cb4a2797de5ad3e832926a92f98ee75913",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x000a71e5a0014dff449fcd3146af4f2e26c65839",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x03c660e694046cabacbe8b787f83ffd9cbd125d3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x07e19c3e88f7b61138647b0b8913ac15ff3d7c3f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x2002fa7e0173e8e2ec5dd359f84b504a004f95d2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x3246d4593128712e26cca6953f02370c55fe0443",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x3f606ac7eafdc0d9d7ec69cfa0517596aa8fd181",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x42ef2053783611b984ca6acb19e673e2a97323de",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x45da24addb821b0b6947a800fdcd6a67145530ae",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x48b8226f7160b75f53efff2f2b2bcefeeb657331",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x4e0d47bd8c8efc320fbb1e901012218b63a608dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x56e95aa43488737c2a93aa5d1c0d9d62db6e2212",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x570cb1a138583a345c6e69535705ece5251de6ca",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x5bd5405e6a841e4c29a5a133f50e7c72d5addcc4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x5e581d54374ef56c522264664b8df6214e8aeb37",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x757625563d9e0a608acb99a38d2fee3590d3bf20",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x867625c5facd41505d50448a3d58b3314a554d3e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x88227d3a7eed07f83d92d85910154044a7a60af3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8aabbb34391b332b49b335b9448583b40e452bd4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x91f723dcdd6dcef03f2cf81474505e4d7dec0f9d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x93afe5f30e7b7b2aedd64417e9f642b03eb34139",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x940d979f945b0777c3dd75832631e802cfe73aff",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x9e453e9b7d5ad9f41593af74802c4c6cb4990cbe",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xa99e643844c25647d4c3a603b379c12888d33623",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xc30a7960a8c18eb9884f0d04213d9b77d9b7fc6a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xd7c70a8f7ca491e46a0d0d8f6638ba9198efceee",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xeb2fac2cdd86574c9f245ee852e93eca8aebd19e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xeecf64a8f17cb1d85e27dc503646494328781852",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xf36bd0c2fb6d9e479a85306041824da1a932b0da",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xf8543267e09f6ed14083f2f86144e537449dddc7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xfdedd7558e7028e35bf87e0fb742d926fce9294c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x1b62f1b8b04736e8f9ecc8eeae8b7d5957c74d5d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xbee4274f1c5ee0b30fc5aaa7842a434c35bf6f7b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xc1cd4ccd9e74be61eddd5c06f962657bd5d57af3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xcc777c52ee9ee5a57965a8e56f06211fad34fb3b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xcf2ca1b21e6f5da7a2744f89667de4e450791c79",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xe5631ccf95350948ba2d4d8c815c05afbfb47a9f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x1f981b595adb59be43cf346d5583c228f30d825c",
+      "name": "InvestorRegistryMirror",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x70fc327632ae01e64adcea7c0aee76af4ce9b5b3",
+      "impl_name": "InvestorRegistryMirror",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x1f981b595adb59be43cf346d5583c228f30d825c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x3a884d0e4cf4b065bf9aa65b3444c314f68258e3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x42fb3983c9cca8980ceb924f7139ad1ba7ec86cb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x64dacec6b66c2a09e27b09d79ba0b4cd30c2c132",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x70fc327632ae01e64adcea7c0aee76af4ce9b5b3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x78ec2eeec066c0706257a23c5c36d32adae70ee5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x790273d26a7e3af5565ec54d35ee84c705d75450",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x7e35ce0bbbef6b1cb874bb288dd2482bd79855a5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8342f80ef440888257fdf42d2214af17e0d074db",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x85353ec701edf201dae3c893158daec56c086a31",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xa90074146b9f7bf75dd21d95c81c022043308132",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xa92a259235ef5ca5724332137d11185119b86b45",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xdb06aab7c02663cae6a86a0d46ce07304df25ef9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xe06b3073a51685e11a0290dc44d00cb3e6a6efc6",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xe9eb36f1b8a280130c290a5d346652c9ac4fdea5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xf1cc6737c0ef81335c7f03a134591f1f3fdf9f1a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xf938e33bfc8ddc2ef85b5982000daa4f1eff03ca",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xfe3fb14a7a9e653292fdf17e6f45aad431880bc8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x0029c9d040a51985c07b1e7d1eaa343e8c1177c4",
+      "name": "LibreEdgeGateway",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xedbb6270e4311d8dbffcdd79b3aa3391d8c730dc",
+      "impl_name": "LibreEdgeGateway",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x0029c9d040a51985c07b1e7d1eaa343e8c1177c4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x22d0bc2cba78e9b3f9ca17584975ead9667886f7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x295aa4e452da2ec78a3c729d6e47aa96d98353f2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x358524fe389625f3627cd1f267c76ed3ebd850ff",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x36a2e6c41d8fda6885426f35eca93172a9632401",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x3a1b86db258970036d9be76e2988c3e360e9ea18",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x3bb6452b9afdffcda5b71938930930900178f994",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x5e7cda3b1463fb7e0165e3b3d16b95d2d3469d1a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x6ad7985733a11337b286c23ed55c8e1427b25f79",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x6af926854ca89f301b99f18bade3d2b7c125ace3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x7ea8560c4166531af3c9b75cdaebdb865dbee71d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x97e95af286972b81c8ddac6c84433a2058d77e3f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xb315f9053b1e96018d3db2f0fb9ded39ab79f440",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xb5d1aa9a7c6ea44233e696ff13cf4b024cad6255",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xc95004472b0ecb19ac56bb9cffbc6cd8fbabb096",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xe5751043247798abec45126ce837f448bcb5e495",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xedbb6270e4311d8dbffcdd79b3aa3391d8c730dc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xfebdabd9bcc512a272105b310d311c999f2f0231",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1b62f1b8b04736e8f9ecc8eeae8b7d5957c74d5d",
+      "name": "LibreReceiptToken",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "KAIO",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x8b37f32749cf339f39bcf5cff2c880d342ddf64b",
+      "impl_name": "LibreReceiptToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1b62f1b8b04736e8f9ecc8eeae8b7d5957c74d5d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8b37f32749cf339f39bcf5cff2c880d342ddf64b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc1cd4ccd9e74be61eddd5c06f962657bd5d57af3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcc777c52ee9ee5a57965a8e56f06211fad34fb3b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcf2ca1b21e6f5da7a2744f89667de4e450791c79",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe5631ccf95350948ba2d4d8c815c05afbfb47a9f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x1b62f1b8b04736e8f9ecc8eeae8b7d5957c74d5d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x8b37f32749cf339f39bcf5cff2c880d342ddf64b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xc1cd4ccd9e74be61eddd5c06f962657bd5d57af3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xcc777c52ee9ee5a57965a8e56f06211fad34fb3b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xcf2ca1b21e6f5da7a2744f89667de4e450791c79",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xe5631ccf95350948ba2d4d8c815c05afbfb47a9f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x8b37f32749cf339f39bcf5cff2c880d342ddf64b",
+          "source_verified": false,
+          "verified_by_bytecode": true,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": true,
+      "verification_bucket": "verified_bytecode_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x00b6e8cecf14e808cb6244d8222031069c392568",
+      "name": "SecurityTokenMirror",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x59f0d52318f808549c402775d9fd292038d0d1db",
+      "impl_name": "SecurityTokenMirror",
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x00b6e8cecf14e808cb6244d8222031069c392568",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x0a887bd141b249349bfadf28a62b63543fd5abdf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x0e7dce3f8fc3cd9872d924b22eab017857b8bade",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x0f7614b8697936176c64d6872d285651fac3d2d9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x0f931771b98ee5f38c9a1fbc4c1a7058dfea7912",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x102bb2d81b888c795a339d032b343c327ddf1d8c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x14fcd20ae7666d289a3c02165a3d64093b3e21c3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x1778c5bc08972941c8c5108ad6a76b1ff27776d4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x19411c11aa345a11a36f73fb047d3a6527e8a204",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x1a304f0c2818888829b479c73e1724591566e601",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x1f4c7a3a17c64f9c1ebd9e5ac62ba47533d8259e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x24c33b3fae422203f434956fb9ae726e7adb187d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x25224107e9df38830db50d1ef0abae213a88b824",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x2549884025fd460623538f23fcfc26c94e162be5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x279998eb5d2f7f1497c65217c937979a18880ebd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x2915e6fae1ca50f56aac84e651dc89f42d05010b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x2dc00dc699d08bf28bfa7607e3ee157888942956",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x2de3f43978928b10c26efd30b47fa42a9814938b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x304bbf53d4d75fe032f3a72b528b73f7f15b35cf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x32796cde216957d29aba3bb23e1a12dcba6998a4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x36961ae0760ff248539b831ff9712e241b88b60c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x37d5df138f0a369815c69eea052823b3ea71fa6c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x39c1f9ac263c9d7bb9cc505c0d5bb7014a8a32cb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x3aad9712caf28cafbf73f01d01788634cfb3f534",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x3ae9b07936fa88937610965b1b51da24f070e67a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x40eb49428ea277078d7309daa59d2104c3e544f1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x4264c56c4a4f71483fce220a172961410310f495",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x42f9ce2544a4275cf66a92e03ac73d4e3ac17a2f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x436ad77efd4095ea1216eff0e5fb7f58e4235a3e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x442086f6ec2ea59dc62a4f3f497ec7852b025a1f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x4b87a0d2f0d90b643f19d62c389f8a186d499f45",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x4f416e474b7bdf7b76dc6c5da0b50a765128f9e0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x54441904650e4872dd78b8d56d5fe6ab850f0252",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x59f0d52318f808549c402775d9fd292038d0d1db",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x5fc70fa4106032f01e7ccd904a151f138acd6cf0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x6df85acf0084a825b1ad4ac159c73f5fa315a757",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x6f0519ed3bbe2d1e5797647f06766b2eef1f6f19",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x706a93deea8c5bcc3bb8abda52786d95d843107a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x71a03ce4dd8c678e6fdd6115afdf95bcf4495e31",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x7243fc729b7e8bf80e18a44c478fb64fbbacbd86",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x74d718c6e96fe8aeb3d8d1b2644f7c733e71a621",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x75732d2e96f1bd2bb5c9cb3db31b7736cb250a92",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x7c016c7c36f324b1e10fbe1513772e39506926aa",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x7fb059646c12bd87231786e7afca0d7a7e057924",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8186d941649d998630fbb93367b960621536959e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x842e668f08ff153b3919a71eb51e84e71b726548",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x88645ce603e6a91608f0ff3eae17f5a53f6d7162",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x894564d5fd0974da23ea423c965cf2a2ff7cb8f9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8d31da4340075d2888ed554332e0a5ab1220a49f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8d969e2039a3d42b7ef1176892953429f1e5a1eb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8dc8f1b645211ee6913378775d60aa7581c8e031",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x938d6e2c5a4ab4dd58a8bb430d77d12dae012e2f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x97c254a66d0cceb24635ef04aef1e5f8a3860bb4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x9c78befca50f7b94d1c6d543a6f88cda7380fdaf",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x9cb11877aaa89e3e1c79d320327ab101e8de52a8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x9e0597f9583b129bd2393f747c396572453bdb51",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x9e19d80ebf4a49fe8cbb649769f9c8cc1ca72e25",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xa41647e83c502d8cb3bb5780f27dfd470061b84a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xa82bf6c49d43a6d5c77f2e5cb6f2b698077d513b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xaa9da59e88b3b0e40da4967048479b3a83b92320",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xaaf737ccec9ba1e7bfc1d3426e9509a9c88d78ee",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xacac3b20ff8fe6e03083589d4f842e34ba5edb3b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xaebbcb5f7b9e030622b89634185e1472fd9e720d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xb36e94249e3a4a1e82133c8c0589c1e0e548a7b8",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xb4c6373850ceb3f86889e27d9fa1c81e1a324997",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xb5c2ddaecc5375011ee38735fa1870e5f66a62f2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xb7769067b29e7c0fdf477ada8cb9b07965c99e54",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xb80f486165d9874b331d9359ba363ddefd462a1d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xbda516cd6227029bb1a35a4612ddd1648f93e85b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xc2713e119a3be344bc352349448336582c6b3bd7",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xc47013ca02bfacb1a83ab52e0ee875c4f8017a66",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xc7e35550e6ce2ea11870c9d12270e5eff6187e2e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xc8b90e733b38f6527dbfc1fa839904f961e92bd3",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xca47210a0da45997e1ac70a58d155c24c115fc83",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xcbf5bc14b0ccb505f61ff6139467baf1987d1045",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xd12ac3fcb2ba54505dd6117346b3557340432408",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xd213f4ebca3247c77349e09cb803c7ebec0072cd",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xd440c34420fda3e7b2add506e2a63154803f3f7d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xdb0ca7e5c5cb5c662935ce41624078b5843579af",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xdd38458d929f7bdafc057def5f1645663f7634b1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xe28272dc762f8d6633697f68ea4850985b697b74",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xe2e54445ade15da4a56bed5081420b0de1b78c2f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xe5cebf91caac59b4d09bc4cefcad8ddf713f98c2",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xe5e6c6d19311b65589aa5bdcd720ff9020efa700",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xe9c75263f91f45ccb3119ce875a0e1d1662860eb",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xedf5e90e76c7e39a56ec737849b51589dda4789a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xf4609484a418826a2a646314726305592c042df5",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xfa71cf00c924d96771391664a9c58ef26dd21f25",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xfb41de95140fd6b065f561402f163dd12555b5cc",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xfd343faf4b778224b60d3bb6d30e93115c796b43",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xffd20defb08289c4473d80087ae0f2055ae6cb3b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x07c923e3633cb2666e300a6de0af8e71ed4daa3c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x07c923e3633cb2666e300a6de0af8e71ed4daa3c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x1bf0b6f244ee2c535d6742eabee9e05928bb10cc",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x1bf0b6f244ee2c535d6742eabee9e05928bb10cc",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x2018a61e711c3c822cf818c1b599f05c7e804e20",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x2018a61e711c3c822cf818c1b599f05c7e804e20",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x2ec750a087299f91e4565183ad23ce8fe630aba0",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x2ec750a087299f91e4565183ad23ce8fe630aba0",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x34c424b186914d7f2e0fe82a403081fee977d4e7",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x34c424b186914d7f2e0fe82a403081fee977d4e7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x39cc01770ca3e02436253a0a16c9f90d7e6b26e7",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x39cc01770ca3e02436253a0a16c9f90d7e6b26e7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x3b42bb63a9b37a08c8c5bdc1538cf847dc378cba",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x3b42bb63a9b37a08c8c5bdc1538cf847dc378cba",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x4d1b4e60c10d40dd775c084948db05f2423f4711",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x4d1b4e60c10d40dd775c084948db05f2423f4711",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x65f4fc116b8f7880bcda7336917e57da3c373f74",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x65f4fc116b8f7880bcda7336917e57da3c373f74",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x6b8d62dc1cdf58cf66810848a2996e29e029bdd4",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x6b8d62dc1cdf58cf66810848a2996e29e029bdd4",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x7a35f5728578de4e38135da5fd518d2c1e662c1c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x7a35f5728578de4e38135da5fd518d2c1e662c1c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x7b6b75d04be44959f844c118b578ee5d194ae74d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x7b6b75d04be44959f844c118b578ee5d194ae74d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x7bb2a73e7e938756bd72e125bf642b745004f714",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x7bb2a73e7e938756bd72e125bf642b745004f714",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x8184f5a76598053e9b6532d46717302878ba9b47",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8184f5a76598053e9b6532d46717302878ba9b47",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x87f0140af52ccbb5ecbacaa5d47ff844564ca5db",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x87f0140af52ccbb5ecbacaa5d47ff844564ca5db",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x8fb15f58bbc37e0356bcde5e3814a623d675c5de",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8fb15f58bbc37e0356bcde5e3814a623d675c5de",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x8fe9d10d244abaf3e7b2646f34f30988b4ff748a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x8fe9d10d244abaf3e7b2646f34f30988b4ff748a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x9752aa46dc34dbf2e55a32d74d6e1ef062efe898",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x9752aa46dc34dbf2e55a32d74d6e1ef062efe898",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x9998eeee329f9008b29add4b78209e778d0b078a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x9998eeee329f9008b29add4b78209e778d0b078a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x9a6f097fce80290165b5a5f13a51d92fb1b0b329",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0x9a6f097fce80290165b5a5f13a51d92fb1b0b329",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xa1f01914e1a7e9232dd9f5c0ebb105d5f16f9882",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xa1f01914e1a7e9232dd9f5c0ebb105d5f16f9882",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xa2029ade9986f1c46a715492bced844c5ada0715",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xa2029ade9986f1c46a715492bced844c5ada0715",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xb3e349df7b9c9780ed930e77886fc8ec2e254485",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xb3e349df7b9c9780ed930e77886fc8ec2e254485",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xc5306f915d25aa73da9d93fb7fe09904aef58200",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xc5306f915d25aa73da9d93fb7fe09904aef58200",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xcccb6a38b5229886f2dff66fe9e2f411b446ca7a",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xcccb6a38b5229886f2dff66fe9e2f411b446ca7a",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xd0d23565355c97cc3384cd89f577294fa03438f7",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xd0d23565355c97cc3384cd89f577294fa03438f7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xd2029c1566dbedfd38660bc72bb414e2a123c3de",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xd2029c1566dbedfd38660bc72bb414e2a123c3de",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xd2bc19cb4a2797de5ad3e832926a92f98ee75913",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xd2bc19cb4a2797de5ad3e832926a92f98ee75913",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xde9ad8446d77c44583e7f5c4218cbe4af63c2446",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xde9ad8446d77c44583e7f5c4218cbe4af63c2446",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0xe328f75b8ac26280315c0c405eb889a8382f323d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1329,
+          "chain_name": "sei",
+          "address": "0xe328f75b8ac26280315c0c405eb889a8382f323d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1329,
+      "chain_name": "sei",
+      "address": "0x1f981b595adb59be43cf346d5583c228f30d825c",
+      "name": "InvestorRegistryMirror",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 11,
+    "upstream": 0,
+    "standard_library": 4,
+    "needs_review": 20
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

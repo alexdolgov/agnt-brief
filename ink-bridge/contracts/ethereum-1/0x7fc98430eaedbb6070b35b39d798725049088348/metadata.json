@@ -1,0 +1,18 @@
+{
+  "address": "0x7fc98430eaedbb6070b35b39d798725049088348",
+  "chain_id": 1,
+  "contract_name": "SenderCreator",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "london",
+  "license": "GPL-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T16:35:13.410Z"
+}

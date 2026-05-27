@@ -1,0 +1,17 @@
+{
+  "address": "0x32e060f88398d16b086e5040566cb1897d3270e0",
+  "chain_id": 56,
+  "contract_name": "BitwayToken",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "0000000000000000000000000000000000000000204fce5e3e250261100000000000000000000000000000001942c5b6b3072ba2cf859c5648b338afad97841900000000000000000000000000000000000000000000000000000000697e9780",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T16:36:37.486Z"
+}

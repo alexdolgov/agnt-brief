@@ -1,0 +1,18 @@
+{
+  "address": "0x1ad60c683ea27bef74b2c27c221486880e07592a",
+  "chain_id": 1,
+  "contract_name": "LiquidationFarm",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 54,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T12:09:44.489Z"
+}

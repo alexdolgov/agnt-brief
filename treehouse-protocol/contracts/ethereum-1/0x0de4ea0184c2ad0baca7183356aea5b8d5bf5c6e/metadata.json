@@ -1,0 +1,18 @@
+{
+  "address": "0x0de4ea0184c2ad0baca7183356aea5b8d5bf5c6e",
+  "chain_id": 1,
+  "contract_name": "OssifiableProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0x905a211ed6830cfc95643f0be2ff64e7f3bf9b94",
+  "fetched_at": "2026-05-27T12:01:42.741Z"
+}

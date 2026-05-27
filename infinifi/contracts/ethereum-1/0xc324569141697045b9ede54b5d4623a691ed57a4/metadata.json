@@ -1,0 +1,18 @@
+{
+  "address": "0xc324569141697045b9ede54b5d4623a691ed57a4",
+  "chain_id": 1,
+  "contract_name": "PLSmoother",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T12:09:49.422Z"
+}

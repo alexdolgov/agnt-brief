@@ -1,0 +1,17 @@
+{
+  "address": "0xb6931f0a698f4f40cbe0d79045dc2ec223f2616d",
+  "chain_id": 9745,
+  "contract_name": "RedeemController",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 50,
+  "constructor_arguments": "0000000000000000000000004de0b0fae1544f82640fa9fbaec44023800713db000000000000000000000000b8ce59fc3717ada4c02eadf9682a9e934f625ebb000000000000000000000000626c23fe62f5c3a45fe0f1e79ea577bd7d134d54000000000000000000000000a4ad55dae871218d6782ab8daafeb243183ccdc7",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T12:09:44.742Z"
+}

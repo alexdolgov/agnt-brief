@@ -1,0 +1,17 @@
+{
+  "address": "0x7ba3bc4e47f9c44847caf58ba2e3957d984995a5",
+  "chain_id": 9745,
+  "contract_name": "FluidRewardsClaimer",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "000000000000000000000000160300d5c1ea377b823127d2d6668d43dd5c1d8a00000000000000000000000073ab24e6b1e4e106cf95f0ffd393f39365c88861000000000000000000000000a11ce67cd9ad7295948a681617aa81e0523e0679",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T12:09:45.336Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x94af5994eb6841e1d930c95ad0c9f89771c3073f",
+  "chain_id": 1,
+  "contract_name": "ActionRegistry",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T12:01:46.310Z"
+}

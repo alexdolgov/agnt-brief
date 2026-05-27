@@ -245,6 +245,7 @@
 | [immutable-zkevm](./immutable-zkevm/) | $29.2M | 18.2% | ? | active | 5 | 11 | 2026-05-22 |
 | [inception](./inception/) | $15.9M | 27.3% | $15.6M | sunsetting | 11 | 79 | 2026-05-23 |
 | [index-coop](./index-coop/) | $28.2M | 13.4% | $28.2M | declining | 7 | 236 | 2026-05-25 |
+| [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | unknown | 0 | 118 | 2026-05-27 |
 | [init-capital](./init-capital/) | $66.5M | 21.4% | $66.2M | declining | 7 | 102 | 2026-05-25 |
 | [initiadex](./initiadex/) | $3.3M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-05-25 |
@@ -395,6 +396,7 @@
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | dead | 1 | 34 | 2026-05-24 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | unknown | 0 | 7 | 2026-05-24 |
 | [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 0 | 6 | 2026-05-26 |
+| [pleasing-gold](./pleasing-gold/) | $88.1M | 0.0% | $88.1M | unknown | 0 | 8 | 2026-05-27 |
 | [pnetwork](./pnetwork/) | $1.5M | 0.0% | $1.5M | declining | 0 | 25 | 2026-05-25 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | unknown | 0 | 2 | 2026-05-24 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-05-23 |
@@ -551,6 +553,7 @@
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
+| [treehouse-protocol](./treehouse-protocol/) | $31.2M | 0.0% | $31.2M | unknown | 1 | 78 | 2026-05-27 |
 | [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | transitioning | 0 | 15 | 2026-05-25 |
 | [trisolaris](./trisolaris/) | $1.3M | 0.0% | ? | dead | 0 | 119 | 2026-05-25 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |

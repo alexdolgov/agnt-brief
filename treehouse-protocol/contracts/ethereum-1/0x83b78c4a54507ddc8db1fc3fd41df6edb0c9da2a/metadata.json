@@ -1,0 +1,17 @@
+{
+  "address": "0x83b78c4a54507ddc8db1fc3fd41df6edb0c9da2a",
+  "chain_id": 1,
+  "contract_name": "DorMigrator",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "000000000000000000000000636b40febf37fd9f059b68f5bae3a26285314551000000000000000000000000478bf562b2a39ff8530ee41ff0dfb39d8bdd219200000000000000000000000077146784315ba81904d654466968e3a7c196d1f30000000000000000000000008d0dee38eeca0c26d7c53fd4d47f93918a0c15f3",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T12:01:45.807Z"
+}

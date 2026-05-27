@@ -1,0 +1,17 @@
+{
+  "address": "0x36cc593972ec3dafa1b3344736d770962e245b2a",
+  "chain_id": 1,
+  "contract_name": "ERC4626Oracle",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "00000000000000000000000080ac24aa929eaf5013f6436cda2a7ba190f5cc0b00000000000000000000000064b32f8198a4c89b1f10de7470ff281513e2e8f5",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T12:09:47.180Z"
+}

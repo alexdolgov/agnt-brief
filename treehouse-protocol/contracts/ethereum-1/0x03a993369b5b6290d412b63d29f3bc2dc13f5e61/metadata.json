@@ -1,0 +1,18 @@
+{
+  "address": "0x03a993369b5b6290d412b63d29f3bc2dc13f5e61",
+  "chain_id": 1,
+  "contract_name": "ProtocolPoolController",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T12:01:42.712Z"
+}

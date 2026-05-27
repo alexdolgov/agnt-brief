@@ -1,0 +1,17 @@
+{
+  "address": "0xf5760a2f36a8a3bf57cfc8376b046669a7fbbf08",
+  "chain_id": 1,
+  "contract_name": "DWSTETHV3RateProvider",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "0000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca0000000000000000000000000ff94993fa7ea27efc943645f95adb36c1b81244b",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T12:01:48.169Z"
+}

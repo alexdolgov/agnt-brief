@@ -1,0 +1,17 @@
+{
+  "address": "0x0eccfa55f1739cdcb112ada272c910ba50c1b756",
+  "chain_id": 1,
+  "contract_name": "StrataCDO",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T10:54:54.512Z"
+}

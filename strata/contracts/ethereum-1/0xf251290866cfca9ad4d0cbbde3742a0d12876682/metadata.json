@@ -1,0 +1,17 @@
+{
+  "address": "0xf251290866cfca9ad4d0cbbde3742a0d12876682",
+  "chain_id": 1,
+  "contract_name": "EulerIntegration",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T10:54:57.658Z"
+}

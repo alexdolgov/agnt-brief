@@ -1,0 +1,17 @@
+{
+  "address": "0x13a466998ce03db73abc2d4df3bbd845ed1f28e7",
+  "chain_id": 43114,
+  "contract_name": "Pharaoh",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 300,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "000000000000000000000000d23f124bbbc958bcddc0ce624042b48154222fde",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T20:11:22.396Z"
+}

@@ -262,6 +262,7 @@
 | [inception](./inception/) | $15.9M | 27.3% | $15.6M | sunsetting | 11 | 79 | 2026-05-23 |
 | [index-coop](./index-coop/) | $28.2M | 13.4% | $28.2M | declining | 7 | 236 | 2026-05-25 |
 | [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | unknown | 0 | 118 | 2026-05-27 |
+| [infrared-finance](./infrared-finance/) | $861.9K | 0.0% | $861.9K | declining | 0 | 27 | 2026-05-27 |
 | [init-capital](./init-capital/) | $66.5M | 21.4% | $66.2M | declining | 7 | 102 | 2026-05-25 |
 | [initiadex](./initiadex/) | $3.3M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-05-25 |
@@ -372,6 +373,7 @@
 | [neopin](./neopin/) | $55.4M | 0.0% | ? | active | 3 | 100 | 2026-05-27 |
 | [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 2 | 2026-05-25 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | dead | 0 | 66 | 2026-05-24 |
+| [nest-credit](./nest-credit/) | $66.7K | 57.1% | ? | active | 16 | 16 | 2026-05-27 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |
 | [netswap](./netswap/) | $1.4M | 20.8% | ? | dead | 2 | 48 | 2026-05-25 |
 | [neuralai](./neuralai/) | $1.3M | 0.0% | ? | unknown | 1 | 3 | 2026-05-25 |
@@ -414,6 +416,7 @@
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 3 | 21 | 2026-05-25 |
 | [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
+| [pharaoh-exchange](./pharaoh-exchange/) | $50.3M | 0.0% | ? | active | 0 | 48 | 2026-05-27 |
 | [phoenix](./phoenix/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 53 | 2026-05-25 |
 | [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-05-25 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
@@ -649,6 +652,7 @@
 | [yieldnest](./yieldnest/) | $19.2M | 0.0% | $19.2M | declining | 0 | 45 | 2026-05-25 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | unknown | 1 | 191 | 2026-05-25 |
 | [yo-protocol](./yo-protocol/) | $40.9M | 0.0% | $40.9M | active | 0 | 32 | 2026-05-26 |
+| [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 0 | 8 | 2026-05-27 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-05-23 |
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-05-27 |

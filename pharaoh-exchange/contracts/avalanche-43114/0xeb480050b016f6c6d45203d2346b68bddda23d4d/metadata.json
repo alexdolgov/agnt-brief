@@ -1,0 +1,17 @@
+{
+  "address": "0xeb480050b016f6c6d45203d2346b68bddda23d4d",
+  "chain_id": 43114,
+  "contract_name": "DLMMFactory",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 300,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "000000000000000000000000684b340014556d15d754b812ef7d1b134b42289c000000000000000000000000cbeb24e8fc568001e83430ec4929ce56b29ba9a20000000000000000000000000000000000000000000000000000048c27395000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T20:11:25.132Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xace9de5af92eb82a97a5973b00eff85024bdcb39",
+  "chain_id": 56,
+  "contract_name": "IROFT",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": "LZBL-1.2, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 43,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T20:19:44.271Z"
+}

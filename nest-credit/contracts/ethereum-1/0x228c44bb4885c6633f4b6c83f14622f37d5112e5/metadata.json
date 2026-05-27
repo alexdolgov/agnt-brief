@@ -1,0 +1,18 @@
+{
+  "address": "0x228c44bb4885c6633f4b6c83f14622f37d5112e5",
+  "chain_id": 1,
+  "contract_name": "AtomicQueueUCP",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "AGPL-3.0-only, Apache-2.0, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T20:22:26.982Z"
+}

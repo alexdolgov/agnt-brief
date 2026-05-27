@@ -1,0 +1,17 @@
+{
+  "address": "0x32d7d5bf842d6ae28c9dd4fac4c6662cf9bf5cfe",
+  "chain_id": 9745,
+  "contract_name": "YuzuUSDV2",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "osaka",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T20:11:09.596Z"
+}

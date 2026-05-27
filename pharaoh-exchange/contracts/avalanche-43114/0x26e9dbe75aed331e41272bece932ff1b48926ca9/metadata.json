@@ -1,0 +1,18 @@
+{
+  "address": "0x26e9dbe75aed331e41272bece932ff1b48926ca9",
+  "chain_id": 43114,
+  "contract_name": "P33",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 300,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 44,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T20:11:22.444Z"
+}

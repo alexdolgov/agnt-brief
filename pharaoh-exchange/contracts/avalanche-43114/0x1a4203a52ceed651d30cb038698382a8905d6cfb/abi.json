@@ -1,0 +1,12 @@
+[
+  {
+    "inputs": [],
+    "name": "LENGTH_MISMATCH",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NOT_INIT",
+    "type": "error"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x0b4478e810d48b5882d4019d435a2f864bab4f39",
+  "chain_id": 43114,
+  "contract_name": "RamsesV3PositionManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 300,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 68,
+  "constructor_arguments": "",
+  "implementation_address": "0x0b4478e810d48b5882d4019d435a2f864bab4f39",
+  "fetched_at": "2026-05-27T20:11:22.386Z"
+}

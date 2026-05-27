@@ -1,0 +1,17 @@
+{
+  "address": "0x64963852966aa7ff2258434f361ec933bf0eaf03",
+  "chain_id": 43114,
+  "contract_name": "AutomatedFeeNotifier",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 300,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "0000000000000000000000001e1e2a861205767d69a51edf03cf5e3a278437bc00000000000000000000000085448bf2f589ab1f56225df5167c63f57758f8c1000000000000000000000000ae6e5c62328ade73ceefd42228528b70c8157d0d000000000000000000000000922b9ca8e2207bfb850b6ff647c054d4b58a2aa7",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T20:11:22.484Z"
+}

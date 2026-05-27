@@ -1,0 +1,510 @@
+{
+  "schema_version": "2.0",
+  "project_key": "near-intents",
+  "generated_at": "2026-05-27T13:34:21.240Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "near-intents",
+    "tier": 0,
+    "peak_tvl": 86302767,
+    "peak_date": "2025-11-21T00:00:00.000Z",
+    "tvl_30d_ago": 63476063,
+    "tvl_90d_ago": 47650618,
+    "tvl_current": 82008411,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 71105515,
+    "change_30d_pct": 29.195805669296153,
+    "change_90d_pct": 72.10356222452351,
+    "days_since_peak": 187,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 4.975919254130056
+  },
+  "summary": {
+    "total_contracts": 7,
+    "total_addresses": 24,
+    "unique_implementations": 7,
+    "total_deployments": 24,
+    "audited_contracts": 0,
+    "unaudited_contracts": 6,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 6,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 79032269.00081,
+    "tvl_usd": 3719105.134032107,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "gnosis": 3719105.13
+    },
+    "asd_usd": 3719105.134032107,
+    "website_url": "https://near.com/",
+    "chains": [
+      "gnosis"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "NEAR Intents is a cross-chain bridge protocol that enables asset transfers between NEAR and other blockchains. It uses governance-controlled token contracts and proxy-based upgradeability to manage bridged assets on Gnosis.",
+    "relationship_narrative": "The protocol uses a single product family where governance contracts (GnosisControllerToken) control token proxies (FiatTokenProxy, TokenProxy) via upgradeable patterns. BlacklistValidatorUpgradeable contracts provide shared compliance infrastructure for token transfers.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x177127622c4a00f3d409b75571e12cb3c8973d3c",
+      "name": "PermittableToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "NEAR Intents",
+      "tvl_usd": 3719105.134032107,
+      "is_proxy": true,
+      "impl_address": "0x199084efbd7fe14d217bbf22fdc6e2ed7266ddd4",
+      "impl_name": "PermittableToken",
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x177127622c4a00f3d409b75571e12cb3c8973d3c",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 3719105.134032107,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x614fcc5b7f621a01731a7598e3c9645a6b0388e0",
+      "name": "BlacklistValidatorUpgradeable",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xc92186f4a074d5a3d45775e9c8d8e111064fe56b",
+      "impl_name": "BlacklistValidatorUpgradeable",
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x614fcc5b7f621a01731a7598e3c9645a6b0388e0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xc92186f4a074d5a3d45775e9c8d8e111064fe56b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xd2d94d222d43a2c7e49ba909740291793724d17b",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xfe74a522768547be33a3ad40b999381d57f238a0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x6f795df1363b2c5e1361d77a1071053ec2e11734",
+      "name": "ERC1967Proxy",
+      "role": "proxy",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x6f795df1363b2c5e1361d77a1071053ec2e11734",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xaca1779fa88ddac81ac4d782bb04235824525331",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xfcfcc843981fad58903505b735164a32f0517889",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
+      "name": "FiatTokenV2_2",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "NEAR Intents",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x107cf7fb73ea48d1d200989b156ce1894d7afec7",
+      "impl_name": "FiatTokenV2_2",
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x06d53cbda1ebc80e99c76861777d0537d584450e",
+      "name": "GnosisControllerToken",
+      "role": "governance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x60cb9fdd0fcfd9bb3b2b721864db5e7c07f4635d",
+      "impl_name": "GnosisControllerToken",
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x06d53cbda1ebc80e99c76861777d0537d584450e",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x2ba8cbba75c70fa47107e836bed8c3b3b41bf7be",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x420ca0f9b9b604ce0fd9c18ef134c705e5fa3430",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x50d1a74f4b6dcacddd97fd442c0e22a4c97f2b7f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x60cb9fdd0fcfd9bb3b2b721864db5e7c07f4635d",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x614bd419d3735c9eb51542c06e5acc09a9953f61",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x8e34bfec4f6eb781f9743d9b4af99cd23f9b7053",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x9e9eabd34873dd5e222d58b97155cc73efff135f",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xb1f2cc8060aee237e46b8e47c4df6fc95eae6a54",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x33f8d5dd8cadca4f924a03c63cb3726d07d81f5a",
+      "name": "TokenV2_1_0",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenV2_1_0",
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x33f8d5dd8cadca4f924a03c63cb3726d07d81f5a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x60536559f62608fbcf30dda459ec2bcf88b1919a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x6b9124718fd4c89d5f61c607d87a4b0b69cfe568",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xad57b8c0b0e25d109db8ff651e78e940cdc7fb55",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0xf051cde1e62cb210c337d3dc8d47c020622685c4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x994bb2b185224059e0775e80d3873f1ceaa984a7",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 100,
+          "chain_name": "gnosis",
+          "address": "0x994bb2b185224059e0775e80d3873f1ceaa984a7",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "review"
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x177127622c4a00f3d409b75571e12cb3c8973d3c",
+      "name": "PermittableToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 3719105.134032107,
+      "risk_note": "Verified native implementation with $3,719,105.13 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x614fcc5b7f621a01731a7598e3c9645a6b0388e0",
+      "name": "BlacklistValidatorUpgradeable",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x2a22f9c3b484c3629090feed35f17ff8f88f76f0",
+      "name": "FiatTokenV2_2",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x06d53cbda1ebc80e99c76861777d0537d584450e",
+      "name": "GnosisControllerToken",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 100,
+      "chain_name": "gnosis",
+      "address": "0x33f8d5dd8cadca4f924a03c63cb3726d07d81f5a",
+      "name": "TokenV2_1_0",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 5,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 1
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

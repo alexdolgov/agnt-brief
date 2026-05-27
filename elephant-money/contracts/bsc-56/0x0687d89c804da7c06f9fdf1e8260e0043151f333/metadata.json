@@ -1,0 +1,17 @@
+{
+  "address": "0x0687d89c804da7c06f9fdf1e8260e0043151f333",
+  "chain_id": 56,
+  "contract_name": "AccessControlledAggregator",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T13:55:07.422Z"
+}

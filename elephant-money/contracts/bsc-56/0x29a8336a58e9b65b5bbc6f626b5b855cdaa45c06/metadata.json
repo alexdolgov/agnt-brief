@@ -1,0 +1,17 @@
+{
+  "address": "0x29a8336a58e9b65b5bbc6f626b5b855cdaa45c06",
+  "chain_id": 56,
+  "contract_name": "SafeElephantNFTMinter",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T13:55:10.143Z"
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": "2.0",
+  "project_key": "polygon-zkevm-bridge",
+  "generated_at": "2026-05-27T13:33:46.596Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "polygon-zkevm-bridge",
+    "tier": 0,
+    "peak_tvl": 454983025,
+    "peak_date": "2025-10-28T00:00:00.000Z",
+    "tvl_30d_ago": 148960795,
+    "tvl_90d_ago": 111125577,
+    "tvl_current": 78988455,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 327097568,
+    "change_30d_pct": -46.97366176113655,
+    "change_90d_pct": -28.919644664702172,
+    "days_since_peak": 211,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 82.63925231056697
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 0,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 1,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 77973709.75852,
+    "tvl_usd": 77973709.75852,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://portal.polygon.technology/bridge",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "The Polygon zkEVM Bridge is a canonical bridge that enables asset transfers between Ethereum and the Polygon zkEVM network. It uses a single proxy contract to manage cross-chain deposits and withdrawals.",
+    "relationship_narrative": "The protocol consists of a single product family with one core proxy contract that delegates to an implementation contract, with no additional supporting contracts or shared infrastructure.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2a3dd3eb832af982ec71669e178424b10dca2ede",
+      "name": "AgglayerBridge",
+      "role": "operational_periphery",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Polygon zkEVM Bridge",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x66e0120e3c965552a89acc37b03f762624bac5ad",
+      "impl_name": "AgglayerBridge",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2a3dd3eb832af982ec71669e178424b10dca2ede",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [],
+  "auditor_coverage": [],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

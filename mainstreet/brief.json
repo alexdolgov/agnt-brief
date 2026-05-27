@@ -1,0 +1,164 @@
+{
+  "schema_version": "2.0",
+  "project_key": "mainstreet",
+  "generated_at": "2026-05-27T13:39:25.995Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "mainstreet",
+    "tier": 0,
+    "peak_tvl": 78225866,
+    "peak_date": "2026-05-27T13:00:35.000Z",
+    "tvl_30d_ago": 59948715,
+    "tvl_90d_ago": 23998384,
+    "tvl_current": 78225866,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 0,
+    "change_30d_pct": 30.48797793247111,
+    "change_90d_pct": 225.96305651247187,
+    "days_since_peak": 0,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 0
+  },
+  "summary": {
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
+    "audited_contracts": 1,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 100,
+    "total_audits": 1,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 78184322.02394,
+    "tvl_usd": 78184322.02394,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": "https://mainstreet.finance/",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2025-07",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 1,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Mainstreet is a basis trading protocol that enables users to mint a synthetic stablecoin (msUSD) against yield-bearing collateral, capturing the basis between staked ETH yields and stablecoin borrowing costs.",
+    "relationship_narrative": "The ERC1967Proxy serves as the upgradeable entry point for the msUSDV2 implementation, which contains the core minting and redemption logic.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4ba01f22827018b4772cd326c7627fb4956a7c00",
+      "name": "msUSDV2",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": "Mainstreet",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x96271bea7a9c4b8edd6c3a05e548f05f157ada46",
+      "impl_name": "msUSDV2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4ba01f22827018b4772cd326c7627fb4956a7c00",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4639"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 4639,
+      "audit_key": "audit-4639",
+      "report_name": "Mainstreet_v2_Audit_Report_by_WatchPug.pdf",
+      "report_url": "https://github.com/Mainstreet-Labs/mainstreet-watchpug-audit/blob/main/Mainstreet_v2_Audit_Report_by_WatchPug.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "MainstreetMinter",
+        "NonblockingLzAppUpgradeable",
+        "OFTCoreUpgradeable",
+        "OFTUpgradeable",
+        "StakedmsUSD",
+        "StaticPriceOracle",
+        "msUSDSilo",
+        "msUSDV2",
+        "msUSDV2Satellite"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "WatchPug",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2025-07"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 0,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 1
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

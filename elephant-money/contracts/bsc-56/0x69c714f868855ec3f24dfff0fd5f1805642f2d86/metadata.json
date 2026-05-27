@@ -1,0 +1,17 @@
+{
+  "address": "0x69c714f868855ec3f24dfff0fd5f1805642f2d86",
+  "chain_id": 56,
+  "contract_name": "Turbine",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0000000000000000000000007130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T13:55:14.278Z"
+}

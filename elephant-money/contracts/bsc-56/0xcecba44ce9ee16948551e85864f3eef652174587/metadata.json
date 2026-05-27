@@ -1,0 +1,18 @@
+{
+  "address": "0xcecba44ce9ee16948551e85864f3eef652174587",
+  "chain_id": 56,
+  "contract_name": "TRUNKSupportTreasuryStrategy",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T13:55:17.831Z"
+}

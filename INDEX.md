@@ -157,6 +157,7 @@
 | [easedefi.org](./easedefi.org/) | $4.4M | 0.0% | ? | active | 3 | 1 | 2026-05-23 |
 | [egas-swap](./egas-swap/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | unknown | 5 | 15 | 2026-05-22 |
+| [elephant-money](./elephant-money/) | $1.6M | 5.9% | $1.6M | dead | 2 | 346 | 2026-05-27 |
 | [elfi-protocol](./elfi-protocol/) | $3.0M | 29.2% | ? | unknown | 1 | 2406 | 2026-05-25 |
 | [ellipsis-finance](./ellipsis-finance/) | $59.0K | 29.4% | $9.0K | dead | 3 | 22 | 2026-05-25 |
 | [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
@@ -303,6 +304,7 @@
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-25 |
 | [magma-staking](./magma-staking/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [magpie-ecosystem](./magpie-ecosystem/) | $27.1M | 0.0% | ? | declining | 4 | 2794 | 2026-05-25 |
+| [mainstreet](./mainstreet/) | $78.2M | 100.0% | ? | active | 1 | 1 | 2026-05-27 |
 | [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 10 | 36 | 2026-05-26 |
 | [mangrove](./mangrove/) | $4.3M | 24.4% | ? | active | 8 | 68 | 2026-05-23 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-05-23 |
@@ -345,6 +347,7 @@
 | [mystic-finance](./mystic-finance/) | $5.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
+| [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 0 | 7 | 2026-05-27 |
 | [neemo-finance](./neemo-finance/) | $1.4M | 0.0% | ? | active | 1 | 14 | 2026-05-24 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-05-24 |
 | [neo-tokyo](./neo-tokyo/) | $1.1M | 0.0% | ? | unknown | 0 | 86 | 2026-05-25 |
@@ -401,6 +404,7 @@
 | [pleasing-gold](./pleasing-gold/) | $88.1M | 0.0% | $88.1M | unknown | 0 | 8 | 2026-05-27 |
 | [pnetwork](./pnetwork/) | $1.5M | 0.0% | $1.5M | declining | 0 | 25 | 2026-05-25 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | unknown | 0 | 2 | 2026-05-24 |
+| [polygon-zkevm-bridge](./polygon-zkevm-bridge/) | $78.0M | 0.0% | ? | active | 0 | 1 | 2026-05-27 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-05-23 |
 | [pond0x](./pond0x/) | $2.8M | 0.0% | ? | unknown | 0 | 14 | 2026-05-24 |
 | [pooltogether](./pooltogether/) | $26.9M | 0.0% | $26.9M | declining | 0 | 153 | 2026-05-23 |

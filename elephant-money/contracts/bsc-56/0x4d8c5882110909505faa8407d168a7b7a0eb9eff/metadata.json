@@ -1,0 +1,17 @@
+{
+  "address": "0x4d8c5882110909505faa8407d168a7b7a0eb9eff",
+  "chain_id": 56,
+  "contract_name": "ElephantNFTTraitTracker",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000b92afedc8f8618be4198fbe5d97adb7c60ab3198",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T13:55:12.330Z"
+}

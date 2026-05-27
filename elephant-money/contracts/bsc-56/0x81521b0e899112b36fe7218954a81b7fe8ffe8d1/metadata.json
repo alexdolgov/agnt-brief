@@ -1,0 +1,17 @@
+{
+  "address": "0x81521b0e899112b36fe7218954a81b7fe8ffe8d1",
+  "chain_id": 56,
+  "contract_name": "DODOStarterProxy",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c000000000000000000000000b76de21f04f677f07d9881174a1d8e624276314c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T13:55:15.193Z"
+}

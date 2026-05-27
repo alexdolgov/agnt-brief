@@ -1,0 +1,18 @@
+{
+  "address": "0x3c39dcb3630d305530a30419b3deecea629597ac",
+  "chain_id": 56,
+  "contract_name": "DODOMineV3Proxy",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T13:55:11.782Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xf5d6fed0f4735ff2036ce4be535bd32e77dae9fe",
+  "chain_id": 56,
+  "contract_name": "Timelock",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000c6af770101da859d680e0829380748cccd8f79840000000000000000000000000000000000000000000000000000000000005460",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T13:55:18.519Z"
+}

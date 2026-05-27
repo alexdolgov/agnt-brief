@@ -1,0 +1,17 @@
+{
+  "address": "0x36b6731ec0992a1c042e9354f85e4f9a586110df",
+  "chain_id": 56,
+  "contract_name": "LockedTokenVault",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000067ee3cb086f8a16f34bee3ca72fad36f7db929e2000000000000000000000000000000000000000000000000000000006062f6a0000000000000000000000000000000000000000000000000000000000028de800000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T13:55:11.496Z"
+}

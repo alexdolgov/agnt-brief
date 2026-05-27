@@ -1,0 +1,17 @@
+{
+  "address": "0x2390901198838aabbb383ce0ac215ad9e05e2a66",
+  "chain_id": 56,
+  "contract_name": "ElephantMarketPlace",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "000000000000000000000000b92afedc8f8618be4198fbe5d97adb7c60ab3198",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T13:55:08.851Z"
+}

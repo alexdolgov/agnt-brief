@@ -1,0 +1,17 @@
+{
+  "address": "0x652c09785c15db4adace871ed8874b8968a19a4d",
+  "chain_id": 56,
+  "contract_name": "ERC20V2Factory",
+  "compiler_version": "v0.6.9+commit.3e3065ac",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Apache-2.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000003e2427859119e497eb856a166f616a2ce5f8c8800000000000000000000000099155e68ac1523b6f461f6427a90607eccf7bdf50000000000000000000000004777a6f28c8bb260d9a945dddefabb942ae10f1f",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T13:55:13.873Z"
+}

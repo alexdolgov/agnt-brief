@@ -1,0 +1,17 @@
+{
+  "address": "0x1dfe9408235638c1cfe17ac213ff8ce77e79bd29",
+  "chain_id": 999,
+  "contract_name": "Oracle",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T17:38:14.750Z"
+}

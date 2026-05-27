@@ -1,0 +1,18 @@
+{
+  "address": "0x43878d77d52d763db344350a75ac9442db64c25c",
+  "chain_id": 42161,
+  "contract_name": "ExposureLensMK1",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "london",
+  "license": "AGPL-3.0, AGPL-3.0-only, GPL-2.0-or-later, MIT, UNLICENSED, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 46,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T17:38:15.466Z"
+}

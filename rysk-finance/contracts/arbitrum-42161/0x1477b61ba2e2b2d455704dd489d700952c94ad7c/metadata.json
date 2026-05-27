@@ -1,0 +1,18 @@
+{
+  "address": "0x1477b61ba2e2b2d455704dd489d700952c94ad7c",
+  "chain_id": 42161,
+  "contract_name": "NormalDist",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T17:38:13.999Z"
+}

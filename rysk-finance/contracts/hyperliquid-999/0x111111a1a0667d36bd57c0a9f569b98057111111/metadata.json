@@ -1,0 +1,17 @@
+{
+  "address": "0x111111a1a0667d36bd57c0a9f569b98057111111",
+  "chain_id": 999,
+  "contract_name": "HlAlignedStableV3",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 9999999,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 44,
+  "constructor_arguments": "00000000000000000000000000000000000000000000000000000000000001680000000000000000000000000000000000000000000000000000000000000064",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T17:38:17.927Z"
+}

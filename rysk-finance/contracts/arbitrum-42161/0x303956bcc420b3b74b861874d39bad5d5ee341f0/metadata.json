@@ -1,0 +1,18 @@
+{
+  "address": "0x303956bcc420b3b74b861874d39bad5d5ee341f0",
+  "chain_id": 42161,
+  "contract_name": "OptionsCompute",
+  "compiler_version": "v0.8.14+commit.80d49f37",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T17:38:15.440Z"
+}

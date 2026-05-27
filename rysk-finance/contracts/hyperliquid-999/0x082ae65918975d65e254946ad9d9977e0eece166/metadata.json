@@ -1,0 +1,17 @@
+{
+  "address": "0x082ae65918975d65e254946ad9d9977e0eece166",
+  "chain_id": 999,
+  "contract_name": "Controller",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 49,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T17:38:15.870Z"
+}

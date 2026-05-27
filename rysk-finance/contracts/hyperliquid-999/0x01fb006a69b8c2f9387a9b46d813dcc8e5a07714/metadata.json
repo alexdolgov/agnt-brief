@@ -1,0 +1,17 @@
+{
+  "address": "0x01fb006a69b8c2f9387a9b46d813dcc8e5a07714",
+  "chain_id": 999,
+  "contract_name": "MarginCalculator",
+  "compiler_version": "v0.6.10+commit.00c0fcaf",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T17:38:14.376Z"
+}

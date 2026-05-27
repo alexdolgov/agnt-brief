@@ -1,0 +1,18 @@
+{
+  "address": "0x3436e0b85cd929929f5802e792cfe282166e0259",
+  "chain_id": 1,
+  "contract_name": "PufferL2Depositor",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 40,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T16:55:03.548Z"
+}

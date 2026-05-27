@@ -383,6 +383,7 @@
 | [odyssey-finance](./odyssey-finance/) | $9.5M | 0.0% | ? | active | 0 | 79 | 2026-05-23 |
 | [okcoin](./okcoin/) | $26.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [omnibtc](./omnibtc/) | $2.3M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
+| [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | dead | 1 | 16 | 2026-05-27 |
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | unknown | 0 | 24 | 2026-05-25 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-05-23 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | dead | 0 | 103 | 2026-05-24 |
@@ -428,6 +429,7 @@
 | [privacy-pools](./privacy-pools/) | $6.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [probit-global](./probit-global/) | $12.7M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
+| [puffer-finance](./puffer-finance/) | $225.1M | 36.4% | $169.2M | active | 4 | 65 | 2026-05-27 |
 | [pumpspace](./pumpspace/) | $4.0M | 28.6% | ? | active | 4 | 667 | 2026-05-25 |
 | [punks-terminal](./punks-terminal/) | $1.7M | 0.0% | ? | unknown | 0 | 1 | 2026-05-24 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
@@ -636,6 +638,7 @@
 | [yo-protocol](./yo-protocol/) | $40.9M | 0.0% | $40.9M | active | 0 | 32 | 2026-05-26 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-05-23 |
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |
+| [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-05-27 |
 | [zircuit-finance](./zircuit-finance/) | $180.1M | 0.0% | $180.1M | unknown | 0 | 3 | 2026-05-24 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-05-22 |
 | [zivoe](./zivoe/) | $87.1M | 58.1% | $87.1M | active | 3 | 32 | 2026-05-22 |

@@ -1,0 +1,17 @@
+{
+  "address": "0x358a7d0028070533a9e000616aa6656be7a32cc7",
+  "chain_id": 1,
+  "contract_name": "InstitutionalVault",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 59,
+  "constructor_arguments": "000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc200000000000000000000000091e677b07f7af907ec9a428aafa9fc14a0d3a33800000000000000000000000000000000219ab540356cbb839cbe05303d7705fa00000000000000000000000039053d51b77dc0d36036fc1fcc8cb819df8ef37a000000000000000000000000a766b79c25a8ab4354bf2351c6716baced48ea36",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T16:55:04.623Z"
+}

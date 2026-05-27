@@ -1,0 +1,18 @@
+{
+  "address": "0xd7b4a10ece470208661f111f3546f09693a62d3e",
+  "chain_id": 1,
+  "contract_name": "PufferRevenueDepositor",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 57,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T16:55:06.383Z"
+}

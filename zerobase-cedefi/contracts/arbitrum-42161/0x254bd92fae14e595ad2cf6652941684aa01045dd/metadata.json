@@ -1,0 +1,17 @@
+{
+  "address": "0x254bd92fae14e595ad2cf6652941684aa01045dd",
+  "chain_id": 42161,
+  "contract_name": "Utils",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 20,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-27T16:53:02.531Z"
+}

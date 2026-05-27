@@ -181,6 +181,7 @@
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 0 | 21 | 2026-05-23 |
 | [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 0 | 33 | 2026-05-25 |
 | [firebot](./firebot/) | $3.7M | 9.5% | $3.7M | unknown | 3 | 29 | 2026-05-24 |
+| [firelight](./firelight/) | $80.3M | 0.0% | ? | unknown | 3 | 0 | 2026-05-27 |
 | [flamingo](./flamingo/) | $1.5M | 0.0% | $1.5M | dead | 6 | 53 | 2026-05-25 |
 | [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 21 | 3 | 2026-05-24 |
 | [flex](./flex/) | $1.3M | 0.0% | ? | unknown | 0 | 1 | 2026-05-25 |
@@ -421,6 +422,7 @@
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-05-24 |
 | [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-05-24 |
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 168 | 2026-05-23 |
+| [re7-labs](./re7-labs/) | $1.6M | 0.0% | $1.6M | active | 0 | 6 | 2026-05-27 |
 | [reddex](./reddex/) | $5.3M | 0.0% | ? | declining | 0 | 5 | 2026-05-23 |
 | [reflexer](./reflexer/) | $2.4M | 40.9% | ? | dead | 8 | 64 | 2026-05-24 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |
@@ -570,6 +572,7 @@
 | [umee](./umee/) | $3.2M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [unchain-x](./unchain-x/) | $35.1M | 100.0% | ? | active | 2 | 1 | 2026-05-25 |
 | [unichain-bridge](./unichain-bridge/) | $2.9M | 0.0% | ? | dead | 0 | 15 | 2026-05-24 |
+| [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-05-27 |
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [universe-xyz](./universe-xyz/) | $39.0M | 20.0% | $39.0M | dead | 3 | 36 | 2026-05-24 |
 | [unslashed](./unslashed/) | $4.6M | 0.0% | $4.6M | declining | 0 | 16 | 2026-05-25 |

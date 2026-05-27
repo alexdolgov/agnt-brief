@@ -1,0 +1,537 @@
+{
+  "schema_version": "2.0",
+  "project_key": "unitas",
+  "generated_at": "2026-05-27T12:44:59.025Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "unitas",
+    "tier": 0,
+    "peak_tvl": 105976700,
+    "peak_date": "2026-04-21T00:00:00.000Z",
+    "tvl_30d_ago": 92601434,
+    "tvl_90d_ago": 68182686,
+    "tvl_current": 65049264,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 26086976,
+    "change_30d_pct": -29.75350252135404,
+    "change_90d_pct": -4.595627106858184,
+    "days_since_peak": 36,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 38.61927763366853
+  },
+  "summary": {
+    "total_contracts": 9,
+    "total_addresses": 9,
+    "unique_implementations": 9,
+    "total_deployments": 9,
+    "audited_contracts": 3,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 6,
+    "coverage_pct": 100,
+    "total_audits": 5,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 83171426.72156,
+    "tvl_usd": 47804206.32422189,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "bsc": 47804206.32
+    },
+    "asd_usd": null,
+    "website_url": "https://app.unitas.so/points?ref=llama",
+    "chains": [
+      "bsc"
+    ],
+    "tier1_coverage_pct": 100,
+    "tier1_auditors": [
+      "SlowMist"
+    ],
+    "latest_audit_date": "2026-01",
+    "audit_freshness": "fresh",
+    "staleness_breakdown": {
+      "fresh": 3,
+      "aging": 2,
+      "stale": 0,
+      "unknown": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Unitas is a DeFi protocol on BSC that enables basis trading, allowing users to mint and redeem a stablecoin (USDu) against a basket of assets to capture yield from price discrepancies between spot and futures markets.",
+    "relationship_narrative": "The protocol consists of a single product family centered around the USDu stablecoin, with all functionality likely contained within that contract or its associated deployer cluster, indicating a tightly integrated system without separate infrastructure contracts.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x385c279445581a186a4182a5503094ebb652ec71",
+      "name": "StakedUSDuV2",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 47804206.32422189,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakedUSDuV2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x385c279445581a186a4182a5503094ebb652ec71",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 47804206.32422189,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4620",
+        "audit-4621"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "review"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xbb984ce670100aa855f6152f88b26ee57f4ea82a",
+      "name": "UnitasMintingV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UnitasMintingV2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xbb984ce670100aa855f6152f88b26ee57f4ea82a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4620",
+        "audit-4621"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x643c75cb6eb5218e7cb39f563dd606bf62a6e4b4",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x643c75cb6eb5218e7cb39f563dd606bf62a6e4b4",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x6e705a2e978a30dc92df69b428a333f6b82c0c0e",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6e705a2e978a30dc92df69b428a333f6b82c0c0e",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x82a7cc65dc43a9cd5b105581b954ef082595c361",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x82a7cc65dc43a9cd5b105581b954ef082595c361",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xa1e9526cb6ac47403a7a820e75d7bb0c2831c89d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa1e9526cb6ac47403a7a820e75d7bb0c2831c89d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xcfff99c2ac4c0cbc03dc4a8fa55baefe1139eb38",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xcfff99c2ac4c0cbc03dc4a8fa55baefe1139eb38",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe60106a5cab7e7c64830919d36ab20caaf50ac91",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe60106a5cab7e7c64830919d36ab20caaf50ac91",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xea953ea6634d55dac6697c436b1e81a679db5882",
+      "name": "USDu",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Unitas",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "USDu",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xea953ea6634d55dac6697c436b1e81a679db5882",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4620",
+        "audit-4621",
+        "audit-4622"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 4619,
+      "audit_key": "audit-4619",
+      "report_name": "Unipay Audit Report-2026-1-9.pdf",
+      "report_url": "https://github.com/UnipayFi/Audit/blob/main/EVM/Unipay%20Audit%20Report-2026-1-9.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4620,
+      "audit_key": "audit-4620",
+      "report_name": "Unitas Audit Audit Report-2025-9-12.pdf",
+      "report_url": "https://github.com/UnipayFi/Audit/blob/main/EVM/Unitas%20Audit%20Audit%20Report-2025-9-12.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "SingleAdminAccessControl",
+        "StakedUSDu",
+        "StakedUSDuV2",
+        "USDu",
+        "USDuSilo",
+        "UnitasMinting",
+        "UnitasMintingV2"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4621,
+      "audit_key": "audit-4621",
+      "report_name": "Unitas Contracts - SlowMist Audit Report.pdf",
+      "report_url": "https://github.com/UnipayFi/Audit/blob/main/EVM/Unitas%20Contracts%20-%20SlowMist%20Audit%20Report.pdf",
+      "auditor": "SlowMist",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "SingleAdminAccessControl",
+        "StakedUSDu",
+        "StakedUSDuV2",
+        "USDu",
+        "USDuSilo",
+        "UnitasMinting",
+        "UnitasMintingV2"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4622,
+      "audit_key": "audit-4622",
+      "report_name": "2025-04-04 Audit Report - Unipay.pdf",
+      "report_url": "https://github.com/UnipayFi/Audit/blob/main/SVM/2025-04-04%20Audit%20Report%20-%20Unipay.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AccessRegistry",
+        "BlacklistState",
+        "Cooldown",
+        "SUSDU",
+        "USDU",
+        "VaultConfig"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4623,
+      "audit_key": "audit-4623",
+      "report_name": "20250326-Unipay-Final-Audit-Report.pdf",
+      "report_url": "https://github.com/UnipayFi/Audit/blob/main/SVM/20250326-Unipay-Final-Audit-Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "SlowMist",
+      "tier": 1,
+      "contracts_covered": 3,
+      "coverage_pct": 100,
+      "latest_audit": "2025-10"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 100,
+      "latest_audit": "2025-09"
+    }
+  ],
+  "coverage_gaps": [],
+  "origin_summary": {
+    "native": 9,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 7
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 4619,
+        "report_name": "Unipay Audit Report-2026-1-9.pdf"
+      },
+      {
+        "audit_id": 4623,
+        "report_name": "20250326-Unipay-Final-Audit-Report.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

@@ -7,8 +7,8 @@
 - Project: 1inch (`1inch`)
 - Website: [https://1inch.com](https://1inch.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-28T20:22:34.905Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-937a
+- Generated: 2026-05-28T21:26:33.342Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-b60c
 - Chains: ethereum
 - Contract surface: 274 unique implementations (814 raw deployments)
 - DeFi Llama TVL: $2,810,724.13

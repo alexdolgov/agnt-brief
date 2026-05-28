@@ -204,12 +204,12 @@
 | [firelight](./firelight/) | $80.3M | 0.0% | ? | unknown | 3 | 0 | 2026-05-27 |
 | [flamingo](./flamingo/) | $1.5M | 0.0% | $1.5M | dead | 6 | 53 | 2026-05-25 |
 | [flaunch](./flaunch/) | $2.1M | 0.0% | ? | active | 21 | 3 | 2026-05-24 |
-| [flex](./flex/) | $1.3M | 0.0% | ? | unknown | 0 | 1 | 2026-05-25 |
+| [flex](./flex/) | $611.7K | 0.0% | ? | unknown | 6 | 1 | 2026-05-28 |
 | [flexa](./flexa/) | $1.5M | 11.8% | $1.5M | dead | 2 | 17 | 2026-05-25 |
-| [flipster](./flipster/) | $36.0M | 0.0% | ? | active | 0 | 2 | 2026-05-26 |
-| [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 0 | 15 | 2026-05-23 |
-| [flying-tulip](./flying-tulip/) | $52.8M | 0.0% | $52.8M | unknown | 0 | 77 | 2026-05-25 |
-| [fomo3d](./fomo3d/) | $2.6M | 0.0% | ? | active | 0 | 23 | 2026-05-24 |
+| [flipster](./flipster/) | $36.0M | 0.0% | ? | active | 3 | 2 | 2026-05-28 |
+| [flock.io](./flock.io/) | $24.4M | 0.0% | $24.4M | unknown | 3 | 15 | 2026-05-28 |
+| [flying-tulip](./flying-tulip/) | $51.3M | 0.0% | $51.3M | unknown | 2 | 62 | 2026-05-28 |
+| [fomo3d](./fomo3d/) | $2.5M | 0.0% | ? | active | 3 | 23 | 2026-05-28 |
 | [forgeyields](./forgeyields/) | $1.9M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
 | [four.meme](./four.meme/) | $4.9M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
 | [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | unknown | 0 | 5 | 2026-05-24 |

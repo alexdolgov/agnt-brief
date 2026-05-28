@@ -7,11 +7,11 @@
 - Project: FLock.io (`flock.io`)
 - Website: [https://www.flock.io/](https://www.flock.io/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-23T04:24:13.217Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-28T16:52:12.772Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: base
 - Contract surface: 15 unique implementations (34 raw deployments)
-- DeFi Llama TVL: $10,078,103.07
+- DeFi Llama TVL: $9,771,924.67
 - On-chain TVL (included contracts): $24,372,081.06
 - TVL by chain: Base $24,372,081.06
 
@@ -31,11 +31,11 @@ The Token and Staking family provides the FLock token and staking infrastructure
 - Unverified implementations: 1
 - Unique implementations: 15
 - Raw deployments: 34
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $24,372,081.06
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $24,372,081.06 represents exposure in a protocol with unknown activity.
 
@@ -92,6 +92,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -120,9 +123,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [7302] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [7303] 0002-metadata-manifest-and-pull-command.md
+- [7304] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

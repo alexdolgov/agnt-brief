@@ -6,14 +6,14 @@
 
 - Project: Flying Tulip (`flying-tulip`)
 - Website: [https://flyingtulip.com/](https://flyingtulip.com/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-25T14:32:40.344Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: unknown (Tier 0, 12.1% below peak)
+- Generated: 2026-05-28T16:52:12.487Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: avalanche, base, bsc, ethereum, sonic
-- Contract surface: 77 unique implementations (275 raw deployments)
-- DeFi Llama TVL: $5,476,128.32
-- On-chain TVL (included contracts): $52,760,375.97
-- TVL by chain: Ethereum $51,430,263.62 | Sonic $1,330,112.36
+- Contract surface: 62 unique implementations (254 raw deployments)
+- DeFi Llama TVL: $5,814,816.78
+- On-chain TVL (included contracts): $51,254,594.39
+- TVL by chain: Ethereum $49,924,482.03 | Sonic $1,330,112.36
 
 ## Project Description
 
@@ -25,19 +25,19 @@ The protocol shares infrastructure across families: ftYieldWrapper contracts are
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/74 (0.0%)
-- Verified + Unaudited implementations: 74
+- Verified implementations audited: 0/59 (0.0%)
+- Verified + Unaudited implementations: 59
 - Verified by bytecode match: 0
 - Unverified implementations: 3
-- Unique implementations: 77
-- Raw deployments: 275
-- Audits discovered: 0
+- Unique implementations: 62
+- Raw deployments: 254
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $52,760,375.97
+- ASD (verified + unaudited TVL): $51,254,594.39
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $52,760,375.97 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [unknown]. ASD of $51,254,594.39 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -49,25 +49,15 @@ The protocol shares infrastructure across families: ftYieldWrapper contracts are
 
 - None
 
-### ⚠️ Verified + Unaudited (74)
+### ⚠️ Verified + Unaudited (59)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | SparkSavingsStrategy | core_logic | ethereum | 8 deployments: ethereum [`0x3f537e...080aeb`](./contracts/ethereum-1/0x3f537ef4313297b53bb827c02f3cc381ad080aeb/); ethereum `0x4df6f4...f7f2a7`; ethereum `0x4f47c4...307af5`; ethereum `0x852dc7...756a42`; ethereum `0xcfb9d8...32ff2c`; ethereum `0xeb5cb9...b10302`; ethereum `0xf20119...5f99a8`; ethereum `0xfbe073...10b0e5` | ⚠️ Unaudited |
 | DeltaNeutralStakingStrategy | core_logic | sonic | [`0x6ec218...7455ae`](./contracts/sonic-146/0x6ec218fc45ac0c7b83d16557befabb62ed7455ae/) | ⚠️ Unaudited |
-| ArcxTokenV2 | token | ethereum | [`0x1321f1...9bb288`](./contracts/ethereum-1/0x1321f1f1aa541a56c31682c57b80ecfccd9bb288/) | ⚠️ Unaudited |
 | EpochRewardsVault | core_logic | sonic | 7 deployments: ethereum `0xea95e4...27b6da`; ethereum `0xeb4821...7f7625`; sonic [`0x0fdd3b...bef61a`](./contracts/sonic-146/0x0fdd3b7ff34b2e43ee3a0cea72bdfa5519bef61a/); sonic `0x4b8d73...8b24e9`; sonic `0x5aee4b...20e841`; sonic `0xc41855...642647`; sonic `0xd1e5a8...d2aeb1` | ⚠️ Unaudited |
-| bVault | core_logic | ethereum | 6 deployments: ethereum [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/); ethereum `0x378388...a35153`; ethereum `0x3fb6b0...15a2cc`; ethereum `0x750d30...7996d0`; ethereum `0x801690...85dc0e`; ethereum `0x8d9a39...ec6108` | ⚠️ Unaudited |
-| BACDAIPool | core_logic | ethereum | [`0xebd126...02bde8`](./contracts/ethereum-1/0xebd12620e29dc6c452db7b96e1f190f3ee02bde8/) | ⚠️ Unaudited |
-| BACUSDCPool | core_logic | ethereum | [`0x518821...429fd4`](./contracts/ethereum-1/0x51882184b7f9beed6db9c617846140da1d429fd4/) | ⚠️ Unaudited |
-| BACUSDTPool | core_logic | ethereum | [`0x2833bd...877e44`](./contracts/ethereum-1/0x2833bdc5b31269d356bdf92d0fd8f3674e877e44/) | ⚠️ Unaudited |
-| StakingAccrualERC20V5 | token | ethereum | [`0x9bffad...fd7d9d`](./contracts/ethereum-1/0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d/) | ⚠️ Unaudited |
-| BACSUSDPool | core_logic | ethereum | [`0xdc42a2...93305c`](./contracts/ethereum-1/0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c/) | ⚠️ Unaudited |
-| ERC20Peg | token | ethereum | [`0x76bac8...4c6e32`](./contracts/ethereum-1/0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32/) | ⚠️ Unaudited |
 | AaveStrategy | operational_periphery | ethereum | 11 deployments: ethereum [`0x061d7d...afeadb`](./contracts/ethereum-1/0x061d7d04682a6c060cbc4b6fd65adcc724afeadb/); ethereum `0x0987fb...e3ba7d`; ethereum `0x2e43f8...4b04ae`; ethereum `0x3e6077...e81f4b`; ethereum `0x51e85e...f3db03`; ethereum `0x638a51...962307`; ethereum `0xb80491...29cb4e`; ethereum `0xbe9684...9dd2da`; sonic `0x216e58...d3df28`; sonic `0x974ba6...14f8ee`; sonic `0xf09b9d...d94dda` | ⚠️ Unaudited |
 | AccountValuesRouter | adapter | ethereum | 4 deployments: ethereum [`0x5a5e77...b7a4fb`](./contracts/ethereum-1/0x5a5e77f566079168706a9887172dda37d7b7a4fb/); ethereum `0x7ad77f...412ef7`; sonic [`0x5a5e77...b7a4fb`](./contracts/sonic-146/0x5a5e77f566079168706a9887172dda37d7b7a4fb/); sonic `0x7ad77f...412ef7` | ⚠️ Unaudited |
-| BACyCRVPool | core_logic | ethereum | [`0xc462d8...14c3bf`](./contracts/ethereum-1/0xc462d8ee54953e7d7bf276612b75387ea114c3bf/) | ⚠️ Unaudited |
-| BlackPoolToken | core_logic | ethereum | [`0x0ec9f7...7e37da`](./contracts/ethereum-1/0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da/) | ⚠️ Unaudited |
 | CircuitBreaker | unknown | bsc | 10 deployments: ethereum `0x9676e6...ec18e0`; ethereum `0xac9994...a17b37`; ethereum `0xcb170b...4d90de`; bsc [`0x2e43f8...4b04ae`](./contracts/bsc-56/0x2e43f825fba9018d6303e9cf978cad9ac54b04ae/); sonic `0x6b0743...673551`; sonic `0x9676e6...ec18e0`; sonic `0xedc6db...041960`; base `0xedc6db...041960`; avalanche `0x5dfbf7...e7bf88`; avalanche `0x73384c...a8e355` | ⚠️ Unaudited |
 | CircuitBreakerGuardian | governance | ethereum | 2 deployments: ethereum [`0xdc86ad...74c7ea`](./contracts/ethereum-1/0xdc86ad63ca7db1d8b703598b0735c08d5374c7ea/); sonic [`0xdc86ad...74c7ea`](./contracts/sonic-146/0xdc86ad63ca7db1d8b703598b0735c08d5374c7ea/) | ⚠️ Unaudited |
 | CircuitBreakerOperator | unknown | ethereum | 2 deployments: ethereum [`0x765224...24994d`](./contracts/ethereum-1/0x765224780ad888285b03af221f528d0a6824994d/); sonic [`0x765224...24994d`](./contracts/sonic-146/0x765224780ad888285b03af221f528d0a6824994d/) | ⚠️ Unaudited |
@@ -96,7 +86,6 @@ The protocol shares infrastructure across families: ftYieldWrapper contracts are
 | LockerModeler | unknown | ethereum | [`0x077851...c12a39`](./contracts/ethereum-1/0x0778519a236942e6c81f0bfd004bdf4ab1c12a39/) | ⚠️ Unaudited |
 | LongTailIRM | unknown | ethereum | 2 deployments: ethereum [`0x09cd85...29ef69`](./contracts/ethereum-1/0x09cd852f47aca224ee6b4accc29bd2694f29ef69/); sonic [`0x09cd85...29ef69`](./contracts/sonic-146/0x09cd852f47aca224ee6b4accc29bd2694f29ef69/) | ⚠️ Unaudited |
 | MajorIRM | unknown | ethereum | 2 deployments: ethereum [`0x07ec85...25d12f`](./contracts/ethereum-1/0x07ec8583b1bc7d97646409a2b51ddbed6725d12f/); sonic [`0x07ec85...25d12f`](./contracts/sonic-146/0x07ec8583b1bc7d97646409a2b51ddbed6725d12f/) | ⚠️ Unaudited |
-| MasterChef | unknown | ethereum | [`0xc2edad...a888cd`](./contracts/ethereum-1/0xc2edad668740f1aa35e4d8f227fb8e17dca888cd/) | ⚠️ Unaudited |
 | MetaActions | unknown | ethereum | 2 deployments: ethereum [`0x3633eb...1c29f2`](./contracts/ethereum-1/0x3633eb60d08756674472e2d34d6ffb5f4c1c29f2/); sonic [`0x3633eb...1c29f2`](./contracts/sonic-146/0x3633eb60d08756674472e2d34d6ffb5f4c1c29f2/) | ⚠️ Unaudited |
 | MetaSessionActions | unknown | ethereum | 2 deployments: ethereum [`0x4f83ac...3a3497`](./contracts/ethereum-1/0x4f83ac5c8a79986d0916a8849730d9cef63a3497/); sonic [`0x4f83ac...3a3497`](./contracts/sonic-146/0x4f83ac5c8a79986d0916a8849730d9cef63a3497/) | ⚠️ Unaudited |
 | MintAndRedeem | unknown | sonic | 7 deployments: ethereum `0x8852b1...a7c3c6`; ethereum `0xaa48ec...2bd23c`; sonic [`0x0c6f8e...50ee31`](./contracts/sonic-146/0x0c6f8ec81c3ea5bff06f6cd0791780f9f050ee31/); sonic `0x5e272c...2c313d`; sonic `0x8852b1...a7c3c6`; sonic `0xb9682c...3b7fda`; sonic `0xbbf10e...24a09f` | ⚠️ Unaudited |
@@ -116,15 +105,11 @@ The protocol shares infrastructure across families: ftYieldWrapper contracts are
 | RfqEngine | unknown | ethereum | 2 deployments: ethereum [`0xeb00b3...39dc32`](./contracts/ethereum-1/0xeb00b335ca52216fb60fdffa361397367c39dc32/); sonic [`0xeb00b3...39dc32`](./contracts/sonic-146/0xeb00b335ca52216fb60fdffa361397367c39dc32/) | ⚠️ Unaudited |
 | SessionManager | governance | sonic | 4 deployments: ethereum `0x2daf4b...ac5dc9`; ethereum `0xf9f3dd...9360f8`; sonic [`0x109ae7...1fbdff`](./contracts/sonic-146/0x109ae72778a0260571b9767477204f1ce41fbdff/); sonic `0x2daf4b...ac5dc9` | ⚠️ Unaudited |
 | StableIRM | unknown | ethereum | 2 deployments: ethereum [`0x325373...38710d`](./contracts/ethereum-1/0x3253739a68640e308c8209384bb44e4ada38710d/); sonic [`0x325373...38710d`](./contracts/sonic-146/0x3253739a68640e308c8209384bb44e4ada38710d/) | ⚠️ Unaudited |
-| StakedBPT | token | ethereum | [`0x46c509...7b1ee2`](./contracts/ethereum-1/0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2/) | ⚠️ Unaudited |
 | TimelockController | governance | ethereum | [`0x3518db...354707`](./contracts/ethereum-1/0x3518db98cb1fcb19e0c430b3e7f7f74b2a354707/) | ⚠️ Unaudited |
-| TokenPool | core_logic | ethereum | [`0xc93528...793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | ⚠️ Unaudited |
 | TreasuryWrapper | operational_periphery | sonic | 8 deployments: ethereum `0x9d978c...4efd91`; ethereum `0xaa1869...8dfbb3`; sonic [`0x171ba2...8c3b21`](./contracts/sonic-146/0x171ba268b9dff25c44fdeff1c6d08412558c3b21/); sonic `0x24db7a...58ecba`; sonic `0x3e4815...037aea`; sonic `0x725897...49a2d3`; sonic `0x7e3621...9fa4a9`; sonic `0xb65a07...fa48ca` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | 2 deployments: ethereum [`0x570242...6507e5`](./contracts/ethereum-1/0x57024267e8272618f9c5037d373043a8646507e5/); ethereum `0x9f624b...980808` | ⚠️ Unaudited |
 | UniV2Executor | unknown | ethereum | [`0xdc9b61...b057a3`](./contracts/ethereum-1/0xdc9b61a88b5ca5bdfa592fe19861422b2fb057a3/) | ⚠️ Unaudited |
 | UniV3Executor | unknown | ethereum | [`0xb972e7...f3869f`](./contracts/ethereum-1/0xb972e7941f359f9f9460e724d66d3026f6f3869f/) | ⚠️ Unaudited |
 | VCYieldClaimer | operational_periphery | ethereum | 2 deployments: ethereum [`0x418856...10b9e9`](./contracts/ethereum-1/0x418856f634813d904a31e5e16848d6711410b9e9/); ethereum `0xad12b3...909ed9` | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | [`0xdf5e0e...d806a8`](./contracts/ethereum-1/0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8/) | ⚠️ Unaudited |
 | WrapperModeler | unknown | ethereum | [`0x65c1ff...2695b8`](./contracts/ethereum-1/0x65c1fffb85121dd38ed7807e65e33236fb2695b8/) | ⚠️ Unaudited |
 | YieldClaimer | operational_periphery | sonic | 4 deployments: ethereum `0x88432b...d01397`; ethereum `0xff81e0...fac9e2`; sonic [`0x592222...114628`](./contracts/sonic-146/0x59222220759efe35b8e46f5563151827e4114628/); sonic `0x70fe8d...d669d8` | ⚠️ Unaudited |
 
@@ -154,6 +139,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -162,17 +149,8 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | sonic | [`0x6ec218...7455ae`](./contracts/sonic-146/0x6ec218fc45ac0c7b83d16557befabb62ed7455ae/) | DeltaNeutralStakingStrategy | core_logic | $1,330,112.36 | Verified native implementation with $1,330,112.36 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1321f1...9bb288`](./contracts/ethereum-1/0x1321f1f1aa541a56c31682c57b80ecfccd9bb288/) | ArcxTokenV2 | token | $949,182.70 | Verified native implementation with $949,182.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x0fdd3b...bef61a`](./contracts/sonic-146/0x0fdd3b7ff34b2e43ee3a0cea72bdfa5519bef61a/) | EpochRewardsVault | core_logic | $497,613.02 | Verified native implementation with $497,613.02 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/) | bVault | core_logic | $298,312.40 | Verified native implementation with $298,312.40 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xebd126...02bde8`](./contracts/ethereum-1/0xebd12620e29dc6c452db7b96e1f190f3ee02bde8/) | BACDAIPool | core_logic | $88,280.57 | Verified native implementation with $88,280.57 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x518821...429fd4`](./contracts/ethereum-1/0x51882184b7f9beed6db9c617846140da1d429fd4/) | BACUSDCPool | core_logic | $86,330.94 | Verified native implementation with $86,330.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2833bd...877e44`](./contracts/ethereum-1/0x2833bdc5b31269d356bdf92d0fd8f3674e877e44/) | BACUSDTPool | core_logic | $71,162.70 | Verified native implementation with $71,162.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xdc42a2...93305c`](./contracts/ethereum-1/0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c/) | BACSUSDPool | core_logic | $10.00 | Verified native implementation with $10.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x76bac8...4c6e32`](./contracts/ethereum-1/0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32/) | ERC20Peg | token | $2.00 | Verified native implementation with $2.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5a5e77...b7a4fb`](./contracts/ethereum-1/0x5a5e77f566079168706a9887172dda37d7b7a4fb/) | AccountValuesRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc462d8...14c3bf`](./contracts/ethereum-1/0xc462d8ee54953e7d7bf276612b75387ea114c3bf/) | BACyCRVPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0ec9f7...7e37da`](./contracts/ethereum-1/0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da/) | BlackPoolToken | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x2e43f8...4b04ae`](./contracts/bsc-56/0x2e43f825fba9018d6303e9cf978cad9ac54b04ae/) | CircuitBreaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdc86ad...74c7ea`](./contracts/ethereum-1/0xdc86ad63ca7db1d8b703598b0735c08d5374c7ea/) | CircuitBreakerGuardian | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x765224...24994d`](./contracts/ethereum-1/0x765224780ad888285b03af221f528d0a6824994d/) | CircuitBreakerOperator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -208,8 +186,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xeb00b3...39dc32`](./contracts/ethereum-1/0xeb00b335ca52216fb60fdffa361397367c39dc32/) | RfqEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x109ae7...1fbdff`](./contracts/sonic-146/0x109ae72778a0260571b9767477204f1ce41fbdff/) | SessionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x325373...38710d`](./contracts/ethereum-1/0x3253739a68640e308c8209384bb44e4ada38710d/) | StableIRM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x46c509...7b1ee2`](./contracts/ethereum-1/0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2/) | StakedBPT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc93528...793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | TokenPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdc9b61...b057a3`](./contracts/ethereum-1/0xdc9b61a88b5ca5bdfa592fe19861422b2fb057a3/) | UniV2Executor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb972e7...f3869f`](./contracts/ethereum-1/0xb972e7941f359f9f9460e724d66d3026f6f3869f/) | UniV3Executor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x65c1ff...2695b8`](./contracts/ethereum-1/0x65c1fffb85121dd38ed7807e65e33236fb2695b8/) | WrapperModeler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -219,18 +195,23 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 56 |
-| upstream | 4 |
+| native | 45 |
+| upstream | 3 |
 | standard_library | 13 |
-| needs_review | 4 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [7675] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [7676] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

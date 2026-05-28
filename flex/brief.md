@@ -6,12 +6,12 @@
 
 - Project: Flex (`flex`)
 - Website: [https://flexmeow.com/](https://flexmeow.com/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-25T01:06:35.984Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: unknown (Tier 0, 11.3% below peak)
+- Generated: 2026-05-28T16:54:26.245Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,306,753.00
+- DeFi Llama TVL: $611,657.73
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -31,11 +31,11 @@ The protocol consists of a single product family with one core registry contract
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 0
+- Audits discovered: 6
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2026-05 (fresh)
+- Staleness: 2 fresh, 0 aging, 0 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
@@ -77,6 +77,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [FLEX-Audit-28-February-2026.md](https://github.com/flexmeow/flex-contracts/blob/master/audits/FLEX-Audit-28-February-2026.md) | unknown | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
+| [Flex-May-07-2026-Dedaub.pdf](https://github.com/flexmeow/flex-contracts/blob/master/audits/Flex-May-07-2026-Dedaub.pdf) | Dedaub | Audit | 2026-05 | fresh | Direct | n/a | 0 | n/a |
+| [flex-audit-27-april.md](https://github.com/flexmeow/flex-contracts/blob/master/audits/flex-audit-27-april.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -99,9 +105,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [9630] FLEX-Audit-28-February-2026.md
+- [9631] Flex-May-07-2026-Dedaub.pdf
+- [9632] flex-audit-27-april.md
+- [9633] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9634] 0002-metadata-manifest-and-pull-command.md
+- [9635] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

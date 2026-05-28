@@ -133,12 +133,13 @@
 | [coinstore](./coinstore/) | $62.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [colend-protocol](./colend-protocol/) | $4.3M | 0.0% | ? | unknown | 7 | 0 | 2026-05-23 |
-| [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 0 | 9 | 2026-05-24 |
+| [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 3 | 9 | 2026-05-28 |
 | [coti-treasury](./coti-treasury/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 53 | 2026-05-25 |
 | [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-05-24 |
 | [cream-finance](./cream-finance/) | $2.3B | 0.0% | $2.3B | dead | 2 | 95 | 2026-05-24 |
-| [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 0 | 83 | 2026-05-23 |
+| [credbull](./credbull/) | $1.9K | 0.0% | $1.9K | dead | 3 | 83 | 2026-05-28 |
 | [credit-coop](./credit-coop/) | $2.1M | 0.0% | $2.1M | unknown | 3 | 2 | 2026-05-25 |
+| [crypto.com-liquid-staking](./crypto.com-liquid-staking/) | $25.4M | 0.0% | ? | active | 3 | 1 | 2026-05-28 |
 | [csigma-finance](./csigma-finance/) | $69.5K | 41.0% | $65.6K | active | 3 | 50 | 2026-05-22 |
 | [cyclone](./cyclone/) | $165.5M | 0.0% | $165.5M | active | 3 | 64 | 2026-05-25 |
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-05-22 |
@@ -147,7 +148,7 @@
 | [debridge](./debridge/) | $263.9M | 0.0% | $263.9M | declining | 1 | 161 | 2026-05-25 |
 | [decentralized-euro](./decentralized-euro/) | $230.4M | 28.2% | $230.4M | active | 3 | 72 | 2026-05-25 |
 | [decibel](./decibel/) | $41.9M | 0.0% | ? | unknown | 4 | 0 | 2026-05-26 |
-| [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 0 | 70 | 2026-05-24 |
+| [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 3 | 70 | 2026-05-28 |
 | [defi-kingdoms](./defi-kingdoms/) | $6.5M | 0.0% | ? | dead | 1 | 5 | 2026-05-23 |
 | [defichain-dex](./defichain-dex/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-05-24 |

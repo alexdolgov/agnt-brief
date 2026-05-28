@@ -79,7 +79,7 @@ Each project directory contains:
 | [switcheo-finance](./switcheo-finance/brief.md) | $1.25M | ethereum | 48 | 30/48 (63%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $68.37M |
 | [init-capital](./init-capital/brief.md) | $4.51M | blast, mantle | 102 | 26/102 (25%) | 21.4% | 0.0% (-) | 4 | stale | ⚠️ declining | $66.15M |
 | [turtle-club](./turtle-club/brief.md) | $1.29M | 4 | 516 | 340/516 (66%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $59.81M |
-| [deeplock](./deeplock/brief.md) | $2.15M | bsc | 70 | 38/70 (54%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $56.17M |
+| [deeplock](./deeplock/brief.md) | $2.14M | bsc | 70 | 38/70 (54%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $56.17M |
 | [tulipa-capital](./tulipa-capital/brief.md) | $49.29M | avalanche, base, ethereum | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $55.69M |
 | [api3](./api3/brief.md) | $55.28M | ethereum, mantle | 28 | 14/28 (50%) | 21.4% | 7.1% (Trail of Bits) | 3 | aging | ❓ unknown | $55.23M |
 | [flying-tulip](./flying-tulip/brief.md) | $5.48M | 5 | 77 | 74/77 (96%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $52.76M |
@@ -430,8 +430,9 @@ Each project directory contains:
 | [coinstore](./coinstore/brief.md) | $62.21M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [coinw](./coinw/brief.md) | $1.11M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [colend-protocol](./colend-protocol/brief.md) | $4.32M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
-| [core-bridge](./core-bridge/brief.md) | $4.01M | avalanche, base | 9 | 5/9 (56%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [core-bridge](./core-bridge/brief.md) | $4.02M | avalanche, base | 9 | 5/9 (56%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [cozy-finance](./cozy-finance/brief.md) | $2.29M | optimism | 48 | 5/48 (10%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
+| [crypto.com-liquid-staking](./crypto.com-liquid-staking/brief.md) | $25.39M | cronos | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [decibel](./decibel/brief.md) | $41.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [defi-kingdoms](./defi-kingdoms/brief.md) | $6.45M | harmony, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | - |
 | [depth](./depth/brief.md) | $1.17M | heco | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
@@ -681,5 +682,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-28T16:03:31.122Z_
-_Projects: 669_
+_Generated: 2026-05-28T16:16:39.361Z_
+_Projects: 670_

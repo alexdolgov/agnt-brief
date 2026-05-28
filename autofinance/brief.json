@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "autofinance",
-  "generated_at": "2026-05-28T19:22:54.808Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-1969",
+  "generated_at": "2026-05-28T20:34:37.673Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-937a",
   "lifecycle_status": "transitioning",
   "lifecycle_signal": {
     "slug": "autofinance",

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aura",
-  "generated_at": "2026-05-28T21:35:11.701Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-b60c",
+  "generated_at": "2026-05-28T22:35:20.042Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-3559",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "aura",

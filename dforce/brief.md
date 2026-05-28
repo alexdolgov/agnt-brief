@@ -7,11 +7,11 @@
 - Project: dForce (`dforce`)
 - Website: [https://dforce.network/](https://dforce.network/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T00:26:13.581Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-28T16:37:02.364Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: arbitrum, avalanche, bsc, ethereum, kava, optimism, polygon
 - Contract surface: 450 unique implementations (1011 raw deployments)
-- DeFi Llama TVL: $12,483,501.00
+- DeFi Llama TVL: $12,480,361.00
 - On-chain TVL (included contracts): $3,605,459.70
 - TVL by chain: Ethereum $2,823,167.08 | Bsc $572,234.41 | Arbitrum $156,970.71 | Polygon $31,932.33 | Optimism $21,155.16
 
@@ -25,31 +25,38 @@ The dForce and dForce Lending families share similar lending logic and token sta
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/110 (0.0%)
-- Verified + Unaudited implementations: 99
+- Verified implementations audited: 4/110 (3.6%)
+- Verified + Unaudited implementations: 95
 - Verified by bytecode match: 11
 - Unverified implementations: 340
 - Unique implementations: 450
 - Raw deployments: 1011
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
+- Audits discovered: 20
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $3,605,459.70
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 20 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $3,605,459.70 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 4 | 3.6% | n/a |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (4)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| DFEngine | unknown | ethereum | [`0x8dc753...b60202`](./contracts/ethereum-1/0x8dc753d30b9f9f86dac3380e37d5bc03d6b60202/) | ✅ Audited |
+| DFPool | core_logic | ethereum | [`0x786bf5...23d895`](./contracts/ethereum-1/0x786bf554473f9ab733fd683c528212492a23d895/) | ✅ Audited |
+| DFProtocol | unknown | ethereum | [`0x5843f1...d1a1e8`](./contracts/ethereum-1/0x5843f1ccc5baa448528eb0e8bc567cda7ed1a1e8/) | ✅ Audited |
+| DFProtocolView | unknown | ethereum | 2 deployments: ethereum [`0x097dd2...f3396f`](./contracts/ethereum-1/0x097dd22173f0e382dae42baaeb9bdbc9fdf3396f/); ethereum `0x1351e1...6bf55e` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (99)
+### ⚠️ Verified + Unaudited (95)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -71,13 +78,9 @@ The dForce and dForce Lending families share similar lending logic and token sta
 | CrossChainRouter | adapter | optimism | 3 deployments: ethereum `0x841714...342390`; optimism [`0x1cc2a5...96a02a`](./contracts/optimism-10/0x1cc2a5a1f7c4ea9c29be62a58a5591e82f96a02a/); arbitrum `0x2ca083...af271e` | ⚠️ Unaudited |
 | DFCollateral | unknown | ethereum | [`0x617bed...1f5235`](./contracts/ethereum-1/0x617bed8699f71fe830a50469bd474bc8481f5235/) | ⚠️ Unaudited |
 | DFDispatcher | unknown | ethereum | 3 deployments: ethereum [`0x5738e2...49bec6`](./contracts/ethereum-1/0x5738e22bace1f51b50c140684c02dd604a49bec6/); ethereum `0x6bac35...d868fa`; ethereum `0x6c1101...f30e91` | ⚠️ Unaudited |
-| DFEngine | unknown | ethereum | [`0x8dc753...b60202`](./contracts/ethereum-1/0x8dc753d30b9f9f86dac3380e37d5bc03d6b60202/) | ⚠️ Unaudited |
 | DFEngineV2 | unknown | ethereum | 2 deployments: ethereum [`0x071b49...4613d5`](./contracts/ethereum-1/0x071b49f6a26ffa31f67e833d3dfec500cc4613d5/); ethereum `0x3ea496...2c7d7c` | ⚠️ Unaudited |
 | DFFunds | unknown | ethereum | [`0xd54780...54ce6d`](./contracts/ethereum-1/0xd5478011ccb79189a240a96ec913a8021b54ce6d/) | ⚠️ Unaudited |
 | DForceLendingHandler | core_logic | ethereum | 4 deployments: ethereum [`0x10a49c...219c08`](./contracts/ethereum-1/0x10a49c54babef0d39f5531f0d1a5d98fbe219c08/); ethereum `0x1ec23c...42229f`; ethereum `0xe3412d...5ee5ff`; ethereum `0xeeeaf7...d3aeaa` | ⚠️ Unaudited |
-| DFPool | core_logic | ethereum | [`0x786bf5...23d895`](./contracts/ethereum-1/0x786bf554473f9ab733fd683c528212492a23d895/) | ⚠️ Unaudited |
-| DFProtocol | unknown | ethereum | [`0x5843f1...d1a1e8`](./contracts/ethereum-1/0x5843f1ccc5baa448528eb0e8bc567cda7ed1a1e8/) | ⚠️ Unaudited |
-| DFProtocolView | unknown | ethereum | 2 deployments: ethereum [`0x097dd2...f3396f`](./contracts/ethereum-1/0x097dd22173f0e382dae42baaeb9bdbc9fdf3396f/); ethereum `0x1351e1...6bf55e` | ⚠️ Unaudited |
 | DFProxy | proxy | ethereum | [`0x7fdcda...4f57ba`](./contracts/ethereum-1/0x7fdcdad3b4a67e00d9fd5f22f4fd89a5fa4f57ba/) | ⚠️ Unaudited |
 | DFSetting | unknown | ethereum | [`0x801c4a...48a32e`](./contracts/ethereum-1/0x801c4a04aad875b6aa91a2ec1346393ee348a32e/) | ⚠️ Unaudited |
 | DFStore | unknown | ethereum | [`0xd30d06...91ba8d`](./contracts/ethereum-1/0xd30d06b276867cfa2266542791242ff37c91ba8d/) | ⚠️ Unaudited |
@@ -528,6 +531,26 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [How_to_integrate_with_USDx.pdf](https://github.com/dforce-network/USDx_1.0/blob/master/docs/How_to_integrate_with_USDx.pdf) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | medium |
+| [dip001_design.pdf](https://github.com/dforce-network/DIP001/blob/master/docs/dip001_design.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [account-abstraction.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/account-abstraction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [app-blocklist.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/app-blocklist.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [cross-chain.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/cross-chain.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [data-indexers.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/data-indexers.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [report.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/report.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [using-base.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/using-base.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [wallet.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/wallet.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [why-base.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/why-base.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [generate-random-numbers-contracts.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/cookbook/smart-contract-development/foundry/generate-random-numbers-contracts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [verify-contract-with-basescan.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/cookbook/smart-contract-development/foundry/verify-contract-with-basescan.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [deploy-with-hardhat.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/cookbook/smart-contract-development/hardhat/deploy-with-hardhat.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [optimizing-gas-usage.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/cookbook/smart-contract-development/hardhat/optimizing-gas-usage.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [reducing-contract-size.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/cookbook/smart-contract-development/hardhat/reducing-contract-size.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [privacy-policy.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/privacy-policy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [terms-of-service.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/terms-of-service.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -548,13 +571,9 @@ Verified + unaudited native implementations ranked by TVL:
 | optimism | [`0x1cc2a5...96a02a`](./contracts/optimism-10/0x1cc2a5a1f7c4ea9c29be62a58a5591e82f96a02a/) | CrossChainRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x617bed...1f5235`](./contracts/ethereum-1/0x617bed8699f71fe830a50469bd474bc8481f5235/) | DFCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5738e2...49bec6`](./contracts/ethereum-1/0x5738e22bace1f51b50c140684c02dd604a49bec6/) | DFDispatcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8dc753...b60202`](./contracts/ethereum-1/0x8dc753d30b9f9f86dac3380e37d5bc03d6b60202/) | DFEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x071b49...4613d5`](./contracts/ethereum-1/0x071b49f6a26ffa31f67e833d3dfec500cc4613d5/) | DFEngineV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd54780...54ce6d`](./contracts/ethereum-1/0xd5478011ccb79189a240a96ec913a8021b54ce6d/) | DFFunds | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x10a49c...219c08`](./contracts/ethereum-1/0x10a49c54babef0d39f5531f0d1a5d98fbe219c08/) | DForceLendingHandler | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x786bf5...23d895`](./contracts/ethereum-1/0x786bf554473f9ab733fd683c528212492a23d895/) | DFPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x5843f1...d1a1e8`](./contracts/ethereum-1/0x5843f1ccc5baa448528eb0e8bc567cda7ed1a1e8/) | DFProtocol | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x097dd2...f3396f`](./contracts/ethereum-1/0x097dd22173f0e382dae42baaeb9bdbc9fdf3396f/) | DFProtocolView | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7fdcda...4f57ba`](./contracts/ethereum-1/0x7fdcdad3b4a67e00d9fd5f22f4fd89a5fa4f57ba/) | DFProxy | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x801c4a...48a32e`](./contracts/ethereum-1/0x801c4a04aad875b6aa91a2ec1346393ee348a32e/) | DFSetting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd30d06...91ba8d`](./contracts/ethereum-1/0xd30d06b276867cfa2266542791242ff37c91ba8d/) | DFStore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -630,9 +649,31 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 19
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: medium=1
+- Match method counts: extraction_exact=5
+
+Zero-match audit list:
+
+- [6953] dip001_design.pdf
+- [6954] account-abstraction.md
+- [6955] app-blocklist.md
+- [6956] cross-chain.md
+- [6957] data-indexers.md
+- [6958] report.md
+- [6959] using-base.md
+- [6960] wallet.md
+- [6961] why-base.md
+- [6962] generate-random-numbers-contracts.md
+- [6963] verify-contract-with-basescan.md
+- [6964] deploy-with-hardhat.md
+- [6965] optimizing-gas-usage.md
+- [6966] reducing-contract-size.md
+- [6967] privacy-policy.md
+- [6968] terms-of-service.md
+- [6969] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [6970] 0002-metadata-manifest-and-pull-command.md
+- [6971] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

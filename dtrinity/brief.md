@@ -5,11 +5,11 @@
 - Project: dTRINITY (`dtrinity`)
 - Website: [https://dtrinity.org/](https://dtrinity.org/)
 - Lifecycle: active (Tier 0, 35.2% below peak)
-- Generated: 2026-05-24T12:45:35.651Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-28T16:36:01.471Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: ethereum, fraxtal, sonic
 - Contract surface: 209 unique implementations (580 raw deployments)
-- DeFi Llama TVL: $2,323,665.00
+- DeFi Llama TVL: $2,367,174.00
 - On-chain TVL (included contracts): $1,761,175.17
 - TVL by chain: Ethereum $1,477,300.16 | Sonic $283,875.01
 
@@ -23,30 +23,41 @@ The lending markets rely on the oracle family for asset prices and the dUSD stab
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/89 (0.0%)
-- Verified + Unaudited implementations: 88
+- Verified implementations audited: 8/89 (9.0%)
+- Verified + Unaudited implementations: 80
 - Verified by bytecode match: 1
 - Unverified implementations: 120
 - Unique implementations: 209
 - Raw deployments: 580
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
+- Audits discovered: 9
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $1,761,175.17
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 9 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 8 | 9.0% | n/a |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (8)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| AToken | token | sonic | 33 deployments: ethereum `0x3de01b...411ddf`; ethereum `0x40caf3...2579e7`; ethereum `0x5cc741...30fd60`; ethereum `0x8a9384...b9c930`; ethereum `0xab035f...d02989`; sonic [`0x104515...9003ed`](./contracts/sonic-146/0x10451579fd6375c8bee09f1e2c5831afde9003ed/); sonic `0x1721db...da4350`; sonic `0x1a204f...33e6a2`; sonic `0x290156...f5515a`; sonic `0x6e05d1...0e0895`; sonic `0x7d82b7...577ff8`; sonic `0x8805f9...277aee`; sonic `0x88ff4d...8b5bdc`; sonic `0x8d9d88...142328`; sonic `0x8dbf87...ac1c06`; sonic `0xa148fb...3ba3cd`; sonic `0xf0c5f8...858c75`; sonic `0xfb9821...787748`; fraxtal `0x12ed58...99cdef`; fraxtal `0x1f0755...a862f7`; fraxtal `0x29155d...799ee0`; fraxtal `0x29d025...46059b`; fraxtal `0x2d2b81...618cfa`; fraxtal `0x2d8ae7...36a0ab`; fraxtal `0x44c69f...c5e7a2`; fraxtal `0x5037ae...79c5d4`; fraxtal `0x64188d...f10ede`; fraxtal `0x643361...e6ac90`; fraxtal `0x6ae145...db0706`; fraxtal `0x831504...7448de`; fraxtal `0xc569b9...764bc9`; fraxtal `0xe91913...ee2edf`; fraxtal `0xf1082f...bf4c0e` | ✅ Audited |
+| EmissionManager | operational_periphery | sonic | 5 deployments: ethereum `0xcea995...1d1396`; sonic [`0x8aa67b...aada56`](./contracts/sonic-146/0x8aa67b35bc3d004f2945066164300b98c9aada56/); sonic `0xb0499d...bd8d16`; sonic `0xe3ee2d...df479e`; fraxtal `0xda1a52...94c278` | ✅ Audited |
+| InitializableImmutableAdminUpgradeabilityProxy | unknown | ethereum | 11 deployments: ethereum [`0x2b820f...5dff35`](./contracts/ethereum-1/0x2b820fd4911876160c3988e57a10d8a5b85dff35/); ethereum `0x7f9098...9d7cf1`; ethereum `0x88a4ee...a1c748`; ethereum `0x947729...bfb59b`; ethereum `0x979fb7...efaad8`; ethereum `0xa17571...dfe493`; ethereum `0xa5535f...a26eae`; ethereum `0xb33276...a8029c`; ethereum `0xc24773...0e9011`; ethereum `0xdfaee6...a5877f`; sonic `0xf177ef...0d0bd1` | ✅ Audited |
+| L2Pool | core_logic | sonic | 4 deployments: ethereum `0xfda3a0...e19e84`; sonic [`0x179867...6bb8cc`](./contracts/sonic-146/0x179867c392add1bf4f7a3d4c70bf8f2f476bb8cc/); fraxtal `0x20a24d...91a6d7`; fraxtal `0xdfd607...44c936` | ✅ Audited |
+| PullRewardsTransferStrategy | core_logic | sonic | 6 deployments: ethereum `0x31bf6b...6e6316`; sonic [`0x15a8d3...5aa85f`](./contracts/sonic-146/0x15a8d3c0a0ac8af7dbf16fe826314228ee5aa85f/); sonic `0x58acc2...492409`; sonic `0xa002d1...9f7e08`; sonic `0xdba93c...f46e39`; fraxtal `0xaaee14...ed35a5` | ✅ Audited |
+| SanitizableAToken | token | ethereum | [`0x504d0e...483acc`](./contracts/ethereum-1/0x504d0eacbf9ea5645a8a9da1b15f3708a5483acc/) | ✅ Audited |
+| UiIncentiveDataProviderV3 | unknown | fraxtal | 5 deployments: ethereum `0xe3ee2d...df479e`; sonic `0xb1c1d6...c6ac2d`; sonic `0xd4d111...ee474a`; sonic `0xdd3c66...a6d3c1`; fraxtal [`0x21bd81...b68830`](./contracts/fraxtal-252/0x21bd81b33d4b04b94bd30c6f015484e830b68830/) | ✅ Audited |
+| VariableDebtToken | token | sonic | 7 deployments: ethereum `0xf5e96f...da27ef`; sonic [`0x0b0bd5...3b7240`](./contracts/sonic-146/0x0b0bd5f8a6f4c72a09748fa915af12ca423b7240/); sonic `0x72f1b0...0f0d51`; sonic `0x918130...369d08`; sonic `0xf65d51...5d364e`; fraxtal `0x2eae5a...621659`; fraxtal `0x6b937d...f560de` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (88)
+### ⚠️ Verified + Unaudited (80)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -64,7 +75,6 @@ The lending markets rely on the oracle family for asset prices and the dUSD stab
 | API3CompositeWrapperWithThresholding | unknown | fraxtal | 13 deployments: sonic `0x51906c...a7cc53`; sonic `0x6a2506...9fb67c`; sonic `0xa1bf60...4128e8`; sonic `0xbbf9f7...c3e9b2`; sonic `0xbd73ec...86cf87`; sonic `0xbe90db...2c65be`; sonic `0xca52d0...f24dda`; sonic `0xe8b48a...504abd`; fraxtal [`0x07fff9...1ca236`](./contracts/fraxtal-252/0x07fff99e1664d9b116fbc158c0e99785f81ca236/); fraxtal `0x664965...3b1b26`; fraxtal `0x6ea83b...8a8017`; fraxtal `0xd72ff4...8d3e49`; fraxtal `0xde8cce...a567b9` | ⚠️ Unaudited |
 | API3Wrapper | unknown | fraxtal | 14 deployments: sonic `0x2db1e3...2aa1aa`; sonic `0x3ff41c...0b12d4`; sonic `0x414afe...dd5d08`; sonic `0x53b400...e80f6d`; sonic `0x573e97...d2cdaf`; sonic `0x5e52f1...94858d`; sonic `0xbd29ad...6e9d6b`; sonic `0xde8cce...a567b9`; fraxtal [`0x011c49...97e373`](./contracts/fraxtal-252/0x011c49b8d9a861b41502256360b6210d0897e373/); fraxtal `0x18ae2d...dfd5e1`; fraxtal `0x3c3651...c01a53`; fraxtal `0xd66c16...036cac`; fraxtal `0xf6ea02...6d2f42`; fraxtal `0xf9ed5f...089af0` | ⚠️ Unaudited |
 | API3WrapperWithThresholding | unknown | sonic | 11 deployments: sonic [`0x260f49...4cf209`](./contracts/sonic-146/0x260f494e6889b36e68b393903bfd7756f44cf209/); sonic `0x4e23ca...7b3a1c`; sonic `0x5cb4f9...066961`; sonic `0x9d286f...9352b1`; sonic `0xaeba31...508b4a`; sonic `0xe4dd47...87b310`; sonic `0xf4b584...dd84ca`; sonic `0xf9db03...178f49`; fraxtal `0x4c9685...276a75`; fraxtal `0x68e108...78a24e`; fraxtal `0x902c37...5f590b` | ⚠️ Unaudited |
-| AToken | token | sonic | 33 deployments: ethereum `0x3de01b...411ddf`; ethereum `0x40caf3...2579e7`; ethereum `0x5cc741...30fd60`; ethereum `0x8a9384...b9c930`; ethereum `0xab035f...d02989`; sonic [`0x104515...9003ed`](./contracts/sonic-146/0x10451579fd6375c8bee09f1e2c5831afde9003ed/); sonic `0x1721db...da4350`; sonic `0x1a204f...33e6a2`; sonic `0x290156...f5515a`; sonic `0x6e05d1...0e0895`; sonic `0x7d82b7...577ff8`; sonic `0x8805f9...277aee`; sonic `0x88ff4d...8b5bdc`; sonic `0x8d9d88...142328`; sonic `0x8dbf87...ac1c06`; sonic `0xa148fb...3ba3cd`; sonic `0xf0c5f8...858c75`; sonic `0xfb9821...787748`; fraxtal `0x12ed58...99cdef`; fraxtal `0x1f0755...a862f7`; fraxtal `0x29155d...799ee0`; fraxtal `0x29d025...46059b`; fraxtal `0x2d2b81...618cfa`; fraxtal `0x2d8ae7...36a0ab`; fraxtal `0x44c69f...c5e7a2`; fraxtal `0x5037ae...79c5d4`; fraxtal `0x64188d...f10ede`; fraxtal `0x643361...e6ac90`; fraxtal `0x6ae145...db0706`; fraxtal `0x831504...7448de`; fraxtal `0xc569b9...764bc9`; fraxtal `0xe91913...ee2edf`; fraxtal `0xf1082f...bf4c0e` | ⚠️ Unaudited |
 | AtomicMarketListingHelper | periphery | fraxtal | [`0x67c3ad...ad2662`](./contracts/fraxtal-252/0x67c3ad684243430ca1f7f32fe4a64eb223ad2662/) | ⚠️ Unaudited |
 | BorrowLogic | core_logic | sonic | 4 deployments: ethereum `0x810369...b72786`; sonic [`0x1e06f1...c606ab`](./contracts/sonic-146/0x1e06f1d027686abb8c7aab7feec115f5a8c606ab/); sonic `0x9e302c...2b6dcc`; fraxtal `0x2a1d1b...319eeb` | ⚠️ Unaudited |
 | BridgeLogic | operational_periphery | sonic | 4 deployments: ethereum `0xe1c986...c4e671`; sonic [`0xb7cff0...0f8635`](./contracts/sonic-146/0xb7cff0c4301cd43b01d96d4d8669550bb50f8635/); sonic `0xca0a90...7e37bb`; fraxtal `0xba4d4b...8cc46a` | ⚠️ Unaudited |
@@ -85,7 +95,6 @@ The lending markets rely on the oracle family for asset prices and the dUSD stab
 | DStakeRouterV2 | adapter | ethereum | 2 deployments: ethereum [`0x2e89df...cf64a8`](./contracts/ethereum-1/0x2e89df2934aff1b671923a45bacf2b21f3cf64a8/); ethereum `0xdd26c2...e9be5a` | ⚠️ Unaudited |
 | DStakeRouterV2GovernanceModule | adapter | ethereum | 2 deployments: ethereum [`0x8cf140...7b6703`](./contracts/ethereum-1/0x8cf140bde76323a5785d87645fc3ddfe837b6703/); ethereum `0xedbccd...28a88b` | ⚠️ Unaudited |
 | DStakeRouterV2RebalanceModule | adapter | ethereum | 3 deployments: ethereum [`0x6f3b7c...a61dde`](./contracts/ethereum-1/0x6f3b7cc3d3c8c201373900402ea0f5a61da61dde/); ethereum `0x7aefde...89c55f`; ethereum `0xc792f2...e18cc6` | ⚠️ Unaudited |
-| EmissionManager | operational_periphery | sonic | 5 deployments: ethereum `0xcea995...1d1396`; sonic [`0x8aa67b...aada56`](./contracts/sonic-146/0x8aa67b35bc3d004f2945066164300b98c9aada56/); sonic `0xb0499d...bd8d16`; sonic `0xe3ee2d...df479e`; fraxtal `0xda1a52...94c278` | ⚠️ Unaudited |
 | EModeLogic | unknown | ethereum | 4 deployments: ethereum [`0x26326b...239b4b`](./contracts/ethereum-1/0x26326b406208e206cbe9a2417bf61700b4239b4b/); sonic `0x4b6760...e7a87e`; sonic `0xf84cc8...84ff85`; fraxtal `0xca5cb6...6d62bc` | ⚠️ Unaudited |
 | ERC4626BalanceChecker | unknown | fraxtal | 2 deployments: fraxtal [`0x09c418...5e44dd`](./contracts/fraxtal-252/0x09c418a9d8027ef890a91ccdfce3c14d055e44dd/); fraxtal `0x7a2949...2ab7d9` | ⚠️ Unaudited |
 | ERC4626OracleWrapperV1_1 | operational_periphery | ethereum | [`0x889bf3...913f37`](./contracts/ethereum-1/0x889bf3e00e93bc9ce17a7f8141ef109283913f37/) | ⚠️ Unaudited |
@@ -97,11 +106,9 @@ The lending markets rely on the oracle family for asset prices and the dUSD stab
 | HardPegOracleWrapper | operational_periphery | sonic | 13 deployments: sonic [`0x0fdf4d...cc9c4e`](./contracts/sonic-146/0x0fdf4dd62b3e1d888a6cc60d28d5f711d2cc9c4e/); sonic `0x1f739b...7ed77e`; sonic `0x3459ab...d4e9e2`; sonic `0x3f2d8a...5b8fd8`; sonic `0x738056...13b294`; sonic `0x74be9a...7a0764`; sonic `0xaa682f...0b18cd`; sonic `0xbf5298...c9de0b`; sonic `0xc40f43...0a9d9c`; sonic `0xd24ca3...e3ca10`; sonic `0xe7e77d...17d300`; sonic `0xf9aa9f...b700dd`; fraxtal `0x8e5031...4abc2a` | ⚠️ Unaudited |
 | HardPegOracleWrapperV1_1 | operational_periphery | ethereum | 4 deployments: ethereum [`0x1e5be5...36cc95`](./contracts/ethereum-1/0x1e5be5059d4a95297604355dc6abd0baf036cc95/); ethereum `0x4ef480...2aa54a`; ethereum `0x788d96...614d4a`; ethereum `0x837c1c...fc638a` | ⚠️ Unaudited |
 | InitializableAdminUpgradeabilityProxy | unknown | sonic | 3 deployments: sonic [`0x6ba79a...14332a`](./contracts/sonic-146/0x6ba79a7f414026363d027dc55e3af6625414332a/); sonic `0xe63b4d...4cae3a`; sonic `0xf749a3...ae6595` | ⚠️ Unaudited |
-| InitializableImmutableAdminUpgradeabilityProxy | unknown | ethereum | 11 deployments: ethereum [`0x2b820f...5dff35`](./contracts/ethereum-1/0x2b820fd4911876160c3988e57a10d8a5b85dff35/); ethereum `0x7f9098...9d7cf1`; ethereum `0x88a4ee...a1c748`; ethereum `0x947729...bfb59b`; ethereum `0x979fb7...efaad8`; ethereum `0xa17571...dfe493`; ethereum `0xa5535f...a26eae`; ethereum `0xb33276...a8029c`; ethereum `0xc24773...0e9011`; ethereum `0xdfaee6...a5877f`; sonic `0xf177ef...0d0bd1` | ⚠️ Unaudited |
 | Issuer | unknown | sonic | 10 deployments: sonic [`0x090613...a15c59`](./contracts/sonic-146/0x09061316c817cbfd4b2b962cbe4db64980a15c59/); sonic `0x09f790...ab45cf`; sonic `0x1f3754...4e990e`; sonic `0x3b8c68...cb51f8`; sonic `0x5e8352...488d15`; sonic `0x72ef2d...b81fbf`; sonic `0x807aa6...b0bca1`; sonic `0x96a5a8...423b69`; fraxtal `0x1ec13e...99b7a2`; fraxtal `0x823fd0...d4715c` | ⚠️ Unaudited |
 | IssuerV2 | unknown | sonic | 3 deployments: sonic [`0x36b535...76fa97`](./contracts/sonic-146/0x36b535bc79defb00d348658ad7e68d9b1176fa97/); sonic `0x9b93c3...725ddc`; fraxtal `0xd95f1c...f9fbca` | ⚠️ Unaudited |
 | IssuerV2_2 | unknown | ethereum | 3 deployments: ethereum [`0x70bfbe...8a5a8d`](./contracts/ethereum-1/0x70bfbe78548f1159cb9b453e4d6ad0e3648a5a8d/); ethereum `0xf84cc8...84ff85`; fraxtal `0x9e8d87...abdc3a` | ⚠️ Unaudited |
-| L2Pool | core_logic | sonic | 4 deployments: ethereum `0xfda3a0...e19e84`; sonic [`0x179867...6bb8cc`](./contracts/sonic-146/0x179867c392add1bf4f7a3d4c70bf8f2f476bb8cc/); fraxtal `0x20a24d...91a6d7`; fraxtal `0xdfd607...44c936` | ⚠️ Unaudited |
 | LiquidationLogic | unknown | sonic | 4 deployments: ethereum `0xce697c...7d9570`; sonic [`0x19c6b5...f7dc48`](./contracts/sonic-146/0x19c6b5924306baf5ee549cd7b56b37736cf7dc48/); sonic `0x84c580...9253f4`; fraxtal `0xba82d5...e7dc8f` | ⚠️ Unaudited |
 | LiquidityGaugeV6 | operational_periphery | ethereum | [`0x91c95b...06447c`](./contracts/ethereum-1/0x91c95bb84aa561d93d165ff24d0e54e6b006447c/) | ⚠️ Unaudited |
 | OdosDebtSwapAdapter | adapter | fraxtal | 4 deployments: sonic `0x5e4f0e...36ee1f`; sonic `0x7364c9...6408bc`; sonic `0xedc5b6...a5920e`; fraxtal [`0x16e7d5...9437bd`](./contracts/fraxtal-252/0x16e7d528810b0a7fdb13145af66d010d4d9437bd/) | ⚠️ Unaudited |
@@ -116,7 +123,6 @@ The lending markets rely on the oracle family for asset prices and the dUSD stab
 | PoolConfigurator | core_logic | ethereum | 3 deployments: ethereum [`0x185e9c...ded6b9`](./contracts/ethereum-1/0x185e9c639dea54d77d62dcb87466fb8de6ded6b9/); sonic `0xac90d7...e40153`; fraxtal `0xb1e4e1...60b8b1` | ⚠️ Unaudited |
 | PoolLogic | core_logic | fraxtal | 4 deployments: ethereum `0x44c69f...c5e7a2`; sonic `0x33e010...7173f6`; sonic `0xe61141...c1fb21`; fraxtal [`0x050323...3f7ecd`](./contracts/fraxtal-252/0x0503237c9ade4bfe3a8f9a0d75e197c14a3f7ecd/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | sonic | 9 deployments: ethereum `0xbe90db...2c65be`; sonic [`0x0a0808...fb0bc5`](./contracts/sonic-146/0x0a0808f20743278d566fc954d3dcf8c082fb0bc5/); sonic `0xaf3bb4...694cb8`; sonic `0xc59e44...6a68f8`; sonic `0xfff14b...50a7ab`; fraxtal `0x1e5be5...36cc95`; fraxtal `0x75998c...4afecc`; fraxtal `0xaf3bb4...694cb8`; fraxtal `0xdcd396...fdfa5c` | ⚠️ Unaudited |
-| PullRewardsTransferStrategy | core_logic | sonic | 6 deployments: ethereum `0x31bf6b...6e6316`; sonic [`0x15a8d3...5aa85f`](./contracts/sonic-146/0x15a8d3c0a0ac8af7dbf16fe826314228ee5aa85f/); sonic `0x58acc2...492409`; sonic `0xa002d1...9f7e08`; sonic `0xdba93c...f46e39`; fraxtal `0xaaee14...ed35a5` | ⚠️ Unaudited |
 | RebasingTokenWrapperFactory | registry | fraxtal | [`0x85c728...ec0f85`](./contracts/fraxtal-252/0x85c7287fc53a06ec7995db5ae6f2610200ec0f85/) | ⚠️ Unaudited |
 | Redeemer | unknown | fraxtal | 10 deployments: sonic `0x4ef480...2aa54a`; sonic `0x57c8ee...4d21aa`; sonic `0x70bfbe...8a5a8d`; sonic `0x733e86...ccf5a1`; sonic `0xd72ff4...8d3e49`; sonic `0xe78185...daa5cf`; sonic `0xe7c49a...244a28`; sonic `0xf5a894...c386ff`; fraxtal [`0x242921...4450a3`](./contracts/fraxtal-252/0x2429213235b5b4504d41bc9aa64fc2659e4450a3/); fraxtal `0xd30c28...0af5ae` | ⚠️ Unaudited |
 | RedeemerV2 | unknown | sonic | 7 deployments: ethereum `0x093e9d...ba90cd`; ethereum `0x683f18...ce9809`; ethereum `0xd66c16...036cac`; ethereum `0xdc43d5...afae4b`; sonic [`0x090598...d38b88`](./contracts/sonic-146/0x09059859d2b91cc840bd2c86f841defa19d38b88/); sonic `0x6b0579...6f5935`; fraxtal `0xacd97c...2ec949` | ⚠️ Unaudited |
@@ -127,14 +133,11 @@ The lending markets rely on the oracle family for asset prices and the dUSD stab
 | RewardVault | core_logic | fraxtal | [`0x464785...6f2e54`](./contracts/fraxtal-252/0x46478563d4532ef2b68a328c3f528b19626f2e54/) | ⚠️ Unaudited |
 | Safe | unknown | ethereum | 3 deployments: ethereum [`0x38262e...02f3db`](./contracts/ethereum-1/0x38262effcd17cd64f6311ef688b2caa61102f3db/); ethereum `0x4b4b5c...0d3ef6`; ethereum `0xe83c18...f30262` | ⚠️ Unaudited |
 | SafeL2 | unknown | sonic | [`0xe83c18...f30262`](./contracts/sonic-146/0xe83c188a7be46b90715c757a06cf917175f30262/) | ⚠️ Unaudited |
-| SanitizableAToken | token | ethereum | [`0x504d0e...483acc`](./contracts/ethereum-1/0x504d0eacbf9ea5645a8a9da1b15f3708a5483acc/) | ⚠️ Unaudited |
 | StableDebtToken | token | ethereum | 5 deployments: ethereum [`0x391afc...eb8631`](./contracts/ethereum-1/0x391afc4190a92350b5c812434b7fbf381feb8631/); sonic `0x4b8a6e...daf801`; sonic `0x7ebc06...82fc17`; sonic `0xd93c92...83751e`; fraxtal `0x43dc80...34dfdb` | ⚠️ Unaudited |
 | StaticATokenFactory | registry | sonic | 4 deployments: ethereum `0xcb8f92...e1d877`; sonic [`0x1cc03e...bd55a8`](./contracts/sonic-146/0x1cc03e57ed4d426f673dbb4d69e08c91bbbd55a8/); sonic `0x777db2...ac81f1`; fraxtal `0x2a0f31...1b2768` | ⚠️ Unaudited |
 | SupplyLogic | unknown | fraxtal | 4 deployments: ethereum `0xe58dec...817ddb`; sonic `0x48f096...068f9a`; sonic `0x837c1c...fc638a`; fraxtal [`0x2d3f57...6d6f3e`](./contracts/fraxtal-252/0x2d3f5739096478dbcf3df74941861b8d156d6f3e/) | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | sonic | 3 deployments: sonic [`0x2e093b...1ba642`](./contracts/sonic-146/0x2e093bf098dc3de208ab23a3b2dbc7cd911ba642/); sonic `0x4ebab4...f50a83`; sonic `0x84670d...7e6a51` | ⚠️ Unaudited |
-| UiIncentiveDataProviderV3 | unknown | fraxtal | 5 deployments: ethereum `0xe3ee2d...df479e`; sonic `0xb1c1d6...c6ac2d`; sonic `0xd4d111...ee474a`; sonic `0xdd3c66...a6d3c1`; fraxtal [`0x21bd81...b68830`](./contracts/fraxtal-252/0x21bd81b33d4b04b94bd30c6f015484e830b68830/) | ⚠️ Unaudited |
 | UiPoolDataProviderV3 | core_logic | ethereum | 5 deployments: ethereum [`0x1c4be7...7867e2`](./contracts/ethereum-1/0x1c4be7d7f0184ba6cc458fc99880198c537867e2/); sonic `0x31e1f0...ec9261`; sonic `0xe505f8...afb37a`; sonic `0xe5ae87...00cbc4`; fraxtal `0xe284a7...d3eabc` | ⚠️ Unaudited |
-| VariableDebtToken | token | sonic | 7 deployments: ethereum `0xf5e96f...da27ef`; sonic [`0x0b0bd5...3b7240`](./contracts/sonic-146/0x0b0bd5f8a6f4c72a09748fa915af12ca423b7240/); sonic `0x72f1b0...0f0d51`; sonic `0x918130...369d08`; sonic `0xf65d51...5d364e`; fraxtal `0x2eae5a...621659`; fraxtal `0x6b937d...f560de` | ⚠️ Unaudited |
 | WalletBalanceProvider | unknown | sonic | 5 deployments: ethereum `0xe5ae87...00cbc4`; sonic [`0x220cf4...7f0b68`](./contracts/sonic-146/0x220cf42ccccda07a6b180eaef3deb64dc07f0b68/); sonic `0x36535f...f02dff`; sonic `0xe9bbd4...253d3c`; fraxtal `0x4920c9...0f51e9` | ⚠️ Unaudited |
 | WrappedDLendConversionAdapter | adapter | ethereum | 6 deployments: ethereum [`0x1a5bb4...3e100f`](./contracts/ethereum-1/0x1a5bb485c58a86c193b823d0ea031b68813e100f/); ethereum `0xd07072...48fb07`; sonic `0x317b5c...226297`; sonic `0xc5ac44...a3c505`; sonic `0xcd32cf...2112dc`; fraxtal `0xced414...860e08` | ⚠️ Unaudited |
 | WrappedTokenGatewayV3 | token | sonic | 5 deployments: ethereum `0xb1c1d6...c6ac2d`; sonic [`0x2b56bb...b05ec5`](./contracts/sonic-146/0x2b56bb5317bb0d7a9de05b421b0a2ea67bb05ec5/); sonic `0x40d1aa...d8a8b2`; sonic `0x64e173...7bd7fa`; fraxtal `0x598502...484df5` | ⚠️ Unaudited |
@@ -284,6 +287,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [rebate-apy.md](https://github.com/dtrinity/fraxtal-solidity-contracts/blob/main/docs/rebate-apy.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 23 | low |
+| [token-registry.md](https://github.com/dtrinity/fraxtal-solidity-contracts/blob/main/docs/token-registry.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [manual-explorer-verification.md (also discovered via alternate URL)](https://github.com/dtrinity/sonic-solidity-contracts/blob/main/docs/manual-explorer-verification.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 44 | low |
+| [safe-protocol-kit-integration.md (also discovered via alternate URL)](https://github.com/dtrinity/sonic-solidity-contracts/blob/main/docs/safe-protocol-kit-integration.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ethereum-mainnet-dlend-collateral-rollout.md](https://github.com/dtrinity/ethereum-solidity-contracts/blob/main/docs/ethereum-mainnet-dlend-collateral-rollout.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [role-automation.md](https://github.com/dtrinity/ethereum-solidity-contracts/blob/main/docs/role-automation.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -301,7 +313,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x29532f...6e6880`](./contracts/ethereum-1/0x29532f74a9302e0a1e9f7d015fe355ffde6e6880/) | AmoManagerV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | fraxtal | [`0x011c49...97e373`](./contracts/fraxtal-252/0x011c49b8d9a861b41502256360b6210d0897e373/) | API3Wrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x260f49...4cf209`](./contracts/sonic-146/0x260f494e6889b36e68b393903bfd7756f44cf209/) | API3WrapperWithThresholding | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x104515...9003ed`](./contracts/sonic-146/0x10451579fd6375c8bee09f1e2c5831afde9003ed/) | AToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | fraxtal | [`0x67c3ad...ad2662`](./contracts/fraxtal-252/0x67c3ad684243430ca1f7f32fe4a64eb223ad2662/) | AtomicMarketListingHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x1e06f1...c606ab`](./contracts/sonic-146/0x1e06f1d027686abb8c7aab7feec115f5a8c606ab/) | BorrowLogic | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xb7cff0...0f8635`](./contracts/sonic-146/0xb7cff0c4301cd43b01d96d4d8669550bb50f8635/) | BridgeLogic | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -324,11 +335,9 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xdfd607...44c936`](./contracts/ethereum-1/0xdfd607a73f6d73dbce8adf71de5e9fd56944c936/) | FrxEthFundamentalOracleWrapperV1_1 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa51fa5...2c2b56`](./contracts/ethereum-1/0xa51fa58c76d92f1b0d4d6e3b88d2ba0aff2c2b56/) | GenericERC4626ConversionAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1e5be5...36cc95`](./contracts/ethereum-1/0x1e5be5059d4a95297604355dc6abd0baf036cc95/) | HardPegOracleWrapperV1_1 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2b820f...5dff35`](./contracts/ethereum-1/0x2b820fd4911876160c3988e57a10d8a5b85dff35/) | InitializableImmutableAdminUpgradeabilityProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x090613...a15c59`](./contracts/sonic-146/0x09061316c817cbfd4b2b962cbe4db64980a15c59/) | Issuer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x36b535...76fa97`](./contracts/sonic-146/0x36b535bc79defb00d348658ad7e68d9b1176fa97/) | IssuerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x70bfbe...8a5a8d`](./contracts/ethereum-1/0x70bfbe78548f1159cb9b453e4d6ad0e3648a5a8d/) | IssuerV2_2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x179867...6bb8cc`](./contracts/sonic-146/0x179867c392add1bf4f7a3d4c70bf8f2f476bb8cc/) | L2Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x19c6b5...f7dc48`](./contracts/sonic-146/0x19c6b5924306baf5ee549cd7b56b37736cf7dc48/) | LiquidationLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | fraxtal | [`0x78c443...90f847`](./contracts/fraxtal-252/0x78c4438c37809dae02167640bd8b6ac7e590f847/) | OdosRepayAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x1295a5...2c3a9c`](./contracts/sonic-146/0x1295a55d482257ecd66ba8846eab6849712c3a9c/) | OracleAggregator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -343,11 +352,9 @@ Verified + unaudited native implementations ranked by TVL:
 | fraxtal | [`0x145555...7d2662`](./contracts/fraxtal-252/0x145555c56718437093c020cef4e8dd11cd7d2662/) | ReservesSetupHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x06f0c6...5a0ea8`](./contracts/ethereum-1/0x06f0c640c47fcfe030da1cdd7dfb5080cb5a0ea8/) | RewardsController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | fraxtal | [`0x464785...6f2e54`](./contracts/fraxtal-252/0x46478563d4532ef2b68a328c3f528b19626f2e54/) | RewardVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x504d0e...483acc`](./contracts/ethereum-1/0x504d0eacbf9ea5645a8a9da1b15f3708a5483acc/) | SanitizableAToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x391afc...eb8631`](./contracts/ethereum-1/0x391afc4190a92350b5c812434b7fbf381feb8631/) | StableDebtToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x1cc03e...bd55a8`](./contracts/sonic-146/0x1cc03e57ed4d426f673dbb4d69e08c91bbbd55a8/) | StaticATokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | fraxtal | [`0x2d3f57...6d6f3e`](./contracts/fraxtal-252/0x2d3f5739096478dbcf3df74941861b8d156d6f3e/) | SupplyLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| fraxtal | [`0x21bd81...b68830`](./contracts/fraxtal-252/0x21bd81b33d4b04b94bd30c6f015484e830b68830/) | UiIncentiveDataProviderV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1c4be7...7867e2`](./contracts/ethereum-1/0x1c4be7d7f0184ba6cc458fc99880198c537867e2/) | UiPoolDataProviderV3 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1a5bb4...3e100f`](./contracts/ethereum-1/0x1a5bb485c58a86c193b823d0ea031b68813e100f/) | WrappedDLendConversionAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -364,9 +371,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: low=2
+- Match method counts: extraction_exact=155
+
+Zero-match audit list:
+
+- [9115] token-registry.md
+- [9117] safe-protocol-kit-integration.md
+- [9118] ethereum-mainnet-dlend-collateral-rollout.md
+- [9120] role-automation.md
+- [9124] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9125] 0002-metadata-manifest-and-pull-command.md
+- [9126] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

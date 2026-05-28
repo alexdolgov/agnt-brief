@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dtrinity",
-  "generated_at": "2026-05-24T12:45:35.651Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-28T16:36:01.471Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "dtrinity",
@@ -26,16 +26,16 @@
     "total_addresses": 580,
     "unique_implementations": 209,
     "total_deployments": 580,
-    "audited_contracts": 0,
-    "unaudited_contracts": 89,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 88,
+    "audited_contracts": 8,
+    "unaudited_contracts": 81,
+    "contracts_verified_audited": 8,
+    "contracts_verified_unaudited": 80,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 120,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 2323665,
+    "coverage_pct": 9,
+    "total_audits": 9,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 2367174,
     "tvl_usd": 1761175.170394233,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -57,7 +57,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 9
     }
   },
   "topography": {
@@ -1537,7 +1537,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1555,7 +1555,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1564,7 +1564,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1573,7 +1573,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -1582,7 +1582,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -1591,7 +1591,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -1600,7 +1600,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -1609,7 +1609,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -1627,7 +1627,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -1636,7 +1636,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -1645,7 +1645,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -1654,7 +1654,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -1663,7 +1663,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -1681,7 +1681,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -1699,7 +1699,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -1708,7 +1708,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -1717,7 +1717,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -1726,7 +1726,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -1744,7 +1744,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -1762,7 +1762,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -1771,7 +1771,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -1789,7 +1789,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -1798,7 +1798,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -1807,7 +1807,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -1816,7 +1816,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -1825,14 +1825,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9116"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2944,7 +2946,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -2953,7 +2955,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -2962,7 +2964,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -2971,7 +2973,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -2980,14 +2982,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9114"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3595,7 +3599,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3604,7 +3608,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3613,7 +3617,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3622,7 +3626,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3631,7 +3635,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3640,7 +3644,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3649,7 +3653,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3658,7 +3662,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3667,7 +3671,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3676,7 +3680,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -3685,14 +3689,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9116"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -3926,7 +3932,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -3935,7 +3941,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -3944,7 +3950,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -3953,14 +3959,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9116"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4841,7 +4849,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -4850,7 +4858,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -4859,7 +4867,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -4868,7 +4876,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -4877,7 +4885,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -4886,14 +4894,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9114"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -5497,14 +5507,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9116"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -5760,7 +5772,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -5769,7 +5781,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -5778,7 +5790,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -5787,7 +5799,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -5796,14 +5808,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9114"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -9614,7 +9628,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -9623,7 +9637,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -9632,7 +9646,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -9641,7 +9655,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 146,
@@ -9650,7 +9664,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -9659,7 +9673,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 252,
@@ -9668,14 +9682,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9114",
+        "audit-9116"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -9889,8 +9906,245 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
+  "audits": [
+    {
+      "audit_id": 9114,
+      "audit_key": "audit-9114",
+      "report_name": "rebate-apy.md",
+      "report_url": "https://github.com/dtrinity/fraxtal-solidity-contracts/blob/main/docs/rebate-apy.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveOracle-dTrinity-Lend",
+        "EmissionManager",
+        "IAaveOracle",
+        "IRewardsController",
+        "PullRewardsTransferStrategy",
+        "UiIncentiveDataProviderV3",
+        "VariableDebtToken"
+      ],
+      "matched_contracts": 23,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9115,
+      "audit_key": "audit-9115",
+      "report_name": "token-registry.md",
+      "report_url": "https://github.com/dtrinity/fraxtal-solidity-contracts/blob/main/docs/token-registry.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9116,
+      "audit_key": "audit-9116",
+      "report_name": "manual-explorer-verification.md",
+      "report_url": "https://github.com/dtrinity/sonic-solidity-contracts/blob/main/docs/manual-explorer-verification.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "InitializableImmutableAdminUpgradeabilityProxy",
+        "L2Pool"
+      ],
+      "matched_contracts": 44,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9116,
+          "report_url": "https://github.com/dtrinity/sonic-solidity-contracts/blob/main/docs/manual-explorer-verification.md"
+        },
+        {
+          "audit_id": 9119,
+          "report_url": "https://github.com/dtrinity/ethereum-solidity-contracts/blob/main/docs/manual-explorer-verification.md"
+        },
+        {
+          "audit_id": 9122,
+          "report_url": "https://github.com/dtrinity/katana-solidity-contracts/blob/main/docs/manual-explorer-verification.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 9117,
+      "audit_key": "audit-9117",
+      "report_name": "safe-protocol-kit-integration.md",
+      "report_url": "https://github.com/dtrinity/sonic-solidity-contracts/blob/main/docs/safe-protocol-kit-integration.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9117,
+          "report_url": "https://github.com/dtrinity/sonic-solidity-contracts/blob/main/docs/safe-protocol-kit-integration.md"
+        },
+        {
+          "audit_id": 9121,
+          "report_url": "https://github.com/dtrinity/ethereum-solidity-contracts/blob/main/docs/safe-protocol-kit-integration.md"
+        },
+        {
+          "audit_id": 9123,
+          "report_url": "https://github.com/dtrinity/katana-solidity-contracts/blob/main/docs/safe-protocol-kit-integration.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 9118,
+      "audit_key": "audit-9118",
+      "report_name": "ethereum-mainnet-dlend-collateral-rollout.md",
+      "report_url": "https://github.com/dtrinity/ethereum-solidity-contracts/blob/main/docs/ethereum-mainnet-dlend-collateral-rollout.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9120,
+      "audit_key": "audit-9120",
+      "report_name": "role-automation.md",
+      "report_url": "https://github.com/dtrinity/ethereum-solidity-contracts/blob/main/docs/role-automation.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9124,
+      "audit_key": "audit-9124",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9125,
+      "audit_key": "audit-9125",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9126,
+      "audit_key": "audit-9126",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 8,
+      "coverage_pct": 9,
+      "latest_audit": null
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 146,
@@ -9988,16 +10242,6 @@
       "address": "0x260f494e6889b36e68b393903bfd7756f44cf209",
       "name": "API3WrapperWithThresholding",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x10451579fd6375c8bee09f1e2c5831afde9003ed",
-      "name": "AToken",
-      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -10223,16 +10467,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2b820fd4911876160c3988e57a10d8a5b85dff35",
-      "name": "InitializableImmutableAdminUpgradeabilityProxy",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 146,
       "chain_name": "sonic",
       "address": "0x09061316c817cbfd4b2b962cbe4db64980a15c59",
@@ -10258,16 +10492,6 @@
       "address": "0x70bfbe78548f1159cb9b453e4d6ad0e3648a5a8d",
       "name": "IssuerV2_2",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x179867c392add1bf4f7a3d4c70bf8f2f476bb8cc",
-      "name": "L2Pool",
-      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -10415,16 +10639,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x504d0eacbf9ea5645a8a9da1b15f3708a5483acc",
-      "name": "SanitizableAToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x391afc4190a92350b5c812434b7fbf381feb8631",
       "name": "StableDebtToken",
       "role": "token",
@@ -10447,16 +10661,6 @@
       "chain_name": "fraxtal",
       "address": "0x2d3f5739096478dbcf3df74941861b8d156d6f3e",
       "name": "SupplyLogic",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 252,
-      "chain_name": "fraxtal",
-      "address": "0x21bd81b33d4b04b94bd30c6f015484e830b68830",
-      "name": "UiIncentiveDataProviderV3",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -10490,11 +10694,44 @@
     "needs_review": 95
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 155
+    },
+    "extraction_confidence_counts": {
+      "low": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 9115,
+        "report_name": "token-registry.md"
+      },
+      {
+        "audit_id": 9117,
+        "report_name": "safe-protocol-kit-integration.md"
+      },
+      {
+        "audit_id": 9118,
+        "report_name": "ethereum-mainnet-dlend-collateral-rollout.md"
+      },
+      {
+        "audit_id": 9120,
+        "report_name": "role-automation.md"
+      },
+      {
+        "audit_id": 9124,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 9125,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 9126,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

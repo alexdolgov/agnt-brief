@@ -6,8 +6,8 @@
 | Address | `0x786bf554473f9ab733fd683c528212492a23d895` |
 | Role | core_logic |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [How_to_integrate_with_USDx.pdf](https://github.com/dforce-network/USDx_1.0/blob/master/docs/How_to_integrate_with_USDx.pdf) |
 | Deployments | 1 (ethereum [`0x786bf554473f9ab733fd683c528212492a23d895`](../0x786bf554473f9ab733fd683c528212492a23d895/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

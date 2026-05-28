@@ -7,11 +7,11 @@
 - Project: Drops (`drops`)
 - Website: [https://drops.co](https://drops.co)
 - Lifecycle: declining (Tier 0, 99.8% below peak)
-- Generated: 2026-05-24T05:36:02.527Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-28T16:34:06.249Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: ethereum
 - Contract surface: 77 unique implementations (217 raw deployments)
-- DeFi Llama TVL: $3,332,684.43
+- DeFi Llama TVL: $3,296,081.16
 - On-chain TVL (included contracts): $16,487,867.05
 - TVL by chain: Ethereum $16,487,867.05
 
@@ -31,11 +31,11 @@ The Drops family consists of multiple isolated lending pools, each with its own 
 - Unverified implementations: 11
 - Unique implementations: 77
 - Raw deployments: 217
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $16,487,867.05
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $16,487,867.05 represents exposure in a protocol with declining activity.
 
@@ -154,6 +154,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -231,9 +234,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [8108] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [8109] 0002-metadata-manifest-and-pull-command.md
+- [8110] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

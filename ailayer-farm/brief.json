@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ailayer-farm",
-  "generated_at": "2026-05-28T14:36:23.847Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-f4c2",
+  "generated_at": "2026-05-28T15:09:20.891Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ailayer-farm",
@@ -35,7 +35,7 @@
     "coverage_pct": 0,
     "total_audits": 6,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 79723526.46756,
+    "dl_tvl_usd": 76399480.64847,
     "tvl_usd": 211858.7133419305,
     "tvl_source": "on_chain",
     "tvl_by_chain": {

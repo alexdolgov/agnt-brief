@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aegis",
-  "generated_at": "2026-05-26T17:55:49.409Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-05-28T15:11:21.809Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aegis",
@@ -26,17 +26,17 @@
     "total_addresses": 5,
     "unique_implementations": 5,
     "total_deployments": 5,
-    "audited_contracts": 0,
-    "unaudited_contracts": 5,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "audited_contracts": 5,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 5,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 35826975,
-    "tvl_usd": 35826975,
+    "coverage_pct": 100,
+    "total_audits": 5,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 35812925,
+    "tvl_usd": 35812925,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -52,7 +52,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 5
     }
   },
   "topography": {
@@ -86,14 +86,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5916"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "review"
     },
     {
@@ -117,14 +119,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5916"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "review"
     },
     {
@@ -148,14 +152,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5916"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "review"
     },
     {
@@ -179,14 +185,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5916"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "review"
     },
     {
@@ -210,71 +218,144 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5916"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
-  "coverage_gaps": [
+  "audits": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x90ccf2c4b3dee7aeac9af5950a7c60f89af1db00",
-      "name": "AegisConfig",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5916,
+      "audit_key": "audit-5916",
+      "report_name": "cross-chain-deployment.md",
+      "report_url": "https://github.com/Aegis-im/aegis-contracts/blob/master/docs/cross-chain-deployment.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AegisConfig",
+        "AegisMinting",
+        "AegisOracle",
+        "AegisRewards",
+        "YUSD",
+        "YUSDMintBurnOFTAdapter",
+        "YUSDOFT"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa30644ca67e0a93805c443df4a6e1856d8bd815b",
-      "name": "AegisMinting",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5917,
+      "audit_key": "audit-5917",
+      "report_name": "mint-redeem.md",
+      "report_url": "https://github.com/Aegis-im/aegis-contracts/blob/master/docs/mint-redeem.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2b4ad1d479561064cd1c311004aca93d15041aec",
-      "name": "AegisOracle",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5918,
+      "audit_key": "audit-5918",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8adcfaf1b64cc514524b80565bcc732273ddeafd",
-      "name": "AegisRewards",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5919,
+      "audit_key": "audit-5919",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a",
-      "name": "YUSD",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5920,
+      "audit_key": "audit-5920",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 5,
+      "coverage_pct": 100,
+      "latest_audit": null
+    }
+  ],
+  "coverage_gaps": [],
   "origin_summary": {
     "native": 5,
     "upstream": 0,
@@ -282,11 +363,32 @@
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 5
+    },
+    "extraction_confidence_counts": {
+      "low": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 5917,
+        "report_name": "mint-redeem.md"
+      },
+      {
+        "audit_id": 5918,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 5919,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 5920,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

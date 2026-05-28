@@ -5,11 +5,11 @@
 - Project: AILayer farm (`ailayer-farm`)
 - Website: [https://ailayer.xyz/](https://ailayer.xyz/)
 - Lifecycle: active (Tier 0, 89.1% below peak)
-- Generated: 2026-05-28T14:36:23.847Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-f4c2
+- Generated: 2026-05-28T15:09:20.891Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $79,723,526.47
+- DeFi Llama TVL: $76,399,480.65
 - On-chain TVL (included contracts): $211,858.71
 - TVL by chain: Bsc $211,858.71
 

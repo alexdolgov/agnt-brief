@@ -3,7 +3,7 @@
 | Project | TVL | Coverage | ASD | Lifecycle | Audits | Contracts | Updated |
 |---|---|---|---|---|---|---|---|
 | [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [3f-mutual](./3f-mutual/) | $4.1M | 0.0% | ? | active | 0 | 25 | 2026-05-23 |
+| [3f-mutual](./3f-mutual/) | $3.8M | 0.0% | ? | active | 3 | 21 | 2026-05-28 |
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-05-26 |
 | [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-05-27 |
 | [abc-pool](./abc-pool/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
@@ -12,8 +12,8 @@
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | unknown | 5 | 220 | 2026-05-23 |
 | [across](./across/) | $28.1M | 18.0% | $28.1M | active | 6 | 142 | 2026-05-25 |
 | [aegis-markets](./aegis-markets/) | $2.4M | 0.0% | ? | active | 2 | 15 | 2026-05-24 |
-| [aegis](./aegis/) | $35.8M | 0.0% | ? | active | 0 | 5 | 2026-05-26 |
-| [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-23 |
+| [aegis](./aegis/) | $35.8M | 100.0% | ? | active | 5 | 5 | 2026-05-28 |
+| [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 3 | 5 | 2026-05-28 |
 | [aevo](./aevo/) | $98.3M | 12.0% | $1.5M | active | 17 | 271 | 2026-05-25 |
 | [aftermath-finance](./aftermath-finance/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
 | [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 6 | 1 | 2026-05-28 |

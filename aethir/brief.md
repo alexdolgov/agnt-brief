@@ -7,11 +7,11 @@
 - Project: Aethir (`aethir`)
 - Website: [https://aethir.com/](https://aethir.com/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-23T05:12:39.585Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-28T15:09:19.147Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: ethereum
 - Contract surface: 5 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $9,791,765.30
+- DeFi Llama TVL: $9,144,702.25
 - On-chain TVL (included contracts): $257,030,903.70
 - TVL by chain: Ethereum $257,030,903.70
 
@@ -31,11 +31,11 @@ The TransparentUpgradeableProxy serves as the upgradeable proxy for the AethirWr
 - Unverified implementations: 0
 - Unique implementations: 5
 - Raw deployments: 6
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $257,030,903.70
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $257,030,903.70 represents exposure in a protocol with unknown activity.
 
@@ -81,6 +81,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -106,9 +109,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [7508] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [7509] 0002-metadata-manifest-and-pull-command.md
+- [7510] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

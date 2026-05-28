@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "3f-mutual",
-  "generated_at": "2026-05-23T23:03:38.080Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-28T15:09:19.118Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "3f-mutual",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 55.82664611055527
   },
   "summary": {
-    "total_contracts": 25,
-    "total_addresses": 31,
-    "unique_implementations": 25,
-    "total_deployments": 31,
+    "total_contracts": 21,
+    "total_addresses": 25,
+    "unique_implementations": 21,
+    "total_deployments": 25,
     "audited_contracts": 0,
-    "unaudited_contracts": 22,
+    "unaudited_contracts": 18,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 22,
+    "contracts_verified_unaudited": 18,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4074059.39451,
-    "tvl_usd": 4074059.39451,
+    "dl_tvl_usd": 3782829.34907,
+    "tvl_usd": 3782829.34907,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -52,7 +52,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 3
     }
   },
   "topography": {
@@ -65,6 +65,37 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe7e73e8faa16b8bb551567bdd43314009e15724a",
+      "name": "ABDKMath64x64",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "abdk-labs",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ABDKMath64x64",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe7e73e8faa16b8bb551567bdd43314009e15724a",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -126,37 +157,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x11baffebd829b490cf077ce7ef7700dd3cb1e534",
-      "name": "bhsAlpha",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "bhsAlpha",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x11baffebd829b490cf077ce7ef7700dd3cb1e534",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -269,86 +269,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x938c66e7ec8eb3f98dd5203dc03cbdd0e0749999",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1e20b7d24d429b0de705d3ff8b88ec651d28a935",
-      "name": "GuildBank",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GuildBank",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1e20b7d24d429b0de705d3ff8b88ec651d28a935",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x83d0d842e6db3b020f384a2af11bd14787bec8e7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd0533664013a82c31584b7ffdb215139f38ad77a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xbf00da4ff7d13d678a0e897c683e79e99b64b6ab",
-      "name": "ImpermanentGain",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ImpermanentGain",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xbf00da4ff7d13d678a0e897c683e79e99b64b6ab",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -485,37 +405,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x4eda33ea48052006850966fc1182cf46f325501d",
-      "name": "SquidFarmer",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SquidFarmer",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4eda33ea48052006850966fc1182cf46f325501d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x3474b74139c192d0781812ca70cc410d19cb6a2d",
       "name": "stakingRateModel",
       "role": "operational_periphery",
@@ -552,37 +441,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xda4c9ee8373fd1095379a3dd457a0c78968aaf03",
-      "name": "tCDP",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "tCDP",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xda4c9ee8373fd1095379a3dd457a0c78968aaf03",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
     },
     {
       "chain_id": 1,
@@ -895,7 +753,71 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 7898,
+      "audit_key": "audit-7898",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7899,
+      "audit_key": "audit-7899",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7900,
+      "audit_key": "audit-7900",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -914,16 +836,6 @@
       "address": "0xda54678fd782a162a2bae0ea9e250a325c4f6de9",
       "name": "Airdrop",
       "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x11baffebd829b490cf077ce7ef7700dd3cb1e534",
-      "name": "bhsAlpha",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -971,26 +883,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1e20b7d24d429b0de705d3ff8b88ec651d28a935",
-      "name": "GuildBank",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xbf00da4ff7d13d678a0e897c683e79e99b64b6ab",
-      "name": "ImpermanentGain",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x1b092450998c7e7eee91678a1d9cd6b7c7d44308",
       "name": "InsuranceImprovementProposal",
       "role": "unknown",
@@ -1013,16 +905,6 @@
       "chain_name": "ethereum",
       "address": "0xb925863a15ebdeae1a638bf2b6fd00d4db897a62",
       "name": "sHakka",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4eda33ea48052006850966fc1182cf46f325501d",
-      "name": "SquidFarmer",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1110,17 +992,30 @@
     }
   ],
   "origin_summary": {
-    "native": 21,
+    "native": 17,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 4
+    "standard_library": 1,
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 7898,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 7899,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 7900,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

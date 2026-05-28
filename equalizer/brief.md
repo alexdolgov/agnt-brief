@@ -7,8 +7,8 @@
 - Project: Equalizer (`equalizer`)
 - Website: [https://equalizer.exchange/](https://equalizer.exchange/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-28T22:05:18.012Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-b60c
+- Generated: 2026-05-28T23:05:16.735Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-3559
 - Chains: base, fantom, sonic
 - Contract surface: 292 unique implementations (506 raw deployments)
 - DeFi Llama TVL: $1,076,070.00

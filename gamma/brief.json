@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gamma",
-  "generated_at": "2026-05-28T20:00:03.335Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-1969",
+  "generated_at": "2026-05-28T21:09:37.664Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-937a",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "gamma",
@@ -36,15 +36,15 @@
     "total_addresses": 2560,
     "unique_implementations": 467,
     "total_deployments": 2560,
-    "audited_contracts": 29,
-    "unaudited_contracts": 76,
-    "contracts_verified_audited": 26,
-    "contracts_verified_unaudited": 64,
+    "audited_contracts": 31,
+    "unaudited_contracts": 74,
+    "contracts_verified_audited": 28,
+    "contracts_verified_unaudited": 62,
     "contracts_verified_by_bytecode": 15,
     "contracts_unverified": 362,
-    "coverage_pct": 27.6,
+    "coverage_pct": 29.5,
     "total_audits": 33,
-    "scoreable_audits": 8,
+    "scoreable_audits": 9,
     "dl_tvl_usd": 3713256.188539999,
     "tvl_usd": 24284.661510050704,
     "tvl_source": "on_chain",
@@ -78,9 +78,10 @@
       "sonic",
       "unichain"
     ],
-    "tier1_coverage_pct": 1.9,
+    "tier1_coverage_pct": 4.8,
     "tier1_auditors": [
-      "ConsenSys Diligence"
+      "ConsenSys Diligence",
+      "OpenZeppelin"
     ],
     "latest_audit_date": "2026-03",
     "audit_freshness": "fresh",
@@ -4223,7 +4224,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -4244,11 +4245,13 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8029"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -11866,7 +11869,8 @@
       ],
       "audits_covering": [
         "audit-8018",
-        "audit-8020"
+        "audit-8020",
+        "audit-8029"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -17539,7 +17543,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17548,7 +17552,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17557,7 +17561,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17566,7 +17570,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17575,7 +17579,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17584,7 +17588,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17593,7 +17597,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17602,7 +17606,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17611,7 +17615,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17620,7 +17624,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17629,7 +17633,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17638,7 +17642,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17647,7 +17651,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17656,7 +17660,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17665,7 +17669,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17674,7 +17678,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17683,7 +17687,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17692,7 +17696,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17701,7 +17705,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17710,7 +17714,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17719,7 +17723,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17728,7 +17732,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17737,7 +17741,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17746,7 +17750,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17755,7 +17759,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17764,7 +17768,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17773,7 +17777,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17782,7 +17786,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17791,7 +17795,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17800,7 +17804,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17809,7 +17813,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17818,7 +17822,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17827,7 +17831,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17836,7 +17840,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 5000,
@@ -17845,7 +17849,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17854,7 +17858,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17863,7 +17867,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17872,7 +17876,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17881,7 +17885,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17890,7 +17894,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17899,7 +17903,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17908,7 +17912,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17917,7 +17921,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17926,7 +17930,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17935,7 +17939,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17944,7 +17948,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17953,7 +17957,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17962,7 +17966,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17971,7 +17975,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17980,7 +17984,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17989,7 +17993,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -17998,7 +18002,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -18007,7 +18011,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -18016,7 +18020,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -18025,7 +18029,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -18034,14 +18038,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8029"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -33889,12 +33895,45 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name|n/a",
+      "extracted_names": [
+        "AccessControlDefaultAdminRules",
+        "AccessManaged",
+        "AccessManager",
+        "AccessManagerAdapter",
+        "Checkpoints",
+        "ECDSA",
+        "EIP712",
+        "ERC20Votes",
+        "ERC4626",
+        "ERC721URIStorage",
+        "ERC721Votes",
+        "ERC721Wrapper",
+        "Governor",
+        "GovernorCompatibilityBravo",
+        "GovernorPreventLateQuorum",
+        "GovernorTimelockCompound",
+        "GovernorVotes",
+        "GovernorVotesComp",
+        "GovernorVotesQuorumFraction",
+        "IAccessControlDefaultAdminRules",
+        "IAuthority",
+        "IGovernor",
+        "IGovernorCompatibilityBravo",
+        "IVotes",
+        "SafeERC20",
+        "ShortStrings",
+        "SignatureChecker",
+        "StorageSlot",
+        "Strings",
+        "TimelockController",
+        "TransparentUpgradeableProxy",
+        "Votes"
+      ],
+      "matched_contracts": 85,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0,
       "duplicate_audit_ids": [
         {
@@ -34401,6 +34440,13 @@
       "latest_audit": "2026-03"
     },
     {
+      "auditor": "OpenZeppelin",
+      "tier": 1,
+      "contracts_covered": 3,
+      "coverage_pct": 2.9,
+      "latest_audit": "2024-10"
+    },
+    {
       "auditor": "Consensys Diligence",
       "tier": 1,
       "contracts_covered": 2,
@@ -34818,10 +34864,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 1600
+      "extraction_exact": 1685
     },
     "extraction_confidence_counts": {
-      "high": 7,
+      "high": 8,
       "medium": 1
     },
     "audits_with_repo_references": [],
@@ -34842,10 +34888,6 @@
       {
         "audit_id": 8028,
         "report_name": "2022-10-ERC4626.pdf"
-      },
-      {
-        "audit_id": 8029,
-        "report_name": "2023-05-v4.9.pdf"
       },
       {
         "audit_id": 8030,

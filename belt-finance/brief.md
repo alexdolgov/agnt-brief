@@ -7,8 +7,8 @@
 - Project: Belt Finance (`belt-finance`)
 - Website: [https://belt.fi/](https://belt.fi/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-28T20:44:15.186Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-937a
+- Generated: 2026-05-28T21:46:56.978Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-b60c
 - Chains: bsc, heco, klaytn
 - Contract surface: 1331 unique implementations (1707 raw deployments)
 - DeFi Llama TVL: $13,217,355.20

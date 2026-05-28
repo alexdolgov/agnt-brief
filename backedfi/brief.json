@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "backedfi",
-  "generated_at": "2026-05-28T22:42:11.643Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-3559",
+  "generated_at": "2026-05-28T23:29:39.624Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-81b9",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "backedfi",

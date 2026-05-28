@@ -1,0 +1,17 @@
+{
+  "address": "0x08f8b4c23c38a57f8de29e8694ead60f6f188d8e",
+  "chain_id": 130,
+  "contract_name": "GaussianStrategy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:51:17.073Z"
+}

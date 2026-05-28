@@ -1,0 +1,16 @@
+# SuperchainLBPStrategyFactory
+
+| Field | Value |
+|---|---|
+| Chain | unichain (130) |
+| Address | `0x08ed533b18f0b80e4ed9a15e2049836c04ac1062` |
+| Role | registry |
+| Origin | native |
+| Audited | Yes |
+| Audits | [Gamma_Gamma_MultiPositionManager_report.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/audits/Gamma_Gamma_MultiPositionManager_report.pdf) |
+| Deployments | 30 (unichain [`0x08ed533b18f0b80e4ed9a15e2049836c04ac1062`](../0x08ed533b18f0b80e4ed9a15e2049836c04ac1062/); unichain `0x0dcfcff96a2b2b4c159b7346a46d64458ce945b7`; unichain `0x1156a4839305c1330b8caad43a46bca2215ad6f9`; unichain `0x122697a1b89c24288ee3d3d9b01067e70d387eb5`; unichain `0x16415471423633316c488e20ec190aab7e86a82e`; unichain `0x17430315a5902978279378cff5fb549f432f71b1`; unichain `0x21a1ca62693572b15a521a28a54908a701ada662`; unichain `0x2e2547712f13ba23e6c43a56a773f32afdbfe823`; unichain `0x3dee5653f90714659eb288fdbab833a52da7e540`; unichain `0x4f79ad36c135b0ff640b21e0dd08d8d9d00a5209`; unichain `0x562647799d85f42888316a774c5da72112eaa0d9`; unichain `0x6c8f6b7785a43601e11c928b4c6ec8528b57f943`; unichain `0x6d71c339e5ca724857a9f1aafd30ffcb77b2de8b`; unichain `0x6e096e2794f0d5e5be7f120612c2b8fba83df360`; unichain `0x710a6cb5ea823f61969324d0bcccc3bd639480f0`; unichain `0x73a5deca4bcd9d6fca3873a9472acf70c4c2f850`; unichain `0x780a7eb656e1bd5bc760cb8f6c5b64d5b4b95263`; unichain `0x8655a0a18b28b47d38321e9e2ca524b16ae1abf3`; unichain `0x94b798e9d9f4d2713655b67d741bd83a0b283773`; unichain `0xa4c7dfd38767a1d01b4c14722264d4afcdb5efd8`; unichain `0xaaab7876b5782f69ea60320ee959560484790760`; unichain `0xb13310131bb53b1fcbc68a1a37eaf23caa7dce28`; unichain `0xc467419d4db3405c903c19427920c366e4b895d1`; unichain `0xea7b0da4cdcaf148f807413ecf13fe3ac301b01f`; unichain `0xf19f254b633da24da4152373e04b546e2cc82acf`; unichain `0xf1d780fa8b99e6459e4e476521e80a342b473e4f`; unichain `0xf2ac59ada9091d285a6c5c1ec90cd0a12e4dc9e5`; unichain `0xfa332d35fabee65b49abc0f918d137a9d41127ff`; unichain `0xfa4cb2a30049b3e891cb6f54055346c2843fc7a6`; unichain `0xfebed231e80bb027841125d0ccdc8e551e7d4c4a`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

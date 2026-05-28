@@ -1,0 +1,18 @@
+{
+  "address": "0x26805021988f1a45dc708b5fb75fc75f21747d8c",
+  "chain_id": 1,
+  "contract_name": "xGamma",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:51:06.221Z"
+}

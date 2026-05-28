@@ -1,0 +1,17 @@
+{
+  "address": "0x3fe1278d7dd785e234b9d2969c8ca7d8e1e7f918",
+  "chain_id": 169,
+  "contract_name": "MasterChef",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000003273c153ecc6891a68af60ee0b67c16dd7b2c7e5",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:51:13.042Z"
+}

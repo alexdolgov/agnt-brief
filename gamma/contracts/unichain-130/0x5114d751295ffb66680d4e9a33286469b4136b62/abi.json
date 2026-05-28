@@ -1,0 +1,684 @@
+[
+  {
+    "inputs": [],
+    "name": "InvalidTriggerConfig",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTwapConfig",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidWithdrawalParams",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PoolNotManagedByVolatilityHook",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TwapDeviationExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TwapHistoryUnavailable",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "int24",
+        "name": "currentTick",
+        "type": "int24"
+      },
+      {
+        "indexed": false,
+        "internalType": "int24",
+        "name": "twapTick",
+        "type": "int24"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint24",
+        "name": "deviation",
+        "type": "uint24"
+      }
+    ],
+    "name": "TwapProtectionTriggered",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IMultiPositionManager",
+        "name": "manager",
+        "type": "IMultiPositionManager"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit0Ratio",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit1Ratio",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limitMinRatio",
+        "type": "uint256"
+      }
+    ],
+    "name": "checkLimitRatioTrigger",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "triggered",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IMultiPositionManager",
+        "name": "manager",
+        "type": "IMultiPositionManager"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "baseLowerTrigger",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "baseUpperTrigger",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitDeltaTicks",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "maxDeltaTicks",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "baseTwapTickTrigger",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseMinRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseMaxRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "limitMinRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "limitThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "outOfPositionThreshold",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRelayer.TriggerConfig",
+        "name": "triggerConfig",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "ticksLeft",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "ticksRight",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "useCarpet",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitWidth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isolatedBaseLimitRebalancing",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "useRebalanceSwap",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isBaseRatio",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "compoundFees",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IRelayer.StrategyParams",
+        "name": "strategyParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "useTwapProtection",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "useTwapCenter",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint32",
+            "name": "twapSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint24",
+            "name": "maxTickDeviation",
+            "type": "uint24"
+          }
+        ],
+        "internalType": "struct IRelayer.TwapParams",
+        "name": "twapParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "checkTriggers",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "baseTickTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "baseTwapTickTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "baseRatioTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "limitTickTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "limitRatioTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "outOfPositionTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "anyTriggerMet",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IRelayer.RebalanceTriggerStatus",
+        "name": "status",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IMultiPositionManager",
+        "name": "manager",
+        "type": "IMultiPositionManager"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "ticksLeft",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "ticksRight",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "useCarpet",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitWidth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isolatedBaseLimitRebalancing",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "useRebalanceSwap",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isBaseRatio",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "compoundFees",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IRelayer.StrategyParams",
+        "name": "strategyParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "useTwapProtection",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "useTwapCenter",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint32",
+            "name": "twapSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint24",
+            "name": "maxTickDeviation",
+            "type": "uint24"
+          }
+        ],
+        "internalType": "struct IRelayer.TwapParams",
+        "name": "twapParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "baseTickTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "baseTwapTickTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "baseRatioTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "limitTickTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "limitRatioTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "outOfPositionTrigger",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "anyTriggerMet",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IRelayer.RebalanceTriggerStatus",
+        "name": "status",
+        "type": "tuple"
+      }
+    ],
+    "name": "constructRebalanceParams",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "int24",
+            "name": "center",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "tLeft",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "tRight",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitWidth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "useCarpet",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IMultiPositionManager.RebalanceParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IMultiPositionManager",
+        "name": "manager",
+        "type": "IMultiPositionManager"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "useTwapProtection",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "useTwapCenter",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint32",
+            "name": "twapSeconds",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint24",
+            "name": "maxTickDeviation",
+            "type": "uint24"
+          }
+        ],
+        "internalType": "struct IRelayer.TwapParams",
+        "name": "twapParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "baseLowerTrigger",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "baseUpperTrigger",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitDeltaTicks",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "maxDeltaTicks",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "baseTwapTickTrigger",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseMinRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseMaxRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "limitMinRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "limitThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "outOfPositionThreshold",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRelayer.TriggerConfig",
+        "name": "triggerConfig",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "ticksLeft",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "ticksRight",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "useCarpet",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitWidth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isolatedBaseLimitRebalancing",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "useRebalanceSwap",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isBaseRatio",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "compoundFees",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IRelayer.StrategyParams",
+        "name": "strategyParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "validateTwapParams",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "pool0RatioThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pool1RatioThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawAll",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawToken0Only",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawToken1Only",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IRelayer.WithdrawalParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "validateWithdrawalParams",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

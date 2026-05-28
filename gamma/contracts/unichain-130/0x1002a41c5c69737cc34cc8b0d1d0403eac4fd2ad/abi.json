@@ -1,0 +1,1025 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IMultiPositionFactory",
+        "name": "_multiPositionFactory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientPayment",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidWeightSum",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RelayerAlreadyExists",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UnauthorizedAccess",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "relayer",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "multiPositionManager",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "RelayerDeployed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "AUTOMATION_SERVICE_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "automatedManagementFee",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "mpm",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "baseLowerTrigger",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "baseUpperTrigger",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitDeltaTicks",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "maxDeltaTicks",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseMinRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseMaxRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "limitMinRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "limitThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "outOfPositionThreshold",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRelayer.TriggerConfig",
+        "name": "triggerConfig",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "ticksLeft",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "ticksRight",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "useCarpet",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitWidth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isolatedBaseLimitRebalancing",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "useRebalanceSwap",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isBaseRatio",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "compoundFees",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IRelayer.StrategyParams",
+        "name": "strategyParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "geckoIdToken0",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "geckoIdToken1",
+            "type": "string"
+          },
+          {
+            "internalType": "uint8",
+            "name": "pairType",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IRelayer.VolatilityParams",
+        "name": "volatilityParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "pool0RatioThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pool1RatioThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawAll",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawToken0Only",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawToken1Only",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IRelayer.WithdrawalParams",
+        "name": "withdrawalParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "outOfPositionRatioThreshold",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRelayer.CompoundSwapParams",
+        "name": "compoundSwapParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "computeRelayerAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "predicted",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "mpm",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "baseLowerTrigger",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "baseUpperTrigger",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitDeltaTicks",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "maxDeltaTicks",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseMinRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseMaxRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "limitMinRatio",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "limitThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "outOfPositionThreshold",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRelayer.TriggerConfig",
+        "name": "triggerConfig",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint24",
+            "name": "ticksLeft",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "ticksRight",
+            "type": "uint24"
+          },
+          {
+            "internalType": "bool",
+            "name": "useCarpet",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitWidth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isolatedBaseLimitRebalancing",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "useRebalanceSwap",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isBaseRatio",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "compoundFees",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IRelayer.StrategyParams",
+        "name": "strategyParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "geckoIdToken0",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "geckoIdToken1",
+            "type": "string"
+          },
+          {
+            "internalType": "uint8",
+            "name": "pairType",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IRelayer.VolatilityParams",
+        "name": "volatilityParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "pool0RatioThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pool1RatioThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawAll",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawToken0Only",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "withdrawToken1Only",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IRelayer.WithdrawalParams",
+        "name": "withdrawalParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "outOfPositionRatioThreshold",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRelayer.CompoundSwapParams",
+        "name": "compoundSwapParams",
+        "type": "tuple"
+      }
+    ],
+    "name": "deployRelayer",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "relayer",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "deployer",
+    "outputs": [
+      {
+        "internalType": "contract RelayerDeployer",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAllRelayersPaginated",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "relayerAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "multiPositionManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deployedAt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRelayerFactory.RelayerInfo[]",
+        "name": "relayersInfo",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalCount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "mpm",
+        "type": "address"
+      }
+    ],
+    "name": "getRelayerByManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "relayerAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "relayer",
+        "type": "address"
+      }
+    ],
+    "name": "getRelayerInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "relayerAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "multiPositionManager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deployedAt",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IRelayerFactory.RelayerInfo",
+        "name": "info",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "ownerAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getRelayersByOwner",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "relayersArray",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalRelayersCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "count",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getUniqueTokenPairs",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "token0Symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "token0Address",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "token1Symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "token1Address",
+            "type": "address"
+          },
+          {
+            "internalType": "uint8",
+            "name": "token0Decimals",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "token1Decimals",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct IRelayerFactory.TokenPairInfo[]",
+        "name": "tokenPairs",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalCount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRoleOrOwner",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "multiPositionFactory",
+    "outputs": [
+      {
+        "internalType": "contract IMultiPositionFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "relayerByManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "relayers",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "relayerAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "multiPositionManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deployedAt",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "relayersByOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_fee",
+        "type": "uint16"
+      }
+    ],
+    "name": "setAutomatedManagementFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

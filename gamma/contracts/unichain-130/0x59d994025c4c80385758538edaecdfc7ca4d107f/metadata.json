@@ -1,0 +1,17 @@
+{
+  "address": "0x59d994025c4c80385758538edaecdfc7ca4d107f",
+  "chain_id": 130,
+  "contract_name": "TokenLaunchFactoryLens",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 188,
+  "constructor_arguments": "0000000000000000000000008343706578c49240c4a6146ef634b6a7a2f84af3",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:51:25.271Z"
+}

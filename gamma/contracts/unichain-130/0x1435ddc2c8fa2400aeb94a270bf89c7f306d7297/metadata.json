@@ -1,0 +1,17 @@
+{
+  "address": "0x1435ddc2c8fa2400aeb94a270bf89c7f306d7297",
+  "chain_id": 130,
+  "contract_name": "TokenVestingFactoryDeployer",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "000000000000000000000000e911f518449ba0011d84b047b4cde50daa081ec1",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:51:22.221Z"
+}

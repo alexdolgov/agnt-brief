@@ -1,0 +1,18 @@
+{
+  "address": "0x0f548d7ad1a0cb30d1872b8c18894484d76e1569",
+  "chain_id": 1284,
+  "contract_name": "Clearing",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 106,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:51:11.020Z"
+}

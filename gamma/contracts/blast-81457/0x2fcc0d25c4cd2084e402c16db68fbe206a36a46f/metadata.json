@@ -1,0 +1,18 @@
+{
+  "address": "0x2fcc0d25c4cd2084e402c16db68fbe206a36a46f",
+  "chain_id": 81457,
+  "contract_name": "Swap",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, GPL-3.0-only, MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 58,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:51:10.287Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x02c976adce2b57f49831ddb55859dee9b8990201",
+  "chain_id": 130,
+  "contract_name": "MultiPositionFactory",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 64,
+  "constructor_arguments": "000000000000000000000000e911f518449ba0011d84b047b4cde50daa081ec10000000000000000000000001f98400000000000000000000000000000000004",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:51:18.203Z"
+}

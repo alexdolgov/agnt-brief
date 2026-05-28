@@ -1,0 +1,17 @@
+{
+  "address": "0x2fa5e2e2a49de9375047225b7cea4997e8203aa4",
+  "chain_id": 80094,
+  "contract_name": "IncentiveMaker",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 36,
+  "constructor_arguments": "0000000000000000000000008b632ffa0af1fa3716aa414c5cfbf77747cdeea60000000000000000000000006969696969696969696969696969696969696969",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:51:13.486Z"
+}

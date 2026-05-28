@@ -1,0 +1,599 @@
+[
+  {
+    "inputs": [],
+    "name": "CarpetRequired",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTickParams",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidWeights",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "unlockTimestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "RebalanceSwapLocked",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract UnilaunchMultiPositionManager",
+        "name": "manager",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isToken0",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAmountsForExactRatioDeposit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "otherAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract UnilaunchMultiPositionManager",
+        "name": "manager",
+        "type": "address"
+      }
+    ],
+    "name": "getPositionStats",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceLower",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceUpper",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token0Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token1Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "valueInToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLimit",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct UnilaunchLensRatioUtils.PositionStats[]",
+        "name": "stats",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract UnilaunchMultiPositionManager",
+        "name": "manager",
+        "type": "address"
+      }
+    ],
+    "name": "getSwapLockStatus",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "unlockAt",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isLocked",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract UnilaunchMultiPositionManager",
+        "name": "manager",
+        "type": "address"
+      }
+    ],
+    "name": "getTotalAmounts",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "total0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "total1",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalFee0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalFee1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract UnilaunchMultiPositionManager",
+        "name": "manager",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount0Desired",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1Desired",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSlippageBps",
+        "type": "uint256"
+      }
+    ],
+    "name": "previewDeposit",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "shares",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[2][]",
+        "name": "inMin",
+        "type": "uint256[2][]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract UnilaunchMultiPositionManager",
+        "name": "manager",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "int24",
+            "name": "center",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "tLeft",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "tRight",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitWidth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "useCarpet",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IMultiPositionManager.RebalanceParams",
+        "name": "rebalanceParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSlippageOutMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSlippageInMin",
+        "type": "uint256"
+      }
+    ],
+    "name": "previewRebalance",
+    "outputs": [
+      {
+        "internalType": "uint256[2][]",
+        "name": "outMin",
+        "type": "uint256[2][]"
+      },
+      {
+        "internalType": "uint256[2][]",
+        "name": "inMin",
+        "type": "uint256[2][]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceLower",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceUpper",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token0Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token1Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "valueInToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLimit",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct UnilaunchLensRatioUtils.PositionStats[]",
+        "name": "expectedPositions",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract UnilaunchMultiPositionManager",
+        "name": "manager",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "int24",
+            "name": "center",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "tLeft",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "tRight",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitWidth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "useCarpet",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IMultiPositionManager.RebalanceParams",
+        "name": "rebalanceParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSlippageOutMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSlippageInMin",
+        "type": "uint256"
+      }
+    ],
+    "name": "previewRebalanceSwap",
+    "outputs": [
+      {
+        "internalType": "uint256[2][]",
+        "name": "outMin",
+        "type": "uint256[2][]"
+      },
+      {
+        "internalType": "uint256[2][]",
+        "name": "inMin",
+        "type": "uint256[2][]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "swapToken0",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "swapAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight1",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct UnilaunchLensRatioUtils.SwapParams",
+        "name": "swapParams",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceLower",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceUpper",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token0Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token1Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "valueInToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLimit",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct UnilaunchLensRatioUtils.PositionStats[]",
+        "name": "expectedPositions",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract UnilaunchMultiPositionManager",
+        "name": "manager",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "int24",
+            "name": "center",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "tLeft",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "tRight",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitWidth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "useCarpet",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IMultiPositionManager.RebalanceParams",
+        "name": "rebalanceParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bool",
+        "name": "isSwap",
+        "type": "bool"
+      }
+    ],
+    "name": "validateRebalanceParams",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isValid",
+        "type": "bool"
+      },
+      {
+        "internalType": "string",
+        "name": "reason",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

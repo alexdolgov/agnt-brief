@@ -1,0 +1,18 @@
+{
+  "address": "0x34276e77b599977fb20752d02f0c1708710e2b94",
+  "chain_id": 1,
+  "contract_name": "Extract",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-3.0-only, MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:51:11.249Z"
+}

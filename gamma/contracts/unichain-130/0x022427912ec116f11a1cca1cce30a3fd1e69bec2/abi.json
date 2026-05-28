@@ -1,0 +1,2470 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_limitOrderLens",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_limitOrderHook",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_multiPositionFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dynamicFeeLimitOrderRegistry",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_volatilityDynamicLimitOrderRegistry",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_dynamicFeeRegistry",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_volatilityDynamicFeeRegistry",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AccessControlBadConfirmation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "neededRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "AccessControlUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "AddressInsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DynamicFeeNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ETHRefundFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ETHTransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedInnerCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientETH",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidHookAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoFeesToWithdraw",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NoLiquidityProvided",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAuthorizedStrategyFactory",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PoolAlreadyReserved",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PoolReservedForOther",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SharedVolatilityOracleNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenOrderingIncorrect",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "factory",
+        "type": "address"
+      }
+    ],
+    "name": "AuthorizedStrategyFactorySet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldRegistry",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newRegistry",
+        "type": "address"
+      }
+    ],
+    "name": "DynamicFeeRegistryUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "DynamicPoolCreationFeeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "FeesWithdrawn",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "hook",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint24",
+        "name": "fee",
+        "type": "uint24"
+      }
+    ],
+    "name": "PoolCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "PoolCreationFeeCollected",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isDynamic",
+        "type": "bool"
+      }
+    ],
+    "name": "PoolInfoStored",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "poolId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "PoolReservationCleared",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      }
+    ],
+    "name": "PoolReserved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "RegularPoolCreationFeeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      }
+    ],
+    "name": "SharedVolatilityOracleSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "VolatilityDynamicCreationFeeUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldRegistry",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newRegistry",
+        "type": "address"
+      }
+    ],
+    "name": "VolatilityDynamicRegistryUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "hookOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "hookAddr",
+        "type": "address"
+      }
+    ],
+    "name": "VolatilityHookDeployed",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FEE_COLLECTOR_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "authorizedStrategyFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "collectedFees",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "hookOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "Currency",
+        "name": "currency0",
+        "type": "address"
+      },
+      {
+        "internalType": "Currency",
+        "name": "currency1",
+        "type": "address"
+      },
+      {
+        "internalType": "int24",
+        "name": "tickSpacing",
+        "type": "int24"
+      }
+    ],
+    "name": "computePoolIdForVolatilityLimitOrder",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "poolId",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "factory",
+        "type": "address"
+      }
+    ],
+    "name": "computeSaltForDynamicFee",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "hookAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_limitOrderManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "factory",
+        "type": "address"
+      }
+    ],
+    "name": "computeSaltForDynamicLimitOrder",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "hookAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "factory",
+        "type": "address"
+      }
+    ],
+    "name": "computeSaltForVolatilityDynamicFee",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "hookAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_limitOrderManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "factory",
+        "type": "address"
+      }
+    ],
+    "name": "computeSaltForVolatilityDynamicLimitOrder",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "hookAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceX96",
+            "type": "uint160"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "salt",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint24",
+            "name": "initialFee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposit0Desired",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposit1Desired",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "managerOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "useSwap",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum RebalanceLogic.Aggregator",
+                "name": "aggregator",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "aggregatorAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "swapData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bool",
+                "name": "swapToken0",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "swapAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RebalanceLogic.SwapParams",
+            "name": "swapParams",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256[2][]",
+            "name": "inMin",
+            "type": "uint256[2][]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "strategy",
+                "type": "address"
+              },
+              {
+                "internalType": "int24",
+                "name": "center",
+                "type": "int24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "tLeft",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "tRight",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "limitWidth",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint256",
+                "name": "weight0",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "weight1",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "useCarpet",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct IMultiPositionManager.RebalanceParams",
+            "name": "rebalanceParams",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct OrderBookFactory.DynamicPoolParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "createDynamicFeePoolWithManager",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PoolKey",
+        "name": "poolKey",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "mpm",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceX96",
+            "type": "uint160"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "salt",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint24",
+            "name": "initialFee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposit0Desired",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposit1Desired",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "managerOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "useSwap",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum RebalanceLogic.Aggregator",
+                "name": "aggregator",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "aggregatorAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "swapData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bool",
+                "name": "swapToken0",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "swapAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RebalanceLogic.SwapParams",
+            "name": "swapParams",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256[2][]",
+            "name": "inMin",
+            "type": "uint256[2][]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "strategy",
+                "type": "address"
+              },
+              {
+                "internalType": "int24",
+                "name": "center",
+                "type": "int24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "tLeft",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "tRight",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "limitWidth",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint256",
+                "name": "weight0",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "weight1",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "useCarpet",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct IMultiPositionManager.RebalanceParams",
+            "name": "rebalanceParams",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct OrderBookFactory.DynamicPoolParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "createDynamicLimitOrderPoolWithManager",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PoolKey",
+        "name": "poolKey",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "mpm",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceX96",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposit0Desired",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposit1Desired",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "managerOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "useSwap",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum RebalanceLogic.Aggregator",
+                "name": "aggregator",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "aggregatorAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "swapData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bool",
+                "name": "swapToken0",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "swapAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RebalanceLogic.SwapParams",
+            "name": "swapParams",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256[2][]",
+            "name": "inMin",
+            "type": "uint256[2][]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "strategy",
+                "type": "address"
+              },
+              {
+                "internalType": "int24",
+                "name": "center",
+                "type": "int24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "tLeft",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "tRight",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "limitWidth",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint256",
+                "name": "weight0",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "weight1",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "useCarpet",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct IMultiPositionManager.RebalanceParams",
+            "name": "rebalanceParams",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct OrderBookFactory.RegularPoolParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "createRegularPoolWithManager",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PoolKey",
+        "name": "poolKey",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "mpm",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceX96",
+            "type": "uint160"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "salt",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint24",
+            "name": "baseFee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "surgeMultiplier",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint32",
+            "name": "surgeDuration",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint24",
+            "name": "initialMaxTicksPerBlock",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposit0Desired",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposit1Desired",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "managerOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "useSwap",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum RebalanceLogic.Aggregator",
+                "name": "aggregator",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "aggregatorAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "swapData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bool",
+                "name": "swapToken0",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "swapAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RebalanceLogic.SwapParams",
+            "name": "swapParams",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256[2][]",
+            "name": "inMin",
+            "type": "uint256[2][]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "strategy",
+                "type": "address"
+              },
+              {
+                "internalType": "int24",
+                "name": "center",
+                "type": "int24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "tLeft",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "tRight",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "limitWidth",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint256",
+                "name": "weight0",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "weight1",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "useCarpet",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct IMultiPositionManager.RebalanceParams",
+            "name": "rebalanceParams",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "hookOwner",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct OrderBookFactory.VolatilityDynamicPoolParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "createVolatilityDynamicFeePoolWithManager",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PoolKey",
+        "name": "poolKey",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "mpm",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceX96",
+            "type": "uint160"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "salt",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "uint24",
+            "name": "baseFee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "surgeMultiplier",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint32",
+            "name": "surgeDuration",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint24",
+            "name": "initialMaxTicksPerBlock",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposit0Desired",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deposit1Desired",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "managerOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "useSwap",
+            "type": "bool"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum RebalanceLogic.Aggregator",
+                "name": "aggregator",
+                "type": "uint8"
+              },
+              {
+                "internalType": "address",
+                "name": "aggregatorAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "swapData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bool",
+                "name": "swapToken0",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "swapAmount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "minAmountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct RebalanceLogic.SwapParams",
+            "name": "swapParams",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256[2][]",
+            "name": "inMin",
+            "type": "uint256[2][]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "strategy",
+                "type": "address"
+              },
+              {
+                "internalType": "int24",
+                "name": "center",
+                "type": "int24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "tLeft",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "tRight",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "limitWidth",
+                "type": "uint24"
+              },
+              {
+                "internalType": "uint256",
+                "name": "weight0",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "weight1",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "useCarpet",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct IMultiPositionManager.RebalanceParams",
+            "name": "rebalanceParams",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "hookOwner",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct OrderBookFactory.VolatilityDynamicPoolParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "createVolatilityDynamicLimitOrderPoolWithManager",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PoolKey",
+        "name": "poolKey",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "mpm",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "creatorDynamicFeeHooks",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "creatorDynamicLimitOrderHooks",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "creatorVolatilityDynamicFeeHooks",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "creatorVolatilityDynamicLimitOrderHooks",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "hookOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      }
+    ],
+    "name": "deployVolatilityLimitOrderHookWithSalt",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "hookAddr",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dynamicFeeLimitOrderRegistry",
+    "outputs": [
+      {
+        "internalType": "contract DynamicFeeLimitOrderHookRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dynamicFeeRegistry",
+    "outputs": [
+      {
+        "internalType": "contract DynamicFeeHookRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dynamicPoolCreationFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      }
+    ],
+    "name": "getPoolInfoByCreator",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "poolId",
+            "type": "bytes32"
+          },
+          {
+            "components": [
+              {
+                "internalType": "Currency",
+                "name": "currency0",
+                "type": "address"
+              },
+              {
+                "internalType": "Currency",
+                "name": "currency1",
+                "type": "address"
+              },
+              {
+                "internalType": "uint24",
+                "name": "fee",
+                "type": "uint24"
+              },
+              {
+                "internalType": "int24",
+                "name": "tickSpacing",
+                "type": "int24"
+              },
+              {
+                "internalType": "contract IHooks",
+                "name": "hooks",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct PoolKey",
+            "name": "poolKey",
+            "type": "tuple"
+          },
+          {
+            "internalType": "bool",
+            "name": "isDynamic",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct OrderBookFactory.PoolInfo[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      }
+    ],
+    "name": "getPoolsByCreator",
+    "outputs": [
+      {
+        "internalType": "bytes32[]",
+        "name": "poolIds",
+        "type": "bytes32[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "limitOrderHook",
+    "outputs": [
+      {
+        "internalType": "contract LimitOrderHook",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "limitOrderLens",
+    "outputs": [
+      {
+        "internalType": "contract LimitOrderLens",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "limitOrderManager",
+    "outputs": [
+      {
+        "internalType": "contract LimitOrderManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "multiPositionFactory",
+    "outputs": [
+      {
+        "internalType": "contract MultiPositionFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "poolCreators",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "poolManager",
+    "outputs": [
+      {
+        "internalType": "contract IPoolManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "regularPoolCreationFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "callerConfirmation",
+        "type": "address"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "strategy",
+        "type": "address"
+      }
+    ],
+    "name": "reservePoolForStrategy",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "reservedPools",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "factory",
+        "type": "address"
+      }
+    ],
+    "name": "setAuthorizedStrategyFactory",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_registry",
+        "type": "address"
+      }
+    ],
+    "name": "setDynamicFeeLimitOrderRegistry",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_registry",
+        "type": "address"
+      }
+    ],
+    "name": "setDynamicFeeRegistry",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "setDynamicPoolCreationFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "setRegularPoolCreationFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      }
+    ],
+    "name": "setSharedVolatilityOracle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "setVolatilityDynamicCreationFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_registry",
+        "type": "address"
+      }
+    ],
+    "name": "setVolatilityDynamicFeeRegistry",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_registry",
+        "type": "address"
+      }
+    ],
+    "name": "setVolatilityDynamicLimitOrderRegistry",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sharedVolatilityOracle",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "userToPoolInfo",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "poolId",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "Currency",
+            "name": "currency0",
+            "type": "address"
+          },
+          {
+            "internalType": "Currency",
+            "name": "currency1",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fee",
+            "type": "uint24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickSpacing",
+            "type": "int24"
+          },
+          {
+            "internalType": "contract IHooks",
+            "name": "hooks",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct PoolKey",
+        "name": "poolKey",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bool",
+        "name": "isDynamic",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "volatilityDynamicCreationFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "volatilityDynamicFeeRegistry",
+    "outputs": [
+      {
+        "internalType": "contract VolatilityDynamicFeeHookRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "volatilityDynamicLimitOrderRegistry",
+    "outputs": [
+      {
+        "internalType": "contract VolatilityDynamicFeeLimitOrderHookRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "recipient",
+        "type": "address"
+      }
+    ],
+    "name": "withdrawFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

@@ -1,0 +1,183 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract MultiPositionManager",
+        "name": "manager",
+        "type": "MultiPositionManager"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "lowerTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "upperTick",
+            "type": "int24"
+          }
+        ],
+        "internalType": "struct IMultiPositionManager.Range[]",
+        "name": "ranges",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount1",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IMultiPositionManager.PositionData[]",
+        "name": "positionData",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deposit0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deposit1",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateExpectedPositionsAfterDeposit",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceLower",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceUpper",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token0Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token1Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "valueInToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLimit",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct SimpleLensRatioUtils.PositionStats[]",
+        "name": "expectedPositions",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract MultiPositionManager",
+        "name": "manager",
+        "type": "MultiPositionManager"
+      }
+    ],
+    "name": "getPositionStats",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceLower",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceUpper",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token0Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token1Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "valueInToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLimit",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct SimpleLensRatioUtils.PositionStats[]",
+        "name": "stats",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

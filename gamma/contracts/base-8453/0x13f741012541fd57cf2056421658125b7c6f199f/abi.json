@@ -1,0 +1,135 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract MultiPositionManager",
+        "name": "manager",
+        "type": "MultiPositionManager"
+      },
+      {
+        "internalType": "uint256",
+        "name": "finalTotal0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "finalTotal1",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "strategy",
+            "type": "address"
+          },
+          {
+            "internalType": "int24",
+            "name": "center",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "tLeft",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "tRight",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint24",
+            "name": "limitWidth",
+            "type": "uint24"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "weight1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "useCarpet",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IMultiPositionManager.RebalanceParams",
+        "name": "rebalanceParams",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxSlippageInMin",
+        "type": "uint256"
+      }
+    ],
+    "name": "simulateDepositAndRebalance",
+    "outputs": [
+      {
+        "internalType": "uint256[2][]",
+        "name": "inMin",
+        "type": "uint256[2][]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceLower",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint160",
+            "name": "sqrtPriceUpper",
+            "type": "uint160"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token0Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "token1Quantity",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "valueInToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isLimit",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct SimpleLensRatioUtils.PositionStats[]",
+        "name": "expectedPositions",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

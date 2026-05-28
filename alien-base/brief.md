@@ -7,11 +7,11 @@
 - Project: Alien Base (`alien-base`)
 - Website: [https://alienbase.xyz/](https://alienbase.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T18:44:00.721Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-28T15:28:42.085Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: base
 - Contract surface: 58 unique implementations (113 raw deployments)
-- DeFi Llama TVL: $4,993,479.00
+- DeFi Llama TVL: $4,725,226.00
 - On-chain TVL (included contracts): $2,915,012.41
 - TVL by chain: Base $2,915,012.41
 
@@ -31,11 +31,11 @@ The 'Contracts' family provides the ALB token and distribution infrastructure, w
 - Unverified implementations: 11
 - Unique implementations: 58
 - Raw deployments: 113
-- Audits discovered: 0
+- Audits discovered: 97
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $2,915,012.41
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2024-10 (aging)
+- Staleness: 0 fresh, 2 aging, 13 stale, 82 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $2,915,012.41 represents exposure in a protocol with declining activity.
 
@@ -135,6 +135,103 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [2017-03.md (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2017-03.md) | OpenZeppelin | Audit | 2017-03 | stale | Direct | n/a | 0 | n/a |
+| [2018-10.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2018-10.pdf) | OpenZeppelin | Audit | 2018-10 | stale | Direct | n/a | 0 | n/a |
+| [2022-10-Checkpoints.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-Checkpoints.pdf) | OpenZeppelin | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
+| [2022-10-ERC4626.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-ERC4626.pdf) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
+| [2023-05-v4.9.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-05-v4.9.pdf) | OpenZeppelin | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
+| [2023-10-v5.0.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-10-v5.0.pdf) | OpenZeppelin | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
+| [2024-10-v5.1.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2024-10-v5.1.pdf) | OpenZeppelin | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [README.md (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/README.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [abdk-redstone-eth-contracts-audit-march-2023.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/eth-contracts/audits/abdk-redstone-eth-contracts-audit-march-2023.pdf) | ABDK | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
+| [abdk-redstone-audit-evm-connector-nov-2022.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/evm-connector/audits/abdk-redstone-audit-evm-connector-nov-2022.pdf) | ABDK | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
+| [ABDK_RedStone_Oracles_v_2_0.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/ABDK_RedStone_Oracles_v_2_0.pdf) | ABDK | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
+| [abdk-redstone-adapter-contracts-audit-june-2023.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/abdk-redstone-adapter-contracts-audit-june-2023.pdf) | ABDK | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
+| [abdk-redstone-merged-adapter-contracts-audit-dec-2023.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/abdk-redstone-merged-adapter-contracts-audit-dec-2023.pdf) | ABDK | Audit | 2023-12 | stale | Direct | n/a | 0 | n/a |
+| [abdk-redstone-multifeed-contracts-audit-july-2024.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/abdk-redstone-multifeed-contracts-audit-july-2024.pdf) | ABDK | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
+| [auditone-redstone-adapter-contracts-audit-june-2023.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/auditone-redstone-adapter-contracts-audit-june-2023.pdf) | unknown | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
+| [ackee-blockchain-solady-report.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/ackee-blockchain-solady-report.pdf) | Ackee Blockchain | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
+| [cantina-solady-report.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/cantina-solady-report.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [cantina-spearbit-coinbase-solady-report.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/cantina-spearbit-coinbase-solady-report.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [shung-solady-erc721-audit.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/shung-solady-erc721-audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [xuwinnie-solady-cbrt-proof.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/xuwinnie-solady-cbrt-proof.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [eip7702proxy.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/eip7702proxy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc1271.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/erc1271.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc4337.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/erc4337.md) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc4337factory.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/erc4337factory.md) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc6551.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/erc6551.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc6551proxy.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/erc6551proxy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc7821.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/erc7821.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libeip7702.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/libeip7702.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [liberc6551.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/liberc6551.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [liberc7579.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/liberc7579.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [receiver.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/receiver.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [timelock.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/accounts/timelock.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [enumerableroles.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/auth/enumerableroles.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ownable.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/auth/ownable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ownableroles.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/auth/ownableroles.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [timedroles.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/auth/timedroles.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [overview.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [sidebar.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/sidebar.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc1155.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/tokens/erc1155.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc20.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/tokens/erc20.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc20votes.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/tokens/erc20votes.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc2981.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/tokens/erc2981.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc4626.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/tokens/erc4626.md) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc6909.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/tokens/erc6909.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc721.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/tokens/erc721.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [weth.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/tokens/weth.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [base64.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/base64.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [callcontextchecker.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/callcontextchecker.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [create3.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/create3.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [datetimelib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/datetimelib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [deploylesspredeployqueryer.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/deploylesspredeployqueryer.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [dynamicarraylib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/dynamicarraylib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [dynamicbufferlib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/dynamicbufferlib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ecdsa.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/ecdsa.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [efficienthashlib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/efficienthashlib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [eip712.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/eip712.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [enumerablemaplib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/enumerablemaplib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [enumerablesetlib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/enumerablesetlib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc1967factory.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/erc1967factory.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [erc1967factoryconstants.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/erc1967factoryconstants.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [fixedpointmathlib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/fixedpointmathlib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [gasburnerlib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/gasburnerlib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [initializable.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/initializable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [jsonparserlib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/jsonparserlib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libbit.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libbit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libbitmap.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libbitmap.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libbytes.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libbytes.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libcall.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libcall.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libclone.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libclone.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libmap.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libmap.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libprng.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libprng.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [librlp.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/librlp.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libsort.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libsort.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libstorage.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libstorage.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libstring.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libstring.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libtransient.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libtransient.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [libzip.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/libzip.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [lifebuoy.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/lifebuoy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [merkleprooflib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/merkleprooflib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [metadatareaderlib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/metadatareaderlib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [minheaplib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/minheaplib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [multicallable.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/multicallable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [p256.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/p256.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [redblacktreelib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/redblacktreelib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [reentrancyguard.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/reentrancyguard.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [reentrancyguardtransient.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/reentrancyguardtransient.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [safecastlib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/safecastlib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [safetransferlib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/safetransferlib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [signaturecheckerlib.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/signaturecheckerlib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [sstore2.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/sstore2.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [upgradeablebeacon.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/upgradeablebeacon.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [uupsupgradeable.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/uupsupgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [webauthn.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/docs/utils/webauthn.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [audit.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/abdk/audit.pdf) | ABDK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -191,9 +288,109 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 97
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [7750] 2017-03.md
+- [7751] 2018-10.pdf
+- [7752] 2022-10-Checkpoints.pdf
+- [7753] 2022-10-ERC4626.pdf
+- [7754] 2023-05-v4.9.pdf
+- [7755] 2023-10-v5.0.pdf
+- [7756] 2024-10-v5.1.pdf
+- [7757] README.md
+- [7777] abdk-redstone-eth-contracts-audit-march-2023.pdf
+- [7778] abdk-redstone-audit-evm-connector-nov-2022.pdf
+- [7779] ABDK_RedStone_Oracles_v_2_0.pdf
+- [7780] abdk-redstone-adapter-contracts-audit-june-2023.pdf
+- [7781] abdk-redstone-merged-adapter-contracts-audit-dec-2023.pdf
+- [7782] abdk-redstone-multifeed-contracts-audit-july-2024.pdf
+- [7783] auditone-redstone-adapter-contracts-audit-june-2023.pdf
+- [7784] ackee-blockchain-solady-report.pdf
+- [7785] cantina-solady-report.pdf
+- [7786] cantina-spearbit-coinbase-solady-report.pdf
+- [7787] shung-solady-erc721-audit.pdf
+- [7788] xuwinnie-solady-cbrt-proof.pdf
+- [7789] eip7702proxy.md
+- [7790] erc1271.md
+- [7791] erc4337.md
+- [7792] erc4337factory.md
+- [7793] erc6551.md
+- [7794] erc6551proxy.md
+- [7795] erc7821.md
+- [7796] libeip7702.md
+- [7797] liberc6551.md
+- [7798] liberc7579.md
+- [7799] receiver.md
+- [7800] timelock.md
+- [7801] enumerableroles.md
+- [7802] ownable.md
+- [7803] ownableroles.md
+- [7804] timedroles.md
+- [7805] overview.md
+- [7806] sidebar.md
+- [7807] erc1155.md
+- [7808] erc20.md
+- [7809] erc20votes.md
+- [7810] erc2981.md
+- [7811] erc4626.md
+- [7812] erc6909.md
+- [7813] erc721.md
+- [7814] weth.md
+- [7815] base64.md
+- [7816] callcontextchecker.md
+- [7817] create3.md
+- [7818] datetimelib.md
+- [7819] deploylesspredeployqueryer.md
+- [7820] dynamicarraylib.md
+- [7821] dynamicbufferlib.md
+- [7822] ecdsa.md
+- [7823] efficienthashlib.md
+- [7824] eip712.md
+- [7825] enumerablemaplib.md
+- [7826] enumerablesetlib.md
+- [7827] erc1967factory.md
+- [7828] erc1967factoryconstants.md
+- [7829] fixedpointmathlib.md
+- [7830] gasburnerlib.md
+- [7831] initializable.md
+- [7832] jsonparserlib.md
+- [7833] libbit.md
+- [7834] libbitmap.md
+- [7835] libbytes.md
+- [7836] libcall.md
+- [7837] libclone.md
+- [7838] libmap.md
+- [7839] libprng.md
+- [7840] librlp.md
+- [7841] libsort.md
+- [7842] libstorage.md
+- [7843] libstring.md
+- [7844] libtransient.md
+- [7845] libzip.md
+- [7846] lifebuoy.md
+- [7847] merkleprooflib.md
+- [7848] metadatareaderlib.md
+- [7849] minheaplib.md
+- [7850] multicallable.md
+- [7851] p256.md
+- [7852] redblacktreelib.md
+- [7853] reentrancyguard.md
+- [7854] reentrancyguardtransient.md
+- [7855] safecastlib.md
+- [7856] safetransferlib.md
+- [7857] signaturecheckerlib.md
+- [7858] sstore2.md
+- [7859] upgradeablebeacon.md
+- [7860] uupsupgradeable.md
+- [7861] webauthn.md
+- [7862] audit.pdf
+- [7865] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [7866] 0002-metadata-manifest-and-pull-command.md
+- [7867] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ambient",
-  "generated_at": "2026-05-24T10:05:07.494Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-28T15:25:36.974Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "ambient",
@@ -36,17 +36,17 @@
     "total_addresses": 52,
     "unique_implementations": 30,
     "total_deployments": 52,
-    "audited_contracts": 0,
-    "unaudited_contracts": 17,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 17,
+    "audited_contracts": 11,
+    "unaudited_contracts": 6,
+    "contracts_verified_audited": 11,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 13,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 2771082.68026,
-    "tvl_usd": 2771082.68026,
+    "coverage_pct": 64.7,
+    "total_audits": 36,
+    "scoreable_audits": 6,
+    "dl_tvl_usd": 2695530.51034,
+    "tvl_usd": 2695530.51034,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -60,13 +60,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2023-05",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "stale": 4,
+      "unknown": 32
     }
   },
   "topography": {
@@ -100,7 +100,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -109,14 +109,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8689",
+        "audit-8690",
+        "audit-8701"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -171,7 +175,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -180,14 +184,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8690"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -211,7 +217,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -220,7 +226,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 534352,
@@ -229,14 +235,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8689",
+        "audit-8690",
+        "audit-8696",
+        "audit-8698"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -260,7 +271,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -269,7 +280,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -278,7 +289,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -287,7 +298,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 534352,
@@ -296,14 +307,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8689",
+        "audit-8690"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -327,14 +341,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8689",
+        "audit-8690",
+        "audit-8696",
+        "audit-8698",
+        "audit-8700",
+        "audit-8701"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -527,14 +548,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8689",
+        "audit-8690",
+        "audit-8696",
+        "audit-8698",
+        "audit-8700",
+        "audit-8701"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -558,7 +586,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -567,14 +595,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8689"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -598,7 +628,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -607,14 +637,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8689"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -638,7 +670,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -647,14 +679,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8689",
+        "audit-8690",
+        "audit-8698"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -678,7 +714,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -687,14 +723,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8689",
+        "audit-8690",
+        "audit-8698"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1179,7 +1219,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1188,7 +1228,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 81457,
@@ -1197,75 +1237,996 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8689",
+        "audit-8690",
+        "audit-8696",
+        "audit-8698",
+        "audit-8700",
+        "audit-8701"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
-  "coverage_gaps": [
+  "audits": [
     {
-      "chain_id": 81457,
-      "chain_name": "blast",
-      "address": "0x70b161f2f0a18bd1865021f25f9e895021e9dc4f",
-      "name": "ColdPath",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 8689,
+      "audit_key": "audit-8689",
+      "report_name": "QuantstampV1.pdf",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV1.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AgentMask",
+        "Bitmaps",
+        "BootPath",
+        "Chaining",
+        "ColdInjector",
+        "ColdPath",
+        "CompoundMath",
+        "CrocEvents",
+        "CrocLpErc20",
+        "CrocPolicy",
+        "CrocQuery",
+        "CrocSwapDex",
+        "CurveAssimilate",
+        "CurveCache",
+        "CurveMath",
+        "CurveRoll",
+        "DepositDesk",
+        "Directives",
+        "Encoding",
+        "FixedPoint",
+        "HotPath",
+        "ICrocLpConduit",
+        "ICrocMinion",
+        "ICrocPermitOracle",
+        "ICrocVirtualToken",
+        "KnockoutCounter",
+        "KnockoutFlagPath",
+        "KnockoutLiq",
+        "KnockoutLiqPath",
+        "KnockoutPath",
+        "LevelBook",
+        "LiquidityCurve",
+        "LiquidityMath",
+        "LongPath",
+        "MarketSequencer",
+        "MicroPaths",
+        "MultiPath",
+        "PoolRegistry",
+        "PoolSpecs",
+        "PositionRegistrar",
+        "PositionRegistry",
+        "PriceGrid",
+        "ProtocolAccount",
+        "ProtocolCmd",
+        "SafeCast",
+        "SafeModePath",
+        "SettleLayer",
+        "StorageLayout",
+        "SwapCurve",
+        "TickCensus",
+        "TickMath",
+        "TimeLock",
+        "TokenFlow",
+        "TradeMatcher",
+        "TransferHelper",
+        "WarmPath"
+      ],
+      "matched_contracts": 23,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     },
+    {
+      "audit_id": 8690,
+      "audit_key": "audit-8690",
+      "report_name": "QuantstampV2.pdf",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV2.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AgentMask",
+        "BitMath",
+        "Bitmaps",
+        "BootPath",
+        "Chaining",
+        "ColdPath",
+        "CompoundMath",
+        "CrocEvents",
+        "CrocImpact",
+        "CrocLpErc20",
+        "CrocPolicy",
+        "CrocQuery",
+        "CrocSwapDex",
+        "CurveAssimilate",
+        "CurveCache",
+        "CurveMath",
+        "CurveRoll",
+        "DepositDesk",
+        "Directives",
+        "Encoding",
+        "FixedPoint",
+        "HotPath",
+        "ICrocCondOracle",
+        "ICrocLpConduit",
+        "ICrocMinion",
+        "ICrocPermitOracle",
+        "IERC20Minimal",
+        "KnockoutCounter",
+        "KnockoutLiq",
+        "KnockoutPath",
+        "LevelBook",
+        "LiquidityCurve",
+        "LiquidityMath",
+        "LongPath",
+        "MarketSequencer",
+        "MicroPaths",
+        "PoolRegistry",
+        "PoolSpecs",
+        "PositionRegistrar",
+        "PriceGrid",
+        "ProtocolAccount",
+        "ProtocolCmd",
+        "ProxyCaller",
+        "SafeCast",
+        "SafeModePath",
+        "SettleLayer",
+        "StorageLayout",
+        "SwapCurve",
+        "TickCensus",
+        "TickMath",
+        "Timelock",
+        "TokenFlow",
+        "TradeMatcher",
+        "TransferHelper",
+        "WarmPath"
+      ],
+      "matched_contracts": 21,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8691,
+      "audit_key": "audit-8691",
+      "report_name": "Zellic.pdf",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/Zellic.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8692,
+      "audit_key": "audit-8692",
+      "report_name": "ControlFlow.md",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/ControlFlow.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8693,
+      "audit_key": "audit-8693",
+      "report_name": "CurveBounds.md",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/CurveBounds.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8694,
+      "audit_key": "audit-8694",
+      "report_name": "Encoding.md",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/Encoding.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8695,
+      "audit_key": "audit-8695",
+      "report_name": "FeeOdometer.md",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/FeeOdometer.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8696,
+      "audit_key": "audit-8696",
+      "report_name": "GovernanceRoles.md",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/GovernanceRoles.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CrocPolicy",
+        "CrocSwapDex"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8697,
+      "audit_key": "audit-8697",
+      "report_name": "JITModel.md",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/JITModel.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8698,
+      "audit_key": "audit-8698",
+      "report_name": "Layout.md",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/Layout.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AgentMask",
+        "BitMath",
+        "Bitmaps",
+        "Chaining",
+        "ColdInjector",
+        "CompoundMath",
+        "CrocEvents",
+        "CrocLpErc20",
+        "CrocPolicy",
+        "CrocSwapDex",
+        "CurveAssimilate",
+        "CurveCache",
+        "CurveMath",
+        "CurveRoll",
+        "Directives",
+        "Encoding",
+        "FixedPoint",
+        "HotPath",
+        "ICrocCondOracle",
+        "ICrocLpConduit",
+        "ICrocMinion",
+        "ICrocPermitOracle",
+        "ICrocVirtualToken",
+        "KnockoutCounter",
+        "KnockoutLiq",
+        "KnockoutPath",
+        "LevelBook",
+        "LiquidityCurve",
+        "LiquidityMath",
+        "LongPath",
+        "MarketSequencer",
+        "MicroPaths",
+        "MultiPath",
+        "PoolRegistry",
+        "PoolSpecs",
+        "PositionRegistrar",
+        "PriceGrid",
+        "ProtocolAccount",
+        "SafeCast",
+        "SafeModePath",
+        "SettleLayer",
+        "StorageLayout",
+        "SwapCurve",
+        "TickCensus",
+        "TickMath",
+        "TokenFlow",
+        "TokenTransfer",
+        "TradeMatcher",
+        "WarmPath"
+      ],
+      "matched_contracts": 12,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8699,
+      "audit_key": "audit-8699",
+      "report_name": "LiquidityLots.md",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/LiquidityLots.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8700,
+      "audit_key": "audit-8700",
+      "report_name": "TokenModel.md",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/TokenModel.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CrocSwapDex"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8701,
+      "audit_key": "audit-8701",
+      "report_name": "UpgradeGuidelines.md",
+      "report_url": "https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/UpgradeGuidelines.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AgentMask",
+        "BootPath",
+        "ColdPath",
+        "CrocSwapDex",
+        "StorageLayout"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8702,
+      "audit_key": "audit-8702",
+      "report_name": "CODING-STYLE.md",
+      "report_url": "https://github.com/CrocSwap/ambient-ts-app/blob/develop/docs/CODING-STYLE.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8703,
+      "audit_key": "audit-8703",
+      "report_name": "procedure.md",
+      "report_url": "https://github.com/CrocSwap/ambient-ts-app/blob/develop/docs/release/procedure.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8704,
+      "audit_key": "audit-8704",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8705,
+      "audit_key": "audit-8705",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8706,
+      "audit_key": "audit-8706",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8707,
+      "audit_key": "audit-8707",
+      "report_name": "Bytecode_Circuit.md",
+      "report_url": "https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Bytecode_Circuit.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8708,
+      "audit_key": "audit-8708",
+      "report_name": "EIP2930_1559.md",
+      "report_url": "https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/EIP2930_1559.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8709,
+      "audit_key": "audit-8709",
+      "report_name": "EVM_Circuit.md",
+      "report_url": "https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/EVM_Circuit.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8710,
+      "audit_key": "audit-8710",
+      "report_name": "Keccak_Circuit.md",
+      "report_url": "https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Keccak_Circuit.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8711,
+      "audit_key": "audit-8711",
+      "report_name": "MCOPY.md",
+      "report_url": "https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/MCOPY.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8712,
+      "audit_key": "audit-8712",
+      "report_name": "MPT_Circuit.md",
+      "report_url": "https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/MPT_Circuit.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8713,
+      "audit_key": "audit-8713",
+      "report_name": "Modexp_Circuit.md",
+      "report_url": "https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Modexp_Circuit.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8714,
+      "audit_key": "audit-8714",
+      "report_name": "Public_Input_Circuit.md",
+      "report_url": "https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Public_Input_Circuit.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8715,
+      "audit_key": "audit-8715",
+      "report_name": "Sig_Circuit.md",
+      "report_url": "https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Sig_Circuit.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8716,
+      "audit_key": "audit-8716",
+      "report_name": "State_Circuit.md",
+      "report_url": "https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/State_Circuit.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8717,
+      "audit_key": "audit-8717",
+      "report_name": "Tx_Circuit.md",
+      "report_url": "https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Tx_Circuit.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8718,
+      "audit_key": "audit-8718",
+      "report_name": "coordinator-proxy.md",
+      "report_url": "https://github.com/scroll-tech/scroll/blob/develop/docs/coordinator-proxy.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8719,
+      "audit_key": "audit-8719",
+      "report_name": "prover-coordinator-overview.md",
+      "report_url": "https://github.com/scroll-tech/scroll/blob/develop/docs/prover-coordinator-overview.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8720,
+      "audit_key": "audit-8720",
+      "report_name": "docker-compose-e2e-guide.md",
+      "report_url": "https://github.com/scroll-tech/scroll/blob/develop/docs/testing/docker-compose-e2e-guide.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8721,
+      "audit_key": "audit-8721",
+      "report_name": "openvm-upgrade-testing-guide.md",
+      "report_url": "https://github.com/scroll-tech/scroll/blob/develop/docs/testing/openvm-upgrade-testing-guide.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8722,
+      "audit_key": "audit-8722",
+      "report_name": "openvm-v1.6.0-guest-v0.8.0-May19.md",
+      "report_url": "https://github.com/scroll-tech/scroll/blob/develop/docs/testing_reports/openvm-v1.6.0-guest-v0.8.0-May19.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2019-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8723,
+      "audit_key": "audit-8723",
+      "report_name": "intro-to-zkevm.md",
+      "report_url": "https://github.com/scroll-tech/scroll-documentation/blob/develop/src/content/docs/en/technology/zkevm/intro-to-zkevm.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 8723,
+          "report_url": "https://github.com/scroll-tech/scroll-documentation/blob/develop/src/content/docs/en/technology/zkevm/intro-to-zkevm.md"
+        },
+        {
+          "audit_id": 8725,
+          "report_url": "https://github.com/scroll-tech/scroll-documentation/blob/develop/src/content/docs/es/technology/zkevm/intro-to-zkevm.md"
+        },
+        {
+          "audit_id": 8726,
+          "report_url": "https://github.com/scroll-tech/scroll-documentation/blob/develop/src/content/docs/tr/technology/zkevm/intro-to-zkevm.md"
+        },
+        {
+          "audit_id": 8727,
+          "report_url": "https://github.com/scroll-tech/scroll-documentation/blob/develop/src/content/docs/zh/technology/zkevm/intro-to-zkevm.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 8724,
+      "audit_key": "audit-8724",
+      "report_name": "glossary.md",
+      "report_url": "https://github.com/scroll-tech/scroll-documentation/blob/develop/src/content/docs/es/glossary.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Quantstamp",
+      "tier": 2,
+      "contracts_covered": 11,
+      "coverage_pct": 64.7,
+      "latest_audit": "2023-05"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 7,
+      "coverage_pct": 41.2,
+      "latest_audit": "2019-05"
+    }
+  ],
+  "coverage_gaps": [
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x25662c94d28da775c4e4fdca987b14d704b4b349",
       "name": "CrocDeployer",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3e3edd3ed7621891e574e5d7f47b1f30a994c0d0",
-      "name": "CrocImpact",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0b6cd0ecb176cb39ad99b3a0e4294167a80b68a3",
-      "name": "CrocPolicy",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 534352,
-      "chain_name": "scroll",
-      "address": "0x62223e90605845cf5cc6dae6e0de4cda130d6ddf",
-      "name": "CrocQuery",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 534352,
-      "chain_name": "scroll",
-      "address": "0xaaaaaaaacb71bf2c8cae522ea5fa455571a74106",
-      "name": "CrocSwapDex",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1292,71 +2253,11 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x37e00522ce66507239d59b541940f99ea19ff81f",
-      "name": "HotProxy",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x509de582af6b4658a1830f7882077fba5523c957",
-      "name": "KnockoutFlagPath",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 81457,
-      "chain_name": "blast",
-      "address": "0x67231c7db63e5d7378596aadd6ba69345e6a53aa",
-      "name": "KnockoutLiqPath",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x13242bd05b1d3d6b79ada2b28678c235f3f2389b",
-      "name": "LongPath",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 81457,
-      "chain_name": "blast",
-      "address": "0xc58f7a96a3a8e82da0747a6e1411c3a531220066",
-      "name": "MicroPaths",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 81457,
       "chain_name": "blast",
       "address": "0x19d005f3d4a9c5b0211457339dda9822dc2dee94",
       "name": "TimelockAccepts",
       "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 81457,
-      "chain_name": "blast",
-      "address": "0x62223e90605845cf5cc6dae6e0de4cda130d6ddf",
-      "name": "WarmPath",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1369,11 +2270,137 @@
     "needs_review": 2
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 70
+    },
+    "extraction_confidence_counts": {
+      "high": 3,
+      "low": 3
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 8691,
+        "report_name": "Zellic.pdf"
+      },
+      {
+        "audit_id": 8692,
+        "report_name": "ControlFlow.md"
+      },
+      {
+        "audit_id": 8693,
+        "report_name": "CurveBounds.md"
+      },
+      {
+        "audit_id": 8694,
+        "report_name": "Encoding.md"
+      },
+      {
+        "audit_id": 8695,
+        "report_name": "FeeOdometer.md"
+      },
+      {
+        "audit_id": 8697,
+        "report_name": "JITModel.md"
+      },
+      {
+        "audit_id": 8699,
+        "report_name": "LiquidityLots.md"
+      },
+      {
+        "audit_id": 8702,
+        "report_name": "CODING-STYLE.md"
+      },
+      {
+        "audit_id": 8703,
+        "report_name": "procedure.md"
+      },
+      {
+        "audit_id": 8704,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 8705,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 8706,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      },
+      {
+        "audit_id": 8707,
+        "report_name": "Bytecode_Circuit.md"
+      },
+      {
+        "audit_id": 8708,
+        "report_name": "EIP2930_1559.md"
+      },
+      {
+        "audit_id": 8709,
+        "report_name": "EVM_Circuit.md"
+      },
+      {
+        "audit_id": 8710,
+        "report_name": "Keccak_Circuit.md"
+      },
+      {
+        "audit_id": 8711,
+        "report_name": "MCOPY.md"
+      },
+      {
+        "audit_id": 8712,
+        "report_name": "MPT_Circuit.md"
+      },
+      {
+        "audit_id": 8713,
+        "report_name": "Modexp_Circuit.md"
+      },
+      {
+        "audit_id": 8714,
+        "report_name": "Public_Input_Circuit.md"
+      },
+      {
+        "audit_id": 8715,
+        "report_name": "Sig_Circuit.md"
+      },
+      {
+        "audit_id": 8716,
+        "report_name": "State_Circuit.md"
+      },
+      {
+        "audit_id": 8717,
+        "report_name": "Tx_Circuit.md"
+      },
+      {
+        "audit_id": 8718,
+        "report_name": "coordinator-proxy.md"
+      },
+      {
+        "audit_id": 8719,
+        "report_name": "prover-coordinator-overview.md"
+      },
+      {
+        "audit_id": 8720,
+        "report_name": "docker-compose-e2e-guide.md"
+      },
+      {
+        "audit_id": 8721,
+        "report_name": "openvm-upgrade-testing-guide.md"
+      },
+      {
+        "audit_id": 8722,
+        "report_name": "openvm-v1.6.0-guest-v0.8.0-May19.md"
+      },
+      {
+        "audit_id": 8723,
+        "report_name": "intro-to-zkevm.md"
+      },
+      {
+        "audit_id": 8724,
+        "report_name": "glossary.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

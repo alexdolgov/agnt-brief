@@ -64,7 +64,7 @@ Each project directory contains:
 | [yieldseeker](./yieldseeker/brief.md) | $1.26M | base | 191 | 51/191 (27%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | $102.88M |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/brief.md) | $2.25M | ethereum | 112 | 75/112 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $95.88M |
 | [velvet.capital](./velvet.capital/brief.md) | $1.44M | 4 | 420 | 44/420 (10%) | 77.8% | 2.2% (Spearbit) | 13 | fresh | ⚠️ declining | $95.22M |
-| [blur](./blur/brief.md) | $18.88M | blast, ethereum | 17 | 12/17 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $91.73M |
+| [blur](./blur/brief.md) | $18.57M | blast, ethereum | 17 | 12/17 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $91.73M |
 | [pleasing-gold](./pleasing-gold/brief.md) | $87.87M | arbitrum | 8 | 4/8 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $88.09M |
 | [zivoe](./zivoe/brief.md) | $13.83M | ethereum | 32 | 31/32 (97%) | 58.1% | 48.4% (Sherlock) | 3 | aging | ✅ active | $87.09M |
 | [the-idols](./the-idols/brief.md) | $5.76M | ethereum | 17 | 13/17 (76%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $85.36M |
@@ -290,7 +290,7 @@ Each project directory contains:
 | [apex-protocol](./apex-protocol/brief.md) | $36.24M | 7 | 206 | 87/206 (42%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $436.41K |
 | [camelot](./camelot/brief.md) | $27.14M | arbitrum | 118 | 51/118 (43%) | 17.6% | 0.0% (-) | 1 | stale | ✅ active | $391.94K |
 | [equalizer](./equalizer/brief.md) | $1.27M | base, fantom, sonic | 292 | 50/292 (17%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $374.84K |
-| [bmx](./bmx/brief.md) | $2.95M | base, mode | 184 | 133/184 (72%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $305.69K |
+| [bmx](./bmx/brief.md) | $2.67M | base, mode | 184 | 133/184 (72%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $305.69K |
 | [strata](./strata/brief.md) | $97.42M | ethereum | 39 | 38/39 (97%) | 31.6% | 28.9% (Cyfrin) | 3 | fresh | ❓ unknown | $289.60K |
 | [tokenstore](./tokenstore/brief.md) | $1.35M | ethereum | 44 | 2/44 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $265.68K |
 | [block-analitica](./block-analitica/brief.md) | $49.60M | 4 | 19 | 17/19 (89%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $252.83K |
@@ -399,8 +399,8 @@ Each project directory contains:
 | [bitvenus](./bitvenus/brief.md) | $20.90M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [blackhole](./blackhole/brief.md) | $29.94M | avalanche | 86 | 45/86 (52%) | 31.1% | 31.1% (Code4rena) | 3 | fresh | ❓ unknown | - |
 | [blueshift](./blueshift/brief.md) | $4.38M | kava, polygon | 24 | 3/24 (13%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
-| [boba-bridge](./boba-bridge/brief.md) | $3.08M | ethereum | 53 | 41/53 (77%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
-| [bonsaidao-ecosystem](./bonsaidao-ecosystem/brief.md) | $1.07M | arbitrum, base, berachain | 190 | 86/190 (45%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [boba-bridge](./boba-bridge/brief.md) | $3.04M | ethereum | 53 | 41/53 (77%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [bonsaidao-ecosystem](./bonsaidao-ecosystem/brief.md) | $1.08M | arbitrum, base, berachain | 190 | 86/190 (45%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [bonzo-finance](./bonzo-finance/brief.md) | $22.60M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [boros](./boros/brief.md) | $10.38M | arbitrum | 2 | 2/2 (100%) | 100.0% | 100.0% (ChainSecurity) | 2 | fresh | ✅ active | - |
 | [botto](./botto/brief.md) | $4.35M | base, ethereum | 19 | 14/19 (74%) | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
@@ -680,5 +680,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-28T15:50:21.987Z_
+_Generated: 2026-05-28T15:55:45.063Z_
 _Projects: 668_

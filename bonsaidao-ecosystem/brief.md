@@ -5,11 +5,11 @@
 - Project: BonsaiDAO Ecosystem (`bonsaidao-ecosystem`)
 - Website: [https://bonsaidao.xyz/](https://bonsaidao.xyz/)
 - Lifecycle: active (Tier 0, 94.1% below peak)
-- Generated: 2026-05-25T06:51:15.362Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-28T15:54:42.929Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: arbitrum, base, berachain
 - Contract surface: 190 unique implementations (432 raw deployments)
-- DeFi Llama TVL: $1,073,765.00
+- DeFi Llama TVL: $1,080,777.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ The families share a common deployer infrastructure and proxy patterns, indicati
 - Unverified implementations: 104
 - Unique implementations: 190
 - Raw deployments: 432
-- Audits discovered: 0
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -264,6 +264,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [UmamiDAO_GLP_Vaults_Initial_Audit_04_19_2023.pdf](https://github.com/UmamiDAO/audits/blob/main/UmamiDAO_GLP_Vaults_Initial_Audit_04_19_2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -360,9 +364,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [9557] UmamiDAO_GLP_Vaults_Initial_Audit_04_19_2023.pdf
+- [9558] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9559] 0002-metadata-manifest-and-pull-command.md
+- [9560] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

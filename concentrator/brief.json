@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "concentrator",
-  "generated_at": "2026-05-28T19:36:06.152Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-1969",
+  "generated_at": "2026-05-28T20:48:15.168Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-937a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "concentrator",

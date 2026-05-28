@@ -1,0 +1,18 @@
+{
+  "address": "0x1ab4da4c2d64eb04f02ca7160a7e038bc9825647",
+  "chain_id": 1,
+  "contract_name": "PoolRebalanceHelper",
+  "compiler_version": "v0.8.2+commit.661d1103",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:33:09.647Z"
+}

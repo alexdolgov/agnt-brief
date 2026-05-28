@@ -34,11 +34,11 @@
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | active | 3 | 13 | 2026-05-23 |
 | [ankr](./ankr/) | $47.4 | 13.6% | $47.4 | active | 14 | 32 | 2026-05-25 |
 | [antarctic](./antarctic/) | $9.6M | 0.0% | ? | active | 3 | 11 | 2026-05-28 |
-| [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | unknown | 0 | 2 | 2026-05-22 |
+| [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | unknown | 16 | 2 | 2026-05-28 |
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | unknown | 4 | 3 | 2026-05-22 |
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.0% | $10.9K | declining | 6 | 48 | 2026-05-23 |
-| [ao-bridge](./ao-bridge/) | $54.0M | 0.0% | ? | active | 0 | 3 | 2026-05-27 |
-| [apex-protocol](./apex-protocol/) | $436.4K | 0.0% | $436.4K | active | 0 | 206 | 2026-05-26 |
+| [ao-bridge](./ao-bridge/) | $54.0M | 0.0% | ? | active | 3 | 3 | 2026-05-28 |
+| [apex-protocol](./apex-protocol/) | $436.4K | 0.0% | $436.4K | active | 4 | 206 | 2026-05-28 |
 | [api3](./api3/) | $55.2M | 21.4% | $55.2M | unknown | 6 | 28 | 2026-05-27 |
 | [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 55 | 2026-05-22 |
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 0.0% | $240.1K | dead | 0 | 61 | 2026-05-23 |

@@ -1,0 +1,17 @@
+{
+  "address": "0x51fcaaf4d6288f21cedda92f22a3c0251e8f1870",
+  "chain_id": 5000,
+  "contract_name": "EsAPEX2",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "000000000000000000000000f73546da2f971bd0ed1b3c5f9c01092180db508900000000000000000000000096630b0d78d29e7e8d87f8703de7c14b2d5ae413000000000000000000000000f73546da2f971bd0ed1b3c5f9c01092180db50890000000000000000000000000000000000000000000000000000000000ed4e000000000000000000000000000000000000000000000000000000000000000682",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:33:09.911Z"
+}

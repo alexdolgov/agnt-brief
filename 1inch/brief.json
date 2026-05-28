@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "1inch",
-  "generated_at": "2026-05-28T19:15:42.004Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-1969",
+  "generated_at": "2026-05-28T20:22:34.905Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-937a",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "1inch",
@@ -44,7 +44,7 @@
     "contracts_unverified": 167,
     "coverage_pct": 33.6,
     "total_audits": 416,
-    "scoreable_audits": 83,
+    "scoreable_audits": 84,
     "dl_tvl_usd": 2810724.1260699998,
     "tvl_usd": 16092203.525373122,
     "tvl_source": "on_chain",
@@ -2569,7 +2569,8 @@
         "audit-8274",
         "audit-8275",
         "audit-8602",
-        "audit-8603"
+        "audit-8603",
+        "audit-8613"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -23197,12 +23198,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "IMooniswapDeployer",
+        "Mooniswap"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
       "repo_reference_count": 0
     },
     {
@@ -24122,11 +24126,11 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 2146
+      "extraction_exact": 2147
     },
     "extraction_confidence_counts": {
       "high": 57,
-      "low": 23,
+      "low": 24,
       "medium": 3
     },
     "audits_with_repo_references": [],
@@ -25391,10 +25395,6 @@
       {
         "audit_id": 8612,
         "report_name": "IGovernanceModule.md"
-      },
-      {
-        "audit_id": 8613,
-        "report_name": "IMooniswapDeployer.md"
       },
       {
         "audit_id": 8615,

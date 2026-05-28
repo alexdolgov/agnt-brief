@@ -7,8 +7,8 @@
 - Project: 1inch (`1inch`)
 - Website: [https://1inch.com](https://1inch.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-28T19:15:42.004Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-1969
+- Generated: 2026-05-28T20:22:34.905Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-937a
 - Chains: ethereum
 - Contract surface: 274 unique implementations (814 raw deployments)
 - DeFi Llama TVL: $2,810,724.13
@@ -32,7 +32,7 @@ The single product family encompasses all contracts, with the MooniswapFactory s
 - Unique implementations: 274
 - Raw deployments: 814
 - Audits discovered: 416
-- Scoreable audits (matched contracts): 83
+- Scoreable audits (matched contracts): 84
 - ASD (verified + unaudited TVL): $16,092,203.53
 - Latest audit: 2025-09 (fresh)
 - Staleness: 16 fresh, 18 aging, 109 stale, 273 unknown
@@ -762,7 +762,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [FarmingVoter.md](https://github.com/1inch/liquidity-protocol/blob/master/docs/inch/farming/FarmingVoter.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
 | [IFeeCollector.md](https://github.com/1inch/liquidity-protocol/blob/master/docs/interfaces/IFeeCollector.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [IGovernanceModule.md](https://github.com/1inch/liquidity-protocol/blob/master/docs/interfaces/IGovernanceModule.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IMooniswapDeployer.md](https://github.com/1inch/liquidity-protocol/blob/master/docs/interfaces/IMooniswapDeployer.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [IMooniswapDeployer.md](https://github.com/1inch/liquidity-protocol/blob/master/docs/interfaces/IMooniswapDeployer.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
 | [IMooniswapFactoryGovernance.md](https://github.com/1inch/liquidity-protocol/blob/master/docs/interfaces/IMooniswapFactoryGovernance.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [IReferralFeeReceiver.md](https://github.com/1inch/liquidity-protocol/blob/master/docs/interfaces/IReferralFeeReceiver.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ExplicitLiquidVoting.md](https://github.com/1inch/liquidity-protocol/blob/master/docs/libraries/ExplicitLiquidVoting.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -848,10 +848,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 333
+- Audits with zero matched contracts: 332
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=57, low=23, medium=3
-- Match method counts: extraction_exact=2146
+- Extraction confidence breakdown: high=57, low=24, medium=3
+- Match method counts: extraction_exact=2147
 
 Zero-match audit list:
 
@@ -1170,7 +1170,6 @@ Zero-match audit list:
 - [8608] MooniswapGovernance.md
 - [8611] IFeeCollector.md
 - [8612] IGovernanceModule.md
-- [8613] IMooniswapDeployer.md
 - [8615] IMooniswapFactoryGovernance.md
 - [8616] IReferralFeeReceiver.md
 - [8617] ExplicitLiquidVoting.md

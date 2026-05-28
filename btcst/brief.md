@@ -4,11 +4,11 @@
 
 - Project: BTCST (`btcst`)
 - Lifecycle: active (Tier 0, 93.4% below peak)
-- Generated: 2026-05-25T06:14:58.277Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-28T15:57:15.899Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: bsc
 - Contract surface: 64 unique implementations (93 raw deployments)
-- DeFi Llama TVL: $1,086,088.24
+- DeFi Llama TVL: $1,064,612.21
 - On-chain TVL (included contracts): $263,693,624.04
 - TVL by chain: Bsc $263,693,624.04
 
@@ -28,11 +28,11 @@ All contracts are deployed by a single deployer cluster and share the AdminUpgra
 - Unverified implementations: 53
 - Unique implementations: 64
 - Raw deployments: 93
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $263,693,624.04
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -137,6 +137,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -162,9 +165,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [9612] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9613] 0002-metadata-manifest-and-pull-command.md
+- [9614] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

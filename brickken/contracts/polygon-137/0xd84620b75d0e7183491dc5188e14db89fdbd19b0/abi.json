@@ -1,0 +1,401 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "value",
+        "type": "int256"
+      }
+    ],
+    "name": "NotNegativeValue",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "T",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "UserIsNotAdmin",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "UserIsNotWhitelisted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongUniswapConfig",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      }
+    ],
+    "name": "allowedCaller",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "allowanceStatus",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isEnded",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "hardCap",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minTicket",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxTicket",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "priceInUSD",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "raisedAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "issuanceIndex",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IPriceAndSwapManager.OfferingDetails",
+        "name": "offeringDetails",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isUserInvestor",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userAmountOfPaymentTokens",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IPriceAndSwapManager.UserDetails",
+        "name": "userDetails",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isTokenWhitelisted",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOfTokens",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "whitelistedTokenFeesOnSwap",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IPriceAndSwapManager.TokenUsedDetails",
+        "name": "tokenUsedDetails",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "paymentToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "twapInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "contract ISTOToken",
+            "name": "stoRelatedToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IChainlinkPriceFeed",
+            "name": "paymentTokenOracle",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IUniswapV3Router",
+            "name": "router",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IPriceAndSwapManager.EscrowDetails",
+        "name": "escrowDetails",
+        "type": "tuple"
+      }
+    ],
+    "name": "getEstimationSTOToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "expectedAmount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "paymentToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IUniswapV3Router",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fees",
+            "type": "uint24"
+          }
+        ],
+        "internalType": "struct IPriceAndSwapManager.PoolDetails",
+        "name": "poolDetails",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "twapInterval",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPriceInPaymentToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IChainlinkPriceFeed",
+        "name": "paymentTokenOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "twapInterval",
+        "type": "uint256"
+      }
+    ],
+    "name": "getUSDPriceOfPaymentToken",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_factory",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "oldAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "newAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokensERC20",
+        "type": "address[]"
+      }
+    ],
+    "name": "resetAllowances",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "toBeSet",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "status",
+        "type": "bool"
+      }
+    ],
+    "name": "setAllowed",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stoFactory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "paymentToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IUniswapV3Router",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "uint24",
+            "name": "fees",
+            "type": "uint24"
+          }
+        ],
+        "internalType": "struct IPriceAndSwapManager.PoolDetails",
+        "name": "poolDetails",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expectedAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "swapTokensForPaymentTokens",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

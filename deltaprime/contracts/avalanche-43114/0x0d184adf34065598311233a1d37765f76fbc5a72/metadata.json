@@ -1,0 +1,17 @@
+{
+  "address": "0x0d184adf34065598311233a1d37765f76fbc5a72",
+  "chain_id": 43114,
+  "contract_name": "VariableUtilisationRatesCalculator",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T16:18:31.111Z"
+}

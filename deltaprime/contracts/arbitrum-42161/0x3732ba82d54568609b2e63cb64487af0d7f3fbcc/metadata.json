@@ -1,0 +1,18 @@
+{
+  "address": "0x3732ba82d54568609b2e63cb64487af0d7f3fbcc",
+  "chain_id": 42161,
+  "contract_name": "DiamondCutFacet",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "london",
+  "license": "BUSL-1.1, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T16:19:10.372Z"
+}

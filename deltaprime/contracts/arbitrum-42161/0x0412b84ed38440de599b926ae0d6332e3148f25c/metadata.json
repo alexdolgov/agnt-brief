@@ -1,0 +1,17 @@
+{
+  "address": "0x0412b84ed38440de599b926ae0d6332e3148f25c",
+  "chain_id": 42161,
+  "contract_name": "SolvencyFacetProdArbitrum",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 76,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T16:18:27.862Z"
+}

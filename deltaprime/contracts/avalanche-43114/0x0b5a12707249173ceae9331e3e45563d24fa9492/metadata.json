@@ -1,0 +1,17 @@
+{
+  "address": "0x0b5a12707249173ceae9331e3e45563d24fa9492",
+  "chain_id": 43114,
+  "contract_name": "WavaxDepositIndexTUP",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "0000000000000000000000006eb3214618481e98d260c7cda9406072195774c400000000000000000000000040e4ff9e018462ce71fa34abdfa27b8c5e2b1afb00000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": "0x6eb3214618481e98d260c7cda9406072195774c4",
+  "fetched_at": "2026-05-28T16:18:33.199Z"
+}

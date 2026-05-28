@@ -1,0 +1,18 @@
+{
+  "address": "0x475589b0ed87591a893df42ec6076d2499bb63d0",
+  "chain_id": 43114,
+  "contract_name": "BtcPoolTUP",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": "0xbbfe1de572b1ea81d208df6c490327242e3accc3",
+  "fetched_at": "2026-05-28T16:18:50.446Z"
+}

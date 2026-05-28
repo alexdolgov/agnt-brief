@@ -1,0 +1,17 @@
+{
+  "address": "0x30a97f8ed97098228e47630cc91e4749e709c3c1",
+  "chain_id": 43114,
+  "contract_name": "GLPFacet",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 45,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T16:18:40.150Z"
+}

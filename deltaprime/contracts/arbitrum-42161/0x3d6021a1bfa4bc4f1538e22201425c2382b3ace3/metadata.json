@@ -1,0 +1,17 @@
+{
+  "address": "0x3d6021a1bfa4bc4f1538e22201425c2382b3ace3",
+  "chain_id": 42161,
+  "contract_name": "PrimeBuybackDistributor",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000003de81ce90f5a27c5e6a5adb04b54aba488a6d14e0000000000000000000000000000000000000000000004cbeb3b88b1277e2fc40000000000000000000000005ee7673ba06a87f125d14f2c009ec2c4de02728c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T16:19:09.192Z"
+}

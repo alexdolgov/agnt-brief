@@ -1,0 +1,17 @@
+{
+  "address": "0x03efc13d0e7dd03167e03b2a56f7994655971c61",
+  "chain_id": 43114,
+  "contract_name": "TraderJoeIntermediaryTUP",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0xe849cb5cd6957820ebb4dfd854bdd7e375447f59",
+  "fetched_at": "2026-05-28T16:18:30.205Z"
+}

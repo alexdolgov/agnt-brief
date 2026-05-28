@@ -1,0 +1,17 @@
+{
+  "address": "0x7feebfa556281f2803abf8cae7727d4f18c13cfa",
+  "chain_id": 43114,
+  "contract_name": "UsdcBorrowIndexTUP",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": "0xc51122a706d4dae9af16cb01da34b076775be16c",
+  "fetched_at": "2026-05-28T16:18:59.269Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x97886abb2bdbea0e49a86ea1bcd2c4a7120b35d5",
+  "chain_id": 42161,
+  "contract_name": "UsdcVariableUtilisationRatesCalculatorZeroRate",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T16:19:20.005Z"
+}

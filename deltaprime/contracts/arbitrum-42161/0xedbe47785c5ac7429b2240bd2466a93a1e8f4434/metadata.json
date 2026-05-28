@@ -1,0 +1,17 @@
+{
+  "address": "0xedbe47785c5ac7429b2240bd2466a93a1e8f4434",
+  "chain_id": 42161,
+  "contract_name": "sPrimeRevenueTokenChoices",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "000000000000000000000000000000000000000000000000000000006955b8ff",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T16:19:21.366Z"
+}

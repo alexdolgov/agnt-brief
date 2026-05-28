@@ -1,0 +1,16 @@
+[
+  {
+    "inputs": [],
+    "name": "removeSHLBUSDTeUSDTFromOwnedAssets",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "removeUSDTeFromOwnedAssets",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

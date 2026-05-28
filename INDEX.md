@@ -154,10 +154,11 @@
 | [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-05-24 |
 | [defituna](./defituna/) | $1.5M | 0.0% | $1.5M | declining | 11 | 53 | 2026-05-25 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | unknown | 0 | 53 | 2026-05-23 |
+| [deltaprime](./deltaprime/) | $2.6K | 0.0% | $2.6K | active | 3 | 482 | 2026-05-28 |
 | [depth](./depth/) | $1.2M | 0.0% | ? | dead | 0 | 1 | 2026-05-25 |
 | [deri](./deri/) | $2.4K | 13.9% | $2.4K | active | 8 | 868 | 2026-05-26 |
-| [derivadex](./derivadex/) | $16.9M | 0.0% | $16.9M | declining | 0 | 9 | 2026-05-24 |
-| [desyn-protocol](./desyn-protocol/) | $10.8M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
+| [derivadex](./derivadex/) | $16.9M | 0.0% | $16.9M | declining | 3 | 9 | 2026-05-28 |
+| [desyn-protocol](./desyn-protocol/) | $10.7M | 0.0% | ? | dead | 3 | 11 | 2026-05-28 |
 | [dexalot](./dexalot/) | $4.2M | 0.0% | $4.2M | active | 0 | 1 | 2026-05-23 |
 | [dflow](./dflow/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [dforce](./dforce/) | $3.6M | 0.0% | $3.6M | declining | 0 | 450 | 2026-05-23 |

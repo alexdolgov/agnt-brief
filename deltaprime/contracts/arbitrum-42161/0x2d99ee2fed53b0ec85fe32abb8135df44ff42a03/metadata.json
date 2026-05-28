@@ -1,0 +1,18 @@
+{
+  "address": "0x2d99ee2fed53b0ec85fe32abb8135df44ff42a03",
+  "chain_id": 42161,
+  "contract_name": "LinkPoolTUP",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": "0x4e245c5e66f3905721886d5fef146756d7a93803",
+  "fetched_at": "2026-05-28T16:18:56.141Z"
+}

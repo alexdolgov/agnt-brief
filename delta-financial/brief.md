@@ -7,8 +7,8 @@
 - Project: Delta Financial (`delta-financial`)
 - Website: [https://www.delta.finance](https://www.delta.finance)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-28T21:53:24.974Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-b60c
+- Generated: 2026-05-28T22:53:37.087Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-3559
 - Chains: ethereum
 - Contract surface: 53 unique implementations (110 raw deployments)
 - DeFi Llama TVL: $10,311,499.01

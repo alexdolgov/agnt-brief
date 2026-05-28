@@ -161,7 +161,7 @@
 | [deri](./deri/) | $2.4K | 13.9% | $2.4K | active | 8 | 868 | 2026-05-26 |
 | [derivadex](./derivadex/) | $16.9M | 0.0% | $16.9M | declining | 3 | 9 | 2026-05-28 |
 | [desyn-protocol](./desyn-protocol/) | $10.7M | 0.0% | ? | dead | 3 | 11 | 2026-05-28 |
-| [dexalot](./dexalot/) | $4.2M | 0.0% | $4.2M | active | 0 | 1 | 2026-05-23 |
+| [dexalot](./dexalot/) | $4.2M | 100.0% | ? | active | 91 | 1 | 2026-05-28 |
 | [dflow](./dflow/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [dforce](./dforce/) | $3.6M | 3.6% | $3.6M | declining | 20 | 450 | 2026-05-28 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | unknown | 4 | 71 | 2026-05-23 |

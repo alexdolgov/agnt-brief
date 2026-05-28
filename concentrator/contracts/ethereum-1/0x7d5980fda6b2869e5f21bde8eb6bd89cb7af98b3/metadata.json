@@ -1,0 +1,18 @@
+{
+  "address": "0x7d5980fda6b2869e5f21bde8eb6bd89cb7af98b3",
+  "chain_id": 1,
+  "contract_name": "PancakeVaultFactoryXChain",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T19:36:32.155Z"
+}

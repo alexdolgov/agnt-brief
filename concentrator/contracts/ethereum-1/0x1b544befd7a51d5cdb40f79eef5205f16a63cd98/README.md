@@ -1,0 +1,16 @@
+# ConcentratorHarvesterFacet
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x1b544befd7a51d5cdb40f79eef5205f16a63cd98` |
+| Role | operational_periphery |
+| Origin | native |
+| Audited | Yes |
+| Audits | [SECBIT_Concentrator_Harvester_Report_v1.0_20230308.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_Harvester_Report_v1.0_20230308.pdf) |
+| Deployments | 2 (ethereum [`0x1b544befd7a51d5cdb40f79eef5205f16a63cd98`](../0x1b544befd7a51d5cdb40f79eef5205f16a63cd98/); ethereum `0xfa86aa141e45da5183b42792d99dede3d26ec515`) |
+| Proxy | No (implementation for 1 proxy: `0xfa86aa...6ec515`) |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

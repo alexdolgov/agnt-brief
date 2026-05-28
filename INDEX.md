@@ -135,6 +135,7 @@
 | [coinstore](./coinstore/) | $62.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [coinw](./coinw/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [colend-protocol](./colend-protocol/) | $4.3M | 0.0% | ? | unknown | 7 | 0 | 2026-05-23 |
+| [concentrator](./concentrator/) | $112.0M | 44.7% | $19.4M | active | 57 | 342 | 2026-05-28 |
 | [core-bridge](./core-bridge/) | $4.0M | 0.0% | ? | active | 3 | 9 | 2026-05-28 |
 | [coti-treasury](./coti-treasury/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 53 | 2026-05-25 |
 | [cozy-finance](./cozy-finance/) | $2.3M | 0.0% | ? | active | 5 | 48 | 2026-05-24 |

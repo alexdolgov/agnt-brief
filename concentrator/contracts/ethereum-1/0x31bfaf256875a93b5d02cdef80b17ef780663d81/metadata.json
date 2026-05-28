@@ -1,0 +1,18 @@
+{
+  "address": "0x31bfaf256875a93b5d02cdef80b17ef780663d81",
+  "chain_id": 1,
+  "contract_name": "Market",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T19:36:23.488Z"
+}

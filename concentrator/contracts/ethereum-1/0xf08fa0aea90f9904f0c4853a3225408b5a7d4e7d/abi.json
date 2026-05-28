@@ -1,0 +1,9 @@
+[
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "name": "main",
+    "inputs": [],
+    "outputs": []
+  }
+]

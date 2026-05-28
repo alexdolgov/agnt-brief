@@ -123,6 +123,7 @@ Each project directory contains:
 | [wing-finance](./wing-finance/brief.md) | $32.46M | bsc, ethereum, klaytn | 180 | 12/180 (7%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $20.27M |
 | [smardex-ecosystem](./smardex-ecosystem/brief.md) | $4.56M | 5 | 39 | 39/39 (100%) | 33.3% | 0.0% (-) | 4 | aging | ⚠️ declining | $20.06M |
 | [reppo](./reppo/brief.md) | $6.44M | base | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | $19.77M |
+| [concentrator](./concentrator/brief.md) | $58.65M | ethereum | 342 | 300/342 (88%) | 44.7% | 6.3% (Trail of Bits) | 53 | fresh | ✅ active | $19.38M |
 | [mcdex](./mcdex/brief.md) | $1.20M | 6 | 1482 | 165/1482 (11%) | 15.1% | 0.0% (-) | 3 | aging | 💀 dead | $19.27M |
 | [yieldnest](./yieldnest/brief.md) | $23.44M | 7 | 45 | 36/45 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $19.22M |
 | [mux-protocol](./mux-protocol/brief.md) | $9.85M | 5 | 1225 | 132/1225 (11%) | 18.0% | 0.0% (-) | 2 | aging | ✅ active | $19.07M |
@@ -687,5 +688,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-28T19:32:35.329Z_
-_Projects: 675_
+_Generated: 2026-05-28T19:37:16.416Z_
+_Projects: 676_

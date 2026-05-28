@@ -1,0 +1,17 @@
+{
+  "address": "0xe88772dfb857317476b77f1a25b888b9424cf63c",
+  "chain_id": 1,
+  "contract_name": "RouterModuleWithdraw",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T19:36:40.957Z"
+}

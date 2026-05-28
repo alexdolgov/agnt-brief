@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ailayer-farm",
-  "generated_at": "2026-05-27T13:19:35.805Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-05-28T14:36:23.847Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-f4c2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ailayer-farm",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 6,
     "scoreable_audits": 0,
     "dl_tvl_usd": 79723526.46756,
     "tvl_usd": 211858.7133419305,
@@ -54,7 +54,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 6
     }
   },
   "topography": {
@@ -99,7 +99,134 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 5476,
+      "audit_key": "audit-5476",
+      "report_name": "BUILD-TIME_ENVS.md",
+      "report_url": "https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/BUILD-TIME_ENVS.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5477,
+      "audit_key": "audit-5477",
+      "report_name": "CONTRIBUTING.md",
+      "report_url": "https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/CONTRIBUTING.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5478,
+      "audit_key": "audit-5478",
+      "report_name": "CUSTOM_BUILD.md",
+      "report_url": "https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/CUSTOM_BUILD.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5479,
+      "audit_key": "audit-5479",
+      "report_name": "DEPRECATED_ENVS.md",
+      "report_url": "https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/DEPRECATED_ENVS.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5480,
+      "audit_key": "audit-5480",
+      "report_name": "ENVS.md",
+      "report_url": "https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/ENVS.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5481,
+      "audit_key": "audit-5481",
+      "report_name": "PULL_REQUEST_TEMPLATE.md",
+      "report_url": "https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/PULL_REQUEST_TEMPLATE.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -124,7 +251,32 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 5476,
+        "report_name": "BUILD-TIME_ENVS.md"
+      },
+      {
+        "audit_id": 5477,
+        "report_name": "CONTRIBUTING.md"
+      },
+      {
+        "audit_id": 5478,
+        "report_name": "CUSTOM_BUILD.md"
+      },
+      {
+        "audit_id": 5479,
+        "report_name": "DEPRECATED_ENVS.md"
+      },
+      {
+        "audit_id": 5480,
+        "report_name": "ENVS.md"
+      },
+      {
+        "audit_id": 5481,
+        "report_name": "PULL_REQUEST_TEMPLATE.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

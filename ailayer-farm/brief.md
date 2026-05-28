@@ -5,8 +5,8 @@
 - Project: AILayer farm (`ailayer-farm`)
 - Website: [https://ailayer.xyz/](https://ailayer.xyz/)
 - Lifecycle: active (Tier 0, 89.1% below peak)
-- Generated: 2026-05-27T13:19:35.805Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-05-28T14:36:23.847Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-f4c2
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $79,723,526.47
@@ -29,11 +29,11 @@ The protocol consists of a single product family centered around the AILayerToke
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 0
+- Audits discovered: 6
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $211,858.71
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 6 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -74,6 +74,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [BUILD-TIME_ENVS.md](https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/BUILD-TIME_ENVS.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [CONTRIBUTING.md](https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/CONTRIBUTING.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [CUSTOM_BUILD.md](https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/CUSTOM_BUILD.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DEPRECATED_ENVS.md](https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/DEPRECATED_ENVS.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ENVS.md](https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/ENVS.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PULL_REQUEST_TEMPLATE.md](https://github.com/AINNLayer2/ail2-explorer/blob/main/docs/PULL_REQUEST_TEMPLATE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -96,9 +102,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [5476] BUILD-TIME_ENVS.md
+- [5477] CONTRIBUTING.md
+- [5478] CUSTOM_BUILD.md
+- [5479] DEPRECATED_ENVS.md
+- [5480] ENVS.md
+- [5481] PULL_REQUEST_TEMPLATE.md
 
 Fork inheritance lineage and inherited audits are included when available.

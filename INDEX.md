@@ -169,8 +169,8 @@
 | [dooar](./dooar/) | $5.1M | 0.0% | ? | active | 3 | 2 | 2026-05-28 |
 | [drops](./drops/) | $16.5M | 0.0% | $16.5M | declining | 3 | 77 | 2026-05-28 |
 | [dtrinity](./dtrinity/) | $1.8M | 9.0% | $1.8M | active | 9 | 209 | 2026-05-28 |
-| [dxsale](./dxsale/) | $26.8M | 0.0% | ? | active | 0 | 353 | 2026-05-22 |
-| [dyorswap](./dyorswap/) | $2.0M | 0.0% | ? | active | 0 | 93 | 2026-05-24 |
+| [dxsale](./dxsale/) | $26.0M | 0.0% | ? | active | 3 | 353 | 2026-05-28 |
+| [dyorswap](./dyorswap/) | $2.2M | 0.0% | ? | active | 3 | 93 | 2026-05-28 |
 | [easedefi.org](./easedefi.org/) | $4.4M | 0.0% | ? | active | 3 | 1 | 2026-05-23 |
 | [egas-swap](./egas-swap/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | unknown | 5 | 15 | 2026-05-22 |
@@ -179,7 +179,7 @@
 | [ellipsis-finance](./ellipsis-finance/) | $59.0K | 29.4% | $9.0K | dead | 3 | 22 | 2026-05-25 |
 | [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
 | [endur](./endur/) | $9.7M | 0.0% | ? | unknown | 4 | 0 | 2026-05-23 |
-| [enosys](./enosys/) | $28.0M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
+| [enosys](./enosys/) | $26.9M | 0.0% | ? | active | 3 | 2 | 2026-05-28 |
 | [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 292 | 2026-05-25 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [equilibria](./equilibria/) | $26.9M | 17.4% | $15.7M | declining | 6 | 120 | 2026-05-25 |
@@ -187,7 +187,7 @@
 | [ethereal-dex](./ethereal-dex/) | $30.7M | 0.0% | ? | unknown | 3 | 0 | 2026-05-26 |
 | [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-05-24 |
 | [etherex](./etherex/) | $3.6M | 42.6% | ? | declining | 4 | 58 | 2026-05-24 |
-| [etherflip](./etherflip/) | $1.6M | 0.0% | ? | active | 0 | 7 | 2026-05-24 |
+| [etherflip](./etherflip/) | $1.6M | 0.0% | ? | active | 3 | 7 | 2026-05-28 |
 | [etherfuse](./etherfuse/) | $5.1M | 0.0% | ? | unknown | 0 | 25 | 2026-05-23 |
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | unknown | 2 | 58 | 2026-05-23 |
 | [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-05-24 |

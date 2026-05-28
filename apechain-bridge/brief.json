@@ -1,0 +1,516 @@
+{
+  "schema_version": "2.0",
+  "project_key": "apechain-bridge",
+  "generated_at": "2026-05-28T18:02:53.288Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-6fc5",
+  "lifecycle_status": "active",
+  "lifecycle_signal": {
+    "slug": "apechain-bridge",
+    "tier": 0,
+    "peak_tvl": 8772549,
+    "peak_date": "2024-12-09T00:00:00.000Z",
+    "tvl_30d_ago": 920673,
+    "tvl_90d_ago": 879248,
+    "tvl_current": 807589,
+    "tier0_reason": "healthy_tvl_level_and_change",
+    "tvl_180d_ago": 1698343,
+    "change_30d_pct": -12.28275402884629,
+    "change_90d_pct": -8.15003275526359,
+    "days_since_peak": 535,
+    "detection_method": "tvl_trajectory",
+    "governance_signal": null,
+    "drop_from_peak_pct": 90.79413520517241
+  },
+  "summary": {
+    "total_contracts": 9,
+    "total_addresses": 9,
+    "unique_implementations": 9,
+    "total_deployments": 9,
+    "audited_contracts": 0,
+    "unaudited_contracts": 7,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 7,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 0,
+    "total_audits": 3,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 44918026.07795,
+    "tvl_usd": 138232772.62146008,
+    "tvl_source": "on_chain",
+    "tvl_by_chain": {
+      "ethereum": 138232772.62
+    },
+    "asd_usd": 138232772.62146008,
+    "website_url": "https://apechain.com/portal#bridge",
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 0,
+      "unknown": 3
+    }
+  },
+  "topography": {
+    "project_purpose": "ApeChain Bridge enables cross-chain transfers of assets between Ethereum and ApeChain, focusing on staking and bridging of ApeCoin and related tokens.",
+    "relationship_narrative": "The L1Oft4626Router adapter connects the StETHVault and SimpleToken to the LayerZero OFT standard for cross-chain messaging, while ApeCoinStaking manages staking rewards, all deployed by a shared set of deployer addresses.",
+    "product_family_count": 1
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4d224452801aced8b2f0aebe155379bb5d594381",
+      "name": "SimpleToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "ApeChain Bridge",
+      "tvl_usd": 138232772.61863253,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SimpleToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4d224452801aced8b2f0aebe155379bb5d594381",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 138232772.61863253,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc8a12b1db09ec5a43919906d94fa7eeaef1131d1",
+      "name": "StETHVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "ApeChain Bridge",
+      "tvl_usd": 0.002827548547174602,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StETHVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc8a12b1db09ec5a43919906d94fa7eeaef1131d1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 0.002827548547174602,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5954ab967bc958940b7eb73ee84797dc8a2afbb9",
+      "name": "ApeCoinStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "ApeChain Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ApeCoinStaking",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5954ab967bc958940b7eb73ee84797dc8a2afbb9",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcf800f4948d16f23333508191b1b1591daf70438",
+      "name": "ApeETH",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ApeETH",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcf800f4948d16f23333508191b1b1591daf70438",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa2235d059f80e176d931ef76b6c51953eb3fbef4",
+      "name": "ApeUSD",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ApeUSD",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa2235d059f80e176d931ef76b6c51953eb3fbef4",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6c92ceeb09c83f1018d5bca81d933df3eeaed0a1",
+      "name": "L1ApeETHRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "L1ApeETHRouter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6c92ceeb09c83f1018d5bca81d933df3eeaed0a1",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf33d21137cd0b878f3a18cc60cd74f842c59cb00",
+      "name": "L1Oft4626Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "ApeChain Bridge",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "L1Oft4626Router",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf33d21137cd0b878f3a18cc60cd74f842c59cb00",
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x27e800528bf4f0b1a8831c85763d20a26047b84d",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x27e800528bf4f0b1a8831c85763d20a26047b84d",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5b61c1c63206052b852c24b36d23abe35dac196c",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5b61c1c63206052b852c24b36d23abe35dac196c",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 5786,
+      "audit_key": "audit-5786",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5787,
+      "audit_key": "audit-5787",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5788,
+      "audit_key": "audit-5788",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4d224452801aced8b2f0aebe155379bb5d594381",
+      "name": "SimpleToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 138232772.61863253,
+      "risk_note": "Verified native implementation with $138,232,772.62 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc8a12b1db09ec5a43919906d94fa7eeaef1131d1",
+      "name": "StETHVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 0.002827548547174602,
+      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5954ab967bc958940b7eb73ee84797dc8a2afbb9",
+      "name": "ApeCoinStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcf800f4948d16f23333508191b1b1591daf70438",
+      "name": "ApeETH",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa2235d059f80e176d931ef76b6c51953eb3fbef4",
+      "name": "ApeUSD",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6c92ceeb09c83f1018d5bca81d933df3eeaed0a1",
+      "name": "L1ApeETHRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf33d21137cd0b878f3a18cc60cd74f842c59cb00",
+      "name": "L1Oft4626Router",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 9,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 5786,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 5787,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 5788,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

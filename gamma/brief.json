@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gamma",
-  "generated_at": "2026-05-28T18:50:40.287Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-6fc5",
+  "generated_at": "2026-05-28T20:00:03.335Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-1969",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "gamma",

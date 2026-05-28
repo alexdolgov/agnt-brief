@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "belt-finance",
-  "generated_at": "2026-05-28T19:31:57.073Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-1969",
+  "generated_at": "2026-05-28T20:44:15.186Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-937a",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "belt-finance",

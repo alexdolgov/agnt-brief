@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "equalizer",
-  "generated_at": "2026-05-28T23:05:16.735Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-3559",
+  "generated_at": "2026-05-28T23:53:00.895Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-81b9",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "equalizer",

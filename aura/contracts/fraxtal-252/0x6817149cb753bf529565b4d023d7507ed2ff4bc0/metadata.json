@@ -1,0 +1,17 @@
+{
+  "address": "0x6817149cb753bf529565b4d023d7507ed2ff4bc0",
+  "chain_id": 252,
+  "contract_name": "AuthorizerWithAdaptorValidation",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "000000000000000000000000e39b5e3b6d74016b2f6a9673d7d7493b6df549d500000000000000000000000036cac20dd805d128c1a6dd16eea845c574b5a17c000000000000000000000000b9f8ab3ed3f3acba64bc6cd2dca74b7f38fd7b88",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:49:26.051Z"
+}

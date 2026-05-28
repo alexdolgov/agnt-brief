@@ -1,0 +1,18 @@
+{
+  "address": "0x70659f78ac20a8eddc309d6df6458ceacc12e764",
+  "chain_id": 8453,
+  "contract_name": "SafeIsSpotEthOracle",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 66,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:17.399Z"
+}

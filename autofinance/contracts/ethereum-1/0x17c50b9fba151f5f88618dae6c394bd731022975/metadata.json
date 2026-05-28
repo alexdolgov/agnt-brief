@@ -1,0 +1,18 @@
+{
+  "address": "0x17c50b9fba151f5f88618dae6c394bd731022975",
+  "chain_id": 1,
+  "contract_name": "ExtraRewarder",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 68,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:13.515Z"
+}

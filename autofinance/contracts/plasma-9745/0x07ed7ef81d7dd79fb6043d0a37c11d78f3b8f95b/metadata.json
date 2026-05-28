@@ -1,0 +1,17 @@
+{
+  "address": "0x07ed7ef81d7dd79fb6043d0a37c11d78f3b8f95b",
+  "chain_id": 9745,
+  "contract_name": "EulerDestinationVault",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 78,
+  "constructor_arguments": "0000000000000000000000009065c0e33bc8fb31a21874f399985e39bc187d48",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:11.008Z"
+}

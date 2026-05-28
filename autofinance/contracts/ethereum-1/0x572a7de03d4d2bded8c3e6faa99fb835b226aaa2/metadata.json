@@ -1,0 +1,18 @@
+{
+  "address": "0x572a7de03d4d2bded8c3e6faa99fb835b226aaa2",
+  "chain_id": 1,
+  "contract_name": "SnapshotToke",
+  "compiler_version": "v0.6.11+commit.5ef660b1",
+  "optimization_used": true,
+  "runs": 999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:25.743Z"
+}

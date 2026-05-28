@@ -1,0 +1,18 @@
+{
+  "address": "0x80dca113b33ce4da3a7aac15c2e62fc6d6c7bec8",
+  "chain_id": 59144,
+  "contract_name": "RamsesV3PoolDeployer",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 39,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:14.238Z"
+}

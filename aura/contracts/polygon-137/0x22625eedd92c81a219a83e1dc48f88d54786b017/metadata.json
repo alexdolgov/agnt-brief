@@ -1,0 +1,18 @@
+{
+  "address": "0x22625eedd92c81a219a83e1dc48f88d54786b017",
+  "chain_id": 137,
+  "contract_name": "ChildChainGaugeFactory",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:49:19.884Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x8f67bb1f24eba8d123ae7f18c13b925ba7f13552",
+  "chain_id": 100,
+  "contract_name": "AuraViewHelpersLite",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:49:25.077Z"
+}

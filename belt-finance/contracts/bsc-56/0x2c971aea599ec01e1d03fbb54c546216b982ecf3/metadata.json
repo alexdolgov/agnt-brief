@@ -1,0 +1,18 @@
+{
+  "address": "0x2c971aea599ec01e1d03fbb54c546216b982ecf3",
+  "chain_id": 56,
+  "contract_name": "VaultBPool",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:48:19.572Z"
+}

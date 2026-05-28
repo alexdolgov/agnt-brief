@@ -1,0 +1,17 @@
+{
+  "address": "0x12d5aad28da62a2d7ec2255af6202a458b48b970",
+  "chain_id": 9745,
+  "contract_name": "Bytes32",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:11.448Z"
+}

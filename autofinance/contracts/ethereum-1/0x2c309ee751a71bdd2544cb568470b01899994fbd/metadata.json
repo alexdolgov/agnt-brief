@@ -1,0 +1,17 @@
+{
+  "address": "0x2c309ee751a71bdd2544cb568470b01899994fbd",
+  "chain_id": 1,
+  "contract_name": "DaiUsdsSwap",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000955b5adcdbba6870feca78338137191f774679ca0000000000000000000000003225737a9bbb6473cb4a45b7244aca2befdb276a",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:22.023Z"
+}

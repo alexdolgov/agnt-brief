@@ -1,0 +1,17 @@
+{
+  "address": "0x03f3fb107e74f2eac9358862e91ad3c692712054",
+  "chain_id": 8453,
+  "contract_name": "PoolRecoveryHelper",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "000000000000000000000000ba12222222228d8ba445958a75a0704d566bf2c800000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:49:16.314Z"
+}

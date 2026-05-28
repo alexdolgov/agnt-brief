@@ -1,0 +1,17 @@
+{
+  "address": "0x01f8d089dee86e2e22164394bcc8118688f16e96",
+  "chain_id": 1,
+  "contract_name": "ERC4626RedeemSwapper",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "000000000000000000000000955b5adcdbba6870feca78338137191f774679ca",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:06.628Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xa698a94c0dce389b862f58b08f618a981ea99402",
+  "chain_id": 42161,
+  "contract_name": "OneToOneUSDBackingOracle",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 64,
+  "constructor_arguments": "0000000000000000000000007009150359eae17bc2610aeb22bc14db22c86a2f0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:17.922Z"
+}

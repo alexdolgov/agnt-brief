@@ -1,0 +1,18 @@
+{
+  "address": "0x153dfc50f7a93c4f3d049c105dde9786d3cfc72a",
+  "chain_id": 1,
+  "contract_name": "PoolManagerSecondaryProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:49:23.527Z"
+}

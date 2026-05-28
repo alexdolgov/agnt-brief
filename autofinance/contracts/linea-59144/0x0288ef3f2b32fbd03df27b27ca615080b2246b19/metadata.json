@@ -1,0 +1,17 @@
+{
+  "address": "0x0288ef3f2b32fbd03df27b27ca615080b2246b19",
+  "chain_id": 59144,
+  "contract_name": "BaseAsyncSwapper",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "0000000000000000000000000000000000001ff3684f28c67538d4d072c227340000000000000000000000000000000000000000000000000000000000000001",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:05.450Z"
+}

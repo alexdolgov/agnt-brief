@@ -1,0 +1,17 @@
+{
+  "address": "0x16adb8209618e0cbd4c19f0487f8916b0cf5a0a8",
+  "chain_id": 42161,
+  "contract_name": "EthPeggedOracle",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 63,
+  "constructor_arguments": "000000000000000000000000bfd8e6c9bf2cd5466f5651746f8e946a6c7b4220",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:19.090Z"
+}

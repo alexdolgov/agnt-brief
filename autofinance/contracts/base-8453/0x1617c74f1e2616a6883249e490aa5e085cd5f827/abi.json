@@ -1,0 +1,839 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISystemRegistry",
+        "name": "_systemRegistry",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AccessDenied",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "length1",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "length2",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "details",
+        "type": "string"
+      }
+    ],
+    "name": "ArrayLengthMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "paramName",
+        "type": "string"
+      }
+    ],
+    "name": "InvalidParam",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "autopool",
+        "type": "address"
+      }
+    ],
+    "name": "NotConfigured",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotImplemented",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PriceHigherThanTolerance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PriceLowerThanTolerance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UndefinedAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "paramName",
+        "type": "string"
+      }
+    ],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "autoPool",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "tolerance",
+        "type": "uint256"
+      }
+    ],
+    "name": "AutopoolToleranceConfigured",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "priceSafe",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "priceSpot",
+        "type": "uint256"
+      }
+    ],
+    "name": "InLSTPriceGap",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "priceSafe",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "priceSpot",
+        "type": "uint256"
+      }
+    ],
+    "name": "OutLSTPriceGap",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "HUNDRED_PERCENT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "accessController",
+    "outputs": [
+      {
+        "internalType": "contract IAccessController",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "autopoolTolerance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "autopools",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "tolerances",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "configureAutopools",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getFnFlags",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getSystemRegistry",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "destinationIn",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenIn",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "destinationOut",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenOut",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOut",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IStrategy.RebalanceParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "isRebalanceToIdle",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "pricesWereSafe",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalIdleDecrease",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalIdleIncrease",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalDebtIncrease",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalDebtDecrease",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalMinDebtIncrease",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalMinDebtDecrease",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalMaxDebtIncrease",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalMaxDebtDecrease",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct AutopoolDebt.IdleDebtUpdates",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "name": "onDestinationDebtReport",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "startingIdle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startingDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startingTotalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "newIdle",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "newDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "endingTotalSupply",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct AutopoolDebt.AssetChanges",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "name": "onNavUpdate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC3156FlashBorrower",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "destinationIn",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "destinationOut",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenOut",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IStrategy.RebalanceParams",
+            "name": "rebalanceParams",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ProcessRebalanceParams",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "onRebalanceComplete",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC3156FlashBorrower",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "destinationIn",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "destinationOut",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenOut",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IStrategy.RebalanceParams",
+            "name": "rebalanceParams",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ProcessRebalanceParams",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "onRebalanceDestinationVaultUpdated",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC3156FlashBorrower",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "destinationIn",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "destinationOut",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenOut",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IStrategy.RebalanceParams",
+            "name": "rebalanceParams",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ProcessRebalanceParams",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "onRebalanceFeeProfitHandlingComplete",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC3156FlashBorrower",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "destinationIn",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "destinationOut",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenOut",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IStrategy.RebalanceParams",
+            "name": "rebalanceParams",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ProcessRebalanceParams",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "onRebalanceInAssetsReturned",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC3156FlashBorrower",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "destinationIn",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "destinationOut",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenOut",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IStrategy.RebalanceParams",
+            "name": "rebalanceParams",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ProcessRebalanceParams",
+        "name": "",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "onRebalanceOutAssetsReady",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC3156FlashBorrower",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "destinationIn",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenIn",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "destinationOut",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenOut",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountOut",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IStrategy.RebalanceParams",
+            "name": "rebalanceParams",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct ProcessRebalanceParams",
+        "name": "params",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "onRebalanceStart",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "registrationData",
+        "type": "bytes"
+      }
+    ],
+    "name": "onRegistered",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "cleanupData",
+        "type": "bytes"
+      }
+    ],
+    "name": "onUnregistered",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x116b3e86f2b04c21605c5fc4b95ba6a82dbf8f3e",
+  "chain_id": 1,
+  "contract_name": "ERC20DestinationVault",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 71,
+  "constructor_arguments": "0000000000000000000000002218f90a98b0c070676f249ef44834686daa4285",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:13.574Z"
+}

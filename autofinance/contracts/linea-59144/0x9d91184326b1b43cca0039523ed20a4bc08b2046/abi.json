@@ -1,0 +1,42 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint40",
+        "name": "current",
+        "type": "uint40"
+      },
+      {
+        "internalType": "uint40",
+        "name": "provided",
+        "type": "uint40"
+      }
+    ],
+    "name": "InvalidNavTimestamp",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NavHistoryInsufficient",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "navPerShare",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint40",
+        "name": "timestamp",
+        "type": "uint40"
+      }
+    ],
+    "name": "NavHistoryInsert",
+    "type": "event"
+  }
+]

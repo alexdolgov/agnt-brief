@@ -1,0 +1,18 @@
+{
+  "address": "0x08b0617747ad7a839396a909876104e392713e4d",
+  "chain_id": 8453,
+  "contract_name": "ChainlinkIncentivePricesUpkeepV3",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 65,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:09.998Z"
+}

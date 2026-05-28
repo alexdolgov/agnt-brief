@@ -1,0 +1,17 @@
+{
+  "address": "0x66b9eba2cef184dfaf3b9e11b104be0a1c6e258c",
+  "chain_id": 59144,
+  "contract_name": "DestinationRegistry",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 64,
+  "constructor_arguments": "00000000000000000000000025f26ec2e764c63f8d191dfe7f88c6646ca9f980",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:09.751Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x80d8315de571bfa4ff0b884a03f95837f8bb308d",
+  "chain_id": 9745,
+  "contract_name": "RedstoneOracle",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 68,
+  "constructor_arguments": "0000000000000000000000009065c0e33bc8fb31a21874f399985e39bc187d48",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:09.932Z"
+}

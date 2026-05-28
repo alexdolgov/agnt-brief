@@ -1,17 +1,17 @@
 # Agentic Audit Brief: BackedFi
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 34.1% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 35.8% over 90 days
 
 ## Project Overview
 
 - Project: BackedFi (`backedfi`)
 - Website: [https://backed.fi](https://backed.fi)
-- Lifecycle: unknown (Tier 0, 82.9% below peak)
-- Generated: 2026-05-23T07:28:48.395Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: unknown (Tier 0, 83.4% below peak)
+- Generated: 2026-05-28T15:44:01.091Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: ethereum
 - Contract surface: 2 unique implementations (11 raw deployments)
-- DeFi Llama TVL: $8,196,448.46
+- DeFi Llama TVL: $8,201,934.33
 - On-chain TVL (included contracts): $33,347,333.85
 - TVL by chain: Ethereum $33,347,333.85
 
@@ -31,11 +31,11 @@ All tokens share the same proxy pattern and implementation contracts, with most 
 - Unverified implementations: 0
 - Unique implementations: 2
 - Raw deployments: 11
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $33,347,333.85
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $33,347,333.85 represents exposure in a protocol with unknown activity.
 
@@ -78,6 +78,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -101,9 +104,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [7611] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [7612] 0002-metadata-manifest-and-pull-command.md
+- [7613] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

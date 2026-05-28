@@ -1,0 +1,18 @@
+{
+  "address": "0xa84918f3280d488eb3369cb713ec53ce386b6cba",
+  "chain_id": 1,
+  "contract_name": "CustomUpgradeableProxy",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "constantinople",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0x3ad0a0814f5fd76be6bdc0b771df98aafd572107",
+  "fetched_at": "2026-05-28T15:45:29.417Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x54939860e3d185cd983421ace105ace79156e3c8",
+  "chain_id": 1,
+  "contract_name": "CurveV1PoolRebasingLockedStatsCalculator",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 65,
+  "constructor_arguments": "0000000000000000000000002218f90a98b0c070676f249ef44834686daa4285",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:26.487Z"
+}

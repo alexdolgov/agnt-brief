@@ -1,0 +1,17 @@
+{
+  "address": "0x39327cbec7e3190fc721108b4d5a0cb096264ba1",
+  "chain_id": 42161,
+  "contract_name": "DestinationVaultRegistry",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 64,
+  "constructor_arguments": "0000000000000000000000007af0c2bc08d7c1cfd8c9d829f2b752d088639b7c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:08.085Z"
+}

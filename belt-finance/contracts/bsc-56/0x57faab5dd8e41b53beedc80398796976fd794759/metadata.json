@@ -1,0 +1,18 @@
+{
+  "address": "0x57faab5dd8e41b53beedc80398796976fd794759",
+  "chain_id": 56,
+  "contract_name": "Repayment",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0x769768ab76ffa04705eb8a87af4200cb8daee27e",
+  "fetched_at": "2026-05-28T15:48:21.352Z"
+}

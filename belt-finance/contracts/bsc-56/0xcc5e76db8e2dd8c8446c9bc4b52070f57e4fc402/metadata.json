@@ -1,0 +1,17 @@
+{
+  "address": "0xcc5e76db8e2dd8c8446c9bc4b52070f57e4fc402",
+  "chain_id": 56,
+  "contract_name": "StrategyAlpha",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:48:23.069Z"
+}

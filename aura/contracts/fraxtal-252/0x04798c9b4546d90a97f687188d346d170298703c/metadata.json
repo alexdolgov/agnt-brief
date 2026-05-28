@@ -1,0 +1,17 @@
+{
+  "address": "0x04798c9b4546d90a97f687188d346d170298703c",
+  "chain_id": 252,
+  "contract_name": "BoosterOwnerLite",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "00000000000000000000000049bd2af2d8cf5d607c9580446a1373f55e7bb07f000000000000000000000000f24074a1a6ad620adc14745f9cc1fb1e7ba6ca7100000000000000000000000098ef32edd24e2c92525e59afc4475c1242a30184000000000000000000000000919eeb7d8e73bd4e9addc1e81fd1ae799f0efee600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:49:20.248Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x1df188958a8674b5177f77667b8d173c3cdd9e51",
+  "chain_id": 1,
+  "contract_name": "CauldronV2CheckpointV1",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 350,
+  "evm_version": "istanbul",
+  "license": "MIXED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:14.296Z"
+}

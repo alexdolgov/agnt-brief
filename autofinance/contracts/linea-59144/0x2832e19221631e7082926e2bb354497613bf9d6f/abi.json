@@ -1,0 +1,73 @@
+[
+  {
+    "inputs": [],
+    "name": "FTR",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LO",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NP",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OLD",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "period",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickLower",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "tickUpper",
+            "type": "int24"
+          },
+          {
+            "internalType": "uint32",
+            "name": "_blockTimestamp",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct Position.PositionPeriodSecondsInRangeParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "positionPeriodSecondsInRange",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "periodSecondsInsideX96",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

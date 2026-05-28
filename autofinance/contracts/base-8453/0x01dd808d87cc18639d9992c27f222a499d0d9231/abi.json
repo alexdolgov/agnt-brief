@@ -1,0 +1,755 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "initialOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "verifier",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "l1Block",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_updater",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AccessDenied",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "calculator",
+        "type": "address"
+      }
+    ],
+    "name": "AlreadySeeded",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ImageIdNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "calculator",
+        "type": "address"
+      }
+    ],
+    "name": "InvalidCalculator",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "digest",
+        "type": "bytes32"
+      }
+    ],
+    "name": "InvalidL1Digest",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "digest",
+        "type": "bytes32"
+      }
+    ],
+    "name": "InvalidL2Digest",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "actual",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "expected",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidNonce",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "param",
+        "type": "string"
+      }
+    ],
+    "name": "InvalidParam",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableInvalidOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "OwnableUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "bits",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "SafeCastOverflowedUintDowncast",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "param",
+        "type": "string"
+      }
+    ],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "l1hash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "l1number",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "l2hash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "l2number",
+        "type": "uint64"
+      }
+    ],
+    "name": "BookmarkedBlock",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferStarted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "calculator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "lst",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "calculator",
+            "type": "address"
+          },
+          {
+            "internalType": "uint40",
+            "name": "lastUpdateTimestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "baseAprUpdateTimestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ethPerToken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseAprEthPerToken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseApr",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IBridgedStats.LSTStat",
+        "name": "details",
+        "type": "tuple"
+      }
+    ],
+    "name": "SeedDataAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "calculator",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "calculator",
+            "type": "address"
+          },
+          {
+            "internalType": "uint40",
+            "name": "lastUpdateTimestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint40",
+            "name": "baseAprUpdateTimestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ethPerToken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseAprEthPerToken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseApr",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IBridgedStats.LSTStat",
+        "name": "details",
+        "type": "tuple"
+      }
+    ],
+    "name": "StatUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "L1_BLOCK",
+    "outputs": [
+      {
+        "internalType": "contract IL1Block",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VERIFIER",
+    "outputs": [
+      {
+        "internalType": "contract IRiscZeroVerifier",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "blocks",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "bookmark",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "data",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint40",
+        "name": "lastUpdateTimestamp",
+        "type": "uint40"
+      },
+      {
+        "internalType": "uint40",
+        "name": "baseAprUpdateTimestamp",
+        "type": "uint40"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lastEthPerToken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lastBaseAprEthPerToken",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "baseApr",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getL1Block",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "calculators",
+        "type": "address[]"
+      }
+    ],
+    "name": "getLatest",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "calculator",
+                "type": "address"
+              },
+              {
+                "internalType": "uint40",
+                "name": "lastUpdateTimestamp",
+                "type": "uint40"
+              },
+              {
+                "internalType": "uint40",
+                "name": "baseAprUpdateTimestamp",
+                "type": "uint40"
+              },
+              {
+                "internalType": "uint256",
+                "name": "ethPerToken",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "baseAprEthPerToken",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "baseApr",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IBridgedStats.LSTStat[]",
+            "name": "lstStats",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct IBridgedStats.BridgedLSTData",
+        "name": "result",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "imageId",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nonce",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "receivingRouter",
+    "outputs": [
+      {
+        "internalType": "contract IReceivingRouterGen",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "lst",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "calculator",
+                "type": "address"
+              },
+              {
+                "internalType": "uint40",
+                "name": "lastUpdateTimestamp",
+                "type": "uint40"
+              },
+              {
+                "internalType": "uint40",
+                "name": "baseAprUpdateTimestamp",
+                "type": "uint40"
+              },
+              {
+                "internalType": "uint256",
+                "name": "ethPerToken",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "baseAprEthPerToken",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "baseApr",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IBridgedStats.LSTStat",
+            "name": "seedStat",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct IBridgedStats.Seed[]",
+        "name": "seedData",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "seedCalculators",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "_imageId",
+        "type": "bytes32"
+      }
+    ],
+    "name": "setImageId",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newRouter",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newSourceChainSelector",
+        "type": "uint256"
+      }
+    ],
+    "name": "setReceivingRouter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_updater",
+        "type": "address"
+      }
+    ],
+    "name": "setUpdater",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sourceChainSelector",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "journalData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes",
+        "name": "seal",
+        "type": "bytes"
+      }
+    ],
+    "name": "updateStats",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "updater",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

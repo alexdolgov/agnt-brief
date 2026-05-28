@@ -1,0 +1,18 @@
+{
+  "address": "0x0cc3114cd2e4adc3ed5691fa28b8cf106579d90a",
+  "chain_id": 1,
+  "contract_name": "Whitelister",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 690,
+  "evm_version": "london",
+  "license": "AGPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:06.452Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x0e1ea2269d6e22dfeebce7b0a4c6c3d415b5bc85",
+  "chain_id": 1,
+  "contract_name": "ThreeCryptoSwapper",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:06.635Z"
+}

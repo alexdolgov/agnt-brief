@@ -1,0 +1,396 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "_sidechainId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "address",
+        "name": "_l2Coordinator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_auraOft",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_auraBalOft",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_auraBalStrategy",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "auraBalOft",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "auraBalStrategy",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "auraOft",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAuraBalOftData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "circulatingSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "paused",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "auraBalStrategyAuraBalOFTBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "_address",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lzEndpoint",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "trustedRemote",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct AuraBalOftData",
+        "name": "auraBalOftData",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAuraOftData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "circulatingSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "paused",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bridgeDelegateAuraBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "_address",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lzEndpoint",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "trustedRemote",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct AuraOftData",
+        "name": "auraOftData",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "canonicalChainId",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "sidechainId",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint256",
+            "name": "auraBalanceOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "auraBalBalanceOf",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "mintRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "accBalRewards",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "accAuraRewards",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "auraBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "_address",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lzEndpoint",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "trustedRemote",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct L2CoordData",
+            "name": "l2CoordData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "circulatingSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "paused",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "bridgeDelegateAuraBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "_address",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lzEndpoint",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "trustedRemote",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct AuraOftData",
+            "name": "auraOftData",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "circulatingSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "paused",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "auraBalStrategyAuraBalOFTBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "_address",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "lzEndpoint",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "trustedRemote",
+                "type": "bytes"
+              }
+            ],
+            "internalType": "struct AuraBalOftData",
+            "name": "auraBalOftData",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct SidechainInformation",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getl2CoordinatorInformation",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "mintRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "accBalRewards",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "accAuraRewards",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "auraBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "_address",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "lzEndpoint",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "trustedRemote",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct L2CoordData",
+        "name": "l2CoordData",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "l2Coordinator",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

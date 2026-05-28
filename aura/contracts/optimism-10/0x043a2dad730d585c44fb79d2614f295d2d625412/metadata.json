@@ -1,0 +1,18 @@
+{
+  "address": "0x043a2dad730d585c44fb79d2614f295d2d625412",
+  "chain_id": 10,
+  "contract_name": "ComposableStablePoolFactory",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 64,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:49:16.314Z"
+}

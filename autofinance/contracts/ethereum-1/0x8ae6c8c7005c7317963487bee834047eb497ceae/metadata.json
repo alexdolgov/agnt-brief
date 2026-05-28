@@ -1,0 +1,18 @@
+{
+  "address": "0x8ae6c8c7005c7317963487bee834047eb497ceae",
+  "chain_id": 1,
+  "contract_name": "HypervisorFactory",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, GPL-3.0-only, MIT, UNLICENSED, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 29,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:28.557Z"
+}

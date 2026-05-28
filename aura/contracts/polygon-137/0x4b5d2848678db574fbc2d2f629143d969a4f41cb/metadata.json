@@ -1,0 +1,18 @@
+{
+  "address": "0x4b5d2848678db574fbc2d2f629143d969a4f41cb",
+  "chain_id": 137,
+  "contract_name": "SimpleStrategy",
+  "compiler_version": "v0.8.11+commit.d7f03943",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:49:22.103Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x8e9a06f85a3d188f2a851d1b4fb582680727a5d7",
+  "chain_id": 1,
+  "contract_name": "SelfSpotEthOracle",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 66,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:28.696Z"
+}

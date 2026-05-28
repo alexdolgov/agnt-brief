@@ -1,0 +1,587 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_aura",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_auraProxyOft",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_auraBalProxyOft",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_aurabal",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_aurabalVault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_bal",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_l1Coordinator",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "aura",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "auraBalProxyOft",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "auraProxyOft",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "aurabal",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "aurabalVault",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "bal",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAuraBalProxyOftData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "epoch",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circulatingSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inflowLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "outflow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inflow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "paused",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalClaimableAuraBal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalClaimableAura",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "internalTotalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "auraBalBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "auraBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "auraBalVaultBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "auraBalVaultBalanceOfUnderlying",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct AuraBalProxyOftData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "sidechainId",
+        "type": "uint16"
+      }
+    ],
+    "name": "getAuraBalProxySidechainData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "sidechainId",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimableAuraBal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "claimableAura",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct AurabalProxySidechainInfo",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAuraProxyOftData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "epoch",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "circulatingSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inflowLimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "outflow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "inflow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "paused",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "auraProxyOFTAuraBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct AuraProxyOftData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16[]",
+        "name": "sidechainIds",
+        "type": "uint16[]"
+      }
+    ],
+    "name": "getCanonicalData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "balBalance",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct L1CoordData",
+            "name": "l1coordinator",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint16",
+                "name": "sidechainId",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint256",
+                "name": "bridgeDelegateBalBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "feeDebtOf",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "settledFeeDebtOf",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "distributedFeeDebtOf",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "bridgeDelegate",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "l2Coordinator",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct L1CoordSidechainData[]",
+            "name": "l1CoordinatorSidechainData",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "epoch",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "circulatingSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inflowLimit",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "outflow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inflow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "paused",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "auraProxyOFTAuraBalance",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AuraProxyOftData",
+            "name": "auraProxyOft",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "epoch",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "circulatingSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inflowLimit",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "outflow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "inflow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "paused",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalClaimableAuraBal",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalClaimableAura",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "internalTotalSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "auraBalBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "auraBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "auraBalVaultBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "auraBalVaultBalanceOfUnderlying",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AuraBalProxyOftData",
+            "name": "aurabalProxyOft",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint16",
+                "name": "sidechainId",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimableAuraBal",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "claimableAura",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AurabalProxySidechainInfo[]",
+            "name": "aurabalProxySidechainData",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct CananonicalData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getL1CoordData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "balBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct L1CoordData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "sidechainId",
+        "type": "uint16"
+      }
+    ],
+    "name": "getL1CoordSidechainData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "sidechainId",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bridgeDelegateBalBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "feeDebtOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "settledFeeDebtOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "distributedFeeDebtOf",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "bridgeDelegate",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "l2Coordinator",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct L1CoordSidechainData",
+        "name": "data",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "l1Coordinator",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

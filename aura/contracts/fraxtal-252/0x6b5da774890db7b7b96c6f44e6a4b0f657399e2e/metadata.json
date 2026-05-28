@@ -1,0 +1,17 @@
+{
+  "address": "0x6b5da774890db7b7b96c6f44e6a4b0f657399e2e",
+  "chain_id": 252,
+  "contract_name": "ManagedPoolAddRemoveTokenLib",
+  "compiler_version": "v0.7.1+commit.f4a555be",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:49:20.843Z"
+}

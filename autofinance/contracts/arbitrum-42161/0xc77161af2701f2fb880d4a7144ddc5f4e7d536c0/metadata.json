@@ -1,0 +1,18 @@
+{
+  "address": "0xc77161af2701f2fb880d4a7144ddc5f4e7d536c0",
+  "chain_id": 42161,
+  "contract_name": "BalancerV3AuraDestinationVault",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "GPL-3.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 93,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:24.601Z"
+}

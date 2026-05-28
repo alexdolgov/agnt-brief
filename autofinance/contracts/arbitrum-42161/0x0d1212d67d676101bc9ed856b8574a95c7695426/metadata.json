@@ -1,0 +1,17 @@
+{
+  "address": "0x0d1212d67d676101bc9ed856b8574a95c7695426",
+  "chain_id": 42161,
+  "contract_name": "MaxValueSlippageHook",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 66,
+  "constructor_arguments": "000000000000000000000000bfd8e6c9bf2cd5466f5651746f8e946a6c7b4220",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:45:14.126Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x543e3e0ef9a0ff2d24b5e412763f637a2ad10ae9",
+  "chain_id": 10,
+  "contract_name": "VotePreviewer",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T16:50:14.602Z"
+}

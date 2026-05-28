@@ -1,17 +1,17 @@
 # Agentic Audit Brief: Etherfuse
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 71.0% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 75.0% over 90 days
 
 ## Project Overview
 
 - Project: Etherfuse (`etherfuse`)
 - Website: [https://www.etherfuse.com/](https://www.etherfuse.com/)
-- Lifecycle: unknown (Tier 0, 72.4% below peak)
-- Generated: 2026-05-23T17:53:52.512Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: unknown (Tier 0, 75.4% below peak)
+- Generated: 2026-05-28T16:42:28.456Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: base, polygon
 - Contract surface: 25 unique implementations (58 raw deployments)
-- DeFi Llama TVL: $5,109,001.08
+- DeFi Llama TVL: $5,405,525.69
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -31,11 +31,11 @@ All contracts belong to a single product family, with proxy contracts pointing t
 - Unverified implementations: 20
 - Unique implementations: 25
 - Raw deployments: 58
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
@@ -103,6 +103,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -127,9 +130,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [7686] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [7687] 0002-metadata-manifest-and-pull-command.md
+- [7688] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

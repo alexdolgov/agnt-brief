@@ -1,0 +1,141 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract Auditor",
+        "name": "auditor_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IBalancerVault",
+        "name": "balancerVault_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "MarketNotListed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotBalancerVault",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Market",
+        "name": "market",
+        "type": "address"
+      }
+    ],
+    "name": "approve",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "auditor",
+    "outputs": [
+      {
+        "internalType": "contract Auditor",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "balancerVault",
+    "outputs": [
+      {
+        "internalType": "contract IBalancerVault",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Market",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "percentage",
+        "type": "uint256"
+      }
+    ],
+    "name": "deleverage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract Market",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "principal",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "targetHealthFactor",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "deposit",
+        "type": "bool"
+      }
+    ],
+    "name": "leverage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ERC20[]",
+        "name": "",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bytes",
+        "name": "userData",
+        "type": "bytes"
+      }
+    ],
+    "name": "receiveFlashLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

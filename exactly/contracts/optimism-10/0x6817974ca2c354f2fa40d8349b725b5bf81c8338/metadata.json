@@ -1,0 +1,18 @@
+{
+  "address": "0x6817974ca2c354f2fa40d8349b725b5bf81c8338",
+  "chain_id": 10,
+  "contract_name": "ProposalManager",
+  "compiler_version": "v0.8.29+commit.ab55807c",
+  "optimization_used": true,
+  "runs": 416,
+  "evm_version": "cancun",
+  "license": "CC0-1.0, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T16:50:15.736Z"
+}

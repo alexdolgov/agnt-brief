@@ -1,0 +1,726 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ERC20",
+        "name": "exa_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract WETH",
+        "name": "weth_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IGauge",
+        "name": "gauge_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPoolFactory",
+        "name": "factory_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "socket_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPermit2",
+        "name": "permit2_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract RewardsController",
+        "name": "rewardsController_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "exa",
+    "outputs": [
+      {
+        "internalType": "contract ERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factory",
+    "outputs": [
+      {
+        "internalType": "contract IPoolFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gauge",
+    "outputs": [
+      {
+        "internalType": "contract IGauge",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "permit2",
+    "outputs": [
+      {
+        "internalType": "contract IPermit2",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pool",
+    "outputs": [
+      {
+        "internalType": "contract IPool",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountEXA",
+        "type": "uint256"
+      }
+    ],
+    "name": "previewETH",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rewardsController",
+    "outputs": [
+      {
+        "internalType": "contract RewardsController",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "socket",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ERC20",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "socketData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "keepETH",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakeAsset",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ERC20",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct Permit2",
+        "name": "permit",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "socketData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "keepETH",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakeAsset",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ERC20",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address payable",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct Permit",
+        "name": "permit",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "socketData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "keepETH",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakeAsset",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ERC20",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "socketData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "keepETH",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakeAssetAndBalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ERC20",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct Permit2",
+        "name": "permit",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "socketData",
+        "type": "bytes"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address payable",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct Permit",
+        "name": "permitEXA",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "keepETH",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakeAssetAndBalance",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ERC20",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address payable",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct Permit",
+        "name": "permit",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes",
+        "name": "socketData",
+        "type": "bytes"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address payable",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct Permit",
+        "name": "permitEXA",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "keepETH",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakeAssetAndBalance",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address payable",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct Permit",
+        "name": "p",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "keepETH",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakeBalance",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "keepETH",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakeBalance",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "keepETH",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakeETH",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "contract ERC20[]",
+            "name": "assets",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "v",
+            "type": "uint8"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "r",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "s",
+            "type": "bytes32"
+          }
+        ],
+        "internalType": "struct ClaimPermit",
+        "name": "p",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minEXA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "keepETH",
+        "type": "uint256"
+      }
+    ],
+    "name": "stakeRewards",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "weth",
+    "outputs": [
+      {
+        "internalType": "contract WETH",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

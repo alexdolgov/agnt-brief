@@ -452,13 +452,14 @@ Each project directory contains:
 | [ethereal-dex](./ethereal-dex/brief.md) | $30.72M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [etherex](./etherex/brief.md) | $3.60M | linea | 58 | 45/58 (78%) | 42.6% | 42.6% (Code4rena, ConsenSys Diligence, Spearbit) | 3 | fresh | ⚠️ declining | - |
 | [etherflip](./etherflip/brief.md) | $1.58M | ethereum | 7 | 6/7 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [etherfuse](./etherfuse/brief.md) | $5.11M | base, polygon | 25 | 4/25 (16%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [etherfuse](./etherfuse/brief.md) | $5.41M | base, polygon | 25 | 4/25 (16%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ethos](./ethos/brief.md) | $1.94M | base, ethereum | 27 | 20/27 (74%) | 30.0% | 30.0% (Sherlock) | 1 | aging | ✅ active | - |
-| [everything](./everything/brief.md) | $1.08M | arbitrum | 10 | 4/10 (40%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [everything](./everything/brief.md) | $945.26K | arbitrum | 10 | 4/10 (40%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [exactly](./exactly/brief.md) | $3.99M | base, ethereum, optimism | 65 | 44/65 (68%) | 65.9% | 9.1% (OpenZeppelin, Sherlock) | 33 | fresh | ✅ active | - |
 | [exmo](./exmo/brief.md) | $2.88M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [extra-finance](./extra-finance/brief.md) | $32.30M | base, berachain, optimism | 268 | 17/268 (6%) | 21.1% | 5.3% (Sherlock) | 2 | aging | ✅ active | - |
-| [feather](./feather/brief.md) | $16.55M | celo, klaytn, sei | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [ferro](./ferro/brief.md) | $5.05M | cronos | 21 | 0/21 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [feather](./feather/brief.md) | $16.54M | celo, klaytn, sei | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [ferro](./ferro/brief.md) | $5.04M | cronos | 21 | 0/21 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [fiamma](./fiamma/brief.md) | $1.15M | 4 | 33 | 12/33 (36%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [firelight](./firelight/brief.md) | $80.32M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [flaunch](./flaunch/brief.md) | $2.13M | base | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | - |
@@ -683,5 +684,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-28T16:41:04.795Z_
-_Projects: 671_
+_Generated: 2026-05-28T16:50:46.259Z_
+_Projects: 672_

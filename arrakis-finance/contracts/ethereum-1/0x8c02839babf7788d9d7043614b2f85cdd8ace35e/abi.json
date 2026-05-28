@@ -1,0 +1,1400 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "guardian_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "factory_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AddressZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AmountZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BurnToken0",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BurnToken1",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ClaimParamsLengthZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DepositZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ExpectedMinReturnTooLow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InitsAreZeros",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientFunds",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LengthsNotEqual",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MaxSlippageGtTenPercent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MintToken0",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MintToken1",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NativeCoinNotSupported",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newFees",
+        "type": "uint256"
+      }
+    ],
+    "name": "NewFeesGtPIPS",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyGuardian",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "manager",
+        "type": "address"
+      }
+    ],
+    "name": "OnlyManager",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyManagerOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "metaVault",
+        "type": "address"
+      }
+    ],
+    "name": "OnlyMetaVault",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyMetaVaultOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyPool",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OraclePriceZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OverMaxDeviation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PoolNotFound",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ProportionGtBASE",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ProportionZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RewardTokenNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SameManagerFee",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SamePool",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SameReceiver",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SlippageTooHigh",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongRouter",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "spender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "tokens",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "amounts",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "LogApproval",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogClaimEscrowed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogClaimManagerReward",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogClaimReward",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "depositor",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogFund",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int24",
+                "name": "lowerTick",
+                "type": "int24"
+              },
+              {
+                "internalType": "int24",
+                "name": "upperTick",
+                "type": "int24"
+              }
+            ],
+            "internalType": "struct Range",
+            "name": "range",
+            "type": "tuple"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct PositionLiquidity[]",
+        "name": "burns",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "liquidity",
+            "type": "uint128"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int24",
+                "name": "lowerTick",
+                "type": "int24"
+              },
+              {
+                "internalType": "int24",
+                "name": "upperTick",
+                "type": "int24"
+              }
+            ],
+            "internalType": "struct Range",
+            "name": "range",
+            "type": "tuple"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct PositionLiquidity[]",
+        "name": "mints",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount0Minted",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount1Minted",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount0Burned",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount1Burned",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogRebalance",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "oldFee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newFee",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogSetManagerFeePIPS",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldPool",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "liquidity",
+                "type": "uint128"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "int24",
+                    "name": "lowerTick",
+                    "type": "int24"
+                  },
+                  {
+                    "internalType": "int24",
+                    "name": "upperTick",
+                    "type": "int24"
+                  }
+                ],
+                "internalType": "struct Range",
+                "name": "range",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct PositionLiquidity[]",
+            "name": "burns",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "liquidity",
+                "type": "uint128"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "int24",
+                    "name": "lowerTick",
+                    "type": "int24"
+                  },
+                  {
+                    "internalType": "int24",
+                    "name": "upperTick",
+                    "type": "int24"
+                  }
+                ],
+                "internalType": "struct Range",
+                "name": "range",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct PositionLiquidity[]",
+            "name": "mints",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes",
+                "name": "payload",
+                "type": "bytes"
+              },
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "expectedMinReturn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "zeroForOne",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct SwapPayload",
+            "name": "swap",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minBurn0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minBurn1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minDeposit0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minDeposit1",
+            "type": "uint256"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Rebalance",
+        "name": "rebalance",
+        "type": "tuple"
+      }
+    ],
+    "name": "LogSetPool",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldReceiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newReceiver",
+        "type": "address"
+      }
+    ],
+    "name": "LogSetReceiver",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "proportion",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogWithdraw",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "manager",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogWithdrawManagerBalance",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Unpaused",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "spender_",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "tokens_",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "amounts_",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "approve",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "factory",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "depositor_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount0_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1_",
+        "type": "uint256"
+      }
+    ],
+    "name": "fund",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getInits",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "init0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "init1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getRanges",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "int24",
+            "name": "lowerTick",
+            "type": "int24"
+          },
+          {
+            "internalType": "int24",
+            "name": "upperTick",
+            "type": "int24"
+          }
+        ],
+        "internalType": "struct Range[]",
+        "name": "ranges",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "guardian",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "id",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "init0_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "init1_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint24",
+        "name": "fee_",
+        "type": "uint24"
+      },
+      {
+        "internalType": "contract IOracleWrapper",
+        "name": "oracle_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint24",
+        "name": "maxSlippage_",
+        "type": "uint24"
+      },
+      {
+        "internalType": "address",
+        "name": "rewardReceiver_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "metaVault_",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "initializePosition",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "managerBalance0",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "managerFee0",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "managerBalance1",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "managerFee1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "managerFeePIPS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxSlippage",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "metaVault",
+    "outputs": [
+      {
+        "internalType": "contract IArrakisMetaVault",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "oracle",
+    "outputs": [
+      {
+        "internalType": "contract IOracleWrapper",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "paused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "pool",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "liquidity",
+                "type": "uint128"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "int24",
+                    "name": "lowerTick",
+                    "type": "int24"
+                  },
+                  {
+                    "internalType": "int24",
+                    "name": "upperTick",
+                    "type": "int24"
+                  }
+                ],
+                "internalType": "struct Range",
+                "name": "range",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct PositionLiquidity[]",
+            "name": "burns",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "liquidity",
+                "type": "uint128"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "int24",
+                    "name": "lowerTick",
+                    "type": "int24"
+                  },
+                  {
+                    "internalType": "int24",
+                    "name": "upperTick",
+                    "type": "int24"
+                  }
+                ],
+                "internalType": "struct Range",
+                "name": "range",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct PositionLiquidity[]",
+            "name": "mints",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes",
+                "name": "payload",
+                "type": "bytes"
+              },
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "expectedMinReturn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "zeroForOne",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct SwapPayload",
+            "name": "swap",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minBurn0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minBurn1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minDeposit0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minDeposit1",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Rebalance",
+        "name": "rebalance_",
+        "type": "tuple"
+      }
+    ],
+    "name": "rebalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "newFeePIPS_",
+        "type": "uint256"
+      }
+    ],
+    "name": "setManagerFeePIPS",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint24",
+        "name": "fee_",
+        "type": "uint24"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "liquidity",
+                "type": "uint128"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "int24",
+                    "name": "lowerTick",
+                    "type": "int24"
+                  },
+                  {
+                    "internalType": "int24",
+                    "name": "upperTick",
+                    "type": "int24"
+                  }
+                ],
+                "internalType": "struct Range",
+                "name": "range",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct PositionLiquidity[]",
+            "name": "burns",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "liquidity",
+                "type": "uint128"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "int24",
+                    "name": "lowerTick",
+                    "type": "int24"
+                  },
+                  {
+                    "internalType": "int24",
+                    "name": "upperTick",
+                    "type": "int24"
+                  }
+                ],
+                "internalType": "struct Range",
+                "name": "range",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct PositionLiquidity[]",
+            "name": "mints",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "bytes",
+                "name": "payload",
+                "type": "bytes"
+              },
+              {
+                "internalType": "address",
+                "name": "router",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amountIn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "expectedMinReturn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "zeroForOne",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct SwapPayload",
+            "name": "swap",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minBurn0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minBurn1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minDeposit0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minDeposit1",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct Rebalance",
+        "name": "rebalance_",
+        "type": "tuple"
+      }
+    ],
+    "name": "setPool",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "token0",
+    "outputs": [
+      {
+        "internalType": "contract IERC20Metadata",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "token1",
+    "outputs": [
+      {
+        "internalType": "contract IERC20Metadata",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "totalUnderlying",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint160",
+        "name": "priceX96_",
+        "type": "uint160"
+      }
+    ],
+    "name": "totalUnderlyingAtPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount0Owed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1Owed",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "name": "uniswapV3MintCallback",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "unpause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IOracleWrapper",
+        "name": "oracle_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint24",
+        "name": "maxDeviation_",
+        "type": "uint24"
+      }
+    ],
+    "name": "validateRebalance",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "receiver_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "proportion_",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawManagerBalance",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

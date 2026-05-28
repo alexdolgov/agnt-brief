@@ -1,0 +1,18 @@
+{
+  "address": "0x6dddb4653410c038701961c268a3e1ed988a7c8c",
+  "chain_id": 137,
+  "contract_name": "ArrakisV2GaugeFactory",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 1466,
+  "evm_version": "london",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 20,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:40:20.770Z"
+}

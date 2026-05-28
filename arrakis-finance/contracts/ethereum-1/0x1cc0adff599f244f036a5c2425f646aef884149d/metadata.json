@@ -1,0 +1,18 @@
+{
+  "address": "0x1cc0adff599f244f036a5c2425f646aef884149d",
+  "chain_id": 1,
+  "contract_name": "RenderController",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:40:20.901Z"
+}

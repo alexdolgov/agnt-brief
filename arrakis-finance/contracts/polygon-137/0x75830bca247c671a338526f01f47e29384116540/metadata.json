@@ -1,0 +1,17 @@
+{
+  "address": "0x75830bca247c671a338526f01f47e29384116540",
+  "chain_id": 137,
+  "contract_name": "EIP173Proxy",
+  "compiler_version": "v0.8.7+commit.e28d00a7",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:40:22.627Z"
+}

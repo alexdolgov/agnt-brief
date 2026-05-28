@@ -1,0 +1,36 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IArrakisV2",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "onPriceIncrease",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint16",
+        "name": "toleranceBPS",
+        "type": "uint16"
+      }
+    ],
+    "name": "checker",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "canExec",
+        "type": "bool"
+      },
+      {
+        "internalType": "bytes",
+        "name": "execPayload",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

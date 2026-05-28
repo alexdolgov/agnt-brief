@@ -1,0 +1,355 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_initialOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_autoCompounderFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_autoConverterFactory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_FactoryZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_InitialOwnerZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_InputTokenIsTargetToken",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_InsufficientAmountOut",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_MinAmountOutZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_NotKeeper",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_RelayNotApproved",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_RouterAlreadyRegistered",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_RouterNotRegistered",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_RouterUnauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_RouterZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Swapper_TooSoon",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "router",
+        "type": "address"
+      }
+    ],
+    "name": "RouterDeregistered",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "router",
+        "type": "address"
+      }
+    ],
+    "name": "RouterRegistered",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "relayer",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "router",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "commands",
+        "type": "bytes"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes[]",
+        "name": "inputs",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "SwapToTargetToken",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_autoConverter",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_epoch",
+        "type": "uint256"
+      }
+    ],
+    "name": "amountTokenEarned",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "autoCompounderFactory",
+    "outputs": [
+      {
+        "internalType": "contract IRelayFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "autoConverterFactory",
+    "outputs": [
+      {
+        "internalType": "contract IRelayFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_router",
+        "type": "address"
+      }
+    ],
+    "name": "deregisterRouter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_router",
+        "type": "address"
+      }
+    ],
+    "name": "isRouter",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_router",
+        "type": "address"
+      }
+    ],
+    "name": "registerRouter",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "routers",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_relay",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_isAutoCompounder",
+        "type": "bool"
+      },
+      {
+        "internalType": "address",
+        "name": "_router",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_inputToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_minAmountOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_commands",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "_inputs",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "swapToTargetToken",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

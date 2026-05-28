@@ -1,6 +1,6 @@
 # atlendis — Contract Index
 
-43 unique implementations on polygon · 106 deployments · 0 audited · 14 unaudited · 29 unverified
+43 unique implementations on polygon · 106 deployments · 2 audited · 12 unaudited · 29 unverified
 
 ## adapter (1)
 
@@ -12,9 +12,9 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BorrowerPools (3 deployments)](./polygon-137/0x8d3da26f8301dea18197e4c3146d8cde3ebace7c/) | polygon | 3 deployments: polygon [`0x8d3da2...bace7c`](./polygon-137/0x8d3da26f8301dea18197e4c3146d8cde3ebace7c/); polygon `0xa5a520...85d2b3`; polygon `0xbc13e1...f10b1f` | ⚠️ Unaudited | Verified |
+| [BorrowerPools (3 deployments)](./polygon-137/0x8d3da26f8301dea18197e4c3146d8cde3ebace7c/) | polygon | 3 deployments: polygon [`0x8d3da2...bace7c`](./polygon-137/0x8d3da26f8301dea18197e4c3146d8cde3ebace7c/); polygon `0xa5a520...85d2b3`; polygon `0xbc13e1...f10b1f` | ✅ Audited | Verified |
 | [PoolCustodian (8 deployments)](./polygon-137/0x27cc24ee0ec290f914ba23831e490f406d689cfe/) | polygon | 8 deployments: polygon [`0x27cc24...689cfe`](./polygon-137/0x27cc24ee0ec290f914ba23831e490f406d689cfe/); polygon `0x78ca79...6bb9e2`; polygon `0xa5b0e0...491af2`; polygon `0xad8620...14acbc`; polygon `0xb9f8fc...65a033`; polygon `0xd3f7a5...8bb79b`; polygon `0xd53c78...dfbdc0`; polygon `0xdfcfc2...033432` | ⚠️ Unaudited | Verified |
-| [PoolLogic](./polygon-137/0xd2b8552104cf999e0eead79800f0ff08cd4ed5fd/) | polygon | [`0xd2b855...4ed5fd`](./polygon-137/0xd2b8552104cf999e0eead79800f0ff08cd4ed5fd/) | ⚠️ Unaudited | Verified |
+| [PoolLogic](./polygon-137/0xd2b8552104cf999e0eead79800f0ff08cd4ed5fd/) | polygon | [`0xd2b855...4ed5fd`](./polygon-137/0xd2b8552104cf999e0eead79800f0ff08cd4ed5fd/) | ✅ Audited | Verified |
 
 ## governance (1)
 

@@ -6,8 +6,8 @@
 | Address | `0xbe951d1b791c6878eec5d9129adeb72a28d59e68` |
 | Role | core_logic |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [07152023_Omniscia_Audit_Arcade_Governance.pdf](https://github.com/arcadexyz/governance/blob/main/audits/07152023_Omniscia_Audit_Arcade_Governance.pdf) |
 | Deployments | 1 (ethereum [`0xbe951d1b791c6878eec5d9129adeb72a28d59e68`](../0xbe951d1b791c6878eec5d9129adeb72a28d59e68/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

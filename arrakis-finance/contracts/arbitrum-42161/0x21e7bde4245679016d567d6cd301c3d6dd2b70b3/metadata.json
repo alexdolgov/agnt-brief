@@ -1,0 +1,17 @@
+{
+  "address": "0x21e7bde4245679016d567d6cd301c3d6dd2b70b3",
+  "chain_id": 42161,
+  "contract_name": "ModulePublicRegistry",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "00000000000000000000000077bada8fc2a478f1bc1e1e4980916666187d0df70000000000000000000000008ef4d048e6d7f8cc3b6a929c2979f15cde2dd04d0000000000000000000000007285b2fe1248212a64afbb3b75c67988a76d27fd",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:40:21.650Z"
+}

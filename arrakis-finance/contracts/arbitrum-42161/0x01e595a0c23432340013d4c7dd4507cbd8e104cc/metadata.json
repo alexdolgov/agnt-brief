@@ -1,0 +1,17 @@
+{
+  "address": "0x01e595a0c23432340013d4c7dd4507cbd8e104cc",
+  "chain_id": 42161,
+  "contract_name": "HOTExecutor",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "00000000000000000000000004da2c24552f7a4c395950e47c78b40dc7301355000000000000000000000000acf11affd3ed865fa2df304ec5048c29597f38f900000000000000000000000077bada8fc2a478f1bc1e1e4980916666187d0df7",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:40:21.055Z"
+}

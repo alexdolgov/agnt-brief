@@ -1,0 +1,103 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "oracle_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint8",
+        "name": "decimals0_",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "decimals1_",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AddressZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DecimalsToken0Zero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DecimalsToken1Zero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "decimals0",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "decimals1",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPrice0",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "price0",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPrice1",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "price1",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "oracle",
+    "outputs": [
+      {
+        "internalType": "contract IHOTOracle",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

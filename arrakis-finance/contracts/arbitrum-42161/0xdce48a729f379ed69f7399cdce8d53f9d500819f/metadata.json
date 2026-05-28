@@ -1,0 +1,17 @@
+{
+  "address": "0xdce48a729f379ed69f7399cdce8d53f9d500819f",
+  "chain_id": 42161,
+  "contract_name": "CreationCodePrivateVault",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:40:24.050Z"
+}

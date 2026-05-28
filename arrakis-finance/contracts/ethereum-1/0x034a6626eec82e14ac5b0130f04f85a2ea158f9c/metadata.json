@@ -1,0 +1,18 @@
+{
+  "address": "0x034a6626eec82e14ac5b0130f04f85a2ea158f9c",
+  "chain_id": 1,
+  "contract_name": "GUniFactory",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:40:18.162Z"
+}

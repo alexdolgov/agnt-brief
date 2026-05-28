@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "atlendis",
-  "generated_at": "2026-05-23T02:41:15.252Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-28T15:39:15.708Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "atlendis",
@@ -26,16 +26,16 @@
     "total_addresses": 106,
     "unique_implementations": 43,
     "total_deployments": 106,
-    "audited_contracts": 0,
-    "unaudited_contracts": 14,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 14,
+    "audited_contracts": 2,
+    "unaudited_contracts": 12,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 12,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 29,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 10993275,
+    "coverage_pct": 14.3,
+    "total_audits": 5,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 10993274,
     "tvl_usd": 4280776.690686222,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -48,13 +48,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2022-05",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "stale": 2,
+      "unknown": 3
     }
   },
   "topography": {
@@ -463,7 +463,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -472,7 +472,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -481,14 +481,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-7048",
+        "audit-7049"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -808,14 +811,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-7048",
+        "audit-7049"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1968,8 +1974,147 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
+  "audits": [
+    {
+      "audit_id": 7048,
+      "audit_key": "audit-7048",
+      "report_name": "PeckShield-Audit-Report-Atlendis-v1.0.pdf",
+      "report_url": "https://github.com/Atlendis/protocol-v1/blob/master/audits/PeckShield-Audit-Report-Atlendis-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BorrowerPools",
+        "PoolLogic",
+        "PoolsController"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7049,
+      "audit_key": "audit-7049",
+      "report_name": "atlendis-audit-report.pdf",
+      "report_url": "https://github.com/Atlendis/protocol-v1/blob/master/audits/atlendis-audit-report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BorrowerPools",
+        "Errors",
+        "IBorrowerManagement",
+        "IBorrowerPools",
+        "IPlatformManagement",
+        "IPoolsParametersManagement",
+        "IPosition",
+        "PoolLogic",
+        "PoolsSettingsManager",
+        "Position",
+        "Rounding",
+        "Types",
+        "WadRayMath"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7050,
+      "audit_key": "audit-7050",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7051,
+      "audit_key": "audit-7051",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7052,
+      "audit_key": "audit-7052",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 14.3,
+      "latest_audit": "2022-05"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 14.3,
+      "latest_audit": "2022-02"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 137,
@@ -2014,29 +2159,9 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x8d3da26f8301dea18197e4c3146d8cde3ebace7c",
-      "name": "BorrowerPools",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
       "address": "0x5715d67eb1942ad59e060473c9153af7015f9cb4",
       "name": "NeutralAdapter",
       "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0xd2b8552104cf999e0eead79800f0ff08cd4ed5fd",
-      "name": "PoolLogic",
-      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2079,11 +2204,28 @@
     "needs_review": 13
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 8
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 7050,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 7051,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 7052,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

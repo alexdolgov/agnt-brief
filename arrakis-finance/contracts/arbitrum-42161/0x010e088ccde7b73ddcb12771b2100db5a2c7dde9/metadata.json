@@ -1,0 +1,18 @@
+{
+  "address": "0x010e088ccde7b73ddcb12771b2100db5a2c7dde9",
+  "chain_id": 42161,
+  "contract_name": "ValantisModulePublic",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T15:40:18.624Z"
+}

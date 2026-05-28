@@ -1,0 +1,280 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "uniswapFactory_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "arrakisFactory_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "gaugeFactory_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "staticManager_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "resolver_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "gauge",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "caller",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount0",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount1",
+        "type": "uint256"
+      }
+    ],
+    "name": "CreateStaticVault",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "arrakisFactory",
+    "outputs": [
+      {
+        "internalType": "contract IArrakisV2Factory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint128",
+                "name": "liquidity",
+                "type": "uint128"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "int24",
+                    "name": "lowerTick",
+                    "type": "int24"
+                  },
+                  {
+                    "internalType": "int24",
+                    "name": "upperTick",
+                    "type": "int24"
+                  },
+                  {
+                    "internalType": "uint24",
+                    "name": "feeTier",
+                    "type": "uint24"
+                  }
+                ],
+                "internalType": "struct Range",
+                "name": "range",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct PositionLiquidity[]",
+            "name": "positions",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "uint24[]",
+            "name": "feeTiers",
+            "type": "uint24[]"
+          },
+          {
+            "internalType": "address",
+            "name": "token0",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "token1",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minDeposit0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minDeposit1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDeposit0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxDeposit1",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "int24",
+                "name": "twapDeviation",
+                "type": "int24"
+              },
+              {
+                "internalType": "uint24",
+                "name": "twapDuration",
+                "type": "uint24"
+              },
+              {
+                "internalType": "bool",
+                "name": "compoundEnabled",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct StaticVaultInfo",
+            "name": "vaultInfo",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address",
+            "name": "rewardToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "rewardDistributor",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct InitializeStatic",
+        "name": "params_",
+        "type": "tuple"
+      }
+    ],
+    "name": "deployStaticVault",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "gauge",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gaugeFactory",
+    "outputs": [
+      {
+        "internalType": "contract IArrakisV2GaugeFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "managerFeeBPS",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "resolver",
+    "outputs": [
+      {
+        "internalType": "contract IArrakisV2Resolver",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "staticManager",
+    "outputs": [
+      {
+        "internalType": "contract IArrakisV2StaticManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "uniswapFactory",
+    "outputs": [
+      {
+        "internalType": "contract IUniswapV3Factory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

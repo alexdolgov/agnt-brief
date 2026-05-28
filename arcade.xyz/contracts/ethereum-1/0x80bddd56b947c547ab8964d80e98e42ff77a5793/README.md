@@ -6,8 +6,8 @@
 | Address | `0x80bddd56b947c547ab8964d80e98e42ff77a5793` |
 | Role | unknown |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [StakingRewardsAuditScope.md](https://github.com/arcadexyz/dao-contracts/blob/main/audits/StakingRewardsAuditScope.md); [arcade-staking-report-final.pdf](https://github.com/arcadexyz/dao-contracts/blob/main/audits/arcade-staking-report-final.pdf) |
 | Deployments | 1 (ethereum [`0x80bddd56b947c547ab8964d80e98e42ff77a5793`](../0x80bddd56b947c547ab8964d80e98e42ff77a5793/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |

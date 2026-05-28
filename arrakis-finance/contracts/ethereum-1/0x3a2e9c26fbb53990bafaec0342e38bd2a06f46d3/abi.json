@@ -1,0 +1,80 @@
+[
+  {
+    "inputs": [],
+    "name": "Approval0Err",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Approval1Err",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DepositErr",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InsufficientUnderlying",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Transfer0Err",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Transfer1Err",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WhitelistDepositorErr",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawErr",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "safe_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vault_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount0_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount1_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address payable",
+        "name": "receiver_",
+        "type": "address"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x477e509b9d08862baeb8ab69e901ae72b13efca0",
+  "chain_id": 137,
+  "contract_name": "EIP173ProxyWithReceive",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0xb42de7247d71d195fc131537e0338d3dcafa7811",
+  "fetched_at": "2026-05-28T15:40:19.274Z"
+}

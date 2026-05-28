@@ -178,7 +178,7 @@ Each project directory contains:
 | [ledgity-yield](./ledgity-yield/brief.md) | $3.19M | 5 | 108 | 56/108 (52%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $4.96M |
 | [unslashed](./unslashed/brief.md) | $3.13M | ethereum | 16 | 16/16 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $4.64M |
 | [yala](./yala/brief.md) | $2.24M | ethereum | 30 | 11/30 (37%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $4.62M |
-| [delta-financial](./delta-financial/brief.md) | $10.48M | ethereum | 53 | 39/53 (74%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $4.51M |
+| [delta-financial](./delta-financial/brief.md) | $10.31M | ethereum | 53 | 39/53 (74%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $4.51M |
 | [atlendis](./atlendis/brief.md) | $10.99M | polygon | 43 | 14/43 (33%) | 14.3% | 0.0% (-) | 2 | stale | ⚠️ declining | $4.28M |
 | [dexalot](./dexalot/brief.md) | $9.31M | avalanche | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $4.21M |
 | [primefi](./primefi/brief.md) | $3.28M | base, hyperliquid | 119 | 58/119 (49%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $4.12M |
@@ -686,5 +686,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-28T18:22:12.031Z_
+_Generated: 2026-05-28T18:29:37.462Z_
 _Projects: 674_

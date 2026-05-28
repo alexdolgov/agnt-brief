@@ -1,0 +1,15 @@
+[
+  {
+    "inputs": [],
+    "name": "isPriorityFeeValid",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

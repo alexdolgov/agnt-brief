@@ -1,0 +1,18 @@
+{
+  "address": "0x0f85a912448279111694f4ba4f85dc641c54b594",
+  "chain_id": 1,
+  "contract_name": "GovernanceRewards",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:00:42.788Z"
+}

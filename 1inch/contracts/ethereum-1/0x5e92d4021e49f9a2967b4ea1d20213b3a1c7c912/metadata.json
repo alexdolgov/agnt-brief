@@ -1,0 +1,18 @@
+{
+  "address": "0x5e92d4021e49f9a2967b4ea1d20213b3a1c7c912",
+  "chain_id": 1,
+  "contract_name": "PriorityFeeLimiter",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:00:51.244Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0xbaf9a5d4b0052359326a6cdab54babaa3a3a9643",
+  "chain_id": 1,
+  "contract_name": "MooniswapFactory",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 33,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-28T18:00:55.748Z"
+}

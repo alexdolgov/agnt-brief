@@ -5,8 +5,8 @@
 - Project: Clearpool (`clearpool`)
 - Website: [https://clearpool.finance](https://clearpool.finance)
 - Lifecycle: active (Tier 0, 31.2% below peak)
-- Generated: 2026-05-26T13:33:22.459Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-05-28T16:02:08.309Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
 - Chains: avalanche, base, ethereum, mantle, optimism, polygon, polygon-zkevm
 - Contract surface: 61 unique implementations (220 raw deployments)
 - DeFi Llama TVL: $42,176,788.00
@@ -29,11 +29,11 @@ The Clearpool family provides the foundational lending infrastructure (pools, au
 - Unverified implementations: 35
 - Unique implementations: 61
 - Raw deployments: 220
-- Audits discovered: 0
+- Audits discovered: 14
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $10,712.83
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2026-04 (fresh)
+- Staleness: 1 fresh, 1 aging, 2 stale, 10 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -136,6 +136,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0xmacro-boring-vault-arctic-0.pdf](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/audit/0xmacro-boring-vault-arctic-0.pdf) | 0xMacro | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
+| [0xmacro-boring-vault-arctic-1.pdf](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/audit/0xmacro-boring-vault-arctic-1.pdf) | 0xMacro | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [pashov-boring-vault.pdf](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/audit/pashov-boring-vault.pdf) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [pashov-hyperlane.pdf](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/audit/pashov-hyperlane.pdf) | Pashov Audit Group | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
+| [spearbit-boring-vault-arctic-0.pdf](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/audit/spearbit-boring-vault-arctic-0.pdf) | Spearbit | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
+| [AUDIT_SCOPE.md](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/AUDIT_SCOPE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [CHANGES_PAYFI.md](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/CHANGES_PAYFI.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [INTEGRATION.md](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/INTEGRATION.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [OPERATOR_RUNBOOK.md](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/OPERATOR_RUNBOOK.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PRE_AUDIT_CHECKLIST.md](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/PRE_AUDIT_CHECKLIST.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [SYSTEM_AUDIT.md](https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/SYSTEM_AUDIT.md) | unknown | Audit | 2026-04 | fresh | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -179,9 +193,26 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 14
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [5805] 0xmacro-boring-vault-arctic-0.pdf
+- [5806] 0xmacro-boring-vault-arctic-1.pdf
+- [5807] pashov-boring-vault.pdf
+- [5808] pashov-hyperlane.pdf
+- [5809] spearbit-boring-vault-arctic-0.pdf
+- [5810] AUDIT_SCOPE.md
+- [5811] CHANGES_PAYFI.md
+- [5812] INTEGRATION.md
+- [5813] OPERATOR_RUNBOOK.md
+- [5814] PRE_AUDIT_CHECKLIST.md
+- [5815] SYSTEM_AUDIT.md
+- [5816] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [5817] 0002-metadata-manifest-and-pull-command.md
+- [5818] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

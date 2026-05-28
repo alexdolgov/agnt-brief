@@ -5,11 +5,11 @@
 - Project: Arbitrum Nova Bridge (`arbitrum-nova-bridge`)
 - Website: [https://portal.arbitrum.io/bridge?l2ChainId=42170](https://portal.arbitrum.io/bridge?l2ChainId=42170)
 - Lifecycle: active (Tier 0, 91.4% below peak)
-- Generated: 2026-05-22T17:30:08.086Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-28T18:04:49.536Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-6fc5
 - Chains: arbitrum, ethereum
 - Contract surface: 55 unique implementations (168 raw deployments)
-- DeFi Llama TVL: $19,198,832.41
+- DeFi Llama TVL: $18,907,935.14
 - On-chain TVL (included contracts): $447,171.38
 - TVL by chain: Ethereum $447,171.38
 
@@ -29,11 +29,11 @@ The L1GatewayRouter directs token transfers to the appropriate gateway (L1ERC20G
 - Unverified implementations: 7
 - Unique implementations: 55
 - Raw deployments: 168
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $447,171.38
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -129,6 +129,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -192,9 +195,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [6211] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [6212] 0002-metadata-manifest-and-pull-command.md
+- [6213] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

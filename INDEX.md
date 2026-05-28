@@ -182,7 +182,7 @@
 | [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
 | [endur](./endur/) | $9.7M | 0.0% | ? | unknown | 4 | 0 | 2026-05-23 |
 | [enosys](./enosys/) | $26.9M | 0.0% | ? | active | 3 | 2 | 2026-05-28 |
-| [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 0 | 292 | 2026-05-25 |
+| [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 42 | 292 | 2026-05-28 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [equilibria](./equilibria/) | $26.9M | 17.4% | $15.7M | declining | 6 | 120 | 2026-05-25 |
 | [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 49 | 2026-05-24 |

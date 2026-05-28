@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dexalot",
-  "generated_at": "2026-05-28T19:51:32.333Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-1969",
+  "generated_at": "2026-05-28T21:00:09.592Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-937a",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "dexalot",

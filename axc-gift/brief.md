@@ -5,8 +5,8 @@
 - Project: AXC GIFT (`axc-gift`)
 - Website: [https://axc.xyz](https://axc.xyz)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-29T03:27:16.581Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-99fb
+- Generated: 2026-05-29T04:31:31.802Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-be7b
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $5,290,517.00

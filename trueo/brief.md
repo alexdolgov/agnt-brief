@@ -7,11 +7,11 @@
 - Project: Trueo (`trueo`)
 - Website: [https://trueo.com/](https://trueo.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T01:29:16.972Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-29T16:39:33.559Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: base
 - Contract surface: 23 unique implementations (45 raw deployments)
-- DeFi Llama TVL: $3,795,340.40
+- DeFi Llama TVL: $3,764,672.39
 - On-chain TVL (included contracts): $4,049,216.13
 - TVL by chain: Base $4,049,216.13
 
@@ -31,11 +31,11 @@ The Trueo family integrates a governance-managed prediction market (TruthMarketM
 - Unverified implementations: 0
 - Unique implementations: 23
 - Raw deployments: 45
-- Audits discovered: 0
+- Audits discovered: 17
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,049,216.13
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 17 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $4,049,216.13 represents exposure in a protocol with declining activity.
 
@@ -99,6 +99,23 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [True-Yield-Dollar.md](https://github.com/trueo-protocol/docs/blob/main/docs/True-Yield-Dollar.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [attesters.md](https://github.com/trueo-protocol/docs/blob/main/docs/attesters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [bonds-and-slashing.md](https://github.com/trueo-protocol/docs/blob/main/docs/bonds-and-slashing.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [disputing-outcomes.md](https://github.com/trueo-protocol/docs/blob/main/docs/disputing-outcomes.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [governance.md](https://github.com/trueo-protocol/docs/blob/main/docs/governance.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [intro.md](https://github.com/trueo-protocol/docs/blob/main/docs/intro.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [liquidity-provision.md](https://github.com/trueo-protocol/docs/blob/main/docs/liquidity-provision.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [markets.md](https://github.com/trueo-protocol/docs/blob/main/docs/markets.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [official-links.md](https://github.com/trueo-protocol/docs/blob/main/docs/official-links.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [optimistic-oracle.md](https://github.com/trueo-protocol/docs/blob/main/docs/optimistic-oracle.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [oracle-council.md](https://github.com/trueo-protocol/docs/blob/main/docs/oracle-council.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [resolving-markets.md](https://github.com/trueo-protocol/docs/blob/main/docs/resolving-markets.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [tokenomics.md](https://github.com/trueo-protocol/docs/blob/main/docs/tokenomics.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [trading.md](https://github.com/trueo-protocol/docs/blob/main/docs/trading.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -136,9 +153,29 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 17
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [7994] True-Yield-Dollar.md
+- [7995] attesters.md
+- [7996] bonds-and-slashing.md
+- [7997] disputing-outcomes.md
+- [7998] governance.md
+- [7999] intro.md
+- [8000] liquidity-provision.md
+- [8001] markets.md
+- [8002] official-links.md
+- [8003] optimistic-oracle.md
+- [8004] oracle-council.md
+- [8005] resolving-markets.md
+- [8006] tokenomics.md
+- [8007] trading.md
+- [8008] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [8009] 0002-metadata-manifest-and-pull-command.md
+- [8010] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

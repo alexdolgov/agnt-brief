@@ -636,7 +636,7 @@
 | [trisolaris](./trisolaris/) | $1.5M | 16.7% | ? | dead | 13 | 119 | 2026-05-29 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |
-| [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 0 | 23 | 2026-05-24 |
+| [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 17 | 23 | 2026-05-29 |
 | [trufin-protocol](./trufin-protocol/) | $6.8M | 66.7% | ? | declining | 12 | 7 | 2026-05-23 |
 | [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | unknown | 0 | 6 | 2026-05-26 |
 | [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 0 | 4 | 2026-05-26 |

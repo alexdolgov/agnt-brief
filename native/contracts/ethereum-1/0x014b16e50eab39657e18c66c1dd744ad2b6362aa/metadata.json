@@ -1,0 +1,17 @@
+{
+  "address": "0x014b16e50eab39657e18c66c1dd744ad2b6362aa",
+  "chain_id": 1,
+  "contract_name": "NativeLPToken",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 2000000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T11:17:59.145Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0xcc190252fc83165ab2b327cd1f9f38b0c094b70d",
+  "chain_id": 42161,
+  "contract_name": "AlgebraInterfaceMulticall",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T11:18:01.305Z"
+}

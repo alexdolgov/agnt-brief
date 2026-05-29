@@ -1,0 +1,17 @@
+{
+  "address": "0xa7b0d47004c4db88827b5263df8253aac810995e",
+  "chain_id": 8453,
+  "contract_name": "NativeV3PoolDeployer",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T11:18:01.547Z"
+}

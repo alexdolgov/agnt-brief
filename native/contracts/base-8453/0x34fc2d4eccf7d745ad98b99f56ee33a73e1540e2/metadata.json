@@ -1,0 +1,18 @@
+{
+  "address": "0x34fc2d4eccf7d745ad98b99f56ee33a73e1540e2",
+  "chain_id": 8453,
+  "contract_name": "AquaVaultSignatureCheck",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "london",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T11:17:58.178Z"
+}

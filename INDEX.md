@@ -386,6 +386,7 @@
 | [mvl-staking](./mvl-staking/) | $38.1M | 33.3% | ? | unknown | 2 | 50 | 2026-05-25 |
 | [mystic-finance](./mystic-finance/) | $5.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [nado](./nado/) | $55.0M | 0.0% | ? | active | 9 | 23 | 2026-05-29 |
+| [native](./native/) | $67.6M | 0.0% | $67.6M | active | 3 | 80 | 2026-05-29 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 0 | 7 | 2026-05-27 |

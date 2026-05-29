@@ -615,7 +615,7 @@
 | [tenderize](./tenderize/) | $332.5M | 2.6% | $332.5M | declining | 7 | 43 | 2026-05-25 |
 | [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 3 | 6 | 2026-05-29 |
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | unknown | 1 | 15 | 2026-05-25 |
-| [the-arena](./the-arena/) | $9.3M | 0.0% | $9.3M | active | 0 | 172 | 2026-05-25 |
+| [the-arena](./the-arena/) | $7.8M | 0.0% | $7.8M | active | 3 | 119 | 2026-05-29 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-05-23 |
 | [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |
 | [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |

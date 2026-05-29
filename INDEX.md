@@ -363,7 +363,7 @@
 | [metadao](./metadao/) | $1.5M | 0.0% | $1.5M | active | 10 | 53 | 2026-05-25 |
 | [metastable](./metastable/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [mev-capital](./mev-capital/) | $67.0M | 0.0% | ? | active | 3 | 783 | 2026-05-29 |
-| [mezo-bridge](./mezo-bridge/) | $203.9M | 0.0% | $203.9M | declining | 0 | 138 | 2026-05-22 |
+| [mezo-bridge](./mezo-bridge/) | $203.9M | 0.0% | $203.9M | declining | 4 | 6 | 2026-05-29 |
 | [mezo-earn](./mezo-earn/) | $55.2M | 0.0% | ? | unknown | 0 | 1 | 2026-05-27 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [minto](./minto/) | $1.7M | 12.5% | $1.7M | unknown | 1 | 11 | 2026-05-24 |

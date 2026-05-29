@@ -42,7 +42,7 @@ Each project directory contains:
 | [decentralized-euro](./decentralized-euro/brief.md) | $2.08M | 5 | 72 | 39/72 (54%) | 28.2% | 28.2% (ChainSecurity) | 2 | aging | ✅ active | $230.43M |
 | [sphere](./sphere/brief.md) | $6.71M | 5 | 217 | 109/217 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $229.38M |
 | [superfarm](./superfarm/brief.md) | $1.16M | ethereum | 50 | 43/50 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $211.05M |
-| [mezo-bridge](./mezo-bridge/brief.md) | $21.64M | ethereum | 138 | 110/138 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $203.90M |
+| [mezo-bridge](./mezo-bridge/brief.md) | $21.29M | ethereum | 6 | 6/6 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $203.89M |
 | [zircuit-finance](./zircuit-finance/brief.md) | $1.51M | base, ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $180.12M |
 | [autofinance](./autofinance/brief.md) | $48.30M | 5 | 570 | 406/570 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $175.72M |
 | [stargate-finance](./stargate-finance/brief.md) | $92.29M | 21 | 294 | 42/294 (14%) | 23.1% | 0.0% (-) | 2 | stale | ✅ active | $171.88M |
@@ -698,5 +698,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T10:45:06.469Z_
+_Generated: 2026-05-29T10:48:05.440Z_
 _Projects: 686_

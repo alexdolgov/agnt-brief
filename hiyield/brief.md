@@ -5,8 +5,8 @@
 - Project: HiYield (`hiyield`)
 - Website: [https://www.hiyield.xyz](https://www.hiyield.xyz)
 - Lifecycle: active (Tier 0, 33.6% below peak)
-- Generated: 2026-05-29T08:36:45.814Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T19:11:03.814Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: avalanche, canto, ethereum
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $2,727,183.81

@@ -7,11 +7,11 @@
 - Project: ShapeShift (`shapeshift`)
 - Website: [https://shapeshift.com](https://shapeshift.com)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-25T11:40:35.989Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-05-29T14:03:30.866Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: arbitrum, ethereum, gnosis, polygon
 - Contract surface: 40 unique implementations (115 raw deployments)
-- DeFi Llama TVL: $1,637,398.07
+- DeFi Llama TVL: $1,603,814.61
 - On-chain TVL (included contracts): $1,339,796.19
 - TVL by chain: Ethereum $986,109.89 | Arbitrum $274,819.67 | Gnosis $48,399.61 | Polygon $30,467.03
 
@@ -25,31 +25,37 @@ All contracts belong to a single product family, sharing the same governance tok
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/28 (0.0%)
-- Verified + Unaudited implementations: 28
+- Verified implementations audited: 3/28 (10.7%)
+- Verified + Unaudited implementations: 25
 - Verified by bytecode match: 0
 - Unverified implementations: 12
 - Unique implementations: 40
 - Raw deployments: 115
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
+- Audits discovered: 51
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $1,339,796.19
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2026-02 (fresh)
+- Staleness: 4 fresh, 1 aging, 5 stale, 41 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $1,339,796.19 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 3 | 10.7% | 2026-02 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (3)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| LiquidityReserve | unknown | ethereum | [`0x8ec637...25cd39`](./contracts/ethereum-1/0x8ec637fe2800940c7959f9bad4fe69e41225cd39/) | ✅ Audited |
+| Staking | unknown | ethereum | 8 deployments: ethereum [`0x0fc455...954b4f`](./contracts/ethereum-1/0x0fc45523d4c63a70f263dceaec9d08c947954b4f/); ethereum `0x1dddf8...1d0122`; ethereum `0x596723...11ebee`; ethereum `0x96f98e...3417d3`; ethereum `0xe5943d...6ba92f`; ethereum `0xee77aa...85ea4b`; ethereum `0xef8670...4a955b`; ethereum `0xf82337...b54f63` | ✅ Audited |
+| StakingV1 | unknown | arbitrum | 4 deployments: arbitrum [`0x1094c4...62d304`](./contracts/arbitrum-42161/0x1094c4a99fce60e69ffe75849309408f1262d304/); arbitrum `0x4f9c6a...a899c9`; arbitrum `0xac2a4f...0e2b56`; arbitrum `0xad661c...920380` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (28)
+### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -65,16 +71,13 @@ All contracts belong to a single product family, sharing the same governance tok
 | FOX | unknown | ethereum | [`0xc770ee...8ee52d`](./contracts/ethereum-1/0xc770eefad204b5180df6a14ee197d99d808ee52d/) | ⚠️ Unaudited |
 | FoxStakingV1 | unknown | arbitrum | 2 deployments: arbitrum [`0x06875e...5fbb55`](./contracts/arbitrum-42161/0x06875e37e780a5aed7e57dc648d5ae7c455fbb55/); arbitrum `0x0c66f3...0910ef` | ⚠️ Unaudited |
 | Foxy | unknown | ethereum | [`0xdc4910...386ed3`](./contracts/ethereum-1/0xdc49108ce5c57bc3408c3a5e95f3d864ec386ed3/) | ⚠️ Unaudited |
-| LiquidityReserve | unknown | ethereum | [`0x8ec637...25cd39`](./contracts/ethereum-1/0x8ec637fe2800940c7959f9bad4fe69e41225cd39/) | ⚠️ Unaudited |
 | Manager | governance | ethereum | 7 deployments: ethereum [`0x0ad818...3bb7f7`](./contracts/ethereum-1/0x0ad818271471f2430be55aba528efb58713bb7f7/); ethereum `0x1d7858...1b4d43`; ethereum `0x47fa86...f705df`; ethereum `0x59170d...f9f4c9`; ethereum `0xa86e41...b86a14`; ethereum `0xf31d02...6f2651`; ethereum `0xf663f4...2a244c` | ⚠️ Unaudited |
 | OnChainVoteL1 | unknown | ethereum | 6 deployments: ethereum [`0x160317...a915be`](./contracts/ethereum-1/0x16031783d3d27ce25ebcfb341f4eec8f7ba915be/); ethereum `0x43094e...6ca511`; ethereum `0x803ec0...bc22bc`; ethereum `0xa1a7ec...7721dd`; ethereum `0xabcf56...fa195c`; ethereum `0xc6807b...66e0bb` | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | 2 deployments: ethereum [`0xc89f74...cf00df`](./contracts/ethereum-1/0xc89f742452f534ece603c7b62df76102aacf00df/); ethereum `0xd813b2...c51a21` | ⚠️ Unaudited |
 | RewardHash | unknown | ethereum | 2 deployments: ethereum [`0x3cce05...7661dd`](./contracts/ethereum-1/0x3cce05568008916d739479958f7a1af5f67661dd/); ethereum `0x5ec3ec...d02fb6` | ⚠️ Unaudited |
 | Rewards | unknown | ethereum | 2 deployments: ethereum [`0x086b97...e27054`](./contracts/ethereum-1/0x086b9734d33783bbe4fbc8249df4c686aae27054/); ethereum `0x79dd22...a713c5` | ⚠️ Unaudited |
 | RewardsManager | governance | ethereum | 2 deployments: ethereum [`0x1b0512...7d4404`](./contracts/ethereum-1/0x1b05128b262ca335de162c8ad5e9281d5f7d4404/); ethereum `0x7cdbbd...e96d06` | ⚠️ Unaudited |
-| Staking | unknown | ethereum | 8 deployments: ethereum [`0x0fc455...954b4f`](./contracts/ethereum-1/0x0fc45523d4c63a70f263dceaec9d08c947954b4f/); ethereum `0x1dddf8...1d0122`; ethereum `0x596723...11ebee`; ethereum `0x96f98e...3417d3`; ethereum `0xe5943d...6ba92f`; ethereum `0xee77aa...85ea4b`; ethereum `0xef8670...4a955b`; ethereum `0xf82337...b54f63` | ⚠️ Unaudited |
 | StakingRewards | unknown | ethereum | 8 deployments: ethereum [`0x212ebf...c3932b`](./contracts/ethereum-1/0x212ebf9fd3c10f371557b08e993eaab385c3932b/); ethereum `0x24fd7f...f67fa0`; ethereum `0x593978...c1fbcb`; ethereum `0x662da6...bd8ac3`; ethereum `0xc14eaa...a7e555`; ethereum `0xc54b9f...9c42a0`; ethereum `0xdd80e2...5d9e72`; ethereum `0xebb176...c40b68` | ⚠️ Unaudited |
-| StakingV1 | unknown | arbitrum | 4 deployments: arbitrum [`0x1094c4...62d304`](./contracts/arbitrum-42161/0x1094c4a99fce60e69ffe75849309408f1262d304/); arbitrum `0x4f9c6a...a899c9`; arbitrum `0xac2a4f...0e2b56`; arbitrum `0xad661c...920380` | ⚠️ Unaudited |
 | TokeMigrationPool | operational_periphery | ethereum | [`0xa760e2...8eb930`](./contracts/ethereum-1/0xa760e26aa76747020171fcf8bda108dfde8eb930/) | ⚠️ Unaudited |
 | Token | token | ethereum | [`0x168ef8...2536ff`](./contracts/ethereum-1/0x168ef867e3009c1864103c746d399b66482536ff/) | ⚠️ Unaudited |
 | TransferController | governance | ethereum | [`0x9d98a2...6d145e`](./contracts/ethereum-1/0x9d98a2792e78e8975eae54abd7e845f3646d145e/) | ⚠️ Unaudited |
@@ -117,6 +120,57 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [README.md (also discovered via alternate URL)](https://github.com/shapeshift/security/blob/main/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [affiliates.md](https://github.com/shapeshift/web/blob/develop/docs/affiliates.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [affiliate-data-model.md](https://github.com/shapeshift/web/blob/develop/docs/architecture/affiliate-data-model.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [affiliate-system.md](https://github.com/shapeshift/web/blob/develop/docs/architecture/affiliate-system.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [asset-generation.md](https://github.com/shapeshift/web/blob/develop/docs/asset-generation.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [bigamount.md](https://github.com/shapeshift/web/blob/develop/docs/bigamount.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [chainflip-lending-sdk.md](https://github.com/shapeshift/web/blob/develop/docs/chainflip-lending-sdk.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [chainflip-lending-borrow-overview.md](https://github.com/shapeshift/web/blob/develop/docs/features/chainflip-lending-borrow-overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [chainflip-lending-deposit-overview.md](https://github.com/shapeshift/web/blob/develop/docs/features/chainflip-lending-deposit-overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [chainflip-lending-supply-withdraw-overview.md](https://github.com/shapeshift/web/blob/develop/docs/features/chainflip-lending-supply-withdraw-overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [walletconnect-dapps.md](https://github.com/shapeshift/web/blob/develop/docs/features/walletconnect-dapps.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [walletconnect-wallet.md](https://github.com/shapeshift/web/blob/develop/docs/features/walletconnect-wallet.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [walletconnect.md (also discovered via alternate URL)](https://github.com/shapeshift/web/blob/develop/docs/features/walletconnect.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [file-structure.md](https://github.com/shapeshift/web/blob/develop/docs/file-structure.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [folder-structure.md](https://github.com/shapeshift/web/blob/develop/docs/folder-structure.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [globally-shared-code.md](https://github.com/shapeshift/web/blob/develop/docs/globally-shared-code.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [investor.md (also discovered via alternate URL)](https://github.com/shapeshift/web/blob/develop/docs/investor.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [rerenders.md](https://github.com/shapeshift/web/blob/develop/docs/rerenders.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [sentry.md](https://github.com/shapeshift/web/blob/develop/docs/sentry.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [state-management.md](https://github.com/shapeshift/web/blob/develop/docs/state-management.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [styles.md](https://github.com/shapeshift/web/blob/develop/docs/styles.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [testing.md](https://github.com/shapeshift/web/blob/develop/docs/testing.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [introduction.md](https://github.com/shapeshift/web/blob/develop/packages/public-api/docs/introduction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [rest-api-guide.md](https://github.com/shapeshift/web/blob/develop/packages/public-api/docs/rest-api-guide.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [swap-widget-sdk.md](https://github.com/shapeshift/web/blob/develop/packages/public-api/docs/swap-widget-sdk.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ASSET_GROUPING.md](https://github.com/shapeshift/web/blob/develop/src/components/AssetSearch/docs/ASSET_GROUPING.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ASSET_SEARCH_ARCHITECTURE.md](https://github.com/shapeshift/web/blob/develop/src/lib/assetSearch/docs/ASSET_SEARCH_ARCHITECTURE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [SEEKER_WALLET_INTEGRATION.md](https://github.com/shapeshift/mobile-app/blob/main/docs/SEEKER_WALLET_INTEGRATION.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [butterswap-difference-analysis.md](https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/butterswap-difference-analysis.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [butterswap-integration-analysis.md](https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/butterswap-integration-analysis.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [chainflip-analysis.md](https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/chainflip-analysis.md) | unknown | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
+| [identify-tokens.md](https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/identify-tokens.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [jupiter-integration-analysis.md](https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/jupiter-integration-analysis.md) | unknown | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
+| [portals-analysis.md](https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/portals-analysis.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [portals-summary.md](https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/portals-summary.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [zrx-analysis-summary.md](https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/zrx-analysis-summary.md) | unknown | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
+| [zrx-integration-analysis.md](https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/zrx-integration-analysis.md) | unknown | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
+| [rFOX_v02.pdf](https://github.com/shapeshift/rFOX/blob/main/audits/rFOX_v02.pdf) | unknown | Audit | 2024-06 | aging | Direct | contract_name | 4 | high |
+| [RDP.md](https://github.com/shapeshift/docs/blob/main/security/RDP.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Security Training Part 1 Tech Setup.pdf](https://github.com/shapeshift/docs/blob/main/security/Security%20Training%20Part%201%20Tech%20Setup.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Security Training Part 2 Policy.pdf](https://github.com/shapeshift/docs/blob/main/security/Security%20Training%20Part%202%20Policy.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Security Training Part 3 Practice.pdf](https://github.com/shapeshift/docs/blob/main/security/Security%20Training%20Part%203%20Practice.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ShapeShift Information Security Policy v1.2.pdf](https://github.com/shapeshift/docs/blob/main/security/ShapeShift%20Information%20Security%20Policy%20v1.2.pdf) | unknown | Audit | 2021-09 | stale | Direct | n/a | 0 | n/a |
+| [2017-03.md (also discovered via alternate URL)](https://github.com/shapeshift/fox-staking-1/blob/master/openzeppelin-solidity-3.4.0/audit/2017-03.md) | OpenZeppelin | Audit | 2017-03 | stale | Direct | n/a | 0 | n/a |
+| [2018-10.pdf (also discovered via alternate URL)](https://github.com/shapeshift/fox-staking-1/blob/master/openzeppelin-solidity-3.4.0/audit/2018-10.pdf) | OpenZeppelin | Audit | 2018-10 | stale | Direct | n/a | 0 | n/a |
+| [ZokyoAudit.pdf](https://github.com/shapeshift/yearn-router/blob/development/security/ZokyoAudit.pdf) | unknown | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
+| [QUICK_START.md](https://github.com/shapeshift/foxfarm/blob/develop/docs/QUICK_START.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Zokyo_Security_Audit.pdf](https://github.com/shapeshift/yieldies/blob/develop/docs/Zokyo_Security_Audit.pdf) | unknown | Audit | 2022-03 | stale | Direct | contract_name | 9 | high |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -134,12 +188,10 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xc770ee...8ee52d`](./contracts/ethereum-1/0xc770eefad204b5180df6a14ee197d99d808ee52d/) | FOX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x06875e...5fbb55`](./contracts/arbitrum-42161/0x06875e37e780a5aed7e57dc648d5ae7c455fbb55/) | FoxStakingV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdc4910...386ed3`](./contracts/ethereum-1/0xdc49108ce5c57bc3408c3a5e95f3d864ec386ed3/) | Foxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8ec637...25cd39`](./contracts/ethereum-1/0x8ec637fe2800940c7959f9bad4fe69e41225cd39/) | LiquidityReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0ad818...3bb7f7`](./contracts/ethereum-1/0x0ad818271471f2430be55aba528efb58713bb7f7/) | Manager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x160317...a915be`](./contracts/ethereum-1/0x16031783d3d27ce25ebcfb341f4eec8f7ba915be/) | OnChainVoteL1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3cce05...7661dd`](./contracts/ethereum-1/0x3cce05568008916d739479958f7a1af5f67661dd/) | RewardHash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x086b97...e27054`](./contracts/ethereum-1/0x086b9734d33783bbe4fbc8249df4c686aae27054/) | Rewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0fc455...954b4f`](./contracts/ethereum-1/0x0fc45523d4c63a70f263dceaec9d08c947954b4f/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x212ebf...c3932b`](./contracts/ethereum-1/0x212ebf9fd3c10f371557b08e993eaab385c3932b/) | StakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x168ef8...2536ff`](./contracts/ethereum-1/0x168ef867e3009c1864103c746d399b66482536ff/) | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9d98a2...6d145e`](./contracts/ethereum-1/0x9d98a2792e78e8975eae54abd7e845f3646d145e/) | TransferController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -158,9 +210,61 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 49
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=2
+- Match method counts: extraction_exact=13
+
+Zero-match audit list:
+
+- [9377] README.md
+- [9378] affiliates.md
+- [9379] affiliate-data-model.md
+- [9380] affiliate-system.md
+- [9381] asset-generation.md
+- [9382] bigamount.md
+- [9383] chainflip-lending-sdk.md
+- [9384] chainflip-lending-borrow-overview.md
+- [9385] chainflip-lending-deposit-overview.md
+- [9386] chainflip-lending-supply-withdraw-overview.md
+- [9387] walletconnect-dapps.md
+- [9388] walletconnect-wallet.md
+- [9389] walletconnect.md
+- [9390] file-structure.md
+- [9391] folder-structure.md
+- [9392] globally-shared-code.md
+- [9393] investor.md
+- [9394] rerenders.md
+- [9395] sentry.md
+- [9396] state-management.md
+- [9397] styles.md
+- [9398] testing.md
+- [9399] introduction.md
+- [9400] rest-api-guide.md
+- [9401] swap-widget-sdk.md
+- [9402] ASSET_GROUPING.md
+- [9403] ASSET_SEARCH_ARCHITECTURE.md
+- [9405] SEEKER_WALLET_INTEGRATION.md
+- [9407] butterswap-difference-analysis.md
+- [9408] butterswap-integration-analysis.md
+- [9409] chainflip-analysis.md
+- [9410] identify-tokens.md
+- [9411] jupiter-integration-analysis.md
+- [9412] portals-analysis.md
+- [9413] portals-summary.md
+- [9414] zrx-analysis-summary.md
+- [9415] zrx-integration-analysis.md
+- [9417] RDP.md
+- [9419] Security Training Part 1 Tech Setup.pdf
+- [9420] Security Training Part 2 Policy.pdf
+- [9421] Security Training Part 3 Practice.pdf
+- [9422] ShapeShift Information Security Policy v1.2.pdf
+- [9423] 2017-03.md
+- [9424] 2018-10.pdf
+- [9427] ZokyoAudit.pdf
+- [9428] QUICK_START.md
+- [9430] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9431] 0002-metadata-manifest-and-pull-command.md
+- [9432] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

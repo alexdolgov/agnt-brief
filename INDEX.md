@@ -526,7 +526,7 @@
 | [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 8 | 111 | 2026-05-29 |
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
 | [shape-bridge](./shape-bridge/) | $1.1M | 0.0% | ? | active | 2 | 28 | 2026-05-25 |
-| [shapeshift](./shapeshift/) | $1.3M | 0.0% | $1.3M | unknown | 0 | 40 | 2026-05-25 |
+| [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | unknown | 51 | 40 | 2026-05-29 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-05-23 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 0 | 2 | 2026-05-22 |

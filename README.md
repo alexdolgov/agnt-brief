@@ -274,7 +274,7 @@ Each project directory contains:
 | [taiko-bridge](./taiko-bridge/brief.md) | $17.26M | ethereum | 52 | 44/52 (85%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.42M |
 | [shardingdao](./shardingdao/brief.md) | $7.90M | ethereum | 12 | 12/12 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $1.38M |
 | [bunny](./bunny/brief.md) | $3.32M | bsc, polygon | 101 | 73/101 (72%) | 9.6% | 0.0% (-) | 1 | stale | 💀 dead | $1.36M |
-| [shapeshift](./shapeshift/brief.md) | $1.64M | 4 | 40 | 28/40 (70%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.34M |
+| [shapeshift](./shapeshift/brief.md) | $1.60M | 4 | 40 | 28/40 (70%) | 10.7% | 0.0% (-) | 2 | fresh | ❓ unknown | $1.34M |
 | [rezerve](./rezerve/brief.md) | $2.67M | ethereum, sonic | 104 | 80/104 (77%) | 1.3% | 0.0% (-) | 1 | fresh | ✅ active | $1.34M |
 | [suzaku](./suzaku/brief.md) | $1.24M | avalanche | 49 | 21/49 (43%) | 4.8% | 4.8% (ChainSecurity) | 1 | stale | ✅ active | $1.18M |
 | [ocean-point](./ocean-point/brief.md) | $1.07M | ethereum | 40 | 27/40 (68%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $1.08M |
@@ -704,5 +704,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T13:58:07.427Z_
+_Generated: 2026-05-29T14:04:28.150Z_
 _Projects: 692_

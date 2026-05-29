@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "shapeshift",
-  "generated_at": "2026-05-25T11:40:35.989Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-05-29T14:03:30.866Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "shapeshift",
@@ -16,7 +16,7 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 1780,
+    "days_since_peak": 1784,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
@@ -26,16 +26,16 @@
     "total_addresses": 115,
     "unique_implementations": 40,
     "total_deployments": 115,
-    "audited_contracts": 0,
-    "unaudited_contracts": 28,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 28,
+    "audited_contracts": 3,
+    "unaudited_contracts": 25,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 25,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 12,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 1637398.0674,
+    "coverage_pct": 10.7,
+    "total_audits": 51,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 1603814.61283,
     "tvl_usd": 1339796.1910900597,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -54,13 +54,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2026-02",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
-      "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "fresh": 4,
+      "aging": 1,
+      "stale": 5,
+      "unknown": 41
     }
   },
   "topography": {
@@ -763,14 +763,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9429"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "review"
     },
     {
@@ -1115,7 +1117,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1124,7 +1126,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1133,7 +1135,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1142,7 +1144,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1151,7 +1153,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1160,7 +1162,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1169,7 +1171,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1178,14 +1180,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9429"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "review"
     },
     {
@@ -1303,7 +1307,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1312,7 +1316,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1321,7 +1325,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1330,14 +1334,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9416"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "review"
     },
     {
@@ -1989,8 +1995,1147 @@
       "contamination_flag": "review"
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
+  "audits": [
+    {
+      "audit_id": 9377,
+      "audit_key": "audit-9377",
+      "report_name": "README.md",
+      "report_url": "https://github.com/shapeshift/security/blob/main/README.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9377,
+          "report_url": "https://github.com/shapeshift/security/blob/main/README.md"
+        },
+        {
+          "audit_id": 9418,
+          "report_url": "https://github.com/shapeshift/docs/blob/main/security/README.MD"
+        }
+      ]
+    },
+    {
+      "audit_id": 9378,
+      "audit_key": "audit-9378",
+      "report_name": "affiliates.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/affiliates.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9379,
+      "audit_key": "audit-9379",
+      "report_name": "affiliate-data-model.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/architecture/affiliate-data-model.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9380,
+      "audit_key": "audit-9380",
+      "report_name": "affiliate-system.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/architecture/affiliate-system.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9381,
+      "audit_key": "audit-9381",
+      "report_name": "asset-generation.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/asset-generation.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9382,
+      "audit_key": "audit-9382",
+      "report_name": "bigamount.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/bigamount.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9383,
+      "audit_key": "audit-9383",
+      "report_name": "chainflip-lending-sdk.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/chainflip-lending-sdk.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9384,
+      "audit_key": "audit-9384",
+      "report_name": "chainflip-lending-borrow-overview.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/features/chainflip-lending-borrow-overview.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9385,
+      "audit_key": "audit-9385",
+      "report_name": "chainflip-lending-deposit-overview.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/features/chainflip-lending-deposit-overview.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9386,
+      "audit_key": "audit-9386",
+      "report_name": "chainflip-lending-supply-withdraw-overview.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/features/chainflip-lending-supply-withdraw-overview.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9387,
+      "audit_key": "audit-9387",
+      "report_name": "walletconnect-dapps.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/features/walletconnect-dapps.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9388,
+      "audit_key": "audit-9388",
+      "report_name": "walletconnect-wallet.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/features/walletconnect-wallet.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9389,
+      "audit_key": "audit-9389",
+      "report_name": "walletconnect.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/features/walletconnect.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9389,
+          "report_url": "https://github.com/shapeshift/web/blob/develop/docs/features/walletconnect.md"
+        },
+        {
+          "audit_id": 9406,
+          "report_url": "https://github.com/shapeshift/mobile-app/blob/main/docs/walletconnect.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 9390,
+      "audit_key": "audit-9390",
+      "report_name": "file-structure.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/file-structure.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9391,
+      "audit_key": "audit-9391",
+      "report_name": "folder-structure.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/folder-structure.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9392,
+      "audit_key": "audit-9392",
+      "report_name": "globally-shared-code.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/globally-shared-code.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9393,
+      "audit_key": "audit-9393",
+      "report_name": "investor.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/investor.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9393,
+          "report_url": "https://github.com/shapeshift/web/blob/develop/docs/investor.md"
+        },
+        {
+          "audit_id": 9404,
+          "report_url": "https://github.com/shapeshift/lib/blob/main/docs/investor.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 9394,
+      "audit_key": "audit-9394",
+      "report_name": "rerenders.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/rerenders.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9395,
+      "audit_key": "audit-9395",
+      "report_name": "sentry.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/sentry.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9396,
+      "audit_key": "audit-9396",
+      "report_name": "state-management.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/state-management.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9397,
+      "audit_key": "audit-9397",
+      "report_name": "styles.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/styles.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9398,
+      "audit_key": "audit-9398",
+      "report_name": "testing.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/docs/testing.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9399,
+      "audit_key": "audit-9399",
+      "report_name": "introduction.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/packages/public-api/docs/introduction.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9400,
+      "audit_key": "audit-9400",
+      "report_name": "rest-api-guide.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/packages/public-api/docs/rest-api-guide.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9401,
+      "audit_key": "audit-9401",
+      "report_name": "swap-widget-sdk.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/packages/public-api/docs/swap-widget-sdk.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9402,
+      "audit_key": "audit-9402",
+      "report_name": "ASSET_GROUPING.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/src/components/AssetSearch/docs/ASSET_GROUPING.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9403,
+      "audit_key": "audit-9403",
+      "report_name": "ASSET_SEARCH_ARCHITECTURE.md",
+      "report_url": "https://github.com/shapeshift/web/blob/develop/src/lib/assetSearch/docs/ASSET_SEARCH_ARCHITECTURE.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9405,
+      "audit_key": "audit-9405",
+      "report_name": "SEEKER_WALLET_INTEGRATION.md",
+      "report_url": "https://github.com/shapeshift/mobile-app/blob/main/docs/SEEKER_WALLET_INTEGRATION.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9407,
+      "audit_key": "audit-9407",
+      "report_name": "butterswap-difference-analysis.md",
+      "report_url": "https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/butterswap-difference-analysis.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9408,
+      "audit_key": "audit-9408",
+      "report_name": "butterswap-integration-analysis.md",
+      "report_url": "https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/butterswap-integration-analysis.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9409,
+      "audit_key": "audit-9409",
+      "report_name": "chainflip-analysis.md",
+      "report_url": "https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/chainflip-analysis.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9410,
+      "audit_key": "audit-9410",
+      "report_name": "identify-tokens.md",
+      "report_url": "https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/identify-tokens.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9411,
+      "audit_key": "audit-9411",
+      "report_name": "jupiter-integration-analysis.md",
+      "report_url": "https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/jupiter-integration-analysis.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9412,
+      "audit_key": "audit-9412",
+      "report_name": "portals-analysis.md",
+      "report_url": "https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/portals-analysis.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9413,
+      "audit_key": "audit-9413",
+      "report_name": "portals-summary.md",
+      "report_url": "https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/portals-summary.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9414,
+      "audit_key": "audit-9414",
+      "report_name": "zrx-analysis-summary.md",
+      "report_url": "https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/zrx-analysis-summary.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9415,
+      "audit_key": "audit-9415",
+      "report_name": "zrx-integration-analysis.md",
+      "report_url": "https://github.com/shapeshift/revenue-dashboard/blob/main/docs/integrations/zrx-integration-analysis.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9416,
+      "audit_key": "audit-9416",
+      "report_name": "rFOX_v02.pdf",
+      "report_url": "https://github.com/shapeshift/rFOX/blob/main/audits/rFOX_v02.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "StakingInfo",
+        "StakingV1",
+        "UnstakingRequest"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9417,
+      "audit_key": "audit-9417",
+      "report_name": "RDP.md",
+      "report_url": "https://github.com/shapeshift/docs/blob/main/security/RDP.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9419,
+      "audit_key": "audit-9419",
+      "report_name": "Security Training Part 1 Tech Setup.pdf",
+      "report_url": "https://github.com/shapeshift/docs/blob/main/security/Security%20Training%20Part%201%20Tech%20Setup.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9420,
+      "audit_key": "audit-9420",
+      "report_name": "Security Training Part 2 Policy.pdf",
+      "report_url": "https://github.com/shapeshift/docs/blob/main/security/Security%20Training%20Part%202%20Policy.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9421,
+      "audit_key": "audit-9421",
+      "report_name": "Security Training Part 3 Practice.pdf",
+      "report_url": "https://github.com/shapeshift/docs/blob/main/security/Security%20Training%20Part%203%20Practice.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9422,
+      "audit_key": "audit-9422",
+      "report_name": "ShapeShift Information Security Policy v1.2.pdf",
+      "report_url": "https://github.com/shapeshift/docs/blob/main/security/ShapeShift%20Information%20Security%20Policy%20v1.2.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9423,
+      "audit_key": "audit-9423",
+      "report_name": "2017-03.md",
+      "report_url": "https://github.com/shapeshift/fox-staking-1/blob/master/openzeppelin-solidity-3.4.0/audit/2017-03.md",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2017-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9423,
+          "report_url": "https://github.com/shapeshift/fox-staking-1/blob/master/openzeppelin-solidity-3.4.0/audit/2017-03.md"
+        },
+        {
+          "audit_id": 9425,
+          "report_url": "https://github.com/shapeshift/fox-staking-2/blob/main/openzeppelin-solidity-3.4.0/audit/2017-03.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 9424,
+      "audit_key": "audit-9424",
+      "report_name": "2018-10.pdf",
+      "report_url": "https://github.com/shapeshift/fox-staking-1/blob/master/openzeppelin-solidity-3.4.0/audit/2018-10.pdf",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2018-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9424,
+          "report_url": "https://github.com/shapeshift/fox-staking-1/blob/master/openzeppelin-solidity-3.4.0/audit/2018-10.pdf"
+        },
+        {
+          "audit_id": 9426,
+          "report_url": "https://github.com/shapeshift/fox-staking-2/blob/main/openzeppelin-solidity-3.4.0/audit/2018-10.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 9427,
+      "audit_key": "audit-9427",
+      "report_name": "ZokyoAudit.pdf",
+      "report_url": "https://github.com/shapeshift/yearn-router/blob/development/security/ZokyoAudit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9428,
+      "audit_key": "audit-9428",
+      "report_name": "QUICK_START.md",
+      "report_url": "https://github.com/shapeshift/foxfarm/blob/develop/docs/QUICK_START.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9429,
+      "audit_key": "audit-9429",
+      "report_name": "Zokyo_Security_Audit.pdf",
+      "report_url": "https://github.com/shapeshift/yieldies/blob/develop/docs/Zokyo_Security_Audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FOX Yieldy",
+        "LiquidityReserve",
+        "Staking",
+        "Vesting"
+      ],
+      "matched_contracts": 9,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9430,
+      "audit_key": "audit-9430",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9431,
+      "audit_key": "audit-9431",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9432,
+      "audit_key": "audit-9432",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 10.7,
+      "latest_audit": "2026-02"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -2095,16 +3240,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x8ec637fe2800940c7959f9bad4fe69e41225cd39",
-      "name": "LiquidityReserve",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x0ad818271471f2430be55aba528efb58713bb7f7",
       "name": "Manager",
       "role": "governance",
@@ -2137,16 +3272,6 @@
       "chain_name": "ethereum",
       "address": "0x086b9734d33783bbe4fbc8249df4c686aae27054",
       "name": "Rewards",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0fc45523d4c63a70f263dceaec9d08c947954b4f",
-      "name": "Staking",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2200,11 +3325,212 @@
     "needs_review": 5
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 13
+    },
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 9377,
+        "report_name": "README.md"
+      },
+      {
+        "audit_id": 9378,
+        "report_name": "affiliates.md"
+      },
+      {
+        "audit_id": 9379,
+        "report_name": "affiliate-data-model.md"
+      },
+      {
+        "audit_id": 9380,
+        "report_name": "affiliate-system.md"
+      },
+      {
+        "audit_id": 9381,
+        "report_name": "asset-generation.md"
+      },
+      {
+        "audit_id": 9382,
+        "report_name": "bigamount.md"
+      },
+      {
+        "audit_id": 9383,
+        "report_name": "chainflip-lending-sdk.md"
+      },
+      {
+        "audit_id": 9384,
+        "report_name": "chainflip-lending-borrow-overview.md"
+      },
+      {
+        "audit_id": 9385,
+        "report_name": "chainflip-lending-deposit-overview.md"
+      },
+      {
+        "audit_id": 9386,
+        "report_name": "chainflip-lending-supply-withdraw-overview.md"
+      },
+      {
+        "audit_id": 9387,
+        "report_name": "walletconnect-dapps.md"
+      },
+      {
+        "audit_id": 9388,
+        "report_name": "walletconnect-wallet.md"
+      },
+      {
+        "audit_id": 9389,
+        "report_name": "walletconnect.md"
+      },
+      {
+        "audit_id": 9390,
+        "report_name": "file-structure.md"
+      },
+      {
+        "audit_id": 9391,
+        "report_name": "folder-structure.md"
+      },
+      {
+        "audit_id": 9392,
+        "report_name": "globally-shared-code.md"
+      },
+      {
+        "audit_id": 9393,
+        "report_name": "investor.md"
+      },
+      {
+        "audit_id": 9394,
+        "report_name": "rerenders.md"
+      },
+      {
+        "audit_id": 9395,
+        "report_name": "sentry.md"
+      },
+      {
+        "audit_id": 9396,
+        "report_name": "state-management.md"
+      },
+      {
+        "audit_id": 9397,
+        "report_name": "styles.md"
+      },
+      {
+        "audit_id": 9398,
+        "report_name": "testing.md"
+      },
+      {
+        "audit_id": 9399,
+        "report_name": "introduction.md"
+      },
+      {
+        "audit_id": 9400,
+        "report_name": "rest-api-guide.md"
+      },
+      {
+        "audit_id": 9401,
+        "report_name": "swap-widget-sdk.md"
+      },
+      {
+        "audit_id": 9402,
+        "report_name": "ASSET_GROUPING.md"
+      },
+      {
+        "audit_id": 9403,
+        "report_name": "ASSET_SEARCH_ARCHITECTURE.md"
+      },
+      {
+        "audit_id": 9405,
+        "report_name": "SEEKER_WALLET_INTEGRATION.md"
+      },
+      {
+        "audit_id": 9407,
+        "report_name": "butterswap-difference-analysis.md"
+      },
+      {
+        "audit_id": 9408,
+        "report_name": "butterswap-integration-analysis.md"
+      },
+      {
+        "audit_id": 9409,
+        "report_name": "chainflip-analysis.md"
+      },
+      {
+        "audit_id": 9410,
+        "report_name": "identify-tokens.md"
+      },
+      {
+        "audit_id": 9411,
+        "report_name": "jupiter-integration-analysis.md"
+      },
+      {
+        "audit_id": 9412,
+        "report_name": "portals-analysis.md"
+      },
+      {
+        "audit_id": 9413,
+        "report_name": "portals-summary.md"
+      },
+      {
+        "audit_id": 9414,
+        "report_name": "zrx-analysis-summary.md"
+      },
+      {
+        "audit_id": 9415,
+        "report_name": "zrx-integration-analysis.md"
+      },
+      {
+        "audit_id": 9417,
+        "report_name": "RDP.md"
+      },
+      {
+        "audit_id": 9419,
+        "report_name": "Security Training Part 1 Tech Setup.pdf"
+      },
+      {
+        "audit_id": 9420,
+        "report_name": "Security Training Part 2 Policy.pdf"
+      },
+      {
+        "audit_id": 9421,
+        "report_name": "Security Training Part 3 Practice.pdf"
+      },
+      {
+        "audit_id": 9422,
+        "report_name": "ShapeShift Information Security Policy v1.2.pdf"
+      },
+      {
+        "audit_id": 9423,
+        "report_name": "2017-03.md"
+      },
+      {
+        "audit_id": 9424,
+        "report_name": "2018-10.pdf"
+      },
+      {
+        "audit_id": 9427,
+        "report_name": "ZokyoAudit.pdf"
+      },
+      {
+        "audit_id": 9428,
+        "report_name": "QUICK_START.md"
+      },
+      {
+        "audit_id": 9430,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 9431,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 9432,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

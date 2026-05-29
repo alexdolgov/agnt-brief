@@ -1,0 +1,18 @@
+{
+  "address": "0xd14439b3a7245d8ea92e37b77347014ea7e4f809",
+  "chain_id": 1,
+  "contract_name": "Keep3rV2OracleFactory",
+  "compiler_version": "v0.8.3+commit.8d00100c",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T17:29:49.704Z"
+}

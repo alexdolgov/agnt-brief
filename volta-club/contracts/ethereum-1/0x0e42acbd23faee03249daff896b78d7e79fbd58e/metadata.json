@@ -1,0 +1,18 @@
+{
+  "address": "0x0e42acbd23faee03249daff896b78d7e79fbd58e",
+  "chain_id": 1,
+  "contract_name": "VotingEscrow",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 9999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 11,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T17:29:34.682Z"
+}

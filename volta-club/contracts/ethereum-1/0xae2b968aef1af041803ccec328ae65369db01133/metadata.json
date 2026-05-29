@@ -1,0 +1,18 @@
+{
+  "address": "0xae2b968aef1af041803ccec328ae65369db01133",
+  "chain_id": 1,
+  "contract_name": "GetSafes",
+  "compiler_version": "v0.6.7+commit.b8d736ae",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T17:29:46.779Z"
+}

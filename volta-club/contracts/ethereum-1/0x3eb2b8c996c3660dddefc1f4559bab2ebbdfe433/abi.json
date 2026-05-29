@@ -1,0 +1,1417 @@
+[
+  {
+    "inputs": [],
+    "name": "AccessControlBadConfirmation",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "neededRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "AccessControlUnauthorizedAccount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      }
+    ],
+    "name": "AddressEmptyCode",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "AddressInsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "AlreadyInUse",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedInnerCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCollection",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidCurrency",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidDuration",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidExpiration",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInitialization",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInterest",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidNFTIndex",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTerms",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotInitializing",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RequestExpired",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Unauthorized",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint8",
+        "name": "index",
+        "type": "uint8"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "name": "CurrencyAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "version",
+        "type": "uint64"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "nonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "LendingRequestDeleted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "nonce",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nftIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collection",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "collectionWide",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint16",
+            "name": "interestAprBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "minimumInterestBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "durationDays",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "currency",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "expiration",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ILoanRegistry.LendingRequest",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "LendingRequestUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "nftIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "LoanClosed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "nftIndex",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseInterestAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "depositOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint16",
+            "name": "interestAprBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "minimumInterestBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "currency",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "startTime",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "endTime",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ILoanRegistry.Loan",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "LoanCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "nftIndex",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseInterestAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "depositOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint16",
+            "name": "interestAprBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "minimumInterestBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "currency",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "startTime",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "endTime",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ILoanRegistry.Loan",
+        "name": "newTerms",
+        "type": "tuple"
+      }
+    ],
+    "name": "LoanRefinanced",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "nftIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "repayAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LoanRepaid",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "LoanRequestDeleted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "interestAprBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "minimumInterestBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "durationDays",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "currency",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "expiration",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ILoanRegistry.LoanRequest",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "LoanRequestUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "CONTROLLER_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MINIMUM_REFINANCE_INTEREST_CHANGE_BPS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "NEW_LENDING_REQUEST_INDEX",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_addr",
+        "type": "address"
+      }
+    ],
+    "name": "addCurrency",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nftIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateInterest",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nftIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_sender",
+        "type": "address"
+      }
+    ],
+    "name": "closeLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_nonce",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nftIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collection",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "collectionWide",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint16",
+            "name": "interestAprBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "minimumInterestBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "durationDays",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "currency",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "expiration",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ILoanRegistry.LendingRequest",
+        "name": "_request",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bool",
+        "name": "_transferFromController",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "_transferToController",
+        "type": "bool"
+      }
+    ],
+    "name": "createOrUpdateLendingRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nftIndex",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "interestAprBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "minimumInterestBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "durationDays",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "currency",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "expiration",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ILoanRegistry.LoanRequest",
+        "name": "_request",
+        "type": "tuple"
+      }
+    ],
+    "name": "createOrUpdateLoanRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "name": "currencies",
+    "outputs": [
+      {
+        "internalType": "contract IERC20",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_nonce",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_sender",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_transferToController",
+        "type": "bool"
+      }
+    ],
+    "name": "deleteLendingRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nftIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "deleteLoanRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nftIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "isCollateralAvailable",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "lendingRequests",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "principal",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "nftIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "collection",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "collectionWide",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint16",
+        "name": "interestAprBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "minimumInterestBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "durationDays",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint8",
+        "name": "currency",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "expiration",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "loanRequests",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "principal",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint16",
+        "name": "interestAprBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "minimumInterestBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "durationDays",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint8",
+        "name": "currency",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "expiration",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "loans",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "principal",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "baseInterestAmount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "depositOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "interestAprBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "minimumInterestBps",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint8",
+        "name": "currency",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "startTime",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "endTime",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nextCurrencyIndex",
+    "outputs": [
+      {
+        "internalType": "uint8",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "nextDepositNonce",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nftIndex",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "principal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nftIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "collection",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "collectionWide",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint16",
+            "name": "interestAprBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "minimumInterestBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "durationDays",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "currency",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint32",
+            "name": "expiration",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ILoanRegistry.LendingRequest",
+        "name": "_request",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bool",
+        "name": "_transferFromController",
+        "type": "bool"
+      }
+    ],
+    "name": "refinanceLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "callerConfirmation",
+        "type": "address"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nftIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_sender",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_transferFromController",
+        "type": "bool"
+      }
+    ],
+    "name": "repayLoan",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_lendingNonce",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nftIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_transferFromController",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "_transferToController",
+        "type": "bool"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_expectedTerms",
+        "type": "bytes32"
+      }
+    ],
+    "name": "takeLendingRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_nftIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_lendingNonce",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_sender",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_recipient",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "_transferFromController",
+        "type": "bool"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_expectedTerms",
+        "type": "bytes32"
+      }
+    ],
+    "name": "takeLoanRequest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

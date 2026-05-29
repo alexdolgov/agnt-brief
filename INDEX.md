@@ -666,6 +666,7 @@
 | [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-05-27 |
 | [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 3 | 65 | 2026-05-29 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 3 | 10 | 2026-05-29 |
+| [volta-club](./volta-club/) | $976.2M | 0.0% | $976.2M | unknown | 3 | 319 | 2026-05-29 |
 | [wan-bridge](./wan-bridge/) | $1.8M | 0.0% | $1.8M | active | 3 | 153 | 2026-05-25 |
 | [wanswap-dex](./wanswap-dex/) | $1.5M | 2.8% | $1.5M | declining | 1 | 53 | 2026-05-25 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | rugged | 8 | 83 | 2026-05-25 |

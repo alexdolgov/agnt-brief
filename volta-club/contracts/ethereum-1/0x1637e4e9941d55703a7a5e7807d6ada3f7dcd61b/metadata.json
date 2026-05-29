@@ -1,0 +1,18 @@
+{
+  "address": "0x1637e4e9941d55703a7a5e7807d6ada3f7dcd61b",
+  "chain_id": 1,
+  "contract_name": "XINV",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T17:29:36.477Z"
+}

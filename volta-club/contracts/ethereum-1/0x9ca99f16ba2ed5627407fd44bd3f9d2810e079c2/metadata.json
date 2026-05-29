@@ -1,0 +1,18 @@
+{
+  "address": "0x9ca99f16ba2ed5627407fd44bd3f9d2810e079c2",
+  "chain_id": 1,
+  "contract_name": "PoolDeployer",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T17:29:46.287Z"
+}

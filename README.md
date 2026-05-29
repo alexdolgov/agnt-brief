@@ -18,6 +18,7 @@ Each project directory contains:
 | [angle](./angle/brief.md) | $3.46M | 7 | 624 | 331/624 (53%) | 1.8% | 0.0% (-) | 2 | stale | 💀 dead | $1397.79M |
 | [singularv](./singularv/brief.md) | $2.54M | ethereum | 83 | 70/83 (84%) | 18.6% | 11.4% (ChainSecurity, Spearbit) | 8 | stale | ❓ unknown | $1083.21M |
 | [rumpel-labs](./rumpel-labs/brief.md) | $1.92M | ethereum | 115 | 101/115 (88%) | 2.0% | 0.0% (-) | 2 | aging | ⚠️ declining | $1039.27M |
+| [volta-club](./volta-club/brief.md) | $1.28M | avalanche, ethereum | 319 | 181/319 (57%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $976.19M |
 | [bracket-protocol](./bracket-protocol/brief.md) | $3.09M | arbitrum, ethereum | 60 | 48/60 (80%) | 16.7% | 0.0% (-) | 4 | fresh | ✅ active | $920.58M |
 | [planet](./planet/brief.md) | $1.85M | bsc | 34 | 26/34 (76%) | 7.7% | 0.0% (-) | 1 | stale | 💀 dead | $778.29M |
 | [mantra-dao](./mantra-dao/brief.md) | $1.75M | ethereum, polygon | 209 | 90/209 (43%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $612.50M |
@@ -712,5 +713,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T17:28:05.319Z_
-_Projects: 700_
+_Generated: 2026-05-29T17:30:28.304Z_
+_Projects: 701_

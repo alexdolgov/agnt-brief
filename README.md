@@ -104,7 +104,7 @@ Each project directory contains:
 | [zklink-nova](./zklink-nova/brief.md) | $13.41M | 11 | 381 | 106/381 (28%) | 15.3% | 3.6% (OpenZeppelin) | 10 | aging | ⚠️ declining | $33.89M |
 | [backedfi](./backedfi/brief.md) | $8.20M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $33.35M |
 | [nodedao](./nodedao/brief.md) | $33.69M | ethereum | 18 | 18/18 (100%) | 38.9% | 0.0% (-) | 4 | aging | ✅ active | $33.27M |
-| [obeliskbtc](./obeliskbtc/brief.md) | $9.05M | ethereum | 19 | 19/19 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $33.19M |
+| [obeliskbtc](./obeliskbtc/brief.md) | $8.95M | ethereum | 19 | 19/19 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $33.19M |
 | [treehouse-protocol](./treehouse-protocol/brief.md) | $87.67M | ethereum | 78 | 69/78 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $31.17M |
 | [eth-strategy](./eth-strategy/brief.md) | $3.88M | ethereum | 49 | 41/49 (84%) | 0.0% | 0.0% (-) | 0 | fresh | ✅ active | $30.76M |
 | [index-coop](./index-coop/brief.md) | $13.14M | 4 | 236 | 112/236 (47%) | 13.4% | 0.9% (Code4rena) | 5 | aging | ⚠️ declining | $28.18M |
@@ -699,5 +699,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T11:25:58.178Z_
+_Generated: 2026-05-29T11:28:50.675Z_
 _Projects: 687_

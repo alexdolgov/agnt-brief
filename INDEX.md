@@ -411,7 +411,7 @@
 | [notional](./notional/) | $1.2M | 19.2% | $755.7K | dead | 7 | 79 | 2026-05-24 |
 | [nucleus](./nucleus/) | $996.4K | 50.0% | ? | active | 11 | 6 | 2026-05-26 |
 | [nuls](./nuls/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
-| [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 0 | 19 | 2026-05-23 |
+| [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 3 | 19 | 2026-05-29 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
 | [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-05-25 |
 | [odyssey-finance](./odyssey-finance/) | $9.5M | 0.0% | ? | active | 0 | 79 | 2026-05-23 |

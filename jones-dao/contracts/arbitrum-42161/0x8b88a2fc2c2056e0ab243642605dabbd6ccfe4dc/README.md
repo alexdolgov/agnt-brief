@@ -1,0 +1,16 @@
+# CrvPutPriceOracle
+
+| Field | Value |
+|---|---|
+| Chain | arbitrum (42161) |
+| Address | `0x8b88a2fc2c2056e0ab243642605dabbd6ccfe4dc` |
+| Role | operational_periphery |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (arbitrum [`0x8b88a2fc2c2056e0ab243642605dabbd6ccfe4dc`](../0x8b88a2fc2c2056e0ab243642605dabbd6ccfe4dc/)) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

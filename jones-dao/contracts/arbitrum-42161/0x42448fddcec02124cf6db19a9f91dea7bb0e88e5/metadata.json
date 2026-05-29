@@ -1,0 +1,18 @@
+{
+  "address": "0x42448fddcec02124cf6db19a9f91dea7bb0e88e5",
+  "chain_id": 42161,
+  "contract_name": "JonesERC20VaultV3",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "GPL-3.0, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:31:56.961Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x09a31770ed3f47a08a8cd85df3ec4c009fedc2d3",
+  "chain_id": 42161,
+  "contract_name": "AlgebraLPManager",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:31:32.889Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x00fd61b802484eaf39c054a601bdfc08dd04653f",
+  "chain_id": 42161,
+  "contract_name": "GMRouter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 75,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:31:26.202Z"
+}

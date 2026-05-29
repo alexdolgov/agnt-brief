@@ -1,0 +1,18 @@
+{
+  "address": "0x74cadbdf7850abd4f9bd355e528a9b23a2d334b4",
+  "chain_id": 42161,
+  "contract_name": "PriceOracleAggregator",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:32:05.888Z"
+}

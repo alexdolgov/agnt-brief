@@ -1,0 +1,18 @@
+{
+  "address": "0xfc240385b257dac2600e7fd643090e02bdc314d0",
+  "chain_id": 42161,
+  "contract_name": "SSOVDelegatorFactory",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0, MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:32:15.260Z"
+}

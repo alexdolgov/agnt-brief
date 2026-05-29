@@ -1,0 +1,17 @@
+{
+  "address": "0xe5a8ab24dc1b0f54dc3803cb33098879f8ccba61",
+  "chain_id": 42161,
+  "contract_name": "JonesGohmPutStrategy",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:32:14.489Z"
+}

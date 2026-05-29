@@ -1,0 +1,18 @@
+{
+  "address": "0x2da83188f2c6f760db0493a7087266fd1e9a7076",
+  "chain_id": 42161,
+  "contract_name": "GmxPutPriceOracleV2",
+  "compiler_version": "v0.8.16+commit.07a7930e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:31:48.564Z"
+}

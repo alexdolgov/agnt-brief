@@ -1,0 +1,18 @@
+{
+  "address": "0x7745370dfcc3780dd7675995b529d4e24960c015",
+  "chain_id": 42161,
+  "contract_name": "AtlanticStraddleVolatilityOracle",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:32:06.201Z"
+}

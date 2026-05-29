@@ -1,0 +1,17 @@
+{
+  "address": "0x0359b4dcd2412ff0dafa8b020bcb57aa8bd13a33",
+  "chain_id": 42161,
+  "contract_name": "DpxSSOV",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 36,
+  "constructor_arguments": "0000000000000000000000006c2c06790b3e3e3c38e12ee22f8183b37a13ee5500000000000000000000000032eb7902d4134bf98a28b963d26de779af92a212000000000000000000000000c6d714170fe766691670f12c2b45c1f34405aab60000000000000000000000002b99e3d67dad973c1b9747da742b7e26c8bdd67b0000000000000000000000001ab57eb61f1661e1f013c86caa30b31ae7cc4fdd000000000000000000000000b6645813567bb5beea8f62e793d075fe6d3be0b100000000000000000000000055594cce8cc0014ea08c49fd820d731308f204c1",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:31:27.872Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x8d9ba570d6cb60c7e3e0f31343efe75ab8e65fb1",
+  "chain_id": 42161,
+  "contract_name": "SynapseERC20",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:32:09.335Z"
+}

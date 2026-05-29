@@ -1,0 +1,17 @@
+{
+  "address": "0x0af020886c7fc1243c3f843ee76345e2ab6f7a0d",
+  "chain_id": 42161,
+  "contract_name": "RewardReceiver",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:31:22.435Z"
+}

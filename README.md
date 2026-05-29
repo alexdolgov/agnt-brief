@@ -21,6 +21,7 @@ Each project directory contains:
 | [planet](./planet/brief.md) | $1.85M | bsc | 34 | 26/34 (76%) | 7.7% | 0.0% (-) | 1 | stale | 💀 dead | $778.29M |
 | [mantra-dao](./mantra-dao/brief.md) | $1.75M | ethereum, polygon | 209 | 90/209 (43%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $612.50M |
 | [trevee-earn](./trevee-earn/brief.md) | $1.15M | ethereum, plasma, sonic | 15 | 14/15 (93%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $582.18M |
+| [jones-dao](./jones-dao/brief.md) | $1.46M | 5 | 500 | 339/500 (68%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $519.75M |
 | [trust-wallet](./trust-wallet/brief.md) | $39.04M | bsc | 6 | 4/6 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $470.22M |
 | [inverse-finance](./inverse-finance/brief.md) | $41.93M | 5 | 154 | 144/154 (94%) | 11.1% | 7.6% (Code4rena, Sherlock) | 5 | fresh | ❓ unknown | $428.77M |
 | [onyx](./onyx/brief.md) | $58.89M | ethereum | 16 | 14/16 (88%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $384.43M |
@@ -694,5 +695,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T09:28:55.709Z_
-_Projects: 682_
+_Generated: 2026-05-29T09:32:52.542Z_
+_Projects: 683_

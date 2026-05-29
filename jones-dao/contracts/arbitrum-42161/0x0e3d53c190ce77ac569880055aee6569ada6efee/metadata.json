@@ -1,0 +1,17 @@
+{
+  "address": "0x0e3d53c190ce77ac569880055aee6569ada6efee",
+  "chain_id": 42161,
+  "contract_name": "UniV3Library",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:31:45.142Z"
+}

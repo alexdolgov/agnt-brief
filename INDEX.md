@@ -531,6 +531,7 @@
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 3 | 2 | 2026-05-29 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-05-26 |
+| [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 3 | 231 | 2026-05-29 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-05-23 |
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-05-24 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |

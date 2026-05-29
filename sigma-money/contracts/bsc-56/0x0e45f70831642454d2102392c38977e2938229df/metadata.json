@@ -1,0 +1,17 @@
+{
+  "address": "0x0e45f70831642454d2102392c38977e2938229df",
+  "chain_id": 56,
+  "contract_name": "VestingWallet",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 11,
+  "constructor_arguments": "000000000000000000000000cc83381ebdc8995bbdc152453f7d76b503b31382000000000000000000000000000000000000000000000000000000006980b0380000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:07:56.895Z"
+}

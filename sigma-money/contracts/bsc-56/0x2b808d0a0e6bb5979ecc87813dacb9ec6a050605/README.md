@@ -1,0 +1,16 @@
+# XShadow
+
+| Field | Value |
+|---|---|
+| Chain | bsc (56) |
+| Address | `0x2b808d0a0e6bb5979ecc87813dacb9ec6a050605` |
+| Role | unknown |
+| Origin | needs_review |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 6 (bsc [`0x2b808d0a0e6bb5979ecc87813dacb9ec6a050605`](../0x2b808d0a0e6bb5979ecc87813dacb9ec6a050605/); bsc `0x5876123273560059cb5798f10e2990ed493247a9`; bsc `0x66a24749dfaf0db981a0bbb2c3a8ab70292e8442`; bsc `0x87b66256e0f05997cd88cb15207b8dfaf2675fb3`; bsc `0x9922bccc2ee7f8ac4275e135eee0b99c6b213b03`; bsc `0xce611ef5c02b27c000b1708263b42f9a83d9c340`) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

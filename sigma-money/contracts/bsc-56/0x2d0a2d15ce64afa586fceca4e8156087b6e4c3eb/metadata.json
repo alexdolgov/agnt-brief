@@ -1,0 +1,17 @@
+{
+  "address": "0x2d0a2d15ce64afa586fceca4e8156087b6e4c3eb",
+  "chain_id": 56,
+  "contract_name": "LisAsterStaking",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:08:02.000Z"
+}

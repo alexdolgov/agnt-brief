@@ -1,0 +1,17 @@
+{
+  "address": "0x9d16591537f939a341ca2a221781586b15f46cea",
+  "chain_id": 56,
+  "contract_name": "AutoRefunder",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:08:09.456Z"
+}

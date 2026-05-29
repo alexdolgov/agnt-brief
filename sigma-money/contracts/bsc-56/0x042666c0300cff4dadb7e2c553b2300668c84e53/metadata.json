@@ -1,0 +1,17 @@
+{
+  "address": "0x042666c0300cff4dadb7e2c553b2300668c84e53",
+  "chain_id": 56,
+  "contract_name": "SigmaVesting",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 45,
+  "constructor_arguments": "00000000000000000000000085375d3e9c4a39350f1140280a8b0de6890a40e70000000000000000000000002b808d0a0e6bb5979ecc87813dacb9ec6a0506050000000000000000000000001cd4e4bd0bd0a6f712c23d51e874905490f1456d000000000000000000000000a1266373dd701fc179f60eafbc3ae76cf355ee3d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:07:53.281Z"
+}

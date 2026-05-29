@@ -1,0 +1,17 @@
+{
+  "address": "0x7da003f123c48f42a2149bfff107ac5d531265e0",
+  "chain_id": 56,
+  "contract_name": "sUSDXPriceFeed",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:08:07.954Z"
+}

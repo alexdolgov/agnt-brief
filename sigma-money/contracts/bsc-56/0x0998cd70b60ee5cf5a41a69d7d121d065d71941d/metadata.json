@@ -1,0 +1,18 @@
+{
+  "address": "0x0998cd70b60ee5cf5a41a69d7d121d065d71941d",
+  "chain_id": 56,
+  "contract_name": "PancakeSwapV3LpStakingVault",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "london",
+  "license": "CC-BY-4.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:07:55.524Z"
+}

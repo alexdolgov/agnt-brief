@@ -1,0 +1,17 @@
+{
+  "address": "0x6e64923a9c1dc94e2b746c5dc58abebd2d2e0b56",
+  "chain_id": 56,
+  "contract_name": "StableUsdtPriceFeed",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "000000000000000000000000f3afd82a4071f272f403dc176916141f44e6c750",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:08:07.300Z"
+}

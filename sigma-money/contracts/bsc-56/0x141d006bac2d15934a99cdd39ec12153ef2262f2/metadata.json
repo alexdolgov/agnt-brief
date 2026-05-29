@@ -1,0 +1,17 @@
+{
+  "address": "0x141d006bac2d15934a99cdd39ec12153ef2262f2",
+  "chain_id": 56,
+  "contract_name": "SigmaClisBNBSY",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 36,
+  "constructor_arguments": "0000000000000000000000001adb950d8bb3da4be104211d5ab038628e477fe6000000000000000000000000b0b84d294e0c75a6abe60171b70edeb2efd14a1b000000000000000000000000fd31e1c5e5571f8e7fe318f80888c1e6da97819b000000000000000000000000d57e5321e67607fab38347d96394e0e58509c506",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:07:58.564Z"
+}

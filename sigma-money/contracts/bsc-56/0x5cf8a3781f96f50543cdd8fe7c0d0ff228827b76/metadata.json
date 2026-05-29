@@ -1,0 +1,17 @@
+{
+  "address": "0x5cf8a3781f96f50543cdd8fe7c0d0ff228827b76",
+  "chain_id": 56,
+  "contract_name": "ListaStrategy",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "0000000000000000000000001343571eeaa7dd089996cdafff7da446423b21a90000000000000000000000002b9c1f069ddcd873275b3363986081bda94a3aa30000000000000000000000006402d64f035e18f9834591d3b994dfe41a0f162d00000000000000000000000055d398326f99059ff775485246999027b3197955",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:08:06.012Z"
+}

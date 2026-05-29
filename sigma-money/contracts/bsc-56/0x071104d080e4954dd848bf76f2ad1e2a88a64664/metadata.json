@@ -1,0 +1,17 @@
+{
+  "address": "0x071104d080e4954dd848bf76f2ad1e2a88a64664",
+  "chain_id": 56,
+  "contract_name": "LongPositionOperateFacet",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 17,
+  "constructor_arguments": "0000000000000000000000008f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c000000000000000000000000f77f6aba5c1da77ff9e03ae6f41b76b6b5137f160000000000000000000000005afb30d7f5b0c512e9010047ad384284ca0cb52b0000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:07:54.701Z"
+}

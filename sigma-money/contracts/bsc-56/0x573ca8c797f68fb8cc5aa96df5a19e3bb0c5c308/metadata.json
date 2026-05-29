@@ -1,0 +1,17 @@
+{
+  "address": "0x573ca8c797f68fb8cc5aa96df5a19e3bb0c5c308",
+  "chain_id": 56,
+  "contract_name": "SyrupUSDTPriceFeed",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "london",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "000000000000000000000000f3afd82a4071f272f403dc176916141f44e6c750000000000000000000000000ac9962aab7b8fe63fa3a5065c22d4dd700b1c658",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:08:05.695Z"
+}

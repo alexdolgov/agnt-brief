@@ -1,0 +1,382 @@
+// SPDX-License-Identifier: BUSL-1.1
+pragma solidity ^0.8.26;
+pragma abicoder v2;
+
+interface IVoter {
+    error ACTIVE_GAUGE(address gauge);
+
+    error GAUGE_INACTIVE(address gauge);
+
+    error ALREADY_WHITELISTED(address token);
+
+    error NOT_AUTHORIZED(address caller);
+
+    error NOT_WHITELISTED();
+
+    error NOT_POOL();
+
+    error NOT_INIT();
+
+    error LENGTH_MISMATCH();
+
+    error NO_GAUGE();
+
+    error ALREADY_DISTRIBUTED(address gauge, uint256 period);
+
+    error ZERO_VOTE(address pool);
+
+    error RATIO_TOO_HIGH(uint256 _xRatio);
+
+    error VOTE_UNSUCCESSFUL();
+
+    error TOTAL_PREALLOCATION_EXCEEDS_MAX();
+
+    error NOT_SIGMA_GAUGE();
+
+    error EMISSION_EXCEEDS_MAX();
+
+    error NOT_PREALLOCATABLE_GAUGE();
+
+    event GaugeCreated(
+        address indexed gauge,
+        address creator,
+        address feeDistributor,
+        address indexed pool
+    );
+
+    event GaugeKilled(address indexed gauge);
+
+    event GaugeRevived(address indexed gauge);
+
+    event Voted(address indexed owner, uint256 weight, address indexed pool);
+
+    event Abstained(address indexed owner, uint256 weight);
+
+    event Deposit(
+        address indexed lp,
+        address indexed gauge,
+        address indexed owner,
+        uint256 amount
+    );
+
+    event Withdraw(
+        address indexed lp,
+        address indexed gauge,
+        address indexed owner,
+        uint256 amount
+    );
+
+    event NotifyReward(
+        address indexed sender,
+        address indexed reward,
+        uint256 amount
+    );
+
+    event DistributeReward(
+        address indexed sender,
+        address indexed gauge,
+        uint256 amount
+    );
+
+    event EmissionsRatio(
+        address indexed caller,
+        uint256 oldRatio,
+        uint256 newRatio
+    );
+
+    event NewGovernor(address indexed sender, address indexed governor);
+
+    event Whitelisted(address indexed whitelister, address indexed token);
+
+    event WhitelistRevoked(
+        address indexed forbidder,
+        address indexed token,
+        bool status
+    );
+
+
+
+    event Poke(address indexed user);
+
+    event SigmaGaugePreallocationChanged(
+        address indexed gauge,
+        uint256 oldPreallocation,
+        uint256 newPreallocation
+    );
+
+    event GaugePreallocationChanged(
+        address indexed gauge,
+        uint256 oldPreallocation,
+        uint256 newPreallocation
+    );
+
+    function initialize(
+        address _shadow,
+        address _veFunderGaugeFactory,
+        address _sigmaGaugeFactory,
+        address _sigmaFeeDistributorFactory,
+        address _gaugeEmission,
+        address _msig,
+        address _xShadow,
+        address _voteModule,
+        uint256 _maxTotalSigmaGaugePreallocation,
+        uint256 _maxVeFunderGaugeCap
+    ) external;
+
+    /// @notice denominator basis
+    function BASIS() external view returns (uint256);
+
+    /// @notice maximum total preallocation for all SigmaGauges
+    function maxTotalSigmaGaugePreallocation() external view returns (uint256);
+
+    /// @notice ratio of xShadow emissions globally
+    function xRatio() external view returns (uint256);
+
+    /// @notice maximum emission for a VeFunderGauge
+    function maxVeFunderGaugeCap() external view returns (uint256);
+
+    /// @notice xShadow contract address
+    function xShadow() external view returns (address);
+
+
+
+    /// @notice returns the address of the current governor
+    /// @return _governor address of the governor
+    function governor() external view returns (address _governor);
+
+    /// @notice the address of the vote module
+    /// @return _voteModule the vote module contract address
+    function voteModule() external view returns (address _voteModule);
+
+    /// @notice address of the central access Hub
+    function accessHub() external view returns (address);
+
+    /// @notice distributes emissions from the gaugeEmission to the voter
+    /// @param amount the amount of tokens to notify
+    function notifyRewardAmount(uint256 amount) external;
+
+    /// @notice distributes the emissions for a specific gauge
+    /// @param _gauge the gauge address
+    function distribute(address _gauge) external;
+
+    /// @notice returns the address of the veFunder gauge factory
+    function veFunderGaugeFactory() external view returns (address _veFunderGaugeFactory);
+
+    /// @notice returns the address of the sigma gauge factory
+    function sigmaGaugeFactory() external view returns (address _sigmaGaugeFactory);
+
+    /// @notice returns the address of the sigma fee distributor factory
+    function sigmaFeeDistributorFactory() external view returns (address _sigmaFeeDistributorFactory);
+
+
+
+    /// @notice returns the address of the gaugeEmission contract
+    /// @return _gaugeEmission address of the gaugeEmission
+    function gaugeEmission() external view returns (address _gaugeEmission);
+
+    /// @notice check if the gauge is active for governance use
+    /// @param _gauge address of the gauge
+    /// @return _trueOrFalse if the gauge is alive
+    function isAlive(address _gauge) external view returns (bool _trueOrFalse);
+
+    /// @notice allows the token to be paired with other whitelisted assets to participate in governance
+    /// @param _token the address of the token
+    function whitelist(address _token) external;
+
+    /// @notice effectively disqualifies a token from governance
+    /// @param _token the address of the token
+    function revokeWhitelist(address _token) external;
+
+    /// @notice returns if the address is a gauge
+    /// @param gauge address of the gauge
+    /// @return _trueOrFalse boolean if the address is a gauge
+    function isGauge(address gauge) external view returns (bool _trueOrFalse);
+
+    /// @notice disable a gauge from governance
+    /// @param _gauge address of the gauge
+    function killGauge(address _gauge) external;
+
+    /// @notice re-activate a dead gauge
+    /// @param _gauge address of the gauge
+    function reviveGauge(address _gauge) external;
+
+    /// @notice re-cast a tokenID's votes
+    /// @param owner address of the owner
+    function poke(address owner) external;
+
+
+
+    /// @notice returns if the address is a fee distributor
+    /// @param _feeDistributor address of the feeDist
+    /// @return _trueOrFalse if the address is a fee distributor
+    function isFeeDistributor(
+        address _feeDistributor
+    ) external view returns (bool _trueOrFalse);
+
+    /// @notice returns the address of the emission's token
+    /// @return _shadow emissions token contract address
+    function shadow() external view returns (address _shadow);
+
+    /// @notice returns the address of the pool's gauge, if any
+    /// @param _pool pool address
+    /// @return _gauge gauge address
+    function gaugeForPool(address _pool) external view returns (address _gauge);
+
+    /// @notice returns the address of the pool's feeDistributor, if any
+    /// @param _gauge address of the gauge
+    /// @return _feeDistributor address of the pool's feedist
+    function feeDistributorForGauge(
+        address _gauge
+    ) external view returns (address _feeDistributor);
+
+
+    /// @notice returns the block.timestamp divided by 1 week in seconds
+    /// @return period the period used for gauges
+    function getPeriod() external view returns (uint256 period);
+
+    /// @notice cast a vote to direct emissions to gauges and earn incentives
+    /// @param owner address of the owner
+    /// @param _pools the list of pools to vote on
+    /// @param _weights an arbitrary weight per pool which will be normalized to 100% regardless of numerical inputs
+    function vote(
+        address owner,
+        address[] calldata _pools,
+        uint256[] calldata _weights
+    ) external;
+
+    /// @notice reset the vote of an address
+    /// @param owner address of the owner
+    function reset(address owner) external;
+
+    /// @notice set the governor address
+    /// @param _governor the new governor address
+    function setGovernor(address _governor) external;
+
+    /// @notice recover stuck emissions
+    /// @param _gauge the gauge address
+    /// @param _period the period
+    function stuckEmissionsRecovery(address _gauge, uint256 _period) external;
+
+    /// @notice whitelists extra rewards for a gauge
+    /// @param _gauge the gauge to whitelist rewards to
+    /// @param _reward the reward to whitelist
+    function whitelistGaugeRewards(address _gauge, address _reward) external;
+
+    /// @notice removes a reward from the gauge whitelist
+    /// @param _gauge the gauge to remove the whitelist from
+    /// @param _reward the reward to remove from the whitelist
+    function removeGaugeRewardWhitelist(
+        address _gauge,
+        address _reward
+    ) external;
+
+
+
+    /// @notice claim arbitrary rewards from specific feeDists
+    /// @param owner address of the owner
+    /// @param _feeDistributors address of the feeDists
+    /// @param _tokens two dimensional array for the tokens to claim
+    function claimIncentives(
+        address owner,
+        address[] calldata _feeDistributors,
+        address[][] calldata _tokens
+    ) external;
+
+    /// @notice claim arbitrary rewards from specific gauges
+    /// @param _gauges address of the gauges
+    /// @param _tokens two dimensional array for the tokens to claim
+    function claimRewards(
+        address[] calldata _gauges,
+        address[][] calldata _tokens
+    ) external;
+
+    /// @notice claim arbitrary rewards from specific legacy gauges, and exit to shadow
+    /// @param _gauges address of the gauges
+    /// @param _tokens two dimensional array for the tokens to claim
+    function claimLegacyRewardsAndExit(
+        address[] calldata _gauges,
+        address[][] calldata _tokens
+    ) external;
+
+    /// @notice distribute emissions to a gauge for a specific period
+    /// @param _gauge address of the gauge
+    /// @param _period value of the period
+    function distributeForPeriod(address _gauge, uint256 _period) external;
+
+    /// @notice attempt distribution of emissions to all gauges
+    function distributeAll() external;
+
+    /// @notice distribute emissions to gauges by index
+    /// @param startIndex start of the loop
+    /// @param endIndex end of the loop
+    function batchDistributeByIndex(
+        uint256 startIndex,
+        uint256 endIndex
+    ) external;
+
+    /// @notice returns the votes cast for a tokenID
+    /// @param owner address of the owner
+    /// @return votes an array of votes casted
+    /// @return weights an array of the weights casted per pool
+    function getVotes(
+        address owner,
+        uint256 period
+    ) external view returns (address[] memory votes, uint256[] memory weights);
+
+    /// @notice returns an array of all the gauges
+    /// @return _gauges the array of gauges
+    function getAllGauges() external view returns (address[] memory _gauges);
+
+    /// @notice returns an array of all the feeDists
+    /// @return _feeDistributors the array of feeDists
+    function getAllFeeDistributors()
+        external
+        view
+        returns (address[] memory _feeDistributors);
+
+    /// @notice sets the xShadowRatio default
+    function setGlobalRatio(uint256 _xRatio) external;
+
+    /// @notice whether the token is whitelisted in governance
+    function isWhitelisted(address _token) external view returns (bool _tf);
+
+    /// @notice function for removing malicious or stuffed tokens
+    function removeFeeDistributorReward(
+        address _feeDist,
+        address _token
+    ) external;
+
+    /// @notice creates a sigma gauge for the pool
+    /// @param _pool pool's address
+    /// @param _preallocationBps preallocation percentage using BASIS (max 1_000_000 = 100%)
+    /// @return _gauge address of the new gauge
+    function createSigmaGauge(address _pool, uint256 _preallocationBps) external returns (address _gauge);
+
+    /// @notice creates a veFunder gauge for the pool
+    /// @param _receiver address that will receive the emissions
+    /// @param _maxEmission maximum emission amount
+    /// @param _pool pool's address
+    /// @param _preallocationBps preallocation percentage using BASIS (max 1_000_000 = 100%)
+    /// @return _gauge address of the new gauge
+    function createVeFunderGauge(address _receiver, uint256 _maxEmission, address _pool, uint256 _preallocationBps) external returns (address _gauge);
+
+    /// @notice sets preallocation percentage for a SigmaGauge or VeFunderGauge
+    /// @param _gauge address of the SigmaGauge or VeFunderGauge
+    /// @param _preallocationBps new preallocation percentage using BASIS
+    function setGaugePreallocation(address _gauge, uint256 _preallocationBps) external;
+
+    /// @notice returns the preallocation percentage for a SigmaGauge or VeFunderGauge
+    /// @param _gauge address of the gauge
+    /// @return _preallocationBps preallocation percentage using BASIS
+    function gaugePreallocation(address _gauge) external view returns (uint256 _preallocationBps);
+
+    /// @notice returns if the gauge is a SigmaGauge
+    /// @param _gauge address of the gauge
+    /// @return _isSigmaGauge true if it's a SigmaGauge
+    function isSigmaGauge(address _gauge) external view returns (bool _isSigmaGauge);
+
+    /// @notice returns if the gauge is a VeFunderGauge
+    /// @param _gauge address of the gauge
+    /// @return _isVeFunderGauge true if it's a VeFunderGauge
+    function isVeFunderGauge(address _gauge) external view returns (bool _isVeFunderGauge);
+}

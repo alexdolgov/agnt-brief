@@ -248,7 +248,7 @@
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-05-23 |
 | [harvest-finance](./harvest-finance/) | $12.9M | 46.4% | ? | declining | 10 | 445 | 2026-05-29 |
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 52.6% | ? | dead | 3 | 51 | 2026-05-24 |
-| [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
+| [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 3 | 2 | 2026-05-29 |
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | sunsetting | 3 | 21 | 2026-05-24 |
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 0 | 63 | 2026-05-23 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |

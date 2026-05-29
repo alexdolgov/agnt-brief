@@ -491,7 +491,7 @@ Each project directory contains:
 | [harmonix-finance](./harmonix-finance/brief.md) | $4.89M | 4 | 127 | 9/127 (7%) | 10.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [harvest-finance](./harvest-finance/brief.md) | $12.93M | 5 | 445 | 265/445 (60%) | 46.4% | 0.0% (-) | 5 | aging | ⚠️ declining | - |
 | [hashdao-finance](./hashdao-finance/brief.md) | $1.67M | arbitrum, optimism | 51 | 17/51 (33%) | 52.6% | 0.0% (-) | 3 | stale | 💀 dead | - |
-| [hashkey-global](./hashkey-global/brief.md) | $15.15M | scroll | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [hashkey-global](./hashkey-global/brief.md) | $15.09M | scroll | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [hashport](./hashport/brief.md) | $1.69M | 10 | 21 | 13/21 (62%) | 100.0% | 0.0% (-) | 3 | stale | ❓ unknown | - |
 | [helix](./helix/brief.md) | $1.95M | ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [helix-finance](./helix-finance/brief.md) | $11.00M | ethereum | 9 | 9/9 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -691,5 +691,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T08:23:45.829Z_
+_Generated: 2026-05-29T08:25:40.690Z_
 _Projects: 679_

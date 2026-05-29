@@ -112,6 +112,7 @@ Each project directory contains:
 | [keep-network](./keep-network/brief.md) | $1.51M | 5 | 354 | 226/354 (64%) | 15.9% | 8.4% (ChainSecurity, ConsenSys Diligence) | 8 | fresh | 💀 dead | $26.17M |
 | [rocksolid-network](./rocksolid-network/brief.md) | $25.01M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $24.96M |
 | [flock.io](./flock.io/brief.md) | $9.77M | base | 15 | 14/15 (93%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $24.37M |
+| [iq](./iq/brief.md) | $5.04M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $23.85M |
 | [everrise](./everrise/brief.md) | $1.50M | 5 | 239 | 102/239 (43%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $23.38M |
 | [ethichub](./ethichub/brief.md) | $4.05M | celo, ethereum, gnosis | 58 | 46/58 (79%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $22.68M |
 | [hyperbeat](./hyperbeat/brief.md) | $47.37M | ethereum, hyperliquid | 222 | 141/222 (64%) | 10.6% | 5.0% (Certora) | 5 | fresh | ✅ active | $22.60M |
@@ -693,5 +694,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T09:20:33.244Z_
-_Projects: 681_
+_Generated: 2026-05-29T09:22:29.833Z_
+_Projects: 682_

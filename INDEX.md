@@ -610,7 +610,7 @@
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | unknown | 3 | 179 | 2026-05-29 |
 | [team-finance](./team-finance/) | $4.8K | 0.0% | $4.8K | active | 3 | 66 | 2026-05-29 |
 | [teller](./teller/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-05-24 |
+| [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 3 | 40 | 2026-05-29 |
 | [tender-finance](./tender-finance/) | $1.3M | 0.0% | ? | declining | 1 | 1 | 2026-05-25 |
 | [tenderize](./tenderize/) | $332.5M | 2.6% | $332.5M | declining | 7 | 43 | 2026-05-25 |
 | [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |

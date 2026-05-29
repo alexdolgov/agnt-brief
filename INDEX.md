@@ -389,7 +389,7 @@
 | [native](./native/) | $67.6M | 0.0% | $67.6M | active | 3 | 80 | 2026-05-29 |
 | [nawa-protocol](./nawa-protocol/) | $4.1M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [nbx](./nbx/) | $1.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 0 | 7 | 2026-05-27 |
+| [near-intents](./near-intents/) | $3.7M | 0.0% | $3.7M | active | 3 | 7 | 2026-05-29 |
 | [neemo-finance](./neemo-finance/) | $1.4M | 0.0% | ? | active | 1 | 14 | 2026-05-24 |
 | [neku](./neku/) | $8.4M | 0.0% | $8.4M | active | 1 | 17 | 2026-05-24 |
 | [neo-tokyo](./neo-tokyo/) | $1.1M | 0.0% | ? | unknown | 0 | 86 | 2026-05-25 |

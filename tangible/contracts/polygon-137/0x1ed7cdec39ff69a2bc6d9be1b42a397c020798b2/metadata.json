@@ -1,0 +1,17 @@
+{
+  "address": "0x1ed7cdec39ff69a2bc6d9be1b42a397c020798b2",
+  "chain_id": 137,
+  "contract_name": "USDRBonding",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:36.965Z"
+}

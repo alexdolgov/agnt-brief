@@ -1,0 +1,17 @@
+{
+  "address": "0x9c0f6a583e7cdc8533fd33300540f1246704583c",
+  "chain_id": 137,
+  "contract_name": "TNGBLLockedValue",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 10001,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:54:00.182Z"
+}

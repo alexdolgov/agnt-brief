@@ -1,0 +1,17 @@
+{
+  "address": "0xca926523b54cd6098274d4b2edd25a892a7d9835",
+  "chain_id": 137,
+  "contract_name": "RevenueShareCleanup",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "0000000000000000000000000531dfd07643b549a07f21dd5ba1da1e1c43142e",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:54:03.381Z"
+}

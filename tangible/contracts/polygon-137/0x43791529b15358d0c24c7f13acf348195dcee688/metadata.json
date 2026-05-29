@@ -1,0 +1,18 @@
+{
+  "address": "0x43791529b15358d0c24c7f13acf348195dcee688",
+  "chain_id": 137,
+  "contract_name": "Airdrop",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:49.164Z"
+}

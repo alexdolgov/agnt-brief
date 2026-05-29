@@ -1,0 +1,17 @@
+{
+  "address": "0x1fce21231cd7d8a75162216789d8c9859dfe8757",
+  "chain_id": 137,
+  "contract_name": "ProxyControlled",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": "0xa61d0acc8dbc60ecc0c7733f572bd4a28a08fb7f",
+  "fetched_at": "2026-05-29T15:53:37.553Z"
+}

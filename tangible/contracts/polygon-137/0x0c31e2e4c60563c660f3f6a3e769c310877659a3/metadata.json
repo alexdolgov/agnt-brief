@@ -1,0 +1,17 @@
+{
+  "address": "0x0c31e2e4c60563c660f3f6a3e769c310877659a3",
+  "chain_id": 137,
+  "contract_name": "IncentiveVault",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 10001,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:29.631Z"
+}

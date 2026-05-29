@@ -1,0 +1,862 @@
+[
+  {
+    "inputs": [],
+    "name": "ErrorAccessDenied",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorActionIsAlreadyDone",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "name": "ErrorAlreadyHead",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorAlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorApproverOrHeadOrGovOnly",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorApprovingReDelegationIsNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorArraysHaveDifferentLengths",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorCannotRemoveNotPermanentApprover",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorDataNotChanged",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorEmptyArrayNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorEmptyString",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorGovernanceOnly",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorGovernanceOrDepartmentHeadOnly",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncorrectAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncorrectDelegate",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.HourRate",
+        "name": "rate",
+        "type": "uint16"
+      }
+    ],
+    "name": "ErrorIncorrectRate",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncreaseRevisionForbidden",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "providedAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker",
+        "type": "uint64"
+      }
+    ],
+    "name": "ErrorNotApprover",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "providedAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker",
+        "type": "uint64"
+      }
+    ],
+    "name": "ErrorNotDelegated",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorNotEnoughFund",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorTheDelegateHasSamePermission",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorThePermissionIsAlreadyDelegated",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "currentLength",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxAllowedLength",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorTooLongString",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      }
+    ],
+    "name": "ErrorUnknownDepartment",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "uid",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorUnknownRequest",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorWorkerCannotBeApprover",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "uid",
+        "type": "uint64"
+      }
+    ],
+    "name": "ErrorWorkerNotFound",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "errorCode",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "errorCode",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorZeroValueNotAllowed",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "controller",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "ts",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "block",
+        "type": "uint256"
+      }
+    ],
+    "name": "ContractInitialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      }
+    ],
+    "name": "OnAddApprover",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "delegate",
+        "type": "address"
+      }
+    ],
+    "name": "OnAddDelegate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      }
+    ],
+    "name": "OnRemoveApprover",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "delegate",
+        "type": "address"
+      }
+    ],
+    "name": "OnRevokeDelegate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldLogic",
+        "type": "address"
+      }
+    ],
+    "name": "RevisionIncreased",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "APPROVER_DELEGATE",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverKind",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "APPROVER_PERMANENT",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverKind",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CONTROLLABLE_VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FLAG_IS_APPROVER",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "NOT_APPROVER_DELEGATED",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverKind",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "controller_",
+        "type": "address"
+      }
+    ],
+    "name": "__Controllable_init",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      }
+    ],
+    "name": "addApprover",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "delegate_",
+        "type": "address"
+      }
+    ],
+    "name": "addDelegation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "approverToWorkers",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.ApproverPair",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "approvers",
+    "outputs": [
+      {
+        "internalType": "enum IClerkTypes.ApprovePermissionKind",
+        "name": "kind",
+        "type": "uint8"
+      },
+      {
+        "internalType": "address",
+        "name": "delegatedTo",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "controller",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "created",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "createdBlock",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      }
+    ],
+    "name": "getApproverKind",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverKind",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "approver",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      }
+    ],
+    "name": "getApproverPair",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverPair",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "oldLogic",
+        "type": "address"
+      }
+    ],
+    "name": "increaseRevision",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "controller_",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      }
+    ],
+    "name": "isApprover",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_value",
+        "type": "address"
+      }
+    ],
+    "name": "isController",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_value",
+        "type": "address"
+      }
+    ],
+    "name": "isGovernance",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      }
+    ],
+    "name": "isRegisteredApprover",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      }
+    ],
+    "name": "lengthApproverToWorkers",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "workerUid",
+        "type": "uint64"
+      }
+    ],
+    "name": "lengthWorkersToPermanentApprovers",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "previousImplementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      }
+    ],
+    "name": "removeApprover",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "revision",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "delegate_",
+        "type": "address"
+      }
+    ],
+    "name": "revokeDelegation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "workersToPermanentApprovers",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

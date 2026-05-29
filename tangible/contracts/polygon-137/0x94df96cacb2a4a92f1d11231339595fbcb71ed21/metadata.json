@@ -1,0 +1,17 @@
+{
+  "address": "0x94df96cacb2a4a92f1d11231339595fbcb71ed21",
+  "chain_id": 137,
+  "contract_name": "StrategyDinoPool",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "0000000000000000000000006678814c273d5088114b6e40cc49c8db04f9bc2900000000000000000000000064c86f9e59cd9de668fb24305831e51ba8d34059000000000000000000000000aa9654becca45b5bdfa5ac646c939c62b527d394",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:59.384Z"
+}

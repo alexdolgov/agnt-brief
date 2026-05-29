@@ -1,0 +1,18 @@
+{
+  "address": "0x39f9f458337d801378706748705b0be9adb8f8df",
+  "chain_id": 10,
+  "contract_name": "USDRMigrationV2",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 10001,
+  "evm_version": "london",
+  "license": "AGPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:15.285Z"
+}

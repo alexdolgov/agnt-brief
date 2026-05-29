@@ -1,0 +1,1991 @@
+[
+  {
+    "inputs": [],
+    "name": "ErrorAccessDenied",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorActionIsAlreadyDone",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "name": "ErrorAlreadyHead",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorAlreadyInitialized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorArraysHaveDifferentLengths",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorCannotMoveHeadToAnotherDepartment",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorDataNotChanged",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      }
+    ],
+    "name": "ErrorDepartmentAlreadyRegistered",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorEmptyArrayNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorEmptyString",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorGovernanceOnly",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorGovernanceOrDepartmentHeadOnly",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncorrectAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.HourRate",
+        "name": "rate",
+        "type": "uint16"
+      }
+    ],
+    "name": "ErrorIncorrectRate",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncorrectRoles",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "currentSum",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "requiredSum",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorIncorrectSharesSum",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncreaseRevisionForbidden",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorNewWalletIsUsedByApprover",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "providedAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker",
+        "type": "uint64"
+      }
+    ],
+    "name": "ErrorNotApprover",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorNotEnoughFund",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RoleUid",
+        "name": "uid",
+        "type": "uint16"
+      }
+    ],
+    "name": "ErrorRoleNotFound",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "currentLength",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxAllowedLength",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorTooLongString",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorUnknownBudgetShares",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      }
+    ],
+    "name": "ErrorUnknownDepartment",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RequestUid",
+        "name": "uid",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorUnknownRequest",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorWalletIsAlreadyUsedByOtherWorker",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "uid",
+        "type": "uint64"
+      }
+    ],
+    "name": "ErrorWorkerNotFound",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "errorCode",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorZeroDepartmentBudgetShare",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "errorCode",
+        "type": "uint256"
+      }
+    ],
+    "name": "ErrorZeroValueNotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorZeroWeekBudget",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "controller",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "ts",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "block",
+        "type": "uint256"
+      }
+    ],
+    "name": "ContractInitialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "departmentTitle",
+        "type": "string"
+      }
+    ],
+    "name": "OnAddDepartment",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "workerUid",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "IClerkTypes.HourRate",
+        "name": "hourRate",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "IClerkTypes.RoleUid",
+        "name": "roles",
+        "type": "uint16"
+      }
+    ],
+    "name": "OnAddWorker",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "workerUid",
+        "type": "uint64"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newWallet",
+        "type": "address"
+      }
+    ],
+    "name": "OnChangeWallet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "string[]",
+        "name": "names",
+        "type": "string[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "IClerkTypes.CountApprovals[]",
+        "name": "countApprovals",
+        "type": "uint16[]"
+      }
+    ],
+    "name": "OnInitRoles",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "IClerkTypes.DepartmentUid[]",
+        "name": "departmentUids",
+        "type": "uint16[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "departmentShares",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "OnSetBudgetShares",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newHead",
+        "type": "address"
+      }
+    ],
+    "name": "OnSetDepartmentHead",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "option",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "value",
+        "type": "bool"
+      }
+    ],
+    "name": "OnSetDepartmentOption",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "departmentUid",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "roleShares",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "OnSetRoleShares",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "IClerkTypes.AmountST",
+        "name": "amountST",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "salaryToken",
+        "type": "address"
+      }
+    ],
+    "name": "OnSetWeekBudget",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oldLogic",
+        "type": "address"
+      }
+    ],
+    "name": "RevisionIncreased",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "worker",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "WorkerDepartmentUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "worker",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "value",
+        "type": "string"
+      }
+    ],
+    "name": "WorkerNameUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "worker",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "IClerkTypes.HourRate",
+        "name": "value",
+        "type": "uint16"
+      }
+    ],
+    "name": "WorkerRateUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "worker",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "IClerkTypes.RoleUid",
+        "name": "value",
+        "type": "uint16"
+      }
+    ],
+    "name": "WorkerRoleUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "APPROVER_NATURE_BOTH_HEADS",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverKind",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "APPROVER_NATURE_HEAD_OF_DEPARTMENT",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverKind",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "APPROVER_NATURE_LOW_BY_HIGH",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverKind",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "CONTROLLABLE_VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FLAG_DEPARTMENT_OPTION_APPROVE_LOW_BY_HIGH",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FLAG_DEPARTMENT_OPTION_AUTO_BOOST_ENABLED",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "FLAG_IS_APPROVER",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_HOURLY_RATE",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.HourRate",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "NAME_LEN_LIMIT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "NOT_APPROVER",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverKind",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "NOT_APPROVER_NATURE_APPROVER_IS_WORKER",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverKind",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "NOT_APPROVER_NATURE_NOT_WORKER",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverKind",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TOTAL_SUM_SHARES",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "VERSION",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "controller_",
+        "type": "address"
+      }
+    ],
+    "name": "__Controllable_init",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "activeWallets",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      },
+      {
+        "internalType": "string",
+        "name": "departmentTitle",
+        "type": "string"
+      }
+    ],
+    "name": "addDepartment",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet_",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.HourRate",
+        "name": "hourRate_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "string",
+        "name": "name_",
+        "type": "string"
+      },
+      {
+        "internalType": "IClerkTypes.RoleUid",
+        "name": "roles_",
+        "type": "uint16"
+      }
+    ],
+    "name": "addWorker",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "wallets_",
+        "type": "address[]"
+      },
+      {
+        "internalType": "IClerkTypes.HourRate[]",
+        "name": "rates",
+        "type": "uint16[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "names",
+        "type": "string[]"
+      },
+      {
+        "internalType": "IClerkTypes.RoleUid[]",
+        "name": "roles",
+        "type": "uint16[]"
+      }
+    ],
+    "name": "addWorkers",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "newWallet",
+        "type": "address"
+      }
+    ],
+    "name": "changeWallet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "controller",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "countRoles",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "created",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "createdBlock",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "name": "departmentOptions",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentOptionMask",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "name": "departmentShares",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "departmentToWorkers",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "departmentUidsShares",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "departments",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "name": "departmentsData",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      },
+      {
+        "internalType": "address",
+        "name": "head",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "title",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBudgetShares",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid[]",
+        "name": "outDepartmentUids",
+        "type": "uint16[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "outDepartmentShares",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "outSumShares",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RoleUid",
+        "name": "role",
+        "type": "uint16"
+      }
+    ],
+    "name": "getCountRequiredApprovals",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.CountApprovals",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      }
+    ],
+    "name": "getDepartment",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "head",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "departmentTitle",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "departmentUid",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "optionFlag",
+        "type": "uint256"
+      }
+    ],
+    "name": "getDepartmentOption",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.AmountST",
+        "name": "departmentWeekBudgetST",
+        "type": "uint256"
+      },
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "departmentUid",
+        "type": "uint16"
+      }
+    ],
+    "name": "getMaxWeekBudgetForRolesST",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.AmountST[]",
+        "name": "outAmountST",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "index0",
+        "type": "uint16"
+      }
+    ],
+    "name": "getRoleByIndex",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.RoleUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "workerId_",
+        "type": "uint64"
+      }
+    ],
+    "name": "getWallet",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getWeekBudgetST",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.AmountST",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.AmountST",
+        "name": "weekBudgetST_",
+        "type": "uint256"
+      }
+    ],
+    "name": "getWeekDepartmentBudgetsST",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid[]",
+        "name": "outDepartmentUids",
+        "type": "uint16[]"
+      },
+      {
+        "internalType": "IClerkTypes.AmountST[]",
+        "name": "outAmountsST",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "outSalaryToken",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      }
+    ],
+    "name": "getWorkerByWallet",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      }
+    ],
+    "name": "getWorkerInfo",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.HourRate",
+        "name": "hourRate",
+        "type": "uint16"
+      },
+      {
+        "internalType": "IClerkTypes.RoleUid",
+        "name": "role",
+        "type": "uint16"
+      },
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "departmentUid",
+        "type": "uint16"
+      },
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "heads",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "oldLogic",
+        "type": "address"
+      }
+    ],
+    "name": "increaseRevision",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string[]",
+        "name": "names_",
+        "type": "string[]"
+      },
+      {
+        "internalType": "IClerkTypes.CountApprovals[]",
+        "name": "countApprovals_",
+        "type": "uint16[]"
+      }
+    ],
+    "name": "initRoles",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "controller_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "salaryToken_",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_value",
+        "type": "address"
+      }
+    ],
+    "name": "isController",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "workerUid",
+        "type": "uint64"
+      }
+    ],
+    "name": "isDepartmentHead",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_value",
+        "type": "address"
+      }
+    ],
+    "name": "isGovernance",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "approver_",
+        "type": "address"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      }
+    ],
+    "name": "isNatureApprover",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.ApproverKind",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentOptionMask",
+        "name": "mask",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "flag",
+        "type": "uint256"
+      }
+    ],
+    "name": "isOptionEnabled",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "worker_",
+        "type": "uint64"
+      }
+    ],
+    "name": "isWorkerValid",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      }
+    ],
+    "name": "lengthDepartmentToWorkers",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lengthDepartments",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "uid",
+        "type": "uint16"
+      }
+    ],
+    "name": "lengthRoleShares",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lengthRoles",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lengthWorkers",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid[]",
+        "name": "workers_",
+        "type": "uint64[]"
+      },
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "departmentUid_",
+        "type": "uint16"
+      }
+    ],
+    "name": "moveWorkersToDepartment",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "previousImplementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "departmentUid_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "string",
+        "name": "departmentTitle_",
+        "type": "string"
+      }
+    ],
+    "name": "renameDepartment",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "revision",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "roleShares",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.RoleUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "name": "rolesData",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.RoleUid",
+        "name": "role",
+        "type": "uint16"
+      },
+      {
+        "internalType": "IClerkTypes.CountApprovals",
+        "name": "countApprovals",
+        "type": "uint16"
+      },
+      {
+        "internalType": "string",
+        "name": "title",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "salaryToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid[]",
+        "name": "departmentUids_",
+        "type": "uint16[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "departmentShares_",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "setBudgetShares",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "departmentUid_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "address",
+        "name": "head_",
+        "type": "address"
+      }
+    ],
+    "name": "setDepartmentHead",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "departmentUid_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "optionFlag_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "value_",
+        "type": "bool"
+      }
+    ],
+    "name": "setDepartmentOption",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "departmentUid_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerUid[]",
+        "name": "workerUids_",
+        "type": "uint64[]"
+      }
+    ],
+    "name": "setDepartmentToWorkers",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "workerUid",
+        "type": "uint64"
+      },
+      {
+        "internalType": "IClerkTypes.HourRate",
+        "name": "rate_",
+        "type": "uint16"
+      }
+    ],
+    "name": "setHourlyRate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentOptionMask",
+        "name": "mask_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "flag_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "value",
+        "type": "bool"
+      }
+    ],
+    "name": "setOption",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentOptionMask",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "departmentUid_",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "roleShares_",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "setRoleShares",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.AmountST",
+        "name": "amountST_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "salaryToken_",
+        "type": "address"
+      }
+    ],
+    "name": "setWeekBudget",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "workerUid",
+        "type": "uint64"
+      },
+      {
+        "internalType": "string",
+        "name": "name_",
+        "type": "string"
+      }
+    ],
+    "name": "setWorkerName",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "workerUid",
+        "type": "uint64"
+      },
+      {
+        "internalType": "IClerkTypes.RoleUid",
+        "name": "role_",
+        "type": "uint16"
+      }
+    ],
+    "name": "setWorkerRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "weekBudgetST",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.AmountST",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "name": "workerToDepartment",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.DepartmentUid",
+        "name": "",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "workers",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "name": "workersData",
+    "outputs": [
+      {
+        "internalType": "IClerkTypes.WorkerUid",
+        "name": "uid",
+        "type": "uint64"
+      },
+      {
+        "internalType": "IClerkTypes.HourRate",
+        "name": "hourRate",
+        "type": "uint16"
+      },
+      {
+        "internalType": "IClerkTypes.RoleUid",
+        "name": "role",
+        "type": "uint16"
+      },
+      {
+        "internalType": "IClerkTypes.WorkerFlags",
+        "name": "workerFlags",
+        "type": "uint96"
+      },
+      {
+        "internalType": "address",
+        "name": "wallet",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0x026ae67614940f923f32aeda671c7dfc1ae27c34",
+  "chain_id": 137,
+  "contract_name": "TangibleRentShare",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "0000000000000000000000002791bca1f2de4661ed88a30c99a7a9449aa84174000000000000000000000000527a819db1eb0e34426297b03bae11f2f8b3a19e",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:19.091Z"
+}

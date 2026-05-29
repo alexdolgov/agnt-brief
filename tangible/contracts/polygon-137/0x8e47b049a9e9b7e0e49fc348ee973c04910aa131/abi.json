@@ -1,0 +1,50 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "weSellAt",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "weBuyAt",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateILPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "result",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tngblOraclePrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tngblSushiPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "isItVolatile",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "result",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

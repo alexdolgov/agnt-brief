@@ -1,0 +1,17 @@
+{
+  "address": "0x91f29f7be847a050a1554462ea48ac622b150dd2",
+  "chain_id": 137,
+  "contract_name": "TradeBot1Inch",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "0000000000000000000000001111111254eeb25477b68fb85ed929f73a960582",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:54:00.368Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x123ede74acf65774a8fba3d753011c89b6421001",
+  "chain_id": 137,
+  "contract_name": "MaiCamPipe",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "00000000000000000000000027f8d03b3a2196956ed754badc28d73be8830a6e000000000000000000000000e6c23289ba5a9f0ef31b8eb36241d5c800889b7b000000000000000000000000580a84c73811e1839f75d86d75d88cca0c241ff4",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:32.011Z"
+}

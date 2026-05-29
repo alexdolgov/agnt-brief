@@ -1,0 +1,17 @@
+{
+  "address": "0x03ee6dca512b1365ad534921d4a60eb401b57628",
+  "chain_id": 137,
+  "contract_name": "ForwarderV2",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:20.258Z"
+}

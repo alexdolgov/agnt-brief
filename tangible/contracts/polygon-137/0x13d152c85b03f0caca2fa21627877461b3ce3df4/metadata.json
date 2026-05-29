@@ -1,0 +1,17 @@
+{
+  "address": "0x13d152c85b03f0caca2fa21627877461b3ce3df4",
+  "chain_id": 137,
+  "contract_name": "MockERC20",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 1337,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000007544e47424c2d6600000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:34.096Z"
+}

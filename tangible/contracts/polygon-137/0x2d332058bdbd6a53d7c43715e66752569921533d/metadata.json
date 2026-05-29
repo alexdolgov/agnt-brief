@@ -1,0 +1,17 @@
+{
+  "address": "0x2d332058bdbd6a53d7c43715e66752569921533d",
+  "chain_id": 137,
+  "contract_name": "TNGBLOracle",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000c35dadb65012ec5796536bd9864ed8773abc74c40000000000000000000000000000000000000000000000000000000000000e100000000000000000000000000000000000000000000000000000000000000004",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:44.886Z"
+}

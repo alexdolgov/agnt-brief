@@ -1,0 +1,17 @@
+{
+  "address": "0x0a1316ef2d35fae5fa098bdef414f2b7993ba4bb",
+  "chain_id": 137,
+  "contract_name": "RePurchaseManager",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 1337,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 37,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:25.509Z"
+}

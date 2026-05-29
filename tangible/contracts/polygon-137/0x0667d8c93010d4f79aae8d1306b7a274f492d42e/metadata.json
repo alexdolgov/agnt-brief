@@ -1,0 +1,17 @@
+{
+  "address": "0x0667d8c93010d4f79aae8d1306b7a274f492d42e",
+  "chain_id": 137,
+  "contract_name": "VeTetu",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:22.797Z"
+}

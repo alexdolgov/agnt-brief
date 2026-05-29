@@ -1,0 +1,17 @@
+{
+  "address": "0xc443f1e51f4596b81b4ec4223206f47292608a10",
+  "chain_id": 137,
+  "contract_name": "TetuProxyControlled",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": "0x087deaf057dfce1999321b70907a12268628c4fd",
+  "fetched_at": "2026-05-29T15:54:02.825Z"
+}

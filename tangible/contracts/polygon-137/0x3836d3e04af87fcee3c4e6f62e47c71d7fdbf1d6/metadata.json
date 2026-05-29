@@ -1,0 +1,17 @@
+{
+  "address": "0x3836d3e04af87fcee3c4e6f62e47c71d7fdbf1d6",
+  "chain_id": 137,
+  "contract_name": "USDRRebaseProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 10001,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:46.814Z"
+}

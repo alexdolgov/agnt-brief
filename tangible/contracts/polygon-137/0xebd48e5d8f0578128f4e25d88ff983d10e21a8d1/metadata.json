@@ -1,0 +1,17 @@
+{
+  "address": "0xebd48e5d8f0578128f4e25d88ff983d10e21a8d1",
+  "chain_id": 137,
+  "contract_name": "MultiVesselGetter",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "0000000000000000000000005208c0c4c95a4636efc403960969a4a4b4ccdfc5000000000000000000000000576e43660cd804f74573de9d4b26b3752e251a3f",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:54:03.779Z"
+}

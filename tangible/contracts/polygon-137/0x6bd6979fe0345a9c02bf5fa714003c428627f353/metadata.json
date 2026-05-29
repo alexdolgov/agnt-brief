@@ -1,0 +1,17 @@
+{
+  "address": "0x6bd6979fe0345a9c02bf5fa714003c428627f353",
+  "chain_id": 137,
+  "contract_name": "DystRouter01",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000001d21db6cde1b18c7e47b0f7f42f4b3f68b9beec90000000000000000000000000d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:53.863Z"
+}

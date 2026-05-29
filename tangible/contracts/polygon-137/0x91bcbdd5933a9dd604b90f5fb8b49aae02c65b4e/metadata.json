@@ -1,0 +1,17 @@
+{
+  "address": "0x91bcbdd5933a9dd604b90f5fb8b49aae02c65b4e",
+  "chain_id": 137,
+  "contract_name": "StrategyVesqStaking",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 20,
+  "constructor_arguments": "0000000000000000000000006678814c273d5088114b6e40cc49c8db04f9bc290000000000000000000000004781ff51c0d8907ff75bbeae7f1999bbfe24fc7900000000000000000000000029f1e986fca02b7e54138c04c4f503dddd250558",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:58.576Z"
+}

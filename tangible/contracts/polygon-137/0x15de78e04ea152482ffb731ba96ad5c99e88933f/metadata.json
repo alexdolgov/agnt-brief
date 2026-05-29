@@ -1,0 +1,17 @@
+{
+  "address": "0x15de78e04ea152482ffb731ba96ad5c99e88933f",
+  "chain_id": 137,
+  "contract_name": "DystopiaSwapper",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:34.694Z"
+}

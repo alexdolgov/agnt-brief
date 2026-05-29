@@ -605,6 +605,7 @@
 | [syntropia](./syntropia/) | $3.7M | 0.0% | $3.7M | active | 3 | 1 | 2026-05-29 |
 | [t-rize](./t-rize/) | $15.0M | 0.0% | $15.0M | active | 44 | 1 | 2026-05-29 |
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 3 | 52 | 2026-05-29 |
+| [tangible](./tangible/) | $42.2M | 0.0% | ? | active | 3 | 476 | 2026-05-29 |
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-25 |
 | [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | unknown | 0 | 179 | 2026-05-23 |
 | [team-finance](./team-finance/) | $4.8K | 0.0% | $4.8K | active | 0 | 66 | 2026-05-27 |

@@ -1,0 +1,18 @@
+{
+  "address": "0x83aa8196070fabbfb4e0ee05cb6f6d79044ff281",
+  "chain_id": 137,
+  "contract_name": "USDRExchangeProxy",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 10001,
+  "evm_version": "london",
+  "license": "AGPL-3.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:53:56.767Z"
+}

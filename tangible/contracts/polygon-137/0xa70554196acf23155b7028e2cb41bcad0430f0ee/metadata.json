@@ -1,0 +1,17 @@
+{
+  "address": "0xa70554196acf23155b7028e2cb41bcad0430f0ee",
+  "chain_id": 137,
+  "contract_name": "DepositHelper",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 150,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "0000000000000000000000001111111254fb6c44bac0bed2854e76f90643097d",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:54:00.942Z"
+}

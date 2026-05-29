@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "vesper",
-  "generated_at": "2026-05-26T13:11:33.148Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-05-29T17:20:15.083Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "vesper",
@@ -36,35 +36,35 @@
     "total_addresses": 147,
     "unique_implementations": 44,
     "total_deployments": 147,
-    "audited_contracts": 0,
-    "unaudited_contracts": 39,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 39,
+    "audited_contracts": 20,
+    "unaudited_contracts": 19,
+    "contracts_verified_audited": 20,
+    "contracts_verified_unaudited": 19,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 5,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
+    "coverage_pct": 51.3,
+    "total_audits": 33,
+    "scoreable_audits": 25,
     "dl_tvl_usd": 44440251.37425,
     "tvl_usd": 693983.8700687917,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "ethereum": 693983.87
     },
-    "asd_usd": 693983.8700687917,
+    "asd_usd": 351723.50094187196,
     "website_url": "https://vesper.finance/",
     "chains": [
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2022-09",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "stale": 30,
+      "unknown": 3
     }
   },
   "topography": {
@@ -138,7 +138,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 305185.5551567084,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -147,7 +147,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.004484466348504528,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -156,7 +156,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -165,7 +165,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -174,7 +174,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -183,7 +183,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -192,7 +192,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.004729077043379205,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -201,7 +201,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -210,7 +210,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 12.217323528403554,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -219,7 +219,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -228,7 +228,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -237,7 +237,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -246,7 +246,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 6192.127082843829,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -255,7 +255,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -264,7 +264,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 21469.599555611887,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -273,7 +273,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -282,14 +282,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 9400.860794660946,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4871",
+        "audit-4872",
+        "audit-4873"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -375,7 +379,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.2644955518e-8,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -384,7 +388,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -393,7 +397,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -402,14 +406,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4873"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -473,7 +479,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -482,7 +488,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -491,7 +497,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -500,7 +506,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -509,7 +515,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -518,14 +524,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4861",
+        "audit-4866",
+        "audit-4868",
+        "audit-4873",
+        "audit-4883"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -549,7 +561,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -558,14 +570,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4861",
+        "audit-4866",
+        "audit-4868",
+        "audit-4874"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -589,7 +606,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -598,7 +615,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -607,14 +624,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4873"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -776,7 +795,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -785,14 +804,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4890"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -816,7 +837,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -825,7 +846,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -834,14 +855,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4863",
+        "audit-4865",
+        "audit-4869",
+        "audit-4885"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -865,7 +891,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -874,7 +900,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -883,7 +909,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -892,7 +918,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -901,7 +927,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -910,7 +936,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -919,7 +945,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -928,7 +954,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -937,7 +963,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -946,7 +972,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -955,7 +981,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -964,7 +990,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -973,7 +999,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -982,7 +1008,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -991,7 +1017,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1000,7 +1026,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1009,7 +1035,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1018,7 +1044,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1027,7 +1053,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1036,7 +1062,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1045,7 +1071,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1054,7 +1080,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1063,7 +1089,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1072,14 +1098,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4869",
+        "audit-4871",
+        "audit-4872",
+        "audit-4885"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1103,7 +1134,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1112,7 +1143,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1121,7 +1152,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1130,7 +1161,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1139,7 +1170,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1148,7 +1179,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1157,7 +1188,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1166,7 +1197,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1175,7 +1206,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1184,7 +1215,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1193,7 +1224,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1202,7 +1233,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1211,7 +1242,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1220,7 +1251,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1229,7 +1260,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1238,7 +1269,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1247,7 +1278,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1256,7 +1287,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1265,7 +1296,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1274,14 +1305,26 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4861",
+        "audit-4866",
+        "audit-4869",
+        "audit-4870",
+        "audit-4871",
+        "audit-4872",
+        "audit-4873",
+        "audit-4878",
+        "audit-4885",
+        "audit-4886",
+        "audit-4888"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1367,14 +1410,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4879",
+        "audit-4880",
+        "audit-4881"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1740,14 +1787,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4868"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1802,7 +1851,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1811,7 +1860,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1820,7 +1869,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1829,7 +1878,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1838,14 +1887,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4872"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1869,14 +1920,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4869",
+        "audit-4873",
+        "audit-4883",
+        "audit-4885"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1900,7 +1956,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1909,14 +1965,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4879"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1971,7 +2029,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1980,7 +2038,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1989,7 +2047,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1998,14 +2056,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4861",
+        "audit-4866",
+        "audit-4868",
+        "audit-4872",
+        "audit-4873"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2060,14 +2124,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4879"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2091,14 +2157,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4862",
+        "audit-4864",
+        "audit-4874",
+        "audit-4882"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -2122,7 +2193,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2131,7 +2202,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2140,7 +2211,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2149,14 +2220,24 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4864",
+        "audit-4869",
+        "audit-4870",
+        "audit-4874",
+        "audit-4879",
+        "audit-4882",
+        "audit-4883",
+        "audit-4885",
+        "audit-4886"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2273,7 +2354,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2282,7 +2363,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2291,7 +2372,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2300,7 +2381,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2309,7 +2390,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2318,7 +2399,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2327,14 +2408,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4875",
+        "audit-4876"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2358,19 +2442,1355 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4862",
+        "audit-4864",
+        "audit-4874",
+        "audit-4882"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
+  "audits": [
+    {
+      "audit_id": 4861,
+      "audit_key": "audit-4861",
+      "report_name": "REP-Bloq-11_11_20.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v1/REP-Bloq-11_11_20.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveMakerStrategy",
+        "AaveStrategy",
+        "AaveStrategyETH",
+        "CollateralManager",
+        "Controller",
+        "IMakerDAO",
+        "IStrategy",
+        "IToken",
+        "IVesperpool",
+        "Pausable",
+        "PoolRewards",
+        "PoolShareToken",
+        "Timelock",
+        "VETH",
+        "VTokenBase"
+      ],
+      "matched_contracts": 32,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4862,
+      "audit_key": "audit-4862",
+      "report_name": "REP-Bloq-VesperPools-20_01_2021.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v2/REP-Bloq-VesperPools-20_01_2021.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveMakerStrategy",
+        "AaveV2MakerStrategy",
+        "AaveV2Strategy",
+        "CompoundStrategy",
+        "GovernanceToken",
+        "GovernorAlpha",
+        "VSP",
+        "VVSP"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4863,
+      "audit_key": "audit-4863",
+      "report_name": "REP-Bloq_15_02_2021.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v2/REP-Bloq_15_02_2021.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "PaymentSplitter"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4864,
+      "audit_key": "audit-4864",
+      "report_name": "Vesper Pools Security - Fourth Audit v210119.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v2/Vesper%20Pools%20Security%20-%20Fourth%20Audit%20v210119.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveMakerStrategy",
+        "AaveV2MakerStrategy",
+        "CompoundStrategy",
+        "GovernanceToken",
+        "GovernorAlpha",
+        "VSP",
+        "VSPStrategy",
+        "VVSP"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4865,
+      "audit_key": "audit-4865",
+      "report_name": "Vesper Pools Security - PaymentSplitter Audit v210210.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v2/Vesper%20Pools%20Security%20-%20PaymentSplitter%20Audit%20v210210.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "PaymentSplitter"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4866,
+      "audit_key": "audit-4866",
+      "report_name": "Vesper Pools Security - Second Audit v201230.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v2/Vesper%20Pools%20Security%20-%20Second%20Audit%20v201230.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveMakerStrategy",
+        "AaveMakerStrategyETH",
+        "AaveStrategy",
+        "CollateralManager",
+        "Controller",
+        "IAave",
+        "IAddressListExt",
+        "ICollateralManager",
+        "IController",
+        "IMakerDAO",
+        "IStrategy",
+        "IToken",
+        "IUniswapV2Router01",
+        "IUniswapV2Router02",
+        "IVPool",
+        "Migrations",
+        "Owned",
+        "Pausable",
+        "PoolRewards",
+        "PoolShareToken",
+        "Timelock",
+        "VETH",
+        "VSPR",
+        "VTokenBase"
+      ],
+      "matched_contracts": 32,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4867,
+      "audit_key": "audit-4867",
+      "report_name": "Vesper Pools Security - Third Audit v201230.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v2/Vesper%20Pools%20Security%20-%20Third%20Audit%20v201230.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4868,
+      "audit_key": "audit-4868",
+      "report_name": "Vesper Pools Security Audit v201230.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v2/Vesper%20Pools%20Security%20Audit%20v201230.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveStrategy",
+        "AddressProvider",
+        "CollateralManager",
+        "Controller",
+        "IAave",
+        "ICollateralManager",
+        "IMakerDAO",
+        "IStrategyManager",
+        "IToken",
+        "IUniswapV2Router01",
+        "IUniswapV2Router02",
+        "IVPool",
+        "Migrations",
+        "Pausable",
+        "PoolShareToken",
+        "VBTC",
+        "VETH",
+        "VMANA",
+        "VSPR",
+        "VSPRStrategy",
+        "VTokenBase",
+        "VVSPR"
+      ],
+      "matched_contracts": 13,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4869,
+      "audit_key": "audit-4869",
+      "report_name": "Coinspect - Smart Contract Audit - Vesper - Nov 2021.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Vesper%20-%20Nov%202021.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveStrategyPolygon",
+        "CompoundLeverageStrategy",
+        "CompoundLeverageStrategyUNI",
+        "CompoundStrategy",
+        "CompoundStrategyWBTC",
+        "CompoundXYStrategy",
+        "ConvexSBTCStrategyWBTC",
+        "ConvexStrategy",
+        "Crv3PoolStrategyBase",
+        "CrvsBTCPoolStrategy",
+        "Earn",
+        "EarnAaveMakerStrategy",
+        "EarnAaveMakerStrategyETH",
+        "EarnCompoundMakerStrategy",
+        "EarnCompoundMakerStrategyETH",
+        "EarnCompoundStrategyWBTC",
+        "EarnCrvsBTCStrategy",
+        "EarnCrvsBTCStrategyWBTC",
+        "EarnDrip",
+        "EarnVesperMakerStrategy",
+        "EarnVesperMakerStrategyETH",
+        "EarnVesperMakerStrategyWBTC",
+        "EarnVesperStrategy",
+        "EarnVesperStrategyDAIWBTC",
+        "EarnVesperStrategyDAIWETH",
+        "EarnYearnStrategy",
+        "FlashLoanHelper",
+        "GovernorAlpha",
+        "IAave",
+        "IAddressList",
+        "IConvexToken",
+        "ISoloMargin",
+        "IStrategy",
+        "IUniswapV3Oracle",
+        "MakerStrategy",
+        "OraclesBase",
+        "PaymentSplitter",
+        "PoolAccountant",
+        "PoolRewards",
+        "PoolRewardsUpgrader",
+        "PoolShareToken",
+        "Strategy",
+        "Timelock",
+        "VFR",
+        "VFRStablePool",
+        "VPoolBase",
+        "VSPStrategy",
+        "VesperMakerStrategy",
+        "VesperMakerStrategyETH",
+        "VesperMakerStrategyWBTC",
+        "VesperV3Strategy"
+      ],
+      "matched_contracts": 52,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4870,
+      "audit_key": "audit-4870",
+      "report_name": "Coinspect - Smart Contract Audit - Vesper Earn - September 2021.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Vesper%20Earn%20-%20September%202021.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CompoundCoverageStrategy",
+        "CompoundCoverageStrategyDAI",
+        "CompoundLeverageStrategy",
+        "CompoundLeverageStrategyETH",
+        "CompoundStableStrategy",
+        "CompoundStableStrategyDAI",
+        "CompoundXYStrategy",
+        "CompoundXYStrategyETH",
+        "ConvexCoverageStrategy",
+        "ConvexCoverageStrategyDAI",
+        "ConvexSBTCStrategyWBTC",
+        "ConvexStableStrategy",
+        "ConvexStableStrategyDAI",
+        "ConvexStrategy",
+        "ConvexStrategyDAI",
+        "Earn",
+        "EarnAaveMakerStrategy",
+        "EarnAaveMakerStrategyETH",
+        "EarnAaveStrategy",
+        "EarnAaveStrategyWETH",
+        "EarnAlphaLendStrategy",
+        "EarnAlphaLendStrategyETH",
+        "EarnCompoundMakerStrategy",
+        "EarnCompoundMakerStrategyETH",
+        "EarnCompoundStrategy",
+        "EarnCompoundStrategyETH",
+        "EarnCreamStrategy",
+        "EarnCreamStrategyETH",
+        "EarnDrip",
+        "EarnRariFuseStrategy",
+        "EarnRariFuseStrategyETH",
+        "EarnVesperMakerStrategy",
+        "EarnVesperMakerStrategyETH",
+        "EarnYearnStrategy",
+        "EarnYearnStrategyETH",
+        "OraclesBase",
+        "PoolRewards",
+        "VFR",
+        "VFRBuffer",
+        "VFRCoveragePool",
+        "VFRPool",
+        "VFRStablePool",
+        "VSPStrategy"
+      ],
+      "matched_contracts": 24,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4871,
+      "audit_key": "audit-4871",
+      "report_name": "Coinspect - Smart Contract Audit - Vesper Pools February 2022.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Vesper%20Pools%20February%202022.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveStrategy",
+        "AaveStrategyAvalanche",
+        "AaveStrategyPolygon",
+        "AaveV1Strategy",
+        "AlphaLendStrategy",
+        "CompoundCoverageStrategy",
+        "CompoundLeverageStrategyETH",
+        "CompoundLeverageStrategyLINK",
+        "CompoundLeverageStrategyUNI",
+        "CompoundMultiRewardAvalancheStrategy",
+        "CompoundStableStrategy",
+        "CompoundStrategy",
+        "CompoundStrategyETH",
+        "CompoundXYStrategyETH",
+        "Convex2PoolStrategy",
+        "Convex2PoolStrategyMIMUSTPool",
+        "Convex4MetaPoolStrategy",
+        "Convex4MetaPoolStrategyMIMPool",
+        "Convex4PoolStrategy",
+        "Convex4PoolStrategySUSDPool",
+        "ConvexCoverage3PoolStrategy",
+        "ConvexCoverageStrategy",
+        "ConvexStableStrategy",
+        "ConvexStrategy",
+        "ConvexStrategyBase",
+        "Crv2PoolStrategy",
+        "Crv2PoolStrategyArbitrumUSDCUSDTPool",
+        "Crv4MetaPoolStrategy",
+        "Crv4PoolStrategy",
+        "CrvA3PoolStrategy",
+        "CrvBase",
+        "CrvPoolStrategyBase",
+        "CrvSBTCPoolStrategy",
+        "Earn",
+        "EarnCompoundStrategy",
+        "EarnCompoundStrategyETH",
+        "EarnCrvSBTCPoolStrategy",
+        "EarnRariFuseStrategy",
+        "ILiquidityGauge",
+        "MakerStrategy",
+        "PoolAccountant",
+        "PoolRewards",
+        "RariFuseStrategy",
+        "Strategy",
+        "VFRStablePool",
+        "VPool",
+        "VPoolBase",
+        "VPoolUpgrader",
+        "VesperStrategy",
+        "YearnStrategy"
+      ],
+      "matched_contracts": 61,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4872,
+      "audit_key": "audit-4872",
+      "report_name": "Coinspect - Smart Contract Audit - Vesper Pools January 2022.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Vesper%20Pools%20January%202022.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveCore",
+        "AaveMakerStrategy",
+        "AaveStrategy",
+        "AaveStrategyAvalanche",
+        "AaveStrategyPolygon",
+        "AaveV1Strategy",
+        "AlphaLendStrategy",
+        "AlphaLendStrategyETH",
+        "CompoundCoverageStrategy",
+        "CompoundLeverageStrategy",
+        "CompoundLeverageStrategyETH",
+        "CompoundLeverageStrategyLINK",
+        "CompoundLeverageStrategyUNI",
+        "CompoundMakerStrategy",
+        "CompoundStableStrategy",
+        "CompoundStrategy",
+        "CompoundStrategyETH",
+        "CompoundXYStrategyETH",
+        "Convex2PoolStrategy",
+        "Convex2PoolStrategyMIMUSTPool",
+        "Convex3PoolStrategy",
+        "Convex4MetaPoolStrategy",
+        "Convex4MetaPoolStrategyMIMPool",
+        "Convex4PoolStrategy",
+        "Convex4PoolStrategySUSDPool",
+        "ConvexCoverage3PoolStrategy",
+        "ConvexCoverageStrategy",
+        "ConvexSBTCPoolStrategy",
+        "ConvexStable3PoolStrategy",
+        "ConvexStableStrategy",
+        "ConvexStrategy",
+        "ConvexStrategyBase",
+        "Crv2PoolStrategy",
+        "Crv2PoolStrategyArbitrumUSDCUSDTPool",
+        "Crv2PoolStrategyMIMUSTPool",
+        "Crv3PoolStrategy",
+        "Crv4MetaPoolStrategy",
+        "Crv4MetaPoolStrategyMIMPool",
+        "Crv4PoolStrategy",
+        "Crv4PoolStrategySUSDPool",
+        "CrvA3PoolStrategy",
+        "CrvBase",
+        "CrvPoolStrategyBase",
+        "CrvSBTCPoolStrategy",
+        "Earn",
+        "EarnAaveMakerStrategy",
+        "EarnAaveStrategy",
+        "EarnAlphaLendStrategy",
+        "EarnAlphaLendStrategyETH",
+        "EarnCompoundMakerStrategy",
+        "EarnCompoundStrategy",
+        "EarnCompoundStrategyETH",
+        "EarnCrvSBTCPoolStrategy",
+        "EarnRariFuseStrategy",
+        "EarnRariFuseStrategyETH",
+        "EarnVesperMakerStrategy",
+        "EarnVesperStrategy",
+        "EarnVesperStrategyVSPDrip",
+        "EarnYearnStrategy",
+        "EnumerableSet",
+        "IDeposit",
+        "IDepositZap",
+        "ILiquidityGauge",
+        "IMetapoolFactory",
+        "IPoolAccountant",
+        "IStableSwap",
+        "IStrategy",
+        "IVesperPool",
+        "MakerStrategy",
+        "PoolAccountant",
+        "PoolRewards",
+        "PoolShareToken",
+        "PoolStorage",
+        "RariFuseStrategy",
+        "RariFuseStrategyETH",
+        "Strategy",
+        "VETH",
+        "VFRBuffer",
+        "VFRPool",
+        "VFRStablePool",
+        "VPool",
+        "VPoolBase",
+        "VesperCoverageStrategy",
+        "VesperEarnDrip",
+        "VesperMakerStrategy",
+        "VesperStableStrategy",
+        "VesperStrategy",
+        "YearnStrategy"
+      ],
+      "matched_contracts": 70,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4873,
+      "audit_key": "audit-4873",
+      "report_name": "PRE-Bloq_ Vesper Pools V3-2021-06-26-certik.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/PRE-Bloq_%20Vesper%20Pools%20V3-2021-06-26-certik.pdf",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveCore",
+        "AaveMakerStrategy",
+        "AaveMakerStrategyETH",
+        "AaveStrategy",
+        "AaveStrategyDAI",
+        "AaveStrategyUSDC",
+        "AaveV1Strategy",
+        "AaveV1StrategyUSDC",
+        "CollateralManager",
+        "CompoundMakerStrategy",
+        "CompoundMakerStrategyETH",
+        "CompoundStrategy",
+        "CompoundStrategyDAI",
+        "CompoundStrategyETH",
+        "CompoundStrategyUNI",
+        "CompoundStrategyUSDC",
+        "CompoundStrategyUSDT",
+        "CompoundStrategyWBTC",
+        "CreamStrategy",
+        "CreamStrategyDAI",
+        "CreamStrategyETH",
+        "CreamStrategyLINK",
+        "CreamStrategyUSDC",
+        "CreamStrategyWBTC",
+        "Crv3PoolMgr",
+        "Crv3PoolStrategy",
+        "Crv3PoolStrategyDAI",
+        "Crv3PoolStrategyUSDC",
+        "CrvPoolMgrBase",
+        "Errors",
+        "Governed",
+        "IAave",
+        "IAaveV1",
+        "IAddressList",
+        "IAddressListFactory",
+        "IAggregatorV3",
+        "ICollateralManager",
+        "ICompound",
+        "ILiquidityGaugeV2",
+        "IMakerDAO",
+        "IPoolRewards",
+        "IStableSwap3Pool",
+        "IStrategy",
+        "ISwapManager",
+        "IToken",
+        "ITokenMinter",
+        "IUniswapV2Factory",
+        "IUniswapV2Router01",
+        "IUniswapV2Router02",
+        "IVesperPool",
+        "IYToken",
+        "MakerStrategy",
+        "Pausable",
+        "PoolERC20",
+        "PoolERC20Permit",
+        "PoolRewards",
+        "PoolShareToken",
+        "PoolStorage",
+        "Strategy",
+        "VETH",
+        "VPool",
+        "VPoolBase",
+        "VesperMakerStrategy",
+        "VesperMakerStrategyETH",
+        "YearnStrategy",
+        "YearnStrategyDAI",
+        "YearnStrategyUSDC"
+      ],
+      "matched_contracts": 55,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4874,
+      "audit_key": "audit-4874",
+      "report_name": "Vesper Pools audit-poolv2-dedaub-April-2021.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper%20Pools%20audit-poolv2-dedaub-April-2021.pdf",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveMakerStrategy",
+        "AaveStrategy",
+        "AaveV2MakerStrategy",
+        "CompoundStrategy",
+        "Controller",
+        "IVesperPool",
+        "MakerStrategy",
+        "PoolShareToken",
+        "VSP",
+        "VSPStrategy",
+        "VTokenBase",
+        "VVSP"
+      ],
+      "matched_contracts": 8,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4875,
+      "audit_key": "audit-4875",
+      "report_name": "Vesper Pools v3 audit-dedaub-May-2021.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper%20Pools%20v3%20audit-dedaub-May-2021.pdf",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveCore",
+        "AaveStrategy",
+        "AaveStrategyUSDC",
+        "Governed",
+        "Owned",
+        "Pausable",
+        "PoolShareToken",
+        "Strategy",
+        "UniswapManager",
+        "VTokenBase",
+        "VUSDC"
+      ],
+      "matched_contracts": 7,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4876,
+      "audit_key": "audit-4876",
+      "report_name": "Vesper Pools v3 audit-dedaub.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper%20Pools%20v3%20audit-dedaub.pdf",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveCore",
+        "AaveStrategy",
+        "AaveStrategyUSDC",
+        "Governed",
+        "Owned",
+        "Pausable",
+        "PoolShareToken",
+        "Strategy",
+        "UniswapManager",
+        "VTokenBase",
+        "VUSDC"
+      ],
+      "matched_contracts": 7,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4877,
+      "audit_key": "audit-4877",
+      "report_name": "Vesper Pools+Strategies September-2021.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper%20Pools%2BStrategies%20September-2021.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4878,
+      "audit_key": "audit-4878",
+      "report_name": "Vesper Pools-Dedaub-Nov-2021.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper%20Pools-Dedaub-Nov-2021.pdf",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ConvexStrategy",
+        "PaymentStream",
+        "PaymentStreamFactory",
+        "PoolRewards",
+        "PoolRewardsUpgrader"
+      ],
+      "matched_contracts": 20,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4879,
+      "audit_key": "audit-4879",
+      "report_name": "Vesper Strategies - April v210428.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper%20Strategies%20-%20April%20v210428.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveV2Strategy",
+        "AaveV2StrategyLINK",
+        "CompoundMakerStrategy",
+        "MakerStrategy",
+        "Strategy",
+        "SwapManager",
+        "UniswapManager",
+        "VLINK",
+        "VSPStrategy",
+        "VTokenBase",
+        "VesperMakerStrategy",
+        "VesperMakerStrategyLINK"
+      ],
+      "matched_contracts": 8,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4880,
+      "audit_key": "audit-4880",
+      "report_name": "Vesper V3 - 2nd Review - v2-may-2021.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper%20V3%20-%202nd%20Review%20-%20v2-may-2021.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveStrategy",
+        "Crv3PoolMgr",
+        "Crv3PoolStrategy",
+        "OracleSimple",
+        "PoolShareToken",
+        "Strategy",
+        "SwapManager",
+        "VTokenBase"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4881,
+      "audit_key": "audit-4881",
+      "report_name": "Vesper V3 - 2nd Review - v210519 (1).pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper%20V3%20-%202nd%20Review%20-%20v210519%20(1).pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveStrategy",
+        "Crv3PoolMgr",
+        "Crv3PoolStrategy",
+        "OracleSimple",
+        "PoolShareToken",
+        "SwapManager",
+        "UniswapManager",
+        "VTokenBase"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4882,
+      "audit_key": "audit-4882",
+      "report_name": "Vesper-Pools-Audit-Coinspect-Jan21.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Audit-Coinspect-Jan21.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveMakerStrategy",
+        "AaveV2MakerStrategy",
+        "CompoundStrategy",
+        "GovernanceToken",
+        "GovernorAlpha",
+        "VSP",
+        "VSPStrategy",
+        "VVSP"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4883,
+      "audit_key": "audit-4883",
+      "report_name": "Vesper-Pools-Audit-Coinspect-March21.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Audit-Coinspect-March21.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveMakerStrategy",
+        "AaveStrategy",
+        "AaveV2MakerStrategy",
+        "AaveV2Strategy",
+        "CollateralManager",
+        "CompoundMakerStrategy",
+        "CompoundMakerStrategyETH",
+        "CompoundStrategy",
+        "MakerStrategy",
+        "Strategy",
+        "UniswapManager",
+        "VSPStrategy",
+        "VesperMakerStrategy",
+        "VesperMakerStrategyETH"
+      ],
+      "matched_contracts": 11,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4884,
+      "audit_key": "audit-4884",
+      "report_name": "Vesper-Pools-Audit-Coinspect-March22.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Audit-Coinspect-March22.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4885,
+      "audit_key": "audit-4885",
+      "report_name": "Vesper-Pools-Audit-Coinspect-Nov21.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Audit-Coinspect-Nov21.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveStrategyPolygon",
+        "CompoundLeverageStrategy",
+        "CompoundLeverageStrategyUNI",
+        "CompoundStrategy",
+        "CompoundStrategyWBTC",
+        "CompoundXYStrategy",
+        "ConvexSBTCStrategyWBTC",
+        "ConvexStrategy",
+        "Crv3PoolStrategyBase",
+        "CrvsBTCPoolStrategy",
+        "Earn",
+        "EarnAaveMakerStrategy",
+        "EarnAaveMakerStrategyETH",
+        "EarnCompoundMakerStrategy",
+        "EarnCompoundMakerStrategyETH",
+        "EarnCompoundStrategyWBTC",
+        "EarnCrvsBTCStrategy",
+        "EarnCrvsBTCStrategyWBTC",
+        "EarnDrip",
+        "EarnVesperMakerStrategy",
+        "EarnVesperMakerStrategyETH",
+        "EarnVesperMakerStrategyWBTC",
+        "EarnVesperStrategy",
+        "EarnVesperStrategyDAIWBTC",
+        "EarnVesperStrategyDAIWETH",
+        "EarnYearnStrategy",
+        "FlashLoanHelper",
+        "GovernorAlpha",
+        "IAave",
+        "IAddressList",
+        "IConvexToken",
+        "ISoloMargin",
+        "IStrategy",
+        "IUniswapV3Oracle",
+        "MakerStrategy",
+        "OraclesBase",
+        "PaymentSplitter",
+        "PoolAccountant",
+        "PoolRewards",
+        "PoolRewardsUpgrader",
+        "PoolShareToken",
+        "Strategy",
+        "Timelock",
+        "VFR",
+        "VFRStablePool",
+        "VPoolBase",
+        "VSPStrategy",
+        "VesperMakerStrategy",
+        "VesperMakerStrategyETH",
+        "VesperMakerStrategyWBTC",
+        "VesperV3Strategy"
+      ],
+      "matched_contracts": 52,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4886,
+      "audit_key": "audit-4886",
+      "report_name": "Vesper-Pools-Audit-Coinspect-Sept21.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Audit-Coinspect-Sept21.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CompoundCoverageStrategy",
+        "CompoundCoverageStrategyDAI",
+        "CompoundLeverageStrategy",
+        "CompoundLeverageStrategyETH",
+        "CompoundStableStrategy",
+        "CompoundStableStrategyDAI",
+        "CompoundXYStrategy",
+        "CompoundXYStrategyETH",
+        "ConvexCoverageStrategy",
+        "ConvexCoverageStrategyDAI",
+        "ConvexSBTCStrategyWBTC",
+        "ConvexStableStrategy",
+        "ConvexStableStrategyDAI",
+        "ConvexStrategy",
+        "ConvexStrategyDAI",
+        "Earn",
+        "EarnAaveMakerStrategy",
+        "EarnAaveMakerStrategyETH",
+        "EarnAaveStrategy",
+        "EarnAaveStrategyWETH",
+        "EarnAlphaLendStrategy",
+        "EarnAlphaLendStrategyETH",
+        "EarnCompoundMakerStrategy",
+        "EarnCompoundMakerStrategyETH",
+        "EarnCompoundStrategy",
+        "EarnCompoundStrategyETH",
+        "EarnCreamStrategy",
+        "EarnCreamStrategyETH",
+        "EarnDrip",
+        "EarnRariFuseStrategy",
+        "EarnRariFuseStrategyETH",
+        "EarnVesperMakerStrategy",
+        "EarnVesperMakerStrategyETH",
+        "EarnYearnStrategy",
+        "EarnYearnStrategyETH",
+        "OraclesBase",
+        "PoolRewards",
+        "VFR",
+        "VFRBuffer",
+        "VFRCoveragePool",
+        "VFRPool",
+        "VFRStablePool",
+        "VSPStrategy"
+      ],
+      "matched_contracts": 24,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4887,
+      "audit_key": "audit-4887",
+      "report_name": "Vesper-Pools-Audit-Dedaub-April 22.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Audit-Dedaub-April%2022.pdf",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4888,
+      "audit_key": "audit-4888",
+      "report_name": "Vesper-Pools-Audit-Dedaub-Oct21.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Audit-Dedaub-Oct21.pdf",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CompoundXYStrategy",
+        "ConvexSBTCStrategyWBTC",
+        "ConvexStrategy",
+        "EarnRariFuseStrategyETH",
+        "EarnYearnStrategy",
+        "FlashLoanHelper",
+        "PaymentStream",
+        "PaymentStreamFactory",
+        "PoolRewards",
+        "PoolRewardsUpgrader",
+        "YearnStrategy"
+      ],
+      "matched_contracts": 20,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4889,
+      "audit_key": "audit-4889",
+      "report_name": "Vesper-Pools-Strategies-Audit-Halborn-Aug-22.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Strategies-Audit-Halborn-Aug-22.pdf",
+      "auditor": "Halborn",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4890,
+      "audit_key": "audit-4890",
+      "report_name": "Vesper-Pools-Synth-VUSD-Deltas-Dedaub-March22.pdf",
+      "report_url": "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Synth-VUSD-Deltas-Dedaub-March22.pdf",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CompoundLegerageAvancheStrategy",
+        "CompoundStrategy",
+        "Convex4PoolStrategyMUSDPool",
+        "CrvPoolStrategyBase",
+        "EarnCrvSBTCPoolStrategy",
+        "Minter",
+        "RariCore",
+        "RariFusePool",
+        "RariFuseStrategy",
+        "RariFuseStrategyETH",
+        "VesperCompoundXYStrategy"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4891,
+      "audit_key": "audit-4891",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4892,
+      "audit_key": "audit-4892",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 4893,
+      "audit_key": "audit-4893",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 15,
+      "coverage_pct": 38.5,
+      "latest_audit": "2022-03"
+    },
+    {
+      "auditor": "CertiK",
+      "tier": 2,
+      "contracts_covered": 7,
+      "coverage_pct": 17.9,
+      "latest_audit": "2021-06"
+    },
+    {
+      "auditor": "Dedaub",
+      "tier": 2,
+      "contracts_covered": 7,
+      "coverage_pct": 17.9,
+      "latest_audit": "2022-04"
+    },
+    {
+      "auditor": "yAudit",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 10.3,
+      "latest_audit": "2020-09"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
@@ -2405,46 +3825,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0c712fa5ba0dc3fc46cabef2d373c4f9f5e29ce3",
-      "name": "Crv3PoolStrategyDAI",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 2.2644955518e-8,
-      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6349e8dda81c2e997130bc99827284355e82aa83",
-      "name": "CollateralManager",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa4f1671d3aee73c05b552d57f2d16d3cfcbd0217",
-      "name": "Controller",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3e89f1a781e2776bbecd101164b8d98c914b447d",
-      "name": "CreamStrategyETH",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x5a6aad61ca0e3d45457628f82d493101a85f6314",
       "name": "CreamStrategyUSDT",
       "role": "core_logic",
@@ -2475,39 +3855,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x4bc1a26ec4ab5948b950a64479a4046701370599",
-      "name": "Minter",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x011881efbdbb250702f9d7ca2a74788b26ca7128",
-      "name": "PoolAccountant",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x7915ce4f43e1378f0c3720351a973a023f7fb3e8",
       "name": "Redeemer",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc48ea9a2daa4d816e4c9333d6689c70070010174",
-      "name": "SwapManager",
-      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2545,49 +3895,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xd773ca264b5363f25f7f96319076753849af168b",
-      "name": "VBTC",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xca0c34a3f35520b9490c1d58b35a19ab64014d80",
       "name": "VDAI",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x339b20136282a9de3a6fc448b5ba9534116b3b08",
-      "name": "VesperEarnDrip",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x980e7693fdbba39ba75a9be85cda6c336ec8e697",
-      "name": "VesperMakerStrategyETH",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x59543a595b69897b295f12964d3c7c37b3ad29c0",
-      "name": "VesperMakerStrategyLINK",
-      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2605,49 +3915,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x103cc17c2b1586e5cd9bad308690bcd0bbe54d5e",
-      "name": "VETH",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xb791a875ea4836a9ec16cdcf4f747c0b9ca47c7d",
       "name": "VirtualDollar",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0a27e910aee974d05000e05eab8a4b8ebd93d40c",
-      "name": "VLINK",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1b40183efb4dd766f11bda7a7c3ad8982e998421",
-      "name": "VSP",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2a1b6fb23ccf9dc89859778cd8d240cbd0bc94f4",
-      "name": "VSPStrategy",
-      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2681,26 +3951,6 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0648e517670d71ba46d7a27ba04677db7c7957cf",
-      "name": "VUSDC",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xba4cfe5741b357fa371b506e5db0774abfecf8fc",
-      "name": "VVSP",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
@@ -2710,11 +3960,49 @@
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 520
+    },
+    "extraction_confidence_counts": {
+      "high": 23,
+      "medium": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 4867,
+        "report_name": "Vesper Pools Security - Third Audit v201230.pdf"
+      },
+      {
+        "audit_id": 4877,
+        "report_name": "Vesper Pools+Strategies September-2021.pdf"
+      },
+      {
+        "audit_id": 4884,
+        "report_name": "Vesper-Pools-Audit-Coinspect-March22.pdf"
+      },
+      {
+        "audit_id": 4887,
+        "report_name": "Vesper-Pools-Audit-Dedaub-April 22.pdf"
+      },
+      {
+        "audit_id": 4889,
+        "report_name": "Vesper-Pools-Strategies-Audit-Halborn-Aug-22.pdf"
+      },
+      {
+        "audit_id": 4891,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 4892,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 4893,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

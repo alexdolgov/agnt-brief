@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "1inch",
-  "generated_at": "2026-05-29T01:21:08.792Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-240c",
+  "generated_at": "2026-05-29T03:13:42.262Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-99fb",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "1inch",

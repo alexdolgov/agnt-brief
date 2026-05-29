@@ -642,7 +642,7 @@
 | [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 3 | 4 | 2026-05-29 |
 | [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | dead | 2 | 516 | 2026-05-25 |
 | [twyne](./twyne/) | $985.7K | 9.6% | ? | active | 9 | 59 | 2026-05-24 |
-| [txflow](./txflow/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 54 | 2026-05-25 |
+| [txflow](./txflow/) | $3.8M | 0.0% | ? | unknown | 3 | 1 | 2026-05-29 |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | unknown | 0 | 150 | 2026-05-23 |
 | [umee](./umee/) | $3.2M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [unchain-x](./unchain-x/) | $35.1M | 100.0% | ? | active | 2 | 1 | 2026-05-25 |

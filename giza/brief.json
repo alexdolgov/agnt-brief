@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "giza",
-  "generated_at": "2026-05-29T07:48:05.940Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-05-29T18:23:39.192Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-691c43-e9c3",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "giza",

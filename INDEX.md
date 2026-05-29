@@ -371,7 +371,7 @@
 | [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | dead | 3 | 192 | 2026-05-24 |
 | [mobox](./mobox/) | $8.1M | 0.0% | $8.1M | unknown | 1 | 375 | 2026-05-25 |
 | [mode-bridge](./mode-bridge/) | $6.2M | 2.9% | ? | declining | 27 | 100 | 2026-05-23 |
-| [mole](./mole/) | $8.8M | 0.0% | ? | active | 0 | 49 | 2026-05-23 |
+| [mole](./mole/) | $8.8M | 0.0% | ? | active | 1 | 49 | 2026-05-29 |
 | [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 13 | 0 | 2026-05-26 |
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 0 | 9 | 2026-05-24 |
 | [moola-market](./moola-market/) | $73.9K | 10.8% | $73.9K | declining | 3 | 53 | 2026-05-25 |

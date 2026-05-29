@@ -5,11 +5,11 @@
 - Project: Mole (`mole`)
 - Website: [https://mole.fi](https://mole.fi)
 - Lifecycle: active (Tier 0, 54.6% below peak)
-- Generated: 2026-05-23T06:18:17.828Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-29T10:53:26.005Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: avalanche
 - Contract surface: 49 unique implementations (220 raw deployments)
-- DeFi Llama TVL: $8,839,884.02
+- DeFi Llama TVL: $8,787,127.81
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ The protocol consists of a single product family where all contracts are deploye
 - Unverified implementations: 46
 - Unique implementations: 49
 - Raw deployments: 220
-- Audits discovered: 0
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2023-03 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -123,6 +123,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Mole_Aptos_Audit_Report.pdf](https://github.com/Mole-Fi/Security/blob/main/Mole_Aptos_Audit_Report.pdf) | unknown | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -143,9 +144,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [7517] Mole_Aptos_Audit_Report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

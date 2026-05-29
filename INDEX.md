@@ -593,7 +593,7 @@
 | [swamp-finance](./swamp-finance/) | $0.1 | 0.0% | $0.1 | declining | 3 | 11 | 2026-05-29 |
 | [swappi](./swappi/) | $2.0M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [swapscanner](./swapscanner/) | $4.7M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
-| [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 0 | 10 | 2026-05-25 |
+| [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 3 | 10 | 2026-05-29 |
 | [switcheo-finance](./switcheo-finance/) | $68.4M | 0.0% | $68.4M | active | 0 | 48 | 2026-05-25 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 134 | 2026-05-23 |
 | [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-05-25 |

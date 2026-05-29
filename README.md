@@ -483,7 +483,7 @@ Each project directory contains:
 | [goldstation](./goldstation/brief.md) | $2.26M | avalanche, klaytn | 5 | 0/5 (0%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | - |
 | [growihf](./growihf/brief.md) | $8.42M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [grvt](./grvt/brief.md) | $55.39M | ethereum | 7 | 7/7 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [guru-network-dao](./guru-network-dao/brief.md) | $2.40M | 8 | 54 | 21/54 (39%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [guru-network-dao](./guru-network-dao/brief.md) | $2.31M | 8 | 54 | 21/54 (39%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [gyroscope-protocol](./gyroscope-protocol/brief.md) | $1.81M | 10 | 233 | 148/233 (64%) | 21.3% | 1.3% (Trail of Bits) | 6 | fresh | 💀 dead | - |
 | [h2-finance](./h2-finance/brief.md) | $3.69M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [hakutora](./hakutora/brief.md) | $23.76M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -690,5 +690,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T08:15:47.927Z_
+_Generated: 2026-05-29T08:17:42.016Z_
 _Projects: 678_

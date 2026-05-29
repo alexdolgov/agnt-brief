@@ -239,7 +239,7 @@
 | [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 3 | 124 | 2026-05-29 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [grvt](./grvt/) | $55.4M | 0.0% | ? | unknown | 3 | 7 | 2026-05-29 |
-| [guru-network-dao](./guru-network-dao/) | $2.4M | 0.0% | ? | active | 0 | 54 | 2026-05-24 |
+| [guru-network-dao](./guru-network-dao/) | $2.3M | 0.0% | ? | active | 3 | 54 | 2026-05-29 |
 | [gyroscope-protocol](./gyroscope-protocol/) | $44.6 | 21.3% | ? | dead | 10 | 233 | 2026-05-24 |
 | [h2-finance](./h2-finance/) | $3.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [hakka-finance](./hakka-finance/) | $1.5M | 18.4% | $1.5M | active | 8 | 52 | 2026-05-25 |

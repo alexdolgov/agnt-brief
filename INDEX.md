@@ -654,7 +654,7 @@
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 3 | 3 | 2026-05-29 |
 | [usx.capital](./usx.capital/) | $1.7M | 0.0% | ? | unknown | 1 | 4 | 2026-05-24 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-25 |
-| [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | unknown | 0 | 28 | 2026-05-24 |
+| [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | unknown | 3 | 28 | 2026-05-29 |
 | [velodrome](./velodrome/) | $40.2M | 40.4% | ? | active | 8 | 52 | 2026-05-26 |
 | [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-05-24 |
 | [veno-finance](./veno-finance/) | $42.8M | 0.0% | ? | active | 0 | 49 | 2026-05-26 |

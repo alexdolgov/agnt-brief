@@ -64,7 +64,7 @@ Each project directory contains:
 | [bitway](./bitway/brief.md) | $60.78M | bsc | 8 | 7/8 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $136.35M |
 | [bitway-earn](./bitway-earn/brief.md) | $62.23M | bsc | 8 | 7/8 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $136.35M |
 | [giza](./giza/brief.md) | $4.63M | base, plasma | 16 | 16/16 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $119.21M |
-| [velo-finance](./velo-finance/brief.md) | $1.74M | bsc | 28 | 4/28 (14%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $117.63M |
+| [velo-finance](./velo-finance/brief.md) | $1.77M | bsc | 28 | 4/28 (14%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $117.63M |
 | [yieldseeker](./yieldseeker/brief.md) | $1.26M | base | 191 | 51/191 (27%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | $102.88M |
 | [velvet.capital](./velvet.capital/brief.md) | $1.44M | 4 | 420 | 44/420 (10%) | 77.8% | 2.2% (Spearbit) | 13 | fresh | ⚠️ declining | $95.22M |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/brief.md) | $2.23M | ethereum | 112 | 75/112 (67%) | 1.3% | 0.0% (-) | 2 | stale | ⚠️ declining | $94.39M |
@@ -712,5 +712,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T17:06:42.511Z_
+_Generated: 2026-05-29T17:08:46.837Z_
 _Projects: 700_

@@ -151,7 +151,7 @@ Each project directory contains:
 | [makina](./makina/brief.md) | $36.80M | base, ethereum, ink | 36 | 33/36 (92%) | 90.9% | 84.8% (ChainSecurity) | 6 | fresh | ✅ active | $12.90M |
 | [standx](./standx/brief.md) | $48.27M | bsc | 18 | 8/18 (44%) | 50.0% | 0.0% (-) | 5 | fresh | ❓ unknown | $12.71M |
 | [lets-get-hai](./lets-get-hai/brief.md) | $1.21M | optimism | 54 | 53/54 (98%) | 77.4% | 0.0% (-) | 4 | fresh | ✅ active | $12.63M |
-| [sideshift](./sideshift/brief.md) | $15.06M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $12.33M |
+| [sideshift](./sideshift/brief.md) | $15.00M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $12.33M |
 | [looping-collective](./looping-collective/brief.md) | $18.12M | ethereum, hyperliquid | 14 | 12/14 (86%) | 7.7% | 0.0% (-) | 1 | fresh | ✅ active | $11.81M |
 | [d2-finance](./d2-finance/brief.md) | $24.57M | 5 | 184 | 60/184 (33%) | 48.4% | 11.3% (Cyfrin) | 2 | aging | ✅ active | $11.49M |
 | [alpaca-finance](./alpaca-finance/brief.md) | $46.10M | bsc | 144 | 115/144 (80%) | 57.4% | 22.6% (SlowMist) | 17 | stale | ⚠️ declining | $11.23M |
@@ -704,5 +704,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T14:04:28.150Z_
+_Generated: 2026-05-29T14:06:25.726Z_
 _Projects: 692_

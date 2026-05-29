@@ -529,7 +529,7 @@
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | unknown | 51 | 40 | 2026-05-29 |
 | [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-05-23 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
-| [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 0 | 2 | 2026-05-22 |
+| [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 3 | 2 | 2026-05-29 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-05-26 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-05-23 |
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-05-24 |

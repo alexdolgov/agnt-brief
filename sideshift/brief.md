@@ -7,11 +7,11 @@
 - Project: SideShift (`sideshift`)
 - Website: [https://sideshift.ai](https://sideshift.ai)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-22T20:36:00.692Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-29T14:05:52.653Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: ethereum
 - Contract surface: 2 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $15,055,679.01
+- DeFi Llama TVL: $15,003,690.37
 - On-chain TVL (included contracts): $12,328,298.64
 - TVL by chain: Ethereum $12,328,298.64
 
@@ -31,11 +31,11 @@ The SideShiftVault contract handles the core bridging logic, while the XAI token
 - Unverified implementations: 0
 - Unique implementations: 2
 - Raw deployments: 3
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $12,328,298.64
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $12,328,298.64 represents exposure in a protocol with unknown activity.
 
@@ -78,6 +78,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -101,9 +104,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [6911] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [6912] 0002-metadata-manifest-and-pull-command.md
+- [6913] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -246,6 +246,7 @@
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [hanji-protocol](./hanji-protocol/) | $2.8M | 16.7% | ? | active | 2 | 289 | 2026-05-24 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-05-23 |
+| [harvest-finance](./harvest-finance/) | $12.9M | 46.4% | ? | declining | 10 | 445 | 2026-05-29 |
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 52.6% | ? | dead | 3 | 51 | 2026-05-24 |
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 0 | 2 | 2026-05-22 |
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | sunsetting | 3 | 21 | 2026-05-24 |

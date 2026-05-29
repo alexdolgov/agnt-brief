@@ -1,0 +1,17 @@
+{
+  "address": "0x4cef4aea9d4ebd588ebef1ff30dc6d7061278d26",
+  "chain_id": 56,
+  "contract_name": "VenusFoldStrategyV2Mainnet_DAI",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T08:22:54.149Z"
+}

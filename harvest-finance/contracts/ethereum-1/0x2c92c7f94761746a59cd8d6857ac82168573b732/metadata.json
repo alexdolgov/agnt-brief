@@ -1,0 +1,18 @@
+{
+  "address": "0x2c92c7f94761746a59cd8d6857ac82168573b732",
+  "chain_id": 1,
+  "contract_name": "Klondike2FarmStrategyMainnet_KXUSD_DAI",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T08:22:56.759Z"
+}

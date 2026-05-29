@@ -1,0 +1,18 @@
+{
+  "address": "0xce9bc5157f2d28d64749e27ddfa18159c795e5aa",
+  "chain_id": 1,
+  "contract_name": "StrategyProxy",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 7,
+  "constructor_arguments": "",
+  "implementation_address": "0xd8959019adf88b2ad480c558ef6134a50a021bae",
+  "fetched_at": "2026-05-29T08:23:11.141Z"
+}

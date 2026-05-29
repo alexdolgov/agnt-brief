@@ -565,7 +565,7 @@
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 3 | 2 | 2026-05-29 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-05-23 |
 | [stake.link](./stake.link/) | $76.8M | 6.5% | $76.8M | active | 1 | 71 | 2026-05-27 |
-| [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-22 |
+| [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 3 | 183 | 2026-05-29 |
 | [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 18 | 3 | 2026-05-23 |
 | [standx](./standx/) | $12.7M | 50.0% | $12.7M | unknown | 6 | 18 | 2026-05-26 |
 | [stargate-finance](./stargate-finance/) | $203.9M | 23.1% | $171.9M | active | 2 | 294 | 2026-05-27 |

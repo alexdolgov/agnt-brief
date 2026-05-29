@@ -695,6 +695,7 @@
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-05-23 |
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-05-27 |
+| [zerolend](./zerolend/) | $16.1M | 0.0% | ? | declining | 3 | 579 | 2026-05-29 |
 | [zircuit-finance](./zircuit-finance/) | $180.1M | 0.0% | $180.1M | unknown | 0 | 3 | 2026-05-24 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 21.1% | $140.4M | declining | 10 | 20 | 2026-05-27 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-05-22 |

@@ -5,8 +5,8 @@
 - Project: K2 (`k2`)
 - Website: [https://opengdp.network/](https://opengdp.network/)
 - Lifecycle: active (Tier 0, 80.4% below peak)
-- Generated: 2026-05-29T09:38:25.827Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T20:08:45.505Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: ethereum
 - Contract surface: 30 unique implementations (53 raw deployments)
 - DeFi Llama TVL: $4,657,315.72

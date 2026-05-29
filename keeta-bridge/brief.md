@@ -5,8 +5,8 @@
 - Project: Keeta Bridge (`keeta-bridge`)
 - Website: [https://keeta.com/](https://keeta.com/)
 - Lifecycle: active (Tier 0, 20.4% below peak)
-- Generated: 2026-05-29T09:46:05.860Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T20:17:27.605Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: base
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $1,058,144.81

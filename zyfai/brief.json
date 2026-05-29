@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zyfai",
-  "generated_at": "2026-05-23T11:41:26.620Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-29T18:11:24.661Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "zyfai",
@@ -22,29 +22,29 @@
     "drop_from_peak_pct": 44.83392757550483
   },
   "summary": {
-    "total_contracts": 147,
-    "total_addresses": 466,
-    "unique_implementations": 147,
-    "total_deployments": 466,
+    "total_contracts": 106,
+    "total_addresses": 402,
+    "unique_implementations": 106,
+    "total_deployments": 402,
     "audited_contracts": 0,
-    "unaudited_contracts": 130,
+    "unaudited_contracts": 100,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 130,
+    "contracts_verified_unaudited": 100,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 17,
+    "contracts_unverified": 6,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 4,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6382752.18127,
-    "tvl_usd": 1557938356.0259821,
+    "dl_tvl_usd": 6488909.30476,
+    "tvl_usd": 1557525865.3316944,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "arbitrum": 173085247.13,
       "base": 178926202.27,
       "ethereum": 1188668971.55,
-      "sonic": 17257935.08
+      "sonic": 16845444.39
     },
-    "asd_usd": 1557938356.0259821,
+    "asd_usd": 1557525865.3316944,
     "website_url": "https://zyf.ai",
     "chains": [
       "arbitrum",
@@ -61,7 +61,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 4
     }
   },
   "topography": {
@@ -800,46 +800,6 @@
     {
       "chain_id": 146,
       "chain_name": "sonic",
-      "address": "0x896f4d49916ac5cfc36d7a260a7039ba4ea317b6",
-      "name": "PendlePaladinSCTokenSY",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 412488.9206097745,
-      "is_proxy": true,
-      "impl_address": "0x79cac177c2efbf5dbab7c7111afa9caf8031daa2",
-      "impl_name": "PendlePaladinSCTokenSY",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x896f4d49916ac5cfc36d7a260a7039ba4ea317b6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 239020.9598807044,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x8bb86a99f97f5d19718bd5ca0b0ca00354532ef3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 173467.96072907007,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
       "address": "0x0fb682c9692addcc1769f4d4d938c54420d54fa3",
       "name": "PendlePrincipalToken",
       "role": "token",
@@ -1561,37 +1521,6 @@
       "contamination_flag": null
     },
     {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x40ae6da2d92aa3dcb7f8d7a7209fd12bdfcb7c85",
-      "name": "PendleERC20SYUpg",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 1.7736780872084714,
-      "is_proxy": true,
-      "impl_address": "0x84a240fa784e7f03cb99ba3716065961c5d0d531",
-      "impl_name": "PendleERC20SYUpg",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x40ae6da2d92aa3dcb7f8d7a7209fd12bdfcb7c85",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1.7736780872084714,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x1c1efa17081cde0c8ee816075369741d89fcd548",
@@ -1627,347 +1556,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xc3f7e6b2fabe4cda955902e529257c31981543d2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x9a5af6a35bb56443c577d57c303cda39f56dd173",
-      "name": "ActionAddRemoveLiqV3",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActionAddRemoveLiqV3",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x9a5af6a35bb56443c577d57c303cda39f56dd173",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x8d407705b0a3d78167e979f71e009f5820f51c5e",
-      "name": "ActionCallbackV3",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActionCallbackV3",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x8d407705b0a3d78167e979f71e009f5820f51c5e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0xb4205a645c7e920bd8504181b1d7f2c5c955c3e7",
-      "name": "ActionInfoStatic",
-      "role": "periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActionInfoStatic",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xb4205a645c7e920bd8504181b1d7f2c5c955c3e7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x2700adb035f82a11899ce1d3f1bf8451c296eabb",
-      "name": "ActionMarketAuxStatic",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActionMarketAuxStatic",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x2700adb035f82a11899ce1d3f1bf8451c296eabb",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x9d6d509c0354aca187aac6bea7d063d3ef68e2a0",
-      "name": "ActionMarketCoreStatic",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActionMarketCoreStatic",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x9d6d509c0354aca187aac6bea7d063d3ef68e2a0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x7ea83f9037647fae4535bfba92e884d82e53a40b",
-      "name": "ActionMintRedeemStatic",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActionMintRedeemStatic",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x7ea83f9037647fae4535bfba92e884d82e53a40b",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0xf5a7de2d276dbda3eef1b62a9e718eff4d29ddc8",
-      "name": "ActionMiscV3",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActionMiscV3",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xf5a7de2d276dbda3eef1b62a9e718eff4d29ddc8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x96f77f24b3d17166fcaf3a9e3b8330ff38b966f9",
-      "name": "ActionStorageStatic",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActionStorageStatic",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x96f77f24b3d17166fcaf3a9e3b8330ff38b966f9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x59968008a703dc13e6beaeced644bdce4ee45d13",
-      "name": "ActionStorageV4",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActionStorageV4",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x59968008a703dc13e6beaeced644bdce4ee45d13",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x963ddbb35c1ae44e2a159e3b5fb5177e0b32660d",
-      "name": "ActionSwapPTV3",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActionSwapPTV3",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x963ddbb35c1ae44e2a159e3b5fb5177e0b32660d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x9c27168b15866968b125b0c2657ff9f64704afd0",
-      "name": "ActionSwapYTV3",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActionSwapYTV3",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x9c27168b15866968b125b0c2657ff9f64704afd0",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2208,73 +1796,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xea2a6e7b41505d62d404f927f991edc9e45883c2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x0e669e08bd717d7f9c9de158636bd8561295fbb5",
-      "name": "BaseSplitCodeFactoryContract",
-      "role": "registry",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BaseSplitCodeFactoryContract",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x0e669e08bd717d7f9c9de158636bd8561295fbb5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x0fe4a1bbe013b54e38ef4e4ec8ba1d64d12a0663",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x29deaee5413a07c933c15b37d7deb6eb744ba9c8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x6952eb0c152d683ea2f2b8b90a5e888c1550b69d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xa6dc67ff3b241dedec6af907ff24bb5cfc3eeeaf",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -3233,55 +2754,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xc1ac7f1c09d300bd181430799cf660d74d71acc8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x19c7fa940f93c238acafe3d75b3d5d6f529d4e38",
-      "name": "ERC20Premined",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ERC20Premined",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x19c7fa940f93c238acafe3d75b3d5d6f529d4e38",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xb5b781b61814bd32d1b2bf8864e8992a8037f8bc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -4066,46 +3538,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x16648548d12d1f71663f712211d56ae7322f58b9",
-      "name": "OracleLib",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "OracleLib",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x16648548d12d1f71663f712211d56ae7322f58b9",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x5e5a839443f59776a789c40506a63c0c70071008",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xc902f6840699abf5b8d6a787a7943d4783566af2",
@@ -4179,241 +3611,6 @@
     {
       "chain_id": 146,
       "chain_name": "sonic",
-      "address": "0x7076dee976098b444f68c6382e8f062237879a9f",
-      "name": "PendleBeetsStakedSonicSY",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x64aec80c049aaf71a739a978d4c80e00547316e9",
-      "impl_name": "PendleBeetsStakedSonicSY",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x7076dee976098b444f68c6382e8f062237879a9f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x8cbf9190b6ea4bed4655888273e2a313a77400fd",
-      "name": "PendleCommonPoolDeployHelperV2",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x859b7a5eaad0abd59a766879362829e60bcd5ffe",
-      "impl_name": "PendleCommonPoolDeployHelperV2",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x8cbf9190b6ea4bed4655888273e2a313a77400fd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x02adf72d5d06a9c92136562eb237c07696833a84",
-      "name": "PendleCommonSYFactory",
-      "role": "registry",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xbe33f3a76c6d3453157ad46e0b5504965ccadbfc",
-      "impl_name": "PendleCommonSYFactory",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x02adf72d5d06a9c92136562eb237c07696833a84",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x0fe14feb320a8dff7b2ee47e6bbedf309ef4b0c8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x69a23f16974024a1b6a5362ac2a11bfeeefd5827",
-      "name": "PendleERC4626NoRedeemNoDepositUpgSY",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xcad502bb55d1a3f79952f969bff3f011cf30a94a",
-      "impl_name": "PendleERC4626NoRedeemNoDepositUpgSY",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x69a23f16974024a1b6a5362ac2a11bfeeefd5827",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x3bbacda010e7f4347e54f2bf0f42ff30b5a897da",
-      "name": "PendleERC4626UpgSYV2",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x4dba367d0f05bcd6a405f3d90c4c4fd93e185369",
-      "impl_name": "PendleERC4626UpgSYV2",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x3bbacda010e7f4347e54f2bf0f42ff30b5a897da",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x642135ff98c15cba7fcf1766502bd493be4d3492",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0xee708fc793a02f1edd5bb9dbd7fd13010d1f7136",
-      "name": "PendleGaugeControllerUpg",
-      "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xef5579f4e7b0063a414a42a65dfd86a1562466e1",
-      "impl_name": "PendleGaugeControllerUpg",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xee708fc793a02f1edd5bb9dbd7fd13010d1f7136",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x0ab3ae25c42a2f3748a018556989355d568fa6d6",
-      "name": "PendleMarketFactoryV7Upg",
-      "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xe7a7477c636ebc2ed7c1968b5fac5eaf29ff6c0c",
-      "impl_name": "PendleMarketFactoryV7Upg",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x0ab3ae25c42a2f3748a018556989355d568fa6d6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
       "address": "0x004f76045b42ef3e89814b12b37e69da19c8a212",
       "name": "PendleMarketV3",
       "role": "core_logic",
@@ -4463,162 +3660,6 @@
     {
       "chain_id": 146,
       "chain_name": "sonic",
-      "address": "0x3209e9412cca80b18338f2a56ada59c484c39644",
-      "name": "PendleMsgReceiveEndpointUpg",
-      "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xc9215ae9ec67385f38c755d862c8ee3702b5793a",
-      "impl_name": "PendleMsgReceiveEndpointUpg",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x3209e9412cca80b18338f2a56ada59c484c39644",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x5c3ddc827c40964728336229808e27c6374f07bf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0xb261266cb30c255cb9c73ebf4a3ead9398d23ab4",
-      "name": "PendleOriginSonicSY",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x563c6bcad7d50f3f650d92e0f1c4de6ac3767ce3",
-      "impl_name": "PendleOriginSonicSY",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xb261266cb30c255cb9c73ebf4a3ead9398d23ab4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x318eec91f653ca72fafb038f9ad792a6bc0d644c",
-      "name": "PendleSiloV2SY",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xafb9604b23bb63f8835e6952efe5057eebac20b2",
-      "impl_name": "PendleSiloV2SY",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x318eec91f653ca72fafb038f9ad792a6bc0d644c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x3a9dc0b33ab3b6e6ce1ead61909f59acd7682036",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x3ba56bd2ddf751c6d1929e9f499a1718d424811f",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x89a3cfaac1905bb42ee834ac79178705f098a76c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xaa3350c98a4a3a4cbbf35d0858420bc937579598",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xc81750fa61ff14b630ac275b82b9870121b2d387",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xee79b2473e5180f9bd7366f508961655c770f021",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
       "address": "0x068def65b9dbaff02b4ee54572a9fa7dfb188ea3",
       "name": "PendleSiloV2SY_deprecated",
       "role": "unknown",
@@ -4638,15 +3679,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xa9da5457ffc301d7c98fb38105f551a665511af3",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -4654,69 +3686,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x4b272672a58da22b213e733f5aba48cfec534d30",
-      "name": "PendleSiloValamoreSV2SY",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xccd50672583d1a56efb15395318c5f2a44a62ffe",
-      "impl_name": "PendleSiloValamoreSV2SY",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x4b272672a58da22b213e733f5aba48cfec534d30",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x27b1dacd74688af24a64bd3c9c1b143118740784",
-      "name": "PendleWanSSY",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xadb09f65bd90d19e3148d9ccb693f3161c6db3e8",
-      "impl_name": "PendleWanSSY",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x27b1dacd74688af24a64bd3c9c1b143118740784",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null
     },
     {
       "chain_id": 146,
@@ -4959,37 +3929,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xe3a409ed15cd53afdefdd191ad945cec528a2496",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x96a528f4414ac3ccd21342996c93f2ecdec24286",
-      "name": "ProxyAdmin",
-      "role": "governance",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ProxyAdmin",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x96a528f4414ac3ccd21342996c93f2ecdec24286",
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -5775,82 +4714,6 @@
       "contamination_flag": "cleared"
     },
     {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x1e5f46718bf09697db487bc8de2204cff47da241",
-      "name": "TransparentUpgradeableProxy",
-      "role": "proxy",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TransparentUpgradeableProxy",
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x1e5f46718bf09697db487bc8de2204cff47da241",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x239c7c530f194e9e00856b5c55a95d485f64c56e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x497b5e9071a7e30dcde69e2deb3b04d7ca1d9fe7",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x4adf7b42ca2878ba8081b1742af3297e0dba67cc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x873b2b581786ff9bee3e8345484fe949a2750d5a",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x8e87114f424ec7025c197ba28d8bd62e73f1a1e8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x082481d2223a1372d975edc9ccfea3d77b1b595f",
@@ -6023,347 +4886,6 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xc2664a65346db247649d5d7853b7bb4cb4e7734f",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x2daeae181464e5125208a55629b590dbe9a58ded",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x2daeae181464e5125208a55629b590dbe9a58ded",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x33b5cf2b0761e9787c33cda2370f281947b3e1b6",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x33b5cf2b0761e9787c33cda2370f281947b3e1b6",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x45dd4aecc425b01bf98c567407ab4a4ff3c7d349",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x45dd4aecc425b01bf98c567407ab4a4ff3c7d349",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x49515b37e369098b601af3561a70c32120db75aa",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x49515b37e369098b601af3561a70c32120db75aa",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x95a937f7064c75c6bc257160088c0a9d58cca333",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x95a937f7064c75c6bc257160088c0a9d58cca333",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x9ab557331ddada945eb2ece19b90bd7a843f8665",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x9ab557331ddada945eb2ece19b90bd7a843f8665",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x9b9feca00fa6cf646c9b205e8c9c61df5807a0a5",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x9b9feca00fa6cf646c9b205e8c9c61df5807a0a5",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0xc624052824d16089d2bf50218f53da13bfba6a79",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xc624052824d16089d2bf50218f53da13bfba6a79",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0xe2e8755694b349ddef6103613164a5099d9972d5",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xe2e8755694b349ddef6103613164a5099d9972d5",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0xf264ef837bafad07a5bc2eb4f6190dd41d72e4bc",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xf264ef837bafad07a5bc2eb4f6190dd41d72e4bc",
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0xfa1d82704ec9b4a6253de82e4fa508136bdf0c9a",
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0xfa1d82704ec9b4a6253de82e4fa508136bdf0c9a",
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -7503,7 +6025,92 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 7656,
+      "audit_key": "audit-7656",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7657,
+      "audit_key": "audit-7657",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7658,
+      "audit_key": "audit-7658",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7659,
+      "audit_key": "audit-7659",
+      "report_name": "BANKR_INTEGRATION.md",
+      "report_url": "https://github.com/ondefy/zyfai-sdk/blob/main/docs/BANKR_INTEGRATION.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -7545,46 +6152,6 @@
       "origin_kind": "native",
       "tvl_usd": 6778.984936586342,
       "risk_note": "Verified native implementation with $6,778.98 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0xb4205a645c7e920bd8504181b1d7f2c5c955c3e7",
-      "name": "ActionInfoStatic",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x2700adb035f82a11899ce1d3f1bf8451c296eabb",
-      "name": "ActionMarketAuxStatic",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0xf5a7de2d276dbda3eef1b62a9e718eff4d29ddc8",
-      "name": "ActionMiscV3",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x59968008a703dc13e6beaeced644bdce4ee45d13",
-      "name": "ActionStorageV4",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -7681,16 +6248,6 @@
       "chain_name": "ethereum",
       "address": "0x2d850f76c671aa2e1c1892a0644c115eb254d165",
       "name": "ERC1155CreatorImplementation",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x19c7fa940f93c238acafe3d75b3d5d6f529d4e38",
-      "name": "ERC20Premined",
       "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -7811,16 +6368,6 @@
       "chain_name": "ethereum",
       "address": "0x023ee795361b28cdbb94e302983578486a0a5f1b",
       "name": "MultiplicativePriceFeed",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x16648548d12d1f71663f712211d56ae7322f58b9",
-      "name": "OracleLib",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -8128,17 +6675,34 @@
     }
   ],
   "origin_summary": {
-    "native": 62,
+    "native": 56,
     "upstream": 17,
-    "standard_library": 11,
-    "needs_review": 57
+    "standard_library": 8,
+    "needs_review": 25
   },
   "scope_matching_notes": {
     "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 7656,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 7657,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 7658,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      },
+      {
+        "audit_id": 7659,
+        "report_name": "BANKR_INTEGRATION.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

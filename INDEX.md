@@ -705,4 +705,4 @@
 | [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 1 | 58 | 2026-05-26 |
 | [zoomex](./zoomex/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [zoth](./zoth/) | $6.5 | 78.1% | ? | active | 5 | 43 | 2026-05-24 |
-| [zyfai](./zyfai/) | $1.6B | 0.0% | $1.6B | active | 0 | 147 | 2026-05-23 |
+| [zyfai](./zyfai/) | $1.6B | 0.0% | $1.6B | active | 4 | 106 | 2026-05-29 |

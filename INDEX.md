@@ -303,7 +303,7 @@
 | [kava-mint](./kava-mint/) | $52.2M | 0.0% | ? | active | 1 | 1 | 2026-05-27 |
 | [keep-network](./keep-network/) | $27.0M | 15.9% | $26.2M | dead | 18 | 354 | 2026-05-25 |
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | dead | 1 | 481 | 2026-05-26 |
-| [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 0 | 4 | 2026-05-25 |
+| [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 3 | 4 | 2026-05-29 |
 | [keyring](./keyring/) | $6.2M | 18.6% | ? | active | 16 | 54 | 2026-05-25 |
 | [kiloex](./kiloex/) | $7.3M | 12.5% | $1.5M | declining | 10 | 111 | 2026-05-24 |
 | [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-05-25 |

@@ -42,7 +42,7 @@
 | [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | active | 3 | 9 | 2026-05-29 |
 | [apex-protocol](./apex-protocol/) | $436.4K | 0.0% | $436.4K | active | 4 | 206 | 2026-05-28 |
 | [api3](./api3/) | $55.2M | 21.4% | $55.2M | unknown | 6 | 28 | 2026-05-27 |
-| [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 3 | 55 | 2026-05-28 |
+| [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 3 | 55 | 2026-05-29 |
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 65.9% | ? | dead | 25 | 61 | 2026-05-28 |
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-05-23 |
 | [aria-protocol](./aria-protocol/) | $2.0M | 0.0% | ? | dead | 1 | 1 | 2026-05-24 |

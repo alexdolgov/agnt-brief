@@ -427,6 +427,7 @@
 | [osmosis-dex](./osmosis-dex/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
 | [ostium](./ostium/) | $29.1M | 47.1% | ? | unknown | 1 | 17 | 2026-05-26 |
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | dead | 3 | 3 | 2026-05-29 |
+| [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | unknown | 11 | 4353 | 2026-05-29 |
 | [p2pb2b](./p2pb2b/) | $4.9M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
 | [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | unknown | 0 | 3 | 2026-05-25 |
 | [pact](./pact/) | $1.5M | 0.0% | $1.5M | active | 1 | 53 | 2026-05-25 |

@@ -458,7 +458,7 @@
 | [pooltogether](./pooltogether/) | $26.9M | 28.9% | $26.7M | declining | 72 | 153 | 2026-05-29 |
 | [potatoswap](./potatoswap/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [powercity](./powercity/) | $3.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
-| [powh3d](./powh3d/) | $4.5M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
+| [powh3d](./powh3d/) | $4.4M | 0.0% | ? | active | 3 | 1 | 2026-05-29 |
 | [predict-fun](./predict-fun/) | $1.5M | 8.0% | $1.5M | unknown | 9 | 40 | 2026-05-22 |
 | [prime-staking](./prime-staking/) | $5.1M | 0.0% | ? | active | 2 | 10 | 2026-05-23 |
 | [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | unknown | 2 | 119 | 2026-05-24 |

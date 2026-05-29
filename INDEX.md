@@ -2,7 +2,7 @@
 
 | Project | TVL | Coverage | ASD | Lifecycle | Audits | Contracts | Updated |
 |---|---|---|---|---|---|---|---|
-| [1inch](./1inch/) | $16.1M | 33.6% | $16.1M | declining | 416 | 274 | 2026-05-28 |
+| [1inch](./1inch/) | $16.1M | 33.6% | $16.1M | declining | 416 | 274 | 2026-05-29 |
 | [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [3f-mutual](./3f-mutual/) | $3.8M | 0.0% | ? | active | 3 | 21 | 2026-05-28 |
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-05-26 |

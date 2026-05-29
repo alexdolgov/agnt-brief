@@ -503,7 +503,7 @@
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | declining | 3 | 14 | 2026-05-29 |
-| [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-25 |
+| [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 3 | 15 | 2026-05-29 |
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-05-25 |
 | [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 186 | 2026-05-27 |
 | [saber](./saber/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |

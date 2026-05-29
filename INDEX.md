@@ -377,7 +377,7 @@
 | [moola-market](./moola-market/) | $73.9K | 10.8% | $73.9K | declining | 3 | 53 | 2026-05-25 |
 | [moonlander](./moonlander/) | $31.4M | 0.0% | ? | active | 3 | 11 | 2026-05-29 |
 | [more-markets](./more-markets/) | $11.5M | 0.0% | ? | declining | 3 | 21 | 2026-05-29 |
-| [morph-bridge](./morph-bridge/) | $15.8M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
+| [morph-bridge](./morph-bridge/) | $15.7M | 0.0% | ? | active | 3 | 1 | 2026-05-29 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-05-22 |
 | [mu-digital](./mu-digital/) | $19.5M | 100.0% | ? | active | 2 | 12 | 2026-05-22 |
 | [mugenfinance](./mugenfinance/) | $3.4M | 0.0% | ? | active | 0 | 12 | 2026-05-24 |

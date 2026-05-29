@@ -7,8 +7,8 @@
 - Project: BackedFi (`backedfi`)
 - Website: [https://backed.fi](https://backed.fi)
 - Lifecycle: unknown (Tier 0, 83.4% below peak)
-- Generated: 2026-05-29T02:26:35.837Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-d850
+- Generated: 2026-05-29T03:29:05.001Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-99fb
 - Chains: ethereum
 - Contract surface: 2 unique implementations (11 raw deployments)
 - DeFi Llama TVL: $8,201,934.33

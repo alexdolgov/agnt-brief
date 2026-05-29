@@ -7,11 +7,11 @@
 - Project: Gnosis Protocol v1 (`gnosis-protocol-v1`)
 - Website: [https://gnosis.io/](https://gnosis.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T13:24:57.252Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-29T07:55:16.348Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: ethereum
 - Contract surface: 112 unique implementations (165 raw deployments)
-- DeFi Llama TVL: $2,251,357.48
+- DeFi Llama TVL: $2,227,602.00
 - On-chain TVL (included contracts): $95,875,443.05
 - TVL by chain: Ethereum $95,875,443.05
 
@@ -25,38 +25,41 @@ The BatchExchange contract relies on IdToAddressBiMap for efficient address-to-I
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/75 (0.0%)
-- Verified + Unaudited implementations: 75
+- Verified implementations audited: 1/75 (1.3%)
+- Verified + Unaudited implementations: 74
 - Verified by bytecode match: 0
 - Unverified implementations: 37
 - Unique implementations: 112
 - Raw deployments: 165
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $95,875,443.05
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audits discovered: 12
+- Scoreable audits (matched contracts): 2
+- ASD (verified + unaudited TVL): $94,385,998.56
+- Latest audit: 2021-12 (stale)
+- Staleness: 0 fresh, 0 aging, 3 stale, 9 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $95,875,443.05 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $94,385,998.56 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 1 | 1.3% | 2021-12 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| ConditionalTokens | token | ethereum | [`0xc59b0e...407e0c`](./contracts/ethereum-1/0xc59b0e4de5f1248c1140964e0ff287b192407e0c/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (75)
+### ⚠️ Verified + Unaudited (74)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | Api3Token | token | ethereum | [`0x0b3821...31b88a`](./contracts/ethereum-1/0x0b38210ea11411557c13457d4da7dc6ea731b88a/) | ⚠️ Unaudited |
 | DIAToken | token | ethereum | [`0x84ca8b...3c9419`](./contracts/ethereum-1/0x84ca8bc7997272c7cfb4d0cd3d55cd942b3c9419/) | ⚠️ Unaudited |
 | MetaToken | token | ethereum | [`0xa3bed4...e9acd2`](./contracts/ethereum-1/0xa3bed4e1c75d00fa6f4e5e6922db7261b5e9acd2/) | ⚠️ Unaudited |
-| ConditionalTokens | token | ethereum | [`0xc59b0e...407e0c`](./contracts/ethereum-1/0xc59b0e4de5f1248c1140964e0ff287b192407e0c/) | ⚠️ Unaudited |
 | BoostedSavingsVault_imusd_mainnet_2 | core_logic | ethereum | [`0x78befc...1a6c7b`](./contracts/ethereum-1/0x78befca7de27d07dc6e71da295cc2946681a6c7b/) | ⚠️ Unaudited |
 | AaveIntegration | unknown | ethereum | [`0xf61734...3d9d39`](./contracts/ethereum-1/0xf617346a0fb6320e9e578e0c9b2a4588283d9d39/) | ⚠️ Unaudited |
 | BaseToken | token | ethereum | [`0x22eeab...a0f0e4`](./contracts/ethereum-1/0x22eeab2f980e8ed7824f8ea548c9595564a0f0e4/) | ⚠️ Unaudited |
@@ -189,6 +192,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [2020-01-20_accumulator_audit.pdf](https://github.com/gnosis/conditional-tokens-contracts/blob/master/docs/audit/2020-01-20_accumulator_audit.pdf) | unknown | Audit | 2020-01 | stale | Direct | contract_name | 1 | high |
+| [AuditReport-ConditionalTokens.md](https://github.com/gnosis/conditional-tokens-contracts/blob/master/docs/audit/AuditReport-ConditionalTokens.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | high |
+| [Gnosis_Audit_Report.pdf](https://github.com/gnosis/pm-contracts/blob/master/docs/audit/Gnosis_Audit_Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [GnosisProtocolV2May2021.pdf](https://github.com/gnosis/gp-v2-contracts/blob/main/audits/GnosisProtocolV2May2021.pdf) | unknown | Audit | 2021-05 | stale | Direct | n/a | 0 | n/a |
+| [[Cowswap_10122021]SCAudit_Report_2.pdf](https://github.com/gnosis/gp-v2-contracts/blob/main/audits/%5BCowswap_10122021%5DSCAudit_Report_2.pdf) | unknown | Audit | 2021-12 | stale | Direct | n/a | 0 | n/a |
+| [architecture.md](https://github.com/gnosis/gp-v2-contracts/blob/main/docs/architecture.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [index.md](https://github.com/gnosis/gp-v2-contracts/blob/main/docs/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [HashiMay2023.pdf](https://github.com/gnosis/hashi/blob/main/audits/HashiMay2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [g0-HashiMar2024.pdf](https://github.com/gnosis/hashi/blob/main/audits/g0-HashiMar2024.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -197,7 +212,6 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0xa3bed4...e9acd2`](./contracts/ethereum-1/0xa3bed4e1c75d00fa6f4e5e6922db7261b5e9acd2/) | MetaToken | token | $2,579,477.45 | Verified native implementation with $2,579,477.45 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc59b0e...407e0c`](./contracts/ethereum-1/0xc59b0e4de5f1248c1140964e0ff287b192407e0c/) | ConditionalTokens | token | $1,489,444.49 | Verified native implementation with $1,489,444.49 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf61734...3d9d39`](./contracts/ethereum-1/0xf617346a0fb6320e9e578e0c9b2a4588283d9d39/) | AaveIntegration | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x66126b...dea96d`](./contracts/ethereum-1/0x66126b4aa2a1c07536ef8e5e8bd4efda1fdea96d/) | BasketManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x46f3f2...5e87b5`](./contracts/ethereum-1/0x46f3f2f9662f66a6ddd6a8d1ddec3cd9ae5e87b5/) | BatchExchange | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -256,9 +270,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 10
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=2
+- Match method counts: extraction_exact=2
+
+Zero-match audit list:
+
+- [9139] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9140] 0002-metadata-manifest-and-pull-command.md
+- [9141] 0003-bun-package-manager-node-runtime.md
+- [9144] Gnosis_Audit_Report.pdf
+- [9145] GnosisProtocolV2May2021.pdf
+- [9146] [Cowswap_10122021]SCAudit_Report_2.pdf
+- [9147] architecture.md
+- [9148] index.md
+- [9149] HashiMay2023.pdf
+- [9150] g0-HashiMar2024.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,6 +1,6 @@
 # gnosis-protocol-v1 — Contract Index
 
-112 unique implementations on ethereum · 165 deployments · 0 audited · 75 unaudited · 37 unverified
+112 unique implementations on ethereum · 165 deployments · 1 audited · 74 unaudited · 37 unverified
 
 ## core_logic (7)
 
@@ -61,7 +61,7 @@
 |---|---|---|---|---|
 | [Api3Token](./ethereum-1/0x0b38210ea11411557c13457d4da7dc6ea731b88a/) | ethereum | [`0x0b3821...31b88a`](./ethereum-1/0x0b38210ea11411557c13457d4da7dc6ea731b88a/) | ⚠️ Unaudited | Verified |
 | [BaseToken](./ethereum-1/0x22eeab2f980e8ed7824f8ea548c9595564a0f0e4/) | ethereum | [`0x22eeab...a0f0e4`](./ethereum-1/0x22eeab2f980e8ed7824f8ea548c9595564a0f0e4/) | ⚠️ Unaudited | Verified |
-| [ConditionalTokens](./ethereum-1/0xc59b0e4de5f1248c1140964e0ff287b192407e0c/) | ethereum | [`0xc59b0e...407e0c`](./ethereum-1/0xc59b0e4de5f1248c1140964e0ff287b192407e0c/) | ⚠️ Unaudited | Verified |
+| [ConditionalTokens](./ethereum-1/0xc59b0e4de5f1248c1140964e0ff287b192407e0c/) | ethereum | [`0xc59b0e...407e0c`](./ethereum-1/0xc59b0e4de5f1248c1140964e0ff287b192407e0c/) | ✅ Audited | Verified |
 | [DIAToken](./ethereum-1/0x84ca8bc7997272c7cfb4d0cd3d55cd942b3c9419/) | ethereum | [`0x84ca8b...3c9419`](./ethereum-1/0x84ca8bc7997272c7cfb4d0cd3d55cd942b3c9419/) | ⚠️ Unaudited | Verified |
 | [MetaToken](./ethereum-1/0xa3bed4e1c75d00fa6f4e5e6922db7261b5e9acd2/) | ethereum | [`0xa3bed4...e9acd2`](./ethereum-1/0xa3bed4e1c75d00fa6f4e5e6922db7261b5e9acd2/) | ⚠️ Unaudited | Verified |
 | [StakingRewardsWithPlatformToken (4 deployments)](./ethereum-1/0x25970282aac735cd4c76f30bfb0bf2bc8dad4e70/) | ethereum | 4 deployments: ethereum [`0x259702...ad4e70`](./ethereum-1/0x25970282aac735cd4c76f30bfb0bf2bc8dad4e70/); ethereum `0x881c72...790c80`; ethereum `0xf4a7d2...f7f027`; ethereum `0xf7575d...baa7fb` | ⚠️ Unaudited | Verified |

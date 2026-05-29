@@ -5,11 +5,11 @@
 - Project: Fulcrom (`fulcrom`)
 - Website: [https://fulcrom.finance](https://fulcrom.finance)
 - Lifecycle: active (Tier 0, 53.4% below peak)
-- Generated: 2026-05-22T21:33:12.198Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-29T07:41:40.314Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: cronos, zksync-era
-- Contract surface: 80 unique implementations (80 raw deployments)
-- DeFi Llama TVL: $13,519,623.00
+- Contract surface: 79 unique implementations (79 raw deployments)
+- DeFi Llama TVL: $13,322,016.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -26,14 +26,14 @@ The Fulcrom AMM and Perps families rely on the shared Fulcrom Core infrastructur
 - Verified implementations audited: 0/0 (0.0%)
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 80
-- Unique implementations: 80
-- Raw deployments: 80
-- Audits discovered: 0
+- Unverified implementations: 79
+- Unique implementations: 79
+- Raw deployments: 79
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -62,7 +62,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (80)
+### ❓ Unverified (79)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -87,7 +87,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | cronos | `0x68f8a5...3c9d40` | ❓ Unverified |
 | UnnamedContract | unknown | cronos | `0x6fcfd3...52507e` | ❓ Unverified |
 | UnnamedContract | unknown | cronos | `0x725c5a...3abccb` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | `0x76b8c3...34cbaa` | ❓ Unverified |
 | UnnamedContract | unknown | cronos | `0x8268fe...f77022` | ❓ Unverified |
 | UnnamedContract | unknown | cronos | `0x83afb1...f0013a` | ❓ Unverified |
 | UnnamedContract | unknown | cronos | `0x880a34...daf3ae` | ❓ Unverified |
@@ -153,6 +152,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -167,15 +169,21 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 75 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [6914] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [6915] 0002-metadata-manifest-and-pull-command.md
+- [6916] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

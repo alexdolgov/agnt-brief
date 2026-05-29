@@ -1,8 +1,8 @@
 # fulcrom — Contract Index
 
-80 unique implementations across 2 chains · 80 deployments · 0 audited · 0 unaudited · 80 unverified
+79 unique implementations across 2 chains · 79 deployments · 0 audited · 0 unaudited · 79 unverified
 
-## unknown (80)
+## unknown (79)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -25,7 +25,6 @@
 | UnnamedContract | cronos | `0x68f8a5...3c9d40` | ❓ Unverified | Unverified |
 | UnnamedContract | cronos | `0x6fcfd3...52507e` | ❓ Unverified | Unverified |
 | UnnamedContract | cronos | `0x725c5a...3abccb` | ❓ Unverified | Unverified |
-| UnnamedContract | cronos | `0x76b8c3...34cbaa` | ❓ Unverified | Unverified |
 | UnnamedContract | cronos | `0x8268fe...f77022` | ❓ Unverified | Unverified |
 | UnnamedContract | cronos | `0x83afb1...f0013a` | ❓ Unverified | Unverified |
 | UnnamedContract | cronos | `0x880a34...daf3ae` | ❓ Unverified | Unverified |

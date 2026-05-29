@@ -218,7 +218,7 @@
 | [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | unknown | 3 | 5 | 2026-05-29 |
 | [frankencoin](./frankencoin/) | $70.0M | 66.7% | ? | active | 11 | 6 | 2026-05-27 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 11 | 18 | 2026-05-23 |
-| [fulcrom](./fulcrom/) | $13.5M | 0.0% | ? | active | 0 | 80 | 2026-05-22 |
+| [fulcrom](./fulcrom/) | $13.3M | 0.0% | ? | active | 3 | 79 | 2026-05-29 |
 | [gains-network](./gains-network/) | $21.9M | 0.0% | $21.9M | unknown | 1 | 760 | 2026-05-25 |
 | [galaxy-curation](./galaxy-curation/) | $67.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [gamma](./gamma/) | $24.3K | 29.5% | $24.3K | declining | 33 | 467 | 2026-05-29 |

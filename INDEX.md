@@ -55,7 +55,7 @@
 | [aura](./aura/) | $277.0M | 20.5% | $237.2M | declining | 22 | 502 | 2026-05-29 |
 | [aurora-plus](./aurora-plus/) | $2.0M | 33.3% | ? | active | 3 | 31 | 2026-05-24 |
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | dead | 1 | 10 | 2026-05-25 |
-| [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 3 | 570 | 2026-05-28 |
+| [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 3 | 570 | 2026-05-29 |
 | [avalaunch](./avalaunch/) | $31.3M | 78.6% | ? | unknown | 13 | 39 | 2026-05-23 |
 | [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | unknown | 3 | 61 | 2026-05-26 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 3 | 1 | 2026-05-28 |

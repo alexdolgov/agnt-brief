@@ -289,7 +289,7 @@
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-05-25 |
 | [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 3 | 40 | 2026-05-29 |
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | unknown | 3 | 2 | 2026-05-29 |
-| [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | dead | 0 | 181 | 2026-05-24 |
+| [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | dead | 36 | 181 | 2026-05-29 |
 | [juicebox](./juicebox/) | $11.2M | 0.0% | ? | active | 0 | 77 | 2026-05-23 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-05-23 |
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | unknown | 0 | 35 | 2026-05-27 |

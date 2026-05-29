@@ -207,7 +207,7 @@ Each project directory contains:
 | [alien-base](./alien-base/brief.md) | $4.73M | base | 58 | 47/58 (81%) | 0.0% | 0.0% (-) | 0 | aging | ⚠️ declining | $2.92M |
 | [pickle](./pickle/brief.md) | $4.73M | ethereum | 235 | 148/235 (63%) | 2.7% | 0.0% (-) | 2 | stale | ⚠️ declining | $2.88M |
 | [ethereal-season-zero](./ethereal-season-zero/brief.md) | $2.85M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $2.82M |
-| [izumi-finance](./izumi-finance/brief.md) | $3.79M | 13 | 181 | 21/181 (12%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $2.76M |
+| [izumi-finance](./izumi-finance/brief.md) | $3.83M | 13 | 181 | 21/181 (12%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $2.76M |
 | [iaero-protocol](./iaero-protocol/brief.md) | $1.98M | base | 45 | 40/45 (89%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.72M |
 | [singularity-finance](./singularity-finance/brief.md) | $5.36M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $2.69M |
 | [plasma-saving-vaults](./plasma-saving-vaults/brief.md) | $45.44M | plasma | 6 | 5/6 (83%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.65M |
@@ -694,5 +694,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T09:22:29.833Z_
+_Generated: 2026-05-29T09:28:55.709Z_
 _Projects: 682_

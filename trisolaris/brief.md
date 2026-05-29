@@ -7,11 +7,11 @@
 - Project: Trisolaris (`trisolaris`)
 - Website: [https://www.trisolaris.io/#/swap](https://www.trisolaris.io/#/swap)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-25T15:15:05.446Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-05-29T16:29:55.310Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: aurora
 - Contract surface: 119 unique implementations (158 raw deployments)
-- DeFi Llama TVL: $1,339,764.86
+- DeFi Llama TVL: $1,493,303.70
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -25,31 +25,37 @@ The UniswapV2Factory creates liquidity pools using the EvmErc20 token standard, 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/18 (0.0%)
-- Verified + Unaudited implementations: 18
+- Verified implementations audited: 3/18 (16.7%)
+- Verified + Unaudited implementations: 15
 - Verified by bytecode match: 0
 - Unverified implementations: 101
 - Unique implementations: 119
 - Raw deployments: 158
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
+- Audits discovered: 13
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 13 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 3 | 16.7% | n/a |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (3)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| StableLPMaker | unknown | aurora | [`0xcb2519...78e3ff`](./contracts/aurora-1313161554/0xcb251907382aeb3c2edab766561d5f4e6c78e3ff/) | ✅ Audited |
+| SwapFlashLoan | unknown | aurora | [`0x51d96e...1a4064`](./contracts/aurora-1313161554/0x51d96ef6960cc7b4c884e1215564f926011a4064/) | ✅ Audited |
+| UsdcMaker | unknown | aurora | 2 deployments: aurora [`0x5ebd5e...0aaade`](./contracts/aurora-1313161554/0x5ebd5e963a00500b6a1234c621811c52af0aaade/); aurora `0xe7d7fd...63f34a` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (18)
+### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -58,17 +64,14 @@ The UniswapV2Factory creates liquidity pools using the EvmErc20 token standard, 
 | EvmErc20 | token | aurora | [`0x5183e1...cf2896`](./contracts/aurora-1313161554/0x5183e1b1091804bc2602586919e6880ac1cf2896/) | ⚠️ Unaudited |
 | MasterChef | unknown | aurora | 4 deployments: aurora [`0x1f1ed2...d0d79b`](./contracts/aurora-1313161554/0x1f1ed214bef5e83d8f5d0eb5d7011eb965d0d79b/); aurora `0xddab5f...3d76da`; aurora `0xe24f20...b39573`; aurora `0xe53d65...1930f5` | ⚠️ Unaudited |
 | MasterChefV2 | unknown | aurora | [`0x383895...5675d6`](./contracts/aurora-1313161554/0x3838956710bcc9d122dd23863a0549ca8d5675d6/) | ⚠️ Unaudited |
-| StableLPMaker | unknown | aurora | [`0xcb2519...78e3ff`](./contracts/aurora-1313161554/0xcb251907382aeb3c2edab766561d5f4e6c78e3ff/) | ⚠️ Unaudited |
 | StableLPMakerV2 | unknown | aurora | [`0x2df95b...8ab86b`](./contracts/aurora-1313161554/0x2df95be842cd68062ecdb7a30ca8dd400a8ab86b/) | ⚠️ Unaudited |
 | StableLPMakerV3 | unknown | aurora | [`0x84c1b1...b8aded`](./contracts/aurora-1313161554/0x84c1b1986766fd32cfac340f947217bd1fb8aded/) | ⚠️ Unaudited |
 | StableLPMakerV4 | unknown | aurora | 4 deployments: aurora [`0x015225...723fcb`](./contracts/aurora-1313161554/0x0152254efd4f98f305edf892b3110af30b723fcb/); aurora `0x5174f1...1de94a`; aurora `0x728e9e...4740b2`; aurora `0xc437d6...5d9b4d` | ⚠️ Unaudited |
-| SwapFlashLoan | unknown | aurora | [`0x51d96e...1a4064`](./contracts/aurora-1313161554/0x51d96ef6960cc7b4c884e1215564f926011a4064/) | ⚠️ Unaudited |
 | Tri | unknown | aurora | 3 deployments: aurora [`0x2cd59e...238ac1`](./contracts/aurora-1313161554/0x2cd59ea668afda4e712369042150f2fa00238ac1/); aurora `0x55b963...b5ab64`; aurora `0xfa9434...c65abb` | ⚠️ Unaudited |
 | TriBar | unknown | aurora | [`0x802119...6d6803`](./contracts/aurora-1313161554/0x802119e4e253d5c19aa06a5d567c5a41596d6803/) | ⚠️ Unaudited |
 | TriMaker | unknown | aurora | [`0xe79345...8ae151`](./contracts/aurora-1313161554/0xe793455c9728fc91a3e5a33faff9eb2f228ae151/) | ⚠️ Unaudited |
 | UniswapV2Factory | registry | aurora | [`0xc66f59...b176e7`](./contracts/aurora-1313161554/0xc66f594268041db60507f00703b152492fb176e7/) | ⚠️ Unaudited |
 | UniswapV2Router02 | adapter | aurora | [`0xfe1f3d...c5d65b`](./contracts/aurora-1313161554/0xfe1f3d4d7c09d2d3f959d9f77405f1e102c5d65b/) | ⚠️ Unaudited |
-| UsdcMaker | unknown | aurora | 2 deployments: aurora [`0x5ebd5e...0aaade`](./contracts/aurora-1313161554/0x5ebd5e963a00500b6a1234c621811c52af0aaade/); aurora `0xe7d7fd...63f34a` | ⚠️ Unaudited |
 | Vester | operational_periphery | aurora | 31 deployments: aurora [`0x0a0dc6...079e2b`](./contracts/aurora-1313161554/0x0a0dc69d4d6042a961e7f6d9e87b53df0c079e2b/); aurora `0x10945c...ca4e2c`; aurora `0x1769b6...3c2002`; aurora `0x1972d7...d0691a`; aurora `0x1afdcd...02c494`; aurora `0x23f0e4...40aaad`; aurora `0x39ddcc...f4bb1d`; aurora `0x3cb176...4308d4`; aurora `0x425856...078223`; aurora `0x43019d...ea4d1d`; aurora `0x47b68b...aaec8c`; aurora `0x4e6431...074367`; aurora `0x53980a...6e9f8a`; aurora `0x5910ce...aa52a9`; aurora `0x651bb2...77930a`; aurora `0x657a2c...3a9b5c`; aurora `0x736290...795861`; aurora `0x7ba018...28d30d`; aurora `0x7ce3f2...afaf6f`; aurora `0x870f32...367f3d`; aurora `0xa6002c...b2c946`; aurora `0xadba80...3ee7aa`; aurora `0xb25e64...8b2f39`; aurora `0xc7298a...46050c`; aurora `0xcb0a38...2cea9a`; aurora `0xcdb2a9...7a6b3e`; aurora `0xcfcc98...dcda4b`; aurora `0xd12aa0...dddb8c`; aurora `0xda1925...80c69c`; aurora `0xf8165f...1d0218`; aurora `0xfd44b7...2e046b` | ⚠️ Unaudited |
 | WETH9 | token | aurora | [`0xc9bdee...fe3feb`](./contracts/aurora-1313161554/0xc9bdeed33cd01541e1eed10f90519d2c06fe3feb/) | ⚠️ Unaudited |
 
@@ -196,6 +199,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [bridgingguides.md](https://github.com/trisolaris-labs/docs/blob/main/docs/bridgingguides.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [contracts.md](https://github.com/trisolaris-labs/docs/blob/main/docs/contracts.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
+| [exchange.md](https://github.com/trisolaris-labs/docs/blob/main/docs/exchange.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [faq.md](https://github.com/trisolaris-labs/docs/blob/main/docs/faq.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [farm.md](https://github.com/trisolaris-labs/docs/blob/main/docs/farm.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [gettingstarted.md](https://github.com/trisolaris-labs/docs/blob/main/docs/gettingstarted.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [index.md](https://github.com/trisolaris-labs/docs/blob/main/docs/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [roadmap.md](https://github.com/trisolaris-labs/docs/blob/main/docs/roadmap.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [stake.md](https://github.com/trisolaris-labs/docs/blob/main/docs/stake.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
+| [tokenomics.md](https://github.com/trisolaris-labs/docs/blob/main/docs/tokenomics.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -207,15 +223,12 @@ Verified + unaudited native implementations ranked by TVL:
 | aurora | [`0x34998b...f1e7bf`](./contracts/aurora-1313161554/0x34998bb1b4721f0418b22aae5a252c3167f1e7bf/) | ComplexRewarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | aurora | [`0x1f1ed2...d0d79b`](./contracts/aurora-1313161554/0x1f1ed214bef5e83d8f5d0eb5d7011eb965d0d79b/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | aurora | [`0x383895...5675d6`](./contracts/aurora-1313161554/0x3838956710bcc9d122dd23863a0549ca8d5675d6/) | MasterChefV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| aurora | [`0xcb2519...78e3ff`](./contracts/aurora-1313161554/0xcb251907382aeb3c2edab766561d5f4e6c78e3ff/) | StableLPMaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | aurora | [`0x2df95b...8ab86b`](./contracts/aurora-1313161554/0x2df95be842cd68062ecdb7a30ca8dd400a8ab86b/) | StableLPMakerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | aurora | [`0x84c1b1...b8aded`](./contracts/aurora-1313161554/0x84c1b1986766fd32cfac340f947217bd1fb8aded/) | StableLPMakerV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | aurora | [`0x015225...723fcb`](./contracts/aurora-1313161554/0x0152254efd4f98f305edf892b3110af30b723fcb/) | StableLPMakerV4 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| aurora | [`0x51d96e...1a4064`](./contracts/aurora-1313161554/0x51d96ef6960cc7b4c884e1215564f926011a4064/) | SwapFlashLoan | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | aurora | [`0x2cd59e...238ac1`](./contracts/aurora-1313161554/0x2cd59ea668afda4e712369042150f2fa00238ac1/) | Tri | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | aurora | [`0x802119...6d6803`](./contracts/aurora-1313161554/0x802119e4e253d5c19aa06a5d567c5a41596d6803/) | TriBar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | aurora | [`0xe79345...8ae151`](./contracts/aurora-1313161554/0xe793455c9728fc91a3e5a33faff9eb2f228ae151/) | TriMaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| aurora | [`0x5ebd5e...0aaade`](./contracts/aurora-1313161554/0x5ebd5e963a00500b6a1234c621811c52af0aaade/) | UsdcMaker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | aurora | [`0x0a0dc6...079e2b`](./contracts/aurora-1313161554/0x0a0dc69d4d6042a961e7f6d9e87b53df0c079e2b/) | Vester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
@@ -231,9 +244,23 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 11
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: low=2
+- Match method counts: extraction_exact=4
+
+Zero-match audit list:
+
+- [9451] bridgingguides.md
+- [9453] exchange.md
+- [9454] faq.md
+- [9455] farm.md
+- [9456] gettingstarted.md
+- [9457] index.md
+- [9458] roadmap.md
+- [9460] tokenomics.md
+- [9461] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9462] 0002-metadata-manifest-and-pull-command.md
+- [9463] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

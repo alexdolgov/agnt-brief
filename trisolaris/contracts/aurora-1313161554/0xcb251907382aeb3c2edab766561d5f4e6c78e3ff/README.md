@@ -6,8 +6,8 @@
 | Address | `0xcb251907382aeb3c2edab766561d5f4e6c78e3ff` |
 | Role | unknown |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [stake.md](https://github.com/trisolaris-labs/docs/blob/main/docs/stake.md) |
 | Deployments | 1 (aurora [`0xcb251907382aeb3c2edab766561d5f4e6c78e3ff`](../0xcb251907382aeb3c2edab766561d5f4e6c78e3ff/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

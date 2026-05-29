@@ -7,11 +7,11 @@
 - Project: PoolTogether (`pooltogether`)
 - Website: [https://pooltogether.com/](https://pooltogether.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T06:43:29.378Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-29T12:43:21.073Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: arbitrum, avalanche, base, ethereum, gnosis, optimism, polygon, scroll
 - Contract surface: 153 unique implementations (483 raw deployments)
-- DeFi Llama TVL: $8,652,167.00
+- DeFi Llama TVL: $8,441,002.00
 - On-chain TVL (included contracts): $26,909,174.25
 - TVL by chain: Ethereum $22,819,692.13 | Polygon $2,819,032.36 | Avalanche $1,053,527.52 | Optimism $152,251.74 | Base $47,350.66 | Gnosis $9,482.05 | Arbitrum $7,837.79
 
@@ -25,55 +25,78 @@ Prize Pools rely on Vaults to generate yield, which is then liquidated via Liqui
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/114 (0.0%)
-- Verified + Unaudited implementations: 106
+- Verified implementations audited: 33/114 (28.9%)
+- Verified + Unaudited implementations: 74
 - Verified by bytecode match: 8
 - Unverified implementations: 39
 - Unique implementations: 153
 - Raw deployments: 483
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $26,909,174.25
+- Audits discovered: 72
+- Scoreable audits (matched contracts): 34
+- ASD (verified + unaudited TVL): $26,694,745.04
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 72 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $26,909,174.25 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $26,694,745.04 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 33 | 28.9% | n/a |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (32)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| StakingVault | core_logic | optimism | 7 deployments: ethereum `0x68a100...c2f18b`; ethereum `0x7c1aca...489969`; optimism [`0x2c3000...473732`](./contracts/optimism-10/0x2c30004ec09e731dffcd5783569fb2e09c473732/); gnosis `0x9ef19f...0ef172`; base `0x854f3d...80436d`; arbitrum `0xf59e48...54da1f`; scroll `0xeb436b...0392a3` | ✅ Audited |
+| PrizeVault | core_logic | scroll | 6 deployments: ethereum `0x9ee31e...c75573`; optimism `0xa52e38...3e5e1f`; gnosis `0xb75af2...8b35cf`; base `0x6b5a5c...f7e4dd`; arbitrum `0x97a9c0...1e8c95`; scroll [`0x29499e...b1fa9b`](./contracts/scroll-534352/0x29499e2eb8ff1d076a35c275aeddd613afb1fa9b/) | ✅ Audited |
+| PrizePool | core_logic | gnosis | 10 deployments: ethereum `0x7865d0...354d95`; ethereum `0xa6bff8...39cbec`; optimism `0x8cffff...58d832`; optimism `0xc6ae7d...48042d`; optimism `0xe32e5e...000d6a`; optimism `0xf35fe1...e29b55`; gnosis [`0x0c08c2...18120f`](./contracts/gnosis-100/0x0c08c2999e1a14569554eddbcda9da5e1918120f/); base `0x45b201...3732cb`; arbitrum `0x52e791...bc5d42`; scroll `0xa6ecd6...899845` | ✅ Audited |
+| Vault | core_logic | optimism | 4 deployments: optimism [`0x1732ce...4e0494`](./contracts/optimism-10/0x1732ce5486ea47f607550ccbe499cd0f894e0494/); optimism `0x29cb69...890715`; optimism `0x31515c...64e2d9`; optimism `0xe3b3a4...32f275` | ✅ Audited |
+| PrizePoolTwabRewards | core_logic | gnosis | 6 deployments: ethereum `0x3341da...a11d79`; optimism `0x36be31...ec66c6`; gnosis [`0x0d51a3...a71dd9`](./contracts/gnosis-100/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/); base `0xf4c47d...576bbf`; arbitrum [`0x0d51a3...a71dd9`](./contracts/arbitrum-42161/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/); scroll [`0x0d51a3...a71dd9`](./contracts/scroll-534352/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/) | ✅ Audited |
+| Pool | core_logic | ethereum | [`0x0cec1a...e6844e`](./contracts/ethereum-1/0x0cec1a9154ff802e7934fc916ed7ca50bde6844e/) | ✅ Audited |
+| AaveV3ERC4626 | unknown | optimism | 2 deployments: optimism [`0x964356...afe307`](./contracts/optimism-10/0x964356cecf4f4679cab76d969c043fcccaafe307/); optimism `0xdc1056...c6f3c9` | ✅ Audited |
+| AaveV3ERC4626Factory | registry | optimism | 2 deployments: optimism [`0x6cb520...c9fbc1`](./contracts/optimism-10/0x6cb52020204a526c2a86998b8dc3b0b4fac9fbc1/); optimism `0x7d528d...6c8910` | ✅ Audited |
+| ChainlinkVRFV2Direct | unknown | ethereum | 2 deployments: ethereum [`0x0d51a3...a71dd9`](./contracts/ethereum-1/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/); ethereum `0xe3df5b...95d8f9` | ✅ Audited |
+| ChainlinkVRFV2DirectRngAuctionHelper | periphery | ethereum | 2 deployments: ethereum [`0x38449a...bd130d`](./contracts/ethereum-1/0x38449a6b7bb76638452273925c9a2ba818bd130d/); ethereum `0x453f87...8b2c14` | ✅ Audited |
+| Claimer | operational_periphery | optimism | 12 deployments: ethereum `0x54aa02...126c7d`; optimism [`0x0b5a1d...bd8438`](./contracts/optimism-10/0x0b5a1dc536d5a67c66d00b337e6b189385bd8438/); optimism `0x220c93...3b8d90`; optimism `0x2589ff...2f1a21`; optimism `0x47b557...625f70`; optimism `0xdc6ab3...f7681e`; gnosis `0x0cffb7...b0bbfa`; base `0x5ffeee...5e1e87`; base `0xcdce63...5547ba`; arbitrum `0x1e68e5...23e571`; arbitrum `0xbea383...317c73`; scroll `0xb04d5c...f00285` | ✅ Audited |
+| ClaimerFactory | operational_periphery | gnosis | 14 deployments: ethereum `0x445702...6a7088`; ethereum `0x7a856d...6b152d`; ethereum `0xd84c4c...679e80`; optimism `0x34a146...e2aa8c`; optimism `0x498c92...3f4794`; optimism `0x94f51a...779cc3`; optimism `0xcfedfb...d9e923`; optimism `0xef366c...64605f`; gnosis [`0x22e385...9ea47e`](./contracts/gnosis-100/0x22e3857db02c4db38870dddc286d0543869ea47e/); base `0x804657...21c63c`; base `0xd58a04...1401e3`; arbitrum `0x64e77e...4de554`; arbitrum `0xc4824b...0757da`; scroll `0x9cfe09...e38f66` | ✅ Audited |
+| DrawManager | governance | ethereum | 8 deployments: ethereum [`0x0aa9e2...0ab98d`](./contracts/ethereum-1/0x0aa9e2e0b37fb54c19e45cb246b17b0e700ab98d/); ethereum `0x98305e...c675a7`; optimism `0x7e8e79...4f0940`; optimism `0x7eed74...641857`; gnosis `0x146efc...d09067`; base `0x8a2782...af6ab0`; arbitrum `0xc00146...cd37e6`; scroll `0xa75474...69ddf2` | ✅ Audited |
+| EzDepositor | unknown | base | 6 deployments: ethereum `0x84882e...1c062f`; optimism `0x68a100...c2f18b`; gnosis `0x69fc80...3c37ef`; base [`0x4e30c0...a996f4`](./contracts/base-8453/0x4e30c0a8cce76940d87ae62eb12f3ac536a996f4/); arbitrum `0x5f9292...4da397`; scroll `0xbdf6bd...8a34c8` | ✅ Audited |
+| LiquidationPair | unknown | optimism | 2 deployments: optimism [`0x9d950c...34c595`](./contracts/optimism-10/0x9d950c680522edbde3ec6396a10e5609d034c595/); optimism `0xc14e8c...4de853` | ✅ Audited |
+| LiquidationPairFactory | registry | optimism | 5 deployments: optimism [`0x555bd8...de8093`](./contracts/optimism-10/0x555bd8fc65e57139c9f405980c7a9526a7de8093/); optimism `0x8aa2a1...9ab1a5`; optimism `0x9428f4...a3158e`; optimism `0xa1697e...65650a`; optimism `0xcb54fc...3b9f6f` | ✅ Audited |
+| LiquidationRouter | adapter | optimism | 2 deployments: optimism [`0xb9fba7...b68b95`](./contracts/optimism-10/0xb9fba7b2216167dcdd1a7ae0a564dd43e1b68b95/); optimism `0xf4cfa5...1983f5` | ✅ Audited |
+| PrizeVaultFactory | registry | optimism | 12 deployments: ethereum `0x29c102...87a75f`; ethereum `0xd499cc...dde7c3`; ethereum `0xed49a9...a154a7`; optimism [`0x0c379e...4dfd39`](./contracts/optimism-10/0x0c379e9b71ba7079084ada0d1c1aeb85d24dfd39/); optimism `0xec9f59...656775`; optimism `0xf0f151...0ea806`; gnosis `0xc3ae3f...31e2a6`; base `0xa55a74...d444bf`; base `0xe32f63...396ddf`; arbitrum `0x44be00...2c07bc`; arbitrum `0x8020fb...045e52`; scroll `0x3fdd8b...3a30a5` | ✅ Audited |
+| RemoteOwner | unknown | optimism | 4 deployments: optimism [`0x38449a...bd130d`](./contracts/optimism-10/0x38449a6b7bb76638452273925c9a2ba818bd130d/); optimism `0x3a8f18...8ba06d`; optimism `0x503de6...c3bf65`; optimism `0x55fa1c...803fde` | ✅ Audited |
+| RngAuction | unknown | ethereum | 2 deployments: ethereum [`0x539a76...867f41`](./contracts/ethereum-1/0x539a76507f18505ca696d618f8a684814c867f41/); ethereum `0x8cffff...58d832` | ✅ Audited |
+| RngAuctionRelayerRemoteOwner | unknown | ethereum | 2 deployments: ethereum [`0xec9460...cccd24`](./contracts/ethereum-1/0xec9460c59cca1299b0242d6af426c21223cccd24/); ethereum `0xf4c47d...576bbf` | ✅ Audited |
+| RngRelayAuction | unknown | optimism | 4 deployments: optimism [`0x5f6c71...7d25a8`](./contracts/optimism-10/0x5f6c71b9551c081680a2ef9f9322f88dca7d25a8/); optimism `0x87d3d9...efa557`; optimism `0xb06aeb...f51b49`; optimism `0xf4c47d...576bbf` | ✅ Audited |
+| RngWitnet | unknown | optimism | 12 deployments: ethereum `0xa1697e...65650a`; ethereum `0xf93329...dea215`; optimism [`0x18928a...b9eecb`](./contracts/optimism-10/0x18928a03829a609292133d605ff6007151b9eecb/); optimism `0x3d2ef6...96aa7b`; optimism `0x445702...6a7088`; optimism `0x4917f3...76afda`; optimism `0xc3118f...409923`; gnosis `0x47c921...df1123`; gnosis `0xcf4665...5ad5ce`; base `0x74ebf3...9d18f0`; arbitrum `0xad1b8e...dc107b`; scroll `0x4d971a...94f608` | ✅ Audited |
+| TpdaLiquidationPairFactory | registry | optimism | 8 deployments: ethereum `0x43069a...920323`; ethereum `0xa99b3a...a43908`; optimism [`0x0796be...e7f668`](./contracts/optimism-10/0x0796be5c62669aadd8e1a41645344ebe51e7f668/); optimism `0x80f866...77c7d1`; gnosis `0xbddd23...76368a`; base `0x8557a9...8374ea`; arbitrum `0x163402...2dfd3f`; scroll `0xf17d29...6de152` | ✅ Audited |
+| TpdaLiquidationRouter | adapter | gnosis | 8 deployments: ethereum `0x6cb520...c9fbc1`; ethereum `0x7c210b...192ea0`; optimism `0x7766b5...876136`; optimism `0xe2d27c...d96bae`; gnosis [`0x166448...d006c9`](./contracts/gnosis-100/0x1664485e6b51ee1a4d4dd35dbec79544a5d006c9/); base `0xa9c937...dfc22c`; arbitrum `0x7b4a60...67db73`; scroll `0x6f0b0a...d6ef7b` | ✅ Audited |
+| TwabController | governance | optimism | 14 deployments: ethereum `0x4d5f2c...7b4acc`; ethereum `0xf4cfa5...1983f5`; optimism [`0x0d51a3...a71dd9`](./contracts/optimism-10/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/); optimism `0x499a9f...4f6e52`; optimism `0x5e5e49...e2c55e`; optimism `0x71c755...795ff6`; optimism `0x7deef0...1f9038`; optimism `0xb93975...a8f206`; optimism `0xcb0672...3be167`; gnosis `0x656399...7d7060`; gnosis `0x84090a...8afde6`; base `0x7e6360...4f44c6`; arbitrum `0x971ecc...14dc75`; scroll `0x5ec48e...14537d` | ✅ Audited |
+| TwabDelegator | unknown | base | 17 deployments: ethereum `0x5cfbee...a990f7`; optimism `0x3989cb...9de4cb`; optimism `0x491485...0b42c6`; optimism `0x49e8e9...47bfa5`; optimism `0x4d5f2c...7b4acc`; optimism `0x5c2f7f...aa600b`; optimism `0x9cbbde...2b80b1`; optimism `0xa7da69...66c52e`; optimism `0xf93329...dea215`; base [`0x214a21...d6ce5e`](./contracts/base-8453/0x214a21bccf9acce40a65e2223e8e73bdffd6ce5e/); base `0x9678d0...8b801a`; base `0x9f925a...d64418`; base `0xb6ec5f...4181cd`; base `0xf40fe4...23c937`; arbitrum `0xb8e2fa...3f6dda`; arbitrum `0xdd734d...0e3ce6`; arbitrum `0xe2f119...bfb73d` | ✅ Audited |
+| TwabRewards | unknown | scroll | 11 deployments: ethereum `0x2589ff...2f1a21`; ethereum `0x3cb049...c17ed1`; ethereum `0xa469de...082d81`; ethereum `0xe7934e...212618`; optimism `0x27ed57...396a66`; optimism `0x90d383...3ea9ea`; optimism `0xefb96e...749f99`; gnosis `0x174215...276942`; base `0x86f092...f2dc09`; arbitrum `0xe21ac3...9c59be`; scroll [`0x0e71a9...48780d`](./contracts/scroll-534352/0x0e71a9a2bd4546e7fc2af47a015747daeb48780d/) | ✅ Audited |
+| UniswapFlashLiquidation | unknown | optimism | [`0x5927b6...ac35d0`](./contracts/optimism-10/0x5927b63e88764d6250b7801ebfdeb7b6c1ac35d0/) | ✅ Audited |
+| VaultBoosterFactory | registry | base | 15 deployments: ethereum `0x25d692...850004`; ethereum `0x31ec88...f483e8`; ethereum `0x36be31...ec66c6`; optimism `0x17b9d7...f66837`; optimism `0x43069a...920323`; optimism `0x7746a7...71dada`; optimism `0x858029...67f88c`; gnosis `0x8cffff...58d832`; gnosis `0xc9f124...1c4a78`; base [`0x02d37f...31530e`](./contracts/base-8453/0x02d37f2654b4161801c8d7369b43a8762a31530e/); base `0xa2ba3d...550ec2`; arbitrum `0x574257...0b449e`; arbitrum `0x8cffff...58d832`; scroll `0x748300...024b76`; scroll `0x8cffff...58d832` | ✅ Audited |
+| VaultFactory | registry | optimism | 2 deployments: optimism [`0xa469de...082d81`](./contracts/optimism-10/0xa469deff6d52c9571d13513e3cd7d94496082d81/); optimism `0xf65fa2...e08081` | ✅ Audited |
+| VaultFactoryV2 | registry | optimism | [`0x6b17ee...8eff0e`](./contracts/optimism-10/0x6b17ee3a95bccd605340454c5919e693ef8eff0e/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (106)
+### ⚠️ Verified + Unaudited (74)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | AToken | token | polygon | 3 deployments: ethereum `0xbcca60...96263c`; polygon [`0x1a13f4...998b7f`](./contracts/polygon-137/0x1a13f4ca1d028320a707d99520abfefca3998b7f/); avalanche `0x46a511...e4a857` | ⚠️ Unaudited |
-| StakingVault | core_logic | optimism | 7 deployments: ethereum `0x68a100...c2f18b`; ethereum `0x7c1aca...489969`; optimism [`0x2c3000...473732`](./contracts/optimism-10/0x2c30004ec09e731dffcd5783569fb2e09c473732/); gnosis `0x9ef19f...0ef172`; base `0x854f3d...80436d`; arbitrum `0xf59e48...54da1f`; scroll `0xeb436b...0392a3` | ⚠️ Unaudited |
-| PrizeVault | core_logic | scroll | 6 deployments: ethereum `0x9ee31e...c75573`; optimism `0xa52e38...3e5e1f`; gnosis `0xb75af2...8b35cf`; base `0x6b5a5c...f7e4dd`; arbitrum `0x97a9c0...1e8c95`; scroll [`0x29499e...b1fa9b`](./contracts/scroll-534352/0x29499e2eb8ff1d076a35c275aeddd613afb1fa9b/) | ⚠️ Unaudited |
 | L2StandardERC20 | token | optimism | [`0x395ae5...d4e125`](./contracts/optimism-10/0x395ae52bb17aef68c2888d941736a71dc6d4e125/) | ⚠️ Unaudited |
-| PrizePool | core_logic | gnosis | 10 deployments: ethereum `0x7865d0...354d95`; ethereum `0xa6bff8...39cbec`; optimism `0x8cffff...58d832`; optimism `0xc6ae7d...48042d`; optimism `0xe32e5e...000d6a`; optimism `0xf35fe1...e29b55`; gnosis [`0x0c08c2...18120f`](./contracts/gnosis-100/0x0c08c2999e1a14569554eddbcda9da5e1918120f/); base `0x45b201...3732cb`; arbitrum `0x52e791...bc5d42`; scroll `0xa6ecd6...899845` | ⚠️ Unaudited |
 | VaultV2 | core_logic | optimism | 2 deployments: optimism [`0x77935f...83906b`](./contracts/optimism-10/0x77935f2c72b5eb814753a05921ae495aa283906b/); optimism `0xf0b19f...34397c` | ⚠️ Unaudited |
-| Vault | core_logic | optimism | 4 deployments: optimism [`0x1732ce...4e0494`](./contracts/optimism-10/0x1732ce5486ea47f607550ccbe499cd0f894e0494/); optimism `0x29cb69...890715`; optimism `0x31515c...64e2d9`; optimism `0xe3b3a4...32f275` | ⚠️ Unaudited |
 | StandardArbERC20 | token | arbitrum | [`0xcf934e...b5b79c`](./contracts/arbitrum-42161/0xcf934e2402a5e072928a39a956964eb8f2b5b79c/) | ⚠️ Unaudited |
 | PermittableToken | token | gnosis | [`0x216a7d...cdc660`](./contracts/gnosis-100/0x216a7d520992ed198593a16e0b17c784c9cdc660/) | ⚠️ Unaudited |
-| PrizePoolTwabRewards | core_logic | gnosis | 6 deployments: ethereum `0x3341da...a11d79`; optimism `0x36be31...ec66c6`; gnosis [`0x0d51a3...a71dd9`](./contracts/gnosis-100/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/); base `0xf4c47d...576bbf`; arbitrum [`0x0d51a3...a71dd9`](./contracts/arbitrum-42161/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/); scroll [`0x0d51a3...a71dd9`](./contracts/scroll-534352/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/) | ⚠️ Unaudited |
-| Pool | core_logic | ethereum | [`0x0cec1a...e6844e`](./contracts/ethereum-1/0x0cec1a9154ff802e7934fc916ed7ca50bde6844e/) | ⚠️ Unaudited |
 | YieldSourcePrizePool | core_logic | polygon | 3 deployments: ethereum `0xd89a09...d638be`; polygon [`0x19de63...e84e60`](./contracts/polygon-137/0x19de635fb3678d8b8154e37d8c9cdf182fe84e60/); avalanche `0xf830f5...8f95ec` | ⚠️ Unaudited |
-| AaveV3ERC4626 | unknown | optimism | 2 deployments: optimism [`0x964356...afe307`](./contracts/optimism-10/0x964356cecf4f4679cab76d969c043fcccaafe307/); optimism `0xdc1056...c6f3c9` | ⚠️ Unaudited |
-| AaveV3ERC4626Factory | registry | optimism | 2 deployments: optimism [`0x6cb520...c9fbc1`](./contracts/optimism-10/0x6cb52020204a526c2a86998b8dc3b0b4fac9fbc1/); optimism `0x7d528d...6c8910` | ⚠️ Unaudited |
 | AddressRegistry | registry | ethereum | [`0x4658f7...fd351f`](./contracts/ethereum-1/0x4658f736b93dcddcbce46cde955970e697fd351f/) | ⚠️ Unaudited |
 | ATokenYieldSource | token | ethereum | 3 deployments: ethereum [`0x32e8d4...b03a64`](./contracts/ethereum-1/0x32e8d4c9d1b711bc958d0ce8d14b41f77bb03a64/); polygon `0xd4f6d5...fb5b9c`; avalanche `0x7437db...9648ff` | ⚠️ Unaudited |
 | AutonomousPool | core_logic | ethereum | 2 deployments: ethereum [`0x188f93...cd3bfc`](./contracts/ethereum-1/0x188f932d3ac002057df3590b8e6134be2acd3bfc/); ethereum `0x21fbc6...1eacc4` | ⚠️ Unaudited |
-| ChainlinkVRFV2Direct | unknown | ethereum | 2 deployments: ethereum [`0x0d51a3...a71dd9`](./contracts/ethereum-1/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/); ethereum `0xe3df5b...95d8f9` | ⚠️ Unaudited |
-| ChainlinkVRFV2DirectRngAuctionHelper | periphery | ethereum | 2 deployments: ethereum [`0x38449a...bd130d`](./contracts/ethereum-1/0x38449a6b7bb76638452273925c9a2ba818bd130d/); ethereum `0x453f87...8b2c14` | ⚠️ Unaudited |
-| Claimer | operational_periphery | optimism | 12 deployments: ethereum `0x54aa02...126c7d`; optimism [`0x0b5a1d...bd8438`](./contracts/optimism-10/0x0b5a1dc536d5a67c66d00b337e6b189385bd8438/); optimism `0x220c93...3b8d90`; optimism `0x2589ff...2f1a21`; optimism `0x47b557...625f70`; optimism `0xdc6ab3...f7681e`; gnosis `0x0cffb7...b0bbfa`; base `0x5ffeee...5e1e87`; base `0xcdce63...5547ba`; arbitrum `0x1e68e5...23e571`; arbitrum `0xbea383...317c73`; scroll `0xb04d5c...f00285` | ⚠️ Unaudited |
-| ClaimerFactory | operational_periphery | gnosis | 14 deployments: ethereum `0x445702...6a7088`; ethereum `0x7a856d...6b152d`; ethereum `0xd84c4c...679e80`; optimism `0x34a146...e2aa8c`; optimism `0x498c92...3f4794`; optimism `0x94f51a...779cc3`; optimism `0xcfedfb...d9e923`; optimism `0xef366c...64605f`; gnosis [`0x22e385...9ea47e`](./contracts/gnosis-100/0x22e3857db02c4db38870dddc286d0543869ea47e/); base `0x804657...21c63c`; base `0xd58a04...1401e3`; arbitrum `0x64e77e...4de554`; arbitrum `0xc4824b...0757da`; scroll `0x9cfe09...e38f66` | ⚠️ Unaudited |
 | Comptroller | unknown | ethereum | [`0x4027de...892668`](./contracts/ethereum-1/0x4027de966127af5f015ea1cfd6293a3583892668/) | ⚠️ Unaudited |
 | ConfigurableReserve | governance | polygon | [`0xdecd3c...4604d3`](./contracts/polygon-137/0xdecd3c72187325c26f85099a89eed6d5bb4604d3/) | ⚠️ Unaudited |
 | ControlledTokenBuilder | token | ethereum | 7 deployments: ethereum [`0x03e75a...f0dbf7`](./contracts/ethereum-1/0x03e75aeeb92add6f3b168412671360eb94f0dbf7/); ethereum `0x3e3a09...543c53`; ethereum `0xaf0063...57f11d`; ethereum `0xf5ff8c...ad59cc`; polygon `0x317625...4277f7`; polygon `0x42ad7b...48fb4d`; polygon `0xef3d36...495cd2` | ⚠️ Unaudited |
@@ -85,11 +108,9 @@ Prize Pools rely on Vaults to generate yield, which is then liquidated via Liqui
 | DrawCalculator | unknown | avalanche | 4 deployments: ethereum `0x14d067...292730`; polygon `0x3976bd...839a24`; avalanche [`0x0f5f5e...392a47`](./contracts/avalanche-43114/0x0f5f5ef16465371152fc46c72d06fb0ec9392a47/); avalanche `0x577488...cd45f0` | ⚠️ Unaudited |
 | DrawCalculatorTimelock | governance | avalanche | 5 deployments: ethereum `0x6ab2c4...261c15`; polygon `0x676a54...9c7484`; avalanche [`0x01ee1e...c3c2ba`](./contracts/avalanche-43114/0x01ee1ea692773f28c45d63133426f21923c3c2ba/); avalanche `0x3fb69b...f95335`; avalanche `0xf1f789...35141c` | ⚠️ Unaudited |
 | DrawDispatcher | unknown | ethereum | [`0xac4ff3...70a064`](./contracts/ethereum-1/0xac4ff319adac4c7d109f4024a33328088370a064/) | ⚠️ Unaudited |
-| DrawManager | governance | ethereum | 8 deployments: ethereum [`0x0aa9e2...0ab98d`](./contracts/ethereum-1/0x0aa9e2e0b37fb54c19e45cb246b17b0e700ab98d/); ethereum `0x98305e...c675a7`; optimism `0x7e8e79...4f0940`; optimism `0x7eed74...641857`; gnosis `0x146efc...d09067`; base `0x8a2782...af6ab0`; arbitrum `0xc00146...cd37e6`; scroll `0xa75474...69ddf2` | ⚠️ Unaudited |
 | EIP2612PermitAndDeposit | unknown | avalanche | 2 deployments: avalanche [`0xbe3061...478dfb`](./contracts/avalanche-43114/0xbe30611ca48d3fc131fdc6006626b90702478dfb/); avalanche `0xc660a8...2a3648` | ⚠️ Unaudited |
 | ERC721ControlledFactory | registry | ethereum | [`0x4e869b...745fb3`](./contracts/ethereum-1/0x4e869b3a0978fa61dabd7da8f9b272aadc745fb3/) | ⚠️ Unaudited |
 | ERC721Ownable | governance | ethereum | [`0xc5b840...300288`](./contracts/ethereum-1/0xc5b84025e49e1ed2a61b8db7340fda576f300288/) | ⚠️ Unaudited |
-| EzDepositor | unknown | base | 6 deployments: ethereum `0x84882e...1c062f`; optimism `0x68a100...c2f18b`; gnosis `0x69fc80...3c37ef`; base [`0x4e30c0...a996f4`](./contracts/base-8453/0x4e30c0a8cce76940d87ae62eb12f3ac536a996f4/); arbitrum `0x5f9292...4da397`; scroll `0xbdf6bd...8a34c8` | ⚠️ Unaudited |
 | FireFighterClaimer | operational_periphery | optimism | [`0x1a7cf7...8657e5`](./contracts/optimism-10/0x1a7cf7817dae50df822fb5d0fc0cdd87b38657e5/) | ⚠️ Unaudited |
 | FixedPriceLiquidationPairFactory | operational_periphery | ethereum | [`0xa1739e...f8e606`](./contracts/ethereum-1/0xa1739ece7a90243443543ea57eb5bfb5f4f8e606/) | ⚠️ Unaudited |
 | FixedPriceLiquidationRouter | operational_periphery | ethereum | [`0x91b718...75d43c`](./contracts/ethereum-1/0x91b718f250a74ad80da828d7d60b13993275d43c/) | ⚠️ Unaudited |
@@ -98,10 +119,7 @@ Prize Pools rely on Vaults to generate yield, which is then liquidated via Liqui
 | GpBoostHook | unknown | arbitrum | 5 deployments: ethereum `0x6be9c2...4ab076`; optimism `0xdeef91...d20ba7`; gnosis `0x65f3ae...b1c626`; base `0x327b2e...0a58c6`; arbitrum [`0x1dcfb8...202e12`](./contracts/arbitrum-42161/0x1dcfb8b47c2f05ce86c21580c167485de1202e12/) | ⚠️ Unaudited |
 | L1TimelockTrigger | governance | ethereum | [`0xdc90a7...351f94`](./contracts/ethereum-1/0xdc90a79fcb1dbad5f05e6c264f84ac4b0d351f94/) | ⚠️ Unaudited |
 | L2TimelockTrigger | governance | polygon | [`0xc366bf...46138e`](./contracts/polygon-137/0xc366bf1a054ca495c09b1a722d863ac65746138e/) | ⚠️ Unaudited |
-| LiquidationPair | unknown | optimism | 2 deployments: optimism [`0x9d950c...34c595`](./contracts/optimism-10/0x9d950c680522edbde3ec6396a10e5609d034c595/); optimism `0xc14e8c...4de853` | ⚠️ Unaudited |
-| LiquidationPairFactory | registry | optimism | 5 deployments: optimism [`0x555bd8...de8093`](./contracts/optimism-10/0x555bd8fc65e57139c9f405980c7a9526a7de8093/); optimism `0x8aa2a1...9ab1a5`; optimism `0x9428f4...a3158e`; optimism `0xa1697e...65650a`; optimism `0xcb54fc...3b9f6f` | ⚠️ Unaudited |
 | LiquidationProxy | unknown | optimism | 2 deployments: optimism [`0xc57e4f...4f83cd`](./contracts/optimism-10/0xc57e4fc79ab33db6a7bf26cc1ca43511744f83cd/); optimism `0xcb1b03...f549ce` | ⚠️ Unaudited |
-| LiquidationRouter | adapter | optimism | 2 deployments: optimism [`0xb9fba7...b68b95`](./contracts/optimism-10/0xb9fba7b2216167dcdd1a7ae0a564dd43e1b68b95/); optimism `0xf4cfa5...1983f5` | ⚠️ Unaudited |
 | LootBoxController | governance | ethereum | 2 deployments: ethereum [`0x2c2a96...1d8a24`](./contracts/ethereum-1/0x2c2a966b7f5448a36ec9f896088dfb99b21d8a24/); ethereum `0x629bd2...3e2daa` | ⚠️ Unaudited |
 | LootBoxPrizeStrategyListenerFactory | registry | ethereum | [`0x25e6a7...d0b7ea`](./contracts/ethereum-1/0x25e6a78d93d2935a638fdbd684e7b39565d0b7ea/) | ⚠️ Unaudited |
 | MatchingAssetFlashLiquidator | operational_periphery | optimism | 2 deployments: optimism [`0x29c102...87a75f`](./contracts/optimism-10/0x29c102109d6cb2d866cfec380e0e10e9a287a75f/); optimism `0x7865d0...354d95` | ⚠️ Unaudited |
@@ -124,17 +142,11 @@ Prize Pools rely on Vaults to generate yield, which is then liquidated via Liqui
 | PrizeStakingVaultFactory | registry | base | 4 deployments: ethereum `0x8f11cb...f18389`; optimism `0x7c4626...02acf3`; base [`0x48492f...dcc037`](./contracts/base-8453/0x48492f83d9e1d848d33a461d49a2071a6fdcc037/); arbitrum `0x9468ea...3f3f20` | ⚠️ Unaudited |
 | PrizeTierHistory | unknown | avalanche | 6 deployments: ethereum `0xdd1cba...67f80d`; avalanche [`0x51d722...1f52c4`](./contracts/avalanche-43114/0x51d72281ed1d149ccbd7f290d3431c1d831f52c4/); avalanche `0xad9f8f...7012e8`; avalanche `0xc3dad5...4903b6`; avalanche `0xd20fbf...ba2dd3`; avalanche `0xee4530...20e8c9` | ⚠️ Unaudited |
 | PrizeTierHistoryV2 | unknown | ethereum | [`0x63c82b...4c8aaa`](./contracts/ethereum-1/0x63c82be45399b5ca6041a3b6aac0f326614c8aaa/) | ⚠️ Unaudited |
-| PrizeVaultFactory | registry | optimism | 12 deployments: ethereum `0x29c102...87a75f`; ethereum `0xd499cc...dde7c3`; ethereum `0xed49a9...a154a7`; optimism [`0x0c379e...4dfd39`](./contracts/optimism-10/0x0c379e9b71ba7079084ada0d1c1aeb85d24dfd39/); optimism `0xec9f59...656775`; optimism `0xf0f151...0ea806`; gnosis `0xc3ae3f...31e2a6`; base `0xa55a74...d444bf`; base `0xe32f63...396ddf`; arbitrum `0x44be00...2c07bc`; arbitrum `0x8020fb...045e52`; scroll `0x3fdd8b...3a30a5` | ⚠️ Unaudited |
 | ReceiverTimelockTrigger | governance | avalanche | 3 deployments: avalanche [`0x24c3e1...b89430`](./contracts/avalanche-43114/0x24c3e15bdc10ce2cb1bec56cd43f397ce9b89430/); avalanche `0x832cb3...6a3a88`; avalanche `0xc2e914...2e9cb7` | ⚠️ Unaudited |
 | Registry | registry | polygon | 2 deployments: ethereum `0x3e8b99...b9a295`; polygon [`0x20f29c...816308`](./contracts/polygon-137/0x20f29ccae4c9886964033042c6b79c2c4c816308/) | ⚠️ Unaudited |
-| RemoteOwner | unknown | optimism | 4 deployments: optimism [`0x38449a...bd130d`](./contracts/optimism-10/0x38449a6b7bb76638452273925c9a2ba818bd130d/); optimism `0x3a8f18...8ba06d`; optimism `0x503de6...c3bf65`; optimism `0x55fa1c...803fde` | ⚠️ Unaudited |
 | Reserve | unknown | polygon | 6 deployments: ethereum `0xadb4d9...2fdfb5`; ethereum `0xdb8e47...4c124f`; polygon [`0x3e8b99...b9a295`](./contracts/polygon-137/0x3e8b9901dbfe766d3fe44b36c180a1bca2b9a295/); polygon `0xce148f...5982b8`; avalanche `0x6358f8...81be0d`; avalanche `0xf04e5b...a3d029` | ⚠️ Unaudited |
 | RewardLiquidatorFactory | operational_periphery | base | 6 deployments: ethereum `0xc2aa23...6d3e2e`; optimism `0x7f75b9...3d5370`; gnosis `0xd09ca1...426afb`; base [`0x0526e9...40b468`](./contracts/base-8453/0x0526e9541a500b554ef318cdc44147f38a40b468/); base `0x778f10...06a9bf`; arbitrum `0xa030a8...5ee5f2` | ⚠️ Unaudited |
-| RngAuction | unknown | ethereum | 2 deployments: ethereum [`0x539a76...867f41`](./contracts/ethereum-1/0x539a76507f18505ca696d618f8a684814c867f41/); ethereum `0x8cffff...58d832` | ⚠️ Unaudited |
-| RngAuctionRelayerRemoteOwner | unknown | ethereum | 2 deployments: ethereum [`0xec9460...cccd24`](./contracts/ethereum-1/0xec9460c59cca1299b0242d6af426c21223cccd24/); ethereum `0xf4c47d...576bbf` | ⚠️ Unaudited |
 | RNGBlockhash | unknown | ethereum | 2 deployments: ethereum [`0xb1d894...44cd21`](./contracts/ethereum-1/0xb1d89477d1b505c261bab6e73f08fa834544cd21/); polygon `0xb2dc55...cc492f` | ⚠️ Unaudited |
-| RngRelayAuction | unknown | optimism | 4 deployments: optimism [`0x5f6c71...7d25a8`](./contracts/optimism-10/0x5f6c71b9551c081680a2ef9f9322f88dca7d25a8/); optimism `0x87d3d9...efa557`; optimism `0xb06aeb...f51b49`; optimism `0xf4c47d...576bbf` | ⚠️ Unaudited |
-| RngWitnet | unknown | optimism | 12 deployments: ethereum `0xa1697e...65650a`; ethereum `0xf93329...dea215`; optimism [`0x18928a...b9eecb`](./contracts/optimism-10/0x18928a03829a609292133d605ff6007151b9eecb/); optimism `0x3d2ef6...96aa7b`; optimism `0x445702...6a7088`; optimism `0x4917f3...76afda`; optimism `0xc3118f...409923`; gnosis `0x47c921...df1123`; gnosis `0xcf4665...5ad5ce`; base `0x74ebf3...9d18f0`; arbitrum `0xad1b8e...dc107b`; scroll `0x4d971a...94f608` | ⚠️ Unaudited |
 | ScrollStandardERC20 | token | scroll | [`0xf9af83...a0f2b7`](./contracts/scroll-534352/0xf9af83fc41e0cc2af2fba93644d542df6ea0f2b7/) | ⚠️ Unaudited |
 | SimpleVaultBoosterFactory | registry | base | 3 deployments: optimism `0xefdfb7...5cd176`; base [`0x38449a...bd130d`](./contracts/base-8453/0x38449a6b7bb76638452273925c9a2ba818bd130d/); base `0x8cffff...58d832` | ⚠️ Unaudited |
 | SingleRandomWinnerBuilder | unknown | ethereum | [`0xa63584...b4841d`](./contracts/ethereum-1/0xa6358441f68ed4707e1c4366a0d2e2233bb4841d/) | ⚠️ Unaudited |
@@ -145,28 +157,21 @@ Prize Pools rely on Vaults to generate yield, which is then liquidated via Liqui
 | Timelock | governance | ethereum | [`0x42cd83...24262e`](./contracts/ethereum-1/0x42cd8312d2bce04277dd5161832460e95b24262e/) | ⚠️ Unaudited |
 | TokenFaucetProxyFactory | registry | ethereum | 6 deployments: ethereum [`0x63fe3d...90d630`](./contracts/ethereum-1/0x63fe3d163a3533f3d13ace30c539a9e8c290d630/); ethereum `0xe19fe7...212c43`; ethereum `0xe4e9cd...50f117`; polygon `0xb3e8bb...ec5c4b`; polygon `0xdb8e47...4c124f`; polygon `0xeaa636...dfbab1` | ⚠️ Unaudited |
 | TokenVaultFactory | registry | optimism | 2 deployments: optimism [`0x37203b...9b7746`](./contracts/optimism-10/0x37203b841cb891f0d263c3895bf50866519b7746/); base `0xc05748...a5a489` | ⚠️ Unaudited |
-| TpdaLiquidationPairFactory | registry | optimism | 8 deployments: ethereum `0x43069a...920323`; ethereum `0xa99b3a...a43908`; optimism [`0x0796be...e7f668`](./contracts/optimism-10/0x0796be5c62669aadd8e1a41645344ebe51e7f668/); optimism `0x80f866...77c7d1`; gnosis `0xbddd23...76368a`; base `0x8557a9...8374ea`; arbitrum `0x163402...2dfd3f`; scroll `0xf17d29...6de152` | ⚠️ Unaudited |
-| TpdaLiquidationRouter | adapter | gnosis | 8 deployments: ethereum `0x6cb520...c9fbc1`; ethereum `0x7c210b...192ea0`; optimism `0x7766b5...876136`; optimism `0xe2d27c...d96bae`; gnosis [`0x166448...d006c9`](./contracts/gnosis-100/0x1664485e6b51ee1a4d4dd35dbec79544a5d006c9/); base `0xa9c937...dfc22c`; arbitrum `0x7b4a60...67db73`; scroll `0x6f0b0a...d6ef7b` | ⚠️ Unaudited |
 | TreasuryVester | operational_periphery | ethereum | [`0x21950e...de2359`](./contracts/ethereum-1/0x21950e281bde1714ffd1062ed17c56d4d8de2359/) | ⚠️ Unaudited |
-| TwabController | governance | optimism | 14 deployments: ethereum `0x4d5f2c...7b4acc`; ethereum `0xf4cfa5...1983f5`; optimism [`0x0d51a3...a71dd9`](./contracts/optimism-10/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/); optimism `0x499a9f...4f6e52`; optimism `0x5e5e49...e2c55e`; optimism `0x71c755...795ff6`; optimism `0x7deef0...1f9038`; optimism `0xb93975...a8f206`; optimism `0xcb0672...3be167`; gnosis `0x656399...7d7060`; gnosis `0x84090a...8afde6`; base `0x7e6360...4f44c6`; arbitrum `0x971ecc...14dc75`; scroll `0x5ec48e...14537d` | ⚠️ Unaudited |
-| TwabDelegator | unknown | base | 17 deployments: ethereum `0x5cfbee...a990f7`; optimism `0x3989cb...9de4cb`; optimism `0x491485...0b42c6`; optimism `0x49e8e9...47bfa5`; optimism `0x4d5f2c...7b4acc`; optimism `0x5c2f7f...aa600b`; optimism `0x9cbbde...2b80b1`; optimism `0xa7da69...66c52e`; optimism `0xf93329...dea215`; base [`0x214a21...d6ce5e`](./contracts/base-8453/0x214a21bccf9acce40a65e2223e8e73bdffd6ce5e/); base `0x9678d0...8b801a`; base `0x9f925a...d64418`; base `0xb6ec5f...4181cd`; base `0xf40fe4...23c937`; arbitrum `0xb8e2fa...3f6dda`; arbitrum `0xdd734d...0e3ce6`; arbitrum `0xe2f119...bfb73d` | ⚠️ Unaudited |
-| TwabRewards | unknown | scroll | 11 deployments: ethereum `0x2589ff...2f1a21`; ethereum `0x3cb049...c17ed1`; ethereum `0xa469de...082d81`; ethereum `0xe7934e...212618`; optimism `0x27ed57...396a66`; optimism `0x90d383...3ea9ea`; optimism `0xefb96e...749f99`; gnosis `0x174215...276942`; base `0x86f092...f2dc09`; arbitrum `0xe21ac3...9c59be`; scroll [`0x0e71a9...48780d`](./contracts/scroll-534352/0x0e71a9a2bd4546e7fc2af47a015747daeb48780d/) | ⚠️ Unaudited |
-| UniswapFlashLiquidation | unknown | optimism | [`0x5927b6...ac35d0`](./contracts/optimism-10/0x5927b63e88764d6250b7801ebfdeb7b6c1ac35d0/) | ⚠️ Unaudited |
 | V3PrizePoolLiquidatorAdapter | operational_periphery | ethereum | 2 deployments: ethereum [`0x1ca3cf...19baec`](./contracts/ethereum-1/0x1ca3cf8b47b596f2d9b440edc59542539619baec/); ethereum `0x8ab3ba...34d0c8` | ⚠️ Unaudited |
-| VaultBoosterFactory | registry | base | 15 deployments: ethereum `0x25d692...850004`; ethereum `0x31ec88...f483e8`; ethereum `0x36be31...ec66c6`; optimism `0x17b9d7...f66837`; optimism `0x43069a...920323`; optimism `0x7746a7...71dada`; optimism `0x858029...67f88c`; gnosis `0x8cffff...58d832`; gnosis `0xc9f124...1c4a78`; base [`0x02d37f...31530e`](./contracts/base-8453/0x02d37f2654b4161801c8d7369b43a8762a31530e/); base `0xa2ba3d...550ec2`; arbitrum `0x574257...0b449e`; arbitrum `0x8cffff...58d832`; scroll `0x748300...024b76`; scroll `0x8cffff...58d832` | ⚠️ Unaudited |
-| VaultFactory | registry | optimism | 2 deployments: optimism [`0xa469de...082d81`](./contracts/optimism-10/0xa469deff6d52c9571d13513e3cd7d94496082d81/); optimism `0xf65fa2...e08081` | ⚠️ Unaudited |
-| VaultFactoryV2 | registry | optimism | [`0x6b17ee...8eff0e`](./contracts/optimism-10/0x6b17ee3a95bccd605340454c5919e693ef8eff0e/) | ⚠️ Unaudited |
 | VaultPrizePoolBuilder | core_logic | ethereum | [`0x1469c3...0b4f5d`](./contracts/ethereum-1/0x1469c3c2f8cbacafced0a271711e3491700b4f5d/) | ⚠️ Unaudited |
 | yVaultPrizePoolBuilder | core_logic | ethereum | [`0xef3d36...495cd2`](./contracts/ethereum-1/0xef3d36a282e74b5bcba8a45262687ddb31495cd2/) | ⚠️ Unaudited |
 | yVaultPrizePoolProxyFactory | registry | ethereum | 2 deployments: ethereum [`0x3357d3...24cf5e`](./contracts/ethereum-1/0x3357d3a038006f47ecf05110c7629eff3b24cf5e/); ethereum `0x44c585...f4fe2a` | ⚠️ Unaudited |
 
-### ✅ Verified by Bytecode + Audited (0)
+### ✅ Verified by Bytecode + Audited (1)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| PermitAndDepositDai | unknown | polygon | 5 deployments: ethereum `0x71fc2e...f8a70c`; ethereum `0x8a4416...0087b2`; ethereum `0xdcc0d0...8f65a0`; ethereum `0xe539c8...02fbff`; polygon [`0x17cfe0...24d72a`](./contracts/polygon-137/0x17cfe08818e8260fae3a19761668ebc27b24d72a/) | ✅ Audited (bytecode match) |
 
-### ⚠️ Verified by Bytecode + Unaudited (8)
+### ⚠️ Verified by Bytecode + Unaudited (7)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
@@ -174,7 +179,6 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 |---|---|---|---|---|
 | MultipleWinnersBuilder | unknown | ethereum | 7 deployments: ethereum [`0x10f61a...efaaa3`](./contracts/ethereum-1/0x10f61a36e1327036e5e416d52ff0f4b5c9efaaa3/); ethereum `0x3a1bc6...15446e`; ethereum `0xf438bc...3fc5e5`; ethereum `0xf843d5...014526`; polygon `0x6dc7ca...5d85c9`; polygon `0x72edd5...5d5f90`; polygon `0xd1a651...2ed5a0` | ⚠️ Unaudited (bytecode match) |
 | MultipleWinnersProxyFactory | registry | ethereum | 7 deployments: ethereum [`0x4cb2f9...ca4d73`](./contracts/ethereum-1/0x4cb2f953f85b3ffdc97269f5cef6a4fcc0ca4d73/); ethereum `0x734e67...f5ae70`; ethereum `0xb789b7...b58475`; ethereum `0xf273ef...1f1522`; polygon `0xa63584...b4841d`; polygon `0xdc488e...1401df`; polygon `0xf3317f...d07cc7` | ⚠️ Unaudited (bytecode match) |
-| PermitAndDepositDai | unknown | polygon | 5 deployments: ethereum `0x71fc2e...f8a70c`; ethereum `0x8a4416...0087b2`; ethereum `0xdcc0d0...8f65a0`; ethereum `0xe539c8...02fbff`; polygon [`0x17cfe0...24d72a`](./contracts/polygon-137/0x17cfe08818e8260fae3a19761668ebc27b24d72a/) | ⚠️ Unaudited (bytecode match) |
 | PoolWithMultipleWinnersBuilder | core_logic | ethereum | 10 deployments: ethereum [`0x39e2f3...e4e9c7`](./contracts/ethereum-1/0x39e2f33ff4ad3491106b3bb15dc66ebe24e4e9c7/); ethereum `0x8f2450...3bb27d`; ethereum `0xad1c62...7d2f2d`; ethereum `0xbeb9d5...da1e7a`; ethereum `0xd1e536...77e28c`; ethereum `0xda6481...7f9770`; polygon `0x5effa0...e1f9f4`; polygon `0x920bd7...b86a2c`; polygon `0xa6d1c8...20e6e5`; polygon `0xb1d894...44cd21` | ⚠️ Unaudited (bytecode match) |
 | SingleRandomWinnerProxyFactory | registry | ethereum | 4 deployments: ethereum [`0x6c7330...69e51f`](./contracts/ethereum-1/0x6c7330466ae67d1eda70bf3ad50a75e8a269e51f/); ethereum `0xba49b4...95adfd`; ethereum `0xc79b5d...dd2a37`; polygon `0xcb876f...175eef` | ⚠️ Unaudited (bytecode match) |
 | StakePrizePoolProxyFactory | unknown | polygon | 8 deployments: ethereum `0x166f62...c85142`; ethereum `0x259d46...62fc57`; ethereum `0x3b694c...bbe3f0`; ethereum `0x5ae758...6b6a4e`; ethereum `0x918175...c504b4`; polygon [`0x03e75a...f0dbf7`](./contracts/polygon-137/0x03e75aeeb92add6f3b168412671360eb94f0dbf7/); polygon `0x977627...d8f17b`; polygon `0xafcea0...d4f5e6` | ⚠️ Unaudited (bytecode match) |
@@ -231,6 +235,78 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [arbitrum.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/arbitrum.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 144 | high |
+| [base.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/base.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 144 | high |
+| [ethereum.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/ethereum.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 144 | high |
+| [gnosis.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/gnosis.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 144 | high |
+| [optimism.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/optimism.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 144 | high |
+| [scroll.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/scroll.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 144 | high |
+| [arbitrum-sepolia.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/testnets/arbitrum-sepolia.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 154 | high |
+| [base-sepolia.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/testnets/base-sepolia.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 154 | high |
+| [beta.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/testnets/beta.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 103 | high |
+| [canary.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/testnets/canary.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 121 | high |
+| [gnosis-chiado.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/testnets/gnosis-chiado.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 154 | high |
+| [optimism-sepolia.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/testnets/optimism-sepolia.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 154 | high |
+| [scroll-sepolia.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/testnets/scroll-sepolia.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 154 | high |
+| [world.md](https://github.com/pooltogether/v4-docs/blob/main/docs/deployments/world.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 138 | high |
+| [DrawAuction.md](https://github.com/pooltogether/v4-docs/blob/main/docs/design/DrawAuction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PrizeClaimer.md](https://github.com/pooltogether/v4-docs/blob/main/docs/design/PrizeClaimer.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PrizePool.md (also discovered via alternate URL)](https://github.com/pooltogether/v4-docs/blob/main/docs/design/PrizePool.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 10 | low |
+| [TwabController.md](https://github.com/pooltogether/v4-docs/blob/main/docs/design/TwabController.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 14 | low |
+| [Vaults.md](https://github.com/pooltogether/v4-docs/blob/main/docs/design/Vaults.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 18 | low |
+| [index.md (also discovered via alternate URL)](https://github.com/pooltogether/v4-docs/blob/main/docs/design/index.md) | unknown | Audit | n/a | unknown | Direct | contract_name|n/a | 140 | high|medium |
+| [ClaimingPrizes.md](https://github.com/pooltogether/v4-docs/blob/main/docs/guides/bots/ClaimingPrizes.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [CompletingDrawAuctions.md](https://github.com/pooltogether/v4-docs/blob/main/docs/guides/bots/CompletingDrawAuctions.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 30 | low |
+| [LiquidatingYield.md](https://github.com/pooltogether/v4-docs/blob/main/docs/guides/bots/LiquidatingYield.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 17 | low |
+| [BuildAnApp.md](https://github.com/pooltogether/v4-docs/blob/main/docs/guides/customize/BuildAnApp.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [CustomPrizeVault.md](https://github.com/pooltogether/v4-docs/blob/main/docs/guides/customize/CustomPrizeVault.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 6 | low |
+| [PrizeHookSecurity.md](https://github.com/pooltogether/v4-docs/blob/main/docs/guides/customize/PrizeHookSecurity.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PrizeIncentives.md](https://github.com/pooltogether/v4-docs/blob/main/docs/guides/integrate/PrizeIncentives.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PrizeSavings.md](https://github.com/pooltogether/v4-docs/blob/main/docs/guides/integrate/PrizeSavings.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DrawManager.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/draw-manager/DrawManager.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 8 | low |
+| [IRng.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/draw-manager/IRng.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [RewardLib.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/draw-manager/RewardLib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [IFlashSwapCallback.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/liquidator/IFlashSwapCallback.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ILiquidationPair.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/liquidator/ILiquidationPair.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ILiquidationSource.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/liquidator/ILiquidationSource.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [TpdaLiquidationPair.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/liquidator/TpdaLiquidationPair.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [TpdaLiquidationPairFactory.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/liquidator/TpdaLiquidationPairFactory.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 8 | low |
+| [TpdaLiquidationRouter.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/liquidator/TpdaLiquidationRouter.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 16 | medium |
+| [UniswapFlashLiquidation.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/liquidator/UniswapFlashLiquidation.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
+| [Claimer.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-claimer/Claimer.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 12 | low |
+| [ClaimerFactory.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-claimer/ClaimerFactory.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 26 | low |
+| [LinearVRGDALib.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-claimer/LinearVRGDALib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [BlastPrizePool.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-pool/BlastPrizePool.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 10 | low |
+| [DrawAccumulatorLib.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-pool/DrawAccumulatorLib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [TierCalculationLib.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-pool/TierCalculationLib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [TieredLiquidityDistributor.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-pool/TieredLiquidityDistributor.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Claimable.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-vault/Claimable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [HookManager.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-vault/HookManager.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [IPrizeHooks.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-vault/IPrizeHooks.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PrizeVault.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-vault/PrizeVault.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 6 | low |
+| [PrizeVaultFactory.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-vault/PrizeVaultFactory.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 18 | medium |
+| [TwabERC20.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/prize-vault/TwabERC20.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ObservationLib.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/twab-controller/ObservationLib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [TwabLib.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/twab-controller/TwabLib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Delegation.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/twab-delegator/Delegation.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [LowLevelDelegator.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/twab-delegator/LowLevelDelegator.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PermitAndMulticall.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/twab-delegator/PermitAndMulticall.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [TwabDelegator.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/twab-delegator/TwabDelegator.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 31 | low |
+| [ITwabRewards.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/twab-rewards/ITwabRewards.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [TwabRewards.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/twab-rewards/TwabRewards.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 25 | medium |
+| [VaultBooster.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/vault-boost/VaultBooster.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [VaultBoosterFactory.md](https://github.com/pooltogether/v4-docs/blob/main/docs/reference/vault-boost/VaultBoosterFactory.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 15 | low |
+| [what-is-pooltogether.md](https://github.com/pooltogether/v4-docs/blob/main/docs/what-is-pooltogether.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [audits.md](https://github.com/pooltogether/user-docs/blob/main/security/audits.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [bug-bounties.md](https://github.com/pooltogether/user-docs/blob/main/security/bug-bounties.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 4 | low |
+| [README.md](https://github.com/pooltogether/user-docs/blob/main/security/risks/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [protocol-coverage.md](https://github.com/pooltogether/user-docs/blob/main/security/risks/protocol-coverage.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [calculate.md](https://github.com/pooltogether/v4-utils-js/blob/main/docs/md/calculate.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [compute.md](https://github.com/pooltogether/v4-utils-js/blob/main/docs/md/compute.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [utils.md](https://github.com/pooltogether/v4-utils-js/blob/main/docs/md/utils.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -238,19 +314,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| optimism | [`0x2c3000...473732`](./contracts/optimism-10/0x2c30004ec09e731dffcd5783569fb2e09c473732/) | StakingVault | core_logic | $77,217.73 | Verified native implementation with $77,217.73 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| scroll | [`0x29499e...b1fa9b`](./contracts/scroll-534352/0x29499e2eb8ff1d076a35c275aeddd613afb1fa9b/) | PrizeVault | core_logic | $77,217.72 | Verified native implementation with $77,217.72 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x0c08c2...18120f`](./contracts/gnosis-100/0x0c08c2999e1a14569554eddbcda9da5e1918120f/) | PrizePool | core_logic | $47,150.48 | Verified native implementation with $47,150.48 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x77935f...83906b`](./contracts/optimism-10/0x77935f2c72b5eb814753a05921ae495aa283906b/) | VaultV2 | core_logic | $16,772.08 | Verified native implementation with $16,772.08 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x1732ce...4e0494`](./contracts/optimism-10/0x1732ce5486ea47f607550ccbe499cd0f894e0494/) | Vault | core_logic | $8,297.02 | Verified native implementation with $8,297.02 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x216a7d...cdc660`](./contracts/gnosis-100/0x216a7d520992ed198593a16e0b17c784c9cdc660/) | PermittableToken | token | $3,953.46 | Verified native implementation with $3,953.46 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x0d51a3...a71dd9`](./contracts/gnosis-100/0x0d51a33975024e8afc55fde9f6b070c10aa71dd9/) | PrizePoolTwabRewards | core_logic | $3,827.40 | Verified native implementation with $3,827.40 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0cec1a...e6844e`](./contracts/ethereum-1/0x0cec1a9154ff802e7934fc916ed7ca50bde6844e/) | Pool | core_logic | $718.85 | Verified native implementation with $718.85 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x19de63...e84e60`](./contracts/polygon-137/0x19de635fb3678d8b8154e37d8c9cdf182fe84e60/) | YieldSourcePrizePool | core_logic | $120.00 | Verified native implementation with $120.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4658f7...fd351f`](./contracts/ethereum-1/0x4658f736b93dcddcbce46cde955970e697fd351f/) | AddressRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x188f93...cd3bfc`](./contracts/ethereum-1/0x188f932d3ac002057df3590b8e6134be2acd3bfc/) | AutonomousPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x0b5a1d...bd8438`](./contracts/optimism-10/0x0b5a1dc536d5a67c66d00b337e6b189385bd8438/) | Claimer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x22e385...9ea47e`](./contracts/gnosis-100/0x22e3857db02c4db38870dddc286d0543869ea47e/) | ClaimerFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4027de...892668`](./contracts/ethereum-1/0x4027de966127af5f015ea1cfd6293a3583892668/) | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xdecd3c...4604d3`](./contracts/polygon-137/0xdecd3c72187325c26f85099a89eed6d5bb4604d3/) | ConfigurableReserve | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x03e75a...f0dbf7`](./contracts/ethereum-1/0x03e75aeeb92add6f3b168412671360eb94f0dbf7/) | ControlledTokenBuilder | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -262,11 +330,9 @@ Verified + unaudited native implementations ranked by TVL:
 | avalanche | [`0x0f5f5e...392a47`](./contracts/avalanche-43114/0x0f5f5ef16465371152fc46c72d06fb0ec9392a47/) | DrawCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x01ee1e...c3c2ba`](./contracts/avalanche-43114/0x01ee1ea692773f28c45d63133426f21923c3c2ba/) | DrawCalculatorTimelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xac4ff3...70a064`](./contracts/ethereum-1/0xac4ff319adac4c7d109f4024a33328088370a064/) | DrawDispatcher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0aa9e2...0ab98d`](./contracts/ethereum-1/0x0aa9e2e0b37fb54c19e45cb246b17b0e700ab98d/) | DrawManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0xbe3061...478dfb`](./contracts/avalanche-43114/0xbe30611ca48d3fc131fdc6006626b90702478dfb/) | EIP2612PermitAndDeposit | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4e869b...745fb3`](./contracts/ethereum-1/0x4e869b3a0978fa61dabd7da8f9b272aadc745fb3/) | ERC721ControlledFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc5b840...300288`](./contracts/ethereum-1/0xc5b84025e49e1ed2a61b8db7340fda576f300288/) | ERC721Ownable | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x4e30c0...a996f4`](./contracts/base-8453/0x4e30c0a8cce76940d87ae62eb12f3ac536a996f4/) | EzDepositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x1a7cf7...8657e5`](./contracts/optimism-10/0x1a7cf7817dae50df822fb5d0fc0cdd87b38657e5/) | FireFighterClaimer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa1739e...f8e606`](./contracts/ethereum-1/0xa1739ece7a90243443543ea57eb5bfb5f4f8e606/) | FixedPriceLiquidationPairFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x91b718...75d43c`](./contracts/ethereum-1/0x91b718f250a74ad80da828d7d60b13993275d43c/) | FixedPriceLiquidationRouter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -275,10 +341,7 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | [`0x1dcfb8...202e12`](./contracts/arbitrum-42161/0x1dcfb8b47c2f05ce86c21580c167485de1202e12/) | GpBoostHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdc90a7...351f94`](./contracts/ethereum-1/0xdc90a79fcb1dbad5f05e6c264f84ac4b0d351f94/) | L1TimelockTrigger | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xc366bf...46138e`](./contracts/polygon-137/0xc366bf1a054ca495c09b1a722d863ac65746138e/) | L2TimelockTrigger | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x9d950c...34c595`](./contracts/optimism-10/0x9d950c680522edbde3ec6396a10e5609d034c595/) | LiquidationPair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x555bd8...de8093`](./contracts/optimism-10/0x555bd8fc65e57139c9f405980c7a9526a7de8093/) | LiquidationPairFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0xc57e4f...4f83cd`](./contracts/optimism-10/0xc57e4fc79ab33db6a7bf26cc1ca43511744f83cd/) | LiquidationProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xb9fba7...b68b95`](./contracts/optimism-10/0xb9fba7b2216167dcdd1a7ae0a564dd43e1b68b95/) | LiquidationRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2c2a96...1d8a24`](./contracts/ethereum-1/0x2c2a966b7f5448a36ec9f896088dfb99b21d8a24/) | LootBoxController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x25e6a7...d0b7ea`](./contracts/ethereum-1/0x25e6a78d93d2935a638fdbd684e7b39565d0b7ea/) | LootBoxPrizeStrategyListenerFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x29c102...87a75f`](./contracts/optimism-10/0x29c102109d6cb2d866cfec380e0e10e9a287a75f/) | MatchingAssetFlashLiquidator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -289,7 +352,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x4cb2f9...ca4d73`](./contracts/ethereum-1/0x4cb2f953f85b3ffdc97269f5cef6a4fcc0ca4d73/) | MultipleWinnersProxyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x04458b...00d022`](./contracts/ethereum-1/0x04458ba489cfa284ed8a693e3bea3e1df600d022/) | MultiTokenListener | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x26158d...4398c1`](./contracts/base-8453/0x26158db2448a5eccf6107d7494330e96404398c1/) | NftChanceBoosterHook | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x17cfe0...24d72a`](./contracts/polygon-137/0x17cfe08818e8260fae3a19761668ebc27b24d72a/) | PermitAndDepositDai | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xddf547...cdb72e`](./contracts/ethereum-1/0xddf547560eccf082af39fea77df60df664cdb72e/) | PodsUpkeep | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x39e2f3...e4e9c7`](./contracts/ethereum-1/0x39e2f33ff4ad3491106b3bb15dc66ebe24e4e9c7/) | PoolWithMultipleWinnersBuilder | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x354519...3d00a9`](./contracts/ethereum-1/0x3545192b340f50d77403dc0a64cf2b32f03d00a9/) | PoolyNFT | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -304,14 +366,11 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x48492f...dcc037`](./contracts/base-8453/0x48492f83d9e1d848d33a461d49a2071a6fdcc037/) | PrizeStakingVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x51d722...1f52c4`](./contracts/avalanche-43114/0x51d72281ed1d149ccbd7f290d3431c1d831f52c4/) | PrizeTierHistory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x63c82b...4c8aaa`](./contracts/ethereum-1/0x63c82be45399b5ca6041a3b6aac0f326614c8aaa/) | PrizeTierHistoryV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x0c379e...4dfd39`](./contracts/optimism-10/0x0c379e9b71ba7079084ada0d1c1aeb85d24dfd39/) | PrizeVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x24c3e1...b89430`](./contracts/avalanche-43114/0x24c3e15bdc10ce2cb1bec56cd43f397ce9b89430/) | ReceiverTimelockTrigger | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x20f29c...816308`](./contracts/polygon-137/0x20f29ccae4c9886964033042c6b79c2c4c816308/) | Registry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x3e8b99...b9a295`](./contracts/polygon-137/0x3e8b9901dbfe766d3fe44b36c180a1bca2b9a295/) | Reserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x0526e9...40b468`](./contracts/base-8453/0x0526e9541a500b554ef318cdc44147f38a40b468/) | RewardLiquidatorFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb1d894...44cd21`](./contracts/ethereum-1/0xb1d89477d1b505c261bab6e73f08fa834544cd21/) | RNGBlockhash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x5f6c71...7d25a8`](./contracts/optimism-10/0x5f6c71b9551c081680a2ef9f9322f88dca7d25a8/) | RngRelayAuction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x18928a...b9eecb`](./contracts/optimism-10/0x18928a03829a609292133d605ff6007151b9eecb/) | RngWitnet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x38449a...bd130d`](./contracts/base-8453/0x38449a6b7bb76638452273925c9a2ba818bd130d/) | SimpleVaultBoosterFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa63584...b4841d`](./contracts/ethereum-1/0xa6358441f68ed4707e1c4366a0d2e2233bb4841d/) | SingleRandomWinnerBuilder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6c7330...69e51f`](./contracts/ethereum-1/0x6c7330466ae67d1eda70bf3ad50a75e8a269e51f/) | SingleRandomWinnerProxyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -323,16 +382,9 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x42cd83...24262e`](./contracts/ethereum-1/0x42cd8312d2bce04277dd5161832460e95b24262e/) | Timelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x63fe3d...90d630`](./contracts/ethereum-1/0x63fe3d163a3533f3d13ace30c539a9e8c290d630/) | TokenFaucetProxyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | [`0x37203b...9b7746`](./contracts/optimism-10/0x37203b841cb891f0d263c3895bf50866519b7746/) | TokenVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x0796be...e7f668`](./contracts/optimism-10/0x0796be5c62669aadd8e1a41645344ebe51e7f668/) | TpdaLiquidationPairFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| gnosis | [`0x166448...d006c9`](./contracts/gnosis-100/0x1664485e6b51ee1a4d4dd35dbec79544a5d006c9/) | TpdaLiquidationRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x21950e...de2359`](./contracts/ethereum-1/0x21950e281bde1714ffd1062ed17c56d4d8de2359/) | TreasuryVester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x214a21...d6ce5e`](./contracts/base-8453/0x214a21bccf9acce40a65e2223e8e73bdffd6ce5e/) | TwabDelegator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| scroll | [`0x0e71a9...48780d`](./contracts/scroll-534352/0x0e71a9a2bd4546e7fc2af47a015747daeb48780d/) | TwabRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3fab22...e43d6d`](./contracts/ethereum-1/0x3fab224830c182972239f6a599a5a5bd64e43d6d/) | UnsafeTokenListenerDelegatorProxyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1ca3cf...19baec`](./contracts/ethereum-1/0x1ca3cf8b47b596f2d9b440edc59542539619baec/) | V3PrizePoolLiquidatorAdapter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x02d37f...31530e`](./contracts/base-8453/0x02d37f2654b4161801c8d7369b43a8762a31530e/) | VaultBoosterFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0xa469de...082d81`](./contracts/optimism-10/0xa469deff6d52c9571d13513e3cd7d94496082d81/) | VaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | [`0x6b17ee...8eff0e`](./contracts/optimism-10/0x6b17ee3a95bccd605340454c5919e693ef8eff0e/) | VaultFactoryV2 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1469c3...0b4f5d`](./contracts/ethereum-1/0x1469c3c2f8cbacafced0a271711e3491700b4f5d/) | VaultPrizePoolBuilder | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0835c8...c40d96`](./contracts/ethereum-1/0x0835c8c4ab282b5dbf06d59e1489ef17f1c40d96/) | YieldSourcePrizePoolProxyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xef3d36...495cd2`](./contracts/ethereum-1/0xef3d36a282e74b5bcba8a45262687ddb31495cd2/) | yVaultPrizePoolBuilder | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -351,9 +403,50 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 38
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=15, low=16, medium=4
+- Match method counts: extraction_exact=2475
+
+Zero-match audit list:
+
+- [7533] DrawAuction.md
+- [7534] PrizeClaimer.md
+- [7539] ClaimingPrizes.md
+- [7543] BuildAnApp.md
+- [7545] PrizeHookSecurity.md
+- [7548] PrizeIncentives.md
+- [7549] PrizeSavings.md
+- [7552] IRng.md
+- [7553] RewardLib.md
+- [7556] IFlashSwapCallback.md
+- [7557] ILiquidationPair.md
+- [7558] ILiquidationSource.md
+- [7559] TpdaLiquidationPair.md
+- [7566] LinearVRGDALib.md
+- [7569] DrawAccumulatorLib.md
+- [7571] TierCalculationLib.md
+- [7572] TieredLiquidityDistributor.md
+- [7574] Claimable.md
+- [7575] HookManager.md
+- [7576] IPrizeHooks.md
+- [7579] TwabERC20.md
+- [7581] ObservationLib.md
+- [7582] TwabLib.md
+- [7584] Delegation.md
+- [7585] LowLevelDelegator.md
+- [7586] PermitAndMulticall.md
+- [7589] ITwabRewards.md
+- [7592] VaultBooster.md
+- [7596] what-is-pooltogether.md
+- [7597] audits.md
+- [7599] README.md
+- [7600] protocol-coverage.md
+- [7601] calculate.md
+- [7602] compute.md
+- [7604] utils.md
+- [7605] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [7606] 0002-metadata-manifest-and-pull-command.md
+- [7607] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

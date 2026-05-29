@@ -455,7 +455,7 @@
 | [polygon-zkevm-bridge](./polygon-zkevm-bridge/) | $78.0M | 0.0% | ? | active | 3 | 1 | 2026-05-29 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-05-23 |
 | [pond0x](./pond0x/) | $2.9M | 0.0% | ? | unknown | 3 | 14 | 2026-05-29 |
-| [pooltogether](./pooltogether/) | $26.9M | 0.0% | $26.9M | declining | 0 | 153 | 2026-05-23 |
+| [pooltogether](./pooltogether/) | $26.9M | 28.9% | $26.7M | declining | 72 | 153 | 2026-05-29 |
 | [potatoswap](./potatoswap/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [powercity](./powercity/) | $3.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [powh3d](./powh3d/) | $4.5M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |

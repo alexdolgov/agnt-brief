@@ -305,7 +305,7 @@ Each project directory contains:
 | [kromatika](./kromatika/brief.md) | $1.10M | 4 | 30 | 16/30 (53%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $83.80K |
 | [b.protocol](./b.protocol/brief.md) | $1.79M | 4 | 162 | 97/162 (60%) | 5.1% | 2.0% (Code4rena) | 5 | stale | 💀 dead | $79.00K |
 | [moola-market](./moola-market/brief.md) | $1.22M | celo | 53 | 37/53 (70%) | 10.8% | 10.8% (OpenZeppelin) | 1 | stale | ⚠️ declining | $73.92K |
-| [foxify](./foxify/brief.md) | $3.58M | arbitrum, sonic | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $72.65K |
+| [foxify](./foxify/brief.md) | $3.57M | arbitrum, sonic | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $72.65K |
 | [csigma-finance](./csigma-finance/brief.md) | $12.66M | arbitrum, base, ethereum | 50 | 38/50 (76%) | 41.0% | 0.0% (-) | 3 | aging | ✅ active | $65.57K |
 | [hegic](./hegic/brief.md) | $10.10M | ethereum | 63 | 26/63 (41%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $54.07K |
 | [hemi](./hemi/brief.md) | $1.26M | bsc, ethereum, optimism | 47 | 37/47 (79%) | 2.7% | 0.0% (-) | 2 | fresh | ❓ unknown | $49.57K |
@@ -688,5 +688,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T07:34:20.450Z_
+_Generated: 2026-05-29T07:40:19.879Z_
 _Projects: 676_

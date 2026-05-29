@@ -215,7 +215,7 @@
 | [fomo3d](./fomo3d/) | $2.5M | 0.0% | ? | active | 3 | 23 | 2026-05-28 |
 | [forgeyields](./forgeyields/) | $1.9M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
 | [four.meme](./four.meme/) | $4.9M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
-| [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | unknown | 0 | 5 | 2026-05-24 |
+| [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | unknown | 3 | 5 | 2026-05-29 |
 | [frankencoin](./frankencoin/) | $70.0M | 66.7% | ? | active | 11 | 6 | 2026-05-27 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 11 | 18 | 2026-05-23 |
 | [fulcrom](./fulcrom/) | $13.5M | 0.0% | ? | active | 0 | 80 | 2026-05-22 |

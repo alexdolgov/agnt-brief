@@ -335,7 +335,7 @@ Each project directory contains:
 | [sdai](./sdai/brief.md) | $72.00M | gnosis | 93 | 48/93 (52%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.82K |
 | [azuro](./azuro/brief.md) | $1.04M | 6 | 304 | 55/304 (18%) | 6.6% | 0.0% (-) | 3 | aging | ✅ active | $3.14K |
 | [arrakis-finance](./arrakis-finance/brief.md) | $77.24M | 9 | 124 | 101/124 (81%) | 29.1% | 3.9% (Sherlock) | 10 | stale | ✅ active | $3.07K |
-| [injective-bridge](./injective-bridge/brief.md) | $14.89M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.62K |
+| [injective-bridge](./injective-bridge/brief.md) | $15.11M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.62K |
 | [deltaprime](./deltaprime/brief.md) | $4.25M | arbitrum, avalanche | 482 | 173/482 (36%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.57K |
 | [deri](./deri/brief.md) | $7.44M | 12 | 868 | 94/868 (11%) | 13.9% | 0.0% (-) | 6 | aging | ✅ active | $2.40K |
 | [tranchess](./tranchess/brief.md) | $5.74M | bsc, ethereum, scroll | 135 | 101/135 (75%) | 23.8% | 0.0% (-) | 8 | stale | 💀 dead | $1.94K |
@@ -693,5 +693,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T09:10:27.631Z_
+_Generated: 2026-05-29T09:12:25.986Z_
 _Projects: 681_

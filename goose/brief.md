@@ -4,8 +4,8 @@
 
 - Project: Goose (`goose`)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-29T08:02:48.247Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T18:38:07.923Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: ethereum
 - Contract surface: 7 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $12,801,021.87

@@ -7,8 +7,8 @@
 - Project: IQ (`iq`)
 - Website: [https://iq.wiki](https://iq.wiki)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-29T09:21:55.146Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T19:54:30.543Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $5,039,162.28

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "arbitrum-nova-bridge",
-  "generated_at": "2026-05-29T05:25:25.098Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-befa",
+  "generated_at": "2026-05-29T06:32:14.614Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-4212",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "arbitrum-nova-bridge",

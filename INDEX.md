@@ -257,7 +257,7 @@
 | [hemi](./hemi/) | $49.6K | 2.7% | $49.6K | unknown | 5 | 47 | 2026-05-25 |
 | [hemibtc](./hemibtc/) | $46.2K | 2.7% | $46.2K | active | 5 | 47 | 2026-05-22 |
 | [hera-finance](./hera-finance/) | $5.8M | 42.9% | ? | unknown | 3 | 28 | 2026-05-23 |
-| [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 0 | 4 | 2026-05-24 |
+| [hiyield](./hiyield/) | $2.7M | 0.0% | ? | active | 36 | 4 | 2026-05-29 |
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-05-24 |
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 4 | 2 | 2026-05-25 |
 | [hopr](./hopr/) | $1.2M | 4.3% | ? | unknown | 2 | 81 | 2026-05-25 |

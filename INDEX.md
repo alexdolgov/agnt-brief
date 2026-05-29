@@ -262,6 +262,7 @@
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 4 | 2 | 2026-05-25 |
 | [hopr](./hopr/) | $1.2M | 4.3% | ? | unknown | 2 | 81 | 2026-05-25 |
 | [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 3 | 1 | 2026-05-29 |
+| [houses-of-rome](./houses-of-rome/) | $0.0 | 0.0% | ? | dead | 3 | 51 | 2026-05-29 |
 | [hskhodlium](./hskhodlium/) | $1.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [hybra](./hybra/) | $1.9M | 0.0% | ? | active | 0 | 81 | 2026-05-24 |
 | [hyperbeat](./hyperbeat/) | $22.6M | 10.6% | $22.6M | active | 14 | 222 | 2026-05-26 |

@@ -1,0 +1,17 @@
+{
+  "address": "0x7ba715350fa7d3120712b4ab1e3fc89f9090bb56",
+  "chain_id": 42220,
+  "contract_name": "ICHIVaultMigrationGuard",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "000000000000000000000000471ece3750da237f93b8e339c536989b8978a438000000000000000000000000b3bf88cb919a222a6f9c90ca8a9ac261cbd3e5bf00000000000000000000000082dca62c4b5dd28cc85ce8ae3b170ce020e33870",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T08:54:28.214Z"
+}

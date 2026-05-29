@@ -273,6 +273,7 @@
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 3 | 12 | 2026-05-29 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-05-25 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 2 | 45 | 2026-05-29 |
+| [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | unknown | 4 | 616 | 2026-05-29 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | dead | 0 | 17 | 2026-05-23 |
 | [immutable-zkevm](./immutable-zkevm/) | $29.2M | 18.2% | ? | active | 5 | 11 | 2026-05-22 |
 | [inception](./inception/) | $15.9M | 27.3% | $15.6M | sunsetting | 11 | 79 | 2026-05-23 |

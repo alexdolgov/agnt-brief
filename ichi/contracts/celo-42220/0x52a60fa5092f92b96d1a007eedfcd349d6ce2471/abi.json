@@ -1,0 +1,31 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "depositToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "vaultIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "computeIDVsymbol",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

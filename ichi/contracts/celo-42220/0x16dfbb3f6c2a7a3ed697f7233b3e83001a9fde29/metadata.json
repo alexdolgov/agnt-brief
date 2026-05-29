@@ -1,0 +1,18 @@
+{
+  "address": "0x16dfbb3f6c2a7a3ed697f7233b3e83001a9fde29",
+  "chain_id": 42220,
+  "contract_name": "AegisVaultERC20",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT, UNLICENSED, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 51,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T08:54:28.186Z"
+}

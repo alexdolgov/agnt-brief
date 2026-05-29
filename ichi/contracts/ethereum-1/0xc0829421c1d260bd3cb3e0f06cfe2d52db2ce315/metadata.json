@@ -1,0 +1,18 @@
+{
+  "address": "0xc0829421c1d260bd3cb3e0f06cfe2d52db2ce315",
+  "chain_id": 1,
+  "contract_name": "EtherToken",
+  "compiler_version": "v0.4.16+commit.d7661dd9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T08:54:36.375Z"
+}

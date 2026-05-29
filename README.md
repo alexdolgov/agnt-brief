@@ -97,6 +97,7 @@ Each project directory contains:
 | [illuvium](./illuvium/brief.md) | $9.60M | ethereum | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $39.75M |
 | [universe-xyz](./universe-xyz/brief.md) | $1.65M | ethereum | 36 | 25/36 (69%) | 20.0% | 0.0% (-) | 2 | stale | 💀 dead | $38.95M |
 | [carbon-defi](./carbon-defi/brief.md) | $3.51M | 4 | 157 | 53/157 (34%) | 29.8% | 26.3% (ChainSecurity) | 4 | aging | ✅ active | $36.58M |
+| [ichi](./ichi/brief.md) | $12.78M | 18 | 616 | 112/616 (18%) | 0.9% | 0.0% (-) | 1 | stale | ❓ unknown | $36.12M |
 | [snowbank](./snowbank/brief.md) | $3.77M | avalanche | 12 | 12/12 (100%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $36.05M |
 | [zklink-nova](./zklink-nova/brief.md) | $13.41M | 11 | 381 | 106/381 (28%) | 15.3% | 3.6% (OpenZeppelin) | 10 | aging | ⚠️ declining | $33.89M |
 | [backedfi](./backedfi/brief.md) | $8.20M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $33.35M |
@@ -692,5 +693,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T08:50:57.305Z_
-_Projects: 680_
+_Generated: 2026-05-29T08:55:10.693Z_
+_Projects: 681_

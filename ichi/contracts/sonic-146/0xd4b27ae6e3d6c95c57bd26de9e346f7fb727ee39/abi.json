@@ -1,0 +1,630 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_voter",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getCompleteUserPositions",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "earnedRewards",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.CompleteUserPosition[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "vaults",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getCompleteUserPositionsMulti",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "earnedRewards",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.CompleteUserPosition[][]",
+        "name": "",
+        "type": "tuple[][]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getCompleteUserStakedPosition",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "earnedRewards",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.CompleteUserPosition",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "vaults",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getCompleteUserStakedPositionsMulti",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "earnedRewards",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.CompleteUserPosition[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getCompleteUserUnstakedPosition",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "earnedRewards",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.CompleteUserPosition",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "vaults",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getCompleteUserUnstakedPositionsMulti",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "earnedRewards",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.CompleteUserPosition[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "lpBalance",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPositionAmounts",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.UserPosition",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "vaults",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "lpBalances",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "getPositionAmountsMulti",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.UserPosition[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserPositions",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.UserPosition[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "vaults",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserPositionsMulti",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.UserPosition[][]",
+        "name": "",
+        "type": "tuple[][]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserStakedPosition",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.UserPosition",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "vaults",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserStakedPositionsMulti",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.UserPosition[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserUnstakedPosition",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.UserPosition",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "vaults",
+        "type": "address[]"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getUserUnstakedPositionsMulti",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "amountToken0",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountToken1",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lpBalance",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IICHIVaultHelper.UserPosition[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "voter",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

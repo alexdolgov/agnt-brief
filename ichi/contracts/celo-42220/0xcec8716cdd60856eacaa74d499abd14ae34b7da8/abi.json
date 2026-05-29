@@ -1,0 +1,117 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "gnosis",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "int24",
+        "name": "expectedCurrentTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "range",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "baseLower",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "baseUpper",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "limitLower",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "limitUpper",
+        "type": "int24"
+      },
+      {
+        "internalType": "int256",
+        "name": "swapQuantity",
+        "type": "int256"
+      },
+      {
+        "internalType": "int24",
+        "name": "expectedPostRebalanceTick",
+        "type": "int24"
+      },
+      {
+        "internalType": "int24",
+        "name": "postRebalanceRange",
+        "type": "int24"
+      }
+    ],
+    "name": "rebalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

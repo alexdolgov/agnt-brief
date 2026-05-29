@@ -1,0 +1,16 @@
+# ICHIVaultDepositGuard
+
+| Field | Value |
+|---|---|
+| Chain | blast (81457) |
+| Address | `0x0248b992ac2a75294b05286e9dd3a2bd3c9cfe4b` |
+| Role | core_logic |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 54 (ethereum `0x3e1afdb89b6ea49e828c565ab6a36a485b7a4775`; ethereum `0x81b2f475e1ca7ab6b2720adfa2fa6d4c52c4f49d`; ethereum `0xc3822b5e61d6702315efd86573978a8a3f3acb83`; ethereum `0xe6e32d20258f475baa8d0b39d4c391b96f0ef70a`; bsc `0x101eb16bdba37979a771c86e1caafbadbabfc879`; bsc `0x15ba62a09e6e295a696d02f8e4b80a8a13bf3785`; bsc `0x454130394b8013d4a7288fe9db570a0a24c606c2`; bsc `0x7984d3ad2de4dd54d1fd6b4d89112ebf7c0df151`; bsc `0xa9b751f37857790d0412c81b072db57ccc0af545`; bsc `0xd9272a45bbf488816c6a5351894bce7b04a66ee1`; bsc `0xe7914034d4d39087bff0aed442a652f5945e914b`; polygon `0x64e44525a98bc85ac097cc6ca4c8f6be7d483041`; polygon `0x66dcb1e8a6ca366341ae8d6af55cbcf3e21c8dc2`; polygon `0x8845fe66db1e421fbe263f14473ee2ae8249d70c`; polygon `0x9b3ea1a39576925fa94c4bcc7eecfa0d95d331e1`; polygon `0xa5ce107711789b350e04063d4effbe6ab6eb05a4`; polygon `0xad7633c58d66c736d0f3153732c6d7a3206316eb`; polygon `0xc1dec22a7b54c0afaa3a22f98897585b15d8e458`; polygon `0xdb8e25d78483d13781622a40e69a9e39a4b590b6`; polygon `0xe976cd5146342a4378ea821aae44658f5d3c481a`; sonic `0x65cd1f0ac298519be4891b5812053e00bd2074ac`; sonic `0xcd952718e6ef25ac7dbddd55e501aaa0177dbfa0`; mantle `0x15ea9a2a0ffbaa8ad51a10a9bda84e60585ba0de`; mantle `0x2121aa95a8b05d9c1db90368b60c6867618814b8`; mantle `0xadda3a15ea71c223a82af86d4578ef2b076035f1`; mantle `0xb42d5956cde4386b65c087cfcd16910ab6114f15`; base `0xbf38e4ffb0b0aa075531b38d71d3b18a5f599819`; base `0xe2381b5afae99b899596bc550184a080daa31f26`; mode `0x2e76a8d053f839a04235341df1f25235437fedd6`; arbitrum `0x067ec6134e6ec277c7d9589889c85b94a293bf04`; arbitrum `0x1c4063366cf116616518e9950729936b8c323411`; arbitrum `0x2472ca62c19ab99ab9947a7754fc38945b68fb68`; arbitrum `0x28cf3b462a1adde87fe7144d110bcf0d464c97b7`; arbitrum `0x932e1908461de58b0891e5022431dc995cb95c5e`; arbitrum `0xb77463eba7f1bd5f37fca35fdf9306b09baa7379`; arbitrum `0xe0f792a9fb50b307e38a1aab456b9258d3e5594c`; arbitrum `0xfb5263779d551d0f8a85d47a7d576c4893686d12`; celo `0x238394541de407fd494e455ef17c9d991f4fbed8`; celo `0x4fa116f8864ee7d7cee1f5fbb58d41b70d75a529`; celo `0x62fd1824c810906f449227f1f453528bb54774c2`; celo `0xa19595c6ca6186621ddde0dba0ad24c5e84d5a14`; avalanche `0xbbb97d634460dacca0d41e249510bb741ef46ad3`; linea `0x19227e17944faf42419f019dcc8762c400fe50a7`; linea `0x57c9d919aea56171506cfb62b60ce76be0a079df`; linea `0x60f50858953dbf1a699b88037d9dce235b8c505d`; linea `0x6337625bf843911da1e1eefaeafb5599c876469c`; linea `0x92bce3972916c2ceda46c4eebc9684ac26effe5b`; linea `0xb177cf10f4382f671e5923c6c06f7b601d5a04e2`; linea `0xcf99c2b3d1a9588a9a9a34eab25cd6f425fa8801`; linea `0xdb12144372d1c588ee74e0340144c294f3bf0cbf`; blast [`0x0248b992ac2a75294b05286e9dd3a2bd3c9cfe4b`](../0x0248b992ac2a75294b05286e9dd3a2bd3c9cfe4b/); blast `0x8346a803e1754f9d4c6935aee1fd864ff15955f1`; blast `0xb62399d23d1c81f08ea445a42d7f15cc12090a71`; blast `0xd4493957338e3f66214c733883f789b99558758f`) |
+| Proxy | No |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

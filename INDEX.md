@@ -562,7 +562,7 @@
 | [sprinter](./sprinter/) | $1.1M | 100.0% | ? | active | 6 | 4 | 2026-05-25 |
 | [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-05-24 |
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-05-24 |
-| [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 0 | 2 | 2026-05-23 |
+| [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 3 | 2 | 2026-05-29 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-05-23 |
 | [stake.link](./stake.link/) | $76.8M | 6.5% | $76.8M | active | 1 | 71 | 2026-05-27 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-22 |

@@ -595,7 +595,7 @@
 | [swapscanner](./swapscanner/) | $4.7M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
 | [swellchain-bridge](./swellchain-bridge/) | $1.2M | 0.0% | ? | declining | 3 | 10 | 2026-05-29 |
 | [switcheo-finance](./switcheo-finance/) | $68.4M | 0.0% | $68.4M | active | 3 | 48 | 2026-05-29 |
-| [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 0 | 134 | 2026-05-23 |
+| [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 3 | 134 | 2026-05-29 |
 | [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-05-25 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 22.6% | ? | active | 9 | 158 | 2026-05-23 |
 | [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 4 | 482 | 2026-05-23 |

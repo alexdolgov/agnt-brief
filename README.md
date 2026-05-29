@@ -650,7 +650,7 @@ Each project directory contains:
 | [sparkdex](./sparkdex/brief.md) | $29.43M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [spiraldao](./spiraldao/brief.md) | $6.40M | ethereum, zksync-era | 56 | 25/56 (45%) | 44.0% | 0.0% (-) | 3 | stale | 💀 dead | - |
 | [splashing-stake](./splashing-stake/brief.md) | $6.19M | sei | 8 | 4/8 (50%) | 75.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
-| [sport.fun](./sport.fun/brief.md) | $3.65M | base | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [sport.fun](./sport.fun/brief.md) | $3.68M | base | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [sprinter](./sprinter/brief.md) | $1.14M | base | 4 | 4/4 (100%) | 100.0% | 50.0% (Spearbit) | 3 | fresh | ✅ active | - |
 | [squadswap](./squadswap/brief.md) | $1.54M | 6 | 214 | 37/214 (17%) | 63.2% | 0.0% (-) | 4 | aging | ✅ active | - |
 | [stablehodl](./stablehodl/brief.md) | $6.96M | bsc, ethereum, polygon | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -708,5 +708,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T14:33:39.473Z_
+_Generated: 2026-05-29T14:35:34.162Z_
 _Projects: 696_

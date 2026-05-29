@@ -558,7 +558,7 @@
 | [splash-protocol](./splash-protocol/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [splashing-stake](./splashing-stake/) | $6.2M | 75.0% | ? | active | 1 | 8 | 2026-05-23 |
 | [spookyswap](./spookyswap/) | $841.7 | 0.0% | $841.7 | dead | 1 | 137 | 2026-05-25 |
-| [sport.fun](./sport.fun/) | $3.7M | 0.0% | ? | active | 0 | 1 | 2026-05-24 |
+| [sport.fun](./sport.fun/) | $3.7M | 0.0% | ? | active | 3 | 1 | 2026-05-29 |
 | [sprinter](./sprinter/) | $1.1M | 100.0% | ? | active | 6 | 4 | 2026-05-25 |
 | [squadswap](./squadswap/) | $13.0M | 63.2% | ? | active | 5 | 214 | 2026-05-24 |
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-05-24 |

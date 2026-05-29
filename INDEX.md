@@ -639,7 +639,7 @@
 | [trueo](./trueo/) | $4.0M | 0.0% | $4.0M | declining | 17 | 23 | 2026-05-29 |
 | [trufin-protocol](./trufin-protocol/) | $6.8M | 66.7% | ? | declining | 12 | 7 | 2026-05-23 |
 | [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | unknown | 3 | 6 | 2026-05-29 |
-| [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 0 | 4 | 2026-05-26 |
+| [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 3 | 4 | 2026-05-29 |
 | [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | dead | 2 | 516 | 2026-05-25 |
 | [twyne](./twyne/) | $985.7K | 9.6% | ? | active | 9 | 59 | 2026-05-24 |
 | [txflow](./txflow/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 54 | 2026-05-25 |

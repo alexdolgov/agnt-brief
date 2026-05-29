@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "iaero-protocol",
-  "generated_at": "2026-05-24T15:07:32.618Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-29T08:50:25.334Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "iaero-protocol",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 5,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2070149.64196,
+    "dl_tvl_usd": 1976310.2036,
     "tvl_usd": 2717667.536677849,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -54,7 +54,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 2
     }
   },
   "topography": {
@@ -1625,7 +1625,50 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 9348,
+      "audit_key": "audit-9348",
+      "report_name": "AUTO_VAULT.md",
+      "report_url": "https://github.com/iaeroProtocol/iaero-frontend/blob/main/docs/AUTO_VAULT.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9349,
+      "audit_key": "audit-9349",
+      "report_name": "0X_API_INTEGRATION.md",
+      "report_url": "https://github.com/iaeroProtocol/iaero-sweeper/blob/main/docs/0X_API_INTEGRATION.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -1950,7 +1993,16 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 9348,
+        "report_name": "AUTO_VAULT.md"
+      },
+      {
+        "audit_id": 9349,
+        "report_name": "0X_API_INTEGRATION.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

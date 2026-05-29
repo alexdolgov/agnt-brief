@@ -651,7 +651,7 @@
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [universe-xyz](./universe-xyz/) | $39.0M | 20.0% | $39.0M | dead | 3 | 36 | 2026-05-24 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 3 | 1 | 2026-05-29 |
-| [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 0 | 3 | 2026-05-23 |
+| [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 3 | 3 | 2026-05-29 |
 | [usx.capital](./usx.capital/) | $1.7M | 0.0% | ? | unknown | 1 | 4 | 2026-05-24 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-25 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | unknown | 0 | 28 | 2026-05-24 |

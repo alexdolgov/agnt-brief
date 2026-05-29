@@ -483,7 +483,7 @@
 | [reddex](./reddex/) | $4.2M | 0.0% | ? | declining | 3 | 5 | 2026-05-29 |
 | [reflexer](./reflexer/) | $2.4M | 40.9% | ? | dead | 8 | 64 | 2026-05-24 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |
-| [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | unknown | 0 | 2 | 2026-05-22 |
+| [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | active | 3 | 2 | 2026-05-29 |
 | [reservoir-protocol](./reservoir-protocol/) | $2.1B | 0.0% | $2.1B | active | 0 | 278 | 2026-05-27 |
 | [resupply](./resupply/) | $41.8M | 0.0% | ? | active | 0 | 1 | 2026-05-26 |
 | [revault](./revault/) | $2.5K | 45.0% | ? | declining | 1 | 75 | 2026-05-24 |

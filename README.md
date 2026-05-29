@@ -158,7 +158,7 @@ Each project directory contains:
 | [synthetix](./synthetix/brief.md) | $41.67M | 4 | 13 | 13/13 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $10.27M |
 | [40-acres](./40-acres/brief.md) | $40.57M | 4 | 325 | 170/325 (52%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $10.02M |
 | [polkastarter](./polkastarter/brief.md) | $2.75M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $9.61M |
-| [kaito](./kaito/brief.md) | $19.86M | base | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $9.48M |
+| [kaito](./kaito/brief.md) | $18.72M | base | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $9.48M |
 | [dao-maker](./dao-maker/brief.md) | $2.10M | ethereum | 17 | 4/17 (24%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $9.34M |
 | [the-arena](./the-arena/brief.md) | $2.27M | 17 | 172 | 65/172 (38%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $9.27M |
 | [neku](./neku/brief.md) | $1.60M | arbitrum | 17 | 8/17 (47%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $8.38M |
@@ -695,5 +695,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T09:40:55.910Z_
+_Generated: 2026-05-29T09:42:50.426Z_
 _Projects: 683_

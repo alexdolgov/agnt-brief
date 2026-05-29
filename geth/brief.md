@@ -5,8 +5,8 @@
 - Project: GETH (`geth`)
 - Website: [https://guarda.com/staking/ethereum-staking/](https://guarda.com/staking/ethereum-staking/)
 - Lifecycle: active (Tier 0, 51.4% below peak)
-- Generated: 2026-05-29T07:45:14.139Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T18:20:39.378Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $16,048,230.57

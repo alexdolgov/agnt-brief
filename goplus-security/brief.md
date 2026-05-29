@@ -5,8 +5,8 @@
 - Project: GoPlus Security (`goplus-security`)
 - Website: [https://gopluslabs.io](https://gopluslabs.io)
 - Lifecycle: active (Tier 0, 50.4% below peak)
-- Generated: 2026-05-29T08:04:42.367Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T18:40:13.781Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: arbitrum, base, bsc, ethereum
 - Contract surface: 26 unique implementations (40 raw deployments)
 - DeFi Llama TVL: $32,764,727.00

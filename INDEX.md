@@ -287,7 +287,7 @@
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-05-23 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | unknown | 9 | 154 | 2026-05-26 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-05-25 |
-| [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 40 | 2026-05-25 |
+| [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 3 | 40 | 2026-05-29 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | dead | 0 | 181 | 2026-05-24 |
 | [juicebox](./juicebox/) | $11.2M | 0.0% | ? | active | 0 | 77 | 2026-05-23 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-05-23 |

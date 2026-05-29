@@ -7,11 +7,11 @@
 - Project: ioTube (`iotube`)
 - Website: [https://iotube.org](https://iotube.org)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T16:17:51.024Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-05-29T09:20:01.589Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: bsc, ethereum, polygon
 - Contract surface: 40 unique implementations (97 raw deployments)
-- DeFi Llama TVL: $3,536,297.84
+- DeFi Llama TVL: $3,291,693.13
 - On-chain TVL (included contracts): $2,232,712.67
 - TVL by chain: Ethereum $1,885,249.34 | Bsc $243,957.22 | Polygon $103,506.11
 
@@ -31,11 +31,11 @@ The chain-specific families (BSC, Ethereum, Polygon) share a common architecture
 - Unverified implementations: 23
 - Unique implementations: 40
 - Raw deployments: 97
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $2,232,712.67
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $2,232,712.67 represents exposure in a protocol with declining activity.
 
@@ -118,6 +118,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -155,9 +158,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [8111] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [8112] 0002-metadata-manifest-and-pull-command.md
+- [8113] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

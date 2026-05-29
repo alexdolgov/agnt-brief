@@ -1,0 +1,17 @@
+{
+  "address": "0x5e5aab1aad75853ab8114264c3bf3427b0634c9e",
+  "chain_id": 1,
+  "contract_name": "MLiquidityRedemptionVault",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 38,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T10:44:20.730Z"
+}

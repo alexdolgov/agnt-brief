@@ -548,6 +548,7 @@ Each project directory contains:
 | [merlinswap](./merlinswap/brief.md) | $8.43M | merlin | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [meson](./meson/brief.md) | $1.14M | blast, merlin | 129 | 2/129 (2%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [metastable](./metastable/brief.md) | $2.54M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [mev-capital](./mev-capital/brief.md) | $67.02M | 8 | 783 | 240/783 (31%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [mezo-earn](./mezo-earn/brief.md) | $55.18M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [minefi](./minefi/brief.md) | $1.43M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [mode-bridge](./mode-bridge/brief.md) | $6.18M | ethereum, mode | 100 | 34/100 (34%) | 2.9% | 0.0% (-) | 1 | aging | ⚠️ declining | - |
@@ -697,5 +698,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T10:42:53.920Z_
-_Projects: 685_
+_Generated: 2026-05-29T10:45:06.469Z_
+_Projects: 686_

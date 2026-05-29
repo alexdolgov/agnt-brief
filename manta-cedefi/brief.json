@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "manta-cedefi",
-  "generated_at": "2026-05-22T12:04:57.085Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-29T10:24:45.948Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "manta-cedefi",
     "tier": 0,
     "peak_tvl": 142227772,
     "peak_date": "2024-12-17T00:00:00.000Z",
-    "tvl_30d_ago": 40996676,
-    "tvl_90d_ago": 39691294,
-    "tvl_current": 26782474,
+    "tvl_30d_ago": 40652188,
+    "tvl_90d_ago": 39400355,
+    "tvl_current": 26691887,
     "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 42844426,
-    "change_30d_pct": -34.6715963021002,
-    "change_90d_pct": -32.523051528629935,
-    "days_since_peak": 521,
+    "tvl_180d_ago": 43579709,
+    "change_30d_pct": -34.34083547975327,
+    "change_90d_pct": -32.254704304060205,
+    "days_since_peak": 528,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 81.16930777766807
+    "drop_from_peak_pct": 81.23299927668135
   },
   "summary": {
     "total_contracts": 17,
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 26782474.47555,
-    "tvl_usd": 26782474.47555,
+    "dl_tvl_usd": 26751035.55889,
+    "tvl_usd": 26751035.55889,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -52,7 +52,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 3
     }
   },
   "topography": {
@@ -845,7 +845,71 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 5955,
+      "audit_key": "audit-5955",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5956,
+      "audit_key": "audit-5956",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5957,
+      "audit_key": "audit-5957",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -980,7 +1044,20 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 5955,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 5956,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 5957,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

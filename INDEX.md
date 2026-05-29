@@ -420,7 +420,7 @@
 | [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | dead | 1 | 16 | 2026-05-27 |
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | unknown | 3 | 24 | 2026-05-29 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-05-23 |
-| [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | dead | 0 | 103 | 2026-05-24 |
+| [opyn](./opyn/) | $1.0M | 48.5% | $104.3K | dead | 157 | 103 | 2026-05-29 |
 | [orangex](./orangex/) | $39.8M | 0.0% | ? | active | 0 | 3 | 2026-05-26 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
 | [osl](./osl/) | $41.5M | 0.0% | ? | active | 0 | 4 | 2026-05-26 |

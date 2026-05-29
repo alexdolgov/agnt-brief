@@ -5,8 +5,8 @@
 - Project: Hybra (`hybra`)
 - Website: [https://www.hybra.finance?code=GRYN2U](https://www.hybra.finance?code=GRYN2U)
 - Lifecycle: active (Tier 0, 92.2% below peak)
-- Generated: 2026-05-29T08:42:33.580Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T19:17:22.136Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: hyperliquid
 - Contract surface: 81 unique implementations (92 raw deployments)
 - DeFi Llama TVL: $1,819,335.00

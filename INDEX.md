@@ -395,7 +395,7 @@
 | [neo-tokyo](./neo-tokyo/) | $1.1M | 0.0% | ? | unknown | 0 | 86 | 2026-05-25 |
 | [neopin](./neopin/) | $55.4M | 0.0% | ? | active | 3 | 100 | 2026-05-27 |
 | [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 2 | 2026-05-25 |
-| [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | dead | 0 | 66 | 2026-05-24 |
+| [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | dead | 3 | 66 | 2026-05-29 |
 | [nest-credit](./nest-credit/) | $66.7K | 57.1% | ? | active | 16 | 16 | 2026-05-27 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |
 | [netswap](./netswap/) | $1.4M | 20.8% | ? | dead | 2 | 48 | 2026-05-25 |

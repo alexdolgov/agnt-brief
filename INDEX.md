@@ -270,7 +270,7 @@
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 3 | 242 | 2026-05-29 |
 | [hyperswap](./hyperswap/) | $1.5M | 0.0% | $1.5M | active | 0 | 58 | 2026-05-25 |
-| [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 0 | 12 | 2026-05-23 |
+| [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 3 | 12 | 2026-05-29 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-05-25 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 45 | 2026-05-24 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | dead | 0 | 17 | 2026-05-23 |

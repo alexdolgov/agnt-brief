@@ -626,7 +626,7 @@ Each project directory contains:
 | [rooster-protocol](./rooster-protocol/brief.md) | $2.23M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [rosen-bridge](./rosen-bridge/brief.md) | $2.11M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [rsk-bridge](./rsk-bridge/brief.md) | $1.03M | ethereum | 15 | 14/15 (93%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
-| [safe](./safe/brief.md) | $99.27M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [safe](./safe/brief.md) | $99.27M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [sakefinance](./sakefinance/brief.md) | $2.43M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [saucerswap](./saucerswap/brief.md) | $32.90M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [scallop](./scallop/brief.md) | $38.17M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
@@ -704,5 +704,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T13:38:11.122Z_
+_Generated: 2026-05-29T13:44:39.456Z_
 _Projects: 692_

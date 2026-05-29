@@ -507,7 +507,7 @@
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-05-25 |
 | [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 3 | 186 | 2026-05-29 |
 | [saber](./saber/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
-| [safe](./safe/) | $99.3M | 0.0% | ? | unknown | 0 | 1 | 2026-05-27 |
+| [safe](./safe/) | $99.3M | 0.0% | ? | unknown | 61 | 1 | 2026-05-29 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |
 | [satlayer](./satlayer/) | $289.5M | 4.4% | $287.2M | declining | 12 | 313 | 2026-05-25 |

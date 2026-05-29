@@ -306,7 +306,7 @@
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 3 | 4 | 2026-05-29 |
 | [keyring](./keyring/) | $6.2M | 18.6% | ? | active | 16 | 54 | 2026-05-25 |
 | [kiloex](./kiloex/) | $7.3M | 12.5% | $1.5M | declining | 10 | 111 | 2026-05-24 |
-| [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 0 | 35 | 2026-05-25 |
+| [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 3 | 35 | 2026-05-29 |
 | [king-protocol](./king-protocol/) | $1.3M | 60.0% | ? | active | 4 | 16 | 2026-05-25 |
 | [kintsu](./kintsu/) | $2.7M | 0.0% | ? | unknown | 5 | 12 | 2026-05-24 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |

@@ -25,7 +25,7 @@ Each project directory contains:
 | [trust-wallet](./trust-wallet/brief.md) | $39.04M | bsc | 6 | 4/6 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $470.22M |
 | [inverse-finance](./inverse-finance/brief.md) | $41.93M | 5 | 154 | 144/154 (94%) | 11.1% | 7.6% (Code4rena, Sherlock) | 5 | fresh | ❓ unknown | $428.77M |
 | [onyx](./onyx/brief.md) | $58.89M | ethereum | 16 | 14/16 (88%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $384.43M |
-| [kine-finance](./kine-finance/brief.md) | $1.11M | 4 | 35 | 33/35 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $351.76M |
+| [kine-finance](./kine-finance/brief.md) | $1.09M | 4 | 35 | 33/35 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $351.76M |
 | [alchemix](./alchemix/brief.md) | $37.88M | 4 | 388 | 202/388 (52%) | 1.0% | 1.0% (Spearbit) | 1 | aging | ⚠️ declining | $340.70M |
 | [tenderize](./tenderize/brief.md) | $1.08M | arbitrum, ethereum | 43 | 38/43 (88%) | 2.6% | 0.0% (-) | 2 | stale | ⚠️ declining | $332.49M |
 | [mitosis](./mitosis/brief.md) | $1.48M | 11 | 72 | 46/72 (64%) | 4.3% | 4.3% (Code4rena) | 1 | fresh | 💀 dead | $329.08M |
@@ -695,5 +695,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T09:46:37.943Z_
+_Generated: 2026-05-29T09:48:31.433Z_
 _Projects: 683_

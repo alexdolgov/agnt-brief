@@ -7,8 +7,8 @@
 - Project: Infrared Finance (`infrared-finance`)
 - Website: [https://infrared.finance](https://infrared.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T09:09:48.126Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T19:42:07.557Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: berachain, bsc
 - Contract surface: 27 unique implementations (121 raw deployments)
 - DeFi Llama TVL: $50,681,737.58

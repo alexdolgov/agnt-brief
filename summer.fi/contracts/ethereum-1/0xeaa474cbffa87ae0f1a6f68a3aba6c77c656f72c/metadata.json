@@ -1,0 +1,18 @@
+{
+  "address": "0xeaa474cbffa87ae0f1a6f68a3aba6c77c656f72c",
+  "chain_id": 1,
+  "contract_name": "MCDPriceVerifier",
+  "compiler_version": "v0.6.6+commit.6c089d02",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:54:48.165Z"
+}

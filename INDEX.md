@@ -581,6 +581,7 @@
 | [stusdt](./stusdt/) | $1.9M | 0.0% | $1.9M | active | 3 | 10 | 2026-05-29 |
 | [suibridge](./suibridge/) | $41.9M | 0.0% | ? | unknown | 3 | 5 | 2026-05-29 |
 | [sumer.money](./sumer.money/) | $1.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-24 |
+| [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | unknown | 5 | 485 | 2026-05-29 |
 | [sunny](./sunny/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 1 | 94 | 2026-05-26 |
 | [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 50 | 2026-05-25 |

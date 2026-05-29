@@ -1,0 +1,17 @@
+{
+  "address": "0x058c586cd8eb06aae4a4e1d7584db48c10a98f8a",
+  "chain_id": 42161,
+  "contract_name": "ProtocolAccessManager",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:54:26.217Z"
+}

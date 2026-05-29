@@ -1,0 +1,18 @@
+{
+  "address": "0x35bd299d8e40078056da8aa87f9d217acce4d2e8",
+  "chain_id": 10,
+  "contract_name": "DPMAdapter",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:54:25.151Z"
+}

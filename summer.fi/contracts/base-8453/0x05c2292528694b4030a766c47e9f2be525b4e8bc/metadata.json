@@ -1,0 +1,17 @@
+{
+  "address": "0x05c2292528694b4030a766c47e9f2be525b4e8bc",
+  "chain_id": 8453,
+  "contract_name": "UnwrapEth",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "0000000000000000000000000c1eda5544ea63cf3d365912343161913a8f19eb",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:54:31.259Z"
+}

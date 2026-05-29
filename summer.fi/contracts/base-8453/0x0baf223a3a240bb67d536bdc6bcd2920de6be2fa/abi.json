@@ -1,0 +1,31 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "bool[]",
+        "name": "continuous",
+        "type": "bool[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "replacedTriggerId",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "triggersData",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "validate",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

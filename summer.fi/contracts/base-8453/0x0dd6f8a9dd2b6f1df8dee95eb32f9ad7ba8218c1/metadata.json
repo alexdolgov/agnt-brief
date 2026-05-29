@@ -1,0 +1,17 @@
+{
+  "address": "0x0dd6f8a9dd2b6f1df8dee95eb32f9ad7ba8218c1",
+  "chain_id": 8453,
+  "contract_name": "MorphoVaultArk",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:54:28.565Z"
+}

@@ -1,0 +1,18 @@
+{
+  "address": "0x00b437df745c1deabe3f999dfe41fda9641d7eba",
+  "chain_id": 1,
+  "contract_name": "FluidLiteArk",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 50,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 66,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:54:25.477Z"
+}

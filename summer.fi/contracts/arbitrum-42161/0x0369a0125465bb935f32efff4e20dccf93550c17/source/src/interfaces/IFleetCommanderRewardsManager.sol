@@ -1,0 +1,17 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.28;
+
+import {IStakingRewardsManagerBase} from "@summerfi/rewards-contracts/interfaces/IStakingRewardsManagerBase.sol";
+
+/**
+ * @title IFleetCommanderRewardsManager
+ * @notice Interface for the FleetStakingRewardsManager contract
+ * @dev Extends IStakingRewardsManagerBase with Fleet-specific functionality
+ */
+interface IFleetCommanderRewardsManager is IStakingRewardsManagerBase {
+    /**
+     * @notice Returns the address of the FleetCommander contract
+     * @return The address of the FleetCommander
+     */
+    function fleetCommander() external view returns (address);
+}

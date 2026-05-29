@@ -1,0 +1,292 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_vat",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_jug",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_dsrIlk",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_ilk",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_baseRateConversion",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_borrowSpread",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_supplySpread",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_performanceBonus",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "baseRateConversion",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "borrowSpread",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "unbacked",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidityAdded",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "liquidityTaken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalStableDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalVariableDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "averageStableBorrowRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "reserve",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "aToken",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct DataTypes.CalculateInterestRatesParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "calculateInterestRates",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "supplyRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "stableBorrowRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "variableBorrowRate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dsrIlk",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBaseRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDebtRatio",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLastUpdateTimestamp",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ilk",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "jug",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "maxRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "performanceBonus",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "recompute",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "supplySpread",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vat",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

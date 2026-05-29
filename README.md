@@ -57,6 +57,7 @@ Each project directory contains:
 | [infinifi](./infinifi/brief.md) | $90.23M | bsc, ethereum, plasma | 118 | 72/118 (61%) | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | $145.94M |
 | [zircuit](./zircuit/brief.md) | $13.31M | base, ethereum | 17 | 16/17 (94%) | 25.0% | 0.0% (-) | 3 | aging | ⚠️ declining | $144.24M |
 | [beanstalk](./beanstalk/brief.md) | $6.66M | arbitrum, ethereum | 244 | 167/244 (68%) | 20.4% | 1.2% (Code4rena, Cyfrin, Immunefi) | 7 | stale | 💀 dead | $142.55M |
+| [summer.fi](./summer.fi/brief.md) | $47.58M | 5 | 485 | 279/485 (58%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $140.93M |
 | [zircuit-staking](./zircuit-staking/brief.md) | $54.16M | base, ethereum | 20 | 19/20 (95%) | 21.1% | 0.0% (-) | 3 | aging | ⚠️ declining | $140.43M |
 | [bio-protocol](./bio-protocol/brief.md) | $4.90M | base, ethereum | 41 | 40/41 (98%) | 10.0% | 0.0% (-) | 2 | fresh | ✅ active | $139.62M |
 | [apechain-bridge](./apechain-bridge/brief.md) | $44.92M | ethereum | 9 | 7/9 (78%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $138.23M |
@@ -708,5 +709,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T14:50:58.372Z_
-_Projects: 696_
+_Generated: 2026-05-29T14:55:34.555Z_
+_Projects: 697_

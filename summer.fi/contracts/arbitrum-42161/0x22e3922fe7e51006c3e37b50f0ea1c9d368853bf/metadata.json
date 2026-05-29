@@ -1,0 +1,17 @@
+{
+  "address": "0x22e3922fe7e51006c3e37b50f0ea1c9d368853bf",
+  "chain_id": 42161,
+  "contract_name": "McdUtils",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "000000000000000000000000f22f17b1d2354b4f4f52e4d164e4eb5e1f0a6ba6000000000000000000000000da10009cbd5d07dd0cecc66161fc93d7c9000da100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:54:27.934Z"
+}

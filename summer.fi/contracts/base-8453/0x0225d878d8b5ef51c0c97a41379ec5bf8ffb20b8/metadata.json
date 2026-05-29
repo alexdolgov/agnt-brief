@@ -1,0 +1,17 @@
+{
+  "address": "0x0225d878d8b5ef51c0c97a41379ec5bf8ffb20b8",
+  "chain_id": 8453,
+  "contract_name": "SummerVestingWalletsEscrow",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 102,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:54:35.325Z"
+}

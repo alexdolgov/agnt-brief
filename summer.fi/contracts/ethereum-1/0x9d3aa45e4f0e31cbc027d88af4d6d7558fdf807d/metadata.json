@@ -1,0 +1,18 @@
+{
+  "address": "0x9d3aa45e4f0e31cbc027d88af4d6d7558fdf807d",
+  "chain_id": 1,
+  "contract_name": "AutomationBotStorage",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "london",
+  "license": "AGPL-3.0-or-later",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:54:44.871Z"
+}

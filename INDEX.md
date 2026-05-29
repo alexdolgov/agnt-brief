@@ -70,7 +70,7 @@
 | [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-05-26 |
 | [baseline-protocol](./baseline-protocol/) | $997.7K | 14.3% | $997.7K | declining | 9 | 115 | 2026-05-27 |
 | [beanstalk](./beanstalk/) | $142.5M | 20.4% | $142.5M | dead | 7 | 244 | 2026-05-25 |
-| [belt-finance](./belt-finance/) | $15.3M | 47.5% | $7.1M | dead | 10 | 1331 | 2026-05-28 |
+| [belt-finance](./belt-finance/) | $15.3M | 47.5% | $7.1M | dead | 10 | 1331 | 2026-05-29 |
 | [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 2 | 105 | 2026-05-23 |
 | [benddao](./benddao/) | $1.5M | 0.0% | $1.5M | dead | 1 | 15 | 2026-05-25 |
 | [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 2 | 2026-05-23 |

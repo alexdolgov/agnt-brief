@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "set-protocol",
-  "generated_at": "2026-05-25T17:05:02.932Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-05-29T13:57:35.694Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "set-protocol",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 96,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 8,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 11623929.34074,
+    "dl_tvl_usd": 11121221.15406,
     "tvl_usd": 21200447.620155275,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -48,13 +48,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2020-12",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "stale": 5,
+      "unknown": 3
     }
   },
   "topography": {
@@ -3599,7 +3599,176 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 7032,
+      "audit_key": "audit-7032",
+      "report_name": "Certik-aave-v2-03-12-2020.pdf",
+      "report_url": "https://github.com/SetProtocol/aave-fork/blob/master/audits/Certik-aave-v2-03-12-2020.pdf",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7033,
+      "audit_key": "audit-7033",
+      "report_name": "Certora-FV-aave-v2-03-12-2020.pdf",
+      "report_url": "https://github.com/SetProtocol/aave-fork/blob/master/audits/Certora-FV-aave-v2-03-12-2020.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7034,
+      "audit_key": "audit-7034",
+      "report_name": "Mixbytes-aave-v2-03-12-2020.pdf",
+      "report_url": "https://github.com/SetProtocol/aave-fork/blob/master/audits/Mixbytes-aave-v2-03-12-2020.pdf",
+      "auditor": "MixBytes",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7035,
+      "audit_key": "audit-7035",
+      "report_name": "PeckShield-aave-v2-03-12-2020-CN.pdf",
+      "report_url": "https://github.com/SetProtocol/aave-fork/blob/master/audits/PeckShield-aave-v2-03-12-2020-CN.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7036,
+      "audit_key": "audit-7036",
+      "report_name": "Peckshield-aave-v2-03-12-2020-EN.pdf",
+      "report_url": "https://github.com/SetProtocol/aave-fork/blob/master/audits/Peckshield-aave-v2-03-12-2020-EN.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7037,
+      "audit_key": "audit-7037",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7038,
+      "audit_key": "audit-7038",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 7039,
+      "audit_key": "audit-7039",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -3734,7 +3903,40 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 7032,
+        "report_name": "Certik-aave-v2-03-12-2020.pdf"
+      },
+      {
+        "audit_id": 7033,
+        "report_name": "Certora-FV-aave-v2-03-12-2020.pdf"
+      },
+      {
+        "audit_id": 7034,
+        "report_name": "Mixbytes-aave-v2-03-12-2020.pdf"
+      },
+      {
+        "audit_id": 7035,
+        "report_name": "PeckShield-aave-v2-03-12-2020-CN.pdf"
+      },
+      {
+        "audit_id": 7036,
+        "report_name": "Peckshield-aave-v2-03-12-2020-EN.pdf"
+      },
+      {
+        "audit_id": 7037,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 7038,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 7039,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

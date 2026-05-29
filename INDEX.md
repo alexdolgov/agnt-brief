@@ -523,7 +523,7 @@
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 3 | 179 | 2026-05-29 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | sunsetting | 8 | 297 | 2026-05-25 |
 | [serum](./serum/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
-| [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 0 | 111 | 2026-05-25 |
+| [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 8 | 111 | 2026-05-29 |
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
 | [shape-bridge](./shape-bridge/) | $1.1M | 0.0% | ? | active | 2 | 28 | 2026-05-25 |
 | [shapeshift](./shapeshift/) | $1.3M | 0.0% | $1.3M | unknown | 0 | 40 | 2026-05-25 |

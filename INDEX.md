@@ -52,7 +52,7 @@
 | [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-05-24 |
 | [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | declining | 5 | 43 | 2026-05-28 |
 | [augur](./augur/) | $1.7M | 64.1% | ? | active | 7 | 39 | 2026-05-24 |
-| [aura](./aura/) | $277.0M | 20.5% | $237.2M | declining | 22 | 502 | 2026-05-28 |
+| [aura](./aura/) | $277.0M | 20.5% | $237.2M | declining | 22 | 502 | 2026-05-29 |
 | [aurora-plus](./aurora-plus/) | $2.0M | 33.3% | ? | active | 3 | 31 | 2026-05-24 |
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | dead | 1 | 10 | 2026-05-25 |
 | [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 3 | 570 | 2026-05-28 |

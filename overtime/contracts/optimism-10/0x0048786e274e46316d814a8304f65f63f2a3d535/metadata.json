@@ -1,0 +1,18 @@
+{
+  "address": "0x0048786e274e46316d814a8304f65f63f2a3d535",
+  "chain_id": 10,
+  "contract_name": "ChainedSpeedMarketsAMM",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 43,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T11:59:58.077Z"
+}

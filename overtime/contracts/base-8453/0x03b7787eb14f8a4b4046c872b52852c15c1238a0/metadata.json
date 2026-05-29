@@ -1,0 +1,17 @@
+{
+  "address": "0x03b7787eb14f8a4b4046c872b52852c15c1238a0",
+  "chain_id": 8453,
+  "contract_name": "SportsAMMV2RiskManager",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T11:59:58.784Z"
+}

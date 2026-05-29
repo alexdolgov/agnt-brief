@@ -1,0 +1,17 @@
+{
+  "address": "0x006333f72667e374655ef07e503d44ce8bfc19e6",
+  "chain_id": 42161,
+  "contract_name": "FreeBetsHolder",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T12:00:01.087Z"
+}

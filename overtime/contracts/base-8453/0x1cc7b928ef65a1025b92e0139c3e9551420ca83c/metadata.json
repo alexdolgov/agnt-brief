@@ -1,0 +1,17 @@
+{
+  "address": "0x1cc7b928ef65a1025b92e0139c3e9551420ca83c",
+  "chain_id": 8453,
+  "contract_name": "Dice",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T11:59:59.875Z"
+}

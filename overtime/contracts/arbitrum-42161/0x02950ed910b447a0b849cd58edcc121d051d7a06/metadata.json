@@ -1,0 +1,17 @@
+{
+  "address": "0x02950ed910b447a0b849cd58edcc121d051d7a06",
+  "chain_id": 42161,
+  "contract_name": "SpeedMarketsAMM",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T12:00:00.485Z"
+}

@@ -1,0 +1,16 @@
+# TherundownConsumer
+
+| Field | Value |
+|---|---|
+| Chain | arbitrum (42161) |
+| Address | `0x09ec2ed8a87283b4e2d4f7202dff705a48be4c52` |
+| Role | unknown |
+| Origin | needs_review |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 52 (optimism `0x2447ce55d230c01fc430725a8613d852289f9985`; optimism `0x2b91c14ce9aa828ed124d12541452a017d8a2148`; optimism `0x2f2103f22d790ac5fb1c1c071eafbde5ca85817b`; optimism `0x408b71808c85b7603721e6a0d941237d70d1906f`; optimism `0x61823ee732849921ec34808563f6cc095f77ecea`; optimism `0x6b56a36f6dac65ec427a95eba6ff62b16f4791ba`; optimism `0x72376a5fc5758dd2b36c61960fd1936430a40a32`; optimism `0x79b7bad941e2cfb11181173906deeb07733354d1`; optimism `0x79ee39abf33e6f14f137033469d733533b5662e0`; optimism `0x7e7184bc0b0156cbf8347a03cefce3b2c710328a`; optimism `0x7edadd097402aab262b7886640bb020ab0afdbc6`; optimism `0x898392a5bd0029fcd55492c7cbd7442bafcfb71c`; optimism `0x8f7493e91e03dbe921baeb15c9f6adf4f8830479`; optimism `0x951159a8c1bc97f70d200ff39fa026ce31134783`; optimism `0xa1086d77493a1b316c927e7ed3ab2f06ee6b6c9a`; optimism `0xa3c2b9ade3c2345700c0fb878cb91a5a18293038`; optimism `0xa4f794b346c2984175fba5f410a6c6fa7276926e`; optimism `0xa8a415def7aba752726bf8fb1c980b4ce52cf582`; optimism `0xa975550c2064b0b2d7f5e5e0175e5e9dcdfa2ae1`; optimism `0xab9b794b292e60055129e006766167630bc65368`; optimism `0xaef7a2c9c95a0d11fd35a73f0c58770860e8a7c9`; optimism `0xb019cb0c09165a96f221427ad027b8946199d976`; optimism `0xb3a103e08a9dadf3ccd06824a65be86b33cdb138`; optimism `0xb5137d1a5b2a02c93c4bf64794caabcc1264a499`; optimism `0xbc4bbd7adb2f1dd79e40dd4029bcff97be9bb1f7`; optimism `0xbd2e1e91d41d5083fb460148a2e37a340a356213`; optimism `0xc20b7a0b0fcd54e40d65646c3e149c0445ed86b0`; optimism `0xc3650f57dd14ac5e5ca86b350ea7c73dee36ecd3`; optimism `0xca14ec99ec5e2b3fcefc2f6256cbbf9c2f644b55`; optimism `0xce8895d6a19f34ae1f6ebb2310b4ce355dcc8985`; optimism `0xda5f4a6dec7afbe179cb797ae015912dfadd4d5f`; optimism `0xdf9dd5c11c87bb5e1cb90ee07c3037981e2aa1e9`; optimism `0xe2de80837f8d9b59ba4f23d3dea02d1d842131c0`; optimism `0xe4d249b3dc1ebb2181d7aa0a9d6359b01394f00c`; optimism `0xe8e8093d44f84be11974e3183d219e94fc9c36d7`; optimism `0xeb4c074daf45800aea4573ce19dfac8cf2ec8bf9`; optimism `0xf078aec9c73de6477ec8527d7a67ee1decb2c1b6`; optimism `0xf1f38617f59eb073e8b0879eca526762d9f34830`; optimism `0xf2719ae0a51bbd6083b8c7ba28c7e963e22521d1`; base `0xa08477ff885d6c8099670500802b4d00a774f5e8`; base `0xc5ba777202f117dcc28012370b1f67a430c771da`; arbitrum [`0x09ec2ed8a87283b4e2d4f7202dff705a48be4c52`](../0x09ec2ed8a87283b4e2d4f7202dff705a48be4c52/); arbitrum `0x0abdaf0c4cff91f96f817809d4735929fca75b80`; arbitrum `0x20547507470e9a6725681214330900b05a95c357`; arbitrum `0x6febd0adadfdd8f6c6911bfc12a5dcfa85d3aa70`; arbitrum `0x7c7f016385fd4f4995f4eef095107b567ec52292`; arbitrum `0x7fa55b739a2c56019b103bbd91c706e9d2fcc0ab`; arbitrum `0x8939fe3a30002b2edbeb26c0d9190d20a47daa97`; arbitrum `0x9c27b789d645bf7bb02e71590df627b3de8249fa`; arbitrum `0x9e7769409e3e5a6821eedcf33371fca929fe6a48`; arbitrum `0xe989358ecaa4c040214b86c2c4847b9ae6d7b329`; arbitrum `0xfbf1c584223e79289018b6823ab5fb864b02bb0a`) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

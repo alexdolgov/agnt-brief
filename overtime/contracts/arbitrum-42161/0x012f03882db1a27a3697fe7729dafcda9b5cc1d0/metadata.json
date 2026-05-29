@@ -1,0 +1,18 @@
+{
+  "address": "0x012f03882db1a27a3697fe7729dafcda9b5cc1d0",
+  "chain_id": 42161,
+  "contract_name": "SportPositionalMarketMastercopy",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T11:59:58.907Z"
+}

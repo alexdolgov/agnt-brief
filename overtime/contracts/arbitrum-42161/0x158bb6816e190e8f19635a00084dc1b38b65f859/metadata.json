@@ -1,0 +1,17 @@
+{
+  "address": "0x158bb6816e190e8f19635a00084dc1b38b65f859",
+  "chain_id": 42161,
+  "contract_name": "PythRandomnessProbe",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 7,
+  "constructor_arguments": "0000000000000000000000007698e925ffc29655576d0b361d75af579e20adac",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T12:00:02.845Z"
+}

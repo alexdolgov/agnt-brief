@@ -1,0 +1,17 @@
+{
+  "address": "0x1eaa860dca29a5124f665f7d80affed92e877681",
+  "chain_id": 10,
+  "contract_name": "Pool",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T12:00:05.579Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x38a95206b7dc9e16dd639ccbb51ecac6c2b43d0e",
+  "chain_id": 42161,
+  "contract_name": "SportsAMMV2Utils",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T12:00:04.666Z"
+}

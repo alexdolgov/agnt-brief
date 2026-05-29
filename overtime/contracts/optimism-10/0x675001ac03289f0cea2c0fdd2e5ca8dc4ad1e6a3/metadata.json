@@ -1,0 +1,17 @@
+{
+  "address": "0x675001ac03289f0cea2c0fdd2e5ca8dc4ad1e6a3",
+  "chain_id": 10,
+  "contract_name": "CashoutProcessor",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 30,
+  "constructor_arguments": "000000000000000000000000924236bf55274fa265dea0fcf80ca694c9fd019f0000000000000000000000008318b56352db3cf696bafef4bb0f71eed910acca000000000000000000000000fb4e4811c7a811e098a556bd79b64c20b479e4313232396361653330376563363436376338663363306534353530656663656635000000000000000000000000000000000000000000000000002386f26fc10000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T12:00:07.595Z"
+}

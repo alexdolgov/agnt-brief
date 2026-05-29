@@ -321,7 +321,7 @@
 | [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 3 | 1 | 2026-05-29 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
-| [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 108 | 2026-05-24 |
+| [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | unknown | 6 | 108 | 2026-05-29 |
 | [lendflare](./lendflare/) | $1.1K | 5.3% | $1.1K | declining | 1 | 74 | 2026-05-25 |
 | [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | sunsetting | 10 | 64 | 2026-05-25 |
 | [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-05-25 |

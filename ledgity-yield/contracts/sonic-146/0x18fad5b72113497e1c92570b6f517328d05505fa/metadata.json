@@ -1,0 +1,17 @@
+{
+  "address": "0x18fad5b72113497e1c92570b6f517328d05505fa",
+  "chain_id": 146,
+  "contract_name": "MajorIRM",
+  "compiler_version": "v0.8.30+commit.73712a01",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T09:58:18.736Z"
+}

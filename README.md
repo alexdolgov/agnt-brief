@@ -180,7 +180,7 @@ Each project directory contains:
 | [sierra-protocol](./sierra-protocol/brief.md) | $32.68M | avalanche, ethereum | 78 | 25/78 (32%) | 4.0% | 4.0% (Spearbit) | 1 | fresh | ✅ active | $5.33M |
 | [axc-gift](./axc-gift/brief.md) | $5.29M | bsc | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $5.29M |
 | [scroll-bridge](./scroll-bridge/brief.md) | $40.53M | ethereum | 32 | 30/32 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $4.98M |
-| [ledgity-yield](./ledgity-yield/brief.md) | $3.19M | 5 | 108 | 56/108 (52%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $4.96M |
+| [ledgity-yield](./ledgity-yield/brief.md) | $3.19M | 5 | 108 | 56/108 (52%) | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | $4.96M |
 | [unslashed](./unslashed/brief.md) | $3.13M | ethereum | 16 | 16/16 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $4.64M |
 | [yala](./yala/brief.md) | $2.24M | ethereum | 30 | 11/30 (37%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $4.62M |
 | [delta-financial](./delta-financial/brief.md) | $10.31M | ethereum | 53 | 39/53 (74%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $4.51M |
@@ -695,5 +695,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T09:54:25.605Z_
+_Generated: 2026-05-29T09:58:52.225Z_
 _Projects: 683_

@@ -124,7 +124,7 @@ Each project directory contains:
 | [hyperbeat](./hyperbeat/brief.md) | $47.37M | ethereum, hyperliquid | 222 | 141/222 (64%) | 10.6% | 5.0% (Certora) | 5 | fresh | ✅ active | $22.60M |
 | [hope-money](./hope-money/brief.md) | $1.69M | ethereum | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $21.98M |
 | [gains-network](./gains-network/brief.md) | $19.91M | arbitrum, base, polygon | 760 | 114/760 (15%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $21.86M |
-| [singularx](./singularx/brief.md) | $1.83M | ethereum | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $21.45M |
+| [singularx](./singularx/brief.md) | $1.80M | ethereum | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $21.45M |
 | [rysk-finance](./rysk-finance/brief.md) | $57.74M | arbitrum, ethereum, hyperliquid | 186 | 57/186 (31%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $21.39M |
 | [piku](./piku/brief.md) | $17.13M | ethereum | 29 | 27/29 (93%) | 14.8% | 0.0% (-) | 1 | aging | ✅ active | $21.37M |
 | [set-protocol](./set-protocol/brief.md) | $11.12M | ethereum | 111 | 15/111 (14%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $21.20M |
@@ -707,5 +707,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T14:21:04.031Z_
+_Generated: 2026-05-29T14:23:08.324Z_
 _Projects: 695_

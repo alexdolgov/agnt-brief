@@ -4,11 +4,11 @@
 
 - Project: SingularX (`singularx`)
 - Lifecycle: active (Tier 0, 56.3% below peak)
-- Generated: 2026-05-24T16:52:45.711Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-29T14:22:35.846Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: ethereum
 - Contract surface: 4 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $1,829,259.39
+- DeFi Llama TVL: $1,796,185.69
 - On-chain TVL (included contracts): $21,448,655.86
 - TVL by chain: Ethereum $21,448,655.86
 
@@ -28,11 +28,11 @@ The DEX contract interacts with the L1ArbitrumToken (via its proxy) for token sw
 - Unverified implementations: 0
 - Unique implementations: 4
 - Raw deployments: 5
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $21,448,655.86
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -76,6 +76,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -99,9 +102,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [9353] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9354] 0002-metadata-manifest-and-pull-command.md
+- [9355] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

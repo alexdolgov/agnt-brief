@@ -479,7 +479,7 @@
 | [rank-trading](./rank-trading/) | $1.2M | 30.0% | ? | active | 2 | 13 | 2026-05-24 |
 | [rari-capital](./rari-capital/) | $321.4M | 0.0% | $321.4M | dead | 1 | 253 | 2026-05-24 |
 | [ratex](./ratex/) | $98.8K | 0.0% | $98.8K | declining | 2 | 168 | 2026-05-23 |
-| [re7-labs](./re7-labs/) | $1.6M | 0.0% | $1.6M | active | 0 | 6 | 2026-05-27 |
+| [re7-labs](./re7-labs/) | $1.6M | 0.0% | $1.6M | active | 3 | 6 | 2026-05-29 |
 | [reddex](./reddex/) | $5.3M | 0.0% | ? | declining | 0 | 5 | 2026-05-23 |
 | [reflexer](./reflexer/) | $2.4M | 40.9% | ? | dead | 8 | 64 | 2026-05-24 |
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |

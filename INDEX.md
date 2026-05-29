@@ -678,7 +678,7 @@
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [woofi](./woofi/) | $11.3M | 13.2% | $11.2M | declining | 8 | 253 | 2026-05-26 |
 | [wrapped-bnb](./wrapped-bnb/) | $1.5M | 0.0% | $1.5M | declining | 1 | 54 | 2026-05-25 |
-| [wrapped](./wrapped/) | $1.5M | 0.0% | $1.5M | active | 0 | 16 | 2026-05-25 |
+| [wrapped](./wrapped/) | $23.9M | 0.0% | ? | active | 3 | 1 | 2026-05-29 |
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 51 | 2026-05-25 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [xsy](./xsy/) | $3.6M | 0.0% | $3.6M | active | 0 | 16 | 2026-05-22 |

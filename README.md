@@ -514,7 +514,7 @@ Each project directory contains:
 | [juicebox](./juicebox/brief.md) | $11.04M | 8 | 77 | 68/77 (88%) | 5.9% | 0.0% (-) | 1 | stale | ✅ active | - |
 | [k2](./k2/brief.md) | $4.66M | ethereum | 30 | 21/30 (70%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kaio](./kaio/brief.md) | $60.80M | 4 | 35 | 4/35 (11%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [kasu](./kasu/brief.md) | $10.28M | base | 22 | 20/22 (91%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [kasu](./kasu/brief.md) | $10.29M | base | 22 | 20/22 (91%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kava-earn](./kava-earn/brief.md) | $1.66M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [kava-lend](./kava-lend/brief.md) | $11.82M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kava-liquid](./kava-liquid/brief.md) | $1.64M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -695,5 +695,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T09:42:50.426Z_
+_Generated: 2026-05-29T09:44:44.670Z_
 _Projects: 683_

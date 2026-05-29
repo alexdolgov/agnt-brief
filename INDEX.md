@@ -310,7 +310,7 @@
 | [king-protocol](./king-protocol/) | $1.3M | 60.0% | ? | active | 4 | 16 | 2026-05-25 |
 | [kintsu](./kintsu/) | $2.7M | 0.0% | ? | unknown | 5 | 12 | 2026-05-24 |
 | [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |
-| [klaystation](./klaystation/) | $2.2M | 0.0% | ? | dead | 0 | 1 | 2026-05-24 |
+| [klaystation](./klaystation/) | $0.0 | 0.0% | ? | dead | 3 | 1 | 2026-05-29 |
 | [klayswap](./klayswap/) | $4.8M | 0.0% | ? | sunsetting | 4 | 22 | 2026-05-23 |
 | [kodiak](./kodiak/) | $1.5M | 2.8% | $1.5M | declining | 7 | 53 | 2026-05-25 |
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-05-25 |

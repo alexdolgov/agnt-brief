@@ -1,0 +1,17 @@
+{
+  "address": "0x09108763270a8eb0d0ca30906fec49fa0944bfe6",
+  "chain_id": 42161,
+  "contract_name": "MaxIssuableFacet",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 28,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T13:17:54.846Z"
+}

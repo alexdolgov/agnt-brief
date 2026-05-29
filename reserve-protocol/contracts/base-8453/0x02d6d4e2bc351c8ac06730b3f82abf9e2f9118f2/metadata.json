@@ -1,0 +1,17 @@
+{
+  "address": "0x02d6d4e2bc351c8ac06730b3f82abf9e2f9118f2",
+  "chain_id": 8453,
+  "contract_name": "CBEthCollateralL2",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 55,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T13:17:59.200Z"
+}

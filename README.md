@@ -298,6 +298,7 @@ Each project directory contains:
 | [bmx](./bmx/brief.md) | $2.67M | base, mode | 184 | 133/184 (72%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $305.69K |
 | [strata](./strata/brief.md) | $97.42M | ethereum | 39 | 38/39 (97%) | 31.6% | 28.9% (Cyfrin) | 3 | fresh | ❓ unknown | $289.60K |
 | [tokenstore](./tokenstore/brief.md) | $1.35M | ethereum | 44 | 2/44 (5%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $265.68K |
+| [reserve-protocol](./reserve-protocol/brief.md) | $82.52M | 4 | 329 | 110/329 (33%) | 57.4% | 19.1% (Code4rena, Spearbit) | 46 | fresh | ❓ unknown | $255.21K |
 | [block-analitica](./block-analitica/brief.md) | $49.60M | 4 | 19 | 17/19 (89%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $252.83K |
 | [babyswap](./babyswap/brief.md) | $1.35M | bsc | 113 | 65/113 (58%) | 1.5% | 0.0% (-) | 1 | stale | 💀 dead | $241.08K |
 | [alphax](./alphax/brief.md) | $1.46M | arbitrum, ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $218.20K |
@@ -702,5 +703,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T13:09:41.915Z_
-_Projects: 690_
+_Generated: 2026-05-29T13:18:36.733Z_
+_Projects: 691_

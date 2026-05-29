@@ -1,0 +1,17 @@
+{
+  "address": "0x9c09e506e00ac87e2413b7501702faca690201fb",
+  "chain_id": 1,
+  "contract_name": "TradeHelperFacet",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 98,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T13:18:02.325Z"
+}

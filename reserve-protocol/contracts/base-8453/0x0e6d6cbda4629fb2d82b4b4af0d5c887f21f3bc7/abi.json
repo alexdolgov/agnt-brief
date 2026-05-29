@@ -1,0 +1,161 @@
+[
+  {
+    "inputs": [],
+    "name": "UIntOutOfBounds",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint192",
+                "name": "bottom",
+                "type": "uint192"
+              },
+              {
+                "internalType": "uint192",
+                "name": "top",
+                "type": "uint192"
+              }
+            ],
+            "internalType": "struct BasketRange",
+            "name": "basketsHeld",
+            "type": "tuple"
+          },
+          {
+            "internalType": "contract IBasketHandler",
+            "name": "bh",
+            "type": "IBasketHandler"
+          },
+          {
+            "internalType": "contract IAssetRegistry",
+            "name": "ar",
+            "type": "IAssetRegistry"
+          },
+          {
+            "internalType": "contract IStRSR",
+            "name": "stRSR",
+            "type": "IStRSR"
+          },
+          {
+            "internalType": "contract IERC20",
+            "name": "rsr",
+            "type": "IERC20"
+          },
+          {
+            "internalType": "contract IRToken",
+            "name": "rToken",
+            "type": "IRToken"
+          },
+          {
+            "internalType": "uint192",
+            "name": "minTradeVolume",
+            "type": "uint192"
+          },
+          {
+            "internalType": "uint192",
+            "name": "maxTradeSlippage",
+            "type": "uint192"
+          },
+          {
+            "internalType": "uint192[]",
+            "name": "quantities",
+            "type": "uint192[]"
+          },
+          {
+            "internalType": "uint192[]",
+            "name": "bals",
+            "type": "uint192[]"
+          }
+        ],
+        "internalType": "struct TradingContext",
+        "name": "ctx",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract IERC20[]",
+            "name": "erc20s",
+            "type": "IERC20[]"
+          },
+          {
+            "internalType": "contract IAsset[]",
+            "name": "assets",
+            "type": "IAsset[]"
+          }
+        ],
+        "internalType": "struct Registry",
+        "name": "reg",
+        "type": "tuple"
+      }
+    ],
+    "name": "prepareRecollateralizationTrade",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "doTrade",
+        "type": "bool"
+      },
+      {
+        "components": [
+          {
+            "internalType": "contract IAsset",
+            "name": "sell",
+            "type": "IAsset"
+          },
+          {
+            "internalType": "contract IAsset",
+            "name": "buy",
+            "type": "IAsset"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minBuyAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct TradeRequest",
+        "name": "req",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint192",
+            "name": "sellLow",
+            "type": "uint192"
+          },
+          {
+            "internalType": "uint192",
+            "name": "sellHigh",
+            "type": "uint192"
+          },
+          {
+            "internalType": "uint192",
+            "name": "buyLow",
+            "type": "uint192"
+          },
+          {
+            "internalType": "uint192",
+            "name": "buyHigh",
+            "type": "uint192"
+          }
+        ],
+        "internalType": "struct TradePrices",
+        "name": "prices",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

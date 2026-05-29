@@ -1,0 +1,181 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_roleRegistry",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "FailedDeployment",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "needed",
+        "type": "uint256"
+      }
+    ],
+    "name": "InsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TrustedFillerRegistry__InvalidCaller",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TrustedFillerRegistry__InvalidFiller",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TrustedFillerRegistry__InvalidRoleRegistry",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract IBaseTrustedFiller",
+        "name": "filler",
+        "type": "address"
+      }
+    ],
+    "name": "TrustedFillerAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "contract IBaseTrustedFiller",
+        "name": "filler",
+        "type": "address"
+      }
+    ],
+    "name": "TrustedFillerCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "contract IBaseTrustedFiller",
+        "name": "filler",
+        "type": "address"
+      }
+    ],
+    "name": "TrustedFillerDeprecated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IBaseTrustedFiller",
+        "name": "_filler",
+        "type": "address"
+      }
+    ],
+    "name": "addTrustedFiller",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "senderSource",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "trustedFiller",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "deploymentSalt",
+        "type": "bytes32"
+      }
+    ],
+    "name": "createTrustedFiller",
+    "outputs": [
+      {
+        "internalType": "contract IBaseTrustedFiller",
+        "name": "trustedFillerInstance",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IBaseTrustedFiller",
+        "name": "_filler",
+        "type": "address"
+      }
+    ],
+    "name": "deprecateTrustedFiller",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_filler",
+        "type": "address"
+      }
+    ],
+    "name": "isAllowed",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "roleRegistry",
+    "outputs": [
+      {
+        "internalType": "contract IRoleRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

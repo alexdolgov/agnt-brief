@@ -1,0 +1,18 @@
+{
+  "address": "0x0d3bfcfcbe9b626c4f4e19d02de4933bd92d1f40",
+  "chain_id": 56,
+  "contract_name": "FolioLens",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 69,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T13:17:54.945Z"
+}

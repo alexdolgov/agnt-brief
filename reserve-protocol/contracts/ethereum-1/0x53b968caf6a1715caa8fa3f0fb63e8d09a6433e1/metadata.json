@@ -1,0 +1,18 @@
+{
+  "address": "0x53b968caf6a1715caa8fa3f0fb63e8d09a6433e1",
+  "chain_id": 1,
+  "contract_name": "ForkSpell",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "istanbul",
+  "license": "BlueOak-1.0.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T13:17:59.962Z"
+}

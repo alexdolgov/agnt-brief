@@ -1,0 +1,241 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_governorImpl",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_timelockImpl",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_selectorRegistryImpl",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "FailedDeployment",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "needed",
+        "type": "uint256"
+      }
+    ],
+    "name": "InsufficientBalance",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "governor",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "timelock",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "OptimisticSelectorRegistry",
+        "type": "address"
+      }
+    ],
+    "name": "ReserveOptimisticGovernorSystemDeployed",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "uint32",
+                "name": "vetoPeriod",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint256",
+                "name": "vetoThreshold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "slashingPercentage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "numParallelProposals",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IReserveGovernor.OptimisticGovernanceParams",
+            "name": "optimisticParams",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint48",
+                "name": "votingDelay",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint32",
+                "name": "votingPeriod",
+                "type": "uint32"
+              },
+              {
+                "internalType": "uint48",
+                "name": "voteExtension",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint256",
+                "name": "proposalThreshold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "quorumNumerator",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct IReserveGovernor.StandardGovernanceParams",
+            "name": "standardParams",
+            "type": "tuple"
+          },
+          {
+            "internalType": "contract IVetoToken",
+            "name": "token",
+            "type": "address"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "target",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes4[]",
+                "name": "selectors",
+                "type": "bytes4[]"
+              }
+            ],
+            "internalType": "struct OptimisticSelectorRegistry.SelectorData[]",
+            "name": "selectorData",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "optimisticProposers",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "guardians",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timelockDelay",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct DeploymentParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "deploy",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "governor",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "timelock",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "selectorRegistry",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "governorImpl",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "selectorRegistryImpl",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "timelockImpl",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

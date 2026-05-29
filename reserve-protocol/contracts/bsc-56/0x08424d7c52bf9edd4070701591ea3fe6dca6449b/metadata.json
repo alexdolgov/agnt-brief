@@ -1,0 +1,17 @@
+{
+  "address": "0x08424d7c52bf9edd4070701591ea3fe6dca6449b",
+  "chain_id": 56,
+  "contract_name": "TrustedFillerRegistry",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "000000000000000000000000e1ec57c8ee970280f237863910b606059e9641c9",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T13:17:55.439Z"
+}

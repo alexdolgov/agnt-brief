@@ -1,0 +1,53 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract RTokenP1",
+        "name": "rToken",
+        "type": "address"
+      },
+      {
+        "internalType": "uint48",
+        "name": "timestamp",
+        "type": "uint48"
+      }
+    ],
+    "name": "getAllOpenTradesForRToken",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tradeAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "sellToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "buyToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sellAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bidAmount",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct TradeHelperFacet.SingleBid[]",
+        "name": "openTrades",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x02062c16c28a169d1f2f5efa7eedc42c3311ec23",
+  "chain_id": 8453,
+  "contract_name": "Asset",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "BlueOak-1.0.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 34,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T13:17:53.871Z"
+}

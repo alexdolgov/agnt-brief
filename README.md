@@ -642,7 +642,7 @@ Each project directory contains:
 | [smilee-finance](./smilee-finance/brief.md) | $1.83M | arbitrum, berachain | 186 | 23/186 (12%) | 4.3% | 4.3% (Spearbit) | 3 | aging | ❓ unknown | - |
 | [solera](./solera/brief.md) | $8.09M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
 | [sophon-farm](./sophon-farm/brief.md) | $7.01M | ethereum | 1 | 1/1 (100%) | 100.0% | 100.0% (Sherlock) | 3 | aging | 💀 dead | - |
-| [sorare-bridge](./sorare-bridge/brief.md) | $4.03M | ethereum | 58 | 38/58 (66%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [sorare-bridge](./sorare-bridge/brief.md) | $3.95M | ethereum | 58 | 38/58 (66%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [sovryn](./sovryn/brief.md) | $38.32M | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [sovryn-bridge](./sovryn-bridge/brief.md) | $2.96M | ethereum | 47 | 5/47 (11%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [spacefi](./spacefi/brief.md) | $1.48M | scroll, zksync-era | 38 | 0/38 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
@@ -707,5 +707,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T14:25:01.668Z_
+_Generated: 2026-05-29T14:26:55.130Z_
 _Projects: 695_

@@ -7,8 +7,8 @@
 - Project: Helix (`helix`)
 - Website: [https://helixapp.com](https://helixapp.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T08:32:34.551Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T19:06:25.882Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: ethereum
 - Contract surface: 9 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $1,501,882.00

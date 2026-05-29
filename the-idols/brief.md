@@ -5,11 +5,11 @@
 - Project: The Idols (`the-idols`)
 - Website: [https://www.theidols.io](https://www.theidols.io)
 - Lifecycle: active (Tier 0, 57.7% below peak)
-- Generated: 2026-05-23T14:41:09.429Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-29T16:07:19.473Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: ethereum
 - Contract surface: 17 unique implementations (20 raw deployments)
-- DeFi Llama TVL: $5,758,759.81
+- DeFi Llama TVL: $5,665,507.10
 - On-chain TVL (included contracts): $85,360,320.48
 - TVL by chain: Ethereum $85,360,320.48
 
@@ -29,11 +29,11 @@ All contracts are deployed by the same address and form a single integrated syst
 - Unverified implementations: 4
 - Unique implementations: 17
 - Raw deployments: 20
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $85,360,320.48
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -91,6 +91,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -125,9 +128,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [7683] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [7684] 0002-metadata-manifest-and-pull-command.md
+- [7685] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

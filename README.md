@@ -72,7 +72,7 @@ Each project directory contains:
 | [gravity-bridge](./gravity-bridge/brief.md) | $12.14M | ethereum | 152 | 74/152 (49%) | 1.4% | 0.0% (-) | 6 | fresh | ✅ active | $91.30M |
 | [pleasing-gold](./pleasing-gold/brief.md) | $87.87M | arbitrum | 8 | 4/8 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $88.09M |
 | [zivoe](./zivoe/brief.md) | $13.83M | ethereum | 32 | 31/32 (97%) | 58.1% | 48.4% (Sherlock) | 3 | aging | ✅ active | $87.09M |
-| [the-idols](./the-idols/brief.md) | $5.76M | ethereum | 17 | 13/17 (76%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $85.36M |
+| [the-idols](./the-idols/brief.md) | $5.67M | ethereum | 17 | 13/17 (76%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $85.36M |
 | [ring-protocol](./ring-protocol/brief.md) | $36.20M | 12 | 91 | 45/91 (49%) | 10.4% | 8.3% (Spearbit) | 2 | fresh | ✅ active | $83.51M |
 | [zoo-finance](./zoo-finance/brief.md) | $40.36M | 4 | 58 | 22/58 (38%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $83.03M |
 | [mendi-finance](./mendi-finance/brief.md) | $2.03M | linea | 39 | 28/39 (72%) | 10.7% | 3.6% (Sherlock) | 2 | fresh | ❓ unknown | $79.07M |
@@ -712,5 +712,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T16:05:52.141Z_
+_Generated: 2026-05-29T16:07:55.367Z_
 _Projects: 700_

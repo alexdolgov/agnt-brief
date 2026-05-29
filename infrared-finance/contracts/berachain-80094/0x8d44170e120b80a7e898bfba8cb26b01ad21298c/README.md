@@ -6,8 +6,8 @@
 | Address | `0x8d44170e120b80a7e898bfba8cb26b01ad21298c` |
 | Role | operational_periphery |
 | Origin | standard_library |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [baseline-ethskills.md](https://github.com/infrared-dao/contracts/blob/master/audits/baseline-ethskills.md) |
 | Deployments | 1 (berachain [`0x8d44170e120b80a7e898bfba8cb26b01ad21298c`](../0x8d44170e120b80a7e898bfba8cb26b01ad21298c/)) |
 | Proxy | Yes → `0xd5a302...668bcb` |
 | Source | Etherscan |

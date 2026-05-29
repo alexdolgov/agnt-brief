@@ -6,8 +6,8 @@
 | Address | `0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b` |
 | Role | unknown |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [report-competition-infrared-contracts.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/report-competition-infrared-contracts.pdf) |
 | Deployments | 1 (berachain [`0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b`](../0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b/)) |
 | Proxy | No |
 | Source | Etherscan |

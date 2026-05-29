@@ -6,8 +6,8 @@
 | Address | `0xb71b3daea39012fb0f2b14d2a9c86da9292fc126` |
 | Role | unknown |
 | Origin | standard_library |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [baseline-ethskills.md](https://github.com/infrared-dao/contracts/blob/master/audits/baseline-ethskills.md); [report-cantinacode-infrared-pr647.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-pr647.pdf); [AI_AUDIT_NOTES.md](https://github.com/infrared-dao/contracts/blob/master/docs/AI_AUDIT_NOTES.md) |
 | Deployments | 1 (berachain [`0xb71b3daea39012fb0f2b14d2a9c86da9292fc126`](../0xb71b3daea39012fb0f2b14d2a9c86da9292fc126/)) |
 | Proxy | Yes → `0x6d4e88...d331b5` |
 | Source | Etherscan |

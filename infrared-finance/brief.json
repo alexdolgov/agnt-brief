@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "infrared-finance",
-  "generated_at": "2026-05-27T20:19:41.580Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-05-29T09:09:48.126Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "infrared-finance",
@@ -36,36 +36,38 @@
     "total_addresses": 121,
     "unique_implementations": 27,
     "total_deployments": 121,
-    "audited_contracts": 0,
-    "unaudited_contracts": 15,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 15,
+    "audited_contracts": 15,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 15,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 12,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
+    "coverage_pct": 100,
+    "total_audits": 36,
+    "scoreable_audits": 17,
     "dl_tvl_usd": 50681737.57562,
     "tvl_usd": 861900.5874273787,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "berachain": 861900.59
     },
-    "asd_usd": 861900.5874273787,
+    "asd_usd": null,
     "website_url": "https://infrared.finance",
     "chains": [
       "berachain",
       "bsc"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "tier1_coverage_pct": 66.7,
+    "tier1_auditors": [
+      "Spearbit"
+    ],
+    "latest_audit_date": "2026-04",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
-      "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "fresh": 15,
+      "aging": 11,
+      "stale": 1,
+      "unknown": 9
     }
   },
   "topography": {
@@ -99,7 +101,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.0005826903501695948,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -108,7 +110,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 7.46115127593935e-11,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -117,7 +119,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.000001047394709801185,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -126,7 +128,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -135,7 +137,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.3360186462811758e-16,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -144,7 +146,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.171519769001881e-12,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -153,7 +155,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -162,7 +164,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2852.124769649784,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -171,7 +173,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 142644.22985642002,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -180,7 +182,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.0506215714694004e-15,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -189,7 +191,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.051790475838382e-12,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -198,7 +200,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 7.880983652045132e-11,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -207,7 +209,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.7462802148234763,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -216,7 +218,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.195036926971078e-12,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -225,7 +227,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -234,7 +236,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.2309565564382005e-15,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -243,7 +245,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.171519769001881e-12,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -252,7 +254,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -261,7 +263,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -270,7 +272,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -279,7 +281,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.00005029580894943078,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -288,7 +290,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 5.226164349951179e-16,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -297,7 +299,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.2309565564382005e-15,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -306,7 +308,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.7308405587645165,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -315,7 +317,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 3.002135437835549e-13,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -324,7 +326,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 5879.011575405648,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -333,7 +335,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 185994.0571950515,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -342,7 +344,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -351,7 +353,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 213130.44342564308,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -360,7 +362,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.352582351396796e-16,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -369,7 +371,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.7506581289238369,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -378,7 +380,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -387,7 +389,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.3575041745548104e-16,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -396,7 +398,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.051790475838382e-12,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -405,7 +407,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.7506581289238369,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -414,7 +416,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 7.464513105682455e-11,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -423,7 +425,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.03706043280182275,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -432,7 +434,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -441,7 +443,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.1899930405655004e-12,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -450,7 +452,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.1899930405655004e-12,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -459,7 +461,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.7308405587645165,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -468,7 +470,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 69254.88972747454,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -477,7 +479,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -486,7 +488,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.0000010432996657493122,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -495,7 +497,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.00002844879196978181,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -504,7 +506,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 161.7697249503398,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -513,7 +515,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.1885048416802842e-12,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -522,7 +524,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.7563016515859928,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -531,7 +533,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.0642699635565392e-15,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -540,7 +542,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.7493426776246711,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -549,7 +551,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 7.464513105682455e-11,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -558,7 +560,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 7.880983652045132e-11,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -567,7 +569,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 18757.667350404514,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -576,7 +578,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.10173156692119185,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -585,7 +587,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.0010492427107015856,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -594,7 +596,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.0526164592096383e-15,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -603,7 +605,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -612,7 +614,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.0221793619727713,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -621,7 +623,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -630,7 +632,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 16651.43474929277,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -639,7 +641,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.0506215714694004e-15,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -648,7 +650,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -657,7 +659,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.1885048416802842e-12,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -666,7 +668,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 5.226164349951179e-16,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -675,7 +677,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.7563016515859928,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -684,7 +686,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.195036926971078e-12,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -693,7 +695,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.0010618226280176373,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -702,7 +704,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 7.693329280196667e-11,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -711,7 +713,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.052962033367647e-11,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -720,7 +722,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 7.693329280196667e-11,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -729,7 +731,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 65910.3721434606,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -738,7 +740,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.07131621622280064,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -747,7 +749,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -756,7 +758,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -765,7 +767,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.10209532179324321,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -774,7 +776,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.0000010377791874566099,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -783,7 +785,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.0526164592096383e-15,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -792,7 +794,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.2376489115954709e-13,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -801,7 +803,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.7493426776246711,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -810,7 +812,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.583220276800355e-13,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -819,7 +821,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 110713.34791544077,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -828,7 +830,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 29890.351352300433,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -837,7 +839,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.0642699635565392e-15,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -846,7 +848,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 7.46115127593935e-11,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -855,7 +857,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 5.40976130443506,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -864,7 +866,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.0010492427107015856,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -873,7 +875,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.971181466959169e-13,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -882,7 +884,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -891,7 +893,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.000001044683313739551,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -900,7 +902,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1.0446462442953449e-15,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -909,7 +911,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -918,7 +920,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.086035582987394e-12,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -927,14 +929,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 48.41910551498244,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5724",
+        "audit-5738"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -958,14 +963,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5732",
+        "audit-5734",
+        "audit-5736",
+        "audit-5738",
+        "audit-5744"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -989,14 +1000,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5724"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1020,14 +1033,23 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5712",
+        "audit-5716",
+        "audit-5723",
+        "audit-5732",
+        "audit-5734",
+        "audit-5736",
+        "audit-5738",
+        "audit-5744"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1051,14 +1073,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5732",
+        "audit-5734",
+        "audit-5738",
+        "audit-5739",
+        "audit-5744"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1082,14 +1110,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5732",
+        "audit-5734",
+        "audit-5738",
+        "audit-5739",
+        "audit-5744"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1113,14 +1147,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5714",
+        "audit-5724",
+        "audit-5727",
+        "audit-5729"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1144,7 +1183,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -1153,14 +1192,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5724",
+        "audit-5738",
+        "audit-5739"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1184,14 +1227,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5724",
+        "audit-5733",
+        "audit-5739"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -1215,14 +1262,23 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5714",
+        "audit-5724",
+        "audit-5727",
+        "audit-5729",
+        "audit-5732",
+        "audit-5733",
+        "audit-5734",
+        "audit-5744"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1246,14 +1302,22 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5714",
+        "audit-5727",
+        "audit-5729",
+        "audit-5732",
+        "audit-5734",
+        "audit-5738",
+        "audit-5739"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1277,14 +1341,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5738"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1308,7 +1374,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 80094,
@@ -1317,14 +1383,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5724",
+        "audit-5732",
+        "audit-5734",
+        "audit-5736",
+        "audit-5738"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1348,14 +1420,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5724",
+        "audit-5735",
+        "audit-5739"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -1379,14 +1455,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5718",
+        "audit-5743"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -1762,100 +1841,949 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
-  "coverage_gaps": [
+  "audits": [
     {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x021f62d74f97f63575f8c608ab7cc3c591eccb0d",
-      "name": "WrappedVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 861900.5874273787,
-      "risk_note": "Verified native implementation with $861,900.59 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5712,
+      "audit_key": "audit-5712",
+      "report_name": "Infrared - Zellic Audit Report.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20-%20Zellic%20Audit%20Report.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "IBGT",
+        "Infrared",
+        "InfraredVault",
+        "InfraredVaultDeployer",
+        "MultiRewards",
+        "ValidatorSet"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x61bd35fbec49b144a1953f48f84ef8d2b321da40",
-      "name": "BribeCollector",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5713,
+      "audit_key": "audit-5713",
+      "report_name": "Infrared - Zenith Audit Report - 20082025.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20-%20Zenith%20Audit%20Report%20-%2020082025.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x559d1347242f350bdc44f99c729984bfb188092f",
-      "name": "Infrared",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5714,
+      "audit_key": "audit-5714",
+      "report_name": "Infrared - Zenith Audit Report 09.07.2025.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20-%20Zenith%20Audit%20Report%2009.07.2025.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BeaconRootsVerify",
+        "InfraredBERADepositorV2",
+        "InfraredBERARateProvider",
+        "InfraredBERAV2",
+        "InfraredBERAWithdrawor",
+        "InfraredBERAWithdraworLite",
+        "UpgradeInfraredBERAWithdrawor"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x94b5d53483117fe3832c8e08d2a71ab8ab546d81",
-      "name": "InfraredBERA",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5715,
+      "audit_key": "audit-5715",
+      "report_name": "Infrared - Zenith Audit Report.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20-%20Zenith%20Audit%20Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xef26bcfb9ce4e807465a46087e9dd73b652fef87",
-      "name": "InfraredBERADepositor",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5716,
+      "audit_key": "audit-5716",
+      "report_name": "Infrared Berachain Core Integration - Zellic Audit Report.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20Berachain%20Core%20Integration%20-%20Zellic%20Audit%20Report.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Infrared"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xab2dadd15af962b036d361849c024a3f70b18254",
-      "name": "InfraredBERAFeeReceivor",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5717,
+      "audit_key": "audit-5717",
+      "report_name": "Infrared Merkle Distributor - Zenith Audit Report.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20Merkle%20Distributor%20-%20Zenith%20Audit%20Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x725a5576232220132f129f08e4a9eb7d4be92444",
-      "name": "InfraredBERAWithdraworLite",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5718,
+      "audit_key": "audit-5718",
+      "report_name": "Infrared OFT Adapter Security Review.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20OFT%20Adapter%20Security%20Review.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ConfigureOFTPeers",
+        "DeployIROFT",
+        "DeployIROFTAdapter",
+        "IROFT",
+        "IROFTAdapter",
+        "VerifyOFTSetup"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b",
-      "name": "InfraredBGT",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5719,
+      "audit_key": "audit-5719",
+      "report_name": "Infrared Operations & Future Vaults Security Review.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20Operations%20%26%20Future%20Vaults%20Security%20Review.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xace9de5af92eb82a97a5973b00eff85024bdcb39",
-      "name": "IROFT",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 5720,
+      "audit_key": "audit-5720",
+      "report_name": "Infrared Smart Contract Security Assessment.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20Smart%20Contract%20Security%20Assessment.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5721,
+      "audit_key": "audit-5721",
+      "report_name": "Infrared_Finance_Incidence_Response_Review_Report_Feb_2025_2.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared_Finance_Incidence_Response_Review_Report_Feb_2025_2.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5722,
+      "audit_key": "audit-5722",
+      "report_name": "Infraredv1.5.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Infraredv1.5.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5723,
+      "audit_key": "audit-5723",
+      "report_name": "Zenith Audit Report - Infrared Finance.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/Zenith%20Audit%20Report%20-%20Infrared%20Finance.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Infrared"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5724,
+      "audit_key": "audit-5724",
+      "report_name": "baseline-ethskills.md",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/baseline-ethskills.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BatchClaimerV2_2",
+        "BribeCollectorV1_4",
+        "CuttingBoardSyndicate",
+        "IRAuction",
+        "IRRewardDistributor",
+        "InfraredBERADepositorV2",
+        "InfraredBERADepositorV2_1",
+        "InfraredBERAFeeReceivor",
+        "InfraredBERAV2_1",
+        "InfraredBERAWithdrawor",
+        "InfraredDistributor",
+        "InfraredUpgradeable",
+        "InfraredV1_10",
+        "MerkleDistributor",
+        "RewardsLib",
+        "StakedIR",
+        "Upgradeable",
+        "WrappedRewardToken",
+        "WrappedVault"
+      ],
+      "matched_contracts": 102,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5725,
+      "audit_key": "audit-5725",
+      "report_name": "cantinacode-24.01.2026.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/cantinacode-24.01.2026.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5726,
+      "audit_key": "audit-5726",
+      "report_name": "infraredContractsSecurityReview.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/infraredContractsSecurityReview.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5727,
+      "audit_key": "audit-5727",
+      "report_name": "infrared_contract_security_review.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/infrared_contract_security_review.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BeaconRootsVerify",
+        "InfraredBERADepositorV2",
+        "InfraredBERAV2",
+        "InfraredBERAWithdrawor",
+        "InfraredBERAWithdraworLite",
+        "MerkleTree"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5728,
+      "audit_key": "audit-5728",
+      "report_name": "infrared_security_review_12_11_2025.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/infrared_security_review_12_11_2025.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5729,
+      "audit_key": "audit-5729",
+      "report_name": "report-cantinacode-infrared-03072025.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-03072025.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BeaconRootsVerify",
+        "InfraredBERADepositorV2",
+        "InfraredBERAV2",
+        "InfraredBERAWithdrawor",
+        "InfraredBERAWithdraworLite",
+        "MerkleTree"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5730,
+      "audit_key": "audit-5730",
+      "report_name": "report-cantinacode-infrared-0310-bribeCollector.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-0310-bribeCollector.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5731,
+      "audit_key": "audit-5731",
+      "report_name": "report-cantinacode-infrared-0320.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-0320.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5732,
+      "audit_key": "audit-5732",
+      "report_name": "report-cantinacode-infrared-1.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-1.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BribeCollector",
+        "Infrared",
+        "InfraredBERA",
+        "InfraredBERAClaimor",
+        "InfraredBERADepositor",
+        "InfraredBERAWithdrawor",
+        "InfraredBERAWithdraworLite",
+        "InfraredDeployer",
+        "InfraredDistributor",
+        "InfraredUpgradeable",
+        "MultiRewards",
+        "RewardsLib",
+        "VaultManagerLib"
+      ],
+      "matched_contracts": 8,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5733,
+      "audit_key": "audit-5733",
+      "report_name": "report-cantinacode-infrared-1201.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-1201.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "InfraredBERAKeeper",
+        "InfraredBERAV2_1",
+        "InfraredBERAWithdrawor"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5734,
+      "audit_key": "audit-5734",
+      "report_name": "report-cantinacode-infrared-5.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-5.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BribeCollector",
+        "Infrared",
+        "InfraredBERA",
+        "InfraredBERAClaimor",
+        "InfraredBERADepositor",
+        "InfraredBERAWithdrawor",
+        "InfraredBERAWithdraworLite",
+        "InfraredDeployer",
+        "InfraredDistributor",
+        "InfraredUpgradeable",
+        "MultiRewards",
+        "RewardsLib",
+        "VaultManagerLib"
+      ],
+      "matched_contracts": 8,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5735,
+      "audit_key": "audit-5735",
+      "report_name": "report-cantinacode-infrared-pr647.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-pr647.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BatchClaimerV2_2",
+        "IRAuction",
+        "IRRewardDistributor",
+        "InfraredV1_10",
+        "RewardsLib",
+        "StakedIR"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5736,
+      "audit_key": "audit-5736",
+      "report_name": "report-cantinacode-infrared.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BalanceLogicLibrary",
+        "BribeCollector",
+        "BribeVotingReward",
+        "IBGT",
+        "IInfraredDistributor",
+        "IVoter",
+        "IVotingEscrow",
+        "Infrared",
+        "InfraredDistributor",
+        "InfraredUpgradeable",
+        "InfraredVault",
+        "MultiRewards",
+        "Reward",
+        "VelodromeTimeLibrary",
+        "Voter",
+        "VotingEscrow",
+        "VotingReward"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5737,
+      "audit_key": "audit-5737",
+      "report_name": "report-cli-cantina-infrared-0503_final.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/report-cli-cantina-infrared-0503_final.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5738,
+      "audit_key": "audit-5738",
+      "report_name": "report-competition-infrared-contracts.pdf",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/audits/report-competition-infrared-contracts.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BribeCollector",
+        "Infrared",
+        "InfraredBERA",
+        "InfraredBERAConstants",
+        "InfraredBERADepositor",
+        "InfraredBERAFeeReceivor",
+        "InfraredBERAWithdraworLite",
+        "InfraredBGT",
+        "InfraredDistributor",
+        "InfraredVault",
+        "MultiRewards",
+        "RewardsLib",
+        "ValidatorManagerLib",
+        "WrappedVault"
+      ],
+      "matched_contracts": 103,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5739,
+      "audit_key": "audit-5739",
+      "report_name": "AI_AUDIT_NOTES.md",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/AI_AUDIT_NOTES.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BYUSDRewardDistributor",
+        "CuttingBoardDutchAuction",
+        "CuttingBoardManager",
+        "DeployCuttingBoardAuction",
+        "DeployStakedIR",
+        "IRRewardDistributor",
+        "InfraredBERA",
+        "InfraredBERADepositor",
+        "InfraredBERAFeeReceivor",
+        "InfraredBERAV2_1",
+        "InfraredBERAWithdraworLite",
+        "InfraredDeployer",
+        "InfraredV1_10",
+        "InfraredVault",
+        "MultiRewards",
+        "RewardsLib",
+        "StakedIR",
+        "Upgradeable"
+      ],
+      "matched_contracts": 7,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5740,
+      "audit_key": "audit-5740",
+      "report_name": "AI_SECURITY.md",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/AI_SECURITY.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5741,
+      "audit_key": "audit-5741",
+      "report_name": "CUTTING_BOARD_AUCTIONS.md",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/CUTTING_BOARD_AUCTIONS.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5742,
+      "audit_key": "audit-5742",
+      "report_name": "CUTTING_BOARD_SYNDICATE.md",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/CUTTING_BOARD_SYNDICATE.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5743,
+      "audit_key": "audit-5743",
+      "report_name": "IR_BRIDGE.md",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/IR_BRIDGE.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "IROFT",
+        "IROFTAdapter"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5744,
+      "audit_key": "audit-5744",
+      "report_name": "UPGRADE_GUIDE.md",
+      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/UPGRADE_GUIDE.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BribeCollector",
+        "Infrared",
+        "InfraredBERA",
+        "InfraredBERADepositor",
+        "InfraredBERAWithdrawor",
+        "Upgradeable"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5745,
+      "audit_key": "audit-5745",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5746,
+      "audit_key": "audit-5746",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5747,
+      "audit_key": "audit-5747",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 15,
+      "coverage_pct": 100,
+      "latest_audit": "2026-04"
+    },
+    {
+      "auditor": "Spearbit",
+      "tier": 1,
+      "contracts_covered": 10,
+      "coverage_pct": 66.7,
+      "latest_audit": "2026-03"
+    },
+    {
+      "auditor": "Zellic",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 6.7,
+      "latest_audit": "2024-10"
+    }
+  ],
+  "coverage_gaps": [],
   "origin_summary": {
     "native": 19,
     "upstream": 0,
@@ -1863,11 +2791,93 @@
     "needs_review": 2
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 254
+    },
+    "extraction_confidence_counts": {
+      "high": 12,
+      "medium": 5
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 5713,
+        "report_name": "Infrared - Zenith Audit Report - 20082025.pdf"
+      },
+      {
+        "audit_id": 5715,
+        "report_name": "Infrared - Zenith Audit Report.pdf"
+      },
+      {
+        "audit_id": 5717,
+        "report_name": "Infrared Merkle Distributor - Zenith Audit Report.pdf"
+      },
+      {
+        "audit_id": 5719,
+        "report_name": "Infrared Operations & Future Vaults Security Review.pdf"
+      },
+      {
+        "audit_id": 5720,
+        "report_name": "Infrared Smart Contract Security Assessment.pdf"
+      },
+      {
+        "audit_id": 5721,
+        "report_name": "Infrared_Finance_Incidence_Response_Review_Report_Feb_2025_2.pdf"
+      },
+      {
+        "audit_id": 5722,
+        "report_name": "Infraredv1.5.pdf"
+      },
+      {
+        "audit_id": 5725,
+        "report_name": "cantinacode-24.01.2026.pdf"
+      },
+      {
+        "audit_id": 5726,
+        "report_name": "infraredContractsSecurityReview.pdf"
+      },
+      {
+        "audit_id": 5728,
+        "report_name": "infrared_security_review_12_11_2025.pdf"
+      },
+      {
+        "audit_id": 5730,
+        "report_name": "report-cantinacode-infrared-0310-bribeCollector.pdf"
+      },
+      {
+        "audit_id": 5731,
+        "report_name": "report-cantinacode-infrared-0320.pdf"
+      },
+      {
+        "audit_id": 5737,
+        "report_name": "report-cli-cantina-infrared-0503_final.pdf"
+      },
+      {
+        "audit_id": 5740,
+        "report_name": "AI_SECURITY.md"
+      },
+      {
+        "audit_id": 5741,
+        "report_name": "CUTTING_BOARD_AUCTIONS.md"
+      },
+      {
+        "audit_id": 5742,
+        "report_name": "CUTTING_BOARD_SYNDICATE.md"
+      },
+      {
+        "audit_id": 5745,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 5746,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 5747,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

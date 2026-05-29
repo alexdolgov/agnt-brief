@@ -330,7 +330,7 @@
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | declining | 4 | 20 | 2026-05-24 |
 | [lisk-bridge](./lisk-bridge/) | $51.1M | 1.1% | $51.1M | active | 37 | 97 | 2026-05-29 |
-| [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | active | 0 | 93 | 2026-05-24 |
+| [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | active | 3 | 93 | 2026-05-29 |
 | [llamapay](./llamapay/) | $26.4M | 0.0% | ? | active | 0 | 20 | 2026-05-22 |
 | [lockon](./lockon/) | $1.1M | 56.3% | ? | active | 7 | 23 | 2026-05-25 |
 | [looping-collective](./looping-collective/) | $11.8M | 7.7% | $11.8M | active | 13 | 14 | 2026-05-22 |

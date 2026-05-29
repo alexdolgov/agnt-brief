@@ -1,0 +1,17 @@
+{
+  "address": "0x12a9fe9f6a1fea5f3c76773d09baa9e1a332e1c5",
+  "chain_id": 146,
+  "contract_name": "WrappedMetaVaultOracleAdapter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "000000000000000000000000b1888cdaae5e3d3e84d2f543c6ce52e9e36fbad7",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:12.575Z"
+}

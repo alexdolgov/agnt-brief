@@ -1,0 +1,18 @@
+{
+  "address": "0x596e37c72fbed6cec8afa4c7e9ac547a76000c6d",
+  "chain_id": 42161,
+  "contract_name": "API3Adapter",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:11.986Z"
+}

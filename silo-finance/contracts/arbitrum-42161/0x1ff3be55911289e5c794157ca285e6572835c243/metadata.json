@@ -1,0 +1,17 @@
+{
+  "address": "0x1ff3be55911289e5c794157ca285e6572835c243",
+  "chain_id": 42161,
+  "contract_name": "PermissionedLiquidationControllerFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 44,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:01.810Z"
+}

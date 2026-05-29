@@ -1,0 +1,17 @@
+{
+  "address": "0x087ae3df6b4316e88a674cb691dfd644a6c42697",
+  "chain_id": 42161,
+  "contract_name": "SiloHookV2",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 70,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:09.077Z"
+}

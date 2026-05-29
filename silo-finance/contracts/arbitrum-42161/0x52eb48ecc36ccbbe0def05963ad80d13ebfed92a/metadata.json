@@ -1,0 +1,17 @@
+{
+  "address": "0x52eb48ecc36ccbbe0def05963ad80d13ebfed92a",
+  "chain_id": 42161,
+  "contract_name": "SiloVirtualAssetEUR",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BSL 1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:08.567Z"
+}

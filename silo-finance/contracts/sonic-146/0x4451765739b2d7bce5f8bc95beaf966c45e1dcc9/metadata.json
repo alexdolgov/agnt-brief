@@ -1,0 +1,17 @@
+{
+  "address": "0x4451765739b2d7bce5f8bc95beaf966c45e1dcc9",
+  "chain_id": 146,
+  "contract_name": "XSilo",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 30,
+  "constructor_arguments": "0000000000000000000000007461d8c0fdf376c847b651d882dea4c73fad2e4b000000000000000000000000b098afc30fce67f1926e735db6fdadfe433e61db000000000000000000000000023d9bcb63532d1215d4adbdb66a4410e506b90e",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:15.013Z"
+}

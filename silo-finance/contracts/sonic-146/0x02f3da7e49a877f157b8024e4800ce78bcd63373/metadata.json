@@ -1,0 +1,17 @@
+{
+  "address": "0x02f3da7e49a877f157b8024e4800ce78bcd63373",
+  "chain_id": 146,
+  "contract_name": "SiloIncentivesControllerGaugeLikeFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:04.460Z"
+}

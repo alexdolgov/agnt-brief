@@ -1,0 +1,18 @@
+{
+  "address": "0x97748870e9cd5eb59f39a870883dfa5f4a7f1090",
+  "chain_id": 42161,
+  "contract_name": "InterestRateModelXAI",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "BUSL-1.1, MIT, Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:12.381Z"
+}

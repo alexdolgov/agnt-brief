@@ -1,0 +1,17 @@
+{
+  "address": "0x128b7b7457e35e201da5024c9e8d024e1b0af94b",
+  "chain_id": 42161,
+  "contract_name": "LeverageRouter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 46,
+  "constructor_arguments": "000000000000000000000000865a1da42d512d8854c7b0599c962f67f5a5a9d9000000000000000000000000865a1da42d512d8854c7b0599c962f67f5a5a9d900000000000000000000000082af49447d8a07e3bd95bd0d56f35241523fbab1",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:02.819Z"
+}

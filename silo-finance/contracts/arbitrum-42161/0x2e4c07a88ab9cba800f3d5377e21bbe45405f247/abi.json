@@ -1,0 +1,490 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract IPriceProvidersRepository",
+        "name": "_priceProvidersRepository",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IDIAOracleV2",
+        "name": "_diaOracle",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_stableAsset",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AssetNotSupported",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CanNotSetEthKey",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FallbackPriceProviderNotSet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidKey",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "KeyDoesNotMatchSymbol",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LiquidationProviderAlreadySet",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LiquidationProviderAssetNotSupported",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LiquidationProviderNotExist",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MissingETHPrice",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MissingPriceOrSetup",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OldPrice",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "OnlyUSDPriceAccepted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PriceCanNotBeFoundForProvidedKey",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "key",
+        "type": "string"
+      }
+    ],
+    "name": "AssetSetup",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "asset",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "contract IPriceProvider",
+        "name": "liquidationProvider",
+        "type": "address"
+      }
+    ],
+    "name": "LiquidationProvider",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DIA_DECIMALS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DIA_ORACLEV2",
+    "outputs": [
+      {
+        "internalType": "contract IDIAOracleV2",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ETH_USD_KEY",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "EXPECTED_DECIMALS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "USD_ASSET",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      }
+    ],
+    "name": "assetSupported",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      }
+    ],
+    "name": "getFallbackPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      }
+    ],
+    "name": "getFallbackProvider",
+    "outputs": [
+      {
+        "internalType": "contract IPriceProvider",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      }
+    ],
+    "name": "getPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_key",
+        "type": "string"
+      }
+    ],
+    "name": "getPriceForKey",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "assetPriceInUsd",
+        "type": "uint128"
+      },
+      {
+        "internalType": "bool",
+        "name": "priceUpToDate",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "keys",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "liquidationProviders",
+    "outputs": [
+      {
+        "internalType": "contract IPriceProvider",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "_assetPriceInUsd",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_ethPriceInUsd",
+        "type": "uint128"
+      }
+    ],
+    "name": "normalizePrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "assetPriceInEth",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "offChainProvider",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "priceProviderPing",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "priceProvidersRepository",
+    "outputs": [
+      {
+        "internalType": "contract IPriceProvidersRepository",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "quoteToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      }
+    ],
+    "name": "removeLiquidationProvider",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IPriceProvider",
+        "name": "_liquidationProvider",
+        "type": "address"
+      }
+    ],
+    "name": "setLiquidationProvider",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "_key",
+        "type": "string"
+      },
+      {
+        "internalType": "contract IPriceProvider",
+        "name": "_liquidationProvider",
+        "type": "address"
+      }
+    ],
+    "name": "setupAsset",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_key",
+        "type": "string"
+      }
+    ],
+    "name": "validateKey",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_asset",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "_key",
+        "type": "string"
+      }
+    ],
+    "name": "validateSymbol",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "address": "0xfe3c1955d3a65154e75baa688342a66343b7b3ca",
+  "chain_id": 146,
+  "contract_name": "XSiloToken",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 50000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "000000000000000000000000b098afc30fce67f1926e735db6fdadfe433e61db",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:16.593Z"
+}

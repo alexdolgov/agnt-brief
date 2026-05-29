@@ -1,0 +1,17 @@
+{
+  "address": "0x0ab251c6dafb5598d6a6374030b1e0bfa6687deb",
+  "chain_id": 10,
+  "contract_name": "SiloIncentivesControllerCLDeployer",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 54,
+  "constructor_arguments": "00000000000000000000000066c91b469c222fc40a549fed4eb5378e07efbcb3",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:00.781Z"
+}

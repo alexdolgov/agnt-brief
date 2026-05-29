@@ -1,0 +1,17 @@
+{
+  "address": "0x45909be5015c2d0771ce687f26055c1cf124317b",
+  "chain_id": 42161,
+  "contract_name": "FlatPriceOracleFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 18,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:09.213Z"
+}

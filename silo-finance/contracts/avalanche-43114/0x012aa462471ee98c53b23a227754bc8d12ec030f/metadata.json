@@ -1,0 +1,18 @@
+{
+  "address": "0x012aa462471ee98c53b23a227754bc8d12ec030f",
+  "chain_id": 43114,
+  "contract_name": "ShareProtectedCollateralToken",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": "BUSL-1.1, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 63,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:00.931Z"
+}

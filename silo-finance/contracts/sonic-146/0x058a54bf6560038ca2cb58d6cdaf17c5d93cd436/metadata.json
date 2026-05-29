@@ -1,0 +1,17 @@
+{
+  "address": "0x058a54bf6560038ca2cb58d6cdaf17c5d93cd436",
+  "chain_id": 146,
+  "contract_name": "TestNatSpec",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "Unlicense",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:14.773Z"
+}

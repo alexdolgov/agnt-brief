@@ -1,0 +1,367 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AddressZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EmptyPrimaryKey",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FailedDeployment",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "HugeDivider",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "HugeMultiplier",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "needed",
+        "type": "uint256"
+      }
+    ],
+    "name": "InsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentNonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidAccountNonce",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MultiplierAndDividerZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokensAreTheSame",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      }
+    ],
+    "name": "NewOracle",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DIA_DECIMALS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ORACLE_IMPLEMENTATION",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IDIAOracleV2",
+            "name": "diaOracle",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "quoteToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "heartbeat",
+            "type": "uint32"
+          },
+          {
+            "internalType": "string",
+            "name": "primaryKey",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "secondaryKey",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "normalizationDivider",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "normalizationMultiplier",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "invertSecondPrice",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IDIAOracle.DIADeploymentConfig",
+        "name": "_config",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_externalSalt",
+        "type": "bytes32"
+      }
+    ],
+    "name": "create",
+    "outputs": [
+      {
+        "internalType": "contract DIAOracle",
+        "name": "oracle",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getConfigAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "getOracleAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IDIAOracleV2",
+            "name": "diaOracle",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "quoteToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "heartbeat",
+            "type": "uint32"
+          },
+          {
+            "internalType": "string",
+            "name": "primaryKey",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "secondaryKey",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "normalizationDivider",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "normalizationMultiplier",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "invertSecondPrice",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IDIAOracle.DIADeploymentConfig",
+        "name": "_config",
+        "type": "tuple"
+      }
+    ],
+    "name": "hashConfig",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "configId",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "nonces",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "contract IDIAOracleV2",
+            "name": "diaOracle",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "baseToken",
+            "type": "address"
+          },
+          {
+            "internalType": "contract IERC20Metadata",
+            "name": "quoteToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "heartbeat",
+            "type": "uint32"
+          },
+          {
+            "internalType": "string",
+            "name": "primaryKey",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "secondaryKey",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "normalizationDivider",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "normalizationMultiplier",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "invertSecondPrice",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct IDIAOracle.DIADeploymentConfig",
+        "name": "_config",
+        "type": "tuple"
+      }
+    ],
+    "name": "verifyConfig",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

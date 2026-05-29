@@ -1,0 +1,17 @@
+{
+  "address": "0x08a52ec31e0e981bbd64082224185e420d3f9849",
+  "chain_id": 42161,
+  "contract_name": "PTLinearOracleFactory",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "00000000000000000000000034c91651a070664279866e5f3d6b4d5f65cbbffb",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:06.181Z"
+}

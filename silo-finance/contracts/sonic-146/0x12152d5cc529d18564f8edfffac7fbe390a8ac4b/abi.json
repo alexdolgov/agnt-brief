@@ -1,0 +1,394 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "FailedDeployment",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "balance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "needed",
+        "type": "uint256"
+      }
+    ],
+    "name": "InsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentNonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidAccountNonce",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidBeta",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidKcrit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidKi",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidKlin",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidKlow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidRi",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidTcrit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidUcrit",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidUlow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidUopt",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "configHash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "contract IInterestRateModelV2",
+        "name": "irm",
+        "type": "address"
+      }
+    ],
+    "name": "NewInterestRateModelV2",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "DP",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "IRM",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "uopt",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "ucrit",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "ulow",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "ki",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "kcrit",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "klow",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "klin",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "beta",
+            "type": "int256"
+          },
+          {
+            "internalType": "int112",
+            "name": "ri",
+            "type": "int112"
+          },
+          {
+            "internalType": "int112",
+            "name": "Tcrit",
+            "type": "int112"
+          }
+        ],
+        "internalType": "struct IInterestRateModelV2.Config",
+        "name": "_config",
+        "type": "tuple"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_externalSalt",
+        "type": "bytes32"
+      }
+    ],
+    "name": "create",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "configHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "contract IInterestRateModelV2",
+        "name": "irm",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "uopt",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "ucrit",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "ulow",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "ki",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "kcrit",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "klow",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "klin",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "beta",
+            "type": "int256"
+          },
+          {
+            "internalType": "int112",
+            "name": "ri",
+            "type": "int112"
+          },
+          {
+            "internalType": "int112",
+            "name": "Tcrit",
+            "type": "int112"
+          }
+        ],
+        "internalType": "struct IInterestRateModelV2.Config",
+        "name": "_config",
+        "type": "tuple"
+      }
+    ],
+    "name": "hashConfig",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "configId",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "configHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "irmByConfigHash",
+    "outputs": [
+      {
+        "internalType": "contract IInterestRateModelV2",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "nonces",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "int256",
+            "name": "uopt",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "ucrit",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "ulow",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "ki",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "kcrit",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "klow",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "klin",
+            "type": "int256"
+          },
+          {
+            "internalType": "int256",
+            "name": "beta",
+            "type": "int256"
+          },
+          {
+            "internalType": "int112",
+            "name": "ri",
+            "type": "int112"
+          },
+          {
+            "internalType": "int112",
+            "name": "Tcrit",
+            "type": "int112"
+          }
+        ],
+        "internalType": "struct IInterestRateModelV2.Config",
+        "name": "_config",
+        "type": "tuple"
+      }
+    ],
+    "name": "verifyConfig",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

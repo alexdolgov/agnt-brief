@@ -1,0 +1,272 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract ISiloVaultsFactory",
+        "name": "_siloVaultsFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISiloIncentivesControllerFactory",
+        "name": "_siloIncentivesControllerFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISiloIncentivesControllerCLFactory",
+        "name": "_siloIncentivesControllerCLFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IdleVaultsFactory",
+        "name": "_idleVaultsFactory",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "EmptyIdleVaultFactory",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EmptySiloIncentivesControllerCLFactory",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EmptySiloIncentivesControllerFactory",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "EmptySiloVaultFactory",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "silo",
+        "type": "address"
+      }
+    ],
+    "name": "GaugeIsNotConfigured",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "currentNonce",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidAccountNonce",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "VaultAddressMismatch",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "claimingLogic",
+        "type": "address"
+      }
+    ],
+    "name": "CreateIncentivesCL",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "incentivesController",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "idleVault",
+        "type": "address"
+      }
+    ],
+    "name": "CreateSiloVault",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "IDLE_VAULTS_FACTORY",
+    "outputs": [
+      {
+        "internalType": "contract IdleVaultsFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SILO_INCENTIVES_CONTROLLER_CL_FACTORY",
+    "outputs": [
+      {
+        "internalType": "contract ISiloIncentivesControllerCLFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SILO_INCENTIVES_CONTROLLER_FACTORY",
+    "outputs": [
+      {
+        "internalType": "contract ISiloIncentivesControllerFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SILO_VAULTS_FACTORY",
+    "outputs": [
+      {
+        "internalType": "contract ISiloVaultsFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "initialOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialTimelock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "asset",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "incentivesControllerOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "contract IIncentivesClaimingLogicFactory[]",
+            "name": "trustedFactories",
+            "type": "address[]"
+          },
+          {
+            "internalType": "contract ISilo[]",
+            "name": "silosWithIncentives",
+            "type": "address[]"
+          }
+        ],
+        "internalType": "struct ISiloVaultDeployer.CreateSiloVaultParams",
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "name": "createSiloVault",
+    "outputs": [
+      {
+        "internalType": "contract ISiloVault",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ISiloIncentivesController",
+        "name": "incentivesController",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IERC4626",
+        "name": "idleVault",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      }
+    ],
+    "name": "nonces",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

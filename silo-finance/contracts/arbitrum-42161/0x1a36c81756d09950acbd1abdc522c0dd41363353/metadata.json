@@ -1,0 +1,17 @@
+{
+  "address": "0x1a36c81756d09950acbd1abdc522c0dd41363353",
+  "chain_id": 42161,
+  "contract_name": "SiloRouterImplementation",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 22,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:11.617Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x57f3b70b5bd38642b06c5270173139dfc350afcb",
+  "chain_id": 42161,
+  "contract_name": "ChronicleAdapter",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "000000000000000000000000dc6720c996fad27256c7fd6e0a271e2a4687ef18",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:15:11.371Z"
+}

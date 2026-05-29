@@ -5,8 +5,8 @@
 - Project: Gravity Bridge (`gravity-bridge`)
 - Website: [https://www.gravitybridge.net](https://www.gravitybridge.net)
 - Lifecycle: active (Tier 0, 89.3% below peak)
-- Generated: 2026-05-29T08:11:21.386Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T18:45:17.119Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: ethereum
 - Contract surface: 152 unique implementations (225 raw deployments)
 - DeFi Llama TVL: $12,141,492.35
@@ -30,7 +30,7 @@ The Gravity Bridge family relies on a set of proxy contracts (AdminUpgradeabilit
 - Unique implementations: 152
 - Raw deployments: 225
 - Audits discovered: 48
-- Scoreable audits (matched contracts): 6
+- Scoreable audits (matched contracts): 7
 - ASD (verified + unaudited TVL): $91,299,805.77
 - Latest audit: 2026-12 (fresh)
 - Staleness: 1 fresh, 0 aging, 0 stale, 47 unknown
@@ -231,7 +231,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [README.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/architecture/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [adr-template.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/architecture/adr-template.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [arbitrary-logic.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/arbitrary-logic.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [arbitrary-logic.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/arbitrary-logic.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
 | [bootstrapping.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/bootstrapping.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
 | [ethereum-signing.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/ethereum-signing.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
 | [incentives.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/incentives.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -329,16 +329,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 42
+- Audits with zero matched contracts: 41
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: low=6
-- Match method counts: extraction_exact=6
+- Extraction confidence breakdown: low=7
+- Match method counts: extraction_exact=7
 
 Zero-match audit list:
 
 - [6975] README.md
 - [6976] adr-template.md
-- [6977] arbitrary-logic.md
 - [6980] incentives.md
 - [6983] oracle.md
 - [6984] overview.md

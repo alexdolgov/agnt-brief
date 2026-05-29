@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gravity-bridge",
-  "generated_at": "2026-05-29T08:11:21.386Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-05-29T18:45:17.119Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-691c43-e9c3",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "gravity-bridge",
@@ -34,7 +34,7 @@
     "contracts_unverified": 78,
     "coverage_pct": 1.4,
     "total_audits": 48,
-    "scoreable_audits": 6,
+    "scoreable_audits": 7,
     "dl_tvl_usd": 12141492.34649,
     "tvl_usd": 91299805.77391307,
     "tvl_source": "on_chain",
@@ -1494,6 +1494,7 @@
         }
       ],
       "audits_covering": [
+        "audit-6977",
         "audit-6978",
         "audit-6979",
         "audit-6981",
@@ -5500,12 +5501,14 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Gravity"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
       "repo_reference_count": 0
     },
     {
@@ -6796,10 +6799,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 6
+      "extraction_exact": 7
     },
     "extraction_confidence_counts": {
-      "low": 6
+      "low": 7
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -6811,10 +6814,6 @@
       {
         "audit_id": 6976,
         "report_name": "adr-template.md"
-      },
-      {
-        "audit_id": 6977,
-        "report_name": "arbitrary-logic.md"
       },
       {
         "audit_id": 6980,

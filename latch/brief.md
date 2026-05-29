@@ -7,11 +7,11 @@
 - Project: Latch (`latch`)
 - Website: [https://savings.latch.io/](https://savings.latch.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T19:58:47.702Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-29T09:53:49.473Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,610,642.70
+- DeFi Llama TVL: $1,606,674.69
 - On-chain TVL (included contracts): $189.85
 - TVL by chain: Ethereum $189.85
 
@@ -31,11 +31,11 @@ The protocol consists of a single product family with one core contract, so ther
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $189.85
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $189.85 represents exposure in a protocol with declining activity.
 
@@ -77,6 +77,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -99,9 +102,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [9371] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9372] 0002-metadata-manifest-and-pull-command.md
+- [9373] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

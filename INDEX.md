@@ -318,7 +318,7 @@
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-05-23 |
 | [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-05-24 |
 | [larix](./larix/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
-| [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 0 | 1 | 2026-05-24 |
+| [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 3 | 1 | 2026-05-29 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 108 | 2026-05-24 |

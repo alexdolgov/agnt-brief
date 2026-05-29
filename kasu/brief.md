@@ -5,8 +5,8 @@
 - Project: Kasu (`kasu`)
 - Website: [https://kasu.finance/](https://kasu.finance/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-29T09:44:11.961Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T20:15:18.430Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: base
 - Contract surface: 22 unique implementations (56 raw deployments)
 - DeFi Llama TVL: $10,291,597.97

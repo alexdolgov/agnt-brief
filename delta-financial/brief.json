@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "delta-financial",
-  "generated_at": "2026-05-28T22:53:37.087Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-3559",
+  "generated_at": "2026-05-29T00:44:36.566Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-b087",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "delta-financial",
@@ -16,7 +16,7 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 1595,
+    "days_since_peak": 1596,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0

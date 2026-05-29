@@ -632,7 +632,7 @@
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
 | [treehouse-protocol](./treehouse-protocol/) | $31.2M | 0.0% | $31.2M | unknown | 1 | 78 | 2026-05-27 |
-| [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | transitioning | 0 | 15 | 2026-05-25 |
+| [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | transitioning | 3 | 15 | 2026-05-29 |
 | [trisolaris](./trisolaris/) | $1.3M | 0.0% | ? | dead | 0 | 119 | 2026-05-25 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [truefi](./truefi/) | $15.4M | 0.0% | ? | dead | 0 | 8 | 2026-05-22 |

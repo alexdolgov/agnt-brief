@@ -6,8 +6,8 @@
 | Address | `0x281bc6f84952abe53f6921dcd76c879d3c4b6375` |
 | Role | core_logic |
 | Origin | standard_library |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [RewardPool.md](https://github.com/MorpheusAIs/SmartContracts/blob/main/docs/capital-protocol/RewardPool.md) |
 | Deployments | 4 (ethereum `0xb7994de339aee515c9b2792831cd83f3c9d8df87`; ethereum `0xe30279b79392aeff7fdf1883c23d52eba9d88a75`; arbitrum [`0x281bc6f84952abe53f6921dcd76c879d3c4b6375`](../0x281bc6f84952abe53f6921dcd76c879d3c4b6375/); arbitrum `0x6ad6efba31cb05df2aa96aab03d2237746830193`) |
 | Proxy | Yes → `0x6ad6ef...830193` |
 | Source | Sourcify (full match) |

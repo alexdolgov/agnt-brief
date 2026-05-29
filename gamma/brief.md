@@ -7,8 +7,8 @@
 - Project: Gamma (`gamma`)
 - Website: [https://www.gamma.xyz](https://www.gamma.xyz)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T06:09:28.693Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-befa
+- Generated: 2026-05-29T07:17:04.879Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-4212
 - Chains: arbitrum, avalanche, base, berachain, blast, bsc, celo, ethereum, fantom, gnosis, kava, linea, manta, mantle, metis, mode, moonbeam, optimism, polygon, polygon-zkevm, scroll, sonic, unichain
 - Contract surface: 467 unique implementations (2560 raw deployments)
 - DeFi Llama TVL: $3,713,256.19

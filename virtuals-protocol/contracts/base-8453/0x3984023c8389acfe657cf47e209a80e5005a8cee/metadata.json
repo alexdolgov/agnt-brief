@@ -1,0 +1,18 @@
+{
+  "address": "0x3984023c8389acfe657cf47e209a80e5005a8cee",
+  "chain_id": 8453,
+  "contract_name": "AgentInference",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 16,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T17:25:24.090Z"
+}

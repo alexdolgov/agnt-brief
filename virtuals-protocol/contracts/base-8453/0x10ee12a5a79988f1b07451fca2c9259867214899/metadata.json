@@ -1,0 +1,17 @@
+{
+  "address": "0x10ee12a5a79988f1b07451fca2c9259867214899",
+  "chain_id": 8453,
+  "contract_name": "SimpleMigrator",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 68,
+  "constructor_arguments": "00000000000000000000000050725af160260a316b2673c71c8c21469f6732c0000000000000000000000000efb56bfbfa06f6964bfdbc27cd4d24a9952eacf200000000000000000000000029dd6413b7a0b6a380326894ff839903c73cd53c",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T17:25:23.238Z"
+}

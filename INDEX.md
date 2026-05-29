@@ -664,7 +664,7 @@
 | [vesper](./vesper/) | $694.0K | 51.3% | $351.7K | declining | 33 | 44 | 2026-05-29 |
 | [vest-markets](./vest-markets/) | $1.7M | 0.0% | ? | declining | 3 | 4 | 2026-05-29 |
 | [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-05-27 |
-| [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-05-26 |
+| [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 3 | 65 | 2026-05-29 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |
 | [wan-bridge](./wan-bridge/) | $1.8M | 0.0% | $1.8M | active | 3 | 153 | 2026-05-25 |
 | [wanswap-dex](./wanswap-dex/) | $1.5M | 2.8% | $1.5M | declining | 1 | 53 | 2026-05-25 |

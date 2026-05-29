@@ -5,8 +5,8 @@
 - Project: Ink Bridge (`ink-bridge`)
 - Website: [https://inkonchain.com/bridge](https://inkonchain.com/bridge)
 - Lifecycle: active (Tier 0, 60.5% below peak)
-- Generated: 2026-05-29T09:17:08.061Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T19:49:14.932Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: ethereum, ink, optimism
 - Contract surface: 68 unique implementations (70 raw deployments)
 - DeFi Llama TVL: $59,290,618.92

@@ -5,8 +5,8 @@
 - Project: Yuzu Money (`yuzu-money`)
 - Website: [https://app.yuzu.money?ref=ZRSJY3HG](https://app.yuzu.money?ref=ZRSJY3HG)
 - Lifecycle: active (Tier 0, 28.6% below peak)
-- Generated: 2026-05-27T20:11:05.920Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-05-29T18:02:25.826Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: plasma
 - Contract surface: 8 unique implementations (17 raw deployments)
 - DeFi Llama TVL: $50,939,265.75
@@ -29,11 +29,11 @@ All contracts belong to a single product family deployed by the same deployer. Y
 - Unverified implementations: 0
 - Unique implementations: 8
 - Raw deployments: 17
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $41,016,284.51
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -81,6 +81,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -106,9 +109,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [5709] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [5710] 0002-metadata-manifest-and-pull-command.md
+- [5711] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

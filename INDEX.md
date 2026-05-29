@@ -691,7 +691,7 @@
 | [yieldnest](./yieldnest/) | $19.2M | 69.0% | ? | declining | 27 | 33 | 2026-05-29 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | unknown | 1 | 191 | 2026-05-25 |
 | [yo-protocol](./yo-protocol/) | $40.9M | 56.3% | $12.6K | active | 10 | 20 | 2026-05-29 |
-| [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 0 | 8 | 2026-05-27 |
+| [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 3 | 8 | 2026-05-29 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-05-23 |
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-05-27 |

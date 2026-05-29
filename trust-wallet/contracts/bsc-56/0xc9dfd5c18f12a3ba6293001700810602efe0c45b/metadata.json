@@ -1,0 +1,17 @@
+{
+  "address": "0xc9dfd5c18f12a3ba6293001700810602efe0c45b",
+  "chain_id": 56,
+  "contract_name": "PullTokenWrapperAllow",
+  "compiler_version": "v0.8.25+commit.b61c2a91",
+  "optimization_used": true,
+  "runs": 100,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T16:41:36.922Z"
+}

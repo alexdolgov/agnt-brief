@@ -1,0 +1,18 @@
+{
+  "address": "0xe9169817edbfe5fcf629ed8b3c2a34e2a50ec84c",
+  "chain_id": 56,
+  "contract_name": "AgTokenSideChainMultiBridgeNameable",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 1000000,
+  "evm_version": "london",
+  "license": "GPL-3.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 183,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T16:41:37.605Z"
+}

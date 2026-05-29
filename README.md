@@ -586,7 +586,7 @@ Each project directory contains:
 | [orangex](./orangex/brief.md) | $39.84M | base, ethereum | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [osl](./osl/brief.md) | $41.49M | scroll | 4 | 0/4 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [ostium](./ostium/brief.md) | $41.78M | arbitrum | 17 | 17/17 (100%) | 47.1% | 0.0% (-) | 1 | fresh | ❓ unknown | - |
-| [outcome-finance](./outcome-finance/brief.md) | $1.29M | boba, ethereum, polygon | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
+| [outcome-finance](./outcome-finance/brief.md) | $1.33M | boba, ethereum, polygon | 3 | 2/3 (67%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [p2pb2b](./p2pb2b/brief.md) | $4.89M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [pangolin](./pangolin/brief.md) | $3.66M | avalanche | 163 | 26/163 (16%) | 53.8% | 0.0% (-) | 10 | aging | 💀 dead | - |
 | [paradex](./paradex/brief.md) | $33.26M | ethereum | 5 | 2/5 (40%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
@@ -699,5 +699,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T11:49:53.360Z_
+_Generated: 2026-05-29T11:51:45.569Z_
 _Projects: 687_

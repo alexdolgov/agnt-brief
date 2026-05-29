@@ -5,8 +5,8 @@
 - Project: Guru Network DAO (`guru-network-dao`)
 - Website: [https://ftm.guru/](https://ftm.guru/)
 - Lifecycle: active (Tier 0, 83% below peak)
-- Generated: 2026-05-29T08:17:10.523Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T18:51:37.763Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: arbitrum, avalanche, base, fantom, kava, metis, polygon, sonic
 - Contract surface: 54 unique implementations (71 raw deployments)
 - DeFi Llama TVL: $2,305,169.00

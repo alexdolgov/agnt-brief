@@ -436,7 +436,7 @@
 | [paradex](./paradex/) | $33.3M | 0.0% | ? | declining | 3 | 5 | 2026-05-29 |
 | [paragonsdao](./paragonsdao/) | $6.2M | 50.0% | ? | unknown | 8 | 2 | 2026-05-23 |
 | [parallel-protocol](./parallel-protocol/) | $3.6M | 30.8% | $3.0M | active | 5 | 38 | 2026-05-24 |
-| [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-05-24 |
+| [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 3 | 41 | 2026-05-29 |
 | [pay-protocol](./pay-protocol/) | $1.1M | 0.0% | ? | declining | 0 | 8 | 2026-05-25 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 3 | 21 | 2026-05-25 |

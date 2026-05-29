@@ -1,0 +1,18 @@
+{
+  "address": "0x73e34dac4e76bda81724d333a02d850ca7fbb038",
+  "chain_id": 1,
+  "contract_name": "TellorGetters",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T10:04:44.798Z"
+}

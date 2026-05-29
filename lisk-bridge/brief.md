@@ -5,8 +5,8 @@
 - Project: Lisk Bridge (`lisk-bridge`)
 - Website: [https://lisk.com](https://lisk.com)
 - Lifecycle: active (Tier 0, 90.7% below peak)
-- Generated: 2026-05-26T15:47:44.129Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-05-29T10:04:38.486Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: base, ethereum
 - Contract surface: 97 unique implementations (211 raw deployments)
 - DeFi Llama TVL: $38,109,077.20
@@ -23,30 +23,34 @@ The L1 family provides the core OP Stack bridge infrastructure, which is extende
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/88 (0.0%)
-- Verified + Unaudited implementations: 88
+- Verified implementations audited: 1/88 (1.1%)
+- Verified + Unaudited implementations: 87
 - Verified by bytecode match: 0
 - Unverified implementations: 9
 - Unique implementations: 97
 - Raw deployments: 211
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
+- Audits discovered: 37
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $51,134,589.18
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 37 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 1 | 1.1% | n/a |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| OptimismMintableERC20Factory | registry | ethereum | 2 deployments: ethereum [`0xc1da06...39252d`](./contracts/ethereum-1/0xc1da06cc5dd5ce23baba924463de7f762039252d/); ethereum `0xd00e38...a5b3ad` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (88)
+### ⚠️ Verified + Unaudited (87)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -105,7 +109,6 @@ The L1 family provides the core OP Stack bridge infrastructure, which is extende
 | NodeOperatorsRegistry | registry | ethereum | [`0xec3567...16c5fe`](./contracts/ethereum-1/0xec3567ae258639a0ff5a02f7eaf4e4ae4416c5fe/) | ⚠️ Unaudited |
 | OfferHelper | periphery | ethereum | [`0xf61ed4...d40719`](./contracts/ethereum-1/0xf61ed41749cd82767057aa39edcee8d797d40719/) | ⚠️ Unaudited |
 | OperationsRegistry | registry | ethereum | [`0xd641ae...2a49b9`](./contracts/ethereum-1/0xd641ae2ad8a0e72ad92ddeda7cef67ee3f2a49b9/) | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | registry | ethereum | 2 deployments: ethereum [`0xc1da06...39252d`](./contracts/ethereum-1/0xc1da06cc5dd5ce23baba924463de7f762039252d/); ethereum `0xd00e38...a5b3ad` | ⚠️ Unaudited |
 | OptimismPortal2 | unknown | ethereum | [`0x26db93...53f9a7`](./contracts/ethereum-1/0x26db93f8b8b4f7016240af62f7730979d353f9a7/) | ⚠️ Unaudited |
 | PermissionItems | unknown | ethereum | 2 deployments: ethereum [`0xb44141...080daa`](./contracts/ethereum-1/0xb441417e6ff3acf60b9f0216d8c3179913080daa/); ethereum `0xf96e9a...43a0fe` | ⚠️ Unaudited |
 | PermissionManager | governance | ethereum | [`0x991fd1...df6191`](./contracts/ethereum-1/0x991fd11876a438af7bcadc98f4b3cf201bdf6191/) | ⚠️ Unaudited |
@@ -171,6 +174,43 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [1161_SPECS.md](https://github.com/LiskHQ/lisk-desktop/blob/development/docs/1161_SPECS.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [CONTRIBUTING_GUIDE.md](https://github.com/LiskHQ/lisk-desktop/blob/development/docs/CONTRIBUTING_GUIDE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [CSS_GUIDE.md](https://github.com/LiskHQ/lisk-desktop/blob/development/docs/CSS_GUIDE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DEVELOPMENT_GUIDE.md](https://github.com/LiskHQ/lisk-desktop/blob/development/docs/DEVELOPMENT_GUIDE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [EPIC_SPECIFICATION_GUIDE.md](https://github.com/LiskHQ/lisk-desktop/blob/development/docs/EPIC_SPECIFICATION_GUIDE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [HARDWARE_WALLET_DEVELOPMENT.md](https://github.com/LiskHQ/lisk-desktop/blob/development/docs/HARDWARE_WALLET_DEVELOPMENT.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PR-GUIDE.md](https://github.com/LiskHQ/lisk-desktop/blob/development/docs/PR-GUIDE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [REACT_GUIDE.md](https://github.com/LiskHQ/lisk-desktop/blob/development/docs/REACT_GUIDE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [staking.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/docs-user/staking/staking.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [index.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/guides/add-token-to-lisk/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [standard-token.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/guides/add-token-to-lisk/standard-token.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 2 | low |
+| [with-Foundry.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/guides/deploying-smart-contract/with-Foundry.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [with-Hardhat.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/guides/deploying-smart-contract/with-Hardhat.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ethers.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/guides/interacting-with-the-blockchain/ethers.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [run-a-lisk-node.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/guides/run-a-lisk-node.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [deploy-erc-1155.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/guides/token-development/deploy-erc-1155.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [deploy-erc-20.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/guides/token-development/deploy-erc-20.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [overview.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/guides/token-development/overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [redstone-pull.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/guides/using-oracle-data/redstone-pull.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [redstone-push.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/guides/using-oracle-data/redstone-push.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [fees.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/about-lisk/fees.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [network-info.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/about-lisk/network-info.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [deployed-tokens.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/lisk-tools/deployed-tokens.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [embedded-wallet-providers.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/lisk-tools/embedded-wallet-providers.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [exchanges.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/lisk-tools/exchanges.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [faucets.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/lisk-tools/faucets.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [indexers.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/lisk-tools/indexers.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [interoperability.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/lisk-tools/interoperability.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [node-providers.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/lisk-tools/node-providers.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [on-ramps.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/lisk-tools/on-ramps.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [oracles.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/lisk-tools/oracles.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [utilities.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/lisk-tools/utilities.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [wallets.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-chain/lisk-tools/wallets.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [legacy-chain-service.md](https://github.com/LiskHQ/lisk-docs/blob/development/docs/lisk-l1/legacy-chain-service.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -216,7 +256,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xec3567...16c5fe`](./contracts/ethereum-1/0xec3567ae258639a0ff5a02f7eaf4e4ae4416c5fe/) | NodeOperatorsRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf61ed4...d40719`](./contracts/ethereum-1/0xf61ed41749cd82767057aa39edcee8d797d40719/) | OfferHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd641ae...2a49b9`](./contracts/ethereum-1/0xd641ae2ad8a0e72ad92ddeda7cef67ee3f2a49b9/) | OperationsRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc1da06...39252d`](./contracts/ethereum-1/0xc1da06cc5dd5ce23baba924463de7f762039252d/) | OptimismMintableERC20Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x26db93...53f9a7`](./contracts/ethereum-1/0x26db93f8b8b4f7016240af62f7730979d353f9a7/) | OptimismPortal2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb44141...080daa`](./contracts/ethereum-1/0xb441417e6ff3acf60b9f0216d8c3179913080daa/) | PermissionItems | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x991fd1...df6191`](./contracts/ethereum-1/0x991fd11876a438af7bcadc98f4b3cf201bdf6191/) | PermissionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -253,9 +292,48 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 36
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: low=1
+- Match method counts: extraction_exact=2
+
+Zero-match audit list:
+
+- [5845] 1161_SPECS.md
+- [5846] CONTRIBUTING_GUIDE.md
+- [5847] CSS_GUIDE.md
+- [5848] DEVELOPMENT_GUIDE.md
+- [5849] EPIC_SPECIFICATION_GUIDE.md
+- [5850] HARDWARE_WALLET_DEVELOPMENT.md
+- [5851] PR-GUIDE.md
+- [5852] REACT_GUIDE.md
+- [5853] staking.md
+- [5854] index.md
+- [5856] with-Foundry.md
+- [5857] with-Hardhat.md
+- [5858] ethers.md
+- [5859] run-a-lisk-node.md
+- [5860] deploy-erc-1155.md
+- [5861] deploy-erc-20.md
+- [5862] overview.md
+- [5863] redstone-pull.md
+- [5864] redstone-push.md
+- [5865] fees.md
+- [5866] network-info.md
+- [5867] deployed-tokens.md
+- [5868] embedded-wallet-providers.md
+- [5869] exchanges.md
+- [5870] faucets.md
+- [5871] indexers.md
+- [5872] interoperability.md
+- [5873] node-providers.md
+- [5874] on-ramps.md
+- [5875] oracles.md
+- [5876] utilities.md
+- [5877] wallets.md
+- [5878] legacy-chain-service.md
+- [5879] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [5880] 0002-metadata-manifest-and-pull-command.md
+- [5881] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

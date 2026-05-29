@@ -1,0 +1,18 @@
+{
+  "address": "0x88df592f8eb5d7bd38bfef7deb0fbc02cf3778a0",
+  "chain_id": 1,
+  "contract_name": "TellorMaster",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": "0xd3b9a1dcabd16c482785fd4265cb4580b84cded7",
+  "fetched_at": "2026-05-29T10:04:45.215Z"
+}

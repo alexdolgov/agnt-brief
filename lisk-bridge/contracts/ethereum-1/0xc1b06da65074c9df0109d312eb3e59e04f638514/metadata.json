@@ -1,0 +1,18 @@
+{
+  "address": "0xc1b06da65074c9df0109d312eb3e59e04f638514",
+  "chain_id": 1,
+  "contract_name": "EurPriceFeed",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T10:04:46.442Z"
+}

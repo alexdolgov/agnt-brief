@@ -1,0 +1,727 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "arrayIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "AddressIsZeroError",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "incorrectRevShare",
+        "type": "uint256"
+      }
+    ],
+    "name": "IncorrectPercentage",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "timelock",
+        "type": "uint256"
+      }
+    ],
+    "name": "IncorrectTimelockPeriodError",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "NotAuthorizedAccountError",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "NotSpecialAddressError",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "expiredTime",
+        "type": "uint256"
+      }
+    ],
+    "name": "OfferExpiredError",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "OfferExpiredTimestampError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TypesShouldBeSpecified",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "UnsupportedPartialOfferForNonERC20AssetsError",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum TakingOfferType",
+            "name": "takingOfferType",
+            "type": "TakingOfferType"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum OfferPricingType",
+                "name": "offerPricingType",
+                "type": "OfferPricingType"
+              },
+              {
+                "internalType": "uint256",
+                "name": "unitPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "percentage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "enum PercentageType",
+                "name": "percentageType",
+                "type": "PercentageType"
+              }
+            ],
+            "internalType": "struct OfferPrice",
+            "name": "offerPrice",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address[]",
+            "name": "specialAddresses",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "authorizationAddresses",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiryTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timelockPeriod",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "terms",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "commsLink",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct OfferStruct",
+        "name": "offer",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "enum AssetType",
+            "name": "assetType",
+            "type": "AssetType"
+          },
+          {
+            "internalType": "address",
+            "name": "assetAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "priceFeedAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "offerMaximumPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "offerMinimumPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AssetPrice",
+            "name": "assetPrice",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct Asset",
+        "name": "depositAsset",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "enum AssetType",
+            "name": "assetType",
+            "type": "AssetType"
+          },
+          {
+            "internalType": "address",
+            "name": "assetAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "priceFeedAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "offerMaximumPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "offerMinimumPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AssetPrice",
+            "name": "assetPrice",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct Asset",
+        "name": "withdrawalAsset",
+        "type": "tuple"
+      }
+    ],
+    "name": "buildOffer",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "maker",
+            "type": "address"
+          },
+          {
+            "internalType": "enum OfferFillType",
+            "name": "offerFillType",
+            "type": "OfferFillType"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum AssetType",
+                "name": "assetType",
+                "type": "AssetType"
+              },
+              {
+                "internalType": "address",
+                "name": "assetAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "priceFeedAddress",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "offerMaximumPrice",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "offerMinimumPrice",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct AssetPrice",
+                "name": "assetPrice",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct Asset",
+            "name": "depositAsset",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum AssetType",
+                "name": "assetType",
+                "type": "AssetType"
+              },
+              {
+                "internalType": "address",
+                "name": "assetAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "priceFeedAddress",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "offerMaximumPrice",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "offerMinimumPrice",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct AssetPrice",
+                "name": "assetPrice",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct Asset",
+            "name": "withdrawalAsset",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum TakingOfferType",
+                "name": "takingOfferType",
+                "type": "TakingOfferType"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "enum OfferPricingType",
+                    "name": "offerPricingType",
+                    "type": "OfferPricingType"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "unitPrice",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "percentage",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "enum PercentageType",
+                    "name": "percentageType",
+                    "type": "PercentageType"
+                  }
+                ],
+                "internalType": "struct OfferPrice",
+                "name": "offerPrice",
+                "type": "tuple"
+              },
+              {
+                "internalType": "address[]",
+                "name": "specialAddresses",
+                "type": "address[]"
+              },
+              {
+                "internalType": "address[]",
+                "name": "authorizationAddresses",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256",
+                "name": "expiryTimestamp",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "timelockPeriod",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "terms",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "commsLink",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct OfferStruct",
+            "name": "offer",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct DotcOffer",
+        "name": "dotcOffer",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "authAddressesArray",
+        "type": "address[]"
+      }
+    ],
+    "name": "checkAddressInAuth",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "addressesArray",
+        "type": "address[]"
+      }
+    ],
+    "name": "checkAddressesArrayForZeroAddresses",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum TakingOfferType",
+            "name": "takingOfferType",
+            "type": "TakingOfferType"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum OfferPricingType",
+                "name": "offerPricingType",
+                "type": "OfferPricingType"
+              },
+              {
+                "internalType": "uint256",
+                "name": "unitPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "percentage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "enum PercentageType",
+                "name": "percentageType",
+                "type": "PercentageType"
+              }
+            ],
+            "internalType": "struct OfferPrice",
+            "name": "offerPrice",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address[]",
+            "name": "specialAddresses",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "authorizationAddresses",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiryTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timelockPeriod",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "terms",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "commsLink",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct OfferStruct",
+        "name": "offer",
+        "type": "tuple"
+      }
+    ],
+    "name": "checkOfferParams",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "enum TakingOfferType",
+            "name": "takingOfferType",
+            "type": "TakingOfferType"
+          },
+          {
+            "components": [
+              {
+                "internalType": "enum OfferPricingType",
+                "name": "offerPricingType",
+                "type": "OfferPricingType"
+              },
+              {
+                "internalType": "uint256",
+                "name": "unitPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "percentage",
+                "type": "uint256"
+              },
+              {
+                "internalType": "enum PercentageType",
+                "name": "percentageType",
+                "type": "PercentageType"
+              }
+            ],
+            "internalType": "struct OfferPrice",
+            "name": "offerPrice",
+            "type": "tuple"
+          },
+          {
+            "internalType": "address[]",
+            "name": "specialAddresses",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "authorizationAddresses",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "expiryTimestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timelockPeriod",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "terms",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "commsLink",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct OfferStruct",
+        "name": "offer",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "enum AssetType",
+            "name": "assetType",
+            "type": "AssetType"
+          },
+          {
+            "internalType": "address",
+            "name": "assetAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "priceFeedAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "offerMaximumPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "offerMinimumPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AssetPrice",
+            "name": "assetPrice",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct Asset",
+        "name": "depositAsset",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "enum AssetType",
+            "name": "assetType",
+            "type": "AssetType"
+          },
+          {
+            "internalType": "address",
+            "name": "assetAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "priceFeedAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "offerMaximumPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "offerMinimumPrice",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct AssetPrice",
+            "name": "assetPrice",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct Asset",
+        "name": "withdrawalAsset",
+        "type": "tuple"
+      }
+    ],
+    "name": "checkOfferStructure",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

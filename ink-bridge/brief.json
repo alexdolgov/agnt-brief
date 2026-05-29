@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ink-bridge",
-  "generated_at": "2026-05-27T16:35:10.439Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-05-29T09:17:08.061Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ink-bridge",
@@ -26,15 +26,15 @@
     "total_addresses": 70,
     "unique_implementations": 68,
     "total_deployments": 70,
-    "audited_contracts": 0,
-    "unaudited_contracts": 25,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 25,
+    "audited_contracts": 12,
+    "unaudited_contracts": 13,
+    "contracts_verified_audited": 12,
+    "contracts_verified_unaudited": 13,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 43,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
+    "coverage_pct": 48,
+    "total_audits": 34,
+    "scoreable_audits": 8,
     "dl_tvl_usd": 59290618.9193,
     "tvl_usd": 59290618.9193,
     "tvl_source": "defillama",
@@ -46,15 +46,18 @@
       "ink",
       "optimism"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "tier1_coverage_pct": 44,
+    "tier1_auditors": [
+      "Spearbit",
+      "Trail of Bits"
+    ],
+    "latest_audit_date": "2025-03",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "aging": 10,
+      "stale": 19,
+      "unknown": 5
     }
   },
   "topography": {
@@ -119,14 +122,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5538",
+        "audit-5544",
+        "audit-5548",
+        "audit-5555"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -212,14 +220,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5538",
+        "audit-5544",
+        "audit-5555"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -243,14 +255,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5538",
+        "audit-5544",
+        "audit-5548",
+        "audit-5555"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -376,14 +393,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5538",
+        "audit-5544"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -469,14 +489,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5538",
+        "audit-5544",
+        "audit-5557"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -500,14 +524,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5538",
+        "audit-5544",
+        "audit-5557"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -531,14 +559,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5535",
+        "audit-5538",
+        "audit-5544",
+        "audit-5555",
+        "audit-5557"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -655,14 +689,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5538",
+        "audit-5544",
+        "audit-5557"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -686,14 +724,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5538",
+        "audit-5544",
+        "audit-5555",
+        "audit-5556"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -748,14 +791,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5538",
+        "audit-5544"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -779,14 +825,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5538"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -850,14 +898,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5538",
+        "audit-5542",
+        "audit-5544",
+        "audit-5555",
+        "audit-5556",
+        "audit-5557"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -2194,124 +2249,886 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
+  "audits": [
+    {
+      "audit_id": 5522,
+      "audit_key": "audit-5522",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5523,
+      "audit_key": "audit-5523",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5524,
+      "audit_key": "audit-5524",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5527,
+      "audit_key": "audit-5527",
+      "report_name": "pr-guidelines.md",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/handbook/pr-guidelines.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5528,
+      "audit_key": "audit-5528",
+      "report_name": "2022-02-02-inflation-vuln.md",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/postmortems/2022-02-02-inflation-vuln.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5529,
+      "audit_key": "audit-5529",
+      "report_name": "2022-05-31-drop-1.md",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/postmortems/2022-05-31-drop-1.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5530,
+      "audit_key": "audit-5530",
+      "report_name": "2023-04-26-transaction-delays.md",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/postmortems/2023-04-26-transaction-delays.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5531,
+      "audit_key": "audit-5531",
+      "report_name": "2020_10-Rollup-TrailOfBits.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2020_10-Rollup-TrailOfBits.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5532,
+      "audit_key": "audit-5532",
+      "report_name": "2020_11-Dapphub-ECDSA_Wallet.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2020_11-Dapphub-ECDSA_Wallet.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5533,
+      "audit_key": "audit-5533",
+      "report_name": "2021_03-OVM_and_Rollup-OpenZeppelin.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2021_03-OVM_and_Rollup-OpenZeppelin.pdf",
+      "auditor": "OpenZeppelin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5534,
+      "audit_key": "audit-5534",
+      "report_name": "2021_03-SafetyChecker-ConsenSysDiligence.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2021_03-SafetyChecker-ConsenSysDiligence.pdf",
+      "auditor": "Consensys Diligence",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5535,
+      "audit_key": "audit-5535",
+      "report_name": "2022_05-Bedrock_Contracts-Zeppelin.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_05-Bedrock_Contracts-Zeppelin.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CrossDomainHashing",
+        "CrossDomainMessenger",
+        "L1StandardBridge",
+        "L1ToL2MessagePasser",
+        "L2OutputOracle",
+        "L2StandardBridge",
+        "LibL2ToL1MessagePasser",
+        "LibWithdrawVerifier",
+        "OptimismMintableERC20",
+        "OptimismMintableTokenFactory",
+        "OptimismPortal",
+        "StandardBridge"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5536,
+      "audit_key": "audit-5536",
+      "report_name": "2022_05-OpNode-TrailOfBits.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_05-OpNode-TrailOfBits.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5537,
+      "audit_key": "audit-5537",
+      "report_name": "2022_08-Bedrock_GoLang-SigmaPrime.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_08-Bedrock_GoLang-SigmaPrime.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5538,
+      "audit_key": "audit-5538",
+      "report_name": "2022_09-Bedrock_and_Periphery-Zeppelin.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_09-Bedrock_and_Periphery-Zeppelin.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CrossDomainEnabled",
+        "CrossDomainMessenger",
+        "Hashing",
+        "L1ChugSplashProxy",
+        "L1CrossDomainMessenger",
+        "L1ERC721Bridge",
+        "L1StandardBridge",
+        "L2CrossDomainMessenger",
+        "L2ERC721Bridge",
+        "L2OutputOracle",
+        "L2StandardBridge",
+        "L2ToL1MessagePasser",
+        "Lib_PredeployAddresses",
+        "OptimismPortal",
+        "Proxy",
+        "ProxyAdmin",
+        "ResourceMetering",
+        "Semver",
+        "StandardBridge"
+      ],
+      "matched_contracts": 12,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5539,
+      "audit_key": "audit-5539",
+      "report_name": "2022_10-Drippie-Spearbit.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_10-Drippie-Spearbit.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5540,
+      "audit_key": "audit-5540",
+      "report_name": "2022_11-Invariant_Testing-TrailOfBits.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_11-Invariant_Testing-TrailOfBits.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5541,
+      "audit_key": "audit-5541",
+      "report_name": "2022_12-DepositTransaction-RuntimeVerification.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_12-DepositTransaction-RuntimeVerification.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5542,
+      "audit_key": "audit-5542",
+      "report_name": "2023_01-Bedrock_Updates-TrailOfBits.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2023_01-Bedrock_Updates-TrailOfBits.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CrossDomainMessenger",
+        "L1Block",
+        "L2OutputOracle",
+        "L2ToL1MessagePasser",
+        "MerkleTrie",
+        "OptimismPortal",
+        "ResourceMetering",
+        "SystemConfig"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5543,
+      "audit_key": "audit-5543",
+      "report_name": "2023_12_SuperchainConfigUpgrade_Trust.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2023_12_SuperchainConfigUpgrade_Trust.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5544,
+      "audit_key": "audit-5544",
+      "report_name": "2024_02-MCP_L1-Cantina.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_02-MCP_L1-Cantina.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseFeeVault",
+        "CrossDomainMessenger",
+        "DisputeGameFactory",
+        "ERC721Bridge",
+        "FeeVault",
+        "L1CrossDomainMessenger",
+        "L1ERC721Bridge",
+        "L1FeeVault",
+        "L1StandardBridge",
+        "L2CrossDomainMessenger",
+        "L2ERC721Bridge",
+        "L2OutputOracle",
+        "L2StandardBridge",
+        "Mips",
+        "OptimismMintableERC20Factory",
+        "OptimismPortal",
+        "PreimageOracle",
+        "Proxy",
+        "ResourceMetering",
+        "SequencerFeeVault",
+        "SystemConfig"
+      ],
+      "matched_contracts": 11,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5545,
+      "audit_key": "audit-5545",
+      "report_name": "2024_05-FaultProofs-Sherlock.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_05-FaultProofs-Sherlock.pdf",
+      "auditor": "Sherlock",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2024-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5546,
+      "audit_key": "audit-5546",
+      "report_name": "2024_05_SafeLivenessExtensions-Cantina.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_05_SafeLivenessExtensions-Cantina.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5547,
+      "audit_key": "audit-5547",
+      "report_name": "2024_08_Fault-Proofs-MIPS_Cantina.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_08_Fault-Proofs-MIPS_Cantina.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5548,
+      "audit_key": "audit-5548",
+      "report_name": "2024_08_Fault-Proofs-No-MIPS_Spearbit.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_08_Fault-Proofs-No-MIPS_Spearbit.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlphabetVM",
+        "AnchorStateRegistry",
+        "DisputeGameFactory",
+        "FaultDisputeGame",
+        "GameId",
+        "IFaultDisputeGame",
+        "LPPMetadataLib",
+        "LibClock",
+        "LibPosition",
+        "LibUDT",
+        "PreimageKeyLib",
+        "PreimageOracle",
+        "WETHMock"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5549,
+      "audit_key": "audit-5549",
+      "report_name": "2024_10-Cannon-FGETFD-3DocSecurity.md",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_10-Cannon-FGETFD-3DocSecurity.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5550,
+      "audit_key": "audit-5550",
+      "report_name": "2024_12-DPM-MiloTruck.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_12-DPM-MiloTruck.pdf",
+      "auditor": "MiloTruck",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5551,
+      "audit_key": "audit-5551",
+      "report_name": "2024_12-DPM-RadiantLabs.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_12-DPM-RadiantLabs.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5552,
+      "audit_key": "audit-5552",
+      "report_name": "2025_01-IRI-OffbeatLabs.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_01-IRI-OffbeatLabs.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5553,
+      "audit_key": "audit-5553",
+      "report_name": "2025_01-MT-Cannon-Base.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_01-MT-Cannon-Base.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5554,
+      "audit_key": "audit-5554",
+      "report_name": "2025_01-MT-Cannon-Spearbit.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_01-MT-Cannon-Spearbit.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-01",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5555,
+      "audit_key": "audit-5555",
+      "report_name": "2025_02-Upgrade13-Spearbit.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_02-Upgrade13-Spearbit.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AnchorStateRegistry",
+        "DelayedWETH",
+        "DisputeGameFactory",
+        "FaultDisputeGame",
+        "L1StandardBridge",
+        "OPContractsManager",
+        "OptimismPortal2",
+        "ProtocolVersions",
+        "SuperchainConfig",
+        "SystemConfig"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5556,
+      "audit_key": "audit-5556",
+      "report_name": "2025_03-Interop-Contracts-Spearbit.pdf",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_03-Interop-Contracts-Spearbit.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CrossL2Inbox",
+        "ETHLiquidity",
+        "L1Block",
+        "L1BlockInterop",
+        "L2ToL1MessagePasser",
+        "L2ToL2CrossDomainMessenger",
+        "OptimismPortal2",
+        "OptimismPortalInterop",
+        "SharedLockbox",
+        "SuperchainConfig",
+        "SuperchainConfigInterop",
+        "SuperchainERC20",
+        "SuperchainTokenBridge",
+        "SuperchainWETH",
+        "SystemConfig"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5557,
+      "audit_key": "audit-5557",
+      "report_name": "README.md",
+      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/README.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name|n/a",
+      "extracted_names": [
+        "CrossDomainMessenger.sol",
+        "DeputyPauseModule",
+        "Drippie.sol",
+        "ERC721Bridge.sol",
+        "L1CrossDomainMessenger.sol",
+        "L1ERC721Bridge.sol",
+        "L1StandardBridge.sol",
+        "L2OutputOracle.sol",
+        "MIPS.sol",
+        "MIPS64.sol",
+        "OptimismMintableERC20Factory.sol",
+        "OptimismPortal.sol",
+        "StandardBridge.sol",
+        "SuperchainConfig.sol",
+        "SystemConfig.sol"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 5525,
+          "report_url": "https://github.com/inkonchain/optimism/blob/develop/cannon/docs/README.md"
+        },
+        {
+          "audit_id": 5526,
+          "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/README.md"
+        },
+        {
+          "audit_id": 5557,
+          "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/README.md"
+        }
+      ]
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 12,
+      "coverage_pct": 48,
+      "latest_audit": "2025-01"
+    },
+    {
+      "auditor": "Spearbit",
+      "tier": 1,
+      "contracts_covered": 11,
+      "coverage_pct": 44,
+      "latest_audit": "2025-03"
+    },
+    {
+      "auditor": "Trail of Bits",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 4,
+      "latest_audit": "2023-01"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x9b7c9bbd6d540a8a4dedd935819fc4408ba71153",
       "name": "AddressManager",
-      "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xde744491bcf6b2dd2f32146364ea1487d75e2509",
-      "name": "AnchorStateRegistry",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x14773a8040ff22e3dcbb0c83ec8e33be7d920d38",
-      "name": "DelayedWETH",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x10d7b35078d3baabb96dd45a9143b94be65b12cd",
-      "name": "DisputeGameFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xbd4abb321138e8eddc399ce64e66451294325a14",
-      "name": "ETHLockbox",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x69d3cf86b2bf1a9e99875b7e2d9b6a84426c171f",
-      "name": "L1CrossDomainMessenger",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x661235a238b11191211fa95d4dd9e423d521e0be",
-      "name": "L1ERC721Bridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x88ff1e5b602916615391f55854588efcbb7663f0",
-      "name": "L1StandardBridge",
-      "role": "bridge_template",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa8b389a82e088b164cd03230e900980cced34d29",
-      "name": "OptimismMintableERC20Factory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5d66c1782664115999c47c9fa5cd031f495d3e4f",
-      "name": "OptimismPortal2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000028",
-      "name": "Proxy",
-      "role": "proxy",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x62c0a111929fa32cec2f76adba54c16afb6e8364",
-      "name": "SystemConfig",
       "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2325,11 +3142,122 @@
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 40
+    },
+    "extraction_confidence_counts": {
+      "high": 4,
+      "low": 1,
+      "medium": 3
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 5522,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 5523,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 5524,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      },
+      {
+        "audit_id": 5527,
+        "report_name": "pr-guidelines.md"
+      },
+      {
+        "audit_id": 5528,
+        "report_name": "2022-02-02-inflation-vuln.md"
+      },
+      {
+        "audit_id": 5529,
+        "report_name": "2022-05-31-drop-1.md"
+      },
+      {
+        "audit_id": 5530,
+        "report_name": "2023-04-26-transaction-delays.md"
+      },
+      {
+        "audit_id": 5531,
+        "report_name": "2020_10-Rollup-TrailOfBits.pdf"
+      },
+      {
+        "audit_id": 5532,
+        "report_name": "2020_11-Dapphub-ECDSA_Wallet.pdf"
+      },
+      {
+        "audit_id": 5533,
+        "report_name": "2021_03-OVM_and_Rollup-OpenZeppelin.pdf"
+      },
+      {
+        "audit_id": 5534,
+        "report_name": "2021_03-SafetyChecker-ConsenSysDiligence.pdf"
+      },
+      {
+        "audit_id": 5536,
+        "report_name": "2022_05-OpNode-TrailOfBits.pdf"
+      },
+      {
+        "audit_id": 5537,
+        "report_name": "2022_08-Bedrock_GoLang-SigmaPrime.pdf"
+      },
+      {
+        "audit_id": 5539,
+        "report_name": "2022_10-Drippie-Spearbit.pdf"
+      },
+      {
+        "audit_id": 5540,
+        "report_name": "2022_11-Invariant_Testing-TrailOfBits.pdf"
+      },
+      {
+        "audit_id": 5541,
+        "report_name": "2022_12-DepositTransaction-RuntimeVerification.pdf"
+      },
+      {
+        "audit_id": 5543,
+        "report_name": "2023_12_SuperchainConfigUpgrade_Trust.pdf"
+      },
+      {
+        "audit_id": 5545,
+        "report_name": "2024_05-FaultProofs-Sherlock.pdf"
+      },
+      {
+        "audit_id": 5546,
+        "report_name": "2024_05_SafeLivenessExtensions-Cantina.pdf"
+      },
+      {
+        "audit_id": 5547,
+        "report_name": "2024_08_Fault-Proofs-MIPS_Cantina.pdf"
+      },
+      {
+        "audit_id": 5549,
+        "report_name": "2024_10-Cannon-FGETFD-3DocSecurity.md"
+      },
+      {
+        "audit_id": 5550,
+        "report_name": "2024_12-DPM-MiloTruck.pdf"
+      },
+      {
+        "audit_id": 5551,
+        "report_name": "2024_12-DPM-RadiantLabs.pdf"
+      },
+      {
+        "audit_id": 5552,
+        "report_name": "2025_01-IRI-OffbeatLabs.pdf"
+      },
+      {
+        "audit_id": 5553,
+        "report_name": "2025_01-MT-Cannon-Base.pdf"
+      },
+      {
+        "audit_id": 5554,
+        "report_name": "2025_01-MT-Cannon-Spearbit.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

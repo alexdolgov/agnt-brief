@@ -283,7 +283,7 @@
 | [init-capital](./init-capital/) | $66.5M | 21.4% | $66.2M | declining | 7 | 102 | 2026-05-25 |
 | [initiadex](./initiadex/) | $3.3M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 3 | 3 | 2026-05-29 |
-| [ink-bridge](./ink-bridge/) | $59.3M | 0.0% | ? | active | 0 | 68 | 2026-05-27 |
+| [ink-bridge](./ink-bridge/) | $59.3M | 48.0% | ? | active | 34 | 68 | 2026-05-29 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-05-23 |
 | [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | unknown | 9 | 154 | 2026-05-26 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-05-25 |

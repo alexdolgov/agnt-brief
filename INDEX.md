@@ -405,7 +405,7 @@
 | [nftx](./nftx/) | $6.3M | 11.1% | $6.3M | declining | 5 | 184 | 2026-05-25 |
 | [nodedao](./nodedao/) | $33.3M | 38.9% | $33.3M | active | 5 | 18 | 2026-05-26 |
 | [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |
-| [nonkyc](./nonkyc/) | $5.8M | 0.0% | ? | active | 0 | 4 | 2026-05-23 |
+| [nonkyc](./nonkyc/) | $5.7M | 0.0% | ? | active | 3 | 4 | 2026-05-29 |
 | [noon](./noon/) | $20.4M | 3.3% | $18.0 | active | 5 | 40 | 2026-05-26 |
 | [nostra](./nostra/) | $7.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [notional](./notional/) | $1.2M | 19.2% | $755.7K | dead | 7 | 79 | 2026-05-24 |

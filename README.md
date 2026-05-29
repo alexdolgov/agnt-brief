@@ -83,6 +83,7 @@ Each project directory contains:
 | [native](./native/brief.md) | $65.17M | 10 | 80 | 37/80 (46%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $67.62M |
 | [init-capital](./init-capital/brief.md) | $4.51M | blast, mantle | 102 | 26/102 (25%) | 21.4% | 0.0% (-) | 4 | stale | ⚠️ declining | $66.15M |
 | [turtle-club](./turtle-club/brief.md) | $1.29M | 4 | 516 | 340/516 (66%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $59.81M |
+| [reya](./reya/brief.md) | $17.80M | 5 | 294 | 74/294 (25%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $57.29M |
 | [deeplock](./deeplock/brief.md) | $2.14M | bsc | 70 | 38/70 (54%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $56.17M |
 | [tulipa-capital](./tulipa-capital/brief.md) | $49.29M | avalanche, base, ethereum | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $55.69M |
 | [api3](./api3/brief.md) | $55.28M | ethereum, mantle | 28 | 14/28 (50%) | 21.4% | 7.1% (Trail of Bits) | 3 | aging | ❓ unknown | $55.23M |
@@ -703,5 +704,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T13:25:33.747Z_
-_Projects: 691_
+_Generated: 2026-05-29T13:27:28.153Z_
+_Projects: 692_

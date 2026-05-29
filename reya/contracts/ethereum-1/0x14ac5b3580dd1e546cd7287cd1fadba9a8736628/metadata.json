@@ -1,0 +1,18 @@
+{
+  "address": "0x14ac5b3580dd1e546cd7287cd1fadba9a8736628",
+  "chain_id": 1,
+  "contract_name": "NativeOptimismImpl",
+  "compiler_version": "v0.8.4+commit.c7e474f2",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "istanbul",
+  "license": "Apache-2.0, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 13,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T13:26:55.100Z"
+}

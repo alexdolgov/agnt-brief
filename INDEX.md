@@ -490,6 +490,7 @@
 | [revault](./revault/) | $2.5K | 45.0% | ? | declining | 1 | 75 | 2026-05-24 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |
 | [rex-staking](./rex-staking/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
+| [reya](./reya/) | $57.3M | 0.0% | $57.3M | unknown | 3 | 294 | 2026-05-29 |
 | [rezerve](./rezerve/) | $1.3M | 1.3% | $1.3M | active | 3 | 104 | 2026-05-24 |
 | [rho](./rho/) | $2.4M | 0.0% | ? | active | 4 | 32 | 2026-05-24 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 31.0% | $148.6M | declining | 15 | 147 | 2026-05-25 |

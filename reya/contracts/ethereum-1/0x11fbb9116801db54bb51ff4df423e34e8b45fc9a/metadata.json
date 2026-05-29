@@ -1,0 +1,18 @@
+{
+  "address": "0x11fbb9116801db54bb51ff4df423e34e8b45fc9a",
+  "chain_id": 1,
+  "contract_name": "CapacitorFactory",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "paris",
+  "license": "GPL-3.0-only",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T13:26:54.774Z"
+}

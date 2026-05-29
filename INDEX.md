@@ -538,7 +538,7 @@
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 3 | 4 | 2026-05-29 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
 | [smilee-finance](./smilee-finance/) | $1.8M | 4.3% | ? | unknown | 3 | 186 | 2026-05-24 |
-| [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 0 | 12 | 2026-05-25 |
+| [snowbank](./snowbank/) | $36.1M | 0.0% | $36.1M | dead | 3 | 12 | 2026-05-29 |
 | [snuggle](./snuggle/) | $0.0 | 23.1% | $0.0 | active | 3 | 89 | 2026-05-25 |
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
 | [solayer](./solayer/) | $1.5M | 0.0% | $1.5M | declining | 5 | 53 | 2026-05-25 |

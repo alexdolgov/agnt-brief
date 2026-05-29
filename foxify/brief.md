@@ -7,8 +7,8 @@
 - Project: foxify (`foxify`)
 - Website: [https://www.foxify.trade/](https://www.foxify.trade/)
 - Lifecycle: unknown (Tier 0, 99.8% below peak)
-- Generated: 2026-05-29T07:39:46.983Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T18:13:30.606Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: arbitrum, sonic
 - Contract surface: 5 unique implementations (10 raw deployments)
 - DeFi Llama TVL: $3,570,035.38

@@ -187,6 +187,7 @@ Each project directory contains:
 | [atlendis](./atlendis/brief.md) | $10.99M | polygon | 43 | 14/43 (33%) | 14.3% | 0.0% (-) | 2 | stale | ⚠️ declining | $4.28M |
 | [primefi](./primefi/brief.md) | $3.28M | base, hyperliquid | 119 | 58/119 (49%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $4.12M |
 | [trueo](./trueo/brief.md) | $3.80M | base | 23 | 23/23 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $4.05M |
+| [meta-pool](./meta-pool/brief.md) | $95.30M | aurora, ethereum | 41 | 12/41 (29%) | 50.0% | 0.0% (-) | 1 | aging | ✅ active | $3.96M |
 | [stafi](./stafi/brief.md) | $4.06M | ethereum | 42 | 23/42 (55%) | 26.1% | 0.0% (-) | 4 | stale | ⚠️ declining | $3.92M |
 | [swaap](./swaap/brief.md) | $4.42M | 11 | 128 | 6/128 (5%) | 25.0% | 25.0% (ChainSecurity) | 3 | stale | ⚠️ declining | $3.81M |
 | [near-intents](./near-intents/brief.md) | $79.03M | gnosis | 7 | 6/7 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $3.72M |
@@ -696,5 +697,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T10:38:47.382Z_
-_Projects: 684_
+_Generated: 2026-05-29T10:42:53.920Z_
+_Projects: 685_

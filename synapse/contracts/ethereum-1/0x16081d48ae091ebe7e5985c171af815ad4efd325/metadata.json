@@ -1,0 +1,18 @@
+{
+  "address": "0x16081d48ae091ebe7e5985c171af815ad4efd325",
+  "chain_id": 1,
+  "contract_name": "TokenVesting",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:38:33.428Z"
+}

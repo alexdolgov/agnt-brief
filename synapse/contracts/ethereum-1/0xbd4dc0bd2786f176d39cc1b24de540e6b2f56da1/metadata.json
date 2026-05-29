@@ -1,0 +1,18 @@
+{
+  "address": "0xbd4dc0bd2786f176d39cc1b24de540e6b2f56da1",
+  "chain_id": 1,
+  "contract_name": "DarkParadise",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:38:37.124Z"
+}

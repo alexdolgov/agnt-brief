@@ -1,0 +1,104 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "swapcontract",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "tokenPrecisionMultipliers",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint8",
+        "name": "tokenIndexFrom",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint8",
+        "name": "tokenIndexTo",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "dy",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isMetapool",
+        "type": "bool"
+      }
+    ],
+    "name": "calculateInverseSwap",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "swapStorage",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "initialA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "futureA",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "initialATime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "futureATime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "swapFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "adminFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "defaultDepositFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "defaultWithdrawFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "contract LPToken",
+        "name": "lpToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "devaddr",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

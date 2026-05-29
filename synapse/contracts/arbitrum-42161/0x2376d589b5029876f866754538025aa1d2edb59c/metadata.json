@@ -1,0 +1,18 @@
+{
+  "address": "0x2376d589b5029876f866754538025aa1d2edb59c",
+  "chain_id": 42161,
+  "contract_name": "SynapseBaseAdapter",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 9,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:38:28.936Z"
+}

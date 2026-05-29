@@ -1,0 +1,18 @@
+{
+  "address": "0x9fbff54b967654b0c76b174d2b95614060dd6b07",
+  "chain_id": 8453,
+  "contract_name": "SwapQuoterV2",
+  "compiler_version": "v0.8.17+commit.8df45f5f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 21,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:38:29.978Z"
+}

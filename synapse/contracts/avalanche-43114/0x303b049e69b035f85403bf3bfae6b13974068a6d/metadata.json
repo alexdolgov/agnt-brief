@@ -1,0 +1,17 @@
+{
+  "address": "0x303b049e69b035f85403bf3bfae6b13974068a6d",
+  "chain_id": 43114,
+  "contract_name": "AvaxJewelMigration",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:38:37.718Z"
+}

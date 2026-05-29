@@ -1,0 +1,17 @@
+{
+  "address": "0x104127ccd4b1378898916894eb59c97e690b6e9e",
+  "chain_id": 137,
+  "contract_name": "MetaSwapDeployer",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 41,
+  "constructor_arguments": "000000000000000000000000e1e1e6711bdfa0b8dec900f9e677d85aa7f3049d0000000000000000000000005d5f01aaec428356b54ee091502dbbeaa935f21a",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:38:31.455Z"
+}

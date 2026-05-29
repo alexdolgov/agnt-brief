@@ -1,0 +1,18 @@
+{
+  "address": "0x370a34f6200770d79b54080150b61c0326208ac5",
+  "chain_id": 43114,
+  "contract_name": "ReferralStorageTimelock",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 10,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 23,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:38:37.549Z"
+}

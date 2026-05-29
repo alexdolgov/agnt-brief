@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "backedfi",
-  "generated_at": "2026-05-28T23:29:39.624Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-81b9",
+  "generated_at": "2026-05-29T00:31:06.681Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-b087",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "backedfi",
@@ -16,7 +16,7 @@
     "tvl_180d_ago": 12771485,
     "change_30d_pct": -0.8289404455894058,
     "change_90d_pct": -35.82830043959494,
-    "days_since_peak": 909,
+    "days_since_peak": 910,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 83.36357597265203

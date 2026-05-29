@@ -64,7 +64,7 @@
 | [b.protocol](./b.protocol/) | $79.0K | 5.1% | $79.0K | dead | 5 | 162 | 2026-05-25 |
 | [babydogecoin](./babydogecoin/) | $166.4M | 0.0% | $166.4M | declining | 1 | 54 | 2026-05-25 |
 | [babyswap](./babyswap/) | $241.1K | 1.5% | $241.1K | dead | 1 | 113 | 2026-05-25 |
-| [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 3 | 2 | 2026-05-28 |
+| [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 3 | 2 | 2026-05-29 |
 | [badger-dao](./badger-dao/) | $1.5M | 0.0% | $1.5M | sunsetting | 6 | 27 | 2026-05-25 |
 | [bakeryswap](./bakeryswap/) | $612.9K | 0.0% | $612.9K | declining | 1 | 98 | 2026-05-24 |
 | [bancor](./bancor/) | $48.8M | 23.5% | $43.8M | declining | 4 | 121 | 2026-05-26 |

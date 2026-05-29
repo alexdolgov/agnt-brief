@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Grvt
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 43.3% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 43.9% over 90 days
 
 ## Project Overview
 
 - Project: Grvt (`grvt`)
 - Website: [https://grvt.io/?ref=WCDISXW](https://grvt.io/?ref=WCDISXW)
 - Lifecycle: unknown (Tier 0, 52.3% below peak)
-- Generated: 2026-05-29T08:15:16.899Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T18:49:32.266Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: ethereum
 - Contract surface: 7 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $55,387,476.00

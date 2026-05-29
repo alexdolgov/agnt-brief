@@ -646,7 +646,7 @@
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | unknown | 0 | 150 | 2026-05-23 |
 | [umee](./umee/) | $3.2M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [unchain-x](./unchain-x/) | $35.1M | 100.0% | ? | active | 2 | 1 | 2026-05-25 |
-| [unichain-bridge](./unichain-bridge/) | $2.9M | 0.0% | ? | dead | 0 | 15 | 2026-05-24 |
+| [unichain-bridge](./unichain-bridge/) | $2.8M | 0.0% | ? | dead | 13 | 15 | 2026-05-29 |
 | [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-05-27 |
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [universe-xyz](./universe-xyz/) | $39.0M | 20.0% | $39.0M | dead | 3 | 36 | 2026-05-24 |

@@ -7,8 +7,8 @@
 - Project: iZUMi Finance (`izumi-finance`)
 - Website: [https://izumi.finance/home](https://izumi.finance/home)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-29T09:28:24.360Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T20:00:47.287Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: arbitrum, aurora, base, blast, cronos, ethereum, kava, linea, manta, mantle, mode, polygon, scroll
 - Contract surface: 181 unique implementations (324 raw deployments)
 - DeFi Llama TVL: $3,827,165.00

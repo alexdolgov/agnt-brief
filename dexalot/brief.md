@@ -5,8 +5,8 @@
 - Project: Dexalot (`dexalot`)
 - Website: [https://app.dexalot.com/](https://app.dexalot.com/)
 - Lifecycle: active (Tier 0, 80.4% below peak)
-- Generated: 2026-05-29T03:51:40.556Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-99fb
+- Generated: 2026-05-29T04:55:42.502Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-be7b
 - Chains: avalanche
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $9,501,408.00

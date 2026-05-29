@@ -293,7 +293,7 @@
 | [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | declining | 3 | 500 | 2026-05-29 |
 | [juicebox](./juicebox/) | $11.0M | 5.9% | ? | active | 4 | 77 | 2026-05-29 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 3 | 30 | 2026-05-29 |
-| [kaio](./kaio/) | $60.8M | 0.0% | ? | unknown | 0 | 35 | 2026-05-27 |
+| [kaio](./kaio/) | $60.8M | 0.0% | ? | unknown | 3 | 35 | 2026-05-29 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | unknown | 0 | 2 | 2026-05-22 |
 | [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 0 | 22 | 2026-05-23 |
 | [katana-pre-launch](./katana-pre-launch/) | $18.3M | 0.0% | $18.3M | active | 29 | 166 | 2026-05-22 |

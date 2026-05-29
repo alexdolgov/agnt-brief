@@ -5,8 +5,8 @@
 - Project: Injective Bridge (`injective-bridge`)
 - Website: [https://injective.com](https://injective.com)
 - Lifecycle: active (Tier 0, 67.2% below peak)
-- Generated: 2026-05-29T09:11:51.448Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T19:44:14.661Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: ethereum
 - Contract surface: 3 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $15,105,127.42

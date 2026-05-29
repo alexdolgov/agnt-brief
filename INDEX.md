@@ -534,6 +534,7 @@
 | [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 3 | 231 | 2026-05-29 |
 | [silo-finance](./silo-finance/) | $3.3M | 19.4% | $641.3K | unknown | 29 | 529 | 2026-05-29 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-05-23 |
+| [singularv](./singularv/) | $1.1B | 18.6% | $1.1B | unknown | 12 | 83 | 2026-05-29 |
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 0 | 4 | 2026-05-24 |
 | [smardex-ecosystem](./smardex-ecosystem/) | $20.1M | 33.3% | $20.1M | declining | 6 | 39 | 2026-05-23 |
 | [smilee-finance](./smilee-finance/) | $1.8M | 4.3% | ? | unknown | 3 | 186 | 2026-05-24 |

@@ -1,0 +1,18 @@
+{
+  "address": "0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101",
+  "chain_id": 1,
+  "contract_name": "MetaMorphoFactory",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 46,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:20:30.532Z"
+}

@@ -1,0 +1,16 @@
+# Morpho
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x33333aea097c193e66081e930c33020272b33333` |
+| Role | unknown |
+| Origin | standard_library |
+| Audited | Yes |
+| Audits | [2023-10-13-morpho-blue-and-speed-jump-irm-open-zeppelin.pdf](https://github.com/morpho-org/morpho-blue/blob/main/audits/2023-10-13-morpho-blue-and-speed-jump-irm-open-zeppelin.pdf); [2023-11-13-morpho-blue-cantina-managed-review.pdf](https://github.com/morpho-org/morpho-blue/blob/main/audits/2023-11-13-morpho-blue-cantina-managed-review.pdf); [2024-01-05-morpho-blue-cantina-competition.pdf](https://github.com/morpho-org/morpho-blue/blob/main/audits/2024-01-05-morpho-blue-cantina-competition.pdf); [ChainSecurity_Morpho_Labs_Morpho_Aave_v3_audit.pdf](https://github.com/morpho-org/morpho-optimizers/blob/main/audits/ChainSecurity_Morpho_Labs_Morpho_Aave_v3_audit.pdf); [Pessimistic_Morpho_Aave_V2.pdf](https://github.com/morpho-org/morpho-optimizers/blob/main/audits/Pessimistic_Morpho_Aave_V2.pdf); [Spearbit_MorphoV1.pdf](https://github.com/morpho-org/morpho-optimizers/blob/main/audits/Spearbit_MorphoV1.pdf) |
+| Deployments | 4 (ethereum [`0x33333aea097c193e66081e930c33020272b33333`](../0x33333aea097c193e66081e930c33020272b33333/); ethereum `0x777777c9898d384f785ee44acfe945efdff5f3e0`; ethereum `0x8888882f8f843896699869179fb6e4f7e3b58888`; ethereum `0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb`) |
+| Proxy | Yes → `0xf83545...a8ff67` |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

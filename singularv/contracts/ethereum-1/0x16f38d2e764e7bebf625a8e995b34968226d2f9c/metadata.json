@@ -1,0 +1,18 @@
+{
+  "address": "0x16f38d2e764e7bebf625a8e995b34968226d2f9c",
+  "chain_id": 1,
+  "contract_name": "AaveV3OptimizerMigrationBundler",
+  "compiler_version": "v0.8.21+commit.d9974bed",
+  "optimization_used": true,
+  "runs": 80000,
+  "evm_version": "paris",
+  "license": "AGPL-3.0-only, GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:20:26.633Z"
+}

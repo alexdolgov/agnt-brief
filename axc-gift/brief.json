@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "axc-gift",
-  "generated_at": "2026-05-28T23:27:51.795Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-81b9",
+  "generated_at": "2026-05-29T00:29:18.984Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-b087",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "axc-gift",

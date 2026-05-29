@@ -58,7 +58,7 @@
 | [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 3 | 570 | 2026-05-29 |
 | [avalaunch](./avalaunch/) | $31.3M | 78.6% | ? | unknown | 13 | 39 | 2026-05-23 |
 | [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | unknown | 3 | 61 | 2026-05-26 |
-| [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 3 | 1 | 2026-05-28 |
+| [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 3 | 1 | 2026-05-29 |
 | [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-05-25 |
 | [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-05-25 |
 | [b.protocol](./b.protocol/) | $79.0K | 5.1% | $79.0K | dead | 5 | 162 | 2026-05-25 |

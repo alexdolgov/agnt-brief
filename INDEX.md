@@ -252,7 +252,7 @@
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | sunsetting | 3 | 21 | 2026-05-24 |
 | [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 5 | 63 | 2026-05-29 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
-| [helix](./helix/) | $2.0M | 0.0% | ? | declining | 0 | 9 | 2026-05-24 |
+| [helix](./helix/) | $1.5M | 0.0% | ? | declining | 3 | 9 | 2026-05-29 |
 | [hemi-staking](./hemi-staking/) | $16.5M | 1.6% | $16.5M | active | 5 | 141 | 2026-05-26 |
 | [hemi](./hemi/) | $49.6K | 2.7% | $49.6K | unknown | 5 | 47 | 2026-05-25 |
 | [hemibtc](./hemibtc/) | $46.2K | 2.7% | $46.2K | active | 5 | 47 | 2026-05-22 |

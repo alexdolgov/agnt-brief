@@ -505,7 +505,7 @@
 | [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | declining | 3 | 14 | 2026-05-29 |
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 3 | 15 | 2026-05-29 |
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-05-25 |
-| [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 186 | 2026-05-27 |
+| [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 3 | 186 | 2026-05-29 |
 | [saber](./saber/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [safe](./safe/) | $99.3M | 0.0% | ? | unknown | 0 | 1 | 2026-05-27 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |

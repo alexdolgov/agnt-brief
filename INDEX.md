@@ -671,7 +671,7 @@
 | [wan-bridge](./wan-bridge/) | $1.8M | 0.0% | $1.8M | active | 3 | 153 | 2026-05-25 |
 | [wanswap-dex](./wanswap-dex/) | $1.5M | 2.8% | $1.5M | declining | 1 | 53 | 2026-05-25 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | rugged | 8 | 83 | 2026-05-25 |
-| [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | active | 0 | 5 | 2026-05-25 |
+| [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | active | 3 | 5 | 2026-05-29 |
 | [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 2 | 180 | 2026-05-26 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | dead | 14 | 96 | 2026-05-24 |

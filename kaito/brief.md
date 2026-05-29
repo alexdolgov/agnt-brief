@@ -7,8 +7,8 @@
 - Project: Kaito (`kaito`)
 - Website: [https://yaps.kaito.ai](https://yaps.kaito.ai)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-29T09:42:19.219Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T20:13:08.817Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: base
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $18,723,239.69

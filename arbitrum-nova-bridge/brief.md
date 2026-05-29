@@ -5,8 +5,8 @@
 - Project: Arbitrum Nova Bridge (`arbitrum-nova-bridge`)
 - Website: [https://portal.arbitrum.io/bridge?l2ChainId=42170](https://portal.arbitrum.io/bridge?l2ChainId=42170)
 - Lifecycle: active (Tier 0, 91.4% below peak)
-- Generated: 2026-05-29T02:13:44.444Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-d850
+- Generated: 2026-05-29T03:17:20.245Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-99fb
 - Chains: arbitrum, ethereum
 - Contract surface: 55 unique implementations (168 raw deployments)
 - DeFi Llama TVL: $18,907,935.14

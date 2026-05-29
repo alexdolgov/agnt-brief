@@ -660,7 +660,7 @@
 | [veno-finance](./veno-finance/) | $42.8M | 0.0% | ? | active | 0 | 49 | 2026-05-26 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | unknown | 2 | 4 | 2026-05-22 |
 | [verio](./verio/) | $7.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
-| [verus-market](./verus-market/) | $9.9M | 0.0% | ? | declining | 0 | 32 | 2026-05-23 |
+| [verus-market](./verus-market/) | $9.6M | 0.0% | ? | declining | 3 | 32 | 2026-05-29 |
 | [vesper](./vesper/) | $694.0K | 0.0% | $694.0K | declining | 0 | 44 | 2026-05-26 |
 | [vest-markets](./vest-markets/) | $1.2M | 0.0% | ? | declining | 0 | 4 | 2026-05-25 |
 | [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-05-27 |

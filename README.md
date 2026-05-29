@@ -698,7 +698,7 @@ Each project directory contains:
 | [veno-finance](./veno-finance/brief.md) | $42.84M | cronos, ethereum, zksync-era | 49 | 9/49 (18%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [ventuals](./ventuals/brief.md) | $28.76M | hyperliquid | 4 | 4/4 (100%) | 100.0% | 0.0% (-) | 2 | fresh | ❓ unknown | - |
 | [verio](./verio/brief.md) | $7.49M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
-| [verus-market](./verus-market/brief.md) | $9.85M | ethereum | 32 | 0/32 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [verus-market](./verus-market/brief.md) | $9.65M | ethereum | 32 | 0/32 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [vest-markets](./vest-markets/brief.md) | $1.23M | 5 | 4 | 4/4 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [vfat.io](./vfat.io/brief.md) | $36.60M | 14 | 553 | 220/553 (40%) | 10.0% | 0.0% (-) | 3 | fresh | ✅ active | - |
 | [wemix.fi](./wemix.fi/brief.md) | $38.18M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -712,5 +712,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T17:08:46.837Z_
+_Generated: 2026-05-29T17:12:59.753Z_
 _Projects: 700_

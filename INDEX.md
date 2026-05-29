@@ -485,7 +485,7 @@
 | [reppo](./reppo/) | $19.8M | 0.0% | $19.8M | unknown | 3 | 1 | 2026-05-23 |
 | [republic-note](./republic-note/) | $51.2M | 0.0% | $51.2M | active | 3 | 2 | 2026-05-29 |
 | [reserve-protocol](./reserve-protocol/) | $8.0M | 57.4% | $255.2K | unknown | 94 | 329 | 2026-05-29 |
-| [reservoir-protocol](./reservoir-protocol/) | $2.1B | 0.0% | $2.1B | active | 0 | 278 | 2026-05-27 |
+| [reservoir-protocol](./reservoir-protocol/) | $2.1B | 0.0% | $2.1B | active | 3 | 278 | 2026-05-29 |
 | [resupply](./resupply/) | $41.8M | 0.0% | ? | active | 0 | 1 | 2026-05-26 |
 | [revault](./revault/) | $2.5K | 45.0% | ? | declining | 1 | 75 | 2026-05-24 |
 | [revert](./revert/) | $2.1M | 11.1% | $2.1M | active | 2 | 84 | 2026-05-23 |

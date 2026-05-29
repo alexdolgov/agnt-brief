@@ -291,7 +291,7 @@
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | unknown | 3 | 2 | 2026-05-29 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | dead | 36 | 181 | 2026-05-29 |
 | [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | declining | 3 | 500 | 2026-05-29 |
-| [juicebox](./juicebox/) | $11.2M | 0.0% | ? | active | 0 | 77 | 2026-05-23 |
+| [juicebox](./juicebox/) | $11.0M | 5.9% | ? | active | 4 | 77 | 2026-05-29 |
 | [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-05-23 |
 | [kaio](./kaio/) | $60.8M | 0.0% | ? | unknown | 0 | 35 | 2026-05-27 |
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | unknown | 0 | 2 | 2026-05-22 |

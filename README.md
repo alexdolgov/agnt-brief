@@ -511,7 +511,7 @@ Each project directory contains:
 | [initiadex](./initiadex/brief.md) | $3.32M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [ink-bridge](./ink-bridge/brief.md) | $59.29M | ethereum, ink, optimism | 68 | 25/68 (37%) | 48.0% | 44.0% (Spearbit, Trail of Bits) | 8 | aging | ✅ active | - |
 | [ionic-protocol](./ionic-protocol/brief.md) | $2.04M | bsc, mode | 420 | 55/420 (13%) | 1.8% | 0.0% (-) | 1 | stale | 💀 dead | - |
-| [juicebox](./juicebox/brief.md) | $11.15M | 8 | 77 | 68/77 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [juicebox](./juicebox/brief.md) | $11.04M | 8 | 77 | 68/77 (88%) | 5.9% | 0.0% (-) | 1 | stale | ✅ active | - |
 | [k2](./k2/brief.md) | $4.75M | ethereum | 30 | 21/30 (70%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kaio](./kaio/brief.md) | $60.80M | 4 | 35 | 4/35 (11%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [kasu](./kasu/brief.md) | $10.28M | base | 22 | 20/22 (91%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -695,5 +695,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T09:32:52.542Z_
+_Generated: 2026-05-29T09:37:02.812Z_
 _Projects: 683_

@@ -5,11 +5,11 @@
 - Project: OmniBTC (`omnibtc`)
 - Website: [https://www.omnibtc.finance](https://www.omnibtc.finance)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-05-24T12:51:49.719Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-29T11:34:07.731Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: arbitrum, avalanche, base, ethereum, optimism, polygon
 - Contract surface: 6 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $2,267,500.45
+- DeFi Llama TVL: $2,201,232.35
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ All contracts belong to a single product family with no explicit sub-families or
 - Unverified implementations: 6
 - Unique implementations: 6
 - Raw deployments: 6
-- Audits discovered: 0
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -79,6 +79,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [substrate_and_evm_address_on_psc.md](https://github.com/OmniBTC/PSC/blob/main/docs/substrate_and_evm_address_on_psc.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [test_guide.md](https://github.com/OmniBTC/PSC/blob/main/docs/test_guide.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -99,9 +104,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [9154] substrate_and_evm_address_on_psc.md
+- [9155] test_guide.md
+- [9156] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9157] 0002-metadata-manifest-and-pull-command.md
+- [9158] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

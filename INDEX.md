@@ -416,7 +416,7 @@
 | [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-05-25 |
 | [odyssey-finance](./odyssey-finance/) | $9.5M | 0.0% | ? | active | 0 | 79 | 2026-05-23 |
 | [okcoin](./okcoin/) | $26.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
-| [omnibtc](./omnibtc/) | $2.3M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
+| [omnibtc](./omnibtc/) | $2.2M | 0.0% | ? | active | 5 | 6 | 2026-05-29 |
 | [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | dead | 1 | 16 | 2026-05-27 |
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | unknown | 0 | 24 | 2026-05-25 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-05-23 |

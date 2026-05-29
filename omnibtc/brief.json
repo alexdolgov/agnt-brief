@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "omnibtc",
-  "generated_at": "2026-05-24T12:51:49.719Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-29T11:34:07.731Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "omnibtc",
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 6,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 5,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2267500.450329999,
-    "tvl_usd": 2267500.450329999,
+    "dl_tvl_usd": 2201232.3522800007,
+    "tvl_usd": 2201232.3522800007,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -57,7 +57,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 5
     }
   },
   "topography": {
@@ -257,7 +257,113 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 9154,
+      "audit_key": "audit-9154",
+      "report_name": "substrate_and_evm_address_on_psc.md",
+      "report_url": "https://github.com/OmniBTC/PSC/blob/main/docs/substrate_and_evm_address_on_psc.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9155,
+      "audit_key": "audit-9155",
+      "report_name": "test_guide.md",
+      "report_url": "https://github.com/OmniBTC/PSC/blob/main/docs/test_guide.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9156,
+      "audit_key": "audit-9156",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9157,
+      "audit_key": "audit-9157",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9158,
+      "audit_key": "audit-9158",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -271,7 +377,28 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 9154,
+        "report_name": "substrate_and_evm_address_on_psc.md"
+      },
+      {
+        "audit_id": 9155,
+        "report_name": "test_guide.md"
+      },
+      {
+        "audit_id": 9156,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 9157,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 9158,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

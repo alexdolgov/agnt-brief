@@ -6,8 +6,8 @@
 | Address | `0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa` |
 | Role | token |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [deployments_mainnet.md](https://github.com/polkastarter/staking-pols/blob/main/docs/deployments_mainnet.md) |
 | Deployments | 1 (ethereum [`0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa`](../0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

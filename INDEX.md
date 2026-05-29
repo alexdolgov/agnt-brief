@@ -451,7 +451,7 @@
 | [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 3 | 6 | 2026-05-29 |
 | [pleasing-gold](./pleasing-gold/) | $88.1M | 0.0% | $88.1M | unknown | 0 | 8 | 2026-05-27 |
 | [pnetwork](./pnetwork/) | $13.1M | 0.0% | ? | declining | 5 | 10 | 2026-05-29 |
-| [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | unknown | 0 | 2 | 2026-05-24 |
+| [polkastarter](./polkastarter/) | $9.6M | 50.0% | ? | unknown | 21 | 2 | 2026-05-29 |
 | [polygon-zkevm-bridge](./polygon-zkevm-bridge/) | $78.0M | 0.0% | ? | active | 0 | 1 | 2026-05-27 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-05-23 |
 | [pond0x](./pond0x/) | $2.8M | 0.0% | ? | unknown | 0 | 14 | 2026-05-24 |

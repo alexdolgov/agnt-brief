@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "polkastarter",
-  "generated_at": "2026-05-24T10:01:33.948Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-29T12:31:08.629Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "polkastarter",
@@ -16,7 +16,7 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 1614,
+    "days_since_peak": 1619,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
@@ -26,35 +26,35 @@
     "total_addresses": 2,
     "unique_implementations": 2,
     "total_deployments": 2,
-    "audited_contracts": 0,
-    "unaudited_contracts": 2,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "audited_contracts": 1,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 2751983.26656,
+    "coverage_pct": 50,
+    "total_audits": 21,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 2996295.2069,
     "tvl_usd": 9606725.608491847,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "ethereum": 9606725.61
     },
-    "asd_usd": 9606725.608491847,
+    "asd_usd": null,
     "website_url": "https://polkastarter.com/#upcoming-projects",
     "chains": [
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2021-10",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "stale": 4,
+      "unknown": 17
     }
   },
   "topography": {
@@ -88,14 +88,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 9606725.608491847,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-8155"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -130,19 +132,486 @@
       "contamination_flag": "review"
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
-  "coverage_gaps": [
+  "audits": [
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa",
-      "name": "PolkastarterToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 9606725.608491847,
-      "risk_note": "Verified native implementation with $9,606,725.61 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "audit_id": 8138,
+      "audit_key": "audit-8138",
+      "report_name": "APPLICATION.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/APPLICATION.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
+    {
+      "audit_id": 8139,
+      "audit_key": "audit-8139",
+      "report_name": "BASE_SWAP.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/BASE_SWAP.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8140,
+      "audit_key": "audit-8140",
+      "report_name": "IDOSTAKING.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/IDOSTAKING.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8141,
+      "audit_key": "audit-8141",
+      "report_name": "NETWORK.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/NETWORK.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8142,
+      "audit_key": "audit-8142",
+      "report_name": "NFT_SWAP.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/NFT_SWAP.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8143,
+      "audit_key": "audit-8143",
+      "report_name": "NUMBERS.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/NUMBERS.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8144,
+      "audit_key": "audit-8144",
+      "report_name": "README.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/README.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 8144,
+          "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/README.md"
+        },
+        {
+          "audit_id": 8157,
+          "report_url": "https://github.com/polkastarter/polkastarter-crowdloan/blob/main/docs/README.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 8145,
+      "audit_key": "audit-8145",
+      "report_name": "SIGNER.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/SIGNER.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8146,
+      "audit_key": "audit-8146",
+      "report_name": "STAKING.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/STAKING.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8147,
+      "audit_key": "audit-8147",
+      "report_name": "SUMMARY.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/SUMMARY.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8148,
+      "audit_key": "audit-8148",
+      "report_name": "SWAP.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/SWAP.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8149,
+      "audit_key": "audit-8149",
+      "report_name": "WALLET.md",
+      "report_url": "https://github.com/polkastarter/polkastarter-js/blob/master/docs/WALLET.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8150,
+      "audit_key": "audit-8150",
+      "report_name": "38f5ef00-1d8b-452f-bd87-317cedba47b3.pdf",
+      "report_url": "https://github.com/polkastarter/staking-pols/blob/main/audit/38f5ef00-1d8b-452f-bd87-317cedba47b3.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8151,
+      "audit_key": "audit-8151",
+      "report_name": "MythX_95814d21d1b04aad491b65fc.pdf",
+      "report_url": "https://github.com/polkastarter/staking-pols/blob/main/audit/MythX_95814d21d1b04aad491b65fc.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8152,
+      "audit_key": "audit-8152",
+      "report_name": "PolsStake_flat-MythX-standard_677a6fe7453e19b4b4fe976c.pdf",
+      "report_url": "https://github.com/polkastarter/staking-pols/blob/main/audit/PolsStake_flat-MythX-standard_677a6fe7453e19b4b4fe976c.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8153,
+      "audit_key": "audit-8153",
+      "report_name": "PolsStake-deployment-bscMain.md",
+      "report_url": "https://github.com/polkastarter/staking-pols/blob/main/docs/PolsStake-deployment-bscMain.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8154,
+      "audit_key": "audit-8154",
+      "report_name": "PolsStake-deployment-ethMain.md",
+      "report_url": "https://github.com/polkastarter/staking-pols/blob/main/docs/PolsStake-deployment-ethMain.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8155,
+      "audit_key": "audit-8155",
+      "report_name": "deployments_mainnet.md",
+      "report_url": "https://github.com/polkastarter/staking-pols/blob/main/docs/deployments_mainnet.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Address",
+        "BasicToken",
+        "CappedToken",
+        "ERC20",
+        "ERC20PresetMinterPauser",
+        "EnumerableSet",
+        "Ownable",
+        "Pausable",
+        "PausableToken",
+        "PolkastarterToken",
+        "PolsStake",
+        "RewardToken",
+        "SafeERC20",
+        "SafeMath",
+        "StandardToken",
+        "Strings"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8156,
+      "audit_key": "audit-8156",
+      "report_name": "manual-testing.md",
+      "report_url": "https://github.com/polkastarter/staking-pols/blob/main/docs/manual-testing.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8158,
+      "audit_key": "audit-8158",
+      "report_name": "deployment-sepolia.md",
+      "report_url": "https://github.com/polkastarter/random-seed/blob/main/docs/deployment-sepolia.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8159,
+      "audit_key": "audit-8159",
+      "report_name": "deployments.md",
+      "report_url": "https://github.com/polkastarter/random-seed/blob/main/docs/deployments.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 50,
+      "latest_audit": "2021-10"
+    }
+  ],
+  "coverage_gaps": [
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -161,11 +630,96 @@
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 1
+    },
+    "extraction_confidence_counts": {
+      "low": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 8138,
+        "report_name": "APPLICATION.md"
+      },
+      {
+        "audit_id": 8139,
+        "report_name": "BASE_SWAP.md"
+      },
+      {
+        "audit_id": 8140,
+        "report_name": "IDOSTAKING.md"
+      },
+      {
+        "audit_id": 8141,
+        "report_name": "NETWORK.md"
+      },
+      {
+        "audit_id": 8142,
+        "report_name": "NFT_SWAP.md"
+      },
+      {
+        "audit_id": 8143,
+        "report_name": "NUMBERS.md"
+      },
+      {
+        "audit_id": 8144,
+        "report_name": "README.md"
+      },
+      {
+        "audit_id": 8145,
+        "report_name": "SIGNER.md"
+      },
+      {
+        "audit_id": 8146,
+        "report_name": "STAKING.md"
+      },
+      {
+        "audit_id": 8147,
+        "report_name": "SUMMARY.md"
+      },
+      {
+        "audit_id": 8148,
+        "report_name": "SWAP.md"
+      },
+      {
+        "audit_id": 8149,
+        "report_name": "WALLET.md"
+      },
+      {
+        "audit_id": 8150,
+        "report_name": "38f5ef00-1d8b-452f-bd87-317cedba47b3.pdf"
+      },
+      {
+        "audit_id": 8151,
+        "report_name": "MythX_95814d21d1b04aad491b65fc.pdf"
+      },
+      {
+        "audit_id": 8152,
+        "report_name": "PolsStake_flat-MythX-standard_677a6fe7453e19b4b4fe976c.pdf"
+      },
+      {
+        "audit_id": 8153,
+        "report_name": "PolsStake-deployment-bscMain.md"
+      },
+      {
+        "audit_id": 8154,
+        "report_name": "PolsStake-deployment-ethMain.md"
+      },
+      {
+        "audit_id": 8156,
+        "report_name": "manual-testing.md"
+      },
+      {
+        "audit_id": 8158,
+        "report_name": "deployment-sepolia.md"
+      },
+      {
+        "audit_id": 8159,
+        "report_name": "deployments.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

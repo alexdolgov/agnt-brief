@@ -1,12 +1,12 @@
 # polkastarter — Contract Index
 
-2 unique implementations on ethereum · 2 deployments · 0 audited · 2 unaudited · 0 unverified
+2 unique implementations on ethereum · 2 deployments · 1 audited · 1 unaudited · 0 unverified
 
 ## token (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [PolkastarterToken](./ethereum-1/0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa/) | ethereum | [`0x83e6f1...c3d5aa`](./ethereum-1/0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa/) | ⚠️ Unaudited | Verified |
+| [PolkastarterToken](./ethereum-1/0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa/) | ethereum | [`0x83e6f1...c3d5aa`](./ethereum-1/0x83e6f1e41cdd28eaceb20cb649155049fac3d5aa/) | ✅ Audited | Verified |
 
 ## unknown (1)
 

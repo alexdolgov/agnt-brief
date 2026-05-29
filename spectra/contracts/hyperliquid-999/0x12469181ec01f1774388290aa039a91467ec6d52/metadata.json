@@ -1,0 +1,17 @@
+{
+  "address": "0x12469181ec01f1774388290aa039a91467ec6d52",
+  "chain_id": 999,
+  "contract_name": "RateOracleRegistry",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:30:54.335Z"
+}

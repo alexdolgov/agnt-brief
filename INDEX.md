@@ -551,6 +551,7 @@
 | [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-05-26 |
 | [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-05-24 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 9 | 0 | 2026-05-22 |
+| [spectra](./spectra/) | $10.5M | 0.0% | $10.5M | active | 12 | 214 | 2026-05-29 |
 | [sperax](./sperax/) | $14.2M | 47.1% | $2.6M | declining | 9 | 142 | 2026-05-24 |
 | [sphere](./sphere/) | $229.4M | 0.0% | $229.4M | active | 0 | 217 | 2026-05-26 |
 | [spiraldao](./spiraldao/) | $6.4M | 44.0% | ? | dead | 3 | 56 | 2026-05-23 |

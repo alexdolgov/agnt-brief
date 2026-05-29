@@ -1,0 +1,18 @@
+{
+  "address": "0x0b26d0483b297a61c09a6442e5af4f694eaee1e5",
+  "chain_id": 10,
+  "contract_name": "Vyper_contract",
+  "compiler_version": "v0.3.1",
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:30:51.445Z"
+}

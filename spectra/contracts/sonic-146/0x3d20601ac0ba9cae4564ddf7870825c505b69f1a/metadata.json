@@ -1,0 +1,17 @@
+{
+  "address": "0x3d20601ac0ba9cae4564ddf7870825c505b69f1a",
+  "chain_id": 146,
+  "contract_name": "SpectraWrappedWStkScETH",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:30:59.375Z"
+}

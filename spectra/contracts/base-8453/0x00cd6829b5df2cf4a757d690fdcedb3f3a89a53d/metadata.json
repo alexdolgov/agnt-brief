@@ -1,0 +1,18 @@
+{
+  "address": "0x00cd6829b5df2cf4a757d690fdcedb3f3a89a53d",
+  "chain_id": 8453,
+  "contract_name": "RegistryV2Deployer",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:30:57.510Z"
+}

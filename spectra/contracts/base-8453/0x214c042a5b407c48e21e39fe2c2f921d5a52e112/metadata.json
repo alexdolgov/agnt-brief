@@ -1,0 +1,17 @@
+{
+  "address": "0x214c042a5b407c48e21e39fe2c2f921d5a52e112",
+  "chain_id": 8453,
+  "contract_name": "UpgradeableBeacon",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": "0x73031f41b43500168ac31198775d49ca14fb7aab",
+  "fetched_at": "2026-05-29T14:31:01.107Z"
+}

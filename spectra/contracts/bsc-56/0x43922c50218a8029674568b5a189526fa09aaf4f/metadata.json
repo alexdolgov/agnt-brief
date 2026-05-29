@@ -1,0 +1,18 @@
+{
+  "address": "0x43922c50218a8029674568b5a189526fa09aaf4f",
+  "chain_id": 56,
+  "contract_name": "Factory",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": "BUSL-1.1, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 35,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T14:30:51.382Z"
+}

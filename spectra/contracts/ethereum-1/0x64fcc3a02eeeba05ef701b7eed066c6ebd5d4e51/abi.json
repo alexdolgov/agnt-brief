@@ -1,0 +1,156 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "propMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "propMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "epsilonTheory",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "epsilonActual",
+        "type": "uint256"
+      }
+    ],
+    "name": "ConvergenceError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "MathOverflowedMulDiv",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "CURVE_UNIT",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "INV_PHI",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_ITERS",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PROP_MAX",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "PROP_MIN",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "curvePool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "depositInToken0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "epsilon",
+        "type": "uint256"
+      }
+    ],
+    "name": "findBestProportion",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "curvePool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "depositInToken0",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "proportion",
+        "type": "uint256"
+      }
+    ],
+    "name": "previewUnitaryAddLiquidity",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

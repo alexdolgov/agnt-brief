@@ -1,0 +1,16 @@
+# Router
+
+| Field | Value |
+|---|---|
+| Chain | base (8453) |
+| Address | `0x0fc2fbd3e8391744426c8be5228b668481c59532` |
+| Role | adapter |
+| Origin | standard_library |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 43 (ethereum `0x3d20601ac0ba9cae4564ddf7870825c505b69f1a`; ethereum `0x3dd0e7245dc25c8fa70ccfddf486e4212808bd3c`; ethereum `0x51bdbfcd7656e2c25ad1bc8037f70572b7142ecc`; ethereum `0x7dcdea738c2765398baf66e4dbbcd2769f4c00dc`; ethereum `0x82f8385da7587a74e46ce4c6e6c5a29853352967`; ethereum `0x8a697ae2f8897cb3c47eeb390cff24befa703dfc`; ethereum `0x9c594c2e2e2e5aa300be12596215188c324c3e7c`; ethereum `0xc03309de321a4d3df734f5609b80cc731ae28e6d`; ethereum `0xd733e545c65d539f588d7c3793147b497403f0d2`; optimism `0x174a1f4135fab6e7b6dbe207ff557dff14799d33`; optimism `0x64fcc3a02eeeba05ef701b7eed066c6ebd5d4e51`; optimism `0x7dcdea738c2765398baf66e4dbbcd2769f4c00dc`; optimism `0x8a92294ffcfe469a3df4a85c76a0b0d2b3292119`; optimism `0x93f6fe50ec14eb20af53f091859c7a7ecd7c240c`; optimism `0xe9b1146e1d6b118cac53b3c5a646378d3d1bea0b`; bsc `0x174a1f4135fab6e7b6dbe207ff557dff14799d33`; bsc `0x8a92294ffcfe469a3df4a85c76a0b0d2b3292119`; bsc `0xb9bcac22212c72aee8d6997bf5f8df76248c7ca2`; bsc `0xfbf41e85101d520d5763443db528ea099abea955`; sonic `0x12469181ec01f1774388290aa039a91467ec6d52`; sonic `0x3322664dee30345024f62066145427a8e4e67703`; sonic `0xcd4954ce6a178ab0bc4ffa0b2886f33c5a851d0b`; sonic `0xfbf41e85101d520d5763443db528ea099abea955`; hyperliquid `0x392fca63e58c1870fbec04eb6518a75703dd2954`; hyperliquid `0xb827e91c5cd4d6aca2fc0cd93a07db61896af40b`; base [`0x0fc2fbd3e8391744426c8be5228b668481c59532`](../0x0fc2fbd3e8391744426c8be5228b668481c59532/); base `0x3dd0e7245dc25c8fa70ccfddf486e4212808bd3c`; base `0xb9bcac22212c72aee8d6997bf5f8df76248c7ca2`; base `0xbf4b8f9d1279e89c8bceff02c7c2d25ae690e3b2`; base `0xc03309de321a4d3df734f5609b80cc731ae28e6d`; base `0xfbf41e85101d520d5763443db528ea099abea955`; arbitrum `0x3322664dee30345024f62066145427a8e4e67703`; arbitrum `0x38b9b4884a5581e96ed3882aa2f7449bc321786c`; arbitrum `0x6cba8213deeafe86ffb38f295edd5625cae4dd05`; arbitrum `0xacfee9a21fc48040f12793bd5a478dd155ac04fd`; arbitrum `0xb9bcac22212c72aee8d6997bf5f8df76248c7ca2`; arbitrum `0xbde752ef69880c00a795d88438040b8f737eb254`; arbitrum `0xc4dc44837caf8a53bb5fbcd4be42089ca03a37f1`; arbitrum `0xe3288e82f3b8a380f77990979656c316ff68bcaf`; arbitrum `0xf93149b2d237bf2d4230231d005cd5830cbca505`; avalanche `0x174a1f4135fab6e7b6dbe207ff557dff14799d33`; avalanche `0x8a92294ffcfe469a3df4a85c76a0b0d2b3292119`; avalanche `0xb9bcac22212c72aee8d6997bf5f8df76248c7ca2`) |
+| Proxy | Yes → `0xbf4b8f...90e3b2` |
+| Source | Sourcify (partial match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

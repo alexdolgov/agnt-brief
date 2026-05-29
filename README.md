@@ -160,6 +160,7 @@ Each project directory contains:
 | [woofi](./woofi/brief.md) | $22.16M | 23 | 253 | 120/253 (47%) | 13.2% | 0.0% (-) | 4 | aging | ⚠️ declining | $11.17M |
 | [clever](./clever/brief.md) | $5.72M | ethereum | 78 | 68/78 (87%) | 10.3% | 0.0% (-) | 3 | stale | ✅ active | $10.78M |
 | [intentx](./intentx/brief.md) | $5.67M | base, mantle | 56 | 25/56 (45%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $10.51M |
+| [spectra](./spectra/brief.md) | $50.95M | 8 | 214 | 139/214 (65%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $10.46M |
 | [synthetix](./synthetix/brief.md) | $41.67M | 4 | 13 | 13/13 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $10.27M |
 | [40-acres](./40-acres/brief.md) | $40.57M | 4 | 325 | 170/325 (52%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $10.02M |
 | [kaito](./kaito/brief.md) | $18.72M | base | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $9.48M |
@@ -707,5 +708,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T14:28:49.113Z_
-_Projects: 695_
+_Generated: 2026-05-29T14:31:38.000Z_
+_Projects: 696_

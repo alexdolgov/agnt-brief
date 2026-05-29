@@ -646,7 +646,7 @@
 | [txflow](./txflow/) | $3.8M | 0.0% | ? | unknown | 3 | 1 | 2026-05-29 |
 | [ultrayield](./ultrayield/) | $87.6M | 0.0% | ? | unknown | 85 | 4520 | 2026-05-29 |
 | [ultron-staking-hub-nft](./ultron-staking-hub-nft/) | $43.5K | 0.0% | $43.5K | unknown | 0 | 150 | 2026-05-23 |
-| [umee](./umee/) | $3.2M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
+| [umee](./umee/) | $2.5M | 0.0% | ? | declining | 132 | 1 | 2026-05-29 |
 | [unchain-x](./unchain-x/) | $35.1M | 100.0% | ? | active | 2 | 1 | 2026-05-25 |
 | [unichain-bridge](./unichain-bridge/) | $2.8M | 0.0% | ? | dead | 13 | 15 | 2026-05-29 |
 | [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-05-27 |

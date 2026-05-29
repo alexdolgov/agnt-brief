@@ -51,7 +51,7 @@ Each project directory contains:
 | [hypersurface](./hypersurface/brief.md) | $4.02M | base, hyperliquid | 242 | 39/242 (16%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $161.03M |
 | [avantis](./avantis/brief.md) | $45.49M | base | 61 | 16/61 (26%) | 68.8% | 0.0% (-) | 3 | aging | ❓ unknown | $150.92M |
 | [ribbon-finance](./ribbon-finance/brief.md) | $4.96M | avalanche, ethereum | 147 | 86/147 (59%) | 31.0% | 4.6% (OpenZeppelin) | 15 | stale | ⚠️ declining | $148.56M |
-| [infinifi](./infinifi/brief.md) | $90.23M | bsc, ethereum, plasma | 118 | 72/118 (61%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $145.94M |
+| [infinifi](./infinifi/brief.md) | $90.23M | bsc, ethereum, plasma | 118 | 72/118 (61%) | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | $145.94M |
 | [zircuit](./zircuit/brief.md) | $13.31M | base, ethereum | 17 | 16/17 (94%) | 25.0% | 0.0% (-) | 3 | aging | ⚠️ declining | $144.24M |
 | [beanstalk](./beanstalk/brief.md) | $6.66M | arbitrum, ethereum | 244 | 167/244 (68%) | 20.4% | 1.2% (Code4rena, Cyfrin, Immunefi) | 7 | stale | 💀 dead | $142.55M |
 | [zircuit-staking](./zircuit-staking/brief.md) | $54.16M | base, ethereum | 20 | 19/20 (95%) | 21.1% | 0.0% (-) | 3 | aging | ⚠️ declining | $140.43M |
@@ -693,5 +693,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T08:58:09.926Z_
+_Generated: 2026-05-29T09:03:19.151Z_
 _Projects: 681_

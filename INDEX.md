@@ -278,7 +278,7 @@
 | [immutable-zkevm](./immutable-zkevm/) | $29.2M | 18.2% | ? | active | 5 | 11 | 2026-05-22 |
 | [inception](./inception/) | $15.9M | 27.3% | $15.6M | sunsetting | 11 | 79 | 2026-05-23 |
 | [index-coop](./index-coop/) | $28.2M | 13.4% | $28.2M | declining | 7 | 236 | 2026-05-25 |
-| [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | unknown | 0 | 118 | 2026-05-27 |
+| [infinifi](./infinifi/) | $145.9M | 0.0% | $145.9M | unknown | 21 | 118 | 2026-05-29 |
 | [infrared-finance](./infrared-finance/) | $861.9K | 0.0% | $861.9K | declining | 0 | 27 | 2026-05-27 |
 | [init-capital](./init-capital/) | $66.5M | 21.4% | $66.2M | declining | 7 | 102 | 2026-05-25 |
 | [initiadex](./initiadex/) | $3.3M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |

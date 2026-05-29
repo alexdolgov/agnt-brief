@@ -1,14 +1,14 @@
 # Agentic Audit Brief: infiniFi
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 48.2% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 48.5% over 90 days
 
 ## Project Overview
 
 - Project: infiniFi (`infinifi`)
 - Website: [https://infinifi.xyz?ref=XXKTY1S9](https://infinifi.xyz?ref=XXKTY1S9)
-- Lifecycle: unknown (Tier 0, 52.5% below peak)
-- Generated: 2026-05-27T12:09:41.051Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Lifecycle: unknown (Tier 0, 52.8% below peak)
+- Generated: 2026-05-29T09:02:17.067Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: bsc, ethereum, plasma
 - Contract surface: 118 unique implementations (208 raw deployments)
 - DeFi Llama TVL: $90,227,546.41
@@ -31,11 +31,11 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 - Unverified implementations: 45
 - Unique implementations: 118
 - Raw deployments: 208
-- Audits discovered: 0
+- Audits discovered: 21
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $145,943,366.91
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2024-10 (aging)
+- Staleness: 0 fresh, 2 aging, 6 stale, 13 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $145,943,366.91 represents exposure in a protocol with unknown activity.
 
@@ -196,6 +196,27 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0xleastwood-Part 1 + 2.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/0xleastwood/0xleastwood-Part%201%20%2B%202.pdf) | unknown | Audit | 2022-09 | stale | Direct | n/a | 0 | n/a |
+| [0xleastwood-Part 2.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/0xleastwood/0xleastwood-Part%202.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Ackee-Part 1.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Ackee/Ackee-Part%201.pdf) | Ackee Blockchain | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [CMichel-Part 2.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/CMichel/CMichel-Part%202.pdf) | unknown | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
+| [Cmichel-Part 1.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/CMichel/Cmichel-Part%201.pdf) | unknown | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
+| [ChainSecurity.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/ChainSecurity.pdf) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Dedaub-Part 1.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Dedaub/Dedaub-Part%201.pdf) | Dedaub | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Dingbats-Part 1.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Dingbats/Dingbats-Part%201.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Dingbats-Part 2.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Dingbats/Dingbats-Part%202.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Spearbit.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/Spearbit.pdf) | Spearbit | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
+| [WatchPug-LpOracle.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-LpOracle.pdf) | WatchPug | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
+| [WatchPug-Part 1 Follow Up 1.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-Part%201%20Follow%20Up%201.pdf) | WatchPug | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [WatchPug-Part 1 Follow Up 2.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-Part%201%20Follow%20Up%202.pdf) | WatchPug | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [WatchPug-Part 1.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-Part%201.pdf) | WatchPug | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [WatchPug-Part 2.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-Part%202.pdf) | WatchPug | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [WatchPug-PtOracle.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-PtOracle.pdf) | WatchPug | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
+| [WatchPug-SparkLinearDiscountOracle.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-SparkLinearDiscountOracle.pdf) | WatchPug | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [WatchPug-sAPE.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-sAPE.pdf) | WatchPug | Audit | 2022-12 | stale | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -282,9 +303,33 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 21
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [4767] 0xleastwood-Part 1 + 2.pdf
+- [4768] 0xleastwood-Part 2.pdf
+- [4769] Ackee-Part 1.pdf
+- [4770] CMichel-Part 2.pdf
+- [4771] Cmichel-Part 1.pdf
+- [4772] ChainSecurity.pdf
+- [4773] Dedaub-Part 1.pdf
+- [4774] Dingbats-Part 1.pdf
+- [4775] Dingbats-Part 2.pdf
+- [4776] Spearbit.pdf
+- [4777] WatchPug-LpOracle.pdf
+- [4778] WatchPug-Part 1 Follow Up 1.pdf
+- [4779] WatchPug-Part 1 Follow Up 2.pdf
+- [4780] WatchPug-Part 1.pdf
+- [4781] WatchPug-Part 2.pdf
+- [4782] WatchPug-PtOracle.pdf
+- [4783] WatchPug-SparkLinearDiscountOracle.pdf
+- [4784] WatchPug-sAPE.pdf
+- [4785] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [4786] 0002-metadata-manifest-and-pull-command.md
+- [4787] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

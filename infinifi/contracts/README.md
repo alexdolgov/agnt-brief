@@ -27,7 +27,7 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [LockingController (2 deployments)](./ethereum-1/0x1d95cc100d6cd9c7bbdbd7cb328d99b3d6037ff7/) | ethereum | 2 deployments: ethereum [`0x1d95cc...037ff7`](./ethereum-1/0x1d95cc100d6cd9c7bbdbd7cb328d99b3d6037ff7/); plasma `0x43c1c7...448d1c` | ⚠️ Unaudited | Verified |
-| MinorRolesManager (2 deployments) | plasma | 2 deployments: ethereum `0xa08bf8...66be9b`; plasma `0x2c0dfa...c19fe7` | ⚠️ Unaudited | Verified |
+| [MinorRolesManager (2 deployments)](./plasma-9745/0x2c0dfada99dff7ada03952a39302a16be2c19fe7/) | plasma | 2 deployments: ethereum `0xa08bf8...66be9b`; plasma [`0x2c0dfa...c19fe7`](./plasma-9745/0x2c0dfada99dff7ada03952a39302a16be2c19fe7/) | ⚠️ Unaudited | Verified |
 | [MintController (2 deployments)](./ethereum-1/0x49877d937b9a00d50557bdc3d87287b5c3a4c256/) | ethereum | 2 deployments: ethereum [`0x49877d...a4c256`](./ethereum-1/0x49877d937b9a00d50557bdc3d87287b5c3a4c256/); plasma `0x6f8a9e...33bc66` | ⚠️ Unaudited | Verified |
 | [RedeemController (2 deployments)](./plasma-9745/0xb6931f0a698f4f40cbe0d79045dc2ec223f2616d/) | plasma | 2 deployments: ethereum `0xcb1747...ec7601`; plasma [`0xb6931f...f2616d`](./plasma-9745/0xb6931f0a698f4f40cbe0d79045dc2ec223f2616d/) | ⚠️ Unaudited | Verified |
 | [Timelock (6 deployments)](./plasma-9745/0x0c206b695d65aef7381a03352acf9fe2f48927a3/) | plasma | 6 deployments: ethereum `0x3d1848...1c48a9`; ethereum `0x4b174a...327c32`; plasma [`0x0c206b...8927a3`](./plasma-9745/0x0c206b695d65aef7381a03352acf9fe2f48927a3/); plasma `0x3d1848...1c48a9`; plasma `0xd105b9...e71ae1`; plasma `0xd54c8f...108b3b` | ⚠️ Unaudited | Verified |

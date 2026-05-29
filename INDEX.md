@@ -357,7 +357,7 @@
 | [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | sunsetting | 6 | 39 | 2026-05-24 |
 | [mento](./mento/) | $19.6M | 0.0% | ? | declining | 81 | 180 | 2026-05-29 |
 | [merchant-moe](./merchant-moe/) | $37.3M | 50.0% | ? | unknown | 1 | 53 | 2026-05-26 |
-| [merlinswap](./merlinswap/) | $8.7M | 0.0% | ? | unknown | 0 | 2 | 2026-05-23 |
+| [merlinswap](./merlinswap/) | $8.4M | 0.0% | ? | unknown | 3 | 2 | 2026-05-29 |
 | [meson](./meson/) | $1.1M | 0.0% | ? | active | 4 | 129 | 2026-05-25 |
 | [metadao](./metadao/) | $1.5M | 0.0% | $1.5M | active | 10 | 53 | 2026-05-25 |
 | [metastable](./metastable/) | $2.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |

@@ -238,7 +238,7 @@
 | [gravity-bridge](./gravity-bridge/) | $91.3M | 1.4% | $91.3M | active | 48 | 152 | 2026-05-29 |
 | [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 3 | 124 | 2026-05-29 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
-| [grvt](./grvt/) | $55.4M | 0.0% | ? | unknown | 0 | 7 | 2026-05-27 |
+| [grvt](./grvt/) | $55.4M | 0.0% | ? | unknown | 3 | 7 | 2026-05-29 |
 | [guru-network-dao](./guru-network-dao/) | $2.4M | 0.0% | ? | active | 0 | 54 | 2026-05-24 |
 | [gyroscope-protocol](./gyroscope-protocol/) | $44.6 | 21.3% | ? | dead | 10 | 233 | 2026-05-24 |
 | [h2-finance](./h2-finance/) | $3.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |

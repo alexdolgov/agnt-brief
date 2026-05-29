@@ -516,7 +516,7 @@
 | [scallop](./scallop/) | $38.2M | 0.0% | ? | unknown | 4 | 0 | 2026-05-27 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 2 | 1 | 2026-05-29 |
-| [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 32 | 2026-05-26 |
+| [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 3 | 32 | 2026-05-29 |
 | [scrub-money](./scrub-money/) | $7.1M | 0.0% | ? | active | 1 | 19 | 2026-05-23 |
 | [sdai](./sdai/) | $3.8K | 0.0% | $3.8K | active | 0 | 93 | 2026-05-27 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 8.0% | $34.8K | declining | 2 | 99 | 2026-05-26 |

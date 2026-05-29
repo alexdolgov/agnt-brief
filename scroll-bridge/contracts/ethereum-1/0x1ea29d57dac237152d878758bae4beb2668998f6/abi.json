@@ -1,0 +1,298 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_scrollChain",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_versions",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_verifiers",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorStartBatchIndexFinalized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorStartBatchIndexTooSmall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorZeroAddress",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "version",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "startBatchIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "verifier",
+        "type": "address"
+      }
+    ],
+    "name": "UpdateVerifier",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_version",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_batchIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "getVerifier",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "latestVerifier",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "startBatchIndex",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "verifier",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "legacyVerifiers",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "startBatchIndex",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "verifier",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_version",
+        "type": "uint256"
+      }
+    ],
+    "name": "legacyVerifiersLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "scrollChain",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_version",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_startBatchIndex",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "_verifier",
+        "type": "address"
+      }
+    ],
+    "name": "updateVerifier",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_version",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_batchIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_aggrProof",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_publicInputHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "verifyAggregateProof",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_batchIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_aggrProof",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_publicInputHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "verifyAggregateProof",
+    "outputs": [],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

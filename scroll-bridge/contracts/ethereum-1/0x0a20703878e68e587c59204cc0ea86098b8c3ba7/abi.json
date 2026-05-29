@@ -1,0 +1,918 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint64",
+        "name": "_chainId",
+        "type": "uint64"
+      },
+      {
+        "internalType": "address",
+        "name": "_messageQueueV1",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_messageQueueV2",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_verifier",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_systemConfig",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorAccountIsNotEOA",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorBatchHeaderV0LengthTooSmall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorBatchHeaderV1LengthTooSmall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorBatchHeaderV3LengthMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorBatchHeaderV7LengthMismatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorBatchIsAlreadyVerified",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorBatchIsEmpty",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorBatchNotCommitted",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorCallerIsNotProver",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorCallerIsNotSequencer",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorGenesisBatchHasNonZeroField",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorGenesisBatchImported",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorGenesisDataHashIsZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorGenesisParentBatchHashIsNonZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorInEnforcedBatchMode",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncorrectBatchHash",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncorrectBatchVersion",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncorrectBitmapLengthV0",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorIncorrectBitmapLengthV1",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorNotAllV1MessagesAreFinalized",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorNotInEnforcedBatchMode",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorRevertFinalizedBatch",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorStateRootIsZero",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorTopLevelCallRequired",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ErrorZeroAddress",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "batchIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "expected",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "actual",
+        "type": "bytes32"
+      }
+    ],
+    "name": "InconsistentBatchHash",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "batchIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "batchHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "CommitBatch",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "batchIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "batchHash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "stateRoot",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "withdrawRoot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "FinalizeBatch",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Paused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "batchIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "batchHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RevertBatch",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "startBatchIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "finishBatchIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "RevertBatch",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "Unpaused",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "enabled",
+        "type": "bool"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "lastCommittedBatchIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "UpdateEnforcedBatchMode",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "status",
+        "type": "bool"
+      }
+    ],
+    "name": "UpdateProver",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "status",
+        "type": "bool"
+      }
+    ],
+    "name": "UpdateSequencer",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "addProver",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "addSequencer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "parentBatchHash",
+        "type": "bytes32"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes",
+            "name": "batchHeader",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalL1MessagesPoppedOverall",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "postStateRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "withdrawRoot",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "zkProof",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct IScrollChain.FinalizeStruct",
+        "name": "finalizeStruct",
+        "type": "tuple"
+      }
+    ],
+    "name": "commitAndFinalizeBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "parentBatchHash",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "lastBatchHash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "commitBatches",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "committedBatches",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "disableEnforcedBatchMode",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "batchHeader",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalL1MessagesPoppedOverall",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "postStateRoot",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "withdrawRoot",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "aggrProof",
+        "type": "bytes"
+      }
+    ],
+    "name": "finalizeBundlePostEuclidV2",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "finalizedStateRoots",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "_batchHeader",
+        "type": "bytes"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_stateRoot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "importGenesisBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "initialEuclidBatchIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_messageQueue",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_verifier",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxNumTxInChunk",
+        "type": "uint256"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "initializeV2",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_batchIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "isBatchFinalized",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isEnforcedModeEnabled",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isProver",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isSequencer",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lastFinalizedBatchIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "layer2ChainId",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "messageQueueV1",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "messageQueueV2",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "miscData",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "lastCommittedBatchIndex",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "lastFinalizedBatchIndex",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint32",
+        "name": "lastFinalizeTimestamp",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint8",
+        "name": "flags",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint88",
+        "name": "reserved",
+        "type": "uint88"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "paused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "removeProver",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "removeSequencer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes",
+        "name": "batchHeader",
+        "type": "bytes"
+      }
+    ],
+    "name": "revertBatch",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bool",
+        "name": "_status",
+        "type": "bool"
+      }
+    ],
+    "name": "setPause",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "systemConfig",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "verifier",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawRoots",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -7,8 +7,8 @@
 - Project: Latch (`latch`)
 - Website: [https://savings.latch.io/](https://savings.latch.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T09:53:49.473Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T20:26:02.806Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,606,674.69

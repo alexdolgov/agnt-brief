@@ -683,7 +683,7 @@
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [xsy](./xsy/) | $3.6M | 0.0% | $3.6M | active | 0 | 16 | 2026-05-22 |
 | [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 1 | 2026-05-23 |
-| [yala](./yala/) | $4.6M | 0.0% | $4.6M | dead | 0 | 30 | 2026-05-24 |
+| [yala](./yala/) | $4.6M | 0.0% | $4.6M | dead | 4 | 30 | 2026-05-29 |
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [yei-finance](./yei-finance/) | $29.8M | 0.0% | ? | declining | 1 | 44 | 2026-05-22 |
 | [yieldfi](./yieldfi/) | $43.7M | 66.7% | $16.3M | declining | 7 | 23 | 2026-05-25 |

@@ -5,8 +5,8 @@
 - Project: HyperWave (`hyperwave`)
 - Website: [https://app.hyperwavefi.xyz/hyperfren/DEFILLAMA](https://app.hyperwavefi.xyz/hyperfren/DEFILLAMA)
 - Lifecycle: active (Tier 0, 86.2% below peak)
-- Generated: 2026-05-29T08:46:30.652Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T19:21:35.283Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: base, ethereum, hyperliquid
 - Contract surface: 12 unique implementations (29 raw deployments)
 - DeFi Llama TVL: $6,383,775.03

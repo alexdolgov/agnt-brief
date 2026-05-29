@@ -1,14 +1,12 @@
 # Agentic Audit Brief: ICHI
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 30.4% over 90 days
-
 ## Project Overview
 
 - Project: ICHI (`ichi`)
 - Website: [https://www.ichi.org](https://www.ichi.org)
-- Lifecycle: unknown (Tier 0, 90.3% below peak)
-- Generated: 2026-05-29T08:54:27.138Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Lifecycle: active (Tier 0, 90.3% below peak)
+- Generated: 2026-05-29T19:27:51.184Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: arbitrum, avalanche, base, blast, bsc, celo, ethereum, fantom, kava, linea, mantle, mode, opbnb, polygon, polygon-zkevm, scroll, sonic, zksync-era
 - Contract surface: 616 unique implementations (1073 raw deployments)
 - DeFi Llama TVL: $12,782,422.64
@@ -37,7 +35,6 @@ The ICHI Vaults family relies on factory contracts like ICHIVaultFactory and Reb
 - Latest audit: 2021-04 (stale)
 - Staleness: 0 fresh, 0 aging, 1 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $36,116,255.20 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

@@ -7,8 +7,8 @@
 - Project: infiniFi (`infinifi`)
 - Website: [https://infinifi.xyz?ref=XXKTY1S9](https://infinifi.xyz?ref=XXKTY1S9)
 - Lifecycle: unknown (Tier 0, 52.8% below peak)
-- Generated: 2026-05-29T09:02:17.067Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T19:36:11.344Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: bsc, ethereum, plasma
 - Contract surface: 118 unique implementations (208 raw deployments)
 - DeFi Llama TVL: $90,227,546.41

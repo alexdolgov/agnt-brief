@@ -520,7 +520,7 @@
 | [scrub-money](./scrub-money/) | $7.1M | 0.0% | ? | active | 1 | 19 | 2026-05-23 |
 | [sdai](./sdai/) | $3.8K | 0.0% | $3.8K | active | 0 | 93 | 2026-05-27 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 8.0% | $34.8K | declining | 2 | 99 | 2026-05-26 |
-| [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-24 |
+| [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 3 | 179 | 2026-05-29 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | sunsetting | 8 | 297 | 2026-05-25 |
 | [serum](./serum/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 0 | 111 | 2026-05-25 |

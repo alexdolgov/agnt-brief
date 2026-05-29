@@ -5,8 +5,8 @@
 - Project: Juicebox (`juicebox`)
 - Website: [https://juicebox.money/](https://juicebox.money/)
 - Lifecycle: active (Tier 0, 57.8% below peak)
-- Generated: 2026-05-29T09:36:26.808Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T20:06:30.108Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: arbitrum, base, chain-11155111, chain-11155420, chain-421614, chain-84532, ethereum, optimism
 - Contract surface: 77 unique implementations (236 raw deployments)
 - DeFi Llama TVL: $11,041,334.00

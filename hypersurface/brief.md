@@ -5,8 +5,8 @@
 - Project: Hypersurface (`hypersurface`)
 - Website: [https://app.hypersurface.io/rewards?referrer=defillama](https://app.hypersurface.io/rewards?referrer=defillama)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-29T08:44:31.034Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T19:19:30.211Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: base, hyperliquid
 - Contract surface: 242 unique implementations (510 raw deployments)
 - DeFi Llama TVL: $4,024,164.78

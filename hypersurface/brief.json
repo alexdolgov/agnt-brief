@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "hypersurface",
-  "generated_at": "2026-05-29T08:44:31.034Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-05-29T19:19:30.211Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-691c43-e9c3",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "hypersurface",

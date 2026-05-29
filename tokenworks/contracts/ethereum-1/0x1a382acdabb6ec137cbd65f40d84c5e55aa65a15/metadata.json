@@ -1,0 +1,17 @@
+{
+  "address": "0x1a382acdabb6ec137cbd65f40d84c5e55aa65a15",
+  "chain_id": 1,
+  "contract_name": "V4Quoter",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 31,
+  "constructor_arguments": "000000000000000000000000000000000004444c5dc75cb358380d2e3de08a90",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T16:19:26.647Z"
+}

@@ -625,7 +625,7 @@
 | [tinyman](./tinyman/) | $1.5M | 0.0% | $1.5M | active | 18 | 53 | 2026-05-25 |
 | [tokenlon](./tokenlon/) | $37.2M | 57.1% | ? | declining | 24 | 21 | 2026-05-29 |
 | [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 3 | 44 | 2026-05-29 |
-| [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-05-24 |
+| [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 3 | 60 | 2026-05-29 |
 | [toobit](./toobit/) | $69.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [tothemoon](./tothemoon/) | $3.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |

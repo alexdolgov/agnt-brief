@@ -1,0 +1,18 @@
+{
+  "address": "0x2034c9194de45ffe5ba382868115daebe32c3f53",
+  "chain_id": 1,
+  "contract_name": "BridgeBank",
+  "compiler_version": "v0.5.16+commit.9c3226ce",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T08:11:24.958Z"
+}

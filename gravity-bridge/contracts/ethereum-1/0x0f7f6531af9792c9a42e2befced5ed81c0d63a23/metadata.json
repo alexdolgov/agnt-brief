@@ -1,0 +1,18 @@
+{
+  "address": "0x0f7f6531af9792c9a42e2befced5ed81c0d63a23",
+  "chain_id": 1,
+  "contract_name": "eSEK",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T08:11:24.119Z"
+}

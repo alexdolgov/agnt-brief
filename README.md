@@ -66,6 +66,7 @@ Each project directory contains:
 | [velvet.capital](./velvet.capital/brief.md) | $1.44M | 4 | 420 | 44/420 (10%) | 77.8% | 2.2% (Spearbit) | 13 | fresh | ⚠️ declining | $95.22M |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/brief.md) | $2.23M | ethereum | 112 | 75/112 (67%) | 1.3% | 0.0% (-) | 2 | stale | ⚠️ declining | $94.39M |
 | [blur](./blur/brief.md) | $18.57M | blast, ethereum | 17 | 12/17 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $91.73M |
+| [gravity-bridge](./gravity-bridge/brief.md) | $12.14M | ethereum | 152 | 74/152 (49%) | 1.4% | 0.0% (-) | 6 | fresh | ✅ active | $91.30M |
 | [pleasing-gold](./pleasing-gold/brief.md) | $87.87M | arbitrum | 8 | 4/8 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $88.09M |
 | [zivoe](./zivoe/brief.md) | $13.83M | ethereum | 32 | 31/32 (97%) | 58.1% | 48.4% (Sherlock) | 3 | aging | ✅ active | $87.09M |
 | [the-idols](./the-idols/brief.md) | $5.76M | ethereum | 17 | 13/17 (76%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $85.36M |
@@ -689,5 +690,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T08:05:14.315Z_
-_Projects: 677_
+_Generated: 2026-05-29T08:12:02.230Z_
+_Projects: 678_

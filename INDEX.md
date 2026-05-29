@@ -628,7 +628,7 @@
 | [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 3 | 60 | 2026-05-29 |
 | [toobit](./toobit/) | $69.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [tothemoon](./tothemoon/) | $3.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 0 | 29 | 2026-05-23 |
+| [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 3 | 29 | 2026-05-29 |
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
 | [treehouse-protocol](./treehouse-protocol/) | $31.2M | 0.0% | $31.2M | unknown | 1 | 78 | 2026-05-27 |

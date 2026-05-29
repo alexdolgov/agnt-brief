@@ -364,7 +364,7 @@ Each project directory contains:
 | [ankr](./ankr/brief.md) | $22.09M | avalanche, ethereum, fantom | 32 | 22/32 (69%) | 13.6% | 0.0% (-) | 1 | aging | ✅ active | $47.39 |
 | [gondi](./gondi/brief.md) | $1.40M | ethereum, hyperliquid | 33 | 18/33 (55%) | 16.7% | 0.0% (-) | 2 | fresh | ⚠️ declining | $35.59 |
 | [symmio](./symmio/brief.md) | $3.51M | 8 | 168 | 60/168 (36%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $24.48 |
-| [toupee.tech](./toupee.tech/brief.md) | $6.38M | base | 29 | 25/29 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $24.29 |
+| [toupee.tech](./toupee.tech/brief.md) | $6.29M | base | 29 | 25/29 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $24.29 |
 | [noon](./noon/brief.md) | $30.42M | ethereum, hyperliquid, zksync-era | 40 | 30/40 (75%) | 3.3% | 0.0% (-) | 1 | aging | ✅ active | $17.99 |
 | [goose](./goose/brief.md) | $12.80M | ethereum | 7 | 3/7 (43%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $7.87 |
 | [angles](./angles/brief.md) | $1.07M | sonic | 40 | 25/40 (63%) | 4.0% | 4.0% (Spearbit) | 1 | aging | ⚠️ declining | $7.53 |
@@ -712,5 +712,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T16:20:01.523Z_
+_Generated: 2026-05-29T16:22:02.550Z_
 _Projects: 700_

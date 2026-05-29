@@ -169,7 +169,7 @@ Each project directory contains:
 | [the-arena](./the-arena/brief.md) | $2.27M | 17 | 172 | 65/172 (38%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $9.27M |
 | [neku](./neku/brief.md) | $1.60M | arbitrum | 17 | 8/17 (47%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $8.38M |
 | [mobox](./mobox/brief.md) | $2.25M | 17 | 375 | 47/375 (13%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $8.15M |
-| [tau-labs](./tau-labs/brief.md) | $5.02M | ethereum, plasma | 179 | 179/179 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $8.07M |
+| [tau-labs](./tau-labs/brief.md) | $4.98M | ethereum, plasma | 179 | 179/179 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $8.07M |
 | [gearbox](./gearbox/brief.md) | $36.88M | 4 | 197 | 102/197 (52%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $7.97M |
 | [sonic-gateway](./sonic-gateway/brief.md) | $67.15M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | $7.80M |
 | [fuel-bridge](./fuel-bridge/brief.md) | $10.81M | ethereum | 18 | 15/18 (83%) | 26.7% | 0.0% (-) | 3 | fresh | ⚠️ declining | $7.63M |
@@ -712,5 +712,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T15:54:40.733Z_
+_Generated: 2026-05-29T15:56:46.185Z_
 _Projects: 700_

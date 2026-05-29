@@ -607,7 +607,7 @@
 | [taiko-bridge](./taiko-bridge/) | $1.4M | 0.0% | $1.4M | active | 3 | 52 | 2026-05-29 |
 | [tangible](./tangible/) | $42.2M | 0.0% | ? | active | 3 | 476 | 2026-05-29 |
 | [tarot](./tarot/) | $154.4K | 0.0% | $154.4K | dead | 1 | 139 | 2026-05-25 |
-| [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | unknown | 0 | 179 | 2026-05-23 |
+| [tau-labs](./tau-labs/) | $8.1M | 0.0% | $8.1M | unknown | 3 | 179 | 2026-05-29 |
 | [team-finance](./team-finance/) | $4.8K | 0.0% | $4.8K | active | 0 | 66 | 2026-05-27 |
 | [teller](./teller/) | $2.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 0 | 40 | 2026-05-24 |

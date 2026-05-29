@@ -499,7 +499,7 @@
 | [risex](./risex/) | $3.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-23 |
-| [rook](./rook/) | $6.8M | 0.0% | $6.8M | dead | 0 | 74 | 2026-05-25 |
+| [rook](./rook/) | $6.8M | 0.0% | $6.8M | dead | 3 | 74 | 2026-05-29 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | declining | 0 | 14 | 2026-05-26 |

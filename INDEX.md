@@ -250,7 +250,7 @@
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 52.6% | ? | dead | 3 | 51 | 2026-05-24 |
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 3 | 2 | 2026-05-29 |
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | sunsetting | 3 | 21 | 2026-05-24 |
-| [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 0 | 63 | 2026-05-23 |
+| [hegic](./hegic/) | $54.1K | 0.0% | $54.1K | active | 5 | 63 | 2026-05-29 |
 | [helix-finance](./helix-finance/) | $11.0M | 0.0% | ? | unknown | 0 | 9 | 2026-05-23 |
 | [helix](./helix/) | $2.0M | 0.0% | ? | declining | 0 | 9 | 2026-05-24 |
 | [hemi-staking](./hemi-staking/) | $16.5M | 1.6% | $16.5M | active | 5 | 141 | 2026-05-26 |

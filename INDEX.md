@@ -470,7 +470,7 @@
 | [pulsechain-bridge](./pulsechain-bridge/) | $52.0M | 0.0% | ? | active | 3 | 5 | 2026-05-29 |
 | [pulsechain](./pulsechain/) | $52.0M | 0.0% | ? | active | 3 | 5 | 2026-05-29 |
 | [pumpspace](./pumpspace/) | $4.0M | 28.6% | ? | active | 4 | 667 | 2026-05-25 |
-| [punks-terminal](./punks-terminal/) | $1.7M | 0.0% | ? | unknown | 0 | 1 | 2026-05-24 |
+| [punks-terminal](./punks-terminal/) | $1.5M | 0.0% | ? | unknown | 3 | 1 | 2026-05-29 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [radiant](./radiant/) | $1.1M | 31.6% | $515.0K | dead | 94 | 390 | 2026-05-26 |
 | [rain](./rain/) | $3.4M | 0.0% | ? | active | 1 | 28 | 2026-05-24 |

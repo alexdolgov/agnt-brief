@@ -56,7 +56,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| GrowthHYBR | hyperliquid | `0x348b11...2b8aa5` | ⚠️ Unaudited | Verified |
+| [GrowthHYBR](./hyperliquid-999/0x348b11cbb801fab12834e66691b7f25fe72b8aa5/) | hyperliquid | [`0x348b11...2b8aa5`](./hyperliquid-999/0x348b11cbb801fab12834e66691b7f25fe72b8aa5/) | ⚠️ Unaudited | Verified |
 | [HYBR](./hyperliquid-999/0x067b0c72aa4c6bd3bfefff443c536dcd6a25a9c8/) | hyperliquid | [`0x067b0c...25a9c8`](./hyperliquid-999/0x067b0c72aa4c6bd3bfefff443c536dcd6a25a9c8/) | ⚠️ Unaudited | Verified |
 | [MinterUpgradeable (2 deployments)](./hyperliquid-999/0x8a89c7f32f0ed4d186eb73d458354fda68e01d2f/) | hyperliquid | 2 deployments: hyperliquid [`0x8a89c7...e01d2f`](./hyperliquid-999/0x8a89c7f32f0ed4d186eb73d458354fda68e01d2f/); hyperliquid `0xa8265e...3e149b` | ⚠️ Unaudited | Verified |
 | [PositionValueQuery (2 deployments)](./hyperliquid-999/0x05db07299ee752aef6aa1b3e895c973a6007dbc0/) | hyperliquid | 2 deployments: hyperliquid [`0x05db07...07dbc0`](./hyperliquid-999/0x05db07299ee752aef6aa1b3e895c973a6007dbc0/); hyperliquid `0x2ea324...17c068` | ⚠️ Unaudited | Verified |

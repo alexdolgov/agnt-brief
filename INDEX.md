@@ -234,7 +234,7 @@
 | [goldstation](./goldstation/) | $2.3M | 0.0% | ? | active | 3 | 5 | 2026-05-24 |
 | [gondi](./gondi/) | $35.6 | 16.7% | $35.6 | declining | 2 | 33 | 2026-05-24 |
 | [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 3 | 7 | 2026-05-29 |
-| [goplus-security](./goplus-security/) | $3.4M | 0.0% | $3.4M | active | 0 | 26 | 2026-05-26 |
+| [goplus-security](./goplus-security/) | $3.4M | 0.0% | $3.4M | active | 3 | 26 | 2026-05-29 |
 | [gro](./gro/) | $2.9M | 0.0% | $2.9M | declining | 0 | 124 | 2026-05-23 |
 | [growihf](./growihf/) | $8.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [grvt](./grvt/) | $55.4M | 0.0% | ? | unknown | 0 | 7 | 2026-05-27 |

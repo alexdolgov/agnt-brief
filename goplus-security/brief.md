@@ -5,8 +5,8 @@
 - Project: GoPlus Security (`goplus-security`)
 - Website: [https://gopluslabs.io](https://gopluslabs.io)
 - Lifecycle: active (Tier 0, 50.4% below peak)
-- Generated: 2026-05-26T18:54:33.904Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-05-29T08:04:42.367Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: arbitrum, base, bsc, ethereum
 - Contract surface: 26 unique implementations (40 raw deployments)
 - DeFi Llama TVL: $32,764,727.00
@@ -29,11 +29,11 @@ The locker families (V2 and V3) share the same deployer cluster, indicating a co
 - Unverified implementations: 12
 - Unique implementations: 26
 - Raw deployments: 40
-- Audits discovered: 0
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $3,447,064.77
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -100,6 +100,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -130,9 +133,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [5927] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [5928] 0002-metadata-manifest-and-pull-command.md
+- [5929] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

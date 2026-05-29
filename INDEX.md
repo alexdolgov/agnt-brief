@@ -623,7 +623,7 @@
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
 | [thruster](./thruster/) | $5.7M | 0.0% | ? | dead | 3 | 20 | 2026-05-29 |
 | [tinyman](./tinyman/) | $1.5M | 0.0% | $1.5M | active | 18 | 53 | 2026-05-25 |
-| [tokenlon](./tokenlon/) | $37.2M | 0.0% | ? | declining | 0 | 21 | 2026-05-26 |
+| [tokenlon](./tokenlon/) | $37.2M | 57.1% | ? | declining | 24 | 21 | 2026-05-29 |
 | [tokenstore](./tokenstore/) | $265.7K | 0.0% | $265.7K | active | 0 | 44 | 2026-05-25 |
 | [tokenworks](./tokenworks/) | $0.0 | 0.0% | $0.0 | active | 0 | 60 | 2026-05-24 |
 | [toobit](./toobit/) | $69.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |

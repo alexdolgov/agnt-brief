@@ -1,0 +1,18 @@
+{
+  "address": "0x539a67b6f9c3cad58f434cc12624b2d520bc03f8",
+  "chain_id": 1,
+  "contract_name": "StakingRewards",
+  "compiler_version": "v0.7.4+commit.3f05b770",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T16:15:26.437Z"
+}

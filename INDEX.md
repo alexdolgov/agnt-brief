@@ -375,7 +375,7 @@
 | [moneyonchain](./moneyonchain/) | $43.7M | 0.0% | ? | unknown | 13 | 0 | 2026-05-26 |
 | [monstro](./monstro/) | $3.4M | 0.0% | $3.4M | transitioning | 3 | 9 | 2026-05-29 |
 | [moola-market](./moola-market/) | $73.9K | 10.8% | $73.9K | declining | 3 | 53 | 2026-05-25 |
-| [moonlander](./moonlander/) | $31.4M | 0.0% | ? | active | 0 | 11 | 2026-05-26 |
+| [moonlander](./moonlander/) | $31.4M | 0.0% | ? | active | 3 | 11 | 2026-05-29 |
 | [more-markets](./more-markets/) | $12.0M | 0.0% | ? | unknown | 0 | 21 | 2026-05-23 |
 | [morph-bridge](./morph-bridge/) | $15.8M | 0.0% | ? | active | 0 | 1 | 2026-05-22 |
 | [morpheusai](./morpheusai/) | $621.8 | 0.0% | $621.8 | declining | 0 | 47 | 2026-05-22 |

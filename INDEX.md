@@ -334,7 +334,7 @@
 | [llamapay](./llamapay/) | $25.8M | 0.0% | ? | active | 5 | 20 | 2026-05-29 |
 | [lockon](./lockon/) | $1.1M | 56.3% | ? | active | 7 | 23 | 2026-05-25 |
 | [looping-collective](./looping-collective/) | $11.8M | 7.7% | $11.8M | active | 13 | 14 | 2026-05-22 |
-| [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 0 | 145 | 2026-05-23 |
+| [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 132 | 145 | 2026-05-29 |
 | [lumenswap](./lumenswap/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 53 | 2026-05-25 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-05-24 |
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-25 |

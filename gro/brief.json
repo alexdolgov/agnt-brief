@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gro",
-  "generated_at": "2026-05-29T08:13:21.395Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-05-29T18:47:25.546Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-691c43-e9c3",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "gro",

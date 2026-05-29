@@ -1,0 +1,449 @@
+[
+  {
+    "inputs": [],
+    "name": "BridgePaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BridgeWithdrawPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "DepositingPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "GlobalPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "InstantActionModeActive",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "requested",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "available",
+        "type": "uint256"
+      }
+    ],
+    "name": "InsufficientBalance",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InternalTransferPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "IsPartyB",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "LiquidatingPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "MissingRole",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tradeId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "partyA",
+        "type": "address"
+      }
+    ],
+    "name": "NotPartyAOfTrade",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "NotPartyB",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tradeId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "partyB",
+        "type": "address"
+      }
+    ],
+    "name": "NotPartyBOfTrade",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PartyAActionsPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PartyBActionsPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "receiver",
+        "type": "address"
+      }
+    ],
+    "name": "ReceiverSuspended",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "withdrawId",
+        "type": "uint256"
+      }
+    ],
+    "name": "SuspendedWithdrawal",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ThirdPartyActionsPaused",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "UserIsPartyB",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "UserSuspended",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WithdrawingPaused",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "tradeId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "counterParty",
+        "type": "address"
+      }
+    ],
+    "name": "AcceptCancelTransferIntent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "tradeId",
+        "type": "uint256"
+      }
+    ],
+    "name": "CancelTransferIntent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "tradeId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fillPrice",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "counterParty",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "clearingHouseSignature",
+        "type": "bytes"
+      }
+    ],
+    "name": "FinalizeTransferIntent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "tradeId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "counterParty",
+        "type": "address"
+      }
+    ],
+    "name": "LockTransferIntent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "tradeId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "partyBWhitelist",
+        "type": "address[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "deadline",
+        "type": "uint256"
+      }
+    ],
+    "name": "SendTransferIntent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "tradeId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "counterParty",
+        "type": "address"
+      }
+    ],
+    "name": "UnlockTransferIntent",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "intentId",
+        "type": "uint256"
+      }
+    ],
+    "name": "acceptCancelTransferIntent",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "intentId",
+        "type": "uint256"
+      }
+    ],
+    "name": "cancelTransferIntent",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "intentId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "fillPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes",
+        "name": "clearingHouseSignature",
+        "type": "bytes"
+      }
+    ],
+    "name": "finalizeTransferIntent",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "intentId",
+        "type": "uint256"
+      }
+    ],
+    "name": "lockTransferIntent",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tradeId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address[]",
+        "name": "partyBWhitelist",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "proposedPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deadline",
+        "type": "uint256"
+      }
+    ],
+    "name": "sendTransferIntent",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "intentId",
+        "type": "uint256"
+      }
+    ],
+    "name": "unlockTransferIntent",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

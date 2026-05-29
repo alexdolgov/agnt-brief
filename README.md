@@ -362,6 +362,7 @@ Each project directory contains:
 | [multichain](./multichain/brief.md) | $44.47M | avalanche, ethereum | 20 | 17/20 (85%) | 35.3% | 0.0% (-) | 3 | stale | 💀 dead | $128.81 |
 | [ankr](./ankr/brief.md) | $22.09M | avalanche, ethereum, fantom | 32 | 22/32 (69%) | 13.6% | 0.0% (-) | 1 | aging | ✅ active | $47.39 |
 | [gondi](./gondi/brief.md) | $1.40M | ethereum, hyperliquid | 33 | 18/33 (55%) | 16.7% | 0.0% (-) | 2 | fresh | ⚠️ declining | $35.59 |
+| [symmio](./symmio/brief.md) | $3.51M | 8 | 168 | 60/168 (36%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $24.48 |
 | [toupee.tech](./toupee.tech/brief.md) | $6.38M | base | 29 | 25/29 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $24.29 |
 | [noon](./noon/brief.md) | $30.42M | ethereum, hyperliquid, zksync-era | 40 | 30/40 (75%) | 3.3% | 0.0% (-) | 1 | aging | ✅ active | $17.99 |
 | [goose](./goose/brief.md) | $12.80M | ethereum | 7 | 3/7 (43%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $7.87 |
@@ -709,5 +710,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T15:16:12.886Z_
-_Projects: 697_
+_Generated: 2026-05-29T15:18:34.161Z_
+_Projects: 698_

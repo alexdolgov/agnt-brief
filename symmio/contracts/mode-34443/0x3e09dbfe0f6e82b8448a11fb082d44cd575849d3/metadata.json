@@ -1,0 +1,17 @@
+{
+  "address": "0x3e09dbfe0f6e82b8448a11fb082d44cd575849d3",
+  "chain_id": 34443,
+  "contract_name": "TargetRebalancer",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": null,
+  "evm_version": "default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "0x0000000000000000000000003d17f073ccb9c3764f105550b0bcf9550477d266",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:17:41.212Z"
+}

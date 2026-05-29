@@ -1,0 +1,17 @@
+{
+  "address": "0x01e822aae6d2cc456804ccd36aa4d3830dbc6e3b",
+  "chain_id": 146,
+  "contract_name": "DiamondLoupeFacet",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:17:45.891Z"
+}

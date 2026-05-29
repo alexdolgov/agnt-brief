@@ -1,0 +1,738 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "bot",
+        "type": "address"
+      }
+    ],
+    "name": "AddBot",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "multiaccount",
+        "type": "address"
+      }
+    ],
+    "name": "AddMultiaccount",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "rebalancer",
+        "type": "address"
+      }
+    ],
+    "name": "AddRebalancer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes4",
+        "name": "selector",
+        "type": "bytes4"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "signature",
+        "type": "string"
+      }
+    ],
+    "name": "AddRestrictedSelector",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "currentOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "proposedOwner",
+        "type": "address"
+      }
+    ],
+    "name": "ProposeNewOwner",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "bot",
+        "type": "address"
+      }
+    ],
+    "name": "RemoveBot",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "multiaccount",
+        "type": "address"
+      }
+    ],
+    "name": "RemoveMultiaccount",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "rebalancer",
+        "type": "address"
+      }
+    ],
+    "name": "RemoveRebalancer",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes4",
+        "name": "selector",
+        "type": "bytes4"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "signature",
+        "type": "string"
+      }
+    ],
+    "name": "RemoveRestrictedSelector",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "TransferOwnership",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "multiaccounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "_addMultiaccounts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes[]",
+        "name": "_callDatas",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "_call",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_targets",
+        "type": "address[]"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "_callDatas",
+        "type": "bytes[]"
+      }
+    ],
+    "name": "_callMultipleTargets",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "multiaccounts",
+        "type": "address[]"
+      }
+    ],
+    "name": "_removeMultiaccounts",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "acceptOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "bots",
+        "type": "address[]"
+      }
+    ],
+    "name": "addBots",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "rebalancers",
+        "type": "address[]"
+      }
+    ],
+    "name": "addRebalancers",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string[]",
+        "name": "selectors",
+        "type": "string[]"
+      }
+    ],
+    "name": "addRestrictedSelectors",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "quoteId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "partyA",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "allocationAmount",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes",
+            "name": "reqId",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "upnl",
+            "type": "int256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "gatewaySignature",
+            "type": "bytes"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "signature",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "nonce",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct SchnorrSign",
+            "name": "sigs",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct SingleUpnlSig",
+        "name": "sig",
+        "type": "tuple"
+      }
+    ],
+    "name": "allocateAndLock",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "rebalancer",
+        "type": "address"
+      }
+    ],
+    "name": "deregisterFromRebalancer",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPendingOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_func",
+        "type": "string"
+      }
+    ],
+    "name": "getSelector",
+    "outputs": [
+      {
+        "internalType": "bytes4",
+        "name": "",
+        "type": "bytes4"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getSymmioAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "symmioAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "bots",
+        "type": "address[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "selectors",
+        "type": "string[]"
+      },
+      {
+        "internalType": "address[]",
+        "name": "rebalancers",
+        "type": "address[]"
+      }
+    ],
+    "name": "initStoreV1",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "multiAccount",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "partyA",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes[]",
+        "name": "partyACallData",
+        "type": "bytes[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "allocationAmount",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes",
+            "name": "reqId",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "int256",
+            "name": "upnl",
+            "type": "int256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "gatewaySignature",
+            "type": "bytes"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "signature",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "nonce",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct SchnorrSign",
+            "name": "sigs",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct SingleUpnlSig",
+        "name": "sig",
+        "type": "tuple"
+      }
+    ],
+    "name": "instantSendQuoteAndLock",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_bot",
+        "type": "address"
+      }
+    ],
+    "name": "isBotWhitelisted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isInitialized",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "multiaccount",
+        "type": "address"
+      }
+    ],
+    "name": "isMultiAccountWhitelisted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_rebalancer",
+        "type": "address"
+      }
+    ],
+    "name": "isRebalancer",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "_selector",
+        "type": "bytes4"
+      }
+    ],
+    "name": "isSelectorRestricted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_func",
+        "type": "string"
+      }
+    ],
+    "name": "isSelectorSignatureRestricted",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "proposeNewOwner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "rebalancer",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "targetAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "rebalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "bots",
+        "type": "address[]"
+      }
+    ],
+    "name": "removeBots",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "rebalancers",
+        "type": "address[]"
+      }
+    ],
+    "name": "removeRebalancers",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string[]",
+        "name": "selectors",
+        "type": "string[]"
+      }
+    ],
+    "name": "removeRestrictedSelectors",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawERC20",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdrawNative",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawTo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x232b72527e3692e78d7f6d73634fc4e100e31f80",
+  "chain_id": 8453,
+  "contract_name": "SymmAllocationClaimer",
+  "compiler_version": "v0.8.27+commit.40a35a09",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 15,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:17:41.533Z"
+}

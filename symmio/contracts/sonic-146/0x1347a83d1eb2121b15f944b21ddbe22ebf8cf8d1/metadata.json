@@ -1,0 +1,17 @@
+{
+  "address": "0x1347a83d1eb2121b15f944b21ddbe22ebf8cf8d1",
+  "chain_id": 146,
+  "contract_name": "ViewFacet",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 400,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:17:41.516Z"
+}

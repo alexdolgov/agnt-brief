@@ -1,0 +1,150 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "quoteId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "currentPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint8",
+            "name": "partyBUpnlIndex",
+            "type": "uint8"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct QuoteSettlementData[]",
+        "name": "settlementData",
+        "type": "tuple[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "updatedPrices",
+        "type": "uint256[]"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "partyA",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newPartyAAllocatedBalance",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "newPartyBsAllocatedBalances",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "SettleUpnl",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bytes",
+            "name": "reqId",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "quoteId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "currentPrice",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint8",
+                "name": "partyBUpnlIndex",
+                "type": "uint8"
+              }
+            ],
+            "internalType": "struct QuoteSettlementData[]",
+            "name": "quotesSettlementsData",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "int256[]",
+            "name": "upnlPartyBs",
+            "type": "int256[]"
+          },
+          {
+            "internalType": "int256",
+            "name": "upnlPartyA",
+            "type": "int256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "gatewaySignature",
+            "type": "bytes"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "signature",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "owner",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "nonce",
+                "type": "address"
+              }
+            ],
+            "internalType": "struct SchnorrSign",
+            "name": "sigs",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct SettlementSig",
+        "name": "settlementSig",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "updatedPrices",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "address",
+        "name": "partyA",
+        "type": "address"
+      }
+    ],
+    "name": "settleUpnl",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

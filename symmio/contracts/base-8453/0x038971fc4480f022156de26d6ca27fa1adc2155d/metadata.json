@@ -1,0 +1,17 @@
+{
+  "address": "0x038971fc4480f022156de26d6ca27fa1adc2155d",
+  "chain_id": 8453,
+  "contract_name": "AccountFacet",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 27,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:17:36.684Z"
+}

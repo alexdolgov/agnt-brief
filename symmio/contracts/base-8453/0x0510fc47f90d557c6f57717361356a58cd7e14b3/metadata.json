@@ -1,0 +1,18 @@
+{
+  "address": "0x0510fc47f90d557c6f57717361356a58cd7e14b3",
+  "chain_id": 8453,
+  "contract_name": "ZenithSymmioPartyB",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:17:41.157Z"
+}

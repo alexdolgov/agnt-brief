@@ -597,6 +597,7 @@
 | [switcheo-finance](./switcheo-finance/) | $68.4M | 0.0% | $68.4M | active | 3 | 48 | 2026-05-29 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 3 | 134 | 2026-05-29 |
 | [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-05-25 |
+| [symmio](./symmio/) | $24.5 | 0.0% | $24.5 | active | 3 | 168 | 2026-05-29 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 22.6% | ? | active | 9 | 158 | 2026-05-23 |
 | [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 4 | 482 | 2026-05-23 |
 | [synthetix](./synthetix/) | $10.3M | 0.0% | $10.3M | declining | 0 | 13 | 2026-05-26 |

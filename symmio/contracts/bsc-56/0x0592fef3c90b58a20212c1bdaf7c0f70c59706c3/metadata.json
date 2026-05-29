@@ -1,0 +1,18 @@
+{
+  "address": "0x0592fef3c90b58a20212c1bdaf7c0f70c59706c3",
+  "chain_id": 56,
+  "contract_name": "SignatureStore",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:17:37.673Z"
+}

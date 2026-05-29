@@ -1,0 +1,18 @@
+{
+  "address": "0x61f007c2fc4f81916ab7d4b2a3345e14aa3d8c11",
+  "chain_id": 137,
+  "contract_name": "InstantActionsCloseFacet",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, SYMM-Core-Business-Source-License-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 30,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:17:41.514Z"
+}

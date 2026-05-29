@@ -1,0 +1,606 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenMessenger",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "burnToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "mintRecipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "destinationDomain",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct ICCTPBridge.CCTPConfig",
+        "name": "config",
+        "type": "tuple"
+      }
+    ],
+    "name": "CCTPBridgeConfigured",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint64",
+        "name": "nonce",
+        "type": "uint64"
+      }
+    ],
+    "name": "CCTPBridgeInitiated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "burnToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "mintRecipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint16",
+            "name": "destinationChainId",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint32",
+            "name": "sourcePoolId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "destinationPoolId",
+            "type": "uint32"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IStargateBridge.StargateConfig",
+        "name": "config",
+        "type": "tuple"
+      }
+    ],
+    "name": "StargateBridgeConfigured",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "minAmountOut",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "StargateBridgeInitiated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "BALANCER_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "name": "addressToBytes32",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "bridgeWithCCTP",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "nonce",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minAmountOut",
+        "type": "uint256"
+      }
+    ],
+    "name": "bridgeWithStargate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "cctpConfig",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "tokenMessenger",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "burnToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "mintRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "destinationDomain",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tokenMessenger",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "burnToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "mintRecipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint32",
+            "name": "destinationDomain",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct ICCTPBridge.CCTPConfig",
+        "name": "_config",
+        "type": "tuple"
+      }
+    ],
+    "name": "configCCTPBridge",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "burnToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "mintRecipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint16",
+            "name": "destinationChainId",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint32",
+            "name": "sourcePoolId",
+            "type": "uint32"
+          },
+          {
+            "internalType": "uint32",
+            "name": "destinationPoolId",
+            "type": "uint32"
+          }
+        ],
+        "internalType": "struct IStargateBridge.StargateConfig",
+        "name": "_config",
+        "type": "tuple"
+      }
+    ],
+    "name": "configStargateBridge",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "estimateStargateFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleAdmin",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRoleMember",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      }
+    ],
+    "name": "getRoleMemberCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "grantRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "renounceRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "revokeRole",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stargateConfig",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "router",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "burnToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "mintRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "destinationChainId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint32",
+        "name": "sourcePoolId",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "destinationPoolId",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes4",
+        "name": "interfaceId",
+        "type": "bytes4"
+      }
+    ],
+    "name": "supportsInterface",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

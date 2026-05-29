@@ -1,0 +1,18 @@
+{
+  "address": "0x0cbf07176e67671c99222bebdb166efc58dacd95",
+  "chain_id": 42161,
+  "contract_name": "SymmioTimelockController",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT, SYMM-Core-Business-Source-License-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-29T15:17:39.724Z"
+}

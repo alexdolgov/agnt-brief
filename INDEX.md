@@ -337,7 +337,7 @@
 | [loopring](./loopring/) | $2.4M | 0.0% | $2.4M | declining | 132 | 145 | 2026-05-29 |
 | [lumenswap](./lumenswap/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 53 | 2026-05-25 |
 | [lusd-chickenbonds](./lusd-chickenbonds/) | $362.8K | 28.6% | ? | declining | 7 | 24 | 2026-05-24 |
-| [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-25 |
+| [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 3 | 30 | 2026-05-29 |
 | [magma-staking](./magma-staking/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [magpie-ecosystem](./magpie-ecosystem/) | $27.1M | 0.0% | ? | declining | 4 | 2794 | 2026-05-25 |
 | [mainstreet](./mainstreet/) | $78.2M | 100.0% | ? | active | 1 | 1 | 2026-05-27 |

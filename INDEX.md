@@ -230,7 +230,7 @@
 | [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 3 | 16 | 2026-05-29 |
 | [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 3 | 6 | 2026-05-29 |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/) | $95.9M | 1.3% | $94.4M | declining | 12 | 112 | 2026-05-29 |
-| [goldfinger](./goldfinger/) | $23.9M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
+| [goldfinger](./goldfinger/) | $0.0 | 100.0% | ? | active | 6 | 5 | 2026-05-29 |
 | [goldstation](./goldstation/) | $2.3M | 0.0% | ? | active | 3 | 5 | 2026-05-24 |
 | [gondi](./gondi/) | $35.6 | 16.7% | $35.6 | declining | 2 | 33 | 2026-05-24 |
 | [goose](./goose/) | $7.9 | 0.0% | $7.9 | active | 0 | 7 | 2026-05-22 |

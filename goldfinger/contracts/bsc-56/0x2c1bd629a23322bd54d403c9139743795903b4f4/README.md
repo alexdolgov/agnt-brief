@@ -6,8 +6,8 @@
 | Address | `0x2c1bd629a23322bd54d403c9139743795903b4f4` |
 | Role | operational_periphery |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [DeployContracts.md](https://github.com/GoldFingerRWA/token-contracts/blob/main/docs/DeployContracts.md); [SPECIFICATIONS.md](https://github.com/GoldFingerRWA/token-contracts/blob/main/docs/SPECIFICATIONS.md) |
 | Deployments | 1 (bsc [`0x2c1bd629a23322bd54d403c9139743795903b4f4`](../0x2c1bd629a23322bd54d403c9139743795903b4f4/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |

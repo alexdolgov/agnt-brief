@@ -430,7 +430,7 @@
 | [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | unknown | 11 | 4353 | 2026-05-29 |
 | [overtime](./overtime/) | $42.5M | 0.0% | $42.5M | active | 6 | 201 | 2026-05-29 |
 | [p2pb2b](./p2pb2b/) | $4.9M | 0.0% | ? | unknown | 1 | 0 | 2026-05-23 |
-| [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | unknown | 0 | 3 | 2026-05-25 |
+| [paal-ai](./paal-ai/) | $830.1K | 0.0% | $830.1K | unknown | 3 | 3 | 2026-05-29 |
 | [pact](./pact/) | $1.5M | 0.0% | $1.5M | active | 1 | 53 | 2026-05-25 |
 | [pangolin](./pangolin/) | $3.7M | 53.8% | ? | dead | 13 | 163 | 2026-05-25 |
 | [paradex](./paradex/) | $33.3M | 0.0% | ? | declining | 0 | 5 | 2026-05-26 |

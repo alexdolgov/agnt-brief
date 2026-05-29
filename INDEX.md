@@ -613,7 +613,7 @@
 | [templar-dao](./templar-dao/) | $1.6M | 0.0% | $1.6M | unknown | 3 | 40 | 2026-05-29 |
 | [tender-finance](./tender-finance/) | $1.3M | 0.0% | ? | declining | 1 | 1 | 2026-05-25 |
 | [tenderize](./tenderize/) | $332.5M | 2.6% | $332.5M | declining | 7 | 43 | 2026-05-25 |
-| [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 0 | 6 | 2026-05-24 |
+| [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 3 | 6 | 2026-05-29 |
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | unknown | 1 | 15 | 2026-05-25 |
 | [the-arena](./the-arena/) | $9.3M | 0.0% | $9.3M | active | 0 | 172 | 2026-05-25 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-05-23 |

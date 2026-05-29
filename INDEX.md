@@ -261,7 +261,7 @@
 | [hop-protocol](./hop-protocol/) | $258.7M | 10.9% | $258.7M | declining | 4 | 402 | 2026-05-24 |
 | [hope-money](./hope-money/) | $22.0M | 0.0% | $22.0M | active | 4 | 2 | 2026-05-25 |
 | [hopr](./hopr/) | $1.2M | 4.3% | ? | unknown | 2 | 81 | 2026-05-25 |
-| [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
+| [hotcoin](./hotcoin/) | $5.4M | 0.0% | ? | active | 3 | 1 | 2026-05-29 |
 | [hskhodlium](./hskhodlium/) | $1.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [hybra](./hybra/) | $1.9M | 0.0% | ? | active | 0 | 81 | 2026-05-24 |
 | [hyperbeat](./hyperbeat/) | $22.6M | 10.6% | $22.6M | active | 14 | 222 | 2026-05-26 |

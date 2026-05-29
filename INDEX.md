@@ -662,7 +662,7 @@
 | [verio](./verio/) | $7.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [verus-market](./verus-market/) | $9.6M | 0.0% | ? | declining | 3 | 32 | 2026-05-29 |
 | [vesper](./vesper/) | $694.0K | 51.3% | $351.7K | declining | 33 | 44 | 2026-05-29 |
-| [vest-markets](./vest-markets/) | $1.2M | 0.0% | ? | declining | 0 | 4 | 2026-05-25 |
+| [vest-markets](./vest-markets/) | $1.7M | 0.0% | ? | declining | 3 | 4 | 2026-05-29 |
 | [vfat.io](./vfat.io/) | $0.0 | 10.0% | ? | active | 10 | 553 | 2026-05-27 |
 | [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 0 | 65 | 2026-05-26 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 0 | 10 | 2026-05-23 |

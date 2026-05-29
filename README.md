@@ -43,7 +43,6 @@ Each project directory contains:
 | [symbiosis](./symbiosis/brief.md) | $9.35M | cronos, ethereum, scroll | 40 | 26/40 (65%) | 15.4% | 7.7% (SlowMist) | 5 | fresh | ✅ active | $236.15M |
 | [decentralized-euro](./decentralized-euro/brief.md) | $2.08M | 5 | 72 | 39/72 (54%) | 28.2% | 28.2% (ChainSecurity) | 2 | aging | ✅ active | $230.43M |
 | [sphere](./sphere/brief.md) | $6.68M | 5 | 217 | 109/217 (50%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $229.38M |
-| [superfarm](./superfarm/brief.md) | $1.16M | ethereum | 50 | 43/50 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $211.05M |
 | [mezo-bridge](./mezo-bridge/brief.md) | $21.29M | ethereum | 6 | 6/6 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $203.89M |
 | [zircuit-finance](./zircuit-finance/brief.md) | $1.51M | base, ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $180.12M |
 | [autofinance](./autofinance/brief.md) | $48.30M | 5 | 570 | 406/570 (71%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $175.72M |
@@ -97,6 +96,7 @@ Each project directory contains:
 | [republic-note](./republic-note/brief.md) | $16.05M | avalanche | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $51.20M |
 | [lisk-bridge](./lisk-bridge/brief.md) | $38.11M | base, ethereum | 97 | 88/97 (91%) | 1.1% | 0.0% (-) | 1 | unknown | ✅ active | $51.13M |
 | [stakestone](./stakestone/brief.md) | $23.27M | 8 | 183 | 60/183 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $49.73M |
+| [superfarm](./superfarm/brief.md) | $1.18M | ethereum | 50 | 43/50 (86%) | 9.3% | 0.0% (-) | 7 | unknown | ⚠️ declining | $45.12M |
 | [bancor](./bancor/brief.md) | $30.33M | ethereum | 121 | 81/121 (67%) | 23.5% | 23.5% (ChainSecurity, OpenZeppelin) | 4 | stale | ⚠️ declining | $43.79M |
 | [overtime](./overtime/brief.md) | $3.01M | 5 | 201 | 141/201 (70%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $42.54M |
 | [yuzu-money](./yuzu-money/brief.md) | $50.94M | plasma | 8 | 8/8 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $41.02M |
@@ -709,5 +709,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T14:55:34.555Z_
+_Generated: 2026-05-29T15:01:27.753Z_
 _Projects: 697_

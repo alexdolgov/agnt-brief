@@ -584,7 +584,7 @@
 | [summer.fi](./summer.fi/) | $140.9M | 0.0% | $140.9M | unknown | 5 | 485 | 2026-05-29 |
 | [sunny](./sunny/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 1 | 94 | 2026-05-26 |
-| [superfarm](./superfarm/) | $211.1M | 0.0% | $211.1M | declining | 0 | 50 | 2026-05-25 |
+| [superfarm](./superfarm/) | $211.1M | 9.3% | $45.1M | declining | 28 | 50 | 2026-05-29 |
 | [superfluid](./superfluid/) | $14.2M | 0.0% | $14.2M | active | 0 | 412 | 2026-05-25 |
 | [superform](./superform/) | $2.0M | 40.7% | $28.8K | active | 9 | 159 | 2026-05-26 |
 | [supernova](./supernova/) | $2.2M | 48.9% | ? | declining | 1 | 47 | 2026-05-24 |

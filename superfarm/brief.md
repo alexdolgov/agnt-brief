@@ -7,11 +7,11 @@
 - Project: SuperFarm (`superfarm`)
 - Website: [https://superverse.co/](https://superverse.co/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-25T20:13:23.791Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-05-29T15:00:50.667Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
 - Chains: ethereum
 - Contract surface: 50 unique implementations (78 raw deployments)
-- DeFi Llama TVL: $1,160,879.22
+- DeFi Llama TVL: $1,182,708.42
 - On-chain TVL (included contracts): $211,051,062.44
 - TVL by chain: Ethereum $211,051,062.44
 
@@ -25,38 +25,42 @@ The Staker contracts interact with the SUPER token and partner tokens like Injec
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/43 (0.0%)
-- Verified + Unaudited implementations: 43
+- Verified implementations audited: 4/43 (9.3%)
+- Verified + Unaudited implementations: 39
 - Verified by bytecode match: 0
 - Unverified implementations: 7
 - Unique implementations: 50
 - Raw deployments: 78
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $211,051,062.44
+- Audits discovered: 28
+- Scoreable audits (matched contracts): 7
+- ASD (verified + unaudited TVL): $45,121,375.17
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 28 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $211,051,062.44 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $45,121,375.17 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 4 | 9.3% | n/a |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
-
-- None
-
-### ⚠️ Verified + Unaudited (43)
+### ✅ Verified + Audited (4)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| Token | token | ethereum | [`0xe53ec7...b40a55`](./contracts/ethereum-1/0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55/) | ⚠️ Unaudited |
+| Token | token | ethereum | [`0xe53ec7...b40a55`](./contracts/ethereum-1/0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55/) | ✅ Audited |
+| TokenVault | core_logic | ethereum | 6 deployments: ethereum [`0x23a1fd...73fbcf`](./contracts/ethereum-1/0x23a1fd006d151e1d920d5de860e82c697e73fbcf/); ethereum `0x701354...f66da7`; ethereum `0x7080f6...ac3f2c`; ethereum `0x72267d...250cb1`; ethereum `0xbda122...3a4700`; ethereum `0xf6e479...2e14ca` | ✅ Audited |
+| Staker | core_logic | ethereum | 4 deployments: ethereum [`0x439194...ed4430`](./contracts/ethereum-1/0x4391940003ee5d7502c41c539aa12d3f2aed4430/); ethereum `0x8e586d...d5fc9b`; ethereum `0xb3ea98...9edd80`; ethereum `0xf35a92...206207` | ✅ Audited |
+| Timelock | governance | ethereum | 6 deployments: ethereum [`0x0167ee...7a7e47`](./contracts/ethereum-1/0x0167eed0dd3e644fa06e6de44bf65503b37a7e47/); ethereum `0x0afa5d...3c0123`; ethereum `0x399a14...48aa60`; ethereum `0x6a6780...8fc2e6`; ethereum `0x7456d1...f66769`; ethereum `0x9935a8...b6362b` | ✅ Audited |
+
+### ⚠️ Verified + Unaudited (39)
+
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
 | ERC20FixedSupply | token | ethereum | [`0x9cb7a4...e3da53`](./contracts/ethereum-1/0x9cb7a4ef0cae65b07362bc679a0b874041e3da53/) | ⚠️ Unaudited |
-| TokenVault | core_logic | ethereum | 6 deployments: ethereum [`0x23a1fd...73fbcf`](./contracts/ethereum-1/0x23a1fd006d151e1d920d5de860e82c697e73fbcf/); ethereum `0x701354...f66da7`; ethereum `0x7080f6...ac3f2c`; ethereum `0x72267d...250cb1`; ethereum `0xbda122...3a4700`; ethereum `0xf6e479...2e14ca` | ⚠️ Unaudited |
-| Staker | core_logic | ethereum | 4 deployments: ethereum [`0x439194...ed4430`](./contracts/ethereum-1/0x4391940003ee5d7502c41c539aa12d3f2aed4430/); ethereum `0x8e586d...d5fc9b`; ethereum `0xb3ea98...9edd80`; ethereum `0xf35a92...206207` | ⚠️ Unaudited |
 | InjectiveToken | token | ethereum | [`0xe28b3b...ceca30`](./contracts/ethereum-1/0xe28b3b32b6c345a34ff64674606124dd5aceca30/) | ⚠️ Unaudited |
 | NFTRepairCentre | token | ethereum | [`0xe4f3c9...d63996`](./contracts/ethereum-1/0xe4f3c9b9058d4b88f3c551c64e26e99a25d63996/) | ⚠️ Unaudited |
 | AltcoinsPurchaseProxy | unknown | ethereum | [`0xde486e...e0bc8f`](./contracts/ethereum-1/0xde486e214cb0fb4a36cc4b0aea48379c66e0bc8f/) | ⚠️ Unaudited |
@@ -89,7 +93,6 @@ The Staker contracts interact with the SUPER token and partner tokens like Injec
 | SimpleSale | unknown | ethereum | [`0x83bbca...2f0f9b`](./contracts/ethereum-1/0x83bbca966537302f6c5cd903ed0f7e614b2f0f9b/) | ⚠️ Unaudited |
 | Super1155 | unknown | ethereum | [`0x6110dd...009af2`](./contracts/ethereum-1/0x6110dd87b7a6fbbebb0ea0f0dffb59ae59009af2/) | ⚠️ Unaudited |
 | SuperStaking | unknown | ethereum | [`0x530433...86d03b`](./contracts/ethereum-1/0x5304334ac100a6576ac3c15e8fca41e18386d03b/) | ⚠️ Unaudited |
-| Timelock | governance | ethereum | 6 deployments: ethereum [`0x0167ee...7a7e47`](./contracts/ethereum-1/0x0167eed0dd3e644fa06e6de44bf65503b37a7e47/); ethereum `0x0afa5d...3c0123`; ethereum `0x399a14...48aa60`; ethereum `0x6a6780...8fc2e6`; ethereum `0x7456d1...f66769`; ethereum `0x9935a8...b6362b` | ⚠️ Unaudited |
 | TimeTrialEliteLeague | unknown | ethereum | 3 deployments: ethereum [`0x654291...b6cead`](./contracts/ethereum-1/0x654291175cdedc48679f290c318949d9b6b6cead/); ethereum `0x736a68...25a393`; ethereum `0x9d5919...52c91e` | ⚠️ Unaudited |
 | TokenLaunchpadVoucherPacksSale | token | ethereum | [`0x58ce6c...54575b`](./contracts/ethereum-1/0x58ce6caa5b3c25804d9ebe59c1803f213a54575b/) | ⚠️ Unaudited |
 | TokenLaunchpadVouchers | token | ethereum | [`0x87a374...a37c0d`](./contracts/ethereum-1/0x87a3747c9942d8351cc85aac2f94807b27a37c0d/) | ⚠️ Unaudited |
@@ -127,6 +130,34 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [FarmItemRecords.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/FarmItemRecords.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [FarmShopRecords.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/FarmShopRecords.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 4 | low |
+| [FarmStakerRecords.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/FarmStakerRecords.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 4 | low |
+| [FarmTokenRecords.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/FarmTokenRecords.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Fee1155.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Fee1155.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Fee1155NFT.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Fee1155NFT.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Fee1155NFTLockable.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Fee1155NFTLockable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [FeeOwner.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/FeeOwner.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [OwnableDelegateProxy.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/OwnableDelegateProxy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ProxyRegistry.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/ProxyRegistry.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Shop1155.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Shop1155.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 4 | low |
+| [ShopEtherMinter1155.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/ShopEtherMinter1155.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ShopEtherMinter1155Curated.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/ShopEtherMinter1155Curated.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [ShopLaunchpad1155.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/ShopLaunchpad1155.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Staker.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Staker.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 4 | low |
+| [Timelock.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Timelock.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 6 | low |
+| [Token.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Token.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
+| [TokenVault.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/TokenVault.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 6 | low |
+| [MockProxyRegistry.md](https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/test/MockProxyRegistry.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [api.md](https://github.com/SuperFarmDAO/Sink/blob/master/docs/api.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [configuration.md](https://github.com/SuperFarmDAO/Sink/blob/master/docs/configuration.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [pages.md](https://github.com/SuperFarmDAO/Sink/blob/master/docs/deployment/pages.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [sanity-sync.md](https://github.com/SuperFarmDAO/Sink/blob/master/docs/deployment/sanity-sync.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [workers.md](https://github.com/SuperFarmDAO/Sink/blob/master/docs/deployment/workers.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [faqs.md](https://github.com/SuperFarmDAO/Sink/blob/master/docs/faqs.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -134,10 +165,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xe53ec7...b40a55`](./contracts/ethereum-1/0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55/) | Token | token | $121,843,315.10 | Verified native implementation with $121,843,315.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9cb7a4...e3da53`](./contracts/ethereum-1/0x9cb7a4ef0cae65b07362bc679a0b874041e3da53/) | ERC20FixedSupply | token | $45,118,759.76 | Verified native implementation with $45,118,759.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x23a1fd...73fbcf`](./contracts/ethereum-1/0x23a1fd006d151e1d920d5de860e82c697e73fbcf/) | TokenVault | core_logic | $43,843,628.53 | Verified native implementation with $43,843,628.53 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x439194...ed4430`](./contracts/ethereum-1/0x4391940003ee5d7502c41c539aa12d3f2aed4430/) | Staker | core_logic | $242,743.63 | Verified native implementation with $242,743.63 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xe4f3c9...d63996`](./contracts/ethereum-1/0xe4f3c9b9058d4b88f3c551c64e26e99a25d63996/) | NFTRepairCentre | token | $4.64 | Verified native implementation with $4.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xde486e...e0bc8f`](./contracts/ethereum-1/0xde486e214cb0fb4a36cc4b0aea48379c66e0bc8f/) | AltcoinsPurchaseProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xaf309e...3c9bd0`](./contracts/ethereum-1/0xaf309e609e6b65913be7f77763152871bc3c9bd0/) | CrateKeyFullSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -180,9 +208,33 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 21
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: low=7
+- Match method counts: extraction_exact=29
+
+Zero-match audit list:
+
+- [9520] FarmItemRecords.md
+- [9523] FarmTokenRecords.md
+- [9524] Fee1155.md
+- [9525] Fee1155NFT.md
+- [9526] Fee1155NFTLockable.md
+- [9527] FeeOwner.md
+- [9528] OwnableDelegateProxy.md
+- [9529] ProxyRegistry.md
+- [9531] ShopEtherMinter1155.md
+- [9532] ShopEtherMinter1155Curated.md
+- [9533] ShopLaunchpad1155.md
+- [9538] MockProxyRegistry.md
+- [9539] api.md
+- [9540] configuration.md
+- [9541] pages.md
+- [9542] sanity-sync.md
+- [9543] workers.md
+- [9544] faqs.md
+- [9545] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9546] 0002-metadata-manifest-and-pull-command.md
+- [9547] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

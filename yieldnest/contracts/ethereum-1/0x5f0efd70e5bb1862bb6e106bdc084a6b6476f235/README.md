@@ -6,9 +6,9 @@
 | Address | `0x5f0efd70e5bb1862bb6e106bdc084a6b6476f235` |
 | Role | core_logic |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
-| Deployments | 3 (ethereum [`0x5f0efd70e5bb1862bb6e106bdc084a6b6476f235`](../0x5f0efd70e5bb1862bb6e106bdc084a6b6476f235/); bsc `0xb85924736978226c10635c0752ea20ffae8c0614`; bsc `0xd19c84487847b699ae9eb48de864fc3b9f85231b`) |
+| Audited | Yes |
+| Audits | [yieldnest_default_asset_index_audit_report.pdf](https://github.com/yieldnest/Publications/blob/main/audits/yieldnest_default_asset_index_audit_report.pdf); [yieldnest_max_vault_withdrawer_audit_report.pdf](https://github.com/yieldnest/Publications/blob/main/audits/yieldnest_max_vault_withdrawer_audit_report.pdf) |
+| Deployments | 1 (ethereum [`0x5f0efd70e5bb1862bb6e106bdc084a6b6476f235`](../0x5f0efd70e5bb1862bb6e106bdc084a6b6476f235/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |
 | TVL | n/a |

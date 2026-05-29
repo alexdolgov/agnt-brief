@@ -688,7 +688,7 @@
 | [yei-finance](./yei-finance/) | $29.8M | 0.0% | ? | declining | 1 | 44 | 2026-05-22 |
 | [yield-yak](./yield-yak/) | $16.6M | 0.0% | ? | declining | 4 | 8 | 2026-05-29 |
 | [yieldfi](./yieldfi/) | $43.7M | 66.7% | $16.3M | declining | 7 | 23 | 2026-05-25 |
-| [yieldnest](./yieldnest/) | $19.2M | 0.0% | $19.2M | declining | 0 | 45 | 2026-05-25 |
+| [yieldnest](./yieldnest/) | $19.2M | 69.0% | ? | declining | 27 | 33 | 2026-05-29 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | unknown | 1 | 191 | 2026-05-25 |
 | [yo-protocol](./yo-protocol/) | $40.9M | 0.0% | $40.9M | active | 0 | 32 | 2026-05-26 |
 | [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 0 | 8 | 2026-05-27 |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "unslashed",
-  "generated_at": "2026-05-25T15:00:52.892Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-05-29T17:03:58.877Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "unslashed",
@@ -22,26 +22,26 @@
     "drop_from_peak_pct": 98.16350506122893
   },
   "summary": {
-    "total_contracts": 16,
-    "total_addresses": 22,
-    "unique_implementations": 16,
-    "total_deployments": 22,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 16,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 16,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3126783.21693,
-    "tvl_usd": 4636145.884442273,
+    "dl_tvl_usd": 3066570.36258,
+    "tvl_usd": 3126687.1465069735,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 4636145.88
+      "ethereum": 3126687.15
     },
-    "asd_usd": 4636145.884442273,
+    "asd_usd": 3126687.1465069735,
     "website_url": null,
     "chains": [
       "ethereum"
@@ -54,7 +54,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 3
     }
   },
   "topography": {
@@ -97,528 +97,73 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1321f1f1aa541a56c31682c57b80ecfccd9bb288",
-      "name": "ArcxTokenV2",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": 949182.7041246513,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ArcxTokenV2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1321f1f1aa541a56c31682c57b80ecfccd9bb288",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 949182.7041246513,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2c23276107b45e64c8c59482f4a24f4f2e568ea6",
-      "name": "bVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": 301989.54823051067,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "bVault",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2c23276107b45e64c8c59482f4a24f4f2e568ea6",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 521.094199,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x378388aa69f3032fa46150221210c7fa70a35153",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 146040.6052963904,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3fb6b07d77dace1ba6b5f6ab1d8668643d15a2cc",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 69946.28845308775,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x750d30a8259e63ed72a075f5b6630f08ce7996d0",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 12732.50263181951,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8016907d54ed8bcf5da100c4d0eb434c0185dc0e",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3243.392589,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8d9a39706d3b66446a298f1ae735730257ec6108",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 69505.66506121302,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xebd12620e29dc6c452db7b96e1f190f3ee02bde8",
-      "name": "BACDAIPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": 88280.57263998144,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACDAIPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xebd12620e29dc6c452db7b96e1f190f3ee02bde8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 88280.57263998144,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x51882184b7f9beed6db9c617846140da1d429fd4",
-      "name": "BACUSDCPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": 86330.93511,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACUSDCPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x51882184b7f9beed6db9c617846140da1d429fd4",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 86330.93511,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2833bdc5b31269d356bdf92d0fd8f3674e877e44",
-      "name": "BACUSDTPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": 71162.695824,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACUSDTPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2833bdc5b31269d356bdf92d0fd8f3674e877e44",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 71162.695824,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d",
-      "name": "StakingAccrualERC20V5",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": 12500.281793938997,
-      "is_proxy": true,
-      "impl_address": "0x5a35c5a4d28fa2cb33eba3de485083b739df63bb",
-      "impl_name": "StakingAccrualERC20V5",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 12500.281793938997,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c",
-      "name": "BACSUSDPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": 10,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACSUSDPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 10,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32",
-      "name": "ERC20Peg",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": 2.0002122165893166,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ERC20Peg",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.0002122165893166,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc462d8ee54953e7d7bf276612b75387ea114c3bf",
-      "name": "BACyCRVPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BACyCRVPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc462d8ee54953e7d7bf276612b75387ea114c3bf",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da",
-      "name": "BlackPoolToken",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BlackPoolToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
-      "name": "MasterChef",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MasterChef",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2",
-      "name": "StakedBPT",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StakedBPT",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc935285b0d88069305431dace0c3c01d7e793d84",
-      "name": "TokenPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TokenPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc935285b0d88069305431dace0c3c01d7e793d84",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x57024267e8272618f9c5037d373043a8646507e5",
-      "name": "UniswapV2Pair",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": "Unslashed",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UniswapV2Pair",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x57024267e8272618f9c5037d373043a8646507e5",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9f624b25991b99d7b14d6740a9d581dd77980808",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8",
-      "name": "Vyper_contract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Unslashed",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Vyper_contract",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 8123,
+      "audit_key": "audit-8123",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8124,
+      "audit_key": "audit-8124",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 8125,
+      "audit_key": "audit-8125",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -630,150 +175,33 @@
       "origin_kind": "native",
       "tvl_usd": 3126687.1465069735,
       "risk_note": "Verified native implementation with $3,126,687.15 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1321f1f1aa541a56c31682c57b80ecfccd9bb288",
-      "name": "ArcxTokenV2",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 949182.7041246513,
-      "risk_note": "Verified native implementation with $949,182.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2c23276107b45e64c8c59482f4a24f4f2e568ea6",
-      "name": "bVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 301989.54823051067,
-      "risk_note": "Verified native implementation with $301,989.55 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xebd12620e29dc6c452db7b96e1f190f3ee02bde8",
-      "name": "BACDAIPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 88280.57263998144,
-      "risk_note": "Verified native implementation with $88,280.57 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x51882184b7f9beed6db9c617846140da1d429fd4",
-      "name": "BACUSDCPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 86330.93511,
-      "risk_note": "Verified native implementation with $86,330.94 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2833bdc5b31269d356bdf92d0fd8f3674e877e44",
-      "name": "BACUSDTPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 71162.695824,
-      "risk_note": "Verified native implementation with $71,162.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9bffad7a6d5f52dbc51cae33e419793c72fd7d9d",
-      "name": "StakingAccrualERC20V5",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 12500.281793938997,
-      "risk_note": "Verified native implementation with $12,500.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c",
-      "name": "BACSUSDPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 10,
-      "risk_note": "Verified native implementation with $10.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x76bac85e1e82cd677faa2b3f00c4a2626c4c6e32",
-      "name": "ERC20Peg",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 2.0002122165893166,
-      "risk_note": "Verified native implementation with $2.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc462d8ee54953e7d7bf276612b75387ea114c3bf",
-      "name": "BACyCRVPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0ec9f76202a7061eb9b3a7d6b59d36215a7e37da",
-      "name": "BlackPoolToken",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc2edad668740f1aa35e4d8f227fb8e17dca888cd",
-      "name": "MasterChef",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x46c5098f73fa656e82d7e9afbf3c00b32b7b1ee2",
-      "name": "StakedBPT",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc935285b0d88069305431dace0c3c01d7e793d84",
-      "name": "TokenPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 14,
-    "upstream": 1,
+    "native": 1,
+    "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 8123,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 8124,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 8125,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -7,8 +7,8 @@
 - Project: Gnosis Protocol v1 (`gnosis-protocol-v1`)
 - Website: [https://gnosis.io/](https://gnosis.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T07:55:16.348Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T18:31:02.604Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: ethereum
 - Contract surface: 112 unique implementations (165 raw deployments)
 - DeFi Llama TVL: $2,227,602.00

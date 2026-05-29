@@ -227,7 +227,7 @@
 | [generic.money](./generic.money/) | $3.7M | 75.0% | ? | active | 1 | 13 | 2026-05-24 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 3 | 1 | 2026-05-29 |
 | [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
-| [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-05-23 |
+| [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 3 | 16 | 2026-05-29 |
 | [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-05-26 |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/) | $95.9M | 0.0% | $95.9M | declining | 0 | 112 | 2026-05-24 |
 | [goldfinger](./goldfinger/) | $23.9M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |

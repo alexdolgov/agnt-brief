@@ -547,7 +547,7 @@
 | [sophon-bridge](./sophon-bridge/) | $5.5M | 0.0% | $5.5M | active | 8 | 10 | 2026-05-27 |
 | [sophon-farm](./sophon-farm/) | $7.0M | 100.0% | ? | dead | 9 | 1 | 2026-05-23 |
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | active | 3 | 58 | 2026-05-29 |
-| [sovryn-bridge](./sovryn-bridge/) | $3.0M | 0.0% | ? | active | 0 | 47 | 2026-05-24 |
+| [sovryn-bridge](./sovryn-bridge/) | $2.9M | 0.0% | ? | active | 3 | 47 | 2026-05-29 |
 | [sovryn](./sovryn/) | $38.3M | 0.0% | ? | unknown | 11 | 0 | 2026-05-26 |
 | [spacefi](./spacefi/) | $1.5M | 0.0% | ? | active | 5 | 38 | 2026-05-24 |
 | [sparkdex](./sparkdex/) | $29.4M | 0.0% | ? | unknown | 9 | 0 | 2026-05-22 |

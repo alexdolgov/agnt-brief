@@ -346,7 +346,7 @@
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 3 | 5 | 2026-05-29 |
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.2M | 0.0% | ? | sunsetting | 0 | 109 | 2026-05-25 |
 | [manta-cedefi](./manta-cedefi/) | $26.8M | 0.0% | ? | unknown | 3 | 17 | 2026-05-29 |
-| [manta-pacific](./manta-pacific/) | $25.7M | 0.0% | ? | active | 0 | 3 | 2026-05-25 |
+| [manta-pacific](./manta-pacific/) | $25.2M | 0.0% | ? | active | 3 | 3 | 2026-05-29 |
 | [mantra-dao](./mantra-dao/) | $612.5M | 0.0% | $612.5M | declining | 1 | 209 | 2026-05-25 |
 | [matstake](./matstake/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-05-24 |

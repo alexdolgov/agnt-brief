@@ -343,7 +343,7 @@
 | [mainstreet](./mainstreet/) | $78.2M | 100.0% | ? | active | 1 | 1 | 2026-05-27 |
 | [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 10 | 36 | 2026-05-26 |
 | [mangrove](./mangrove/) | $4.3M | 24.4% | ? | active | 8 | 68 | 2026-05-23 |
-| [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-05-23 |
+| [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 3 | 5 | 2026-05-29 |
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.2M | 0.0% | ? | sunsetting | 0 | 109 | 2026-05-25 |
 | [manta-cedefi](./manta-cedefi/) | $26.8M | 0.0% | ? | unknown | 0 | 17 | 2026-05-22 |
 | [manta-pacific](./manta-pacific/) | $25.7M | 0.0% | ? | active | 0 | 3 | 2026-05-25 |

@@ -371,7 +371,7 @@ Each project directory contains:
 | [tokenworks](./tokenworks/brief.md) | $2.32M | ethereum | 60 | 33/60 (55%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $0.00 |
 | [charm-finance](./charm-finance/brief.md) | $2.20M | 6 | 10 | 6/10 (60%) | 50.0% | 50.0% (Code4rena, Spearbit) | 4 | fresh | ❓ unknown | $0.00 |
 | [snuggle](./snuggle/brief.md) | $1.29M | arbitrum, base | 89 | 52/89 (58%) | 23.1% | 0.0% (-) | 1 | fresh | ✅ active | $0.00 |
-| [mansory](./mansory/brief.md) | $6.34M | bsc | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $0.00 |
+| [mansory](./mansory/brief.md) | $6.29M | bsc | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $0.00 |
 | [1sec](./1sec/brief.md) | $1.46M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [3f-mutual](./3f-mutual/brief.md) | $3.78M | ethereum | 21 | 18/21 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [abc-pool](./abc-pool/brief.md) | $6.29M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -695,5 +695,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T10:21:34.609Z_
+_Generated: 2026-05-29T10:23:25.577Z_
 _Projects: 683_

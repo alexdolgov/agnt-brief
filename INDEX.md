@@ -464,7 +464,7 @@
 | [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | unknown | 2 | 119 | 2026-05-24 |
 | [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-05-24 |
 | [privacy-pools](./privacy-pools/) | $6.6M | 100.0% | ? | active | 28 | 1 | 2026-05-29 |
-| [probit-global](./probit-global/) | $12.7M | 0.0% | ? | active | 0 | 3 | 2026-05-22 |
+| [probit-global](./probit-global/) | $12.8M | 0.0% | ? | active | 3 | 3 | 2026-05-29 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
 | [puffer-finance](./puffer-finance/) | $225.1M | 36.4% | $169.2M | active | 4 | 65 | 2026-05-27 |
 | [pulsechain-bridge](./pulsechain-bridge/) | $52.0M | 0.0% | ? | active | 0 | 5 | 2026-05-27 |

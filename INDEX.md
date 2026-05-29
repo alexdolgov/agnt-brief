@@ -352,7 +352,7 @@
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-05-24 |
 | [mcdex](./mcdex/) | $19.3M | 15.1% | $19.3M | dead | 4 | 1482 | 2026-05-25 |
 | [mdex](./mdex/) | $235.5K | 85.7% | $20.2K | dead | 3 | 13 | 2026-05-24 |
-| [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 0 | 4 | 2026-05-24 |
+| [meeds-finance](./meeds-finance/) | $1.8M | 0.0% | $1.8M | unknown | 3 | 4 | 2026-05-29 |
 | [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-23 |
 | [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | sunsetting | 6 | 39 | 2026-05-24 |
 | [merchant-moe](./merchant-moe/) | $37.3M | 50.0% | ? | unknown | 1 | 53 | 2026-05-26 |

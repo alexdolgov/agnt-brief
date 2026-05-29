@@ -659,7 +659,7 @@
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | unknown | 3 | 28 | 2026-05-29 |
 | [velodrome](./velodrome/) | $40.2M | 40.4% | ? | active | 8 | 52 | 2026-05-26 |
 | [velvet.capital](./velvet.capital/) | $95.2M | 77.8% | $95.2M | declining | 13 | 420 | 2026-05-24 |
-| [veno-finance](./veno-finance/) | $42.8M | 0.0% | ? | active | 0 | 49 | 2026-05-26 |
+| [veno-finance](./veno-finance/) | $42.8M | 0.0% | ? | active | 3 | 49 | 2026-05-29 |
 | [ventuals](./ventuals/) | $273.7 | 100.0% | ? | unknown | 2 | 4 | 2026-05-22 |
 | [verio](./verio/) | $7.5M | 0.0% | ? | unknown | 11 | 0 | 2026-05-23 |
 | [verus-market](./verus-market/) | $9.6M | 0.0% | ? | declining | 3 | 32 | 2026-05-29 |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nado",
-  "generated_at": "2026-05-27T17:58:11.831Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-05-29T11:15:19.570Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nado",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 23,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 9,
     "scoreable_audits": 0,
     "dl_tvl_usd": 54956474,
     "tvl_usd": 54956474,
@@ -52,7 +52,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 9
     }
   },
   "topography": {
@@ -779,7 +779,207 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 5671,
+      "audit_key": "audit-5671",
+      "report_name": "STYLEGUIDE.md",
+      "report_url": "https://github.com/nadohq/nado-typescript-sdk/blob/main/docs/STYLEGUIDE.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 5671,
+          "report_url": "https://github.com/nadohq/nado-typescript-sdk/blob/main/docs/STYLEGUIDE.md"
+        },
+        {
+          "audit_id": 5675,
+          "report_url": "https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/docs/STYLEGUIDE.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 5672,
+      "audit_key": "audit-5672",
+      "report_name": "cookie-policy.pdf",
+      "report_url": "https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/apps/trade/public/docs/cookie-policy.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5673,
+      "audit_key": "audit-5673",
+      "report_name": "privacy-policy.pdf",
+      "report_url": "https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/apps/trade/public/docs/privacy-policy.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5674,
+      "audit_key": "audit-5674",
+      "report_name": "terms-of-use.pdf",
+      "report_url": "https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/apps/trade/public/docs/terms-of-use.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5676,
+      "audit_key": "audit-5676",
+      "report_name": "TECHNICAL_DECISIONS.md",
+      "report_url": "https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/docs/TECHNICAL_DECISIONS.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5677,
+      "audit_key": "audit-5677",
+      "report_name": "LIST_TESTNET_MARKETS.md",
+      "report_url": "https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/docs/playbooks/LIST_TESTNET_MARKETS.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5678,
+      "audit_key": "audit-5678",
+      "report_name": "UNLOCK_MAINNET_MARKETS.md",
+      "report_url": "https://github.com/nadohq/nado-web-monorepo-snapshot/blob/main/docs/playbooks/UNLOCK_MAINNET_MARKETS.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5679,
+      "audit_key": "audit-5679",
+      "report_name": "migration_guide.md",
+      "report_url": "https://github.com/nadohq/nado-bincode/blob/nado_bincode/docs/migration_guide.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 5680,
+      "audit_key": "audit-5680",
+      "report_name": "spec.md",
+      "report_url": "https://github.com/nadohq/nado-bincode/blob/nado_bincode/docs/spec.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -793,7 +993,44 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 5671,
+        "report_name": "STYLEGUIDE.md"
+      },
+      {
+        "audit_id": 5672,
+        "report_name": "cookie-policy.pdf"
+      },
+      {
+        "audit_id": 5673,
+        "report_name": "privacy-policy.pdf"
+      },
+      {
+        "audit_id": 5674,
+        "report_name": "terms-of-use.pdf"
+      },
+      {
+        "audit_id": 5676,
+        "report_name": "TECHNICAL_DECISIONS.md"
+      },
+      {
+        "audit_id": 5677,
+        "report_name": "LIST_TESTNET_MARKETS.md"
+      },
+      {
+        "audit_id": 5678,
+        "report_name": "UNLOCK_MAINNET_MARKETS.md"
+      },
+      {
+        "audit_id": 5679,
+        "report_name": "migration_guide.md"
+      },
+      {
+        "audit_id": 5680,
+        "report_name": "spec.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

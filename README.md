@@ -150,7 +150,6 @@ Each project directory contains:
 | [inception](./inception/brief.md) | $5.95M | 9 | 79 | 65/79 (82%) | 27.3% | 0.0% (-) | 10 | aging | ❓ unknown | $15.64M |
 | [thorswap](./thorswap/brief.md) | $10.26M | ethereum | 34 | 23/34 (68%) | 13.0% | 0.0% (-) | 2 | stale | ❓ unknown | $15.54M |
 | [t-rize](./t-rize/brief.md) | $23.00M | base | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $15.01M |
-| [superfluid](./superfluid/brief.md) | $5.21M | 10 | 412 | 104/412 (25%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $14.16M |
 | [makina](./makina/brief.md) | $36.80M | base, ethereum, ink | 36 | 33/36 (92%) | 90.9% | 84.8% (ChainSecurity) | 6 | fresh | ✅ active | $12.90M |
 | [standx](./standx/brief.md) | $48.27M | bsc | 18 | 8/18 (44%) | 50.0% | 0.0% (-) | 5 | fresh | ❓ unknown | $12.71M |
 | [lets-get-hai](./lets-get-hai/brief.md) | $1.21M | optimism | 54 | 53/54 (98%) | 77.4% | 0.0% (-) | 4 | fresh | ✅ active | $12.63M |
@@ -662,6 +661,7 @@ Each project directory contains:
 | [stratis-mstrax](./stratis-mstrax/brief.md) | $2.04M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [suibridge](./suibridge/brief.md) | $41.86M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [sumer.money](./sumer.money/brief.md) | $1.89M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [superfluid](./superfluid/brief.md) | $5.13M | 10 | 397 | 89/397 (22%) | 20.8% | 5.2% (Trail of Bits) | 6 | fresh | ✅ active | - |
 | [supernova](./supernova/brief.md) | $2.16M | ethereum | 47 | 47/47 (100%) | 48.9% | 0.0% (-) | 1 | fresh | ⚠️ declining | - |
 | [swappi](./swappi/brief.md) | $1.96M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [swapscanner](./swapscanner/brief.md) | $4.68M | klaytn | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
@@ -709,5 +709,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T15:01:27.753Z_
+_Generated: 2026-05-29T15:06:10.945Z_
 _Projects: 697_

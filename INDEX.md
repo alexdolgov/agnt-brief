@@ -585,7 +585,7 @@
 | [sunny](./sunny/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [superearn](./superearn/) | $295.4 | 0.0% | $295.4 | active | 1 | 94 | 2026-05-26 |
 | [superfarm](./superfarm/) | $211.1M | 9.3% | $45.1M | declining | 28 | 50 | 2026-05-29 |
-| [superfluid](./superfluid/) | $14.2M | 0.0% | $14.2M | active | 0 | 412 | 2026-05-25 |
+| [superfluid](./superfluid/) | $12.7M | 20.8% | ? | active | 14 | 397 | 2026-05-29 |
 | [superform](./superform/) | $2.0M | 40.7% | $28.8K | active | 9 | 159 | 2026-05-26 |
 | [supernova](./supernova/) | $2.2M | 48.9% | ? | declining | 1 | 47 | 2026-05-24 |
 | [suzaku](./suzaku/) | $1.2M | 4.8% | $1.2M | active | 2 | 49 | 2026-05-25 |

@@ -7,8 +7,8 @@
 - Project: KAIO (`kaio`)
 - Website: [https://www.kaio.xyz/](https://www.kaio.xyz/)
 - Lifecycle: unknown (Tier 0, 49.4% below peak)
-- Generated: 2026-05-29T09:40:21.319Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T20:10:58.368Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: avalanche, ethereum, polygon, sei
 - Contract surface: 35 unique implementations (206 raw deployments)
 - DeFi Llama TVL: $60,800,519.13

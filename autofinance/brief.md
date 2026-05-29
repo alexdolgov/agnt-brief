@@ -7,8 +7,8 @@
 - Project: AUTOfinance (`autofinance`)
 - Website: [https://www.auto.finance](https://www.auto.finance)
 - Lifecycle: transitioning (Tier 1, transitioning)
-- Generated: 2026-05-29T00:27:13.301Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-b087
+- Generated: 2026-05-29T01:32:48.802Z
+- Pipeline run: v2-pipeline-2026-05-29-8b27fb-240c
 - Chains: arbitrum, base, ethereum, linea, plasma
 - Contract surface: 570 unique implementations (1752 raw deployments)
 - DeFi Llama TVL: $48,297,791.68

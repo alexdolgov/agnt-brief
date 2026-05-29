@@ -423,7 +423,7 @@
 | [opyn](./opyn/) | $1.0M | 48.5% | $104.3K | dead | 157 | 103 | 2026-05-29 |
 | [orangex](./orangex/) | $39.8M | 0.0% | ? | active | 0 | 3 | 2026-05-26 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
-| [osl](./osl/) | $41.5M | 0.0% | ? | active | 0 | 4 | 2026-05-26 |
+| [osl](./osl/) | $41.5M | 0.0% | ? | active | 3 | 4 | 2026-05-29 |
 | [osmosis-dex](./osmosis-dex/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
 | [ostium](./ostium/) | $29.1M | 47.1% | ? | unknown | 1 | 17 | 2026-05-26 |
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | dead | 0 | 3 | 2026-05-25 |

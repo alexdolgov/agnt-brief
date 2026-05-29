@@ -7,8 +7,8 @@
 - Project: Jones DAO (`jones-dao`)
 - Website: [https://jonesdao.io](https://jonesdao.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T09:31:18.585Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-29T20:03:54.690Z
+- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
 - Chains: arbitrum, base, berachain, blast, ethereum
 - Contract surface: 500 unique implementations (1366 raw deployments)
 - DeFi Llama TVL: $1,456,726.90

@@ -214,7 +214,7 @@ Each project directory contains:
 | [izumi-finance](./izumi-finance/brief.md) | $3.83M | 13 | 181 | 21/181 (12%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $2.76M |
 | [iaero-protocol](./iaero-protocol/brief.md) | $1.98M | base | 45 | 40/45 (89%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $2.72M |
 | [singularity-finance](./singularity-finance/brief.md) | $5.36M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | $2.69M |
-| [plasma-saving-vaults](./plasma-saving-vaults/brief.md) | $45.44M | plasma | 6 | 5/6 (83%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.65M |
+| [plasma-saving-vaults](./plasma-saving-vaults/brief.md) | $45.45M | plasma | 6 | 5/6 (83%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.65M |
 | [sperax](./sperax/brief.md) | $2.20M | arbitrum, bsc, ethereum | 142 | 34/142 (24%) | 47.1% | 8.8% (SlowMist) | 7 | aging | ⚠️ declining | $2.63M |
 | [loopring](./loopring/brief.md) | $10.46M | base, ethereum | 145 | 75/145 (52%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.43M |
 | [iotube](./iotube/brief.md) | $3.29M | bsc, ethereum, polygon | 40 | 16/40 (40%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $2.23M |
@@ -701,5 +701,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-29T12:19:03.625Z_
+_Generated: 2026-05-29T12:21:58.174Z_
 _Projects: 689_

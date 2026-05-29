@@ -448,7 +448,7 @@
 | [pionex](./pionex/) | $37.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | dead | 1 | 34 | 2026-05-24 |
 | [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | unknown | 149 | 7 | 2026-05-29 |
-| [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 0 | 6 | 2026-05-26 |
+| [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 3 | 6 | 2026-05-29 |
 | [pleasing-gold](./pleasing-gold/) | $88.1M | 0.0% | $88.1M | unknown | 0 | 8 | 2026-05-27 |
 | [pnetwork](./pnetwork/) | $1.5M | 0.0% | $1.5M | declining | 0 | 25 | 2026-05-25 |
 | [polkastarter](./polkastarter/) | $9.6M | 0.0% | $9.6M | unknown | 0 | 2 | 2026-05-24 |

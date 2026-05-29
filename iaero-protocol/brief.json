@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "iaero-protocol",
-  "generated_at": "2026-05-29T08:50:25.334Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-05-29T19:25:42.476Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-691c43-e9c3",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "iaero-protocol",

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stargate-finance",
-  "generated_at": "2026-05-27T11:40:02.750Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-05-30T11:25:33.306Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stargate-finance",
@@ -26,15 +26,15 @@
     "total_addresses": 741,
     "unique_implementations": 294,
     "total_deployments": 741,
-    "audited_contracts": 12,
-    "unaudited_contracts": 40,
-    "contracts_verified_audited": 7,
-    "contracts_verified_unaudited": 35,
+    "audited_contracts": 26,
+    "unaudited_contracts": 26,
+    "contracts_verified_audited": 18,
+    "contracts_verified_unaudited": 24,
     "contracts_verified_by_bytecode": 10,
     "contracts_unverified": 242,
-    "coverage_pct": 23.1,
-    "total_audits": 2,
-    "scoreable_audits": 2,
+    "coverage_pct": 50,
+    "total_audits": 20,
+    "scoreable_audits": 16,
     "dl_tvl_usd": 92291118,
     "tvl_usd": 203945013.10388273,
     "tvl_source": "on_chain",
@@ -51,7 +51,7 @@
       "sonic": 176233.9,
       "unichain": 1066633.74
     },
-    "asd_usd": 171876873.64597324,
+    "asd_usd": 5157269.047628499,
     "website_url": "https://stargate.finance/",
     "chains": [
       "arbitrum",
@@ -83,8 +83,8 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
-      "unknown": 0
+      "stale": 17,
+      "unknown": 3
     }
   },
   "topography": {
@@ -118,7 +118,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 162250933.11096156,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -127,7 +127,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 422590.7329944439,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -136,7 +136,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -145,7 +145,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 700452.7506351823,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -154,7 +154,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 122526.42223480283,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -163,7 +163,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -172,7 +172,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1888701.8798139845,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -181,7 +181,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 337294.1057731354,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 59144,
@@ -190,14 +190,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 48012.18966983111,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10482",
+        "audit-10483",
+        "audit-10484",
+        "audit-10485"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -724,7 +729,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 0.00020800217590283718,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -733,7 +738,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 149122.2285758038,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -751,7 +756,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 420560.2841747695,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 59144,
@@ -760,14 +765,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 379410.8933032501,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10487",
+        "audit-10488"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": null
     },
     {
@@ -1410,7 +1418,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -1419,7 +1427,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -1428,7 +1436,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -1437,7 +1445,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1446,7 +1454,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1464,7 +1472,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 59144,
@@ -1473,14 +1481,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10482",
+        "audit-10483",
+        "audit-10484",
+        "audit-10485",
+        "audit-10486"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2017,7 +2031,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2026,7 +2040,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -2035,7 +2049,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -2044,7 +2058,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2053,7 +2067,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2062,7 +2076,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -2071,7 +2085,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 59144,
@@ -2080,14 +2094,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10482",
+        "audit-10483",
+        "audit-10484",
+        "audit-10485"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2739,7 +2758,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2748,7 +2767,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2757,7 +2776,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -2766,7 +2785,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2775,7 +2794,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2784,7 +2803,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -2793,14 +2812,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10482",
+        "audit-10483",
+        "audit-10484",
+        "audit-10485",
+        "audit-10486"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2824,7 +2849,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2833,7 +2858,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -2842,7 +2867,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2851,7 +2876,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 59144,
@@ -2860,14 +2885,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10491",
+        "audit-10492"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3418,7 +3446,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3427,7 +3455,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3436,7 +3464,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -3445,7 +3473,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -3454,7 +3482,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3463,7 +3491,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3472,7 +3500,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -3481,7 +3509,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 59144,
@@ -3490,14 +3518,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10482",
+        "audit-10483",
+        "audit-10484",
+        "audit-10485",
+        "audit-10486",
+        "audit-10493"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3521,7 +3556,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3530,7 +3565,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -3539,7 +3574,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3548,7 +3583,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 59144,
@@ -3557,14 +3592,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10487",
+        "audit-10488"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3721,7 +3759,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3730,7 +3768,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -3739,7 +3777,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3757,7 +3795,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -3766,14 +3804,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10485",
+        "audit-10486"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
+      "verification_bucket": "verified_bytecode_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -3864,7 +3905,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3873,7 +3914,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -3882,7 +3923,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3891,7 +3932,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3900,7 +3941,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -3909,7 +3950,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -3918,7 +3959,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -3927,7 +3968,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -3936,7 +3977,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3945,7 +3986,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3954,7 +3995,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -3963,7 +4004,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -3972,7 +4013,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -3981,7 +4022,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -3990,14 +4031,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10489",
+        "audit-10490"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4021,7 +4065,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -4030,7 +4074,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -4039,7 +4083,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -4048,7 +4092,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -4057,14 +4101,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10493"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -4951,14 +4997,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10494",
+        "audit-10495"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -12795,7 +12844,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -12804,7 +12853,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -12813,7 +12862,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -12822,7 +12871,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -12831,14 +12880,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10494",
+        "audit-10495"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -12893,7 +12945,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -12902,7 +12954,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -12911,7 +12963,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -12920,7 +12972,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -12929,7 +12981,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 137,
@@ -12938,7 +12990,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -12947,7 +12999,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -12956,7 +13008,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -12965,7 +13017,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 43114,
@@ -12974,14 +13026,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-10491",
+        "audit-10492"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -13333,15 +13388,503 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10482,
+      "audit_key": "audit-10482",
+      "report_name": "Stargate Audit 1.0 (December 22nd 2021) - Quantstamp.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20Audit%201.0%20(December%2022nd%202021)%20-%20Quantstamp.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Bridge",
+        "BytesLib",
+        "Factory",
+        "ILayerZeroEndpoint",
+        "ILayerZeroReceiver",
+        "ILayerZeroUserApplicationConfig",
+        "IStargateReceiver",
+        "IStargateRouter",
+        "LPStaking",
+        "LPTokenERC20",
+        "Pool",
+        "Router",
+        "Staking",
+        "StargateToken"
+      ],
+      "matched_contracts": 40,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10483,
+      "audit_key": "audit-10483",
+      "report_name": "Stargate Audit 1.1 (March 21st 2022) - Zokyo.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20Audit%201.1%20(March%2021st%202022)%20-%20Zokyo.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Bridge",
+        "Factory",
+        "LPStaking",
+        "LPTokenERC20",
+        "OmnichainFungibleToken",
+        "Pool",
+        "Router",
+        "StargateToken"
+      ],
+      "matched_contracts": 40,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10484,
+      "audit_key": "audit-10484",
+      "report_name": "Stargate Audit 2.0 (February 24th 2022) - Quantstamp.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20Audit%202.0%20(February%2024th%202022)%20-%20Quantstamp.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Bridge",
+        "Factory",
+        "ILayerZeroEndpoint",
+        "ILayerZeroReceiver",
+        "ILayerZeroUserApplicationConfig",
+        "IStargateFeeLibrary",
+        "IStargateReceiver",
+        "IStargateRouter",
+        "LPStaking",
+        "LPTokenERC20",
+        "OmnichainFungibleToken",
+        "Pool",
+        "Router",
+        "Staking",
+        "StargateFeeLibraryV01",
+        "StargateToken"
+      ],
+      "matched_contracts": 40,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10485,
+      "audit_key": "audit-10485",
+      "report_name": "Stargate Audit Report (16th March 2022) - Quantstamp.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20Audit%20Report%20(16th%20March%202022)%20-%20Quantstamp.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Bridge",
+        "Factory",
+        "IStargateFeeLibrary",
+        "IStargateReceiver",
+        "IStargateRouter",
+        "LPStaking",
+        "LPTokenERC20",
+        "OmnichainFungibleToken",
+        "Pool",
+        "Router",
+        "StargateFeeLibraryV01",
+        "StargateFeeLibraryV02",
+        "StargateToken",
+        "SwapMath"
+      ],
+      "matched_contracts": 45,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10486,
+      "audit_key": "audit-10486",
+      "report_name": "Stargate Audit Report (March 6th 2022) - Zellic.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20Audit%20Report%20(March%206th%202022)%20-%20Zellic.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Bridge",
+        "LPStaking",
+        "LPTokenERC20",
+        "OmnichainFungibleToken",
+        "Pool",
+        "Router",
+        "StargateFeeLibraryV02"
+      ],
+      "matched_contracts": 28,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10487,
+      "audit_key": "audit-10487",
+      "report_name": "Stargate EthVault & RouterETH Audit 1.1 (17th June 2022) - Ackee.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20EthVault%20%26%20RouterETH%20Audit%201.1%20(17th%20June%202022)%20-%20Ackee.pdf",
+      "auditor": "Ackee Blockchain",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "RouterETH",
+        "StargateEthVault"
+      ],
+      "matched_contracts": 9,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10488,
+      "audit_key": "audit-10488",
+      "report_name": "Stargate EthVault &RouterETH Audit 1.0 (17th June 2022) - Ackee.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20EthVault%20%26RouterETH%20Audit%201.0%20(17th%20June%202022)%20-%20Ackee.pdf",
+      "auditor": "Ackee Blockchain",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "RouterETH",
+        "StargateEthVault"
+      ],
+      "matched_contracts": 9,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10489,
+      "audit_key": "audit-10489",
+      "report_name": "Stargate FeeLibraryV4 Audit 1.0 (June 28th 2022) - Ackee.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20FeeLibraryV4%20Audit%201.0%20(June%2028th%202022)%20-%20Ackee.pdf",
+      "auditor": "Ackee Blockchain",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "StargateFeeLibraryV04"
+      ],
+      "matched_contracts": 15,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10490,
+      "audit_key": "audit-10490",
+      "report_name": "Stargate FeeLibraryV4 Audit 1.1 (June 28th 2022) - Ackee.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20FeeLibraryV4%20Audit%201.1%20(June%2028th%202022)%20-%20Ackee.pdf",
+      "auditor": "Ackee Blockchain",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "StargateFeeLibraryV04"
+      ],
+      "matched_contracts": 15,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10491,
+      "audit_key": "audit-10491",
+      "report_name": "Stargate LPStakingTime & WidgetSwap Audit 1.0 (July 12th 2022) - Ackee.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20LPStakingTime%20%26%20WidgetSwap%20Audit%201.0%20(July%2012th%202022)%20-%20Ackee.pdf",
+      "auditor": "Ackee Blockchain",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "LPStakingTime",
+        "WidgetSwap"
+      ],
+      "matched_contracts": 15,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10492,
+      "audit_key": "audit-10492",
+      "report_name": "Stargate LPStakingTime & WidgetSwap Audit 1.1 (July 12th 2022) - Ackee.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20LPStakingTime%20%26%20WidgetSwap%20Audit%201.1%20(July%2012th%202022)%20-%20Ackee.pdf",
+      "auditor": "Ackee Blockchain",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "LPStakingTime",
+        "WidgetSwap"
+      ],
+      "matched_contracts": 15,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10493,
+      "audit_key": "audit-10493",
+      "report_name": "Stargate Router & FeeLibraryV5.1 Audit (December 14th 2022) - Zellic.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20Router%20%26%20FeeLibraryV5.1%20Audit%20(December%2014th%202022)%20-%20Zellic.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Router.sol",
+        "StargateFeeLibraryV05.sol"
+      ],
+      "matched_contracts": 14,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10494,
+      "audit_key": "audit-10494",
+      "report_name": "Stargate VE Audit 1.0 (March 29th 2022) - Ackee.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20VE%20Audit%201.0%20(March%2029th%202022)%20-%20Ackee.pdf",
+      "auditor": "Ackee Blockchain",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "VotingEscrow",
+        "sVotingEscrow"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10495,
+      "audit_key": "audit-10495",
+      "report_name": "Stargate VE Audit 1.1 (April 13th 2022) - Ackee.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20VE%20Audit%201.1%20(April%2013th%202022)%20-%20Ackee.pdf",
+      "auditor": "Ackee Blockchain",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "VotingEscrow",
+        "sVotingEscrow"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10498,
+      "audit_key": "audit-10498",
+      "report_name": "Paladin_StargateFeeDistributor_Final_Report.pdf",
+      "report_url": "https://github.com/stargate-protocol/stargate-dao/blob/main/audit/Paladin_StargateFeeDistributor_Final_Report.pdf",
+      "auditor": "Paladin",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10499,
+      "audit_key": "audit-10499",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10500,
+      "audit_key": "audit-10500",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10501,
+      "audit_key": "audit-10501",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "Zellic",
       "tier": 2,
-      "contracts_covered": 12,
-      "coverage_pct": 23.1,
+      "contracts_covered": 17,
+      "coverage_pct": 32.7,
       "latest_audit": "2024-05"
+    },
+    {
+      "auditor": "Ackee Blockchain",
+      "tier": 2,
+      "contracts_covered": 7,
+      "coverage_pct": 13.5,
+      "latest_audit": "2022-07"
+    },
+    {
+      "auditor": "Quantstamp",
+      "tier": 2,
+      "contracts_covered": 6,
+      "coverage_pct": 11.5,
+      "latest_audit": "2022-03"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 5,
+      "coverage_pct": 9.6,
+      "latest_audit": "2022-03"
     },
     {
       "auditor": "Ottersec",
@@ -13353,16 +13896,6 @@
   ],
   "coverage_gaps": [
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x296f55f8fb28e498b858d0bcda06d955b2cb3f97",
-      "name": "StargateToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 165770511.1920829,
-      "risk_note": "Verified native implementation with $165,770,511.19 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1329,
       "chain_name": "sei",
       "address": "0x0db9afb4c33be43a0a0e396fd1383b4ea97ab10a",
@@ -13371,16 +13904,6 @@
       "origin_kind": "native",
       "tvl_usd": 5144447.949486532,
       "risk_note": "Verified native implementation with $5,144,447.95 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x224d8fd7ab6ad4c6eb4611ce56ef35dec2277f03",
-      "name": "StargateEthVault",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": 949093.4062618256,
-      "risk_note": "Verified native implementation with $949,093.41 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -13415,48 +13938,8 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x296f55f8fb28e498b858d0bcda06d955b2cb3f97",
-      "name": "Bridge",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xc16977205c53cd854136031bd2128f75d6ff63c9",
       "name": "ConfluxOFT",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x06d538690af257da524f25d0cd52fd85b1c2173e",
-      "name": "Factory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x224d8fd7ab6ad4c6eb4611ce56ef35dec2277f03",
-      "name": "LPStaking",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x06eb48763f117c7be887296cdcdfad2e4092739c",
-      "name": "LPStakingTime",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -13493,26 +13976,6 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 59144,
-      "chain_name": "linea",
-      "address": "0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590",
-      "name": "Router",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x150f94b44927f078737562f0fcf3c95c01cc2376",
-      "name": "RouterETH",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x141381f07fa31432243113cda2f617d5d255d39a",
@@ -13543,40 +14006,10 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x5c1a97c144a97e9b370f833a06c70ca8f2f30de5",
-      "name": "StargateFeeLibraryV02",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0x1ef98c187c3940e96080fa4e8a5b858e62bdee81",
       "name": "StargateFeeLibraryV03",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x165a45083f43bf3d0df756bd51e3855bdef45250",
-      "name": "StargateFeeLibraryV04",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6faf1ab85ffbe7b3a557f4864046ff861734afd0",
-      "name": "StargateFeeLibraryV05",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -13605,16 +14038,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x9485dbda44b279311e3eee374ced60b5364a97d9",
-      "name": "sVotingEscrow",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x67480c30ff8cc128cf0250e25616857302df647f",
       "name": "USDCOFTAdapter",
       "role": "adapter",
@@ -13625,28 +14048,8 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0e42acbd23faee03249daff896b78d7e79fbd58e",
-      "name": "VotingEscrow",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x4dfcad285ef39fed84e77edf1b7dbc442565e55e",
       "name": "WhitelistAuction",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x02489ac60f7f581445b7d2dd59bb0a415a1009df",
-      "name": "WidgetSwap",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -13681,14 +14084,31 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 386
+      "extraction_exact": 683
     },
     "extraction_confidence_counts": {
-      "high": 2
+      "high": 16
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 10498,
+        "report_name": "Paladin_StargateFeeDistributor_Final_Report.pdf"
+      },
+      {
+        "audit_id": 10499,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 10500,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 10501,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

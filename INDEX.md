@@ -530,7 +530,7 @@
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
 | [shape-bridge](./shape-bridge/) | $1.1M | 0.0% | ? | active | 2 | 28 | 2026-05-25 |
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | unknown | 51 | 40 | 2026-05-29 |
-| [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-05-23 |
+| [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 4 | 12 | 2026-05-30 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 3 | 2 | 2026-05-29 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-05-26 |
@@ -567,11 +567,11 @@
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-05-24 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 3 | 2 | 2026-05-29 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-05-23 |
-| [stake.link](./stake.link/) | $76.8M | 6.5% | $76.8M | active | 1 | 71 | 2026-05-27 |
+| [stake.link](./stake.link/) | $76.8M | 60.9% | $35.9K | active | 30 | 71 | 2026-05-30 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 3 | 183 | 2026-05-29 |
 | [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 18 | 3 | 2026-05-23 |
 | [standx](./standx/) | $12.7M | 50.0% | $12.7M | unknown | 6 | 18 | 2026-05-26 |
-| [stargate-finance](./stargate-finance/) | $203.9M | 23.1% | $171.9M | active | 2 | 294 | 2026-05-27 |
+| [stargate-finance](./stargate-finance/) | $203.9M | 50.0% | $5.2M | active | 20 | 294 | 2026-05-30 |
 | [stargate](./stargate/) | $6.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [stcelo](./stcelo/) | $1.6M | 50.0% | ? | active | 2 | 19 | 2026-05-24 |
 | [stcyber](./stcyber/) | $51.4M | 0.0% | $51.4M | active | 1 | 31 | 2026-05-24 |

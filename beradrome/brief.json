@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "beradrome",
-  "generated_at": "2026-05-23T09:36:44.933Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-30T19:20:03.712Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-c7d699-40af",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "beradrome",
@@ -45,7 +45,7 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 7141754.29127,
+    "dl_tvl_usd": 7001960.0656,
     "tvl_usd": 3289417.3733268282,
     "tvl_source": "on_chain",
     "tvl_by_chain": {

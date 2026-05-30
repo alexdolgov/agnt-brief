@@ -1,6 +1,6 @@
 # xsy — Contract Index
 
-16 unique implementations on avalanche · 23 deployments · 0 audited · 5 unaudited · 11 unverified
+16 unique implementations on avalanche · 23 deployments · 1 audited · 4 unaudited · 11 unverified
 
 ## core_logic (1)
 
@@ -30,7 +30,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [Unity](./avalanche-43114/0x639c72eea35e50f5e2911891389fc4e8422587c4/) | avalanche | [`0x639c72...2587c4`](./avalanche-43114/0x639c72eea35e50f5e2911891389fc4e8422587c4/) | ⚠️ Unaudited | Verified |
+| [Unity](./avalanche-43114/0x639c72eea35e50f5e2911891389fc4e8422587c4/) | avalanche | [`0x639c72...2587c4`](./avalanche-43114/0x639c72eea35e50f5e2911891389fc4e8422587c4/) | ✅ Audited | Verified |
 | UnnamedContract | avalanche | `0x0a006e...cd359e` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x1fe74c...6d20e3` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x2d2fbf...1ffecf` | ❓ Unverified | Unverified |

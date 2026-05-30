@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "odyssey-finance",
-  "generated_at": "2026-05-23T05:34:39.128Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-30T19:18:57.722Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-c7d699-40af",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "odyssey-finance",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 9469636.55356,
-    "tvl_usd": 9469636.55356,
+    "dl_tvl_usd": 10182418.438500002,
+    "tvl_usd": 10182418.438500002,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

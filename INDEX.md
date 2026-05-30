@@ -74,7 +74,7 @@
 | [belt-finance](./belt-finance/) | $15.3M | 47.5% | $7.1M | dead | 10 | 1331 | 2026-05-29 |
 | [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 182 | 105 | 2026-05-30 |
 | [benddao](./benddao/) | $1.5M | 0.0% | $1.5M | dead | 1 | 15 | 2026-05-25 |
-| [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 2 | 2026-05-23 |
+| [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 2 | 2026-05-30 |
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-05-23 |
 | [bigone](./bigone/) | $35.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [bima-cdp](./bima-cdp/) | $5.4M | 50.0% | ? | active | 3 | 38 | 2026-05-23 |
@@ -83,7 +83,7 @@
 | [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | dead | 1 | 84 | 2026-05-23 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [bitomato](./bitomato/) | $2.6M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [bitu-protocol](./bitu-protocol/) | $23.1M | 0.0% | ? | active | 0 | 5 | 2026-05-22 |
+| [bitu-protocol](./bitu-protocol/) | $22.3M | 60.0% | ? | active | 2 | 5 | 2026-05-30 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [bitway-earn](./bitway-earn/) | $136.4M | 0.0% | $136.4M | unknown | 3 | 8 | 2026-05-27 |
 | [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | unknown | 3 | 8 | 2026-05-27 |
@@ -299,7 +299,7 @@
 | [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 3 | 22 | 2026-05-29 |
 | [katana-pre-launch](./katana-pre-launch/) | $18.3M | 0.0% | $18.3M | active | 29 | 166 | 2026-05-22 |
 | [kava-earn](./kava-earn/) | $1.7M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
-| [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
+| [kava-lend](./kava-lend/) | $7.8M | 0.0% | ? | active | 1 | 1 | 2026-05-30 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [kava-mint](./kava-mint/) | $52.2M | 0.0% | ? | active | 5 | 1 | 2026-05-30 |
 | [keep-network](./keep-network/) | $27.0M | 15.9% | $26.2M | dead | 18 | 354 | 2026-05-25 |
@@ -417,7 +417,7 @@
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 3 | 19 | 2026-05-29 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 3 | 6 | 2026-05-29 |
 | [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 4 | 40 | 2026-05-30 |
-| [odyssey-finance](./odyssey-finance/) | $9.5M | 0.0% | ? | active | 0 | 79 | 2026-05-23 |
+| [odyssey-finance](./odyssey-finance/) | $10.2M | 0.0% | ? | active | 0 | 79 | 2026-05-30 |
 | [okcoin](./okcoin/) | $26.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [omnibtc](./omnibtc/) | $2.2M | 0.0% | ? | active | 5 | 6 | 2026-05-29 |
 | [onyx](./onyx/) | $384.4M | 0.0% | $384.4M | dead | 1 | 16 | 2026-05-27 |
@@ -685,7 +685,7 @@
 | [wrapped](./wrapped/) | $23.9M | 0.0% | ? | active | 3 | 1 | 2026-05-29 |
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 51 | 2026-05-25 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
-| [xsy](./xsy/) | $3.6M | 0.0% | $3.6M | active | 0 | 16 | 2026-05-22 |
+| [xsy](./xsy/) | $3.6M | 20.0% | $3.6M | active | 1 | 16 | 2026-05-30 |
 | [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 1 | 2026-05-23 |
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | dead | 4 | 30 | 2026-05-29 |
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kava-lend",
-  "generated_at": "2026-05-23T01:35:24.678Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-30T19:22:45.417Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-c7d699-40af",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kava-lend",
@@ -33,10 +33,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 11818668.66172,
-    "tvl_usd": 11818668.66172,
+    "dl_tvl_usd": 7791610.974099999,
+    "tvl_usd": 7791610.974099999,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -52,7 +52,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 1
     }
   },
   "topography": {
@@ -97,7 +97,29 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11489,
+      "audit_key": "audit-11489",
+      "report_name": "DL audit link",
+      "report_url": "https://skynet.certik.com/projects/hard",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -111,7 +133,12 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11489,
+        "report_name": "DL audit link"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

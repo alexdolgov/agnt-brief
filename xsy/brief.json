@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "xsy",
-  "generated_at": "2026-05-22T15:41:46.601Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-30T19:21:45.136Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-c7d699-40af",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "xsy",
@@ -26,16 +26,16 @@
     "total_addresses": 23,
     "unique_implementations": 16,
     "total_deployments": 23,
-    "audited_contracts": 0,
-    "unaudited_contracts": 5,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "audited_contracts": 1,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 11,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 20972372.64888,
+    "coverage_pct": 20,
+    "total_audits": 1,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 20973051.71857,
     "tvl_usd": 3598575.013673288,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -48,11 +48,11 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2025-03",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 0,
+      "aging": 1,
       "stale": 0,
       "unknown": 0
     }
@@ -275,14 +275,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11490"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -627,8 +629,46 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
+  "audits": [
+    {
+      "audit_id": 11490,
+      "audit_key": "audit-11490",
+      "report_name": "Rendered PDF capture",
+      "report_url": "https://1728001657-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fy666pAtApydsTORD7kHB%2Fuploads%2FRdDHIS3o9qNSygkgXgcM%2FXSY%20x%20Quantstamp%20-%20Audit.pdf",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "EnumDeclaration",
+        "EnumerableStructMapping",
+        "Management",
+        "Receipt",
+        "StructDeclaration",
+        "Unity",
+        "XSYBaseContract"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Quantstamp",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2025-03"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 43114,
@@ -639,16 +679,6 @@
       "origin_kind": "native",
       "tvl_usd": 3598575.013673288,
       "risk_note": "Verified native implementation with $3,598,575.01 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x639c72eea35e50f5e2911891389fc4e8422587c4",
-      "name": "Unity",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
@@ -658,8 +688,12 @@
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 1
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

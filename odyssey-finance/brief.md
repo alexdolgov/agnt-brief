@@ -5,11 +5,11 @@
 - Project: Odyssey Finance (`odyssey-finance`)
 - Website: [https://app.odyssey.finance/en](https://app.odyssey.finance/en)
 - Lifecycle: active (Tier 0, 38.2% below peak)
-- Generated: 2026-05-23T05:34:39.128Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-30T19:18:57.722Z
+- Pipeline run: v2-pipeline-2026-05-30-c7d699-40af
 - Chains: base, ethereum, optimism
 - Contract surface: 79 unique implementations (272 raw deployments)
-- DeFi Llama TVL: $9,469,636.55
+- DeFi Llama TVL: $10,182,418.44
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 

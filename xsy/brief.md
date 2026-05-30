@@ -5,11 +5,11 @@
 - Project: XSY (`xsy`)
 - Website: [https://xsy.fi](https://xsy.fi)
 - Lifecycle: active (Tier 0, 44.8% below peak)
-- Generated: 2026-05-22T15:41:46.601Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-30T19:21:45.136Z
+- Pipeline run: v2-pipeline-2026-05-30-c7d699-40af
 - Chains: avalanche
 - Contract surface: 16 unique implementations (23 raw deployments)
-- DeFi Llama TVL: $20,972,372.65
+- DeFi Llama TVL: $20,973,051.72
 - On-chain TVL (included contracts): $3,598,575.01
 - TVL by chain: Avalanche $3,598,575.01
 
@@ -23,30 +23,34 @@ The XSY vaults rely on the Use family's liquidity pools (ClPool) and stablecoin 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 5
+- Verified implementations audited: 1/5 (20.0%)
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 11
 - Unique implementations: 16
 - Raw deployments: 23
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
+- Audits discovered: 1
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $3,598,575.01
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2025-03 (aging)
+- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Quantstamp | Tier 2 | 1 | 20.0% | 2025-03 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| Unity | unknown | avalanche | [`0x639c72...2587c4`](./contracts/avalanche-43114/0x639c72eea35e50f5e2911891389fc4e8422587c4/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -54,7 +58,6 @@ The XSY vaults rely on the Use family's liquidity pools (ClPool) and stablecoin 
 | BeaconProxy | registry | avalanche | 2 deployments: avalanche [`0x76de25...167e40`](./contracts/avalanche-43114/0x76de251bee4a3b902857f6a0fce8a320c4167e40/); avalanche `0x902714...3ecc0a` | ⚠️ Unaudited |
 | ERC1967Proxy | proxy | avalanche | 7 deployments: avalanche [`0x318323...063b73`](./contracts/avalanche-43114/0x3183236cdce208888c1857c2f718e3628c063b73/); avalanche `0x580d5e...f2ab01`; avalanche `0x65a83c...d33b6e`; avalanche `0x9b9cf4...d4c77a`; avalanche `0x9cf467...ef51f8`; avalanche `0xdbc519...f02b4a`; avalanche `0xf8adf3...a401a9` | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | avalanche | [`0xb97ef9...c48a6e`](./contracts/avalanche-43114/0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e/) | ⚠️ Unaudited |
-| Unity | unknown | avalanche | [`0x639c72...2587c4`](./contracts/avalanche-43114/0x639c72eea35e50f5e2911891389fc4e8422587c4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,6 +93,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Rendered PDF capture](https://1728001657-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fy666pAtApydsTORD7kHB%2Fuploads%2FRdDHIS3o9qNSygkgXgcM%2FXSY%20x%20Quantstamp%20-%20Audit.pdf) | Quantstamp | Audit | 2025-03 | aging | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
@@ -98,7 +102,6 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | avalanche | [`0xca7bd8...ee07cf`](./contracts/avalanche-43114/0xca7bd86983a2474f3c7cb45207bc16760cee07cf/) | ClPool | core_logic | $3,598,575.01 | Verified native implementation with $3,598,575.01 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | [`0x639c72...2587c4`](./contracts/avalanche-43114/0x639c72eea35e50f5e2911891389fc4e8422587c4/) | Unity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -115,7 +118,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=1
 
 Fork inheritance lineage and inherited audits are included when available.

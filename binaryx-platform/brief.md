@@ -5,11 +5,11 @@
 - Project: Binaryx Platform (`binaryx-platform`)
 - Website: [https://www.binaryx.com](https://www.binaryx.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-23T07:09:57.817Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-30T10:43:18.029Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: polygon
 - Contract surface: 133 unique implementations (234 raw deployments)
-- DeFi Llama TVL: $8,635,566.25
+- DeFi Llama TVL: $8,639,607.16
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ All product families rely on shared infrastructure contracts like AddressesProvi
 - Unverified implementations: 108
 - Unique implementations: 133
 - Raw deployments: 234
-- Audits discovered: 2
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-03 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -209,6 +209,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Audit](https://binaryx-1.gitbook.io/documentation/taxes/audit.md) | unknown | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 | [Смарт-контракты Binaryx [были проверены]() в марте 2023 года компанией [Blaize Security](https://blaize.tech/). Общий уровень безопасности платформы Binaryx оценен как **Highly Secure, 9,8 из 10**. Более подробную информацию можно найти здесь:](https://blaize.tech/clients/smart-contract-security-audit-for-binaryx) | Blaize Security | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -247,7 +250,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -256,5 +259,8 @@ Zero-match audit list:
 
 - [2136] Audit
 - [2137] Смарт-контракты Binaryx [были проверены]() в марте 2023 года компанией [Blaize Security](https://blaize.tech/). Общий уровень безопасности платформы Binaryx оценен как **Highly Secure, 9,8 из 10**. Более подробную информацию можно найти здесь:
+- [9991] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9992] 0002-metadata-manifest-and-pull-command.md
+- [9993] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -5,11 +5,11 @@
 - Project: ETH Strategy (`eth-strategy`)
 - Website: [https://www.ethstrat.xyz/](https://www.ethstrat.xyz/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-24T00:58:03.301Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-30T10:43:18.082Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: ethereum
 - Contract surface: 49 unique implementations (161 raw deployments)
-- DeFi Llama TVL: $3,877,356.65
+- DeFi Llama TVL: $3,883,275.14
 - On-chain TVL (included contracts): $30,762,606.01
 - TVL by chain: Ethereum $30,762,606.01
 
@@ -29,11 +29,11 @@ The ETH Strategy and ESPN families share the StratToken as a core asset, while t
 - Unverified implementations: 8
 - Unique implementations: 49
 - Raw deployments: 161
-- Audits discovered: 1
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $30,762,606.01
 - Latest audit: 2025-08 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -124,6 +124,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [| **Nethermind ESPN Audit** | [NM0599-FINAL\_ETH\_STRAT.pdf]() |](https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0599-FINAL_ETH_STRAT.pdf) | Nethermind | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -174,7 +177,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -182,5 +185,8 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2674] | **Nethermind ESPN Audit** | [NM0599-FINAL\_ETH\_STRAT.pdf]() |
+- [10071] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [10072] 0002-metadata-manifest-and-pull-command.md
+- [10073] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

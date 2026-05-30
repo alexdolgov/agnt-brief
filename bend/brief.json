@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bend",
-  "generated_at": "2026-05-30T10:13:23.951Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-d7f7",
+  "generated_at": "2026-05-30T10:45:47.851Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "bend",

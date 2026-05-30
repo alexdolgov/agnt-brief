@@ -5,11 +5,11 @@
 - Project: CEX.IO (`cex.io`)
 - Website: [http://cex.io/](http://cex.io/)
 - Lifecycle: active (Tier 0, 77.4% below peak)
-- Generated: 2026-05-23T06:57:06.635Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-30T10:43:19.148Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: ethereum, polygon
 - Contract surface: 3 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $8,578,905.81
+- DeFi Llama TVL: $7,647,676.25
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ All contracts are Gnosis Safe multisig wallets deployed by the same deployer clu
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 4
-- Audits discovered: 1
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-03 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -77,6 +77,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [PCI DSS Level 1 certification](https://static.cex.io/img/legal/pci.pdf) | PCI DSS | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -97,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -105,5 +108,8 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2134] PCI DSS Level 1 certification
+- [9994] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [9995] 0002-metadata-manifest-and-pull-command.md
+- [9996] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

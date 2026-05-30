@@ -78,7 +78,7 @@
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-05-23 |
 | [bigone](./bigone/) | $35.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [bima-cdp](./bima-cdp/) | $5.4M | 50.0% | ? | active | 3 | 38 | 2026-05-23 |
-| [binaryx-platform](./binaryx-platform/) | $8.6M | 0.0% | ? | active | 2 | 133 | 2026-05-23 |
+| [binaryx-platform](./binaryx-platform/) | $8.6M | 0.0% | ? | active | 5 | 133 | 2026-05-30 |
 | [bio-protocol](./bio-protocol/) | $143.8M | 10.0% | $139.6M | active | 6 | 41 | 2026-05-23 |
 | [biswap](./biswap/) | $609.3K | 0.0% | $609.3K | dead | 1 | 84 | 2026-05-23 |
 | [bitlo](./bitlo/) | $16.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
@@ -120,7 +120,7 @@
 | [capx-ai](./capx-ai/) | $2.2M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
 | [carbon-defi](./carbon-defi/) | $41.7M | 29.8% | $36.6M | active | 4 | 157 | 2026-05-25 |
 | [cbridge](./cbridge/) | $18.5M | 0.0% | ? | declining | 12 | 2112 | 2026-05-25 |
-| [cex.io](./cex.io/) | $8.6M | 0.0% | ? | active | 1 | 3 | 2026-05-23 |
+| [cex.io](./cex.io/) | $7.6M | 0.0% | ? | active | 4 | 3 | 2026-05-30 |
 | [cgo-finance](./cgo-finance/) | $1.2M | 0.0% | ? | declining | 3 | 2 | 2026-05-28 |
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [chainflip](./chainflip/) | $3.7M | 23.1% | ? | active | 3 | 14 | 2026-05-26 |
@@ -149,7 +149,7 @@
 | [d2-finance](./d2-finance/) | $14.9M | 48.4% | $11.5M | active | 2 | 184 | 2026-05-22 |
 | [dango](./dango/) | $5.6M | 0.0% | $5.6M | unknown | 1 | 56 | 2026-05-25 |
 | [dao-maker](./dao-maker/) | $9.3M | 0.0% | $9.3M | dead | 7 | 17 | 2026-05-24 |
-| [debridge](./debridge/) | $263.9M | 0.0% | $263.9M | declining | 1 | 161 | 2026-05-25 |
+| [debridge](./debridge/) | $263.9M | 61.9% | $263.9M | declining | 68 | 161 | 2026-05-30 |
 | [decentralized-euro](./decentralized-euro/) | $230.4M | 28.2% | $230.4M | active | 3 | 72 | 2026-05-25 |
 | [decibel](./decibel/) | $41.9M | 0.0% | ? | unknown | 4 | 0 | 2026-05-26 |
 | [deeplock](./deeplock/) | $56.2M | 0.0% | $56.2M | active | 3 | 70 | 2026-05-28 |
@@ -187,7 +187,7 @@
 | [equalizer](./equalizer/) | $374.8K | 0.0% | $374.8K | declining | 42 | 292 | 2026-05-29 |
 | [equilibre](./equilibre/) | $6.9M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [equilibria](./equilibria/) | $26.9M | 17.4% | $15.7M | declining | 6 | 120 | 2026-05-25 |
-| [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 1 | 49 | 2026-05-24 |
+| [eth-strategy](./eth-strategy/) | $30.8M | 0.0% | $30.8M | active | 4 | 49 | 2026-05-30 |
 | [ethereal-dex](./ethereal-dex/) | $30.7M | 0.0% | ? | unknown | 3 | 0 | 2026-05-26 |
 | [ethereal-season-zero](./ethereal-season-zero/) | $2.8M | 0.0% | $2.8M | dead | 4 | 1 | 2026-05-24 |
 | [etherex](./etherex/) | $3.6M | 42.6% | ? | declining | 4 | 58 | 2026-05-24 |

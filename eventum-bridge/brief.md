@@ -5,11 +5,11 @@
 - Project: Eventum Bridge (`eventum-bridge`)
 - Website: [https://evedex.com/en-US/](https://evedex.com/en-US/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-25T16:57:56.244Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-05-30T10:52:01.421Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: arbitrum, ethereum
 - Contract surface: 30 unique implementations (60 raw deployments)
-- DeFi Llama TVL: $2,821,871.26
+- DeFi Llama TVL: $2,820,145.70
 - On-chain TVL (included contracts): $1,642,372.23
 - TVL by chain: Ethereum $1,641,839.82 | Arbitrum $532.42
 
@@ -29,11 +29,11 @@ The Bridge family provides the core cross-chain messaging infrastructure, while 
 - Unverified implementations: 2
 - Unique implementations: 30
 - Raw deployments: 60
-- Audits discovered: 2
+- Audits discovered: 15
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $1,642,372.23
 - Latest audit: 2025-08 (fresh)
-- Staleness: 2 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 2 fresh, 0 aging, 8 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -109,6 +109,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [hashex.org/audits/evedex](https://hashex.org/audits/evedex) | HashEx | Audit | 2025-08 | fresh | Direct | contract_name | 1 | high |
 | [skynet.certik.com/projects/evedex](https://skynet.certik.com/projects/evedex) | CertiK | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [chainlight_v3_0.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/chainlight_v3_0.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [kalos_recovery_v1.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_recovery_v1.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
+| [kalos_recovery_v2.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_recovery_v2.pdf) | unknown | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
+| [kalos_v1.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v1.pdf) | unknown | Audit | 2023-07 | stale | Direct | n/a | 0 | n/a |
+| [kalos_v2_1.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v2_1.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
+| [kalos_v2_2.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v2_2.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
+| [kalos_v2_2_lite.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v2_2_lite.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
+| [kalos_v3_plugins.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_v3_plugins.pdf) | unknown | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
+| [kalos_webauthn_v1.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_webauthn_v1.pdf) | unknown | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
+| [v_3_1_incremental_audit.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/v_3_1_incremental_audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -140,7 +153,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 14
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=1
@@ -148,5 +161,18 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2789] skynet.certik.com/projects/evedex
+- [10075] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [10076] 0002-metadata-manifest-and-pull-command.md
+- [10077] 0003-bun-package-manager-node-runtime.md
+- [10078] chainlight_v3_0.pdf
+- [10079] kalos_recovery_v1.pdf
+- [10080] kalos_recovery_v2.pdf
+- [10081] kalos_v1.pdf
+- [10082] kalos_v2_1.pdf
+- [10083] kalos_v2_2.pdf
+- [10084] kalos_v2_2_lite.pdf
+- [10085] kalos_v3_plugins.pdf
+- [10086] kalos_webauthn_v1.pdf
+- [10087] v_3_1_incremental_audit.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

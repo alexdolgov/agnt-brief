@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kinza-finance",
-  "generated_at": "2026-05-23T07:52:48.922Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-30T10:52:49.058Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "kinza-finance",
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 104,
     "coverage_pct": 2,
-    "total_audits": 1,
+    "total_audits": 2,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 7837338.79479,
+    "dl_tvl_usd": 7776309.1279,
     "tvl_usd": 0.01,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -66,7 +66,7 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
+      "stale": 2,
       "unknown": 0
     }
   },
@@ -5764,6 +5764,27 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 10238,
+      "audit_key": "audit-10238",
+      "report_name": "Salus-Kinza-1.0.pdf",
+      "report_url": "https://github.com/Kinza-Finance/KZA-1.0/blob/main/audits/Salus-Kinza-1.0.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -6182,7 +6203,12 @@
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 10238,
+        "report_name": "Salus-Kinza-1.0.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -195,7 +195,7 @@
 | [etherfuse](./etherfuse/) | $5.4M | 0.0% | ? | unknown | 3 | 25 | 2026-05-28 |
 | [ethichub](./ethichub/) | $22.7M | 0.0% | $22.7M | unknown | 2 | 58 | 2026-05-23 |
 | [ethos](./ethos/) | $1.9M | 30.0% | ? | active | 2 | 27 | 2026-05-24 |
-| [eventum-bridge](./eventum-bridge/) | $1.6M | 3.6% | $1.6M | active | 2 | 30 | 2026-05-25 |
+| [eventum-bridge](./eventum-bridge/) | $1.6M | 3.6% | $1.6M | active | 15 | 30 | 2026-05-30 |
 | [everrise](./everrise/) | $23.4M | 0.0% | $23.4M | declining | 2 | 239 | 2026-05-25 |
 | [everything](./everything/) | $945.3K | 0.0% | ? | unknown | 3 | 10 | 2026-05-28 |
 | [exactly](./exactly/) | $189.5K | 65.9% | ? | active | 45 | 65 | 2026-05-28 |
@@ -224,7 +224,7 @@
 | [galaxy-curation](./galaxy-curation/) | $67.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [gamma](./gamma/) | $24.3K | 29.5% | $24.3K | declining | 33 | 467 | 2026-05-29 |
 | [gate-us](./gate-us/) | $56.5M | 0.0% | ? | active | 3 | 9 | 2026-05-29 |
-| [gearbox](./gearbox/) | $8.0M | 0.0% | $8.0M | declining | 1 | 197 | 2026-05-27 |
+| [gearbox](./gearbox/) | $8.0M | 58.8% | ? | declining | 121 | 197 | 2026-05-30 |
 | [generic.money](./generic.money/) | $3.7M | 75.0% | ? | active | 1 | 13 | 2026-05-24 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 3 | 1 | 2026-05-29 |
 | [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
@@ -245,7 +245,7 @@
 | [h2-finance](./h2-finance/) | $3.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [hakka-finance](./hakka-finance/) | $1.5M | 18.4% | $1.5M | active | 8 | 52 | 2026-05-25 |
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
-| [hanji-protocol](./hanji-protocol/) | $2.8M | 16.7% | ? | active | 2 | 289 | 2026-05-24 |
+| [hanji-protocol](./hanji-protocol/) | $2.7M | 16.7% | ? | active | 5 | 289 | 2026-05-30 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-05-23 |
 | [harvest-finance](./harvest-finance/) | $12.9M | 46.4% | ? | declining | 10 | 445 | 2026-05-29 |
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 52.6% | ? | dead | 3 | 51 | 2026-05-24 |
@@ -301,7 +301,7 @@
 | [kava-earn](./kava-earn/) | $1.7M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [kava-lend](./kava-lend/) | $11.8M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
-| [kava-mint](./kava-mint/) | $52.2M | 0.0% | ? | active | 1 | 1 | 2026-05-27 |
+| [kava-mint](./kava-mint/) | $52.2M | 0.0% | ? | active | 5 | 1 | 2026-05-30 |
 | [keep-network](./keep-network/) | $27.0M | 15.9% | $26.2M | dead | 18 | 354 | 2026-05-25 |
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | dead | 1 | 481 | 2026-05-26 |
 | [keeta-bridge](./keeta-bridge/) | $1.1M | 0.0% | ? | active | 3 | 4 | 2026-05-29 |
@@ -310,7 +310,7 @@
 | [kine-finance](./kine-finance/) | $351.8M | 0.0% | $351.8M | declining | 3 | 35 | 2026-05-29 |
 | [king-protocol](./king-protocol/) | $1.3M | 60.0% | ? | active | 4 | 16 | 2026-05-25 |
 | [kintsu](./kintsu/) | $2.7M | 0.0% | ? | unknown | 5 | 12 | 2026-05-24 |
-| [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 1 | 154 | 2026-05-23 |
+| [kinza-finance](./kinza-finance/) | $0.0 | 2.0% | $0.0 | declining | 2 | 154 | 2026-05-30 |
 | [klaystation](./klaystation/) | $0.0 | 0.0% | ? | dead | 3 | 1 | 2026-05-29 |
 | [klayswap](./klayswap/) | $4.8M | 0.0% | ? | sunsetting | 4 | 22 | 2026-05-23 |
 | [kodiak](./kodiak/) | $1.5M | 2.8% | $1.5M | declining | 7 | 53 | 2026-05-25 |

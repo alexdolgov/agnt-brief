@@ -7,11 +7,11 @@
 - Project: Kinza Finance (`kinza-finance`)
 - Website: [https://app.kinza.finance/#/referral?referralCode=28UAHQ](https://app.kinza.finance/#/referral?referralCode=28UAHQ)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-23T07:52:48.922Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-30T10:52:49.058Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: bsc, ethereum, mantle, opbnb
 - Contract surface: 154 unique implementations (252 raw deployments)
-- DeFi Llama TVL: $7,837,338.79
+- DeFi Llama TVL: $7,776,309.13
 - On-chain TVL (included contracts): $0.01
 - TVL by chain: Bsc $0.01
 
@@ -31,11 +31,11 @@ The protocol is organized around a single lending family with two deployments (l
 - Unverified implementations: 104
 - Unique implementations: 154
 - Raw deployments: 252
-- Audits discovered: 1
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $0.01
 - Latest audit: 2023-08 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $0.01 represents exposure in a protocol with declining activity.
 
@@ -235,6 +235,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [{% embed url="<>" %}](https://omniscia.io/reports/kinza-finance-wrapper-contracts-64d2056905462d0014ff3513) | Omniscia | Audit | 2023-08 | stale | Direct | contract_name | 1 | high |
+| [Salus-Kinza-1.0.pdf](https://github.com/Kinza-Finance/KZA-1.0/blob/main/audits/Salus-Kinza-1.0.pdf) | unknown | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -295,9 +296,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=1
+
+Zero-match audit list:
+
+- [10238] Salus-Kinza-1.0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -5,8 +5,8 @@
 - Project: Kava Mint (`kava-mint`)
 - Website: [https://www.kava.io/](https://www.kava.io/)
 - Lifecycle: active (Tier 0, 89.5% below peak)
-- Generated: 2026-05-27T20:00:47.335Z
-- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
+- Generated: 2026-05-30T10:51:45.977Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $52,162,139.33
@@ -29,11 +29,11 @@ The protocol consists of a single contract family with no shared infrastructure 
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-09 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -75,6 +75,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Auditsarrow_outward](https://skynet.certik.com/projects/kava) | CertiK | Audit | 2021-09 | stale | Direct | n/a | 0 | n/a |
+| [Telemetry.md](https://github.com/kava-labs/kava/blob/master/docs/Telemetry.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [proto-docs.md](https://github.com/kava-labs/kava/blob/master/docs/core/proto-docs.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [faqs.md](https://github.com/kava-labs/switch/blob/master/docs/faqs.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [lightning-setup.md](https://github.com/kava-labs/switch/blob/master/docs/lightning-setup.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -95,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -103,5 +107,9 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [4750] Auditsarrow_outward
+- [10234] Telemetry.md
+- [10235] proto-docs.md
+- [10236] faqs.md
+- [10237] lightning-setup.md
 
 Fork inheritance lineage and inherited audits are included when available.

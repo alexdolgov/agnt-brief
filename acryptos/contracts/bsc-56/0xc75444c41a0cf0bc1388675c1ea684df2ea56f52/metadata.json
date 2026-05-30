@@ -1,0 +1,17 @@
+{
+  "address": "0xc75444c41a0cf0bc1388675c1ea684df2ea56f52",
+  "chain_id": 56,
+  "contract_name": "AdminUpgradeabilityProxy",
+  "compiler_version": "v0.6.8+commit.0bbfe453",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": "0xd70a5e7ffa2c9be75856b15393b75a8e6431263f",
+  "fetched_at": "2026-05-30T10:11:41.170Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x2b66399ad01be47c5aa11c48fdd6df689dae929a",
+  "chain_id": 56,
+  "contract_name": "ACryptoSVault0V2_ACSI",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 2,
+  "constructor_arguments": "0000000000000000000000005b17b4d5e4009b5c43e3e3d63a5229f794cba389000000000000000000000000eb8f15086274586f95c551890a29077a5b6e5e55",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T10:11:34.564Z"
+}

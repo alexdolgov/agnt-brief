@@ -5,11 +5,11 @@
 - Project: Universal Bridge (`universal-bridge`)
 - Website: [https://www.universal.xyz](https://www.universal.xyz)
 - Lifecycle: active (Tier 0, 72.3% below peak)
-- Generated: 2026-05-23T08:27:34.756Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-30T10:11:25.841Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-d7f7
 - Chains: base
 - Contract surface: 1 unique implementations (96 raw deployments)
-- DeFi Llama TVL: $7,701,840.50
+- DeFi Llama TVL: $7,681,089.75
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ Both product families share the same WrappedAssetV2 implementation contract (0xb
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 96
-- Audits discovered: 0
+- Audits discovered: 24
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2024-07 (aging)
+- Staleness: 0 fresh, 1 aging, 0 stale, 23 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -74,6 +74,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Alongside - Universal Contracts report - Final.pdf](https://github.com/r0bert-ethack/audits/blob/main/Alongside%20-%20Universal%20Contracts%20report%20-%20Final.pdf) | unknown | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
+| [README.md (also discovered via alternate URL)](https://github.com/r0bert-ethack/audits/blob/main/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [SUMMARY.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/SUMMARY.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [api.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/developers/api.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [asset-logos.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/developers/asset-logos.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [custodians.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/developers/protocol-concepts/custodians.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [issuance.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/developers/protocol-concepts/issuance.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [merchants.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/developers/protocol-concepts/merchants.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [redemption.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/developers/protocol-concepts/redemption.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [reserves.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/developers/protocol-concepts/reserves.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [protocol.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/developers/protocol.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [sdk.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/developers/sdk.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [smart-contracts.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/developers/smart-contracts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [v4-hook.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/developers/v4-hook.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [core-contributors.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/introduction/core-contributors.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [what-is-universal.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/introduction/what-is-universal.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [brand-kit.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/resources/brand-kit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [support.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/resources/support.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [deposits-withdrawals.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/trade/deposits-withdrawals.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [how-it-works.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/trade/how-it-works.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [placing-a-trade.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/trade/placing-a-trade.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [points.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/trade/points.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [referrals.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/trade/referrals.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [risks.md](https://github.com/0xgaut/gitbook/blob/gitbook-import/docs/trade/risks.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -94,9 +118,36 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 24
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11340] Alongside - Universal Contracts report - Final.pdf
+- [11341] README.md
+- [11343] SUMMARY.md
+- [11345] api.md
+- [11346] asset-logos.md
+- [11348] custodians.md
+- [11349] issuance.md
+- [11350] merchants.md
+- [11351] redemption.md
+- [11352] reserves.md
+- [11353] protocol.md
+- [11354] sdk.md
+- [11355] smart-contracts.md
+- [11356] v4-hook.md
+- [11358] core-contributors.md
+- [11359] what-is-universal.md
+- [11361] brand-kit.md
+- [11362] support.md
+- [11364] deposits-withdrawals.md
+- [11365] how-it-works.md
+- [11366] placing-a-trade.md
+- [11367] points.md
+- [11368] referrals.md
+- [11369] risks.md
 
 Fork inheritance lineage and inherited audits are included when available.

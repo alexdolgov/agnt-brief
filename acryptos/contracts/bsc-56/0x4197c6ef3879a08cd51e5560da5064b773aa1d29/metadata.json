@@ -1,0 +1,17 @@
+{
+  "address": "0x4197c6ef3879a08cd51e5560da5064b773aa1d29",
+  "chain_id": 56,
+  "contract_name": "ACS",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": "None",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T10:11:36.194Z"
+}

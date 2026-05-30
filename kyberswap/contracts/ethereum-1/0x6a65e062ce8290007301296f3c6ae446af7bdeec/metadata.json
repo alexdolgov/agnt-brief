@@ -1,0 +1,18 @@
+{
+  "address": "0x6a65e062ce8290007301296f3c6ae446af7bdeec",
+  "chain_id": 1,
+  "contract_name": "LiquidityMigrator2",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": true,
+  "runs": 999999,
+  "evm_version": "istanbul",
+  "license": "BUSL-1.1",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 4,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T10:12:57.120Z"
+}

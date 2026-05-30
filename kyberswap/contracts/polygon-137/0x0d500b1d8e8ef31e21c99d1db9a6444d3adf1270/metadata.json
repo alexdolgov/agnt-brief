@@ -1,0 +1,18 @@
+{
+  "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+  "chain_id": 137,
+  "contract_name": "WMATIC",
+  "compiler_version": "v0.4.26+commit.4563c3fc",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "byzantium",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T10:12:50.061Z"
+}

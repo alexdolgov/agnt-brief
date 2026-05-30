@@ -1,0 +1,18 @@
+{
+  "address": "0x4440854b2d02c57a0dc5c58b7a884562d875c0c4",
+  "chain_id": 1,
+  "contract_name": "UniswapV4KEMHook",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 44444444,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 46,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T10:12:54.979Z"
+}

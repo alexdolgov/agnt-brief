@@ -1,60 +1,62 @@
 {
   "schema_version": "2.0",
   "project_key": "treehouse-protocol",
-  "generated_at": "2026-05-27T12:01:17.611Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-05-30T10:11:38.822Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-d7f7",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "treehouse-protocol",
     "tier": 0,
     "peak_tvl": 613514540,
     "peak_date": "2025-08-14T00:00:00.000Z",
-    "tvl_30d_ago": 112325691,
-    "tvl_90d_ago": 164851663,
-    "tvl_current": 87457457,
+    "tvl_30d_ago": 113309283,
+    "tvl_90d_ago": 156663194,
+    "tvl_current": 84461424,
     "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 302299423,
-    "change_30d_pct": -22.13939997039502,
-    "change_90d_pct": -46.947786022637814,
-    "days_since_peak": 286,
+    "tvl_180d_ago": 296027319,
+    "change_30d_pct": -25.45939594375511,
+    "change_90d_pct": -46.087257738406635,
+    "days_since_peak": 289,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 85.7448436348387
+    "drop_from_peak_pct": 86.23318299840132
   },
   "summary": {
     "total_contracts": 78,
     "total_addresses": 94,
     "unique_implementations": 78,
     "total_deployments": 94,
-    "audited_contracts": 0,
-    "unaudited_contracts": 69,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 69,
+    "audited_contracts": 29,
+    "unaudited_contracts": 40,
+    "contracts_verified_audited": 29,
+    "contracts_verified_unaudited": 40,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 9,
-    "coverage_pct": 0,
-    "total_audits": 1,
-    "scoreable_audits": 0,
+    "coverage_pct": 42,
+    "total_audits": 23,
+    "scoreable_audits": 16,
     "dl_tvl_usd": 87665909.36648999,
     "tvl_usd": 31172969.01946407,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "ethereum": 31172969.02
     },
-    "asd_usd": 31172969.01946407,
+    "asd_usd": 1798114.2263752294,
     "website_url": "https://www.treehouse.finance/",
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "tier1_coverage_pct": 15.9,
+    "tier1_auditors": [
+      "Trail of Bits"
+    ],
+    "latest_audit_date": "2026-05",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
-      "aging": 0,
+      "fresh": 6,
+      "aging": 13,
       "stale": 0,
-      "unknown": 1
+      "unknown": 4
     }
   },
   "topography": {
@@ -88,7 +90,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 22180213.94678454,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -97,14 +99,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 7194524.249091009,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11319",
+        "audit-11321",
+        "audit-11322",
+        "audit-11323",
+        "audit-11335"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -159,7 +167,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 5.90521969395568e-10,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -168,14 +176,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 116.59721329352675,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11321",
+        "audit-11323"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -239,7 +250,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -248,7 +259,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -257,14 +268,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11318",
+        "audit-11321",
+        "audit-11323"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -288,14 +303,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11318",
+        "audit-11319",
+        "audit-11321"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -687,14 +706,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11331"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -780,14 +801,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11330"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -842,14 +865,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11330"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -913,14 +938,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11323"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1037,14 +1064,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11324",
+        "audit-11328"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1068,14 +1098,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11326",
+        "audit-11327"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1099,14 +1132,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11326",
+        "audit-11327"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1130,7 +1166,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1139,14 +1175,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11319",
+        "audit-11321"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1170,14 +1209,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11320",
+        "audit-11333",
+        "audit-11335"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1201,14 +1244,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11320",
+        "audit-11327",
+        "audit-11333"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1356,14 +1403,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11320",
+        "audit-11333"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1387,7 +1437,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1396,14 +1446,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11319",
+        "audit-11323"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1489,14 +1542,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11319",
+        "audit-11326"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1520,14 +1576,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11331",
+        "audit-11332"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1684,14 +1743,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11318",
+        "audit-11319",
+        "audit-11321",
+        "audit-11330"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1715,14 +1779,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11318",
+        "audit-11320",
+        "audit-11322",
+        "audit-11323",
+        "audit-11333"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1746,7 +1816,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1755,14 +1825,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11318",
+        "audit-11321",
+        "audit-11323"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1910,14 +1984,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11319",
+        "audit-11323",
+        "audit-11333"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1941,14 +2019,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11331"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1972,14 +2052,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11318",
+        "audit-11319",
+        "audit-11321",
+        "audit-11322",
+        "audit-11323"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2003,14 +2089,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11331",
+        "audit-11332"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2034,7 +2123,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2043,14 +2132,20 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11319",
+        "audit-11321",
+        "audit-11322",
+        "audit-11323",
+        "audit-11336"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2362,14 +2457,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11321"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2393,14 +2490,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11335"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2619,14 +2718,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11323"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     }
   ],
@@ -2651,50 +2752,656 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11315,
+      "audit_key": "audit-11315",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11316,
+      "audit_key": "audit-11316",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11317,
+      "audit_key": "audit-11317",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11318,
+      "audit_key": "audit-11318",
+      "report_name": "Fuzzland tETH Sep Audit Report vF.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/Fuzzland%20tETH%20Sep%20Audit%20Report%20vF.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ActionExecutor",
+        "ActionRegistry",
+        "ChainlinkRateProvider",
+        "LidoStake",
+        "LidoWithdraw",
+        "LidoWrap",
+        "StrategyExecutor",
+        "StrategyStorage",
+        "TAsset",
+        "TreehouseRedemption"
+      ],
+      "matched_contracts": 9,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11319,
+      "audit_key": "audit-11319",
+      "report_name": "Sigma Prime tETH Aug Audit Report vF.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/Sigma%20Prime%20tETH%20Aug%20Audit%20Report%20vF.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ActionRegistry",
+        "Blacklistable",
+        "Converter",
+        "LidoAPR",
+        "MainnetAaveV3Addresses",
+        "MainnetLidoAddresses",
+        "NavHelper",
+        "PnlAccountingHelper",
+        "RateProviderRegistry",
+        "Rescuable",
+        "StrategyExecutor",
+        "TokenUtils",
+        "TreehouseAccounting",
+        "TreehouseRedemption",
+        "TreehouseRouter",
+        "Vault",
+        "iETH",
+        "tETH"
+      ],
+      "matched_contracts": 13,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11320,
+      "audit_key": "audit-11320",
+      "report_name": "Sigma Prime tETH Mar Audit Report.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/Sigma%20Prime%20tETH%20Mar%20Audit%20Report.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "NavAaveV3",
+        "NavLens",
+        "NavRegistry",
+        "PnlAccounting",
+        "StrategyStorage"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11321,
+      "audit_key": "audit-11321",
+      "report_name": "Sigma Prime tETH Sep Audit Report vF.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/Sigma%20Prime%20tETH%20Sep%20Audit%20Report%20vF.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ActionRegistry",
+        "Blacklistable",
+        "IAU",
+        "NavHelper",
+        "ProtocolPhaseOne",
+        "ProtocolPhaseTwo",
+        "Strategy",
+        "StrategyExecutor",
+        "TAsset",
+        "TreehouseRedemption",
+        "TreehouseRouter",
+        "Vault",
+        "VaultPull",
+        "tETH"
+      ],
+      "matched_contracts": 16,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11322,
+      "audit_key": "audit-11322",
+      "report_name": "Trail of Bits tETH Aug Audit Report vF.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/Trail%20of%20Bits%20tETH%20Aug%20Audit%20Report%20vF.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ChainlinkRateProvider",
+        "Converter",
+        "MainnetLidoAddresses",
+        "Rescuable",
+        "StrategyStorage",
+        "TreehouseRedemption",
+        "TreehouseRouter",
+        "Vault",
+        "iETH",
+        "tETH"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11323,
+      "audit_key": "audit-11323",
+      "report_name": "Trail of Bits tETH Oct Audit Report vF.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/Trail%20of%20Bits%20tETH%20Oct%20Audit%20Report%20vF.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ChainlinkRateProvider",
+        "InternalAccountingUnit",
+        "IstETH",
+        "PnlAccountingHelper",
+        "Rescuable",
+        "Strategy",
+        "StrategyStorage",
+        "TAsset",
+        "TreeHouseAccounting",
+        "TreehouseRedemption",
+        "TreehouseRouter",
+        "Vault",
+        "WstETHRateProvider"
+      ],
+      "matched_contracts": 17,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11324,
+      "audit_key": "audit-11324",
+      "report_name": "WatchPug Merkl Claim Apr Audit Report vF2.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20Merkl%20Claim%20Apr%20Audit%20Report%20vF2.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "MerklClaim",
+        "MerklToggleOperator"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11325,
+      "audit_key": "audit-11325",
+      "report_name": "WatchPug TREE Token Mar Audit Report.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20TREE%20Token%20Mar%20Audit%20Report.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11326,
+      "audit_key": "audit-11326",
+      "report_name": "WatchPug tAVAX Aug Audit Report.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tAVAX%20Aug%20Audit%20Report.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ASAVAXRateProvider",
+        "AggregatorV3Interface",
+        "ChainlinkRateProvider",
+        "FeedRegistryInterface",
+        "IRateProvider",
+        "ISAVAX",
+        "NavErc20",
+        "NavErc20WithDebt",
+        "RateProviderRegistry",
+        "SavaxUnlock",
+        "TAvaxExchangeRateProvider"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11327,
+      "audit_key": "audit-11327",
+      "report_name": "WatchPug tAVAX Benqi Strategy Audit Report.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tAVAX%20Benqi%20Strategy%20Audit%20Report.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BenqiClaimReward",
+        "BenqiWithdraw",
+        "NavBenqi",
+        "NavErc20",
+        "NavErc20WithDebt",
+        "NavRegistry",
+        "NavUnSavax"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11328,
+      "audit_key": "audit-11328",
+      "report_name": "WatchPug tAVAX Merkl Claim Audit Report.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tAVAX%20Merkl%20Claim%20Audit%20Report.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "IDistributor",
+        "MerklClaim"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11329,
+      "audit_key": "audit-11329",
+      "report_name": "WatchPug tAVAX Spectra Audit Report.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tAVAX%20Spectra%20Audit%20Report.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11330,
+      "audit_key": "audit-11330",
+      "report_name": "WatchPug tETH Dec 2025 Audit Report vF.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tETH%20Dec%202025%20Audit%20Report%20vF.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "GearboxDepositV31",
+        "GearboxRedeemV31",
+        "StrategyExecutor"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11331,
+      "audit_key": "audit-11331",
+      "report_name": "WatchPug tETH Dec Audit Report vF.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tETH%20Dec%20Audit%20Report%20vF.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FastlaneFee",
+        "IERC4626",
+        "IFastlaneFee",
+        "IInternalAccountingUnit",
+        "ITreehouseFastlane",
+        "ITreehouseRedemption",
+        "RedemptionController",
+        "TreehouseFastlane",
+        "TreehouseRedemptionV2"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11332,
+      "audit_key": "audit-11332",
+      "report_name": "WatchPug tETH Dec Audit Report vF2.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tETH%20Dec%20Audit%20Report%20vF2.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-12",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "IERC20",
+        "IERC4626",
+        "IInternalAccountingUnit",
+        "IwstETH",
+        "RedemptionController",
+        "TreehouseRedemptionV2"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11333,
+      "audit_key": "audit-11333",
+      "report_name": "WatchPug tETH Feb Audit Report vF.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tETH%20Feb%20Audit%20Report%20vF.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "NavLens",
+        "NavRegistry",
+        "PnlAccounting",
+        "StrategyStorage",
+        "TreehouseAccounting"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11334,
+      "audit_key": "audit-11334",
+      "report_name": "WatchPug tETH Feb Audit Report vF2.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tETH%20Feb%20Audit%20Report%20vF2.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11335,
+      "audit_key": "audit-11335",
+      "report_name": "WatchPug tETH Timelock May Audit Report vF2.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tETH%20Timelock%20May%20Audit%20Report%20vF2.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "FUNDS_RECEIVER",
+        "INavErc20",
+        "INavRegistry",
+        "IRescuable",
+        "ITreehouseAccounting",
+        "IVault",
+        "NAV_REGISTRY",
+        "NavLens",
+        "RATE_PROVIDER_REGISTRY",
+        "STRATEGY_STORAGE",
+        "TREEHOUSE_ACCOUNTING",
+        "VAULT",
+        "VaultRescuer",
+        "wstETH"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11336,
+      "audit_key": "audit-11336",
+      "report_name": "WatchPug tHYPE May Audit Report.pdf",
+      "report_url": "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tHYPE%20May%20Audit%20Report.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ActionBase",
+        "IStakingManager",
+        "IValidatorManager",
+        "KinetiqHelper",
+        "KinetiqRedelegate",
+        "Router",
+        "StakingFacet",
+        "StakingManager",
+        "StakingManagerStorage",
+        "TreehouseRouter"
+      ],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "WatchPug",
+      "tier": 2,
+      "contracts_covered": 19,
+      "coverage_pct": 27.5,
+      "latest_audit": "2026-05"
+    },
+    {
+      "auditor": "Sigma Prime",
+      "tier": 2,
+      "contracts_covered": 17,
+      "coverage_pct": 24.6,
+      "latest_audit": "2025-03"
+    },
+    {
+      "auditor": "Trail of Bits",
+      "tier": 1,
+      "contracts_covered": 11,
+      "coverage_pct": 15.9,
+      "latest_audit": "2024-10"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 6,
+      "coverage_pct": 8.7,
+      "latest_audit": "2024-09"
+    }
+  ],
   "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x551d155760ae96050439ad24ae98a96c765d761b",
-      "name": "Vault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 29374738.195875548,
-      "risk_note": "Verified native implementation with $29,374,738.20 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5ae0e44de96885702bd99a6914751c952d284938",
-      "name": "Strategy",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 116.59721329411727,
-      "risk_note": "Verified native implementation with $116.60 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x60d2d94acb969ca54e781007ee89f04c1a2e5943",
-      "name": "ActionExecutor",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x94af5994eb6841e1d930c95ad0c9f89771c3073f",
-      "name": "ActionRegistry",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -2758,38 +3465,8 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x434b68b11bbe8fd3074089397ca3d275801d6354",
-      "name": "FastlaneFee",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xcbb64b15b0c14645a9216a4caf57b33aa9ba2860",
       "name": "FixedRateProvider",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4deed6b663a64f76f6a59412486a9d9048cd234f",
-      "name": "GearboxDepositV31",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x90a02936ba645ab719574512b578ee85d208257a",
-      "name": "GearboxRedeemV31",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2808,69 +3485,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1b6238e95bbcabee58997c99badd4154ad68ba92",
-      "name": "InternalAccountingUnit",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xc8efa074aa18368270d5cda1fe733de2b9459ac2",
       "name": "KPKWSTETHV3RateProvider",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa0a105e10801b52bf89a042bdb40c7389e57af36",
-      "name": "NavErc20",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xff62ad6200a54fff9288c997f8ca2d480a0c48bc",
-      "name": "NavErc20WithDebt",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x86b238787f24eecf24500135bc9d4d117062b6e6",
-      "name": "NavHelper",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xfda0b8bca5d0a5a5093141d8a45d133a9f09b258",
-      "name": "NavLens",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xe2d60463de3a0221276d737b87c605e0bb5451e9",
-      "name": "NavRegistry",
-      "role": "registry",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2898,49 +3515,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xdd317b85f7bd56361e2e3216610803e433acaea7",
-      "name": "PnlAccounting",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x57c23fe7a1a8d86f1128196c7c22f8711e81437e",
-      "name": "PnlAccountingHelper",
-      "role": "periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x03a993369b5b6290d412b63d29f3bc2dc13f5e61",
       "name": "ProtocolPoolController",
       "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xd0b6c01e9a8d21ed05726f9020b577a614bedce7",
-      "name": "RateProviderRegistry",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xdf2ee409bee416a53b5c040d8e6dad4a7ceb2510",
-      "name": "RedemptionController",
-      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2978,26 +3555,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x89f57d3617f6a9ff877fea34dd0688b2840ef50e",
-      "name": "StrategyExecutor",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x97c03f52244e60bb18511cbf03f890d5886f1f47",
-      "name": "StrategyStorage",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x4bd1ec6cdad93b3c6219ceda018ecaf8d655fa8d",
       "name": "TEthExchangeRateProvider",
       "role": "unknown",
@@ -3021,76 +3578,6 @@
       "address": "0xcf0a32bbef8f064969f21f7e02328fb577382018",
       "name": "TkMrsR",
       "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xb7ce3cb5bc5c00cd2f9b39d9b0580f5355535709",
-      "name": "TreehouseAccounting",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x829525417cd78cba0f99a8736426fc299506c0d6",
-      "name": "TreehouseFastlane",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0618dbdb3be798346e6d9c08c3c84658f94ad09f",
-      "name": "TreehouseRedemption",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xcd63a29faff07130d3af89bb4f40778938aabb85",
-      "name": "TreehouseRedemptionV2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8ae023d31d3590b7fd0919251a8c68dfc0c4d398",
-      "name": "TreehouseRouter",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x313ca6136521d22a7ea763b3566ed0b53f5b3ab9",
-      "name": "VaultPull",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1af329d2c4ceaf45e1d8062c696b09ffaddb933a",
-      "name": "VaultRescuer",
-      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -3153,14 +3640,42 @@
     "needs_review": 7
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 93
+    },
+    "extraction_confidence_counts": {
+      "high": 16
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 4607,
         "report_name": "Rendered PDF capture"
+      },
+      {
+        "audit_id": 11315,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 11316,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 11317,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
+      },
+      {
+        "audit_id": 11325,
+        "report_name": "WatchPug TREE Token Mar Audit Report.pdf"
+      },
+      {
+        "audit_id": 11329,
+        "report_name": "WatchPug tAVAX Spectra Audit Report.pdf"
+      },
+      {
+        "audit_id": 11334,
+        "report_name": "WatchPug tETH Feb Audit Report vF2.pdf"
       }
     ],
     "inherited_remapped_matches": []

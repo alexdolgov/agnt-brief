@@ -1,0 +1,18 @@
+{
+  "address": "0x165c68077ac06c83800d19200e6e2b08d02de75d",
+  "chain_id": 1,
+  "contract_name": "TicksFeesReader",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 100000,
+  "evm_version": "london",
+  "license": "GPL-2.0-or-later, MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 19,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T10:12:53.222Z"
+}

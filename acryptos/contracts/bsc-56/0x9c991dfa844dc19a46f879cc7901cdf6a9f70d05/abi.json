@@ -1,0 +1,344 @@
+[
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "configuration",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidityIndex",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "variableBorrowIndex",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "currentLiquidityRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "currentVariableBorrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "currentStableBorrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint40",
+            "name": "lastUpdateTimestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "address",
+            "name": "aTokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "stableDebtTokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "variableDebtTokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "interestRateStrategyAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint8",
+            "name": "id",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct ILendingPool.ReserveData",
+        "name": "reserve",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "supplyBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newSupplyBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newBorrowBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rewardsDiscountFactor",
+        "type": "uint256"
+      }
+    ],
+    "name": "_estimateDayReturn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "dayReturn",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "supplyBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rewardsDiscountFactor",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxBorrowLimit",
+        "type": "uint256"
+      }
+    ],
+    "name": "estimateBestDayReturn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "dayReturn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowLimit",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "supplyBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newSupplyBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newBorrowBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "rewardsDiscountFactor",
+        "type": "uint256"
+      }
+    ],
+    "name": "estimateDayReturn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "dayReturn",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "configuration",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint128",
+            "name": "liquidityIndex",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "variableBorrowIndex",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "currentLiquidityRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "currentVariableBorrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "currentStableBorrowRate",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint40",
+            "name": "lastUpdateTimestamp",
+            "type": "uint40"
+          },
+          {
+            "internalType": "address",
+            "name": "aTokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "stableDebtTokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "variableDebtTokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "interestRateStrategyAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint8",
+            "name": "id",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct ILendingPool.ReserveData",
+        "name": "reserve",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "reserveAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowBalance",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "newBorrowBalance",
+        "type": "uint256"
+      }
+    ],
+    "name": "getInterestRates",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "liquidityRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "stableBorrowRate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "variableBorrowRate",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "aDecimals",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPriceUsd",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "valasPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

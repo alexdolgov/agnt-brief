@@ -6,8 +6,8 @@
 | Address | `0xcd63a29faff07130d3af89bb4f40778938aabb85` |
 | Role | unknown |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [WatchPug tETH Dec Audit Report vF.pdf](https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tETH%20Dec%20Audit%20Report%20vF.pdf); [WatchPug tETH Dec Audit Report vF2.pdf](https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tETH%20Dec%20Audit%20Report%20vF2.pdf) |
 | Deployments | 1 (ethereum [`0xcd63a29faff07130d3af89bb4f40778938aabb85`](../0xcd63a29faff07130d3af89bb4f40778938aabb85/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |

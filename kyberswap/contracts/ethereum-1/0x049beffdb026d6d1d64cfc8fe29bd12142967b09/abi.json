@@ -1,0 +1,446 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "previousAdmin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "AdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "beacon",
+        "type": "address"
+      }
+    ],
+    "name": "BeaconUpgraded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "observationCardinalityNextOld",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "observationCardinalityNextNew",
+        "type": "uint16"
+      }
+    ],
+    "name": "IncreaseObservationCardinalityNext",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "OwnerWithdrew",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "name": "Upgraded",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getObservationAt",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "blockTimestamp",
+        "type": "uint32"
+      },
+      {
+        "internalType": "int56",
+        "name": "tickCumulative",
+        "type": "int56"
+      },
+      {
+        "internalType": "bool",
+        "name": "initialized",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      }
+    ],
+    "name": "getPoolObservation",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "initialized",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint16",
+        "name": "index",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "cardinality",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "cardinalityNext",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint16",
+        "name": "observationCardinalityNext",
+        "type": "uint16"
+      }
+    ],
+    "name": "increaseObservationCardinalityNext",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "time",
+        "type": "uint32"
+      }
+    ],
+    "name": "initializeOracle",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "cardinality",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "cardinalityNext",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32[]",
+        "name": "secondsAgos",
+        "type": "uint32[]"
+      }
+    ],
+    "name": "observeFromPool",
+    "outputs": [
+      {
+        "internalType": "int56[]",
+        "name": "tickCumulatives",
+        "type": "int56[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "secondsAgo",
+        "type": "uint32"
+      }
+    ],
+    "name": "observeSingleFromPool",
+    "outputs": [
+      {
+        "internalType": "int56",
+        "name": "tickCumulative",
+        "type": "int56"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "rescueFund",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      }
+    ],
+    "name": "upgradeTo",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "upgradeToAndCall",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "blockTimestamp",
+        "type": "uint32"
+      },
+      {
+        "internalType": "int24",
+        "name": "tick",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint128",
+        "name": "liquidity",
+        "type": "uint128"
+      }
+    ],
+    "name": "write",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "indexUpdated",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "cardinalityUpdated",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "index",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint32",
+        "name": "blockTimestamp",
+        "type": "uint32"
+      },
+      {
+        "internalType": "int24",
+        "name": "tick",
+        "type": "int24"
+      },
+      {
+        "internalType": "uint128",
+        "name": "liquidity",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint16",
+        "name": "cardinality",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "cardinalityNext",
+        "type": "uint16"
+      }
+    ],
+    "name": "writeNewEntry",
+    "outputs": [
+      {
+        "internalType": "uint16",
+        "name": "indexUpdated",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint16",
+        "name": "cardinalityUpdated",
+        "type": "uint16"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

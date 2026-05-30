@@ -1,0 +1,17 @@
+{
+  "address": "0x9c991dfa844dc19a46f879cc7901cdf6a9f70d05",
+  "chain_id": 56,
+  "contract_name": "ACryptoSValasHelper",
+  "compiler_version": "v0.8.13+commit.abaa5c0e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 25,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T10:11:39.712Z"
+}

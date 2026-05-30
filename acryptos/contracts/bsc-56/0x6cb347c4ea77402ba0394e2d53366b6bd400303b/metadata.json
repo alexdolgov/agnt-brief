@@ -1,0 +1,18 @@
+{
+  "address": "0x6cb347c4ea77402ba0394e2d53366b6bd400303b",
+  "chain_id": 56,
+  "contract_name": "AcsiWeight",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "london",
+  "license": "MIT, UNLICENSED",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 12,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T10:11:37.341Z"
+}

@@ -12,6 +12,7 @@
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 6 | 43 | 2026-05-25 |
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | unknown | 5 | 220 | 2026-05-23 |
 | [across](./across/) | $28.1M | 18.0% | $28.1M | active | 6 | 142 | 2026-05-25 |
+| [acryptos](./acryptos/) | $5.2M | 25.0% | $253.0K | declining | 7 | 311 | 2026-05-30 |
 | [aegis-markets](./aegis-markets/) | $2.4M | 0.0% | ? | active | 2 | 15 | 2026-05-24 |
 | [aegis](./aegis/) | $35.8M | 100.0% | ? | active | 5 | 5 | 2026-05-28 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 3 | 5 | 2026-05-28 |
@@ -71,7 +72,7 @@
 | [baseline-protocol](./baseline-protocol/) | $997.7K | 14.3% | $997.7K | declining | 9 | 115 | 2026-05-27 |
 | [beanstalk](./beanstalk/) | $142.5M | 20.4% | $142.5M | dead | 7 | 244 | 2026-05-25 |
 | [belt-finance](./belt-finance/) | $15.3M | 47.5% | $7.1M | dead | 10 | 1331 | 2026-05-29 |
-| [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 2 | 105 | 2026-05-23 |
+| [bend](./bend/) | $15.5M | 20.3% | $896.8K | unknown | 182 | 105 | 2026-05-30 |
 | [benddao](./benddao/) | $1.5M | 0.0% | $1.5M | dead | 1 | 15 | 2026-05-25 |
 | [beradrome](./beradrome/) | $3.3M | 0.0% | $3.3M | declining | 0 | 2 | 2026-05-23 |
 | [bifi](./bifi/) | $236.7K | 30.4% | ? | active | 7 | 170 | 2026-05-23 |
@@ -315,6 +316,7 @@
 | [kodiak](./kodiak/) | $1.5M | 2.8% | $1.5M | declining | 7 | 53 | 2026-05-25 |
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-05-25 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 34.4% | $23.1K | active | 3 | 53 | 2026-05-24 |
+| [kyberswap](./kyberswap/) | $58.3M | 9.6% | $58.3M | dead | 15 | 445 | 2026-05-30 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-05-23 |
 | [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-05-24 |
 | [larix](./larix/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
@@ -632,7 +634,7 @@
 | [toupee.tech](./toupee.tech/) | $24.3 | 0.0% | $24.3 | unknown | 3 | 29 | 2026-05-29 |
 | [townsquare](./townsquare/) | $1.8M | 0.0% | ? | unknown | 2 | 0 | 2026-05-24 |
 | [tranchess](./tranchess/) | $1.9K | 23.8% | $1.9K | dead | 9 | 135 | 2026-05-23 |
-| [treehouse-protocol](./treehouse-protocol/) | $31.2M | 0.0% | $31.2M | unknown | 1 | 78 | 2026-05-27 |
+| [treehouse-protocol](./treehouse-protocol/) | $31.2M | 42.0% | $1.8M | unknown | 23 | 78 | 2026-05-30 |
 | [trevee-earn](./trevee-earn/) | $582.2M | 0.0% | $582.2M | transitioning | 3 | 15 | 2026-05-29 |
 | [trisolaris](./trisolaris/) | $1.5M | 16.7% | ? | dead | 13 | 119 | 2026-05-29 |
 | [troves](./troves/) | $5.0M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
@@ -650,7 +652,7 @@
 | [unchain-x](./unchain-x/) | $35.1M | 100.0% | ? | active | 2 | 1 | 2026-05-25 |
 | [unichain-bridge](./unichain-bridge/) | $2.8M | 0.0% | ? | dead | 13 | 15 | 2026-05-29 |
 | [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-05-27 |
-| [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 0 | 1 | 2026-05-23 |
+| [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 24 | 1 | 2026-05-30 |
 | [universe-xyz](./universe-xyz/) | $39.0M | 20.0% | $39.0M | dead | 3 | 36 | 2026-05-24 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 3 | 1 | 2026-05-29 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 3 | 3 | 2026-05-29 |

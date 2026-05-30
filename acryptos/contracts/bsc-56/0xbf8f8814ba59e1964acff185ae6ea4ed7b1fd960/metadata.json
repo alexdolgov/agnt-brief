@@ -1,0 +1,17 @@
+{
+  "address": "0xbf8f8814ba59e1964acff185ae6ea4ed7b1fd960",
+  "chain_id": 56,
+  "contract_name": "ACryptoSVaultTgw",
+  "compiler_version": "v0.8.10+commit.fc410830",
+  "optimization_used": true,
+  "runs": 2000,
+  "evm_version": "Default",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T10:11:40.924Z"
+}

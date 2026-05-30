@@ -1,0 +1,18 @@
+{
+  "address": "0xa00e3a3511aac35ca78530c85007afcd31753819",
+  "chain_id": 10,
+  "contract_name": "L2StandardERC20",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T10:12:52.330Z"
+}

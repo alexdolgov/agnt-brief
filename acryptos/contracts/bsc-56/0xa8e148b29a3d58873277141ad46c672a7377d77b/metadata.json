@@ -1,0 +1,18 @@
+{
+  "address": "0xa8e148b29a3d58873277141ad46c672a7377d77b",
+  "chain_id": 56,
+  "contract_name": "StrategyACryptoS0V2",
+  "compiler_version": "v0.5.17+commit.d19bba13",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T10:11:39.965Z"
+}

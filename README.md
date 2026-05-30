@@ -709,6 +709,7 @@ Each project directory contains:
 | [woo-x](./woo-x/brief.md) | $7.08M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [wrapped](./wrapped/brief.md) | $23.88M | celo | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/brief.md) | $1.11M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [ybtc.b](./ybtc.b/brief.md) | $83.93M | bsc | 12 | 0/12 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [yei-finance](./yei-finance/brief.md) | $29.76M | sei | 44 | 35/44 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [yield-yak](./yield-yak/brief.md) | $16.58M | avalanche, mantle | 8 | 0/8 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [yieldnest](./yieldnest/brief.md) | $22.86M | 7 | 33 | 28/33 (85%) | 69.0% | 31.0% (ChainSecurity) | 14 | aging | ⚠️ declining | - |
@@ -720,5 +721,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-30T10:14:40.599Z_
-_Projects: 708_
+_Generated: 2026-05-30T10:21:36.525Z_
+_Projects: 709_

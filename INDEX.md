@@ -689,6 +689,7 @@
 | [xwin-finance](./xwin-finance/) | $1.8M | 0.0% | $1.8M | active | 1 | 1 | 2026-05-23 |
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | dead | 4 | 30 | 2026-05-29 |
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
+| [ybtc.b](./ybtc.b/) | $83.9M | 0.0% | ? | active | 92 | 12 | 2026-05-30 |
 | [yei-finance](./yei-finance/) | $29.8M | 0.0% | ? | declining | 1 | 44 | 2026-05-22 |
 | [yield-yak](./yield-yak/) | $16.6M | 0.0% | ? | declining | 4 | 8 | 2026-05-29 |
 | [yieldfi](./yieldfi/) | $43.7M | 66.7% | $16.3M | declining | 7 | 23 | 2026-05-25 |

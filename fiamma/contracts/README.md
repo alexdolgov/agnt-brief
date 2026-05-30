@@ -19,7 +19,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| BitVMBridgeV3 | ethereum | `0x756bcc...618a3e` | ⚠️ Unaudited | Verified |
+| [BitVMBridgeV3](./ethereum-1/0x756bcceeda5737238a5b00915e638dca23618a3e/) | ethereum | [`0x756bcc...618a3e`](./ethereum-1/0x756bcceeda5737238a5b00915e638dca23618a3e/) | ⚠️ Unaudited | Verified |
 | [BitVMBridgeV4 (10 deployments)](./sei-1329/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/) | sei | 10 deployments: ethereum `0x19438c...13207c`; ethereum `0x53a662...50f555`; ethereum `0xafb253...027524`; ethereum `0xeaec99...ed1c53`; bsc `0x9b7764...643d17`; bsc `0xcc30d3...ec83c0`; hyperliquid `0x62c737...81b939`; hyperliquid `0x7f16fd...9e96fe`; hyperliquid `0xb93752...58ecf3`; sei [`0x0ceda1...0b1e86`](./sei-1329/0x0ceda114f533d540c8af2aeb52942c1a4a0b1e86/) | ⚠️ Unaudited | Verified |
 
 ## periphery (1)

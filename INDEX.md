@@ -203,7 +203,7 @@
 | [extra-finance](./extra-finance/) | $100.0 | 21.1% | ? | active | 4 | 268 | 2026-05-26 |
 | [feather](./feather/) | $16.5M | 0.0% | ? | active | 3 | 3 | 2026-05-28 |
 | [ferro](./ferro/) | $5.0M | 0.0% | ? | declining | 3 | 21 | 2026-05-28 |
-| [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 0 | 33 | 2026-05-25 |
+| [fiamma](./fiamma/) | $1.2M | 0.0% | ? | active | 0 | 33 | 2026-05-30 |
 | [firebot](./firebot/) | $3.7M | 9.5% | $3.7M | unknown | 3 | 29 | 2026-05-24 |
 | [firelight](./firelight/) | $80.3M | 0.0% | ? | unknown | 3 | 0 | 2026-05-27 |
 | [flamingo](./flamingo/) | $1.5M | 0.0% | $1.5M | dead | 6 | 53 | 2026-05-25 |

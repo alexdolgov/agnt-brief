@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "fiamma",
-  "generated_at": "2026-05-25T05:03:54.489Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-30T19:23:42.241Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-c7d699-40af",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "fiamma",

@@ -5,8 +5,8 @@
 - Project: Fiamma (`fiamma`)
 - Website: [https://www.fiammalabs.io/](https://www.fiammalabs.io/)
 - Lifecycle: active (Tier 0, 46% below peak)
-- Generated: 2026-05-25T05:03:54.489Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-30T19:23:42.241Z
+- Pipeline run: v2-pipeline-2026-05-30-c7d699-40af
 - Chains: bsc, ethereum, hyperliquid, sei
 - Contract surface: 33 unique implementations (78 raw deployments)
 - DeFi Llama TVL: $1,150,915.03

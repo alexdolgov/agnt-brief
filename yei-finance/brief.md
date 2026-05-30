@@ -7,11 +7,11 @@
 - Project: Yei Finance (`yei-finance`)
 - Website: [https://www.yei.finance/](https://www.yei.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-22T08:44:42.156Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-30T11:41:37.590Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: sei
 - Contract surface: 44 unique implementations (145 raw deployments)
-- DeFi Llama TVL: $29,757,164.00
+- DeFi Llama TVL: $32,332,654.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -31,11 +31,11 @@ The protocol uses shared proxy-based infrastructure for cross-chain asset manage
 - Unverified implementations: 9
 - Unique implementations: 44
 - Raw deployments: 145
-- Audits discovered: 1
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -122,6 +122,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [[**https://drive.google.com/drive/folders/1DoZnQU-KURN29grndjvnrumCanwCHhnI?usp=drive\_link**]()](https://drive.google.com/drive/folders/1DoZnQU-KURN29grndjvnrumCanwCHhnI?usp=drive_link) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -174,7 +177,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -182,5 +185,8 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [1795] [**https://drive.google.com/drive/folders/1DoZnQU-KURN29grndjvnrumCanwCHhnI?usp=drive\_link**]()
+- [11480] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [11481] 0002-metadata-manifest-and-pull-command.md
+- [11482] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

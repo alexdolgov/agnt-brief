@@ -1,17 +1,17 @@
 # Agentic Audit Brief: USX.Capital
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 64.3% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 79.5% over 90 days
 
 ## Project Overview
 
 - Project: USX.Capital (`usx.capital`)
 - Website: [https://www.usx.capital/home](https://www.usx.capital/home)
-- Lifecycle: unknown (Tier 0, 64.3% below peak)
-- Generated: 2026-05-24T18:19:15.375Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 1, declining)
+- Generated: 2026-05-30T11:39:39.540Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: scroll
 - Contract surface: 4 unique implementations (7 raw deployments)
-- DeFi Llama TVL: $1,712,436.16
+- DeFi Llama TVL: $1,311,040.99
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -31,13 +31,13 @@ The USX.Capital family relies on the Morpho and MetaMorpho contracts for underly
 - Unverified implementations: 0
 - Unique implementations: 4
 - Raw deployments: 7
-- Audits discovered: 1
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -81,6 +81,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>](https://docs.blend.money/resources/audits) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -101,7 +104,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -109,5 +112,8 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2981] Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>
+- [11370] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [11371] 0002-metadata-manifest-and-pull-command.md
+- [11372] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

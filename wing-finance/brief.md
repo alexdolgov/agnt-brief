@@ -7,8 +7,8 @@
 - Project: Wing Finance (`wing-finance`)
 - Website: [https://wing.finance](https://wing.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-26T19:03:14.722Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Generated: 2026-05-30T11:39:36.229Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: bsc, ethereum, klaytn
 - Contract surface: 180 unique implementations (199 raw deployments)
 - DeFi Llama TVL: $32,459,100.32
@@ -31,11 +31,11 @@ The Wing Token family provides the governance token used by the Governance Accou
 - Unverified implementations: 166
 - Unique implementations: 180
 - Raw deployments: 199
-- Audits discovered: 2
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $20,266,638.25
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $20,266,638.25 represents exposure in a protocol with declining activity.
 
@@ -260,6 +260,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [The WING protocol has been reviewed & audited by [**BEOSIN**]()**.**](https://lianantech.com/) | BEOSIN | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [The Wing Flash Pool (EVM) has been reviewed & audited by [**PeckShield**]().](https://peckshield.com/en) | PeckShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -289,7 +292,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -298,5 +301,8 @@ Zero-match audit list:
 
 - [3991] The WING protocol has been reviewed & audited by [**BEOSIN**]()**.**
 - [3992] The Wing Flash Pool (EVM) has been reviewed & audited by [**PeckShield**]().
+- [11373] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [11374] 0002-metadata-manifest-and-pull-command.md
+- [11375] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

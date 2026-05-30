@@ -656,7 +656,7 @@
 | [universe-xyz](./universe-xyz/) | $39.0M | 20.0% | $39.0M | dead | 3 | 36 | 2026-05-24 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 3 | 1 | 2026-05-29 |
 | [uranium.io](./uranium.io/) | $7.4M | 0.0% | ? | active | 3 | 3 | 2026-05-29 |
-| [usx.capital](./usx.capital/) | $1.7M | 0.0% | ? | unknown | 1 | 4 | 2026-05-24 |
+| [usx.capital](./usx.capital/) | $1.3M | 0.0% | ? | declining | 4 | 4 | 2026-05-30 |
 | [vedelegate](./vedelegate/) | $1.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-25 |
 | [velo-finance](./velo-finance/) | $117.6M | 0.0% | $117.6M | unknown | 3 | 28 | 2026-05-29 |
 | [velodrome](./velodrome/) | $40.2M | 40.4% | ? | active | 8 | 52 | 2026-05-26 |
@@ -677,11 +677,11 @@
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | rugged | 8 | 83 | 2026-05-25 |
 | [wavesbridge](./wavesbridge/) | $136.6M | 0.0% | $136.6M | active | 3 | 5 | 2026-05-29 |
 | [wemix.fi](./wemix.fi/) | $38.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
-| [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 2 | 180 | 2026-05-26 |
+| [wing-finance](./wing-finance/) | $20.3M | 0.0% | $20.3M | declining | 5 | 180 | 2026-05-30 |
 | [wombat-exchange](./wombat-exchange/) | $817.6K | 32.7% | $47.8K | dead | 14 | 96 | 2026-05-24 |
 | [woo-x](./woo-x/) | $7.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [woofi](./woofi/) | $11.3M | 13.2% | $11.2M | declining | 8 | 253 | 2026-05-26 |
-| [wrapped-bnb](./wrapped-bnb/) | $1.5M | 0.0% | $1.5M | declining | 1 | 54 | 2026-05-25 |
+| [wrapped-bnb](./wrapped-bnb/) | $6.0M | 0.0% | ? | declining | 5 | 1 | 2026-05-30 |
 | [wrapped](./wrapped/) | $23.9M | 0.0% | ? | active | 3 | 1 | 2026-05-29 |
 | [xfai](./xfai/) | $2.0 | 0.0% | $2.0 | active | 1 | 51 | 2026-05-25 |
 | [xfi-native-staking-protocol](./xfi-native-staking-protocol/) | $1.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
@@ -690,7 +690,7 @@
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | dead | 4 | 30 | 2026-05-29 |
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [ybtc.b](./ybtc.b/) | $83.9M | 0.0% | ? | active | 92 | 12 | 2026-05-30 |
-| [yei-finance](./yei-finance/) | $29.8M | 0.0% | ? | declining | 1 | 44 | 2026-05-22 |
+| [yei-finance](./yei-finance/) | $32.3M | 0.0% | ? | declining | 4 | 44 | 2026-05-30 |
 | [yield-yak](./yield-yak/) | $16.6M | 0.0% | ? | declining | 4 | 8 | 2026-05-29 |
 | [yieldfi](./yieldfi/) | $43.7M | 66.7% | $16.3M | declining | 7 | 23 | 2026-05-25 |
 | [yieldnest](./yieldnest/) | $19.2M | 69.0% | ? | declining | 27 | 33 | 2026-05-29 |

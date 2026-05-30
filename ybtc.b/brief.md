@@ -5,8 +5,8 @@
 - Project: YBTC.B (`ybtc.b`)
 - Website: [https://www.bitlayer.org/](https://www.bitlayer.org/)
 - Lifecycle: active (Tier 0, 78.8% below peak)
-- Generated: 2026-05-30T10:20:51.222Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-d7f7
+- Generated: 2026-05-30T11:43:19.648Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: bsc
 - Contract surface: 12 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $83,925,953.08

@@ -1,25 +1,35 @@
 {
   "schema_version": "2.0",
   "project_key": "usx.capital",
-  "generated_at": "2026-05-24T18:19:15.375Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-05-30T11:39:39.540Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "usx.capital",
-    "tier": 0,
+    "tier": 1,
     "peak_tvl": 4806076,
     "peak_date": "2026-02-28T00:00:00.000Z",
-    "tvl_30d_ago": 1870092,
-    "tvl_90d_ago": 4802374,
-    "tvl_current": 1714847,
-    "tier0_reason": "no_rule_matched",
+    "tvl_30d_ago": 1715036,
+    "tvl_90d_ago": 4792269,
+    "tvl_current": 984208,
+    "tier0_reason": "sustained_90d_and_30d_decline",
     "tvl_180d_ago": null,
-    "change_30d_pct": -8.30146324351957,
-    "change_90d_pct": -64.29168157248894,
-    "days_since_peak": 85,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 64.31918679604733
+    "change_30d_pct": -42.61298305108464,
+    "change_90d_pct": -79.46258859842801,
+    "governance_raw": {
+      "evidence": "TVL dropped 79.5% from peak, but no shutdown or exploit announced; regional restriction suggests operational issues.",
+      "confidence": 0.7,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 91,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 79.52158892202287,
+    "governance_evidence": "TVL dropped 79.5% from peak, but no shutdown or exploit announced; regional restriction suggests operational issues.",
+    "governance_confidence": 0.7,
+    "governance_text_chars": 325,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
   },
   "summary": {
     "total_contracts": 4,
@@ -33,10 +43,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 4,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1712436.15762,
-    "tvl_usd": 1712436.15762,
+    "dl_tvl_usd": 1311040.99001,
+    "tvl_usd": 1311040.99001,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -52,7 +62,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 4
     }
   },
   "topography": {
@@ -238,6 +248,69 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11370,
+      "audit_key": "audit-11370",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11371,
+      "audit_key": "audit-11371",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11372,
+      "audit_key": "audit-11372",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -257,6 +330,18 @@
       {
         "audit_id": 2981,
         "report_name": "Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>"
+      },
+      {
+        "audit_id": 11370,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 11371,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 11372,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

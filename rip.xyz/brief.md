@@ -5,11 +5,11 @@
 - Project: Rip.xyz (`rip.xyz`)
 - Website: [https://www.rip.xyz/](https://www.rip.xyz/)
 - Lifecycle: active (Tier 0, 45.5% below peak)
-- Generated: 2026-05-25T05:32:59.313Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-30T11:07:26.479Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: hyperliquid
 - Contract surface: 8 unique implementations (10 raw deployments)
-- DeFi Llama TVL: $1,138,765.36
+- DeFi Llama TVL: $1,041,783.34
 - On-chain TVL (included contracts): $624,723.60
 - TVL by chain: Hyperliquid $624,723.60
 
@@ -29,11 +29,11 @@ The rHYPURR vault (implemented behind an ERC1967 proxy) accepts wHYPE deposits a
 - Unverified implementations: 4
 - Unique implementations: 8
 - Raw deployments: 10
-- Audits discovered: 1
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $624,723.60
 - Latest audit: 2026-01 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -86,6 +86,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [**View the full audit report (PDF)**](https://rip.xyz/audits/hypurrvault/rHYPURR.pdf) | Three Sigma | Audit | 2026-01 | fresh | Direct | contract_name | 2 | high |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -108,9 +111,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=2
+
+Zero-match audit list:
+
+- [10381] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [10382] 0002-metadata-manifest-and-pull-command.md
+- [10383] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

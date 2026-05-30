@@ -404,7 +404,7 @@
 | [netswap](./netswap/) | $1.4M | 20.8% | ? | dead | 2 | 48 | 2026-05-25 |
 | [neuralai](./neuralai/) | $1.3M | 0.0% | ? | unknown | 1 | 3 | 2026-05-25 |
 | [neutral-trade](./neutral-trade/) | $18.8M | 0.0% | ? | unknown | 3 | 0 | 2026-05-22 |
-| [nexus-mutual](./nexus-mutual/) | $95.9M | 0.0% | ? | active | 1 | 6 | 2026-05-27 |
+| [nexus-mutual](./nexus-mutual/) | $95.9M | 50.0% | ? | active | 85 | 6 | 2026-05-30 |
 | [nftx](./nftx/) | $6.3M | 11.1% | $6.3M | declining | 5 | 184 | 2026-05-25 |
 | [nodedao](./nodedao/) | $33.3M | 38.9% | $33.3M | active | 5 | 18 | 2026-05-26 |
 | [nomiswap](./nomiswap/) | $1.4M | 15.8% | ? | declining | 1 | 47 | 2026-05-24 |
@@ -416,7 +416,7 @@
 | [nuls](./nuls/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [obeliskbtc](./obeliskbtc/) | $33.2M | 0.0% | $33.2M | declining | 3 | 19 | 2026-05-29 |
 | [obsidian](./obsidian/) | $1.6M | 0.0% | ? | active | 3 | 6 | 2026-05-29 |
-| [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 1 | 40 | 2026-05-25 |
+| [ocean-point](./ocean-point/) | $1.1M | 0.0% | $1.1M | unknown | 4 | 40 | 2026-05-30 |
 | [odyssey-finance](./odyssey-finance/) | $9.5M | 0.0% | ? | active | 0 | 79 | 2026-05-23 |
 | [okcoin](./okcoin/) | $26.0M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [omnibtc](./omnibtc/) | $2.2M | 0.0% | ? | active | 5 | 6 | 2026-05-29 |
@@ -428,7 +428,7 @@
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
 | [osl](./osl/) | $41.5M | 0.0% | ? | active | 3 | 4 | 2026-05-29 |
 | [osmosis-dex](./osmosis-dex/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
-| [ostium](./ostium/) | $29.1M | 47.1% | ? | unknown | 1 | 17 | 2026-05-26 |
+| [ostium](./ostium/) | $29.1M | 47.1% | ? | unknown | 4 | 17 | 2026-05-30 |
 | [outcome-finance](./outcome-finance/) | $1.3M | 0.0% | ? | dead | 3 | 3 | 2026-05-29 |
 | [overnight-finance](./overnight-finance/) | $10.0M | 0.0% | ? | unknown | 11 | 4353 | 2026-05-29 |
 | [overtime](./overtime/) | $42.5M | 0.0% | $42.5M | active | 6 | 201 | 2026-05-29 |
@@ -498,7 +498,7 @@
 | [rho](./rho/) | $2.4M | 0.0% | ? | active | 4 | 32 | 2026-05-24 |
 | [ribbon-finance](./ribbon-finance/) | $179.3M | 31.0% | $148.6M | declining | 15 | 147 | 2026-05-25 |
 | [ring-protocol](./ring-protocol/) | $354.9M | 10.4% | $83.5M | active | 9 | 91 | 2026-05-26 |
-| [rip.xyz](./rip.xyz/) | $624.7K | 25.0% | $624.7K | active | 1 | 8 | 2026-05-25 |
+| [rip.xyz](./rip.xyz/) | $624.7K | 25.0% | $624.7K | active | 4 | 8 | 2026-05-30 |
 | [risex](./risex/) | $3.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |
 | [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 3 | 11 | 2026-05-29 |
@@ -522,7 +522,7 @@
 | [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 3 | 32 | 2026-05-29 |
 | [scrub-money](./scrub-money/) | $7.1M | 0.0% | ? | active | 1 | 19 | 2026-05-23 |
 | [sdai](./sdai/) | $3.8K | 0.0% | $3.8K | active | 0 | 93 | 2026-05-27 |
-| [seamless-protocol](./seamless-protocol/) | $34.8K | 8.0% | $34.8K | declining | 2 | 99 | 2026-05-26 |
+| [seamless-protocol](./seamless-protocol/) | $34.8K | 11.4% | $34.8K | declining | 59 | 99 | 2026-05-30 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 3 | 179 | 2026-05-29 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | sunsetting | 8 | 297 | 2026-05-25 |
 | [serum](./serum/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |

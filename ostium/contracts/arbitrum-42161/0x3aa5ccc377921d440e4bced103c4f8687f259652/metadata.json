@@ -1,0 +1,17 @@
+{
+  "address": "0x3aa5ccc377921d440e4bced103c4f8687f259652",
+  "chain_id": 42161,
+  "contract_name": "OstiumTrading",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T11:07:33.665Z"
+}

@@ -1,6 +1,6 @@
 # seamless-protocol — Contract Index
 
-99 unique implementations across 2 chains · 321 deployments · 7 audited · 81 unaudited · 11 unverified
+99 unique implementations across 2 chains · 321 deployments · 10 audited · 78 unaudited · 11 unverified
 
 ## adapter (14)
 
@@ -11,14 +11,14 @@
 | [LeverageRouter (3 deployments)](./base-8453/0x00c66934ebca0f2a845812bc368b230f6da11a5c/) | base | 3 deployments: ethereum `0xb0764d...6e6dba`; base [`0x00c669...a11a5c`](./base-8453/0x00c66934ebca0f2a845812bc368b230f6da11a5c/); base `0xdba92f...9a887c` | ✅ Audited | Verified |
 | [MorphoLendingAdapter (7 deployments)](./ethereum-1/0x00c66934ebca0f2a845812bc368b230f6da11a5c/) | ethereum | 7 deployments: ethereum [`0x00c669...a11a5c`](./ethereum-1/0x00c66934ebca0f2a845812bc368b230f6da11a5c/); ethereum `0xb224f5...129817`; ethereum `0xcb1eff...3aee58`; ethereum `0xe33eaf...9bd809`; ethereum `0xe9a32a...298f1f`; base `0x585cc1...f65c51`; base `0x9558b3...ab253f` | ✅ Audited | Verified |
 | [MorphoLendingAdapterFactory (2 deployments)](./ethereum-1/0xce05fbed9260810bdded179adfdaf737be7ded71/) | ethereum | 2 deployments: ethereum [`0xce05fb...7ded71`](./ethereum-1/0xce05fbed9260810bdded179adfdaf737be7ded71/); base `0xdd3341...e68e61` | ✅ Audited | Verified |
-| [PricingAdapter (3 deployments)](./ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/) | ethereum | 3 deployments: ethereum [`0x44cceb...76c88f`](./ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/); base `0x94e337...b92c4c`; base `0xce05fb...7ded71` | ⚠️ Unaudited | Verified |
+| [PricingAdapter (3 deployments)](./ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/) | ethereum | 3 deployments: ethereum [`0x44cceb...76c88f`](./ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/); base `0x94e337...b92c4c`; base `0xce05fb...7ded71` | ✅ Audited | Verified |
 | [RebalanceAdapter (8 deployments)](./ethereum-1/0x0a4490233fd6ea02873af11c744d286dc3d6c127/) | ethereum | 8 deployments: ethereum [`0x0a4490...d6c127`](./ethereum-1/0x0a4490233fd6ea02873af11c744d286dc3d6c127/); ethereum `0x1d0c19...efaec8`; ethereum `0x42fc03...d081af`; ethereum `0x5e6b01...c30110`; ethereum `0x821ded...615bd7`; ethereum `0xf7356e...d6a69f`; base `0xa530e6...46dd32`; base `0xd923b2...c24912` | ✅ Audited | Verified |
 | [RouterV1](./base-8453/0x59a11c2f543790b8ce1a2dc46c4ad08a4536bdc8/) | base | [`0x59a11c...36bdc8`](./base-8453/0x59a11c2f543790b8ce1a2dc46c4ad08a4536bdc8/) | ⚠️ Unaudited | Verified |
 | [Seam (7 deployments)](./base-8453/0x1c7a460413dd4e964f96d8dfc56e7223ce88cd85/) | base | 7 deployments: base [`0x1c7a46...88cd85`](./base-8453/0x1c7a460413dd4e964f96d8dfc56e7223ce88cd85/); base `0x213fb4...513d24`; base `0x57b4b7...aefd3f`; base `0x5d0ee4...da76ec`; base `0xa900d0...54b8c4`; base `0xbf20ba...3895c1`; base `0xff7c1f...5e7847` | ⚠️ Unaudited | Verified |
 | [SwapAdapter](./base-8453/0xfdf71e2c2b34cd1f8bb852e7c55e8b926fe38942/) | base | [`0xfdf71e...e38942`](./base-8453/0xfdf71e2c2b34cd1f8bb852e7c55e8b926fe38942/) | ✅ Audited | Verified |
 | [Swapper (5 deployments)](./base-8453/0x04550e50f4753352f233aba53f094fc3cd62c54e/) | base | 5 deployments: base [`0x04550e...62c54e`](./base-8453/0x04550e50f4753352f233aba53f094fc3cd62c54e/); base `0x08561d...dc479d`; base `0x293982...55839e`; base `0xc9be03...9f2fc0`; base `0xe314ae...addabc` | ⚠️ Unaudited | Verified |
 | [UniversalAerodromeAdapter](./base-8453/0x87f8d14a8796b22116d267cfe9a57e986f207468/) | base | [`0x87f8d1...207468`](./base-8453/0x87f8d14a8796b22116d267cfe9a57e986f207468/) | ⚠️ Unaudited | Verified |
-| [VeloraAdapter (2 deployments)](./base-8453/0x5c37eb148d4a261acd101e2b997a0f163fb3e351/) | base | 2 deployments: ethereum `0xc4e581...7db6ba`; base [`0x5c37eb...b3e351`](./base-8453/0x5c37eb148d4a261acd101e2b997a0f163fb3e351/) | ⚠️ Unaudited | Verified |
+| [VeloraAdapter (2 deployments)](./base-8453/0x5c37eb148d4a261acd101e2b997a0f163fb3e351/) | base | 2 deployments: ethereum `0xc4e581...7db6ba`; base [`0x5c37eb...b3e351`](./base-8453/0x5c37eb148d4a261acd101e2b997a0f163fb3e351/) | ✅ Audited | Verified |
 | [WrappedTokenAdapter (3 deployments)](./base-8453/0x1508f1b71210593406f8b614dcc41cdf3e6d2a6d/) | base | 3 deployments: base [`0x1508f1...6d2a6d`](./base-8453/0x1508f1b71210593406f8b614dcc41cdf3e6d2a6d/); base `0x90f890...d5fc44`; base `0xc3e17c...b5f79e` | ⚠️ Unaudited | Verified |
 
 ## core_logic (14)
@@ -77,7 +77,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [MulticallExecutor (2 deployments)](./ethereum-1/0x16d02ebd89988cad1ce945807b963ab7a9fd22e1/) | ethereum | 2 deployments: ethereum [`0x16d02e...fd22e1`](./ethereum-1/0x16d02ebd89988cad1ce945807b963ab7a9fd22e1/); base `0x9d04f6...64220e` | ⚠️ Unaudited | Verified |
+| [MulticallExecutor (2 deployments)](./ethereum-1/0x16d02ebd89988cad1ce945807b963ab7a9fd22e1/) | ethereum | 2 deployments: ethereum [`0x16d02e...fd22e1`](./ethereum-1/0x16d02ebd89988cad1ce945807b963ab7a9fd22e1/); base `0x9d04f6...64220e` | ✅ Audited | Verified |
 | [ReservesSetupHelper](./base-8453/0xb49db8f1b197c91fa01a870d827187e400a2c91f/) | base | [`0xb49db8...a2c91f`](./base-8453/0xb49db8f1b197c91fa01a870d827187e400a2c91f/) | ⚠️ Unaudited | Verified |
 
 ## proxy (1)

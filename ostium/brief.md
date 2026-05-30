@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Ostium
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 49.9% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 46.8% over 90 days
 
 ## Project Overview
 
 - Project: Ostium (`ostium`)
 - Website: [https://www.ostium.io/](https://www.ostium.io/)
-- Lifecycle: unknown (Tier 0, 58.4% below peak)
-- Generated: 2026-05-26T14:13:15.258Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Lifecycle: unknown (Tier 0, 54.4% below peak)
+- Generated: 2026-05-30T11:07:25.565Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: arbitrum
 - Contract surface: 17 unique implementations (40 raw deployments)
 - DeFi Llama TVL: $41,776,032.21
@@ -31,11 +31,11 @@ The OstiumVault holds user collateral and interacts with OstiumTrading for trade
 - Unverified implementations: 0
 - Unique implementations: 17
 - Raw deployments: 40
-- Audits discovered: 1
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-01 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 1 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
@@ -97,6 +97,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [- [Smart Contract Audits](): Independent audits by Zellic, ThreeSigma, and Pashov](https://docs.ostium.com/protocol/security/audits.md) | Pashov Audit Group | Audit | 2026-01 | fresh | Direct | contract_name | 24 | high |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -124,9 +127,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=24
+
+Zero-match audit list:
+
+- [10377] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [10378] 0002-metadata-manifest-and-pull-command.md
+- [10379] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

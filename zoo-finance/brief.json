@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "zoo-finance",
-  "generated_at": "2026-05-26T14:41:07.237Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
+  "generated_at": "2026-05-30T11:47:21.132Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "zoo-finance",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 36,
     "coverage_pct": 0,
-    "total_audits": 1,
+    "total_audits": 4,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 40359356.60638562,
+    "dl_tvl_usd": 41364453.64706999,
     "tvl_usd": 83032103.35986781,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -59,7 +59,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 4
     }
   },
   "topography": {
@@ -2017,6 +2017,79 @@
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 3916,
+          "report_url": "https://doc.zoofi.io/security/audit-report.md"
+        },
+        {
+          "audit_id": 11486,
+          "report_url": "https://github.com/shawnshi933933/zoofidoc/blob/zdocs/security/audit-report.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 11483,
+      "audit_key": "audit-11483",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11484,
+      "audit_key": "audit-11484",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11485,
+      "audit_key": "audit-11485",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -2118,6 +2191,18 @@
       {
         "audit_id": 3916,
         "report_name": "Audit Report"
+      },
+      {
+        "audit_id": 11483,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 11484,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 11485,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

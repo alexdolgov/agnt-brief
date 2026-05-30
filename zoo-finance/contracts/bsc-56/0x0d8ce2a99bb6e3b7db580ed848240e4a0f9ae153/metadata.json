@@ -1,0 +1,18 @@
+{
+  "address": "0x0d8ce2a99bb6e3b7db580ed848240e4a0f9ae153",
+  "chain_id": 56,
+  "contract_name": "BEP20UpgradeableProxy",
+  "compiler_version": "v0.6.4+commit.1dca32f3",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": null,
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
+  "fetched_at": "2026-05-30T11:47:23.532Z"
+}

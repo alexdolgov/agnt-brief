@@ -1,0 +1,17 @@
+{
+  "address": "0x3010abd2fb29496282111088f4240bbb13dba454",
+  "chain_id": 42161,
+  "contract_name": "LntVault0GArbUpg",
+  "compiler_version": "v0.8.26+commit.8a97fa7a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "cancun",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T11:47:24.094Z"
+}

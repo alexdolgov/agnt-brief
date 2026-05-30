@@ -1,0 +1,16 @@
+# CheckerLicenseNFT
+
+| Field | Value |
+|---|---|
+| Chain | arbitrum (42161) |
+| Address | `0x349834ba064f4b9286888611dfdb9035c1112d9a` |
+| Role | token |
+| Origin | needs_review |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 1 (arbitrum [`0x349834ba064f4b9286888611dfdb9035c1112d9a`](../0x349834ba064f4b9286888611dfdb9035c1112d9a/)) |
+| Proxy | No |
+| Source | Sourcify (full match) |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

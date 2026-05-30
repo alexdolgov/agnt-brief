@@ -1,0 +1,18 @@
+{
+  "address": "0x170265370499b8f388883004fbad9ebde34f3781",
+  "chain_id": 56,
+  "contract_name": "NFTDescriptor",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 1000,
+  "evm_version": "istanbul",
+  "license": "GPL-2.0-or-later, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 39,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T11:47:23.521Z"
+}

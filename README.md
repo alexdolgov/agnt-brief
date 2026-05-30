@@ -522,7 +522,7 @@ Each project directory contains:
 | [k2](./k2/brief.md) | $4.66M | ethereum | 30 | 21/30 (70%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kaio](./kaio/brief.md) | $60.80M | 4 | 35 | 4/35 (11%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [kasu](./kasu/brief.md) | $10.29M | base | 22 | 20/22 (91%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [kava-earn](./kava-earn/brief.md) | $1.66M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
+| [kava-earn](./kava-earn/brief.md) | $1.57M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [kava-lend](./kava-lend/brief.md) | $7.79M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [kava-liquid](./kava-liquid/brief.md) | $1.64M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [kava-mint](./kava-mint/brief.md) | $52.16M | kava | 1 | 0/1 (0%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
@@ -544,7 +544,7 @@ Each project directory contains:
 | [magpie-ecosystem](./magpie-ecosystem/brief.md) | $27.10M | 8 | 2794 | 0/2794 (0%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | - |
 | [mainstreet](./mainstreet/brief.md) | $78.18M | ethereum | 1 | 1/1 (100%) | 100.0% | 0.0% (-) | 1 | fresh | ✅ active | - |
 | [mangrove](./mangrove/brief.md) | $4.25M | 4 | 68 | 41/68 (60%) | 24.4% | 17.1% (ChainSecurity, Code4rena) | 7 | aging | ✅ active | - |
-| [manta-atlantic-stake](./manta-atlantic-stake/brief.md) | $5.22M | ethereum, manta | 109 | 68/109 (62%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [manta-atlantic-stake](./manta-atlantic-stake/brief.md) | $5.41M | ethereum, manta | 109 | 68/109 (62%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-cedefi](./manta-cedefi/brief.md) | $26.75M | manta | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-pacific](./manta-pacific/brief.md) | $25.18M | ethereum, manta | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [matstake](./matstake/brief.md) | $4.77M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -721,5 +721,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-30T19:24:17.700Z_
+_Generated: 2026-05-30T20:52:13.979Z_
 _Projects: 709_

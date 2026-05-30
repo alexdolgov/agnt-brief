@@ -298,7 +298,7 @@
 | [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | unknown | 3 | 2 | 2026-05-29 |
 | [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 3 | 22 | 2026-05-29 |
 | [katana-pre-launch](./katana-pre-launch/) | $18.3M | 0.0% | $18.3M | active | 29 | 166 | 2026-05-22 |
-| [kava-earn](./kava-earn/) | $1.7M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
+| [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 2 | 1 | 2026-05-30 |
 | [kava-lend](./kava-lend/) | $7.8M | 0.0% | ? | active | 1 | 1 | 2026-05-30 |
 | [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
 | [kava-mint](./kava-mint/) | $52.2M | 0.0% | ? | active | 5 | 1 | 2026-05-30 |
@@ -346,7 +346,7 @@
 | [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 10 | 36 | 2026-05-26 |
 | [mangrove](./mangrove/) | $4.3M | 24.4% | ? | active | 8 | 68 | 2026-05-23 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 3 | 5 | 2026-05-29 |
-| [manta-atlantic-stake](./manta-atlantic-stake/) | $5.2M | 0.0% | ? | sunsetting | 0 | 109 | 2026-05-25 |
+| [manta-atlantic-stake](./manta-atlantic-stake/) | $5.4M | 0.0% | ? | sunsetting | 0 | 109 | 2026-05-30 |
 | [manta-cedefi](./manta-cedefi/) | $26.8M | 0.0% | ? | unknown | 3 | 17 | 2026-05-29 |
 | [manta-pacific](./manta-pacific/) | $25.2M | 0.0% | ? | active | 3 | 3 | 2026-05-29 |
 | [mantra-dao](./mantra-dao/) | $612.5M | 0.0% | $612.5M | declining | 1 | 209 | 2026-05-25 |

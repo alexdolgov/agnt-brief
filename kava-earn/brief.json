@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kava-earn",
-  "generated_at": "2026-05-24T19:00:55.789Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-30T20:51:32.378Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-9de83b-6726",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "kava-earn",
@@ -43,10 +43,10 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 2,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1657333.4246,
-    "tvl_usd": 1657333.4246,
+    "dl_tvl_usd": 1568529.04269,
+    "tvl_usd": 1568529.04269,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,13 +56,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2021-09",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "stale": 1,
+      "unknown": 1
     }
   },
   "topography": {
@@ -71,8 +71,18 @@
     "product_family_count": 1
   },
   "fork_lineage": {
-    "entries": [],
-    "inherited_audit_count": 0
+    "entries": [
+      {
+        "fork_id": 8,
+        "relationship_type": "protocol_fork",
+        "audit_inheritance_mode": "all_audits_inherit",
+        "parent_project_key": "kava-mint",
+        "parent_project_name": "Kava Mint",
+        "parent_github_url": null,
+        "inherited_audits": 2
+      }
+    ],
+    "inherited_audit_count": 2
   },
   "contracts": [
     {
@@ -107,7 +117,50 @@
       "contamination_flag": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 11491,
+      "audit_key": "audit-11491",
+      "report_name": "proto-docs.md",
+      "report_url": "https://github.com/kava-labs/kava/blob/master/docs/core/proto-docs.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": true,
+      "inherited_from_project_key": "kava-mint",
+      "inherited_from_project_name": "Kava Mint",
+      "inherited_via_fork_id": 8,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 11492,
+      "audit_key": "audit-11492",
+      "report_name": "skynet.certik.com/projects/kava",
+      "report_url": "https://skynet.certik.com/projects/kava",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2021-09",
+      "is_inherited": true,
+      "inherited_from_project_key": "kava-mint",
+      "inherited_from_project_name": "Kava Mint",
+      "inherited_via_fork_id": 8,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
@@ -121,7 +174,16 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 11491,
+        "report_name": "proto-docs.md"
+      },
+      {
+        "audit_id": 11492,
+        "report_name": "skynet.certik.com/projects/kava"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

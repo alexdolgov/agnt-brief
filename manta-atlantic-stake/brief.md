@@ -7,11 +7,11 @@
 - Project: Manta Atlantic Stake (`manta-atlantic-stake`)
 - Website: [https://app.manta.network/manta/stake](https://app.manta.network/manta/stake)
 - Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-05-25T16:58:10.097Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-05-30T20:51:39.433Z
+- Pipeline run: v2-pipeline-2026-05-30-9de83b-6726
 - Chains: ethereum, manta
 - Contract surface: 109 unique implementations (136 raw deployments)
-- DeFi Llama TVL: $5,220,673.64
+- DeFi Llama TVL: $5,409,052.78
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,6 +22,13 @@ Manta Atlantic Stake is a Layer 2 scaling solution built on the OP Stack, provid
 ### Architecture
 
 The Ethereum Mainnet Bridge family manages cross-chain communication and asset transfers, relying on the Manta Pacific Mainnet family's predeployed proxies for L2 execution. The Reward Contract and OpenSea Seaport operate on Manta Pacific, utilizing the bridge for asset movement and the L2 infrastructure for execution.
+
+## Fork Lineage
+
+This project is a code fork of **Manta Pacific** (`manta-pacific`).
+0 audits are inherited from this parent project.
+
+Total inherited audits: 0.
 
 ## Audit Coverage Summary
 

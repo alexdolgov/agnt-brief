@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "manta-atlantic-stake",
-  "generated_at": "2026-05-25T16:58:10.097Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-05-30T20:51:39.433Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-9de83b-6726",
   "lifecycle_status": "sunsetting",
   "lifecycle_signal": {
     "slug": "manta-atlantic-stake",
@@ -45,8 +45,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5220673.63517,
-    "tvl_usd": 5220673.63517,
+    "dl_tvl_usd": 5409052.77593,
+    "tvl_usd": 5409052.77593,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -72,7 +72,17 @@
     "product_family_count": 8
   },
   "fork_lineage": {
-    "entries": [],
+    "entries": [
+      {
+        "fork_id": 9,
+        "relationship_type": "protocol_fork",
+        "audit_inheritance_mode": "all_audits_inherit",
+        "parent_project_key": "manta-pacific",
+        "parent_project_name": "Manta Pacific",
+        "parent_github_url": null,
+        "inherited_audits": 0
+      }
+    ],
     "inherited_audit_count": 0
   },
   "contracts": [

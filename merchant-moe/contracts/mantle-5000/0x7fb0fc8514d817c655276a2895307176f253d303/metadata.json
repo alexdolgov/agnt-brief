@@ -1,0 +1,17 @@
+{
+  "address": "0x7fb0fc8514d817c655276a2895307176f253d303",
+  "chain_id": 5000,
+  "contract_name": "JoeStaking",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 600,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "000000000000000000000000371c7ec6d8039ff7933a2aa28eb827ffe1f52f07000000000000000000000000e283db759720982094de7fc6edc49d3adf848943",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T11:02:04.067Z"
+}

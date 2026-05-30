@@ -1,0 +1,101 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "feeManager",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "Address__CallFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Address__NonContract",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Address__SendFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BaseComponent__OnlyDelegateCall",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "BaseComponent__OnlyFeeManager",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ILBPair[]",
+        "name": "lbPairs",
+        "type": "address[]"
+      }
+    ],
+    "name": "batchCollectProtocolFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ILBPair",
+        "name": "lbPair",
+        "type": "address"
+      }
+    ],
+    "name": "collectProtocolFees",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "name": "directCall",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "returnData",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getFeeManager",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

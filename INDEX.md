@@ -358,7 +358,7 @@
 | [meld-gold](./meld-gold/) | $11.1M | 0.0% | ? | active | 1 | 1 | 2026-05-23 |
 | [mendi-finance](./mendi-finance/) | $79.1M | 10.7% | $79.1M | sunsetting | 6 | 39 | 2026-05-24 |
 | [mento](./mento/) | $19.6M | 0.0% | ? | declining | 81 | 180 | 2026-05-29 |
-| [merchant-moe](./merchant-moe/) | $37.3M | 50.0% | ? | unknown | 1 | 53 | 2026-05-26 |
+| [merchant-moe](./merchant-moe/) | $37.3M | 50.0% | ? | unknown | 4 | 53 | 2026-05-30 |
 | [merlinswap](./merlinswap/) | $8.4M | 0.0% | ? | unknown | 3 | 2 | 2026-05-29 |
 | [meson](./meson/) | $1.1M | 0.0% | ? | active | 4 | 129 | 2026-05-25 |
 | [meta-pool](./meta-pool/) | $4.2M | 50.0% | $4.0M | active | 5 | 41 | 2026-05-29 |
@@ -368,7 +368,7 @@
 | [mezo-bridge](./mezo-bridge/) | $203.9M | 0.0% | $203.9M | declining | 4 | 6 | 2026-05-29 |
 | [mezo-earn](./mezo-earn/) | $55.2M | 0.0% | ? | unknown | 3 | 1 | 2026-05-29 |
 | [minefi](./minefi/) | $1.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
-| [minto](./minto/) | $1.7M | 12.5% | $1.7M | unknown | 1 | 11 | 2026-05-24 |
+| [minto](./minto/) | $1.7M | 12.5% | $1.7M | unknown | 4 | 11 | 2026-05-30 |
 | [mitosis](./mitosis/) | $329.1M | 4.3% | $329.1M | dead | 3 | 72 | 2026-05-25 |
 | [mm-finance](./mm-finance/) | $1.8M | 4.5% | $1.8M | dead | 3 | 192 | 2026-05-24 |
 | [mobox](./mobox/) | $8.1M | 0.0% | $8.1M | unknown | 1 | 375 | 2026-05-25 |

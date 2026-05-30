@@ -1,0 +1,17 @@
+{
+  "address": "0x08477e01a19d44c31e4c11dc2ac86e3bbe69c28b",
+  "chain_id": 5000,
+  "contract_name": "MoePair",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 600,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 15,
+  "constructor_arguments": "0000000000000000000000005bef015ca9424a7c07b68490616a4c1f094bedec",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T11:01:59.778Z"
+}

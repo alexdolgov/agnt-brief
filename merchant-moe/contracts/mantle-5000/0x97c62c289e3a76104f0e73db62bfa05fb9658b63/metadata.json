@@ -1,0 +1,17 @@
+{
+  "address": "0x97c62c289e3a76104f0e73db62bfa05fb9658b63",
+  "chain_id": 5000,
+  "contract_name": "FeeCollector",
+  "compiler_version": "v0.8.24+commit.e11b9ed9",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 12,
+  "constructor_arguments": "000000000000000000000000982ce53ab2c9d7b841af04d8df87879f73929b12",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T11:02:04.257Z"
+}

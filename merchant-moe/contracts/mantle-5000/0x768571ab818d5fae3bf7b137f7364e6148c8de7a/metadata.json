@@ -1,0 +1,17 @@
+{
+  "address": "0x768571ab818d5fae3bf7b137f7364e6148c8de7a",
+  "chain_id": 5000,
+  "contract_name": "MoeLens",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 600,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 29,
+  "constructor_arguments": "000000000000000000000000a756f7d419e1a5cbd656a438443011a7de1955b500000000000000000000000079f316c45e9b62638a8304ffffa9806439b69d44000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000034d4e540000000000000000000000000000000000000000000000000000000000",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T11:02:03.674Z"
+}

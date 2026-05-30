@@ -1,0 +1,17 @@
+{
+  "address": "0x501b8afd35df20f531ff45f6f695793ac3316c85",
+  "chain_id": 5000,
+  "contract_name": "LBQuoter",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 800,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T11:02:03.285Z"
+}

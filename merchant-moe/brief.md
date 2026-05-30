@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Merchant Moe
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 37.3% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 33.3% over 90 days
 
 ## Project Overview
 
 - Project: Merchant Moe (`merchant-moe`)
 - Website: [https://merchantmoe.com/](https://merchantmoe.com/)
-- Lifecycle: unknown (Tier 0, 78.4% below peak)
-- Generated: 2026-05-26T15:43:31.482Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Lifecycle: unknown (Tier 0, 79.2% below peak)
+- Generated: 2026-05-30T11:01:58.830Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: mantle
 - Contract surface: 53 unique implementations (133 raw deployments)
 - DeFi Llama TVL: $37,263,684.00
@@ -31,11 +31,11 @@ The LBFactory creates and manages liquidity pools, while the Moe token is used f
 - Unverified implementations: 25
 - Unique implementations: 53
 - Raw deployments: 133
-- Audits discovered: 1
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-12 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
@@ -135,6 +135,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Merchant Moe Audit Report](https://paladinsec.co/projects/merchant-moe) | Paladin | Audit | 2023-12 | stale | Direct | contract_name | 83 | high |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -167,9 +170,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=83
+
+Zero-match audit list:
+
+- [10257] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [10258] 0002-metadata-manifest-and-pull-command.md
+- [10259] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

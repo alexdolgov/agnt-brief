@@ -1,0 +1,17 @@
+{
+  "address": "0x886523e92c7624825307626bdf5cbabc6ff6af2a",
+  "chain_id": 5000,
+  "contract_name": "ProxyAdmin2Step",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 600,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 13,
+  "constructor_arguments": "000000000000000000000000244305969310527b29d8ff3aa263f686db61df6f",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T11:02:03.305Z"
+}

@@ -1,0 +1,474 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "router",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "routerV2_0",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "uniswapV4Manager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "wnative",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "protocolFeeReceiver",
+        "type": "address"
+      },
+      {
+        "internalType": "uint96",
+        "name": "protocolFeeShare",
+        "type": "uint96"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "FeeAdapter__InvalidFeeReceiver",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FeeAdapter__InvalidFrom",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FeeAdapter__InvalidProtocolFeeReceiver",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "FeeAdapter__InvalidProtocolFeeShare",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PackedRoute__InvalidExtraDataLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PackedRoute__InvalidLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "PairInteraction__InvalidReturnData",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterAdapter__InsufficientLBLiquidity",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterAdapter__InsufficientTMLiquidity",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterAdapter__InsufficientTMV2Liquidity",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterAdapter__InvalidId",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterAdapter__OnlyWnative",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterAdapter__UnexpectedAmountIn",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterAdapter__UnexpectedCallback",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountInMax",
+        "type": "uint256"
+      }
+    ],
+    "name": "RouterLogic__ExceedsMaxAmountIn",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__ExcessBalanceUnused",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOutMin",
+        "type": "uint256"
+      }
+    ],
+    "name": "RouterLogic__InsufficientAmountOut",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__InsufficientTokens",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__InvalidAmount",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__InvalidFeeData",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__InvalidFeePercent",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__InvalidRouter",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__InvalidTokenIn",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__InvalidTokenOut",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__OnlyRouter",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__OnlyRouterOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__TransferTaxNotSupported",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "RouterLogic__ZeroSwap",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SafeCast__Overflow",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenLib__ApproveFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenLib__BalanceOfFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenLib__NativeTransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenLib__TransferFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenLib__UnwrapFailed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "TokenLib__WrapFailed",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "allocatee",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feeAmount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "protocolFeeAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "FeeSent",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "protocolFeeReceiver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint96",
+        "name": "protocolFeeShare",
+        "type": "uint96"
+      }
+    ],
+    "name": "ProtocolFeeParametersSet",
+    "type": "event"
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "fallback"
+  },
+  {
+    "inputs": [],
+    "name": "getProtocolFeeRecipient",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getProtocolFeeShare",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "feeReceiver",
+        "type": "address"
+      },
+      {
+        "internalType": "uint96",
+        "name": "feeShare",
+        "type": "uint96"
+      }
+    ],
+    "name": "setProtocolFeeParameters",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOut",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOutMin",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "route",
+        "type": "bytes"
+      }
+    ],
+    "name": "swapExactIn",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenIn",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOut",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountInMax",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amountOut",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "route",
+        "type": "bytes"
+      }
+    ],
+    "name": "swapExactOut",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "totalIn",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalOut",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "sweep",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

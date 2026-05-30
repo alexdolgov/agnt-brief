@@ -1,0 +1,17 @@
+{
+  "address": "0x2759a51fc109bc7c4d227e526e148e22f90a2678",
+  "chain_id": 5000,
+  "contract_name": "MasterChefRewarder",
+  "compiler_version": "v0.8.20+commit.a1b79de6",
+  "optimization_used": true,
+  "runs": 600,
+  "evm_version": "paris",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 24,
+  "constructor_arguments": "000000000000000000000000a756f7d419e1a5cbd656a438443011a7de1955b5",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T11:01:59.802Z"
+}

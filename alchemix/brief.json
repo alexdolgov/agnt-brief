@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "alchemix",
-  "generated_at": "2026-05-27T07:01:18.130Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-a9ad",
+  "generated_at": "2026-05-30T10:39:08.212Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "alchemix",
@@ -36,15 +36,15 @@
     "total_addresses": 1035,
     "unique_implementations": 388,
     "total_deployments": 1035,
-    "audited_contracts": 2,
-    "unaudited_contracts": 200,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 200,
+    "audited_contracts": 15,
+    "unaudited_contracts": 187,
+    "contracts_verified_audited": 15,
+    "contracts_verified_unaudited": 187,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 186,
-    "coverage_pct": 1,
-    "total_audits": 2,
-    "scoreable_audits": 1,
+    "coverage_pct": 7.4,
+    "total_audits": 91,
+    "scoreable_audits": 18,
     "dl_tvl_usd": 37880562,
     "tvl_usd": 340698321.48454833,
     "tvl_source": "on_chain",
@@ -53,7 +53,7 @@
       "ethereum": 304733070.72,
       "optimism": 34582392.47
     },
-    "asd_usd": 340698321.48454833,
+    "asd_usd": 338700456.10091996,
     "website_url": "https://alchemix.fi/",
     "chains": [
       "arbitrum",
@@ -65,13 +65,13 @@
     "tier1_auditors": [
       "Spearbit"
     ],
-    "latest_audit_date": "2025-05",
-    "audit_freshness": "aging",
+    "latest_audit_date": "2026-04",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
-      "aging": 1,
+      "fresh": 8,
+      "aging": 2,
       "stale": 0,
-      "unknown": 1
+      "unknown": 81
     }
   },
   "topography": {
@@ -907,14 +907,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1997865.3836283444,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9745"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1698,7 +1700,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 2.5829388462771204e-15,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -1707,14 +1709,17 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9746",
+        "audit-9747"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1902,14 +1907,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9679",
+        "audit-9702",
+        "audit-9757"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -1933,7 +1942,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -1942,7 +1951,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -1951,7 +1960,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -1960,7 +1969,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1969,7 +1978,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -1978,14 +1987,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9679",
+        "audit-9692",
+        "audit-9744",
+        "audit-9747"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2009,7 +2023,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2018,7 +2032,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2027,14 +2041,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9679",
+        "audit-9693",
+        "audit-9744",
+        "audit-9747"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2089,7 +2108,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2098,7 +2117,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2107,7 +2126,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2116,7 +2135,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2125,7 +2144,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2134,14 +2153,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9674",
+        "audit-9679",
+        "audit-9746"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2165,7 +2188,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2174,7 +2197,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2183,14 +2206,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9679",
+        "audit-9694",
+        "audit-9747"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2214,7 +2241,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2223,7 +2250,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2232,7 +2259,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2241,7 +2268,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2250,7 +2277,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2259,14 +2286,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9675",
+        "audit-9679",
+        "audit-9747"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2649,7 +2680,9 @@
         }
       ],
       "audits_covering": [
-        "audit-4306"
+        "audit-4306",
+        "audit-9672",
+        "audit-9747"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2678,7 +2711,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2687,7 +2720,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2696,7 +2729,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2705,7 +2738,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2714,7 +2747,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2723,14 +2756,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9676",
+        "audit-9679",
+        "audit-9747"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -2754,7 +2791,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -2763,7 +2800,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2772,7 +2809,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -2781,7 +2818,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2790,7 +2827,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -2799,14 +2836,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9747"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -8709,7 +8748,12 @@
         }
       ],
       "audits_covering": [
-        "audit-4306"
+        "audit-4306",
+        "audit-9679",
+        "audit-9701",
+        "audit-9702",
+        "audit-9726",
+        "audit-9747"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -8769,7 +8813,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -8778,7 +8822,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -8787,7 +8831,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -8796,7 +8840,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -8805,7 +8849,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -8814,7 +8858,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -8823,7 +8867,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -8832,7 +8876,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -8841,7 +8885,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -8850,7 +8894,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -8859,7 +8903,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -8868,7 +8912,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -8877,14 +8921,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9757"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -15332,7 +15378,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -15341,7 +15387,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -15350,14 +15396,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9761"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": null
     },
     {
@@ -17242,7 +17290,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -17251,7 +17299,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -17260,7 +17308,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -17269,7 +17317,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -17278,7 +17326,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -17287,7 +17335,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -17296,7 +17344,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -17305,7 +17353,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -17314,7 +17362,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -17323,7 +17371,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -17332,7 +17380,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -17341,7 +17389,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -17350,7 +17398,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 10,
@@ -17359,7 +17407,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -17368,7 +17416,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -17377,7 +17425,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -17386,7 +17434,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -17395,7 +17443,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -17404,7 +17452,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -17413,7 +17461,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -17422,14 +17470,16 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-9747"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
+      "verification_bucket": "verified_audited",
       "contamination_flag": "cleared"
     },
     {
@@ -17985,15 +18035,2098 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9671,
+      "audit_key": "audit-9671",
+      "report_name": "abstract-fee-vault-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/abstract-fee-vault-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9672,
+      "audit_key": "audit-9672",
+      "report_name": "alchemist-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/alchemist-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlchemistV3"
+      ],
+      "matched_contracts": 13,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9673,
+      "audit_key": "audit-9673",
+      "report_name": "alchemist-eth-vault-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/alchemist-eth-vault-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9674,
+      "audit_key": "audit-9674",
+      "report_name": "alchemist-router-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/alchemist-router-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlchemistRouter"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9675,
+      "audit_key": "audit-9675",
+      "report_name": "alchemist-token-vault-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/alchemist-token-vault-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlchemistTokenVault"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9676,
+      "audit_key": "audit-9676",
+      "report_name": "alchemist-v3-position-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/alchemist-v3-position-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlchemistV3Position"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9677,
+      "audit_key": "audit-9677",
+      "report_name": "cdp-mechanics.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/cdp-mechanics.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9678,
+      "audit_key": "audit-9678",
+      "report_name": "earmarking.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/earmarking.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9679,
+      "audit_key": "audit-9679",
+      "report_name": "overview.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/architecture/overview.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name|n/a",
+      "extracted_names": [
+        "Alchemist",
+        "AlchemistAllocator",
+        "AlchemistCurator",
+        "AlchemistETHVault",
+        "AlchemistRouter",
+        "AlchemistStrategyClassifier",
+        "AlchemistTokenVault",
+        "AlchemistV3Position",
+        "MYTStrategy",
+        "Transmuter",
+        "Vault2"
+      ],
+      "matched_contracts": 38,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9679,
+          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/architecture/overview.md"
+        },
+        {
+          "audit_id": 9699,
+          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/transmuter/overview.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 9680,
+      "audit_key": "audit-9680",
+      "report_name": "redemptions.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/architecture/redemptions.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9681,
+      "audit_key": "audit-9681",
+      "report_name": "security-model.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/architecture/security-model.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9682,
+      "audit_key": "audit-9682",
+      "report_name": "arbitrum.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/contracts/arbitrum.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9683,
+      "audit_key": "audit-9683",
+      "report_name": "ethereum.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/contracts/ethereum.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9684,
+      "audit_key": "audit-9684",
+      "report_name": "optimism.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/contracts/optimism.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9685,
+      "audit_key": "audit-9685",
+      "report_name": "faq.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/faq.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9685,
+          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/faq.md"
+        },
+        {
+          "audit_id": 9710,
+          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/faq.md"
+        },
+        {
+          "audit_id": 9727,
+          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/faq.md"
+        },
+        {
+          "audit_id": 9751,
+          "report_url": "https://github.com/alchemix-finance/doc-alchemix-holyheld-topup/blob/main/docs/support/faq.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 9686,
+      "audit_key": "audit-9686",
+      "report_name": "index.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/index.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9686,
+          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/index.md"
+        },
+        {
+          "audit_id": 9713,
+          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/index.md"
+        },
+        {
+          "audit_id": 9731,
+          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/index.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 9687,
+      "audit_key": "audit-9687",
+      "report_name": "grants-program.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/integration/grants-program.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9688,
+      "audit_key": "audit-9688",
+      "report_name": "integrate-alchemist.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/integration/integrate-alchemist.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9689,
+      "audit_key": "audit-9689",
+      "report_name": "integrate-myt.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/integration/integrate-myt.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9690,
+      "audit_key": "audit-9690",
+      "report_name": "integrate-transmuter.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/integration/integrate-transmuter.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9691,
+      "audit_key": "audit-9691",
+      "report_name": "using-alassets.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/integration/using-alassets.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9692,
+      "audit_key": "audit-9692",
+      "report_name": "alchemist-allocator-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/alchemist-allocator-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlchemistAllocator",
+        "IStrategyClassifier",
+        "IVaultV2",
+        "PermissionedProxy",
+        "StrategyClassifier"
+      ],
+      "matched_contracts": 6,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9693,
+      "audit_key": "audit-9693",
+      "report_name": "alchemist-curator-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/alchemist-curator-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlchemistCurator",
+        "PermissionedProxy"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9694,
+      "audit_key": "audit-9694",
+      "report_name": "alchemist-strategy-classifier-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/alchemist-strategy-classifier-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlchemistStrategyClassifier"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9695,
+      "audit_key": "audit-9695",
+      "report_name": "mix-yield-token.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/mix-yield-token.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9696,
+      "audit_key": "audit-9696",
+      "report_name": "myt-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/myt-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9697,
+      "audit_key": "audit-9697",
+      "report_name": "operator-cheatsheet.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/operator-cheatsheet.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9698,
+      "audit_key": "audit-9698",
+      "report_name": "permissioned-proxy-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/permissioned-proxy-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9700,
+      "audit_key": "audit-9700",
+      "report_name": "redemption-mechanics.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/transmuter/redemption-mechanics.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9701,
+      "audit_key": "audit-9701",
+      "report_name": "transmuter-contract.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/transmuter/transmuter-contract.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Transmuter"
+      ],
+      "matched_contracts": 7,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9702,
+      "audit_key": "audit-9702",
+      "report_name": "contract-roles.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/guides/contract-roles.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Alchemist",
+        "Mix Yield Token",
+        "Transmuter"
+      ],
+      "matched_contracts": 8,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9703,
+      "audit_key": "audit-9703",
+      "report_name": "myt-strategies.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/guides/myt-strategies.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9704,
+      "audit_key": "audit-9704",
+      "report_name": "intro.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/intro.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9704,
+          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/intro.md"
+        },
+        {
+          "audit_id": 9749,
+          "report_url": "https://github.com/alchemix-finance/doc-alchemix-holyheld-topup/blob/main/docs/intro.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 9705,
+      "audit_key": "audit-9705",
+      "report_name": "governance-process.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/onchain/governance-process.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9706,
+      "audit_key": "audit-9706",
+      "report_name": "how-to-vote.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/onchain/how-to-vote.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9707,
+      "audit_key": "audit-9707",
+      "report_name": "onchain-governance-infrastructure.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/onchain/onchain-governance-infrastructure.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9708,
+      "audit_key": "audit-9708",
+      "report_name": "vqalcx.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/onchain/vqalcx.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9709,
+      "audit_key": "audit-9709",
+      "report_name": "apply-to-partner.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/contact/apply-to-partner.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9711,
+      "audit_key": "audit-9711",
+      "report_name": "friendly-fork.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/how-to/friendly-fork.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9712,
+      "audit_key": "audit-9712",
+      "report_name": "getting-started.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/how-to/getting-started.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9714,
+      "audit_key": "audit-9714",
+      "report_name": "brand-assets.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/support/brand-assets.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9715,
+      "audit_key": "audit-9715",
+      "report_name": "co-marketing.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/support/co-marketing.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9716,
+      "audit_key": "audit-9716",
+      "report_name": "security.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/support/security.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 9716,
+          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/support/security.md"
+        },
+        {
+          "audit_id": 9736,
+          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/safety/security.md"
+        }
+      ]
+    },
+    {
+      "audit_id": 9717,
+      "audit_key": "audit-9717",
+      "report_name": "feature-comparison.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/why-integrate/feature-comparison.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9718,
+      "audit_key": "audit-9718",
+      "report_name": "use-cases.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/why-integrate/use-cases.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9719,
+      "audit_key": "audit-9719",
+      "report_name": "alAssets.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/alAssets.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9720,
+      "audit_key": "audit-9720",
+      "report_name": "fees.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/fees.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9721,
+      "audit_key": "audit-9721",
+      "report_name": "how-peg-is-maintained.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/how-peg-is-maintained.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9722,
+      "audit_key": "audit-9722",
+      "report_name": "liquidations.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/liquidations.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9723,
+      "audit_key": "audit-9723",
+      "report_name": "myt-and-yield.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/myt-and-yield.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9724,
+      "audit_key": "audit-9724",
+      "report_name": "redemption-rate.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/redemption-rate.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9725,
+      "audit_key": "audit-9725",
+      "report_name": "self-repaying-loans.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/self-repaying-loans.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9726,
+      "audit_key": "audit-9726",
+      "report_name": "transmuter.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/transmuter.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Transmuter"
+      ],
+      "matched_contracts": 7,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9728,
+      "audit_key": "audit-9728",
+      "report_name": "financial-reports.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/financial-reports.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9729,
+      "audit_key": "audit-9729",
+      "report_name": "glossary.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/glossary.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9730,
+      "audit_key": "audit-9730",
+      "report_name": "independent-research.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/independent-research.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9732,
+      "audit_key": "audit-9732",
+      "report_name": "links.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/links.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9733,
+      "audit_key": "audit-9733",
+      "report_name": "marketing-material.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/marketing-material.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9734,
+      "audit_key": "audit-9734",
+      "report_name": "quick-start.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/quick-start.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9735,
+      "audit_key": "audit-9735",
+      "report_name": "risk-considerations.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/safety/risk-considerations.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9737,
+      "audit_key": "audit-9737",
+      "report_name": "borrowing-in-alchemix.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/borrowing-in-alchemix.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9738,
+      "audit_key": "audit-9738",
+      "report_name": "deposit-and-borrow.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/deposit-and-borrow.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9739,
+      "audit_key": "audit-9739",
+      "report_name": "redeem-alassets.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/redeem-alassets.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9740,
+      "audit_key": "audit-9740",
+      "report_name": "repay-loan.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/repay-loan.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9741,
+      "audit_key": "audit-9741",
+      "report_name": "use-passive-myt.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/use-passive-myt.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9742,
+      "audit_key": "audit-9742",
+      "report_name": "withdraw.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/withdraw.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9743,
+      "audit_key": "audit-9743",
+      "report_name": "v3-migration.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/v3-migration.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9744,
+      "audit_key": "audit-9744",
+      "report_name": "v3-nethermind.pdf",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-nethermind.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-02",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveV3ARBUSDCStrategy",
+        "AaveV3ARBWETHStrategy",
+        "AaveV3OPUSDCStrategy",
+        "AlchemistAllocator",
+        "AlchemistCurator",
+        "AlchemistGate",
+        "EulerARBUSDCStrategy",
+        "EulerARBWETHStrategy",
+        "EulerUSDCStrategy",
+        "EulerWETHStrategy",
+        "FluidARBUSDCStrategy",
+        "IAlchemistCurator",
+        "IAllocator",
+        "MYTStrategy",
+        "MoonwellUSDCStrategy",
+        "MoonwellWETHStrategy",
+        "MorphoYearnOGWETH",
+        "PeapodsETH",
+        "PeapodsUSDC",
+        "PermissionedProxy",
+        "TokeAutoEth",
+        "TokeAutoUSDStrategy",
+        "WstethMainnet"
+      ],
+      "matched_contracts": 9,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9745,
+      "audit_key": "audit-9745",
+      "report_name": "v3-strategies-yaudit-followup.pdf",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-strategies-yaudit-followup.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "MYTTokenSwapper",
+        "SimMigrateToWstethStrategy",
+        "WstETHEthereumStrategy"
+      ],
+      "matched_contracts": 1,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9746,
+      "audit_key": "audit-9746",
+      "report_name": "v3-strategies-yaudit.pdf",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-strategies-yaudit.pdf",
+      "auditor": "yAudit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AlchemistRouter",
+        "EtherfiEETHStrategy",
+        "FrxEthEthDualOracleAggregatorAdapter",
+        "OraclePricedSwapStrategy",
+        "SFraxETHStrategy",
+        "SiUSDStrategy",
+        "WStethStrategy"
+      ],
+      "matched_contracts": 8,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9747,
+      "audit_key": "audit-9747",
+      "report_name": "v3-yearn.pdf",
+      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-yearn.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2026-03",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AaveV3ARBUSDCStrategy",
+        "AaveV3ARBWETHStrategy",
+        "AaveV3OPUSDCStrategy",
+        "AbstractFeeVault",
+        "AlchemistAllocator",
+        "AlchemistCurator",
+        "AlchemistETHVault",
+        "AlchemistGate",
+        "AlchemistStrategyClassifier",
+        "AlchemistTokenVault",
+        "AlchemistV3",
+        "AlchemistV3Position",
+        "AlchemistV3PositionRenderer",
+        "ErrorMessages",
+        "Errors",
+        "EulerARBUSDCStrategy",
+        "EulerARBWETHStrategy",
+        "EulerUSDCAdapter",
+        "EulerUSDCStrategy",
+        "EulerWETHStrategy",
+        "FixedPointMath",
+        "FluidARBUSDCStrategy",
+        "MYTStrategy",
+        "MoonwellUSDCStrategy",
+        "MoonwellWETHStrategy",
+        "MorphoYearnOGWETH",
+        "NFTMetadataGenerator",
+        "PeapodsETHStrategy",
+        "PeapodsUSDCStrategy",
+        "PermissionedProxy",
+        "PerpetualGauge",
+        "SafeCast",
+        "SafeERC20",
+        "Sets",
+        "StakingGraph",
+        "TokeAutoETHStrategy",
+        "TokeAutoUSDStrategy",
+        "TokenUtils",
+        "Transmuter",
+        "TransmuterErrors",
+        "WStethStrategy",
+        "Whitelist",
+        "ZeroXSwapVerifier"
+      ],
+      "matched_contracts": 73,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9748,
+      "audit_key": "audit-9748",
+      "report_name": "connecting.md",
+      "report_url": "https://github.com/alchemix-finance/doc-alchemix-holyheld-topup/blob/main/docs/getting-started/connecting.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9750,
+      "audit_key": "audit-9750",
+      "report_name": "contact.md",
+      "report_url": "https://github.com/alchemix-finance/doc-alchemix-holyheld-topup/blob/main/docs/support/contact.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9752,
+      "audit_key": "audit-9752",
+      "report_name": "app.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/app.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9753,
+      "audit_key": "audit-9753",
+      "report_name": "architecture.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/architecture.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9754,
+      "audit_key": "audit-9754",
+      "report_name": "deployment.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/deployment.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9755,
+      "audit_key": "audit-9755",
+      "report_name": "hooks.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/hooks.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9756,
+      "audit_key": "audit-9756",
+      "report_name": "libraries.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/libraries.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9757,
+      "audit_key": "audit-9757",
+      "report_name": "loan-flow.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/loan-flow.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Alchemist",
+        "TransmuterBuffer",
+        "YieldTokens"
+      ],
+      "matched_contracts": 14,
+      "scope_note": null,
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9758,
+      "audit_key": "audit-9758",
+      "report_name": "styles.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/styles.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9759,
+      "audit_key": "audit-9759",
+      "report_name": "usage.md",
+      "report_url": "https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/usage.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9760,
+      "audit_key": "audit-9760",
+      "report_name": "2025-05-19-spearbit.pdf",
+      "report_url": "https://github.com/alchemix-finance/v3/blob/master/lib/vault-v2/audits/2025-05-19-spearbit.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9761,
+      "audit_key": "audit-9761",
+      "report_name": "2025-07-15-zellic.pdf",
+      "report_url": "https://github.com/alchemix-finance/v3/blob/master/lib/vault-v2/audits/2025-07-15-zellic.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ConstantsLib",
+        "ManualVic",
+        "ManualVicFactory",
+        "MetaMorphoAdapter",
+        "MorphoBlueAdapter",
+        "VaultV2",
+        "VaultV2Factory"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9762,
+      "audit_key": "audit-9762",
+      "report_name": "2025-08-11-spearbit.pdf",
+      "report_url": "https://github.com/alchemix-finance/v3/blob/master/lib/vault-v2/audits/2025-08-11-spearbit.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-08",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9763,
+      "audit_key": "audit-9763",
+      "report_name": "2025-09-15-blackthorn.pdf",
+      "report_url": "https://github.com/alchemix-finance/v3/blob/master/lib/vault-v2/audits/2025-09-15-blackthorn.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9764,
+      "audit_key": "audit-9764",
+      "report_name": "2025-09-15-chainsecurity.pdf",
+      "report_url": "https://github.com/alchemix-finance/v3/blob/master/lib/vault-v2/audits/2025-09-15-chainsecurity.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9765,
+      "audit_key": "audit-9765",
+      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9766,
+      "audit_key": "audit-9766",
+      "report_name": "0002-metadata-manifest-and-pull-command.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 9767,
+      "audit_key": "audit-9767",
+      "report_name": "0003-bun-package-manager-node-runtime.md",
+      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 13,
+      "coverage_pct": 6.4,
+      "latest_audit": "2026-03"
+    },
+    {
+      "auditor": "yAudit",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 1.5,
+      "latest_audit": "2026-04"
+    },
     {
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 2,
       "coverage_pct": 1,
-      "latest_audit": "2025-05"
+      "latest_audit": "2025-08"
+    },
+    {
+      "auditor": "Zellic",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 0.5,
+      "latest_audit": "2025-07"
     }
   ],
   "coverage_gaps": [
@@ -18026,16 +20159,6 @@
       "origin_kind": "native",
       "tvl_usd": 2716934.6644417043,
       "risk_note": "Verified native implementation with $2,716,934.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xde44c213f0730e9f38401daf8edf31129de80681",
-      "name": "WstETHEthereumStrategy",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 1997865.3836283444,
-      "risk_note": "Verified native implementation with $1,997,865.38 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -18208,16 +20331,6 @@
       "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4bd4faad509c4bc5ba6d68a15c8b1b54a10288b4",
-      "name": "WstethStrategy",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 2.5829388462771204e-15,
-      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x612fd30e2d7dd963a1513cbf781eb5dfe8a55fb8",
@@ -18250,88 +20363,8 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc21d353ff4ee73c572425697f4f5aad2109fe35b",
-      "name": "Alchemist",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x12114eb8e17800b3b2e777339b9e0c32638e0be0",
-      "name": "AlchemistAllocator",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7d61e3cde8b58c4be192a7a35e9d626c419302a4",
-      "name": "AlchemistCurator",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xf8317bd5f48b6fe608a52b48c856d3367540b73b",
       "name": "AlchemistEth",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x3c0546587d27354635a4972390a7b96f962d8bbd",
-      "name": "AlchemistRouter",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x3c28ba0d3f400b29f75b5c79dca0614cf5ce3a70",
-      "name": "AlchemistStrategyClassifier",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x0a2dc30e6a74a02cb745e44cc546d9b44eecd857",
-      "name": "AlchemistTokenVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x15da4c7db6404b92894d5214fac92057fb8a263d",
-      "name": "AlchemistV3Position",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x541fb28d158aa33e6db93cd1f713567407c73463",
-      "name": "AlchemistV3PositionRenderer",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -19280,16 +21313,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x211c74db951c161c5a379363716ebdca5125ef59",
-      "name": "Whitelist",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f",
       "name": "WithdrawalVault",
       "role": "operational_periphery",
@@ -19326,10 +21349,12 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 20
+      "extraction_exact": 231
     },
     "extraction_confidence_counts": {
-      "low": 1
+      "high": 5,
+      "low": 11,
+      "medium": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -19337,6 +21362,294 @@
       {
         "audit_id": 4307,
         "report_name": "- [View Report]()"
+      },
+      {
+        "audit_id": 9671,
+        "report_name": "abstract-fee-vault-contract.md"
+      },
+      {
+        "audit_id": 9673,
+        "report_name": "alchemist-eth-vault-contract.md"
+      },
+      {
+        "audit_id": 9677,
+        "report_name": "cdp-mechanics.md"
+      },
+      {
+        "audit_id": 9678,
+        "report_name": "earmarking.md"
+      },
+      {
+        "audit_id": 9680,
+        "report_name": "redemptions.md"
+      },
+      {
+        "audit_id": 9681,
+        "report_name": "security-model.md"
+      },
+      {
+        "audit_id": 9682,
+        "report_name": "arbitrum.md"
+      },
+      {
+        "audit_id": 9683,
+        "report_name": "ethereum.md"
+      },
+      {
+        "audit_id": 9684,
+        "report_name": "optimism.md"
+      },
+      {
+        "audit_id": 9685,
+        "report_name": "faq.md"
+      },
+      {
+        "audit_id": 9686,
+        "report_name": "index.md"
+      },
+      {
+        "audit_id": 9687,
+        "report_name": "grants-program.md"
+      },
+      {
+        "audit_id": 9688,
+        "report_name": "integrate-alchemist.md"
+      },
+      {
+        "audit_id": 9689,
+        "report_name": "integrate-myt.md"
+      },
+      {
+        "audit_id": 9690,
+        "report_name": "integrate-transmuter.md"
+      },
+      {
+        "audit_id": 9691,
+        "report_name": "using-alassets.md"
+      },
+      {
+        "audit_id": 9695,
+        "report_name": "mix-yield-token.md"
+      },
+      {
+        "audit_id": 9696,
+        "report_name": "myt-contract.md"
+      },
+      {
+        "audit_id": 9697,
+        "report_name": "operator-cheatsheet.md"
+      },
+      {
+        "audit_id": 9698,
+        "report_name": "permissioned-proxy-contract.md"
+      },
+      {
+        "audit_id": 9700,
+        "report_name": "redemption-mechanics.md"
+      },
+      {
+        "audit_id": 9703,
+        "report_name": "myt-strategies.md"
+      },
+      {
+        "audit_id": 9704,
+        "report_name": "intro.md"
+      },
+      {
+        "audit_id": 9705,
+        "report_name": "governance-process.md"
+      },
+      {
+        "audit_id": 9706,
+        "report_name": "how-to-vote.md"
+      },
+      {
+        "audit_id": 9707,
+        "report_name": "onchain-governance-infrastructure.md"
+      },
+      {
+        "audit_id": 9708,
+        "report_name": "vqalcx.md"
+      },
+      {
+        "audit_id": 9709,
+        "report_name": "apply-to-partner.md"
+      },
+      {
+        "audit_id": 9711,
+        "report_name": "friendly-fork.md"
+      },
+      {
+        "audit_id": 9712,
+        "report_name": "getting-started.md"
+      },
+      {
+        "audit_id": 9714,
+        "report_name": "brand-assets.md"
+      },
+      {
+        "audit_id": 9715,
+        "report_name": "co-marketing.md"
+      },
+      {
+        "audit_id": 9716,
+        "report_name": "security.md"
+      },
+      {
+        "audit_id": 9717,
+        "report_name": "feature-comparison.md"
+      },
+      {
+        "audit_id": 9718,
+        "report_name": "use-cases.md"
+      },
+      {
+        "audit_id": 9719,
+        "report_name": "alAssets.md"
+      },
+      {
+        "audit_id": 9720,
+        "report_name": "fees.md"
+      },
+      {
+        "audit_id": 9721,
+        "report_name": "how-peg-is-maintained.md"
+      },
+      {
+        "audit_id": 9722,
+        "report_name": "liquidations.md"
+      },
+      {
+        "audit_id": 9723,
+        "report_name": "myt-and-yield.md"
+      },
+      {
+        "audit_id": 9724,
+        "report_name": "redemption-rate.md"
+      },
+      {
+        "audit_id": 9725,
+        "report_name": "self-repaying-loans.md"
+      },
+      {
+        "audit_id": 9728,
+        "report_name": "financial-reports.md"
+      },
+      {
+        "audit_id": 9729,
+        "report_name": "glossary.md"
+      },
+      {
+        "audit_id": 9730,
+        "report_name": "independent-research.md"
+      },
+      {
+        "audit_id": 9732,
+        "report_name": "links.md"
+      },
+      {
+        "audit_id": 9733,
+        "report_name": "marketing-material.md"
+      },
+      {
+        "audit_id": 9734,
+        "report_name": "quick-start.md"
+      },
+      {
+        "audit_id": 9735,
+        "report_name": "risk-considerations.md"
+      },
+      {
+        "audit_id": 9737,
+        "report_name": "borrowing-in-alchemix.md"
+      },
+      {
+        "audit_id": 9738,
+        "report_name": "deposit-and-borrow.md"
+      },
+      {
+        "audit_id": 9739,
+        "report_name": "redeem-alassets.md"
+      },
+      {
+        "audit_id": 9740,
+        "report_name": "repay-loan.md"
+      },
+      {
+        "audit_id": 9741,
+        "report_name": "use-passive-myt.md"
+      },
+      {
+        "audit_id": 9742,
+        "report_name": "withdraw.md"
+      },
+      {
+        "audit_id": 9743,
+        "report_name": "v3-migration.md"
+      },
+      {
+        "audit_id": 9748,
+        "report_name": "connecting.md"
+      },
+      {
+        "audit_id": 9750,
+        "report_name": "contact.md"
+      },
+      {
+        "audit_id": 9752,
+        "report_name": "app.md"
+      },
+      {
+        "audit_id": 9753,
+        "report_name": "architecture.md"
+      },
+      {
+        "audit_id": 9754,
+        "report_name": "deployment.md"
+      },
+      {
+        "audit_id": 9755,
+        "report_name": "hooks.md"
+      },
+      {
+        "audit_id": 9756,
+        "report_name": "libraries.md"
+      },
+      {
+        "audit_id": 9758,
+        "report_name": "styles.md"
+      },
+      {
+        "audit_id": 9759,
+        "report_name": "usage.md"
+      },
+      {
+        "audit_id": 9760,
+        "report_name": "2025-05-19-spearbit.pdf"
+      },
+      {
+        "audit_id": 9762,
+        "report_name": "2025-08-11-spearbit.pdf"
+      },
+      {
+        "audit_id": 9763,
+        "report_name": "2025-09-15-blackthorn.pdf"
+      },
+      {
+        "audit_id": 9764,
+        "report_name": "2025-09-15-chainsecurity.pdf"
+      },
+      {
+        "audit_id": 9765,
+        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
+      },
+      {
+        "audit_id": 9766,
+        "report_name": "0002-metadata-manifest-and-pull-command.md"
+      },
+      {
+        "audit_id": 9767,
+        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

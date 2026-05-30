@@ -6,8 +6,8 @@
 | Address | `0x4bd4faad509c4bc5ba6d68a15c8b1b54a10288b4` |
 | Role | core_logic |
 | Origin | native |
-| Audited | No |
-| Audits | n/a |
+| Audited | Yes |
+| Audits | [v3-strategies-yaudit.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-strategies-yaudit.pdf); [v3-yearn.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-yearn.pdf) |
 | Deployments | 2 (ethereum `0x7da70f3327efe7643867c6ae5909d8ab01353189`; optimism [`0x4bd4faad509c4bc5ba6d68a15c8b1b54a10288b4`](../0x4bd4faad509c4bc5ba6d68a15c8b1b54a10288b4/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |

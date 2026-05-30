@@ -8,7 +8,7 @@
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-05-26 |
 | [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-05-27 |
 | [abc-pool](./abc-pool/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
-| [abracadabra](./abracadabra/) | $8.4M | 0.0% | ? | dead | 1 | 4388 | 2026-05-25 |
+| [abracadabra](./abracadabra/) | $8.1M | 0.0% | ? | dead | 16 | 2568 | 2026-05-30 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 6 | 43 | 2026-05-25 |
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | unknown | 5 | 220 | 2026-05-23 |
 | [across](./across/) | $28.1M | 18.0% | $28.1M | active | 6 | 142 | 2026-05-25 |
@@ -20,9 +20,9 @@
 | [aftermath-finance](./aftermath-finance/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
 | [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 6 | 1 | 2026-05-28 |
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | unknown | 1 | 2 | 2026-05-23 |
-| [alchemix](./alchemix/) | $340.7M | 1.0% | $340.7M | declining | 2 | 388 | 2026-05-27 |
+| [alchemix](./alchemix/) | $340.7M | 7.4% | $338.7M | declining | 91 | 388 | 2026-05-30 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 97 | 58 | 2026-05-28 |
-| [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 2 | 284 | 2026-05-22 |
+| [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 26 | 284 | 2026-05-30 |
 | [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 22 | 144 | 2026-05-28 |
 | [alphagrowth](./alphagrowth/) | $6.3M | 18.2% | $6.3M | active | 16 | 56 | 2026-05-25 |
 | [alphaping](./alphaping/) | $67.9M | 0.0% | ? | active | 3 | 1 | 2026-05-28 |
@@ -32,7 +32,7 @@
 | [ambire-wallet](./ambire-wallet/) | $5.8M | 0.0% | $5.8M | unknown | 12 | 9 | 2026-05-23 |
 | [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
 | [angle](./angle/) | $1.4B | 1.8% | $1.4B | dead | 3 | 624 | 2026-05-26 |
-| [angles](./angles/) | $441.0K | 4.0% | $7.5 | declining | 1 | 40 | 2026-05-25 |
+| [angles](./angles/) | $441.0K | 4.0% | $7.5 | declining | 4 | 40 | 2026-05-30 |
 | [angstrom](./angstrom/) | $11.3M | 7.7% | ? | active | 3 | 13 | 2026-05-23 |
 | [ankr](./ankr/) | $47.4 | 13.6% | $47.4 | active | 14 | 32 | 2026-05-25 |
 | [antarctic](./antarctic/) | $9.6M | 0.0% | ? | active | 3 | 11 | 2026-05-28 |

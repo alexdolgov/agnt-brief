@@ -29,12 +29,12 @@ Each project directory contains:
 | [inverse-finance](./inverse-finance/brief.md) | $41.93M | 5 | 154 | 144/154 (94%) | 11.1% | 7.6% (Code4rena, Sherlock) | 5 | fresh | ❓ unknown | $428.77M |
 | [onyx](./onyx/brief.md) | $58.89M | ethereum | 16 | 14/16 (88%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $384.43M |
 | [kine-finance](./kine-finance/brief.md) | $1.09M | 4 | 35 | 33/35 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $351.76M |
-| [alchemix](./alchemix/brief.md) | $37.88M | 4 | 388 | 202/388 (52%) | 1.0% | 1.0% (Spearbit) | 1 | aging | ⚠️ declining | $340.70M |
+| [alchemix](./alchemix/brief.md) | $37.88M | 4 | 388 | 202/388 (52%) | 7.4% | 1.0% (Spearbit) | 18 | fresh | ⚠️ declining | $338.70M |
 | [tenderize](./tenderize/brief.md) | $1.08M | arbitrum, ethereum | 43 | 38/43 (88%) | 2.6% | 0.0% (-) | 2 | stale | ⚠️ declining | $332.49M |
 | [mitosis](./mitosis/brief.md) | $1.48M | 11 | 72 | 46/72 (64%) | 4.3% | 4.3% (Code4rena) | 1 | fresh | 💀 dead | $329.08M |
 | [hyperwave](./hyperwave/brief.md) | $6.38M | base, ethereum, hyperliquid | 12 | 8/12 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $322.69M |
 | [rari-capital](./rari-capital/brief.md) | $1.51M | arbitrum, ethereum | 253 | 89/253 (35%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | $321.37M |
-| [allbridge](./allbridge/brief.md) | $27.58M | 13 | 284 | 77/284 (27%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $319.18M |
+| [allbridge](./allbridge/brief.md) | $26.55M | 13 | 284 | 77/284 (27%) | 0.0% | 0.0% (-) | 0 | stale | ⚠️ declining | $319.18M |
 | [satlayer](./satlayer/brief.md) | $1.18M | 4 | 313 | 113/313 (36%) | 4.4% | 0.0% (-) | 6 | fresh | ⚠️ declining | $287.19M |
 | [debridge](./debridge/brief.md) | $4.06M | 11 | 161 | 16/161 (10%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $263.88M |
 | [btcst](./btcst/brief.md) | $1.06M | bsc | 64 | 11/64 (17%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $263.69M |
@@ -367,7 +367,7 @@ Each project directory contains:
 | [toupee.tech](./toupee.tech/brief.md) | $6.29M | base | 29 | 25/29 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $24.29 |
 | [noon](./noon/brief.md) | $30.42M | ethereum, hyperliquid, zksync-era | 40 | 30/40 (75%) | 3.3% | 0.0% (-) | 1 | aging | ✅ active | $17.99 |
 | [goose](./goose/brief.md) | $12.80M | ethereum | 7 | 3/7 (43%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $7.87 |
-| [angles](./angles/brief.md) | $1.07M | sonic | 40 | 25/40 (63%) | 4.0% | 4.0% (Spearbit) | 1 | aging | ⚠️ declining | $7.53 |
+| [angles](./angles/brief.md) | $1.01M | sonic | 40 | 25/40 (63%) | 4.0% | 4.0% (Spearbit) | 1 | aging | ⚠️ declining | $7.53 |
 | [royco-protocol](./royco-protocol/brief.md) | $35.41M | 6 | 14 | 9/14 (64%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $7.16 |
 | [lynex](./lynex/brief.md) | $1.07M | linea | 30 | 29/30 (97%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $3.89 |
 | [acre](./acre/brief.md) | $4.30M | ethereum | 220 | 207/220 (94%) | 0.5% | 0.0% (-) | 2 | aging | ❓ unknown | $3.02 |
@@ -383,7 +383,7 @@ Each project directory contains:
 | [1sec](./1sec/brief.md) | $1.46M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [3f-mutual](./3f-mutual/brief.md) | $3.78M | ethereum | 21 | 18/21 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [abc-pool](./abc-pool/brief.md) | $6.29M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [abracadabra](./abracadabra/brief.md) | $8.41M | 12 | 4388 | 0/4388 (0%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | - |
+| [abracadabra](./abracadabra/brief.md) | $8.07M | 12 | 2568 | 0/2568 (0%) | 0.0% | 0.0% (-) | 0 | aging | 💀 dead | - |
 | [aegis](./aegis/brief.md) | $35.81M | ethereum | 5 | 5/5 (100%) | 100.0% | 0.0% (-) | 1 | unknown | ✅ active | - |
 | [aegis-markets](./aegis-markets/brief.md) | $2.36M | base, unichain | 15 | 12/15 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [aitech](./aitech/brief.md) | $4.04M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
@@ -721,5 +721,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-30T10:21:36.525Z_
+_Generated: 2026-05-30T10:39:49.284Z_
 _Projects: 709_

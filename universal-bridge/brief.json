@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "universal-bridge",
-  "generated_at": "2026-05-30T10:11:25.841Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-d7f7",
+  "generated_at": "2026-05-30T11:30:15.446Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "universal-bridge",

@@ -5,8 +5,8 @@
 - Project: Universal Bridge (`universal-bridge`)
 - Website: [https://www.universal.xyz](https://www.universal.xyz)
 - Lifecycle: active (Tier 0, 72.3% below peak)
-- Generated: 2026-05-30T10:11:25.841Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-d7f7
+- Generated: 2026-05-30T11:30:15.446Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: base
 - Contract surface: 1 unique implementations (96 raw deployments)
 - DeFi Llama TVL: $7,681,089.75

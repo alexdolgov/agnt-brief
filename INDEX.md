@@ -620,7 +620,7 @@
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | unknown | 1 | 15 | 2026-05-25 |
 | [the-arena](./the-arena/) | $7.8M | 0.0% | $7.8M | active | 3 | 119 | 2026-05-29 |
 | [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 3 | 17 | 2026-05-29 |
-| [thedeep](./thedeep/) | $8.5M | 0.0% | ? | active | 1 | 164 | 2026-05-23 |
+| [thedeep](./thedeep/) | $8.2M | 0.0% | ? | active | 4 | 164 | 2026-05-30 |
 | [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [thena](./thena/) | $208.2 | 10.2% | $208.2 | declining | 3 | 131 | 2026-05-25 |
 | [thorswap](./thorswap/) | $15.5M | 13.0% | $15.5M | unknown | 2 | 34 | 2026-05-23 |
@@ -643,7 +643,7 @@
 | [trufin-protocol](./trufin-protocol/) | $6.8M | 66.7% | ? | declining | 12 | 7 | 2026-05-23 |
 | [trust-wallet](./trust-wallet/) | $470.2M | 0.0% | $470.2M | unknown | 3 | 6 | 2026-05-29 |
 | [tulipa-capital](./tulipa-capital/) | $55.7M | 0.0% | $55.7M | active | 3 | 4 | 2026-05-29 |
-| [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | dead | 2 | 516 | 2026-05-25 |
+| [turtle-club](./turtle-club/) | $59.8M | 0.0% | $59.8M | dead | 5 | 516 | 2026-05-30 |
 | [twyne](./twyne/) | $985.7K | 9.6% | ? | active | 9 | 59 | 2026-05-24 |
 | [txflow](./txflow/) | $3.8M | 0.0% | ? | unknown | 3 | 1 | 2026-05-29 |
 | [ultrayield](./ultrayield/) | $87.6M | 0.0% | ? | unknown | 85 | 4520 | 2026-05-29 |

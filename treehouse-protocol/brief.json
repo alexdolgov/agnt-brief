@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "treehouse-protocol",
-  "generated_at": "2026-05-30T10:11:38.822Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-d7f7",
+  "generated_at": "2026-05-30T11:29:55.617Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "treehouse-protocol",

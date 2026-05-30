@@ -1,0 +1,17 @@
+{
+  "address": "0x446b6d4ba19647c06be4b06597fbc7e0c0300af4",
+  "chain_id": 1,
+  "contract_name": "TokemakAdapter",
+  "compiler_version": "v0.8.28+commit.7893614a",
+  "optimization_used": true,
+  "runs": 10000000,
+  "evm_version": "prague",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-30T11:29:21.866Z"
+}

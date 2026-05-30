@@ -7,11 +7,11 @@
 - Project: Turtle Club (`turtle-club`)
 - Website: [https://app.turtle.xyz/](https://app.turtle.xyz/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-25T13:24:49.726Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-05-30T11:29:20.155Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: avalanche, bsc, ethereum, linea
 - Contract surface: 516 unique implementations (1230 raw deployments)
-- DeFi Llama TVL: $1,293,087.68
+- DeFi Llama TVL: $1,231,786.55
 - On-chain TVL (included contracts): $59,810,162.27
 - TVL by chain: Ethereum $42,954,236.45 | Avalanche $16,837,416.83 | Linea $18,509.00
 
@@ -31,11 +31,11 @@ The Contracts family provides the governance and staking token layer that underp
 - Unverified implementations: 174
 - Unique implementations: 516
 - Raw deployments: 1230
-- Audits discovered: 2
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $59,810,162.27
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of $59,810,162.27 represents exposure in a protocol with dead activity.
 
@@ -596,6 +596,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [[Drip Contract Audit 10/18/25]()](https://drive.google.com/file/d/1vsfYioACulqb17qgNKXHKjDSbj_WDT60/view?usp=sharing) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [[Streams Contract Audit (Cantina)]()](https://drive.google.com/file/d/17-KHHhgcOTUVI6JcwTLvhoWp7lrNTyJP/view?usp=sharing) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -771,7 +774,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -780,5 +783,8 @@ Zero-match audit list:
 
 - [3322] [Drip Contract Audit 10/18/25]()
 - [3323] [Streams Contract Audit (Cantina)]()
+- [11337] 0001-dataset-cache-manifest-and-runtime-adapters.md
+- [11338] 0002-metadata-manifest-and-pull-command.md
+- [11339] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -7,7 +7,7 @@
 | Role | token |
 | Origin | native |
 | Audited | Yes |
-| Audits | [[Dexalot_18022022]SCAudit_Report_4.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_18022022%5DSCAudit_Report_4.pdf); [[Dexalot_23022022]SCAudit_Report_5.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_23022022%5DSCAudit_Report_5.pdf); [DexalotToken.md](https://github.com/Dexalot/dexalot-docs/blob/main/docs/en/contracts/token/DexalotToken.md) |
+| Audits | [[Dexalot_18022022]SCAudit_Report_4.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_18022022%5DSCAudit_Report_4.pdf); [[Dexalot_23022022]SCAudit_Report_5.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_23022022%5DSCAudit_Report_5.pdf) |
 | Deployments | 1 (avalanche [`0x093783055f9047c2bff99c4e414501f8a147bc69`](../0x093783055f9047c2bff99c4e414501f8a147bc69/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

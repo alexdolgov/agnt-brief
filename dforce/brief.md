@@ -7,8 +7,8 @@
 - Project: dForce (`dforce`)
 - Website: [https://dforce.network/](https://dforce.network/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T06:31:51.937Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
+- Generated: 2026-05-31T07:52:57.986Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, avalanche, bsc, ethereum, kava, optimism, polygon
 - Contract surface: 450 unique implementations (1011 raw deployments)
 - DeFi Llama TVL: $12,480,361.00

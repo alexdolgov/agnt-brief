@@ -5,8 +5,8 @@
 - Project: DeltaPrime (`deltaprime`)
 - Website: [https://deltaprime.io](https://deltaprime.io)
 - Lifecycle: active (Tier 0, 94.3% below peak)
-- Generated: 2026-05-31T06:48:14.845Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-7f15
+- Generated: 2026-05-31T07:49:58.808Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, avalanche
 - Contract surface: 482 unique implementations (1546 raw deployments)
 - DeFi Llama TVL: $4,246,494.59

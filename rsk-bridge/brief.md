@@ -7,8 +7,8 @@
 - Project: RSK Bridge (`rsk-bridge`)
 - Website: [https://rootstock.io/](https://rootstock.io/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-31T06:49:11.214Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-7f15
+- Generated: 2026-05-31T10:30:32.424Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 15 unique implementations (24 raw deployments)
 - DeFi Llama TVL: $1,026,076.82

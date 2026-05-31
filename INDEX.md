@@ -502,14 +502,14 @@
 | [rip.xyz](./rip.xyz/) | $624.7K | 25.0% | $624.7K | active | 1 | 8 | 2026-05-31 |
 | [risex](./risex/) | $3.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [rocksolid-network](./rocksolid-network/) | $25.0M | 0.0% | $25.0M | active | 2 | 1 | 2026-05-22 |
-| [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 3 | 11 | 2026-05-29 |
-| [rook](./rook/) | $6.8M | 0.0% | $6.8M | dead | 3 | 74 | 2026-05-29 |
+| [ronin-bridge](./ronin-bridge/) | $4.6M | 0.0% | ? | dead | 0 | 11 | 2026-05-31 |
+| [rook](./rook/) | $6.8M | 0.0% | $6.8M | dead | 0 | 74 | 2026-05-31 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | declining | 0 | 14 | 2026-05-31 |
 | [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-31 |
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-05-25 |
-| [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 3 | 186 | 2026-05-29 |
+| [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 186 | 2026-05-31 |
 | [saber](./saber/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
 | [safe](./safe/) | $99.3M | 0.0% | ? | unknown | 61 | 1 | 2026-05-29 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |

@@ -7,8 +7,8 @@
 - Project: Vesper (`vesper`)
 - Website: [https://vesper.finance/](https://vesper.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T17:20:15.083Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T11:34:48.285Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 44 unique implementations (147 raw deployments)
 - DeFi Llama TVL: $44,440,251.37
@@ -31,11 +31,11 @@ The VSP token serves as the governance and reward token across the protocol, whi
 - Unverified implementations: 5
 - Unique implementations: 44
 - Raw deployments: 147
-- Audits discovered: 33
+- Audits discovered: 30
 - Scoreable audits (matched contracts): 25
 - ASD (verified + unaudited TVL): $351,723.50
 - Latest audit: 2022-09 (stale)
-- Staleness: 0 fresh, 0 aging, 30 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 30 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $351,723.50 represents exposure in a protocol with declining activity.
 
@@ -157,9 +157,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Vesper-Pools-Audit-Dedaub-Oct21.pdf](https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Audit-Dedaub-Oct21.pdf) | Dedaub | Audit | 2021-10 | stale | Direct | contract_name | 20 | high |
 | [Vesper-Pools-Strategies-Audit-Halborn-Aug-22.pdf](https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Strategies-Audit-Halborn-Aug-22.pdf) | Halborn | Audit | 2022-09 | stale | Direct | n/a | 0 | n/a |
 | [Vesper-Pools-Synth-VUSD-Deltas-Dedaub-March22.pdf](https://github.com/vesperfi/doc/blob/main/audit/v3%2B/Vesper-Pools-Synth-VUSD-Deltas-Dedaub-March22.pdf) | Dedaub | Audit | 2022-03 | stale | Direct | contract_name | 2 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -197,7 +194,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=23, medium=2
 - Match method counts: extraction_exact=520
@@ -209,8 +206,5 @@ Zero-match audit list:
 - [4884] Vesper-Pools-Audit-Coinspect-March22.pdf
 - [4887] Vesper-Pools-Audit-Dedaub-April 22.pdf
 - [4889] Vesper-Pools-Strategies-Audit-Halborn-Aug-22.pdf
-- [4891] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [4892] 0002-metadata-manifest-and-pull-command.md
-- [4893] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -5,8 +5,8 @@
 - Project: Stargate Finance (`stargate-finance`)
 - Website: [https://stargate.finance/](https://stargate.finance/)
 - Lifecycle: active (Tier 0, 97.8% below peak)
-- Generated: 2026-05-30T11:25:33.306Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T10:44:45.713Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, aurora, avalanche, base, bsc, ethereum, fantom, gnosis, kava, linea, manta, mantle, metis, optimism, plasma, polygon, scroll, sei, sonic, swellchain, unichain
 - Contract surface: 294 unique implementations (741 raw deployments)
 - DeFi Llama TVL: $92,291,118.00
@@ -29,11 +29,11 @@ Stargate V2 builds upon V1's cross-chain infrastructure, reusing concepts like r
 - Unverified implementations: 242
 - Unique implementations: 294
 - Raw deployments: 741
-- Audits discovered: 20
+- Audits discovered: 17
 - Scoreable audits (matched contracts): 16
 - ASD (verified + unaudited TVL): $5,157,269.05
 - Latest audit: 2024-05 (stale)
-- Staleness: 0 fresh, 0 aging, 17 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 17 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -394,9 +394,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Stargate VE Audit 1.0 (March 29th 2022) - Ackee.pdf](https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20VE%20Audit%201.0%20(March%2029th%202022)%20-%20Ackee.pdf) | Ackee Blockchain | Audit | 2022-03 | stale | Direct | contract_name | 6 | high |
 | [Stargate VE Audit 1.1 (April 13th 2022) - Ackee.pdf](https://github.com/stargate-protocol/stargate/blob/main/audit/Stargate%20VE%20Audit%201.1%20(April%2013th%202022)%20-%20Ackee.pdf) | Ackee Blockchain | Audit | 2022-04 | stale | Direct | contract_name | 6 | high |
 | [Paladin_StargateFeeDistributor_Final_Report.pdf](https://github.com/stargate-protocol/stargate-dao/blob/main/audit/Paladin_StargateFeeDistributor_Final_Report.pdf) | Paladin | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -436,7 +433,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=16
 - Match method counts: extraction_exact=683
@@ -444,8 +441,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [10498] Paladin_StargateFeeDistributor_Final_Report.pdf
-- [10499] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [10500] 0002-metadata-manifest-and-pull-command.md
-- [10501] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

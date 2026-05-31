@@ -5,8 +5,8 @@
 - Project: Steer Protocol (`steer-protocol`)
 - Website: [https://app.steer.finance?af=defillama](https://app.steer.finance?af=defillama)
 - Lifecycle: active (Tier 0, 64.9% below peak)
-- Generated: 2026-05-29T20:54:38.695Z
-- Pipeline run: v2-pipeline-2026-05-29-691c43-0a62
+- Generated: 2026-05-31T10:42:48.350Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum
 - Contract surface: 43 unique implementations (71 raw deployments)
 - DeFi Llama TVL: $20,474,767.66
@@ -29,11 +29,11 @@ The Orchestrator coordinates the core vault logic, while registries (Vault, Stra
 - Unverified implementations: 12
 - Unique implementations: 43
 - Raw deployments: 71
-- Audits discovered: 9
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $3,257,998.70
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 9 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -117,15 +117,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-monorepo-package-boundaries.md](https://github.com/steerprotocol/agent-link/blob/main/docs/adr/0001-monorepo-package-boundaries.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [build-order.md](https://github.com/steerprotocol/agent-link/blob/main/docs/build-order.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [development-plans.md](https://github.com/steerprotocol/agent-link/blob/main/docs/development-plans.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [npm-publishing.md](https://github.com/steerprotocol/agent-link/blob/main/docs/npm-publishing.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [testing-guide.md](https://github.com/steerprotocol/agent-link/blob/main/docs/testing-guide.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [walletconnect-uniswap-runbook.md](https://github.com/steerprotocol/agent-link/blob/main/docs/walletconnect-uniswap-runbook.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -172,21 +163,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 9
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [6111] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [6112] 0002-metadata-manifest-and-pull-command.md
-- [6113] 0003-bun-package-manager-node-runtime.md
-- [6114] 0001-monorepo-package-boundaries.md
-- [6115] build-order.md
-- [6116] development-plans.md
-- [6117] npm-publishing.md
-- [6118] testing-guide.md
-- [6119] walletconnect-uniswap-runbook.md
 
 Fork inheritance lineage and inherited audits are included when available.

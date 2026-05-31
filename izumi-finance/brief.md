@@ -7,8 +7,8 @@
 - Project: iZUMi Finance (`izumi-finance`)
 - Website: [https://izumi.finance/home](https://izumi.finance/home)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-29T20:00:47.287Z
-- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
+- Generated: 2026-05-31T08:31:42.054Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, aurora, base, blast, cronos, ethereum, kava, linea, manta, mantle, mode, polygon, scroll
 - Contract surface: 181 unique implementations (324 raw deployments)
 - DeFi Llama TVL: $3,827,165.00
@@ -31,11 +31,11 @@ iZiSwap and iZUMi LiquidBox share the iZi token, which is earned through liquidi
 - Unverified implementations: 157
 - Unique implementations: 181
 - Raw deployments: 324
-- Audits discovered: 36
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $2,759,198.18
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 36 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of $2,759,198.18 represents exposure in a protocol with dead activity.
 
@@ -259,42 +259,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Address.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/Address.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Context.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/Context.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC20.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/IERC20.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Multicall.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/Multicall.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Ownable.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/Ownable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SafeERC20.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/SafeERC20.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Math.md (also discovered via alternate URL)](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/archive/miningFixRange/Math.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Mining.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/archive/miningFixRange/Mining.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Mining2R.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/archive/miningFixRange/Mining2R.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [PositionManagerV3.md (also discovered via alternate URL)](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/archive/miningFixRange/PositionManagerV3.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [OldMiningFixRangeBoost.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/archive/miningFixRangeBoost/OldMiningFixRangeBoost.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IWETH9.md (also discovered via alternate URL)](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/archive/miningOneSideBoost/IWETH9.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [OldMiningOneSideBoost.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/archive/miningOneSideBoost/OldMiningOneSideBoost.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MiningBase.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/base/MiningBase.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AmountMath.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/libraries/AmountMath.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [FixedPoints.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/libraries/FixedPoints.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [LogPowMath.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/libraries/LogPowMath.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MulDivMath.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/libraries/MulDivMath.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [UniswapCallingParams.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/libraries/UniswapCallingParams.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [UniswapOracle.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/libraries/UniswapOracle.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MiningDynamicRangeBoost.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/miningDynamicRangeBoost/MiningDynamicRangeBoost.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MiningFixRangeBoost.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/miningFixRangeBoost/MiningFixRangeBoost.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MiningOneSideBoost.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/miningOneSideBoost/MiningOneSideBoost.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IStaking.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/misc/IStaking.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Staking.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/misc/Staking.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Token.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/misc/Token.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Trustable.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/misc/Trustable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [TestOracle.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/test/TestOracle.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [TestPow.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/test/TestPow.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [TestToken.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/test/TestToken.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [INonfungiblePositionManager.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/uniswap/INonfungiblePositionManager.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IUniswapV3Factory.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/uniswap/IUniswapV3Factory.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IUniswapV3Pool.md](https://github.com/izumiFinance/izumi-uniV3Mining/blob/main/docs/uniswap/IUniswapV3Pool.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -339,48 +303,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 36
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [7949] Address.md
-- [7950] Context.md
-- [7951] IERC20.md
-- [7952] Multicall.md
-- [7953] Ownable.md
-- [7954] SafeERC20.md
-- [7955] Math.md
-- [7956] Mining.md
-- [7957] Mining2R.md
-- [7958] PositionManagerV3.md
-- [7960] OldMiningFixRangeBoost.md
-- [7962] IWETH9.md
-- [7964] OldMiningOneSideBoost.md
-- [7965] MiningBase.md
-- [7966] AmountMath.md
-- [7967] FixedPoints.md
-- [7968] LogPowMath.md
-- [7970] MulDivMath.md
-- [7971] UniswapCallingParams.md
-- [7972] UniswapOracle.md
-- [7974] MiningDynamicRangeBoost.md
-- [7975] MiningFixRangeBoost.md
-- [7977] MiningOneSideBoost.md
-- [7978] IStaking.md
-- [7979] Staking.md
-- [7980] Token.md
-- [7981] Trustable.md
-- [7982] TestOracle.md
-- [7983] TestPow.md
-- [7984] TestToken.md
-- [7985] INonfungiblePositionManager.md
-- [7986] IUniswapV3Factory.md
-- [7987] IUniswapV3Pool.md
-- [7988] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7989] 0002-metadata-manifest-and-pull-command.md
-- [7990] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -5,8 +5,8 @@
 - Project: Ink Bridge (`ink-bridge`)
 - Website: [https://inkonchain.com/bridge](https://inkonchain.com/bridge)
 - Lifecycle: active (Tier 0, 60.5% below peak)
-- Generated: 2026-05-29T19:49:14.932Z
-- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
+- Generated: 2026-05-31T08:32:49.089Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum, ink, optimism
 - Contract surface: 68 unique implementations (70 raw deployments)
 - DeFi Llama TVL: $59,290,618.92
@@ -29,11 +29,11 @@ The Ethereum Mainnet family provides the L1 bridge infrastructure, while Ink Bri
 - Unverified implementations: 43
 - Unique implementations: 68
 - Raw deployments: 70
-- Audits discovered: 34
+- Audits discovered: 27
 - Scoreable audits (matched contracts): 8
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-03 (aging)
-- Staleness: 0 fresh, 10 aging, 19 stale, 5 unknown
+- Staleness: 0 fresh, 10 aging, 16 stale, 1 unknown
 - Tier 1 coverage: 44.0% (Spearbit, Trail of Bits)
 
 ### Auditor Coverage
@@ -147,13 +147,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [pr-guidelines.md](https://github.com/inkonchain/optimism/blob/develop/docs/handbook/pr-guidelines.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [2022-02-02-inflation-vuln.md](https://github.com/inkonchain/optimism/blob/develop/docs/postmortems/2022-02-02-inflation-vuln.md) | unknown | Audit | 2022-02 | stale | Direct | n/a | 0 | n/a |
-| [2022-05-31-drop-1.md](https://github.com/inkonchain/optimism/blob/develop/docs/postmortems/2022-05-31-drop-1.md) | unknown | Audit | 2022-05 | stale | Direct | n/a | 0 | n/a |
-| [2023-04-26-transaction-delays.md](https://github.com/inkonchain/optimism/blob/develop/docs/postmortems/2023-04-26-transaction-delays.md) | unknown | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
 | [2020_10-Rollup-TrailOfBits.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2020_10-Rollup-TrailOfBits.pdf) | Trail of Bits | Audit | 2020-10 | stale | Direct | n/a | 0 | n/a |
 | [2020_11-Dapphub-ECDSA_Wallet.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2020_11-Dapphub-ECDSA_Wallet.pdf) | unknown | Audit | 2020-11 | stale | Direct | n/a | 0 | n/a |
 | [2021_03-OVM_and_Rollup-OpenZeppelin.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2021_03-OVM_and_Rollup-OpenZeppelin.pdf) | OpenZeppelin | Audit | 2021-03 | stale | Direct | n/a | 0 | n/a |
@@ -180,7 +173,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [2025_01-MT-Cannon-Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_01-MT-Cannon-Spearbit.pdf) | Spearbit | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
 | [2025_02-Upgrade13-Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_02-Upgrade13-Spearbit.pdf) | Spearbit | Audit | 2025-02 | aging | Direct | contract_name | 6 | high |
 | [2025_03-Interop-Contracts-Spearbit.pdf](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_03-Interop-Contracts-Spearbit.pdf) | Spearbit | Audit | 2025-03 | aging | Direct | contract_name | 2 | medium |
-| [README.md (also discovered via alternate URL)](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/README.md) | unknown | Audit | n/a | unknown | Direct | contract_name|n/a | 5 | high |
+| [README.md](https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/README.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | high |
 
 ## Coverage Gaps
 
@@ -203,20 +196,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 26
+- Audits with zero matched contracts: 19
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=4, low=1, medium=3
 - Match method counts: extraction_exact=40
 
 Zero-match audit list:
 
-- [5522] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5523] 0002-metadata-manifest-and-pull-command.md
-- [5524] 0003-bun-package-manager-node-runtime.md
-- [5527] pr-guidelines.md
-- [5528] 2022-02-02-inflation-vuln.md
-- [5529] 2022-05-31-drop-1.md
-- [5530] 2023-04-26-transaction-delays.md
 - [5531] 2020_10-Rollup-TrailOfBits.pdf
 - [5532] 2020_11-Dapphub-ECDSA_Wallet.pdf
 - [5533] 2021_03-OVM_and_Rollup-OpenZeppelin.pdf

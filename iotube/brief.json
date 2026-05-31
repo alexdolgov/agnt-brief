@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "iotube",
-  "generated_at": "2026-05-29T19:52:22.997Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-691c43-e9c3",
+  "generated_at": "2026-05-31T08:31:39.520Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "iotube",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 23,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 3291693.1287699994,
     "tvl_usd": 2232712.665422314,
@@ -68,7 +68,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 3
+      "unknown": 0
     }
   },
   "topography": {
@@ -1835,71 +1835,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 8111,
-      "audit_key": "audit-8111",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8112,
-      "audit_key": "audit-8112",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8113,
-      "audit_key": "audit-8113",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -2074,20 +2010,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 8111,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 8112,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 8113,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ink-bridge",
-  "generated_at": "2026-05-29T19:49:14.932Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-691c43-e9c3",
+  "generated_at": "2026-05-31T08:32:49.089Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ink-bridge",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 43,
     "coverage_pct": 48,
-    "total_audits": 34,
+    "total_audits": 27,
     "scoreable_audits": 8,
     "dl_tvl_usd": 59290618.9193,
     "tvl_usd": 59290618.9193,
@@ -56,8 +56,8 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 10,
-      "stale": 19,
-      "unknown": 5
+      "stale": 16,
+      "unknown": 1
     }
   },
   "topography": {
@@ -2251,153 +2251,6 @@
   ],
   "audits": [
     {
-      "audit_id": 5522,
-      "audit_key": "audit-5522",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5523,
-      "audit_key": "audit-5523",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5524,
-      "audit_key": "audit-5524",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5527,
-      "audit_key": "audit-5527",
-      "report_name": "pr-guidelines.md",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/handbook/pr-guidelines.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5528,
-      "audit_key": "audit-5528",
-      "report_name": "2022-02-02-inflation-vuln.md",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/postmortems/2022-02-02-inflation-vuln.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5529,
-      "audit_key": "audit-5529",
-      "report_name": "2022-05-31-drop-1.md",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/postmortems/2022-05-31-drop-1.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5530,
-      "audit_key": "audit-5530",
-      "report_name": "2023-04-26-transaction-delays.md",
-      "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/postmortems/2023-04-26-transaction-delays.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 5531,
       "audit_key": "audit-5531",
       "report_name": "2020_10-Rollup-TrailOfBits.pdf",
@@ -3061,7 +2914,7 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name|n/a",
+      "scope_format": "contract_name",
       "extracted_names": [
         "CrossDomainMessenger.sol",
         "DeputyPauseModule",
@@ -3083,21 +2936,7 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 5525,
-          "report_url": "https://github.com/inkonchain/optimism/blob/develop/cannon/docs/README.md"
-        },
-        {
-          "audit_id": 5526,
-          "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/README.md"
-        },
-        {
-          "audit_id": 5557,
-          "report_url": "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/README.md"
-        }
-      ]
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -3153,34 +2992,6 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 5522,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 5523,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 5524,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
-      },
-      {
-        "audit_id": 5527,
-        "report_name": "pr-guidelines.md"
-      },
-      {
-        "audit_id": 5528,
-        "report_name": "2022-02-02-inflation-vuln.md"
-      },
-      {
-        "audit_id": 5529,
-        "report_name": "2022-05-31-drop-1.md"
-      },
-      {
-        "audit_id": 5530,
-        "report_name": "2023-04-26-transaction-delays.md"
-      },
       {
         "audit_id": 5531,
         "report_name": "2020_10-Rollup-TrailOfBits.pdf"

@@ -601,7 +601,7 @@
 | [switcheo-finance](./switcheo-finance/) | $68.4M | 0.0% | $68.4M | active | 3 | 48 | 2026-05-29 |
 | [sx-rollup-bridge](./sx-rollup-bridge/) | $6.1M | 0.0% | $6.1M | declining | 3 | 134 | 2026-05-29 |
 | [symbiosis](./symbiosis/) | $236.1M | 15.4% | $236.1M | active | 15 | 40 | 2026-05-25 |
-| [symmio](./symmio/) | $24.5 | 0.0% | $24.5 | active | 3 | 168 | 2026-05-29 |
+| [symmio](./symmio/) | $24.5 | 0.0% | $24.5 | active | 0 | 168 | 2026-05-31 |
 | [synapse](./synapse/) | $25.6M | 14.2% | $14.2M | declining | 225 | 824 | 2026-05-29 |
 | [syncswap-protocol](./syncswap-protocol/) | $453.7K | 22.6% | ? | active | 9 | 158 | 2026-05-23 |
 | [synfutures](./synfutures/) | $52.4M | 0.0% | $52.4M | active | 4 | 482 | 2026-05-23 |
@@ -620,7 +620,7 @@
 | [tensorplex](./tensorplex/) | $1.6M | 0.0% | ? | active | 3 | 6 | 2026-05-29 |
 | [tg-casino](./tg-casino/) | $13.4M | 6.7% | ? | unknown | 1 | 15 | 2026-05-25 |
 | [the-arena](./the-arena/) | $7.8M | 0.0% | $7.8M | active | 3 | 119 | 2026-05-29 |
-| [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 3 | 17 | 2026-05-29 |
+| [the-idols](./the-idols/) | $85.4M | 0.0% | $85.4M | active | 0 | 17 | 2026-05-31 |
 | [thedeep](./thedeep/) | $8.2M | 0.0% | ? | active | 4 | 164 | 2026-05-30 |
 | [themis-pro](./themis-pro/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [thena](./thena/) | $208.2 | 10.2% | $208.2 | declining | 3 | 131 | 2026-05-25 |
@@ -672,7 +672,7 @@
 | [virtuals-protocol](./virtuals-protocol/) | $0.0 | 0.0% | $0.0 | unknown | 3 | 65 | 2026-05-29 |
 | [vnx](./vnx/) | $1.8M | 0.0% | $1.8M | active | 3 | 10 | 2026-05-29 |
 | [volta-club](./volta-club/) | $976.2M | 0.0% | $976.2M | unknown | 3 | 319 | 2026-05-29 |
-| [wagmi](./wagmi/) | $2.3M | 0.0% | ? | declining | 3 | 334 | 2026-05-29 |
+| [wagmi](./wagmi/) | $2.3M | 0.0% | ? | declining | 0 | 334 | 2026-05-31 |
 | [wan-bridge](./wan-bridge/) | $1.8M | 0.0% | $1.8M | active | 3 | 153 | 2026-05-25 |
 | [wanswap-dex](./wanswap-dex/) | $1.5M | 2.8% | $1.5M | declining | 1 | 53 | 2026-05-25 |
 | [wasabi](./wasabi/) | $6.1M | 37.0% | $5.5M | rugged | 8 | 83 | 2026-05-25 |
@@ -701,7 +701,7 @@
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-05-23 |
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-05-27 |
-| [zerolend](./zerolend/) | $16.1M | 0.0% | ? | declining | 3 | 579 | 2026-05-29 |
+| [zerolend](./zerolend/) | $16.1M | 0.0% | ? | declining | 0 | 579 | 2026-05-31 |
 | [zircuit-finance](./zircuit-finance/) | $180.1M | 0.0% | $180.1M | active | 3 | 3 | 2026-05-29 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 21.1% | $140.4M | declining | 10 | 20 | 2026-05-27 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-05-22 |

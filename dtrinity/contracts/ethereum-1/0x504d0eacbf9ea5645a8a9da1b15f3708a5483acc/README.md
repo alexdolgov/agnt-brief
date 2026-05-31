@@ -6,8 +6,8 @@
 | Address | `0x504d0eacbf9ea5645a8a9da1b15f3708a5483acc` |
 | Role | token |
 | Origin | native |
-| Audited | Yes |
-| Audits | [manual-explorer-verification.md](https://github.com/dtrinity/sonic-solidity-contracts/blob/main/docs/manual-explorer-verification.md) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 1 (ethereum [`0x504d0eacbf9ea5645a8a9da1b15f3708a5483acc`](../0x504d0eacbf9ea5645a8a9da1b15f3708a5483acc/)) |
 | Proxy | Yes → `0x8bdaed...6401f3` |
 | Source | Etherscan |

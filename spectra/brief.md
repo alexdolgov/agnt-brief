@@ -5,8 +5,8 @@
 - Project: Spectra (`spectra`)
 - Website: [https://www.spectra.finance](https://www.spectra.finance)
 - Lifecycle: active (Tier 0, 81.8% below peak)
-- Generated: 2026-05-29T14:30:22.524Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T10:38:40.794Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, avalanche, base, bsc, ethereum, hyperliquid, optimism, sonic
 - Contract surface: 214 unique implementations (1250 raw deployments)
 - DeFi Llama TVL: $50,945,360.00
@@ -29,11 +29,11 @@ Spectra V2 factories deploy yield tokens and principal tokens, which are wrapped
 - Unverified implementations: 65
 - Unique implementations: 214
 - Raw deployments: 1250
-- Audits discovered: 12
+- Audits discovered: 9
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $10,462,429.03
 - Latest audit: 2023-10 (stale)
-- Staleness: 0 fresh, 0 aging, 7 stale, 5 unknown
+- Staleness: 0 fresh, 0 aging, 7 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -297,10 +297,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [2022-10-ERC4626.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2022-10-ERC4626.pdf) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
 | [2023-05-v4.9.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2023-05-v4.9.pdf) | OpenZeppelin | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
 | [2023-10-v5.0.pdf](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/2023-10-v5.0.pdf) | OpenZeppelin | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
-| [README.md (also discovered via alternate URL)](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/README.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [README.md](https://github.com/perspectivefi/spectra-governance/blob/main/lib/openzeppelin-contracts/audits/README.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -390,7 +387,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 12
+- Audits with zero matched contracts: 9
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -406,8 +403,5 @@ Zero-match audit list:
 - [5702] 2023-05-v4.9.pdf
 - [5703] 2023-10-v5.0.pdf
 - [5704] README.md
-- [5706] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5707] 0002-metadata-manifest-and-pull-command.md
-- [5708] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -7,8 +7,8 @@
 - Project: Ocean Point (`ocean-point`)
 - Website: [https://app.oceanpoint.fi/](https://app.oceanpoint.fi/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-30T11:07:26.767Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T10:07:18.671Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 40 unique implementations (56 raw deployments)
 - DeFi Llama TVL: $1,135,721.93
@@ -31,11 +31,11 @@ Staking contracts use the BST token and LP tokens from the Uniswap pair, while p
 - Unverified implementations: 13
 - Unique implementations: 40
 - Raw deployments: 56
-- Audits discovered: 4
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,078,117.52
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 4 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $1,078,117.52 represents exposure in a protocol with unknown activity.
 
@@ -118,9 +118,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [{% embed url="<>" fullWidth="true" %}](https://hacken.io/audits/blocksquare) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -168,7 +165,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -176,8 +173,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [3225] {% embed url="<>" fullWidth="true" %}
-- [10374] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [10375] 0002-metadata-manifest-and-pull-command.md
-- [10376] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

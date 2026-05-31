@@ -5,8 +5,8 @@
 - Project: NonKYC (`nonkyc`)
 - Website: [https://nonkyc.io](https://nonkyc.io)
 - Lifecycle: active (Tier 0, 72.7% below peak)
-- Generated: 2026-05-29T11:25:27.402Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T10:07:19.787Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, ethereum, optimism
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $5,725,456.37
@@ -29,11 +29,11 @@ Only one product family is identified, with four unnamed contracts at the same a
 - Unverified implementations: 4
 - Unique implementations: 4
 - Raw deployments: 4
-- Audits discovered: 3
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -77,9 +77,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -100,15 +97,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [7680] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7681] 0002-metadata-manifest-and-pull-command.md
-- [7682] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -7,8 +7,8 @@
 - Project: Wrapped BNB (`wrapped-bnb`)
 - Website: [https://www.kava.io](https://www.kava.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-30T11:41:37.418Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T11:41:08.761Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $6,014,080.67
@@ -31,11 +31,11 @@ The Wrapped BNB family relies on shared token contracts like ERC20Peg and MantaM
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 5
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-09 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 4 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -78,10 +78,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Auditsarrow_outward](https://skynet.certik.com/projects/kava) | CertiK | Audit | 2021-09 | stale | Direct | n/a | 0 | n/a |
-| [Telemetry.md](https://github.com/kava-labs/kava/blob/master/docs/Telemetry.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [proto-docs.md](https://github.com/kava-labs/kava/blob/master/docs/core/proto-docs.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [faqs.md](https://github.com/kava-labs/switch/blob/master/docs/faqs.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [lightning-setup.md](https://github.com/kava-labs/switch/blob/master/docs/lightning-setup.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -102,7 +98,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -110,9 +106,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2397] Auditsarrow_outward
-- [11376] Telemetry.md
-- [11377] proto-docs.md
-- [11378] faqs.md
-- [11379] lightning-setup.md
 
 Fork inheritance lineage and inherited audits are included when available.

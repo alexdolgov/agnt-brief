@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "wrapped-bnb",
-  "generated_at": "2026-05-30T11:41:37.418Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
+  "generated_at": "2026-05-31T11:41:08.761Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "wrapped-bnb",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
-    "total_audits": 5,
+    "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 6014080.66998,
     "tvl_usd": 6014080.66998,
@@ -62,7 +62,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 1,
-      "unknown": 4
+      "unknown": 0
     }
   },
   "topography": {
@@ -128,90 +128,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11376,
-      "audit_key": "audit-11376",
-      "report_name": "Telemetry.md",
-      "report_url": "https://github.com/kava-labs/kava/blob/master/docs/Telemetry.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11377,
-      "audit_key": "audit-11377",
-      "report_name": "proto-docs.md",
-      "report_url": "https://github.com/kava-labs/kava/blob/master/docs/core/proto-docs.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11378,
-      "audit_key": "audit-11378",
-      "report_name": "faqs.md",
-      "report_url": "https://github.com/kava-labs/switch/blob/master/docs/faqs.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11379,
-      "audit_key": "audit-11379",
-      "report_name": "lightning-setup.md",
-      "report_url": "https://github.com/kava-labs/switch/blob/master/docs/lightning-setup.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -231,22 +147,6 @@
       {
         "audit_id": 2397,
         "report_name": "Auditsarrow_outward"
-      },
-      {
-        "audit_id": 11376,
-        "report_name": "Telemetry.md"
-      },
-      {
-        "audit_id": 11377,
-        "report_name": "proto-docs.md"
-      },
-      {
-        "audit_id": 11378,
-        "report_name": "faqs.md"
-      },
-      {
-        "audit_id": 11379,
-        "report_name": "lightning-setup.md"
       }
     ],
     "inherited_remapped_matches": []

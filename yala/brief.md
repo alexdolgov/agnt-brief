@@ -7,8 +7,8 @@
 - Project: Yala (`yala`)
 - Website: [https://www.yala.org](https://www.yala.org)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-29T17:42:09.739Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T11:41:04.284Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 30 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $2,196,263.11
@@ -31,11 +31,11 @@ The Yala family consists of a core DebtToken for CDP operations and a supporting
 - Unverified implementations: 19
 - Unique implementations: 30
 - Raw deployments: 30
-- Audits discovered: 4
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,617,109.60
 - Latest audit: 2025-03 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 3 unknown
+- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of $4,617,109.60 represents exposure in a protocol with dead activity.
 
@@ -108,9 +108,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Yala - Zenith Audit Report.pdf](https://github.com/yalaorg/yala-protocol-contracts/blob/main/audits/Yala%20-%20Zenith%20Audit%20Report.pdf) | unknown | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -142,7 +139,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -150,8 +147,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [9159] Yala - Zenith Audit Report.pdf
-- [9160] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [9161] 0002-metadata-manifest-and-pull-command.md
-- [9162] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

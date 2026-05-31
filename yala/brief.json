@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "yala",
-  "generated_at": "2026-05-29T17:42:09.739Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-05-31T11:41:04.284Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "yala",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 19,
     "coverage_pct": 0,
-    "total_audits": 4,
+    "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 2196263.10733,
     "tvl_usd": 4617109.602152979,
@@ -64,7 +64,7 @@
       "fresh": 0,
       "aging": 1,
       "stale": 0,
-      "unknown": 3
+      "unknown": 0
     }
   },
   "topography": {
@@ -1029,69 +1029,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9160,
-      "audit_key": "audit-9160",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9161,
-      "audit_key": "audit-9161",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9162,
-      "audit_key": "audit-9162",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -1212,18 +1149,6 @@
       {
         "audit_id": 9159,
         "report_name": "Yala - Zenith Audit Report.pdf"
-      },
-      {
-        "audit_id": 9160,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 9161,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 9162,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

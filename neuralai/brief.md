@@ -7,11 +7,11 @@
 - Project: NeuralAI (`neuralai`)
 - Website: [https://goneural.ai/](https://goneural.ai/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-25T01:08:22.800Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-31T10:06:21.786Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 3 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $1,299,950.79
+- DeFi Llama TVL: $1,220,164.43
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -34,8 +34,8 @@ The NeuralAI contract likely serves as the main farm or coordinator, while Neura
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2026-03 (fresh)
+- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
@@ -79,7 +79,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [- Smart contracts audited by Hacken:](https://hacken.io/audits/neuralai) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [- Smart contracts audited by Hacken:](https://hacken.io/audits/neuralai) | Hacken | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 

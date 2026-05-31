@@ -580,9 +580,9 @@ Each project directory contains:
 | [nerona](./nerona/brief.md) | $7.94M | ethereum | 2 | 0/2 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [nest-credit](./nest-credit/brief.md) | $50.51M | 4 | 16 | 6/16 (38%) | 57.1% | 42.9% (Spearbit) | 2 | fresh | ✅ active | - |
 | [netswap](./netswap/brief.md) | $1.36M | metis | 48 | 24/48 (50%) | 20.8% | 0.0% (-) | 2 | stale | 💀 dead | - |
-| [neuralai](./neuralai/brief.md) | $1.30M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
+| [neuralai](./neuralai/brief.md) | $1.22M | ethereum | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [neutral-trade](./neutral-trade/brief.md) | $18.84M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [nexus-mutual](./nexus-mutual/brief.md) | $95.92M | ethereum | 6 | 6/6 (100%) | 50.0% | 0.0% (-) | 14 | fresh | ✅ active | - |
+| [nexus-mutual](./nexus-mutual/brief.md) | $95.92M | ethereum | 6 | 6/6 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [nomiswap](./nomiswap/brief.md) | $1.42M | bsc | 47 | 19/47 (40%) | 15.8% | 0.0% (-) | 1 | stale | ⚠️ declining | - |
 | [nonkyc](./nonkyc/brief.md) | $5.73M | 4 | 4 | 0/4 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [nostra](./nostra/brief.md) | $7.03M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -722,5 +722,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-31T10:04:00.052Z_
+_Generated: 2026-05-31T10:06:58.083Z_
 _Projects: 710_

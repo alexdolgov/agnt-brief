@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Reserve Protocol
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 39.9% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 42.4% over 90 days
 
 ## Project Overview
 
 - Project: Reserve Protocol (`reserve-protocol`)
 - Website: [https://reserve.org](https://reserve.org)
-- Lifecycle: unknown (Tier 0, 88.3% below peak)
-- Generated: 2026-05-29T13:17:51.483Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Lifecycle: unknown (Tier 0, 88.9% below peak)
+- Generated: 2026-05-31T10:28:01.062Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, bsc, ethereum
 - Contract surface: 329 unique implementations (1530 raw deployments)
 - DeFi Llama TVL: $82,521,774.89
@@ -25,17 +25,17 @@ The Reserve Protocol family provides the foundational stablecoin infrastructure,
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 66/115 (57.4%)
-- Verified + Unaudited implementations: 49
+- Verified implementations audited: 62/115 (53.9%)
+- Verified + Unaudited implementations: 53
 - Verified by bytecode match: 5
 - Unverified implementations: 214
 - Unique implementations: 329
 - Raw deployments: 1530
-- Audits discovered: 94
-- Scoreable audits (matched contracts): 46
+- Audits discovered: 27
+- Scoreable audits (matched contracts): 23
 - ASD (verified + unaudited TVL): $255,214.14
 - Latest audit: 2026-03 (fresh)
-- Staleness: 7 fresh, 7 aging, 15 stale, 65 unknown
+- Staleness: 5 fresh, 7 aging, 15 stale, 0 unknown
 - Tier 1 coverage: 19.1% (Code4rena, Spearbit)
 - Note: This protocol is classified as [unknown]. ASD of $255,214.14 represents exposure in a protocol with unknown activity.
 
@@ -43,7 +43,7 @@ The Reserve Protocol family provides the foundational stablecoin infrastructure,
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 60 | 52.2% | 2026-03 |
+| unknown | Tier 2 | 54 | 47.0% | 2026-03 |
 | Code4rena | Tier 1 | 21 | 18.3% | 2024-08 |
 | Pashov Audit Group | Tier 2 | 8 | 7.0% | 2025-06 |
 | Ackee Blockchain | Tier 2 | 2 | 1.7% | 2022-10 |
@@ -52,7 +52,7 @@ The Reserve Protocol family provides the foundational stablecoin infrastructure,
 
 ## Contract Surface
 
-### ✅ Verified + Audited (61)
+### ✅ Verified + Audited (57)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -93,7 +93,6 @@ The Reserve Protocol family provides the foundational stablecoin infrastructure,
 | GnosisTrade | unknown | ethereum | 19 deployments: ethereum [`0x030c9b...c9ae75`](./contracts/ethereum-1/0x030c9b66ac089cb01aa2058fc8f7d9baddc9ae75/); ethereum `0x2d1a82...01b697`; ethereum `0x4e9b97...33fea3`; ethereum `0x7e7d81...5ff8c7`; ethereum `0x803a52...9fd227`; ethereum `0x8a11d5...0dc880`; ethereum `0xa8d818...44acb3`; ethereum `0xac543e...f9757c`; ethereum `0xad4b0b...443439`; ethereum `0xda1631...63e227`; ethereum `0xe416db...82f630`; base `0x1ffa59...5b0c8d`; base `0x4be336...879aa0`; base `0x93de15...0de49e`; base `0xcd0339...818e73`; base `0xd4e1d5...d7d39f`; arbitrum `0x13b63e...59314a`; arbitrum `0xb5bdff...a1b23e`; arbitrum `0xd42620...64fec9` | ✅ Audited |
 | Governance | unknown | ethereum | 24 deployments: ethereum [`0x1440c5...a1494b`](./contracts/ethereum-1/0x1440c587183127d8e1915b7e070d3f8212a1494b/); ethereum `0x16a0f4...e98cfc`; ethereum `0x3f26ef...a7eeae`; ethereum `0x441808...229279`; ethereum `0x6814f3...5c12b7`; ethereum `0x868fe8...b8f753`; ethereum `0x991c13...78d2bd`; ethereum `0xa82df5...f11daf`; ethereum `0xb79434...bd1f97`; ethereum `0xe5d337...626e1f`; ethereum `0xf4a928...4662f8`; ethereum `0xfa4cc3...7546cd`; ethereum `0xfb4b59...0c0e6e`; base `0x21fba5...212055`; base `0x382ee5...76e5ce`; base `0x437b52...8d3cd4`; base `0x5ef74a...9b4b88`; base `0x8a11d5...0dc880`; base `0xa24e0d...b26558`; base `0xa6fa21...3186eb`; base `0xaeca35...109654`; base `0xb5cf32...c3f96d`; base `0xc8f487...0bd90b`; base `0xffef97...8ca128` | ✅ Audited |
 | GovernanceDeployer | unknown | base | 33 deployments: ethereum `0x5bed18...edcdcf`; ethereum `0x72f872...14ab2a`; ethereum `0x880f6e...2eda15`; ethereum `0xa4e707...7e7564`; ethereum `0xc451a7...13a801`; ethereum `0xcb061c...f0c212`; ethereum `0xe92657...2b558c`; bsc `0x270d92...3c13ec`; bsc `0x2f616b...564825`; bsc `0xa7bc12...a7bf9f`; bsc `0xbd49ce...049bad`; base [`0x19e3d9...306ce0`](./contracts/base-8453/0x19e3d9fbd121a13bb55bcb6b50f9cb44f9306ce0/); base `0x1a7d04...10208d`; base `0x1f7e90...cbd0cf`; base `0x21fe64...6099d9`; base `0x393002...a30c96`; base `0x47df14...8c0b66`; base `0x5bed18...edcdcf`; base `0x5d7906...06b3f1`; base `0x614498...4780c8`; base `0x6a66e6...22c872`; base `0x725055...55e079`; base `0x72f872...14ab2a`; base `0x8960ae...143798`; base `0x9f99f3...615d46`; base `0xac543e...f9757c`; base `0xc17ad2...748df0`; base `0xcb061c...f0c212`; base `0xcbd013...686f24`; base `0xd5cc28...4cbfa1`; base `0xdbd9c5...e03d14`; base `0xeca52a...4d7461`; base `0xfd6cc4...d2f377` | ✅ Audited |
-| GovernanceSpell_31_03_2025 | unknown | ethereum | 5 deployments: ethereum [`0x08424d...a6449b`](./contracts/ethereum-1/0x08424d7c52bf9edd4070701591ea3fe6dca6449b/); ethereum `0x4491b2...623199`; ethereum `0x569797...02d56f`; base `0x587cef...ef5e2a`; base `0x7fdbe3...119acd` | ✅ Audited |
 | MathLib | unknown | base | [`0x4edeb8...b11b99`](./contracts/base-8453/0x4edeb80ce684a890dd58ae0d9762c38731b11b99/) | ✅ Audited |
 | MaxIssuableFacet | unknown | arbitrum | 4 deployments: ethereum `0x5771d9...d0b849`; base `0x63fdcb...920cb6`; arbitrum [`0x091087...44bfe6`](./contracts/arbitrum-42161/0x09108763270a8eb0d0ca30906fec49fa0944bfe6/); arbitrum `0x7cceab...6be444` | ✅ Audited |
 | NonFiatCollateral | unknown | ethereum | 9 deployments: ethereum [`0x743704...5dc60e`](./contracts/ethereum-1/0x7437047523dae8116a94ef5ffaab3a657e5dc60e/); ethereum `0x805bd2...9c2c7c`; ethereum `0x832d65...b7d0db`; ethereum `0x87a959...41aca4`; ethereum `0xa9c7ae...195a13`; ethereum `0xcab980...43419f`; ethereum `0xcc07ef...0d20c3`; ethereum `0xe2633b...a9a280`; ethereum `0xe9c6bf...d13e70` | ✅ Audited |
@@ -114,11 +113,8 @@ The Reserve Protocol family provides the foundational stablecoin infrastructure,
 | TimelockController | governance | base | 28 deployments: ethereum `0x0835b0...eb6ba3`; ethereum `0x0dfa00...22456d`; ethereum `0x12e4f0...6c3c7b`; ethereum `0x2d970a...1f4739`; ethereum `0x523fbb...bc112a`; ethereum `0x5d8a7d...ace556`; ethereum `0x60caff...f8bd8c`; ethereum `0x788fd2...18b5d2`; ethereum `0x7bea80...3ad560`; ethereum `0x9140c7...c6e6dc`; ethereum `0x9d7699...c2d6c0`; ethereum `0xa8563c...bd8ce6`; ethereum `0xcf3f24...d21503`; ethereum `0xdc2d00...34b116`; ethereum `0xf33b8f...0358f3`; ethereum `0xf3b50c...b71f6d`; ethereum `0xf532bc...50c7a7`; ethereum `0xf7c15f...276b28`; base [`0x030cde...3a3414`](./contracts/base-8453/0x030cdecbdca6a34e8de3f49d1798d5f70e3a3414/); base `0x15175d...2e4e66`; base `0x4284d7...9070cf`; base `0x48f4ea...be176f`; base `0x520cf9...555032`; base `0x698335...f16deb`; base `0x6fe56a...48192f`; base `0x88cf64...6f010d`; base `0xe664d2...907f46`; base `0xe89879...48d262` | ✅ Audited |
 | TrustedFillerRegistry | registry | bsc | 7 deployments: ethereum `0x279ccf...a88b3a`; bsc [`0x08424d...a6449b`](./contracts/bsc-56/0x08424d7c52bf9edd4070701591ea3fe6dca6449b/); bsc `0xdbd9c5...e03d14`; base `0x279ccf...a88b3a`; base `0x72db5f...6c7a18`; base `0xb14502...fb2105`; base `0xb35222...35a193` | ✅ Audited |
 | Upgrade4_2_0 | unknown | ethereum | 12 deployments: ethereum [`0x0e6e79...6625b9`](./contracts/ethereum-1/0x0e6e791a5f7a104085f7b6d3e9de53f6c76625b9/); ethereum `0x133c3e...6f6a24`; ethereum `0x80953b...9884a1`; ethereum `0x977208...ea55c3`; ethereum `0xbff761...de3601`; ethereum `0xc76ebb...ff753d`; base `0x43587c...e35b0b`; base `0x890faa...8f9122`; base `0x908cd3...cd6db1`; base `0xb57db8...f224e1`; base `0xbf121c...cbe66b`; base `0xcae063...235a75` | ✅ Audited |
-| UpgradeSpell_4_0_0 | unknown | base | 2 deployments: ethereum `0x7498c6...a39cc9`; base [`0x4720db...3acadb`](./contracts/base-8453/0x4720dbcaeef5834aef590781f93d70fd1e3acadb/) | ✅ Audited |
-| UpgradeSpell_5_0_0 | unknown | ethereum | 3 deployments: ethereum [`0x044b6f...7d2d53`](./contracts/ethereum-1/0x044b6f685fb8d0c3fd56d92fcbe5f0ad947d2d53/); bsc `0xe8e67a...de7825`; base `0x04b3ed...cbb540` | ✅ Audited |
-| USDP | unknown | ethereum | [`0x8e870d...8289e1`](./contracts/ethereum-1/0x8e870d67f660d95d5be530380d0ec0bd388289e1/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (49)
+### ⚠️ Verified + Unaudited (53)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -143,6 +139,7 @@ The Reserve Protocol family provides the foundational stablecoin infrastructure,
 | FurnaceP1 | unknown | ethereum | 15 deployments: ethereum [`0x02ee68...dfc178`](./contracts/ethereum-1/0x02ee6862cf431d7ceaa78112d635d2be7ddfc178/); ethereum `0x387a0c...bb48a9`; ethereum `0x393002...a30c96`; ethereum `0x518fca...74f03f`; ethereum `0x845b8b...a0dc81`; ethereum `0x99580f...f9d34c`; ethereum `0xa8da82...65a6e9`; ethereum `0xbcf581...f2b1e6`; base `0x280eb3...3c396d`; base `0x2caf7b...d8a816`; base `0x45d7df...7b87bd`; base `0xe0b810...5f518d`; arbitrum `0x143d74...4a8235`; arbitrum `0x8a11d5...0dc880`; arbitrum `0xdf99cc...38e682` | ⚠️ Unaudited |
 | GenericTokenJar | token | base | 3 deployments: ethereum `0x9811e3...6d037e`; base [`0x490c31...9d1ecd`](./contracts/base-8453/0x490c31f0ac5c34ca7d6de03925e3b89a899d1ecd/); base `0xfa2ac5...d4e2a6` | ⚠️ Unaudited |
 | GovernanceSpell_04_17_2026 | unknown | ethereum | 6 deployments: ethereum [`0x082e70...0e5a14`](./contracts/ethereum-1/0x082e701456cd702fbe5797ab515e6b00580e5a14/); ethereum `0x23e50a...930b58`; base `0x0adc69...211bed`; base `0x4da79d...eaee5c`; base `0xc5e940...48f220`; base `0xe176a5...5f5bc7` | ⚠️ Unaudited |
+| GovernanceSpell_31_03_2025 | unknown | ethereum | 5 deployments: ethereum [`0x08424d...a6449b`](./contracts/ethereum-1/0x08424d7c52bf9edd4070701591ea3fe6dca6449b/); ethereum `0x4491b2...623199`; ethereum `0x569797...02d56f`; base `0x587cef...ef5e2a`; base `0x7fdbe3...119acd` | ⚠️ Unaudited |
 | Guardian | governance | base | [`0x351991...c6707b`](./contracts/base-8453/0x3519918e2918b59f3b29bed16dc77174dec6707b/) | ⚠️ Unaudited |
 | ImmutableTokenJar | token | base | [`0x8c8841...701504`](./contracts/base-8453/0x8c8841d771eef8d61eff7e6f82db7f7f31701504/) | ⚠️ Unaudited |
 | MainP1 | unknown | ethereum | 15 deployments: ethereum [`0x090e88...e37661`](./contracts/ethereum-1/0x090e88bc794cce2d622738cafb5b8ba0cae37661/); ethereum `0x143c35...bede2f`; ethereum `0x24a4b3...fa8bb7`; ethereum `0x5ef74a...9b4b88`; ethereum `0xaa8521...e2635a`; ethereum `0xc5bf68...e15e44`; ethereum `0xcd77df...d147ee`; ethereum `0xf5366f...1febf8`; base `0x1d6d0b...275143`; base `0x2a2a84...1e4485`; base `0x6d05cb...cd4fe9`; base `0x7a1468...5ef18e`; arbitrum `0x3dde17...cb91ab`; arbitrum `0x9c7531...7ba4ac`; arbitrum `0xf7a9d2...352461` | ⚠️ Unaudited |
@@ -169,8 +166,11 @@ The Reserve Protocol family provides the foundational stablecoin infrastructure,
 | TokenImplementation | token | bsc | [`0x23f72a...27bfee`](./contracts/bsc-56/0x23f72a3db61d6cb8abe5d9af1ac4b6c99327bfee/) | ⚠️ Unaudited |
 | TradeHelperFacet | periphery | ethereum | 2 deployments: ethereum [`0x9c09e5...0201fb`](./contracts/ethereum-1/0x9c09e506e00ac87e2413b7501702faca690201fb/); base `0xc1e16a...e12d3f` | ⚠️ Unaudited |
 | Upgrade3_4_0 | unknown | base | 2 deployments: ethereum `0xb1df3a...090391`; base [`0x1744c9...967c2a`](./contracts/base-8453/0x1744c9933feb8e76563fce63d5c95a4e7f967c2a/) | ⚠️ Unaudited |
+| UpgradeSpell_4_0_0 | unknown | base | 2 deployments: ethereum `0x7498c6...a39cc9`; base [`0x4720db...3acadb`](./contracts/base-8453/0x4720dbcaeef5834aef590781f93d70fd1e3acadb/) | ⚠️ Unaudited |
+| UpgradeSpell_5_0_0 | unknown | ethereum | 3 deployments: ethereum [`0x044b6f...7d2d53`](./contracts/ethereum-1/0x044b6f685fb8d0c3fd56d92fcbe5f0ad947d2d53/); bsc `0xe8e67a...de7825`; base `0x04b3ed...cbb540` | ⚠️ Unaudited |
 | USDeFiatCollateral | unknown | ethereum | 2 deployments: ethereum [`0x403623...ebf1d8`](./contracts/ethereum-1/0x403623175656ed0cdf1f9efe54867761f1ebf1d8/); ethereum `0x4f3016...8f9b34` | ⚠️ Unaudited |
 | USDMCollateral | unknown | arbitrum | 3 deployments: arbitrum [`0x03bf3b...c8a8c1`](./contracts/arbitrum-42161/0x03bf3b408045e4268afae9e2d1513b8132c8a8c1/); arbitrum `0x520cf9...555032`; arbitrum `0xa185a9...297e30` | ⚠️ Unaudited |
+| USDP | unknown | ethereum | [`0x8e870d...8289e1`](./contracts/ethereum-1/0x8e870d67f660d95d5be530380d0ec0bd388289e1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (5)
 
@@ -436,79 +436,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Reserve_MetaMorpho_plugins_v2.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/individual-plugins/Reserve_MetaMorpho_plugins_v2.pdf) | unknown | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
 | [trail-of-bits-2022-08-reserve-protocol-fixreview.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/trail-of-bits-2022-08-reserve-protocol-fixreview.pdf) | unknown | Audit | 2022-08 | stale | Direct | contract_name | 19 | high |
 | [trail-of-bits-2022-08-reserve-protocol-securityreview.pdf](https://github.com/reserve-protocol/protocol/blob/master/audits/trail-of-bits-2022-08-reserve-protocol-securityreview.pdf) | unknown | Audit | 2022-08 | stale | Direct | contract_name | 87 | high |
-| [collateral.md](https://github.com/reserve-protocol/protocol/blob/master/docs/collateral.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 89 | low |
-| [1-ETH+.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-ETH%2B.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [1-FacadeMonitor.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-FacadeMonitor.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | high |
-| [1-USD3.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-USD3.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [1-USDC+.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-USDC%2B.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [1-assets-2.0.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-assets-2.0.0.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [1-assets-2.1.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-assets-2.1.0.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | high |
-| [1-assets-3.0.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-assets-3.0.0.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [1-assets-3.0.1.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-assets-3.0.1.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [1-assets-3.3.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-assets-3.3.0.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [1-assets-3.4.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-assets-3.4.0.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [1-components-2.0.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-components-2.0.0.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 95 | high |
-| [1-components-2.1.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-components-2.1.0.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 130 | high |
-| [1-components-3.0.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-components-3.0.0.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 125 | high |
-| [1-components-3.3.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-components-3.3.0.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 72 | high |
-| [1-components-3.4.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-components-3.4.0.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 139 | high |
-| [1-dgnETH.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-dgnETH.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [1-eUSD.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-eUSD.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [1-hyUSD.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/1-hyUSD.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [42161-FacadeMonitor.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/42161-FacadeMonitor.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | high |
-| [8453-FacadeMonitor.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-FacadeMonitor.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | high |
-| [8453-Vaya.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-Vaya.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [8453-assets-3.0.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-assets-3.0.0.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [8453-assets-3.0.1.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-assets-3.0.1.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [8453-assets-3.3.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-assets-3.3.0.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [8453-assets-3.4.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-assets-3.4.0.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [8453-bsdETH.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-bsdETH.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [8453-components-3.0.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-components-3.0.0.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 125 | high |
-| [8453-components-3.0.1.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-components-3.0.1.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 125 | high |
-| [8453-components-3.3.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-components-3.3.0.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 17 | high |
-| [8453-components-3.4.0.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-components-3.4.0.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 139 | high |
-| [8453-hyUSD.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployed-addresses/8453-hyUSD.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [deployment-variables.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployment-variables.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [deployment.md](https://github.com/reserve-protocol/protocol/blob/master/docs/deployment.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 150 | low |
-| [dev-env.md](https://github.com/reserve-protocol/protocol/blob/master/docs/dev-env.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [exhaustive-tests.md](https://github.com/reserve-protocol/protocol/blob/master/docs/exhaustive-tests.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [mev.md](https://github.com/reserve-protocol/protocol/blob/master/docs/mev.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 47 | low |
-| [monitoring.md](https://github.com/reserve-protocol/protocol/blob/master/docs/monitoring.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | low |
-| [overview.md](https://github.com/reserve-protocol/protocol/blob/master/docs/overview.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 76 | medium |
-| [pause-freeze-states.md](https://github.com/reserve-protocol/protocol/blob/master/docs/pause-freeze-states.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [plugin-addresses.md](https://github.com/reserve-protocol/protocol/blob/master/docs/plugin-addresses.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | high |
-| [property-concepts.md](https://github.com/reserve-protocol/protocol/blob/master/docs/property-concepts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [recollateralization.md](https://github.com/reserve-protocol/protocol/blob/master/docs/recollateralization.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 16 | low |
-| [reweightable-rtokens.md](https://github.com/reserve-protocol/protocol/blob/master/docs/reweightable-rtokens.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [solidity-style.md](https://github.com/reserve-protocol/protocol/blob/master/docs/solidity-style.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 79 | low |
-| [strsr-payouts.md](https://github.com/reserve-protocol/protocol/blob/master/docs/strsr-payouts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [system-design.md](https://github.com/reserve-protocol/protocol/blob/master/docs/system-design.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 140 | medium |
-| [using-echidna-on-gcp.md](https://github.com/reserve-protocol/protocol/blob/master/docs/using-echidna-on-gcp.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [using-echidna.md](https://github.com/reserve-protocol/protocol/blob/master/docs/using-echidna.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [writing-collateral-plugins.md](https://github.com/reserve-protocol/protocol/blob/master/docs/writing-collateral-plugins.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [component-architecture.md](https://github.com/reserve-protocol/register/blob/master/docs/architecture/component-architecture.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [data-flow-and-blockchain.md](https://github.com/reserve-protocol/register/blob/master/docs/architecture/data-flow-and-blockchain.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [project-structure-and-conventions.md](https://github.com/reserve-protocol/register/blob/master/docs/architecture/project-structure-and-conventions.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [routing.md](https://github.com/reserve-protocol/register/blob/master/docs/architecture/routing.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [state-management.md](https://github.com/reserve-protocol/register/blob/master/docs/architecture/state-management.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [data-sources.md](https://github.com/reserve-protocol/register/blob/master/docs/data-sources.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [prd.md](https://github.com/reserve-protocol/register/blob/master/docs/prd.md) | unknown | Audit | 2025-06 | fresh | Direct | n/a | 0 | n/a |
-| [protocol-context.md](https://github.com/reserve-protocol/register/blob/master/docs/protocol-context.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index-dtf-container.md](https://github.com/reserve-protocol/register/blob/master/docs/specs/index-dtf-container.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index-dtf-governance-and-proposal.md](https://github.com/reserve-protocol/register/blob/master/docs/specs/index-dtf-governance-and-proposal.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index-dtf-issuance.md](https://github.com/reserve-protocol/register/blob/master/docs/specs/index-dtf-issuance.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index-dtf-overview.md](https://github.com/reserve-protocol/register/blob/master/docs/specs/index-dtf-overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [rebalance-v4-specification.md](https://github.com/reserve-protocol/register/blob/master/docs/specs/rebalance-v4-specification.md) | unknown | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
 | [report-competition-reserve-jan2025.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/cantina/report-competition-reserve-jan2025.pdf) | Spearbit | Audit | 2025-01 | aging | Direct | contract_name | 6 | medium |
 | [reserve-security-review_2025-06-02.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/pashov/reserve-security-review_2025-06-02.pdf) | Pashov Audit Group | Audit | 2025-06 | fresh | Direct | contract_name | 97 | high |
 | [2025-04-reserve-folio-solidity-2.0.0.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trail-of-bits/2025-04-reserve-folio-solidity-2.0.0.pdf) | unknown | Audit | 2025-04 | aging | Direct | contract_name | 122 | high |
 | [2025-06-reserve-folio-solidity-4.0.0.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trail-of-bits/2025-06-reserve-folio-solidity-4.0.0.pdf) | unknown | Audit | 2025-06 | fresh | Direct | contract_name | 26 | high |
 | [v1-audit-dec-2024.pdf](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trust-security/v1-audit-dec-2024.pdf) | unknown | Audit | 2024-12 | aging | Direct | contract_name | 135 | high |
-| [SPELLS.md](https://github.com/reserve-protocol/reserve-index-dtf/blob/main/docs/SPELLS.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 10 | high |
 | [Audit Report - Reserve Token [3 Jan 2022]-2.pdf](https://github.com/reserve-protocol/rsr-mainnet/blob/master/audits/solidified/Audit%20Report%20-%20Reserve%20Token%20%5B3%20Jan%202022%5D-2.pdf) | unknown | Audit | 2022-01 | stale | Direct | contract_name | 1 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -526,6 +459,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x0e8439...5d96ac`](./contracts/ethereum-1/0x0e8439a17ba5cbb2d9823c03a02566b9dd5d96ac/) | DistributorP1 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x02ee68...dfc178`](./contracts/ethereum-1/0x02ee6862cf431d7ceaa78112d635d2be7ddfc178/) | FurnaceP1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x082e70...0e5a14`](./contracts/ethereum-1/0x082e701456cd702fbe5797ab515e6b00580e5a14/) | GovernanceSpell_04_17_2026 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x08424d...a6449b`](./contracts/ethereum-1/0x08424d7c52bf9edd4070701591ea3fe6dca6449b/) | GovernanceSpell_31_03_2025 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x090e88...e37661`](./contracts/ethereum-1/0x090e88bc794cce2d622738cafb5b8ba0cae37661/) | MainP1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5ba9d8...f28673`](./contracts/ethereum-1/0x5ba9d812f5533f7cf2854963f7a9d212f8f28673/) | Manager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa4d387...d47ac2`](./contracts/ethereum-1/0xa4d38731434e875d7e30e13d8b65befed7d47ac2/) | OETHCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -535,6 +469,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x03b8e7...f214bb`](./contracts/ethereum-1/0x03b8e7dbeb8ea61d30594b445a1987cfc0f214bb/) | RTokenOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4fd189...99d24e`](./contracts/ethereum-1/0x4fd189996b5344eb4cf9c749b97c7424d399d24e/) | SUSDSCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9c09e5...0201fb`](./contracts/ethereum-1/0x9c09e506e00ac87e2413b7501702faca690201fb/) | TradeHelperFacet | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x044b6f...7d2d53`](./contracts/ethereum-1/0x044b6f685fb8d0c3fd56d92fcbe5f0ad947d2d53/) | UpgradeSpell_5_0_0 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x403623...ebf1d8`](./contracts/ethereum-1/0x403623175656ed0cdf1f9efe54867761f1ebf1d8/) | USDeFiatCollateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
@@ -550,10 +485,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 48
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=37, low=6, medium=3
-- Match method counts: extraction_exact=5333
+- Extraction confidence breakdown: high=22, medium=1
+- Match method counts: extraction_exact=3737
 
 Zero-match audit list:
 
@@ -561,49 +496,5 @@ Zero-match audit list:
 - [5395] Trust Security - Reserve Audit 3.4.0 Spell.pdf
 - [5399] Reserve_ETH_Plus_LP_v1.pdf
 - [5400] Reserve_MetaMorpho_plugins_v2.pdf
-- [5404] 1-ETH+.md
-- [5406] 1-USD3.md
-- [5407] 1-USDC+.md
-- [5408] 1-assets-2.0.0.md
-- [5410] 1-assets-3.0.0.md
-- [5411] 1-assets-3.0.1.md
-- [5412] 1-assets-3.3.0.md
-- [5413] 1-assets-3.4.0.md
-- [5419] 1-dgnETH.md
-- [5420] 1-eUSD.md
-- [5421] 1-hyUSD.md
-- [5424] 8453-Vaya.md
-- [5425] 8453-assets-3.0.0.md
-- [5426] 8453-assets-3.0.1.md
-- [5427] 8453-assets-3.3.0.md
-- [5428] 8453-assets-3.4.0.md
-- [5429] 8453-bsdETH.md
-- [5434] 8453-hyUSD.md
-- [5435] deployment-variables.md
-- [5437] dev-env.md
-- [5438] exhaustive-tests.md
-- [5442] pause-freeze-states.md
-- [5444] property-concepts.md
-- [5446] reweightable-rtokens.md
-- [5448] strsr-payouts.md
-- [5450] using-echidna-on-gcp.md
-- [5451] using-echidna.md
-- [5452] writing-collateral-plugins.md
-- [5453] component-architecture.md
-- [5454] data-flow-and-blockchain.md
-- [5455] project-structure-and-conventions.md
-- [5456] routing.md
-- [5457] state-management.md
-- [5458] data-sources.md
-- [5459] prd.md
-- [5460] protocol-context.md
-- [5461] index-dtf-container.md
-- [5462] index-dtf-governance-and-proposal.md
-- [5463] index-dtf-issuance.md
-- [5464] index-dtf-overview.md
-- [5465] rebalance-v4-specification.md
-- [5473] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5474] 0002-metadata-manifest-and-pull-command.md
-- [5475] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

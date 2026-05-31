@@ -5,8 +5,8 @@
 - Project: Resupply (`resupply`)
 - Website: [https://resupply.fi/](https://resupply.fi/)
 - Lifecycle: active (Tier 0, 73.6% below peak)
-- Generated: 2026-05-29T13:24:35.247Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T10:28:00.111Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $41,835,801.02
@@ -29,11 +29,11 @@ The protocol consists of a single product family with one registry contract that
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 11
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-10 (fresh)
-- Staleness: 4 fresh, 2 aging, 0 stale, 5 unknown
+- Staleness: 4 fresh, 2 aging, 0 stale, 2 unknown
 - Tier 1 coverage: 100.0% (ChainSecurity)
 
 ### Auditor Coverage
@@ -85,9 +85,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Electisec-Resupply-Inflation-Fixes.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/Electisec-Resupply-Inflation-Fixes.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Electisec-Resupply-sreUSD.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/Electisec-Resupply-sreUSD.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [rsup_yaudit_report.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/rsup_yaudit_report.pdf) | yAudit | Audit | 2024-12 | aging | Direct | contract_name | 1 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -108,7 +105,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=3
 - Match method counts: extraction_exact=3
@@ -120,8 +117,5 @@ Zero-match audit list:
 - [5826] Electisec-Resupply-CurveLendOperator.pdf
 - [5827] Electisec-Resupply-Inflation-Fixes.pdf
 - [5828] Electisec-Resupply-sreUSD.pdf
-- [5830] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5831] 0002-metadata-manifest-and-pull-command.md
-- [5832] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

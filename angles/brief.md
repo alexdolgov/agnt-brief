@@ -7,8 +7,8 @@
 - Project: Angles (`angles`)
 - Website: [https://angles.fi/](https://angles.fi/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-30T10:33:55.058Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T07:10:18.051Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: sonic
 - Contract surface: 40 unique implementations (80 raw deployments)
 - DeFi Llama TVL: $1,009,126.00
@@ -31,11 +31,11 @@ Angles Stake vaults likely mint or interact with Angles Liquid's wanS token, cre
 - Unverified implementations: 15
 - Unique implementations: 40
 - Raw deployments: 80
-- Audits discovered: 4
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $7.53
 - Latest audit: 2025-02 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 3 unknown
+- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 4.0% (Spearbit)
 - Note: This protocol is classified as [declining]. ASD of $7.53 represents exposure in a protocol with declining activity.
 
@@ -121,9 +121,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Audit](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FllPyhrg6nxGZCqiOX61A%2Fuploads%2FbSKwCaHEqGfKBo6FUXtL%2FSpearBit%20x%20Angles.pdf?alt=media) | Spearbit | Audit | 2025-02 | aging | Direct | contract_name | 2 | medium |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -165,15 +162,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: medium=1
 - Match method counts: extraction_exact=2
-
-Zero-match audit list:
-
-- [9794] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [9795] 0002-metadata-manifest-and-pull-command.md
-- [9796] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

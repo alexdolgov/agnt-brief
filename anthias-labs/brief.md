@@ -6,9 +6,9 @@
 
 - Project: Anthias Labs (`anthias-labs`)
 - Website: [https://anthias.xyz](https://anthias.xyz)
-- Lifecycle: unknown (Tier 0, 19.5% below peak)
-- Generated: 2026-05-28T15:34:13.341Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
+- Lifecycle: unknown (Tier 0, 19.4% below peak)
+- Generated: 2026-05-31T07:11:25.255Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: base
 - Contract surface: 2 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $21,649,055.52
@@ -31,11 +31,11 @@ All contracts are deployed under the single Anthias Labs family, with VaultV2 an
 - Unverified implementations: 0
 - Unique implementations: 2
 - Raw deployments: 9
-- Audits discovered: 16
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $705,349.17
 - Latest audit: 2024-03 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 15 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $705,349.17 represents exposure in a protocol with unknown activity.
 
@@ -81,19 +81,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Liquidity Providers Taking Position of Volatility.pdf](https://github.com/anthias-labs/research/blob/main/Liquidity%20Providers%20Taking%20Position%20of%20Volatility.pdf) | unknown | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
 | [Anthias Liquip Score Measuring Liquidation Probability.pdf](https://github.com/anthias-labs/research/blob/main/Anthias%20Liquip%20Score%20Measuring%20Liquidation%20Probability.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [A Framework for Designing Corruption-Resistant Operator Networks.pdf](https://github.com/anthias-labs/research/blob/main/A%20Framework%20for%20Designing%20Corruption-Resistant%20Operator%20Networks.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [README.md](https://github.com/anthias-labs/flare/blob/main/docs/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [drift-prices.md](https://github.com/anthias-labs/flare/blob/main/docs/drift-prices.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [on-chain-voting.md](https://github.com/anthias-labs/flare/blob/main/docs/on-chain-voting.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [self-custodial-facebook.md](https://github.com/anthias-labs/flare/blob/main/docs/self-custodial-facebook.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SUMMARY.md](https://github.com/anthias-labs/arbiter/blob/main/docs/SUMMARY.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contributing.md](https://github.com/anthias-labs/arbiter/blob/main/docs/contributing.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [core_concepts.md](https://github.com/anthias-labs/arbiter/blob/main/docs/core_concepts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [examples.md](https://github.com/anthias-labs/arbiter/blob/main/docs/examples.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [getting_started.md](https://github.com/anthias-labs/arbiter/blob/main/docs/getting_started.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index.md](https://github.com/anthias-labs/arbiter/blob/main/docs/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -116,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 16
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -126,18 +113,5 @@ Zero-match audit list:
 - [6091] Liquidity Providers Taking Position of Volatility.pdf
 - [6092] Anthias Liquip Score Measuring Liquidation Probability.pdf
 - [6093] A Framework for Designing Corruption-Resistant Operator Networks.pdf
-- [6094] README.md
-- [6095] drift-prices.md
-- [6096] on-chain-voting.md
-- [6097] self-custodial-facebook.md
-- [6098] SUMMARY.md
-- [6099] contributing.md
-- [6100] core_concepts.md
-- [6101] examples.md
-- [6102] getting_started.md
-- [6103] index.md
-- [6104] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [6105] 0002-metadata-manifest-and-pull-command.md
-- [6106] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

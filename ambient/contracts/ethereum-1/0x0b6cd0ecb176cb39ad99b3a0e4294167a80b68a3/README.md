@@ -7,7 +7,7 @@
 | Role | unknown |
 | Origin | native |
 | Audited | Yes |
-| Audits | [QuantstampV1.pdf](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV1.pdf); [QuantstampV2.pdf](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV2.pdf); [GovernanceRoles.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/GovernanceRoles.md); [Layout.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/Layout.md) |
+| Audits | [QuantstampV1.pdf](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV1.pdf); [QuantstampV2.pdf](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV2.pdf) |
 | Deployments | 3 (ethereum [`0x0b6cd0ecb176cb39ad99b3a0e4294167a80b68a3`](../0x0b6cd0ecb176cb39ad99b3a0e4294167a80b68a3/); blast `0x503e3dfddd22d1c4a9787d2dac8643afc58c162c`; scroll `0x70b161f2f0a18bd1865021f25f9e895021e9dc4f`) |
 | Proxy | No |
 | Source | Sourcify (full match) |

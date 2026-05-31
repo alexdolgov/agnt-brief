@@ -7,8 +7,8 @@
 - Project: Ambient (`ambient`)
 - Website: [https://ambient.finance/](https://ambient.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-28T15:25:36.974Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
+- Generated: 2026-05-31T07:12:22.954Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: blast, canto, ethereum, scroll, swellchain
 - Contract surface: 30 unique implementations (52 raw deployments)
 - DeFi Llama TVL: $2,695,530.51
@@ -31,11 +31,11 @@ All chain-specific DEX families (Ambient, Blast, Scroll, Swell Chain) share the 
 - Unverified implementations: 13
 - Unique implementations: 30
 - Raw deployments: 52
-- Audits discovered: 36
-- Scoreable audits (matched contracts): 6
+- Audits discovered: 3
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-05 (stale)
-- Staleness: 0 fresh, 0 aging, 4 stale, 32 unknown
+- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -44,7 +44,6 @@ All chain-specific DEX families (Ambient, Blast, Scroll, Swell Chain) share the 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
 | Quantstamp | Tier 2 | 11 | 64.7% | 2023-05 |
-| unknown | Tier 2 | 7 | 41.2% | 2019-05 |
 
 ## Contract Surface
 
@@ -114,39 +113,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [QuantstampV1.pdf](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV1.pdf) | Quantstamp | Audit | 2023-03 | stale | Direct | contract_name | 23 | high |
 | [QuantstampV2.pdf](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/QuantstampV2.pdf) | Quantstamp | Audit | 2023-05 | stale | Direct | contract_name | 21 | high |
 | [Zellic.pdf](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/audits/Zellic.pdf) | Zellic | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
-| [ControlFlow.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/ControlFlow.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [CurveBounds.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/CurveBounds.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Encoding.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/Encoding.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [FeeOdometer.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/FeeOdometer.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [GovernanceRoles.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/GovernanceRoles.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 6 | low |
-| [JITModel.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/JITModel.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Layout.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/Layout.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 12 | high |
-| [LiquidityLots.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/LiquidityLots.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [TokenModel.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/TokenModel.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
-| [UpgradeGuidelines.md](https://github.com/CrocSwap/CrocSwap-protocol/blob/main/docs/UpgradeGuidelines.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | low |
-| [CODING-STYLE.md](https://github.com/CrocSwap/ambient-ts-app/blob/develop/docs/CODING-STYLE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [procedure.md](https://github.com/CrocSwap/ambient-ts-app/blob/develop/docs/release/procedure.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Bytecode_Circuit.md](https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Bytecode_Circuit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [EIP2930_1559.md](https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/EIP2930_1559.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [EVM_Circuit.md](https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/EVM_Circuit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Keccak_Circuit.md](https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Keccak_Circuit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MCOPY.md](https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/MCOPY.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MPT_Circuit.md](https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/MPT_Circuit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Modexp_Circuit.md](https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Modexp_Circuit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Public_Input_Circuit.md](https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Public_Input_Circuit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Sig_Circuit.md](https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Sig_Circuit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [State_Circuit.md](https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/State_Circuit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Tx_Circuit.md](https://github.com/scroll-tech/zkevm-circuits/blob/develop/docs/Tx_Circuit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [coordinator-proxy.md](https://github.com/scroll-tech/scroll/blob/develop/docs/coordinator-proxy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [prover-coordinator-overview.md](https://github.com/scroll-tech/scroll/blob/develop/docs/prover-coordinator-overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [docker-compose-e2e-guide.md](https://github.com/scroll-tech/scroll/blob/develop/docs/testing/docker-compose-e2e-guide.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [openvm-upgrade-testing-guide.md](https://github.com/scroll-tech/scroll/blob/develop/docs/testing/openvm-upgrade-testing-guide.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [openvm-v1.6.0-guest-v0.8.0-May19.md](https://github.com/scroll-tech/scroll/blob/develop/docs/testing_reports/openvm-v1.6.0-guest-v0.8.0-May19.md) | unknown | Audit | 2019-05 | stale | Direct | n/a | 0 | n/a |
-| [intro-to-zkevm.md (also discovered via alternate URL)](https://github.com/scroll-tech/scroll-documentation/blob/develop/src/content/docs/en/technology/zkevm/intro-to-zkevm.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [glossary.md](https://github.com/scroll-tech/scroll-documentation/blob/develop/src/content/docs/es/glossary.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -172,42 +138,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 30
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=3, low=3
-- Match method counts: extraction_exact=70
+- Extraction confidence breakdown: high=2
+- Match method counts: extraction_exact=44
 
 Zero-match audit list:
 
 - [8691] Zellic.pdf
-- [8692] ControlFlow.md
-- [8693] CurveBounds.md
-- [8694] Encoding.md
-- [8695] FeeOdometer.md
-- [8697] JITModel.md
-- [8699] LiquidityLots.md
-- [8702] CODING-STYLE.md
-- [8703] procedure.md
-- [8704] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [8705] 0002-metadata-manifest-and-pull-command.md
-- [8706] 0003-bun-package-manager-node-runtime.md
-- [8707] Bytecode_Circuit.md
-- [8708] EIP2930_1559.md
-- [8709] EVM_Circuit.md
-- [8710] Keccak_Circuit.md
-- [8711] MCOPY.md
-- [8712] MPT_Circuit.md
-- [8713] Modexp_Circuit.md
-- [8714] Public_Input_Circuit.md
-- [8715] Sig_Circuit.md
-- [8716] State_Circuit.md
-- [8717] Tx_Circuit.md
-- [8718] coordinator-proxy.md
-- [8719] prover-coordinator-overview.md
-- [8720] docker-compose-e2e-guide.md
-- [8721] openvm-upgrade-testing-guide.md
-- [8722] openvm-v1.6.0-guest-v0.8.0-May19.md
-- [8723] intro-to-zkevm.md
-- [8724] glossary.md
 
 Fork inheritance lineage and inherited audits are included when available.

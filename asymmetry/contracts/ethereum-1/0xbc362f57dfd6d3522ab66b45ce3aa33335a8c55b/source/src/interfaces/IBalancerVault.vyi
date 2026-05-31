@@ -1,0 +1,14 @@
+# @version 0.4.1
+
+MAX_ASSETS_LENGTH: constant(uint256) = 1
+MAX_BYTES_LENGTH: constant(uint256) = 32
+
+
+@external
+def flashLoan(
+    recipient: address,
+    tokens: DynArray[address, MAX_ASSETS_LENGTH],
+    amounts: DynArray[uint256, MAX_ASSETS_LENGTH],
+    userData: Bytes[MAX_BYTES_LENGTH],
+):
+    ...

@@ -1,0 +1,177 @@
+# @version 0.4.1
+
+
+# ============================================================================================
+# Events
+# ============================================================================================
+
+
+event Redeem:
+    sender: address
+    recipient: indexed(address)
+    amount: uint256
+    coin_required: uint256
+    weeks: uint256
+
+
+event SetPayee:
+    new_payee: address
+
+
+event SetDiscount:
+    min_discount: uint256
+    max_discount: uint256
+
+
+event SetMinLockWeeks:
+    min_lock_weeks: uint256
+
+
+event SetPrivileged:
+    user: address
+    privileged: bool
+
+
+event Killed:
+    balance: uint256
+
+
+event Sweep:
+    token: address
+    amount: uint256
+
+
+# ============================================================================================
+# View functions
+# ============================================================================================
+
+
+@external
+@view
+def coin_required(amount: uint256, weeks: uint256) -> uint256:
+    """
+    @notice Estimate the required amount of USA.D to redeem the amount of dASF for ASF
+    @param amount Amount of dASF
+    @param weeks Number of weeks to lock the ASF for
+    @return Amount of USA.D required
+    """
+    ...
+
+
+@external
+@view
+def discount(weeks: uint256) -> uint256:
+    """
+    @notice Get the discount for a given number of weeks
+    @param weeks Number of weeks to lock the ASF for
+    @return Discount in percentage (18 decimals)
+    """
+    ...
+
+
+@external
+@view
+def latest_price() -> uint256:
+    """
+    @notice Get the latest price of ASF in USA.D
+    @return Price of ASF in USA.D (18 decimals)
+    """
+    ...
+
+
+# ============================================================================================
+# Mutative functions
+# ============================================================================================
+
+
+@external
+def redeem(
+    amount: uint256,
+    weeks: uint256,
+    max_coin_required: uint256 = max_value(uint256),
+    recipient: address = msg.sender,
+):
+    """
+    @notice Redeem your dASF for ASF using a USA.D
+    @param amount amount of dASF to spend
+    @param weeks number of weeks to lock the ASF for
+    @param max_coin_required maximum amount of USA.d to pay
+    @param recipient of the exercised ASF
+    """
+    ...
+
+
+# ============================================================================================
+# Privileged user functions
+# ============================================================================================
+
+
+@external
+def privileged_redeem(amount: uint256, recipient: address = msg.sender):
+    """
+    @notice Redeem your dASF for ASF for free
+    @param amount amount of dASF to spend
+    @param recipient of the exercised ASF
+    """
+    ...
+
+
+# ============================================================================================
+# Owner functions
+# ============================================================================================
+
+
+@external
+def set_payee(new_payee: address):
+    """
+    @notice set the payee of the USA.D used for redemptions
+    @param new_payee the new payee
+    """
+    ...
+
+
+@external
+def set_discount(min_discount: uint256, max_discount: uint256):
+    """
+    @notice set the min and max discount for redemptions
+    @param min_discount the minimum discount in percentage (18 decimals)
+    @param max_discount the maximum discount in percentage (18 decimals)
+    """
+    ...
+
+
+@external
+def set_min_lock_weeks(min_lock_weeks: uint256):
+    """
+    @notice set the minimum lock weeks for redemptions
+    @param min_lock_weeks the minimum lock weeks
+    """
+    ...
+
+
+@external
+def set_privileged(user: address, privileged: bool):
+    """
+    @notice set the privileged status of a user
+    @param user the user to set
+    @param privileged the privileged status
+    """
+    ...
+
+
+@external
+def kill():
+    """
+    @dev stop the contract from being used and reclaim ASF
+    """
+    ...
+
+
+@external
+def sweep(token: address) -> uint256:
+    """
+    @notice sweep any token other than ASF to the owner
+    @param token address of the token to sweep
+    @return amount of token swept
+    """
+    ...

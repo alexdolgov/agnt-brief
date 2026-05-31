@@ -6,8 +6,8 @@
 | Address | `0x931e32b6d112f7be74b16f7fbc77d491b30fe18c` |
 | Role | unknown |
 | Origin | native |
-| Audited | Yes |
-| Audits | [MultiWrapper.md](https://github.com/1inch/spot-price-aggregator/blob/master/docs/MultiWrapper.md) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 1 (ethereum [`0x931e32b6d112f7be74b16f7fbc77d491b30fe18c`](../0x931e32b6d112f7be74b16f7fbc77d491b30fe18c/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |

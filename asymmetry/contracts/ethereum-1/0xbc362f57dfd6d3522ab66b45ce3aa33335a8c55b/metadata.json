@@ -1,0 +1,17 @@
+{
+  "address": "0xbc362f57dfd6d3522ab66b45ce3aa33335a8c55b",
+  "chain_id": 1,
+  "contract_name": "dASF Flash Dump",
+  "compiler_version": "vyper:0.4.1",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-31T06:28:51.159Z"
+}

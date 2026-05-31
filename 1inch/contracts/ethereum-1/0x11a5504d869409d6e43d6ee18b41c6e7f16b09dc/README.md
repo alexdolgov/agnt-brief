@@ -6,8 +6,8 @@
 | Address | `0x11a5504d869409d6e43d6ee18b41c6e7f16b09dc` |
 | Role | unknown |
 | Origin | native |
-| Audited | Yes |
-| Audits | [FarmingVoter.md](https://github.com/1inch/liquidity-protocol/blob/master/docs/inch/farming/FarmingVoter.md) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 1 (ethereum [`0x11a5504d869409d6e43d6ee18b41c6e7f16b09dc`](../0x11a5504d869409d6e43d6ee18b41c6e7f16b09dc/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |

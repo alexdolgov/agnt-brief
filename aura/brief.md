@@ -7,8 +7,8 @@
 - Project: Aura (`aura`)
 - Website: [https://aura.finance](https://aura.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T06:37:15.612Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-4212
+- Generated: 2026-05-31T06:31:54.423Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: arbitrum, avalanche, base, ethereum, fraxtal, gnosis, optimism, polygon, polygon-zkevm
 - Contract surface: 502 unique implementations (1231 raw deployments)
 - DeFi Llama TVL: $26,149,389.14
@@ -25,39 +25,38 @@ The Aura family forms the backbone, with Booster/BoosterLite managing pools and 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 55/268 (20.5%)
-- Verified + Unaudited implementations: 209
+- Verified implementations audited: 51/268 (19.0%)
+- Verified + Unaudited implementations: 213
 - Verified by bytecode match: 12
 - Unverified implementations: 234
 - Unique implementations: 502
 - Raw deployments: 1231
-- Audits discovered: 22
-- Scoreable audits (matched contracts): 16
-- ASD (verified + unaudited TVL): $237,154,439.08
+- Audits discovered: 18
+- Scoreable audits (matched contracts): 15
+- ASD (verified + unaudited TVL): $238,264,050.26
 - Latest audit: 2023-12 (stale)
-- Staleness: 0 fresh, 0 aging, 12 stale, 10 unknown
+- Staleness: 0 fresh, 0 aging, 12 stale, 6 unknown
 - Tier 1 coverage: 8.2% (Code4rena)
-- Note: This protocol is classified as [declining]. ASD of $237,154,439.08 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $238,264,050.26 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
 | Halborn | Tier 2 | 44 | 16.4% | 2023-12 |
-| unknown | Tier 2 | 42 | 15.7% | 2023-12 |
+| unknown | Tier 2 | 25 | 9.3% | 2023-12 |
 | Code4rena | Tier 1 | 22 | 8.2% | 2022-07 |
 | Zellic | Tier 2 | 19 | 7.1% | 2023-06 |
 | PeckShield | Tier 2 | 10 | 3.7% | 2022-04 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (47)
+### ✅ Verified + Audited (43)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | BaseRewardPool | core_logic | ethereum | 4 deployments: ethereum [`0x00a7ba...c6cad2`](./contracts/ethereum-1/0x00a7ba8ae7bca0b10a32ea1f8e2a1da980c6cad2/); ethereum `0x3fe656...a7587e`; ethereum `0x5e5ea2...96efcc`; ethereum `0xe765d4...7ab806` | ✅ Audited |
 | AuraBalVault | core_logic | polygon | 5 deployments: ethereum `0xb78c0d...3b12bc`; ethereum `0xfaa2ed...fcd7a6`; polygon [`0x4ea931...bbb0e9`](./contracts/polygon-137/0x4ea9317d90b61fc28c418c247ad0ca8939bbb0e9/); base [`0x4ea931...bbb0e9`](./contracts/base-8453/0x4ea9317d90b61fc28c418c247ad0ca8939bbb0e9/); arbitrum [`0x4ea931...bbb0e9`](./contracts/arbitrum-42161/0x4ea9317d90b61fc28c418c247ad0ca8939bbb0e9/) | ✅ Audited |
-| AuraToken | token | ethereum | 2 deployments: ethereum [`0x665d01...59cf15`](./contracts/ethereum-1/0x665d01dbd89a0d1b693bb806feea499b5359cf15/); ethereum `0xc0c293...903dbf` | ✅ Audited |
 | SimpleStrategy | core_logic | polygon | 3 deployments: polygon [`0x4b5d28...4f41cb`](./contracts/polygon-137/0x4b5d2848678db574fbc2d2f629143d969a4f41cb/); base [`0x4b5d28...4f41cb`](./contracts/base-8453/0x4b5d2848678db574fbc2d2f629143d969a4f41cb/); arbitrum [`0x4b5d28...4f41cb`](./contracts/arbitrum-42161/0x4b5d2848678db574fbc2d2f629143d969a4f41cb/) | ✅ Audited |
 | Booster | core_logic | ethereum | 12 deployments: ethereum [`0x2b8b30...2ffc95`](./contracts/ethereum-1/0x2b8b301b90eb8801f1eefe73285eec117d2ffc95/); ethereum `0x569f5b...79fbca`; ethereum `0x60bd3d...f6738b`; ethereum `0x63e035...ba565a`; ethereum `0x7818a1...8eee10`; ethereum `0x9ca3ec...60ba9a`; ethereum `0xa57b8d...60b234`; ethereum `0xb314f7...bfe7fd`; ethereum `0xd8bd5c...f28659`; ethereum `0xee3ab4...9d67e8`; ethereum `0xefffec...b047d8`; ethereum `0xf403c1...8aae31` | ✅ Audited |
 | AuraBalRewardPool | core_logic | ethereum | [`0xc47162...651c0c`](./contracts/ethereum-1/0xc47162863a12227e5c3b0860715f9cf721651c0c/) | ✅ Audited |
@@ -73,12 +72,10 @@ The Aura family forms the backbone, with Booster/BoosterLite managing pools and 
 | AuraStakingProxy | proxy | ethereum | [`0xd9e863...f89c6c`](./contracts/ethereum-1/0xd9e863b7317a66fe0a4d2834910f604fd6f89c6c/) | ✅ Audited |
 | AuraVestedEscrow | operational_periphery | ethereum | 10 deployments: ethereum [`0x243466...53fac6`](./contracts/ethereum-1/0x24346652e0e2ae0ce05c781501fdf4fe4553fac6/); ethereum `0x43b170...6694fa`; ethereum `0x45025e...1538f5`; ethereum `0x5335ab...ff7cfb`; ethereum `0x5bd3fc...2d836a`; ethereum `0x87e1ca...056806`; ethereum `0xa6bbf6...5eb358`; ethereum `0xb75044...d16087`; ethereum `0xefc9f1...66ac3f`; ethereum `0xfd7217...30d422` | ✅ Audited |
 | BalLiquidityProvider | unknown | ethereum | [`0xa7429a...70e32c`](./contracts/ethereum-1/0xa7429af4deb16827dad0e71d8aeea9c2bf70e32c/) | ✅ Audited |
-| BoosterHelper | core_logic | ethereum | 5 deployments: ethereum [`0x00a31b...98f38c`](./contracts/ethereum-1/0x00a31b98c325a8dcb8d1dd41d65156a5c898f38c/); ethereum `0x0538ad...a7270c`; ethereum `0x26f470...f6763d`; ethereum `0x82bbbc...3d0bd0`; ethereum `0xc44a3c...c5c391` | ✅ Audited |
 | BoosterOwner | core_logic | ethereum | 4 deployments: ethereum [`0x228a14...989f04`](./contracts/ethereum-1/0x228a142081b456a9ff803d004504955032989f04/); ethereum `0x3ce640...80f1e6`; ethereum `0xb927ed...3caced`; ethereum `0xfa838a...54ec34` | ✅ Audited |
 | BoosterOwnerLite | core_logic | fraxtal | 6 deployments: optimism `0xf044ee...81d96f`; gnosis `0xa9802d...25d985`; polygon `0x8b9da5...1b5eee`; fraxtal [`0x04798c...98703c`](./contracts/fraxtal-252/0x04798c9b4546d90a97f687188d346d170298703c/); base `0x0f0dda...b755fc`; arbitrum `0x3af95b...1a1b66` | ✅ Audited |
 | BoosterOwnerSecondary | core_logic | ethereum | 3 deployments: ethereum [`0x1fdd5c...3c4760`](./contracts/ethereum-1/0x1fdd5cc20303f61f3fe2da6cad9023c9993c4760/); ethereum `0x256e1b...98b86d`; ethereum `0xce96e4...001ead` | ✅ Audited |
 | BridgeDelegateReceiver | operational_periphery | ethereum | 16 deployments: ethereum [`0x0ab84c...0ffa8e`](./contracts/ethereum-1/0x0ab84c2a7929944cecaa4cdee9255680800ffa8e/); ethereum `0x25e7c5...f4f669`; ethereum `0x397a2d...e80cd7`; ethereum `0x430113...3f36f6`; ethereum `0x60421f...b055f7`; ethereum `0x699264...af8ec4`; ethereum `0x73b4ce...63c909`; ethereum `0x7eb87c...9c2b4c`; ethereum `0x80b111...98ab8d`; ethereum `0x81ba03...3fca08`; ethereum `0x8ba971...fdf8e0`; ethereum `0x98b6dc...fcaece`; ethereum `0xac962a...08daa6`; ethereum `0xb6d84d...5ccc11`; ethereum `0xb8ca2a...d75dad`; ethereum `0xbcf3b1...108c48` | ✅ Audited |
-| ChefForwarder | unknown | ethereum | 2 deployments: ethereum [`0x57d23f...b622e9`](./contracts/ethereum-1/0x57d23f0f101cbd25a05fc56fd07de32bcbb622e9/); ethereum `0x725358...a0ccf8` | ✅ Audited |
 | ClaimFeesHelper | periphery | ethereum | 5 deployments: ethereum [`0x640397...cb28d8`](./contracts/ethereum-1/0x6403972c1e8c6d01c57eed62e6322c191ccb28d8/); ethereum `0x999dbc...d0f56e`; ethereum `0xa96ccc...808cf1`; ethereum `0xaf824c...41c200`; ethereum `0xceecea...cc81bf` | ✅ Audited |
 | ConvexMasterChef | unknown | ethereum | [`0x1ab80f...aaf4e9`](./contracts/ethereum-1/0x1ab80f7fb46b25b7e0b2cfac23fc88ac37aaf4e9/) | ✅ Audited |
 | CrvDepositor | unknown | ethereum | 2 deployments: ethereum [`0x801459...dc86ae`](./contracts/ethereum-1/0x8014595f2ab54cd7c604b00e9fb932176fdc86ae/); ethereum `0xead792...d1b827` | ✅ Audited |
@@ -98,12 +95,11 @@ The Aura family forms the backbone, with Booster/BoosterLite managing pools and 
 | PoolMigrator | core_logic | ethereum | 2 deployments: ethereum [`0x12adde...6f0578`](./contracts/ethereum-1/0x12adde99768a82871eaaecfbdb065b12c56f0578/); ethereum `0x7a04e7...67188f` | ✅ Audited |
 | RewardFactory | registry | gnosis | 10 deployments: ethereum `0x45aad1...74f356`; ethereum `0xbc8d9c...332dca`; ethereum `0xedccb3...08aa8d`; ethereum `0xf6b287...f5a37d`; optimism `0x2f4cdf...38d4f7`; gnosis [`0x0f641b...0bacae`](./contracts/gnosis-100/0x0f641b291ba374ec9b17a878c54b98005a0bacae/); polygon `0xb292be...6e0144`; fraxtal `0xc24fa5...97b7ac`; base `0x334df2...22f6b0`; arbitrum `0xda2e6b...16e7db` | ✅ Audited |
 | RewardPoolDepositWrapper | core_logic | gnosis | 7 deployments: ethereum `0xb188b1...9fec59`; optimism `0x51b6e0...749fe1`; gnosis [`0x0fec3d...0b7f76`](./contracts/gnosis-100/0x0fec3d212bcc29ef3e505b555d7a7343df0b7f76/); polygon `0xce66e8...e41146`; fraxtal `0x5849b5...e09558`; base `0xa9952c...58008e`; arbitrum `0x6b02fe...6916be` | ✅ Audited |
-| SiphonToken | token | ethereum | 5 deployments: ethereum [`0x71061c...4be4ad`](./contracts/ethereum-1/0x71061c238ea7736d3709e801d61e09423e4be4ad/); ethereum `0xa348a3...080e75`; ethereum `0xbb7a6e...af8e4f`; ethereum `0xc9307d...ff0967`; ethereum `0xfeda1c...6129e8` | ✅ Audited |
 | StashFactoryV2 | registry | polygon | 10 deployments: ethereum `0x54da42...a3e915`; ethereum `0x884da0...9c2be4`; ethereum `0x95171c...458eb5`; ethereum `0xafd890...a3a5a8`; optimism `0x8401b4...62bae8`; gnosis `0xab9016...ca4c50`; polygon [`0x4dce82...5cbd1b`](./contracts/polygon-137/0x4dce82f149649906d622efca613736a2015cbd1b/); fraxtal `0x919eeb...0efee6`; base `0x60d643...87c84c`; arbitrum `0x779aa2...2a049b` | ✅ Audited |
 | VirtualBalanceRewardPool | core_logic | ethereum | [`0xac1692...fd0147`](./contracts/ethereum-1/0xac16927429c5c7af63dd75bc9d8a58c63ffd0147/) | ✅ Audited |
 | VoterProxy | unknown | ethereum | 2 deployments: ethereum [`0x42b047...e053ee`](./contracts/ethereum-1/0x42b047d1c751a871e61ec77bfde5fbbf2ce053ee/); ethereum `0xaf5269...0dbec2` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (209)
+### ⚠️ Verified + Unaudited (213)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -112,6 +108,7 @@ The Aura family forms the backbone, with Booster/BoosterLite managing pools and 
 | cvxRewardPool | core_logic | ethereum | [`0xcf50b8...139332`](./contracts/ethereum-1/0xcf50b810e57ac33b91dcf525c6ddd9881b139332/) | ⚠️ Unaudited |
 | Vault | core_logic | ethereum | 2 deployments: ethereum [`0xba1222...6bf2c8`](./contracts/ethereum-1/0xba12222222228d8ba445958a75a0704d566bf2c8/); fraxtal `0xe42ffa...42e467` | ⚠️ Unaudited |
 | cvxFpisToken | token | ethereum | [`0xa28473...427df6`](./contracts/ethereum-1/0xa2847348b58ced0ca58d23c7e9106a49f1427df6/) | ⚠️ Unaudited |
+| AuraToken | token | ethereum | 2 deployments: ethereum [`0x665d01...59cf15`](./contracts/ethereum-1/0x665d01dbd89a0d1b693bb806feea499b5359cf15/); ethereum `0xc0c293...903dbf` | ⚠️ Unaudited |
 | cvxFxsToken | token | ethereum | [`0xfeef77...4bdf74`](./contracts/ethereum-1/0xfeef77d3f69374f66429c91d732a244f074bdf74/) | ⚠️ Unaudited |
 | BalancerGovernanceToken | token | ethereum | [`0xba1000...424e3d`](./contracts/ethereum-1/0xba100000625a3754423978a60c9317c58a424e3d/) | ⚠️ Unaudited |
 | AggregatorBatchRouter | adapter | avalanche | 4 deployments: optimism `0xb9d01c...20ab14`; gnosis `0x870f98...23fbc1`; arbitrum `0xb21a27...815c8a`; avalanche [`0x136f1e...1778d1`](./contracts/avalanche-43114/0x136f1efcc3f8f88516b9e94110d56fdbfb1778d1/) | ⚠️ Unaudited |
@@ -140,11 +137,13 @@ The Aura family forms the backbone, with Booster/BoosterLite managing pools and 
 | BatchRelayerLibrary | periphery | gnosis | 12 deployments: ethereum `0x41b953...41b7ac`; ethereum `0xd02992...58d1f9`; ethereum `0xd966d7...f0b419`; optimism `0x96484f...f13b6d`; gnosis [`0x170206...68492d`](./contracts/gnosis-100/0x1702067424096f07a60e62ccee3de9420068492d/); polygon `0x268e2e...d9af42`; fraxtal `0x662112...f2c1b8`; base `0x82416c...a382c4`; base `0xaf779e...c80632`; base `0xdf9b5b...3be025`; arbitrum `0x96484f...f13b6d`; avalanche `0x36cac2...b5a17c` | ⚠️ Unaudited |
 | BatchRouter | adapter | avalanche | 5 deployments: optimism `0xad8905...f8a85e`; gnosis `0xe2fa4e...9e285b`; arbitrum `0xad8905...f8a85e`; avalanche [`0xa523f4...4612dc`](./contracts/avalanche-43114/0xa523f47a933d5020b23629ddf689695aa94612dc/); avalanche `0xc9b360...d5988f` | ⚠️ Unaudited |
 | Boost Delegation V2 | unknown | gnosis | 5 deployments: optimism `0x681714...ff4bc0`; gnosis [`0x5dbad7...2113cd`](./contracts/gnosis-100/0x5dbad78818d4c8958eff2d5b95b28385a22113cd/); polygon `0xd961e3...15e970`; arbitrum `0x6b5da7...399e2e`; avalanche `0xe39b5e...f549d5` | ⚠️ Unaudited |
+| BoosterHelper | core_logic | ethereum | 5 deployments: ethereum [`0x00a31b...98f38c`](./contracts/ethereum-1/0x00a31b98c325a8dcb8d1dd41d65156a5c898f38c/); ethereum `0x0538ad...a7270c`; ethereum `0x26f470...f6763d`; ethereum `0x82bbbc...3d0bd0`; ethereum `0xc44a3c...c5c391` | ⚠️ Unaudited |
 | BoosterPlaceholder | core_logic | ethereum | 2 deployments: ethereum [`0xa2cf21...a86ee5`](./contracts/ethereum-1/0xa2cf21b157b2f203e37b616b619f438b5aa86ee5/); ethereum `0xd364e3...bfc71e` | ⚠️ Unaudited |
 | BoosterRewardManager | core_logic | ethereum | [`0x817ff4...e82d24`](./contracts/ethereum-1/0x817ff43b8a18b8ab76485283e42b4bd632e82d24/) | ⚠️ Unaudited |
 | BufferRouter | adapter | avalanche | 5 deployments: optimism `0x311334...358615`; gnosis `0x86e67e...e7bc2b`; arbitrum `0x311334...358615`; avalanche [`0x22625e...86b017`](./contracts/avalanche-43114/0x22625eedd92c81a219a83e1dc48f88d54786b017/); avalanche `0x681714...ff4bc0` | ⚠️ Unaudited |
 | Burner | unknown | ethereum | [`0xba9801...20272d`](./contracts/ethereum-1/0xba9801acfdf3b8852865149d93acffef9120272d/) | ⚠️ Unaudited |
 | CanonicalView | unknown | ethereum | [`0xbc4990...ac0b57`](./contracts/ethereum-1/0xbc4990b6607f456477d07c4dd80fb35258ac0b57/) | ⚠️ Unaudited |
+| ChefForwarder | unknown | ethereum | 2 deployments: ethereum [`0x57d23f...b622e9`](./contracts/ethereum-1/0x57d23f0f101cbd25a05fc56fd07de32bcbb622e9/); ethereum `0x725358...a0ccf8` | ⚠️ Unaudited |
 | ChefRewardHook | unknown | ethereum | 4 deployments: ethereum [`0x0f29b7...7b51ed`](./contracts/ethereum-1/0x0f29b765be2de395cb6b10d9ead46975057b51ed/); ethereum `0x5e2706...a67897`; ethereum `0x93e85b...42b3a2`; ethereum `0x973c2f...43eaea` | ⚠️ Unaudited |
 | ChefToken | token | ethereum | 4 deployments: ethereum [`0x4223aa...587c0f`](./contracts/ethereum-1/0x4223aa5bfd783dedcc54585cdc1cfe9ea1587c0f/); ethereum `0x745356...90d8bd`; ethereum `0x83d128...1fb565`; ethereum `0xe79d9a...60f6d0` | ⚠️ Unaudited |
 | Child Liquidity Gauge | operational_periphery | avalanche | 4 deployments: fraxtal `0x4fb471...66c968`; base `0x59562f...c3324f`; base `0x9f7e65...b37013`; avalanche [`0x4132f7...e6e6c8`](./contracts/avalanche-43114/0x4132f7acc9db7a6cf7be2dd3a9dc8b30c7e6e6c8/) | ⚠️ Unaudited |
@@ -267,6 +266,7 @@ The Aura family forms the backbone, with Booster/BoosterLite managing pools and 
 | RescueToken | token | ethereum | [`0xb15ffb...5aaac9`](./contracts/ethereum-1/0xb15ffb543211b558d40160811e5dcbcd7d5aaac9/) | ⚠️ Unaudited |
 | Router | adapter | arbitrum | 7 deployments: optimism `0xe2fa4e...9e285b`; gnosis `0x4eff2d...ff4cb5`; gnosis `0x84813a...a63617`; arbitrum [`0x0f08ee...347b7c`](./contracts/arbitrum-42161/0x0f08eef2c785aa5e7539684af04755dec1347b7c/); arbitrum `0xeaedc3...aacf2e`; avalanche `0x4bdcc2...0eada7`; avalanche `0xf39ca6...ab9015` | ⚠️ Unaudited |
 | SingleRecipientGaugeFactory | operational_periphery | ethereum | [`0x94f68b...72d227`](./contracts/ethereum-1/0x94f68b54191f62f781fe8298a8a5fa3ed772d227/) | ⚠️ Unaudited |
+| SiphonToken | token | ethereum | 5 deployments: ethereum [`0x71061c...4be4ad`](./contracts/ethereum-1/0x71061c238ea7736d3709e801d61e09423e4be4ad/); ethereum `0xa348a3...080e75`; ethereum `0xbb7a6e...af8e4f`; ethereum `0xc9307d...ff0967`; ethereum `0xfeda1c...6129e8` | ⚠️ Unaudited |
 | SmartWalletChecker | unknown | ethereum | [`0x786929...1c826c`](./contracts/ethereum-1/0x7869296efd0a76872fee62a058c8fbca5c1c826c/) | ⚠️ Unaudited |
 | SmartWalletCheckerCoordinator | unknown | ethereum | [`0x26575a...5624ea`](./contracts/ethereum-1/0x26575a44755e0aaa969fdda1e4291df22c5624ea/) | ⚠️ Unaudited |
 | SNXRecoveryCoordinator | unknown | ethereum | [`0x56a1ba...d0cb31`](./contracts/ethereum-1/0x56a1baf2f7a163ce66067f0062da60930dd0cb31/) | ⚠️ Unaudited |
@@ -595,7 +595,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [zellic_sidechain_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/sidechain/zellic_sidechain_audit_report.pdf) | Zellic | Audit | 2023-06 | stale | Direct | contract_name | 90 | high |
 | [facu_spagnuolo_aura_upgrade_01_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/upgrades/facu_spagnuolo_aura_upgrade_01_audit_report.pdf) | unknown | Audit | n/a | unknown | Direct | contract_name | 35 | medium |
 | [hephyrius_aura_upgrade_01_audit_report.pdf](https://github.com/aurafinance/aura-contracts/blob/main/audits/upgrades/hephyrius_aura_upgrade_01_audit_report.pdf) | unknown | Audit | n/a | unknown | Direct | contract_name | 45 | medium |
-| [index.md](https://github.com/aurafinance/aura-contracts/blob/main/docs/index.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 54 | medium |
 | [Code4rena-Audit-Report-AuraFinance-v1.0.pdf](https://github.com/aurafinance/aura-contracts/blob/main/security/audits/Code4rena-Audit-Report-AuraFinance-v1.0.pdf) | Code4rena | Contest | 2022-07 | stale | Direct | contract_name | 83 | high |
 | [Halborn-Audit-Report-AuraFinance-v1.0.pdf](https://github.com/aurafinance/aura-contracts/blob/main/security/audits/Halborn-Audit-Report-AuraFinance-v1.0.pdf) | Halborn | Audit | 2022-06 | stale | Direct | contract_name | 119 | high |
 | [PeckShield-Audit-Report-AuraFinance-v1.0.pdf (also discovered via alternate URL)](https://github.com/aurafinance/aura-contracts/blob/main/security/audits/PeckShield-Audit-Report-AuraFinance-v1.0.pdf) | PeckShield | Audit | 2022-04 | stale | Direct | contract_name | 36 | high |
@@ -607,9 +606,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [003-Assorted-Governance-griefing.md](https://github.com/aurafinance/aura-contracts/blob/main/security/disclosures/003-Assorted-Governance-griefing.md) | unknown | Audit | 2022-12 | stale | Direct | n/a | 0 | n/a |
 | [README.md](https://github.com/aurafinance/aura-docs/blob/main/aura/security/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [risks.md](https://github.com/aurafinance/aura-docs/blob/main/aura/security/risks.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -620,6 +616,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x616e8b...d4608d`](./contracts/ethereum-1/0x616e8bfa43f920657b3497dbf40d6b1a02d4608d/) | cvxCrvToken | token | $45,080,276.64 | Verified native implementation with $45,080,276.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xcf50b8...139332`](./contracts/ethereum-1/0xcf50b810e57ac33b91dcf525c6ddd9881b139332/) | cvxRewardPool | core_logic | $11,391,303.28 | Verified native implementation with $11,391,303.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa28473...427df6`](./contracts/ethereum-1/0xa2847348b58ced0ca58d23c7e9106a49f1427df6/) | cvxFpisToken | token | $2,129,509.33 | Verified native implementation with $2,129,509.33 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x665d01...59cf15`](./contracts/ethereum-1/0x665d01dbd89a0d1b693bb806feea499b5359cf15/) | AuraToken | token | $1,109,611.19 | Verified native implementation with $1,109,611.19 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xfeef77...4bdf74`](./contracts/ethereum-1/0xfeef77d3f69374f66429c91d732a244f074bdf74/) | cvxFxsToken | token | $1,093,078.88 | Verified native implementation with $1,093,078.88 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x25e124...c21616`](./contracts/ethereum-1/0x25e12482a25cf36ec70fda2a09c1ed077fc21616/) | ArbitratorVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2aa497...0a1f9c`](./contracts/ethereum-1/0x2aa497d6c6cc0cce9a49ea70b0701092a10a1f9c/) | AuraBalRedemption | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -632,10 +629,12 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xfbd41e...592e63`](./contracts/ethereum-1/0xfbd41e0c4517a684c121aa7dda2fc462d9592e63/) | AuraRelockers | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x129bbd...40c229`](./contracts/ethereum-1/0x129bbda5087e132983e7c20ae1f761333d40c229/) | AuraViewHelpers | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb848f5...4f2158`](./contracts/ethereum-1/0xb848f50141f3d4255b37ac288c25c109104f2158/) | BALTokenHolderFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x00a31b...98f38c`](./contracts/ethereum-1/0x00a31b98c325a8dcb8d1dd41d65156a5c898f38c/) | BoosterHelper | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa2cf21...a86ee5`](./contracts/ethereum-1/0xa2cf21b157b2f203e37b616b619f438b5aa86ee5/) | BoosterPlaceholder | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x817ff4...e82d24`](./contracts/ethereum-1/0x817ff43b8a18b8ab76485283e42b4bd632e82d24/) | BoosterRewardManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xba9801...20272d`](./contracts/ethereum-1/0xba9801acfdf3b8852865149d93acffef9120272d/) | Burner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xbc4990...ac0b57`](./contracts/ethereum-1/0xbc4990b6607f456477d07c4dd80fb35258ac0b57/) | CanonicalView | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x57d23f...b622e9`](./contracts/ethereum-1/0x57d23f0f101cbd25a05fc56fd07de32bcbb622e9/) | ChefForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0f29b7...7b51ed`](./contracts/ethereum-1/0x0f29b765be2de395cb6b10d9ead46975057b51ed/) | ChefRewardHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4223aa...587c0f`](./contracts/ethereum-1/0x4223aa5bfd783dedcc54585cdc1cfe9ea1587c0f/) | ChefToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x22625e...86b017`](./contracts/polygon-137/0x22625eedd92c81a219a83e1dc48f88d54786b017/) | ChildChainGaugeFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -709,6 +708,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xb15ffb...5aaac9`](./contracts/ethereum-1/0xb15ffb543211b558d40160811e5dcbcd7d5aaac9/) | RescueToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | gnosis | [`0x4ea38a...5328e8`](./contracts/gnosis-100/0x4ea38a5739d467f7f84c06155ee2ad745e5328e8/) | SidechainClaimZap | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x94f68b...72d227`](./contracts/ethereum-1/0x94f68b54191f62f781fe8298a8a5fa3ed772d227/) | SingleRecipientGaugeFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x71061c...4be4ad`](./contracts/ethereum-1/0x71061c238ea7736d3709e801d61e09423e4be4ad/) | SiphonToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x26575a...5624ea`](./contracts/ethereum-1/0x26575a44755e0aaa969fdda1e4291df22c5624ea/) | SmartWalletCheckerCoordinator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x56a1ba...d0cb31`](./contracts/ethereum-1/0x56a1baf2f7a163ce66067f0062da60930dd0cb31/) | SNXRecoveryCoordinator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1d0c89...476d80`](./contracts/ethereum-1/0x1d0c890236261c3a2440af03ab10654e60476d80/) | StakingProxyERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -756,18 +756,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 6
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=8, medium=8
-- Match method counts: extraction_exact=745
+- Extraction confidence breakdown: high=8, medium=7
+- Match method counts: extraction_exact=691
 
 Zero-match audit list:
 
 - [5974] 003-Assorted-Governance-griefing.md
 - [5976] README.md
 - [5977] risks.md
-- [5978] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5979] 0002-metadata-manifest-and-pull-command.md
-- [5980] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

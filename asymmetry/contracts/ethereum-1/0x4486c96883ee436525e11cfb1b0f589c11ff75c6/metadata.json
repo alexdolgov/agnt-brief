@@ -1,0 +1,18 @@
+{
+  "address": "0x4486c96883ee436525e11cfb1b0f589c11ff75c6",
+  "chain_id": 1,
+  "contract_name": "SiloLenderAprOracle",
+  "compiler_version": "v0.8.18+commit.87f61d96",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "AGPL-3.0, BUSL-1.1, MIT, agpl-3.0",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 31,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-31T06:28:47.148Z"
+}

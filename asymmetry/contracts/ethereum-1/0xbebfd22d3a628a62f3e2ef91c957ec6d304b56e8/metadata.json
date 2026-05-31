@@ -1,0 +1,18 @@
+{
+  "address": "0xbebfd22d3a628a62f3e2ef91c957ec6d304b56e8",
+  "chain_id": 1,
+  "contract_name": "StakeERC20Portal",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-only",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "partial_match",
+  "source_file_count": 3,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-31T06:28:51.015Z"
+}

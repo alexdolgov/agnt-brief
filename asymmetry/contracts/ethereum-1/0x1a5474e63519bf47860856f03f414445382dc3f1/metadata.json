@@ -1,0 +1,18 @@
+{
+  "address": "0x1a5474e63519bf47860856f03f414445382dc3f1",
+  "chain_id": 1,
+  "contract_name": "StafiNetworkSettings",
+  "compiler_version": "v0.6.12+commit.27d51765",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-only",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 6,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-31T06:28:44.698Z"
+}

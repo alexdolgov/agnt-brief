@@ -1,0 +1,820 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "debt_amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "upfront_fee",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "annual_interest_rate",
+        "type": "uint256"
+      }
+    ],
+    "name": "OpenTrove",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "AddCollateral",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "RemoveCollateral",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "debt_amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "upfront_fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "Borrow",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "debt_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Repay",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "new_annual_interest_rate",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "upfront_fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "AdjustInterestRate",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "debt_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "CloseTrove",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "debt_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "CloseZombieTrove",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "liquidator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "debt_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidateTrove",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "redeemer",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "collateral_amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "debt_amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "debt_amount_out",
+        "type": "uint256"
+      }
+    ],
+    "name": "Redeem",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "name": "debt_amount",
+        "type": "uint256"
+      },
+      {
+        "name": "annual_interest_rate",
+        "type": "uint256"
+      }
+    ],
+    "name": "get_upfront_fee",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "get_trove_debt_after_interest",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sync_total_debt",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "new_owner",
+        "type": "address"
+      }
+    ],
+    "name": "transfer_ownership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "accept_ownership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "name": "new_owner",
+        "type": "address"
+      }
+    ],
+    "name": "force_transfer_ownership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "name": "collateral_amount",
+        "type": "uint256"
+      },
+      {
+        "name": "debt_amount",
+        "type": "uint256"
+      },
+      {
+        "name": "prev_id",
+        "type": "uint256"
+      },
+      {
+        "name": "next_id",
+        "type": "uint256"
+      },
+      {
+        "name": "annual_interest_rate",
+        "type": "uint256"
+      },
+      {
+        "name": "max_upfront_fee",
+        "type": "uint256"
+      },
+      {
+        "name": "min_debt_out",
+        "type": "uint256"
+      }
+    ],
+    "name": "open_trove",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "name": "collateral_change",
+        "type": "uint256"
+      }
+    ],
+    "name": "add_collateral",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "name": "collateral_change",
+        "type": "uint256"
+      }
+    ],
+    "name": "remove_collateral",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "name": "debt_amount",
+        "type": "uint256"
+      },
+      {
+        "name": "max_upfront_fee",
+        "type": "uint256"
+      },
+      {
+        "name": "min_debt_out",
+        "type": "uint256"
+      }
+    ],
+    "name": "borrow",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "name": "debt_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "repay",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "name": "new_annual_interest_rate",
+        "type": "uint256"
+      },
+      {
+        "name": "prev_id",
+        "type": "uint256"
+      },
+      {
+        "name": "next_id",
+        "type": "uint256"
+      },
+      {
+        "name": "max_upfront_fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "adjust_interest_rate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "close_trove",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "close_zombie_trove",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "liquidate_trove",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "redeem",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "LENDER",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "EXCHANGE",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "SORTED_TROVES",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "BORROW_TOKEN",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "COLLATERAL_TOKEN",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MINIMUM_COLLATERAL_RATIO",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MIN_DEBT",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MIN_ANNUAL_INTEREST_RATE",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "MAX_ANNUAL_INTEREST_RATE",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "UPFRONT_INTEREST_PERIOD",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "INTEREST_RATE_ADJ_COOLDOWN",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "zombie_trove_id",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "total_debt",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "total_weighted_debt",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "last_debt_update_time",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "collateral_balance",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      }
+    ],
+    "name": "troves",
+    "outputs": [
+      {
+        "components": [
+          {
+            "name": "debt",
+            "type": "uint256"
+          },
+          {
+            "name": "collateral",
+            "type": "uint256"
+          },
+          {
+            "name": "annual_interest_rate",
+            "type": "uint256"
+          },
+          {
+            "name": "last_debt_update_time",
+            "type": "uint64"
+          },
+          {
+            "name": "last_interest_rate_adj_time",
+            "type": "uint64"
+          },
+          {
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "name": "status",
+            "type": "uint256"
+          }
+        ],
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "lender",
+        "type": "address"
+      },
+      {
+        "name": "exchange",
+        "type": "address"
+      },
+      {
+        "name": "sorted_troves",
+        "type": "address"
+      },
+      {
+        "name": "borrow_token",
+        "type": "address"
+      },
+      {
+        "name": "collateral_token",
+        "type": "address"
+      },
+      {
+        "name": "minimum_collateral_ratio",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  }
+]

@@ -7,8 +7,8 @@
 - Project: dForce (`dforce`)
 - Website: [https://dforce.network/](https://dforce.network/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-28T16:37:02.364Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
+- Generated: 2026-05-31T06:31:51.937Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: arbitrum, avalanche, bsc, ethereum, kava, optimism, polygon
 - Contract surface: 450 unique implementations (1011 raw deployments)
 - DeFi Llama TVL: $12,480,361.00
@@ -31,11 +31,11 @@ The dForce and dForce Lending families share similar lending logic and token sta
 - Unverified implementations: 340
 - Unique implementations: 450
 - Raw deployments: 1011
-- Audits discovered: 20
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $3,605,459.70
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 20 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $3,605,459.70 represents exposure in a protocol with declining activity.
 
@@ -533,24 +533,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [How_to_integrate_with_USDx.pdf](https://github.com/dforce-network/USDx_1.0/blob/master/docs/How_to_integrate_with_USDx.pdf) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | medium |
 | [dip001_design.pdf](https://github.com/dforce-network/DIP001/blob/master/docs/dip001_design.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [account-abstraction.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/account-abstraction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [app-blocklist.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/app-blocklist.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [cross-chain.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/cross-chain.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [data-indexers.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/data-indexers.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [report.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/report.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [using-base.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/using-base.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [wallet.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/wallet.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [why-base.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/chain/why-base.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [generate-random-numbers-contracts.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/cookbook/smart-contract-development/foundry/generate-random-numbers-contracts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [verify-contract-with-basescan.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/cookbook/smart-contract-development/foundry/verify-contract-with-basescan.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [deploy-with-hardhat.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/cookbook/smart-contract-development/hardhat/deploy-with-hardhat.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [optimizing-gas-usage.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/cookbook/smart-contract-development/hardhat/optimizing-gas-usage.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [reducing-contract-size.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/cookbook/smart-contract-development/hardhat/reducing-contract-size.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [privacy-policy.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/privacy-policy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [terms-of-service.md](https://github.com/UnitusLabs/web/blob/master/apps/base-docs/docs/pages/terms-of-service.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -649,7 +632,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 19
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: medium=1
 - Match method counts: extraction_exact=5
@@ -657,23 +640,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [6953] dip001_design.pdf
-- [6954] account-abstraction.md
-- [6955] app-blocklist.md
-- [6956] cross-chain.md
-- [6957] data-indexers.md
 - [6958] report.md
-- [6959] using-base.md
-- [6960] wallet.md
-- [6961] why-base.md
-- [6962] generate-random-numbers-contracts.md
-- [6963] verify-contract-with-basescan.md
-- [6964] deploy-with-hardhat.md
-- [6965] optimizing-gas-usage.md
-- [6966] reducing-contract-size.md
-- [6967] privacy-policy.md
-- [6968] terms-of-service.md
-- [6969] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [6970] 0002-metadata-manifest-and-pull-command.md
-- [6971] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

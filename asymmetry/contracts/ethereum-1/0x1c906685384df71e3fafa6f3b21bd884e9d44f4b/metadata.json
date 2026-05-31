@@ -1,0 +1,18 @@
+{
+  "address": "0x1c906685384df71e3fafa6f3b21bd884e9d44f4b",
+  "chain_id": 1,
+  "contract_name": "StafiLightNode",
+  "compiler_version": "v0.7.6+commit.7338295f",
+  "optimization_used": false,
+  "runs": 200,
+  "evm_version": "istanbul",
+  "license": "GPL-3.0-only, MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 14,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-31T06:28:44.534Z"
+}

@@ -1,0 +1,17 @@
+{
+  "address": "0x8109a89d1c779724de794fa34f5cd4b5ebafb7c3",
+  "chain_id": 1,
+  "contract_name": "CryptoFromPoolVaultWAgg",
+  "compiler_version": "vyper:0.3.10",
+  "optimization_used": false,
+  "runs": 0,
+  "evm_version": "cancun",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 1,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-31T06:28:49.711Z"
+}

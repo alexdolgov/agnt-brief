@@ -1,0 +1,16 @@
+# AddressesRegistry
+
+| Field | Value |
+|---|---|
+| Chain | ethereum (1) |
+| Address | `0x0ad1c302203f0fbb6ca34641bdfef0bf4182377c` |
+| Role | registry |
+| Origin | native |
+| Audited | No |
+| Audits | n/a |
+| Deployments | 52 (ethereum [`0x0ad1c302203f0fbb6ca34641bdfef0bf4182377c`](../0x0ad1c302203f0fbb6ca34641bdfef0bf4182377c/); ethereum `0x0c7b6c6a60ae2016199d393695667c1482719c82`; ethereum `0x0f7eb92d20e9624601d7dd92122aed80efa8ec6a`; ethereum `0x136dac76eeb80e0e2c0ed13f1ae416f2faeef5a4`; ethereum `0x16b8111a999a9bdc3181192620a8f7b2439837dd`; ethereum `0x1e32314e60414ed28ee3579c0c754cfe071d131e`; ethereum `0x20e3630d9ce22c7f3a4aee735fa007c06f4709df`; ethereum `0x2421d3e8341c9707e80b6544d114ac5140f26679`; ethereum `0x2aff30744843af04f68286fa4818d44e93b80561`; ethereum `0x2c5a85a3fd181857d02baff169d1e1cb220ead6d`; ethereum `0x2d598c684611fcea588e1fef6d4c50d7bd09c705`; ethereum `0x3249b3196798cafc3a3ff023f719196410c7836e`; ethereum `0x330a0fdfc1818be022fedce96a041293e16dc6d1`; ethereum `0x3414bd84dff0900a9046a987f4df2e0ef08fa1ce`; ethereum `0x37c47df67d664abbc382d9d80b629678f3f83004`; ethereum `0x3a38508bb69a86bd3ba85d8064e4c2574d18ea16`; ethereum `0x452eb8c3d70b343890a4b16f3971918dfdd96007`; ethereum `0x4995a3abb6304f12a7e730a08b33399ead983c0c`; ethereum `0x4b3eb2b1bbb0134d5ed5daa35fea78424b9481cd`; ethereum `0x4fc2cbc3417d6b0915bd768081c34a4537941bf6`; ethereum `0x5c1fa71022fb6fdcfd5bda745d50eb9bc9ac64ad`; ethereum `0x65799d1368ed24125179dd6bf5e9b845797ca1ba`; ethereum `0x681c639e727bdfcd1649d0105873b8dff2ef526d`; ethereum `0x6b284e60b80682be76134b1b2a6ca85f6a360e81`; ethereum `0x7e6900108b7777ce017f557d0f155d45b3458586`; ethereum `0x7e901c53e4d7991c298b34e817b47a2c2d0a19f2`; ethereum `0x7f32320669e22380d00b28492e4479b93872d568`; ethereum `0x7f5cf9d64509f424e20db9bf2024249c5fee214f`; ethereum `0x809501fd65ff781bf5abc13aaa802cdb982d39f8`; ethereum `0x84f899d30b440d4d1cffff08cd400f07c592cbc1`; ethereum `0x89ce318037f6351ca4d3f745ce2f68a7deb35ca5`; ethereum `0x901ea6ab1d7ac0e23082effe14cd6aeb924bfb4f`; ethereum `0x90e5e4aa352d4a68fae9e0f3bb3b9ac2578b69ab`; ethereum `0x91185811fa46ddf20403a191e79d880dd262f27b`; ethereum `0x91a30ac56db5628b3f23aa4a0e722f1f725fc0ee`; ethereum `0x951530bf4a99599dd7bc5ad4541fd301dc2df669`; ethereum `0x9df5e7e2ae001c513bcb932ef3afe52519ba8bdc`; ethereum `0xa42a10646510950dd24043490473ca74639fa7ef`; ethereum `0xa7bada7bda4fd4620956e9e4534367e72f018a8b`; ethereum `0xb3d1111a80d5f1e244da51bb11168e2169c759e1`; ethereum `0xb91297d23f1d0e8ba75d5a985cebccb7f2078930`; ethereum `0xb9b7dbe18ef41dd9848be09ed825a2a4677eb9c7`; ethereum `0xbd9f75471990041a3e7c22872c814a273485e999`; ethereum `0xbe4a0c74f5d4ba26871e7b18a9bc144b006e2a6e`; ethereum `0xc693c91c855f4b51957f8ea221534538232f0f98`; ethereum `0xc8d81c4fe3b778dd761dfce504dd2046c2335c8f`; ethereum `0xd1da8a03541ea81f121a38d2c3965a4023b51f12`; ethereum `0xd3b7bc894675219e8a0a0eb3095984f9b32af240`; ethereum `0xe28516d2174a50ac3cf134a0d1e3e654147cdc34`; ethereum `0xe9b4fc950244c25664a5b2c87a7014001f7a1021`; ethereum `0xec500fda25b00814935a251f407395a9040c8510`; ethereum `0xf81298f9f45ba49a76ddae071b8622766584464e`) |
+| Proxy | No |
+| Source | Etherscan |
+| TVL | n/a |
+
+[← Back to brief](../../../brief.md) · [← Contract index](../../README.md)

@@ -1,0 +1,18 @@
+{
+  "address": "0x1ef01391c3fe1723dc32717b7112c54da3137801",
+  "chain_id": 1,
+  "contract_name": "sanity",
+  "compiler_version": "v0.4.1+commit.8a93dd27",
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 2,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-31T06:28:45.066Z"
+}

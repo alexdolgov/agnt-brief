@@ -1,0 +1,6 @@
+# @version 0.4.1
+
+
+@external
+def swap(amount: uint256, min_amount: uint256, from_af: bool) -> uint256:
+    ...

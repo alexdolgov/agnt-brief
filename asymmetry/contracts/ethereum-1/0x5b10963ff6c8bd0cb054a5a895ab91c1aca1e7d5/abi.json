@@ -1,0 +1,238 @@
+[
+  {
+    "name": "empty",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "size",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "first",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "last",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "next",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "prev",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "contains",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "valid_insert_position",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "annual_interest_rate",
+        "type": "uint256"
+      },
+      {
+        "name": "prev_id",
+        "type": "uint256"
+      },
+      {
+        "name": "next_id",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "find_insert_position",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "annual_interest_rate",
+        "type": "uint256"
+      },
+      {
+        "name": "prev_id",
+        "type": "uint256"
+      },
+      {
+        "name": "next_id",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "name": "insert",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "name": "annual_interest_rate",
+        "type": "uint256"
+      },
+      {
+        "name": "prev_id",
+        "type": "uint256"
+      },
+      {
+        "name": "next_id",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "remove",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "re_insert",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "trove_id",
+        "type": "uint256"
+      },
+      {
+        "name": "new_annual_interest_rate",
+        "type": "uint256"
+      },
+      {
+        "name": "prev_id",
+        "type": "uint256"
+      },
+      {
+        "name": "next_id",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "name": "TROVE_MANAGER",
+    "type": "function",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "trove_manager",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  }
+]

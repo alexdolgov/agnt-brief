@@ -6,8 +6,8 @@
 | Address | `0xf74d3a34655954f0264b068250009aee1f06f101` |
 | Role | operational_periphery |
 | Origin | upstream |
-| Audited | Yes |
-| Audits | [KyberDmmOracle.md](https://github.com/1inch/spot-price-aggregator/blob/master/docs/oracles/KyberDmmOracle.md) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 1 (ethereum [`0xf74d3a34655954f0264b068250009aee1f06f101`](../0xf74d3a34655954f0264b068250009aee1f06f101/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |

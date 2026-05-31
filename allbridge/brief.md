@@ -7,8 +7,8 @@
 - Project: Allbridge (`allbridge`)
 - Website: [https://app.allbridge.io](https://app.allbridge.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-30T10:36:38.586Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T06:31:44.452Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: arbitrum, aurora, avalanche, base, bsc, celo, ethereum, fantom, harmony, optimism, polygon, sonic, unichain
 - Contract surface: 284 unique implementations (541 raw deployments)
 - DeFi Llama TVL: $26,552,200.00
@@ -31,11 +31,11 @@ Allbridge Classic and Allbridge Core are separate bridge implementations that do
 - Unverified implementations: 200
 - Unique implementations: 284
 - Raw deployments: 541
-- Audits discovered: 26
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $319,180,540.18
 - Latest audit: 2022-07 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 23 unknown
+- Staleness: 0 fresh, 0 aging, 3 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $319,180,540.18 represents exposure in a protocol with declining activity.
 
@@ -364,24 +364,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [<>](https://hacken.io/audits) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [<>](https://drive.google.com/file/d/1geBAoT0iuLy3s7EnlUBDKfXr-BwZWpHZ/view) | Kudelski Security | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index.md](https://github.com/allbridge-io/terraform-provider-evm/blob/master/docs/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contract.md](https://github.com/allbridge-io/terraform-provider-evm/blob/master/docs/resources/contract.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contract_tx.md](https://github.com/allbridge-io/terraform-provider-evm/blob/master/docs/resources/contract_tx.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [random_pk.md](https://github.com/allbridge-io/terraform-provider-evm/blob/master/docs/resources/random_pk.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [bridge-workflow.md](https://github.com/allbridge-io/allbridge-mcp/blob/master/docs/bridge-workflow.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [client-integrations.md (also discovered via alternate URL)](https://github.com/allbridge-io/allbridge-mcp/blob/master/docs/client-integrations.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [configuration.md](https://github.com/allbridge-io/allbridge-mcp/blob/master/docs/configuration.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [examples.md](https://github.com/allbridge-io/allbridge-mcp/blob/master/docs/examples.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [handoff.md](https://github.com/allbridge-io/allbridge-mcp/blob/master/docs/handoff.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [overview.md](https://github.com/allbridge-io/allbridge-mcp/blob/master/docs/overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [quickstart.md](https://github.com/allbridge-io/allbridge-mcp/blob/master/docs/quickstart.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [tools-reference.md](https://github.com/allbridge-io/allbridge-mcp/blob/master/docs/tools-reference.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [transport-and-auth.md](https://github.com/allbridge-io/allbridge-mcp/blob/master/docs/transport-and-auth.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [usage.md (also discovered via alternate URL)](https://github.com/allbridge-io/allbridge-mcp/blob/master/docs/usage.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [README.md](https://github.com/allbridge-io/local-signer-mcp/blob/master/docs/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [20211105-Neodyme.pdf](https://github.com/allbridge-public/neon-evm/blob/container/audit/20211105-Neodyme.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [20211117-LeastAuthority.pdf](https://github.com/allbridge-public/neon-evm/blob/container/audit/20211117-LeastAuthority.pdf) | unknown | Audit | 2021-11 | stale | Direct | n/a | 0 | n/a |
 | [20220916-Halborn.pdf](https://github.com/allbridge-public/neon-evm/blob/container/audit/20220916-Halborn.pdf) | Halborn | Audit | 2022-07 | stale | Direct | n/a | 0 | n/a |
@@ -460,7 +442,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 26
+- Audits with zero matched contracts: 8
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -469,24 +451,6 @@ Zero-match audit list:
 
 - [1819] <>
 - [1820] <>
-- [9768] index.md
-- [9769] contract.md
-- [9770] contract_tx.md
-- [9771] random_pk.md
-- [9772] bridge-workflow.md
-- [9773] client-integrations.md
-- [9774] configuration.md
-- [9775] examples.md
-- [9776] handoff.md
-- [9777] overview.md
-- [9778] quickstart.md
-- [9779] tools-reference.md
-- [9780] transport-and-auth.md
-- [9781] usage.md
-- [9782] README.md
-- [9785] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [9786] 0002-metadata-manifest-and-pull-command.md
-- [9787] 0003-bun-package-manager-node-runtime.md
 - [9788] 20211105-Neodyme.pdf
 - [9789] 20211117-LeastAuthority.pdf
 - [9790] 20220916-Halborn.pdf

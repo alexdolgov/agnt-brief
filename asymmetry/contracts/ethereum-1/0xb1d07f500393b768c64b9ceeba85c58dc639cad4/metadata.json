@@ -1,0 +1,18 @@
+{
+  "address": "0xb1d07f500393b768c64b9ceeba85c58dc639cad4",
+  "chain_id": 1,
+  "contract_name": "yvweth2_to_usdc_oracle",
+  "compiler_version": "v0.4.3+commit.bff19ea2",
+  "optimization_used": null,
+  "runs": null,
+  "evm_version": null,
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 5,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-31T06:28:50.130Z"
+}

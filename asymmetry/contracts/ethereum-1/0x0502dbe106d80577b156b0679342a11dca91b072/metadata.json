@@ -1,0 +1,17 @@
+{
+  "address": "0x0502dbe106d80577b156b0679342a11dca91b072",
+  "chain_id": 1,
+  "contract_name": "USDaf Flash Zapper",
+  "compiler_version": "vyper:0.4.1",
+  "optimization_used": true,
+  "runs": 0,
+  "evm_version": "Default",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-05-31T06:28:42.900Z"
+}

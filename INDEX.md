@@ -2,7 +2,7 @@
 
 | Project | TVL | Coverage | ASD | Lifecycle | Audits | Contracts | Updated |
 |---|---|---|---|---|---|---|---|
-| [1inch](./1inch/) | $16.1M | 33.6% | $16.1M | declining | 416 | 274 | 2026-05-29 |
+| [1inch](./1inch/) | $16.1M | 22.4% | $16.1M | declining | 149 | 274 | 2026-05-31 |
 | [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [3f-mutual](./3f-mutual/) | $3.8M | 0.0% | ? | active | 3 | 21 | 2026-05-28 |
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-05-26 |
@@ -22,7 +22,7 @@
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | unknown | 1 | 2 | 2026-05-23 |
 | [alchemix](./alchemix/) | $340.7M | 7.4% | $338.7M | declining | 91 | 388 | 2026-05-30 |
 | [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 97 | 58 | 2026-05-28 |
-| [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 26 | 284 | 2026-05-30 |
+| [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 8 | 284 | 2026-05-31 |
 | [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 22 | 144 | 2026-05-28 |
 | [alphagrowth](./alphagrowth/) | $6.3M | 18.2% | $6.3M | active | 16 | 56 | 2026-05-25 |
 | [alphaping](./alphaping/) | $67.9M | 0.0% | ? | active | 3 | 1 | 2026-05-28 |
@@ -51,9 +51,10 @@
 | [arrakis-finance](./arrakis-finance/) | $128.2K | 29.1% | $3.1K | active | 15 | 124 | 2026-05-28 |
 | [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 3 | 1 | 2026-05-28 |
 | [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-05-24 |
+| [asymmetry](./asymmetry/) | $37.1M | 0.0% | $37.1M | unknown | 1 | 203 | 2026-05-31 |
 | [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | declining | 5 | 43 | 2026-05-28 |
 | [augur](./augur/) | $1.7M | 64.1% | ? | active | 7 | 39 | 2026-05-24 |
-| [aura](./aura/) | $277.0M | 20.5% | $237.2M | declining | 22 | 502 | 2026-05-29 |
+| [aura](./aura/) | $277.0M | 19.0% | $238.3M | declining | 18 | 502 | 2026-05-31 |
 | [aurora-plus](./aurora-plus/) | $2.0M | 33.3% | ? | active | 3 | 31 | 2026-05-24 |
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | dead | 1 | 10 | 2026-05-25 |
 | [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 3 | 570 | 2026-05-29 |
@@ -165,7 +166,7 @@
 | [desyn-protocol](./desyn-protocol/) | $10.7M | 0.0% | ? | dead | 3 | 11 | 2026-05-28 |
 | [dexalot](./dexalot/) | $4.2M | 100.0% | ? | active | 91 | 1 | 2026-05-29 |
 | [dflow](./dflow/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
-| [dforce](./dforce/) | $3.6M | 3.6% | $3.6M | declining | 20 | 450 | 2026-05-28 |
+| [dforce](./dforce/) | $3.6M | 3.6% | $3.6M | declining | 3 | 450 | 2026-05-31 |
 | [dinari](./dinari/) | $36.6K | 37.5% | $36.6K | unknown | 4 | 71 | 2026-05-23 |
 | [dnax](./dnax/) | $3.5M | 0.0% | ? | active | 16 | 1 | 2026-05-28 |
 | [dodo](./dodo/) | $20.6M | 0.0% | $20.6M | declining | 1 | 569 | 2026-05-25 |

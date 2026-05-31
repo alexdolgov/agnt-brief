@@ -7,8 +7,8 @@
 - Project: Templar DAO (`templar-dao`)
 - Website: [https://templar.finance/](https://templar.finance/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-29T16:00:04.855Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T10:55:06.211Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: bsc
 - Contract surface: 40 unique implementations (63 raw deployments)
 - DeFi Llama TVL: $2,228,699.74
@@ -31,11 +31,11 @@ The TemplarToken is the central asset, while Staking and MasterChef contracts di
 - Unverified implementations: 15
 - Unique implementations: 40
 - Raw deployments: 63
-- Audits discovered: 3
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $1,554,255.18
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $1,554,255.18 represents exposure in a protocol with unknown activity.
 
@@ -117,9 +117,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -166,15 +163,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [9136] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [9137] 0002-metadata-manifest-and-pull-command.md
-- [9138] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -7,11 +7,11 @@
 - Project: Tarot (`tarot`)
 - Website: [https://www.tarot.to](https://www.tarot.to)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-25T16:17:29.811Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-05-31T10:58:10.674Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, avalanche, base, bsc, canto, ethereum, fantom, kava, linea, optimism, polygon, scroll
 - Contract surface: 139 unique implementations (283 raw deployments)
-- DeFi Llama TVL: $1,144,454.49
+- DeFi Llama TVL: $1,138,972.49
 - On-chain TVL (included contracts): $154,441.77
 - TVL by chain: Optimism $154,441.77
 

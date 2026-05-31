@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tarot",
-  "generated_at": "2026-05-25T16:17:29.811Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-05-31T10:58:10.674Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "tarot",
@@ -45,7 +45,7 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1144454.4868700001,
+    "dl_tvl_usd": 1138972.4923599998,
     "tvl_usd": 154441.76602856693,
     "tvl_source": "on_chain",
     "tvl_by_chain": {

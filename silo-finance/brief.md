@@ -7,8 +7,8 @@
 - Project: Silo Finance (`silo-finance`)
 - Website: [https://app.silo.finance](https://app.silo.finance)
 - Lifecycle: unknown (Tier 0, 92.5% below peak)
-- Generated: 2026-05-31T06:43:11.527Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
+- Generated: 2026-05-31T10:37:24.241Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, avalanche, base, ethereum, optimism, sonic
 - Contract surface: 529 unique implementations (1839 raw deployments)
 - DeFi Llama TVL: $92,123,113.00

@@ -530,12 +530,12 @@
 | [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 5 | 111 | 2026-05-31 |
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
 | [shape-bridge](./shape-bridge/) | $1.1M | 0.0% | ? | active | 2 | 28 | 2026-05-25 |
-| [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | unknown | 51 | 40 | 2026-05-29 |
-| [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 4 | 12 | 2026-05-30 |
+| [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | unknown | 11 | 40 | 2026-05-31 |
+| [shardingdao](./shardingdao/) | $1.4M | 0.0% | $1.4M | active | 1 | 12 | 2026-05-31 |
 | [sicx](./sicx/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
-| [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 3 | 2 | 2026-05-29 |
+| [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 0 | 2 | 2026-05-31 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-05-26 |
-| [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 3 | 231 | 2026-05-29 |
+| [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 0 | 231 | 2026-05-31 |
 | [silo-finance](./silo-finance/) | $3.3M | 15.7% | $641.3K | unknown | 10 | 529 | 2026-05-31 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-05-23 |
 | [singularv](./singularv/) | $1.1B | 18.6% | $1.1B | unknown | 12 | 83 | 2026-05-29 |

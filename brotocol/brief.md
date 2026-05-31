@@ -5,8 +5,8 @@
 - Project: Brotocol (`brotocol`)
 - Website: [https://brotocol.xyz/](https://brotocol.xyz/)
 - Lifecycle: active (Tier 0, 81.8% below peak)
-- Generated: 2026-05-31T06:48:14.751Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-7f15
+- Generated: 2026-05-31T07:34:59.661Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, merlin, mode
 - Contract surface: 238 unique implementations (238 raw deployments)
 - DeFi Llama TVL: $12,240,302.37

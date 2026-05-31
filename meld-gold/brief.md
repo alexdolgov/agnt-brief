@@ -5,11 +5,11 @@
 - Project: Meld Gold (`meld-gold`)
 - Website: [https://meld.gold](https://meld.gold)
 - Lifecycle: active (Tier 0, 27.2% below peak)
-- Generated: 2026-05-23T02:23:25.318Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-31T09:53:26.654Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 1 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $11,130,545.46
+- DeFi Llama TVL: $11,125,037.93
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 

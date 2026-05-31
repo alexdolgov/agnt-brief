@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "meld-gold",
-  "generated_at": "2026-05-23T02:23:25.318Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-31T09:53:26.654Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "meld-gold",
@@ -35,8 +35,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 11130545.45532,
-    "tvl_usd": 11130545.45532,
+    "dl_tvl_usd": 11125037.9307,
+    "tvl_usd": 11125037.9307,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,

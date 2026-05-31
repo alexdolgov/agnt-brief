@@ -7,8 +7,8 @@
 - Project: Mento (`mento`)
 - Website: [https://www.mento.org/](https://www.mento.org/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T10:36:24.347Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T09:55:03.944Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: celo, ethereum
 - Contract surface: 180 unique implementations (180 raw deployments)
 - DeFi Llama TVL: $19,575,119.00
@@ -23,11 +23,11 @@
 - Unverified implementations: 180
 - Unique implementations: 180
 - Raw deployments: 180
-- Audits discovered: 81
+- Audits discovered: 12
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2026-05 (fresh)
-- Staleness: 6 fresh, 4 aging, 4 stale, 67 unknown
+- Latest audit: 2025-08 (fresh)
+- Staleness: 1 fresh, 4 aging, 4 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -248,23 +248,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [environment-variables.md (also discovered via alternate URL)](https://github.com/mento-protocol/mento-analytics-api/blob/main/docs/environment-variables.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [preview-deployments-setup-guide.md](https://github.com/mento-protocol/mento-analytics-api/blob/main/docs/preview-deployments-setup-guide.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [preview-deployments.md](https://github.com/mento-protocol/mento-analytics-api/blob/main/docs/preview-deployments.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [sentry-releases.md](https://github.com/mento-protocol/mento-analytics-api/blob/main/docs/sentry-releases.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [README.md (also discovered via alternate URL)](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ci-github-actions.md](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/ci-github-actions.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contributing.md](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/contributing.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [fork-and-local-chain.md](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/fork-and-local-chain.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [getting-started.md](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/getting-started.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [glossary-and-conventions.md](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/glossary-and-conventions.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [logging-and-reporting.md](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/logging-and-reporting.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [overview.md](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [project-structure.md](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/project-structure.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [running-tests.md](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/running-tests.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [test-architecture.md](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/test-architecture.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [tools-and-scripts.md](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/tools-and-scripts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [troubleshooting.md (also discovered via alternate URL)](https://github.com/mento-protocol/mento-automation-tests/blob/main/docs/troubleshooting.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [2024-04-11-cyfrin-wormhole-evm-ntt.pdf](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/evm/2024-04-11-cyfrin-wormhole-evm-ntt.pdf) | Cyfrin | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
 | [2024-04-cantina-wormhole-evm-ntt.pdf](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/evm/2024-04-cantina-wormhole-evm-ntt.pdf) | Spearbit | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
 | [2024-07-23-cyfrin-wormhole-evm-ntt-diff-v1.1.0.pdf](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/evm/2024-07-23-cyfrin-wormhole-evm-ntt-diff-v1.1.0.pdf) | Cyfrin | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
@@ -274,61 +257,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [2025-04-18-wormhole-ottersec-ntt-v3.pdf](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/solana/2025-04-18-wormhole-ottersec-ntt-v3.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [2025-05-05-wormhole-ottersec-ntt-v3-solana.pdf](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/solana/2025-05-05-wormhole-ottersec-ntt-v3-solana.pdf) | unknown | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 | [2025-08-22-ottersec-sui-ntt.pdf](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/sui/2025-08-22-ottersec-sui-ntt.pdf) | unknown | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
-| [INVARIANTS.md](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/docs/INVARIANTS.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [NttManager.md](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/docs/NttManager.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Transceiver.md](https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/docs/Transceiver.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BACKLOG.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/BACKLOG.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [CODE-REVIEW-UI-DASHBOARD.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/CODE-REVIEW-UI-DASHBOARD.md) | unknown | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
-| [PLAN-cdps-monitoring.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/PLAN-cdps-monitoring.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [PLAN-celo-mainnet-indexer.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/PLAN-celo-mainnet-indexer.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [PLAN-oracle-health-state-DOD.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/PLAN-oracle-health-state-DOD.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [PLAN-oracle-health-state.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/PLAN-oracle-health-state.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [PLAN-oracle-snapshot-chart.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/PLAN-oracle-snapshot-chart.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [PLAN-rebalancer-liveness.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/PLAN-rebalancer-liveness.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [PLAN-stream-c-dashboard.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/PLAN-stream-c-dashboard.md) | unknown | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
-| [PLAN-trading-limit-tracking.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/PLAN-trading-limit-tracking.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ROADMAP.md (also discovered via alternate URL)](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/ROADMAP.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [context-standards.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/context-standards.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [deployment.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/deployment.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [envio-hosted-migration.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/envio-hosted-migration.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [monad-launch-plan.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/monad-launch-plan.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [multichain-indexer-analysis.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/multichain-indexer-analysis.md) | unknown | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
-| [mutation-testing.md (also discovered via alternate URL)](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/mutation-testing.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [agent-gate-dashboard-cache-safety.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/notes/agent-gate-dashboard-cache-safety.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [browser-component-testing-pilot.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/notes/browser-component-testing-pilot.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [celo-quoted-weekend-feeds-2026-05.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/notes/celo-quoted-weekend-feeds-2026-05.md) | unknown | Audit | 2026-05 | fresh | Direct | n/a | 0 | n/a |
-| [monad-rpc-archive-depth-2026-05-10.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/notes/monad-rpc-archive-depth-2026-05-10.md) | unknown | Audit | 2026-05 | fresh | Direct | n/a | 0 | n/a |
-| [pr-ready-state.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/notes/pr-ready-state.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [rebalance-reason-feasibility.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/notes/rebalance-reason-feasibility.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [volume-leaderboard-aggregator-clusters.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/notes/volume-leaderboard-aggregator-clusters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ci-workflow-gates.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/pr-checklists/ci-workflow-gates.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [code-health.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/pr-checklists/code-health.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [dynamic-route-metadata.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/pr-checklists/dynamic-route-metadata.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [keyboard-a11y-controlled-widgets.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/pr-checklists/keyboard-a11y-controlled-widgets.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [recurring-review-patterns.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/pr-checklists/recurring-review-patterns.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [stateful-data-ui.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/pr-checklists/stateful-data-ui.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [swr-polling-hasura.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/pr-checklists/swr-polling-hasura.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [terraform-cloudrun.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/pr-checklists/terraform-cloudrun.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [terraform.md](https://github.com/mento-protocol/monitoring-monorepo/blob/main/docs/terraform.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [README.md](https://github.com/mento-protocol/docs/blob/main/dive-deeper/security/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [audit-reports.md](https://github.com/mento-protocol/docs/blob/main/dive-deeper/security/audit-reports.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [risk-overview.md](https://github.com/mento-protocol/docs/blob/main/dive-deeper/security/risk-overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [reads.md (also discovered via alternate URL)](https://github.com/mento-protocol/governance-ui/blob/main/docs/actions/governor/reads.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [writes.md (also discovered via alternate URL)](https://github.com/mento-protocol/governance-ui/blob/main/docs/actions/governor/writes.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index.md (also discovered via alternate URL)](https://github.com/mento-protocol/governance-ui/blob/main/docs/actions/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [wallet.md](https://github.com/mento-protocol/governance-ui/blob/main/docs/actions/wallet.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contracts.md](https://github.com/mento-protocol/governance-ui/blob/main/docs/state/contracts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [data-sources.md](https://github.com/mento-protocol/governance-ui/blob/main/docs/state/data-sources.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [COMPONENT-CATALOG.md](https://github.com/mento-protocol/ui-toolkit/blob/main/docs/COMPONENT-CATALOG.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [DEVELOPER-HANDOVER.md](https://github.com/mento-protocol/ui-toolkit/blob/main/docs/DEVELOPER-HANDOVER.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [GITHUB-ACTIONS-PERMISSIONS.md](https://github.com/mento-protocol/ui-toolkit/blob/main/docs/GITHUB-ACTIONS-PERMISSIONS.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [INTEGRATION-GUIDE.md](https://github.com/mento-protocol/ui-toolkit/blob/main/docs/INTEGRATION-GUIDE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ONBOARDING-CHECKLIST.md](https://github.com/mento-protocol/ui-toolkit/blob/main/docs/ONBOARDING-CHECKLIST.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [PUBLISHING.md](https://github.com/mento-protocol/ui-toolkit/blob/main/docs/PUBLISHING.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [landing-page.md](https://github.com/mento-protocol/simulation/blob/main/docs/landing-page.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [mathematical_specification.md](https://github.com/mento-protocol/simulation/blob/main/docs/model_specification/mathematical_specification.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -349,30 +280,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 81
+- Audits with zero matched contracts: 12
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [6120] environment-variables.md
-- [6121] preview-deployments-setup-guide.md
-- [6122] preview-deployments.md
-- [6123] sentry-releases.md
-- [6124] README.md
-- [6125] ci-github-actions.md
-- [6126] contributing.md
-- [6128] fork-and-local-chain.md
-- [6129] getting-started.md
-- [6130] glossary-and-conventions.md
-- [6131] logging-and-reporting.md
-- [6132] overview.md
-- [6133] project-structure.md
-- [6134] running-tests.md
-- [6135] test-architecture.md
-- [6136] tools-and-scripts.md
-- [6137] troubleshooting.md
 - [6138] 2024-04-11-cyfrin-wormhole-evm-ntt.pdf
 - [6139] 2024-04-cantina-wormhole-evm-ntt.pdf
 - [6140] 2024-07-23-cyfrin-wormhole-evm-ntt-diff-v1.1.0.pdf
@@ -382,60 +296,8 @@ Zero-match audit list:
 - [6144] 2025-04-18-wormhole-ottersec-ntt-v3.pdf
 - [6145] 2025-05-05-wormhole-ottersec-ntt-v3-solana.pdf
 - [6146] 2025-08-22-ottersec-sui-ntt.pdf
-- [6147] INVARIANTS.md
-- [6148] NttManager.md
-- [6149] Transceiver.md
-- [6150] BACKLOG.md
-- [6151] CODE-REVIEW-UI-DASHBOARD.md
-- [6152] PLAN-cdps-monitoring.md
-- [6153] PLAN-celo-mainnet-indexer.md
-- [6154] PLAN-oracle-health-state-DOD.md
-- [6155] PLAN-oracle-health-state.md
-- [6156] PLAN-oracle-snapshot-chart.md
-- [6157] PLAN-rebalancer-liveness.md
-- [6158] PLAN-stream-c-dashboard.md
-- [6159] PLAN-trading-limit-tracking.md
-- [6160] ROADMAP.md
-- [6161] context-standards.md
-- [6162] deployment.md
-- [6163] envio-hosted-migration.md
-- [6164] monad-launch-plan.md
-- [6165] multichain-indexer-analysis.md
-- [6166] mutation-testing.md
-- [6167] agent-gate-dashboard-cache-safety.md
-- [6168] browser-component-testing-pilot.md
-- [6169] celo-quoted-weekend-feeds-2026-05.md
-- [6170] monad-rpc-archive-depth-2026-05-10.md
-- [6171] pr-ready-state.md
-- [6172] rebalance-reason-feasibility.md
-- [6173] volume-leaderboard-aggregator-clusters.md
-- [6174] ci-workflow-gates.md
-- [6175] code-health.md
-- [6176] dynamic-route-metadata.md
-- [6177] keyboard-a11y-controlled-widgets.md
-- [6179] recurring-review-patterns.md
-- [6180] stateful-data-ui.md
-- [6181] swr-polling-hasura.md
-- [6182] terraform-cloudrun.md
-- [6183] terraform.md
+- [6184] README.md
 - [6185] audit-reports.md
 - [6186] risk-overview.md
-- [6187] reads.md
-- [6188] writes.md
-- [6189] index.md
-- [6194] wallet.md
-- [6196] contracts.md
-- [6197] data-sources.md
-- [6198] COMPONENT-CATALOG.md
-- [6199] DEVELOPER-HANDOVER.md
-- [6200] GITHUB-ACTIONS-PERMISSIONS.md
-- [6201] INTEGRATION-GUIDE.md
-- [6202] ONBOARDING-CHECKLIST.md
-- [6203] PUBLISHING.md
-- [6206] landing-page.md
-- [6207] mathematical_specification.md
-- [6208] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [6209] 0002-metadata-manifest-and-pull-command.md
-- [6210] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

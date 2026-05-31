@@ -5,11 +5,11 @@
 - Project: Manta Pacific (`manta-pacific`)
 - Website: [https://pacific-bridge.manta.network](https://pacific-bridge.manta.network)
 - Lifecycle: active (Tier 0, 91.2% below peak)
-- Generated: 2026-05-29T10:26:36.865Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T09:51:26.548Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum, manta
 - Contract surface: 3 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $25,178,343.85
+- DeFi Llama TVL: $24,646,896.09
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -29,11 +29,11 @@ All contracts belong to a single product family that implements the OP Stack bri
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 3
-- Audits discovered: 3
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -76,9 +76,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -103,15 +100,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [5992] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5993] 0002-metadata-manifest-and-pull-command.md
-- [5994] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

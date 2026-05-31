@@ -548,7 +548,7 @@ Each project directory contains:
 | [mangrove](./mangrove/brief.md) | $4.25M | 4 | 68 | 41/68 (60%) | 24.4% | 17.1% (ChainSecurity, Code4rena) | 7 | aging | ✅ active | - |
 | [manta-atlantic-stake](./manta-atlantic-stake/brief.md) | $5.41M | ethereum, manta | 109 | 68/109 (62%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [manta-cedefi](./manta-cedefi/brief.md) | $26.70M | manta | 17 | 15/17 (88%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
-| [manta-pacific](./manta-pacific/brief.md) | $25.18M | ethereum, manta | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
+| [manta-pacific](./manta-pacific/brief.md) | $24.65M | ethereum, manta | 3 | 3/3 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [matstake](./matstake/brief.md) | $4.77M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [meld-gold](./meld-gold/brief.md) | $11.13M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [mento](./mento/brief.md) | $19.58M | celo, ethereum | 180 | 0/180 (0%) | 0.0% | 0.0% (-) | 0 | fresh | ⚠️ declining | - |
@@ -722,5 +722,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-31T09:51:05.171Z_
+_Generated: 2026-05-31T09:55:39.960Z_
 _Projects: 710_

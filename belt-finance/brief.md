@@ -7,8 +7,8 @@
 - Project: Belt Finance (`belt-finance`)
 - Website: [https://belt.fi/](https://belt.fi/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-29T06:49:14.954Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-4212
+- Generated: 2026-05-31T07:30:41.669Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: bsc, heco, klaytn
 - Contract surface: 1331 unique implementations (1707 raw deployments)
 - DeFi Llama TVL: $13,217,355.20
@@ -31,11 +31,11 @@ The Belt Finance family provides the core strategy implementations and token con
 - Unverified implementations: 1270
 - Unique implementations: 1331
 - Raw deployments: 1707
-- Audits discovered: 10
+- Audits discovered: 7
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): $7,119,976.41
 - Latest audit: 2021-06 (stale)
-- Staleness: 0 fresh, 0 aging, 4 stale, 6 unknown
+- Staleness: 0 fresh, 0 aging, 4 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of $7,119,976.41 represents exposure in a protocol with dead activity.
 
@@ -1419,9 +1419,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [[ENG]BELTFI_Security_Assessment.pdf](https://github.com/BeltFi/belt-contract/blob/main/audit/%5BENG%5DBELTFI_Security_Assessment.pdf) | unknown | Audit | 2021-03 | stale | Direct | contract_name | 27 | high |
 | [[ENG]BELT_HECO_Security_Assessment.pdf](https://github.com/BeltFi/belt-contract/blob/main/audit/%5BENG%5DBELT_HECO_Security_Assessment.pdf) | unknown | Audit | 2021-06 | stale | Direct | contract_name | 134 | high |
 | [[KOR]BELT_HECO_Security_Assessment.pdf](https://github.com/BeltFi/belt-contract/blob/main/audit/%5BKOR%5DBELT_HECO_Security_Assessment.pdf) | unknown | Audit | 2021-06 | stale | Direct | contract_name | 134 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -1459,7 +1456,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 6
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=4
 - Match method counts: extraction_exact=525
@@ -1469,8 +1466,5 @@ Zero-match audit list:
 - [6917] Belt_Crosschain_Audit_1.pdf
 - [6918] Belt_Crosschain_Audit_2.pdf
 - [6919] Belt_Finance_Audit.pdf
-- [6924] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [6925] 0002-metadata-manifest-and-pull-command.md
-- [6926] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

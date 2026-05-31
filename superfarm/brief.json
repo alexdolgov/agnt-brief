@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "superfarm",
-  "generated_at": "2026-05-29T15:00:50.667Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-05-31T10:46:45.943Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "superfarm",
@@ -36,22 +36,22 @@
     "total_addresses": 78,
     "unique_implementations": 50,
     "total_deployments": 78,
-    "audited_contracts": 4,
-    "unaudited_contracts": 39,
-    "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 39,
+    "audited_contracts": 0,
+    "unaudited_contracts": 43,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 43,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 7,
-    "coverage_pct": 9.3,
-    "total_audits": 28,
-    "scoreable_audits": 7,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 1182708.41666,
     "tvl_usd": 211051062.43546712,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "ethereum": 211051062.44
     },
-    "asd_usd": 45121375.17265476,
+    "asd_usd": 211051062.43546712,
     "website_url": "https://superverse.co/",
     "chains": [
       "ethereum"
@@ -64,7 +64,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 28
+      "unknown": 0
     }
   },
   "topography": {
@@ -98,16 +98,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 121843315.10204802,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-9536"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -162,7 +160,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1411821.9197959367,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -171,7 +169,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -180,7 +178,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 5753549.875448446,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -189,7 +187,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 17546382.61891358,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -198,7 +196,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 9625640.399155186,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -207,16 +205,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 9506233.72078592,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-9537"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -240,7 +236,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -249,7 +245,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 24413.21270324667,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -258,7 +254,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 321.23385305715726,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -267,19 +263,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 218009.18010897437,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-9521",
-        "audit-9522",
-        "audit-9530",
-        "audit-9534"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1412,7 +1403,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1421,7 +1412,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1430,7 +1421,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1439,7 +1430,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1448,7 +1439,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1457,16 +1448,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-9535"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1891,627 +1880,19 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 9520,
-      "audit_key": "audit-9520",
-      "report_name": "FarmItemRecords.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/FarmItemRecords.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9521,
-      "audit_key": "audit-9521",
-      "report_name": "FarmShopRecords.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/FarmShopRecords.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FarmShopRecords",
-        "FeeOwner",
-        "Shop1155",
-        "Staker"
-      ],
-      "matched_contracts": 4,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9522,
-      "audit_key": "audit-9522",
-      "report_name": "FarmStakerRecords.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/FarmStakerRecords.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FarmStakerRecords",
-        "Staker"
-      ],
-      "matched_contracts": 4,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9523,
-      "audit_key": "audit-9523",
-      "report_name": "FarmTokenRecords.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/FarmTokenRecords.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9524,
-      "audit_key": "audit-9524",
-      "report_name": "Fee1155.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Fee1155.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9525,
-      "audit_key": "audit-9525",
-      "report_name": "Fee1155NFT.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Fee1155NFT.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9526,
-      "audit_key": "audit-9526",
-      "report_name": "Fee1155NFTLockable.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Fee1155NFTLockable.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9527,
-      "audit_key": "audit-9527",
-      "report_name": "FeeOwner.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/FeeOwner.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9528,
-      "audit_key": "audit-9528",
-      "report_name": "OwnableDelegateProxy.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/OwnableDelegateProxy.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9529,
-      "audit_key": "audit-9529",
-      "report_name": "ProxyRegistry.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/ProxyRegistry.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9530,
-      "audit_key": "audit-9530",
-      "report_name": "Shop1155.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Shop1155.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Fee1155",
-        "FeeOwner",
-        "Shop1155",
-        "Staker"
-      ],
-      "matched_contracts": 4,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9531,
-      "audit_key": "audit-9531",
-      "report_name": "ShopEtherMinter1155.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/ShopEtherMinter1155.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9532,
-      "audit_key": "audit-9532",
-      "report_name": "ShopEtherMinter1155Curated.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/ShopEtherMinter1155Curated.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9533,
-      "audit_key": "audit-9533",
-      "report_name": "ShopLaunchpad1155.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/ShopLaunchpad1155.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9534,
-      "audit_key": "audit-9534",
-      "report_name": "Staker.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Staker.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Staker"
-      ],
-      "matched_contracts": 4,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9535,
-      "audit_key": "audit-9535",
-      "report_name": "Timelock.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Timelock.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Timelock"
-      ],
-      "matched_contracts": 6,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9536,
-      "audit_key": "audit-9536",
-      "report_name": "Token.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/Token.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "Token"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9537,
-      "audit_key": "audit-9537",
-      "report_name": "TokenVault.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/TokenVault.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "TokenVault"
-      ],
-      "matched_contracts": 6,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9538,
-      "audit_key": "audit-9538",
-      "report_name": "MockProxyRegistry.md",
-      "report_url": "https://github.com/SuperFarmDAO/SuperFarm-Contracts/blob/master/docs/test/MockProxyRegistry.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9539,
-      "audit_key": "audit-9539",
-      "report_name": "api.md",
-      "report_url": "https://github.com/SuperFarmDAO/Sink/blob/master/docs/api.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9540,
-      "audit_key": "audit-9540",
-      "report_name": "configuration.md",
-      "report_url": "https://github.com/SuperFarmDAO/Sink/blob/master/docs/configuration.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9541,
-      "audit_key": "audit-9541",
-      "report_name": "pages.md",
-      "report_url": "https://github.com/SuperFarmDAO/Sink/blob/master/docs/deployment/pages.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9542,
-      "audit_key": "audit-9542",
-      "report_name": "sanity-sync.md",
-      "report_url": "https://github.com/SuperFarmDAO/Sink/blob/master/docs/deployment/sanity-sync.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9543,
-      "audit_key": "audit-9543",
-      "report_name": "workers.md",
-      "report_url": "https://github.com/SuperFarmDAO/Sink/blob/master/docs/deployment/workers.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9544,
-      "audit_key": "audit-9544",
-      "report_name": "faqs.md",
-      "report_url": "https://github.com/SuperFarmDAO/Sink/blob/master/docs/faqs.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9545,
-      "audit_key": "audit-9545",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9546,
-      "audit_key": "audit-9546",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9547,
-      "audit_key": "audit-9547",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 4,
-      "coverage_pct": 9.3,
-      "latest_audit": null
-    }
-  ],
+  "audits": [],
+  "auditor_coverage": [],
   "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55",
+      "name": "Token",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 121843315.10204802,
+      "risk_note": "Verified native implementation with $121,843,315.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -2521,6 +1902,26 @@
       "origin_kind": "native",
       "tvl_usd": 45118759.761087894,
       "risk_note": "Verified native implementation with $45,118,759.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x23a1fd006d151e1d920d5de860e82c697e73fbcf",
+      "name": "TokenVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 43843628.53409907,
+      "risk_note": "Verified native implementation with $43,843,628.53 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4391940003ee5d7502c41c539aa12d3f2aed4430",
+      "name": "Staker",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 242743.6266652782,
+      "risk_note": "Verified native implementation with $242,743.63 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -2810,100 +2211,11 @@
     "needs_review": 11
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 29
-    },
-    "extraction_confidence_counts": {
-      "low": 7
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 9520,
-        "report_name": "FarmItemRecords.md"
-      },
-      {
-        "audit_id": 9523,
-        "report_name": "FarmTokenRecords.md"
-      },
-      {
-        "audit_id": 9524,
-        "report_name": "Fee1155.md"
-      },
-      {
-        "audit_id": 9525,
-        "report_name": "Fee1155NFT.md"
-      },
-      {
-        "audit_id": 9526,
-        "report_name": "Fee1155NFTLockable.md"
-      },
-      {
-        "audit_id": 9527,
-        "report_name": "FeeOwner.md"
-      },
-      {
-        "audit_id": 9528,
-        "report_name": "OwnableDelegateProxy.md"
-      },
-      {
-        "audit_id": 9529,
-        "report_name": "ProxyRegistry.md"
-      },
-      {
-        "audit_id": 9531,
-        "report_name": "ShopEtherMinter1155.md"
-      },
-      {
-        "audit_id": 9532,
-        "report_name": "ShopEtherMinter1155Curated.md"
-      },
-      {
-        "audit_id": 9533,
-        "report_name": "ShopLaunchpad1155.md"
-      },
-      {
-        "audit_id": 9538,
-        "report_name": "MockProxyRegistry.md"
-      },
-      {
-        "audit_id": 9539,
-        "report_name": "api.md"
-      },
-      {
-        "audit_id": 9540,
-        "report_name": "configuration.md"
-      },
-      {
-        "audit_id": 9541,
-        "report_name": "pages.md"
-      },
-      {
-        "audit_id": 9542,
-        "report_name": "sanity-sync.md"
-      },
-      {
-        "audit_id": 9543,
-        "report_name": "workers.md"
-      },
-      {
-        "audit_id": 9544,
-        "report_name": "faqs.md"
-      },
-      {
-        "audit_id": 9545,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 9546,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 9547,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

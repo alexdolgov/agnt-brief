@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "summer.fi",
-  "generated_at": "2026-05-29T14:54:22.742Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-05-31T10:45:46.230Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "summer.fi",
     "tier": 0,
     "peak_tvl": 516081298,
     "peak_date": "2025-10-07T00:00:00.000Z",
-    "tvl_30d_ago": 52838434,
-    "tvl_90d_ago": 70274039,
-    "tvl_current": 45812514,
+    "tvl_30d_ago": 52547090,
+    "tvl_90d_ago": 69780295,
+    "tvl_current": 46285804,
     "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 143796507,
-    "change_30d_pct": -13.296987567799606,
-    "change_90d_pct": -34.808764869769334,
-    "days_since_peak": 234,
+    "tvl_180d_ago": 136455066,
+    "change_30d_pct": -11.915571347528473,
+    "change_90d_pct": -33.66923427308526,
+    "days_since_peak": 236,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 91.12300442245439
+    "drop_from_peak_pct": 91.03129600328977
   },
   "summary": {
     "total_contracts": 485,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 5,
     "contracts_unverified": 201,
     "coverage_pct": 0,
-    "total_audits": 5,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 47583731,
     "tvl_usd": 140925721.03365448,
@@ -61,7 +61,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 5
+      "unknown": 0
     }
   },
   "topography": {
@@ -28439,113 +28439,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 5756,
-      "audit_key": "audit-5756",
-      "report_name": "ADD_NEW_PLUGIN.md",
-      "report_url": "https://github.com/OasisDEX/summerfi-monorepo/blob/dev/sdk/docs/ADD_NEW_PLUGIN.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5757,
-      "audit_key": "audit-5757",
-      "report_name": "ADD_SDK_SERVICE.md",
-      "report_url": "https://github.com/OasisDEX/summerfi-monorepo/blob/dev/sdk/docs/ADD_SDK_SERVICE.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5758,
-      "audit_key": "audit-5758",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5759,
-      "audit_key": "audit-5759",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5760,
-      "audit_key": "audit-5760",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -29590,28 +29484,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 5756,
-        "report_name": "ADD_NEW_PLUGIN.md"
-      },
-      {
-        "audit_id": 5757,
-        "report_name": "ADD_SDK_SERVICE.md"
-      },
-      {
-        "audit_id": 5758,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 5759,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 5760,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

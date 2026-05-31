@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "superfluid",
-  "generated_at": "2026-05-29T15:05:32.538Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-05-31T10:47:54.371Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "superfluid",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 7,
     "contracts_unverified": 301,
     "coverage_pct": 20.8,
-    "total_audits": 14,
+    "total_audits": 8,
     "scoreable_audits": 6,
     "dl_tvl_usd": 5127098.46291,
     "tvl_usd": 12652636.595608726,
@@ -67,7 +67,7 @@
       "fresh": 2,
       "aging": 1,
       "stale": 5,
-      "unknown": 6
+      "unknown": 0
     }
   },
   "topography": {
@@ -31654,48 +31654,6 @@
   ],
   "audits": [
     {
-      "audit_id": 7695,
-      "audit_key": "audit-7695",
-      "report_name": "polygon-network-matic.md",
-      "report_url": "https://github.com/superfluid-finance/docs/blob/main/docs/polygon-network-matic.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7696,
-      "audit_key": "audit-7696",
-      "report_name": "xdai-chain.md",
-      "report_url": "https://github.com/superfluid-finance/docs/blob/main/docs/xdai-chain.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 7697,
       "audit_key": "audit-7697",
       "report_name": "202408 Sherlock - super-boring-audit-report-1723469151.pdf",
@@ -31704,27 +31662,6 @@
       "audit_type": "contest",
       "freshness": "aging",
       "date": "2024-07",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7698,
-      "audit_key": "audit-7698",
-      "report_name": "alfafrens-faq.md",
-      "report_url": "https://github.com/superfluid-finance/client-alfafrens/blob/master/docs/alfafrens-faq.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
@@ -31944,69 +31881,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7706,
-      "audit_key": "audit-7706",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7707,
-      "audit_key": "audit-7707",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7708,
-      "audit_key": "audit-7708",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -32209,36 +32083,12 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 7695,
-        "report_name": "polygon-network-matic.md"
-      },
-      {
-        "audit_id": 7696,
-        "report_name": "xdai-chain.md"
-      },
-      {
         "audit_id": 7697,
         "report_name": "202408 Sherlock - super-boring-audit-report-1723469151.pdf"
       },
       {
-        "audit_id": 7698,
-        "report_name": "alfafrens-faq.md"
-      },
-      {
         "audit_id": 7705,
         "report_name": "2026-05-25 - Final - Superfluid Public Best Efforts Audit Contest Report 1779704022.pdf"
-      },
-      {
-        "audit_id": 7706,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 7707,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 7708,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

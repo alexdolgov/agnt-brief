@@ -5,8 +5,8 @@
 - Project: Superfluid (`superfluid`)
 - Website: [https://superfluid.org/](https://superfluid.org/)
 - Lifecycle: active (Tier 0, 93.1% below peak)
-- Generated: 2026-05-29T15:05:32.538Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T10:47:54.371Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, avalanche, base, bsc, celo, ethereum, gnosis, optimism, polygon, scroll
 - Contract surface: 397 unique implementations (2532 raw deployments)
 - DeFi Llama TVL: $5,127,098.46
@@ -29,11 +29,11 @@ The two families share the same core contracts and supporting infrastructure, in
 - Unverified implementations: 301
 - Unique implementations: 397
 - Raw deployments: 2532
-- Audits discovered: 14
+- Audits discovered: 8
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-05 (fresh)
-- Staleness: 2 fresh, 1 aging, 5 stale, 6 unknown
+- Staleness: 2 fresh, 1 aging, 5 stale, 0 unknown
 - Tier 1 coverage: 5.2% (Trail of Bits)
 
 ### Auditor Coverage
@@ -479,10 +479,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [polygon-network-matic.md](https://github.com/superfluid-finance/docs/blob/main/docs/polygon-network-matic.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [xdai-chain.md](https://github.com/superfluid-finance/docs/blob/main/docs/xdai-chain.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [202408 Sherlock - super-boring-audit-report-1723469151.pdf](https://github.com/superfluid-finance/averagex-contracts-cloned/blob/master/packages/evm-contracts/audits/202408%20Sherlock%20-%20super-boring-audit-report-1723469151.pdf) | Sherlock | Contest | 2024-07 | aging | Direct | n/a | 0 | n/a |
-| [alfafrens-faq.md](https://github.com/superfluid-finance/client-alfafrens/blob/master/docs/alfafrens-faq.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Superfluid-Scheduler-Report.pdf](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/automation-contracts/scheduler/audit/Superfluid-Scheduler-Report.pdf) | unknown | Audit | 2022-11 | stale | Direct | contract_name | 20 | high |
 | [2021-01 PeckShield - Audit-Report-Superfluid-v1.0.pdf](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2021-01%20PeckShield%20-%20Audit-Report-Superfluid-v1.0.pdf) | PeckShield | Audit | 2021-01 | stale | Direct | contract_name | 579 | high |
 | [2022-02 Halborn - Superfluid_Finance_Smart_Contract_Security_Audit_Report_.pdf](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2022-02%20Halborn%20-%20Superfluid_Finance_Smart_Contract_Security_Audit_Report_.pdf) | Halborn | Audit | 2022-02 | stale | Direct | contract_name | 750 | high |
@@ -490,9 +487,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [2023-12 Trail of Bits - Comprehensive Report with Fix Review.pdf](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2023-12%20Trail%20of%20Bits%20-%20Comprehensive%20Report%20with%20Fix%20Review.pdf) | Trail of Bits | Audit | 2023-12 | stale | Direct | contract_name | 441 | high |
 | [2026-01-27 - Final - Superfluid Collaborative Audit Report 1769517931.pdf](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2026-01-27%20-%20Final%20-%20Superfluid%20Collaborative%20Audit%20Report%201769517931.pdf) | unknown | Audit | 2026-01 | fresh | Direct | contract_name | 128 | high |
 | [2026-05-25 - Final - Superfluid Public Best Efforts Audit Contest Report 1779704022.pdf](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/audits/2026-05-25%20-%20Final%20-%20Superfluid%20Public%20Best%20Efforts%20Audit%20Contest%20Report%201779704022.pdf) | unknown | Audit | 2026-05 | fresh | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -529,20 +523,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=5, medium=1
 - Match method counts: extraction_exact=2446
 
 Zero-match audit list:
 
-- [7695] polygon-network-matic.md
-- [7696] xdai-chain.md
 - [7697] 202408 Sherlock - super-boring-audit-report-1723469151.pdf
-- [7698] alfafrens-faq.md
 - [7705] 2026-05-25 - Final - Superfluid Public Best Efforts Audit Contest Report 1779704022.pdf
-- [7706] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7707] 0002-metadata-manifest-and-pull-command.md
-- [7708] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "yieldnest",
-  "generated_at": "2026-05-29T17:55:06.367Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-05-31T06:47:17.809Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-46e6f8-46f2",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "yieldnest",
@@ -36,15 +36,15 @@
     "total_addresses": 72,
     "unique_implementations": 33,
     "total_deployments": 72,
-    "audited_contracts": 20,
-    "unaudited_contracts": 9,
-    "contracts_verified_audited": 19,
-    "contracts_verified_unaudited": 9,
+    "audited_contracts": 13,
+    "unaudited_contracts": 16,
+    "contracts_verified_audited": 13,
+    "contracts_verified_unaudited": 15,
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 4,
-    "coverage_pct": 69,
-    "total_audits": 27,
-    "scoreable_audits": 14,
+    "coverage_pct": 44.8,
+    "total_audits": 21,
+    "scoreable_audits": 13,
     "dl_tvl_usd": 22859932.38566,
     "tvl_usd": 19206391.984526806,
     "tvl_source": "on_chain",
@@ -54,7 +54,7 @@
       "ethereum": 19048274.9,
       "optimism": 11.85
     },
-    "asd_usd": null,
+    "asd_usd": 295088.5241918671,
     "website_url": "https://yieldnest.finance/",
     "chains": [
       "arbitrum",
@@ -75,7 +75,7 @@
       "fresh": 0,
       "aging": 10,
       "stale": 10,
-      "unknown": 7
+      "unknown": 1
     }
   },
   "topography": {
@@ -151,8 +151,7 @@
       "audits_covering": [
         "audit-6069",
         "audit-6071",
-        "audit-6075",
-        "audit-6079"
+        "audit-6075"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -181,16 +180,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 267808.91067519307,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-6079"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -214,16 +211,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 27253.56114116973,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-6079"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -252,8 +247,7 @@
       ],
       "audits_covering": [
         "audit-6069",
-        "audit-6073",
-        "audit-6079"
+        "audit-6073"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -282,7 +276,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -291,7 +285,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 4.827416328361553,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -300,7 +294,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 7.026315908598977,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -309,7 +303,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 6.147671411553638,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -318,7 +312,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 8.050971855788264,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -339,13 +333,11 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-6079"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_audited",
+      "verification_bucket": "verified_bytecode_unaudited",
       "contamination_flag": null
     },
     {
@@ -383,8 +375,7 @@
       ],
       "audits_covering": [
         "audit-6068",
-        "audit-6077",
-        "audit-6079"
+        "audit-6077"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -600,7 +591,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -609,16 +600,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-6079"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -763,8 +752,7 @@
       "audits_covering": [
         "audit-6053",
         "audit-6067",
-        "audit-6068",
-        "audit-6079"
+        "audit-6068"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -810,8 +798,7 @@
         "audit-6054",
         "audit-6067",
         "audit-6068",
-        "audit-6074",
-        "audit-6079"
+        "audit-6074"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -947,8 +934,7 @@
         "audit-6068",
         "audit-6074",
         "audit-6076",
-        "audit-6078",
-        "audit-6079"
+        "audit-6078"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -977,7 +963,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -986,7 +972,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -995,7 +981,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1004,7 +990,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1013,16 +999,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-6079"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1134,16 +1118,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-6079"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1383,7 +1365,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1401,7 +1383,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1419,7 +1401,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1431,13 +1413,11 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-6079"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -1465,8 +1445,7 @@
         }
       ],
       "audits_covering": [
-        "audit-6068",
-        "audit-6079"
+        "audit-6068"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1503,8 +1482,7 @@
         "audit-6054",
         "audit-6067",
         "audit-6068",
-        "audit-6074",
-        "audit-6079"
+        "audit-6074"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1545,68 +1523,6 @@
     }
   ],
   "audits": [
-    {
-      "audit_id": 6050,
-      "audit_key": "audit-6050",
-      "report_name": "buffer.md",
-      "report_url": "https://github.com/yieldnest/yieldnest-vault/blob/eth-max-vault/docs/buffer.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 6050,
-          "report_url": "https://github.com/yieldnest/yieldnest-vault/blob/eth-max-vault/docs/buffer.md"
-        },
-        {
-          "audit_id": 6082,
-          "report_url": "https://github.com/yieldnest/smart-contracts-mirror/blob/main/yieldnest-vault/docs/buffer.md"
-        }
-      ]
-    },
-    {
-      "audit_id": 6051,
-      "audit_key": "audit-6051",
-      "report_name": "vault.md",
-      "report_url": "https://github.com/yieldnest/yieldnest-vault/blob/eth-max-vault/docs/vault.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 6051,
-          "report_url": "https://github.com/yieldnest/yieldnest-vault/blob/eth-max-vault/docs/vault.md"
-        },
-        {
-          "audit_id": 6083,
-          "report_url": "https://github.com/yieldnest/smart-contracts-mirror/blob/main/yieldnest-vault/docs/vault.md"
-        }
-      ]
-    },
     {
       "audit_id": 6052,
       "audit_key": "audit-6052",
@@ -2256,107 +2172,14 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6079,
-      "audit_key": "audit-6079",
-      "report_name": "THIRD_PARTY_BYTECODE_VERIFICATION.md",
-      "report_url": "https://github.com/yieldnest/cross-chain-state-relay/blob/main/docs/THIRD_PARTY_BYTECODE_VERIFICATION.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "LayerZeroReceiverTransport",
-        "LayerZeroSenderTransport",
-        "ProxyAdmin",
-        "RateAdapterUpgradeable",
-        "StateSender",
-        "StateStore",
-        "TimelockController",
-        "TransparentUpgradeableProxy"
-      ],
-      "matched_contracts": 30,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6085,
-      "audit_key": "audit-6085",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6086,
-      "audit_key": "audit-6086",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6087,
-      "audit_key": "audit-6087",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 20,
-      "coverage_pct": 69,
+      "contracts_covered": 11,
+      "coverage_pct": 37.9,
       "latest_audit": "2025-05"
     },
     {
@@ -2391,6 +2214,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x38585e32b66961c02abacbb4db76825a00df5e8b",
+      "name": "MaxVaultViewer",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x066b290542487dd826a6e05c2439c98432225776",
       "name": "ProxyUtils",
       "role": "unknown",
@@ -2404,6 +2237,16 @@
       "address": "0x487d9a14941e34723bde973cabae3894bed7930d",
       "name": "WithdrawalsProcessor",
       "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6770f0c1757ec7bb940b0e417ce16536fafe7c74",
+      "name": "YND",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2427,23 +2270,14 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 142
+      "extraction_exact": 112
     },
     "extraction_confidence_counts": {
-      "high": 13,
-      "medium": 1
+      "high": 13
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 6050,
-        "report_name": "buffer.md"
-      },
-      {
-        "audit_id": 6051,
-        "report_name": "vault.md"
-      },
       {
         "audit_id": 6052,
         "report_name": "README.md"
@@ -2475,18 +2309,6 @@
       {
         "audit_id": 6070,
         "report_name": "yieldnest_clisbnb_strategy_audit_report.pdf"
-      },
-      {
-        "audit_id": 6085,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 6086,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 6087,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

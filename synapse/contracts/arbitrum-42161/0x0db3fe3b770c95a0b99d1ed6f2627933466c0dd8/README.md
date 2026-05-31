@@ -6,8 +6,8 @@
 | Address | `0x0db3fe3b770c95a0b99d1ed6f2627933466c0dd8` |
 | Role | unknown |
 | Origin | needs_review |
-| Audited | Yes |
-| Audits | [SwapFlashLoan.md](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/SwapFlashLoan.md) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 27 (ethereum `0x1116898dda4015ed8ddefb84b6e8bc24528af2d8`; ethereum `0x5a5fff6f753d7c11a56a52fe47a177a87e431655`; ethereum `0xe1e1e6711bdfa0b8dec900f9e677d85aa7f3049d`; optimism `0xa9e90579eb086bcda910dd94041ffe041fb4ac89`; optimism `0xdde5bec4815e1cecf336fb973ca578e8d83606e0`; optimism `0xe27bff97ce92c3e1ff7aa9f86781fdd6d48f5ee9`; optimism `0xf44938b0125a6662f9536281ad2cd6c499f22004`; bsc `0x28ec0b36f0819ecb5005cab836f4ed5a2eca4d13`; bsc `0x521874a55fee8ea308d43ac76b279fa65309726c`; bsc `0x5f10b4fc66331f53912a5b5eba4e4e79a6fdae93`; polygon `0x85fcd7dd0a1e1a9fcd5fd886ed522de8221c3ee5`; polygon `0xa9e90579eb086bcda910dd94041ffe041fb4ac89`; polygon `0xaa959ea09a10d1faced135cb4268aa942f64892c`; moonriver `0xa9e90579eb086bcda910dd94041ffe041fb4ac89`; base `0x6223bd82010e2fb69f329933de20897e7a4c225f`; base `0x9508bf380c1e6f751d97604732ef1bae6673f299`; arbitrum [`0x0db3fe3b770c95a0b99d1ed6f2627933466c0dd8`](../0x0db3fe3b770c95a0b99d1ed6f2627933466c0dd8/); arbitrum `0x9dd329f5411466d9e0c488ff72519ca9fef0cb40`; arbitrum `0xa067668661c84476afcdc6fa5d758c4c01c34352`; arbitrum `0xce762cc8138f4fa55427403a33e95a3d492c0166`; arbitrum `0xe0fa08834465ecc36c494f2b6c87b82ab7970413`; avalanche `0x84a420459cd31c3c34583f67e0f0fb191067d32f`; avalanche `0xed2a7edd7413021d440b09d654f3b87712abab66`; blast `0x999fcd13c54b26e02a6ccd185f71550b3a4641c0`; blast `0xa4bd1aad7cf04567c10f38fc4355e91bba32ac9c`; blast `0xd41ee4d4cd7248b4e69ac75827ff37c94e94d06e`; aurora `0x51d96ef6960cc7b4c884e1215564f926011a4064`) |
 | Proxy | No |
 | Source | Etherscan |

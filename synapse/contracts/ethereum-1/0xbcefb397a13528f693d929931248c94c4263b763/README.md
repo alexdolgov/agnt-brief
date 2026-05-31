@@ -6,8 +6,8 @@
 | Address | `0xbcefb397a13528f693d929931248c94c4263b763` |
 | Role | unknown |
 | Origin | needs_review |
-| Audited | Yes |
-| Audits | [NodeEnv.md](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/testing/NodeEnv.md) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 1 (ethereum [`0xbcefb397a13528f693d929931248c94c4263b763`](../0xbcefb397a13528f693d929931248c94c4263b763/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |

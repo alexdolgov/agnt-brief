@@ -7,8 +7,8 @@
 - Project: Synapse (`synapse`)
 - Website: [https://synapseprotocol.com](https://synapseprotocol.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T15:38:26.511Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T10:52:03.959Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, aurora, avalanche, base, blast, boba, bsc, canto, cronos, ethereum, fantom, harmony, klaytn, linea, metis, moonbeam, moonriver, optimism, polygon, scroll
 - Contract surface: 824 unique implementations (2632 raw deployments)
 - DeFi Llama TVL: $16,678,188.80
@@ -17,64 +17,44 @@
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 30/211 (14.2%)
-- Verified + Unaudited implementations: 177
+- Verified implementations audited: 0/211 (0.0%)
+- Verified + Unaudited implementations: 196
 - Verified by bytecode match: 15
 - Unverified implementations: 613
 - Unique implementations: 824
 - Raw deployments: 2632
-- Audits discovered: 225
-- Scoreable audits (matched contracts): 34
-- ASD (verified + unaudited TVL): $14,220,197.07
-- Latest audit: 2026-03 (fresh)
-- Staleness: 1 fresh, 2 aging, 0 stale, 222 unknown
+- Audits discovered: 2
+- Scoreable audits (matched contracts): 0
+- ASD (verified + unaudited TVL): $25,569,883.31
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $14,220,197.07 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $25,569,883.31 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 30 | 14.2% | 2026-03 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (19)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
-| AmplificationUtils | unknown | base | 15 deployments: ethereum `0x6f4e8e...dc19c9`; ethereum `0xfe986b...c753b0`; optimism `0x84a420...67d32f`; bsc `0x0ab8eb...eaf472`; bsc `0xbe183e...6ee0e2`; polygon `0x6f4e8e...dc19c9`; polygon `0xa1f889...e59cc3`; metis `0xdb9f78...8f5069`; moonriver `0xd5609c...aab17c`; base [`0x003107...b51dce`](./contracts/base-8453/0x003107b3aeee133804eabe7d1df200ddfbb51dce/); arbitrum [`0x003107...b51dce`](./contracts/arbitrum-42161/0x003107b3aeee133804eabe7d1df200ddfbb51dce/); arbitrum `0xffd73e...a218e8`; avalanche `0x20b587...f358c5`; blast `0xe29b8e...011493`; aurora `0xa9e905...b4ac89` | ✅ Audited |
-| AvaxJewelMigration | operational_periphery | avalanche | 2 deployments: avalanche [`0x303b04...068a6d`](./contracts/avalanche-43114/0x303b049e69b035f85403bf3bfae6b13974068a6d/); avalanche `0x82d4ac...efa7b0` | ✅ Audited |
-| BridgeConfigV3 | operational_periphery | ethereum | 10 deployments: ethereum [`0x3ee02f...fb9bcf`](./contracts/ethereum-1/0x3ee02f08b801b1990ac844d8cd2f119ba6fb9bcf/); ethereum `0x5217c8...3a12a1`; ethereum `0x7c646a...d2806d`; ethereum `0xac0109...6a7d46`; ethereum `0xaf23be...29d75f`; polygon `0x50042b...0115c8`; polygon `0xb51e73...e61c6a`; polygon `0xbaf195...b3f6f9`; polygon `0xc53051...ca1efc`; polygon `0xdedfe3...fa9dd9` | ✅ Audited |
-| DummyWeth | token | optimism | 5 deployments: optimism [`0x2d8ee8...2596ed`](./contracts/optimism-10/0x2d8ee8d6951cb4eecfe4a79eb9c2f973c02596ed/); optimism `0x41e95b...de945f`; optimism `0x84ea83...15711e`; optimism `0x991adb...9377c2`; optimism `0xac9b0b...9086ed` | ✅ Audited |
-| DummyWethProxy | token | optimism | 8 deployments: optimism [`0x061605...fd75c9`](./contracts/optimism-10/0x061605c4ad8825e3b6731875b409d77f19fd75c9/); optimism `0x3192ae...ee349a`; optimism `0x39274f...994075`; optimism `0x73783f...dec5e9`; optimism `0x94a423...61eb42`; optimism `0xbf180c...bcefb4`; optimism `0xe37f21...778704`; optimism `0xf68cd5...5cc541` | ✅ Audited |
-| ECDSANodeManagement | unknown | ethereum | 3 deployments: ethereum [`0x1bfe50...dbff8f`](./contracts/ethereum-1/0x1bfe50bb2a8a75fefa46892db10313898ddbff8f/); bsc `0xe95b1d...83876b`; polygon [`0x1bfe50...dbff8f`](./contracts/polygon-137/0x1bfe50bb2a8a75fefa46892db10313898ddbff8f/) | ✅ Audited |
-| ERC20Migrator | token | bsc | [`0xf0284f...c3e022`](./contracts/bsc-56/0xf0284fb86ada5e4d82555c529677eea3b2c3e022/) | ✅ Audited |
-| FastBridge | operational_periphery | linea | 8 deployments: ethereum `0x5523d3...0fb59e`; optimism `0x5523d3...0fb59e`; bsc `0x5523d3...0fb59e`; base `0x5523d3...0fb59e`; arbitrum `0x5523d3...0fb59e`; linea [`0x34f527...9f24dd`](./contracts/linea-59144/0x34f52752975222d5994c206ce08c1d5b329f24dd/); blast [`0x34f527...9f24dd`](./contracts/blast-81457/0x34f52752975222d5994c206ce08c1d5b329f24dd/); scroll `0x5523d3...0fb59e` | ✅ Audited |
-| GMXWrapper | unknown | avalanche | 4 deployments: avalanche [`0x20a9dc...15f656`](./contracts/avalanche-43114/0x20a9dc684b4d0407ef8c9a302beaaa18ee15f656/); avalanche `0x5bbf13...033cde`; avalanche `0x934067...f0012d`; avalanche `0xddf2e2...5e7ec4` | ✅ Audited |
-| L1BridgeZap | operational_periphery | ethereum | [`0x6571d6...29d85f`](./contracts/ethereum-1/0x6571d6be3d8460cf5f7d6711cd9961860029d85f/) | ✅ Audited |
-| MigratorBridgeZap | operational_periphery | bsc | 2 deployments: bsc [`0x846e60...afa157`](./contracts/bsc-56/0x846e607b930ea1f5dde6c4a9d9104d5fbfafa157/); bsc `0xde2789...61caeb` | ✅ Audited |
-| MiniChefV2 | unknown | blast | 14 deployments: ethereum `0x6f1d9d...c6ebe1`; ethereum `0xd10ef2...0b62cf`; optimism `0xe8c610...12aaa0`; bsc `0x8f5bbb...9c1280`; polygon `0x7875af...418be5`; metis `0xa67b71...e11f0b`; metis `0xab0d8f...34ebf5`; moonriver `0x432036...d69540`; base `0xffc2d6...8c36e9`; arbitrum `0x5d5f01...35f21a`; arbitrum `0x73186f...34e207`; avalanche `0x3a0152...e18249`; blast [`0x3100dc...d6e590`](./contracts/blast-81457/0x3100dc8464a8523306c3c5034de24a8927d6e590/); aurora `0x809dc5...771036` | ✅ Audited |
-| MoonriverBridgeZap | operational_periphery | moonriver | 2 deployments: moonriver [`0x06fea8...f42a5c`](./contracts/moonriver-1285/0x06fea8513ff03a0d3f61324da709d4cf06f42a5c/); moonriver `0xfa28dd...8cc29e` | ✅ Audited |
-| NodeEnv | unknown | ethereum | [`0xbcefb3...63b763`](./contracts/ethereum-1/0xbcefb397a13528f693d929931248c94c4263b763/) | ✅ Audited |
-| PoolConfig | core_logic | ethereum | [`0xb34c67...72e177`](./contracts/ethereum-1/0xb34c67db5f0fd8d3d4238fd0a1cbbfd50a72e177/) | ✅ Audited |
-| SwapEthWrapper | unknown | arbitrum | 8 deployments: optimism `0x244268...fc9fcf`; optimism `0x8c7d5f...32ef7b`; base `0xa9e905...b4ac89`; arbitrum [`0x109523...2f878c`](./contracts/arbitrum-42161/0x109523db4336e01f030ed51c581c3fa9222f878c/); arbitrum `0x1c3fe7...42e102`; arbitrum `0x91fd4e...1573e5`; arbitrum `0xe21a31...b92bfb`; blast `0x43b961...78841c` | ✅ Audited |
-| SwapUtils | unknown | ethereum | 16 deployments: ethereum [`0x11199a...147f5f`](./contracts/ethereum-1/0x11199a9ee50127f335b84a1eeb961d8a85147f5f/); ethereum `0xd5609c...aab17c`; optimism `0xf07d1c...867089`; bsc `0x74c302...301c12`; bsc `0x7eced0...e36393`; polygon `0x20b587...f358c5`; polygon `0xab0d8f...34ebf5`; polygon `0xd5609c...aab17c`; metis `0xa9e905...b4ac89`; moonriver `0xdde5be...3606e0`; base `0x874577...ce505f`; arbitrum `0x20b587...f358c5`; arbitrum `0xe74f2e...373ef0`; avalanche `0x9508bf...73f299`; blast `0xe6cd93...456627`; aurora `0xe1e1e6...f3049d` | ✅ Audited |
-| SynapseRouter | adapter | optimism | 13 deployments: ethereum `0x7e7a0e...18c96a`; optimism [`0x25f8fa...8c1f19`](./contracts/optimism-10/0x25f8fa4917180ff308883e37ea27ceaeb68c1f19/); optimism `0x7e7a0e...18c96a`; polygon `0x7e7a0e...18c96a`; base [`0x25f8fa...8c1f19`](./contracts/base-8453/0x25f8fa4917180ff308883e37ea27ceaeb68c1f19/); base `0x6c8c6e...04e3b3`; base `0x7e7a0e...18c96a`; arbitrum [`0x25f8fa...8c1f19`](./contracts/arbitrum-42161/0x25f8fa4917180ff308883e37ea27ceaeb68c1f19/); arbitrum `0x7e7a0e...18c96a`; arbitrum `0xc6c8e5...2825ad`; avalanche [`0x25f8fa...8c1f19`](./contracts/avalanche-43114/0x25f8fa4917180ff308883e37ea27ceaeb68c1f19/); avalanche `0x7e7a0e...18c96a`; avalanche `0xc6c8e5...2825ad` | ✅ Audited |
-| TimelockController | governance | optimism | 16 deployments: ethereum `0x39ab21...bf75a1`; ethereum `0x647489...5cac70`; optimism [`0x003107...b51dce`](./contracts/optimism-10/0x003107b3aeee133804eabe7d1df200ddfbb51dce/); bsc `0x040735...859d46`; bsc `0x5b01dd...97d50c`; polygon `0x254fec...0bd21f`; polygon `0xa12a03...ec1747`; metis [`0x003107...b51dce`](./contracts/metis-1088/0x003107b3aeee133804eabe7d1df200ddfbb51dce/); metis `0x911766...76f8d6`; moonriver `0x9508bf...73f299`; base `0xe0fa08...970413`; arbitrum `0xa67b71...e11f0b`; avalanche `0x7f1bae...f125e2`; avalanche `0xa4666f...efacbb`; blast `0x4e31ed...acfdfc`; aurora `0x9508bf...73f299` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (177)
+### ⚠️ Verified + Unaudited (196)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | yVault | core_logic | ethereum | 7 deployments: ethereum [`0x24129b...975fed`](./contracts/ethereum-1/0x24129b935aff071c4f0554882c0d9573f4975fed/); ethereum `0x958149...d2910e`; ethereum `0x9afd2d...51eb8b`; ethereum `0xb17640...af9567`; ethereum `0xcd6997...e70e84`; ethereum `0xcf837b...25ab19`; ethereum `0xd072d3...1c66ff` | ⚠️ Unaudited |
 | AaveSwap | unknown | avalanche | [`0x77a7e6...212d44`](./contracts/avalanche-43114/0x77a7e60555bc18b4be44c181b2575eee46212d44/) | ⚠️ Unaudited |
 | AgEURNameable | unknown | ethereum | [`0x1a7e4e...fcbce8`](./contracts/ethereum-1/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8/) | ⚠️ Unaudited |
+| AmplificationUtils | unknown | base | 15 deployments: ethereum `0x6f4e8e...dc19c9`; ethereum `0xfe986b...c753b0`; optimism `0x84a420...67d32f`; bsc `0x0ab8eb...eaf472`; bsc `0xbe183e...6ee0e2`; polygon `0x6f4e8e...dc19c9`; polygon `0xa1f889...e59cc3`; metis `0xdb9f78...8f5069`; moonriver `0xd5609c...aab17c`; base [`0x003107...b51dce`](./contracts/base-8453/0x003107b3aeee133804eabe7d1df200ddfbb51dce/); arbitrum [`0x003107...b51dce`](./contracts/arbitrum-42161/0x003107b3aeee133804eabe7d1df200ddfbb51dce/); arbitrum `0xffd73e...a218e8`; avalanche `0x20b587...f358c5`; blast `0xe29b8e...011493`; aurora `0xa9e905...b4ac89` | ⚠️ Unaudited |
 | AngleAccumulator | unknown | ethereum | [`0x9dddf9...d1c888`](./contracts/ethereum-1/0x9dddf9c8a7447993bcfef18f6b5421f28bd1c888/) | ⚠️ Unaudited |
 | AngleAccumulatorV2 | unknown | ethereum | [`0x943671...c6aa51`](./contracts/ethereum-1/0x943671e6c3a98e28abdbc60a7ac703b3c0c6aa51/) | ⚠️ Unaudited |
 | AngleLocker | unknown | ethereum | [`0xd13f8c...4dcaf5`](./contracts/ethereum-1/0xd13f8c25cced32cdfa79eb5ed654ce3e484dcaf5/) | ⚠️ Unaudited |
 | ApeCoinStakingVerifier | periphery | ethereum | [`0xc82c84...116f7e`](./contracts/ethereum-1/0xc82c84dde4f4d76719e9f0aaf0cab5402a116f7e/) | ⚠️ Unaudited |
 | AToken | token | avalanche | [`0x53f7c5...492f21`](./contracts/avalanche-43114/0x53f7c5869a859f0aec3d334ee8b4cf01e3492f21/) | ⚠️ Unaudited |
+| AvaxJewelMigration | operational_periphery | avalanche | 2 deployments: avalanche [`0x303b04...068a6d`](./contracts/avalanche-43114/0x303b049e69b035f85403bf3bfae6b13974068a6d/); avalanche `0x82d4ac...efa7b0` | ⚠️ Unaudited |
 | AvaxJewelSwap | unknown | avalanche | [`0xa6fa14...a0fccd`](./contracts/avalanche-43114/0xa6fa14a446b1b86619de3c27d10eeaad84a0fccd/) | ⚠️ Unaudited |
 | BadgerHunt | unknown | ethereum | 3 deployments: ethereum [`0x22ba8e...12baa0`](./contracts/ethereum-1/0x22ba8eeac5bddf7b5a298d2169a24c6f9e12baa0/); ethereum `0x8bd664...233119`; ethereum `0xa06395...d832ce` | ⚠️ Unaudited |
 | BalanceMerkleDistributor | operational_periphery | ethereum | [`0x10dbe1...beb295`](./contracts/ethereum-1/0x10dbe1a3c4946e50517795e53a3789c793beb295/) | ⚠️ Unaudited |
@@ -85,6 +65,7 @@
 | BonusDistributor | operational_periphery | avalanche | 4 deployments: avalanche [`0x23208b...94f193`](./contracts/avalanche-43114/0x23208b91a98c7c1cd9fe63085bff68311494f193/); avalanche `0x4292a8...f35e87`; avalanche `0x547cf0...6a184e`; avalanche `0xf263f3...dbf5c4` | ⚠️ Unaudited |
 | BridgeConfig | operational_periphery | ethereum | 10 deployments: ethereum [`0x1da293...cc3ada`](./contracts/ethereum-1/0x1da293df28fa8fca75bc5ba2dd51c2b659cc3ada/); ethereum `0x20fb56...cba354`; ethereum `0x278fd4...8ca709`; ethereum `0x7f1bae...f125e2`; ethereum `0x7fd806...0589e6`; ethereum `0x8ae465...ab7ede`; ethereum `0xaa959e...64892c`; ethereum `0xd4d277...9952d2`; bsc `0x87c94a...7029a2`; polygon `0x7f1bae...f125e2` | ⚠️ Unaudited |
 | BridgeConfigV2 | operational_periphery | polygon | 6 deployments: ethereum `0xae908b...7875e7`; polygon [`0x594863...df6df4`](./contracts/polygon-137/0x5948635463a9c8cecaa17b5d9ba846d789df6df4/); polygon `0x8c7d54...e82cc3`; polygon `0x93616b...29713c`; polygon `0xce02a6...d94866`; polygon `0xd4d277...9952d2` | ⚠️ Unaudited |
+| BridgeConfigV3 | operational_periphery | ethereum | 10 deployments: ethereum [`0x3ee02f...fb9bcf`](./contracts/ethereum-1/0x3ee02f08b801b1990ac844d8cd2f119ba6fb9bcf/); ethereum `0x5217c8...3a12a1`; ethereum `0x7c646a...d2806d`; ethereum `0xac0109...6a7d46`; ethereum `0xaf23be...29d75f`; polygon `0x50042b...0115c8`; polygon `0xb51e73...e61c6a`; polygon `0xbaf195...b3f6f9`; polygon `0xc53051...ca1efc`; polygon `0xdedfe3...fa9dd9` | ⚠️ Unaudited |
 | BytesManipulation | unknown | avalanche | 4 deployments: arbitrum `0x594863...df6df4`; avalanche [`0x2d902b...cad81b`](./contracts/avalanche-43114/0x2d902bf2cf087a42a05ca7b83cf79ba648cad81b/); avalanche `0x2fe2d9...0454b3`; avalanche `0xb7c584...43034f` | ⚠️ Unaudited |
 | CErc20Delegate | token | ethereum | 6 deployments: ethereum [`0x1066ab...a11f7d`](./contracts/ethereum-1/0x1066ab47a342152c564af62d179aa4b659a11f7d/); ethereum `0x4eb744...87f611`; ethereum `0x806323...080376`; ethereum `0x9de558...6c114e`; ethereum `0xa3fd14...317206`; ethereum `0xda396c...dec43d` | ⚠️ Unaudited |
 | CEtherDelegate | unknown | ethereum | [`0xf148cd...5c5851`](./contracts/ethereum-1/0xf148cdec066b94410d403ac5fe1bb17ec75c5851/) | ⚠️ Unaudited |
@@ -106,13 +87,18 @@
 | DistributionUniSFI | unknown | ethereum | [`0xa80f63...def6e0`](./contracts/ethereum-1/0xa80f63d14fbe8b82cd4807d838aada8b50def6e0/) | ⚠️ Unaudited |
 | Dummy | unknown | ethereum | [`0x0d4bb5...6d022a`](./contracts/ethereum-1/0x0d4bb5613cc2187b95958e18b7c13fe1a76d022a/) | ⚠️ Unaudited |
 | DummyMaster | unknown | ethereum | [`0xbb6fbb...5bcacb`](./contracts/ethereum-1/0xbb6fbb48d3bfddb2e0690e87894623e2e65bcacb/) | ⚠️ Unaudited |
+| DummyWeth | token | optimism | 5 deployments: optimism [`0x2d8ee8...2596ed`](./contracts/optimism-10/0x2d8ee8d6951cb4eecfe4a79eb9c2f973c02596ed/); optimism `0x41e95b...de945f`; optimism `0x84ea83...15711e`; optimism `0x991adb...9377c2`; optimism `0xac9b0b...9086ed` | ⚠️ Unaudited |
+| DummyWethProxy | token | optimism | 8 deployments: optimism [`0x061605...fd75c9`](./contracts/optimism-10/0x061605c4ad8825e3b6731875b409d77f19fd75c9/); optimism `0x3192ae...ee349a`; optimism `0x39274f...994075`; optimism `0x73783f...dec5e9`; optimism `0x94a423...61eb42`; optimism `0xbf180c...bcefb4`; optimism `0xe37f21...778704`; optimism `0xf68cd5...5cc541` | ⚠️ Unaudited |
 | ECDSAFactory | registry | bsc | 3 deployments: ethereum `0x07ca54...0c7b17`; bsc [`0x059525...82f22a`](./contracts/bsc-56/0x059525ed9a7a04f82764e3fdbec5c37d2a82f22a/); polygon `0x07ca54...0c7b17` | ⚠️ Unaudited |
+| ECDSANodeManagement | unknown | ethereum | 3 deployments: ethereum [`0x1bfe50...dbff8f`](./contracts/ethereum-1/0x1bfe50bb2a8a75fefa46892db10313898ddbff8f/); bsc `0xe95b1d...83876b`; polygon [`0x1bfe50...dbff8f`](./contracts/polygon-137/0x1bfe50bb2a8a75fefa46892db10313898ddbff8f/) | ⚠️ Unaudited |
+| ERC20Migrator | token | bsc | [`0xf0284f...c3e022`](./contracts/bsc-56/0xf0284fb86ada5e4d82555c529677eea3b2c3e022/) | ⚠️ Unaudited |
 | ERC20Verifier | token | ethereum | [`0xafba01...868cb7`](./contracts/ethereum-1/0xafba015befde91d48f37bf6e066c806b24868cb7/) | ⚠️ Unaudited |
 | ERC721Verifier | token | ethereum | [`0x6ad406...f39dc3`](./contracts/ethereum-1/0x6ad406325a40d428a9cd7bdedb5e5a213af39dc3/) | ⚠️ Unaudited |
 | EsGMX | unknown | avalanche | [`0xff1489...6ddd17`](./contracts/avalanche-43114/0xff1489227bbaac61a9209a08929e4c2a526ddd17/) | ⚠️ Unaudited |
 | EsGmxBatchSender | periphery | avalanche | [`0xc9bafe...8d1f4d`](./contracts/avalanche-43114/0xc9bafef924159138697e72899a2753a3dc8d1f4d/) | ⚠️ Unaudited |
 | FantohmERC20Token | token | ethereum | [`0xcf382c...e38721`](./contracts/ethereum-1/0xcf382c202f0fee5aee5d7380de45f4a426e38721/) | ⚠️ Unaudited |
 | FantohmTreasury | operational_periphery | ethereum | [`0x9042e8...8df006`](./contracts/ethereum-1/0x9042e869bedcd2bb3eea241ac0032cadae8df006/) | ⚠️ Unaudited |
+| FastBridge | operational_periphery | linea | 8 deployments: ethereum `0x5523d3...0fb59e`; optimism `0x5523d3...0fb59e`; bsc `0x5523d3...0fb59e`; base `0x5523d3...0fb59e`; arbitrum `0x5523d3...0fb59e`; linea [`0x34f527...9f24dd`](./contracts/linea-59144/0x34f52752975222d5994c206ce08c1d5b329f24dd/); blast [`0x34f527...9f24dd`](./contracts/blast-81457/0x34f52752975222d5994c206ce08c1d5b329f24dd/); scroll `0x5523d3...0fb59e` | ⚠️ Unaudited |
 | FastBridgeRouterV2 | operational_periphery | ethereum | [`0x00cd00...690000`](./contracts/ethereum-1/0x00cd000000003f7f682be4813200893d4e690000/) | ⚠️ Unaudited |
 | FastPriceEvents | operational_periphery | avalanche | 8 deployments: avalanche [`0x02b702...523bf6`](./contracts/avalanche-43114/0x02b7023d43bc52bff8a0c54a9f2ecec053523bf6/); avalanche `0x18ca46...259afb`; avalanche `0x489ee0...097c4a`; avalanche `0x585872...623171`; avalanche `0x8c8f42...d4b337`; avalanche `0xb3daef...789149`; avalanche `0xd88341...cfbc04`; avalanche `0xea7fcb...3402ea` | ⚠️ Unaudited |
 | FastPriceFeed | operational_periphery | avalanche | 10 deployments: avalanche [`0x38ed8b...b0b848`](./contracts/avalanche-43114/0x38ed8b2a7e8c70d8f44414f7605a221defb0b848/); avalanche `0x3e3c1d...a7b47f`; avalanche `0x510735...e52f8c`; avalanche `0x586a74...1851a7`; avalanche `0x7d9d10...b76a35`; avalanche `0x830f9b...3e77a7`; avalanche `0x8b0d6c...b0316d`; avalanche `0x9db5fb...fce73b`; avalanche `0xabbc5f...2f4064`; avalanche `0xe547ca...d02fd2` | ⚠️ Unaudited |
@@ -125,6 +111,7 @@
 | GlpBalance | unknown | avalanche | [`0x7d36ee...1734c9`](./contracts/avalanche-43114/0x7d36ee2188b6a16723b70e0468dc0080c71734c9/) | ⚠️ Unaudited |
 | GlpManager | governance | avalanche | 2 deployments: avalanche [`0xd152c7...818ee4`](./contracts/avalanche-43114/0xd152c7f25db7f4b95b7658323c5f33d176818ee4/); avalanche `0xe1ae4d...3b107f` | ⚠️ Unaudited |
 | GMX | unknown | avalanche | [`0x62edc0...11c661`](./contracts/avalanche-43114/0x62edc0692bd897d2295872a9ffcac5425011c661/) | ⚠️ Unaudited |
+| GMXWrapper | unknown | avalanche | 4 deployments: avalanche [`0x20a9dc...15f656`](./contracts/avalanche-43114/0x20a9dc684b4d0407ef8c9a302beaaa18ee15f656/); avalanche `0x5bbf13...033cde`; avalanche `0x934067...f0012d`; avalanche `0xddf2e2...5e7ec4` | ⚠️ Unaudited |
 | gOHM | unknown | ethereum | [`0x0ab870...20a52f`](./contracts/ethereum-1/0x0ab87046fbb341d058f17cbc4c1133f25a20a52f/) | ⚠️ Unaudited |
 | GovernanceTokenPausable | token | ethereum | [`0x98585d...237d96`](./contracts/ethereum-1/0x98585dfc8d9e7d48f0b1ae47ce33332cf4237d96/) | ⚠️ Unaudited |
 | HeniConsumer | unknown | ethereum | [`0xec5510...6e255f`](./contracts/ethereum-1/0xec5510a68f6670909a02005185bf9a6df26e255f/) | ⚠️ Unaudited |
@@ -133,6 +120,7 @@
 | InvokeVerifier | periphery | ethereum | [`0x8fae7a...232445`](./contracts/ethereum-1/0x8fae7a5f94960e0b64e346918160f6276f232445/) | ⚠️ Unaudited |
 | IterableMapping | unknown | ethereum | [`0x728a91...e374f7`](./contracts/ethereum-1/0x728a9157ab70f3b42b34492a0ef1293bbde374f7/) | ⚠️ Unaudited |
 | Kek | unknown | bsc | 2 deployments: bsc [`0x2f4617...43d503`](./contracts/bsc-56/0x2f46174b461f0db1d026df753487d34a8543d503/); bsc `0x3c726e...cdc750` | ⚠️ Unaudited |
+| L1BridgeZap | operational_periphery | ethereum | [`0x6571d6...29d85f`](./contracts/ethereum-1/0x6571d6be3d8460cf5f7d6711cd9961860029d85f/) | ⚠️ Unaudited |
 | LiqdLending | core_logic | ethereum | 4 deployments: ethereum [`0x0fd534...992f91`](./contracts/ethereum-1/0x0fd53429d9cdf19a8b2b9e4fc8f53f65dd992f91/); ethereum `0x2a59d6...737cb7`; ethereum `0xd77b12...64299b`; ethereum `0xe3e0e8...425f94` | ⚠️ Unaudited |
 | LiqdRentalVault | core_logic | ethereum | [`0xfe979f...589b81`](./contracts/ethereum-1/0xfe979f415ab88e4516f7590e8fb3dc5e10589b81/) | ⚠️ Unaudited |
 | LiqdRentalWallet | unknown | ethereum | [`0x076565...65430e`](./contracts/ethereum-1/0x07656581a852a91f2299e19707f5accb7865430e/) | ⚠️ Unaudited |
@@ -144,15 +132,19 @@
 | MetaSwapDeposit | unknown | bsc | 13 deployments: ethereum `0x544450...733381`; ethereum `0xdb9f78...8f5069`; bsc [`0x1f0b91...0b2fb8`](./contracts/bsc-56/0x1f0b91e4fb105443415ab650ba0e36c2ef0b2fb8/); bsc `0x41327b...3b8ff3`; bsc `0x6e42e9...93344b`; bsc `0xb883a9...57b584`; bsc `0xeb6360...c895f1`; polygon `0x41e95b...de945f`; polygon `0x5d5f01...35f21a`; polygon `0x9f7200...d15599`; arbitrum `0x9508bf...73f299`; arbitrum `0xc36501...01d586`; avalanche `0xe0fa08...970413` | ⚠️ Unaudited |
 | MetaSwapUtils | unknown | bsc | 11 deployments: ethereum `0x809dc5...771036`; ethereum `0x88e7af...5c8f7c`; bsc [`0x0e9f79...b853c5`](./contracts/bsc-56/0x0e9f7938a1514391a5d45a95aa36f1123eb853c5/); bsc `0x907a1a...fa479d`; bsc `0x911b18...2d9ae5`; bsc `0x91d1db...b54e65`; polygon `0x809dc5...771036`; polygon `0xe21a31...b92bfb`; arbitrum `0x874577...ce505f`; arbitrum `0xffc2d6...8c36e9`; avalanche `0xaf41a6...f2dc6b` | ⚠️ Unaudited |
 | Migrations | operational_periphery | aurora | [`0x15ada3...3e100f`](./contracts/aurora-1313161554/0x15ada3716a7e589b1c31b7131a0cc546203e100f/) | ⚠️ Unaudited |
+| MigratorBridgeZap | operational_periphery | bsc | 2 deployments: bsc [`0x846e60...afa157`](./contracts/bsc-56/0x846e607b930ea1f5dde6c4a9d9104d5fbfafa157/); bsc `0xde2789...61caeb` | ⚠️ Unaudited |
+| MiniChefV2 | unknown | blast | 14 deployments: ethereum `0x6f1d9d...c6ebe1`; ethereum `0xd10ef2...0b62cf`; optimism `0xe8c610...12aaa0`; bsc `0x8f5bbb...9c1280`; polygon `0x7875af...418be5`; metis `0xa67b71...e11f0b`; metis `0xab0d8f...34ebf5`; moonriver `0x432036...d69540`; base `0xffc2d6...8c36e9`; arbitrum `0x5d5f01...35f21a`; arbitrum `0x73186f...34e207`; avalanche `0x3a0152...e18249`; blast [`0x3100dc...d6e590`](./contracts/blast-81457/0x3100dc8464a8523306c3c5034de24a8927d6e590/); aurora `0x809dc5...771036` | ⚠️ Unaudited |
 | MintableBaseToken | token | avalanche | 5 deployments: avalanche [`0x09cbe2...408b8d`](./contracts/avalanche-43114/0x09cbe2f4230048270e628ac91f323ae6e5408b8d/); avalanche `0x1d5ff3...6c788c`; avalanche `0x2f14b1...1ef4fc`; avalanche `0x5d1f0c...71d4d4`; avalanche `0x8087a3...4a26d2` | ⚠️ Unaudited |
 | MockLP | unknown | ethereum | [`0x1e7452...589ba3`](./contracts/ethereum-1/0x1e74528caab0feddd01b1df52973c3d2bb589ba3/) | ⚠️ Unaudited |
 | MoonLock | unknown | moonriver | 2 deployments: moonriver [`0x0134eb...e39eb3`](./contracts/moonriver-1285/0x0134eb236b47186021a50d25a51365ac77e39eb3/); moonriver `0xa9f0c9...a565ba` | ⚠️ Unaudited |
+| MoonriverBridgeZap | operational_periphery | moonriver | 2 deployments: moonriver [`0x06fea8...f42a5c`](./contracts/moonriver-1285/0x06fea8513ff03a0d3f61324da709d4cf06f42a5c/); moonriver `0xfa28dd...8cc29e` | ⚠️ Unaudited |
 | MultiSigWalletFactory | registry | blast | 2 deployments: metis `0xb60326...a721af`; blast [`0x56124c...7ffb3a`](./contracts/blast-81457/0x56124c3f3ffcaf90c293c5be60e9f71ecc7ffb3a/) | ⚠️ Unaudited |
 | NerveBridgeZap | operational_periphery | ethereum | 10 deployments: ethereum [`0x33d90b...296987`](./contracts/ethereum-1/0x33d90b6ce7e0bfc42bcd35d05c443c6915296987/); ethereum `0x4004fa...369193`; ethereum `0x518b55...61ef28`; ethereum `0x65db21...9486bf`; ethereum `0x990732...7bf502`; ethereum `0xa12a03...ec1747`; ethereum `0xa25693...7e0171`; ethereum `0xb74141...edd4ab`; ethereum `0xde2789...61caeb`; ethereum `0xe3a1e2...aef740` | ⚠️ Unaudited |
 | NerveMetaBridgeZap | operational_periphery | polygon | 30 deployments: bsc `0x0adf87...3d2362`; bsc `0x612f3a...38bcb9`; bsc `0x739b16...3e184b`; bsc `0x75224b...150ba7`; bsc `0x7bc5fd...f7c748`; bsc `0x8027a7...1726ab`; bsc `0xb34c67...72e177`; bsc `0xb68281...985d7c`; bsc `0xce02a6...d94866`; bsc `0xd4d277...9952d2`; bsc `0xe862c9...88b1ca`; bsc `0xf72582...d58f64`; polygon [`0x06aee5...1f6320`](./contracts/polygon-137/0x06aee5fbada43b3383782b7e7388ab592b1f6320/); polygon `0x077563...2d0f48`; polygon `0x278fd4...8ca709`; polygon `0x2f4617...43d503`; polygon `0x9d526c...345fe6`; polygon `0xb34c67...72e177`; polygon `0xb74141...edd4ab`; polygon `0xe862c9...88b1ca`; polygon `0xff0047...11d54a`; arbitrum `0x244268...fc9fcf`; arbitrum `0x2d8ee8...2596ed`; arbitrum `0x47b359...3bd932`; arbitrum `0x5a5fff...431655`; arbitrum `0x77aa7c...c6feb3`; arbitrum `0x9413b5...cd278e`; arbitrum `0xe1b880...38166c`; avalanche `0x0efc29...e74893`; avalanche `0xecd72d...0aa3b1` | ⚠️ Unaudited |
 | NewOrderGovernance | unknown | ethereum | [`0x1b890f...5fabd5`](./contracts/ethereum-1/0x1b890fd37cd50bea59346fc2f8ddb7cd9f5fabd5/) | ⚠️ Unaudited |
 | NewStrategyAngleStakeDao | core_logic | ethereum | [`0x79b738...a0e05f`](./contracts/ethereum-1/0x79b738e404208e9607c3b4d4b3800ed0d4a0e05f/) | ⚠️ Unaudited |
 | NFTBoosterVault | core_logic | ethereum | [`0xa324a2...68bdd9`](./contracts/ethereum-1/0xa324a2e3a6f64bd588565e0e1e2dd50e7a68bdd9/) | ⚠️ Unaudited |
+| NodeEnv | unknown | ethereum | [`0xbcefb3...63b763`](./contracts/ethereum-1/0xbcefb397a13528f693d929931248c94c4263b763/) | ⚠️ Unaudited |
 | OlympusAuthority | governance | ethereum | [`0x1c21f8...b38b7a`](./contracts/ethereum-1/0x1c21f8ea7e39e2ba00bc12d2968d63f4acb38b7a/) | ⚠️ Unaudited |
 | OlympusTokenMigrator | token | ethereum | [`0x184f3f...e784b3`](./contracts/ethereum-1/0x184f3fad8618a6f458c16bae63f70c426fe784b3/) | ⚠️ Unaudited |
 | OneWaySwap | unknown | ethereum | [`0xb3c603...6caedf`](./contracts/ethereum-1/0xb3c60348a8f8ed8b260fd1966c9f2b740e6caedf/) | ⚠️ Unaudited |
@@ -161,6 +153,7 @@
 | OrderBookReader | unknown | avalanche | [`0xccfe3e...40683b`](./contracts/avalanche-43114/0xccfe3e576f8145403d3ce8f3c2f6519dae40683b/) | ⚠️ Unaudited |
 | ParaSpaceProxyVerifier | periphery | ethereum | [`0x72cb0b...5d457c`](./contracts/ethereum-1/0x72cb0b86b1364925f6d1bcdb64da474c685d457c/) | ⚠️ Unaudited |
 | ParaSpaceTimelockVerifier | governance | ethereum | [`0x99b305...2fe967`](./contracts/ethereum-1/0x99b30565ad578c2da2d1b6eaa9171fbd582fe967/) | ⚠️ Unaudited |
+| PoolConfig | core_logic | ethereum | [`0xb34c67...72e177`](./contracts/ethereum-1/0xb34c67db5f0fd8d3d4238fd0a1cbbfd50a72e177/) | ⚠️ Unaudited |
 | PositionManager | governance | avalanche | 4 deployments: avalanche [`0x831b8a...3adc23`](./contracts/avalanche-43114/0x831b8af9555984139462e872aea9f80f173adc23/); avalanche `0xa21b83...dcb866`; avalanche `0xaaf69c...15e94e`; avalanche `0xf2ec2e...233216` | ⚠️ Unaudited |
 | PositionRouter | adapter | avalanche | 3 deployments: avalanche [`0x195256...7167d8`](./contracts/avalanche-43114/0x195256074192170d1530527abc9943759c7167d8/); avalanche `0xc5bbc6...86bd6b`; avalanche `0xfff6d2...6420f8` | ⚠️ Unaudited |
 | PositionRouterReader | adapter | avalanche | [`0x8850a5...ada664`](./contracts/avalanche-43114/0x8850a5200050ec4307f2bdc26bec5f7ca7ada664/) | ⚠️ Unaudited |
@@ -211,11 +204,15 @@
 | StrategyBunchyDev | core_logic | ethereum | [`0x7d3b52...821911`](./contracts/ethereum-1/0x7d3b52a6ae25545f825bc230f7011fc97e821911/) | ⚠️ Unaudited |
 | StrategyProxy | core_logic | ethereum | 2 deployments: ethereum [`0xe953d9...0f6b33`](./contracts/ethereum-1/0xe953d93838ca7d5ea60090c5edd38db51e0f6b33/); ethereum `0xf34ae3...274f1a` | ⚠️ Unaudited |
 | SubaccountRouter | adapter | avalanche | [`0xf792c1...4b1c2d`](./contracts/avalanche-43114/0xf792c12688b73376465c86a87fd47fbaac4b1c2d/) | ⚠️ Unaudited |
+| SwapEthWrapper | unknown | arbitrum | 8 deployments: optimism `0x244268...fc9fcf`; optimism `0x8c7d5f...32ef7b`; base `0xa9e905...b4ac89`; arbitrum [`0x109523...2f878c`](./contracts/arbitrum-42161/0x109523db4336e01f030ed51c581c3fa9222f878c/); arbitrum `0x1c3fe7...42e102`; arbitrum `0x91fd4e...1573e5`; arbitrum `0xe21a31...b92bfb`; blast `0x43b961...78841c` | ⚠️ Unaudited |
 | SwapQuoter | periphery | base | 13 deployments: ethereum `0x78a83c...075295`; optimism `0x78a83c...075295`; optimism `0xb37a2c...85b07c`; polygon `0x78a83c...075295`; base [`0x06fea8...f42a5c`](./contracts/base-8453/0x06fea8513ff03a0d3f61324da709d4cf06f42a5c/); base `0x78a83c...075295`; base `0xb37a2c...85b07c`; arbitrum `0x1c1fce...372fe1`; arbitrum `0x78a83c...075295`; arbitrum `0xb37a2c...85b07c`; avalanche `0x1c1fce...372fe1`; avalanche `0x78a83c...075295`; avalanche `0xb37a2c...85b07c` | ⚠️ Unaudited |
 | SwapQuoterV2 | periphery | base | 3 deployments: base [`0x9fbff5...dd6b07`](./contracts/base-8453/0x9fbff54b967654b0c76b174d2b95614060dd6b07/); arbitrum [`0x9fbff5...dd6b07`](./contracts/arbitrum-42161/0x9fbff54b967654b0c76b174d2b95614060dd6b07/); avalanche [`0x9fbff5...dd6b07`](./contracts/avalanche-43114/0x9fbff54b967654b0c76b174d2b95614060dd6b07/) | ⚠️ Unaudited |
+| SwapUtils | unknown | ethereum | 16 deployments: ethereum [`0x11199a...147f5f`](./contracts/ethereum-1/0x11199a9ee50127f335b84a1eeb961d8a85147f5f/); ethereum `0xd5609c...aab17c`; optimism `0xf07d1c...867089`; bsc `0x74c302...301c12`; bsc `0x7eced0...e36393`; polygon `0x20b587...f358c5`; polygon `0xab0d8f...34ebf5`; polygon `0xd5609c...aab17c`; metis `0xa9e905...b4ac89`; moonriver `0xdde5be...3606e0`; base `0x874577...ce505f`; arbitrum `0x20b587...f358c5`; arbitrum `0xe74f2e...373ef0`; avalanche `0x9508bf...73f299`; blast `0xe6cd93...456627`; aurora `0xe1e1e6...f3049d` | ⚠️ Unaudited |
 | SynapseBaseAdapter | adapter | arbitrum | 6 deployments: arbitrum [`0x2376d5...edb59c`](./contracts/arbitrum-42161/0x2376d589b5029876f866754538025aa1d2edb59c/); arbitrum `0xebb07d...68a8d6`; avalanche `0x249160...f2ccc4`; avalanche `0x758d58...cdc8eb`; avalanche `0xa370d7...37c4a0`; avalanche `0xe9b6e1...9dcb5a` | ⚠️ Unaudited |
 | SynapseMetaAdapter | adapter | avalanche | [`0xb313da...245ae8`](./contracts/avalanche-43114/0xb313da336eacbb8faea705b9447bd77412245ae8/) | ⚠️ Unaudited |
+| SynapseRouter | adapter | optimism | 13 deployments: ethereum `0x7e7a0e...18c96a`; optimism [`0x25f8fa...8c1f19`](./contracts/optimism-10/0x25f8fa4917180ff308883e37ea27ceaeb68c1f19/); optimism `0x7e7a0e...18c96a`; polygon `0x7e7a0e...18c96a`; base [`0x25f8fa...8c1f19`](./contracts/base-8453/0x25f8fa4917180ff308883e37ea27ceaeb68c1f19/); base `0x6c8c6e...04e3b3`; base `0x7e7a0e...18c96a`; arbitrum [`0x25f8fa...8c1f19`](./contracts/arbitrum-42161/0x25f8fa4917180ff308883e37ea27ceaeb68c1f19/); arbitrum `0x7e7a0e...18c96a`; arbitrum `0xc6c8e5...2825ad`; avalanche [`0x25f8fa...8c1f19`](./contracts/avalanche-43114/0x25f8fa4917180ff308883e37ea27ceaeb68c1f19/); avalanche `0x7e7a0e...18c96a`; avalanche `0xc6c8e5...2825ad` | ⚠️ Unaudited |
 | Timelock | governance | avalanche | 22 deployments: ethereum `0xa4d46e...3f2627`; ethereum `0xd3cfc4...411616`; avalanche [`0x033f48...60e0ec`](./contracts/avalanche-43114/0x033f484869dd8fb40041dfc7979d75ca5260e0ec/); avalanche `0x097b4f...715973`; avalanche `0x28a6ac...51d119`; avalanche `0x31d56d...9c970c`; avalanche `0x3d4490...aba7c4`; avalanche `0x4b5c3c...ca9587`; avalanche `0x59c461...33c902`; avalanche `0x5aecdd...d2b8f4`; avalanche `0x65f62d...e8cc4e`; avalanche `0x6cd4e2...6e0c53`; avalanche `0x6d8fb0...416d77`; avalanche `0x800ea9...8a24ea`; avalanche `0x8a68a0...afca75`; avalanche `0x8ea128...bc3718`; avalanche `0xb10817...ce67e5`; avalanche `0xcdc932...32a3eb`; avalanche `0xd9d513...dfd65d`; avalanche `0xf80ce8...f45a26`; avalanche `0xfa7046...f7ec9c`; avalanche `0xfec6fa...898814` | ⚠️ Unaudited |
+| TimelockController | governance | optimism | 16 deployments: ethereum `0x39ab21...bf75a1`; ethereum `0x647489...5cac70`; optimism [`0x003107...b51dce`](./contracts/optimism-10/0x003107b3aeee133804eabe7d1df200ddfbb51dce/); bsc `0x040735...859d46`; bsc `0x5b01dd...97d50c`; polygon `0x254fec...0bd21f`; polygon `0xa12a03...ec1747`; metis [`0x003107...b51dce`](./contracts/metis-1088/0x003107b3aeee133804eabe7d1df200ddfbb51dce/); metis `0x911766...76f8d6`; moonriver `0x9508bf...73f299`; base `0xe0fa08...970413`; arbitrum `0xa67b71...e11f0b`; avalanche `0x7f1bae...f125e2`; avalanche `0xa4666f...efacbb`; blast `0x4e31ed...acfdfc`; aurora `0x9508bf...73f299` | ⚠️ Unaudited |
 | TokenDistributor | operational_periphery | bsc | 8 deployments: bsc [`0x292206...b062b8`](./contracts/bsc-56/0x292206c36fb6928237c54bd8dec6135525b062b8/); bsc `0x31970a...46ed47`; bsc `0x346b92...0bcee8`; bsc `0x36829b...c86a0b`; bsc `0x73e260...f04780`; bsc `0x9fe398...4252a2`; bsc `0xba0976...e89b47`; avalanche `0xf72582...d58f64` | ⚠️ Unaudited |
 | TokenManager | governance | avalanche | 7 deployments: avalanche [`0x1bcfff...370967`](./contracts/avalanche-43114/0x1bcfff1bddf755de10de20771eed0c71ff370967/); avalanche `0x26137d...504da9`; avalanche `0x7f98d2...d7f653`; avalanche `0x8b25ba...3b4bc2`; avalanche `0xb1b7ac...fb9178`; avalanche `0xbc3004...b2c830`; avalanche `0xe4b65f...d2d753` | ⚠️ Unaudited |
 | TokenVault | core_logic | ethereum | [`0xbaac2b...fe8899`](./contracts/ethereum-1/0xbaac2b4491727d78d2b78815144570b9f2fe8899/) | ⚠️ Unaudited |
@@ -245,33 +242,32 @@
 | XNewO | unknown | ethereum | [`0x86e806...9b2e47`](./contracts/ethereum-1/0x86e8062c9f9e5f852bb0d8fc3f33fc110e9b2e47/) | ⚠️ Unaudited |
 | xTokenWrapper | token | ethereum | 2 deployments: ethereum [`0x829c3d...da5e44`](./contracts/ethereum-1/0x829c3d9b01eb54a6acfffb06183b1fd489da5e44/); ethereum `0xb4d4fd...4a61f5` | ⚠️ Unaudited |
 
-### ✅ Verified by Bytecode + Audited (11)
+### ✅ Verified by Bytecode + Audited (0)
+
+Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
+
+- None
+
+### ⚠️ Verified by Bytecode + Unaudited (15)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| SynapseERC20 | token | aurora | 69 deployments: ethereum `0x0f2d71...fd9f29`; ethereum `0x3c726e...cdc750`; ethereum `0xa4fe53...efa534`; ethereum `0xa6fc7d...e14317`; ethereum `0xbc1223...cbf226`; ethereum `0xc4133e...c65c46`; ethereum `0xe95b1d...83876b`; ethereum `0xed0ac9...8fa727`; optimism `0x5a5fff...431655`; optimism `0x67c10c...a7cd00`; optimism `0x809dc5...771036`; optimism `0x9508bf...73f299`; optimism `0xc83155...4fc438`; bsc `0x23b891...b817b3`; bsc `0x5f300a...54e68a`; bsc `0x7aab3e...7c277a`; bsc `0xa4080f...9e9484`; bsc `0xc0384e...35fb37`; polygon `0x50882f...e63f4f`; polygon `0xb6c473...9b02af`; polygon `0xc0384e...35fb37`; polygon `0xca3281...3c140d`; polygon `0xd1c374...1ae46b`; polygon `0xd8ca34...b45195`; polygon `0xf8f9ef...70e695`; metis `0x67c10c...a7cd00`; metis `0x931b8f...211231`; metis `0x9508bf...73f299`; metis `0x961318...5200ab`; metis `0xbda037...46d823`; metis `0xe3c82a...afbf48`; moonbeam `0x1d4c2a...7b7d7e`; moonbeam `0x3192ae...ee349a`; moonbeam `0x93124c...a67ed6`; moonbeam `0xa1f889...e59cc3`; moonbeam `0xbf180c...bcefb4`; moonbeam `0xd26664...4a4521`; moonbeam `0xdd47a3...bfab4f`; moonbeam `0xf07d1c...867089`; moonriver `0x84a420...67d32f`; moonriver `0xd80d86...ad0445`; base `0x432036...d69540`; base `0xa67b71...e11f0b`; base `0xb554a5...06be8c`; arbitrum `0x080f6a...8f46eb`; arbitrum `0x2913e8...497688`; arbitrum `0x3ea9b0...cf908e`; arbitrum `0x809dc5...771036`; avalanche `0x1bfe50...dbff8f`; avalanche `0x1f1e7c...9ca251`; avalanche `0x2cb58b...d7bd15`; avalanche `0x321e70...f84251`; avalanche `0x33b39d...728450`; avalanche `0x368f17...eddbd5`; avalanche `0x558add...d2f7ed`; avalanche `0x861f04...2f6503`; avalanche `0x882b1b...8277f2`; avalanche `0x938f36...be837d`; avalanche `0xcfc37a...1bdf46`; avalanche `0xdfbfbd...0e4814`; blast `0x3194b0...f6c6e0`; blast `0x3d4842...63fef9`; blast `0x9592f0...5ede0e`; blast `0xce9712...ccc855`; blast `0xe7b142...fd6a97`; aurora [`0x073795...f2a21c`](./contracts/aurora-1313161554/0x07379565cd8b0cae7c60dc78e7f601b34af2a21c/); aurora `0x84a420...67d32f`; aurora `0x84ea83...15711e`; aurora `0xd80d86...ad0445` | ✅ Audited (bytecode match) |
-| LPToken | token | avalanche | 22 deployments: ethereum `0x1b8476...3dde4f`; ethereum `0x432036...d69540`; ethereum `0x6c8c6e...04e3b3`; ethereum `0x9f7200...d15599`; ethereum `0xa67b71...e11f0b`; ethereum `0xaed5b2...28ddfe`; optimism `0xe0fa08...970413`; bsc `0x1b74d6...ce778b`; bsc `0x2f6087...edcaeb`; polygon `0x432036...d69540`; polygon `0x4cdacb...da8007`; polygon `0x77aa7c...c6feb3`; metis `0xdde5be...3606e0`; moonbeam `0x104127...0b6e9e`; moonriver `0x6f4e8e...dc19c9`; base `0x15ada3...3e100f`; arbitrum `0x15ada3...3e100f`; arbitrum `0x997108...345173`; arbitrum `0xe1e1e6...f3049d`; avalanche [`0x003107...b51dce`](./contracts/avalanche-43114/0x003107b3aeee133804eabe7d1df200ddfbb51dce/); blast `0x36ef3a...cd595b`; aurora `0x5d5f01...35f21a` | ✅ Audited (bytecode match) |
-| GenericERC20 | unknown | polygon | 4 deployments: bsc `0x66be2c...97d165`; polygon [`0x11199a...147f5f`](./contracts/polygon-137/0x11199a9ee50127f335b84a1eeb961d8a85147f5f/); polygon `0x25556c...eae0b4`; polygon `0x93124c...a67ed6` | ✅ Audited (bytecode match) |
-| L2BridgeZap | operational_periphery | avalanche | 19 deployments: optimism `0x40c95b...356da9`; optimism `0x470f95...e3b4a7`; optimism `0x9cd619...71ab32`; bsc `0x749f37...a23697`; polygon `0x1c6ae1...af9cc8`; moonbeam `0xada10a...383fd5`; arbitrum `0x265326...dd08d8`; arbitrum `0x375e92...7089f9`; arbitrum `0x37f9ae...b3862b`; avalanche [`0x0ef812...9c2f3a`](./contracts/avalanche-43114/0x0ef812f4c68dc84c22a4821ef30ba2ffab9c2f3a/); avalanche `0x407bc5...29d577`; avalanche `0x4743cd...39ba1d`; avalanche `0x997108...345173`; avalanche `0xab325c...fd44c3`; avalanche `0xb51e73...e61c6a`; avalanche `0xbfc959...4c9ff4`; avalanche `0xe85429...7ed140`; aurora `0x2d8ee8...2596ed`; aurora `0x5a5fff...431655` | ✅ Audited (bytecode match) |
-| Multicall2 | unknown | moonbeam | 17 deployments: ethereum `0x2d8ee8...2596ed`; ethereum `0x9695fa...7ecc21`; optimism `0x266557...13bf59`; bsc `0x527a2e...f9221f`; bsc `0xb4a122...162a44`; polygon `0x1d4c2a...7b7d7e`; polygon `0x244268...fc9fcf`; polygon `0xffc2d6...8c36e9`; metis `0x266557...13bf59`; moonbeam [`0x15ada3...3e100f`](./contracts/moonbeam-1284/0x15ada3716a7e589b1c31b7131a0cc546203e100f/); moonriver `0xaf41a6...f2dc6b`; base `0x22cdc9...49950e`; arbitrum `0x6bf856...9581ee`; arbitrum `0xf07d1c...867089`; avalanche `0x432036...d69540`; blast `0xe24f2f...b13cc9`; aurora `0xaf41a6...f2dc6b` | ✅ Audited (bytecode match) |
-| Swap | unknown | blast | 14 deployments: ethereum `0x244268...fc9fcf`; ethereum `0xa9e905...b4ac89`; optimism `0x432036...d69540`; optimism `0xdb9f78...8f5069`; bsc `0x08f3ec...d8bfba`; bsc `0x1fb7b4...bb242e`; polygon `0xd26664...4a4521`; polygon `0xdb9f78...8f5069`; moonriver `0xdb9f78...8f5069`; base `0xaf41a6...f2dc6b`; arbitrum `0x22cdc9...49950e`; arbitrum `0x4cdacb...da8007`; avalanche `0xaed5b2...28ddfe`; blast [`0x04aaef...25653e`](./contracts/blast-81457/0x04aaef5b5d97d32aee7d631d251c08980b25653e/) | ✅ Audited (bytecode match) |
-| SwapDeployer | unknown | aurora | 18 deployments: ethereum `0x93124c...a67ed6`; ethereum `0xdde5be...3606e0`; optimism `0xa67b71...e11f0b`; bsc `0x289606...739c15`; bsc `0x37f9ae...b3862b`; polygon `0x911766...76f8d6`; polygon `0xaf41a6...f2dc6b`; polygon `0xba1001...7bcb0f`; polygon `0xdde5be...3606e0`; metis `0xe1e1e6...f3049d`; moonbeam `0x9695fa...7ecc21`; moonriver `0x5d5f01...35f21a`; base `0x20b587...f358c5`; arbitrum `0x9695fa...7ecc21`; arbitrum `0xaf41a6...f2dc6b`; avalanche `0x22cdc9...49950e`; blast `0xf1f64a...bfb883`; aurora [`0x104127...0b6e9e`](./contracts/aurora-1313161554/0x104127ccd4b1378898916894eb59c97e690b6e9e/) | ✅ Audited (bytecode match) |
-| SwapFlashLoan | unknown | arbitrum | 27 deployments: ethereum `0x111689...8af2d8`; ethereum `0x5a5fff...431655`; ethereum `0xe1e1e6...f3049d`; optimism `0xa9e905...b4ac89`; optimism `0xdde5be...3606e0`; optimism `0xe27bff...8f5ee9`; optimism `0xf44938...f22004`; bsc `0x28ec0b...ca4d13`; bsc `0x521874...09726c`; bsc `0x5f10b4...fdae93`; polygon `0x85fcd7...1c3ee5`; polygon `0xa9e905...b4ac89`; polygon `0xaa959e...64892c`; moonriver `0xa9e905...b4ac89`; base `0x6223bd...4c225f`; base `0x9508bf...73f299`; arbitrum [`0x0db3fe...6c0dd8`](./contracts/arbitrum-42161/0x0db3fe3b770c95a0b99d1ed6f2627933466c0dd8/); arbitrum `0x9dd329...f0cb40`; arbitrum `0xa06766...c34352`; arbitrum `0xce762c...2c0166`; arbitrum `0xe0fa08...970413`; avalanche `0x84a420...67d32f`; avalanche `0xed2a7e...abab66`; blast `0x999fcd...4641c0`; blast `0xa4bd1a...32ac9c`; blast `0xd41ee4...94d06e`; aurora `0x51d96e...1a4064` | ✅ Audited (bytecode match) |
-| SynapseBridge | operational_periphery | bsc | 138 deployments: ethereum `0x13a554...45718e`; ethereum `0x1622b3...fa81b2`; ethereum `0x279631...b8ceb6`; ethereum `0x31fe39...9efd0d`; ethereum `0x346b92...0bcee8`; ethereum `0x36829b...c86a0b`; ethereum `0x472822...7716f1`; ethereum `0x4cf147...bd2f0b`; ethereum `0x5b01dd...97d50c`; ethereum `0x5f300a...54e68a`; ethereum `0x64f80a...320782`; ethereum `0x6cd2ba...4b3f7b`; ethereum `0x75224b...150ba7`; ethereum `0x7875af...418be5`; ethereum `0x7d971f...2aa9fd`; ethereum `0x87c94a...7029a2`; ethereum `0x894904...50b5da`; ethereum `0x9007a8...4e19f2`; ethereum `0x9d526c...345fe6`; ethereum `0xab9332...bd0f7d`; ethereum `0xc05e61...91aace`; ethereum `0xd123f7...a8749f`; ethereum `0xefd2f7...a47001`; ethereum `0xfb4a5f...8a544c`; optimism `0x20b587...f358c5`; optimism `0x7ef756...4cd1e4`; optimism `0xaf41a6...f2dc6b`; bsc [`0x00d1c1...a81f40`](./contracts/bsc-56/0x00d1c14a6f0be0c42252d81fec494aa5b9a81f40/); bsc `0x06aee5...1f6320`; bsc `0x0efc29...e74893`; bsc `0x2264c2...fc11be`; bsc `0x279631...b8ceb6`; bsc `0x39ab21...bf75a1`; bsc `0x3d63cb...0ec1ea`; bsc `0x41dec9...0a3ea6`; bsc `0x46aea9...2389df`; bsc `0x53ab43...ee1864`; bsc `0x54594c...33c3b2`; bsc `0x57562b...04d3df`; bsc `0x65db21...9486bf`; bsc `0x6a00dc...dcdd3c`; bsc `0x6cd2ba...4b3f7b`; bsc `0x7103a3...f0bab5`; bsc `0x7875af...418be5`; bsc `0x94de53...4bc9eb`; bsc `0x9524ff...ccd691`; bsc `0x990732...7bf502`; bsc `0x9d526c...345fe6`; bsc `0xa7f9b7...fdfa8a`; bsc `0xd123f7...a8749f`; bsc `0xe3a1e2...aef740`; bsc `0xee26d4...aaeab1`; bsc `0xf19a24...f7f9c3`; bsc `0xf76256...4261e4`; polygon [`0x00d1c1...a81f40`](./contracts/polygon-137/0x00d1c14a6f0be0c42252d81fec494aa5b9a81f40/); polygon `0x040735...859d46`; polygon `0x0efc29...e74893`; polygon `0x145000...2a8cce`; polygon `0x368d26...9bd978`; polygon `0x39ab21...bf75a1`; polygon `0x3c726e...cdc750`; polygon `0x41dec9...0a3ea6`; polygon `0x46aea9...2389df`; polygon `0x5b8365...b83546`; polygon `0x5f0674...f3cfc3`; polygon `0x6cd2ba...4b3f7b`; polygon `0x7103a3...f0bab5`; polygon `0x75224b...150ba7`; polygon `0x7b3c1f...d095f2`; polygon `0x85f819...aba8d2`; polygon `0x8f5bbb...9c1280`; polygon `0x966e35...f62a8a`; polygon `0xa7f9b7...fdfa8a`; polygon `0xb68281...985d7c`; polygon `0xb899e9...da91fa`; polygon `0xbd6eca...c75e20`; polygon `0xc87fc2...d515ca`; polygon `0xcd8a2e...9fc3c1`; polygon `0xde2789...61caeb`; polygon `0xecd72d...0aa3b1`; polygon `0xf0284f...c3e022`; polygon `0xf76256...4261e4`; polygon `0xfefd11...acc336`; metis `0x20b587...f358c5`; moonbeam `0x22cdc9...49950e`; moonbeam `0x84a420...67d32f`; moonbeam `0x9508bf...73f299`; moonbeam `0xaed5b2...28ddfe`; moonbeam `0xe0fa08...970413`; moonbeam `0xe1a77c...8d5e6f`; moonriver `0x2d8ee8...2596ed`; moonriver `0x991adb...9377c2`; moonriver `0x995abc...90cd4e`; moonriver `0xaed5b2...28ddfe`; moonriver `0xe0fa08...970413`; base `0x84a420...67d32f`; base `0xf07d1c...867089`; arbitrum `0x037527...54cf82`; arbitrum `0x08f3ec...d8bfba`; arbitrum `0x0ab8eb...eaf472`; arbitrum `0x15779f...12a873`; arbitrum `0x1b9651...dbe5fd`; arbitrum `0x25544c...6a1490`; arbitrum `0x2fa1eb...69e8e9`; arbitrum `0x6f4e8e...dc19c9`; arbitrum `0x97a7af...7c9b68`; arbitrum `0xab0d8f...34ebf5`; arbitrum `0xb883a9...57b584`; arbitrum `0xba1001...7bcb0f`; arbitrum `0xe27bff...8f5ee9`; arbitrum `0xf7e621...b26888`; avalanche `0x0acf03...e2b512`; avalanche `0x0e4087...213389`; avalanche `0x25fac3...6ffb92`; avalanche `0x3b5c7b...f2c2ce`; avalanche `0x405fe6...d92fef`; avalanche `0x4ecf30...d4bb73`; avalanche `0x52577e...013585`; avalanche `0x587aef...5addf9`; avalanche `0x6571d6...29d85f`; avalanche `0x7e9d86...f8580e`; avalanche `0x87c94a...7029a2`; avalanche `0x8aeba2...580bfc`; avalanche `0x90f1c4...cdc876`; avalanche `0x92ab60...280d59`; avalanche `0xa3415c...fd910d`; avalanche `0xa82404...ffa8d5`; avalanche `0xab7522...493ba0`; avalanche `0xc05e61...91aace`; avalanche `0xc4133e...c65c46`; avalanche `0xce1618...c040e6`; avalanche `0xdaf2ea...d09cbc`; avalanche `0xe05c97...03cf6a`; avalanche `0xec26e9...bd7c65`; avalanche `0xec5287...2f0b33`; blast `0x55769b...07ef3c`; blast `0xdcd8cc...8e8222`; aurora `0xe0fa08...970413` | ✅ Audited (bytecode match) |
-| SynapseCCTP | unknown | ethereum | 10 deployments: ethereum [`0x12715a...4bd35e`](./contracts/ethereum-1/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); ethereum `0xfb2bfc...a74e84`; optimism [`0x12715a...4bd35e`](./contracts/optimism-10/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); polygon [`0x12715a...4bd35e`](./contracts/polygon-137/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); base [`0x12715a...4bd35e`](./contracts/base-8453/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); base `0xfb2bfc...a74e84`; arbitrum [`0x12715a...4bd35e`](./contracts/arbitrum-42161/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); arbitrum `0xfb2bfc...a74e84`; avalanche [`0x12715a...4bd35e`](./contracts/avalanche-43114/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); avalanche `0xfb2bfc...a74e84` | ✅ Audited (bytecode match) |
-| SynapseERC20Factory | registry | ethereum | 15 deployments: ethereum [`0x059525...82f22a`](./contracts/ethereum-1/0x059525ed9a7a04f82764e3fdbec5c37d2a82f22a/); ethereum `0x846e60...afa157`; optimism `0x22cdc9...49950e`; bsc `0x786e7c...f9165f`; bsc `0xccabe4...1dc1db`; polygon `0x0adf87...3d2362`; polygon `0x786e7c...f9165f`; metis `0x22cdc9...49950e`; moonbeam `0xa67b71...e11f0b`; moonriver `0xf07d1c...867089`; base `0x6f4e8e...dc19c9`; arbitrum `0xd5609c...aab17c`; avalanche `0x07ca54...0c7b17`; blast `0xf2640d...751a1f`; aurora `0xf07d1c...867089` | ✅ Audited (bytecode match) |
-
-### ⚠️ Verified by Bytecode + Unaudited (4)
-
-Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
-
-| Contract Name | Role | Chain | Deployments | Audit Status |
-|---|---|---|---|---|
+| SynapseERC20 | token | aurora | 69 deployments: ethereum `0x0f2d71...fd9f29`; ethereum `0x3c726e...cdc750`; ethereum `0xa4fe53...efa534`; ethereum `0xa6fc7d...e14317`; ethereum `0xbc1223...cbf226`; ethereum `0xc4133e...c65c46`; ethereum `0xe95b1d...83876b`; ethereum `0xed0ac9...8fa727`; optimism `0x5a5fff...431655`; optimism `0x67c10c...a7cd00`; optimism `0x809dc5...771036`; optimism `0x9508bf...73f299`; optimism `0xc83155...4fc438`; bsc `0x23b891...b817b3`; bsc `0x5f300a...54e68a`; bsc `0x7aab3e...7c277a`; bsc `0xa4080f...9e9484`; bsc `0xc0384e...35fb37`; polygon `0x50882f...e63f4f`; polygon `0xb6c473...9b02af`; polygon `0xc0384e...35fb37`; polygon `0xca3281...3c140d`; polygon `0xd1c374...1ae46b`; polygon `0xd8ca34...b45195`; polygon `0xf8f9ef...70e695`; metis `0x67c10c...a7cd00`; metis `0x931b8f...211231`; metis `0x9508bf...73f299`; metis `0x961318...5200ab`; metis `0xbda037...46d823`; metis `0xe3c82a...afbf48`; moonbeam `0x1d4c2a...7b7d7e`; moonbeam `0x3192ae...ee349a`; moonbeam `0x93124c...a67ed6`; moonbeam `0xa1f889...e59cc3`; moonbeam `0xbf180c...bcefb4`; moonbeam `0xd26664...4a4521`; moonbeam `0xdd47a3...bfab4f`; moonbeam `0xf07d1c...867089`; moonriver `0x84a420...67d32f`; moonriver `0xd80d86...ad0445`; base `0x432036...d69540`; base `0xa67b71...e11f0b`; base `0xb554a5...06be8c`; arbitrum `0x080f6a...8f46eb`; arbitrum `0x2913e8...497688`; arbitrum `0x3ea9b0...cf908e`; arbitrum `0x809dc5...771036`; avalanche `0x1bfe50...dbff8f`; avalanche `0x1f1e7c...9ca251`; avalanche `0x2cb58b...d7bd15`; avalanche `0x321e70...f84251`; avalanche `0x33b39d...728450`; avalanche `0x368f17...eddbd5`; avalanche `0x558add...d2f7ed`; avalanche `0x861f04...2f6503`; avalanche `0x882b1b...8277f2`; avalanche `0x938f36...be837d`; avalanche `0xcfc37a...1bdf46`; avalanche `0xdfbfbd...0e4814`; blast `0x3194b0...f6c6e0`; blast `0x3d4842...63fef9`; blast `0x9592f0...5ede0e`; blast `0xce9712...ccc855`; blast `0xe7b142...fd6a97`; aurora [`0x073795...f2a21c`](./contracts/aurora-1313161554/0x07379565cd8b0cae7c60dc78e7f601b34af2a21c/); aurora `0x84a420...67d32f`; aurora `0x84ea83...15711e`; aurora `0xd80d86...ad0445` | ⚠️ Unaudited (bytecode match) |
+| LPToken | token | avalanche | 22 deployments: ethereum `0x1b8476...3dde4f`; ethereum `0x432036...d69540`; ethereum `0x6c8c6e...04e3b3`; ethereum `0x9f7200...d15599`; ethereum `0xa67b71...e11f0b`; ethereum `0xaed5b2...28ddfe`; optimism `0xe0fa08...970413`; bsc `0x1b74d6...ce778b`; bsc `0x2f6087...edcaeb`; polygon `0x432036...d69540`; polygon `0x4cdacb...da8007`; polygon `0x77aa7c...c6feb3`; metis `0xdde5be...3606e0`; moonbeam `0x104127...0b6e9e`; moonriver `0x6f4e8e...dc19c9`; base `0x15ada3...3e100f`; arbitrum `0x15ada3...3e100f`; arbitrum `0x997108...345173`; arbitrum `0xe1e1e6...f3049d`; avalanche [`0x003107...b51dce`](./contracts/avalanche-43114/0x003107b3aeee133804eabe7d1df200ddfbb51dce/); blast `0x36ef3a...cd595b`; aurora `0x5d5f01...35f21a` | ⚠️ Unaudited (bytecode match) |
+| GenericERC20 | unknown | polygon | 4 deployments: bsc `0x66be2c...97d165`; polygon [`0x11199a...147f5f`](./contracts/polygon-137/0x11199a9ee50127f335b84a1eeb961d8a85147f5f/); polygon `0x25556c...eae0b4`; polygon `0x93124c...a67ed6` | ⚠️ Unaudited (bytecode match) |
 | GmxTimelock | governance | avalanche | 6 deployments: avalanche [`0x033974...f1cafd`](./contracts/avalanche-43114/0x0339740d92fb8baf73bab0e9eb9494bc0df1cafd/); avalanche `0x0a54c1...883256`; avalanche `0x62f455...d561ad`; avalanche `0xa940a0...c45de6`; avalanche `0xb2943e...6f07d6`; avalanche `0xe57fe4...1d18b9` | ⚠️ Unaudited (bytecode match) |
+| L2BridgeZap | operational_periphery | avalanche | 19 deployments: optimism `0x40c95b...356da9`; optimism `0x470f95...e3b4a7`; optimism `0x9cd619...71ab32`; bsc `0x749f37...a23697`; polygon `0x1c6ae1...af9cc8`; moonbeam `0xada10a...383fd5`; arbitrum `0x265326...dd08d8`; arbitrum `0x375e92...7089f9`; arbitrum `0x37f9ae...b3862b`; avalanche [`0x0ef812...9c2f3a`](./contracts/avalanche-43114/0x0ef812f4c68dc84c22a4821ef30ba2ffab9c2f3a/); avalanche `0x407bc5...29d577`; avalanche `0x4743cd...39ba1d`; avalanche `0x997108...345173`; avalanche `0xab325c...fd44c3`; avalanche `0xb51e73...e61c6a`; avalanche `0xbfc959...4c9ff4`; avalanche `0xe85429...7ed140`; aurora `0x2d8ee8...2596ed`; aurora `0x5a5fff...431655` | ⚠️ Unaudited (bytecode match) |
 | MetaSwap | unknown | ethereum | 11 deployments: ethereum [`0x104127...0b6e9e`](./contracts/ethereum-1/0x104127ccd4b1378898916894eb59c97e690b6e9e/); ethereum `0x47b359...3bd932`; bsc `0x25bfbe...04b5df`; bsc `0x6f6978...94d009`; bsc `0xe7ea55...6d9b1b`; bsc `0xf642f2...dd2d35`; polygon `0xe1e1e6...f3049d`; polygon `0xe59916...35bedf`; arbitrum `0x911766...76f8d6`; arbitrum `0xaed5b2...28ddfe`; avalanche `0xf07d1c...867089` | ⚠️ Unaudited (bytecode match) |
+| Multicall2 | unknown | moonbeam | 17 deployments: ethereum `0x2d8ee8...2596ed`; ethereum `0x9695fa...7ecc21`; optimism `0x266557...13bf59`; bsc `0x527a2e...f9221f`; bsc `0xb4a122...162a44`; polygon `0x1d4c2a...7b7d7e`; polygon `0x244268...fc9fcf`; polygon `0xffc2d6...8c36e9`; metis `0x266557...13bf59`; moonbeam [`0x15ada3...3e100f`](./contracts/moonbeam-1284/0x15ada3716a7e589b1c31b7131a0cc546203e100f/); moonriver `0xaf41a6...f2dc6b`; base `0x22cdc9...49950e`; arbitrum `0x6bf856...9581ee`; arbitrum `0xf07d1c...867089`; avalanche `0x432036...d69540`; blast `0xe24f2f...b13cc9`; aurora `0xaf41a6...f2dc6b` | ⚠️ Unaudited (bytecode match) |
+| Swap | unknown | blast | 14 deployments: ethereum `0x244268...fc9fcf`; ethereum `0xa9e905...b4ac89`; optimism `0x432036...d69540`; optimism `0xdb9f78...8f5069`; bsc `0x08f3ec...d8bfba`; bsc `0x1fb7b4...bb242e`; polygon `0xd26664...4a4521`; polygon `0xdb9f78...8f5069`; moonriver `0xdb9f78...8f5069`; base `0xaf41a6...f2dc6b`; arbitrum `0x22cdc9...49950e`; arbitrum `0x4cdacb...da8007`; avalanche `0xaed5b2...28ddfe`; blast [`0x04aaef...25653e`](./contracts/blast-81457/0x04aaef5b5d97d32aee7d631d251c08980b25653e/) | ⚠️ Unaudited (bytecode match) |
+| SwapDeployer | unknown | aurora | 18 deployments: ethereum `0x93124c...a67ed6`; ethereum `0xdde5be...3606e0`; optimism `0xa67b71...e11f0b`; bsc `0x289606...739c15`; bsc `0x37f9ae...b3862b`; polygon `0x911766...76f8d6`; polygon `0xaf41a6...f2dc6b`; polygon `0xba1001...7bcb0f`; polygon `0xdde5be...3606e0`; metis `0xe1e1e6...f3049d`; moonbeam `0x9695fa...7ecc21`; moonriver `0x5d5f01...35f21a`; base `0x20b587...f358c5`; arbitrum `0x9695fa...7ecc21`; arbitrum `0xaf41a6...f2dc6b`; avalanche `0x22cdc9...49950e`; blast `0xf1f64a...bfb883`; aurora [`0x104127...0b6e9e`](./contracts/aurora-1313161554/0x104127ccd4b1378898916894eb59c97e690b6e9e/) | ⚠️ Unaudited (bytecode match) |
+| SwapFlashLoan | unknown | arbitrum | 27 deployments: ethereum `0x111689...8af2d8`; ethereum `0x5a5fff...431655`; ethereum `0xe1e1e6...f3049d`; optimism `0xa9e905...b4ac89`; optimism `0xdde5be...3606e0`; optimism `0xe27bff...8f5ee9`; optimism `0xf44938...f22004`; bsc `0x28ec0b...ca4d13`; bsc `0x521874...09726c`; bsc `0x5f10b4...fdae93`; polygon `0x85fcd7...1c3ee5`; polygon `0xa9e905...b4ac89`; polygon `0xaa959e...64892c`; moonriver `0xa9e905...b4ac89`; base `0x6223bd...4c225f`; base `0x9508bf...73f299`; arbitrum [`0x0db3fe...6c0dd8`](./contracts/arbitrum-42161/0x0db3fe3b770c95a0b99d1ed6f2627933466c0dd8/); arbitrum `0x9dd329...f0cb40`; arbitrum `0xa06766...c34352`; arbitrum `0xce762c...2c0166`; arbitrum `0xe0fa08...970413`; avalanche `0x84a420...67d32f`; avalanche `0xed2a7e...abab66`; blast `0x999fcd...4641c0`; blast `0xa4bd1a...32ac9c`; blast `0xd41ee4...94d06e`; aurora `0x51d96e...1a4064` | ⚠️ Unaudited (bytecode match) |
+| SynapseBridge | operational_periphery | bsc | 138 deployments: ethereum `0x13a554...45718e`; ethereum `0x1622b3...fa81b2`; ethereum `0x279631...b8ceb6`; ethereum `0x31fe39...9efd0d`; ethereum `0x346b92...0bcee8`; ethereum `0x36829b...c86a0b`; ethereum `0x472822...7716f1`; ethereum `0x4cf147...bd2f0b`; ethereum `0x5b01dd...97d50c`; ethereum `0x5f300a...54e68a`; ethereum `0x64f80a...320782`; ethereum `0x6cd2ba...4b3f7b`; ethereum `0x75224b...150ba7`; ethereum `0x7875af...418be5`; ethereum `0x7d971f...2aa9fd`; ethereum `0x87c94a...7029a2`; ethereum `0x894904...50b5da`; ethereum `0x9007a8...4e19f2`; ethereum `0x9d526c...345fe6`; ethereum `0xab9332...bd0f7d`; ethereum `0xc05e61...91aace`; ethereum `0xd123f7...a8749f`; ethereum `0xefd2f7...a47001`; ethereum `0xfb4a5f...8a544c`; optimism `0x20b587...f358c5`; optimism `0x7ef756...4cd1e4`; optimism `0xaf41a6...f2dc6b`; bsc [`0x00d1c1...a81f40`](./contracts/bsc-56/0x00d1c14a6f0be0c42252d81fec494aa5b9a81f40/); bsc `0x06aee5...1f6320`; bsc `0x0efc29...e74893`; bsc `0x2264c2...fc11be`; bsc `0x279631...b8ceb6`; bsc `0x39ab21...bf75a1`; bsc `0x3d63cb...0ec1ea`; bsc `0x41dec9...0a3ea6`; bsc `0x46aea9...2389df`; bsc `0x53ab43...ee1864`; bsc `0x54594c...33c3b2`; bsc `0x57562b...04d3df`; bsc `0x65db21...9486bf`; bsc `0x6a00dc...dcdd3c`; bsc `0x6cd2ba...4b3f7b`; bsc `0x7103a3...f0bab5`; bsc `0x7875af...418be5`; bsc `0x94de53...4bc9eb`; bsc `0x9524ff...ccd691`; bsc `0x990732...7bf502`; bsc `0x9d526c...345fe6`; bsc `0xa7f9b7...fdfa8a`; bsc `0xd123f7...a8749f`; bsc `0xe3a1e2...aef740`; bsc `0xee26d4...aaeab1`; bsc `0xf19a24...f7f9c3`; bsc `0xf76256...4261e4`; polygon [`0x00d1c1...a81f40`](./contracts/polygon-137/0x00d1c14a6f0be0c42252d81fec494aa5b9a81f40/); polygon `0x040735...859d46`; polygon `0x0efc29...e74893`; polygon `0x145000...2a8cce`; polygon `0x368d26...9bd978`; polygon `0x39ab21...bf75a1`; polygon `0x3c726e...cdc750`; polygon `0x41dec9...0a3ea6`; polygon `0x46aea9...2389df`; polygon `0x5b8365...b83546`; polygon `0x5f0674...f3cfc3`; polygon `0x6cd2ba...4b3f7b`; polygon `0x7103a3...f0bab5`; polygon `0x75224b...150ba7`; polygon `0x7b3c1f...d095f2`; polygon `0x85f819...aba8d2`; polygon `0x8f5bbb...9c1280`; polygon `0x966e35...f62a8a`; polygon `0xa7f9b7...fdfa8a`; polygon `0xb68281...985d7c`; polygon `0xb899e9...da91fa`; polygon `0xbd6eca...c75e20`; polygon `0xc87fc2...d515ca`; polygon `0xcd8a2e...9fc3c1`; polygon `0xde2789...61caeb`; polygon `0xecd72d...0aa3b1`; polygon `0xf0284f...c3e022`; polygon `0xf76256...4261e4`; polygon `0xfefd11...acc336`; metis `0x20b587...f358c5`; moonbeam `0x22cdc9...49950e`; moonbeam `0x84a420...67d32f`; moonbeam `0x9508bf...73f299`; moonbeam `0xaed5b2...28ddfe`; moonbeam `0xe0fa08...970413`; moonbeam `0xe1a77c...8d5e6f`; moonriver `0x2d8ee8...2596ed`; moonriver `0x991adb...9377c2`; moonriver `0x995abc...90cd4e`; moonriver `0xaed5b2...28ddfe`; moonriver `0xe0fa08...970413`; base `0x84a420...67d32f`; base `0xf07d1c...867089`; arbitrum `0x037527...54cf82`; arbitrum `0x08f3ec...d8bfba`; arbitrum `0x0ab8eb...eaf472`; arbitrum `0x15779f...12a873`; arbitrum `0x1b9651...dbe5fd`; arbitrum `0x25544c...6a1490`; arbitrum `0x2fa1eb...69e8e9`; arbitrum `0x6f4e8e...dc19c9`; arbitrum `0x97a7af...7c9b68`; arbitrum `0xab0d8f...34ebf5`; arbitrum `0xb883a9...57b584`; arbitrum `0xba1001...7bcb0f`; arbitrum `0xe27bff...8f5ee9`; arbitrum `0xf7e621...b26888`; avalanche `0x0acf03...e2b512`; avalanche `0x0e4087...213389`; avalanche `0x25fac3...6ffb92`; avalanche `0x3b5c7b...f2c2ce`; avalanche `0x405fe6...d92fef`; avalanche `0x4ecf30...d4bb73`; avalanche `0x52577e...013585`; avalanche `0x587aef...5addf9`; avalanche `0x6571d6...29d85f`; avalanche `0x7e9d86...f8580e`; avalanche `0x87c94a...7029a2`; avalanche `0x8aeba2...580bfc`; avalanche `0x90f1c4...cdc876`; avalanche `0x92ab60...280d59`; avalanche `0xa3415c...fd910d`; avalanche `0xa82404...ffa8d5`; avalanche `0xab7522...493ba0`; avalanche `0xc05e61...91aace`; avalanche `0xc4133e...c65c46`; avalanche `0xce1618...c040e6`; avalanche `0xdaf2ea...d09cbc`; avalanche `0xe05c97...03cf6a`; avalanche `0xec26e9...bd7c65`; avalanche `0xec5287...2f0b33`; blast `0x55769b...07ef3c`; blast `0xdcd8cc...8e8222`; aurora `0xe0fa08...970413` | ⚠️ Unaudited (bytecode match) |
+| SynapseCCTP | unknown | ethereum | 10 deployments: ethereum [`0x12715a...4bd35e`](./contracts/ethereum-1/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); ethereum `0xfb2bfc...a74e84`; optimism [`0x12715a...4bd35e`](./contracts/optimism-10/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); polygon [`0x12715a...4bd35e`](./contracts/polygon-137/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); base [`0x12715a...4bd35e`](./contracts/base-8453/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); base `0xfb2bfc...a74e84`; arbitrum [`0x12715a...4bd35e`](./contracts/arbitrum-42161/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); arbitrum `0xfb2bfc...a74e84`; avalanche [`0x12715a...4bd35e`](./contracts/avalanche-43114/0x12715a66773bd9c54534a01abf01d05f6b4bd35e/); avalanche `0xfb2bfc...a74e84` | ⚠️ Unaudited (bytecode match) |
 | SynapseCCTPRouter | adapter | ethereum | 11 deployments: ethereum [`0xd359bc...349ddf`](./contracts/ethereum-1/0xd359bc471554504f683fbd4f6e36848612349ddf/); ethereum `0xd5a597...902f48`; optimism [`0xd359bc...349ddf`](./contracts/optimism-10/0xd359bc471554504f683fbd4f6e36848612349ddf/); optimism `0xd5a597...902f48`; polygon `0xd5a597...902f48`; base [`0xd359bc...349ddf`](./contracts/base-8453/0xd359bc471554504f683fbd4f6e36848612349ddf/); base `0xd5a597...902f48`; arbitrum [`0xd359bc...349ddf`](./contracts/arbitrum-42161/0xd359bc471554504f683fbd4f6e36848612349ddf/); arbitrum `0xd5a597...902f48`; avalanche [`0xd359bc...349ddf`](./contracts/avalanche-43114/0xd359bc471554504f683fbd4f6e36848612349ddf/); avalanche `0xd5a597...902f48` | ⚠️ Unaudited (bytecode match) |
+| SynapseERC20Factory | registry | ethereum | 15 deployments: ethereum [`0x059525...82f22a`](./contracts/ethereum-1/0x059525ed9a7a04f82764e3fdbec5c37d2a82f22a/); ethereum `0x846e60...afa157`; optimism `0x22cdc9...49950e`; bsc `0x786e7c...f9165f`; bsc `0xccabe4...1dc1db`; polygon `0x0adf87...3d2362`; polygon `0x786e7c...f9165f`; metis `0x22cdc9...49950e`; moonbeam `0xa67b71...e11f0b`; moonriver `0xf07d1c...867089`; base `0x6f4e8e...dc19c9`; arbitrum `0xd5609c...aab17c`; avalanche `0x07ca54...0c7b17`; blast `0xf2640d...751a1f`; aurora `0xf07d1c...867089` | ⚠️ Unaudited (bytecode match) |
 | VaultPriceFeed | unknown | avalanche | 17 deployments: avalanche [`0x080957...421d02`](./contracts/avalanche-43114/0x0809576dae5a5a4ec32b3bf8a2e2e4593b421d02/); avalanche `0x105a9c...5436eb`; avalanche `0x11a1fa...25c8ac`; avalanche `0x131238...2bb152`; avalanche `0x205646...d7288e`; avalanche `0x27e993...8c57e7`; avalanche `0x33c76d...64d0f9`; avalanche `0x370ac5...84e90a`; avalanche `0x48524f...93cbf1`; avalanche `0x7c2520...77a7e7`; avalanche `0x81b7e7...e89ee3`; avalanche `0x86d758...3882db`; avalanche `0x93da07...c4e9a8`; avalanche `0x9d32e6...b3a3f3`; avalanche `0xacdc35...265ef7`; avalanche `0xdd7989...31e29a`; avalanche `0xfe5d53...a1aeb7` | ⚠️ Unaudited (bytecode match) |
 
 ### ❓ Unverified (613)
@@ -898,231 +894,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [BaseBoringBatchable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40boringcrypto/boring-solidity/contracts/BaseBoringBatchable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BoringBatchable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40boringcrypto/boring-solidity/contracts/BoringBatchable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BoringOwnable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40boringcrypto/boring-solidity/contracts/BoringOwnable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BoringOwnableData.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40boringcrypto/boring-solidity/contracts/BoringOwnableData.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC20.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40boringcrypto/boring-solidity/contracts/interfaces/IERC20.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BoringERC20.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40boringcrypto/boring-solidity/contracts/libraries/BoringERC20.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BoringMath.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40boringcrypto/boring-solidity/contracts/libraries/BoringMath.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BoringMath128.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40boringcrypto/boring-solidity/contracts/libraries/BoringMath128.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BoringMath32.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40boringcrypto/boring-solidity/contracts/libraries/BoringMath32.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BoringMath64.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40boringcrypto/boring-solidity/contracts/libraries/BoringMath64.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AccessControl.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-4.3.1/access/AccessControl.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IAccessControl.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-4.3.1/access/IAccessControl.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Context.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-4.3.1/utils/Context.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Strings.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-4.3.1/utils/Strings.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC165.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-4.3.1/utils/introspection/ERC165.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC165.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-4.3.1/utils/introspection/IERC165.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SafeMath.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-4.3.1/utils/math/SafeMath.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Ownable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-4.5.0/access/Ownable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AccessControlUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/access/AccessControlUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IAccessControlUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/access/IAccessControlUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Initializable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/proxy/utils/Initializable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [PausableUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/security/PausableUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC721Upgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/token/ERC721/ERC721Upgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC721ReceiverUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/token/ERC721/IERC721ReceiverUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC721Upgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/token/ERC721/IERC721Upgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC721EnumerableUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/token/ERC721/extensions/ERC721EnumerableUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC721EnumerableUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/token/ERC721/extensions/IERC721EnumerableUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC721MetadataUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/token/ERC721/extensions/IERC721MetadataUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AddressUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/utils/AddressUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ContextUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/utils/ContextUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [StringsUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/utils/StringsUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC165Upgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/utils/introspection/ERC165Upgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC165Upgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable-4.5.0/utils/introspection/IERC165Upgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [OwnableUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ECDSAUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/cryptography/ECDSAUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [EIP712Upgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/drafts/EIP712Upgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC20PermitUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/drafts/ERC20PermitUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC20PermitUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/drafts/IERC20PermitUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SafeMathUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC20BurnableUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/token/ERC20/ERC20BurnableUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC20Upgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC20Upgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [CountersUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [EnumerableSetUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ReentrancyGuardUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ECDSA.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/cryptography/ECDSA.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [EIP712.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/drafts/EIP712.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC20Permit.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/drafts/ERC20Permit.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC20Permit.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/drafts/IERC20Permit.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Clones.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/proxy/Clones.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC20.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/token/ERC20/ERC20.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC20Burnable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/token/ERC20/ERC20Burnable.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SafeERC20.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/token/ERC20/SafeERC20.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Address.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/utils/Address.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Counters.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/utils/Counters.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [EnumerableSet.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/utils/EnumerableSet.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ReentrancyGuard.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/%40openzeppelin/contracts/utils/ReentrancyGuard.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AaveSwap.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/AaveSwap.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 49 | low |
-| [AaveSwapWrapper.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/AaveSwapWrapper.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AmplificationUtils.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/AmplificationUtils.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 15 | low |
-| [ILendingPool.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/ILendingPool.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [LPToken.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/LPToken.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 20 | low |
-| [MathUtils.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/MathUtils.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [OwnerPausableUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/OwnerPausableUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Swap.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/Swap.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 13 | low |
-| [SwapDeployer.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/SwapDeployer.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 17 | low |
-| [SwapEthWrapper.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/SwapEthWrapper.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 8 | low |
-| [SwapFlashLoan.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/SwapFlashLoan.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 75 | medium |
-| [SwapUtils.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/SwapUtils.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 16 | low |
-| [BaseSwapDeposit.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/helper/BaseSwapDeposit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [FlashLoanBorrowerExample.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/helper/FlashLoanBorrowerExample.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [GenericERC20.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/helper/GenericERC20.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [Multicall2.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/helper/Multicall2.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 15 | low |
-| [TestMathUtils.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/helper/test/TestMathUtils.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [TestSwapReturnValues.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/helper/test/TestSwapReturnValues.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IFlashLoanReceiver.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/interfaces/IFlashLoanReceiver.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IMetaSwap.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/interfaces/IMetaSwap.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IMetaSwapDeposit.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/interfaces/IMetaSwapDeposit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ISwap.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/interfaces/ISwap.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ISwapFlashLoan.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/amm/interfaces/ISwapFlashLoan.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [DummyWeth.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/auxiliary/DummyWeth.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | low |
-| [DummyWethProxy.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/auxiliary/DummyWethProxy.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 8 | low |
-| [BridgeConfigV3.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/BridgeConfigV3.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 10 | low |
-| [ECDSAFactory.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/ECDSAFactory.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
-| [ECDSANodeManagement.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/ECDSANodeManagement.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
-| [ERC20Migrator.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/ERC20Migrator.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [HarmonySynapseBridge.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/HarmonySynapseBridge.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC20Mintable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/IERC20Mintable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IFrax.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/IFrax.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MRSynapseBridge.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/MRSynapseBridge.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MiniChefV2.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/MiniChefV2.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 14 | low |
-| [PoolConfig.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/PoolConfig.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [SynapseBridge.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/SynapseBridge.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 135 | low |
-| [SynapseERC20.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/SynapseERC20.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 52 | low |
-| [SynapseERC20Factory.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/SynapseERC20Factory.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 14 | low |
-| [IECDSANodeManagement.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/interfaces/IECDSANodeManagement.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC20Migrator.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/interfaces/IERC20Migrator.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IMasterChef.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/interfaces/IMasterChef.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IMiniChefV2.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/interfaces/IMiniChefV2.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IRewarder.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/interfaces/IRewarder.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ISynapseBridge.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/interfaces/ISynapseBridge.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ISynapseERC20.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/interfaces/ISynapseERC20.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SignedSafeMath.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/libraries/SignedSafeMath.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC20Mock.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/mocks/ERC20Mock.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [RewarderBrokenMock.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/mocks/RewarderBrokenMock.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [RewarderMock.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/mocks/RewarderMock.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [NodeEnv.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/testing/NodeEnv.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [Synapse.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/testing/Synapse.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AddressArrayUtils.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/utils/AddressArrayUtils.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [EnumerableStringMap.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/utils/EnumerableStringMap.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [TimelockController.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/utils/TimelockController.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 16 | low |
-| [AvaxJewelMigration.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/wrappers/AvaxJewelMigration.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 2 | low |
-| [AvaxJewelMigrationV2.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/wrappers/AvaxJewelMigrationV2.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AvaxJewelSwap.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/wrappers/AvaxJewelSwap.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [GMXWrapper.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/wrappers/GMXWrapper.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 4 | low |
-| [HarmonyBridgeZap.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/wrappers/HarmonyBridgeZap.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IGMX.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/wrappers/IGMX.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [L1BridgeZap.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/wrappers/L1BridgeZap.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [L2BridgeZap.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/wrappers/L2BridgeZap.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 18 | low |
-| [MigratorBridgeZap.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/wrappers/MigratorBridgeZap.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 2 | low |
-| [MoonriverBridgeZap.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/wrappers/MoonriverBridgeZap.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 2 | low |
-| [AuthVerifier.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/AuthVerifier.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [GasFeePricing.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/GasFeePricing.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MessageBus.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/MessageBus.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MessageBusReceiver.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/MessageBusReceiver.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [MessageBusSender.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/MessageBusSender.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [PingPong.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/apps/PingPong.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [HeroCoreUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/dfk/HeroCoreUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IAssistingAuction.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/dfk/IAssistingAuction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IHeroCoreUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/dfk/IHeroCoreUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IStatScienceUpgradeable.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/dfk/IStatScienceUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [HeroBridge.md](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/dfk/bridge/HeroBridge.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [LibGeneScience.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/dfk/libs/LibGeneScience.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SynMessagingReceiver.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/framework/SynMessagingReceiver.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IAuthVerifier.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/interfaces/IAuthVerifier.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IGasFeePricing.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/interfaces/IGasFeePricing.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IMessageBus.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/interfaces/IMessageBus.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ISynMessagingReceiver.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/messaging/interfaces/ISynMessagingReceiver.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [console.md (also discovered via alternate URL)](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/hardhat/console.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SynapseERC20DeterministicFactory.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/bridge/SynapseERC20DeterministicFactory.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AccessControlEnumerable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/elin/contracts-4.5.0/access/AccessControlEnumerable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IAccessControlEnumerable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/elin/contracts-4.5.0/access/IAccessControlEnumerable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Pausable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/elin/contracts-4.5.0/security/Pausable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC20Pausable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/elin/contracts-4.5.0/token/ERC20/extensions/ERC20Pausable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IERC20Metadata.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/elin/contracts-4.5.0/token/ERC20/extensions/IERC20Metadata.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC20PresetMinterPauser.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/elin/contracts-4.5.0/token/ERC20/presets/ERC20PresetMinterPauser.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BatchMessageSender.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/apps/BatchMessageSender.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [StatScienceUpgradeable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/StatScienceUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AssistingAuctionUpgradeable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/auctions/AssistingAuctionUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ERC721AuctionBaseUpgradeable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/auctions/ERC721AuctionBaseUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [HeroAuctionUpgradeable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/auctions/HeroAuctionUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [CrystalFeesUpgradeable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/auctions/helpers/CrystalFeesUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IAssistingAuctionUpgradeable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/auctions/interfaces/IAssistingAuctionUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [HeroBridgeUpgradeable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/bridge/HeroBridgeUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [TearBridge.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/bridge/TearBridge.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [GaiaTears.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/inventory/GaiaTears.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IInventoryItem.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/inventory/IInventoryItem.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [InventoryItem.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/inventory/InventoryItem.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IRandomGenerator.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/random/IRandomGenerator.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [RandomGenerator.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/dfk/random/RandomGenerator.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SynMessagingReceiverUpgradeable.md](https://github.com/synapsecns/synapse-contracts/blob/master/docs/messaging/framework/SynMessagingReceiverUpgradeable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [CHANGELOG.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/CHANGELOG.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [README.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [2024-10-10-rest-api-post.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/blog-posts/2024-10-10-rest-api-post.md) | unknown | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
-| [2024-12-12-fastbridgev2-post.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/blog-posts/2024-12-12-fastbridgev2-post.md) | unknown | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
-| [2026-03-19-npm-to-github-packages.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/blog-posts/2026-03-19-npm-to-github-packages.md) | unknown | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
-| [welcome.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/blog-posts/welcome.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [01-DAO.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/01-About/01-DAO.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [02-Brand-Assets.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/01-About/02-Brand-Assets.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [03-Routes.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/01-About/03-Routes.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [04-SYN.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/01-About/04-SYN.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [02-Products.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/02-Products.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [01-SDK.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/03-Bridge/01-SDK.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [02-REST-API.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/03-Bridge/02-REST-API.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [03-Widget.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/03-Bridge/03-Widget.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [04-Code-Examples.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/03-Bridge/04-Code-Examples.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [05-Supported-Routes.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/03-Bridge/05-Supported-Routes.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [_05-Supported-Routes.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/03-Bridge/_05-Supported-Routes.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [quoteId.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/04-RFQ/15-Bridging/quoteId.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 8 | low |
-| [riskFactors.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/04-RFQ/20-Relaying/riskFactors.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index.md (also discovered via alternate URL)](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/05-Routers/01-Synapse-Router/index.md) | unknown | Audit | n/a | unknown | Direct | contract_name|n/a | 21 | low |
-| [01-Synapse-Token.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/06-Contracts/01-Synapse-Token.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [010-SynapseBridge.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/06-Contracts/010-SynapseBridge.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [02-Synapse-Router.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/06-Contracts/02-Synapse-Router.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 135 | low |
-| [03-Intermediate-Tokens.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/06-Contracts/03-Intermediate-Tokens.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [04-Liquidity-Pools.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/06-Contracts/04-Liquidity-Pools.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [05-CCTP.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/06-Contracts/05-CCTP.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 9 | medium |
-| [06-RFQ.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/06-Contracts/06-RFQ.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 8 | high |
-| [07-Bridge-Zaps.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/06-Contracts/07-Bridge-Zaps.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [08-MiniChef.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/06-Contracts/08-MiniChef.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [09-SYN.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/06-Contracts/09-SYN.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [01-Scribe.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/07-Services/01-Scribe.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [02-Omnirpc.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/07-Services/02-Omnirpc.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [03-Signer.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/07-Services/03-Signer.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [04-Submitter.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/07-Services/04-Submitter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [05-Observability.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/07-Services/05-Observability.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [06-RFQ-Indexer-API.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/07-Services/06-RFQ-Indexer-API.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Transaction-Support.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/docs/08-Support/Transaction-Support.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [markdown-page.md](https://github.com/synapsecns/sanguine/blob/master/docs/bridge/src/pages/markdown-page.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [HealthCheckResponseServingStatus.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/HealthCheckResponseServingStatus.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [LogServiceApi.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/LogServiceApi.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ProtobufNullValue.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/ProtobufNullValue.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [RpcStatus.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/RpcStatus.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ScribeServiceApi.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/ScribeServiceApi.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [StreamResultOfV1HealthCheckResponse.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/StreamResultOfV1HealthCheckResponse.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [StreamResultOfV1StreamLogsResponse.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/StreamResultOfV1StreamLogsResponse.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1Address.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1Address.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1FilterLogsRequest.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1FilterLogsRequest.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1FilterLogsResponse.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1FilterLogsResponse.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1Hash.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1Hash.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1HealthCheckRequest.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1HealthCheckRequest.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1HealthCheckResponse.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1HealthCheckResponse.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1Log.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1Log.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1LogFilter.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1LogFilter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1NullableBool.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1NullableBool.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1NullableString.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1NullableString.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1NullableUint32.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1NullableUint32.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1NullableUint64.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1NullableUint64.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1StreamLogsRequest.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1StreamLogsRequest.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [V1StreamLogsResponse.md](https://github.com/synapsecns/sanguine/blob/master/services/scribe/grpc/client/rest/docs/V1StreamLogsResponse.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [footer.md](https://github.com/synapsecns/synapse-api/blob/dev/docs/footer.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [header.md](https://github.com/synapsecns/synapse-api/blob/dev/docs/header.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -1143,203 +916,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 191
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1, low=31, medium=2
-- Match method counts: extraction_exact=1271
+- Extraction confidence breakdown: n/a
+- Match method counts: n/a
 
 Zero-match audit list:
 
-- [6226] BaseBoringBatchable.md
-- [6227] BoringBatchable.md
-- [6228] BoringOwnable.md
-- [6229] BoringOwnableData.md
-- [6230] IERC20.md
-- [6231] BoringERC20.md
-- [6232] BoringMath.md
-- [6233] BoringMath128.md
-- [6234] BoringMath32.md
-- [6235] BoringMath64.md
-- [6236] AccessControl.md
-- [6237] IAccessControl.md
-- [6238] Context.md
-- [6239] Strings.md
-- [6240] ERC165.md
-- [6241] IERC165.md
-- [6242] SafeMath.md
-- [6243] Ownable.md
-- [6245] AccessControlUpgradeable.md
-- [6246] IAccessControlUpgradeable.md
-- [6247] Initializable.md
 - [6248] PausableUpgradeable.md
-- [6249] ERC721Upgradeable.md
-- [6250] IERC721ReceiverUpgradeable.md
-- [6251] IERC721Upgradeable.md
-- [6252] ERC721EnumerableUpgradeable.md
-- [6253] IERC721EnumerableUpgradeable.md
-- [6254] IERC721MetadataUpgradeable.md
-- [6255] AddressUpgradeable.md
-- [6256] ContextUpgradeable.md
-- [6257] StringsUpgradeable.md
-- [6258] ERC165Upgradeable.md
-- [6259] IERC165Upgradeable.md
-- [6261] OwnableUpgradeable.md
-- [6262] ECDSAUpgradeable.md
-- [6263] EIP712Upgradeable.md
-- [6264] ERC20PermitUpgradeable.md
-- [6265] IERC20PermitUpgradeable.md
-- [6266] SafeMathUpgradeable.md
-- [6268] ERC20BurnableUpgradeable.md
-- [6269] ERC20Upgradeable.md
-- [6270] IERC20Upgradeable.md
-- [6273] CountersUpgradeable.md
-- [6274] EnumerableSetUpgradeable.md
-- [6276] ReentrancyGuardUpgradeable.md
-- [6279] ECDSA.md
-- [6280] EIP712.md
-- [6281] ERC20Permit.md
-- [6282] IERC20Permit.md
-- [6284] Clones.md
-- [6285] ERC20.md
-- [6286] ERC20Burnable.md
-- [6288] SafeERC20.md
-- [6289] Address.md
-- [6291] Counters.md
-- [6292] EnumerableSet.md
-- [6293] ReentrancyGuard.md
-- [6295] AaveSwapWrapper.md
-- [6297] ILendingPool.md
-- [6299] MathUtils.md
-- [6300] OwnerPausableUpgradeable.md
-- [6306] BaseSwapDeposit.md
-- [6307] FlashLoanBorrowerExample.md
-- [6310] TestMathUtils.md
-- [6311] TestSwapReturnValues.md
-- [6312] IFlashLoanReceiver.md
-- [6313] IMetaSwap.md
-- [6314] IMetaSwapDeposit.md
-- [6315] ISwap.md
-- [6316] ISwapFlashLoan.md
-- [6323] HarmonySynapseBridge.md
-- [6324] IERC20Mintable.md
-- [6325] IFrax.md
-- [6326] MRSynapseBridge.md
-- [6332] IECDSANodeManagement.md
-- [6333] IERC20Migrator.md
-- [6334] IMasterChef.md
-- [6336] IMiniChefV2.md
-- [6337] IRewarder.md
-- [6339] ISynapseBridge.md
-- [6340] ISynapseERC20.md
-- [6341] SignedSafeMath.md
-- [6342] ERC20Mock.md
-- [6343] RewarderBrokenMock.md
-- [6344] RewarderMock.md
-- [6346] Synapse.md
-- [6347] AddressArrayUtils.md
-- [6348] EnumerableStringMap.md
-- [6351] AvaxJewelMigrationV2.md
-- [6352] AvaxJewelSwap.md
-- [6354] HarmonyBridgeZap.md
-- [6357] IGMX.md
-- [6362] AuthVerifier.md
-- [6363] GasFeePricing.md
-- [6364] MessageBus.md
-- [6365] MessageBusReceiver.md
-- [6366] MessageBusSender.md
-- [6367] PingPong.md
-- [6368] HeroCoreUpgradeable.md
-- [6369] IAssistingAuction.md
-- [6370] IHeroCoreUpgradeable.md
-- [6371] IStatScienceUpgradeable.md
-- [6372] HeroBridge.md
-- [6373] LibGeneScience.md
-- [6374] SynMessagingReceiver.md
-- [6375] IAuthVerifier.md
-- [6376] IGasFeePricing.md
-- [6377] IMessageBus.md
-- [6378] ISynMessagingReceiver.md
-- [6379] console.md
-- [6417] SynapseERC20DeterministicFactory.md
-- [6458] AccessControlEnumerable.md
-- [6460] IAccessControlEnumerable.md
 - [6462] Pausable.md
-- [6466] ERC20Pausable.md
-- [6467] IERC20Metadata.md
-- [6468] ERC20PresetMinterPauser.md
-- [6530] BatchMessageSender.md
-- [6536] StatScienceUpgradeable.md
-- [6537] AssistingAuctionUpgradeable.md
-- [6538] ERC721AuctionBaseUpgradeable.md
-- [6539] HeroAuctionUpgradeable.md
-- [6540] CrystalFeesUpgradeable.md
-- [6541] IAssistingAuctionUpgradeable.md
-- [6542] HeroBridgeUpgradeable.md
-- [6543] TearBridge.md
-- [6544] GaiaTears.md
-- [6545] IInventoryItem.md
-- [6546] InventoryItem.md
-- [6548] IRandomGenerator.md
-- [6549] RandomGenerator.md
-- [6551] SynMessagingReceiverUpgradeable.md
-- [6566] CHANGELOG.md
-- [6567] README.md
-- [6568] 2024-10-10-rest-api-post.md
-- [6569] 2024-12-12-fastbridgev2-post.md
-- [6570] 2026-03-19-npm-to-github-packages.md
-- [6571] welcome.md
-- [6572] 01-DAO.md
-- [6573] 02-Brand-Assets.md
-- [6574] 03-Routes.md
-- [6575] 04-SYN.md
-- [6577] 02-Products.md
-- [6578] 01-SDK.md
-- [6579] 02-REST-API.md
-- [6580] 03-Widget.md
-- [6581] 04-Code-Examples.md
-- [6582] 05-Supported-Routes.md
-- [6583] _05-Supported-Routes.md
-- [6590] riskFactors.md
-- [6601] 01-Synapse-Token.md
-- [6602] 010-SynapseBridge.md
-- [6604] 03-Intermediate-Tokens.md
-- [6605] 04-Liquidity-Pools.md
-- [6608] 07-Bridge-Zaps.md
-- [6609] 08-MiniChef.md
-- [6610] 09-SYN.md
-- [6611] 01-Scribe.md
-- [6612] 02-Omnirpc.md
-- [6613] 03-Signer.md
-- [6614] 04-Submitter.md
-- [6615] 05-Observability.md
-- [6616] 06-RFQ-Indexer-API.md
-- [6617] Transaction-Support.md
-- [6619] markdown-page.md
-- [6620] HealthCheckResponseServingStatus.md
-- [6621] LogServiceApi.md
-- [6622] ProtobufNullValue.md
-- [6623] RpcStatus.md
-- [6624] ScribeServiceApi.md
-- [6625] StreamResultOfV1HealthCheckResponse.md
-- [6626] StreamResultOfV1StreamLogsResponse.md
-- [6627] V1Address.md
-- [6628] V1FilterLogsRequest.md
-- [6629] V1FilterLogsResponse.md
-- [6630] V1Hash.md
-- [6631] V1HealthCheckRequest.md
-- [6632] V1HealthCheckResponse.md
-- [6633] V1Log.md
-- [6634] V1LogFilter.md
-- [6635] V1NullableBool.md
-- [6636] V1NullableString.md
-- [6637] V1NullableUint32.md
-- [6638] V1NullableUint64.md
-- [6639] V1StreamLogsRequest.md
-- [6640] V1StreamLogsResponse.md
-- [6641] footer.md
-- [6642] header.md
-- [6643] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [6644] 0002-metadata-manifest-and-pull-command.md
-- [6645] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

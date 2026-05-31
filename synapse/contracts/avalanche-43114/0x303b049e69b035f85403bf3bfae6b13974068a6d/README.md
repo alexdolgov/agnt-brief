@@ -6,8 +6,8 @@
 | Address | `0x303b049e69b035f85403bf3bfae6b13974068a6d` |
 | Role | operational_periphery |
 | Origin | needs_review |
-| Audited | Yes |
-| Audits | [AvaxJewelMigration.md](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/wrappers/AvaxJewelMigration.md) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 2 (avalanche [`0x303b049e69b035f85403bf3bfae6b13974068a6d`](../0x303b049e69b035f85403bf3bfae6b13974068a6d/); avalanche `0x82d4acf0da013ee3649c7eadf5db9093a7efa7b0`) |
 | Proxy | No |
 | Source | Etherscan |

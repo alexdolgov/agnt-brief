@@ -6,8 +6,8 @@
 | Address | `0xf0284fb86ada5e4d82555c529677eea3b2c3e022` |
 | Role | token |
 | Origin | needs_review |
-| Audited | Yes |
-| Audits | [ERC20Migrator.md](https://github.com/synapsecns/synapse-contracts/blob/master/deployments/docs/contracts/bridge/ERC20Migrator.md) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 1 (bsc [`0xf0284fb86ada5e4d82555c529677eea3b2c3e022`](../0xf0284fb86ada5e4d82555c529677eea3b2c3e022/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |

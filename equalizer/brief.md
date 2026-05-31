@@ -7,8 +7,8 @@
 - Project: Equalizer (`equalizer`)
 - Website: [https://equalizer.exchange/](https://equalizer.exchange/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T07:11:06.429Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-4212
+- Generated: 2026-05-31T07:56:27.836Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: base, fantom, sonic
 - Contract surface: 292 unique implementations (506 raw deployments)
 - DeFi Llama TVL: $1,076,070.00
@@ -31,11 +31,11 @@ The THICK and 2THICK families provide the AMM layer, while the Scale and Deploye
 - Unverified implementations: 240
 - Unique implementations: 292
 - Raw deployments: 506
-- Audits discovered: 42
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $374,839.04
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 42 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $374,839.04 represents exposure in a protocol with declining activity.
 
@@ -370,48 +370,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [configuration.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/configuration.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [customization.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/customization.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index-test.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/index-test.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [layout.md (also discovered via alternate URL)](https://github.com/just-the-docs/just-the-docs/blob/main/docs/layout/layout.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [default-child.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/layout/minimal/default-child.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [minimal-child.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/layout/minimal/minimal-child.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [minimal.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/layout/minimal/minimal.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [minimal-test.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/minimal-test.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [auxiliary.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/auxiliary.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [children.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/children.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [in-page.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/in-page.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index.md (also discovered via alternate URL)](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ancestry.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/ancestry.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [collections.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/collections.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [exclude.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/exclude.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [external.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/external.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [levels.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/levels.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [order.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/order.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [x.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/x.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [xs.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/xs.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [xt.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/xt.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [xu.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/xu.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [y.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/y.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ys.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/ys.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [yt.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/yt.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [yu.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/main/yu.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [parents.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/navigation/parents.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [search.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/search.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [buttons.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/ui-components/buttons.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [callouts.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/ui-components/callouts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [line-numbers.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/ui-components/code/line-numbers.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [labels.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/ui-components/labels.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [lists.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/ui-components/lists.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [tables.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/ui-components/tables.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [typography.md (also discovered via alternate URL)](https://github.com/just-the-docs/just-the-docs/blob/main/docs/ui-components/typography.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [color.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/utilities/color.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [responsive-modifiers.md](https://github.com/just-the-docs/just-the-docs/blob/main/docs/utilities/responsive-modifiers.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [alerts.md](https://github.com/just-the-docs/just-the-docs-tests/blob/main/docs/alerts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [markdown.md](https://github.com/just-the-docs/just-the-docs-tests/blob/main/docs/markdown.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -474,54 +432,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 42
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [9561] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [9562] 0002-metadata-manifest-and-pull-command.md
-- [9563] 0003-bun-package-manager-node-runtime.md
-- [9564] configuration.md
-- [9565] customization.md
-- [9566] index-test.md
-- [9567] layout.md
-- [9568] default-child.md
-- [9569] minimal-child.md
-- [9570] minimal.md
-- [9571] minimal-test.md
-- [9572] auxiliary.md
-- [9573] children.md
-- [9574] in-page.md
-- [9575] index.md
-- [9576] ancestry.md
-- [9577] collections.md
-- [9578] exclude.md
-- [9579] external.md
-- [9581] levels.md
-- [9582] order.md
-- [9583] x.md
-- [9584] xs.md
-- [9585] xt.md
-- [9586] xu.md
-- [9587] y.md
-- [9588] ys.md
-- [9589] yt.md
-- [9590] yu.md
-- [9591] parents.md
-- [9592] search.md
-- [9593] buttons.md
-- [9594] callouts.md
-- [9596] line-numbers.md
-- [9598] labels.md
-- [9599] lists.md
-- [9600] tables.md
-- [9601] typography.md
-- [9602] color.md
-- [9605] responsive-modifiers.md
-- [9607] alerts.md
-- [9608] markdown.md
 
 Fork inheritance lineage and inherited audits are included when available.

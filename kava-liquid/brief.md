@@ -7,11 +7,11 @@
 - Project: Kava Liquid (`kava-liquid`)
 - Website: [https://app.kava.io/mint](https://app.kava.io/mint)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-24T19:45:12.292Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-05-31T05:42:31.020Z
+- Pipeline run: v2-pipeline-2026-05-31-6a3e7e-9cd8
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,636,015.03
+- DeFi Llama TVL: $1,551,711.13
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -31,11 +31,11 @@ The protocol consists of a single liquid staking contract that handles both stak
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 0
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -77,6 +77,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [www.certik.com/boards/kava](https://www.certik.com/boards/kava) | certik | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -97,9 +98,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [11498] www.certik.com/boards/kava
 
 Fork inheritance lineage and inherited audits are included when available.

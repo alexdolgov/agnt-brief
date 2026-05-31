@@ -270,7 +270,7 @@
 | [hyperdrive-hl](./hyperdrive-hl/) | $2.8M | 0.0% | ? | unknown | 8 | 0 | 2026-05-24 |
 | [hyperion](./hyperion/) | $21.0M | 0.0% | ? | unknown | 5 | 0 | 2026-05-22 |
 | [hypersurface](./hypersurface/) | $161.0M | 0.0% | $161.0M | active | 3 | 242 | 2026-05-29 |
-| [hyperswap](./hyperswap/) | $1.5M | 0.0% | $1.5M | active | 0 | 58 | 2026-05-25 |
+| [hyperswap](./hyperswap/) | $17.4M | 0.0% | ? | active | 3 | 5 | 2026-05-31 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 3 | 12 | 2026-05-29 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-05-25 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 2 | 45 | 2026-05-29 |
@@ -300,7 +300,7 @@
 | [katana-pre-launch](./katana-pre-launch/) | $18.3M | 0.0% | $18.3M | active | 29 | 166 | 2026-05-22 |
 | [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 2 | 1 | 2026-05-30 |
 | [kava-lend](./kava-lend/) | $7.8M | 0.0% | ? | active | 1 | 1 | 2026-05-30 |
-| [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 0 | 1 | 2026-05-24 |
+| [kava-liquid](./kava-liquid/) | $1.6M | 0.0% | ? | declining | 1 | 1 | 2026-05-31 |
 | [kava-mint](./kava-mint/) | $52.2M | 0.0% | ? | active | 5 | 1 | 2026-05-30 |
 | [keep-network](./keep-network/) | $27.0M | 15.9% | $26.2M | dead | 18 | 354 | 2026-05-25 |
 | [keep3r-network](./keep3r-network/) | $2.1B | 0.3% | $2.1B | dead | 1 | 481 | 2026-05-26 |
@@ -444,7 +444,7 @@
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
 | [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 3 | 21 | 2026-05-25 |
 | [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
-| [pharaoh-exchange](./pharaoh-exchange/) | $50.3M | 0.0% | ? | active | 0 | 48 | 2026-05-27 |
+| [pharaoh-exchange](./pharaoh-exchange/) | $50.3M | 0.0% | ? | active | 0 | 48 | 2026-05-31 |
 | [phoenix](./phoenix/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 53 | 2026-05-25 |
 | [pickle](./pickle/) | $2.9M | 2.7% | $2.9M | declining | 4 | 235 | 2026-05-25 |
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pharaoh-exchange",
-  "generated_at": "2026-05-27T20:11:21.392Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
+  "generated_at": "2026-05-31T05:40:30.306Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-6a3e7e-9cd8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "pharaoh-exchange",

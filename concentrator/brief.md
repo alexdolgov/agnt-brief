@@ -5,8 +5,8 @@
 - Project: Concentrator (`concentrator`)
 - Website: [https://concentrator.aladdin.club/](https://concentrator.aladdin.club/)
 - Lifecycle: active (Tier 0, 55.8% below peak)
-- Generated: 2026-05-29T06:53:11.347Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-4212
+- Generated: 2026-05-31T07:43:52.766Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 342 unique implementations (941 raw deployments)
 - DeFi Llama TVL: $58,654,066.78
@@ -29,11 +29,11 @@ All contracts belong to a single Concentrator family, sharing infrastructure lik
 - Unverified implementations: 42
 - Unique implementations: 342
 - Raw deployments: 941
-- Audits discovered: 57
+- Audits discovered: 54
 - Scoreable audits (matched contracts): 53
 - ASD (verified + unaudited TVL): $19,376,435.56
 - Latest audit: 2026-03 (fresh)
-- Staleness: 8 fresh, 14 aging, 32 stale, 3 unknown
+- Staleness: 8 fresh, 14 aging, 32 stale, 0 unknown
 - Tier 1 coverage: 6.3% (Trail of Bits)
 
 ### Auditor Coverage
@@ -475,9 +475,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [SECBIT_f(x)_FxUSD_Base_EIP3009_Report_2026_01_26.pdf](https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_FxUSD_Base_EIP3009_Report_2026_01_26.pdf) | unknown | Audit | 2026-01 | fresh | Direct | contract_name | 7 | high |
 | [SECBIT_f(x)_LimitOrder_Report_v1.0_202510.pdf](https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_LimitOrder_Report_v1.0_202510.pdf) | unknown | Audit | 2025-10 | fresh | Direct | contract_name | 31 | high |
 | [SECBIT_f(x)_LimitOrder_fxMint_Report_v1.0_2025_10_30.pdf](https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_f(x)_LimitOrder_fxMint_Report_v1.0_2025_10_30.pdf) | unknown | Audit | 2025-10 | fresh | Direct | contract_name | 39 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -621,7 +618,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=52, medium=1
 - Match method counts: extraction_exact=1939
@@ -629,8 +626,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [5581] SECBIT_FX_TickMath_Update_Report_v1.0_20250605.pdf
-- [5656] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5657] 0002-metadata-manifest-and-pull-command.md
-- [5658] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

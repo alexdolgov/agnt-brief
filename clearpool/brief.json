@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "clearpool",
-  "generated_at": "2026-05-28T16:02:08.309Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
+  "generated_at": "2026-05-31T07:44:02.615Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "clearpool",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 5,
     "contracts_unverified": 35,
     "coverage_pct": 0,
-    "total_audits": 14,
+    "total_audits": 6,
     "scoreable_audits": 0,
     "dl_tvl_usd": 42176788,
     "tvl_usd": 10712.832282,
@@ -55,13 +55,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2026-04",
-    "audit_freshness": "fresh",
+    "latest_audit_date": "2024-12",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 1,
+      "fresh": 0,
       "aging": 1,
       "stale": 2,
-      "unknown": 10
+      "unknown": 3
     }
   },
   "topography": {
@@ -3523,174 +3523,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5811,
-      "audit_key": "audit-5811",
-      "report_name": "CHANGES_PAYFI.md",
-      "report_url": "https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/CHANGES_PAYFI.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5812,
-      "audit_key": "audit-5812",
-      "report_name": "INTEGRATION.md",
-      "report_url": "https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/INTEGRATION.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5813,
-      "audit_key": "audit-5813",
-      "report_name": "OPERATOR_RUNBOOK.md",
-      "report_url": "https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/OPERATOR_RUNBOOK.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5814,
-      "audit_key": "audit-5814",
-      "report_name": "PRE_AUDIT_CHECKLIST.md",
-      "report_url": "https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/PRE_AUDIT_CHECKLIST.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5815,
-      "audit_key": "audit-5815",
-      "report_name": "SYSTEM_AUDIT.md",
-      "report_url": "https://github.com/clearpool-finance/clearpool-payfi-vaults/blob/main/docs/SYSTEM_AUDIT.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "fresh",
-      "date": "2026-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5816,
-      "audit_key": "audit-5816",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5817,
-      "audit_key": "audit-5817",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5818,
-      "audit_key": "audit-5818",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -3951,38 +3783,6 @@
       {
         "audit_id": 5810,
         "report_name": "AUDIT_SCOPE.md"
-      },
-      {
-        "audit_id": 5811,
-        "report_name": "CHANGES_PAYFI.md"
-      },
-      {
-        "audit_id": 5812,
-        "report_name": "INTEGRATION.md"
-      },
-      {
-        "audit_id": 5813,
-        "report_name": "OPERATOR_RUNBOOK.md"
-      },
-      {
-        "audit_id": 5814,
-        "report_name": "PRE_AUDIT_CHECKLIST.md"
-      },
-      {
-        "audit_id": 5815,
-        "report_name": "SYSTEM_AUDIT.md"
-      },
-      {
-        "audit_id": 5816,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 5817,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 5818,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

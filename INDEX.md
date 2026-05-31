@@ -227,11 +227,11 @@
 | [gate-us](./gate-us/) | $56.5M | 0.0% | ? | active | 0 | 9 | 2026-05-31 |
 | [gearbox](./gearbox/) | $8.0M | 57.8% | ? | declining | 51 | 197 | 2026-05-31 |
 | [generic.money](./generic.money/) | $3.7M | 75.0% | ? | active | 1 | 13 | 2026-05-24 |
-| [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 3 | 1 | 2026-05-29 |
+| [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 0 | 1 | 2026-05-31 |
 | [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-05-31 |
-| [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 3 | 6 | 2026-05-29 |
-| [gnosis-protocol-v1](./gnosis-protocol-v1/) | $95.9M | 1.3% | $94.4M | declining | 12 | 112 | 2026-05-29 |
+| [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 0 | 6 | 2026-05-31 |
+| [gnosis-protocol-v1](./gnosis-protocol-v1/) | $95.9M | 1.3% | $94.4M | declining | 7 | 112 | 2026-05-31 |
 | [goldfinger](./goldfinger/) | $0.0 | 100.0% | ? | active | 6 | 5 | 2026-05-29 |
 | [goldstation](./goldstation/) | $2.3M | 0.0% | ? | active | 3 | 5 | 2026-05-24 |
 | [gondi](./gondi/) | $35.6 | 16.7% | $35.6 | declining | 2 | 33 | 2026-05-24 |

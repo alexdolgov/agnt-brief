@@ -7,8 +7,8 @@
 - Project: Gnosis Protocol v1 (`gnosis-protocol-v1`)
 - Website: [https://gnosis.io/](https://gnosis.io/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T18:31:02.604Z
-- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
+- Generated: 2026-05-31T08:12:29.461Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 112 unique implementations (165 raw deployments)
 - DeFi Llama TVL: $2,227,602.00
@@ -31,11 +31,11 @@ The BatchExchange contract relies on IdToAddressBiMap for efficient address-to-I
 - Unverified implementations: 37
 - Unique implementations: 112
 - Raw deployments: 165
-- Audits discovered: 12
+- Audits discovered: 7
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $94,385,998.56
 - Latest audit: 2021-12 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 9 unknown
+- Staleness: 0 fresh, 0 aging, 3 stale, 4 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $94,385,998.56 represents exposure in a protocol with declining activity.
 
@@ -192,16 +192,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [2020-01-20_accumulator_audit.pdf](https://github.com/gnosis/conditional-tokens-contracts/blob/master/docs/audit/2020-01-20_accumulator_audit.pdf) | unknown | Audit | 2020-01 | stale | Direct | contract_name | 1 | high |
 | [AuditReport-ConditionalTokens.md](https://github.com/gnosis/conditional-tokens-contracts/blob/master/docs/audit/AuditReport-ConditionalTokens.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | high |
 | [Gnosis_Audit_Report.pdf](https://github.com/gnosis/pm-contracts/blob/master/docs/audit/Gnosis_Audit_Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [GnosisProtocolV2May2021.pdf](https://github.com/gnosis/gp-v2-contracts/blob/main/audits/GnosisProtocolV2May2021.pdf) | unknown | Audit | 2021-05 | stale | Direct | n/a | 0 | n/a |
 | [[Cowswap_10122021]SCAudit_Report_2.pdf](https://github.com/gnosis/gp-v2-contracts/blob/main/audits/%5BCowswap_10122021%5DSCAudit_Report_2.pdf) | unknown | Audit | 2021-12 | stale | Direct | n/a | 0 | n/a |
-| [architecture.md](https://github.com/gnosis/gp-v2-contracts/blob/main/docs/architecture.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index.md](https://github.com/gnosis/gp-v2-contracts/blob/main/docs/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [HashiMay2023.pdf](https://github.com/gnosis/hashi/blob/main/audits/HashiMay2023.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [g0-HashiMar2024.pdf](https://github.com/gnosis/hashi/blob/main/audits/g0-HashiMar2024.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
@@ -270,21 +265,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 10
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=2
 
 Zero-match audit list:
 
-- [9139] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [9140] 0002-metadata-manifest-and-pull-command.md
-- [9141] 0003-bun-package-manager-node-runtime.md
 - [9144] Gnosis_Audit_Report.pdf
 - [9145] GnosisProtocolV2May2021.pdf
 - [9146] [Cowswap_10122021]SCAudit_Report_2.pdf
-- [9147] architecture.md
-- [9148] index.md
 - [9149] HashiMay2023.pdf
 - [9150] g0-HashiMar2024.pdf
 

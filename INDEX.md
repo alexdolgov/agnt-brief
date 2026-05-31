@@ -39,11 +39,11 @@
 | [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | unknown | 3 | 2 | 2026-05-31 |
 | [anvil](./anvil/) | $673.0K | 100.0% | ? | unknown | 4 | 3 | 2026-05-22 |
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.0% | $10.9K | declining | 6 | 48 | 2026-05-23 |
-| [ao-bridge](./ao-bridge/) | $54.0M | 0.0% | ? | active | 3 | 3 | 2026-05-28 |
-| [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | active | 3 | 9 | 2026-05-29 |
-| [apex-protocol](./apex-protocol/) | $436.4K | 0.0% | $436.4K | active | 4 | 206 | 2026-05-28 |
+| [ao-bridge](./ao-bridge/) | $54.0M | 0.0% | ? | active | 0 | 3 | 2026-05-31 |
+| [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | active | 0 | 9 | 2026-05-31 |
+| [apex-protocol](./apex-protocol/) | $436.4K | 0.0% | $436.4K | active | 1 | 206 | 2026-05-31 |
 | [api3](./api3/) | $55.2M | 21.4% | $55.2M | unknown | 6 | 28 | 2026-05-27 |
-| [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 3 | 55 | 2026-05-29 |
+| [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 55 | 2026-05-31 |
 | [arcade.xyz](./arcade.xyz/) | $240.1K | 65.9% | ? | dead | 25 | 61 | 2026-05-28 |
 | [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-05-23 |
 | [aria-protocol](./aria-protocol/) | $2.0M | 0.0% | ? | dead | 1 | 1 | 2026-05-24 |

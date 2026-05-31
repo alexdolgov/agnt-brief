@@ -691,13 +691,13 @@
 | [yala](./yala/) | $4.6M | 0.0% | $4.6M | dead | 1 | 30 | 2026-05-31 |
 | [yamato-protocol](./yamato-protocol/) | $910.9 | 47.8% | $818.3 | active | 3 | 63 | 2026-05-24 |
 | [ybtc.b](./ybtc.b/) | $83.9M | 0.0% | ? | active | 6 | 12 | 2026-05-31 |
-| [yei-finance](./yei-finance/) | $32.3M | 0.0% | ? | declining | 4 | 44 | 2026-05-30 |
-| [yield-yak](./yield-yak/) | $16.6M | 0.0% | ? | declining | 4 | 8 | 2026-05-29 |
+| [yei-finance](./yei-finance/) | $32.3M | 0.0% | ? | declining | 1 | 44 | 2026-05-31 |
+| [yield-yak](./yield-yak/) | $16.6M | 0.0% | ? | declining | 0 | 8 | 2026-05-31 |
 | [yieldfi](./yieldfi/) | $43.7M | 66.7% | $16.3M | declining | 7 | 23 | 2026-05-25 |
 | [yieldnest](./yieldnest/) | $19.2M | 44.8% | $295.1K | declining | 21 | 33 | 2026-05-31 |
 | [yieldseeker](./yieldseeker/) | $102.9M | 0.0% | $102.9M | unknown | 1 | 191 | 2026-05-25 |
-| [yo-protocol](./yo-protocol/) | $40.9M | 56.3% | $12.6K | active | 10 | 20 | 2026-05-29 |
-| [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 3 | 8 | 2026-05-29 |
+| [yo-protocol](./yo-protocol/) | $40.9M | 56.3% | $12.6K | active | 7 | 20 | 2026-05-31 |
+| [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 0 | 8 | 2026-05-31 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-05-23 |
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-05-27 |

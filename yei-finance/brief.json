@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "yei-finance",
-  "generated_at": "2026-05-30T11:41:37.590Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
+  "generated_at": "2026-05-31T11:45:17.033Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "yei-finance",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 9,
     "coverage_pct": 0,
-    "total_audits": 4,
+    "total_audits": 1,
     "scoreable_audits": 0,
     "dl_tvl_usd": 32332654,
     "tvl_usd": 32332654,
@@ -62,7 +62,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 4
+      "unknown": 1
     }
   },
   "topography": {
@@ -2370,69 +2370,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11480,
-      "audit_key": "audit-11480",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11481,
-      "audit_key": "audit-11481",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11482,
-      "audit_key": "audit-11482",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -2763,18 +2700,6 @@
       {
         "audit_id": 1795,
         "report_name": "[**https://drive.google.com/drive/folders/1DoZnQU-KURN29grndjvnrumCanwCHhnI?usp=drive\\_link**]()"
-      },
-      {
-        "audit_id": 11480,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 11481,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 11482,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

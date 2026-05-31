@@ -5,8 +5,8 @@
 - Project: YO Protocol (`yo-protocol`)
 - Website: [https://app.yo.xyz?ref=defillama](https://app.yo.xyz?ref=defillama)
 - Lifecycle: active (Tier 0, 51.7% below peak)
-- Generated: 2026-05-29T18:00:24.178Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T11:44:19.410Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, ethereum
 - Contract surface: 20 unique implementations (48 raw deployments)
 - DeFi Llama TVL: $42,549,903.44
@@ -29,11 +29,11 @@ The yoVaults family relies on the Operational Periphery for price data (YoOracle
 - Unverified implementations: 4
 - Unique implementations: 20
 - Raw deployments: 48
-- Audits discovered: 10
+- Audits discovered: 7
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): $12,571.38
 - Latest audit: 2025-12 (fresh)
-- Staleness: 4 fresh, 3 aging, 0 stale, 3 unknown
+- Staleness: 4 fresh, 3 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 6.3% (Spearbit)
 
 ### Auditor Coverage
@@ -106,9 +106,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Yo-Protocol-Aetheryc-Security-Review_V2.pdf](https://github.com/yoprotocol/core/blob/main/audits/Yo-Protocol-Aetheryc-Security-Review_V2.pdf) | unknown | Audit | 2025-12 | fresh | Direct | contract_name | 10 | high |
 | [Yo-Protocol-Hunter-Security-Audit-Report-1.1.pdf](https://github.com/yoprotocol/core/blob/main/audits/Yo-Protocol-Hunter-Security-Audit-Report-1.1.pdf) | unknown | Audit | 2025-01 | aging | Direct | contract_name | 8 | high |
 | [Yo-Protocol-Spearbit-Security-Review.pdf](https://github.com/yoprotocol/core/blob/main/audits/Yo-Protocol-Spearbit-Security-Review.pdf) | Spearbit | Audit | 2025-05 | aging | Direct | contract_name | 6 | medium |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -132,7 +129,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=4, medium=1
 - Match method counts: extraction_exact=48
@@ -141,8 +138,5 @@ Zero-match audit list:
 
 - [5794] Yo-Protocol-Aether-Security-Audit-2.pdf
 - [5795] Yo-Protocol-Aether-Security-Audit.pdf
-- [5799] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5800] 0002-metadata-manifest-and-pull-command.md
-- [5801] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

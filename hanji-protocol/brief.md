@@ -5,8 +5,8 @@
 - Project: Hanji Protocol (`hanji-protocol`)
 - Website: [https://hanji.io](https://hanji.io)
 - Lifecycle: active (Tier 0, 41.2% below peak)
-- Generated: 2026-05-30T10:50:41.370Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T08:18:48.998Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: base
 - Contract surface: 289 unique implementations (291 raw deployments)
 - DeFi Llama TVL: $2,738,368.95
@@ -29,11 +29,11 @@ The Orderbook Contracts rely on Token Contracts for the assets being traded, whi
 - Unverified implementations: 283
 - Unique implementations: 289
 - Raw deployments: 291
-- Audits discovered: 5
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-04 (aging)
-- Staleness: 0 fresh, 2 aging, 0 stale, 3 unknown
+- Staleness: 0 fresh, 2 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -368,9 +368,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [Hanji Protocol Security Audit Report.pdf](https://github.com/mixbytes/audits_public/blob/master/Hanji/OnchainCLOB/Hanji%20Protocol%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2025-04 | aging | Direct | contract_name | 3 | high |
 | [Hanji Liquidity Vault Security Audit Report.pdf](https://github.com/mixbytes/audits_public/blob/master/Hanji/Liquidity%20Vault/Hanji%20Liquidity%20Vault%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2025-04 | aging | Direct | contract_name | 3 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -394,15 +391,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=6
-
-Zero-match audit list:
-
-- [10231] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [10232] 0002-metadata-manifest-and-pull-command.md
-- [10233] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

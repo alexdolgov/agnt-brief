@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "harvest-finance",
-  "generated_at": "2026-05-31T06:39:32.274Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-46e6f8-46f2",
+  "generated_at": "2026-05-31T08:20:50.047Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "harvest-finance",

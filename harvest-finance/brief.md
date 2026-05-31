@@ -7,8 +7,8 @@
 - Project: Harvest Finance (`harvest-finance`)
 - Website: [https://harvest.finance/](https://harvest.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T06:39:32.274Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
+- Generated: 2026-05-31T08:20:50.047Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, bsc, ethereum, polygon
 - Contract surface: 445 unique implementations (1257 raw deployments)
 - DeFi Llama TVL: $12,929,392.29

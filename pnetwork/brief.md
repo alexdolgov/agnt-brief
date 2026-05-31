@@ -7,8 +7,8 @@
 - Project: pNetwork (`pnetwork`)
 - Website: [https://p.network](https://p.network)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T12:26:24.209Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T10:15:36.676Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, gnosis, polygon
 - Contract surface: 10 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $13,099,805.90
@@ -31,11 +31,11 @@ The pNetwork family shares infrastructure through proxy contracts like ArcProxy 
 - Unverified implementations: 1
 - Unique implementations: 10
 - Raw deployments: 13
-- Audits discovered: 5
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 5 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -87,11 +87,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [bridge-limits-explained.md](https://github.com/pnetwork-association/pnetwork-v4/blob/master/docs/bridge-limits-explained.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contracts-spec.md](https://github.com/pnetwork-association/pnetwork-v4/blob/master/docs/contracts-spec.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -121,17 +116,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [6927] bridge-limits-explained.md
-- [6928] contracts-spec.md
-- [6929] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [6930] 0002-metadata-manifest-and-pull-command.md
-- [6931] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

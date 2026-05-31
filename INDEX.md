@@ -441,9 +441,9 @@
 | [paragonsdao](./paragonsdao/) | $6.2M | 50.0% | ? | unknown | 8 | 2 | 2026-05-23 |
 | [parallel-protocol](./parallel-protocol/) | $3.6M | 30.8% | $3.0M | active | 5 | 38 | 2026-05-24 |
 | [parasail](./parasail/) | $17.2M | 0.0% | $17.2M | declining | 0 | 41 | 2026-05-31 |
-| [pay-protocol](./pay-protocol/) | $1.4M | 0.0% | ? | declining | 3 | 8 | 2026-05-29 |
+| [pay-protocol](./pay-protocol/) | $1.4M | 0.0% | ? | declining | 0 | 8 | 2026-05-31 |
 | [peapods-finance](./peapods-finance/) | $949.5K | 53.1% | $949.5K | declining | 4 | 130 | 2026-05-23 |
-| [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 3 | 21 | 2026-05-25 |
+| [pepeteam](./pepeteam/) | $11.1K | 0.0% | $11.1K | active | 0 | 21 | 2026-05-31 |
 | [perpl](./perpl/) | $1.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [pharaoh-exchange](./pharaoh-exchange/) | $50.3M | 0.0% | ? | active | 0 | 48 | 2026-05-31 |
 | [phoenix](./phoenix/) | $1.5M | 0.0% | $1.5M | unknown | 0 | 53 | 2026-05-25 |
@@ -451,10 +451,10 @@
 | [piku](./piku/) | $21.4M | 14.8% | $21.4M | active | 3 | 29 | 2026-05-22 |
 | [pionex](./pionex/) | $37.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [planet](./planet/) | $778.3M | 7.7% | $778.3M | dead | 1 | 34 | 2026-05-24 |
-| [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | unknown | 149 | 7 | 2026-05-29 |
-| [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 3 | 6 | 2026-05-29 |
+| [plasma-one](./plasma-one/) | $0.6 | 0.0% | $0.6 | unknown | 2 | 7 | 2026-05-31 |
+| [plasma-saving-vaults](./plasma-saving-vaults/) | $2.6M | 0.0% | $2.6M | declining | 0 | 6 | 2026-05-31 |
 | [pleasing-gold](./pleasing-gold/) | $88.1M | 0.0% | $88.1M | unknown | 0 | 8 | 2026-05-27 |
-| [pnetwork](./pnetwork/) | $13.1M | 0.0% | ? | declining | 5 | 10 | 2026-05-29 |
+| [pnetwork](./pnetwork/) | $13.1M | 0.0% | ? | declining | 0 | 10 | 2026-05-31 |
 | [polkastarter](./polkastarter/) | $9.6M | 50.0% | ? | unknown | 21 | 2 | 2026-05-29 |
 | [polygon-zkevm-bridge](./polygon-zkevm-bridge/) | $78.0M | 0.0% | ? | active | 3 | 1 | 2026-05-29 |
 | [polynomial-protocol](./polynomial-protocol/) | $5.3M | 0.0% | ? | active | 18 | 5 | 2026-05-23 |

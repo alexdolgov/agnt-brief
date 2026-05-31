@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "pepeteam",
-  "generated_at": "2026-05-25T00:47:49.358Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-05-31T10:14:26.014Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "pepeteam",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1330939,
+    "dl_tvl_usd": 1319181,
     "tvl_usd": 11093.184709251977,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -56,7 +56,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 3
+      "unknown": 0
     }
   },
   "topography": {
@@ -1108,71 +1108,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 3103,
-      "audit_key": "audit-3103",
-      "report_name": "viresfinance-security-audit.en.appendix-1.md",
-      "report_url": "https://github.com/deemru/viresfinance-audit/blob/main/viresfinance-security-audit.en.appendix-1.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3104,
-      "audit_key": "audit-3104",
-      "report_name": "viresfinance-security-audit.en.md",
-      "report_url": "https://github.com/deemru/viresfinance-audit/blob/main/viresfinance-security-audit.en.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3105,
-      "audit_key": "audit-3105",
-      "report_name": "viresfinance-security-audit.ru.md",
-      "report_url": "https://github.com/deemru/viresfinance-audit/blob/main/viresfinance-security-audit.ru.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -1297,20 +1233,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 3103,
-        "report_name": "viresfinance-security-audit.en.appendix-1.md"
-      },
-      {
-        "audit_id": 3104,
-        "report_name": "viresfinance-security-audit.en.md"
-      },
-      {
-        "audit_id": 3105,
-        "report_name": "viresfinance-security-audit.ru.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Manta CeDeFi
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 32.3% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 32.2% over 90 days
 
 ## Project Overview
 
 - Project: Manta CeDeFi (`manta-cedefi`)
 - Website: [https://cedefi.manta.network](https://cedefi.manta.network)
 - Lifecycle: unknown (Tier 0, 81.2% below peak)
-- Generated: 2026-05-31T06:49:11.221Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-7f15
+- Generated: 2026-05-31T09:48:24.388Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: manta
 - Contract surface: 17 unique implementations (45 raw deployments)
 - DeFi Llama TVL: $26,702,791.45

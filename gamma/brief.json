@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gamma",
-  "generated_at": "2026-05-29T07:17:04.879Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-4212",
+  "generated_at": "2026-05-31T08:08:17.848Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "gamma",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 15,
     "contracts_unverified": 362,
     "coverage_pct": 29.5,
-    "total_audits": 33,
+    "total_audits": 30,
     "scoreable_audits": 9,
     "dl_tvl_usd": 3713256.188539999,
     "tvl_usd": 24284.661510050704,
@@ -89,7 +89,7 @@
       "fresh": 2,
       "aging": 8,
       "stale": 10,
-      "unknown": 13
+      "unknown": 10
     }
   },
   "topography": {
@@ -34042,24 +34042,12 @@
           "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/audits/README.md"
         },
         {
-          "audit_id": 8033,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/docs/README.md"
-        },
-        {
           "audit_id": 8041,
           "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/README.md"
         },
         {
-          "audit_id": 8042,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/docs/README.md"
-        },
-        {
           "audit_id": 8065,
           "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/audits/README.md"
-        },
-        {
-          "audit_id": 8066,
-          "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/lib/openzeppelin-contracts/docs/README.md"
         }
       ]
     },
@@ -34351,69 +34339,6 @@
       "audit_key": "audit-8058",
       "report_name": "whitepaper-zh.pdf",
       "report_url": "https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-zh.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8068,
-      "audit_key": "audit-8068",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8069,
-      "audit_key": "audit-8069",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 8070,
-      "audit_key": "audit-8070",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
       "auditor": "unknown",
       "audit_type": "audit",
       "freshness": "unknown",
@@ -34956,18 +34881,6 @@
       {
         "audit_id": 8058,
         "report_name": "whitepaper-zh.pdf"
-      },
-      {
-        "audit_id": 8068,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 8069,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 8070,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

@@ -7,8 +7,8 @@
 - Project: Gamma (`gamma`)
 - Website: [https://www.gamma.xyz](https://www.gamma.xyz)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T07:17:04.879Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-4212
+- Generated: 2026-05-31T08:08:17.848Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, avalanche, base, berachain, blast, bsc, celo, ethereum, fantom, gnosis, kava, linea, manta, mantle, metis, mode, moonbeam, optimism, polygon, polygon-zkevm, scroll, sonic, unichain
 - Contract surface: 467 unique implementations (2560 raw deployments)
 - DeFi Llama TVL: $3,713,256.19
@@ -31,11 +31,11 @@ The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's Mu
 - Unverified implementations: 362
 - Unique implementations: 467
 - Raw deployments: 2560
-- Audits discovered: 33
+- Audits discovered: 30
 - Scoreable audits (matched contracts): 9
 - ASD (verified + unaudited TVL): $24,284.66
 - Latest audit: 2026-03 (fresh)
-- Staleness: 2 fresh, 8 aging, 10 stale, 13 unknown
+- Staleness: 2 fresh, 8 aging, 10 stale, 10 unknown
 - Tier 1 coverage: 4.8% (ConsenSys Diligence, OpenZeppelin)
 - Note: This protocol is classified as [declining]. ASD of $24,284.66 represents exposure in a protocol with declining activity.
 
@@ -581,9 +581,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [TrailOfBits_audit_core.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/security/audits/TrailOfBits_audit_core.pdf) | Trail of Bits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [whitepaper-v4.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-v4.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [whitepaper-zh.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/lib/v4-periphery/lib/v4-core/docs/whitepaper/whitepaper-zh.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -645,7 +642,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 24
+- Audits with zero matched contracts: 21
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=8, medium=1
 - Match method counts: extraction_exact=1685
@@ -673,8 +670,5 @@ Zero-match audit list:
 - [8056] TrailOfBits_audit_core.pdf
 - [8057] whitepaper-v4.pdf
 - [8058] whitepaper-zh.pdf
-- [8068] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [8069] 0002-metadata-manifest-and-pull-command.md
-- [8070] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

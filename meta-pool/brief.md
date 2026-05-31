@@ -5,8 +5,8 @@
 - Project: Meta Pool (`meta-pool`)
 - Website: [https://metapool.app](https://metapool.app)
 - Lifecycle: active (Tier 0, 55.2% below peak)
-- Generated: 2026-05-29T10:42:19.979Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T09:58:06.369Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: aurora, ethereum
 - Contract surface: 41 unique implementations (65 raw deployments)
 - DeFi Llama TVL: $95,295,173.00
@@ -29,11 +29,11 @@ The Meta Pool family provides shared governance (MpDaoToken, VotingPowerV1) and 
 - Unverified implementations: 29
 - Unique implementations: 41
 - Raw deployments: 65
-- Audits discovered: 5
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $3,963,969.94
 - Latest audit: 2024-06 (aging)
-- Staleness: 0 fresh, 1 aging, 2 stale, 2 unknown
+- Staleness: 0 fresh, 1 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -121,8 +121,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [blocksec_lockup_v1.0-signed-audit.pdf](https://github.com/Meta-Pool/lockup-stake-metapool/blob/master/docs/blocksec_lockup_v1.0-signed-audit.pdf) | unknown | Audit | 2023-08 | stale | Direct | n/a | 0 | n/a |
 | [2024-06 Blocksec Audit.pdf](https://github.com/Meta-Pool/metapool-shortcut/blob/main/audit/2024-06%20Blocksec%20Audit.pdf) | unknown | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
 | [MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf](https://github.com/Meta-Pool/staking-pool-aurora/blob/main/audits/MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf) | unknown | Audit | 2023-05 | stale | Direct | contract_name | 19 | high |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -147,7 +145,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=19
@@ -156,7 +154,5 @@ Zero-match audit list:
 
 - [4894] blocksec_lockup_v1.0-signed-audit.pdf
 - [4895] 2024-06 Blocksec Audit.pdf
-- [4897] 0002-metadata-manifest-and-pull-command.md
-- [4898] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

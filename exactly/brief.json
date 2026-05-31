@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "exactly",
-  "generated_at": "2026-05-31T06:38:33.825Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-46e6f8-46f2",
+  "generated_at": "2026-05-31T08:00:29.882Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "exactly",

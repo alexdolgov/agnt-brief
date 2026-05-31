@@ -5,8 +5,8 @@
 - Project: Eventum Bridge (`eventum-bridge`)
 - Website: [https://evedex.com/en-US/](https://evedex.com/en-US/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-30T10:52:01.421Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T08:00:32.006Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, ethereum
 - Contract surface: 30 unique implementations (60 raw deployments)
 - DeFi Llama TVL: $2,820,145.70
@@ -29,11 +29,11 @@ The Bridge family provides the core cross-chain messaging infrastructure, while 
 - Unverified implementations: 2
 - Unique implementations: 30
 - Raw deployments: 60
-- Audits discovered: 15
+- Audits discovered: 12
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $1,642,372.23
 - Latest audit: 2025-08 (fresh)
-- Staleness: 2 fresh, 0 aging, 8 stale, 5 unknown
+- Staleness: 2 fresh, 0 aging, 8 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -109,9 +109,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [hashex.org/audits/evedex](https://hashex.org/audits/evedex) | HashEx | Audit | 2025-08 | fresh | Direct | contract_name | 1 | high |
 | [skynet.certik.com/projects/evedex](https://skynet.certik.com/projects/evedex) | CertiK | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [chainlight_v3_0.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/chainlight_v3_0.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [kalos_recovery_v1.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_recovery_v1.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
 | [kalos_recovery_v2.pdf](https://github.com/evedex-official/kernel-smart-account/blob/master/audits/kalos_recovery_v2.pdf) | unknown | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
@@ -153,7 +150,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 14
+- Audits with zero matched contracts: 11
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=1
@@ -161,9 +158,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2789] skynet.certik.com/projects/evedex
-- [10075] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [10076] 0002-metadata-manifest-and-pull-command.md
-- [10077] 0003-bun-package-manager-node-runtime.md
 - [10078] chainlight_v3_0.pdf
 - [10079] kalos_recovery_v1.pdf
 - [10080] kalos_recovery_v2.pdf

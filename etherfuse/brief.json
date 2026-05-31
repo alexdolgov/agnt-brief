@@ -1,25 +1,35 @@
 {
   "schema_version": "2.0",
   "project_key": "etherfuse",
-  "generated_at": "2026-05-28T16:42:28.456Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-05-31T07:59:31.185Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "etherfuse",
-    "tier": 0,
+    "tier": 1,
     "peak_tvl": 19361100,
     "peak_date": "2026-01-03T00:00:00.000Z",
-    "tvl_30d_ago": 5178126,
-    "tvl_90d_ago": 19051364,
-    "tvl_current": 4769669,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 25169,
-    "change_30d_pct": -7.888124004707494,
-    "change_90d_pct": -74.96416004649326,
-    "days_since_peak": 145,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 75.36467969278605
+    "tvl_30d_ago": 5111762,
+    "tvl_90d_ago": 18329985,
+    "tvl_current": 3484057,
+    "tier0_reason": "hard_90d_decline",
+    "tvl_180d_ago": 25642,
+    "change_30d_pct": -31.842347120229775,
+    "change_90d_pct": -80.99258128143586,
+    "governance_raw": {
+      "evidence": "TVL dropped 82% from peak but the protocol is still actively marketing and onboarding users, indicating ongoing operations.",
+      "confidence": 0.7,
+      "lifecycle_status": "declining"
+    },
+    "days_since_peak": 148,
+    "detection_method": "tvl_trajectory+governance_signal",
+    "governance_source": "docs_homepage",
+    "drop_from_peak_pct": 82.00486026103889,
+    "governance_evidence": "TVL dropped 82% from peak but the protocol is still actively marketing and onboarding users, indicating ongoing operations.",
+    "governance_confidence": 0.7,
+    "governance_text_chars": 2864,
+    "governance_classification": "declining",
+    "governance_fallback_reason": null
   },
   "summary": {
     "total_contracts": 25,
@@ -33,7 +43,7 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 20,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 5405525.69033,
     "tvl_usd": 5405525.69033,
@@ -53,7 +63,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 3
+      "unknown": 0
     }
   },
   "topography": {
@@ -1139,71 +1149,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 7686,
-      "audit_key": "audit-7686",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7687,
-      "audit_key": "audit-7687",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7688,
-      "audit_key": "audit-7688",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -1248,20 +1194,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 7686,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 7687,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 7688,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

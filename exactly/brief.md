@@ -5,8 +5,8 @@
 - Project: Exactly (`exactly`)
 - Website: [https://exact.ly](https://exact.ly)
 - Lifecycle: active (Tier 0, 92.1% below peak)
-- Generated: 2026-05-31T06:38:33.825Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
+- Generated: 2026-05-31T08:00:29.882Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: base, ethereum, optimism
 - Contract surface: 65 unique implementations (1384 raw deployments)
 - DeFi Llama TVL: $3,986,030.96

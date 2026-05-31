@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "block-analitica",
-  "generated_at": "2026-05-28T15:52:31.430Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
+  "generated_at": "2026-05-31T07:31:59.069Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "block-analitica",
     "tier": 0,
     "peak_tvl": 335112443,
     "peak_date": "2025-10-09T00:00:00.000Z",
-    "tvl_30d_ago": 56747537,
-    "tvl_90d_ago": 76934682,
-    "tvl_current": 47871181,
+    "tvl_30d_ago": 56884133,
+    "tvl_90d_ago": 80141443,
+    "tvl_current": 48219437,
     "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 153994922,
-    "change_30d_pct": -15.641834816548956,
-    "change_90d_pct": -37.7768520574375,
-    "days_since_peak": 231,
+    "tvl_180d_ago": 153152661,
+    "change_30d_pct": -15.23218434216093,
+    "change_90d_pct": -39.83208288375841,
+    "days_since_peak": 234,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 85.71489003170198
+    "drop_from_peak_pct": 85.61096789831824
   },
   "summary": {
     "total_contracts": 19,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 49595780.40051,
     "tvl_usd": 252833.045578,
@@ -57,7 +57,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 2
+      "unknown": 0
     }
   },
   "topography": {
@@ -1443,50 +1443,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 5748,
-      "audit_key": "audit-5748",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5749,
-      "audit_key": "audit-5749",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -1671,16 +1628,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 5748,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 5749,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

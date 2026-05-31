@@ -5,8 +5,8 @@
 - Project: The Idols (`the-idols`)
 - Website: [https://www.theidols.io](https://www.theidols.io)
 - Lifecycle: active (Tier 0, 57.7% below peak)
-- Generated: 2026-05-31T06:50:02.025Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-7f15
+- Generated: 2026-05-31T10:59:09.639Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 17 unique implementations (20 raw deployments)
 - DeFi Llama TVL: $5,665,507.10

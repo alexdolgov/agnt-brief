@@ -5,8 +5,8 @@
 - Project: TheDeep (`thedeep`)
 - Website: [https://app.thedeep.ink/](https://app.thedeep.ink/)
 - Lifecycle: active (Tier 0, 48% below peak)
-- Generated: 2026-05-30T11:27:40.487Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T10:59:08.122Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: base, celo, ink, polygon
 - Contract surface: 164 unique implementations (244 raw deployments)
 - DeFi Llama TVL: $8,217,310.84
@@ -29,11 +29,11 @@ The ICHIVaultFactory contracts deploy and register vaults, while the RebalancerF
 - Unverified implementations: 149
 - Unique implementations: 164
 - Raw deployments: 244
-- Audits discovered: 4
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 4 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -240,9 +240,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [View Security Audit Report →](https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20ICHI%20-%20Vaults%20-%20Final%20Report.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -277,7 +274,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -285,8 +282,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [2135] View Security Audit Report →
-- [11312] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [11313] 0002-metadata-manifest-and-pull-command.md
-- [11314] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

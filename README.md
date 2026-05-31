@@ -675,7 +675,7 @@ Each project directory contains:
 | [teller](./teller/brief.md) | $1.99M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [tender-finance](./tender-finance/brief.md) | $1.29M | arbitrum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | - |
 | [tensorplex](./tensorplex/brief.md) | $1.62M | ethereum | 6 | 4/6 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [tg-casino](./tg-casino/brief.md) | $1.18M | ethereum | 15 | 15/15 (100%) | 6.7% | 0.0% (-) | 1 | stale | ❓ unknown | - |
+| [tg-casino](./tg-casino/brief.md) | $1.20M | ethereum | 15 | 15/15 (100%) | 6.7% | 0.0% (-) | 1 | fresh | ❓ unknown | - |
 | [thedeep](./thedeep/brief.md) | $8.22M | 4 | 164 | 11/164 (7%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [themis-pro](./themis-pro/brief.md) | $1.16M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [thruster](./thruster/brief.md) | $5.73M | blast | 20 | 14/20 (70%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
@@ -722,5 +722,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-31T10:58:48.002Z_
+_Generated: 2026-05-31T11:08:28.545Z_
 _Projects: 710_

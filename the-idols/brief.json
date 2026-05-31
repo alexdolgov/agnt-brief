@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "the-idols",
-  "generated_at": "2026-05-31T06:50:02.025Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-46e6f8-7f15",
+  "generated_at": "2026-05-31T10:59:09.639Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "the-idols",

@@ -5,8 +5,8 @@
 - Project: Arrakis Finance (`arrakis-finance`)
 - Website: [https://www.arrakis.finance](https://www.arrakis.finance)
 - Lifecycle: active (Tier 0, 95.9% below peak)
-- Generated: 2026-05-28T15:40:15.754Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
+- Generated: 2026-05-31T07:26:19.749Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, bsc, ethereum, ink, optimism, plasma, polygon, unichain
 - Contract surface: 124 unique implementations (709 raw deployments)
 - DeFi Llama TVL: $77,236,496.00
@@ -29,11 +29,11 @@ Arrakis V1 and V2 are legacy vault systems, while Arrakis Modular is the current
 - Unverified implementations: 21
 - Unique implementations: 124
 - Raw deployments: 709
-- Audits discovered: 15
+- Audits discovered: 12
 - Scoreable audits (matched contracts): 10
 - ASD (verified + unaudited TVL): $3,070.77
 - Latest audit: 2023-08 (stale)
-- Staleness: 0 fresh, 0 aging, 12 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 12 stale, 0 unknown
 - Tier 1 coverage: 3.9% (Sherlock)
 
 ### Auditor Coverage
@@ -217,9 +217,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Arrakis_Audit_Report.pdf](https://github.com/ArrakisFinance/v2-manager-templates/blob/main/audit/Arrakis_Audit_Report.pdf) | unknown | Audit | 2023-08 | stale | Direct | contract_name | 61 | high |
 | [Arrakis_V2_Periphery_Audit_Statemind.pdf](https://github.com/ArrakisFinance/v2-periphery/blob/main/audit/Arrakis_V2_Periphery_Audit_Statemind.pdf) | unknown | Audit | 2023-08 | stale | Direct | contract_name | 40 | high |
 | [Chainsecurity Audit Report December 21.pdf](https://github.com/ArrakisFinance/staking-contracts/blob/main/audits/Chainsecurity%20Audit%20Report%20December%2021.pdf) | yAudit | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -287,7 +284,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=10
 - Match method counts: extraction_exact=948
@@ -296,8 +293,5 @@ Zero-match audit list:
 
 - [5492] Arrakis_Finance_Audit_Report_by_WatchPug.pdf
 - [5500] Chainsecurity Audit Report December 21.pdf
-- [5501] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5502] 0002-metadata-manifest-and-pull-command.md
-- [5503] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

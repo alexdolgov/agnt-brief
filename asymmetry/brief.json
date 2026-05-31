@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "asymmetry",
-  "generated_at": "2026-05-31T06:28:39.730Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-46e6f8-46f2",
+  "generated_at": "2026-05-31T07:24:11.912Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "asymmetry",

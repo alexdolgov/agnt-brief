@@ -6,8 +6,8 @@
 
 - Project: Atlendis (`atlendis`)
 - Lifecycle: declining (Tier 0, 99% below peak)
-- Generated: 2026-05-28T15:39:15.708Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
+- Generated: 2026-05-31T07:24:13.684Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: polygon
 - Contract surface: 43 unique implementations (106 raw deployments)
 - DeFi Llama TVL: $10,993,274.00
@@ -30,11 +30,11 @@ The protocol consists of a single product family, Atlendis V1, where BorrowerPoo
 - Unverified implementations: 29
 - Unique implementations: 43
 - Raw deployments: 106
-- Audits discovered: 5
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $4,280,776.69
 - Latest audit: 2022-05 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $4,280,776.69 represents exposure in a protocol with declining activity.
 
@@ -125,9 +125,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [PeckShield-Audit-Report-Atlendis-v1.0.pdf](https://github.com/Atlendis/protocol-v1/blob/master/audits/PeckShield-Audit-Report-Atlendis-v1.0.pdf) | PeckShield | Audit | 2022-05 | stale | Direct | contract_name | 4 | high |
 | [atlendis-audit-report.pdf](https://github.com/Atlendis/protocol-v1/blob/master/audits/atlendis-audit-report.pdf) | unknown | Audit | 2022-02 | stale | Direct | contract_name | 4 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -157,15 +154,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=8
-
-Zero-match audit list:
-
-- [7050] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7051] 0002-metadata-manifest-and-pull-command.md
-- [7052] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

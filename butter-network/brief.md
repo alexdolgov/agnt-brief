@@ -7,8 +7,8 @@
 - Project: Butter Network (`butter-network`)
 - Website: [https://www.butterswap.io/swap](https://www.butterswap.io/swap)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-28T16:03:03.456Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
+- Generated: 2026-05-31T07:40:57.167Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, blast, ethereum, klaytn, linea, mantle, merlin, optimism, polygon, scroll
 - Contract surface: 6 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $1,227,686.59
@@ -31,11 +31,11 @@ The protocol consists of a single product family where multiple OmniServiceProxy
 - Unverified implementations: 4
 - Unique implementations: 6
 - Raw deployments: 13
-- Audits discovered: 19
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 19 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -83,25 +83,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [1.install.md](https://github.com/butternetwork/butter-packages/blob/main/packages/butter-sdk/docs/1.install.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [2.configure-sdk.md](https://github.com/butternetwork/butter-packages/blob/main/packages/butter-sdk/docs/2.configure-sdk.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [3.request-routes.md](https://github.com/butternetwork/butter-packages/blob/main/packages/butter-sdk/docs/3.request-routes.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [4.execute-route.md](https://github.com/butternetwork/butter-packages/blob/main/packages/butter-sdk/docs/4.execute-route.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [5.others.md](https://github.com/butternetwork/butter-packages/blob/main/packages/butter-sdk/docs/5.others.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BOPS.md (also discovered via alternate URL)](https://github.com/butternetwork/butter-documents/blob/master/docs/How%20to%20Integrate/BOPS.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BSLP.md (also discovered via alternate URL)](https://github.com/butternetwork/butter-documents/blob/master/docs/How%20to%20Integrate/BSLP.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [exchange.md](https://github.com/butternetwork/butter-documents/blob/master/docs/How%20to%20Integrate/exchange.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [switch-chain.md](https://github.com/butternetwork/butter-documents/blob/master/docs/How%20to%20Integrate/switch-chain.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [introduction.md](https://github.com/butternetwork/butter-documents/blob/master/docs/introduction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BCES.md](https://github.com/butternetwork/butter-documents/blob/master/docs/products/BCES.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [butter-bridge.md](https://github.com/butternetwork/butter-documents/blob/master/docs/products/butter-bridge.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [butter-chain-switcher.md](https://github.com/butternetwork/butter-documents/blob/master/docs/products/butter-chain-switcher.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [roadmap.md](https://github.com/butternetwork/butter-documents/blob/master/docs/roadmap.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [security.md](https://github.com/butternetwork/butter-documents/blob/master/docs/security.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [thefee.md](https://github.com/butternetwork/butter-documents/blob/master/docs/thefee.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -125,31 +107,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 19
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [9496] 1.install.md
-- [9497] 2.configure-sdk.md
-- [9498] 3.request-routes.md
-- [9499] 4.execute-route.md
-- [9500] 5.others.md
-- [9501] BOPS.md
-- [9502] BSLP.md
-- [9503] exchange.md
-- [9504] switch-chain.md
-- [9505] introduction.md
-- [9506] BCES.md
-- [9509] butter-bridge.md
-- [9510] butter-chain-switcher.md
-- [9511] roadmap.md
 - [9512] security.md
-- [9513] thefee.md
-- [9514] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [9515] 0002-metadata-manifest-and-pull-command.md
-- [9516] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

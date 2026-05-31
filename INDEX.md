@@ -106,14 +106,14 @@
 | [bridgers](./bridgers/) | $71.9M | 0.0% | $71.9M | active | 1 | 9 | 2026-05-24 |
 | [brotocol](./brotocol/) | $12.2M | 0.0% | ? | active | 0 | 238 | 2026-05-31 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-05-23 |
-| [btcfi](./btcfi/) | $11.8M | 0.0% | ? | active | 3 | 15 | 2026-05-28 |
-| [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 3 | 64 | 2026-05-28 |
+| [btcfi](./btcfi/) | $11.8M | 0.0% | ? | active | 0 | 15 | 2026-05-31 |
+| [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 0 | 64 | 2026-05-31 |
 | [btse](./btse/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [bucket-protocol](./bucket-protocol/) | $65.1M | 0.0% | ? | unknown | 7 | 0 | 2026-05-27 |
 | [bulbaswap](./bulbaswap/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [bunny](./bunny/) | $1.9M | 9.6% | $1.4M | dead | 1 | 101 | 2026-05-24 |
-| [butter-network](./butter-network/) | $1.2M | 0.0% | ? | declining | 19 | 6 | 2026-05-28 |
-| [bydfi](./bydfi/) | $92.7M | 0.0% | ? | active | 3 | 1 | 2026-05-28 |
+| [butter-network](./butter-network/) | $1.2M | 0.0% | ? | declining | 1 | 6 | 2026-05-31 |
+| [bydfi](./bydfi/) | $92.7M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
 | [byte-exchange](./byte-exchange/) | $41.7M | 0.0% | ? | unknown | 0 | 0 | 2026-05-26 |
 | [camelot](./camelot/) | $6.4M | 17.6% | $391.9K | active | 1 | 118 | 2026-05-25 |
 | [canopy](./canopy/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
@@ -121,7 +121,7 @@
 | [capx-ai](./capx-ai/) | $2.2M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
 | [carbon-defi](./carbon-defi/) | $41.7M | 29.8% | $36.6M | active | 4 | 157 | 2026-05-25 |
 | [cbridge](./cbridge/) | $18.5M | 0.0% | ? | declining | 12 | 2112 | 2026-05-25 |
-| [cex.io](./cex.io/) | $7.6M | 0.0% | ? | active | 4 | 3 | 2026-05-30 |
+| [cex.io](./cex.io/) | $7.6M | 0.0% | ? | active | 1 | 3 | 2026-05-31 |
 | [cgo-finance](./cgo-finance/) | $1.2M | 0.0% | ? | declining | 3 | 2 | 2026-05-28 |
 | [chain-fusion](./chain-fusion/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [chainflip](./chainflip/) | $3.7M | 23.1% | ? | active | 3 | 14 | 2026-05-26 |

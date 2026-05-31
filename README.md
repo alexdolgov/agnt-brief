@@ -29,7 +29,7 @@ Each project directory contains:
 | [inverse-finance](./inverse-finance/brief.md) | $41.93M | 5 | 154 | 144/154 (94%) | 11.1% | 7.6% (Code4rena, Sherlock) | 5 | fresh | ❓ unknown | $428.77M |
 | [onyx](./onyx/brief.md) | $58.89M | ethereum | 16 | 14/16 (88%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | $384.43M |
 | [kine-finance](./kine-finance/brief.md) | $1.09M | 4 | 35 | 33/35 (94%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $351.76M |
-| [alchemix](./alchemix/brief.md) | $37.88M | 4 | 388 | 202/388 (52%) | 7.4% | 1.0% (Spearbit) | 18 | fresh | ⚠️ declining | $338.70M |
+| [alchemix](./alchemix/brief.md) | $37.88M | 4 | 388 | 202/388 (52%) | 6.4% | 1.0% (Spearbit) | 6 | fresh | ⚠️ declining | $338.70M |
 | [tenderize](./tenderize/brief.md) | $1.08M | arbitrum, ethereum | 43 | 38/43 (88%) | 2.6% | 0.0% (-) | 2 | stale | ⚠️ declining | $332.49M |
 | [mitosis](./mitosis/brief.md) | $1.48M | 11 | 72 | 46/72 (64%) | 4.3% | 4.3% (Code4rena) | 1 | fresh | 💀 dead | $329.08M |
 | [hyperwave](./hyperwave/brief.md) | $6.38M | base, ethereum, hyperliquid | 12 | 8/12 (67%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $322.69M |
@@ -722,5 +722,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-31T07:04:08.195Z_
+_Generated: 2026-05-31T07:08:55.959Z_
 _Projects: 710_

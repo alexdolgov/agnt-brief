@@ -7,8 +7,8 @@
 - Project: Alchemix (`alchemix`)
 - Website: [https://alchemix.fi/](https://alchemix.fi/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-30T10:39:08.212Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T07:07:40.865Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, ethereum, fantom, optimism
 - Contract surface: 388 unique implementations (1035 raw deployments)
 - DeFi Llama TVL: $37,880,562.00
@@ -25,17 +25,17 @@ Alchemix V2 and V3 share the same governance infrastructure (GnosisSafe) and cro
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 15/202 (7.4%)
-- Verified + Unaudited implementations: 187
+- Verified implementations audited: 13/202 (6.4%)
+- Verified + Unaudited implementations: 189
 - Verified by bytecode match: 0
 - Unverified implementations: 186
 - Unique implementations: 388
 - Raw deployments: 1035
-- Audits discovered: 91
-- Scoreable audits (matched contracts): 18
+- Audits discovered: 13
+- Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): $338,700,456.10
 - Latest audit: 2026-04 (fresh)
-- Staleness: 8 fresh, 2 aging, 0 stale, 81 unknown
+- Staleness: 8 fresh, 2 aging, 0 stale, 3 unknown
 - Tier 1 coverage: 1.0% (Spearbit)
 - Note: This protocol is classified as [declining]. ASD of $338,700,456.10 represents exposure in a protocol with declining activity.
 
@@ -43,20 +43,19 @@ Alchemix V2 and V3 share the same governance infrastructure (GnosisSafe) and cro
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 13 | 6.4% | 2026-03 |
+| unknown | Tier 2 | 10 | 5.0% | 2026-03 |
 | yAudit | Tier 2 | 3 | 1.5% | 2026-04 |
 | Spearbit | Tier 1 | 2 | 1.0% | 2025-08 |
 | Zellic | Tier 2 | 1 | 0.5% | 2025-07 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (15)
+### ✅ Verified + Audited (13)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | WstETHEthereumStrategy | core_logic | ethereum | [`0xde44c2...e80681`](./contracts/ethereum-1/0xde44c213f0730e9f38401daf8edf31129de80681/) | ✅ Audited |
 | WstethStrategy | core_logic | optimism | 2 deployments: ethereum `0x7da70f...353189`; optimism [`0x4bd4fa...0288b4`](./contracts/optimism-10/0x4bd4faad509c4bc5ba6d68a15c8b1b54a10288b4/) | ✅ Audited |
-| Alchemist | unknown | ethereum | [`0xc21d35...9fe35b`](./contracts/ethereum-1/0xc21d353ff4ee73c572425697f4f5aad2109fe35b/) | ✅ Audited |
 | AlchemistAllocator | operational_periphery | optimism | 6 deployments: ethereum `0x23a3c2...450e7e`; ethereum `0x693b75...f5b281`; optimism [`0x12114e...8e0be0`](./contracts/optimism-10/0x12114eb8e17800b3b2e777339b9e0c32638e0be0/); optimism `0x143c21...906865`; arbitrum [`0x12114e...8e0be0`](./contracts/arbitrum-42161/0x12114eb8e17800b3b2e777339b9e0c32638e0be0/); arbitrum `0x143c21...906865` | ✅ Audited |
 | AlchemistCurator | unknown | ethereum | 3 deployments: ethereum [`0x7d61e3...9302a4`](./contracts/ethereum-1/0x7d61e3cde8b58c4be192a7a35e9d626c419302a4/); optimism `0xc8a2bd...aef20d`; arbitrum `0xc8a2bd...aef20d` | ✅ Audited |
 | AlchemistRouter | adapter | optimism | 6 deployments: ethereum `0x6733aa...6b00fd`; ethereum `0xdb8528...d086ab`; optimism [`0x3c0546...2d8bbd`](./contracts/optimism-10/0x3c0546587d27354635a4972390a7b96f962d8bbd/); optimism `0xc774f3...be3e5a`; arbitrum [`0x3c0546...2d8bbd`](./contracts/arbitrum-42161/0x3c0546587d27354635a4972390a7b96f962d8bbd/); arbitrum `0xc774f3...be3e5a` | ✅ Audited |
@@ -66,11 +65,10 @@ Alchemix V2 and V3 share the same governance infrastructure (GnosisSafe) and cro
 | AlchemistV3Position | unknown | ethereum | 6 deployments: ethereum [`0x15da4c...8a263d`](./contracts/ethereum-1/0x15da4c7db6404b92894d5214fac92057fb8a263d/); ethereum `0x872a03...719beb`; optimism `0x763f5d...423059`; optimism `0xf700c7...f4ad33`; arbitrum `0x763f5d...423059`; arbitrum `0xf700c7...f4ad33` | ✅ Audited |
 | AlchemistV3PositionRenderer | unknown | ethereum | 6 deployments: ethereum [`0x541fb2...c73463`](./contracts/ethereum-1/0x541fb28d158aa33e6db93cd1f713567407c73463/); ethereum `0x5fb5a4...30f5ff`; optimism `0xeb8311...587e3e`; optimism `0xfa995b...bee26b`; arbitrum `0xeb8311...587e3e`; arbitrum `0xfa995b...bee26b` | ✅ Audited |
 | Transmuter | unknown | ethereum | 7 deployments: ethereum [`0x073598...20bd3c`](./contracts/ethereum-1/0x073598132f37756a7e665fb52f1757463120bd3c/); ethereum `0x2584e8...410cb9`; ethereum `0xab7a49...122086`; optimism `0x2584e8...410cb9`; optimism `0x693b75...f5b281`; arbitrum `0x2584e8...410cb9`; arbitrum `0x693b75...f5b281` | ✅ Audited |
-| TransmuterBuffer | unknown | arbitrum | 13 deployments: ethereum `0x0fba36...167f42`; ethereum `0x1eed2d...f79bac`; ethereum `0x437067...b5948f`; ethereum `0xbc2fb2...c90b9e`; optimism `0x143a08...b7a4e7`; optimism `0x36e8d1...440be5`; optimism `0x719fe4...be5e03`; optimism `0x7f5092...a28f68`; optimism `0x971c2d...0e2d6d`; optimism `0xe99a9a...beb3b9`; arbitrum [`0x00e337...eeabcc`](./contracts/arbitrum-42161/0x00e33722ba54545667e76a18ce9d544130eeabcc/); arbitrum `0x752ca4...a22e2b`; arbitrum `0xecad08...8bb9d2` | ✅ Audited |
 | VaultV2Factory | registry | optimism | 3 deployments: ethereum `0xdd56b0...c58984`; optimism [`0x8c7c0c...c11ca2`](./contracts/optimism-10/0x8c7c0c380ba4ee38461eb5a6b82e5d930ec11ca2/); arbitrum [`0x8c7c0c...c11ca2`](./contracts/arbitrum-42161/0x8c7c0c380ba4ee38461eb5a6b82e5d930ec11ca2/) | ✅ Audited |
 | Whitelist | unknown | ethereum | 21 deployments: ethereum [`0x211c74...25ef59`](./contracts/ethereum-1/0x211c74db951c161c5a379363716ebdca5125ef59/); ethereum `0x35b2c1...78ade6`; ethereum `0x3f950f...4b2096`; ethereum `0x46f992...435ace`; ethereum `0x78537a...8f1132`; ethereum `0xa3dfcc...79e653`; ethereum `0xdd8ac2...e83ff1`; optimism `0x36033e...47fca5`; optimism `0x56574e...87e06f`; optimism `0x89926e...2c0edb`; optimism `0xc33659...f6380f`; optimism `0xc5fe32...90a68f`; optimism `0xf911d8...005918`; optimism `0xfa6a5d...119e45`; arbitrum `0x2e76a6...aa668b`; arbitrum `0x5e06d7...351b80`; arbitrum `0x6996b4...665710`; arbitrum `0x85e851...27ec85`; arbitrum `0x8ab017...344fbb`; arbitrum `0xd691f5...197f99`; arbitrum `0xda94b6...2921db` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (187)
+### ⚠️ Verified + Unaudited (189)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -105,6 +103,7 @@ Alchemix V2 and V3 share the same governance infrastructure (GnosisSafe) and cro
 | AddressQueueStorage | unknown | ethereum | [`0x44e319...e2ebd8`](./contracts/ethereum-1/0x44e31944e1a6f3b8f805e105b130f8bdb7e2ebd8/) | ⚠️ Unaudited |
 | AddressSetStorage | unknown | ethereum | [`0xd4ae25...1c6a16`](./contracts/ethereum-1/0xd4ae2511df21f367792ba4d67c6eb032171c6a16/) | ⚠️ Unaudited |
 | aeWETH | token | arbitrum | [`0x82af49...3fbab1`](./contracts/arbitrum-42161/0x82af49447d8a07e3bd95bd0d56f35241523fbab1/) | ⚠️ Unaudited |
+| Alchemist | unknown | ethereum | [`0xc21d35...9fe35b`](./contracts/ethereum-1/0xc21d353ff4ee73c572425697f4f5aad2109fe35b/) | ⚠️ Unaudited |
 | AlchemistEth | unknown | ethereum | [`0xf8317b...40b73b`](./contracts/ethereum-1/0xf8317bd5f48b6fe608a52b48c856d3367540b73b/) | ⚠️ Unaudited |
 | AlchemistV2 | unknown | ethereum | 25 deployments: ethereum [`0x062bf7...b13b5c`](./contracts/ethereum-1/0x062bf725dc4cdf947aa79ca2aaccd4f385b13b5c/); ethereum `0x5c6374...dd94dd`; ethereum `0x938dba...7c0ed7`; ethereum `0xb678be...538c4c`; ethereum `0xd55c73...24ca6d`; ethereum `0xd6cd22...15bd30`; ethereum `0xde399d...bc7261`; ethereum `0xf547b8...f4acfb`; ethereum `0xf747e9...84c50b`; ethereum `0xf7e137...20b438`; optimism `0x10294d...1484af`; optimism `0x1bce0a...00a2f0`; optimism `0x673054...d75483`; optimism `0xe04bb5...69d5b4`; arbitrum `0x0dadc9...4e01d5`; arbitrum `0x436473...964f06`; arbitrum `0x654e16...60703a`; arbitrum `0x755461...7d095c`; arbitrum `0x84672c...b36d1e`; arbitrum `0x98cabf...b1f83b`; arbitrum `0xa40cff...245926`; arbitrum `0xb3058d...8e9ff5`; arbitrum `0xb46ee2...1ac66f`; arbitrum `0xbb2f5d...264293`; arbitrum `0xdd8888...0c7fc1` | ⚠️ Unaudited |
 | AlchemixConnextGateway | unknown | arbitrum | 7 deployments: arbitrum [`0x036609...e801a9`](./contracts/arbitrum-42161/0x0366093c869fbf4888f96e8f589e0493aae801a9/); arbitrum `0x83adea...2a84a9`; arbitrum `0xb58609...cea90a`; arbitrum `0xb77750...a8321f`; arbitrum `0xb85efc...036a43`; arbitrum `0xd031bd...4ee55d`; arbitrum `0xfaafe7...165693` | ⚠️ Unaudited |
@@ -208,6 +207,7 @@ Alchemix V2 and V3 share the same governance infrastructure (GnosisSafe) and cro
 | TokenTrackerAMO | token | ethereum | 3 deployments: ethereum [`0x1e077b...11a612`](./contracts/ethereum-1/0x1e077b2a6a67f543629c8fccc97229452211a612/); ethereum `0x3f702a...368600`; ethereum `0x4b56b6...3eeb0d` | ⚠️ Unaudited |
 | TokenTrackerV2 | token | ethereum | [`0x37336a...4d09ee`](./contracts/ethereum-1/0x37336ad1f3a145c710247e6a14c9acc7f34d09ee/) | ⚠️ Unaudited |
 | TransmuterB | unknown | ethereum | [`0xee69bd...b796e7`](./contracts/ethereum-1/0xee69bd81bd056339368c97c4b2837b4dc4b796e7/) | ⚠️ Unaudited |
+| TransmuterBuffer | unknown | arbitrum | 13 deployments: ethereum `0x0fba36...167f42`; ethereum `0x1eed2d...f79bac`; ethereum `0x437067...b5948f`; ethereum `0xbc2fb2...c90b9e`; optimism `0x143a08...b7a4e7`; optimism `0x36e8d1...440be5`; optimism `0x719fe4...be5e03`; optimism `0x7f5092...a28f68`; optimism `0x971c2d...0e2d6d`; optimism `0xe99a9a...beb3b9`; arbitrum [`0x00e337...eeabcc`](./contracts/arbitrum-42161/0x00e33722ba54545667e76a18ce9d544130eeabcc/); arbitrum `0x752ca4...a22e2b`; arbitrum `0xecad08...8bb9d2` | ⚠️ Unaudited |
 | TransmuterConduit | unknown | ethereum | 5 deployments: ethereum [`0x440e92...0d2835`](./contracts/ethereum-1/0x440e9296007864a571f6555fb6015369150d2835/); ethereum `0x4ac237...cfb41c`; ethereum `0x8412d4...011eee`; ethereum `0xefc8a5...c4f20f`; ethereum `0xf65a1e...f7e424` | ⚠️ Unaudited |
 | TransmuterEth | unknown | ethereum | 2 deployments: ethereum [`0x8d513e...38f19f`](./contracts/ethereum-1/0x8d513e6552aae771cabd6b2bf8875a8a2e38f19f/); ethereum `0x9fd994...cfd4ac` | ⚠️ Unaudited |
 | TransmuterV2 | unknown | ethereum | 24 deployments: ethereum [`0x033231...d64811`](./contracts/ethereum-1/0x03323143a5f0d0679026c2a9fb6b0391e4d64811/); ethereum `0x49930a...24df55`; ethereum `0x645ce9...bd65cb`; ethereum `0xa840c7...a5197f`; ethereum `0xad2a6c...220298`; ethereum `0xe04bb5...69d5b4`; ethereum `0xe107fa...4262b2`; ethereum `0xfc3082...bdf5b9`; optimism `0x4e7d21...4415fa`; optimism `0x54aed3...36b6a1`; optimism `0xa7ea9e...aab723`; optimism `0xb7c425...19491a`; optimism `0xfcd619...91bbb4`; arbitrum `0x1b0361...ca4d19`; arbitrum `0x1eb7d7...a9c0d4`; arbitrum `0x21cfa8...78ddff`; arbitrum `0x2a8b5f...0755ed`; arbitrum `0x4be3d2...673011`; arbitrum `0x7037d4...3e6007`; arbitrum `0xb0a2db...8739dd`; arbitrum `0xd6a557...b408e9`; arbitrum `0xe7ec71...940ea8`; arbitrum `0xfaf833...65452e`; arbitrum `0xfd092e...6af5c6` | ⚠️ Unaudited |
@@ -473,95 +473,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [- [View Report]()](https://hackmd.io/@geistermeister/SkSZiU9ybe) | Spearbit | Audit | n/a | unknown | Direct | contract_name | 20 | low |
 | [- [View Report]()](https://cantina.xyz/portfolio/f638950d-a8ad-4df8-a6ec-8b067e416d7b) | Spearbit | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
-| [abstract-fee-vault-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/abstract-fee-vault-contract.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [alchemist-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/alchemist-contract.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 13 | low |
-| [alchemist-eth-vault-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/alchemist-eth-vault-contract.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [alchemist-router-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/alchemist-router-contract.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 6 | low |
-| [alchemist-token-vault-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/alchemist-token-vault-contract.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 6 | low |
-| [alchemist-v3-position-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/alchemist-v3-position-contract.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 6 | low |
-| [cdp-mechanics.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/cdp-mechanics.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [earmarking.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/alchemist/earmarking.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [overview.md (also discovered via alternate URL)](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/architecture/overview.md) | unknown | Audit | n/a | unknown | Direct | contract_name|n/a | 38 | medium |
-| [redemptions.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/architecture/redemptions.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [security-model.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/architecture/security-model.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [arbitrum.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/contracts/arbitrum.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ethereum.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/contracts/ethereum.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [optimism.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/contracts/optimism.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [faq.md (also discovered via alternate URL)](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/faq.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index.md (also discovered via alternate URL)](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [grants-program.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/integration/grants-program.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [integrate-alchemist.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/integration/integrate-alchemist.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [integrate-myt.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/integration/integrate-myt.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [integrate-transmuter.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/integration/integrate-transmuter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [using-alassets.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/integration/using-alassets.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [alchemist-allocator-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/alchemist-allocator-contract.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 6 | medium |
-| [alchemist-curator-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/alchemist-curator-contract.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
-| [alchemist-strategy-classifier-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/alchemist-strategy-classifier-contract.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
-| [mix-yield-token.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/mix-yield-token.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [myt-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/myt-contract.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [operator-cheatsheet.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/operator-cheatsheet.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [permissioned-proxy-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/permissioned-proxy-contract.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [redemption-mechanics.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/transmuter/redemption-mechanics.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [transmuter-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/transmuter/transmuter-contract.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 7 | low |
-| [contract-roles.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/guides/contract-roles.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 8 | low |
-| [myt-strategies.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/guides/myt-strategies.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [intro.md (also discovered via alternate URL)](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/intro.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [governance-process.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/onchain/governance-process.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [how-to-vote.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/onchain/how-to-vote.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [onchain-governance-infrastructure.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/onchain/onchain-governance-infrastructure.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [vqalcx.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/governance/onchain/vqalcx.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [apply-to-partner.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/contact/apply-to-partner.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [friendly-fork.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/how-to/friendly-fork.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [getting-started.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/how-to/getting-started.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [brand-assets.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/support/brand-assets.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [co-marketing.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/support/co-marketing.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [security.md (also discovered via alternate URL)](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/support/security.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [feature-comparison.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/why-integrate/feature-comparison.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [use-cases.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/why-integrate/use-cases.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [alAssets.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/alAssets.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [fees.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/fees.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [how-peg-is-maintained.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/how-peg-is-maintained.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [liquidations.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/liquidations.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [myt-and-yield.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/myt-and-yield.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [redemption-rate.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/redemption-rate.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [self-repaying-loans.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/self-repaying-loans.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [transmuter.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/concepts/transmuter.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 7 | low |
-| [financial-reports.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/financial-reports.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [glossary.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/glossary.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [independent-research.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/independent-research.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [links.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/links.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [marketing-material.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/marketing-material.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [quick-start.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/quick-start.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [risk-considerations.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/safety/risk-considerations.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [borrowing-in-alchemix.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/borrowing-in-alchemix.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [deposit-and-borrow.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/deposit-and-borrow.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [redeem-alassets.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/redeem-alassets.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [repay-loan.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/repay-loan.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [use-passive-myt.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/use-passive-myt.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [withdraw.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/tutorials/withdraw.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [v3-migration.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/v3-migration.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [v3-nethermind.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-nethermind.pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 9 | high |
 | [v3-strategies-yaudit-followup.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-strategies-yaudit-followup.pdf) | yAudit | Audit | 2026-04 | fresh | Direct | contract_name | 1 | high |
 | [v3-strategies-yaudit.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-strategies-yaudit.pdf) | yAudit | Audit | 2026-04 | fresh | Direct | contract_name | 8 | high |
 | [v3-yearn.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-yearn.pdf) | unknown | Audit | 2026-03 | fresh | Direct | contract_name | 73 | high |
-| [connecting.md](https://github.com/alchemix-finance/doc-alchemix-holyheld-topup/blob/main/docs/getting-started/connecting.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contact.md](https://github.com/alchemix-finance/doc-alchemix-holyheld-topup/blob/main/docs/support/contact.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [app.md](https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/app.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [architecture.md](https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/architecture.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [deployment.md](https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/deployment.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [hooks.md](https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/hooks.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [libraries.md](https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/libraries.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [loan-flow.md](https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/loan-flow.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 14 | low |
-| [styles.md](https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/styles.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [usage.md](https://github.com/alchemix-finance/alchemix-holyheld/blob/main/docs/usage.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [2025-05-19-spearbit.pdf](https://github.com/alchemix-finance/v3/blob/master/lib/vault-v2/audits/2025-05-19-spearbit.pdf) | Spearbit | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 | [2025-07-15-zellic.pdf](https://github.com/alchemix-finance/v3/blob/master/lib/vault-v2/audits/2025-07-15-zellic.pdf) | Zellic | Audit | 2025-07 | fresh | Direct | contract_name | 3 | high |
 | [2025-08-11-spearbit.pdf](https://github.com/alchemix-finance/v3/blob/master/lib/vault-v2/audits/2025-08-11-spearbit.pdf) | Spearbit | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
 | [2025-09-15-blackthorn.pdf](https://github.com/alchemix-finance/v3/blob/master/lib/vault-v2/audits/2025-09-15-blackthorn.pdf) | unknown | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 | [2025-09-15-chainsecurity.pdf](https://github.com/alchemix-finance/v3/blob/master/lib/vault-v2/audits/2025-09-15-chainsecurity.pdf) | ChainSecurity | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -592,6 +514,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x612fd3...a55fb8`](./contracts/ethereum-1/0x612fd30e2d7dd963a1513cbf781eb5dfe8a55fb8/) | EarnVesperStrategyDAIDPI | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x44e319...e2ebd8`](./contracts/ethereum-1/0x44e31944e1a6f3b8f805e105b130f8bdb7e2ebd8/) | AddressQueueStorage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd4ae25...1c6a16`](./contracts/ethereum-1/0xd4ae2511df21f367792ba4d67c6eb032171c6a16/) | AddressSetStorage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc21d35...9fe35b`](./contracts/ethereum-1/0xc21d353ff4ee73c572425697f4f5aad2109fe35b/) | Alchemist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf8317b...40b73b`](./contracts/ethereum-1/0xf8317bd5f48b6fe608a52b48c856d3367540b73b/) | AlchemistEth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x036609...e801a9`](./contracts/arbitrum-42161/0x0366093c869fbf4888f96e8f589e0493aae801a9/) | AlchemixConnextGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x52e4c3...e7fc0e`](./contracts/arbitrum-42161/0x52e4c31933b466cd8a7cb0aab819abaf7be7fc0e/) | AlchemixHarvester | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -704,85 +627,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 73
+- Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=5, low=11, medium=2
-- Match method counts: extraction_exact=231
+- Extraction confidence breakdown: high=5, low=1
+- Match method counts: extraction_exact=114
 
 Zero-match audit list:
 
 - [4307] - [View Report]()
-- [9671] abstract-fee-vault-contract.md
-- [9673] alchemist-eth-vault-contract.md
-- [9677] cdp-mechanics.md
-- [9678] earmarking.md
-- [9680] redemptions.md
 - [9681] security-model.md
-- [9682] arbitrum.md
-- [9683] ethereum.md
-- [9684] optimism.md
-- [9685] faq.md
-- [9686] index.md
-- [9687] grants-program.md
-- [9688] integrate-alchemist.md
-- [9689] integrate-myt.md
-- [9690] integrate-transmuter.md
-- [9691] using-alassets.md
-- [9695] mix-yield-token.md
-- [9696] myt-contract.md
-- [9697] operator-cheatsheet.md
-- [9698] permissioned-proxy-contract.md
-- [9700] redemption-mechanics.md
-- [9703] myt-strategies.md
-- [9704] intro.md
-- [9705] governance-process.md
-- [9706] how-to-vote.md
-- [9707] onchain-governance-infrastructure.md
-- [9708] vqalcx.md
-- [9709] apply-to-partner.md
-- [9711] friendly-fork.md
-- [9712] getting-started.md
-- [9714] brand-assets.md
-- [9715] co-marketing.md
 - [9716] security.md
-- [9717] feature-comparison.md
-- [9718] use-cases.md
-- [9719] alAssets.md
-- [9720] fees.md
-- [9721] how-peg-is-maintained.md
-- [9722] liquidations.md
-- [9723] myt-and-yield.md
-- [9724] redemption-rate.md
-- [9725] self-repaying-loans.md
-- [9728] financial-reports.md
-- [9729] glossary.md
-- [9730] independent-research.md
-- [9732] links.md
-- [9733] marketing-material.md
-- [9734] quick-start.md
-- [9735] risk-considerations.md
-- [9737] borrowing-in-alchemix.md
-- [9738] deposit-and-borrow.md
-- [9739] redeem-alassets.md
-- [9740] repay-loan.md
-- [9741] use-passive-myt.md
-- [9742] withdraw.md
-- [9743] v3-migration.md
-- [9748] connecting.md
-- [9750] contact.md
-- [9752] app.md
-- [9753] architecture.md
-- [9754] deployment.md
-- [9755] hooks.md
-- [9756] libraries.md
-- [9758] styles.md
-- [9759] usage.md
 - [9760] 2025-05-19-spearbit.pdf
 - [9762] 2025-08-11-spearbit.pdf
 - [9763] 2025-09-15-blackthorn.pdf
 - [9764] 2025-09-15-chainsecurity.pdf
-- [9765] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [9766] 0002-metadata-manifest-and-pull-command.md
-- [9767] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

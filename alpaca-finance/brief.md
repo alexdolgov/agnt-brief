@@ -6,8 +6,8 @@
 
 - Project: Alpaca Finance (`alpaca-finance`)
 - Lifecycle: declining (Tier 0, 97.5% below peak)
-- Generated: 2026-05-28T15:26:06.166Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
+- Generated: 2026-05-31T07:06:36.701Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: bsc
 - Contract surface: 144 unique implementations (550 raw deployments)
 - DeFi Llama TVL: $46,096,508.00
@@ -30,11 +30,11 @@ Both families share infrastructure such as oracles (e.g., ChainLinkPriceOracle, 
 - Unverified implementations: 29
 - Unique implementations: 144
 - Raw deployments: 550
-- Audits discovered: 22
+- Audits discovered: 19
 - Scoreable audits (matched contracts): 17
 - ASD (verified + unaudited TVL): $11,226,636.59
 - Latest audit: 2022-03 (stale)
-- Staleness: 0 fresh, 0 aging, 19 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 19 stale, 0 unknown
 - Tier 1 coverage: 22.6% (SlowMist)
 - Note: This protocol is classified as [declining]. ASD of $11,226,636.59 represents exposure in a protocol with declining activity.
 
@@ -246,9 +246,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf](https://github.com/alpaca-finance/alpaca-stablecoin/blob/main/audits/PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf) | PeckShield | Audit | 2021-11 | stale | Direct | contract_name | 18 | high |
 | [SlowMist_Audit_Report_-_AlpacaStablecoin.pdf](https://github.com/alpaca-finance/alpaca-stablecoin/blob/main/audits/SlowMist_Audit_Report_-_AlpacaStablecoin.pdf) | SlowMist | Audit | 2021-11 | stale | Direct | contract_name | 56 | high |
 | [PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf](https://github.com/alpaca-finance/alpies-contract/blob/main/audits/PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf) | PeckShield | Audit | 2021-10 | stale | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -293,7 +290,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=17
 - Match method counts: extraction_exact=428
@@ -302,8 +299,5 @@ Zero-match audit list:
 
 - [5775] Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf
 - [5779] PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf
-- [5780] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5781] 0002-metadata-manifest-and-pull-command.md
-- [5782] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

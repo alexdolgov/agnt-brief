@@ -7,7 +7,7 @@
 | Role | unknown |
 | Origin | native |
 | Audited | Yes |
-| Audits | [overview.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/architecture/overview.md); [alchemist-curator-contract.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/myt/alchemist-curator-contract.md); [v3-nethermind.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-nethermind.pdf); [v3-yearn.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-yearn.pdf) |
+| Audits | [v3-nethermind.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-nethermind.pdf); [v3-yearn.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-yearn.pdf) |
 | Deployments | 3 (ethereum [`0x7d61e3cde8b58c4be192a7a35e9d626c419302a4`](../0x7d61e3cde8b58c4be192a7a35e9d626c419302a4/); optimism `0xc8a2bde198d21e9abb0b306b4ad27f0711aef20d`; arbitrum `0xc8a2bde198d21e9abb0b306b4ad27f0711aef20d`) |
 | Proxy | No |
 | Source | Etherscan |

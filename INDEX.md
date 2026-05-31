@@ -18,12 +18,12 @@
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-31 |
 | [aevo](./aevo/) | $98.3M | 12.0% | $1.5M | active | 17 | 271 | 2026-05-25 |
 | [aftermath-finance](./aftermath-finance/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
-| [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 6 | 1 | 2026-05-28 |
+| [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 0 | 1 | 2026-05-31 |
 | [aitech](./aitech/) | $4.0M | 0.0% | ? | unknown | 1 | 2 | 2026-05-23 |
-| [alchemix](./alchemix/) | $340.7M | 7.4% | $338.7M | declining | 91 | 388 | 2026-05-30 |
-| [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 97 | 58 | 2026-05-28 |
+| [alchemix](./alchemix/) | $340.7M | 6.4% | $338.7M | declining | 13 | 388 | 2026-05-31 |
+| [alien-base](./alien-base/) | $2.9M | 0.0% | $2.9M | declining | 21 | 58 | 2026-05-31 |
 | [allbridge](./allbridge/) | $319.2M | 0.0% | $319.2M | declining | 8 | 284 | 2026-05-31 |
-| [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 22 | 144 | 2026-05-28 |
+| [alpaca-finance](./alpaca-finance/) | $11.5M | 57.4% | $11.2M | declining | 19 | 144 | 2026-05-31 |
 | [alphagrowth](./alphagrowth/) | $6.3M | 18.2% | $6.3M | active | 16 | 56 | 2026-05-25 |
 | [alphaping](./alphaping/) | $67.9M | 0.0% | ? | active | 3 | 1 | 2026-05-28 |
 | [alphax](./alphax/) | $218.2K | 0.0% | $218.2K | active | 1 | 1 | 2026-05-24 |

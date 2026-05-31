@@ -683,7 +683,7 @@ Each project directory contains:
 | [toobit](./toobit/brief.md) | $69.15M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [tothemoon](./tothemoon/brief.md) | $3.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [townsquare](./townsquare/brief.md) | $1.75M | - | 0 | - | 0.0% | 0.0% (-) | 0 | aging | ❓ unknown | - |
-| [trisolaris](./trisolaris/brief.md) | $1.49M | aurora | 119 | 18/119 (15%) | 16.7% | 0.0% (-) | 2 | unknown | 💀 dead | - |
+| [trisolaris](./trisolaris/brief.md) | $1.49M | aurora | 119 | 18/119 (15%) | 0.0% | 0.0% (-) | 0 | unknown | 💀 dead | - |
 | [troves](./troves/brief.md) | $4.99M | - | 0 | - | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [truefi](./truefi/brief.md) | $15.39M | arbitrum, ethereum | 8 | 8/8 (100%) | 37.5% | 0.0% (-) | 6 | stale | 💀 dead | - |
 | [trufin-protocol](./trufin-protocol/brief.md) | $6.84M | ethereum | 7 | 6/7 (86%) | 66.7% | 33.3% (OpenZeppelin) | 7 | fresh | ⚠️ declining | - |
@@ -722,5 +722,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-31T11:12:29.154Z_
+_Generated: 2026-05-31T11:17:19.523Z_
 _Projects: 710_

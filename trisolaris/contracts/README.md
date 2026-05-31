@@ -1,6 +1,6 @@
 # trisolaris — Contract Index
 
-119 unique implementations on aurora · 158 deployments · 3 audited · 15 unaudited · 101 unverified
+119 unique implementations on aurora · 158 deployments · 0 audited · 18 unaudited · 101 unverified
 
 ## adapter (1)
 
@@ -35,11 +35,11 @@
 | [ComplexRewarder](./aurora-1313161554/0x34998bb1b4721f0418b22aae5a252c3167f1e7bf/) | aurora | [`0x34998b...f1e7bf`](./aurora-1313161554/0x34998bb1b4721f0418b22aae5a252c3167f1e7bf/) | ⚠️ Unaudited | Verified |
 | [MasterChef (4 deployments)](./aurora-1313161554/0x1f1ed214bef5e83d8f5d0eb5d7011eb965d0d79b/) | aurora | 4 deployments: aurora [`0x1f1ed2...d0d79b`](./aurora-1313161554/0x1f1ed214bef5e83d8f5d0eb5d7011eb965d0d79b/); aurora `0xddab5f...3d76da`; aurora `0xe24f20...b39573`; aurora `0xe53d65...1930f5` | ⚠️ Unaudited | Verified |
 | [MasterChefV2](./aurora-1313161554/0x3838956710bcc9d122dd23863a0549ca8d5675d6/) | aurora | [`0x383895...5675d6`](./aurora-1313161554/0x3838956710bcc9d122dd23863a0549ca8d5675d6/) | ⚠️ Unaudited | Verified |
-| [StableLPMaker](./aurora-1313161554/0xcb251907382aeb3c2edab766561d5f4e6c78e3ff/) | aurora | [`0xcb2519...78e3ff`](./aurora-1313161554/0xcb251907382aeb3c2edab766561d5f4e6c78e3ff/) | ✅ Audited | Verified |
+| [StableLPMaker](./aurora-1313161554/0xcb251907382aeb3c2edab766561d5f4e6c78e3ff/) | aurora | [`0xcb2519...78e3ff`](./aurora-1313161554/0xcb251907382aeb3c2edab766561d5f4e6c78e3ff/) | ⚠️ Unaudited | Verified |
 | [StableLPMakerV2](./aurora-1313161554/0x2df95be842cd68062ecdb7a30ca8dd400a8ab86b/) | aurora | [`0x2df95b...8ab86b`](./aurora-1313161554/0x2df95be842cd68062ecdb7a30ca8dd400a8ab86b/) | ⚠️ Unaudited | Verified |
 | [StableLPMakerV3](./aurora-1313161554/0x84c1b1986766fd32cfac340f947217bd1fb8aded/) | aurora | [`0x84c1b1...b8aded`](./aurora-1313161554/0x84c1b1986766fd32cfac340f947217bd1fb8aded/) | ⚠️ Unaudited | Verified |
 | [StableLPMakerV4 (4 deployments)](./aurora-1313161554/0x0152254efd4f98f305edf892b3110af30b723fcb/) | aurora | 4 deployments: aurora [`0x015225...723fcb`](./aurora-1313161554/0x0152254efd4f98f305edf892b3110af30b723fcb/); aurora `0x5174f1...1de94a`; aurora `0x728e9e...4740b2`; aurora `0xc437d6...5d9b4d` | ⚠️ Unaudited | Verified |
-| [SwapFlashLoan](./aurora-1313161554/0x51d96ef6960cc7b4c884e1215564f926011a4064/) | aurora | [`0x51d96e...1a4064`](./aurora-1313161554/0x51d96ef6960cc7b4c884e1215564f926011a4064/) | ✅ Audited | Verified |
+| [SwapFlashLoan](./aurora-1313161554/0x51d96ef6960cc7b4c884e1215564f926011a4064/) | aurora | [`0x51d96e...1a4064`](./aurora-1313161554/0x51d96ef6960cc7b4c884e1215564f926011a4064/) | ⚠️ Unaudited | Verified |
 | [Tri (3 deployments)](./aurora-1313161554/0x2cd59ea668afda4e712369042150f2fa00238ac1/) | aurora | 3 deployments: aurora [`0x2cd59e...238ac1`](./aurora-1313161554/0x2cd59ea668afda4e712369042150f2fa00238ac1/); aurora `0x55b963...b5ab64`; aurora `0xfa9434...c65abb` | ⚠️ Unaudited | Verified |
 | [TriBar](./aurora-1313161554/0x802119e4e253d5c19aa06a5d567c5a41596d6803/) | aurora | [`0x802119...6d6803`](./aurora-1313161554/0x802119e4e253d5c19aa06a5d567c5a41596d6803/) | ⚠️ Unaudited | Verified |
 | [TriMaker](./aurora-1313161554/0xe793455c9728fc91a3e5a33faff9eb2f228ae151/) | aurora | [`0xe79345...8ae151`](./aurora-1313161554/0xe793455c9728fc91a3e5a33faff9eb2f228ae151/) | ⚠️ Unaudited | Verified |
@@ -144,4 +144,4 @@
 | UnnamedContract | aurora | `0xf27fcc...9f012c` | ❓ Unverified | Unverified |
 | UnnamedContract | aurora | `0xf57647...e29a39` | ❓ Unverified | Unverified |
 | UnnamedContract | aurora | `0xff9224...0d32fd` | ❓ Unverified | Unverified |
-| [UsdcMaker (2 deployments)](./aurora-1313161554/0x5ebd5e963a00500b6a1234c621811c52af0aaade/) | aurora | 2 deployments: aurora [`0x5ebd5e...0aaade`](./aurora-1313161554/0x5ebd5e963a00500b6a1234c621811c52af0aaade/); aurora `0xe7d7fd...63f34a` | ✅ Audited | Verified |
+| [UsdcMaker (2 deployments)](./aurora-1313161554/0x5ebd5e963a00500b6a1234c621811c52af0aaade/) | aurora | 2 deployments: aurora [`0x5ebd5e...0aaade`](./aurora-1313161554/0x5ebd5e963a00500b6a1234c621811c52af0aaade/); aurora `0xe7d7fd...63f34a` | ⚠️ Unaudited | Verified |

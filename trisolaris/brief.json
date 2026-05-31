@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "trisolaris",
-  "generated_at": "2026-05-29T16:29:55.310Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
+  "generated_at": "2026-05-31T11:13:50.666Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "trisolaris",
@@ -36,15 +36,15 @@
     "total_addresses": 158,
     "unique_implementations": 119,
     "total_deployments": 158,
-    "audited_contracts": 3,
-    "unaudited_contracts": 15,
-    "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 15,
+    "audited_contracts": 0,
+    "unaudited_contracts": 18,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 18,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 101,
-    "coverage_pct": 16.7,
-    "total_audits": 13,
-    "scoreable_audits": 2,
+    "coverage_pct": 0,
+    "total_audits": 0,
+    "scoreable_audits": 0,
     "dl_tvl_usd": 1493303.70257,
     "tvl_usd": 1493303.70257,
     "tvl_source": "defillama",
@@ -62,7 +62,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 13
+      "unknown": 0
     }
   },
   "topography": {
@@ -278,16 +278,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-9459"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -431,16 +429,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-9452"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -3768,7 +3764,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1313161554,
@@ -3777,16 +3773,14 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-9459"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
+      "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
     },
     {
@@ -4122,321 +4116,8 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 9451,
-      "audit_key": "audit-9451",
-      "report_name": "bridgingguides.md",
-      "report_url": "https://github.com/trisolaris-labs/docs/blob/main/docs/bridgingguides.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9452,
-      "audit_key": "audit-9452",
-      "report_name": "contracts.md",
-      "report_url": "https://github.com/trisolaris-labs/docs/blob/main/docs/contracts.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AmplificationUtils",
-        "DAO",
-        "Factory",
-        "LPToken Base",
-        "LpToken",
-        "MasterChef V1 Staking Contract",
-        "MasterChef V2 Staking Contract",
-        "MetaSwap",
-        "MetaSwapDeposit",
-        "MetaSwapUtils",
-        "Ops Multisig",
-        "Router",
-        "Stable LP Maker",
-        "Stable LP Maker v2",
-        "Stable LP Maker v3",
-        "Stable LP Maker v4",
-        "SwapFlashLoan",
-        "SwapUtils",
-        "TRI ERC20",
-        "Tri Maker",
-        "USDC Maker",
-        "WETH",
-        "pTRI (profit TRI)",
-        "xTRI (Tribar)"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9453,
-      "audit_key": "audit-9453",
-      "report_name": "exchange.md",
-      "report_url": "https://github.com/trisolaris-labs/docs/blob/main/docs/exchange.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9454,
-      "audit_key": "audit-9454",
-      "report_name": "faq.md",
-      "report_url": "https://github.com/trisolaris-labs/docs/blob/main/docs/faq.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9455,
-      "audit_key": "audit-9455",
-      "report_name": "farm.md",
-      "report_url": "https://github.com/trisolaris-labs/docs/blob/main/docs/farm.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9456,
-      "audit_key": "audit-9456",
-      "report_name": "gettingstarted.md",
-      "report_url": "https://github.com/trisolaris-labs/docs/blob/main/docs/gettingstarted.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9457,
-      "audit_key": "audit-9457",
-      "report_name": "index.md",
-      "report_url": "https://github.com/trisolaris-labs/docs/blob/main/docs/index.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9458,
-      "audit_key": "audit-9458",
-      "report_name": "roadmap.md",
-      "report_url": "https://github.com/trisolaris-labs/docs/blob/main/docs/roadmap.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9459,
-      "audit_key": "audit-9459",
-      "report_name": "stake.md",
-      "report_url": "https://github.com/trisolaris-labs/docs/blob/main/docs/stake.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "DAO",
-        "LpToken",
-        "StableLPMaker",
-        "USDCMaker",
-        "pTRI"
-      ],
-      "matched_contracts": 3,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9460,
-      "audit_key": "audit-9460",
-      "report_name": "tokenomics.md",
-      "report_url": "https://github.com/trisolaris-labs/docs/blob/main/docs/tokenomics.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9461,
-      "audit_key": "audit-9461",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9462,
-      "audit_key": "audit-9462",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9463,
-      "audit_key": "audit-9463",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
-  "auditor_coverage": [
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 3,
-      "coverage_pct": 16.7,
-      "latest_audit": null
-    }
-  ],
+  "audits": [],
+  "auditor_coverage": [],
   "coverage_gaps": [
     {
       "chain_id": 1313161554,
@@ -4481,6 +4162,16 @@
     {
       "chain_id": 1313161554,
       "chain_name": "aurora",
+      "address": "0xcb251907382aeb3c2edab766561d5f4e6c78e3ff",
+      "name": "StableLPMaker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1313161554,
+      "chain_name": "aurora",
       "address": "0x2df95be842cd68062ecdb7a30ca8dd400a8ab86b",
       "name": "StableLPMakerV2",
       "role": "unknown",
@@ -4503,6 +4194,16 @@
       "chain_name": "aurora",
       "address": "0x0152254efd4f98f305edf892b3110af30b723fcb",
       "name": "StableLPMakerV4",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1313161554,
+      "chain_name": "aurora",
+      "address": "0x51d96ef6960cc7b4c884e1215564f926011a4064",
+      "name": "SwapFlashLoan",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -4541,6 +4242,16 @@
     {
       "chain_id": 1313161554,
       "chain_name": "aurora",
+      "address": "0x5ebd5e963a00500b6a1234c621811c52af0aaade",
+      "name": "UsdcMaker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1313161554,
+      "chain_name": "aurora",
       "address": "0x0a0dc69d4d6042a961e7f6d9e87b53df0c079e2b",
       "name": "Vester",
       "role": "operational_periphery",
@@ -4556,60 +4267,11 @@
     "needs_review": 83
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 4
-    },
-    "extraction_confidence_counts": {
-      "low": 2
-    },
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 9451,
-        "report_name": "bridgingguides.md"
-      },
-      {
-        "audit_id": 9453,
-        "report_name": "exchange.md"
-      },
-      {
-        "audit_id": 9454,
-        "report_name": "faq.md"
-      },
-      {
-        "audit_id": 9455,
-        "report_name": "farm.md"
-      },
-      {
-        "audit_id": 9456,
-        "report_name": "gettingstarted.md"
-      },
-      {
-        "audit_id": 9457,
-        "report_name": "index.md"
-      },
-      {
-        "audit_id": 9458,
-        "report_name": "roadmap.md"
-      },
-      {
-        "audit_id": 9460,
-        "report_name": "tokenomics.md"
-      },
-      {
-        "audit_id": 9461,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 9462,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 9463,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

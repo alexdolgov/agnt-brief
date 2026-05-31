@@ -7,8 +7,8 @@
 - Project: Ledgity Yield (`ledgity-yield`)
 - Website: [https://ledgity.finance/](https://ledgity.finance/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T06:43:05.554Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
+- Generated: 2026-05-31T08:41:07.578Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, ethereum, linea, sonic
 - Contract surface: 108 unique implementations (350 raw deployments)
 - DeFi Llama TVL: $3,188,691.69

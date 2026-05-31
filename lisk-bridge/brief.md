@@ -5,8 +5,8 @@
 - Project: Lisk Bridge (`lisk-bridge`)
 - Website: [https://lisk.com](https://lisk.com)
 - Lifecycle: active (Tier 0, 90.7% below peak)
-- Generated: 2026-05-31T06:48:14.780Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-7f15
+- Generated: 2026-05-31T08:39:08.426Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: base, ethereum
 - Contract surface: 97 unique implementations (211 raw deployments)
 - DeFi Llama TVL: $38,109,077.20

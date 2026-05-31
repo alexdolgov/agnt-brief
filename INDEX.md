@@ -468,13 +468,13 @@
 | [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | unknown | 2 | 119 | 2026-05-24 |
 | [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-05-24 |
 | [privacy-pools](./privacy-pools/) | $6.6M | 100.0% | ? | active | 4 | 1 | 2026-05-31 |
-| [probit-global](./probit-global/) | $12.8M | 0.0% | ? | active | 3 | 3 | 2026-05-29 |
+| [probit-global](./probit-global/) | $12.8M | 0.0% | ? | active | 0 | 3 | 2026-05-31 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
 | [puffer-finance](./puffer-finance/) | $225.1M | 36.4% | $169.2M | active | 4 | 65 | 2026-05-27 |
-| [pulsechain-bridge](./pulsechain-bridge/) | $52.0M | 0.0% | ? | active | 3 | 5 | 2026-05-29 |
-| [pulsechain](./pulsechain/) | $52.0M | 0.0% | ? | active | 3 | 5 | 2026-05-29 |
+| [pulsechain-bridge](./pulsechain-bridge/) | $52.0M | 0.0% | ? | active | 0 | 5 | 2026-05-31 |
+| [pulsechain](./pulsechain/) | $52.0M | 0.0% | ? | active | 0 | 5 | 2026-05-31 |
 | [pumpspace](./pumpspace/) | $4.0M | 28.6% | ? | active | 4 | 667 | 2026-05-25 |
-| [punks-terminal](./punks-terminal/) | $1.5M | 0.0% | ? | unknown | 3 | 1 | 2026-05-29 |
+| [punks-terminal](./punks-terminal/) | $1.5M | 0.0% | ? | unknown | 0 | 1 | 2026-05-31 |
 | [puzzleswaporg](./puzzleswaporg/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [qidao](./qidao/) | $3.0M | 0.0% | ? | dead | 3 | 298 | 2026-05-29 |
 | [radiant](./radiant/) | $1.1M | 31.6% | $515.0K | dead | 94 | 390 | 2026-05-26 |

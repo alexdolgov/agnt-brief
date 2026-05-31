@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "turtle-club",
-  "generated_at": "2026-05-30T11:29:20.155Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
+  "generated_at": "2026-05-31T11:25:02.029Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "turtle-club",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 174,
     "coverage_pct": 0,
-    "total_audits": 5,
+    "total_audits": 2,
     "scoreable_audits": 0,
     "dl_tvl_usd": 1231786.54933,
     "tvl_usd": 59810162.27451151,
@@ -69,7 +69,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 5
+      "unknown": 2
     }
   },
   "topography": {
@@ -22547,69 +22547,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11337,
-      "audit_key": "audit-11337",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11338,
-      "audit_key": "audit-11338",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 11339,
-      "audit_key": "audit-11339",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -24174,18 +24111,6 @@
       {
         "audit_id": 3323,
         "report_name": "[Streams Contract Audit (Cantina)]()"
-      },
-      {
-        "audit_id": 11337,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 11338,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 11339,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

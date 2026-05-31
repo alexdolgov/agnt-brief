@@ -383,7 +383,7 @@ Each project directory contains:
 | [3f-mutual](./3f-mutual/brief.md) | $3.78M | ethereum | 21 | 18/21 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [abc-pool](./abc-pool/brief.md) | $6.29M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [abracadabra](./abracadabra/brief.md) | $8.07M | 12 | 2568 | 0/2568 (0%) | 0.0% | 0.0% (-) | 0 | aging | 💀 dead | - |
-| [aegis](./aegis/brief.md) | $35.81M | ethereum | 5 | 5/5 (100%) | 100.0% | 0.0% (-) | 1 | unknown | ✅ active | - |
+| [aegis](./aegis/brief.md) | $35.81M | ethereum | 5 | 5/5 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [aegis-markets](./aegis-markets/brief.md) | $2.36M | base, unichain | 15 | 12/15 (80%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [aitech](./aitech/brief.md) | $4.04M | bsc | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | fresh | ❓ unknown | - |
 | [alphaping](./alphaping/brief.md) | $67.87M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
@@ -722,5 +722,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-31T06:50:39.102Z_
+_Generated: 2026-05-31T07:04:08.195Z_
 _Projects: 710_

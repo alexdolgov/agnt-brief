@@ -6,8 +6,8 @@
 | Address | `0xa30644ca67e0a93805c443df4a6e1856d8bd815b` |
 | Role | unknown |
 | Origin | native |
-| Audited | Yes |
-| Audits | [cross-chain-deployment.md](https://github.com/Aegis-im/aegis-contracts/blob/master/docs/cross-chain-deployment.md) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 1 (ethereum [`0xa30644ca67e0a93805c443df4a6e1856d8bd815b`](../0xa30644ca67e0a93805c443df4a6e1856d8bd815b/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

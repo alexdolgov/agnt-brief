@@ -7,8 +7,8 @@
 - Project: Abracadabra (`abracadabra`)
 - Website: [https://abracadabra.money](https://abracadabra.money)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-30T10:36:33.127Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T07:00:21.097Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, avalanche, base, blast, bsc, ethereum, fantom, kava, linea, moonriver, optimism, polygon
 - Contract surface: 2568 unique implementations (2568 raw deployments)
 - DeFi Llama TVL: $8,071,777.17
@@ -31,11 +31,11 @@ The lending markets (V2, V3, V4) rely on Boxes (Degenbox) for yield strategies a
 - Unverified implementations: 2568
 - Unique implementations: 2568
 - Raw deployments: 2568
-- Audits discovered: 16
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-12 (aging)
-- Staleness: 0 fresh, 1 aging, 3 stale, 12 unknown
+- Staleness: 0 fresh, 1 aging, 3 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
@@ -2649,17 +2649,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [2024-03-21_MIMSwap.pdf](https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/audits/2024-03-21_MIMSwap.pdf) | unknown | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
 | [2024-12-16_Abracadabra_BoundSpell_Report.pdf](https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/audits/2024-12-16_Abracadabra_BoundSpell_Report.pdf) | unknown | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
 | [MagicGlpReview.md](https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/audits/MagicGlpReview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [add-new-chain.md](https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/docs/add-new-chain.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [boundspell-integration.md](https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/docs/boundspell-integration.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [cast-examples.md](https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/docs/cast-examples.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [deploy-mim-new-chain.md](https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/docs/deploy-mim-new-chain.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [deploy-spell-new-chain.md](https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/docs/deploy-spell-new-chain.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [liquidation-helper.md](https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/docs/liquidation-helper.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [oracles-guideline.md](https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/docs/oracles-guideline.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [LAYERZERO.md](https://github.com/Abracadabra-money/abracadabra-oft-v2/blob/main/docs/LAYERZERO.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -2680,7 +2669,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 16
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -2692,16 +2681,5 @@ Zero-match audit list:
 - [9650] 2024-03-21_MIMSwap.pdf
 - [9651] 2024-12-16_Abracadabra_BoundSpell_Report.pdf
 - [9652] MagicGlpReview.md
-- [9653] add-new-chain.md
-- [9654] boundspell-integration.md
-- [9655] cast-examples.md
-- [9656] deploy-mim-new-chain.md
-- [9657] deploy-spell-new-chain.md
-- [9658] liquidation-helper.md
-- [9659] oracles-guideline.md
-- [9660] LAYERZERO.md
-- [9661] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [9662] 0002-metadata-manifest-and-pull-command.md
-- [9663] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

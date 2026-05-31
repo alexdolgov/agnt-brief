@@ -4,18 +4,18 @@
 |---|---|---|---|---|---|---|---|
 | [1inch](./1inch/) | $16.1M | 22.4% | $16.1M | declining | 149 | 274 | 2026-05-31 |
 | [1sec](./1sec/) | $1.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [3f-mutual](./3f-mutual/) | $3.8M | 0.0% | ? | active | 3 | 21 | 2026-05-28 |
+| [3f-mutual](./3f-mutual/) | $3.8M | 0.0% | ? | active | 0 | 21 | 2026-05-31 |
 | [3jane](./3jane/) | $76.6M | 61.9% | $76.6M | declining | 4 | 23 | 2026-05-26 |
 | [40-acres](./40-acres/) | $10.0M | 0.0% | $10.0M | active | 4 | 325 | 2026-05-27 |
 | [abc-pool](./abc-pool/) | $6.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
-| [abracadabra](./abracadabra/) | $8.1M | 0.0% | ? | dead | 16 | 2568 | 2026-05-30 |
+| [abracadabra](./abracadabra/) | $8.1M | 0.0% | ? | dead | 5 | 2568 | 2026-05-31 |
 | [accumulated-finance](./accumulated-finance/) | $12.2K | 0.0% | $12.2K | active | 6 | 43 | 2026-05-25 |
 | [acre](./acre/) | $3.0 | 0.5% | $3.0 | unknown | 5 | 220 | 2026-05-23 |
 | [across](./across/) | $28.1M | 18.0% | $28.1M | active | 6 | 142 | 2026-05-25 |
 | [acryptos](./acryptos/) | $5.2M | 25.0% | $253.0K | declining | 7 | 311 | 2026-05-30 |
 | [aegis-markets](./aegis-markets/) | $2.4M | 0.0% | ? | active | 2 | 15 | 2026-05-24 |
-| [aegis](./aegis/) | $35.8M | 100.0% | ? | active | 5 | 5 | 2026-05-28 |
-| [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 3 | 5 | 2026-05-28 |
+| [aegis](./aegis/) | $35.8M | 0.0% | ? | active | 0 | 5 | 2026-05-31 |
+| [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-31 |
 | [aevo](./aevo/) | $98.3M | 12.0% | $1.5M | active | 17 | 271 | 2026-05-25 |
 | [aftermath-finance](./aftermath-finance/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
 | [ailayer-farm](./ailayer-farm/) | $211.9K | 0.0% | $211.9K | active | 6 | 1 | 2026-05-28 |

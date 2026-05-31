@@ -7,8 +7,8 @@
 - Project: Seamless Protocol (`seamless-protocol`)
 - Website: [https://www.seamlessprotocol.com](https://www.seamlessprotocol.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T06:42:02.666Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
+- Generated: 2026-05-31T10:32:33.857Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: base, ethereum
 - Contract surface: 99 unique implementations (321 raw deployments)
 - DeFi Llama TVL: $46,492,107.00

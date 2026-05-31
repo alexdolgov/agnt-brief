@@ -511,7 +511,7 @@
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-05-25 |
 | [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 0 | 186 | 2026-05-31 |
 | [saber](./saber/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
-| [safe](./safe/) | $99.3M | 0.0% | ? | unknown | 61 | 1 | 2026-05-29 |
+| [safe](./safe/) | $99.3M | 0.0% | ? | unknown | 19 | 1 | 2026-05-31 |
 | [sakefinance](./sakefinance/) | $2.4M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [sashimiswap](./sashimiswap/) | $1.4M | 0.0% | $1.4M | dead | 1 | 61 | 2026-05-23 |
 | [satlayer](./satlayer/) | $289.5M | 4.4% | $287.2M | declining | 12 | 313 | 2026-05-25 |
@@ -524,10 +524,10 @@
 | [scrub-money](./scrub-money/) | $7.1M | 0.0% | ? | active | 1 | 19 | 2026-05-23 |
 | [sdai](./sdai/) | $3.8K | 0.0% | $3.8K | active | 0 | 93 | 2026-05-27 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | declining | 5 | 99 | 2026-05-31 |
-| [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 3 | 179 | 2026-05-29 |
+| [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 0 | 179 | 2026-05-31 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | sunsetting | 8 | 297 | 2026-05-25 |
 | [serum](./serum/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
-| [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 8 | 111 | 2026-05-29 |
+| [set-protocol](./set-protocol/) | $21.2M | 0.0% | $21.2M | declining | 5 | 111 | 2026-05-31 |
 | [shadow-exchange](./shadow-exchange/) | $999.8 | 21.6% | $999.8 | declining | 3 | 84 | 2026-05-23 |
 | [shape-bridge](./shape-bridge/) | $1.1M | 0.0% | ? | active | 2 | 28 | 2026-05-25 |
 | [shapeshift](./shapeshift/) | $1.3M | 10.7% | $1.3M | unknown | 51 | 40 | 2026-05-29 |

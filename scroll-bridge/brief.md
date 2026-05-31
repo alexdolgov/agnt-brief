@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Scroll Bridge
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 49.6% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 49.0% over 90 days
 
 ## Project Overview
 
 - Project: Scroll Bridge (`scroll-bridge`)
 - Website: [https://portal.scroll.io/bridge](https://portal.scroll.io/bridge)
-- Lifecycle: unknown (Tier 0, 93.7% below peak)
-- Generated: 2026-05-31T06:49:11.198Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-7f15
+- Lifecycle: unknown (Tier 0, 93.6% below peak)
+- Generated: 2026-05-31T10:31:35.577Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 32 unique implementations (101 raw deployments)
 - DeFi Llama TVL: $40,526,307.55

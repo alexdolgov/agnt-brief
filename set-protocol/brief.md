@@ -6,8 +6,8 @@
 
 - Project: Set Protocol (`set-protocol`)
 - Lifecycle: declining (Tier 0, 98.2% below peak)
-- Generated: 2026-05-29T13:57:35.694Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T10:33:49.605Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 111 unique implementations (121 raw deployments)
 - DeFi Llama TVL: $11,121,221.15
@@ -30,11 +30,11 @@ The Vault contract manages the issuance and rebalancing of Sets, while CErc20 an
 - Unverified implementations: 96
 - Unique implementations: 111
 - Raw deployments: 121
-- Audits discovered: 8
+- Audits discovered: 5
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $21,200,447.62
 - Latest audit: 2020-12 (stale)
-- Staleness: 0 fresh, 0 aging, 5 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 5 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $21,200,447.62 represents exposure in a protocol with declining activity.
 
@@ -192,9 +192,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Mixbytes-aave-v2-03-12-2020.pdf](https://github.com/SetProtocol/aave-fork/blob/master/audits/Mixbytes-aave-v2-03-12-2020.pdf) | MixBytes | Audit | 2020 | stale | Direct | n/a | 0 | n/a |
 | [PeckShield-aave-v2-03-12-2020-CN.pdf](https://github.com/SetProtocol/aave-fork/blob/master/audits/PeckShield-aave-v2-03-12-2020-CN.pdf) | PeckShield | Audit | 2020 | stale | Direct | n/a | 0 | n/a |
 | [Peckshield-aave-v2-03-12-2020-EN.pdf](https://github.com/SetProtocol/aave-fork/blob/master/audits/Peckshield-aave-v2-03-12-2020-EN.pdf) | PeckShield | Audit | 2020 | stale | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -228,7 +225,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -240,8 +237,5 @@ Zero-match audit list:
 - [7034] Mixbytes-aave-v2-03-12-2020.pdf
 - [7035] PeckShield-aave-v2-03-12-2020-CN.pdf
 - [7036] Peckshield-aave-v2-03-12-2020-EN.pdf
-- [7037] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7038] 0002-metadata-manifest-and-pull-command.md
-- [7039] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

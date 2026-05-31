@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Overnight Finance
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 44.1% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 44.4% over 90 days
 
 ## Project Overview
 
 - Project: Overnight Finance (`overnight-finance`)
 - Website: [https://overnight.fi](https://overnight.fi)
-- Lifecycle: unknown (Tier 0, 63.4% below peak)
-- Generated: 2026-05-29T11:55:30.144Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Lifecycle: unknown (Tier 0, 63.6% below peak)
+- Generated: 2026-05-31T10:13:25.939Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, blast, bsc, ethereum, linea, optimism, polygon, sonic, zksync-era
 - Contract surface: 4353 unique implementations (4353 raw deployments)
 - DeFi Llama TVL: $10,007,795.66
@@ -23,11 +23,11 @@
 - Unverified implementations: 4353
 - Unique implementations: 4353
 - Raw deployments: 4353
-- Audits discovered: 11
+- Audits discovered: 2
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-03 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 9 unknown
+- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
@@ -4423,15 +4423,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [ackee_2023-03-03.pdf](https://github.com/ovnstable/ovnstable-core/blob/master/audits/ackee_2023-03-03.pdf) | Ackee Blockchain | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 | [hacken_2022-02-03.pdf](https://github.com/ovnstable/ovnstable-core/blob/master/audits/hacken_2022-02-03.pdf) | Hacken | Audit | 2022-02 | stale | Direct | n/a | 0 | n/a |
-| [Docs.md](https://github.com/ovnstable/ovnstable-core/blob/master/docs/Docs.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Docs_ENG.md](https://github.com/ovnstable/ovnstable-core/blob/master/docs/Docs_ENG.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [PROPOSALS_LOCAL.md](https://github.com/ovnstable/ovnstable-core/blob/master/zksync-withdraw/docs/PROPOSALS_LOCAL.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [README.md](https://github.com/ovnstable/ovnstable-core/blob/master/zksync-withdraw/docs/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [pools.md](https://github.com/ovnstable/ovnstable-core/blob/master/zksync-withdraw/docs/pools.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [pools_info.md](https://github.com/ovnstable/ovnstable-core/blob/master/zksync-withdraw/docs/pools_info.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -4452,7 +4443,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 11
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -4461,14 +4452,5 @@ Zero-match audit list:
 
 - [7291] ackee_2023-03-03.pdf
 - [7292] hacken_2022-02-03.pdf
-- [7293] Docs.md
-- [7294] Docs_ENG.md
-- [7295] PROPOSALS_LOCAL.md
-- [7296] README.md
-- [7297] pools.md
-- [7298] pools_info.md
-- [7299] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7300] 0002-metadata-manifest-and-pull-command.md
-- [7301] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

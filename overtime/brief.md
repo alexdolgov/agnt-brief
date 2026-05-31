@@ -5,8 +5,8 @@
 - Project: Overtime (`overtime`)
 - Website: [https://www.overtimemarkets.xyz/markets?referrerId=defillama](https://www.overtimemarkets.xyz/markets?referrerId=defillama)
 - Lifecycle: active (Tier 0, 75.2% below peak)
-- Generated: 2026-05-29T11:59:31.122Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T10:13:25.278Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, ethereum, optimism, polygon
 - Contract surface: 201 unique implementations (1993 raw deployments)
 - DeFi Llama TVL: $3,014,399.64
@@ -21,11 +21,11 @@
 - Unverified implementations: 56
 - Unique implementations: 201
 - Raw deployments: 1993
-- Audits discovered: 6
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $42,543,713.97
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 6 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -271,9 +271,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [overtime-disclaimer.pdf](https://github.com/thales-markets/thales-dapp/blob/main/src/assets/docs/overtime-disclaimer.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [overtime-privacy-policy.pdf](https://github.com/thales-markets/thales-dapp/blob/main/src/assets/docs/overtime-privacy-policy.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [overtime-terms-of-use.pdf](https://github.com/thales-markets/thales-dapp/blob/main/src/assets/docs/overtime-terms-of-use.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -294,7 +291,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 6
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -304,8 +301,5 @@ Zero-match audit list:
 - [8132] overtime-disclaimer.pdf
 - [8133] overtime-privacy-policy.pdf
 - [8134] overtime-terms-of-use.pdf
-- [8135] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [8136] 0002-metadata-manifest-and-pull-command.md
-- [8137] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

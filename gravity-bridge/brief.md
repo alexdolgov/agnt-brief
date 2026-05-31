@@ -5,8 +5,8 @@
 - Project: Gravity Bridge (`gravity-bridge`)
 - Website: [https://www.gravitybridge.net](https://www.gravitybridge.net)
 - Lifecycle: active (Tier 0, 89.3% below peak)
-- Generated: 2026-05-29T18:45:17.119Z
-- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
+- Generated: 2026-05-31T08:15:02.127Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 152 unique implementations (225 raw deployments)
 - DeFi Llama TVL: $12,141,492.35
@@ -29,18 +29,18 @@ The Gravity Bridge family relies on a set of proxy contracts (AdminUpgradeabilit
 - Unverified implementations: 78
 - Unique implementations: 152
 - Raw deployments: 225
-- Audits discovered: 48
-- Scoreable audits (matched contracts): 7
+- Audits discovered: 1
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $91,299,805.77
-- Latest audit: 2026-12 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 47 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 1.4% | 2026-12 |
+| unknown | Tier 2 | 1 | 1.4% | n/a |
 
 ## Contract Surface
 
@@ -229,54 +229,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [README.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/architecture/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [adr-template.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/architecture/adr-template.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [arbitrary-logic.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/arbitrary-logic.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [bootstrapping.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/bootstrapping.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [ethereum-signing.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/ethereum-signing.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [incentives.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/incentives.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [messages.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/messages.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [mint-lock.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/mint-lock.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [oracle.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/oracle.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [overview.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [parameters.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/parameters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [relaying-semantics.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/design/relaying-semantics.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [code-structure.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/developer/code-structure.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [environment-setup.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/developer/environment-setup.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [hotspots.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/developer/hotspots.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [migrations.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/developer/migrations.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [modifying-integration-tests.md](https://github.com/Gravity-Bridge/Gravity-Bridge/blob/main/docs/developer/modifying-integration-tests.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [LPBA.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/LPBA.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [basic-sentry-setup.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/basic-sentry-setup.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [building-from-source.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/building-from-source.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [canto-guide.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/canto-guide.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [canto-recovery.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/canto-recovery.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [cli-usage.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/cli-usage.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [create-your-gentx.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/create-your-gentx.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [custom-gov.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/custom-gov.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [delegating.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/delegating.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [erc20-representation.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/erc20-representation.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [eth-merge-faq.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/eth-merge-faq.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [evmos.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/evmos.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [fees-auction.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/fees-auction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [frontend-creation.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/frontend-creation.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [integrations.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/integrations.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [list_of_IBC_channels.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/list_of_IBC_channels.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [relaying.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/relaying.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [resources.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/resources.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [security.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/security.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [setting-up-a-fullnode.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/setting-up-a-fullnode.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [setting-up-a-validator.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/setting-up-a-validator.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [setting-up-your-genesis-validator.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/setting-up-your-genesis-validator.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [software-architecture.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/software-architecture.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [informational-dec-26-2021.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/updates/informational-dec-26-2021.md) | unknown | Audit | 2026-12 | fresh | Direct | n/a | 0 | n/a |
-| [upgrading-tools.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/upgrading-tools.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [upgrading.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/upgrading.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [validator-maintenance.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/validator-maintenance.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [validator-system-setup.md](https://github.com/Gravity-Bridge/Gravity-Docs/blob/main/docs/validator-system-setup.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -329,53 +282,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 41
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: low=7
-- Match method counts: extraction_exact=7
-
-Zero-match audit list:
-
-- [6975] README.md
-- [6976] adr-template.md
-- [6980] incentives.md
-- [6983] oracle.md
-- [6984] overview.md
-- [6985] parameters.md
-- [6986] relaying-semantics.md
-- [6988] environment-setup.md
-- [6989] hotspots.md
-- [6990] migrations.md
-- [6991] modifying-integration-tests.md
-- [6992] LPBA.md
-- [6993] basic-sentry-setup.md
-- [6994] building-from-source.md
-- [6995] canto-guide.md
-- [6996] canto-recovery.md
-- [6997] cli-usage.md
-- [6998] create-your-gentx.md
-- [6999] custom-gov.md
-- [7000] delegating.md
-- [7001] erc20-representation.md
-- [7002] eth-merge-faq.md
-- [7003] evmos.md
-- [7004] fees-auction.md
-- [7005] frontend-creation.md
-- [7006] integrations.md
-- [7007] list_of_IBC_channels.md
-- [7008] relaying.md
-- [7009] resources.md
-- [7011] setting-up-a-fullnode.md
-- [7012] setting-up-a-validator.md
-- [7013] setting-up-your-genesis-validator.md
-- [7014] software-architecture.md
-- [7015] informational-dec-26-2021.md
-- [7016] upgrading-tools.md
-- [7017] upgrading.md
-- [7018] validator-maintenance.md
-- [7019] validator-system-setup.md
-- [7020] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7021] 0002-metadata-manifest-and-pull-command.md
-- [7022] 0003-bun-package-manager-node-runtime.md
+- Extraction confidence breakdown: low=1
+- Match method counts: extraction_exact=1
 
 Fork inheritance lineage and inherited audits are included when available.

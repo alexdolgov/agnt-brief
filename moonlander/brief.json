@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "moonlander",
-  "generated_at": "2026-05-31T09:59:12.160Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:54:11.150Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "moonlander",
@@ -59,6 +59,11 @@
     "project_purpose": "Moonlander is a derivatives protocol on Cronos that enables users to trade leveraged positions and access synthetic assets. It provides a decentralized platform for creating and managing derivative contracts.",
     "relationship_narrative": "The Moonlander token contract likely governs or incentivizes the Cronos EVM derivative contracts, which share a common deployment environment and may interact through shared liquidity pools or fee distribution mechanisms.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 11,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

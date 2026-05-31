@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "goplus-security",
-  "generated_at": "2026-05-31T08:13:53.808Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:54:11.146Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "goplus-security",
@@ -64,6 +64,11 @@
     "project_purpose": "GoPlus Security provides token locker services that allow project teams to lock tokens or liquidity positions, enhancing trust and security for investors. It also offers developer tools and security APIs for risk detection.",
     "relationship_narrative": "The locker families (V2 and V3) share the same deployer cluster, indicating a common development team and likely shared infrastructure. The OpenAPI family includes standard token contracts that may be referenced by the security APIs, but no direct on-chain dependency is visible.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 26,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

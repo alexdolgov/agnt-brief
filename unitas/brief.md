@@ -5,7 +5,7 @@
 - Project: Unitas (`unitas`)
 - Website: [https://app.unitas.so/points?ref=llama](https://app.unitas.so/points?ref=llama)
 - Lifecycle: active (Tier 0, 38.6% below peak)
-- Generated: 2026-05-27T12:44:59.025Z
+- Generated: 2026-05-31T14:53:59.171Z
 - Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
 - Chains: bsc
 - Contract surface: 9 unique implementations (9 raw deployments)

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "osl",
-  "generated_at": "2026-05-31T10:09:24.406Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:54:10.989Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "osl",
@@ -59,6 +59,11 @@
     "project_purpose": "OSL is a centralized exchange (CEX) operating on the Scroll chain, providing trading and related financial services through a set of smart contracts.",
     "relationship_narrative": "All contracts belong to a single product family with no explicit sub-families or shared infrastructure identified; they likely interact directly to facilitate exchange operations.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 4,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

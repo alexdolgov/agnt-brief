@@ -5,8 +5,8 @@
 - Project: ApeChain Bridge (`apechain-bridge`)
 - Website: [https://apechain.com/portal#bridge](https://apechain.com/portal#bridge)
 - Lifecycle: active (Tier 0, 90.8% below peak)
-- Generated: 2026-05-31T07:13:20.220Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-05-31T14:54:09.421Z
+- Pipeline run: v2-pipeline-2026-05-28-8b27fb-6fc5
 - Chains: ethereum
 - Contract surface: 9 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $44,918,026.08

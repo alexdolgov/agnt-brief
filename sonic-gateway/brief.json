@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "sonic-gateway",
-  "generated_at": "2026-05-27T15:02:35.471Z",
+  "generated_at": "2026-05-31T14:54:04.177Z",
   "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Sonic Gateway is a canonical bridge that enables users to deposit tokens on Ethereum and receive equivalent tokens on the Sonic network, facilitating cross-chain asset transfers.",
-    "relationship_narrative": "The protocol consists of a single product family with one core proxy contract that delegates to a TokenDeposit implementation, with no additional supporting contracts or shared infrastructure identified.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

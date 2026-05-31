@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nexus-mutual",
-  "generated_at": "2026-05-31T10:06:22.947Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:53:59.025Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nexus-mutual",
@@ -59,6 +59,11 @@
     "project_purpose": "Nexus Mutual is a decentralized insurance protocol that allows members to pool funds and share risk. Members can purchase cover against smart contract failures and other risks, and participate in claims assessment and governance.",
     "relationship_narrative": "The protocol consists of a single product family centered around the OwnedUpgradeabilityProxy, which delegates to the NXMaster implementation contract containing all core logic.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

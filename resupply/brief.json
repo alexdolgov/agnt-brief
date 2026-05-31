@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "resupply",
-  "generated_at": "2026-05-31T10:28:00.111Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:54:10.984Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "resupply",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Resupply is a lending protocol on Ethereum that allows users to supply and borrow assets. It manages lending pools and interest rates through its registry contract.",
-    "relationship_narrative": "The protocol consists of a single product family with one registry contract that likely manages all lending pools and user positions.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

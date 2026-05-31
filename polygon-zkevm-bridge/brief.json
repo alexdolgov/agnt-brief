@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "polygon-zkevm-bridge",
-  "generated_at": "2026-05-31T10:16:34.104Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:54:04.155Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "polygon-zkevm-bridge",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "The Polygon zkEVM Bridge is a canonical bridge that enables asset transfers between Ethereum and the Polygon zkEVM network. It uses a single proxy contract to manage cross-chain deposits and withdrawals.",
-    "relationship_narrative": "The protocol consists of a single product family with one core proxy contract that delegates to an implementation contract, with no additional supporting contracts or shared infrastructure.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

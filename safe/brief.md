@@ -7,7 +7,7 @@
 - Project: Safe (`safe`)
 - Website: [https://safe.global/](https://safe.global/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T10:34:23.665Z
+- Generated: 2026-05-31T14:53:59.005Z
 - Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
@@ -15,13 +15,14 @@
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Safe provides a vesting pool service that allows for the distribution of tokens over time, likely for team or investor allocations.
-
-### Architecture
-
-The project consists of a single product family with one core contract, so there are no inter-family relationships or shared infrastructure.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

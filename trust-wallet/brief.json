@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "trust-wallet",
-  "generated_at": "2026-05-31T11:12:49.771Z",
+  "generated_at": "2026-05-31T14:54:10.996Z",
   "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
@@ -61,6 +61,11 @@
     "project_purpose": "Trust Wallet is a multi-chain self-custody wallet that allows users to store, send, receive, and manage cryptocurrencies and NFTs. It also provides access to decentralized applications and DeFi services.",
     "relationship_narrative": "The TrustWalletToken and TokenLocker contracts form the core token management system, with the TokenLocker likely interacting with the TrustWalletToken for staking or vesting purposes.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

@@ -7,7 +7,7 @@
 - Project: Armitage by Wintermute (`armitage-by-wintermute`)
 - Website: [https://armitage.wintermute.com](https://armitage.wintermute.com)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T07:24:12.885Z
+- Generated: 2026-05-31T14:54:09.397Z
 - Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 1 unique implementations (2 raw deployments)
@@ -15,13 +15,14 @@
 - On-chain TVL (included contracts): $51,808,883.67
 - TVL by chain: Ethereum $51,808,883.67
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Armitage by Wintermute is a risk curation protocol that manages yield-bearing vaults, likely optimizing asset allocation and risk parameters for DeFi users.
-
-### Architecture
-
-The protocol consists of a single product family with two instances of the VaultV2 contract, likely representing separate vaults for different assets or strategies, sharing the same core logic.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

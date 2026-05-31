@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "zerobase-cedefi",
-  "generated_at": "2026-05-27T16:53:00.154Z",
+  "generated_at": "2026-05-31T14:54:05.757Z",
   "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
@@ -67,6 +67,11 @@
     "project_purpose": "ZEROBASE CeDeFi is a basis trading protocol that allows users to deposit assets into vaults to earn yield from delta-neutral strategies across multiple chains.",
     "relationship_narrative": "The protocol consists of a single product family with multiple vault instances sharing the same core logic, deployed across different chains to facilitate basis trading.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 7,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

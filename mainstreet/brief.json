@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "mainstreet",
-  "generated_at": "2026-05-27T13:39:25.995Z",
+  "generated_at": "2026-05-31T14:54:04.149Z",
   "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Mainstreet is a basis trading protocol that enables users to mint a synthetic stablecoin (msUSD) against yield-bearing collateral, capturing the basis between staked ETH yields and stablecoin borrowing costs.",
-    "relationship_narrative": "The ERC1967Proxy serves as the upgradeable entry point for the msUSDV2 implementation, which contains the core minting and redemption logic.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

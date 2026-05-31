@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "nest-credit",
-  "generated_at": "2026-05-27T20:21:59.797Z",
+  "generated_at": "2026-05-31T14:54:09.416Z",
   "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
@@ -69,6 +69,11 @@
     "project_purpose": "Nest Credit is a multi-chain real-world asset (RWA) protocol that enables users to deposit assets into yield-bearing vaults and perform cross-chain operations. It uses LayerZero for cross-chain messaging and atomic solvers for efficient trade execution.",
     "relationship_narrative": "The Vault Contracts family relies on the Atomic Solver and Atomic Queue for efficient execution of vault operations like deposits and withdrawals. The Atomic Queue likely feeds operations to the Atomic Solver, which executes them atomically, while vaults use LayerZero tellers for cross-chain interactions.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 16,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

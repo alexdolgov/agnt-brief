@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "royco-protocol",
-  "generated_at": "2026-05-31T10:30:33.059Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:54:11.140Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "royco-protocol",
@@ -77,6 +77,11 @@
     "project_purpose": "Royco Protocol is a yield optimization platform that enables users to deposit assets into vaults and participate in incentive markets. It provides infrastructure for creating wrapped vaults, managing points programs, and executing complex strategies via Weiroll wallets.",
     "relationship_narrative": "Royco V1 provides the foundational vault and teller contracts, while Royco V2 introduces a factory pattern for scalable deployments. The Ethereum, Sonic, Hyperliquid, and Plume families represent chain-specific instances of shared infrastructure like WrappedVault, VaultMarketHub, and RecipeMarketHub, all relying on common registries and helper contracts.",
     "product_family_count": 7
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 14,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

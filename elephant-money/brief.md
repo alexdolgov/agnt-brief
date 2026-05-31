@@ -7,7 +7,7 @@
 - Project: Elephant Money (`elephant-money`)
 - Website: [https://elephant.money](https://elephant.money)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-27T13:55:04.264Z
+- Generated: 2026-05-31T14:54:04.140Z
 - Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
 - Chains: bsc
 - Contract surface: 346 unique implementations (667 raw deployments)

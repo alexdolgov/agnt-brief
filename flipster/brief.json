@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "flipster",
-  "generated_at": "2026-05-31T08:01:33.154Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:54:11.133Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "flipster",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Flipster is a centralized exchange (CEX) that operates on the Klaytn blockchain, providing trading services for digital assets.",
-    "relationship_narrative": "The two contracts are part of the single Flipster product family and likely share infrastructure for exchange operations, though specific relationships are not detailed.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

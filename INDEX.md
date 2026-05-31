@@ -14,7 +14,7 @@
 | [across](./across/) | $28.1M | 18.0% | $28.1M | active | 6 | 142 | 2026-05-25 |
 | [acryptos](./acryptos/) | $5.2M | 25.0% | $253.0K | declining | 7 | 311 | 2026-05-30 |
 | [aegis-markets](./aegis-markets/) | $2.4M | 0.0% | ? | active | 2 | 15 | 2026-05-24 |
-| [aegis](./aegis/) | $35.8M | 0.0% | ? | active | 0 | 5 | 2026-05-31 |
+| [aegis](./aegis/) | $35.8M | 0.0% | ? | active | 0 | 6 | 2026-05-31 |
 | [aethir](./aethir/) | $257.0M | 0.0% | $257.0M | unknown | 0 | 5 | 2026-05-31 |
 | [aevo](./aevo/) | $98.3M | 12.0% | $1.5M | active | 17 | 271 | 2026-05-25 |
 | [aftermath-finance](./aftermath-finance/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
@@ -86,8 +86,8 @@
 | [bitomato](./bitomato/) | $2.6M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [bitu-protocol](./bitu-protocol/) | $22.3M | 60.0% | ? | active | 2 | 5 | 2026-05-30 |
 | [bitvenus](./bitvenus/) | $20.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
-| [bitway-earn](./bitway-earn/) | $136.4M | 0.0% | $136.4M | unknown | 3 | 8 | 2026-05-27 |
-| [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | unknown | 3 | 8 | 2026-05-27 |
+| [bitway-earn](./bitway-earn/) | $136.4M | 0.0% | $136.4M | unknown | 3 | 8 | 2026-05-31 |
+| [bitway](./bitway/) | $136.4M | 0.0% | $136.4M | unknown | 3 | 8 | 2026-05-31 |
 | [blackhole](./blackhole/) | $29.9M | 31.1% | ? | unknown | 3 | 86 | 2026-05-22 |
 | [block-analitica](./block-analitica/) | $252.8K | 0.0% | $252.8K | unknown | 0 | 19 | 2026-05-31 |
 | [blueshift](./blueshift/) | $4.4M | 0.0% | ? | active | 1 | 24 | 2026-05-25 |
@@ -179,7 +179,7 @@
 | [easedefi.org](./easedefi.org/) | $4.4M | 0.0% | ? | active | 3 | 1 | 2026-05-23 |
 | [egas-swap](./egas-swap/) | $19.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [ekubo](./ekubo/) | $5.6M | 44.4% | $5.6M | unknown | 5 | 15 | 2026-05-22 |
-| [elephant-money](./elephant-money/) | $1.6M | 5.9% | $1.6M | dead | 2 | 346 | 2026-05-27 |
+| [elephant-money](./elephant-money/) | $1.6M | 5.9% | $1.6M | dead | 2 | 346 | 2026-05-31 |
 | [elfi-protocol](./elfi-protocol/) | $3.0M | 29.2% | ? | unknown | 1 | 2406 | 2026-05-25 |
 | [ellipsis-finance](./ellipsis-finance/) | $59.0K | 29.4% | $9.0K | dead | 3 | 22 | 2026-05-25 |
 | [elyfi](./elyfi/) | $434.8K | 5.9% | $175.9 | dead | 2 | 30 | 2026-05-24 |
@@ -218,7 +218,7 @@
 | [forgeyields](./forgeyields/) | $1.9M | 0.0% | ? | active | 1 | 1 | 2026-05-24 |
 | [four.meme](./four.meme/) | $4.9M | 0.0% | ? | active | 1 | 2 | 2026-05-23 |
 | [foxify](./foxify/) | $72.6K | 0.0% | $72.6K | unknown | 0 | 5 | 2026-05-31 |
-| [frankencoin](./frankencoin/) | $70.0M | 66.7% | ? | active | 11 | 6 | 2026-05-27 |
+| [frankencoin](./frankencoin/) | $70.0M | 66.7% | ? | active | 11 | 6 | 2026-05-31 |
 | [fuel-bridge](./fuel-bridge/) | $10.7M | 26.7% | $7.6M | declining | 11 | 18 | 2026-05-23 |
 | [fulcrom](./fulcrom/) | $13.3M | 0.0% | ? | active | 0 | 79 | 2026-05-31 |
 | [gains-network](./gains-network/) | $21.9M | 0.0% | $21.9M | unknown | 1 | 760 | 2026-05-25 |
@@ -287,7 +287,7 @@
 | [injective-bridge](./injective-bridge/) | $2.6K | 0.0% | $2.6K | active | 0 | 3 | 2026-05-31 |
 | [ink-bridge](./ink-bridge/) | $59.3M | 48.0% | ? | active | 27 | 68 | 2026-05-31 |
 | [intentx](./intentx/) | $10.5M | 0.0% | $10.5M | active | 2 | 56 | 2026-05-23 |
-| [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | unknown | 9 | 154 | 2026-05-26 |
+| [inverse-finance](./inverse-finance/) | $428.8M | 11.1% | $428.8M | unknown | 9 | 154 | 2026-05-31 |
 | [ionic-protocol](./ionic-protocol/) | $2.0M | 1.8% | ? | dead | 1 | 420 | 2026-05-25 |
 | [iotube](./iotube/) | $2.2M | 0.0% | $2.2M | declining | 0 | 40 | 2026-05-31 |
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | unknown | 0 | 2 | 2026-05-31 |
@@ -343,13 +343,14 @@
 | [lynex](./lynex/) | $3.9 | 0.0% | $3.9 | declining | 0 | 30 | 2026-05-31 |
 | [magma-staking](./magma-staking/) | $1.3M | 0.0% | ? | unknown | 0 | 0 | 2026-05-25 |
 | [magpie-ecosystem](./magpie-ecosystem/) | $27.1M | 0.0% | ? | declining | 4 | 2794 | 2026-05-25 |
-| [mainstreet](./mainstreet/) | $78.2M | 100.0% | ? | active | 1 | 1 | 2026-05-27 |
+| [mainstreet](./mainstreet/) | $78.2M | 100.0% | ? | active | 1 | 1 | 2026-05-31 |
 | [makina](./makina/) | $12.9M | 90.9% | $12.9M | active | 10 | 36 | 2026-05-26 |
 | [mangrove](./mangrove/) | $4.3M | 24.4% | ? | active | 8 | 68 | 2026-05-23 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 0 | 5 | 2026-05-31 |
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.4M | 0.0% | ? | sunsetting | 0 | 109 | 2026-05-30 |
 | [manta-cedefi](./manta-cedefi/) | $26.7M | 0.0% | ? | unknown | 0 | 17 | 2026-05-31 |
 | [manta-pacific](./manta-pacific/) | $24.6M | 0.0% | ? | active | 0 | 3 | 2026-05-31 |
+| [mantle-restaking](./mantle-restaking/) | $79.7M | 0.0% | ? | unknown | 14 | 8 | 2026-05-31 |
 | [mantra-dao](./mantra-dao/) | $612.5M | 0.0% | $612.5M | declining | 1 | 209 | 2026-05-25 |
 | [matstake](./matstake/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
 | [maverick-protocol](./maverick-protocol/) | $26.8M | 35.3% | $26.8M | declining | 7 | 93 | 2026-05-24 |
@@ -400,7 +401,7 @@
 | [neptune-finance](./neptune-finance/) | $6.1M | 0.0% | ? | active | 3 | 2 | 2026-05-25 |
 | [nerona](./nerona/) | $7.9M | 0.0% | ? | unknown | 0 | 2 | 2026-05-31 |
 | [nerve](./nerve/) | $508.7 | 0.0% | $508.7 | dead | 0 | 66 | 2026-05-31 |
-| [nest-credit](./nest-credit/) | $66.7K | 57.1% | ? | active | 16 | 16 | 2026-05-27 |
+| [nest-credit](./nest-credit/) | $66.7K | 57.1% | ? | active | 16 | 16 | 2026-05-31 |
 | [nest](./nest/) | $69.4M | 12.9% | $69.4M | active | 10 | 349 | 2026-05-23 |
 | [netswap](./netswap/) | $1.4M | 20.8% | ? | dead | 2 | 48 | 2026-05-25 |
 | [neuralai](./neuralai/) | $1.2M | 0.0% | ? | unknown | 1 | 3 | 2026-05-31 |
@@ -425,7 +426,7 @@
 | [open-ticketing-ecosystem](./open-ticketing-ecosystem/) | $3.3M | 0.0% | $3.3M | unknown | 0 | 24 | 2026-05-31 |
 | [opinion](./opinion/) | $142.5M | 100.0% | ? | declining | 5 | 6 | 2026-05-23 |
 | [opyn](./opyn/) | $1.0M | 0.0% | $1.0M | dead | 0 | 103 | 2026-05-31 |
-| [orangex](./orangex/) | $39.8M | 0.0% | ? | active | 0 | 3 | 2026-05-26 |
+| [orangex](./orangex/) | $39.8M | 0.0% | ? | active | 0 | 3 | 2026-05-31 |
 | [orbit-bridge](./orbit-bridge/) | $640.2K | 0.0% | $640.2K | active | 1 | 22 | 2026-05-22 |
 | [osl](./osl/) | $41.5M | 0.0% | ? | active | 0 | 4 | 2026-05-31 |
 | [osmosis-dex](./osmosis-dex/) | $1.5M | 0.0% | $1.5M | declining | 0 | 53 | 2026-05-25 |
@@ -547,7 +548,7 @@
 | [sofa.org](./sofa.org/) | $49.2K | 33.3% | $46.8K | declining | 8 | 38 | 2026-05-24 |
 | [solayer](./solayer/) | $1.5M | 0.0% | $1.5M | declining | 5 | 53 | 2026-05-25 |
 | [solera](./solera/) | $8.1M | 0.0% | ? | unknown | 3 | 0 | 2026-05-23 |
-| [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | active | 2 | 1 | 2026-05-27 |
+| [sonic-gateway](./sonic-gateway/) | $7.8M | 0.0% | $7.8M | active | 2 | 1 | 2026-05-31 |
 | [sophon-bridge](./sophon-bridge/) | $5.5M | 0.0% | $5.5M | active | 8 | 10 | 2026-05-27 |
 | [sophon-farm](./sophon-farm/) | $7.0M | 100.0% | ? | dead | 9 | 1 | 2026-05-23 |
 | [sorare-bridge](./sorare-bridge/) | $4.0M | 0.0% | ? | active | 0 | 58 | 2026-05-31 |
@@ -574,6 +575,7 @@
 | [standx](./standx/) | $12.7M | 50.0% | $12.7M | unknown | 6 | 18 | 2026-05-26 |
 | [stargate-finance](./stargate-finance/) | $203.9M | 50.0% | $5.2M | active | 17 | 294 | 2026-05-31 |
 | [stargate](./stargate/) | $6.2M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
+| [starknet-btc-staking](./starknet-btc-staking/) | $412.2M | 0.0% | $412.2M | unknown | 42 | 1 | 2026-05-31 |
 | [stcelo](./stcelo/) | $1.6M | 50.0% | ? | active | 2 | 19 | 2026-05-24 |
 | [stcyber](./stcyber/) | $51.4M | 0.0% | $51.4M | active | 1 | 31 | 2026-05-24 |
 | [steer-protocol](./steer-protocol/) | $3.3M | 0.0% | $3.3M | active | 0 | 43 | 2026-05-31 |
@@ -652,7 +654,7 @@
 | [umee](./umee/) | $2.5M | 0.0% | ? | declining | 8 | 1 | 2026-05-31 |
 | [unchain-x](./unchain-x/) | $35.1M | 100.0% | ? | active | 2 | 1 | 2026-05-25 |
 | [unichain-bridge](./unichain-bridge/) | $2.8M | 0.0% | ? | dead | 10 | 15 | 2026-05-31 |
-| [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-05-27 |
+| [unitas](./unitas/) | $47.8M | 100.0% | ? | active | 5 | 9 | 2026-05-31 |
 | [universal-bridge](./universal-bridge/) | $7.7M | 0.0% | ? | active | 2 | 1 | 2026-05-31 |
 | [universe-xyz](./universe-xyz/) | $39.0M | 20.0% | $39.0M | dead | 3 | 36 | 2026-05-24 |
 | [unslashed](./unslashed/) | $3.1M | 0.0% | $3.1M | declining | 0 | 1 | 2026-05-31 |
@@ -700,7 +702,7 @@
 | [yuzu-money](./yuzu-money/) | $41.0M | 0.0% | $41.0M | active | 0 | 8 | 2026-05-31 |
 | [zeebu](./zeebu/) | $87.9M | 66.7% | ? | unknown | 3 | 8 | 2026-05-23 |
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |
-| [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-05-27 |
+| [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-05-31 |
 | [zerolend](./zerolend/) | $16.1M | 0.0% | ? | declining | 0 | 579 | 2026-05-31 |
 | [zircuit-finance](./zircuit-finance/) | $180.1M | 0.0% | $180.1M | active | 0 | 3 | 2026-05-31 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 21.1% | $140.4M | declining | 10 | 20 | 2026-05-27 |

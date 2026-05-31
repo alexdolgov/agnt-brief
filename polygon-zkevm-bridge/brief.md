@@ -5,21 +5,22 @@
 - Project: Polygon zkEVM Bridge (`polygon-zkevm-bridge`)
 - Website: [https://portal.polygon.technology/bridge](https://portal.polygon.technology/bridge)
 - Lifecycle: active (Tier 0, 82.6% below peak)
-- Generated: 2026-05-31T10:16:34.104Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-05-31T14:54:04.155Z
+- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $77,973,709.76
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-The Polygon zkEVM Bridge is a canonical bridge that enables asset transfers between Ethereum and the Polygon zkEVM network. It uses a single proxy contract to manage cross-chain deposits and withdrawals.
-
-### Architecture
-
-The protocol consists of a single product family with one core proxy contract that delegates to an implementation contract, with no additional supporting contracts or shared infrastructure.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

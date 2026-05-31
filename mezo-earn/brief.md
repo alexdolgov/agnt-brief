@@ -7,7 +7,7 @@
 - Project: Mezo Earn (`mezo-earn`)
 - Website: [https://mezo.org/earn/lock](https://mezo.org/earn/lock)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T09:56:01.124Z
+- Generated: 2026-05-31T14:54:05.769Z
 - Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
@@ -15,13 +15,14 @@
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Mezo Earn is a governance incentives protocol that allows users to allocate assets to earn rewards. It operates on Ethereum through a single allocator contract that manages distribution of incentives.
-
-### Architecture
-
-The protocol consists of a single product family with one core allocator contract behind a transparent upgradeable proxy, indicating a simple, upgradeable incentive distribution system.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

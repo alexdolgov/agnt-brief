@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "unitas",
-  "generated_at": "2026-05-27T12:44:59.025Z",
+  "generated_at": "2026-05-31T14:53:59.171Z",
   "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
@@ -63,6 +63,11 @@
     "project_purpose": "Unitas is a DeFi protocol on BSC that enables basis trading, allowing users to mint and redeem a stablecoin (USDu) against a basket of assets to capture yield from price discrepancies between spot and futures markets.",
     "relationship_narrative": "The protocol consists of a single product family centered around the USDu stablecoin, with all functionality likely contained within that contract or its associated deployer cluster, indicating a tightly integrated system without separate infrastructure contracts.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 9,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

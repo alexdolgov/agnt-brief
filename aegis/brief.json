@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aegis",
-  "generated_at": "2026-05-31T06:57:08.561Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:54:11.136Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aegis",
@@ -22,21 +22,21 @@
     "drop_from_peak_pct": 19.294518651016947
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 5,
-    "unique_implementations": 5,
-    "total_deployments": 5,
+    "total_contracts": 6,
+    "total_addresses": 6,
+    "unique_implementations": 6,
+    "total_deployments": 6,
     "audited_contracts": 0,
     "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 35812925,
-    "tvl_usd": 35812925,
+    "dl_tvl_usd": 35799876,
+    "tvl_usd": 35799876,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -59,6 +59,11 @@
     "project_purpose": "Aegis is a DeFi protocol focused on basis trading, offering yield-bearing stablecoin-like tokens. It provides users with exposure to basis trading strategies through its YUSD token.",
     "relationship_narrative": "The protocol consists of a single product family centered around the YUSD token, with no additional supporting contracts identified in the inventory.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 6,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -192,6 +197,37 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xab3dbcd9b096c3ff76275038bf58eac10d22c61f",
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Aegis YUSD",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xab3dbcd9b096c3ff76275038bf58eac10d22c61f",
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a",
       "name": "YUSD",
       "role": "unknown",
@@ -279,7 +315,7 @@
     "native": 5,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -5,8 +5,8 @@
 - Project: Nexus Mutual (`nexus-mutual`)
 - Website: [https://nexusmutual.io/](https://nexusmutual.io/)
 - Lifecycle: active (Tier 0, 87.8% below peak)
-- Generated: 2026-05-31T10:06:22.947Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-05-31T14:53:59.025Z
+- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
 - Chains: ethereum
 - Contract surface: 6 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $95,917,887.46

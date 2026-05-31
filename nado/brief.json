@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "nado",
-  "generated_at": "2026-05-31T10:03:22.978Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:54:05.776Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-29-8b27fb-df0f",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "nado",
@@ -59,6 +59,11 @@
     "project_purpose": "Nado is a decentralized exchange protocol offering spot and perpetual derivatives trading on the Ink chain. It enables users to trade assets with leverage and access liquidity through a set of smart contracts.",
     "relationship_narrative": "Both product families operate on the Ink chain and likely share common infrastructure such as oracles and liquidity pools, though no explicit shared contracts are identified in the provided inventory.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 23,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

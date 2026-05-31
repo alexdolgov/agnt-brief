@@ -5,7 +5,7 @@
 - Project: Frankencoin (`frankencoin`)
 - Website: [https://frankencoin.com](https://frankencoin.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-27T14:39:38.240Z
+- Generated: 2026-05-31T14:54:04.169Z
 - Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
 - Chains: ethereum
 - Contract surface: 6 unique implementations (14 raw deployments)

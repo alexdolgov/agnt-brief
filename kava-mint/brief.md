@@ -5,21 +5,22 @@
 - Project: Kava Mint (`kava-mint`)
 - Website: [https://www.kava.io/](https://www.kava.io/)
 - Lifecycle: active (Tier 0, 89.5% below peak)
-- Generated: 2026-05-31T08:37:03.251Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-05-31T14:54:09.385Z
+- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $52,162,139.33
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Kava Mint is a Collateralized Debt Position (CDP) protocol on the Kava chain that allows users to lock collateral and mint stablecoins.
-
-### Architecture
-
-The protocol consists of a single contract family with no shared infrastructure or dependencies visible in the contract surface.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

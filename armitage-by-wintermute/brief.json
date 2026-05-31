@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "armitage-by-wintermute",
-  "generated_at": "2026-05-31T07:24:12.885Z",
+  "generated_at": "2026-05-31T14:54:09.397Z",
   "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Armitage by Wintermute is a risk curation protocol that manages yield-bearing vaults, likely optimizing asset allocation and risk parameters for DeFi users.",
-    "relationship_narrative": "The protocol consists of a single product family with two instances of the VaultV2 contract, likely representing separate vaults for different assets or strategies, sharing the same core logic.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

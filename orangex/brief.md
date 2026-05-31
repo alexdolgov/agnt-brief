@@ -5,7 +5,7 @@
 - Project: OrangeX (`orangex`)
 - Website: [https://www.orangex.com](https://www.orangex.com)
 - Lifecycle: active (Tier 0, 34.8% below peak)
-- Generated: 2026-05-26T15:04:55.481Z
+- Generated: 2026-05-31T14:54:10.992Z
 - Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
 - Chains: base, ethereum
 - Contract surface: 3 unique implementations (3 raw deployments)
@@ -13,13 +13,14 @@
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-OrangeX is a centralized exchange (CEX) that issues and manages its own ecosystem tokens, GameBitCoin and GPS, on Ethereum and Base.
-
-### Architecture
-
-Both tokens are deployed from the same deployer address, indicating shared administrative control, but no on-chain infrastructure contracts are present to link them further.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

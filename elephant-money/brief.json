@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "elephant-money",
-  "generated_at": "2026-05-27T13:55:04.264Z",
+  "generated_at": "2026-05-31T14:54:04.140Z",
   "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
@@ -71,6 +71,11 @@
     "project_purpose": "Elephant Money is a DeFi yield protocol on BSC offering vaults, futures, and NFT-based products. It provides mechanisms for staking, yield generation, and liquidity management through a suite of interconnected contracts.",
     "relationship_narrative": "Vaults and yield strategies interact with treasuries and engines to manage funds, while the NFT ecosystem uses dedicated minters and marketplaces. Both families share infrastructure like oracles, routers, and the GnosisSafeProxy for governance.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 346,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

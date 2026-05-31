@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gearbox",
-  "generated_at": "2026-05-31T08:12:53.677Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:54:11.126Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "gearbox",
@@ -78,6 +78,11 @@
     "project_purpose": "Gearbox is a composable leverage protocol that allows users to borrow assets from lending pools and deploy them across integrated DeFi protocols via smart contract credit accounts. It separates borrowing and trading logic, enabling leveraged positions in yield farming, trading, and restaking strategies.",
     "relationship_narrative": "Lending Pools supply liquidity to Credit Managers, which use Price Feeds for collateral valuation and risk assessment. Core Contracts provide shared registry, access control, and staking infrastructure used across all families.",
     "product_family_count": 29
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 197,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

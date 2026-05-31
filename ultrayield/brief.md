@@ -7,7 +7,7 @@
 - Project: UltraYield (`ultrayield`)
 - Website: [https://ultrayield.app/](https://ultrayield.app/)
 - Lifecycle: unknown (Tier 0, 79.4% below peak)
-- Generated: 2026-05-31T11:23:34.172Z
+- Generated: 2026-05-31T14:53:59.138Z
 - Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, ethereum, linea, optimism, plasma
 - Contract surface: 4520 unique implementations (4520 raw deployments)

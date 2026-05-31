@@ -5,7 +5,7 @@
 - Project: ZEROBASE CeDeFi (`zerobase-cedefi`)
 - Website: [https://app.zerobase.pro/](https://app.zerobase.pro/)
 - Lifecycle: active (Tier 0, 89.6% below peak)
-- Generated: 2026-05-27T16:53:00.154Z
+- Generated: 2026-05-31T14:54:05.757Z
 - Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
 - Chains: arbitrum, avalanche, base, ethereum, optimism, polygon
 - Contract surface: 7 unique implementations (54 raw deployments)

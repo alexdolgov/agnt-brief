@@ -7,7 +7,7 @@
 - Project: Trust Wallet (`trust-wallet`)
 - Website: [https://trustwallet.com/](https://trustwallet.com/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T11:12:49.771Z
+- Generated: 2026-05-31T14:54:10.996Z
 - Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: bsc
 - Contract surface: 6 unique implementations (10 raw deployments)

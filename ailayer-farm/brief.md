@@ -5,21 +5,22 @@
 - Project: AILayer farm (`ailayer-farm`)
 - Website: [https://ailayer.xyz/](https://ailayer.xyz/)
 - Lifecycle: active (Tier 0, 89.1% below peak)
-- Generated: 2026-05-31T07:04:28.757Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-05-31T14:54:04.159Z
+- Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $76,399,480.65
 - On-chain TVL (included contracts): $211,858.71
 - TVL by chain: Bsc $211,858.71
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-AILayer farm is a yield farming protocol on BSC that allows users to stake or farm AILayer tokens to earn rewards.
-
-### Architecture
-
-The protocol consists of a single product family centered around the AILayerToken contract, with no additional infrastructure or shared components identified.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

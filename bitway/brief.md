@@ -7,7 +7,7 @@
 - Project: Bitway (`bitway`)
 - Website: [https://bitway.com/](https://bitway.com/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-27T16:36:11.803Z
+- Generated: 2026-05-31T14:54:05.747Z
 - Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
 - Chains: bsc
 - Contract surface: 8 unique implementations (30 raw deployments)

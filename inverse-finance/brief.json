@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "inverse-finance",
-  "generated_at": "2026-05-26T13:26:59.942Z",
+  "generated_at": "2026-05-31T14:54:09.451Z",
   "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
@@ -68,6 +68,11 @@
     "project_purpose": "Inverse Finance is a decentralized lending protocol that enables users to borrow its native stablecoin, DOLA, against interest-bearing collateral. It also provides yield-bearing token wrappers and governance mechanisms to manage protocol parameters and risk.",
     "relationship_narrative": "The Inverse Finance family provides the core lending infrastructure where Markets use Oracles and BorrowController to manage DOLA minting, while DolaBorrowingRights and Fed regulate debt and supply. The FiRM family's XINV token wraps INV from the Key Contract Addresses family, and governance contracts like GovernorMills and Timelock control parameters across both families.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 154,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

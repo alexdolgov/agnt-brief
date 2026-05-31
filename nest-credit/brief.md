@@ -5,7 +5,7 @@
 - Project: Nest Credit (`nest-credit`)
 - Website: [https://nest.credit/](https://nest.credit/)
 - Lifecycle: active (Tier 0, 39.9% below peak)
-- Generated: 2026-05-27T20:21:59.797Z
+- Generated: 2026-05-31T14:54:09.416Z
 - Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
 - Chains: arbitrum, bsc, ethereum, plasma
 - Contract surface: 16 unique implementations (65 raw deployments)

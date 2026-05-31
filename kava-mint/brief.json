@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kava-mint",
-  "generated_at": "2026-05-31T08:37:03.251Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:54:09.385Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "kava-mint",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Kava Mint is a Collateralized Debt Position (CDP) protocol on the Kava chain that allows users to lock collateral and mint stablecoins.",
-    "relationship_narrative": "The protocol consists of a single contract family with no shared infrastructure or dependencies visible in the contract surface.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

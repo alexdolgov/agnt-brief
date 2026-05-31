@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "orangex",
-  "generated_at": "2026-05-26T15:04:55.481Z",
+  "generated_at": "2026-05-31T14:54:10.992Z",
   "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
   "lifecycle_status": "active",
   "lifecycle_signal": {
@@ -57,9 +57,14 @@
     }
   },
   "topography": {
-    "project_purpose": "OrangeX is a centralized exchange (CEX) that issues and manages its own ecosystem tokens, GameBitCoin and GPS, on Ethereum and Base.",
-    "relationship_narrative": "Both tokens are deployed from the same deployer address, indicating shared administrative control, but no on-chain infrastructure contracts are present to link them further.",
+    "project_purpose": "Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 3,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

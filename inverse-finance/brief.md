@@ -7,7 +7,7 @@
 - Project: Inverse Finance (`inverse-finance`)
 - Website: [https://www.inverse.finance](https://www.inverse.finance)
 - Lifecycle: unknown (Tier 0, 80.2% below peak)
-- Generated: 2026-05-26T13:26:59.942Z
+- Generated: 2026-05-31T14:54:09.451Z
 - Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
 - Chains: arbitrum, base, berachain, ethereum, optimism
 - Contract surface: 154 unique implementations (451 raw deployments)

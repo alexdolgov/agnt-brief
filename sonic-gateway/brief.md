@@ -5,7 +5,7 @@
 - Project: Sonic Gateway (`sonic-gateway`)
 - Website: [https://gateway.soniclabs.com/ethereum/sonic/s](https://gateway.soniclabs.com/ethereum/sonic/s)
 - Lifecycle: active (Tier 0, 94.6% below peak)
-- Generated: 2026-05-27T15:02:35.471Z
+- Generated: 2026-05-31T14:54:04.177Z
 - Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
@@ -13,13 +13,14 @@
 - On-chain TVL (included contracts): $7,800,454.70
 - TVL by chain: Ethereum $7,800,454.70
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Sonic Gateway is a canonical bridge that enables users to deposit tokens on Ethereum and receive equivalent tokens on the Sonic network, facilitating cross-chain asset transfers.
-
-### Architecture
-
-The protocol consists of a single product family with one core proxy contract that delegates to a TokenDeposit implementation, with no additional supporting contracts or shared infrastructure identified.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

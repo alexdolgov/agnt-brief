@@ -5,7 +5,7 @@
 - Project: Mainstreet (`mainstreet`)
 - Website: [https://mainstreet.finance/](https://mainstreet.finance/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-27T13:39:25.995Z
+- Generated: 2026-05-31T14:54:04.149Z
 - Pipeline run: v2-pipeline-2026-05-27-de70dc-1ce2
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
@@ -13,13 +13,14 @@
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Mainstreet is a basis trading protocol that enables users to mint a synthetic stablecoin (msUSD) against yield-bearing collateral, capturing the basis between staked ETH yields and stablecoin borrowing costs.
-
-### Architecture
-
-The ERC1967Proxy serves as the upgradeable entry point for the msUSDV2 implementation, which contains the core minting and redemption logic.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

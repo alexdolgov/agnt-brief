@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "ybtc.b",
-  "generated_at": "2026-05-31T11:38:02.391Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:53:59.167Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-d7f7",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "ybtc.b",
@@ -59,6 +59,11 @@
     "project_purpose": null,
     "relationship_narrative": null,
     "product_family_count": null
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 12,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

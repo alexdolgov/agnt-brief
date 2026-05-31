@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "safe",
-  "generated_at": "2026-05-31T10:34:23.665Z",
+  "generated_at": "2026-05-31T14:53:59.005Z",
   "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Safe provides a vesting pool service that allows for the distribution of tokens over time, likely for team or investor allocations.",
-    "relationship_narrative": "The project consists of a single product family with one core contract, so there are no inter-family relationships or shared infrastructure.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": true,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

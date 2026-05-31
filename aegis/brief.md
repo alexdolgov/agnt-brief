@@ -5,11 +5,11 @@
 - Project: Aegis (`aegis`)
 - Website: [https://aegis.im/](https://aegis.im/)
 - Lifecycle: active (Tier 0, 19.3% below peak)
-- Generated: 2026-05-31T06:57:08.561Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-05-31T14:54:11.136Z
+- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
 - Chains: ethereum
-- Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $35,812,925.00
+- Contract surface: 6 unique implementations (6 raw deployments)
+- DeFi Llama TVL: $35,799,876.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -26,9 +26,9 @@ The protocol consists of a single product family centered around the YUSD token,
 - Verified implementations audited: 0/5 (0.0%)
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 5
+- Unverified implementations: 1
+- Unique implementations: 6
+- Raw deployments: 6
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -68,11 +68,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployments | Audit Status |
+|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | `0xab3dbc...22c61f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

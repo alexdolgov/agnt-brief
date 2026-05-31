@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bydfi",
-  "generated_at": "2026-05-31T07:37:56.243Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-05-31T14:53:59.030Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-27-de70dc-1ce2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bydfi",
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "BYDFi is a centralized exchange (CEX) that uses a Gnosis Safe multisig wallet on Ethereum to manage its on-chain funds and operations.",
-    "relationship_narrative": "The single product family consists of a Gnosis Safe proxy, which serves as the core on-chain infrastructure for the exchange's Ethereum operations.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

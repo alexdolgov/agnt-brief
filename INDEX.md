@@ -348,7 +348,7 @@
 | [mangrove](./mangrove/) | $4.3M | 24.4% | ? | active | 8 | 68 | 2026-05-23 |
 | [mansory](./mansory/) | $0.0 | 0.0% | $0.0 | active | 3 | 5 | 2026-05-29 |
 | [manta-atlantic-stake](./manta-atlantic-stake/) | $5.4M | 0.0% | ? | sunsetting | 0 | 109 | 2026-05-30 |
-| [manta-cedefi](./manta-cedefi/) | $26.8M | 0.0% | ? | unknown | 3 | 17 | 2026-05-29 |
+| [manta-cedefi](./manta-cedefi/) | $26.7M | 0.0% | ? | unknown | 0 | 17 | 2026-05-31 |
 | [manta-pacific](./manta-pacific/) | $25.2M | 0.0% | ? | active | 3 | 3 | 2026-05-29 |
 | [mantra-dao](./mantra-dao/) | $612.5M | 0.0% | $612.5M | declining | 1 | 209 | 2026-05-25 |
 | [matstake](./matstake/) | $4.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
@@ -506,8 +506,8 @@
 | [rook](./rook/) | $6.8M | 0.0% | $6.8M | dead | 3 | 74 | 2026-05-29 |
 | [rooster-protocol](./rooster-protocol/) | $2.2M | 0.0% | ? | unknown | 1 | 0 | 2026-05-24 |
 | [rosen-bridge](./rosen-bridge/) | $2.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
-| [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | declining | 3 | 14 | 2026-05-29 |
-| [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 3 | 15 | 2026-05-29 |
+| [royco-protocol](./royco-protocol/) | $7.2 | 0.0% | $7.2 | declining | 0 | 14 | 2026-05-31 |
+| [rsk-bridge](./rsk-bridge/) | $1.0M | 0.0% | ? | dead | 0 | 15 | 2026-05-31 |
 | [rumpel-labs](./rumpel-labs/) | $1.0B | 2.0% | $1.0B | declining | 4 | 115 | 2026-05-25 |
 | [rysk-finance](./rysk-finance/) | $21.4M | 0.0% | $21.4M | active | 3 | 186 | 2026-05-29 |
 | [saber](./saber/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
@@ -520,7 +520,7 @@
 | [scallop](./scallop/) | $38.2M | 0.0% | ? | unknown | 4 | 0 | 2026-05-27 |
 | [sceptre-liquid](./sceptre-liquid/) | $20.3M | 0.0% | ? | unknown | 1 | 0 | 2026-05-22 |
 | [scream](./scream/) | $1.3M | 0.0% | ? | dead | 2 | 1 | 2026-05-29 |
-| [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 3 | 32 | 2026-05-29 |
+| [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 0 | 32 | 2026-05-31 |
 | [scrub-money](./scrub-money/) | $7.1M | 0.0% | ? | active | 1 | 19 | 2026-05-23 |
 | [sdai](./sdai/) | $3.8K | 0.0% | $3.8K | active | 0 | 93 | 2026-05-27 |
 | [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | declining | 5 | 99 | 2026-05-31 |
@@ -569,7 +569,7 @@
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 3 | 2 | 2026-05-29 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-05-23 |
 | [stake.link](./stake.link/) | $76.8M | 60.9% | $35.9K | active | 20 | 71 | 2026-05-31 |
-| [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 3 | 183 | 2026-05-29 |
+| [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 0 | 183 | 2026-05-31 |
 | [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 18 | 3 | 2026-05-23 |
 | [standx](./standx/) | $12.7M | 50.0% | $12.7M | unknown | 6 | 18 | 2026-05-26 |
 | [stargate-finance](./stargate-finance/) | $203.9M | 50.0% | $5.2M | active | 20 | 294 | 2026-05-30 |

@@ -7,8 +7,8 @@
 - Project: KyberSwap (`kyberswap`)
 - Website: [https://kyberswap.com](https://kyberswap.com)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-30T11:04:58.518Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T06:39:24.377Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: arbitrum, aurora, avalanche, base, bsc, cronos, ethereum, fantom, linea, optimism, polygon, polygon-zkevm, scroll, unichain, zksync-era
 - Contract surface: 445 unique implementations (642 raw deployments)
 - DeFi Llama TVL: $10,470,441.00
@@ -31,11 +31,11 @@ The KyberSwap Aggregator routes trades through Classic and Elastic pools, while 
 - Unverified implementations: 309
 - Unique implementations: 445
 - Raw deployments: 642
-- Audits discovered: 15
+- Audits discovered: 11
 - Scoreable audits (matched contracts): 10
 - ASD (verified + unaudited TVL): $58,323,780.48
 - Latest audit: 2026-01 (fresh)
-- Staleness: 2 fresh, 0 aging, 3 stale, 10 unknown
+- Staleness: 2 fresh, 0 aging, 3 stale, 6 unknown
 - Tier 1 coverage: 7.4% (ChainSecurity, Spearbit)
 - Note: This protocol is classified as [dead]. ASD of $58,323,780.48 represents exposure in a protocol with dead activity.
 
@@ -537,10 +537,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [ChainSecurity_KyberNetwork_Public.pdf](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV2Audit/ChainSecurity_KyberNetwork_Public.pdf) | ChainSecurity | Audit | 2018-06 | stale | Direct | contract_name | 18 | high |
 | [ChainSecurity_Kyberv3.pdf](https://github.com/KyberNetwork/smart-contracts/blob/master/audits/kyberV3Audit/ChainSecurity_Kyberv3.pdf) | ChainSecurity | Audit | 2019-01 | stale | Direct | contract_name | 16 | high |
 | [audits.md](https://github.com/KyberNetwork/kyberswap-documentation/blob/main/security/audits.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [code.md](https://github.com/KyberNetwork/KyberSwap-iOS/blob/release/docs/code.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Kyber-Hook-Uniswap-Foundation-Spearbit-Security-Review-October-2025.pdf](https://github.com/spearbit/portfolio/blob/master/pdfs/Kyber-Hook-Uniswap-Foundation-Spearbit-Security-Review-October-2025.pdf) | Spearbit | Audit | 2025-10 | fresh | Direct | contract_name | 3 | high |
 | [kyberswap-dec-25(Final).pdf](https://github.com/Hexens/Smart-Contract-Review-Public-Reports/blob/main/kyberswap-dec-25(Final).pdf) | unknown | Audit | 2026-01 | fresh | Direct | contract_name | 1 | high |
 
@@ -642,7 +638,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=9, low=1
 - Match method counts: extraction_exact=110
@@ -650,9 +646,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [10247] audits.md
-- [10248] code.md
-- [10249] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [10250] 0002-metadata-manifest-and-pull-command.md
-- [10251] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

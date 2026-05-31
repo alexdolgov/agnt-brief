@@ -6,8 +6,8 @@
 | Address | `0x02b51ebf3e96b659078ffa48b3b79b8bf768fb37` |
 | Role | adapter |
 | Origin | native |
-| Audited | Yes |
-| Audits | [deployed-contracts.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/deployments/deployed-contracts.md) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 2 (ethereum [`0x02b51ebf3e96b659078ffa48b3b79b8bf768fb37`](../0x02b51ebf3e96b659078ffa48b3b79b8bf768fb37/); ethereum `0x4253099a71055425c0d1cc324f55ef44dab04123`) |
 | Proxy | No |
 | Source | Sourcify (full match) |

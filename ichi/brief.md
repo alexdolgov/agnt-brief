@@ -5,8 +5,8 @@
 - Project: ICHI (`ichi`)
 - Website: [https://www.ichi.org](https://www.ichi.org)
 - Lifecycle: active (Tier 0, 90.3% below peak)
-- Generated: 2026-05-29T19:27:51.184Z
-- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
+- Generated: 2026-05-31T06:36:27.388Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: arbitrum, avalanche, base, blast, bsc, celo, ethereum, fantom, kava, linea, mantle, mode, opbnb, polygon, polygon-zkevm, scroll, sonic, zksync-era
 - Contract surface: 616 unique implementations (1073 raw deployments)
 - DeFi Llama TVL: $12,782,422.64
@@ -29,11 +29,11 @@ The ICHI Vaults family relies on factory contracts like ICHIVaultFactory and Reb
 - Unverified implementations: 501
 - Unique implementations: 616
 - Raw deployments: 1073
-- Audits discovered: 4
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $36,116,255.20
 - Latest audit: 2021-04 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -695,9 +695,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [CertiK Audit Report for ICHI - FarmV2.pdf](https://github.com/ichifarm/ichi-farming/blob/main/audits/CertiK%20Audit%20Report%20for%20ICHI%20-%20FarmV2.pdf) | CertiK | Audit | 2021-04 | stale | Direct | contract_name | 2 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -800,15 +797,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=2
-
-Zero-match audit list:
-
-- [6949] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [6950] 0002-metadata-manifest-and-pull-command.md
-- [6951] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

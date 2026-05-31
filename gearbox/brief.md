@@ -7,8 +7,8 @@
 - Project: Gearbox (`gearbox`)
 - Website: [https://gearbox.finance/](https://gearbox.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-30T10:59:52.088Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T06:39:57.231Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: arbitrum, ethereum, optimism, sonic
 - Contract surface: 197 unique implementations (1712 raw deployments)
 - DeFi Llama TVL: $36,875,117.03
@@ -25,18 +25,18 @@ Lending Pools supply liquidity to Credit Managers, which use Price Feeds for col
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 60/102 (58.8%)
-- Verified + Unaudited implementations: 42
+- Verified implementations audited: 59/102 (57.8%)
+- Verified + Unaudited implementations: 43
 - Verified by bytecode match: 0
 - Unverified implementations: 95
 - Unique implementations: 197
 - Raw deployments: 1712
-- Audits discovered: 121
-- Scoreable audits (matched contracts): 52
+- Audits discovered: 51
+- Scoreable audits (matched contracts): 33
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/gearbox/information))
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-07 (fresh)
-- Staleness: 1 fresh, 10 aging, 28 stale, 81 unknown
+- Staleness: 1 fresh, 10 aging, 28 stale, 11 unknown
 - Tier 1 coverage: 50.0% (ChainSecurity, ConsenSys Diligence, MixBytes)
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -44,8 +44,8 @@ Lending Pools supply liquidity to Credit Managers, which use Price Feeds for col
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 52 | 51.0% | 2025-02 |
 | ChainSecurity | Tier 1 | 48 | 47.1% | 2025-07 |
+| unknown | Tier 2 | 48 | 47.1% | 2025-02 |
 | ABDK | Tier 2 | 24 | 23.5% | 2023-12 |
 | Sigma Prime | Tier 2 | 14 | 13.7% | 2022-08 |
 | Consensys Diligence | Tier 1 | 11 | 10.8% | 2022-08 |
@@ -56,7 +56,7 @@ Lending Pools supply liquidity to Credit Managers, which use Price Feeds for col
 
 ## Contract Surface
 
-### ✅ Verified + Audited (60)
+### ✅ Verified + Audited (59)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -108,7 +108,6 @@ Lending Pools supply liquidity to Credit Managers, which use Price Feeds for col
 | PriceOracle | operational_periphery | ethereum | [`0x638589...0ff681`](./contracts/ethereum-1/0x6385892acb085eaa24b745a712c9e682d80ff681/) | ✅ Audited |
 | PriceOracleV3 | operational_periphery | ethereum | [`0x599f58...fdfb85`](./contracts/ethereum-1/0x599f585d1042a14aab194ac8031b2048defdfb85/) | ✅ Audited |
 | RedstonePriceFeed | operational_periphery | ethereum | 25 deployments: ethereum [`0x007a36...119746`](./contracts/ethereum-1/0x007a36b491647ee735446a385f1e5e0eb3119746/); ethereum `0x154d98...84ec72`; ethereum `0x341dd3...0022e4`; ethereum `0x3d690e...259c3e`; ethereum `0x3e7265...da7d6f`; ethereum `0x466bb6...484d7f`; ethereum `0x47c99d...36e428`; ethereum `0x5157e1...d654ac`; ethereum `0x6f1399...eb6ce6`; ethereum `0x6f87d0...1eb1aa`; ethereum `0x744cb1...5f17dc`; ethereum `0x7ca9fd...98585c`; ethereum `0x8a58f9...8e3513`; ethereum `0x8dbfad...bbe6d2`; ethereum `0x8e23f1...7bfef0`; ethereum `0xa0b938...fe006b`; ethereum `0xa7cb34...37ed76`; ethereum `0xae9ee7...0e5945`; ethereum `0xafc508...8822c3`; ethereum `0xb7552e...8a9aaa`; ethereum `0xbedf14...2d5b93`; ethereum `0xc9406b...d0acea`; ethereum `0xc9c91d...d4f2fb`; ethereum `0xcf1fdc...ac362a`; ethereum `0xf05244...123daf` | ✅ Audited |
-| Router | adapter | ethereum | 2 deployments: ethereum [`0x02b51e...68fb37`](./contracts/ethereum-1/0x02b51ebf3e96b659078ffa48b3b79b8bf768fb37/); ethereum `0x425309...b04123` | ✅ Audited |
 | StakingRewardsPhantomToken | token | ethereum | 2 deployments: ethereum [`0xcb5d10...ab370e`](./contracts/ethereum-1/0xcb5d10a57aeb622b92784d53f730ee2210ab370e/); ethereum `0xe144e8...bb288c` | ✅ Audited |
 | Timelock | governance | ethereum | [`0xa133c9...bdf23b`](./contracts/ethereum-1/0xa133c9a92fb8ddb962af1cbae58b2723a0bdf23b/) | ✅ Audited |
 | TokenDistributor | operational_periphery | ethereum | 5 deployments: ethereum [`0x1e0254...704b4b`](./contracts/ethereum-1/0x1e0254312fa22b62ea1c7ece78480f5a63704b4b/); ethereum `0x8a755a...4400d7`; ethereum `0xaf34b1...97c369`; ethereum `0xbf5753...23dd4c`; ethereum `0xf7512b...0e2c27` | ✅ Audited |
@@ -121,7 +120,7 @@ Lending Pools supply liquidity to Credit Managers, which use Price Feeds for col
 | YearnV2Adapter | adapter | ethereum | 13 deployments: ethereum [`0x0afb33...e9caba`](./contracts/ethereum-1/0x0afb33767cab3f7a855f59abac8e789978e9caba/); ethereum `0x215ecb...164ce2`; ethereum `0x520337...0db708`; ethereum `0x765bac...f4392a`; ethereum `0x79404c...624bda`; ethereum `0x79eb63...0dbc1c`; ethereum `0x7fa1c0...5b9207`; ethereum `0x8c8045...6b66fe`; ethereum `0xa6257e...82ee39`; ethereum `0xd389a0...d9aaf6`; ethereum `0xdfcd89...032765`; ethereum `0xf9d496...480327`; ethereum `0xfa5eab...ec6ba1` | ✅ Audited |
 | ZeroPriceFeed | operational_periphery | ethereum | 4 deployments: ethereum [`0x7cffca...b0eb32`](./contracts/ethereum-1/0x7cffca0c682c8285a2eff75ed3be6a1fd5b0eb32/); ethereum `0xaaaf70...86b119`; ethereum `0xc04452...2e386e`; ethereum `0xe279b2...52a516` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (42)
+### ⚠️ Verified + Unaudited (43)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -157,6 +156,7 @@ Lending Pools supply liquidity to Credit Managers, which use Price Feeds for col
 | OnchainAPMock | unknown | ethereum | [`0xbf6cdb...54558e`](./contracts/ethereum-1/0xbf6cdbb904c5a89191b194252eb5cc778a54558e/) | ⚠️ Unaudited |
 | PauseMulticall | periphery | ethereum | [`0xd7b069...6ab6ff`](./contracts/ethereum-1/0xd7b069517246edb58ce670485b4931e0a86ab6ff/) | ⚠️ Unaudited |
 | RewardManager | governance | ethereum | 2 deployments: ethereum [`0x1a2a2d...75e7ec`](./contracts/ethereum-1/0x1a2a2dc0aab0defc092ed8636330eaebd975e7ec/); ethereum `0xb446d7...ba08f4` | ⚠️ Unaudited |
+| Router | adapter | ethereum | 2 deployments: ethereum [`0x02b51e...68fb37`](./contracts/ethereum-1/0x02b51ebf3e96b659078ffa48b3b79b8bf768fb37/); ethereum `0x425309...b04123` | ⚠️ Unaudited |
 | RouterV3 | adapter | ethereum | [`0xc46613...35ed66`](./contracts/ethereum-1/0xc46613db74c8b734d8074e7d02239139cb35ed66/) | ⚠️ Unaudited |
 | SimpleQuorumImmediateExecutionStrategy | core_logic | ethereum | 4 deployments: ethereum [`0x10814b...38cd39`](./contracts/ethereum-1/0x10814bbd1ab72b704b910c9ef736b58bd338cd39/); ethereum `0x1ebba1...a404c1`; ethereum `0x67d457...418e03`; ethereum `0xb019f7...1ae0d8` | ⚠️ Unaudited |
 | SimpleReadAccessController | governance | ethereum | [`0x70e7d9...a02ab9`](./contracts/ethereum-1/0x70e7d9a2fe6225d926b7c0bb728529eb64a02ab9/) | ⚠️ Unaudited |
@@ -329,84 +329,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [MixBytes_security_audit_report.pdf](https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/MixBytes_security_audit_report.pdf) | MixBytes | Audit | 2021-12 | stale | Direct | contract_name | 25 | high |
 | [Peckshield-03.05.2021.pdf](https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/Peckshield-03.05.2021.pdf) | PeckShield | Audit | 2021-05 | stale | Direct | contract_name | 3 | medium |
 | [Peckshield-10.08.2021.pdf](https://github.com/Gearbox-protocol/gearbox-contracts/blob/master/audits/Peckshield-10.08.2021.pdf) | PeckShield | Audit | 2021-08 | stale | Direct | contract_name | 4 | high |
-| [working-list.md](https://github.com/Gearbox-protocol/gearbox-ninja/blob/next/docs/working-list.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Gearbox.pdf](https://github.com/Gearbox-protocol/static/blob/main/public/docs/Gearbox.pdf) | unknown | Audit | 2021-04 | stale | Direct | n/a | 0 | n/a |
-| [adapter.md (also discovered via alternate URL)](https://github.com/Gearbox-protocol/charts_server/blob/master/docs/adapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [profiling.md](https://github.com/Gearbox-protocol/charts_server/blob/master/docs/profiling.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [swagger.md](https://github.com/Gearbox-protocol/charts_server/blob/master/docs/swagger.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [components.md](https://github.com/Gearbox-protocol/sdk-go/blob/master/docs/components.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [test.md](https://github.com/Gearbox-protocol/sdk-go/blob/master/docs/test.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [operation_type.md](https://github.com/Gearbox-protocol/third-eye/blob/master/docs/operation_type.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [schema.md](https://github.com/Gearbox-protocol/third-eye/blob/master/docs/schema.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [python-analytical-tool.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/analytics/python-analytical-tool.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [risk-free-long-attack.md (also discovered via alternate URL)](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/core-concepts/risk-free-long-attack.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [account-factory.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/architecture/account-factory.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [discovery.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/architecture/discovery.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 2 | low |
-| [roles.md (also discovered via alternate URL)](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/architecture/roles.md) | unknown | Audit | n/a | unknown | Direct | contract_name|n/a | 1 | low |
-| [add-collateral.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/add-collateral.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 14 | low |
-| [architecture.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/architecture.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 22 | medium |
-| [closure.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/closure.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 14 | low |
-| [debt-management.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/debt-management.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [eth.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/eth.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [execute.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/execute.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [intro.md (also discovered via alternate URL)](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/intro.md) | unknown | Audit | n/a | unknown | Direct | contract_name|n/a | 25 | low|medium |
-| [liquidation.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/liquidation.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 13 | low |
-| [multicall.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/multicall.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 13 | low |
-| [open.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/open.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 13 | low |
-| [transfer.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/transfer.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [upgradeable-contracts.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/credit/upgradeable-contracts.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 13 | low |
-| [deployed-contracts.md (also discovered via alternate URL)](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/deployments/deployed-contracts.md) | unknown | Audit | n/a | unknown | Direct | contract_name|n/a | 13 | high |
-| [build.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/integrations/build.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [convex.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/integrations/existing/convex.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [curve.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/integrations/existing/curve.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [lido.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/integrations/existing/lido.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [uniswap.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/integrations/existing/uniswap.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [yearn.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/integrations/existing/yearn.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [universal.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/integrations/universal.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 12 | low |
-| [curve-pricefeed.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/oracle/curve-pricefeed.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [priceoracle.md (also discovered via alternate URL)](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/oracle/priceoracle.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | low |
-| [yearn-pricefeed.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/oracle/yearn-pricefeed.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [economy.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/pools/economy.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 15 | low |
-| [fees.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/pools/fees.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [insurance.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/pools/insurance.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [linearInterestRateModel.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/pools/linearInterestRateModel.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 12 | low |
-| [liquidity.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/pools/liquidity.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [poolservice.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/pools/poolservice.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
-| [fast-check-proof.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/risk/fast-check-proof.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [fast-collateral-check.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/risk/fast-collateral-check.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [liquidation-threshold.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/risk/liquidation-threshold.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [risk.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/documentation/risk/risk.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [collateral.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/risks/collateral.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [chainlink.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/risks/collateral/chainlink.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [notifications.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/risks/notifications.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [smartContract.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/risks/smartContract.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [build-upon-gearbox.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/build-upon-gearbox/build-upon-gearbox.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [multicall-strategy.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/build-upon-gearbox/multicall-strategy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [composable-btc-short.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/build-upon-gearbox/trading-bot/composable-btc-short.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [time-arbitrage-on-seth.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/build-upon-gearbox/trading-bot/time-arbitrage-on-seth.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [trading-bot.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/build-upon-gearbox/trading-bot/trading-bot.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [a-simple-example.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/environment-setup/a-simple-example.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [gearbox-sdk.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/environment-setup/gearbox-sdk.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [initialize-hardhat.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/environment-setup/initialize-hardhat.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [extracting-data.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/extracting-data/extracting-data.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [get-opened-accounts.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/extracting-data/get-opened-accounts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [monitor-your-health-factor.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/extracting-data/monitor-your-health-factor.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [anomaly-detection.md (also discovered via alternate URL)](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/gearbox-discovery/anomaly-detection.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [gearbox-core.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/gearbox-discovery/gearbox-core.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | medium |
-| [gearbox-pools.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/gearbox-discovery/gearbox-pools.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 15 | low |
-| [bot-smart-contracts.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/liquidation-bot/bot-smart-contracts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [credit-service.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/liquidation-bot/credit-service.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [liquidation-bot.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/liquidation-bot/liquidation-bot.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [price-oracle.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/liquidation-bot/price-oracle.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [run-liquidation-bot.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/liquidation-bot/run-liquidation-bot.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [token-service.md](https://github.com/Gearbox-protocol/dev-docs-old/blob/main/docs/tutorials/liquidation-bot/token-service.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [anomaly-detection.md](https://github.com/Gearbox-protocol/dev-gitbook/blob/main/security/anomaly-detection.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [configuration.md](https://github.com/Gearbox-protocol/dev-gitbook/blob/main/security/configuration.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [fast-check-and-healthfactor-protection.md](https://github.com/Gearbox-protocol/dev-gitbook/blob/main/security/fast-check-and-healthfactor-protection.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [flashloan-attack-protection.md](https://github.com/Gearbox-protocol/dev-gitbook/blob/main/security/flashloan-attack-protection.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [overview.md](https://github.com/Gearbox-protocol/dev-gitbook/blob/main/security/overview.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [risk-free-long-attack.md](https://github.com/Gearbox-protocol/dev-gitbook/blob/main/security/risk-free-long-attack.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [roles.md](https://github.com/Gearbox-protocol/dev-gitbook/blob/main/security/roles.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -430,6 +360,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xbf6cdb...54558e`](./contracts/ethereum-1/0xbf6cdbb904c5a89191b194252eb5cc778a54558e/) | OnchainAPMock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd7b069...6ab6ff`](./contracts/ethereum-1/0xd7b069517246edb58ce670485b4931e0a86ab6ff/) | PauseMulticall | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1a2a2d...75e7ec`](./contracts/ethereum-1/0x1a2a2dc0aab0defc092ed8636330eaebd975e7ec/) | RewardManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x02b51e...68fb37`](./contracts/ethereum-1/0x02b51ebf3e96b659078ffa48b3b79b8bf768fb37/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc46613...35ed66`](./contracts/ethereum-1/0xc46613db74c8b734d8074e7d02239139cb35ed66/) | RouterV3 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa8f528...863106`](./contracts/ethereum-1/0xa8f528e6a9eba729bf5e70baebd4b7c0d0863106/) | TallyGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -446,10 +377,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 68
+- Audits with zero matched contracts: 17
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=32, low=16, medium=5
-- Match method counts: extraction_exact=2066
+- Extraction confidence breakdown: high=31, medium=2
+- Match method counts: extraction_exact=1850
 
 Zero-match audit list:
 
@@ -462,64 +393,13 @@ Zero-match audit list:
 - [10121] v3_1-scope.md
 - [10122] 2022-03-25 - uniswapV3.md
 - [10123] 2022-04-10 - forbidden_tokens.md
-- [10130] working-list.md
 - [10132] Gearbox.pdf
-- [10133] adapter.md
-- [10134] profiling.md
-- [10135] swagger.md
-- [10136] components.md
-- [10137] test.md
-- [10138] operation_type.md
-- [10139] schema.md
-- [10141] python-analytical-tool.md
-- [10143] risk-free-long-attack.md
-- [10151] debt-management.md
-- [10152] eth.md
-- [10153] execute.md
-- [10158] transfer.md
-- [10163] build.md
-- [10164] convex.md
-- [10165] curve.md
-- [10167] lido.md
-- [10168] uniswap.md
-- [10169] yearn.md
-- [10173] curve-pricefeed.md
-- [10175] yearn-pricefeed.md
-- [10177] fees.md
-- [10178] insurance.md
-- [10181] liquidity.md
-- [10184] fast-check-proof.md
-- [10185] fast-collateral-check.md
-- [10186] liquidation-threshold.md
-- [10187] risk.md
-- [10190] collateral.md
-- [10191] chainlink.md
-- [10193] notifications.md
-- [10194] smartContract.md
-- [10197] build-upon-gearbox.md
-- [10198] multicall-strategy.md
-- [10199] composable-btc-short.md
-- [10200] time-arbitrage-on-seth.md
-- [10201] trading-bot.md
-- [10202] a-simple-example.md
-- [10203] gearbox-sdk.md
-- [10204] initialize-hardhat.md
-- [10206] extracting-data.md
-- [10207] get-opened-accounts.md
-- [10208] monitor-your-health-factor.md
-- [10209] anomaly-detection.md
-- [10214] bot-smart-contracts.md
-- [10215] credit-service.md
-- [10216] liquidation-bot.md
-- [10217] price-oracle.md
-- [10218] run-liquidation-bot.md
-- [10219] token-service.md
+- [10221] anomaly-detection.md
 - [10222] configuration.md
 - [10223] fast-check-and-healthfactor-protection.md
 - [10224] flashloan-attack-protection.md
 - [10225] overview.md
-- [10228] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [10229] 0002-metadata-manifest-and-pull-command.md
-- [10230] 0003-bun-package-manager-node-runtime.md
+- [10226] risk-free-long-attack.md
+- [10227] roles.md
 
 Fork inheritance lineage and inherited audits are included when available.

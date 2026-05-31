@@ -485,7 +485,7 @@ Each project directory contains:
 | [fulcrom](./fulcrom/brief.md) | $13.32M | cronos, zksync-era | 79 | 0/79 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [galaxy-curation](./galaxy-curation/brief.md) | $67.50M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [gate-us](./gate-us/brief.md) | $56.45M | 7 | 9 | 0/9 (0%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [gearbox](./gearbox/brief.md) | $36.88M | 4 | 197 | 102/197 (52%) | 58.8% | 50.0% (ChainSecurity, ConsenSys Diligence, MixBytes) | 52 | fresh | ⚠️ declining | - |
+| [gearbox](./gearbox/brief.md) | $36.88M | 4 | 197 | 102/197 (52%) | 57.8% | 50.0% (ChainSecurity, ConsenSys Diligence, MixBytes) | 33 | fresh | ⚠️ declining | - |
 | [generic.money](./generic.money/brief.md) | $3.74M | ethereum | 13 | 12/13 (92%) | 75.0% | 75.0% (Spearbit) | 1 | fresh | ✅ active | - |
 | [gimo](./gimo/brief.md) | $9.07M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [goldfinger](./goldfinger/brief.md) | $0.00 | bsc | 5 | 4/5 (80%) | 100.0% | 0.0% (-) | 2 | fresh | ✅ active | - |
@@ -722,5 +722,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-31T06:35:59.085Z_
+_Generated: 2026-05-31T06:40:40.749Z_
 _Projects: 710_

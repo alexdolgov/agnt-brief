@@ -5,8 +5,8 @@
 - Project: Exactly (`exactly`)
 - Website: [https://exact.ly](https://exact.ly)
 - Lifecycle: active (Tier 0, 92.1% below peak)
-- Generated: 2026-05-28T16:50:09.321Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
+- Generated: 2026-05-31T06:38:33.825Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: base, ethereum, optimism
 - Contract surface: 65 unique implementations (1384 raw deployments)
 - DeFi Llama TVL: $3,986,030.96
@@ -29,11 +29,11 @@ Lending Markets rely on Auditor contracts for risk assessment and InterestRateMo
 - Unverified implementations: 21
 - Unique implementations: 65
 - Raw deployments: 1384
-- Audits discovered: 45
+- Audits discovered: 38
 - Scoreable audits (matched contracts): 33
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-03 (fresh)
-- Staleness: 3 fresh, 6 aging, 23 stale, 13 unknown
+- Staleness: 3 fresh, 6 aging, 23 stale, 6 unknown
 - Tier 1 coverage: 9.1% (OpenZeppelin, Sherlock)
 
 ### Auditor Coverage
@@ -177,10 +177,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Quantstamp Exa App Plugin Update (Oct-25).pdf](https://github.com/exactly/audits/blob/main/Quantstamp%20Exa%20App%20Plugin%20Update%20(Oct-25).pdf) | Quantstamp | Audit | 2025-10 | fresh | Direct | contract_name | 11 | high |
 | [Quantstamp Exa App WebAuthn Plugin (Jul-24).pdf](https://github.com/exactly/audits/blob/main/Quantstamp%20Exa%20App%20WebAuthn%20Plugin%20(Jul-24).pdf) | Quantstamp | Audit | 2024-07 | aging | Direct | contract_name | 2 | high |
 | [Sherlock Staking Contract (Aug-24).pdf](https://github.com/exactly/audits/blob/main/Sherlock%20Staking%20Contract%20(Aug-24).pdf) | Sherlock | Contest | 2024-08 | aging | Direct | contract_name | 81 | high |
-| [CHANGELOG.md](https://github.com/exactly/exa/blob/main/docs/CHANGELOG.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index.md](https://github.com/exactly/exa/blob/main/docs/src/content/docs/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [organization-authentication.md](https://github.com/exactly/exa/blob/main/docs/src/content/docs/organization-authentication.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [webhooks.md](https://github.com/exactly/exa/blob/main/docs/src/content/docs/webhooks.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [access-control.md](https://github.com/exactly/docs/blob/main/security/access-control.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 86 | low |
 | [audits.md](https://github.com/exactly/docs/blob/main/security/audits.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [bug-bounty-program.md](https://github.com/exactly/docs/blob/main/security/bug-bounty-program.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
@@ -188,9 +184,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [hypernative.md](https://github.com/exactly/docs/blob/main/security/hypernative.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
 | [testing.md](https://github.com/exactly/docs/blob/main/security/testing.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [2024-06-10-quantstamp.pdf](https://github.com/exactly/webauthn-owner-plugin/blob/main/audits/2024-06-10-quantstamp.pdf) | Quantstamp | Audit | 2024-06 | aging | Direct | contract_name | 2 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -219,7 +212,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 12
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=31, low=2
 - Match method counts: extraction_exact=2381
@@ -227,16 +220,9 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [7924] Cryptecon_Economics_of_the_Exactly_Protocol(Sep-22).pdf
-- [7932] CHANGELOG.md
-- [7933] index.md
-- [7934] organization-authentication.md
-- [7935] webhooks.md
 - [7937] audits.md
 - [7938] bug-bounty-program.md
 - [7939] emergency-procedure.md
 - [7941] testing.md
-- [7943] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7944] 0002-metadata-manifest-and-pull-command.md
-- [7945] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

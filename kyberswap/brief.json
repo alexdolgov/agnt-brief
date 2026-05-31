@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "kyberswap",
-  "generated_at": "2026-05-30T11:04:58.518Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
+  "generated_at": "2026-05-31T06:39:24.377Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-46e6f8-46f2",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "kyberswap",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 6,
     "contracts_unverified": 309,
     "coverage_pct": 9.6,
-    "total_audits": 15,
+    "total_audits": 11,
     "scoreable_audits": 10,
     "dl_tvl_usd": 10470441,
     "tvl_usd": 58323780.4761487,
@@ -86,7 +86,7 @@
       "fresh": 2,
       "aging": 0,
       "stale": 3,
-      "unknown": 10
+      "unknown": 6
     }
   },
   "topography": {
@@ -16027,90 +16027,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 10248,
-      "audit_key": "audit-10248",
-      "report_name": "code.md",
-      "report_url": "https://github.com/KyberNetwork/KyberSwap-iOS/blob/release/docs/code.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10249,
-      "audit_key": "audit-10249",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10250,
-      "audit_key": "audit-10250",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10251,
-      "audit_key": "audit-10251",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 10252,
       "audit_key": "audit-10252",
       "report_name": "Kyber-Hook-Uniswap-Foundation-Spearbit-Security-Review-October-2025.pdf",
@@ -16989,22 +16905,6 @@
       {
         "audit_id": 10247,
         "report_name": "audits.md"
-      },
-      {
-        "audit_id": 10248,
-        "report_name": "code.md"
-      },
-      {
-        "audit_id": 10249,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 10250,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 10251,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "exactly",
-  "generated_at": "2026-05-28T16:50:09.321Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
+  "generated_at": "2026-05-31T06:38:33.825Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-46e6f8-46f2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "exactly",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 21,
     "coverage_pct": 65.9,
-    "total_audits": 45,
+    "total_audits": 38,
     "scoreable_audits": 33,
     "dl_tvl_usd": 3986030.9627900003,
     "tvl_usd": 189515.62700637398,
@@ -59,7 +59,7 @@
       "fresh": 3,
       "aging": 6,
       "stale": 23,
-      "unknown": 13
+      "unknown": 6
     }
   },
   "topography": {
@@ -14913,90 +14913,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 7932,
-      "audit_key": "audit-7932",
-      "report_name": "CHANGELOG.md",
-      "report_url": "https://github.com/exactly/exa/blob/main/docs/CHANGELOG.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7933,
-      "audit_key": "audit-7933",
-      "report_name": "index.md",
-      "report_url": "https://github.com/exactly/exa/blob/main/docs/src/content/docs/index.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7934,
-      "audit_key": "audit-7934",
-      "report_name": "organization-authentication.md",
-      "report_url": "https://github.com/exactly/exa/blob/main/docs/src/content/docs/organization-authentication.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7935,
-      "audit_key": "audit-7935",
-      "report_name": "webhooks.md",
-      "report_url": "https://github.com/exactly/exa/blob/main/docs/src/content/docs/webhooks.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 7936,
       "audit_key": "audit-7936",
       "report_name": "access-control.md",
@@ -15154,69 +15070,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7943,
-      "audit_key": "audit-7943",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7944,
-      "audit_key": "audit-7944",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7945,
-      "audit_key": "audit-7945",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -15350,22 +15203,6 @@
         "report_name": "Cryptecon_Economics_of_the_Exactly_Protocol(Sep-22).pdf"
       },
       {
-        "audit_id": 7932,
-        "report_name": "CHANGELOG.md"
-      },
-      {
-        "audit_id": 7933,
-        "report_name": "index.md"
-      },
-      {
-        "audit_id": 7934,
-        "report_name": "organization-authentication.md"
-      },
-      {
-        "audit_id": 7935,
-        "report_name": "webhooks.md"
-      },
-      {
         "audit_id": 7937,
         "report_name": "audits.md"
       },
@@ -15380,18 +15217,6 @@
       {
         "audit_id": 7941,
         "report_name": "testing.md"
-      },
-      {
-        "audit_id": 7943,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 7944,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 7945,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

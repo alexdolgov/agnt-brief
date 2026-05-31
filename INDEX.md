@@ -199,7 +199,7 @@
 | [eventum-bridge](./eventum-bridge/) | $1.6M | 3.6% | $1.6M | active | 15 | 30 | 2026-05-30 |
 | [everrise](./everrise/) | $23.4M | 0.0% | $23.4M | declining | 2 | 239 | 2026-05-25 |
 | [everything](./everything/) | $945.3K | 0.0% | ? | unknown | 3 | 10 | 2026-05-28 |
-| [exactly](./exactly/) | $189.5K | 65.9% | ? | active | 45 | 65 | 2026-05-28 |
+| [exactly](./exactly/) | $189.5K | 65.9% | ? | active | 38 | 65 | 2026-05-31 |
 | [exmo](./exmo/) | $2.9M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [extra-finance](./extra-finance/) | $100.0 | 21.1% | ? | active | 4 | 268 | 2026-05-26 |
 | [feather](./feather/) | $16.5M | 0.0% | ? | active | 3 | 3 | 2026-05-28 |
@@ -225,7 +225,7 @@
 | [galaxy-curation](./galaxy-curation/) | $67.5M | 0.0% | ? | unknown | 0 | 0 | 2026-05-27 |
 | [gamma](./gamma/) | $24.3K | 29.5% | $24.3K | declining | 33 | 467 | 2026-05-29 |
 | [gate-us](./gate-us/) | $56.5M | 0.0% | ? | active | 3 | 9 | 2026-05-29 |
-| [gearbox](./gearbox/) | $8.0M | 58.8% | ? | declining | 121 | 197 | 2026-05-30 |
+| [gearbox](./gearbox/) | $8.0M | 57.8% | ? | declining | 51 | 197 | 2026-05-31 |
 | [generic.money](./generic.money/) | $3.7M | 75.0% | ? | active | 1 | 13 | 2026-05-24 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 3 | 1 | 2026-05-29 |
 | [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
@@ -248,7 +248,7 @@
 | [hakutora](./hakutora/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [hanji-protocol](./hanji-protocol/) | $2.7M | 16.7% | ? | active | 5 | 289 | 2026-05-30 |
 | [harmonix-finance](./harmonix-finance/) | $4.9M | 10.0% | ? | active | 4 | 127 | 2026-05-23 |
-| [harvest-finance](./harvest-finance/) | $12.9M | 46.4% | ? | declining | 10 | 445 | 2026-05-29 |
+| [harvest-finance](./harvest-finance/) | $12.9M | 46.4% | ? | declining | 6 | 445 | 2026-05-31 |
 | [hashdao-finance](./hashdao-finance/) | $2.8M | 52.6% | ? | dead | 3 | 51 | 2026-05-24 |
 | [hashkey-global](./hashkey-global/) | $15.1M | 0.0% | ? | active | 3 | 2 | 2026-05-29 |
 | [hashport](./hashport/) | $152.6K | 100.0% | ? | sunsetting | 3 | 21 | 2026-05-24 |
@@ -275,7 +275,7 @@
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 3 | 12 | 2026-05-29 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-05-25 |
 | [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 2 | 45 | 2026-05-29 |
-| [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | active | 4 | 616 | 2026-05-29 |
+| [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | active | 1 | 616 | 2026-05-31 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | dead | 3 | 17 | 2026-05-29 |
 | [immutable-zkevm](./immutable-zkevm/) | $29.2M | 18.2% | ? | active | 5 | 11 | 2026-05-22 |
 | [inception](./inception/) | $15.9M | 27.3% | $15.6M | sunsetting | 11 | 79 | 2026-05-23 |
@@ -317,7 +317,7 @@
 | [kodiak](./kodiak/) | $1.5M | 2.8% | $1.5M | declining | 7 | 53 | 2026-05-25 |
 | [kromatika](./kromatika/) | $83.8K | 0.0% | $83.8K | active | 2 | 30 | 2026-05-25 |
 | [kuma-protocol](./kuma-protocol/) | $3.1M | 34.4% | $23.1K | active | 3 | 53 | 2026-05-24 |
-| [kyberswap](./kyberswap/) | $58.3M | 9.6% | $58.3M | dead | 15 | 445 | 2026-05-30 |
+| [kyberswap](./kyberswap/) | $58.3M | 9.6% | $58.3M | dead | 11 | 445 | 2026-05-31 |
 | [lair-finance](./lair-finance/) | $3.4M | 0.0% | $3.4M | active | 11 | 78 | 2026-05-23 |
 | [landx-finance](./landx-finance/) | $1.8M | 100.0% | ? | active | 1 | 3 | 2026-05-24 |
 | [larix](./larix/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |

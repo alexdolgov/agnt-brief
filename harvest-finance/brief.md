@@ -7,8 +7,8 @@
 - Project: Harvest Finance (`harvest-finance`)
 - Website: [https://harvest.finance/](https://harvest.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T18:56:50.037Z
-- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
+- Generated: 2026-05-31T06:39:32.274Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: arbitrum, base, bsc, ethereum, polygon
 - Contract surface: 445 unique implementations (1257 raw deployments)
 - DeFi Llama TVL: $12,929,392.29
@@ -23,11 +23,11 @@
 - Unverified implementations: 180
 - Unique implementations: 445
 - Raw deployments: 1257
-- Audits discovered: 10
+- Audits discovered: 6
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-01 (aging)
-- Staleness: 0 fresh, 1 aging, 4 stale, 5 unknown
+- Staleness: 0 fresh, 1 aging, 4 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -524,10 +524,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Haechi-Harvest.pdf](https://github.com/harvestfi/audits/blob/main/Haechi-Harvest.pdf) | unknown | Audit | 2020-09 | stale | Direct | contract_name | 271 | high |
 | [PeckShield-Harvest.pdf](https://github.com/harvestfi/audits/blob/main/PeckShield-Harvest.pdf) | PeckShield | Audit | 2020-10 | stale | Direct | contract_name | 150 | high |
 | [CertiK-Harvest.pdf](https://github.com/harvestfi/audits/blob/main/CertiK-Harvest.pdf) | CertiK | Audit | 2020-11 | stale | Direct | contract_name | 207 | high |
-| [api.md](https://github.com/harvest-finance/harvest-api/blob/master/docs/api.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [apr-and-apy.md](https://github.com/harvest-finance/harvest-api/blob/master/docs/apr-and-apy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [developer.md](https://github.com/harvest-finance/harvest-api/blob/master/docs/developer.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [integration.md](https://github.com/harvest-finance/harvest-api/blob/master/docs/integration.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Halborn-Harvest-2025.pdf](https://github.com/harvestfi/audits/blob/main/Halborn-Harvest-2025.pdf) | Halborn | Audit | 2025-01 | aging | Direct | contract_name | 436 | high |
 | [README.md](https://github.com/harvestfi/audits/blob/main/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
@@ -550,17 +546,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=5
 - Match method counts: extraction_exact=1242
 
 Zero-match audit list:
 
-- [6936] api.md
-- [6937] apr-and-apy.md
-- [6938] developer.md
-- [6939] integration.md
 - [6941] README.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "harvest-finance",
-  "generated_at": "2026-05-29T18:56:50.037Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-691c43-e9c3",
+  "generated_at": "2026-05-31T06:39:32.274Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-46e6f8-46f2",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "harvest-finance",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 180,
     "coverage_pct": 46.4,
-    "total_audits": 10,
+    "total_audits": 6,
     "scoreable_audits": 5,
     "dl_tvl_usd": 12929392.29156,
     "tvl_usd": 12929392.29156,
@@ -66,7 +66,7 @@
       "fresh": 0,
       "aging": 1,
       "stale": 4,
-      "unknown": 5
+      "unknown": 1
     }
   },
   "topography": {
@@ -21649,90 +21649,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 6936,
-      "audit_key": "audit-6936",
-      "report_name": "api.md",
-      "report_url": "https://github.com/harvest-finance/harvest-api/blob/master/docs/api.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6937,
-      "audit_key": "audit-6937",
-      "report_name": "apr-and-apy.md",
-      "report_url": "https://github.com/harvest-finance/harvest-api/blob/master/docs/apr-and-apy.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6938,
-      "audit_key": "audit-6938",
-      "report_name": "developer.md",
-      "report_url": "https://github.com/harvest-finance/harvest-api/blob/master/docs/developer.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6939,
-      "audit_key": "audit-6939",
-      "report_name": "integration.md",
-      "report_url": "https://github.com/harvest-finance/harvest-api/blob/master/docs/integration.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 6940,
       "audit_key": "audit-6940",
       "report_name": "Halborn-Harvest-2025.pdf",
@@ -21880,22 +21796,6 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 6936,
-        "report_name": "api.md"
-      },
-      {
-        "audit_id": 6937,
-        "report_name": "apr-and-apy.md"
-      },
-      {
-        "audit_id": 6938,
-        "report_name": "developer.md"
-      },
-      {
-        "audit_id": 6939,
-        "report_name": "integration.md"
-      },
       {
         "audit_id": 6941,
         "report_name": "README.md"

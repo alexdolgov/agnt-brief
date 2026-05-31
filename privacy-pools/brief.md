@@ -5,8 +5,8 @@
 - Project: Privacy Pools (`privacy-pools`)
 - Website: [https://privacypools.com/](https://privacypools.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-29T12:50:14.136Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T06:43:04.649Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: arbitrum, ethereum, optimism
 - Contract surface: 1 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $6,624,610.42
@@ -29,11 +29,11 @@ The protocol consists of a single product family with Entrypoint contracts deplo
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 3
-- Audits discovered: 28
-- Scoreable audits (matched contracts): 9
+- Audits discovered: 4
+- Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-05 (aging)
-- Staleness: 0 fresh, 3 aging, 0 stale, 25 unknown
+- Staleness: 0 fresh, 3 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -76,34 +76,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [circuits_audit_oxorio.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/circuits_audit_oxorio.md) | unknown | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
 | [contracts_audit_auditware.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/contracts_audit_auditware.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | high |
 | [contracts_audit_oxorio.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/contracts_audit_oxorio.md) | unknown | Audit | 2025-03 | aging | Direct | contract_name | 3 | high |
 | [entrypoint_upgrade_audit_oxorio.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/entrypoint_upgrade_audit_oxorio.md) | unknown | Audit | 2025-05 | aging | Direct | contract_name | 3 | high |
-| [README.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [deployments.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/deployments.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
-| [dev-guide.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/dev-guide.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [hello.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/hello.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [intro.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/intro.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [asp.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/layers/asp.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contracts.md (also discovered via alternate URL)](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/layers/contracts.md) | unknown | Audit | n/a | unknown | Direct | contract_name|n/a | 3 | medium |
-| [entrypoint.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/layers/contracts/entrypoint.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
-| [privacy-pools.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/layers/contracts/privacy-pools.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [zk.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/layers/zk.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [commitment.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/layers/zk/commitment.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [lean-imt.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/layers/zk/lean-imt.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [core-concepts.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/overview/core-concepts.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [what-is-privacy-pools.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/overview/what-is-privacy-pools.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
-| [privacy-policy.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/privacy-policy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [deposit.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/protocol/deposit.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
-| [ragequit.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/protocol/ragequit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [withdrawal.md (also discovered via alternate URL)](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/protocol/withdrawal.md) | unknown | Audit | n/a | unknown | Direct | contract_name|n/a | 3 | low |
-| [circuits.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/reference/circuits.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [sdk.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/reference/sdk.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [toc.md](https://github.com/0xbow-io/privacy-pools-core/blob/main/docs/docs/toc.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -124,31 +100,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 19
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=3, low=5, medium=1
-- Match method counts: extraction_exact=27
+- Extraction confidence breakdown: high=3
+- Match method counts: extraction_exact=9
 
 Zero-match audit list:
 
-- [7626] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7627] 0002-metadata-manifest-and-pull-command.md
-- [7628] 0003-bun-package-manager-node-runtime.md
 - [7629] circuits_audit_oxorio.md
-- [7633] README.md
-- [7635] dev-guide.md
-- [7636] hello.md
-- [7637] intro.md
-- [7638] asp.md
-- [7641] privacy-pools.md
-- [7642] zk.md
-- [7643] commitment.md
-- [7644] lean-imt.md
-- [7646] core-concepts.md
-- [7648] privacy-policy.md
-- [7650] ragequit.md
-- [7652] circuits.md
-- [7654] sdk.md
-- [7655] toc.md
 
 Fork inheritance lineage and inherited audits are included when available.

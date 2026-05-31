@@ -324,7 +324,7 @@
 | [latch](./latch/) | $189.8 | 0.0% | $189.8 | declining | 3 | 1 | 2026-05-29 |
 | [layerbank](./layerbank/) | $116.7K | 50.0% | ? | dead | 4 | 91 | 2026-05-22 |
 | [lbank](./lbank/) | $9.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
-| [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | unknown | 6 | 108 | 2026-05-29 |
+| [ledgity-yield](./ledgity-yield/) | $5.0M | 0.0% | $5.0M | unknown | 3 | 108 | 2026-05-31 |
 | [lendflare](./lendflare/) | $1.1K | 5.3% | $1.1K | declining | 1 | 74 | 2026-05-25 |
 | [lendle](./lendle/) | $60.7K | 43.2% | $5.6K | sunsetting | 10 | 64 | 2026-05-25 |
 | [lets-get-hai](./lets-get-hai/) | $13.5M | 77.4% | $12.6M | active | 5 | 54 | 2026-05-25 |
@@ -467,7 +467,7 @@
 | [prime-staking](./prime-staking/) | $5.1M | 0.0% | ? | active | 2 | 10 | 2026-05-23 |
 | [primefi](./primefi/) | $4.1M | 0.0% | $4.1M | unknown | 2 | 119 | 2026-05-24 |
 | [privacy-cash](./privacy-cash/) | $48.1K | 0.0% | $48.1K | active | 10 | 6 | 2026-05-24 |
-| [privacy-pools](./privacy-pools/) | $6.6M | 100.0% | ? | active | 28 | 1 | 2026-05-29 |
+| [privacy-pools](./privacy-pools/) | $6.6M | 100.0% | ? | active | 4 | 1 | 2026-05-31 |
 | [probit-global](./probit-global/) | $12.8M | 0.0% | ? | active | 3 | 3 | 2026-05-29 |
 | [proxy](./proxy/) | $735.6 | 8.3% | $735.6 | active | 1 | 278 | 2026-05-22 |
 | [puffer-finance](./puffer-finance/) | $225.1M | 36.4% | $169.2M | active | 4 | 65 | 2026-05-27 |
@@ -523,7 +523,7 @@
 | [scroll-bridge](./scroll-bridge/) | $5.0M | 0.0% | $5.0M | unknown | 3 | 32 | 2026-05-29 |
 | [scrub-money](./scrub-money/) | $7.1M | 0.0% | ? | active | 1 | 19 | 2026-05-23 |
 | [sdai](./sdai/) | $3.8K | 0.0% | $3.8K | active | 0 | 93 | 2026-05-27 |
-| [seamless-protocol](./seamless-protocol/) | $34.8K | 11.4% | $34.8K | declining | 59 | 99 | 2026-05-30 |
+| [seamless-protocol](./seamless-protocol/) | $34.8K | 9.1% | $34.8K | declining | 5 | 99 | 2026-05-31 |
 | [seer](./seer/) | $1.5M | 0.0% | $1.5M | active | 3 | 179 | 2026-05-29 |
 | [sentiment](./sentiment/) | $64.3 | 73.3% | ? | sunsetting | 8 | 297 | 2026-05-25 |
 | [serum](./serum/) | $1.5M | 0.0% | $1.5M | dead | 0 | 53 | 2026-05-25 |
@@ -536,7 +536,7 @@
 | [sideshift](./sideshift/) | $12.3M | 0.0% | $12.3M | unknown | 3 | 2 | 2026-05-29 |
 | [sierra-protocol](./sierra-protocol/) | $39.6M | 4.0% | $5.3M | active | 1 | 78 | 2026-05-26 |
 | [sigma-money](./sigma-money/) | $593.4M | 0.0% | $593.4M | active | 3 | 231 | 2026-05-29 |
-| [silo-finance](./silo-finance/) | $3.3M | 19.4% | $641.3K | unknown | 29 | 529 | 2026-05-29 |
+| [silo-finance](./silo-finance/) | $3.3M | 15.7% | $641.3K | unknown | 10 | 529 | 2026-05-31 |
 | [singularity-finance](./singularity-finance/) | $2.7M | 0.0% | $2.7M | declining | 2 | 1 | 2026-05-23 |
 | [singularv](./singularv/) | $1.1B | 18.6% | $1.1B | unknown | 12 | 83 | 2026-05-29 |
 | [singularx](./singularx/) | $21.4M | 0.0% | $21.4M | active | 3 | 4 | 2026-05-29 |
@@ -568,7 +568,7 @@
 | [stable-jack](./stable-jack/) | $76.9M | 0.0% | $76.9M | active | 1 | 249 | 2026-05-24 |
 | [stablehodl](./stablehodl/) | $7.0M | 0.0% | ? | active | 3 | 2 | 2026-05-29 |
 | [stafi](./stafi/) | $3.9M | 26.1% | $3.9M | declining | 9 | 42 | 2026-05-23 |
-| [stake.link](./stake.link/) | $76.8M | 60.9% | $35.9K | active | 30 | 71 | 2026-05-30 |
+| [stake.link](./stake.link/) | $76.8M | 60.9% | $35.9K | active | 20 | 71 | 2026-05-31 |
 | [stakestone](./stakestone/) | $49.7M | 0.0% | $49.7M | declining | 3 | 183 | 2026-05-29 |
 | [stakingverse](./stakingverse/) | $3.5M | 0.0% | $3.5M | active | 18 | 3 | 2026-05-23 |
 | [standx](./standx/) | $12.7M | 50.0% | $12.7M | unknown | 6 | 18 | 2026-05-26 |

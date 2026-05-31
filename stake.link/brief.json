@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "stake.link",
-  "generated_at": "2026-05-30T11:25:32.869Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-30-255779-2e4e",
+  "generated_at": "2026-05-31T06:43:08.009Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-46e6f8-46f2",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "stake.link",
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 25,
     "coverage_pct": 60.9,
-    "total_audits": 30,
+    "total_audits": 20,
     "scoreable_audits": 18,
     "dl_tvl_usd": 79772694,
     "tvl_usd": 76781543.51025353,
@@ -60,7 +60,7 @@
       "fresh": 6,
       "aging": 6,
       "stale": 8,
-      "unknown": 10
+      "unknown": 0
     }
   },
   "topography": {
@@ -3979,216 +3979,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10472,
-      "audit_key": "audit-10472",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10473,
-      "audit_key": "audit-10473",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10474,
-      "audit_key": "audit-10474",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10475,
-      "audit_key": "audit-10475",
-      "report_name": "eth_key.md",
-      "report_url": "https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/data-sources/eth_key.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10476,
-      "audit_key": "audit-10476",
-      "report_name": "index.md",
-      "report_url": "https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/index.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10477,
-      "audit_key": "audit-10477",
-      "report_name": "bridge.md",
-      "report_url": "https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/resources/bridge.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10478,
-      "audit_key": "audit-10478",
-      "report_name": "ocr_key.md",
-      "report_url": "https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/resources/ocr_key.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10479,
-      "audit_key": "audit-10479",
-      "report_name": "p2p_key.md",
-      "report_url": "https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/resources/p2p_key.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10480,
-      "audit_key": "audit-10480",
-      "report_name": "spec.md",
-      "report_url": "https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/resources/spec.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 10481,
-      "audit_key": "audit-10481",
-      "report_name": "spec_v2.md",
-      "report_url": "https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/resources/spec_v2.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -4336,46 +4126,6 @@
       {
         "audit_id": 10459,
         "report_name": "[2024-04-30] Trust Security - Metis Staking Report.pdf"
-      },
-      {
-        "audit_id": 10472,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 10473,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 10474,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
-      },
-      {
-        "audit_id": 10475,
-        "report_name": "eth_key.md"
-      },
-      {
-        "audit_id": 10476,
-        "report_name": "index.md"
-      },
-      {
-        "audit_id": 10477,
-        "report_name": "bridge.md"
-      },
-      {
-        "audit_id": 10478,
-        "report_name": "ocr_key.md"
-      },
-      {
-        "audit_id": 10479,
-        "report_name": "p2p_key.md"
-      },
-      {
-        "audit_id": 10480,
-        "report_name": "spec.md"
-      },
-      {
-        "audit_id": 10481,
-        "report_name": "spec_v2.md"
       }
     ],
     "inherited_remapped_matches": []

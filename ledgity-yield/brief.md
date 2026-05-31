@@ -7,8 +7,8 @@
 - Project: Ledgity Yield (`ledgity-yield`)
 - Website: [https://ledgity.finance/](https://ledgity.finance/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-29T09:57:52.788Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T06:43:05.554Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: arbitrum, base, ethereum, linea, sonic
 - Contract surface: 108 unique implementations (350 raw deployments)
 - DeFi Llama TVL: $3,188,691.69
@@ -31,11 +31,11 @@ LTokens rely on Yield Vaults for yield generation and on Staking contracts for r
 - Unverified implementations: 51
 - Unique implementations: 108
 - Raw deployments: 350
-- Audits discovered: 6
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,960,398.34
 - Latest audit: 2023 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 5 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $4,960,398.34 represents exposure in a protocol with unknown activity.
 
@@ -189,9 +189,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [privacy-policy.pdf](https://github.com/LedgityLabs/LedgityYield/blob/dev/public/docs/privacy-policy.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [terms-and-conditions.pdf](https://github.com/LedgityLabs/LedgityYield/blob/dev/public/docs/terms-and-conditions.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
 | [slither-report.md](https://github.com/LedgityLabs/ledgity-v2-contracts/blob/dev/audit/slither-report.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -249,7 +246,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 6
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -259,8 +256,5 @@ Zero-match audit list:
 - [8114] privacy-policy.pdf
 - [8115] terms-and-conditions.pdf
 - [8116] slither-report.md
-- [8117] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [8118] 0002-metadata-manifest-and-pull-command.md
-- [8119] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

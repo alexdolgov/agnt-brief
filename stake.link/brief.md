@@ -5,8 +5,8 @@
 - Project: stake.link (`stake.link`)
 - Website: [https://stake.link](https://stake.link)
 - Lifecycle: active (Tier 0, 53.8% below peak)
-- Generated: 2026-05-30T11:25:32.869Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T06:43:08.009Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: arbitrum, base, ethereum, polygon
 - Contract surface: 71 unique implementations (184 raw deployments)
 - DeFi Llama TVL: $79,772,694.00
@@ -29,11 +29,11 @@ All staking families share common infrastructure such as StakingPool, PriorityPo
 - Unverified implementations: 25
 - Unique implementations: 71
 - Raw deployments: 184
-- Audits discovered: 30
+- Audits discovered: 20
 - Scoreable audits (matched contracts): 18
 - ASD (verified + unaudited TVL): $35,905.19
 - Latest audit: 2026-03 (fresh)
-- Staleness: 6 fresh, 6 aging, 8 stale, 10 unknown
+- Staleness: 6 fresh, 6 aging, 8 stale, 0 unknown
 - Tier 1 coverage: 45.7% (Cyfrin)
 
 ### Auditor Coverage
@@ -171,16 +171,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [[2025-08-02] Cyfrin - Vesting.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-08-02%5D%20Cyfrin%20-%20Vesting.pdf) | Cyfrin | Audit | 2025-08 | fresh | Direct | contract_name | 19 | high |
 | [[2026-02-04] Cyfrin - Espresso Staking.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2026-02-04%5D%20Cyfrin%20-%20Espresso%20Staking.pdf) | Cyfrin | Audit | 2026-02 | fresh | Direct | contract_name | 2 | high |
 | [[2026-03-23] Cyfrin - Rebase Batching.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2026-03-23%5D%20Cyfrin%20-%20Rebase%20Batching.pdf) | Cyfrin | Audit | 2026-03 | fresh | Direct | contract_name | 5 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [eth_key.md](https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/data-sources/eth_key.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index.md](https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [bridge.md](https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/resources/bridge.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ocr_key.md](https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/resources/ocr_key.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [p2p_key.md](https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/resources/p2p_key.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [spec.md](https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/resources/spec.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [spec_v2.md](https://github.com/linkpoolio/terraform-provider-chainlink/blob/master/docs/resources/spec_v2.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -211,7 +201,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 12
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=18
 - Match method counts: extraction_exact=459
@@ -220,15 +210,5 @@ Zero-match audit list:
 
 - [10458] [2024-04-30] Trust Security - Insurance Pool Report.pdf
 - [10459] [2024-04-30] Trust Security - Metis Staking Report.pdf
-- [10472] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [10473] 0002-metadata-manifest-and-pull-command.md
-- [10474] 0003-bun-package-manager-node-runtime.md
-- [10475] eth_key.md
-- [10476] index.md
-- [10477] bridge.md
-- [10478] ocr_key.md
-- [10479] p2p_key.md
-- [10480] spec.md
-- [10481] spec_v2.md
 
 Fork inheritance lineage and inherited audits are included when available.

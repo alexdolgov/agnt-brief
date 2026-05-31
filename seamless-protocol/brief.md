@@ -7,8 +7,8 @@
 - Project: Seamless Protocol (`seamless-protocol`)
 - Website: [https://www.seamlessprotocol.com](https://www.seamlessprotocol.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-30T11:14:56.749Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T06:42:02.666Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
 - Chains: base, ethereum
 - Contract surface: 99 unique implementations (321 raw deployments)
 - DeFi Llama TVL: $46,492,107.00
@@ -25,17 +25,17 @@ The Governance family controls protocol parameters and emissions that affect all
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 10/88 (11.4%)
-- Verified + Unaudited implementations: 78
+- Verified implementations audited: 8/88 (9.1%)
+- Verified + Unaudited implementations: 80
 - Verified by bytecode match: 0
 - Unverified implementations: 11
 - Unique implementations: 99
 - Raw deployments: 321
-- Audits discovered: 59
-- Scoreable audits (matched contracts): 18
+- Audits discovered: 5
+- Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): $34,752.77
 - Latest audit: 2025-10 (fresh)
-- Staleness: 1 fresh, 4 aging, 0 stale, 54 unknown
+- Staleness: 1 fresh, 4 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 9.1% (Sherlock, Spearbit)
 - Note: This protocol is classified as [declining]. ASD of $34,752.77 represents exposure in a protocol with declining activity.
 
@@ -43,13 +43,12 @@ The Governance family controls protocol parameters and emissions that affect all
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 10 | 11.4% | n/a |
 | Spearbit | Tier 1 | 8 | 9.1% | 2025-10 |
 | Sherlock | Tier 1 | 7 | 8.0% | 2025-05 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (10)
+### ✅ Verified + Audited (8)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -58,13 +57,11 @@ The Governance family controls protocol parameters and emissions that affect all
 | LeverageToken | token | base | 10 deployments: ethereum `0x603da7...ff0a82`; ethereum `0x604d37...0b97a3`; ethereum `0x642681...c0fc3d`; ethereum `0x98c4e4...3ed1bf`; ethereum `0xc73ce5...b3033f`; ethereum `0xfe9101...2e1856`; base [`0x057a2a...537673`](./contracts/base-8453/0x057a2a1cc13a9af430976af912a27a05de537673/); base `0x603da7...ff0a82`; base `0xa2fcee...1dbb8c`; base `0xe0b2e4...1abe57` | ✅ Audited |
 | MorphoLendingAdapter | adapter | ethereum | 7 deployments: ethereum [`0x00c669...a11a5c`](./contracts/ethereum-1/0x00c66934ebca0f2a845812bc368b230f6da11a5c/); ethereum `0xb224f5...129817`; ethereum `0xcb1eff...3aee58`; ethereum `0xe33eaf...9bd809`; ethereum `0xe9a32a...298f1f`; base `0x585cc1...f65c51`; base `0x9558b3...ab253f` | ✅ Audited |
 | MorphoLendingAdapterFactory | adapter | ethereum | 2 deployments: ethereum [`0xce05fb...7ded71`](./contracts/ethereum-1/0xce05fbed9260810bdded179adfdaf737be7ded71/); base `0xdd3341...e68e61` | ✅ Audited |
-| MulticallExecutor | periphery | ethereum | 2 deployments: ethereum [`0x16d02e...fd22e1`](./contracts/ethereum-1/0x16d02ebd89988cad1ce945807b963ab7a9fd22e1/); base `0x9d04f6...64220e` | ✅ Audited |
 | PricingAdapter | adapter | ethereum | 3 deployments: ethereum [`0x44cceb...76c88f`](./contracts/ethereum-1/0x44ccebea0dac17105e91a59e182f65f8d176c88f/); base `0x94e337...b92c4c`; base `0xce05fb...7ded71` | ✅ Audited |
 | RebalanceAdapter | adapter | ethereum | 8 deployments: ethereum [`0x0a4490...d6c127`](./contracts/ethereum-1/0x0a4490233fd6ea02873af11c744d286dc3d6c127/); ethereum `0x1d0c19...efaec8`; ethereum `0x42fc03...d081af`; ethereum `0x5e6b01...c30110`; ethereum `0x821ded...615bd7`; ethereum `0xf7356e...d6a69f`; base `0xa530e6...46dd32`; base `0xd923b2...c24912` | ✅ Audited |
 | SwapAdapter | adapter | base | [`0xfdf71e...e38942`](./contracts/base-8453/0xfdf71e2c2b34cd1f8bb852e7c55e8b926fe38942/) | ✅ Audited |
-| VeloraAdapter | adapter | base | 2 deployments: ethereum `0xc4e581...7db6ba`; base [`0x5c37eb...b3e351`](./contracts/base-8453/0x5c37eb148d4a261acd101e2b997a0f163fb3e351/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (78)
+### ⚠️ Verified + Unaudited (80)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -105,6 +102,7 @@ The Governance family controls protocol parameters and emissions that affect all
 | LiquidationLogic | unknown | base | 2 deployments: base [`0x44659e...cf2dfa`](./contracts/base-8453/0x44659e741a09c0d3c4756e04c559772596cf2dfa/); base `0x524adc...44b837` | ⚠️ Unaudited |
 | LoanLogic | unknown | base | 4 deployments: base [`0x31da38...a378d6`](./contracts/base-8453/0x31da38f0eb1528212de20a3668b795e83ea378d6/); base `0x3e61ba...e4acd0`; base `0x7cbb6f...0ca955`; base `0x9bb43b...904c0e` | ⚠️ Unaudited |
 | MetaMorphoV1_1 | unknown | base | 3 deployments: base [`0x27d8c7...c65c18`](./contracts/base-8453/0x27d8c7273fd3fcc6956a0b370ce5fd4a7fc65c18/); base `0x5a47c8...22f3c7`; base `0x616a4e...273738` | ⚠️ Unaudited |
+| MulticallExecutor | periphery | ethereum | 2 deployments: ethereum [`0x16d02e...fd22e1`](./contracts/ethereum-1/0x16d02ebd89988cad1ce945807b963ab7a9fd22e1/); base `0x9d04f6...64220e` | ⚠️ Unaudited |
 | Pool | core_logic | base | [`0x16e485...bda6cf`](./contracts/base-8453/0x16e48501634dfbb52f556430d788c110e5bda6cf/) | ⚠️ Unaudited |
 | PoolAddressesProvider | core_logic | base | [`0x0e02eb...39f3a0`](./contracts/base-8453/0x0e02eb705be325407707662c6f6d3466e939f3a0/) | ⚠️ Unaudited |
 | PoolAddressesProviderRegistry | registry | base | [`0x90c505...53ef99`](./contracts/base-8453/0x90c5055530c0465abb077fa016a3699a3f53ef99/) | ⚠️ Unaudited |
@@ -143,6 +141,7 @@ The Governance family controls protocol parameters and emissions that affect all
 | V3RateStrategyFactory | registry | base | [`0xc19dd3...c1fed2`](./contracts/base-8453/0xc19dd38d22600202fbdb36584981b9a55ec1fed2/) | ⚠️ Unaudited |
 | VariableDebtToken | token | base | [`0x3800da...475977`](./contracts/base-8453/0x3800da378e17a5b8d07d0144c321163591475977/) | ⚠️ Unaudited |
 | VaultFactory | registry | base | [`0x40292d...7cd0b0`](./contracts/base-8453/0x40292d35b48ff625c648c2a7f0c9e42cd07cd0b0/) | ⚠️ Unaudited |
+| VeloraAdapter | adapter | base | 2 deployments: ethereum `0xc4e581...7db6ba`; base [`0x5c37eb...b3e351`](./contracts/base-8453/0x5c37eb148d4a261acd101e2b997a0f163fb3e351/) | ⚠️ Unaudited |
 | WalletBalanceProvider | unknown | base | [`0xdb0f02...ed5cf7`](./contracts/base-8453/0xdb0f02421f830398d7b59dae8d385e2cd5ed5cf7/) | ⚠️ Unaudited |
 | WrappedTokenAdapter | adapter | base | 3 deployments: base [`0x1508f1...6d2a6d`](./contracts/base-8453/0x1508f1b71210593406f8b614dcc41cdf3e6d2a6d/); base `0x90f890...d5fc44`; base `0xc3e17c...b5f79e` | ⚠️ Unaudited |
 | WrappedTokenGatewayV3 | token | base | [`0xaeeb38...aa1af3`](./contracts/base-8453/0xaeeb3898ede6a6e86864688383e211132baa1af3/) | ⚠️ Unaudited |
@@ -186,60 +185,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Cantina - 1 Oct 2025.pdf](https://github.com/seamless-protocol/leverage-tokens/blob/main/audits/Cantina%20-%201%20Oct%202025.pdf) | Spearbit | Audit | 2025-10 | fresh | Direct | contract_name | 11 | high |
 | [Cantina - 8 May 2025.pdf](https://github.com/seamless-protocol/leverage-tokens/blob/main/audits/Cantina%20-%208%20May%202025.pdf) | Spearbit | Audit | 2025-05 | aging | Direct | contract_name | 22 | medium |
 | [Sherlock - 8 May 2025.pdf](https://github.com/seamless-protocol/leverage-tokens/blob/main/audits/Sherlock%20-%208%20May%202025.pdf) | Sherlock | Contest | 2025-05 | aging | Direct | contract_name | 36 | high |
-| [README.md (also discovered via alternate URL)](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/README.md) | unknown | Audit | n/a | unknown | Direct | contract_name|n/a | 43 | high|medium |
-| [SUMMARY.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/SUMMARY.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 42 | high |
-| [contract.BeaconProxyFactory.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/BeaconProxyFactory.sol/contract.BeaconProxyFactory.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 2 | low |
-| [abstract.FeeManager.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/FeeManager.sol/abstract.FeeManager.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contract.LeverageManager.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/LeverageManager.sol/contract.LeverageManager.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | medium |
-| [contract.LeverageToken.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/LeverageToken.sol/contract.LeverageToken.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 10 | low |
-| [interface.IBeaconProxyFactory.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/IBeaconProxyFactory.sol/interface.IBeaconProxyFactory.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.ICollateralRatiosRebalanceAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/ICollateralRatiosRebalanceAdapter.sol/interface.ICollateralRatiosRebalanceAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IDutchAuctionRebalanceAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/IDutchAuctionRebalanceAdapter.sol/interface.IDutchAuctionRebalanceAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IFeeManager.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/IFeeManager.sol/interface.IFeeManager.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.ILendingAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/ILendingAdapter.sol/interface.ILendingAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.ILeverageManager.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/ILeverageManager.sol/interface.ILeverageManager.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.ILeverageToken.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/ILeverageToken.sol/interface.ILeverageToken.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IMorphoLendingAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/IMorphoLendingAdapter.sol/interface.IMorphoLendingAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IMorphoLendingAdapterFactory.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/IMorphoLendingAdapterFactory.sol/interface.IMorphoLendingAdapterFactory.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IPreLiquidationLendingAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/IPreLiquidationLendingAdapter.sol/interface.IPreLiquidationLendingAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IPreLiquidationRebalanceAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/IPreLiquidationRebalanceAdapter.sol/interface.IPreLiquidationRebalanceAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IRebalanceAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/IRebalanceAdapter.sol/interface.IRebalanceAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IRebalanceAdapterBase.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/IRebalanceAdapterBase.sol/interface.IRebalanceAdapterBase.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IAerodromeRouter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IAerodromeRouter.sol/interface.IAerodromeRouter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IAerodromeSlipstreamRouter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IAerodromeSlipstreamRouter.sol/interface.IAerodromeSlipstreamRouter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IAggregatorV2V3Interface.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IAggregatorV2V3Interface.sol/interface.IAggregatorV2V3Interface.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IAugustusRegistry.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IAugustusRegistry.sol/interface.IAugustusRegistry.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IEtherFiL2ExchangeRateProvider.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IEtherFiL2ExchangeRateProvider.sol/interface.IEtherFiL2ExchangeRateProvider.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IEtherFiL2ModeSyncPool.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IEtherFiL2ModeSyncPool.sol/interface.IEtherFiL2ModeSyncPool.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.ILeverageRouter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/ILeverageRouter.sol/interface.ILeverageRouter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IMulticallExecutor.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IMulticallExecutor.sol/interface.IMulticallExecutor.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IPricingAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IPricingAdapter.sol/interface.IPricingAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IUniswapSwapRouter02.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IUniswapSwapRouter02.sol/interface.IUniswapSwapRouter02.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IUniswapV2Router02.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IUniswapV2Router02.sol/interface.IUniswapV2Router02.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IVeloraAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IVeloraAdapter.sol/interface.IVeloraAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interface.IWETH9.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/interfaces/periphery/IWETH9.sol/interface.IWETH9.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contract.MorphoLendingAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/lending/MorphoLendingAdapter.sol/contract.MorphoLendingAdapter.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 7 | low |
-| [contract.MorphoLendingAdapterFactory.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/lending/MorphoLendingAdapterFactory.sol/contract.MorphoLendingAdapterFactory.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 9 | low |
-| [library.BytesLib.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/libraries/BytesLib.sol/library.BytesLib.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contract.LeverageRouter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/periphery/LeverageRouter.sol/contract.LeverageRouter.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | low |
-| [contract.MulticallExecutor.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/periphery/MulticallExecutor.sol/contract.MulticallExecutor.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 2 | low |
-| [contract.PricingAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/periphery/PricingAdapter.sol/contract.PricingAdapter.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 3 | medium |
-| [contract.VeloraAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/periphery/VeloraAdapter.sol/contract.VeloraAdapter.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 2 | low |
-| [abstract.CollateralRatiosRebalanceAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/rebalance/CollateralRatiosRebalanceAdapter.sol/abstract.CollateralRatiosRebalanceAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [abstract.DutchAuctionRebalanceAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/rebalance/DutchAuctionRebalanceAdapter.sol/abstract.DutchAuctionRebalanceAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [abstract.PreLiquidationRebalanceAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/rebalance/PreLiquidationRebalanceAdapter.sol/abstract.PreLiquidationRebalanceAdapter.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [contract.RebalanceAdapter.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/rebalance/RebalanceAdapter.sol/contract.RebalanceAdapter.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 13 | low |
-| [enum.ActionType.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/types/DataTypes.sol/enum.ActionType.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [enum.ExternalAction.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/types/DataTypes.sol/enum.ExternalAction.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 10 | low |
-| [struct.ActionData.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/types/DataTypes.sol/struct.ActionData.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [struct.Auction.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/types/DataTypes.sol/struct.Auction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [struct.BaseLeverageTokenConfig.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/types/DataTypes.sol/struct.BaseLeverageTokenConfig.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [struct.LeverageTokenConfig.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/types/DataTypes.sol/struct.LeverageTokenConfig.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [struct.LeverageTokenState.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/types/DataTypes.sol/struct.LeverageTokenState.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [struct.RebalanceAction.md](https://github.com/seamless-protocol/leverage-tokens/blob/main/docs/src/src/types/DataTypes.sol/struct.RebalanceAction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -276,6 +221,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x4466d5...0a0352`](./contracts/ethereum-1/0x4466d52b714ef32657db89ec61fab1b7e30a0352/) | LeverageTokenDeploymentBatcher | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x44659e...cf2dfa`](./contracts/base-8453/0x44659e741a09c0d3c4756e04c559772596cf2dfa/) | LiquidationLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x31da38...a378d6`](./contracts/base-8453/0x31da38f0eb1528212de20a3668b795e83ea378d6/) | LoanLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x16d02e...fd22e1`](./contracts/ethereum-1/0x16d02ebd89988cad1ce945807b963ab7a9fd22e1/) | MulticallExecutor | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x16e485...bda6cf`](./contracts/base-8453/0x16e48501634dfbb52f556430d788c110e5bda6cf/) | Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x90c505...53ef99`](./contracts/base-8453/0x90c5055530c0465abb077fa016a3699a3f53ef99/) | PoolAddressesProviderRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xbfb739...b086cf`](./contracts/base-8453/0xbfb7391282a3576892bd1da328269ebac1b086cf/) | PoolConfigurator | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -305,6 +251,7 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0xc19dd3...c1fed2`](./contracts/base-8453/0xc19dd38d22600202fbdb36584981b9a55ec1fed2/) | V3RateStrategyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x3800da...475977`](./contracts/base-8453/0x3800da378e17a5b8d07d0144c321163591475977/) | VariableDebtToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x40292d...7cd0b0`](./contracts/base-8453/0x40292d35b48ff625c648c2a7f0c9e42cd07cd0b0/) | VaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x5c37eb...b3e351`](./contracts/base-8453/0x5c37eb148d4a261acd101e2b997a0f163fb3e351/) | VeloraAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xdb0f02...ed5cf7`](./contracts/base-8453/0xdb0f02421f830398d7b59dae8d385e2cd5ed5cf7/) | WalletBalanceProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x1508f1...6d2a6d`](./contracts/base-8453/0x1508f1b71210593406f8b614dcc41cdf3e6d2a6d/) | WrappedTokenAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xaeeb38...aa1af3`](./contracts/base-8453/0xaeeb3898ede6a6e86864688383e211132baa1af3/) | WrappedTokenGatewayV3 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -322,53 +269,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 41
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=5, low=9, medium=5
-- Match method counts: extraction_exact=307
-
-Zero-match audit list:
-
-- [10390] abstract.FeeManager.md
-- [10394] interface.IBeaconProxyFactory.md
-- [10395] interface.ICollateralRatiosRebalanceAdapter.md
-- [10396] interface.IDutchAuctionRebalanceAdapter.md
-- [10397] interface.IFeeManager.md
-- [10398] interface.ILendingAdapter.md
-- [10399] interface.ILeverageManager.md
-- [10400] interface.ILeverageToken.md
-- [10401] interface.IMorphoLendingAdapter.md
-- [10402] interface.IMorphoLendingAdapterFactory.md
-- [10403] interface.IPreLiquidationLendingAdapter.md
-- [10404] interface.IPreLiquidationRebalanceAdapter.md
-- [10405] interface.IRebalanceAdapter.md
-- [10406] interface.IRebalanceAdapterBase.md
-- [10408] interface.IAerodromeRouter.md
-- [10409] interface.IAerodromeSlipstreamRouter.md
-- [10410] interface.IAggregatorV2V3Interface.md
-- [10411] interface.IAugustusRegistry.md
-- [10412] interface.IEtherFiL2ExchangeRateProvider.md
-- [10413] interface.IEtherFiL2ModeSyncPool.md
-- [10414] interface.ILeverageRouter.md
-- [10415] interface.IMulticallExecutor.md
-- [10416] interface.IPricingAdapter.md
-- [10417] interface.IUniswapSwapRouter02.md
-- [10418] interface.IUniswapV2Router02.md
-- [10419] interface.IVeloraAdapter.md
-- [10420] interface.IWETH9.md
-- [10425] library.BytesLib.md
-- [10432] abstract.CollateralRatiosRebalanceAdapter.md
-- [10433] abstract.DutchAuctionRebalanceAdapter.md
-- [10434] abstract.PreLiquidationRebalanceAdapter.md
-- [10437] enum.ActionType.md
-- [10439] struct.ActionData.md
-- [10440] struct.Auction.md
-- [10441] struct.BaseLeverageTokenConfig.md
-- [10442] struct.LeverageTokenConfig.md
-- [10443] struct.LeverageTokenState.md
-- [10444] struct.RebalanceAction.md
-- [10446] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [10447] 0002-metadata-manifest-and-pull-command.md
-- [10448] 0003-bun-package-manager-node-runtime.md
+- Extraction confidence breakdown: high=3, medium=2
+- Match method counts: extraction_exact=127
 
 Fork inheritance lineage and inherited audits are included when available.

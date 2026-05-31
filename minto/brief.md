@@ -7,8 +7,8 @@
 - Project: Minto (`minto`)
 - Website: [https://minto.finance](https://minto.finance)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-30T11:02:01.040Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T09:59:10.737Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: bsc, ethereum, heco
 - Contract surface: 11 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $3,797,520.69
@@ -31,11 +31,11 @@ The GnosisSafeProxy serves as a shared governance contract for both families, wh
 - Unverified implementations: 3
 - Unique implementations: 11
 - Raw deployments: 12
-- Audits discovered: 4
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $1,664,699.88
 - Latest audit: 2021-07 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $1,664,699.88 represents exposure in a protocol with unknown activity.
 
@@ -92,9 +92,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Audit report](https://files.minto.finance/MintoAuditReport.pdf) | yAudit | Audit | 2021-07 | stale | Direct | contract_name | 1 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -119,15 +116,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=1
-
-Zero-match audit list:
-
-- [10260] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [10261] 0002-metadata-manifest-and-pull-command.md
-- [10262] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

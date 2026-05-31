@@ -5,8 +5,8 @@
 - Project: iAero Protocol (`iaero-protocol`)
 - Website: [https://app.iaero.finance/](https://app.iaero.finance/)
 - Lifecycle: active (Tier 0, 14.6% below peak)
-- Generated: 2026-05-29T19:25:42.476Z
-- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
+- Generated: 2026-05-31T06:48:14.736Z
+- Pipeline run: v2-pipeline-2026-05-31-46e6f8-7f15
 - Chains: base
 - Contract surface: 45 unique implementations (63 raw deployments)
 - DeFi Llama TVL: $1,976,310.20
@@ -29,11 +29,11 @@ The Liquid Staking & Vaults family deposits AERO into Aerodrome's VotingEscrow v
 - Unverified implementations: 5
 - Unique implementations: 45
 - Raw deployments: 63
-- Audits discovered: 2
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $2,717,667.54
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -119,8 +119,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [AUTO_VAULT.md](https://github.com/iaeroProtocol/iaero-frontend/blob/main/docs/AUTO_VAULT.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0X_API_INTEGRATION.md](https://github.com/iaeroProtocol/iaero-sweeper/blob/main/docs/0X_API_INTEGRATION.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -173,14 +171,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [9348] AUTO_VAULT.md
-- [9349] 0X_API_INTEGRATION.md
 
 Fork inheritance lineage and inherited audits are included when available.

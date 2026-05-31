@@ -1,6 +1,6 @@
 # lisk-bridge — Contract Index
 
-97 unique implementations across 2 chains · 211 deployments · 1 audited · 87 unaudited · 9 unverified
+97 unique implementations across 2 chains · 211 deployments · 0 audited · 88 unaudited · 9 unverified
 
 ## adapter (1)
 
@@ -86,7 +86,7 @@
 | [DisputeGameFactory](./ethereum-1/0x0cf7d3706a27cce2017aeb11e8a9c8b5388c282c/) | ethereum | [`0x0cf7d3...8c282c`](./ethereum-1/0x0cf7d3706a27cce2017aeb11e8a9c8b5388c282c/) | ⚠️ Unaudited | Verified |
 | [NodeOperatorsRegistry](./ethereum-1/0xec3567ae258639a0ff5a02f7eaf4e4ae4416c5fe/) | ethereum | [`0xec3567...16c5fe`](./ethereum-1/0xec3567ae258639a0ff5a02f7eaf4e4ae4416c5fe/) | ⚠️ Unaudited | Verified |
 | [OperationsRegistry](./ethereum-1/0xd641ae2ad8a0e72ad92ddeda7cef67ee3f2a49b9/) | ethereum | [`0xd641ae...2a49b9`](./ethereum-1/0xd641ae2ad8a0e72ad92ddeda7cef67ee3f2a49b9/) | ⚠️ Unaudited | Verified |
-| [OptimismMintableERC20Factory (2 deployments)](./ethereum-1/0xc1da06cc5dd5ce23baba924463de7f762039252d/) | ethereum | 2 deployments: ethereum [`0xc1da06...39252d`](./ethereum-1/0xc1da06cc5dd5ce23baba924463de7f762039252d/); ethereum `0xd00e38...a5b3ad` | ✅ Audited | Verified |
+| [OptimismMintableERC20Factory (2 deployments)](./ethereum-1/0xc1da06cc5dd5ce23baba924463de7f762039252d/) | ethereum | 2 deployments: ethereum [`0xc1da06...39252d`](./ethereum-1/0xc1da06cc5dd5ce23baba924463de7f762039252d/); ethereum `0xd00e38...a5b3ad` | ⚠️ Unaudited | Verified |
 | [SX1155NFTFactory](./ethereum-1/0xab7aa6495f8694656b59bc6309d3f6190dbc8b14/) | ethereum | [`0xab7aa6...bc8b14`](./ethereum-1/0xab7aa6495f8694656b59bc6309d3f6190dbc8b14/) | ⚠️ Unaudited | Verified |
 | [XTokenFactory (3 deployments)](./ethereum-1/0x20bf447fe55ac3718538e89c8c32396b174e82a6/) | ethereum | 3 deployments: ethereum [`0x20bf44...4e82a6`](./ethereum-1/0x20bf447fe55ac3718538e89c8c32396b174e82a6/); ethereum `0x247d08...b55c14`; ethereum `0xe1532d...8f33b5` | ⚠️ Unaudited | Verified |
 

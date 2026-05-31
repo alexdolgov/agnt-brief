@@ -94,7 +94,7 @@ Each project directory contains:
 | [stcyber](./stcyber/brief.md) | $1.63M | 4 | 31 | 26/31 (84%) | 0.0% | 0.0% (-) | 0 | aging | ✅ active | $51.36M |
 | [flying-tulip](./flying-tulip/brief.md) | $5.81M | 5 | 62 | 59/62 (95%) | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | $51.25M |
 | [republic-note](./republic-note/brief.md) | $16.05M | avalanche | 2 | 2/2 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $51.20M |
-| [lisk-bridge](./lisk-bridge/brief.md) | $38.11M | base, ethereum | 97 | 88/97 (91%) | 1.1% | 0.0% (-) | 1 | unknown | ✅ active | $51.13M |
+| [lisk-bridge](./lisk-bridge/brief.md) | $38.11M | base, ethereum | 97 | 88/97 (91%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | $51.13M |
 | [stakestone](./stakestone/brief.md) | $23.27M | 8 | 183 | 60/183 (33%) | 0.0% | 0.0% (-) | 0 | unknown | ⚠️ declining | $49.73M |
 | [superfarm](./superfarm/brief.md) | $1.18M | ethereum | 50 | 43/50 (86%) | 9.3% | 0.0% (-) | 7 | unknown | ⚠️ declining | $45.12M |
 | [bancor](./bancor/brief.md) | $30.33M | ethereum | 121 | 81/121 (67%) | 23.5% | 23.5% (ChainSecurity, OpenZeppelin) | 4 | stale | ⚠️ declining | $43.79M |
@@ -722,5 +722,5 @@ Each project directory contains:
 | [zoomex](./zoomex/brief.md) | $23.79M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 43 | 32/43 (74%) | 78.1% | 0.0% (-) | 5 | fresh | ✅ active | - |
 
-_Generated: 2026-05-31T06:47:54.056Z_
+_Generated: 2026-05-31T06:48:56.085Z_
 _Projects: 710_

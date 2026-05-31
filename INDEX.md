@@ -104,7 +104,7 @@
 | [bracket-protocol](./bracket-protocol/) | $923.7M | 16.7% | $920.6M | active | 5 | 60 | 2026-05-25 |
 | [brickken](./brickken/) | $41.7M | 0.0% | ? | active | 3 | 29 | 2026-05-28 |
 | [bridgers](./bridgers/) | $71.9M | 0.0% | $71.9M | active | 1 | 9 | 2026-05-24 |
-| [brotocol](./brotocol/) | $12.2M | 0.0% | ? | active | 3 | 238 | 2026-05-28 |
+| [brotocol](./brotocol/) | $12.2M | 0.0% | ? | active | 0 | 238 | 2026-05-31 |
 | [bscswap](./bscswap/) | $20.3K | 0.0% | $20.3K | active | 0 | 30 | 2026-05-23 |
 | [btcfi](./btcfi/) | $11.8M | 0.0% | ? | active | 3 | 15 | 2026-05-28 |
 | [btcst](./btcst/) | $263.7M | 0.0% | $263.7M | active | 3 | 64 | 2026-05-28 |
@@ -159,7 +159,7 @@
 | [defil](./defil/) | $1.0M | 0.0% | $1.0M | active | 1 | 51 | 2026-05-24 |
 | [defituna](./defituna/) | $1.5M | 0.0% | $1.5M | declining | 11 | 53 | 2026-05-25 |
 | [delta-financial](./delta-financial/) | $4.5M | 0.0% | $4.5M | unknown | 48 | 53 | 2026-05-29 |
-| [deltaprime](./deltaprime/) | $2.6K | 0.0% | $2.6K | active | 3 | 482 | 2026-05-28 |
+| [deltaprime](./deltaprime/) | $2.6K | 0.0% | $2.6K | active | 0 | 482 | 2026-05-31 |
 | [depth](./depth/) | $1.2M | 0.0% | ? | dead | 0 | 1 | 2026-05-25 |
 | [deri](./deri/) | $2.4K | 13.9% | $2.4K | active | 8 | 868 | 2026-05-26 |
 | [derivadex](./derivadex/) | $16.9M | 0.0% | $16.9M | declining | 3 | 9 | 2026-05-28 |
@@ -229,7 +229,7 @@
 | [generic.money](./generic.money/) | $3.7M | 75.0% | ? | active | 1 | 13 | 2026-05-24 |
 | [geth](./geth/) | $16.2M | 0.0% | $16.2M | active | 3 | 1 | 2026-05-29 |
 | [gimo](./gimo/) | $9.1M | 0.0% | ? | unknown | 0 | 0 | 2026-05-23 |
-| [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 3 | 16 | 2026-05-29 |
+| [giza](./giza/) | $119.2M | 0.0% | $119.2M | declining | 0 | 16 | 2026-05-31 |
 | [glif](./glif/) | $727.0K | 0.0% | $727.0K | active | 3 | 6 | 2026-05-29 |
 | [gnosis-protocol-v1](./gnosis-protocol-v1/) | $95.9M | 1.3% | $94.4M | declining | 12 | 112 | 2026-05-29 |
 | [goldfinger](./goldfinger/) | $0.0 | 100.0% | ? | active | 6 | 5 | 2026-05-29 |
@@ -274,7 +274,7 @@
 | [hyperswap](./hyperswap/) | $17.4M | 0.0% | ? | active | 3 | 5 | 2026-05-31 |
 | [hyperwave](./hyperwave/) | $322.7M | 0.0% | $322.7M | active | 3 | 12 | 2026-05-29 |
 | [hypha](./hypha/) | $16.4M | 0.0% | $16.4M | active | 3 | 60 | 2026-05-25 |
-| [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 2 | 45 | 2026-05-29 |
+| [iaero-protocol](./iaero-protocol/) | $2.7M | 0.0% | $2.7M | active | 0 | 45 | 2026-05-31 |
 | [ichi](./ichi/) | $36.1M | 0.9% | $36.1M | active | 1 | 616 | 2026-05-31 |
 | [illuvium](./illuvium/) | $39.8M | 0.0% | $39.8M | dead | 3 | 17 | 2026-05-29 |
 | [immutable-zkevm](./immutable-zkevm/) | $29.2M | 18.2% | ? | active | 5 | 11 | 2026-05-22 |
@@ -332,7 +332,7 @@
 | [liminal](./liminal/) | $1.5M | 0.0% | $1.5M | active | 0 | 53 | 2026-05-25 |
 | [liquidity-house](./liquidity-house/) | $1.4M | 0.0% | ? | unknown | 0 | 0 | 2026-05-24 |
 | [liquidloans](./liquidloans/) | $3.0M | 30.0% | $3.0M | declining | 4 | 20 | 2026-05-24 |
-| [lisk-bridge](./lisk-bridge/) | $51.1M | 1.1% | $51.1M | active | 37 | 97 | 2026-05-29 |
+| [lisk-bridge](./lisk-bridge/) | $51.1M | 0.0% | $51.1M | active | 0 | 97 | 2026-05-31 |
 | [llama-airforce](./llama-airforce/) | $3.5M | 0.0% | $3.5M | active | 3 | 93 | 2026-05-29 |
 | [llamapay](./llamapay/) | $25.8M | 0.0% | ? | active | 5 | 20 | 2026-05-29 |
 | [lockon](./lockon/) | $1.1M | 56.3% | ? | active | 7 | 23 | 2026-05-25 |

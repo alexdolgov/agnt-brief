@@ -5,8 +5,8 @@
 - Project: stake.link (`stake.link`)
 - Website: [https://stake.link](https://stake.link)
 - Lifecycle: active (Tier 0, 53.8% below peak)
-- Generated: 2026-05-31T06:43:08.009Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
+- Generated: 2026-05-31T10:41:44.186Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, ethereum, polygon
 - Contract surface: 71 unique implementations (184 raw deployments)
 - DeFi Llama TVL: $79,772,694.00

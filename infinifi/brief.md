@@ -1,14 +1,14 @@
 # Agentic Audit Brief: infiniFi
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 48.5% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 45.8% over 90 days
 
 ## Project Overview
 
 - Project: infiniFi (`infinifi`)
 - Website: [https://infinifi.xyz?ref=XXKTY1S9](https://infinifi.xyz?ref=XXKTY1S9)
-- Lifecycle: unknown (Tier 0, 52.8% below peak)
-- Generated: 2026-05-29T19:36:11.344Z
-- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
+- Lifecycle: unknown (Tier 0, 49.7% below peak)
+- Generated: 2026-05-31T08:28:21.253Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: bsc, ethereum, plasma
 - Contract surface: 118 unique implementations (208 raw deployments)
 - DeFi Llama TVL: $90,227,546.41
@@ -31,11 +31,11 @@ The Core Contracts family orchestrates user deposits and withdrawals, minting Lo
 - Unverified implementations: 45
 - Unique implementations: 118
 - Raw deployments: 208
-- Audits discovered: 21
+- Audits discovered: 18
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $145,943,366.91
 - Latest audit: 2024-10 (aging)
-- Staleness: 0 fresh, 2 aging, 6 stale, 13 unknown
+- Staleness: 0 fresh, 2 aging, 6 stale, 10 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $145,943,366.91 represents exposure in a protocol with unknown activity.
 
@@ -214,9 +214,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [WatchPug-PtOracle.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-PtOracle.pdf) | WatchPug | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
 | [WatchPug-SparkLinearDiscountOracle.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-SparkLinearDiscountOracle.pdf) | WatchPug | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 | [WatchPug-sAPE.pdf](https://github.com/InfiniFi-Labs/infinifi-sy-adapter-fork/blob/main/audits/WatchPug/WatchPug-sAPE.pdf) | WatchPug | Audit | 2022-12 | stale | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -303,7 +300,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 21
+- Audits with zero matched contracts: 18
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -328,8 +325,5 @@ Zero-match audit list:
 - [4782] WatchPug-PtOracle.pdf
 - [4783] WatchPug-SparkLinearDiscountOracle.pdf
 - [4784] WatchPug-sAPE.pdf
-- [4785] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [4786] 0002-metadata-manifest-and-pull-command.md
-- [4787] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

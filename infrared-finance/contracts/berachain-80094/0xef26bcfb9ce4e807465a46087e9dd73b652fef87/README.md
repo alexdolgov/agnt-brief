@@ -7,7 +7,7 @@
 | Role | unknown |
 | Origin | native |
 | Audited | Yes |
-| Audits | [report-cantinacode-infrared-1.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-1.pdf); [report-cantinacode-infrared-5.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-5.pdf); [report-competition-infrared-contracts.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/report-competition-infrared-contracts.pdf); [AI_AUDIT_NOTES.md](https://github.com/infrared-dao/contracts/blob/master/docs/AI_AUDIT_NOTES.md); [UPGRADE_GUIDE.md](https://github.com/infrared-dao/contracts/blob/master/docs/UPGRADE_GUIDE.md) |
+| Audits | [report-cantinacode-infrared-1.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-1.pdf); [report-cantinacode-infrared-5.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-5.pdf); [report-competition-infrared-contracts.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/report-competition-infrared-contracts.pdf) |
 | Deployments | 1 (berachain [`0xef26bcfb9ce4e807465a46087e9dd73b652fef87`](../0xef26bcfb9ce4e807465a46087e9dd73b652fef87/)) |
 | Proxy | No |
 | Source | Etherscan |

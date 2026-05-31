@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "infrared-finance",
-  "generated_at": "2026-05-29T19:42:07.557Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-691c43-e9c3",
+  "generated_at": "2026-05-31T08:29:18.245Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "infrared-finance",
@@ -43,8 +43,8 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 12,
     "coverage_pct": 100,
-    "total_audits": 36,
-    "scoreable_audits": 17,
+    "total_audits": 27,
+    "scoreable_audits": 14,
     "dl_tvl_usd": 50681737.57562,
     "tvl_usd": 861900.5874273787,
     "tvl_source": "on_chain",
@@ -67,7 +67,7 @@
       "fresh": 15,
       "aging": 11,
       "stale": 1,
-      "unknown": 9
+      "unknown": 0
     }
   },
   "topography": {
@@ -970,8 +970,7 @@
         "audit-5732",
         "audit-5734",
         "audit-5736",
-        "audit-5738",
-        "audit-5744"
+        "audit-5738"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1043,8 +1042,7 @@
         "audit-5732",
         "audit-5734",
         "audit-5736",
-        "audit-5738",
-        "audit-5744"
+        "audit-5738"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1079,9 +1077,7 @@
       "audits_covering": [
         "audit-5732",
         "audit-5734",
-        "audit-5738",
-        "audit-5739",
-        "audit-5744"
+        "audit-5738"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1116,9 +1112,7 @@
       "audits_covering": [
         "audit-5732",
         "audit-5734",
-        "audit-5738",
-        "audit-5739",
-        "audit-5744"
+        "audit-5738"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1197,8 +1191,7 @@
       ],
       "audits_covering": [
         "audit-5724",
-        "audit-5738",
-        "audit-5739"
+        "audit-5738"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1232,8 +1225,7 @@
       ],
       "audits_covering": [
         "audit-5724",
-        "audit-5733",
-        "audit-5739"
+        "audit-5733"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1272,8 +1264,7 @@
         "audit-5729",
         "audit-5732",
         "audit-5733",
-        "audit-5734",
-        "audit-5744"
+        "audit-5734"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1311,8 +1302,7 @@
         "audit-5729",
         "audit-5732",
         "audit-5734",
-        "audit-5738",
-        "audit-5739"
+        "audit-5738"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1425,8 +1415,7 @@
       ],
       "audits_covering": [
         "audit-5724",
-        "audit-5735",
-        "audit-5739"
+        "audit-5735"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -1459,8 +1448,7 @@
         }
       ],
       "audits_covering": [
-        "audit-5718",
-        "audit-5743"
+        "audit-5718"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -2540,224 +2528,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5739,
-      "audit_key": "audit-5739",
-      "report_name": "AI_AUDIT_NOTES.md",
-      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/AI_AUDIT_NOTES.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "BYUSDRewardDistributor",
-        "CuttingBoardDutchAuction",
-        "CuttingBoardManager",
-        "DeployCuttingBoardAuction",
-        "DeployStakedIR",
-        "IRRewardDistributor",
-        "InfraredBERA",
-        "InfraredBERADepositor",
-        "InfraredBERAFeeReceivor",
-        "InfraredBERAV2_1",
-        "InfraredBERAWithdraworLite",
-        "InfraredDeployer",
-        "InfraredV1_10",
-        "InfraredVault",
-        "MultiRewards",
-        "RewardsLib",
-        "StakedIR",
-        "Upgradeable"
-      ],
-      "matched_contracts": 7,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5740,
-      "audit_key": "audit-5740",
-      "report_name": "AI_SECURITY.md",
-      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/AI_SECURITY.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5741,
-      "audit_key": "audit-5741",
-      "report_name": "CUTTING_BOARD_AUCTIONS.md",
-      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/CUTTING_BOARD_AUCTIONS.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5742,
-      "audit_key": "audit-5742",
-      "report_name": "CUTTING_BOARD_SYNDICATE.md",
-      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/CUTTING_BOARD_SYNDICATE.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5743,
-      "audit_key": "audit-5743",
-      "report_name": "IR_BRIDGE.md",
-      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/IR_BRIDGE.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "IROFT",
-        "IROFTAdapter"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5744,
-      "audit_key": "audit-5744",
-      "report_name": "UPGRADE_GUIDE.md",
-      "report_url": "https://github.com/infrared-dao/contracts/blob/master/docs/UPGRADE_GUIDE.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "BribeCollector",
-        "Infrared",
-        "InfraredBERA",
-        "InfraredBERADepositor",
-        "InfraredBERAWithdrawor",
-        "Upgradeable"
-      ],
-      "matched_contracts": 5,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5745,
-      "audit_key": "audit-5745",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5746,
-      "audit_key": "audit-5746",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 5747,
-      "audit_key": "audit-5747",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -2792,11 +2562,11 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 254
+      "extraction_exact": 241
     },
     "extraction_confidence_counts": {
       "high": 12,
-      "medium": 5
+      "medium": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -2852,30 +2622,6 @@
       {
         "audit_id": 5737,
         "report_name": "report-cli-cantina-infrared-0503_final.pdf"
-      },
-      {
-        "audit_id": 5740,
-        "report_name": "AI_SECURITY.md"
-      },
-      {
-        "audit_id": 5741,
-        "report_name": "CUTTING_BOARD_AUCTIONS.md"
-      },
-      {
-        "audit_id": 5742,
-        "report_name": "CUTTING_BOARD_SYNDICATE.md"
-      },
-      {
-        "audit_id": 5745,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 5746,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 5747,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

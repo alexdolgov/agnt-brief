@@ -5,8 +5,8 @@
 - Project: ICHI (`ichi`)
 - Website: [https://www.ichi.org](https://www.ichi.org)
 - Lifecycle: active (Tier 0, 90.3% below peak)
-- Generated: 2026-05-31T06:36:27.388Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-46f2
+- Generated: 2026-05-31T08:25:49.468Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, avalanche, base, blast, bsc, celo, ethereum, fantom, kava, linea, mantle, mode, opbnb, polygon, polygon-zkevm, scroll, sonic, zksync-era
 - Contract surface: 616 unique implementations (1073 raw deployments)
 - DeFi Llama TVL: $12,782,422.64

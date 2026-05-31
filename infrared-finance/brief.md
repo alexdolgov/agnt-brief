@@ -7,8 +7,8 @@
 - Project: Infrared Finance (`infrared-finance`)
 - Website: [https://infrared.finance](https://infrared.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T19:42:07.557Z
-- Pipeline run: v2-pipeline-2026-05-29-691c43-e9c3
+- Generated: 2026-05-31T08:29:18.245Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: berachain, bsc
 - Contract surface: 27 unique implementations (121 raw deployments)
 - DeFi Llama TVL: $50,681,737.58
@@ -31,11 +31,11 @@ The core staking contracts (InfraredBERAV2_1 and InfraredV1_10) interact with su
 - Unverified implementations: 12
 - Unique implementations: 27
 - Raw deployments: 121
-- Audits discovered: 36
-- Scoreable audits (matched contracts): 17
+- Audits discovered: 27
+- Scoreable audits (matched contracts): 14
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-04 (fresh)
-- Staleness: 15 fresh, 11 aging, 1 stale, 9 unknown
+- Staleness: 15 fresh, 11 aging, 1 stale, 0 unknown
 - Tier 1 coverage: 66.7% (Spearbit)
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -135,15 +135,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [report-cantinacode-infrared.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared.pdf) | Spearbit | Audit | 2024-12 | aging | Direct | contract_name | 4 | high |
 | [report-cli-cantina-infrared-0503_final.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/report-cli-cantina-infrared-0503_final.pdf) | Spearbit | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
 | [report-competition-infrared-contracts.pdf](https://github.com/infrared-dao/contracts/blob/master/audits/report-competition-infrared-contracts.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 103 | high |
-| [AI_AUDIT_NOTES.md](https://github.com/infrared-dao/contracts/blob/master/docs/AI_AUDIT_NOTES.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 7 | medium |
-| [AI_SECURITY.md](https://github.com/infrared-dao/contracts/blob/master/docs/AI_SECURITY.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [CUTTING_BOARD_AUCTIONS.md](https://github.com/infrared-dao/contracts/blob/master/docs/CUTTING_BOARD_AUCTIONS.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [CUTTING_BOARD_SYNDICATE.md](https://github.com/infrared-dao/contracts/blob/master/docs/CUTTING_BOARD_SYNDICATE.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IR_BRIDGE.md](https://github.com/infrared-dao/contracts/blob/master/docs/IR_BRIDGE.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | medium |
-| [UPGRADE_GUIDE.md](https://github.com/infrared-dao/contracts/blob/master/docs/UPGRADE_GUIDE.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 5 | medium |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -164,10 +155,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 19
+- Audits with zero matched contracts: 13
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=12, medium=5
-- Match method counts: extraction_exact=254
+- Extraction confidence breakdown: high=12, medium=2
+- Match method counts: extraction_exact=241
 
 Zero-match audit list:
 
@@ -184,11 +175,5 @@ Zero-match audit list:
 - [5730] report-cantinacode-infrared-0310-bribeCollector.pdf
 - [5731] report-cantinacode-infrared-0320.pdf
 - [5737] report-cli-cantina-infrared-0503_final.pdf
-- [5740] AI_SECURITY.md
-- [5741] CUTTING_BOARD_AUCTIONS.md
-- [5742] CUTTING_BOARD_SYNDICATE.md
-- [5745] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5746] 0002-metadata-manifest-and-pull-command.md
-- [5747] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

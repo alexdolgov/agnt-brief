@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "infinifi",
-  "generated_at": "2026-05-29T19:36:11.344Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-29-691c43-e9c3",
+  "generated_at": "2026-05-31T08:28:21.253Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "infinifi",
     "tier": 0,
     "peak_tvl": 190494084,
     "peak_date": "2026-01-07T00:00:00.000Z",
-    "tvl_30d_ago": 82686446,
-    "tvl_90d_ago": 174610324,
-    "tvl_current": 89848175,
+    "tvl_30d_ago": 81879968,
+    "tvl_90d_ago": 176491357,
+    "tvl_current": 95742120,
     "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 164091112,
-    "change_30d_pct": 8.66130949684305,
-    "change_90d_pct": -48.543606734273055,
-    "days_since_peak": 142,
+    "tvl_180d_ago": 166031712,
+    "change_30d_pct": 16.92984540492248,
+    "change_90d_pct": -45.75251636826612,
+    "days_since_peak": 144,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 52.834138933154485
+    "drop_from_peak_pct": 49.74010846447074
   },
   "summary": {
     "total_contracts": 118,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 1,
     "contracts_unverified": 45,
     "coverage_pct": 0,
-    "total_audits": 21,
+    "total_audits": 18,
     "scoreable_audits": 0,
     "dl_tvl_usd": 90227546.41372,
     "tvl_usd": 145943366.90507612,
@@ -56,7 +56,7 @@
       "fresh": 0,
       "aging": 2,
       "stale": 6,
-      "unknown": 13
+      "unknown": 10
     }
   },
   "topography": {
@@ -4916,69 +4916,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4785,
-      "audit_key": "audit-4785",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4786,
-      "audit_key": "audit-4786",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 4787,
-      "audit_key": "audit-4787",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -5717,18 +5654,6 @@
       {
         "audit_id": 4784,
         "report_name": "WatchPug-sAPE.pdf"
-      },
-      {
-        "audit_id": 4785,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 4786,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 4787,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

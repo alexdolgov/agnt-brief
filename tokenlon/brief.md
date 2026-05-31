@@ -7,8 +7,8 @@
 - Project: Tokenlon (`tokenlon`)
 - Website: [https://tokenlon.im](https://tokenlon.im)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-29T16:15:22.284Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Generated: 2026-05-31T11:11:53.023Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 21 unique implementations (34 raw deployments)
 - DeFi Llama TVL: $37,169,283.00
@@ -31,11 +31,11 @@ The Tokenlon AMM family relies on the LON token as the core asset, with LONStaki
 - Unverified implementations: 0
 - Unique implementations: 21
 - Raw deployments: 34
-- Audits discovered: 24
+- Audits discovered: 7
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-07 (stale)
-- Staleness: 0 fresh, 0 aging, 6 stale, 18 unknown
+- Staleness: 0 fresh, 0 aging, 6 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
@@ -101,14 +101,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [API.zh.md](https://github.com/consenlabs/token-core/blob/dev/docs/API.zh.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BUILD.md](https://github.com/consenlabs/token-core/blob/dev/docs/BUILD.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BUILD.zh.md](https://github.com/consenlabs/token-core/blob/dev/docs/BUILD.zh.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [FAQ.md](https://github.com/consenlabs/token-core/blob/dev/docs/FAQ.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [INTEGRATION.md](https://github.com/consenlabs/token-core/blob/dev/docs/INTEGRATION.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [KEYS.zh.md](https://github.com/consenlabs/token-core/blob/dev/docs/KEYS.zh.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [TECH.zh.md](https://github.com/consenlabs/token-core/blob/dev/docs/TECH.zh.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [TRON_SPEC.zh.md](https://github.com/consenlabs/token-core/blob/dev/docs/TRON_SPEC.zh.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [PeckShield-Audit-Report-Tokenlon-LimitOrder-v1.0.pdf](https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-Report-Tokenlon-LimitOrder-v1.0.pdf) | PeckShield | Audit | 2022-05 | stale | Direct | contract_name | 4 | high |
 | [PeckShield-Audit-Report-TokenlonV5.3-v1.0.pdf](https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-Report-TokenlonV5.3-v1.0.pdf) | PeckShield | Audit | 2022-07 | stale | Direct | contract_name | 4 | high |
 | [PeckShield-Audit-Report-Tokenlonv5.2-v1.0.pdf](https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-Report-Tokenlonv5.2-v1.0.pdf) | PeckShield | Audit | 2021-05 | stale | Direct | contract_name | 2 | high |
@@ -116,15 +108,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [PeckShield-Audit-TokenlonV5-v1.0rc.pdf](https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/PeckShield-Audit-TokenlonV5-v1.0rc.pdf) | PeckShield | Audit | 2021-03 | stale | Direct | contract_name | 20 | high |
 | [README.md](https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Tokenlon-v6.0.0-Smart-Contract-Audit-Report-Decurity.pdf](https://github.com/consenlabs/tokenlon-contracts/blob/master/audits/Tokenlon-v6.0.0-Smart-Contract-Audit-Report-Decurity.pdf) | Decurity | Audit | 2023-07 | stale | Direct | contract_name | 3 | high |
-| [configuration.md](https://github.com/consenlabs/tokenlon-mmsk/blob/master/docs/configuration.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [index.md](https://github.com/consenlabs/tokenlon-mmsk/blob/master/docs/index.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [installation.md](https://github.com/consenlabs/tokenlon-mmsk/blob/master/docs/installation.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interfaces.md](https://github.com/consenlabs/tokenlon-mmsk/blob/master/docs/interfaces.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [mmsk-api.md](https://github.com/consenlabs/tokenlon-mmsk/blob/master/docs/mmsk-api.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [preparation.md](https://github.com/consenlabs/tokenlon-mmsk/blob/master/docs/preparation.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -153,30 +136,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 18
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=6
 - Match method counts: extraction_exact=50
 
 Zero-match audit list:
 
-- [5885] API.zh.md
-- [5886] BUILD.md
-- [5887] BUILD.zh.md
-- [5888] FAQ.md
-- [5889] INTEGRATION.md
-- [5890] KEYS.zh.md
-- [5891] TECH.zh.md
-- [5892] TRON_SPEC.zh.md
 - [5898] README.md
-- [5900] configuration.md
-- [5901] index.md
-- [5902] installation.md
-- [5903] interfaces.md
-- [5904] mmsk-api.md
-- [5905] preparation.md
-- [5906] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [5907] 0002-metadata-manifest-and-pull-command.md
-- [5908] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

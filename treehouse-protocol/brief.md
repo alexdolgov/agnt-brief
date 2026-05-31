@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Treehouse Protocol
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 46.1% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL dropped 45.2% over 90 days
 
 ## Project Overview
 
 - Project: Treehouse Protocol (`treehouse-protocol`)
 - Website: [https://www.treehouse.finance/](https://www.treehouse.finance/)
-- Lifecycle: unknown (Tier 0, 86.2% below peak)
-- Generated: 2026-05-30T11:29:55.617Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Lifecycle: unknown (Tier 0, 86.1% below peak)
+- Generated: 2026-05-31T11:10:57.991Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 78 unique implementations (94 raw deployments)
 - DeFi Llama TVL: $87,665,909.37
@@ -31,11 +31,11 @@ The protocol's core Vault and SimpleStakingERC20 token handle staking and liquid
 - Unverified implementations: 9
 - Unique implementations: 78
 - Raw deployments: 94
-- Audits discovered: 23
+- Audits discovered: 20
 - Scoreable audits (matched contracts): 16
 - ASD (verified + unaudited TVL): $1,798,114.23
 - Latest audit: 2026-05 (fresh)
-- Staleness: 6 fresh, 13 aging, 0 stale, 4 unknown
+- Staleness: 6 fresh, 13 aging, 0 stale, 1 unknown
 - Tier 1 coverage: 15.9% (Trail of Bits)
 - Note: This protocol is classified as [unknown]. ASD of $1,798,114.23 represents exposure in a protocol with unknown activity.
 
@@ -162,9 +162,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Rendered PDF capture](https://www.treehouse.finance/One_Rate_To_Rule_Them_All.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Fuzzland tETH Sep Audit Report vF.pdf](https://github.com/treehouse-gaia/audit-report/blob/main/Fuzzland%20tETH%20Sep%20Audit%20Report%20vF.pdf) | unknown | Audit | 2024-09 | aging | Direct | contract_name | 9 | high |
 | [Sigma Prime tETH Aug Audit Report vF.pdf](https://github.com/treehouse-gaia/audit-report/blob/main/Sigma%20Prime%20tETH%20Aug%20Audit%20Report%20vF.pdf) | Sigma Prime | Audit | 2024-08 | aging | Direct | contract_name | 13 | high |
 | [Sigma Prime tETH Mar Audit Report.pdf](https://github.com/treehouse-gaia/audit-report/blob/main/Sigma%20Prime%20tETH%20Mar%20Audit%20Report.pdf) | Sigma Prime | Audit | 2025-03 | aging | Direct | contract_name | 4 | high |
@@ -228,7 +225,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 7
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=16
 - Match method counts: extraction_exact=93
@@ -236,9 +233,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [4607] Rendered PDF capture
-- [11315] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [11316] 0002-metadata-manifest-and-pull-command.md
-- [11317] 0003-bun-package-manager-node-runtime.md
 - [11325] WatchPug TREE Token Mar Audit Report.pdf
 - [11329] WatchPug tAVAX Spectra Audit Report.pdf
 - [11334] WatchPug tETH Feb Audit Report vF2.pdf

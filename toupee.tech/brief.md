@@ -1,14 +1,14 @@
 # Agentic Audit Brief: toupee.tech
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 0.1% over 90 days
+⚠️ Lifecycle status: UNKNOWN - TVL changed 3.6% over 90 days
 
 ## Project Overview
 
 - Project: toupee.tech (`toupee.tech`)
 - Website: [https://www.toupee.tech](https://www.toupee.tech)
-- Lifecycle: unknown (Tier 0, 74.2% below peak)
-- Generated: 2026-05-29T16:21:27.601Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-df0f
+- Lifecycle: unknown (Tier 0, 74.5% below peak)
+- Generated: 2026-05-31T11:08:49.615Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: base
 - Contract surface: 29 unique implementations (53 raw deployments)
 - DeFi Llama TVL: $6,291,303.16
@@ -31,11 +31,11 @@ The BASE Mainnet family contains all core and supporting contracts. The governan
 - Unverified implementations: 4
 - Unique implementations: 29
 - Raw deployments: 53
-- Audits discovered: 3
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $24.29
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 3 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $24.29 represents exposure in a protocol with unknown activity.
 
@@ -106,9 +106,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -149,15 +146,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [7666] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7667] 0002-metadata-manifest-and-pull-command.md
-- [7668] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

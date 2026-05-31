@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "flex",
-  "generated_at": "2026-05-28T16:54:26.245Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
+  "generated_at": "2026-05-31T08:03:38.328Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "flex",
@@ -11,15 +11,15 @@
     "peak_date": "2026-05-24T00:00:00.000Z",
     "tvl_30d_ago": null,
     "tvl_90d_ago": null,
-    "tvl_current": 910927,
+    "tvl_current": 924448,
     "tier0_reason": "no_rule_matched",
     "tvl_180d_ago": null,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 4,
+    "days_since_peak": 7,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 11.283742392531265
+    "drop_from_peak_pct": 9.966916215339696
   },
   "summary": {
     "total_contracts": 1,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 6,
+    "total_audits": 3,
     "scoreable_audits": 0,
     "dl_tvl_usd": 611657.72651,
     "tvl_usd": 611657.72651,
@@ -52,7 +52,7 @@
       "fresh": 2,
       "aging": 0,
       "stale": 0,
-      "unknown": 4
+      "unknown": 1
     }
   },
   "topography": {
@@ -160,69 +160,6 @@
       "extraction_confidence": null,
       "scope_section_found": null,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9633,
-      "audit_key": "audit-9633",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9634,
-      "audit_key": "audit-9634",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9635,
-      "audit_key": "audit-9635",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -261,18 +198,6 @@
       {
         "audit_id": 9632,
         "report_name": "flex-audit-27-april.md"
-      },
-      {
-        "audit_id": 9633,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 9634,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 9635,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
       }
     ],
     "inherited_remapped_matches": []

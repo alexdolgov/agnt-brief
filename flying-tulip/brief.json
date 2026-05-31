@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "flying-tulip",
-  "generated_at": "2026-05-28T16:52:12.487Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
+  "generated_at": "2026-05-31T08:01:33.235Z",
+  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "flying-tulip",
     "tier": 0,
-    "peak_tvl": 4846016.20682,
-    "peak_date": "2026-05-26T00:00:00.000Z",
+    "peak_tvl": 5055461.45985,
+    "peak_date": "2026-05-31T07:34:23.000Z",
     "tvl_30d_ago": null,
     "tvl_90d_ago": null,
-    "tvl_current": 4260988.40075,
+    "tvl_current": 5055461.45985,
     "tier0_reason": "no_rule_matched",
     "tvl_180d_ago": null,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 2,
+    "days_since_peak": 0,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 12.07234522341601
+    "drop_from_peak_pct": 0
   },
   "summary": {
     "total_contracts": 62,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 3,
     "coverage_pct": 0,
-    "total_audits": 2,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 5814816.78194,
     "tvl_usd": 51254594.38726744,
@@ -59,7 +59,7 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 2
+      "unknown": 0
     }
   },
   "topography": {
@@ -3723,50 +3723,7 @@
       "contamination_flag": "cleared"
     }
   ],
-  "audits": [
-    {
-      "audit_id": 7675,
-      "audit_key": "audit-7675",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7676,
-      "audit_key": "audit-7676",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -4201,16 +4158,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 7675,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 7676,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

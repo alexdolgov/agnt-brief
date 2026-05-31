@@ -5,8 +5,8 @@
 - Project: Zoo Finance (`zoo-finance`)
 - Website: [https://zoofi.io](https://zoofi.io)
 - Lifecycle: active (Tier 0, 55.7% below peak)
-- Generated: 2026-05-30T11:47:21.132Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T11:48:26.024Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, base, bsc, sei
 - Contract surface: 58 unique implementations (72 raw deployments)
 - DeFi Llama TVL: $41,364,453.65
@@ -29,11 +29,11 @@ The protocol relies on Uniswap V2 and V3 infrastructure for swaps and liquidity 
 - Unverified implementations: 36
 - Unique implementations: 58
 - Raw deployments: 72
-- Audits discovered: 4
+- Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $83,032,103.36
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 4 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -133,9 +133,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Audit Report (also discovered via alternate URL)](https://doc.zoofi.io/security/audit-report.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -165,7 +162,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
@@ -173,8 +170,5 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [3916] Audit Report
-- [11483] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [11484] 0002-metadata-manifest-and-pull-command.md
-- [11485] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

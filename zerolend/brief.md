@@ -7,8 +7,8 @@
 - Project: ZeroLend (`zerolend`)
 - Website: [https://zerolend.xyz/](https://zerolend.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T06:50:02.050Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-7f15
+- Generated: 2026-05-31T11:47:34.409Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: base, berachain, blast, ethereum, linea, manta, polygon, zksync-era
 - Contract surface: 579 unique implementations (579 raw deployments)
 - DeFi Llama TVL: $16,140,039.00

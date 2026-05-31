@@ -702,13 +702,13 @@
 | [zenlink](./zenlink/) | $5.5M | 0.0% | ? | declining | 1 | 226 | 2026-05-23 |
 | [zerobase-cedefi](./zerobase-cedefi/) | $1.0K | 66.7% | ? | active | 3 | 7 | 2026-05-27 |
 | [zerolend](./zerolend/) | $16.1M | 0.0% | ? | declining | 0 | 579 | 2026-05-31 |
-| [zircuit-finance](./zircuit-finance/) | $180.1M | 0.0% | $180.1M | active | 3 | 3 | 2026-05-29 |
+| [zircuit-finance](./zircuit-finance/) | $180.1M | 0.0% | $180.1M | active | 0 | 3 | 2026-05-31 |
 | [zircuit-staking](./zircuit-staking/) | $178.4M | 21.1% | $140.4M | declining | 10 | 20 | 2026-05-27 |
 | [zircuit](./zircuit/) | $144.2M | 25.0% | $144.2M | declining | 10 | 17 | 2026-05-22 |
 | [zivoe](./zivoe/) | $87.1M | 58.1% | $87.1M | active | 3 | 32 | 2026-05-22 |
 | [zklink-nova](./zklink-nova/) | $33.9M | 15.3% | $33.9M | declining | 11 | 381 | 2026-05-25 |
 | [zkswap-finance](./zkswap-finance/) | $1.3M | 11.1% | ? | active | 8 | 98 | 2026-05-25 |
-| [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 4 | 58 | 2026-05-30 |
+| [zoo-finance](./zoo-finance/) | $83.0M | 0.0% | $83.0M | active | 1 | 58 | 2026-05-31 |
 | [zoomex](./zoomex/) | $23.8M | 0.0% | ? | unknown | 0 | 0 | 2026-05-22 |
 | [zoth](./zoth/) | $6.5 | 78.1% | ? | active | 5 | 43 | 2026-05-24 |
-| [zyfai](./zyfai/) | $1.6B | 0.0% | $1.6B | active | 4 | 106 | 2026-05-29 |
+| [zyfai](./zyfai/) | $1.6B | 0.0% | $1.6B | active | 0 | 106 | 2026-05-31 |

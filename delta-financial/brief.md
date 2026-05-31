@@ -7,8 +7,8 @@
 - Project: Delta Financial (`delta-financial`)
 - Website: [https://www.delta.finance](https://www.delta.finance)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-29T06:57:49.708Z
-- Pipeline run: v2-pipeline-2026-05-29-8b27fb-4212
+- Generated: 2026-05-31T07:45:04.522Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: ethereum
 - Contract surface: 53 unique implementations (110 raw deployments)
 - DeFi Llama TVL: $10,311,499.01
@@ -31,11 +31,11 @@ The protocol consists of a single product family where the deep farming vaults i
 - Unverified implementations: 14
 - Unique implementations: 53
 - Raw deployments: 110
-- Audits discovered: 48
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $4,511,630.13
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 48 unknown
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of $4,511,630.13 represents exposure in a protocol with unknown activity.
 
@@ -130,54 +130,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [_.md (also discovered via alternate URL)](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/_.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [animated.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/animated.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [app-registry.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/app-registry.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [app-state.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/app-state.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [appearance.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/appearance.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [clipboard.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/clipboard.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [dimensions.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/dimensions.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [linking.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/linking.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [pan-responder.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/pan-responder.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [pixel-ratio.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/pixel-ratio.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [platform.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/platform.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [style-sheet.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/style-sheet.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [vibration.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/apis/vibration.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [about-project.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/appendix/about-project.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [unstable-apis.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/appendix/unstable-apis.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [activity-indicator.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/activity-indicator.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [checkbox.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/checkbox.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [image-background.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/image-background.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [image.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/image.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [lists.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/lists.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [modal.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/modal.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [picker.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/picker.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [pressable.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/pressable.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [progress-bar.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/progress-bar.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [scroll-view.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/scroll-view.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [switch.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/switch.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [text-input.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/text-input.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [text.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/text.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [view.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/components/view.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [accessibility.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/concepts/accessibility.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [interactions.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/concepts/interactions.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [localization.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/concepts/localization.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [rendering.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/concepts/rendering.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [styling.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/concepts/styling.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [browser-compatibility.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/getting-started/browser-compatibility.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [help.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/getting-started/help.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [installation.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/getting-started/installation.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [introduction.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/getting-started/introduction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [multi-platform.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/getting-started/multi-platform.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [react-native-compatibility.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/getting-started/react-native-compatibility.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [setup.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/getting-started/setup.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [typescript-support.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/getting-started/typescript-support.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [use-color-scheme.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/hooks/use-color-scheme.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [use-locale-context.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/hooks/use-locale-context.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [use-window-dimensions.md](https://github.com/necolas/react-native-web/blob/master/packages/react-native-web-docs/src/pages/docs/hooks/use-window-dimensions.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -223,60 +175,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 48
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [7230] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7231] 0002-metadata-manifest-and-pull-command.md
-- [7232] 0003-bun-package-manager-node-runtime.md
-- [7233] _.md
-- [7234] animated.md
-- [7235] app-registry.md
-- [7236] app-state.md
-- [7237] appearance.md
-- [7238] clipboard.md
-- [7239] dimensions.md
-- [7240] linking.md
-- [7241] pan-responder.md
-- [7242] pixel-ratio.md
-- [7243] platform.md
-- [7244] style-sheet.md
-- [7245] vibration.md
-- [7247] about-project.md
-- [7248] unstable-apis.md
-- [7250] activity-indicator.md
-- [7251] checkbox.md
-- [7252] image-background.md
-- [7253] image.md
-- [7254] lists.md
-- [7255] modal.md
-- [7256] picker.md
-- [7257] pressable.md
-- [7258] progress-bar.md
-- [7259] scroll-view.md
-- [7260] switch.md
-- [7261] text-input.md
-- [7262] text.md
-- [7263] view.md
-- [7265] accessibility.md
-- [7266] interactions.md
-- [7267] localization.md
-- [7268] rendering.md
-- [7269] styling.md
-- [7271] browser-compatibility.md
-- [7272] help.md
-- [7273] installation.md
-- [7274] introduction.md
-- [7275] multi-platform.md
-- [7276] react-native-compatibility.md
-- [7277] setup.md
-- [7278] typescript-support.md
-- [7280] use-color-scheme.md
-- [7281] use-locale-context.md
-- [7282] use-window-dimensions.md
 
 Fork inheritance lineage and inherited audits are included when available.

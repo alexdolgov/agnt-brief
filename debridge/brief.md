@@ -7,8 +7,8 @@
 - Project: deBridge (`debridge`)
 - Website: [https://app.debridge.com/r/32425](https://app.debridge.com/r/32425)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-30T10:47:39.145Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Generated: 2026-05-31T07:49:01.703Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: arbitrum, avalanche, base, bsc, cronos, ethereum, hyperliquid, linea, optimism, polygon, sei
 - Contract surface: 161 unique implementations (436 raw deployments)
 - DeFi Llama TVL: $3,812,745.79
@@ -31,12 +31,12 @@ The EVM Bridge Core provides foundational cross-chain messaging and token infras
 - Unverified implementations: 140
 - Unique implementations: 161
 - Raw deployments: 436
-- Audits discovered: 68
-- Scoreable audits (matched contracts): 20
+- Audits discovered: 34
+- Scoreable audits (matched contracts): 13
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/debridge/information))
 - ASD (verified + unaudited TVL): $263,879,740.52
 - Latest audit: 2024-11 (aging)
-- Staleness: 0 fresh, 5 aging, 27 stale, 35 unknown
+- Staleness: 0 fresh, 5 aging, 27 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $263,879,740.52 represents exposure in a protocol with declining activity.
 
@@ -44,8 +44,8 @@ The EVM Bridge Core provides foundational cross-chain messaging and token infras
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 12 | 57.1% | 2024-11 |
 | Halborn | Tier 2 | 9 | 42.9% | 2023-10 |
+| unknown | Tier 2 | 9 | 42.9% | 2024-11 |
 
 ## Contract Surface
 
@@ -277,41 +277,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [deBridge_Solana_Security_Audit_Neodyme.pdf](https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Solana_Security_Audit_Neodyme.pdf) | unknown | Audit | 2022-03 | stale | Direct | n/a | 0 | n/a |
 | [debridge_backend_pentest_report_halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/debridge_backend_pentest_report_halborn.pdf) | Halborn | Audit | 2022-02 | stale | Direct | n/a | 0 | n/a |
 | [debridge_solidity_smart_contract_second_audit_Halborn.pdf](https://github.com/debridge-finance/debridge-security/blob/master/debridge_solidity_smart_contract_second_audit_Halborn.pdf) | Halborn | Audit | 2022-04 | stale | Direct | contract_name | 137 | high |
-| [SolanaParser.md](https://github.com/debridge-finance/solana-tx-parser-public/blob/master/docs/classes/SolanaParser.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ParsedAccount.md](https://github.com/debridge-finance/solana-tx-parser-public/blob/master/docs/interfaces/ParsedAccount.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ParsedCustomInstruction.md](https://github.com/debridge-finance/solana-tx-parser-public/blob/master/docs/interfaces/ParsedCustomInstruction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ParsedIdlInstruction.md](https://github.com/debridge-finance/solana-tx-parser-public/blob/master/docs/interfaces/ParsedIdlInstruction.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ProgramInfoType.md](https://github.com/debridge-finance/solana-tx-parser-public/blob/master/docs/interfaces/ProgramInfoType.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SUMMARY.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/SUMMARY.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 132 | high |
-| [README.md (also discovered via alternate URL)](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/README.md) | unknown | Audit | n/a | unknown | Direct | contract_name|n/a | 132 | high |
-| [ICallProxy.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/interfaces/ICallProxy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IDeBridgeGate.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/interfaces/IDeBridgeGate.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IDeBridgeToken.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/interfaces/IDeBridgeToken.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IDeBridgeTokenDeployer.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/interfaces/IDeBridgeTokenDeployer.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IOraclesManager.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/interfaces/IOraclesManager.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ISignatureVerifier.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/interfaces/ISignatureVerifier.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [IWethGate.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/interfaces/IWethGate.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Flags.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/libraries/Flags.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [CallProxy.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/periphery/CallProxy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [DeBridgeToken.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/periphery/DeBridgeToken.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [DeBridgeTokenProxy.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/periphery/DeBridgeTokenProxy.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 25 | low |
-| [SimpleFeeProxy.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/periphery/SimpleFeeProxy.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [DeBridgeGate.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/transfers/DeBridgeGate.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 32 | low |
-| [DeBridgeTokenDeployer.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/transfers/DeBridgeTokenDeployer.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 16 | low |
-| [OraclesManager.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/transfers/OraclesManager.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [SignatureVerifier.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/transfers/SignatureVerifier.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [WethGate.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/contracts/transfers/WethGate.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [talks-and-videos.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/talks-and-videos.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [cross-chain-swaps-liquidity.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/the-core-protocol/cross-chain-swaps-liquidity.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [protocol-overview.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/the-core-protocol/protocol-overview.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 32 | low |
 | [security.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/the-core-protocol/security.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [slashing-and-delegated-staking.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/the-core-protocol/slashing-and-delegated-staking.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 32 | low |
-| [transfers.md](https://github.com/debridge-finance/debridge-contracts-v1/blob/main/docs/the-core-protocol/transfers.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [api-surface.md](https://github.com/debridge-finance/bundle-state-reconciler-example/blob/master/bundle-state-sync/docs/api-surface.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Solana-key-management.md](https://github.com/debridge-finance/dln-taker/blob/main/docs/Solana-key-management.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -335,10 +301,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 47
+- Audits with zero matched contracts: 20
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=15, low=5
-- Match method counts: extraction_exact=1413
+- Extraction confidence breakdown: high=13
+- Match method counts: extraction_exact=940
 
 Zero-match audit list:
 
@@ -361,33 +327,6 @@ Zero-match audit list:
 - [10026] deBridge_Solana_Security_Audit_Ackee.pdf
 - [10027] deBridge_Solana_Security_Audit_Neodyme.pdf
 - [10028] debridge_backend_pentest_report_halborn.pdf
-- [10031] SolanaParser.md
-- [10032] ParsedAccount.md
-- [10033] ParsedCustomInstruction.md
-- [10034] ParsedIdlInstruction.md
-- [10035] ProgramInfoType.md
-- [10039] ICallProxy.md
-- [10040] IDeBridgeGate.md
-- [10041] IDeBridgeToken.md
-- [10042] IDeBridgeTokenDeployer.md
-- [10043] IOraclesManager.md
-- [10044] ISignatureVerifier.md
-- [10045] IWethGate.md
-- [10047] Flags.md
-- [10049] CallProxy.md
-- [10050] DeBridgeToken.md
-- [10053] SimpleFeeProxy.md
-- [10056] OraclesManager.md
-- [10058] SignatureVerifier.md
-- [10059] WethGate.md
-- [10060] talks-and-videos.md
-- [10061] cross-chain-swaps-liquidity.md
 - [10063] security.md
-- [10065] transfers.md
-- [10066] api-surface.md
-- [10067] Solana-key-management.md
-- [10068] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [10069] 0002-metadata-manifest-and-pull-command.md
-- [10070] 0003-bun-package-manager-node-runtime.md
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -293,11 +293,11 @@
 | [iq](./iq/) | $23.9M | 0.0% | $23.9M | unknown | 0 | 2 | 2026-05-31 |
 | [izumi-finance](./izumi-finance/) | $2.8M | 0.0% | $2.8M | dead | 0 | 181 | 2026-05-31 |
 | [jones-dao](./jones-dao/) | $519.7M | 0.0% | $519.7M | declining | 0 | 500 | 2026-05-31 |
-| [juicebox](./juicebox/) | $11.0M | 5.9% | ? | active | 4 | 77 | 2026-05-29 |
-| [k2](./k2/) | $4.7M | 0.0% | ? | active | 3 | 30 | 2026-05-29 |
-| [kaio](./kaio/) | $60.8M | 0.0% | ? | unknown | 3 | 35 | 2026-05-29 |
-| [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | unknown | 3 | 2 | 2026-05-29 |
-| [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 3 | 22 | 2026-05-29 |
+| [juicebox](./juicebox/) | $11.0M | 5.9% | ? | active | 1 | 77 | 2026-05-31 |
+| [k2](./k2/) | $4.7M | 0.0% | ? | active | 0 | 30 | 2026-05-31 |
+| [kaio](./kaio/) | $60.8M | 0.0% | ? | unknown | 0 | 35 | 2026-05-31 |
+| [kaito](./kaito/) | $9.5M | 0.0% | $9.5M | unknown | 0 | 2 | 2026-05-31 |
+| [kasu](./kasu/) | $10.3M | 0.0% | ? | active | 0 | 22 | 2026-05-31 |
 | [katana-pre-launch](./katana-pre-launch/) | $18.3M | 0.0% | $18.3M | active | 29 | 166 | 2026-05-22 |
 | [kava-earn](./kava-earn/) | $1.6M | 0.0% | ? | declining | 2 | 1 | 2026-05-30 |
 | [kava-lend](./kava-lend/) | $7.8M | 0.0% | ? | active | 1 | 1 | 2026-05-30 |

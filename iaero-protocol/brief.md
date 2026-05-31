@@ -5,8 +5,8 @@
 - Project: iAero Protocol (`iaero-protocol`)
 - Website: [https://app.iaero.finance/](https://app.iaero.finance/)
 - Lifecycle: active (Tier 0, 14.6% below peak)
-- Generated: 2026-05-31T06:48:14.736Z
-- Pipeline run: v2-pipeline-2026-05-31-46e6f8-7f15
+- Generated: 2026-05-31T08:24:51.006Z
+- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
 - Chains: base
 - Contract surface: 45 unique implementations (63 raw deployments)
 - DeFi Llama TVL: $1,976,310.20

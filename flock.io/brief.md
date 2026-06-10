@@ -7,8 +7,8 @@
 - Project: FLock.io (`flock.io`)
 - Website: [https://www.flock.io/](https://www.flock.io/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:04.021Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:23:06.521Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: base
 - Contract surface: 15 unique implementations (34 raw deployments)
 - DeFi Llama TVL: $9,771,924.67

@@ -5,8 +5,8 @@
 - Project: Flying Tulip (`flying-tulip`)
 - Website: [https://flyingtulip.com/](https://flyingtulip.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:04.042Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:23:05.698Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: avalanche, base, bsc, ethereum, sonic
 - Contract surface: 62 unique implementations (254 raw deployments)
 - DeFi Llama TVL: $5,814,816.78

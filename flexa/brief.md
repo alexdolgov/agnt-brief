@@ -7,8 +7,8 @@
 - Project: Flexa (`flexa`)
 - Website: [https://amp.xyz/](https://amp.xyz/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:04.011Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:24:12.909Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $1,365,895.78

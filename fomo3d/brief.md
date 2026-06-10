@@ -4,8 +4,8 @@
 
 - Project: Fomo3D (`fomo3d`)
 - Lifecycle: active (Tier 0, 59.6% below peak)
-- Generated: 2026-06-10T20:59:04.048Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:23:07.079Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: ethereum
 - Contract surface: 23 unique implementations (26 raw deployments)
 - DeFi Llama TVL: $2,517,012.49

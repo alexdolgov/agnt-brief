@@ -7,8 +7,8 @@
 - Project: Bunny (`bunny`)
 - Website: [https://pancakebunny.finance/](https://pancakebunny.finance/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:01.210Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:15:36.238Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: bsc, polygon
 - Contract surface: 101 unique implementations (453 raw deployments)
 - DeFi Llama TVL: $3,316,661.11

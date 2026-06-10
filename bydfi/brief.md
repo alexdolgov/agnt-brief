@@ -5,8 +5,8 @@
 - Project: BYDFi (`bydfi`)
 - Website: [https://www.bydfi.com/en](https://www.bydfi.com/en)
 - Lifecycle: active (Tier 0, 32.1% below peak)
-- Generated: 2026-06-10T20:59:01.218Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:14:24.629Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $92,693,923.21

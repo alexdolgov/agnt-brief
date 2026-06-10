@@ -5,8 +5,8 @@
 - Project: BulbaSwap (`bulbaswap`)
 - Website: [https://bulbaswap.io](https://bulbaswap.io)
 - Lifecycle: unknown
-- Generated: 2026-06-10T21:23:55.732Z
-- Pipeline run: correction-skeletal-description-fix-topography
+- Generated: 2026-06-10T22:14:26.531Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $9,041,874.00

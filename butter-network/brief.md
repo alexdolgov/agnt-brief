@@ -7,8 +7,8 @@
 - Project: Butter Network (`butter-network`)
 - Website: [https://www.butterswap.io/swap](https://www.butterswap.io/swap)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:01.215Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:15:30.845Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: arbitrum, base, blast, ethereum, klaytn, linea, mantle, merlin, optimism, polygon, scroll
 - Contract surface: 6 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $1,227,686.59

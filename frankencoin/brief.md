@@ -5,8 +5,8 @@
 - Project: Frankencoin (`frankencoin`)
 - Website: [https://frankencoin.com](https://frankencoin.com)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:04.063Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:25:05.909Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: ethereum
 - Contract surface: 5 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $70,002,557.26

@@ -1,6 +1,6 @@
 # frankencoin — Contract Index
 
-6 unique implementations on ethereum · 14 deployments · 4 audited · 2 unaudited · 0 unverified
+5 unique implementations on ethereum · 13 deployments · 4 audited · 1 unaudited · 0 unverified
 
 ## operational_periphery (1)
 
@@ -13,12 +13,6 @@
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [PositionFactory (3 deployments)](./ethereum-1/0x0cde500e6940931ed190ded77bb48640c9486392/) | ethereum | 3 deployments: ethereum [`0x0cde50...486392`](./ethereum-1/0x0cde500e6940931ed190ded77bb48640c9486392/); ethereum `0x63cf7c...706b7e`; ethereum `0xcfa9b5...be2080` | ✅ Audited | Verified |
-
-## token (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [TetherToken](./ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ethereum | [`0xdac17f...831ec7`](./ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited | Verified |
 
 ## unknown (3)
 

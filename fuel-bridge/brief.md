@@ -7,8 +7,8 @@
 - Project: Fuel Bridge (`fuel-bridge`)
 - Website: [https://app.fuel.network/bridge](https://app.fuel.network/bridge)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:04.068Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:28:18.892Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: ethereum
 - Contract surface: 18 unique implementations (44 raw deployments)
 - DeFi Llama TVL: $10,575,231.14

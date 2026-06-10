@@ -5,8 +5,8 @@
 - Project: Dango (`dango`)
 - Website: [https://dango.exchange/](https://dango.exchange/)
 - Lifecycle: active (Tier 0, 14.4% below peak)
-- Generated: 2026-06-10T20:59:01.617Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:39:07.671Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: ethereum
 - Contract surface: 3 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $3,870,467.00

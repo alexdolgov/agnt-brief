@@ -5,8 +5,8 @@
 - Project: D2 Finance (`d2-finance`)
 - Website: [https://d2.finance/strategies](https://d2.finance/strategies)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:01.612Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:38:38.806Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: arbitrum, avalanche, base, berachain, ethereum
 - Contract surface: 184 unique implementations (712 raw deployments)
 - DeFi Llama TVL: $24,602,352.41

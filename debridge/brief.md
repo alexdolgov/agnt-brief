@@ -7,8 +7,8 @@
 - Project: deBridge (`debridge`)
 - Website: [https://app.debridge.com/r/32425](https://app.debridge.com/r/32425)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:01.642Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:42:41.164Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: arbitrum, avalanche, base, bsc, cronos, ethereum, hyperliquid, linea, optimism, polygon, sei
 - Contract surface: 161 unique implementations (435 raw deployments)
 - DeFi Llama TVL: $3,812,745.79

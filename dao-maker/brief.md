@@ -7,8 +7,8 @@
 - Project: DAO Maker (`dao-maker`)
 - Website: [https://daomaker.com/](https://daomaker.com/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:01.622Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:40:20.840Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: ethereum
 - Contract surface: 17 unique implementations (24 raw deployments)
 - DeFi Llama TVL: $1,997,131.00

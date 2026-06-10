@@ -1,6 +1,6 @@
 # debridge — Contract Index
 
-161 unique implementations across 11 chains · 436 deployments · 13 audited · 8 unaudited · 140 unverified
+161 unique implementations across 11 chains · 435 deployments · 13 audited · 8 unaudited · 140 unverified
 
 ## adapter (1)
 
@@ -41,7 +41,7 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| BEP20TokenImplementation (2 deployments) | bsc | 2 deployments: bsc `0x8ac76a...cd580d`; bsc `0xba2ae4...744c43` | ⚠️ Unaudited | Verified |
+| BEP20TokenImplementation | bsc | `0xba2ae4...744c43` | ⚠️ Unaudited | Verified |
 | [FiatTokenV2_2](./ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ethereum | [`0xa0b869...06eb48`](./ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited | Verified |
 | [TetherToken](./ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ethereum | [`0xdac17f...831ec7`](./ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited | Verified |
 | [WethGate (4 deployments)](./ethereum-1/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59/) | ethereum | 4 deployments: ethereum [`0xfcf836...4d6a59`](./ethereum-1/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59/); bsc `0xfcf836...4d6a59`; polygon `0xfcf836...4d6a59`; avalanche `0xfcf836...4d6a59` | ✅ Audited | Verified |

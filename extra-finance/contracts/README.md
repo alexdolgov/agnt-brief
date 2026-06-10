@@ -1,6 +1,6 @@
 # extra-finance — Contract Index
 
-268 unique implementations across 3 chains · 290 deployments · 4 audited · 15 unaudited · 249 unverified
+268 unique implementations across 3 chains · 290 deployments · 1 audited · 18 unaudited · 249 unverified
 
 ## core_logic (1)
 
@@ -16,7 +16,7 @@
 | [GnosisSafeL2 (3 deployments)](./optimism-10/0x4059e170d325163e2ec96cf8ca489c40b6927a8c/) | optimism | 3 deployments: optimism [`0x4059e1...927a8c`](./optimism-10/0x4059e170d325163e2ec96cf8ca489c40b6927a8c/); optimism `0x750f71...9bd40a`; optimism `0x89f088...715c83` | ⚠️ Unaudited | Verified |
 | [GnosisSafeProxy (3 deployments)](./optimism-10/0x48f12df639322e43ce83bb6e12bba46c8e85f703/) | optimism | 3 deployments: optimism [`0x48f12d...85f703`](./optimism-10/0x48f12df639322e43ce83bb6e12bba46c8e85f703/); optimism `0x94440d...b2a38d`; optimism `0xc918a6...07babf` | ⚠️ Unaudited | Verified |
 | [ProxyAdmin](./optimism-10/0x777a1665e66218fb020fb15b0b1f0ee66621be10/) | optimism | [`0x777a16...21be10`](./optimism-10/0x777a1665e66218fb020fb15b0b1f0ee66621be10/) | ⚠️ Unaudited | Verified |
-| [VeloPositionManager (2 deployments)](./optimism-10/0xf9cfb8a62f50e10adde5aa888b44cf01c5957055/) | optimism | 2 deployments: optimism [`0xf9cfb8...957055`](./optimism-10/0xf9cfb8a62f50e10adde5aa888b44cf01c5957055/); base `0xf9cfb8...957055` | ✅ Audited | Verified |
+| [VeloPositionManager (2 deployments)](./optimism-10/0xf9cfb8a62f50e10adde5aa888b44cf01c5957055/) | optimism | 2 deployments: optimism [`0xf9cfb8...957055`](./optimism-10/0xf9cfb8a62f50e10adde5aa888b44cf01c5957055/); base `0xf9cfb8...957055` | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (4)
 
@@ -37,9 +37,9 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AddressRegistry (2 deployments)](./optimism-10/0x85603119c938750dfb5904f8a501b64f3f3a01d2/) | optimism | 2 deployments: optimism [`0x856031...3a01d2`](./optimism-10/0x85603119c938750dfb5904f8a501b64f3f3a01d2/); base `0x856031...3a01d2` | ✅ Audited | Verified |
+| [AddressRegistry (2 deployments)](./optimism-10/0x85603119c938750dfb5904f8a501b64f3f3a01d2/) | optimism | 2 deployments: optimism [`0x856031...3a01d2`](./optimism-10/0x85603119c938750dfb5904f8a501b64f3f3a01d2/); base `0x856031...3a01d2` | ⚠️ Unaudited | Verified |
 | [BeraFarmingVaultFactory (2 deployments)](./berachain-80094/0x155620a2e6a9392c754b73296d9655061525729b/) | berachain | 2 deployments: berachain [`0x155620...25729b`](./berachain-80094/0x155620a2e6a9392c754b73296d9655061525729b/); berachain `0x6fbc69...5487b2` | ⚠️ Unaudited | Verified |
-| [VaultFactory](./base-8453/0x155620a2e6a9392c754b73296d9655061525729b/) | base | [`0x155620...25729b`](./base-8453/0x155620a2e6a9392c754b73296d9655061525729b/) | ✅ Audited | Verified |
+| [VaultFactory](./base-8453/0x155620a2e6a9392c754b73296d9655061525729b/) | base | [`0x155620...25729b`](./base-8453/0x155620a2e6a9392c754b73296d9655061525729b/) | ⚠️ Unaudited | Verified |
 
 ## token (1)
 

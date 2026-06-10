@@ -4,7 +4,7 @@
 |---|---|
 | Chain | sei (1329) |
 | Address | `0x015f10a56e97e02437d294815d8e079e1903e41c` |
-| Role | unknown |
+| Role | operational_periphery |
 | Origin | native |
 | Audited | No |
 | Audits | n/a |

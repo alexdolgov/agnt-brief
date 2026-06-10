@@ -5,8 +5,8 @@
 - Project: Exmo (`exmo`)
 - Website: [https://exmo.com](https://exmo.com)
 - Lifecycle: unknown
-- Generated: 2026-06-10T21:23:55.761Z
-- Pipeline run: correction-skeletal-description-fix-topography
+- Generated: 2026-06-10T23:18:21.466Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $2,840,011.80

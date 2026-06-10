@@ -6,8 +6,8 @@
 | Address | `0x85603119c938750dfb5904f8a501b64f3f3a01d2` |
 | Role | registry |
 | Origin | native |
-| Audited | Yes |
-| Audits | [1. <>](https://github.com/blocksecteam/audit-reports/blob/main/solidity/blocksec_extrafinance_v1.0-signed.pdf) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 2 (optimism [`0x85603119c938750dfb5904f8a501b64f3f3a01d2`](../0x85603119c938750dfb5904f8a501b64f3f3a01d2/); base `0x85603119c938750dfb5904f8a501b64f3f3a01d2`) |
 | Proxy | No |
 | Source | Sourcify (full match) |

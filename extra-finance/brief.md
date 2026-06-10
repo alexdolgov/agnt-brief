@@ -5,8 +5,8 @@
 - Project: Extra Finance (`extra-finance`)
 - Website: [https://extrafi.io/](https://extrafi.io/)
 - Lifecycle: active (Tier 0, 82.7% below peak)
-- Generated: 2026-06-10T20:59:03.977Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:19:16.819Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: base, berachain, optimism
 - Contract surface: 268 unique implementations (290 raw deployments)
 - DeFi Llama TVL: $32,304,487.00

@@ -6,8 +6,8 @@
 | Address | `0x155620a2e6a9392c754b73296d9655061525729b` |
 | Role | registry |
 | Origin | native |
-| Audited | Yes |
-| Audits | [1. <>](https://github.com/blocksecteam/audit-reports/blob/main/solidity/blocksec_extrafinance_v1.0-signed.pdf) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 1 (base [`0x155620a2e6a9392c754b73296d9655061525729b`](../0x155620a2e6a9392c754b73296d9655061525729b/)) |
 | Proxy | No |
 | Source | Sourcify (partial match) |

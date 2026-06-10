@@ -5,8 +5,8 @@
 - Project: Feather (`feather`)
 - Website: [https://app.feather.zone/](https://app.feather.zone/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:03.981Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:17:11.145Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: klaytn, sei
 - Contract surface: 2 unique implementations (7 raw deployments)
 - DeFi Llama TVL: $16,535,444.23

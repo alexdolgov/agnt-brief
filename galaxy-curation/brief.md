@@ -5,8 +5,8 @@
 - Project: Galaxy Curation (`galaxy-curation`)
 - Website: [https://www.galaxy.com/](https://www.galaxy.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:04.143Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:29:09.080Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $67,495,010.25

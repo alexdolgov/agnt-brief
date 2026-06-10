@@ -7,8 +7,8 @@
 - Project: Gearbox (`gearbox`)
 - Website: [https://gearbox.finance/](https://gearbox.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:04.311Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:32:31.465Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: arbitrum, ethereum, optimism, sonic
 - Contract surface: 195 unique implementations (1703 raw deployments)
 - DeFi Llama TVL: $36,875,117.03

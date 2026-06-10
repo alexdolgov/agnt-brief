@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "gains-network",
-  "generated_at": "2026-06-10T20:59:04.135Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-10T23:31:10.100Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "gains-network",
@@ -52,13 +52,13 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2022-06",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 1
+      "stale": 1,
+      "unknown": 0
     }
   },
   "topography": {
@@ -32798,8 +32798,8 @@
       "report_url": "https://skynet.certik.com/projects/gains-network",
       "auditor": "CertiK",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,

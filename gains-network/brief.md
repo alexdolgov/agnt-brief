@@ -5,8 +5,8 @@
 - Project: Gains Network (`gains-network`)
 - Website: [https://gains.trade/](https://gains.trade/)
 - Lifecycle: active (Tier 0, 76.5% below peak)
-- Generated: 2026-06-10T20:59:04.135Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:31:10.100Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: arbitrum, base, polygon
 - Contract surface: 760 unique implementations (1777 raw deployments)
 - DeFi Llama TVL: $18,577,383.48
@@ -32,8 +32,8 @@ The Gains Network family is a monolithic suite where all contracts share the sam
 - Audits discovered: 1
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $21,861,405.22
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2022-06 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -834,7 +834,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://skynet.certik.com/projects/gains-network) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DL audit link](https://skynet.certik.com/projects/gains-network) | CertiK | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 

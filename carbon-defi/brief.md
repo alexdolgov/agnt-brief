@@ -5,8 +5,8 @@
 - Project: Carbon Defi (`carbon-defi`)
 - Website: [https://app.carbondefi.xyz/](https://app.carbondefi.xyz/)
 - Lifecycle: active (Tier 0, 69.6% below peak)
-- Generated: 2026-06-10T20:59:01.272Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:20:40.964Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: blast, celo, ethereum, sei
 - Contract surface: 158 unique implementations (338 raw deployments)
 - DeFi Llama TVL: $2,922,950.10

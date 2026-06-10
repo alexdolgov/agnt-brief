@@ -5,8 +5,8 @@
 - Project: cBridge (`cbridge`)
 - Website: [https://cbridge.celer.network/#/transfer](https://cbridge.celer.network/#/transfer)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:01.346Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:24:19.983Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: arbitrum, aurora, avalanche, boba, celo, ethereum, fantom, gnosis, harmony, heco, linea, metis, moonbeam, moonriver, optimism, polygon, polygon-zkevm, scroll
 - Contract surface: 2007 unique implementations (2007 raw deployments)
 - DeFi Llama TVL: $18,230,108.66

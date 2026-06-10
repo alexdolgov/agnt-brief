@@ -6,8 +6,8 @@
 
 - Project: CGO Finance (`cgo-finance`)
 - Lifecycle: declining (Tier 0, 96.9% below peak)
-- Generated: 2026-06-10T20:59:01.361Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:20:35.638Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: cronos
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $1,234,412.79

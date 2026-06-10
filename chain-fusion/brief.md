@@ -5,8 +5,8 @@
 - Project: Chain Fusion (`chain-fusion`)
 - Website: [https://dashboard.internetcomputer.org/chain-fusion](https://dashboard.internetcomputer.org/chain-fusion)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:01.363Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:20:35.427Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $18,603,767.53

@@ -5,8 +5,8 @@
 - Project: CEX.IO (`cex.io`)
 - Website: [http://cex.io/](http://cex.io/)
 - Lifecycle: active (Tier 0, 77.4% below peak)
-- Generated: 2026-06-10T20:59:01.358Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:20:33.387Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: ethereum, polygon
 - Contract surface: 3 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $7,647,676.25

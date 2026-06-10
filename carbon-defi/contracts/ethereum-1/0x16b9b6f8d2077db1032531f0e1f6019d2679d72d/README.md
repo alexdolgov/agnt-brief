@@ -4,7 +4,7 @@
 |---|---|
 | Chain | ethereum (1) |
 | Address | `0x16b9b6f8d2077db1032531f0e1f6019d2679d72d` |
-| Role | governance |
+| Role | core_logic |
 | Origin | native |
 | Audited | Yes |
 | Audits | [May 29, 2024 audit report done by PeckShield team](https://github.com/bancorprotocol/carbon-contracts/blob/dev/docs/audits/PeckShield-Audit-Report-Bancor-Carbon-v1.0.pdf); [April 10, 2023 audit report done by ChainSecurity team](https://github.com/bancorprotocol/carbon-contracts/blob/dev/docs/audits/ChainSecurity_Carbon_Audit_Report.pdf); [April 4, 2023 audit report done by PeckShield team](https://github.com/bancorprotocol/carbon-contracts/blob/dev/docs/audits/PeckShield-Audit-Report-Carbon-v1.0.pdf) |

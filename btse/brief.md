@@ -5,8 +5,8 @@
 - Project: BTSE (`btse`)
 - Website: [https://www.btse.com](https://www.btse.com)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:01.177Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:13:29.935Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,532,135.40

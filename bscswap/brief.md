@@ -4,8 +4,8 @@
 
 - Project: BSCSwap (`bscswap`)
 - Lifecycle: active (Tier 0, 50.6% below peak)
-- Generated: 2026-06-10T20:59:01.138Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:13:31.218Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: bsc
 - Contract surface: 30 unique implementations (111 raw deployments)
 - DeFi Llama TVL: $5,010,034.63

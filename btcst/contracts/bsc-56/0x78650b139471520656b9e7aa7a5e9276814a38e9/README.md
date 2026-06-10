@@ -4,7 +4,7 @@
 |---|---|
 | Chain | bsc (56) |
 | Address | `0x78650b139471520656b9e7aa7a5e9276814a38e9` |
-| Role | unknown |
+| Role | token |
 | Origin | standard_library |
 | Audited | No |
 | Audits | n/a |

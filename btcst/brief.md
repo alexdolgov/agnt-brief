@@ -4,8 +4,8 @@
 
 - Project: BTCST (`btcst`)
 - Lifecycle: active (Tier 0, 93.4% below peak)
-- Generated: 2026-06-10T20:59:01.173Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:13:31.419Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: bsc
 - Contract surface: 64 unique implementations (93 raw deployments)
 - DeFi Llama TVL: $1,064,612.21

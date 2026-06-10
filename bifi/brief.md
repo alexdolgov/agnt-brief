@@ -5,8 +5,8 @@
 - Project: BiFi (`bifi`)
 - Website: [https://bifi.finance/](https://bifi.finance/)
 - Lifecycle: active (Tier 0, 84.2% below peak)
-- Generated: 2026-06-10T20:58:59.187Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:57:56.287Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: avalanche, ethereum, klaytn
 - Contract surface: 170 unique implementations (238 raw deployments)
 - DeFi Llama TVL: $7,429,579.52

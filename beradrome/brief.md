@@ -7,8 +7,8 @@
 - Project: Beradrome (`beradrome`)
 - Website: [https://www.beradrome.com](https://www.beradrome.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:58:59.176Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:56:50.162Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: berachain
 - Contract surface: 2 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $7,001,960.07

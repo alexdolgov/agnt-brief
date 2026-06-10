@@ -5,8 +5,8 @@
 - Project: Bio Protocol (`bio-protocol`)
 - Website: [https://www.bio.xyz/](https://www.bio.xyz/)
 - Lifecycle: active (Tier 0, 77.4% below peak)
-- Generated: 2026-06-10T20:58:59.703Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:57:50.422Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: base, ethereum
 - Contract surface: 41 unique implementations (155 raw deployments)
 - DeFi Llama TVL: $4,563,139.28

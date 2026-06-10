@@ -1,6 +1,6 @@
 # bima-cdp — Contract Index
 
-38 unique implementations across 3 chains · 112 deployments · 16 audited · 16 unaudited · 6 unverified
+37 unique implementations across 3 chains · 109 deployments · 16 audited · 15 unaudited · 6 unverified
 
 ## adapter (2)
 
@@ -56,7 +56,7 @@
 | [StakedUsbd (8 deployments)](./ethereum-1/0x15ba049b9481e8c30531f736b58609b8aa1d1eef/) | ethereum | 8 deployments: ethereum [`0x15ba04...1d1eef`](./ethereum-1/0x15ba049b9481e8c30531f736b58609b8aa1d1eef/); ethereum `0x190909...4b7504`; ethereum `0x424147...fd71ae`; ethereum `0x7d0ae6...421522`; ethereum `0xb4b22a...a6a3d0`; ethereum `0xbf095f...79d6df`; ethereum `0xcbc829...fe023d`; ethereum `0xda44aa...06f92a` | ⚠️ Unaudited | Verified |
 | [TokenLocker (3 deployments)](./ethereum-1/0x09a028587705b49fa162671d2507567cfef75bf7/) | ethereum | 3 deployments: ethereum [`0x09a028...f75bf7`](./ethereum-1/0x09a028587705b49fa162671d2507567cfef75bf7/); bsc `0x09a028...f75bf7`; sonic `0x09a028...f75bf7` | ✅ Audited | Verified |
 
-## unknown (19)
+## unknown (18)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -65,7 +65,6 @@
 | [BimaCore (3 deployments)](./ethereum-1/0x227e9323d692578ca3df92b87d06625df22380ab/) | ethereum | 3 deployments: ethereum [`0x227e93...2380ab`](./ethereum-1/0x227e9323d692578ca3df92b87d06625df22380ab/); bsc `0x227e93...2380ab`; sonic `0x227e93...2380ab` | ✅ Audited | Verified |
 | [BimaPSM (4 deployments)](./ethereum-1/0x42ad6834a6599a0b7a7812f01f8092b580523d67/) | ethereum | 4 deployments: ethereum [`0x42ad68...523d67`](./ethereum-1/0x42ad6834a6599a0b7a7812f01f8092b580523d67/); ethereum `0x705fd2...4792d4`; ethereum `0x97bb31...6009e9`; ethereum `0xea811c...a888fe` | ⚠️ Unaudited | Verified |
 | [BimaWrappedCollateral (3 deployments)](./ethereum-1/0x59063fbe70d3b0f9312e5c89acdc476f5d2018e1/) | ethereum | 3 deployments: ethereum [`0x59063f...2018e1`](./ethereum-1/0x59063fbe70d3b0f9312e5c89acdc476f5d2018e1/); ethereum `0x856db2...232ce0`; ethereum `0xdc0cca...655197` | ⚠️ Unaudited | Verified |
-| EACAggregatorProxy (3 deployments) | bsc | 3 deployments: ethereum `0xf40300...bee88c`; bsc `0x264990...ca5ebf`; sonic `0x8bcd59...ae53ef` | ⚠️ Unaudited | Verified |
 | [EnzoBTC](./ethereum-1/0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a/) | ethereum | [`0x6a9a65...fbce4a`](./ethereum-1/0x6a9a65b84843f5fd4ac9a0471c4fc11afffbce4a/) | ⚠️ Unaudited | Verified |
 | [IncentiveVoting (3 deployments)](./ethereum-1/0x5587416ef31da806948e6975c377844f5eddb7a8/) | ethereum | 3 deployments: ethereum [`0x558741...ddb7a8`](./ethereum-1/0x5587416ef31da806948e6975c377844f5eddb7a8/); bsc `0x558741...ddb7a8`; sonic `0x558741...ddb7a8` | ✅ Audited | Verified |
 | [LBTC](./sonic-146/0xecac9c5f704e954931349da37f60e39f515c11c1/) | sonic | [`0xecac9c...5c11c1`](./sonic-146/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited | Verified |

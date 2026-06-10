@@ -5,8 +5,8 @@
 - Project: BendDAO (`benddao`)
 - Website: [https://www.benddao.xyz](https://www.benddao.xyz)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:58:59.173Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:55:51.698Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $7,146,283.00

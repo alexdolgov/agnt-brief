@@ -5,8 +5,8 @@
 - Project: BIMA CDP (`bima-cdp`)
 - Website: [https://bima.money/](https://bima.money/)
 - Lifecycle: active (Tier 0, 72.2% below peak)
-- Generated: 2026-06-10T20:58:59.196Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:55:45.319Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: bsc, ethereum, sonic
 - Contract surface: 37 unique implementations (109 raw deployments)
 - DeFi Llama TVL: $5,315,000.87

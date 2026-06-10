@@ -5,8 +5,8 @@
 - Project: Flamingo (`flamingo`)
 - Website: [https://flamingo.finance/lend/overview](https://flamingo.finance/lend/overview)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:04.004Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:21:11.929Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $2,154,213.00

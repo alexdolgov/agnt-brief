@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "firebot",
-  "generated_at": "2026-06-10T20:59:03.999Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-10T23:22:06.745Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "firebot",
@@ -16,7 +16,7 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 1094,
+    "days_since_peak": 1111,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0

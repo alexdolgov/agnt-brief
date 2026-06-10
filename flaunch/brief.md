@@ -5,8 +5,8 @@
 - Project: flaunch (`flaunch`)
 - Website: [https://flaunch.gg](https://flaunch.gg)
 - Lifecycle: active (Tier 0, 35% below peak)
-- Generated: 2026-06-10T20:59:04.008Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:20:07.618Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: base
 - Contract surface: 3 unique implementations (52 raw deployments)
 - DeFi Llama TVL: $2,101,965.17

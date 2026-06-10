@@ -7,8 +7,8 @@
 - Project: FireBot (`firebot`)
 - Website: [https://firebot.gg](https://firebot.gg)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:03.999Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:22:06.745Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: polygon
 - Contract surface: 29 unique implementations (65 raw deployments)
 - DeFi Llama TVL: $2,264,926.05

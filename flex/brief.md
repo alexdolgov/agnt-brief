@@ -5,8 +5,8 @@
 - Project: Flex (`flex`)
 - Website: [https://flexmeow.com/](https://flexmeow.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:04.010Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:22:14.156Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $611,657.73

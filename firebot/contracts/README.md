@@ -1,13 +1,13 @@
 # firebot — Contract Index
 
-29 unique implementations on polygon · 65 deployments · 2 audited · 19 unaudited · 8 unverified
+29 unique implementations on polygon · 65 deployments · 1 audited · 20 unaudited · 8 unverified
 
 ## core_logic (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [FireVaultFBX (3 deployments)](./polygon-137/0xa461b57d4794447bb53ad584844c4a19c6cf132b/) | polygon | 3 deployments: polygon [`0xa461b5...cf132b`](./polygon-137/0xa461b57d4794447bb53ad584844c4a19c6cf132b/); polygon `0xd3368e...a78e75`; polygon `0xe344db...127b9a` | ⚠️ Unaudited | Verified |
-| [FireVaultFBXV2 (18 deployments)](./polygon-137/0x09083fa4a172e52df84808edc31fa167e591c049/) | polygon | 18 deployments: polygon [`0x09083f...91c049`](./polygon-137/0x09083fa4a172e52df84808edc31fa167e591c049/); polygon `0x098534...a6d4df`; polygon `0x0f3226...8b22d9`; polygon `0x2b5f17...1ded23`; polygon `0x30f096...0bd486`; polygon `0x364663...abbf56`; polygon `0x4758d9...e16044`; polygon `0x651042...cd9047`; polygon `0x65b8e5...7f936d`; polygon `0x77ff4f...583348`; polygon `0x869f1e...8e241b`; polygon `0x960d43...14dfbe`; polygon `0x9bf581...9c14c7`; polygon `0xa163f1...8f5cfe`; polygon `0xd0e489...e7c271`; polygon `0xda6167...7046d1`; polygon `0xe44f4e...05f5f8`; polygon `0xf584be...4ef875` | ✅ Audited | Verified |
+| [FireVaultFBXV2 (18 deployments)](./polygon-137/0x09083fa4a172e52df84808edc31fa167e591c049/) | polygon | 18 deployments: polygon [`0x09083f...91c049`](./polygon-137/0x09083fa4a172e52df84808edc31fa167e591c049/); polygon `0x098534...a6d4df`; polygon `0x0f3226...8b22d9`; polygon `0x2b5f17...1ded23`; polygon `0x30f096...0bd486`; polygon `0x364663...abbf56`; polygon `0x4758d9...e16044`; polygon `0x651042...cd9047`; polygon `0x65b8e5...7f936d`; polygon `0x77ff4f...583348`; polygon `0x869f1e...8e241b`; polygon `0x960d43...14dfbe`; polygon `0x9bf581...9c14c7`; polygon `0xa163f1...8f5cfe`; polygon `0xd0e489...e7c271`; polygon `0xda6167...7046d1`; polygon `0xe44f4e...05f5f8`; polygon `0xf584be...4ef875` | ⚠️ Unaudited | Verified |
 | [FireVaultFBXV3](./polygon-137/0x4d979fed1defc256c02a97687840c0afb7022594/) | polygon | [`0x4d979f...022594`](./polygon-137/0x4d979fed1defc256c02a97687840c0afb7022594/) | ⚠️ Unaudited | Verified |
 | [FireVaultFBXV4](./polygon-137/0x7ccfb7d2598421ea897ba94f5d3fd598f4067577/) | polygon | [`0x7ccfb7...067577`](./polygon-137/0x7ccfb7d2598421ea897ba94f5d3fd598f4067577/) | ⚠️ Unaudited | Verified |
 | [item_vault_swap](./polygon-137/0xc82669f560e1d1099636ada24479bb0f2bcf4910/) | polygon | [`0xc82669...cf4910`](./polygon-137/0xc82669f560e1d1099636ada24479bb0f2bcf4910/) | ⚠️ Unaudited | Verified |

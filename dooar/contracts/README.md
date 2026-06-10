@@ -2,7 +2,7 @@
 
 2 unique implementations on bsc · 2 deployments · 0 audited · 2 unaudited · 0 unverified
 
-## adapter (1)
+## operational_periphery (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|

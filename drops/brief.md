@@ -7,8 +7,8 @@
 - Project: Drops (`drops`)
 - Website: [https://drops.co](https://drops.co)
 - Lifecycle: declining (Tier 0, 99.8% below peak)
-- Generated: 2026-06-10T20:59:02.008Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:54:08.694Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: ethereum
 - Contract surface: 77 unique implementations (217 raw deployments)
 - DeFi Llama TVL: $3,296,081.16

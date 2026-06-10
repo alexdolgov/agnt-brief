@@ -5,8 +5,8 @@
 - Project: DOOAR (`dooar`)
 - Website: [https://beta.dooar.com/swap](https://beta.dooar.com/swap)
 - Lifecycle: active (Tier 0, 60.8% below peak)
-- Generated: 2026-06-10T20:59:01.999Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:53:38.382Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: bsc
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $5,110,102.30

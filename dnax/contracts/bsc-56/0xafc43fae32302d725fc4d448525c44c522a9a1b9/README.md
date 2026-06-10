@@ -4,7 +4,7 @@
 |---|---|
 | Chain | bsc (56) |
 | Address | `0xafc43fae32302d725fc4d448525c44c522a9a1b9` |
-| Role | governance |
+| Role | core_logic |
 | Origin | native |
 | Audited | No |
 | Audits | n/a |

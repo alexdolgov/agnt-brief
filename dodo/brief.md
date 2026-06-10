@@ -7,8 +7,8 @@
 - Project: DODO (`dodo`)
 - Website: [https://dodoex.io](https://dodoex.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:01.992Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:56:53.823Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: arbitrum, aurora, avalanche, base, bsc, ethereum, linea, manta, mantle, optimism, polygon, scroll
 - Contract surface: 552 unique implementations (1578 raw deployments)
 - DeFi Llama TVL: $12,646,882.00

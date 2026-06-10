@@ -4,7 +4,7 @@
 |---|---|
 | Chain | bsc (56) |
 | Address | `0x53e0e51b5ed9202110d7ecd637a4581db8b9879f` |
-| Role | adapter |
+| Role | operational_periphery |
 | Origin | native |
 | Audited | No |
 | Audits | n/a |

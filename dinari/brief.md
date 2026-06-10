@@ -7,8 +7,8 @@
 - Project: Dinari (`dinari`)
 - Website: [https://dinari.com](https://dinari.com)
 - Lifecycle: declining (Tier 0, 81.9% below peak)
-- Generated: 2026-06-10T20:59:01.917Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:55:38.917Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: arbitrum, base, blast, ethereum
 - Contract surface: 71 unique implementations (356 raw deployments)
 - DeFi Llama TVL: $10,832,285.27

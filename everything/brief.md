@@ -5,8 +5,8 @@
 - Project: Everything (`everything`)
 - Website: [https://everything.inc/](https://everything.inc/)
 - Lifecycle: active (Tier 0, 22.8% below peak)
-- Generated: 2026-06-10T20:59:03.902Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:13:03.258Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: arbitrum
 - Contract surface: 10 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $945,261.28

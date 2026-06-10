@@ -7,8 +7,8 @@
 - Project: EverRise (`everrise`)
 - Website: [https://www.everrise.com](https://www.everrise.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:03.896Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:16:12.642Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: avalanche, bsc, ethereum, fantom, polygon
 - Contract surface: 210 unique implementations (458 raw deployments)
 - DeFi Llama TVL: $1,486,826.64

@@ -1,0 +1,66 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "dexRouter",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "mainToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "stableToken",
+        "type": "address"
+      }
+    ],
+    "name": "getMainPriceViaStablePair",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "mainToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "wrappedNative",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "stableToken",
+        "type": "address"
+      }
+    ],
+    "name": "getMainPriceViaWrappedNativePair",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

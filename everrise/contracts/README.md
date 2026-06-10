@@ -1,6 +1,6 @@
 # everrise — Contract Index
 
-239 unique implementations across 5 chains · 505 deployments · 0 audited · 105 unaudited · 134 unverified
+210 unique implementations across 5 chains · 458 deployments · 0 audited · 76 unaudited · 134 unverified
 
 ## adapter (2)
 
@@ -44,50 +44,37 @@
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [CS721Factory (6 deployments)](./bsc-56/0x31c46cf200b0e7cb6eca777f79bd9327e9172684/) | bsc | 6 deployments: bsc [`0x31c46c...172684`](./bsc-56/0x31c46cf200b0e7cb6eca777f79bd9327e9172684/); bsc `0xbb065b...e81ed5`; bsc `0xc105f2...52a950`; bsc `0xc94530...202fe4`; bsc `0xdb5dd8...36517c`; bsc `0xdc307b...45fade` | ⚠️ Unaudited | Verified |
+| [CS721Factory (5 deployments)](./bsc-56/0xbb065bab3d39a98ad920142b6f75ab57a9e81ed5/) | bsc | 5 deployments: bsc [`0xbb065b...e81ed5`](./bsc-56/0xbb065bab3d39a98ad920142b6f75ab57a9e81ed5/); bsc `0xc105f2...52a950`; bsc `0xc94530...202fe4`; bsc `0xdb5dd8...36517c`; bsc `0xdc307b...45fade` | ⚠️ Unaudited | Verified |
 | [JoeFactory (2 deployments)](./avalanche-43114/0x9ad6c38be94206ca50bb0d90783181662f0cfa10/) | avalanche | 2 deployments: avalanche [`0x9ad6c3...0cfa10`](./avalanche-43114/0x9ad6c38be94206ca50bb0d90783181662f0cfa10/); avalanche `0xe2ecc2...e75eb8` | ⚠️ Unaudited | Verified |
-| [UniswapV2Factory (2 deployments)](./polygon-137/0x5757371414417b8c6caad45baef941abc7d3ab32/) | polygon | 2 deployments: ethereum `0x5c69be...c5aa6f`; polygon [`0x575737...d3ab32`](./polygon-137/0x5757371414417b8c6caad45baef941abc7d3ab32/) | ⚠️ Unaudited | Verified |
+| [UniswapV2Factory](./polygon-137/0x5757371414417b8c6caad45baef941abc7d3ab32/) | polygon | [`0x575737...d3ab32`](./polygon-137/0x5757371414417b8c6caad45baef941abc7d3ab32/) | ⚠️ Unaudited | Verified |
 
-## token (14)
+## token (9)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BEP20Token](./bsc-56/0x13f5e0c7a122c3df2914fad879777f7fc3b32277/) | bsc | [`0x13f5e0...b32277`](./bsc-56/0x13f5e0c7a122c3df2914fad879777f7fc3b32277/) | ⚠️ Unaudited | Verified |
-| [CellToken (2 deployments)](./bsc-56/0x87184884fc32594d4e347874cbd8294d61c18df3/) | bsc | 2 deployments: bsc [`0x871848...c18df3`](./bsc-56/0x87184884fc32594d4e347874cbd8294d61c18df3/); bsc `0xf3e144...934346` | ⚠️ Unaudited | Verified |
-| [CoinSackToken](./bsc-56/0x125ce3f13950c5fa94397927f88c352fded680ad/) | bsc | [`0x125ce3...d680ad`](./bsc-56/0x125ce3f13950c5fa94397927f88c352fded680ad/) | ⚠️ Unaudited | Verified |
+| [CellToken](./bsc-56/0xf3e1449ddb6b218da2c9463d4594ceccc8934346/) | bsc | [`0xf3e144...934346`](./bsc-56/0xf3e1449ddb6b218da2c9463d4594ceccc8934346/) | ⚠️ Unaudited | Verified |
 | [ERC20Mock (2 deployments)](./avalanche-43114/0x72281a435fe5a9945e04ef4d0a32771430106587/) | avalanche | 2 deployments: avalanche [`0x72281a...106587`](./avalanche-43114/0x72281a435fe5a9945e04ef4d0a32771430106587/); avalanche `0x9e6cab...c05b09` | ⚠️ Unaudited | Verified |
 | [ERC721Staking](./bsc-56/0x3ffdb968b20c95e3f7f33182482903ed37f16e54/) | bsc | [`0x3ffdb9...f16e54`](./bsc-56/0x3ffdb968b20c95e3f7f33182482903ed37f16e54/) | ⚠️ Unaudited | Verified |
 | [JCollateralCapErc20Delegate (46 deployments)](./avalanche-43114/0x125cf88b4dc08b45847dec7b8d8e1b543f84b4d2/) | avalanche | 46 deployments: avalanche [`0x125cf8...84b4d2`](./avalanche-43114/0x125cf88b4dc08b45847dec7b8d8e1b543f84b4d2/); avalanche `0x1adbde...330024`; avalanche `0x28adbb...a7a0a3`; avalanche `0x29472d...328db2`; avalanche `0x296731...f9bd20`; avalanche `0x2e3a35...7975e2`; avalanche `0x2ed5cd...ff11bd`; avalanche `0x320448...6cccee`; avalanche `0x3ac928...16b974`; avalanche `0x3b34e1...185ecc`; avalanche `0x3fe38b...a9eb1f`; avalanche `0x4a586d...a4d271`; avalanche `0x564780...bbacd0`; avalanche `0x585e7b...b96c15`; avalanche `0x5f2a43...083ae6`; avalanche `0x647da9...92cf2b`; avalanche `0x6b5a37...93a86b`; avalanche `0x6caf40...9d51c5`; avalanche `0x737fdf...fddf34`; avalanche `0x7a17fb...bf3421`; avalanche `0x81516e...23f592`; avalanche `0x838549...aa34cd`; avalanche `0x83c672...c6ea8a`; avalanche `0x8b650e...1e4448`; avalanche `0x8cc49b...d8a98a`; avalanche `0x929f5c...4633fa`; avalanche `0x97e3a6...213612`; avalanche `0x9c1e13...da9e8e`; avalanche `0xb2bb1e...7e5e8b`; avalanche `0xbb95aa...d7b337`; avalanche `0xbfdbe3...3c76e0`; avalanche `0xc14678...8da696`; avalanche `0xc17f99...f9a47a`; avalanche `0xc988c1...a7ca19`; avalanche `0xcd85fe...7348ad`; avalanche `0xce095a...6a75ea`; avalanche `0xcf62b6...94429b`; avalanche `0xd1bb83...9fbe3f`; avalanche `0xd7c246...8c3ed5`; avalanche `0xea5e11...cbbf51`; avalanche `0xeb41c9...1b1df8`; avalanche `0xebea85...60e62e`; avalanche `0xed6aaf...f637ac`; avalanche `0xeed14f...54847c`; avalanche `0xf65a08...503d42`; avalanche `0xf88d8e...50317c` | ⚠️ Unaudited | Verified |
 | [JCollateralCapErc20Delegator](./avalanche-43114/0x102011863cc4f506d1387cd6b22c522602ae0fbf/) | avalanche | [`0x102011...ae0fbf`](./avalanche-43114/0x102011863cc4f506d1387cd6b22c522602ae0fbf/) | ⚠️ Unaudited | Verified |
 | [JoeHatToken](./avalanche-43114/0x82fe038ea4b50f9c957da326c412ebd73462077c/) | avalanche | [`0x82fe03...62077c`](./avalanche-43114/0x82fe038ea4b50f9c957da326c412ebd73462077c/) | ⚠️ Unaudited | Verified |
 | [JoeToken](./avalanche-43114/0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd/) | avalanche | [`0x6e84a6...bc0fdd`](./avalanche-43114/0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd/) | ⚠️ Unaudited | Verified |
-| [KetherNFTLoaner](./ethereum-1/0x6d02744ef4418cb0d72f54c1ee53140430b9dbed/) | ethereum | [`0x6d0274...b9dbed`](./ethereum-1/0x6d02744ef4418cb0d72f54c1ee53140430b9dbed/) | ⚠️ Unaudited | Verified |
 | [LiquidityGeneratorToken](./bsc-56/0xc46fe585f349b782ae319046683868b6227bca67/) | bsc | [`0xc46fe5...7bca67`](./bsc-56/0xc46fe585f349b782ae319046683868b6227bca67/) | ⚠️ Unaudited | Verified |
-| [MetaFloki (2 deployments)](./bsc-56/0x1931461c770509cc20aca503d3c5637e7b6c5220/) | bsc | 2 deployments: bsc [`0x193146...6c5220`](./bsc-56/0x1931461c770509cc20aca503d3c5637e7b6c5220/); bsc `0x8fc2b4...b9041f` | ⚠️ Unaudited | Verified |
-| [PigToken](./ethereum-1/0x92446b00281dc85185053fe4d7e5062f65fe820e/) | ethereum | [`0x92446b...fe820e`](./ethereum-1/0x92446b00281dc85185053fe4d7e5062f65fe820e/) | ⚠️ Unaudited | Verified |
 | [SimpleToken (2 deployments)](./bsc-56/0xaa9b835784d0f9ff2a2a14dd1c395ca58e06f569/) | bsc | 2 deployments: bsc [`0xaa9b83...06f569`](./bsc-56/0xaa9b835784d0f9ff2a2a14dd1c395ca58e06f569/); bsc `0xc3ae8d...02fa20` | ⚠️ Unaudited | Verified |
 
-## unknown (209)
+## unknown (185)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [apezilla (2 deployments)](./bsc-56/0x1f045d1bc3c1cda5554dfe4077b900cb509d8743/) | bsc | 2 deployments: bsc [`0x1f045d...9d8743`](./bsc-56/0x1f045d1bc3c1cda5554dfe4077b900cb509d8743/); bsc `0x43055a...f60da9` | ⚠️ Unaudited | Verified |
 | [ARMADA](./bsc-56/0xd307e64c0c0e70eaa463926e4c2dd7370de11507/) | bsc | [`0xd307e6...e11507`](./bsc-56/0xd307e64c0c0e70eaa463926e4c2dd7370de11507/) | ⚠️ Unaudited | Verified |
 | [ArmadaOwn](./bsc-56/0x458d0af4a1971958cd50c068fff8ad755a6e7635/) | bsc | [`0x458d0a...6e7635`](./bsc-56/0x458d0af4a1971958cd50c068fff8ad755a6e7635/) | ⚠️ Unaudited | Verified |
 | [BadBuildersClubSoulbound](./avalanche-43114/0x2d1e2e2fdab5047b5227e8c16e01432699ac6a42/) | avalanche | [`0x2d1e2e...ac6a42`](./avalanche-43114/0x2d1e2e2fdab5047b5227e8c16e01432699ac6a42/) | ⚠️ Unaudited | Verified |
 | [BoostedMasterChefJoe (3 deployments)](./avalanche-43114/0x217945d4cb3386420252da73743f1730f38266e9/) | avalanche | 3 deployments: avalanche [`0x217945...8266e9`](./avalanche-43114/0x217945d4cb3386420252da73743f1730f38266e9/); avalanche `0x846a4c...bfff23`; avalanche `0xbb28e0...0a7ad0` | ⚠️ Unaudited | Verified |
-| [BuffedFeg](./bsc-56/0x2298c7d99ac8d4dba12d50c174d77e7857d5c10c/) | bsc | [`0x2298c7...d5c10c`](./bsc-56/0x2298c7d99ac8d4dba12d50c174d77e7857d5c10c/) | ⚠️ Unaudited | Verified |
 | [CAKEBAKER](./bsc-56/0xf8c35f136f3ef177d7d65484a4de7502e67a501b/) | bsc | [`0xf8c35f...7a501b`](./bsc-56/0xf8c35f136f3ef177d7d65484a4de7502e67a501b/) | ⚠️ Unaudited | Verified |
-| [CheemsDad](./bsc-56/0x8714e41ff74cf4637b848077452d3e8d2925ccd3/) | bsc | [`0x8714e4...25ccd3`](./bsc-56/0x8714e41ff74cf4637b848077452d3e8d2925ccd3/) | ⚠️ Unaudited | Verified |
 | [Cliff (2 deployments)](./avalanche-43114/0xaff90532e2937ff290009521e7e120ed062d4f34/) | avalanche | 2 deployments: avalanche [`0xaff905...2d4f34`](./avalanche-43114/0xaff90532e2937ff290009521e7e120ed062d4f34/); avalanche `0xc13b1c...7f6796` | ⚠️ Unaudited | Verified |
-| [CMT_v2_B_TR_NC_X](./bsc-56/0x0d472c572f4c785cc0c5a92ff7f81038ed94dc7d/) | bsc | [`0x0d472c...94dc7d`](./bsc-56/0x0d472c572f4c785cc0c5a92ff7f81038ed94dc7d/) | ⚠️ Unaudited | Verified |
-| [CoinSackEverOwnWrapper](./bsc-56/0x65bf1d8f715c9a602c02adc91a231e5cd43a4462/) | bsc | [`0x65bf1d...3a4462`](./bsc-56/0x65bf1d8f715c9a602c02adc91a231e5cd43a4462/) | ⚠️ Unaudited | Verified |
-| [CS721Listings (2 deployments)](./bsc-56/0x2cefa0dd58aa85a4085f28056a96b0c5446d456d/) | bsc | 2 deployments: bsc [`0x2cefa0...6d456d`](./bsc-56/0x2cefa0dd58aa85a4085f28056a96b0c5446d456d/); bsc `0xe5bc80...0dd476` | ⚠️ Unaudited | Verified |
-| [DeFido (2 deployments)](./bsc-56/0x199f788ddb566b7ebb59bf35b36914f2acdb33de/) | bsc | 2 deployments: ethereum `0xf32122...c1cd91`; bsc [`0x199f78...db33de`](./bsc-56/0x199f788ddb566b7ebb59bf35b36914f2acdb33de/) | ⚠️ Unaudited | Verified |
-| [DexUtils (5 deployments)](./bsc-56/0x4883bd9e85a0737f3141b613ff80ce00fa131f12/) | bsc | 5 deployments: bsc [`0x4883bd...131f12`](./bsc-56/0x4883bd9e85a0737f3141b613ff80ce00fa131f12/); bsc `0xa6c460...44f093`; bsc `0xa8edf1...9b7269`; bsc `0xb3a7f4...f8df80`; bsc `0xe6c891...b70fb4` | ⚠️ Unaudited | Verified |
+| [CS721Listings](./bsc-56/0xe5bc801f3979eeabbdb206a5ff7cfe92ec0dd476/) | bsc | [`0xe5bc80...0dd476`](./bsc-56/0xe5bc801f3979eeabbdb206a5ff7cfe92ec0dd476/) | ⚠️ Unaudited | Verified |
+| [DexUtils (4 deployments)](./bsc-56/0xa6c460b24234d48e84dfb8efd64381e1be44f093/) | bsc | 4 deployments: bsc [`0xa6c460...44f093`](./bsc-56/0xa6c460b24234d48e84dfb8efd64381e1be44f093/); bsc `0xa8edf1...9b7269`; bsc `0xb3a7f4...f8df80`; bsc `0xe6c891...b70fb4` | ⚠️ Unaudited | Verified |
 | [DiamondQ](./bsc-56/0xbd573ddc3ab93d7984012b897821f6c09f4d24e3/) | bsc | [`0xbd573d...4d24e3`](./bsc-56/0xbd573ddc3ab93d7984012b897821f6c09f4d24e3/) | ⚠️ Unaudited | Verified |
-| [DittoInu](./bsc-56/0x02e81cc68c8528b380dc722b98c02ee642d6ab5b/) | bsc | [`0x02e81c...d6ab5b`](./bsc-56/0x02e81cc68c8528b380dc722b98c02ee642d6ab5b/) | ⚠️ Unaudited | Verified |
-| [DogeBoy](./bsc-56/0x6c91e837c071a8acb6988da8e39f9f6759e5d9bd/) | bsc | [`0x6c91e8...e5d9bd`](./bsc-56/0x6c91e837c071a8acb6988da8e39f9f6759e5d9bd/) | ⚠️ Unaudited | Verified |
 | [EFT](./bsc-56/0xb72962568345253f71a18318d67e13a282b187e6/) | bsc | [`0xb72962...b187e6`](./bsc-56/0xb72962568345253f71a18318d67e13a282b187e6/) | ⚠️ Unaudited | Verified |
 | [EverOwn (2 deployments)](./ethereum-1/0x78ab99dae7302ea91e36962f4b23418a89d3a69d/) | ethereum | 2 deployments: ethereum [`0x78ab99...d3a69d`](./ethereum-1/0x78ab99dae7302ea91e36962f4b23418a89d3a69d/); polygon `0x7dd45e...62fdef` | ⚠️ Unaudited | Verified |
 | [FirstFeg (2 deployments)](./bsc-56/0xb5d68dad8761edefcf111b1f33146c4aa24af2d9/) | bsc | 2 deployments: bsc [`0xb5d68d...4af2d9`](./bsc-56/0xb5d68dad8761edefcf111b1f33146c4aa24af2d9/); bsc `0xe9dc00...180097` | ⚠️ Unaudited | Verified |
@@ -101,21 +88,13 @@
 | [JoePair](./avalanche-43114/0x5472e98d22b0fb7ec5c3e360788b8700419370b5/) | avalanche | [`0x5472e9...9370b5`](./avalanche-43114/0x5472e98d22b0fb7ec5c3e360788b8700419370b5/) | ⚠️ Unaudited | Verified |
 | [JoeRoll](./avalanche-43114/0xacff0fbf56baeb9ef677de19aded8f7a950bcb58/) | avalanche | [`0xacff0f...0bcb58`](./avalanche-43114/0xacff0fbf56baeb9ef677de19aded8f7a950bcb58/) | ⚠️ Unaudited | Verified |
 | [Joetroller (3 deployments)](./avalanche-43114/0x1ed8368ca83437dbf43e50e85e6f82342e92cfcb/) | avalanche | 3 deployments: avalanche [`0x1ed836...92cfcb`](./avalanche-43114/0x1ed8368ca83437dbf43e50e85e6f82342e92cfcb/); avalanche `0x8b33e8...3d99b7`; avalanche `0xdc1368...a1edac` | ⚠️ Unaudited | Verified |
-| [JoinCoin](./bsc-56/0x003771227d08ac9961b9160b1219fef136546e90/) | bsc | [`0x003771...546e90`](./bsc-56/0x003771227d08ac9961b9160b1219fef136546e90/) | ⚠️ Unaudited | Verified |
 | [JoinCoinStaking](./bsc-56/0xd022bafdbf430555b42d4a6808758bcbedcddbcb/) | bsc | [`0xd022ba...cddbcb`](./bsc-56/0xd022bafdbf430555b42d4a6808758bcbedcddbcb/) | ⚠️ Unaudited | Verified |
 | [JOY](./bsc-56/0xad6377402f47cc6f6c1d46b7ba5bfd005b83ff69/) | bsc | [`0xad6377...83ff69`](./bsc-56/0xad6377402f47cc6f6c1d46b7ba5bfd005b83ff69/) | ⚠️ Unaudited | Verified |
 | [JWrappedNativeDelegate (4 deployments)](./avalanche-43114/0x267a4576293d55b53c769606e886e1f343149df5/) | avalanche | 4 deployments: avalanche [`0x267a45...149df5`](./avalanche-43114/0x267a4576293d55b53c769606e886e1f343149df5/); avalanche `0x81b539...3d9136`; avalanche `0xc22f01...4ec29e`; avalanche `0xd915fd...015531` | ⚠️ Unaudited | Verified |
-| [KingDoge](./bsc-56/0x3785ef92484595d88e71db773ef64f12695f0015/) | bsc | [`0x3785ef...5f0015`](./bsc-56/0x3785ef92484595d88e71db773ef64f12695f0015/) | ⚠️ Unaudited | Verified |
-| [KingFund](./bsc-56/0x838e37f209950540bbd54d4f52c693a968d79cf8/) | bsc | [`0x838e37...d79cf8`](./bsc-56/0x838e37f209950540bbd54d4f52c693a968d79cf8/) | ⚠️ Unaudited | Verified |
-| [KINGSHIBA](./bsc-56/0x84f4f7cdb4574c9556a494dab18ffc1d1d22316c/) | bsc | [`0x84f4f7...22316c`](./bsc-56/0x84f4f7cdb4574c9556a494dab18ffc1d1d22316c/) | ⚠️ Unaudited | Verified |
-| [KishuForever](./bsc-56/0x5990a27bccaf2ea39d3e8ff1fd29c60bf02931cd/) | bsc | [`0x5990a2...2931cd`](./bsc-56/0x5990a27bccaf2ea39d3e8ff1fd29c60bf02931cd/) | ⚠️ Unaudited | Verified |
-| [LadyGagaFan](./bsc-56/0x4a2a0f1e90265a7e35713648f64a9a019f74fc2e/) | bsc | [`0x4a2a0f...74fc2e`](./bsc-56/0x4a2a0f1e90265a7e35713648f64a9a019f74fc2e/) | ⚠️ Unaudited | Verified |
-| [Landarno (2 deployments)](./bsc-56/0x3dbfc6387560a7216174a367573290db14556321/) | bsc | 2 deployments: ethereum `0xd5641a...a5afb2`; bsc [`0x3dbfc6...556321`](./bsc-56/0x3dbfc6387560a7216174a367573290db14556321/) | ⚠️ Unaudited | Verified |
-| [Lilly](./ethereum-1/0x8686525d6627a25c68de82c228448f43c97999f2/) | ethereum | [`0x868652...7999f2`](./ethereum-1/0x8686525d6627a25c68de82c228448f43c97999f2/) | ⚠️ Unaudited | Verified |
 | [MasterChefJoeV2](./avalanche-43114/0xd6a4f121ca35509af06a0be99093d08462f53052/) | avalanche | [`0xd6a4f1...f53052`](./avalanche-43114/0xd6a4f121ca35509af06a0be99093d08462f53052/) | ⚠️ Unaudited | Verified |
 | [MasterChefJoeV3 (2 deployments)](./avalanche-43114/0x188bed1968b795d5c9022f6a0bb5931ac4c18f00/) | avalanche | 2 deployments: avalanche [`0x188bed...c18f00`](./avalanche-43114/0x188bed1968b795d5c9022f6a0bb5931ac4c18f00/); avalanche `0x3eb4ec...6e8945` | ⚠️ Unaudited | Verified |
 | [Maximillion](./avalanche-43114/0xe5cddafd0f7af3deaf4bd213bbaee7a5927ab7e7/) | avalanche | [`0xe5cdda...7ab7e7`](./avalanche-43114/0xe5cddafd0f7af3deaf4bd213bbaee7a5927ab7e7/) | ⚠️ Unaudited | Verified |
-| [Momento (2 deployments)](./ethereum-1/0x0ae8b74cd2d566853715800c9927f879d6b76a37/) | ethereum | 2 deployments: ethereum [`0x0ae8b7...b76a37`](./ethereum-1/0x0ae8b74cd2d566853715800c9927f879d6b76a37/); bsc `0x1b9a8c...0c67ee` | ⚠️ Unaudited | Verified |
+| [Momento](./ethereum-1/0x0ae8b74cd2d566853715800c9927f879d6b76a37/) | ethereum | [`0x0ae8b7...b76a37`](./ethereum-1/0x0ae8b74cd2d566853715800c9927f879d6b76a37/) | ⚠️ Unaudited | Verified |
 | [MRC20](./polygon-137/0x0000000000000000000000000000000000001010/) | polygon | [`0x000000...001010`](./polygon-137/0x0000000000000000000000000000000000001010/) | ⚠️ Unaudited | Verified |
 | [MTGY (2 deployments)](./ethereum-1/0x025c9f1146d4d94f8f369b9d98104300a3c8ca23/) | ethereum | 2 deployments: ethereum [`0x025c9f...c8ca23`](./ethereum-1/0x025c9f1146d4d94f8f369b9d98104300a3c8ca23/); bsc `0x025c9f...c8ca23` | ⚠️ Unaudited | Verified |
 | MTGYAirdropper (5 deployments) | bsc | 5 deployments: ethereum [`0x87db34...fc8a97`](./ethereum-1/0x87db3450ae10ae95b4e683c2d4a2270a7cfc8a97/); ethereum `0x9e2618...f93902`; bsc `0x7ae49b...9ffeaa`; bsc `0x9c171a...0e0b01`; bsc `0xc3f2a5...017272` | ⚠️ Unaudited | Verified |
@@ -126,20 +105,15 @@
 | [MTGYRaffle (2 deployments)](./ethereum-1/0x0424f9347c26a25cd8516a63692662fc013bd1b7/) | ethereum | 2 deployments: ethereum [`0x0424f9...3bd1b7`](./ethereum-1/0x0424f9347c26a25cd8516a63692662fc013bd1b7/); bsc `0xbd3f48...ca1024` | ⚠️ Unaudited | Verified |
 | [MTGYSpend](./ethereum-1/0x8a31f723fbfa371308e5f5dd637246e0f6c573a5/) | ethereum | [`0x8a31f7...c573a5`](./ethereum-1/0x8a31f723fbfa371308e5f5dd637246e0f6c573a5/) | ⚠️ Unaudited | Verified |
 | [MTGYTrustedTimestamping](./ethereum-1/0x266bffc052a5f02d4797a3dd99c3455ac9d49eb6/) | ethereum | [`0x266bff...d49eb6`](./ethereum-1/0x266bffc052a5f02d4797a3dd99c3455ac9d49eb6/) | ⚠️ Unaudited | Verified |
-| [MUSO (3 deployments)](./ethereum-1/0x204a771341fcf8b95e56b8fb3a93bdc25a45c292/) | ethereum | 3 deployments: ethereum [`0x204a77...45c292`](./ethereum-1/0x204a771341fcf8b95e56b8fb3a93bdc25a45c292/); bsc `0x746bad...51ae2b`; bsc `0xc08e10...3a2dd1` | ⚠️ Unaudited | Verified |
+| [MUSO (2 deployments)](./ethereum-1/0x204a771341fcf8b95e56b8fb3a93bdc25a45c292/) | ethereum | 2 deployments: ethereum [`0x204a77...45c292`](./ethereum-1/0x204a771341fcf8b95e56b8fb3a93bdc25a45c292/); bsc `0xc08e10...3a2dd1` | ⚠️ Unaudited | Verified |
 | [MyContractOwn (3 deployments)](./bsc-56/0x21e9d965404befefb80ea7bae582ab3c4c8d75e0/) | bsc | 3 deployments: bsc [`0x21e9d9...8d75e0`](./bsc-56/0x21e9d965404befefb80ea7bae582ab3c4c8d75e0/); bsc `0x75a6bf...e037be`; bsc `0xa8b978...919139` | ⚠️ Unaudited | Verified |
 | [OKLGRewards](./ethereum-1/0x24bc6f1f7d954345c989be71934d2396c0d668c4/) | ethereum | [`0x24bc6f...d668c4`](./ethereum-1/0x24bc6f1f7d954345c989be71934d2396c0d668c4/) | ⚠️ Unaudited | Verified |
 | [PabloEscoMars](./bsc-56/0xa03c494ed39aa54f9b1d85647a54670f54fa91c8/) | bsc | [`0xa03c49...fa91c8`](./bsc-56/0xa03c494ed39aa54f9b1d85647a54670f54fa91c8/) | ⚠️ Unaudited | Verified |
-| [ramx](./bsc-56/0x48f8aabe54397f24b7eae3f0da39f1e2a2a4986b/) | bsc | [`0x48f8aa...a4986b`](./bsc-56/0x48f8aabe54397f24b7eae3f0da39f1e2a2a4986b/) | ⚠️ Unaudited | Verified |
-| [SharkGirl](./bsc-56/0x2f2b08d78cdec1d610f1356175ff14e0cbc4d269/) | bsc | [`0x2f2b08...c4d269`](./bsc-56/0x2f2b08d78cdec1d610f1356175ff14e0cbc4d269/) | ⚠️ Unaudited | Verified |
-| [ShepherdInu](./bsc-56/0x5efe9c3e5b43580328104da18a091ce6a3d40651/) | bsc | [`0x5efe9c...d40651`](./bsc-56/0x5efe9c3e5b43580328104da18a091ce6a3d40651/) | ⚠️ Unaudited | Verified |
-| [ShibFenInu (2 deployments)](./bsc-56/0x1908036ae6324ed8e38e5884dcced4a943e38340/) | bsc | 2 deployments: ethereum `0x698072...f9579c`; bsc [`0x190803...e38340`](./bsc-56/0x1908036ae6324ed8e38e5884dcced4a943e38340/) | ⚠️ Unaudited | Verified |
 | [SimpleRewarderPerSec (9 deployments)](./avalanche-43114/0x05d06afb994047acee8c205500ab1aa25c5a3388/) | avalanche | 9 deployments: avalanche [`0x05d06a...5a3388`](./avalanche-43114/0x05d06afb994047acee8c205500ab1aa25c5a3388/); avalanche `0x0babed...ab3689`; avalanche `0x692782...8e8551`; avalanche `0x88e026...5dda60`; avalanche `0x89ecdd...033f00`; avalanche `0x9f509a...5b896c`; avalanche `0xd0c23f...0c2fa1`; avalanche `0xe73477...628cd3`; avalanche `0xeb1f56...6e0b55` | ⚠️ Unaudited | Verified |
-| [SplitBuysAndSells](./bsc-56/0x4925cb9390a3e4bd3f43f8a208e437f65aef6d28/) | bsc | [`0x4925cb...ef6d28`](./bsc-56/0x4925cb9390a3e4bd3f43f8a208e437f65aef6d28/) | ⚠️ Unaudited | Verified |
-| [Spooky (6 deployments)](./bsc-56/0x0164845b9ebeefb0888728013f0b727a1671e011/) | bsc | 6 deployments: bsc [`0x016484...71e011`](./bsc-56/0x0164845b9ebeefb0888728013f0b727a1671e011/); bsc `0x3f4cdb...16a647`; bsc `0x5c2723...b9ebe4`; bsc `0x612e35...8ddc93`; bsc `0x6c19e8...76ce70`; bsc `0x7818bd...eed948` | ⚠️ Unaudited | Verified |
-| [SpookyShiba (4 deployments)](./bsc-56/0x68e85862a4c48cc5697c31e6609d13f86f90314c/) | bsc | 4 deployments: bsc [`0x68e858...90314c`](./bsc-56/0x68e85862a4c48cc5697c31e6609d13f86f90314c/); bsc `0xad1bb8...9c597d`; bsc `0xe3a551...7783f7`; bsc `0xed74bc...4334a4` | ⚠️ Unaudited | Verified |
+| [Spooky (4 deployments)](./bsc-56/0x5c2723df8ca0b6605501bb4c4e604a532bb9ebe4/) | bsc | 4 deployments: bsc [`0x5c2723...b9ebe4`](./bsc-56/0x5c2723df8ca0b6605501bb4c4e604a532bb9ebe4/); bsc `0x612e35...8ddc93`; bsc `0x6c19e8...76ce70`; bsc `0x7818bd...eed948` | ⚠️ Unaudited | Verified |
+| [SpookyShiba (3 deployments)](./bsc-56/0xad1bb890065201d4a2e0ad2eabfc8b68b99c597d/) | bsc | 3 deployments: bsc [`0xad1bb8...9c597d`](./bsc-56/0xad1bb890065201d4a2e0ad2eabfc8b68b99c597d/); bsc `0xe3a551...7783f7`; bsc `0xed74bc...4334a4` | ⚠️ Unaudited | Verified |
 | [SpookyShiba_V2 (2 deployments)](./bsc-56/0x7ea29936a330844f307d4e0af9c1b9182424ce21/) | bsc | 2 deployments: bsc [`0x7ea299...24ce21`](./bsc-56/0x7ea29936a330844f307d4e0af9c1b9182424ce21/); bsc `0x9c2b1b...1bf25a` | ⚠️ Unaudited | Verified |
-| [UniswapV2Pair (2 deployments)](./ethereum-1/0x7250f7e97a4338d2bd72abc4b010d7a8477dc1f9/) | ethereum | 2 deployments: ethereum [`0x7250f7...7dc1f9`](./ethereum-1/0x7250f7e97a4338d2bd72abc4b010d7a8477dc1f9/); polygon `0xf3c62d...c224e2` | ⚠️ Unaudited | Verified |
+| [UniswapV2Pair](./polygon-137/0xf3c62dbbfec92a2e73d676d62ebec06a6bc224e2/) | polygon | [`0xf3c62d...c224e2`](./polygon-137/0xf3c62dbbfec92a2e73d676d62ebec06a6bc224e2/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x27c681...9fae78` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x478c18...0523d7` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x48d6f1...51713d` | ❓ Unverified | Unverified |
@@ -277,6 +251,3 @@
 | [Uptrend](./bsc-56/0xc4ed752d658989fe86db8ddad3f6f19271552d23/) | bsc | [`0xc4ed75...552d23`](./bsc-56/0xc4ed752d658989fe86db8ddad3f6f19271552d23/) | ⚠️ Unaudited | Verified |
 | [VeJoeStaking (2 deployments)](./avalanche-43114/0x4b4e0888091fb1de74a7e7404b2dc4eb897fbc17/) | avalanche | 2 deployments: avalanche [`0x4b4e08...7fbc17`](./avalanche-43114/0x4b4e0888091fb1de74a7e7404b2dc4eb897fbc17/); avalanche `0xdefdbe...e4e933` | ⚠️ Unaudited | Verified |
 | [veRise (4 deployments)](./ethereum-1/0xdba7b24257fc6e397cb7368b4bc922e944072f1b/) | ethereum | 4 deployments: ethereum [`0xdba7b2...072f1b`](./ethereum-1/0xdba7b24257fc6e397cb7368b4bc922e944072f1b/); bsc `0xdba7b2...072f1b`; polygon `0xdba7b2...072f1b`; avalanche `0xdba7b2...072f1b` | ⚠️ Unaudited | Verified |
-| [VOLT (2 deployments)](./ethereum-1/0x7db5af2b9624e1b3b4bb69d6debd9ad1016a58ac/) | ethereum | 2 deployments: ethereum [`0x7db5af...6a58ac`](./ethereum-1/0x7db5af2b9624e1b3b4bb69d6debd9ad1016a58ac/); bsc `0x7db5af...6a58ac` | ⚠️ Unaudited | Verified |
-| [VoltInu (2 deployments)](./ethereum-1/0x7f792db54b0e580cdc755178443f0430cf799aca/) | ethereum | 2 deployments: ethereum [`0x7f792d...799aca`](./ethereum-1/0x7f792db54b0e580cdc755178443f0430cf799aca/); bsc `0x7f792d...799aca` | ⚠️ Unaudited | Verified |
-| [ZillaPump](./bsc-56/0x1291072002b37410573c5bc856e7c33830e6a9e7/) | bsc | [`0x129107...e6a9e7`](./bsc-56/0x1291072002b37410573c5bc856e7c33830e6a9e7/) | ⚠️ Unaudited | Verified |

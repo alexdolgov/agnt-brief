@@ -1,6 +1,6 @@
 # eventum-bridge — Contract Index
 
-30 unique implementations across 2 chains · 60 deployments · 1 audited · 27 unaudited · 2 unverified
+28 unique implementations across 2 chains · 57 deployments · 1 audited · 25 unaudited · 2 unverified
 
 ## adapter (2)
 
@@ -17,12 +17,11 @@
 | DVFDepositContract | ethereum | `0xbca303...045afa` | ⚠️ Unaudited | Verified |
 | [VaultV1 (2 deployments)](./arbitrum-42161/0x2e8d8b56821ebb0abd4bb9dcd4703a2df54ca8fe/) | arbitrum | 2 deployments: arbitrum [`0x2e8d8b...4ca8fe`](./arbitrum-42161/0x2e8d8b56821ebb0abd4bb9dcd4703a2df54ca8fe/); arbitrum `0xa526c0...0c9684` | ⚠️ Unaudited | Verified |
 
-## governance (3)
+## governance (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [GovernorMultisig](./arbitrum-42161/0xeb71a9c02c1f68a9d7004e74e17c7d62c3291bf8/) | arbitrum | [`0xeb71a9...291bf8`](./arbitrum-42161/0xeb71a9c02c1f68a9d7004e74e17c7d62c3291bf8/) | ⚠️ Unaudited | Verified |
-| [ProxyAdmin (2 deployments)](./ethereum-1/0x70911642e4ea509735e77cba23ce1856abed87bf/) | ethereum | 2 deployments: ethereum [`0x709116...ed87bf`](./ethereum-1/0x70911642e4ea509735e77cba23ce1856abed87bf/); ethereum `0x92650d...b60175` | ⚠️ Unaudited | Verified |
 | [SwapManager (3 deployments)](./arbitrum-42161/0x770722fcaab3c7d46fc1ad679726b232e7def2f6/) | arbitrum | 3 deployments: arbitrum [`0x770722...def2f6`](./arbitrum-42161/0x770722fcaab3c7d46fc1ad679726b232e7def2f6/); arbitrum `0xac3450...a22291`; arbitrum `0xe575f5...75daa4` | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (4)
@@ -33,12 +32,6 @@
 | [BridgeMiddleware (3 deployments)](./arbitrum-42161/0x254e696ae76c17adc4363ae9476ce24ce935be16/) | arbitrum | 3 deployments: arbitrum [`0x254e69...35be16`](./arbitrum-42161/0x254e696ae76c17adc4363ae9476ce24ce935be16/); arbitrum `0x26052f...5fa503`; arbitrum `0x683c48...0e3e40` | ⚠️ Unaudited | Verified |
 | [BridgeMiddlewareV2 (3 deployments)](./arbitrum-42161/0x4721aee3296f6f34a621d7645ee2fa2ae0b251a9/) | arbitrum | 3 deployments: arbitrum [`0x4721ae...b251a9`](./arbitrum-42161/0x4721aee3296f6f34a621d7645ee2fa2ae0b251a9/); arbitrum `0x5fbf44...521b82`; arbitrum `0xfdaf74...2826b8` | ⚠️ Unaudited | Verified |
 | [TreasuryV1](./arbitrum-42161/0x0a9591c64fd9e8c1f9a81db1b668a5f211b5735a/) | arbitrum | [`0x0a9591...b5735a`](./arbitrum-42161/0x0a9591c64fd9e8c1f9a81db1b668a5f211b5735a/) | ✅ Audited | Verified |
-
-## periphery (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [Multicall2](./ethereum-1/0x0dbbd1bb03ed63ae2bea0ce892567884dffb70a5/) | ethereum | [`0x0dbbd1...fb70a5`](./ethereum-1/0x0dbbd1bb03ed63ae2bea0ce892567884dffb70a5/) | ⚠️ Unaudited | Verified |
 
 ## registry (3)
 

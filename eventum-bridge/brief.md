@@ -5,8 +5,8 @@
 - Project: Eventum Bridge (`eventum-bridge`)
 - Website: [https://evedex.com/en-US/](https://evedex.com/en-US/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:03.850Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:15:04.390Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: arbitrum, ethereum
 - Contract surface: 28 unique implementations (57 raw deployments)
 - DeFi Llama TVL: $2,820,145.70

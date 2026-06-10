@@ -1,6 +1,6 @@
 # exactly — Contract Index
 
-65 unique implementations across 3 chains · 1384 deployments · 29 audited · 15 unaudited · 21 unverified
+65 unique implementations across 3 chains · 1384 deployments · 28 audited · 16 unaudited · 21 unverified
 
 ## adapter (4)
 
@@ -27,7 +27,7 @@
 | [ProposalManager (3 deployments)](./optimism-10/0x6817974ca2c354f2fa40d8349b725b5bf81c8338/) | optimism | 3 deployments: optimism [`0x681797...1c8338`](./optimism-10/0x6817974ca2c354f2fa40d8349b725b5bf81c8338/); optimism `0x827e9f...3c7458`; base `0xb92e0a...8c648f` | ✅ Audited | Verified |
 | [ProxyAdmin (3 deployments)](./ethereum-1/0x3866ea62494597a5edea4a97f9429f82b9d7ca34/) | ethereum | 3 deployments: ethereum [`0x3866ea...d7ca34`](./ethereum-1/0x3866ea62494597a5edea4a97f9429f82b9d7ca34/); optimism `0xfba759...4b941a`; base `0xfba759...4b941a` | ⚠️ Unaudited | Verified |
 | [RewardsController (7 deployments)](./optimism-10/0x0399cf66d74106d438d5770dce8c0f7071a95f7f/) | optimism | 7 deployments: optimism [`0x0399cf...a95f7f`](./optimism-10/0x0399cf66d74106d438d5770dce8c0f7071a95f7f/); optimism `0x0b9d4a...06bc7a`; optimism `0x3a31a7...977c3c`; optimism `0x59611c...41930f`; optimism `0xbd1ba7...b2e031`; optimism `0xc91dc7...55292c`; optimism `0xf972f7...c94e72` | ✅ Audited | Verified |
-| [TimelockController (3 deployments)](./ethereum-1/0x92024c4bda9da602b711b9abb610d072018eb58b/) | ethereum | 3 deployments: ethereum [`0x92024c...8eb58b`](./ethereum-1/0x92024c4bda9da602b711b9abb610d072018eb58b/); optimism `0x92024c...8eb58b`; base `0x92024c...8eb58b` | ✅ Audited | Verified |
+| [TimelockController (3 deployments)](./ethereum-1/0x92024c4bda9da602b711b9abb610d072018eb58b/) | ethereum | 3 deployments: ethereum [`0x92024c...8eb58b`](./ethereum-1/0x92024c4bda9da602b711b9abb610d072018eb58b/); optimism `0x92024c...8eb58b`; base `0x92024c...8eb58b` | ⚠️ Unaudited | Verified |
 
 ## operational_periphery (6)
 

@@ -1,0 +1,17 @@
+{
+  "address": "0xe5bc801f3979eeabbdb206a5ff7cfe92ec0dd476",
+  "chain_id": 56,
+  "contract_name": "CS721Listings",
+  "compiler_version": "v0.8.9+commit.e5eed63a",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "constantinople",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 8,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-10T23:16:15.246Z"
+}

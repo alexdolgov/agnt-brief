@@ -5,8 +5,8 @@
 - Project: Ethos (`ethos`)
 - Website: [https://www.ethos.network/](https://www.ethos.network/)
 - Lifecycle: active (Tier 0, 66.2% below peak)
-- Generated: 2026-06-10T20:59:03.840Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:15:04.870Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: base, ethereum
 - Contract surface: 27 unique implementations (64 raw deployments)
 - DeFi Llama TVL: $1,889,821.00

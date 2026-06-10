@@ -5,17 +5,17 @@
 - Project: Arbitrum Nova Bridge (`arbitrum-nova-bridge`)
 - Website: [https://portal.arbitrum.io/bridge?l2ChainId=42170](https://portal.arbitrum.io/bridge?l2ChainId=42170)
 - Lifecycle: active (Tier 0, 91.4% below peak)
-- Generated: 2026-05-31T07:13:21.622Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
-- Chains: arbitrum, ethereum
-- Contract surface: 55 unique implementations (168 raw deployments)
+- Generated: 2026-06-10T20:41:02.523Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
+- Chains: ethereum
+- Contract surface: 54 unique implementations (167 raw deployments)
 - DeFi Llama TVL: $18,907,935.14
 - On-chain TVL (included contracts): $447,171.38
 - TVL by chain: Ethereum $447,171.38
 
 ## Project Description
 
-The Arbitrum Nova Bridge enables trustless transfer of assets between Ethereum and Arbitrum Nova, a low-cost L2 chain. It uses a canonical token bridge with gateway contracts to lock tokens on L1 and mint corresponding tokens on L2.
+The Arbitrum Nova Bridge enables asset transfers between Ethereum and Arbitrum Nova, a low-cost L2 chain, using canonical bridge and gateway contracts. The contract surface should distinguish Ethereum-side bridge contracts from Arbitrum Nova chain_id 42170 bridge-side contracts; Arbitrum One chain_id 42161 token contracts should not be treated as Nova bridge-side contracts unless separately verified.
 
 ### Architecture
 
@@ -23,12 +23,12 @@ The L1GatewayRouter directs token transfers to the appropriate gateway (L1ERC20G
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/48 (0.0%)
-- Verified + Unaudited implementations: 48
+- Verified implementations audited: 0/47 (0.0%)
+- Verified + Unaudited implementations: 47
 - Verified by bytecode match: 0
 - Unverified implementations: 7
-- Unique implementations: 55
-- Raw deployments: 168
+- Unique implementations: 54
+- Raw deployments: 167
 - Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $447,171.38
@@ -46,7 +46,7 @@ The L1GatewayRouter directs token transfers to the appropriate gateway (L1ERC20G
 
 - None
 
-### ⚠️ Verified + Unaudited (48)
+### ⚠️ Verified + Unaudited (47)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -71,7 +71,6 @@ The L1GatewayRouter directs token transfers to the appropriate gateway (L1ERC20G
 | L1GatewayRouter | adapter | ethereum | 4 deployments: ethereum [`0x525950...ff423c`](./contracts/ethereum-1/0x52595021fa01b3e14ec6c88953afc8e35dff423c/); ethereum `0x6d1c57...ccb47b`; ethereum `0xa96105...fd477e`; ethereum `0xc84083...63cd48` | ⚠️ Unaudited |
 | L1Token | token | ethereum | [`0xe3dbc4...6688ab`](./contracts/ethereum-1/0xe3dbc4f88eaa632ddf9708732e2832eeaa6688ab/) | ⚠️ Unaudited |
 | L1WethGateway | token | ethereum | 5 deployments: ethereum [`0x1986a7...1de0b1`](./contracts/ethereum-1/0x1986a7d7a9bb6cdbd87460bc2381d012071de0b1/); ethereum `0x629983...3c4936`; ethereum `0xb63762...ac409c`; ethereum `0xcb5e88...4d0728`; ethereum `0xe4e212...330bae` | ⚠️ Unaudited |
-| L2ArbitrumToken | token | arbitrum | [`0x912ce5...9e6548`](./contracts/arbitrum-42161/0x912ce59144191c1204e64559fe8253a0e49e6548/) | ⚠️ Unaudited |
 | Multicall2 | periphery | ethereum | [`0x8896d2...a38ea3`](./contracts/ethereum-1/0x8896d23afea159a5e9b72c9eb3dc4e2684a38ea3/) | ⚠️ Unaudited |
 | NitroContracts2Point1Point0UpgradeAction | unknown | ethereum | [`0x9e0049...442225`](./contracts/ethereum-1/0x9e0049b901531aee041ad0d63faeeeffbf442225/) | ⚠️ Unaudited |
 | NitroContracts2Point1Point2UpgradeAction | unknown | ethereum | [`0x78ee30...35542f`](./contracts/ethereum-1/0x78ee30c74b3ce1aeb38163db3e7d769d9735542f/) | ⚠️ Unaudited |
@@ -185,7 +184,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 49 |
 | upstream | 0 |
-| standard_library | 6 |
+| standard_library | 5 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

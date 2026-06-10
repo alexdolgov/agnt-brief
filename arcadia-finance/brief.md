@@ -5,17 +5,17 @@
 - Project: Arcadia Finance (`arcadia-finance`)
 - Website: [https://arcadia.finance](https://arcadia.finance)
 - Lifecycle: active (Tier 0, 67.1% below peak)
-- Generated: 2026-05-23T09:38:40.298Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:41:31.076Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: base, optimism, unichain
 - Contract surface: 55 unique implementations (151 raw deployments)
-- DeFi Llama TVL: $7,256,735.00
+- DeFi Llama TVL: $7,209,275.00
 - On-chain TVL (included contracts): $6,173,125.56
 - TVL by chain: Base $6,106,009.25 | Optimism $67,116.31
 
 ## Project Description
 
-Arcadia Finance is a DeFi protocol that enables leveraged yield farming and liquidity management across multiple chains. It provides vault-like accounts that can borrow from lending pools, manage concentrated liquidity positions, and compound rewards, all governed by a modular system of adapters and registries.
+Arcadia Finance is a DeFi protocol for non-custodial cross-margin accounts, lending pools, and automated liquidity management. It enables users to manage composable account positions, borrow against supported collateral, and deploy or optimize DEX liquidity strategies across supported chains, with leveraged yield farming treated as a legacy or secondary use case rather than the protocol's primary current identity.
 
 ### Architecture
 
@@ -33,7 +33,7 @@ The Factory deploys Account contracts that interact with Lending Pools to borrow
 - Scoreable audits (matched contracts): 12
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-01 (fresh)
-- Staleness: 2 fresh, 3 aging, 7 stale, 1 unknown
+- Staleness: 2 fresh, 2 aging, 8 stale, 1 unknown
 - Tier 1 coverage: 53.8% (Sherlock)
 
 ### Auditor Coverage
@@ -144,7 +144,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [2024-01 Renascense.pdf](https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-01%20Renascense.pdf) | Renascense | Audit | 2024-01 | stale | Direct | contract_name | 20 | high |
 | [2024-02 Sherlock.pdf](https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-02%20Sherlock.pdf) | Sherlock | Contest | 2024-02 | stale | Direct | contract_name | 26 | high |
 | [2024-04 Sherlock.pdf](https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-04%20Sherlock.pdf) | Sherlock | Contest | 2024-04 | stale | Direct | contract_name | 3 | high |
-| [2024-06 Renascense.pdf](https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-06%20Renascense.pdf) | Renascense | Audit | 2024-06 | aging | Direct | contract_name | 7 | medium |
+| [2024-06 Renascense.pdf](https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-06%20Renascense.pdf) | Renascense | Audit | 2024-06 | stale | Direct | contract_name | 7 | medium |
 | [2024-10 Pashov Group.pdf](https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-10%20Pashov%20Group.pdf) | Pashov Audit Group | Audit | 2024-10 | aging | Direct | contract_name | 7 | high |
 | [2025-01 Renascense.pdf](https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2025-01%20Renascense.pdf) | Renascense | Audit | 2025-01 | aging | Direct | contract_name | 1 | high |
 | [2025-09 Sherlock.pdf](https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2025-09%20Sherlock.pdf) | Sherlock | Contest | 2025-09 | fresh | Direct | contract_name | 32 | high |

@@ -7,21 +7,22 @@
 - Project: Aria Protocol (`aria-protocol`)
 - Website: [https://ariaprotocol.xyz](https://ariaprotocol.xyz)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-24T15:46:38.144Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:42:10.525Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,965,606.17
+- DeFi Llama TVL: $181,053.04
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Aria Protocol is a Real World Asset (RWA) protocol on BSC that enables tokenization and cross-chain transfer of real-world assets using LayerZero's Omnichain Fungible Token (OFT) standard.
-
-### Architecture
-
-The protocol consists of a single product family with one core contract, AriaOFT, which serves as the primary token for asset tokenization and cross-chain functionality.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

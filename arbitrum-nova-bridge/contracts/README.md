@@ -1,6 +1,6 @@
 # arbitrum-nova-bridge — Contract Index
 
-55 unique implementations across 2 chains · 168 deployments · 0 audited · 48 unaudited · 7 unverified
+54 unique implementations on ethereum · 167 deployments · 0 audited · 47 unaudited · 7 unverified
 
 ## adapter (1)
 
@@ -35,7 +35,7 @@
 | [DeployHelper (3 deployments)](./ethereum-1/0x15b7911c2974dfa95ae12192e2a3387b204c1f32/) | ethereum | 3 deployments: ethereum [`0x15b791...4c1f32`](./ethereum-1/0x15b7911c2974dfa95ae12192e2a3387b204c1f32/); ethereum `0x524c56...d4980b`; ethereum `0x6319ff...cf6ec7` | ⚠️ Unaudited | Verified |
 | [Multicall2](./ethereum-1/0x8896d23afea159a5e9b72c9eb3dc4e2684a38ea3/) | ethereum | [`0x8896d2...a38ea3`](./ethereum-1/0x8896d23afea159a5e9b72c9eb3dc4e2684a38ea3/) | ⚠️ Unaudited | Verified |
 
-## token (8)
+## token (7)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -45,7 +45,6 @@
 | [L1ERC20Gateway (3 deployments)](./ethereum-1/0xb2535b988dce19f9d71dfb22db6da744acac21bf/) | ethereum | 3 deployments: ethereum [`0xb2535b...ac21bf`](./ethereum-1/0xb2535b988dce19f9d71dfb22db6da744acac21bf/); ethereum `0xb4299a...fde900`; ethereum `0xf852de...c0ef4b` | ⚠️ Unaudited | Verified |
 | [L1Token](./ethereum-1/0xe3dbc4f88eaa632ddf9708732e2832eeaa6688ab/) | ethereum | [`0xe3dbc4...6688ab`](./ethereum-1/0xe3dbc4f88eaa632ddf9708732e2832eeaa6688ab/) | ⚠️ Unaudited | Verified |
 | [L1WethGateway (5 deployments)](./ethereum-1/0x1986a7d7a9bb6cdbd87460bc2381d012071de0b1/) | ethereum | 5 deployments: ethereum [`0x1986a7...1de0b1`](./ethereum-1/0x1986a7d7a9bb6cdbd87460bc2381d012071de0b1/); ethereum `0x629983...3c4936`; ethereum `0xb63762...ac409c`; ethereum `0xcb5e88...4d0728`; ethereum `0xe4e212...330bae` | ⚠️ Unaudited | Verified |
-| [L2ArbitrumToken](./arbitrum-42161/0x912ce59144191c1204e64559fe8253a0e49e6548/) | arbitrum | [`0x912ce5...9e6548`](./arbitrum-42161/0x912ce59144191c1204e64559fe8253a0e49e6548/) | ⚠️ Unaudited | Verified |
 | [RegisterL2TokenInArbCustomGatewayAction](./ethereum-1/0x7a578141af44095a58b73b1e84a63da3267c8843/) | ethereum | [`0x7a5781...7c8843`](./ethereum-1/0x7a578141af44095a58b73b1e84a63da3267c8843/) | ⚠️ Unaudited | Verified |
 
 ## unknown (34)

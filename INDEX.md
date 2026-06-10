@@ -43,11 +43,11 @@
 | [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | declining | 0 | 9 | 2026-06-10 |
 | [apex-protocol](./apex-protocol/) | $436.4K | 0.0% | $436.4K | active | 1 | 206 | 2026-06-10 |
 | [api3](./api3/) | $55.2M | 21.4% | $55.2M | active | 6 | 28 | 2026-06-10 |
-| [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 55 | 2026-05-31 |
-| [arcade.xyz](./arcade.xyz/) | $240.1K | 65.9% | ? | dead | 25 | 61 | 2026-05-28 |
-| [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-05-23 |
-| [aria-protocol](./aria-protocol/) | $2.0M | 0.0% | ? | dead | 1 | 1 | 2026-05-24 |
-| [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | unknown | 0 | 1 | 2026-05-31 |
+| [arbitrum-nova-bridge](./arbitrum-nova-bridge/) | $447.2K | 0.0% | $447.2K | active | 0 | 54 | 2026-06-10 |
+| [arcade.xyz](./arcade.xyz/) | $240.1K | 67.4% | ? | declining | 10 | 60 | 2026-06-10 |
+| [arcadia-finance](./arcadia-finance/) | $6.2M | 63.5% | ? | active | 13 | 55 | 2026-06-10 |
+| [aria-protocol](./aria-protocol/) | $181.1K | 0.0% | ? | dead | 1 | 1 | 2026-06-10 |
+| [armitage-by-wintermute](./armitage-by-wintermute/) | $51.8M | 0.0% | $51.8M | active | 0 | 1 | 2026-06-10 |
 | [arrakis-finance](./arrakis-finance/) | $128.2K | 29.1% | $3.1K | active | 12 | 124 | 2026-05-31 |
 | [asseto-aoabt](./asseto-aoabt/) | $22.3M | 0.0% | ? | active | 0 | 1 | 2026-05-31 |
 | [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-05-24 |

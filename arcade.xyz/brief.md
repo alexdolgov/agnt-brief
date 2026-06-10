@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Arcade.xyz
 
-⚠️ Lifecycle status: DEAD - TVL dropped 47.4% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 47.4% over 90 days
 
 ## Project Overview
 
 - Project: Arcade.xyz (`arcade.xyz`)
 - Website: [https://www.arcade.xyz](https://www.arcade.xyz)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-28T15:42:04.934Z
-- Pipeline run: v2-pipeline-2026-05-28-8b27fb-06de
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:42:10.362Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
-- Contract surface: 61 unique implementations (148 raw deployments)
+- Contract surface: 60 unique implementations (147 raw deployments)
 - DeFi Llama TVL: $5,122,465.83
 - On-chain TVL (included contracts): $240,139.20
 - TVL by chain: Ethereum $240,139.20
 
 ## Project Description
 
-Arcade.xyz is an NFT lending protocol that enables users to borrow against their NFTs as collateral. It provides vaults for depositing NFTs, loan origination, and staking mechanisms for its native token.
+Arcade.xyz historically operated as an NFT-collateral lending protocol on Ethereum, enabling users to borrow against NFTs through loan origination, vault, and staking-related contracts. Current project messaging describes a broader lending marketplace for memecoins, NFTs, RWAs, and other tokens, with Ethereum and Base advertised; any Base contract surface should be treated as unverified until live deployments are confirmed.
 
 ### Architecture
 
@@ -25,27 +25,27 @@ The VaultFactory creates vaults that hold NFT collateral, while LoanCore manages
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 29/44 (65.9%)
-- Verified + Unaudited implementations: 15
+- Verified implementations audited: 29/43 (67.4%)
+- Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
 - Unverified implementations: 17
-- Unique implementations: 61
-- Raw deployments: 148
-- Audits discovered: 25
-- Scoreable audits (matched contracts): 21
+- Unique implementations: 60
+- Raw deployments: 147
+- Audits discovered: 10
+- Scoreable audits (matched contracts): 10
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-03 (stale)
-- Staleness: 0 fresh, 0 aging, 12 stale, 13 unknown
-- Tier 1 coverage: 29.5% (Trail of Bits)
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Staleness: 0 fresh, 0 aging, 10 stale, 0 unknown
+- Tier 1 coverage: 30.2% (Trail of Bits)
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 29 | 65.9% | 2024-03 |
-| Trail of Bits | Tier 1 | 13 | 29.5% | 2023-07 |
-| Quantstamp | Tier 2 | 8 | 18.2% | 2022-06 |
+| unknown | Tier 2 | 29 | 67.4% | 2024-03 |
+| Trail of Bits | Tier 1 | 13 | 30.2% | 2023-07 |
+| Quantstamp | Tier 2 | 8 | 18.6% | 2022-06 |
 
 ## Contract Surface
 
@@ -83,7 +83,7 @@ The VaultFactory creates vaults that hold NFT collateral, while LoanCore manages
 | V2ToV3RolloverWithItems | unknown | ethereum | 2 deployments: ethereum [`0x3c7726...51d396`](./contracts/ethereum-1/0x3c77269ca7f4ac42b6f0bfc10d9f44406351d396/); ethereum `0xac33e4...139e7b` | ✅ Audited |
 | VaultFactory | registry | ethereum | 12 deployments: ethereum [`0x21b346...6b3c0c`](./contracts/ethereum-1/0x21b346622e607fcc936a320d3ab8224fb36b3c0c/); ethereum `0x269363...476d55`; ethereum `0x371e4f...6c596f`; ethereum `0x38e01b...dacdf6`; ethereum `0x4cf03b...bc54b1`; ethereum `0x4e6a52...c4ab7c`; ethereum `0x666faa...7133be`; ethereum `0x6e9b4c...cc94a2`; ethereum `0x759491...01cf53`; ethereum `0x7d43e6...d767b5`; ethereum `0x833481...48de7c`; ethereum `0x86eb88...efdb03` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (15)
+### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
@@ -99,7 +99,6 @@ The VaultFactory creates vaults that hold NFT collateral, while LoanCore manages
 | ReflectiveURIDescriptor | periphery | ethereum | [`0x7fa888...621fd5`](./contracts/ethereum-1/0x7fa888a801fc7b7e5e847239e58dd4e2dc621fd5/) | ⚠️ Unaudited |
 | StaticURIDescriptor | periphery | ethereum | 10 deployments: ethereum [`0x2055f7...dafc75`](./contracts/ethereum-1/0x2055f71ef369d26db683da0b8f8c62469bdafc75/); ethereum `0x5a49a3...5727e8`; ethereum `0x81a86c...2c065e`; ethereum `0x957896...b998c3`; ethereum `0x9a07c4...c2e77e`; ethereum `0xa3e495...3cc5e9`; ethereum `0xad8a07...a79f22`; ethereum `0xe237f0...372dfb`; ethereum `0xe3ce55...d81a94`; ethereum `0xfde563...84cfcc` | ⚠️ Unaudited |
 | Timelock | governance | ethereum | 2 deployments: ethereum [`0x475114...41ff01`](./contracts/ethereum-1/0x47511465c397875deab7cf8f008d7922d041ff01/); ethereum `0xf3e9cd...c5a973` | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | [`0x06af8c...1a2bca`](./contracts/ethereum-1/0x06af8c358c0787640588734e4733a779961a2bca/) | ⚠️ Unaudited |
 | VaultDepositRouter | adapter | ethereum | 2 deployments: ethereum [`0x4b9564...52bed2`](./contracts/ethereum-1/0x4b95640d56f81fc851f952793f4e5485e352bed2/); ethereum `0xfdda20...1483f6` | ⚠️ Unaudited |
 | VaultInventoryReporter | core_logic | ethereum | 2 deployments: ethereum [`0x144b15...db8e1d`](./contracts/ethereum-1/0x144b1535a3ff4007aad8921419ee2e02cfdb8e1d/); ethereum `0x3a0f9a...8c2e8a` | ⚠️ Unaudited |
 
@@ -143,31 +142,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [2021-08-least-authority.pdf](https://github.com/arcadexyz/pawnfi-contracts/blob/main/audits/2021-08-least-authority.pdf) | unknown | Audit | 2021-08 | stale | Direct | contract_name | 18 | high |
-| [2022-04-macro.pdf](https://github.com/arcadexyz/pawnfi-contracts/blob/main/audits/2022-04-macro.pdf) | unknown | Audit | 2022-04 | stale | Direct | contract_name | 46 | high |
-| [AssetWrapper.md](https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/AssetWrapper.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [ERC721Permit.md](https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/ERC721Permit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [FeeController.md](https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/FeeController.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 6 | low |
-| [FlashRollover.md](https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/FlashRollover.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 33 | low |
-| [LoanCore.md](https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/LoanCore.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 45 | medium |
-| [OriginationController.md](https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/OriginationController.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 19 | low |
-| [PromissoryNote.md](https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/PromissoryNote.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 13 | low |
-| [PunkRouter.md](https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/PunkRouter.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | low |
-| [RepaymentController.md](https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/RepaymentController.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 31 | medium |
-| [V1_Lending_LeastAuthority_2021-08.pdf (also discovered via alternate URL)](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V1_Lending_LeastAuthority_2021-08.pdf) | unknown | Audit | 2021-08 | stale | Direct | contract_name | 18 | high |
-| [V1_Lending_Macro_2022-04.pdf (also discovered via alternate URL)](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V1_Lending_Macro_2022-04.pdf) | unknown | Audit | 2022-04 | stale | Direct | contract_name | 46 | high |
-| [V2_Lending_Quantstamp_2022_06.pdf (also discovered via alternate URL)](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V2_Lending_Quantstamp_2022_06.pdf) | Quantstamp | Audit | 2022-06 | stale | Direct | contract_name | 69 | high |
-| [V2_Lending_Roku_2022_06.pdf (also discovered via alternate URL)](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V2_Lending_Roku_2022_06.pdf) | unknown | Audit | 2022-06 | stale | Direct | contract_name | 50 | high |
+| [V1_Lending_LeastAuthority_2021-08.pdf](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V1_Lending_LeastAuthority_2021-08.pdf) | unknown | Audit | 2021-08 | stale | Direct | contract_name | 18 | high |
+| [V1_Lending_Macro_2022-04.pdf](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V1_Lending_Macro_2022-04.pdf) | unknown | Audit | 2022-04 | stale | Direct | contract_name | 46 | high |
+| [V2_Lending_Quantstamp_2022_06.pdf](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V2_Lending_Quantstamp_2022_06.pdf) | Quantstamp | Audit | 2022-06 | stale | Direct | contract_name | 69 | high |
+| [V2_Lending_Roku_2022_06.pdf](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V2_Lending_Roku_2022_06.pdf) | unknown | Audit | 2022-06 | stale | Direct | contract_name | 50 | high |
 | [V3_Lending_Omniscia_2023-08.pdf](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V3_Lending_Omniscia_2023-08.pdf) | unknown | Audit | 2023-08 | stale | Direct | contract_name | 80 | high |
 | [V3_Lending_TrailOfBits_2023-07.pdf](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V3_Lending_TrailOfBits_2023-07.pdf) | Trail of Bits | Audit | 2023-07 | stale | Direct | contract_name | 78 | high |
 | [V3_Rollovers_Omniscia_2023-08.pdf](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V3_Rollovers_Omniscia_2023-08.pdf) | unknown | Audit | 2023-08 | stale | Direct | contract_name | 5 | high |
 | [V4_Lending_Renascence_2024_02.pdf](https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V4_Lending_Renascence_2024_02.pdf) | unknown | Audit | 2024-02 | stale | Direct | contract_name | 31 | high |
-| [StakingRewardsAuditScope.md](https://github.com/arcadexyz/dao-contracts/blob/main/audits/StakingRewardsAuditScope.md) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | high |
 | [arcade-staking-report-final.pdf](https://github.com/arcadexyz/dao-contracts/blob/main/audits/arcade-staking-report-final.pdf) | unknown | Audit | 2024-03 | stale | Direct | contract_name | 1 | high |
 | [07152023_Omniscia_Audit_Arcade_Governance.pdf](https://github.com/arcadexyz/governance/blob/main/audits/07152023_Omniscia_Audit_Arcade_Governance.pdf) | unknown | Audit | 2023-07 | stale | Direct | contract_name | 12 | high |
-| [0001-dataset-cache-manifest-and-runtime-adapters.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0002-metadata-manifest-and-pull-command.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [0003-bun-package-manager-node-runtime.md](https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -195,7 +179,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 58 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 0 |
 | needs_review | 2 |
 
@@ -203,16 +187,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=13, low=6, medium=2
-- Match method counts: extraction_exact=787
-
-Zero-match audit list:
-
-- [7712] ERC721Permit.md
-- [7735] 0001-dataset-cache-manifest-and-runtime-adapters.md
-- [7736] 0002-metadata-manifest-and-pull-command.md
-- [7737] 0003-bun-package-manager-node-runtime.md
+- Extraction confidence breakdown: high=10
+- Match method counts: extraction_exact=390
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Armitage by Wintermute
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Armitage by Wintermute (`armitage-by-wintermute`)
 - Website: [https://armitage.wintermute.com](https://armitage.wintermute.com)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T14:54:09.397Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:41:01.416Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
 - Contract surface: 1 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $51,051,101.46
@@ -38,7 +36,6 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $51,808,883.67 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

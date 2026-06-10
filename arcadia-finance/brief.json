@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "arcadia-finance",
-  "generated_at": "2026-05-23T09:38:40.298Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:41:31.076Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "arcadia-finance",
@@ -35,7 +35,7 @@
     "coverage_pct": 63.5,
     "total_audits": 13,
     "scoreable_audits": 12,
-    "dl_tvl_usd": 7256735,
+    "dl_tvl_usd": 7209275,
     "tvl_usd": 6173125.5635418985,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -57,15 +57,20 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 2,
-      "aging": 3,
-      "stale": 7,
+      "aging": 2,
+      "stale": 8,
       "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Arcadia Finance is a DeFi protocol that enables leveraged yield farming and liquidity management across multiple chains. It provides vault-like accounts that can borrow from lending pools, manage concentrated liquidity positions, and compound rewards, all governed by a modular system of adapters and registries.",
+    "project_purpose": "Arcadia Finance is a DeFi protocol for non-custodial cross-margin accounts, lending pools, and automated liquidity management. It enables users to manage composable account positions, borrow against supported collateral, and deploy or optimize DEX liquidity strategies across supported chains, with leveraged yield farming treated as a legacy or secondary use case rather than the protocol's primary current identity.",
     "relationship_narrative": "The Factory deploys Account contracts that interact with Lending Pools to borrow funds, while Position Managers, Pricing Modules, Compounders, Rebalancers, and Yield Claimers work together as adapters to manage and optimize liquidity positions. The Registry maintains a list of approved modules, and the Liquidator ensures system solvency by closing unhealthy accounts.",
     "product_family_count": 15
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 55,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -3045,7 +3050,7 @@
       "report_url": "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2024-06%20Renascense.pdf",
       "auditor": "Renascense",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,

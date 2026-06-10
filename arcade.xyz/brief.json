@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "arcade.xyz",
-  "generated_at": "2026-05-28T15:42:04.934Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-28-8b27fb-06de",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:42:10.362Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "arcade.xyz",
     "tier": 1,
@@ -32,19 +32,19 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 61,
-    "total_addresses": 148,
-    "unique_implementations": 61,
-    "total_deployments": 148,
+    "total_contracts": 60,
+    "total_addresses": 147,
+    "unique_implementations": 60,
+    "total_deployments": 147,
     "audited_contracts": 29,
-    "unaudited_contracts": 15,
+    "unaudited_contracts": 14,
     "contracts_verified_audited": 29,
-    "contracts_verified_unaudited": 15,
+    "contracts_verified_unaudited": 14,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 17,
-    "coverage_pct": 65.9,
-    "total_audits": 25,
-    "scoreable_audits": 21,
+    "coverage_pct": 67.4,
+    "total_audits": 10,
+    "scoreable_audits": 10,
     "dl_tvl_usd": 5122465.82532,
     "tvl_usd": 240139.204852096,
     "tvl_source": "on_chain",
@@ -56,7 +56,7 @@
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 29.5,
+    "tier1_coverage_pct": 30.2,
     "tier1_auditors": [
       "Trail of Bits"
     ],
@@ -65,14 +65,19 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 12,
-      "unknown": 13
+      "stale": 10,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Arcade.xyz is an NFT lending protocol that enables users to borrow against their NFTs as collateral. It provides vaults for depositing NFTs, loan origination, and staking mechanisms for its native token.",
+    "project_purpose": "Arcade.xyz historically operated as an NFT-collateral lending protocol on Ethereum, enabling users to borrow against NFTs through loan origination, vault, and staking-related contracts. Current project messaging describes a broader lending marketplace for memecoins, NFTs, RWAs, and other tokens, with Ethereum and Base advertised; any Base contract surface should be treated as unverified until live deployments are confirmed.",
     "relationship_narrative": "The VaultFactory creates vaults that hold NFT collateral, while LoanCore manages loan origination and repayment, with PromissoryNote representing loan obligations. Staking contracts interact with the ArcadeToken to distribute rewards, and UniswapV2Pair provides liquidity for the token.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 60,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -429,7 +434,6 @@
         }
       ],
       "audits_covering": [
-        "audit-7732",
         "audit-7733"
       ],
       "is_audited": true,
@@ -695,12 +699,6 @@
         }
       ],
       "audits_covering": [
-        "audit-7710",
-        "audit-7711",
-        "audit-7714",
-        "audit-7715",
-        "audit-7716",
-        "audit-7718",
         "audit-7721"
       ],
       "is_audited": true,
@@ -1053,10 +1051,6 @@
         }
       ],
       "audits_covering": [
-        "audit-7710",
-        "audit-7713",
-        "audit-7714",
-        "audit-7715",
         "audit-7721",
         "audit-7722",
         "audit-7724",
@@ -1094,8 +1088,6 @@
         }
       ],
       "audits_covering": [
-        "audit-7710",
-        "audit-7714",
         "audit-7721"
       ],
       "is_audited": true,
@@ -1323,12 +1315,6 @@
         }
       ],
       "audits_covering": [
-        "audit-7709",
-        "audit-7710",
-        "audit-7714",
-        "audit-7715",
-        "audit-7716",
-        "audit-7719",
         "audit-7720",
         "audit-7721",
         "audit-7722",
@@ -1502,11 +1488,6 @@
         }
       ],
       "audits_covering": [
-        "audit-7709",
-        "audit-7710",
-        "audit-7714",
-        "audit-7715",
-        "audit-7716",
         "audit-7720",
         "audit-7721",
         "audit-7722",
@@ -1654,10 +1635,6 @@
         }
       ],
       "audits_covering": [
-        "audit-7710",
-        "audit-7715",
-        "audit-7717",
-        "audit-7719",
         "audit-7721",
         "audit-7722",
         "audit-7724",
@@ -1813,10 +1790,6 @@
         }
       ],
       "audits_covering": [
-        "audit-7710",
-        "audit-7714",
-        "audit-7715",
-        "audit-7719",
         "audit-7721",
         "audit-7722",
         "audit-7723",
@@ -2014,37 +1987,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x06af8c358c0787640588734e4733a779961a2bca",
-      "name": "UniswapV2Pair",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": "Arcade.xyz",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UniswapV2Pair",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x06af8c358c0787640588734e4733a779961a2bca",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -2884,286 +2826,6 @@
   ],
   "audits": [
     {
-      "audit_id": 7709,
-      "audit_key": "audit-7709",
-      "report_name": "2021-08-least-authority.pdf",
-      "report_url": "https://github.com/arcadexyz/pawnfi-contracts/blob/main/audits/2021-08-least-authority.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2021-08",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ERC721Permit",
-        "IPromissoryNote",
-        "LoanCore",
-        "OriginationController"
-      ],
-      "matched_contracts": 18,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7710,
-      "audit_key": "audit-7710",
-      "report_name": "2022-04-macro.pdf",
-      "report_url": "https://github.com/arcadexyz/pawnfi-contracts/blob/main/audits/2022-04-macro.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-04",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AssetWrapper",
-        "FeeController",
-        "FlashRollover",
-        "LoanCore",
-        "OriginationController",
-        "PromissoryNote",
-        "PunkRouter",
-        "RepaymentController"
-      ],
-      "matched_contracts": 46,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7711,
-      "audit_key": "audit-7711",
-      "report_name": "AssetWrapper.md",
-      "report_url": "https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/AssetWrapper.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AssetWrapper"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7712,
-      "audit_key": "audit-7712",
-      "report_name": "ERC721Permit.md",
-      "report_url": "https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/ERC721Permit.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7713,
-      "audit_key": "audit-7713",
-      "report_name": "FeeController.md",
-      "report_url": "https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/FeeController.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "FeeController"
-      ],
-      "matched_contracts": 6,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7714,
-      "audit_key": "audit-7714",
-      "report_name": "FlashRollover.md",
-      "report_url": "https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/FlashRollover.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AssetWrapper",
-        "BorrowerNote",
-        "FeeController",
-        "FlashRollover",
-        "LenderNote",
-        "LoanCore",
-        "OriginationController",
-        "RepaymentController"
-      ],
-      "matched_contracts": 33,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7715,
-      "audit_key": "audit-7715",
-      "report_name": "LoanCore.md",
-      "report_url": "https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/LoanCore.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AssetWrapper",
-        "FeeController",
-        "LoanCore",
-        "OriginationController",
-        "PromissoryNote",
-        "RepaymentController"
-      ],
-      "matched_contracts": 45,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7716,
-      "audit_key": "audit-7716",
-      "report_name": "OriginationController.md",
-      "report_url": "https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/OriginationController.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AssetWrapper",
-        "LoanCore",
-        "OriginationController"
-      ],
-      "matched_contracts": 19,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7717,
-      "audit_key": "audit-7717",
-      "report_name": "PromissoryNote.md",
-      "report_url": "https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/PromissoryNote.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "PromissoryNote"
-      ],
-      "matched_contracts": 13,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7718,
-      "audit_key": "audit-7718",
-      "report_name": "PunkRouter.md",
-      "report_url": "https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/PunkRouter.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AssetWrapper",
-        "IPunks",
-        "IWrappedPunks",
-        "PunkRouter"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7719,
-      "audit_key": "audit-7719",
-      "report_name": "RepaymentController.md",
-      "report_url": "https://github.com/arcadexyz/pawnfi-contracts/blob/main/docs/RepaymentController.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "LoanCore",
-        "PromissoryNote",
-        "RepaymentController"
-      ],
-      "matched_contracts": 31,
-      "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 7720,
       "audit_key": "audit-7720",
       "report_name": "V1_Lending_LeastAuthority_2021-08.pdf",
@@ -3187,17 +2849,7 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7720,
-          "report_url": "https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V1_Lending_LeastAuthority_2021-08.pdf"
-        },
-        {
-          "audit_id": 7728,
-          "report_url": "https://github.com/arcadexyz/v2-contracts/blob/main/audits/V1_Lending_LeastAuthority_2021-08.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 7721,
@@ -3227,17 +2879,7 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7721,
-          "report_url": "https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V1_Lending_Macro_2022-04.pdf"
-        },
-        {
-          "audit_id": 7729,
-          "report_url": "https://github.com/arcadexyz/v2-contracts/blob/main/audits/V1_Lending_Macro_2022-04.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 7722,
@@ -3294,17 +2936,7 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7722,
-          "report_url": "https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V2_Lending_Quantstamp_2022_06.pdf"
-        },
-        {
-          "audit_id": 7730,
-          "report_url": "https://github.com/arcadexyz/v2-contracts/blob/main/audits/V2_Lending_Quantstamp_2022_06.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 7723,
@@ -3334,17 +2966,7 @@
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7723,
-          "report_url": "https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V2_Lending_Roku_2022_06.pdf"
-        },
-        {
-          "audit_id": 7731,
-          "report_url": "https://github.com/arcadexyz/v2-contracts/blob/main/audits/V2_Lending_Roku_2022_06.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 7724,
@@ -3499,29 +3121,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 7732,
-      "audit_key": "audit-7732",
-      "report_name": "StakingRewardsAuditScope.md",
-      "report_url": "https://github.com/arcadexyz/dao-contracts/blob/main/audits/StakingRewardsAuditScope.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "ArcadeStakingRewards"
-      ],
-      "matched_contracts": 1,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 7733,
       "audit_key": "audit-7733",
       "report_name": "arcade-staking-report-final.pdf",
@@ -3588,69 +3187,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7735,
-      "audit_key": "audit-7735",
-      "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0001-dataset-cache-manifest-and-runtime-adapters.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7736,
-      "audit_key": "audit-7736",
-      "report_name": "0002-metadata-manifest-and-pull-command.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0002-metadata-manifest-and-pull-command.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 7737,
-      "audit_key": "audit-7737",
-      "report_name": "0003-bun-package-manager-node-runtime.md",
-      "report_url": "https://github.com/DefiLlama/defillama-app/blob/main/docs/adr/0003-bun-package-manager-node-runtime.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -3658,21 +3194,21 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 29,
-      "coverage_pct": 65.9,
+      "coverage_pct": 67.4,
       "latest_audit": "2024-03"
     },
     {
       "auditor": "Trail of Bits",
       "tier": 1,
       "contracts_covered": 13,
-      "coverage_pct": 29.5,
+      "coverage_pct": 30.2,
       "latest_audit": "2023-07"
     },
     {
       "auditor": "Quantstamp",
       "tier": 2,
       "contracts_covered": 8,
-      "coverage_pct": 18.2,
+      "coverage_pct": 18.6,
       "latest_audit": "2022-06"
     }
   ],
@@ -3820,39 +3356,20 @@
   ],
   "origin_summary": {
     "native": 58,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 787
+      "extraction_exact": 390
     },
     "extraction_confidence_counts": {
-      "high": 13,
-      "low": 6,
-      "medium": 2
+      "high": 10
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 7712,
-        "report_name": "ERC721Permit.md"
-      },
-      {
-        "audit_id": 7735,
-        "report_name": "0001-dataset-cache-manifest-and-runtime-adapters.md"
-      },
-      {
-        "audit_id": 7736,
-        "report_name": "0002-metadata-manifest-and-pull-command.md"
-      },
-      {
-        "audit_id": 7737,
-        "report_name": "0003-bun-package-manager-node-runtime.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

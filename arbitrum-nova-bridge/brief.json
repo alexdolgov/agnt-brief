@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "arbitrum-nova-bridge",
-  "generated_at": "2026-05-31T07:13:21.622Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:41:02.523Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "arbitrum-nova-bridge",
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 91.40154803929829
   },
   "summary": {
-    "total_contracts": 55,
-    "total_addresses": 168,
-    "unique_implementations": 55,
-    "total_deployments": 168,
+    "total_contracts": 54,
+    "total_addresses": 167,
+    "unique_implementations": 54,
+    "total_deployments": 167,
     "audited_contracts": 0,
-    "unaudited_contracts": 48,
+    "unaudited_contracts": 47,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 48,
+    "contracts_verified_unaudited": 47,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 7,
     "coverage_pct": 0,
@@ -44,7 +44,6 @@
     "asd_usd": 447171.38482463895,
     "website_url": "https://portal.arbitrum.io/bridge?l2ChainId=42170",
     "chains": [
-      "arbitrum",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -59,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "The Arbitrum Nova Bridge enables trustless transfer of assets between Ethereum and Arbitrum Nova, a low-cost L2 chain. It uses a canonical token bridge with gateway contracts to lock tokens on L1 and mint corresponding tokens on L2.",
+    "project_purpose": "The Arbitrum Nova Bridge enables asset transfers between Ethereum and Arbitrum Nova, a low-cost L2 chain, using canonical bridge and gateway contracts. The contract surface should distinguish Ethereum-side bridge contracts from Arbitrum Nova chain_id 42170 bridge-side contracts; Arbitrum One chain_id 42161 token contracts should not be treated as Nova bridge-side contracts unless separately verified.",
     "relationship_narrative": "The L1GatewayRouter directs token transfers to the appropriate gateway (L1ERC20Gateway or L1CustomGateway), which lock tokens in the L1Escrow and trigger minting on L2 via the Bridge contract. L1WethGateway handles ETH wrapping/unwrapping, while L2ArbitrumToken represents the bridged asset on Arbitrum Nova.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 54,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1069,37 +1073,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
-      "name": "L2ArbitrumToken",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Arbitrum Nova Bridge",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xd47d14a315394ddf063174f2286ab4eb7c507fa0",
-      "impl_name": "L2ArbitrumToken",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x912ce59144191c1204e64559fe8253a0e49e6548",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
     },
     {
       "chain_id": 1,
@@ -3218,7 +3191,7 @@
   "origin_summary": {
     "native": 49,
     "upstream": 0,
-    "standard_library": 6,
+    "standard_library": 5,
     "needs_review": 0
   },
   "scope_matching_notes": {

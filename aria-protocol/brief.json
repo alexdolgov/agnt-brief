@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aria-protocol",
-  "generated_at": "2026-05-24T15:46:38.144Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:42:10.525Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "aria-protocol",
@@ -45,8 +45,8 @@
     "coverage_pct": 0,
     "total_audits": 1,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1965606.17244,
-    "tvl_usd": 1965606.17244,
+    "dl_tvl_usd": 181053.0361,
+    "tvl_usd": 181053.0361,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -66,9 +66,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Aria Protocol is a Real World Asset (RWA) protocol on BSC that enables tokenization and cross-chain transfer of real-world assets using LayerZero's Omnichain Fungible Token (OFT) standard.",
-    "relationship_narrative": "The protocol consists of a single product family with one core contract, AriaOFT, which serves as the primary token for asset tokenization and cross-chain functionality.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

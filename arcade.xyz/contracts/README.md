@@ -1,6 +1,6 @@
 # arcade.xyz — Contract Index
 
-61 unique implementations on ethereum · 148 deployments · 29 audited · 15 unaudited · 17 unverified
+60 unique implementations on ethereum · 147 deployments · 29 audited · 14 unaudited · 17 unverified
 
 ## adapter (2)
 
@@ -66,7 +66,7 @@
 |---|---|---|---|---|
 | [ArcadeToken](./ethereum-1/0xe020b01b6fbd83066aa2e8ee0ccd1eb8d9cc70bf/) | ethereum | [`0xe020b0...cc70bf`](./ethereum-1/0xe020b01b6fbd83066aa2e8ee0ccd1eb8d9cc70bf/) | ✅ Audited | Verified |
 
-## unknown (32)
+## unknown (31)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -82,7 +82,6 @@
 | [LoanCore (11 deployments)](./ethereum-1/0x3a50c25f11cb96a30bfcba4dc0c44da1907dd935/) | ethereum | 11 deployments: ethereum [`0x3a50c2...7dd935`](./ethereum-1/0x3a50c25f11cb96a30bfcba4dc0c44da1907dd935/); ethereum `0x3bbd0b...eb6b15`; ethereum `0x3f80d1...032d43`; ethereum `0x4845b4...408a9a`; ethereum `0x606e4a...44064a`; ethereum `0x7691ee...c8b325`; ethereum `0x81b2f8...fa7fd9`; ethereum `0x89bc08...cc98af`; ethereum `0xcb9835...654047`; ethereum `0xecbaac...5d78f5`; ethereum `0xf7950d...6df89d` | ✅ Audited | Verified |
 | [PromissoryNote (13 deployments)](./ethereum-1/0x1123710f81cb573ab22dd6de90de17692f8ee8b0/) | ethereum | 13 deployments: ethereum [`0x112371...8ee8b0`](./ethereum-1/0x1123710f81cb573ab22dd6de90de17692f8ee8b0/); ethereum `0x337104...f863aa`; ethereum `0x349a02...d8ddee`; ethereum `0x430d82...1ed280`; ethereum `0x562803...f649d2`; ethereum `0x5783d0...bb0414`; ethereum `0x639714...9bbc87`; ethereum `0x8d3666...ab8e15`; ethereum `0x92ed78...0a7618`; ethereum `0xa5f4b2...172ac0`; ethereum `0xa75b02...0ee4c4`; ethereum `0xd45ce8...7cdc7f`; ethereum `0xe5b12b...ecb7be` | ✅ Audited | Verified |
 | [ReputationBadge](./ethereum-1/0x3a5a551b41bbe3d3a61ffd8280f6569f6715612a/) | ethereum | [`0x3a5a55...15612a`](./ethereum-1/0x3a5a551b41bbe3d3a61ffd8280f6569f6715612a/) | ✅ Audited | Verified |
-| [UniswapV2Pair](./ethereum-1/0x06af8c358c0787640588734e4733a779961a2bca/) | ethereum | [`0x06af8c...1a2bca`](./ethereum-1/0x06af8c358c0787640588734e4733a779961a2bca/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | ethereum | `0x01f8ce...350aee` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x0ac474...d0d5e8` | ❓ Unverified | Unverified |
 | UnnamedContract | ethereum | `0x199150...e7dd0a` | ❓ Unverified | Unverified |

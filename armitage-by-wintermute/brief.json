@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "armitage-by-wintermute",
-  "generated_at": "2026-05-31T14:54:09.397Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:41:01.416Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "armitage-by-wintermute",
     "tier": 0,

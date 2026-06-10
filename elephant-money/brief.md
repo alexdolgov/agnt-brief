@@ -7,8 +7,8 @@
 - Project: Elephant Money (`elephant-money`)
 - Website: [https://elephant.money](https://elephant.money)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:02.089Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:04:00.489Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: bsc
 - Contract surface: 346 unique implementations (667 raw deployments)
 - DeFi Llama TVL: $79,150,904.90

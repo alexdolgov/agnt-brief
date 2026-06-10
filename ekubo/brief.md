@@ -5,8 +5,8 @@
 - Project: Ekubo (`ekubo`)
 - Website: [https://ekubo.org/](https://ekubo.org/)
 - Lifecycle: active (Tier 0, 73.2% below peak)
-- Generated: 2026-06-10T20:59:02.062Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:02:58.206Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: ethereum
 - Contract surface: 15 unique implementations (17 raw deployments)
 - DeFi Llama TVL: $27,323,056.00

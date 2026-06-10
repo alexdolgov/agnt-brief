@@ -1,6 +1,6 @@
 # elfi-protocol — Contract Index
 
-2406 unique implementations across 2 chains · 2473 deployments · 28 audited · 68 unaudited · 2310 unverified
+2406 unique implementations across 2 chains · 2470 deployments · 28 audited · 67 unaudited · 2311 unverified
 
 ## core_logic (15)
 
@@ -49,7 +49,7 @@
 |---|---|---|---|---|
 | [MarketFactoryProcess (2 deployments)](./arbitrum-42161/0x21fd9dc216409bbd2caf2375021ae6015dccaa09/) | arbitrum | 2 deployments: arbitrum [`0x21fd9d...ccaa09`](./arbitrum-42161/0x21fd9dc216409bbd2caf2375021ae6015dccaa09/); arbitrum `0xa13e3b...aa460c` | ⚠️ Unaudited | Verified |
 
-## token (5)
+## token (4)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -57,9 +57,8 @@
 | [StakeToken (2 deployments)](./arbitrum-42161/0x667edc1789a04e7425966e299493a399a381d2d6/) | arbitrum | 2 deployments: arbitrum [`0x667edc...81d2d6`](./arbitrum-42161/0x667edc1789a04e7425966e299493a399a381d2d6/); arbitrum `0x70b811...45b98c` | ✅ Audited | Verified |
 | [StandardArbERC20](./arbitrum-42161/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f/) | arbitrum | [`0x2f2a25...fc5b0f`](./arbitrum-42161/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f/) | ⚠️ Unaudited | Verified |
 | [TokenUtils](./arbitrum-42161/0x81a0c8f6c5e4d53382ec30c1043991cae3b1a905/) | arbitrum | [`0x81a0c8...b1a905`](./arbitrum-42161/0x81a0c8f6c5e4d53382ec30c1043991cae3b1a905/) | ✅ Audited | Verified |
-| [WETH (4 deployments)](./arbitrum-42161/0x36f32dd52bfc834c40a3f0b3ebb341ff3acc3d4b/) | arbitrum | 4 deployments: base `0x41ba6c...57c61f`; arbitrum [`0x36f32d...cc3d4b`](./arbitrum-42161/0x36f32dd52bfc834c40a3f0b3ebb341ff3acc3d4b/); arbitrum `0x385dd8...7826ff`; arbitrum `0x3a40d1...605f2b` | ⚠️ Unaudited | Verified |
 
-## unknown (2374)
+## unknown (2375)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -315,6 +314,7 @@
 | UnnamedContract | base | `0x40f477...997513` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x413b17...808f99` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x4194f2...b73739` | ❓ Unverified | Unverified |
+| UnnamedContract | base | `0x41ba6c...57c61f` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x41d580...3d25c0` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x422555...32472a` | ❓ Unverified | Unverified |
 | UnnamedContract | base | `0x427957...49abc4` | ❓ Unverified | Unverified |

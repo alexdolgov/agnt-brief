@@ -7,8 +7,8 @@
 - Project: ELFi Protocol (`elfi-protocol`)
 - Website: [https://www.elfi.xyz](https://www.elfi.xyz)
 - Lifecycle: declining (Tier 0, 81.8% below peak)
-- Generated: 2026-06-10T20:59:02.193Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:00:54.243Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: arbitrum, base
 - Contract surface: 2406 unique implementations (2470 raw deployments)
 - DeFi Llama TVL: $3,440,720.25

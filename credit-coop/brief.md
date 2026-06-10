@@ -5,8 +5,8 @@
 - Project: Credit Coop (`credit-coop`)
 - Website: [https://www.creditcoop.xyz/](https://www.creditcoop.xyz/)
 - Lifecycle: active (Tier 0, 48.8% below peak)
-- Generated: 2026-06-10T20:59:01.552Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:34:38.787Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: base, ethereum
 - Contract surface: 2 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $4,559,555.58

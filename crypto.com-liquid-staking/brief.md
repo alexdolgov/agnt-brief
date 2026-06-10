@@ -5,8 +5,8 @@
 - Project: Crypto.com Liquid Staking (`crypto.com-liquid-staking`)
 - Website: [https://crypto.com/staking](https://crypto.com/staking)
 - Lifecycle: active (Tier 0, 86.8% below peak)
-- Generated: 2026-06-10T20:59:01.558Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:34:36.370Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: cronos
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $25,388,734.68

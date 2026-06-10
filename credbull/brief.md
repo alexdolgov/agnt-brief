@@ -6,8 +6,8 @@
 
 - Project: Credbull (`credbull`)
 - Lifecycle: dead (Tier 0, 99.9% below peak)
-- Generated: 2026-06-10T20:59:01.549Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:34:36.409Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: arbitrum, polygon
 - Contract surface: 83 unique implementations (128 raw deployments)
 - DeFi Llama TVL: $10,940,088.68

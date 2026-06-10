@@ -1,18 +1,12 @@
 # cream-finance — Contract Index
 
-95 unique implementations across 4 chains · 619 deployments · 0 audited · 65 unaudited · 30 unverified
+94 unique implementations across 4 chains · 618 deployments · 0 audited · 64 unaudited · 30 unverified
 
 ## adapter (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BEP20CREAM](./bsc-56/0x2f7347ebb25f2e314a5806b71dd67fe96c120326/) | bsc | [`0x2f7347...120326`](./bsc-56/0x2f7347ebb25f2e314a5806b71dd67fe96c120326/) | ⚠️ Unaudited | Verified |
-
-## core_logic (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| [DepositContract](./ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ethereum | [`0x000000...7705fa`](./ethereum-1/0x00000000219ab540356cbb839cbe05303d7705fa/) | ⚠️ Unaudited | Verified |
 
 ## governance (3)
 

@@ -5,8 +5,8 @@
 - Project: cSigma Finance (`csigma-finance`)
 - Website: [https://csigma.finance](https://csigma.finance)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:01.572Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:34:36.354Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: arbitrum, base, ethereum
 - Contract surface: 50 unique implementations (209 raw deployments)
 - DeFi Llama TVL: $12,657,655.14

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "credbull",
-  "generated_at": "2026-06-10T20:59:01.549Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-10T22:34:36.409Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-03d9",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "credbull",

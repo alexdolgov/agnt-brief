@@ -7,8 +7,8 @@
 - Project: CREAM Finance (`cream-finance`)
 - Website: [https://cream.finance/](https://cream.finance/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:01.541Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:37:45.007Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: arbitrum, bsc, ethereum, polygon
 - Contract surface: 94 unique implementations (618 raw deployments)
 - DeFi Llama TVL: $1,657,586.00

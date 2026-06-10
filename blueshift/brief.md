@@ -5,8 +5,8 @@
 - Project: Blueshift (`blueshift`)
 - Website: [https://blueshift.fi/](https://blueshift.fi/)
 - Lifecycle: active (Tier 0, 67.1% below peak)
-- Generated: 2026-06-10T20:59:00.995Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:05:15.204Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: kava, polygon
 - Contract surface: 23 unique implementations (28 raw deployments)
 - DeFi Llama TVL: $4,323,105.86

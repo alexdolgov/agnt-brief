@@ -4,7 +4,7 @@
 |---|---|
 | Chain | avalanche (43114) |
 | Address | `0x3fed017ec0f5517cdf2e8a9a4156c64d74252146` |
-| Role | governance |
+| Role | operational_periphery |
 | Origin | native |
 | Audited | No |
 | Audits | n/a |

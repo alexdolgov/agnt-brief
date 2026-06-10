@@ -7,8 +7,8 @@
 - Project: Block Analitica (`block-analitica`)
 - Website: [https://blockanalitica.com/](https://blockanalitica.com/)
 - Lifecycle: declining (Tier 0, 85.6% below peak)
-- Generated: 2026-06-10T20:59:00.988Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:04:21.216Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: arbitrum, base, ethereum, sonic
 - Contract surface: 18 unique implementations (99 raw deployments)
 - DeFi Llama TVL: $49,595,780.40

@@ -5,8 +5,8 @@
 - Project: Blur (`blur`)
 - Website: [https://blur.io/](https://blur.io/)
 - Lifecycle: active (Tier 0, 91.7% below peak)
-- Generated: 2026-06-10T20:59:01.001Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:03:15.697Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: blast, ethereum
 - Contract surface: 17 unique implementations (27 raw deployments)
 - DeFi Llama TVL: $18,568,794.00

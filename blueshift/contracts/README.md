@@ -1,6 +1,6 @@
 # blueshift — Contract Index
 
-24 unique implementations across 2 chains · 29 deployments · 0 audited · 3 unaudited · 21 unverified
+23 unique implementations across 2 chains · 28 deployments · 0 audited · 2 unaudited · 21 unverified
 
 ## governance (1)
 
@@ -8,13 +8,14 @@
 |---|---|---|---|---|
 | [ProxyAdmin (2 deployments)](./polygon-137/0xdc05bacc1f97f874d9d09860a8a93365372a3186/) | polygon | 2 deployments: polygon [`0xdc05ba...2a3186`](./polygon-137/0xdc05bacc1f97f874d9d09860a8a93365372a3186/); polygon `0xf8c717...8065f5` | ⚠️ Unaudited | Verified |
 
-## proxy (1)
+## proxy (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [TransparentUpgradeableProxy (5 deployments)](./polygon-137/0x2080a319a4b11d097050722b6b65d09f754edc83/) | polygon | 5 deployments: polygon [`0x2080a3...4edc83`](./polygon-137/0x2080a319a4b11d097050722b6b65d09f754edc83/); polygon `0x9b44b2...97f251`; polygon `0xb6b3b5...13c9cb`; polygon `0xeb7b35...3e9550`; polygon `0xf79900...37a4e1` | ⚠️ Unaudited | Verified |
+| UnnamedContract | polygon | `0x3abd79...367b20` | ❓ Unverified | Unverified |
 
-## unknown (22)
+## unknown (20)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -22,7 +23,6 @@
 | UnnamedContract | polygon | `0x12fd7e...c3789b` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x27e552...1faa2e` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x35701f...c96f3f` | ❓ Unverified | Unverified |
-| UnnamedContract | polygon | `0x3abd79...367b20` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x7b8343...ca2bca` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x800618...a6653c` | ❓ Unverified | Unverified |
 | UnnamedContract | polygon | `0x96c95d...7e7242` | ❓ Unverified | Unverified |
@@ -39,4 +39,3 @@
 | UnnamedContract | polygon | `0xf5399b...323a4d` | ❓ Unverified | Unverified |
 | UnnamedContract | kava | `0x493996...2577b1` | ❓ Unverified | Unverified |
 | UnnamedContract | kava | `0x7a6091...6a77e1` | ❓ Unverified | Unverified |
-| [WMATIC](./polygon-137/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270/) | polygon | [`0x0d500b...df1270`](./polygon-137/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270/) | ⚠️ Unaudited | Verified |

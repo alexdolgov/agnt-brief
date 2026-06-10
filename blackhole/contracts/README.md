@@ -22,14 +22,13 @@
 | [CustomPoolDeployer (11 deployments)](./avalanche-43114/0x0aff494476dc74cf7bb5dd005c2b1fe7be76efa2/) | avalanche | 11 deployments: avalanche [`0x0aff49...76efa2`](./avalanche-43114/0x0aff494476dc74cf7bb5dd005c2b1fe7be76efa2/); avalanche `0x14e4e3...e51cc8`; avalanche `0x43c4b7...4bf8db`; avalanche `0x48b1d4...133ace`; avalanche `0x58b050...c56994`; avalanche `0x5d433a...960584`; avalanche `0x5ef387...1eff43`; avalanche `0x9f52f2...d4d74f`; avalanche `0xc046f2...221aee`; avalanche `0xdcfccf...125d29`; avalanche `0xf9221d...45d767` | ⚠️ Unaudited | Verified |
 | [GenesisPoolManager](./avalanche-43114/0x0eb1e103116b8ec5f13a72f6943440340c4840dd/) | avalanche | [`0x0eb1e1...4840dd`](./avalanche-43114/0x0eb1e103116b8ec5f13a72f6943440340c4840dd/) | ✅ Audited | Verified |
 
-## governance (2)
+## governance (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [NonfungiblePositionManager (3 deployments)](./avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/) | avalanche | 3 deployments: avalanche [`0x3fed01...252146`](./avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/); avalanche `0xbf5b19...9b9d70`; avalanche `0xfd1c72...329545` | ⚠️ Unaudited | Verified |
 | ProxyAdmin | avalanche | `0xd76306...c74bed` | ⚠️ Unaudited | Verified |
 
-## operational_periphery (8)
+## operational_periphery (9)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -38,6 +37,7 @@
 | [GaugeFactoryCL (2 deployments)](./avalanche-43114/0x6b6a3d5a1c536ace1d761685af241b2cb7a6ea5e/) | avalanche | 2 deployments: avalanche [`0x6b6a3d...a6ea5e`](./avalanche-43114/0x6b6a3d5a1c536ace1d761685af241b2cb7a6ea5e/); avalanche `0x824dbc...3f0296` | ✅ Audited | Verified |
 | [GaugeManager (3 deployments)](./avalanche-43114/0x59aa177312ff6bdf39c8af6f46dae217bf76cbf6/) | avalanche | 3 deployments: avalanche [`0x59aa17...76cbf6`](./avalanche-43114/0x59aa177312ff6bdf39c8af6f46dae217bf76cbf6/); avalanche `0x66c665...974091`; avalanche `0x93c601...dc0b8f` | ✅ Audited | Verified |
 | [GaugeOwner (2 deployments)](./avalanche-43114/0x6c6630b76c7d2b0269cf66fd4425491d9ec66de5/) | avalanche | 2 deployments: avalanche [`0x6c6630...c66de5`](./avalanche-43114/0x6c6630b76c7d2b0269cf66fd4425491d9ec66de5/); avalanche `0xdd3589...f3f946` | ⚠️ Unaudited | Verified |
+| [NonfungiblePositionManager (3 deployments)](./avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/) | avalanche | 3 deployments: avalanche [`0x3fed01...252146`](./avalanche-43114/0x3fed017ec0f5517cdf2e8a9a4156c64d74252146/); avalanche `0xbf5b19...9b9d70`; avalanche `0xfd1c72...329545` | ⚠️ Unaudited | Verified |
 | [RewardsDistributor](./avalanche-43114/0x7c7bd86baf240db3dbcc3f7a22b35c5baa83ba28/) | avalanche | [`0x7c7bd8...83ba28`](./avalanche-43114/0x7c7bd86baf240db3dbcc3f7a22b35c5baa83ba28/) | ✅ Audited | Verified |
 | [VotingEscrow](./avalanche-43114/0xeac562811cc6abdbb2c9ee88719eca4ee79ad763/) | avalanche | [`0xeac562...9ad763`](./avalanche-43114/0xeac562811cc6abdbb2c9ee88719eca4ee79ad763/) | ✅ Audited | Verified |
 | [VotingEscrowSplitHelper](./avalanche-43114/0x1d67c7729135583f2ee11fd34c7921a8ae500e6f/) | avalanche | [`0x1d67c7...500e6f`](./avalanche-43114/0x1d67c7729135583f2ee11fd34c7921a8ae500e6f/) | ⚠️ Unaudited | Verified |

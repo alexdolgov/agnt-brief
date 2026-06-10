@@ -2,12 +2,11 @@
 
 17 unique implementations across 2 chains · 27 deployments · 0 audited · 12 unaudited · 5 unverified
 
-## core_logic (2)
+## core_logic (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [BlurPool](./ethereum-1/0x02ab0463ca0c98de2d9b6649dcdb4ab667f12da7/) | ethereum | [`0x02ab04...f12da7`](./ethereum-1/0x02ab0463ca0c98de2d9b6649dcdb4ab667f12da7/) | ⚠️ Unaudited | Verified |
-| [BlurPoolBlast](./blast-81457/0xb772d5c5f4a2eef67dfbc89aa658d2711341b8e5/) | blast | [`0xb772d5...41b8e5`](./blast-81457/0xb772d5c5f4a2eef67dfbc89aa658d2711341b8e5/) | ⚠️ Unaudited | Verified |
 
 ## governance (2)
 
@@ -29,10 +28,11 @@
 |---|---|---|---|---|
 | [CalculationHelpers (2 deployments)](./ethereum-1/0x5c06da8ec7945c05304d79895046d01a7943826d/) | ethereum | 2 deployments: ethereum [`0x5c06da...43826d`](./ethereum-1/0x5c06da8ec7945c05304d79895046d01a7943826d/); ethereum `0xacd3d2...118cf2` | ⚠️ Unaudited | Verified |
 
-## proxy (1)
+## proxy (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
+| [BlurPoolBlast](./blast-81457/0xb772d5c5f4a2eef67dfbc89aa658d2711341b8e5/) | blast | [`0xb772d5...41b8e5`](./blast-81457/0xb772d5c5f4a2eef67dfbc89aa658d2711341b8e5/) | ⚠️ Unaudited | Verified |
 | [ERC1967Proxy (2 deployments)](./ethereum-1/0x38289588523d4495d04b4f3ceb971a119685b6c5/) | ethereum | 2 deployments: ethereum [`0x382895...85b6c5`](./ethereum-1/0x38289588523d4495d04b4f3ceb971a119685b6c5/); ethereum `0xf561af...56a580` | ⚠️ Unaudited | Verified |
 
 ## token (2)

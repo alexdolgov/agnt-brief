@@ -7,8 +7,8 @@
 - Project: BMX (`bmx`)
 - Website: [https://www.bmx.trade/](https://www.bmx.trade/)
 - Lifecycle: declining (Tier 0, 87.6% below peak)
-- Generated: 2026-06-10T20:59:01.023Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:03:15.772Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: base, mode
 - Contract surface: 184 unique implementations (619 raw deployments)
 - DeFi Llama TVL: $2,667,683.00

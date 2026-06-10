@@ -5,8 +5,8 @@
 - Project: Concentrator (`concentrator`)
 - Website: [https://concentrator.aladdin.club/](https://concentrator.aladdin.club/)
 - Lifecycle: active (Tier 0, 55.8% below peak)
-- Generated: 2026-06-10T20:59:01.502Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:31:32.681Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: ethereum
 - Contract surface: 342 unique implementations (937 raw deployments)
 - DeFi Llama TVL: $58,654,066.78

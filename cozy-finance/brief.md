@@ -5,8 +5,8 @@
 - Project: Cozy Finance (`cozy-finance`)
 - Website: [https://www.cozy.finance](https://www.cozy.finance)
 - Lifecycle: active (Tier 0, 73.5% below peak)
-- Generated: 2026-06-10T20:59:01.518Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:33:38.159Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: optimism
 - Contract surface: 48 unique implementations (49 raw deployments)
 - DeFi Llama TVL: $2,295,123.00

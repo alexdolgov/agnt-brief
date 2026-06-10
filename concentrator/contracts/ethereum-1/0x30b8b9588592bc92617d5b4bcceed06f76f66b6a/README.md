@@ -7,7 +7,7 @@
 | Role | core_logic |
 | Origin | native |
 | Audited | Yes |
-| Audits | [SECBIT_f(x)_FxUSD_Report_v1.0_20240223.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_FxUSD_Report_v1.0_20240223.pdf); [SECBIT_f(x)_Shareable_RebalancePool_Report_20240118.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Shareable_RebalancePool_Report_20240118.pdf); [TrailofBits_fx_protocol_202403.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/TrailofBits_fx_protocol_202403.pdf) |
+| Audits | [TrailofBits_fx_protocol_202403.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/TrailofBits_fx_protocol_202403.pdf) |
 | Deployments | 4 (ethereum [`0x30b8b9588592bc92617d5b4bcceed06f76f66b6a`](../0x30b8b9588592bc92617d5b4bcceed06f76f66b6a/); ethereum `0xb87a8332dfb1c76bb22477dcfeddeb69865ca9f9`; ethereum `0xc6dee5913e010895f3702bc43a40d661b13a40bd`; ethereum `0xd5e047e4ddc2c5b0e5ca66beb4dd0853afc4fa0d`) |
 | Proxy | No (implementation for 2 proxies: `0xb87a83...5ca9f9`, `0xc6dee5...3a40bd`) |
 | Source | Sourcify (full match) |

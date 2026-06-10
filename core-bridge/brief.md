@@ -5,8 +5,8 @@
 - Project: CORE Bridge (`core-bridge`)
 - Website: [https://bridge.coredao.org/bridge](https://bridge.coredao.org/bridge)
 - Lifecycle: active (Tier 0, 76.5% below peak)
-- Generated: 2026-06-10T20:59:01.510Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:31:32.023Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: avalanche, base
 - Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $4,024,033.91

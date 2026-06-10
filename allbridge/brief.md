@@ -7,17 +7,17 @@
 - Project: Allbridge (`allbridge`)
 - Website: [https://app.allbridge.io](https://app.allbridge.io)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:07:34.077Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:22:10.586Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: arbitrum, aurora, avalanche, base, bsc, celo, ethereum, fantom, harmony, optimism, polygon, sonic, unichain
-- Contract surface: 284 unique implementations (541 raw deployments)
+- Contract surface: 282 unique implementations (537 raw deployments)
 - DeFi Llama TVL: $26,552,200.00
-- On-chain TVL (included contracts): $319,180,540.18
-- TVL by chain: Polygon $300,510,818.80 | Ethereum $16,153,065.95 | Arbitrum $761,941.23 | Base $652,024.37 | Bsc $539,697.07 | Celo $282,251.27 | Avalanche $158,422.69 | Optimism $74,308.37 | Unichain $26,646.96 | Sonic $21,363.48
+- On-chain TVL (included contracts): $19,333,323.22
+- TVL by chain: Ethereum $16,153,065.95 | Arbitrum $761,941.23 | Polygon $663,601.83 | Base $652,024.37 | Bsc $539,697.07 | Celo $282,251.27 | Avalanche $158,422.69 | Optimism $74,308.37 | Unichain $26,646.96 | Sonic $21,363.48
 
 ## Project Description
 
-Allbridge is a cross-chain bridge that enables users to transfer tokens between different blockchains. It offers both a classic bridge for wrapped token transfers and a newer Core bridge that uses liquidity pools and LayerZero's OFT standard for native cross-chain swaps.
+Allbridge is a cross-chain bridge for transferring assets between blockchains. Its current Allbridge Core product supports cross-chain swaps and transfers of native stablecoins using liquidity pools, while Allbridge Classic is the legacy wrapped-token bridge. LayerZero/OFT should only be referenced for specific adapter contracts when directly supported by scope evidence.
 
 ### Architecture
 
@@ -25,19 +25,19 @@ Allbridge Classic and Allbridge Core are separate bridge implementations that do
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/84 (0.0%)
-- Verified + Unaudited implementations: 77
+- Verified implementations audited: 0/82 (0.0%)
+- Verified + Unaudited implementations: 75
 - Verified by bytecode match: 7
 - Unverified implementations: 200
-- Unique implementations: 284
-- Raw deployments: 541
+- Unique implementations: 282
+- Raw deployments: 537
 - Audits discovered: 8
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $319,180,540.18
+- ASD (verified + unaudited TVL): $19,333,323.22
 - Latest audit: 2022-07 (stale)
 - Staleness: 0 fresh, 0 aging, 3 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $319,180,540.18 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $19,333,323.22 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -49,11 +49,10 @@ Allbridge Classic and Allbridge Core are separate bridge implementations that do
 
 - None
 
-### ⚠️ Verified + Unaudited (77)
+### ⚠️ Verified + Unaudited (75)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
-| QiStablecoin | token | polygon | [`0xa3fa99...6997f1`](./contracts/polygon-137/0xa3fa99a148fa48d14ed51d610c367c61876997f1/) | ⚠️ Unaudited |
 | YellowToken | token | polygon | 2 deployments: ethereum `0x90b7e2...8a3320`; polygon [`0x18e73a...ab7b81`](./contracts/polygon-137/0x18e73a5333984549484348a94f4d219f4fab7b81/) | ⚠️ Unaudited |
 | BEP20Token | token | bsc | [`0xc2c28b...115148`](./contracts/bsc-56/0xc2c28b58db223da89b567a0a98197fc17c115148/) | ⚠️ Unaudited |
 | StableTokenV2 | token | celo | [`0xe8537a...ab4787`](./contracts/celo-42220/0xe8537a3d056da446677b9e9d6c5db704eaab4787/) | ⚠️ Unaudited |
@@ -61,7 +60,6 @@ Allbridge Classic and Allbridge Core are separate bridge implementations that do
 | AddressLinkedList | unknown | celo | [`0x939c9c...712801`](./contracts/celo-42220/0x939c9cefbce3aa3a212d424b5ba978ac1b712801/) | ⚠️ Unaudited |
 | AddressSortedLinkedList | unknown | celo | [`0x0e3e96...5a1552`](./contracts/celo-42220/0x0e3e96a0d64b59b46872432f47bed6a1825a1552/) | ⚠️ Unaudited |
 | Ariadne | unknown | ethereum | [`0xb1c9bc...2a81d2`](./contracts/ethereum-1/0xb1c9bc94acd2fae6aabf4ffae4429b93512a81d2/) | ⚠️ Unaudited |
-| Attestations | unknown | celo | 3 deployments: celo [`0x572912...15e071`](./contracts/celo-42220/0x5729126891355e3c2626338151dd50cc0415e071/); celo `0x936d74...dd40a8`; celo `0xf65903...63758c` | ⚠️ Unaudited |
 | AttestationsProxy | unknown | celo | 18 deployments: celo [`0x2496fd...8e9a3d`](./contracts/celo-42220/0x2496fda4b928e8cf799ac04ea79861ac828e9a3d/); celo `0x252b03...5f1649`; celo `0x30b3c1...0595ac`; celo `0x3a4936...edb3f4`; celo `0x488deb...6c8fa6`; celo `0x4a241b...877da9`; celo `0x65e25c...799411`; celo `0x673f19...74eecb`; celo `0x68da81...504785`; celo `0x93d52a...a0ecf7`; celo `0xb53ce2...d8d96a`; celo `0xc834e7...359afd`; celo `0xcc6517...9e8fbe`; celo `0xdadd05...6f9303`; celo `0xdd944d...99f451`; celo `0xeaaf55...bc9149`; celo `0xf114c7...f5406a`; celo `0xff2ba5...c9fd2d` | ⚠️ Unaudited |
 | BatchTransfer | periphery | polygon | [`0x61a588...60be1b`](./contracts/polygon-137/0x61a58822d24534fdb1b035ac8fb85611ce60be1b/) | ⚠️ Unaudited |
 | BlockchainParameters | unknown | celo | 3 deployments: celo [`0x3058c4...c46672`](./contracts/celo-42220/0x3058c4197c56c9a9c92d3516f2d4bb8a76c46672/); celo `0xdefbc8...217955`; celo `0xf33854...832d25` | ⚠️ Unaudited |
@@ -434,9 +432,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 144 |
-| upstream | 14 |
+| upstream | 13 |
 | standard_library | 6 |
-| needs_review | 120 |
+| needs_review | 119 |
 
 ## Scope Matching Notes
 

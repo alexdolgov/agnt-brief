@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "alchemix",
-  "generated_at": "2026-05-31T07:07:40.865Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "declining",
+  "generated_at": "2026-06-10T20:22:16.706Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "alchemix",
     "tier": 1,
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 186,
     "coverage_pct": 6.4,
-    "total_audits": 13,
+    "total_audits": 11,
     "scoreable_audits": 6,
     "dl_tvl_usd": 37880562,
     "tvl_usd": 340698321.48454833,
@@ -71,13 +71,18 @@
       "fresh": 8,
       "aging": 2,
       "stale": 0,
-      "unknown": 3
+      "unknown": 1
     }
   },
   "topography": {
-    "project_purpose": "Alchemix is a DeFi protocol that enables users to take out self-repaying loans against their deposited collateral. It issues synthetic assets (alAssets) that represent the future yield of the collateral, allowing users to spend their yield upfront while the deposited assets automatically repay the loan over time.",
+    "project_purpose": "Alchemix is a DeFi protocol for self-repaying loans and vaults. Users deposit collateral such as ETH or USDC to borrow against future yield, with current product positioning emphasizing self-repaying vaults, up to 90% LTV, 0% interest, no market-liquidation risk, and fixed-rate returns. The protocol also includes the alAsset and transmuter system, where synthetic assets represent yield-backed debt that can be repaid over time as deposited collateral earns yield.",
     "relationship_narrative": "Alchemix V2 and V3 share the same governance infrastructure (GnosisSafe) and cross-chain token standards (CrossChainCanonicalAlchemicTokenV2). V3's VaultV2Factory likely deploys vaults that interact with V2's existing alAsset and transmuter ecosystem, while V2's adapters and gauges support yield generation and liquidity incentives across both versions.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 388,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -18014,58 +18019,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 9681,
-      "audit_key": "audit-9681",
-      "report_name": "security-model.md",
-      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/architecture/security-model.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 9716,
-      "audit_key": "audit-9716",
-      "report_name": "security.md",
-      "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/support/security.md",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 9716,
-          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/support/security.md"
-        },
-        {
-          "audit_id": 9736,
-          "report_url": "https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/user/safety/security.md"
-        }
-      ]
-    },
-    {
       "audit_id": 9744,
       "audit_key": "audit-9744",
       "report_name": "v3-nethermind.pdf",
@@ -19615,14 +19568,6 @@
       {
         "audit_id": 4307,
         "report_name": "- [View Report]()"
-      },
-      {
-        "audit_id": 9681,
-        "report_name": "security-model.md"
-      },
-      {
-        "audit_id": 9716,
-        "report_name": "security.md"
       },
       {
         "audit_id": 9760,

@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Alchemix
 
-⚠️ Lifecycle status: DECLINING - TVL changed 14.6% over 90 days
-
 ## Project Overview
 
 - Project: Alchemix (`alchemix`)
 - Website: [https://alchemix.fi/](https://alchemix.fi/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:07:40.865Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:22:16.706Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: arbitrum, ethereum, fantom, optimism
 - Contract surface: 388 unique implementations (1035 raw deployments)
 - DeFi Llama TVL: $37,880,562.00
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Alchemix is a DeFi protocol that enables users to take out self-repaying loans against their deposited collateral. It issues synthetic assets (alAssets) that represent the future yield of the collateral, allowing users to spend their yield upfront while the deposited assets automatically repay the loan over time.
+Alchemix is a DeFi protocol for self-repaying loans and vaults. Users deposit collateral such as ETH or USDC to borrow against future yield, with current product positioning emphasizing self-repaying vaults, up to 90% LTV, 0% interest, no market-liquidation risk, and fixed-rate returns. The protocol also includes the alAsset and transmuter system, where synthetic assets represent yield-backed debt that can be repaid over time as deposited collateral earns yield.
 
 ### Architecture
 
@@ -31,13 +29,12 @@ Alchemix V2 and V3 share the same governance infrastructure (GnosisSafe) and cro
 - Unverified implementations: 186
 - Unique implementations: 388
 - Raw deployments: 1035
-- Audits discovered: 13
+- Audits discovered: 11
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): $338,700,456.10
 - Latest audit: 2026-04 (fresh)
-- Staleness: 8 fresh, 2 aging, 0 stale, 3 unknown
+- Staleness: 8 fresh, 2 aging, 0 stale, 1 unknown
 - Tier 1 coverage: 1.0% (Spearbit)
-- Note: This protocol is classified as [declining]. ASD of $338,700,456.10 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -473,8 +470,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [- [View Report]()](https://hackmd.io/@geistermeister/SkSZiU9ybe) | Spearbit | Audit | n/a | unknown | Direct | contract_name | 20 | low |
 | [- [View Report]()](https://cantina.xyz/portfolio/f638950d-a8ad-4df8-a6ec-8b067e416d7b) | Spearbit | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
-| [security-model.md](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/dev/architecture/security-model.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [security.md (also discovered via alternate URL)](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/docs/projects/support/security.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [v3-nethermind.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-nethermind.pdf) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 9 | high |
 | [v3-strategies-yaudit-followup.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-strategies-yaudit-followup.pdf) | yAudit | Audit | 2026-04 | fresh | Direct | contract_name | 1 | high |
 | [v3-strategies-yaudit.pdf](https://github.com/alchemix-finance/alchemix-v3-docs/blob/main/static/audits/v3-strategies-yaudit.pdf) | yAudit | Audit | 2026-04 | fresh | Direct | contract_name | 8 | high |
@@ -627,7 +622,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 7
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=5, low=1
 - Match method counts: extraction_exact=114
@@ -635,8 +630,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [4307] - [View Report]()
-- [9681] security-model.md
-- [9716] security.md
 - [9760] 2025-05-19-spearbit.pdf
 - [9762] 2025-08-11-spearbit.pdf
 - [9763] 2025-09-15-blackthorn.pdf

@@ -7,8 +7,8 @@
 - Project: Alien Base (`alien-base`)
 - Website: [https://alienbase.xyz/](https://alienbase.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-31T07:08:17.675Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:22:51.456Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: base
 - Contract surface: 58 unique implementations (113 raw deployments)
 - DeFi Llama TVL: $4,725,226.00
@@ -17,7 +17,7 @@
 
 ## Project Description
 
-Alien Base is a decentralized exchange (DEX) protocol on Base offering concentrated liquidity (Uniswap V3), stable swaps, and standard AMM (Uniswap V2) pools. It also includes a native token (ALB) with distribution and escrow mechanisms.
+Alien Base is a decentralized exchange on Base offering aggregated liquidity and token trading, including V2-style AMM pools, V3-style concentrated liquidity, limit orders, yield farming/staking, and support for token and memecoin trading. StableSwap is one component of the broader exchange rather than the primary current product. The protocol also includes the native ALB token and related distribution and escrow mechanisms.
 
 ### Architecture
 
@@ -31,11 +31,11 @@ The 'Contracts' family provides the ALB token and distribution infrastructure, w
 - Unverified implementations: 11
 - Unique implementations: 58
 - Raw deployments: 113
-- Audits discovered: 21
+- Audits discovered: 15
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $2,915,012.41
 - Latest audit: 2025-01 (aging)
-- Staleness: 0 fresh, 3 aging, 13 stale, 5 unknown
+- Staleness: 0 fresh, 2 aging, 8 stale, 5 unknown
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $2,915,012.41 represents exposure in a protocol with declining activity.
 
@@ -135,14 +135,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [2017-03.md (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2017-03.md) | OpenZeppelin | Audit | 2017-03 | stale | Direct | n/a | 0 | n/a |
-| [2018-10.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2018-10.pdf) | OpenZeppelin | Audit | 2018-10 | stale | Direct | n/a | 0 | n/a |
-| [2022-10-Checkpoints.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-Checkpoints.pdf) | OpenZeppelin | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
 | [2022-10-ERC4626.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-ERC4626.pdf) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [2023-05-v4.9.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-05-v4.9.pdf) | OpenZeppelin | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
-| [2023-10-v5.0.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-10-v5.0.pdf) | OpenZeppelin | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
-| [2024-10-v5.1.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2024-10-v5.1.pdf) | OpenZeppelin | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
-| [README.md (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/README.md) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [abdk-redstone-eth-contracts-audit-march-2023.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/eth-contracts/audits/abdk-redstone-eth-contracts-audit-march-2023.pdf) | ABDK | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 | [abdk-redstone-audit-evm-connector-nov-2022.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/evm-connector/audits/abdk-redstone-audit-evm-connector-nov-2022.pdf) | ABDK | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
 | [ABDK_RedStone_Oracles_v_2_0.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/redstone-oracles-monorepo/packages/on-chain-relayer/audits/ABDK_RedStone_Oracles_v_2_0.pdf) | ABDK | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
@@ -156,6 +149,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [shung-solady-erc721-audit.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/shung-solady-erc721-audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [xuwinnie-solady-cbrt-proof.pdf](https://github.com/alienbase-xyz/Mothership/blob/main/lib/solady/audits/xuwinnie-solady-cbrt-proof.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [audit.pdf (also discovered via alternate URL)](https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/abdk/audit.pdf) | ABDK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [README.md](https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/tob/README.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -212,21 +206,14 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 21
+- Audits with zero matched contracts: 15
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [7750] 2017-03.md
-- [7751] 2018-10.pdf
-- [7752] 2022-10-Checkpoints.pdf
 - [7753] 2022-10-ERC4626.pdf
-- [7754] 2023-05-v4.9.pdf
-- [7755] 2023-10-v5.0.pdf
-- [7756] 2024-10-v5.1.pdf
-- [7757] README.md
 - [7777] abdk-redstone-eth-contracts-audit-march-2023.pdf
 - [7778] abdk-redstone-audit-evm-connector-nov-2022.pdf
 - [7779] ABDK_RedStone_Oracles_v_2_0.pdf
@@ -240,5 +227,6 @@ Zero-match audit list:
 - [7787] shung-solady-erc721-audit.pdf
 - [7788] xuwinnie-solady-cbrt-proof.pdf
 - [7862] audit.pdf
+- [7863] README.md
 
 Fork inheritance lineage and inherited audits are included when available.

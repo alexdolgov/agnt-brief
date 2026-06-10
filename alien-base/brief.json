@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "alien-base",
-  "generated_at": "2026-05-31T07:08:17.675Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:22:51.456Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "alien-base",
@@ -43,7 +43,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 11,
     "coverage_pct": 0,
-    "total_audits": 21,
+    "total_audits": 15,
     "scoreable_audits": 0,
     "dl_tvl_usd": 4725226,
     "tvl_usd": 2915012.4102911456,
@@ -62,15 +62,20 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 3,
-      "stale": 13,
+      "aging": 2,
+      "stale": 8,
       "unknown": 5
     }
   },
   "topography": {
-    "project_purpose": "Alien Base is a decentralized exchange (DEX) protocol on Base offering concentrated liquidity (Uniswap V3), stable swaps, and standard AMM (Uniswap V2) pools. It also includes a native token (ALB) with distribution and escrow mechanisms.",
+    "project_purpose": "Alien Base is a decentralized exchange on Base offering aggregated liquidity and token trading, including V2-style AMM pools, V3-style concentrated liquidity, limit orders, yield farming/staking, and support for token and memecoin trading. StableSwap is one component of the broader exchange rather than the primary current product. The protocol also includes the native ALB token and related distribution and escrow mechanisms.",
     "relationship_narrative": "The 'Contracts' family provides the ALB token and distribution infrastructure, which likely incentivizes liquidity in the 'Alien Base' and 'Alien Base StableSwap' pools. The 'Alien Base' family uses BunniToken for liquidity positions, while the StableSwap pools operate independently with their own flash-loan contracts.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 58,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -2373,111 +2378,6 @@
   ],
   "audits": [
     {
-      "audit_id": 7750,
-      "audit_key": "audit-7750",
-      "report_name": "2017-03.md",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2017-03.md",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2017-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7750,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2017-03.md"
-        },
-        {
-          "audit_id": 7759,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2017-03.md"
-        },
-        {
-          "audit_id": 7768,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts/audits/2017-03.md"
-        }
-      ]
-    },
-    {
-      "audit_id": 7751,
-      "audit_key": "audit-7751",
-      "report_name": "2018-10.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2018-10.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2018-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7751,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2018-10.pdf"
-        },
-        {
-          "audit_id": 7760,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2018-10.pdf"
-        },
-        {
-          "audit_id": 7769,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts/audits/2018-10.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 7752,
-      "audit_key": "audit-7752",
-      "report_name": "2022-10-Checkpoints.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-Checkpoints.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2022-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7752,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2022-10-Checkpoints.pdf"
-        },
-        {
-          "audit_id": 7761,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.pdf"
-        },
-        {
-          "audit_id": 7770,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts/audits/2022-10-Checkpoints.pdf"
-        }
-      ]
-    },
-    {
       "audit_id": 7753,
       "audit_key": "audit-7753",
       "report_name": "2022-10-ERC4626.pdf",
@@ -2509,150 +2409,6 @@
         {
           "audit_id": 7771,
           "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts/audits/2022-10-ERC4626.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 7754,
-      "audit_key": "audit-7754",
-      "report_name": "2023-05-v4.9.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-05-v4.9.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-05",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7754,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-05-v4.9.pdf"
-        },
-        {
-          "audit_id": 7763,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2023-05-v4.9.pdf"
-        },
-        {
-          "audit_id": 7772,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts/audits/2023-05-v4.9.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 7755,
-      "audit_key": "audit-7755",
-      "report_name": "2023-10-v5.0.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-10-v5.0.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2023-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7755,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2023-10-v5.0.pdf"
-        },
-        {
-          "audit_id": 7764,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2023-10-v5.0.pdf"
-        },
-        {
-          "audit_id": 7773,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts/audits/2023-10-v5.0.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 7756,
-      "audit_key": "audit-7756",
-      "report_name": "2024-10-v5.1.pdf",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2024-10-v5.1.pdf",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "aging",
-      "date": "2024-10",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7756,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/2024-10-v5.1.pdf"
-        },
-        {
-          "audit_id": 7765,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/2024-10-v5.1.pdf"
-        },
-        {
-          "audit_id": 7774,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts/audits/2024-10-v5.1.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 7757,
-      "audit_key": "audit-7757",
-      "report_name": "README.md",
-      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/README.md",
-      "auditor": "OpenZeppelin",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7757,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/audits/README.md"
-        },
-        {
-          "audit_id": 7766,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/audits/README.md"
-        },
-        {
-          "audit_id": 7775,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/openzeppelin-contracts/audits/README.md"
-        },
-        {
-          "audit_id": 7863,
-          "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/tob/README.md"
         }
       ]
     },
@@ -2938,6 +2694,27 @@
           "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/tob/audit.pdf"
         }
       ]
+    },
+    {
+      "audit_id": 7863,
+      "audit_key": "audit-7863",
+      "report_name": "README.md",
+      "report_url": "https://github.com/alienbase-xyz/Mothership/blob/main/lib/v3-core/audits/tob/README.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -3306,36 +3083,8 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 7750,
-        "report_name": "2017-03.md"
-      },
-      {
-        "audit_id": 7751,
-        "report_name": "2018-10.pdf"
-      },
-      {
-        "audit_id": 7752,
-        "report_name": "2022-10-Checkpoints.pdf"
-      },
-      {
         "audit_id": 7753,
         "report_name": "2022-10-ERC4626.pdf"
-      },
-      {
-        "audit_id": 7754,
-        "report_name": "2023-05-v4.9.pdf"
-      },
-      {
-        "audit_id": 7755,
-        "report_name": "2023-10-v5.0.pdf"
-      },
-      {
-        "audit_id": 7756,
-        "report_name": "2024-10-v5.1.pdf"
-      },
-      {
-        "audit_id": 7757,
-        "report_name": "README.md"
       },
       {
         "audit_id": 7777,
@@ -3388,6 +3137,10 @@
       {
         "audit_id": 7862,
         "report_name": "audit.pdf"
+      },
+      {
+        "audit_id": 7863,
+        "report_name": "README.md"
       }
     ],
     "inherited_remapped_matches": []

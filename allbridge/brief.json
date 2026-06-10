@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "allbridge",
-  "generated_at": "2026-05-31T07:07:34.077Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:22:10.586Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "allbridge",
@@ -32,21 +32,21 @@
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 284,
-    "total_addresses": 541,
-    "unique_implementations": 284,
-    "total_deployments": 541,
+    "total_contracts": 282,
+    "total_addresses": 537,
+    "unique_implementations": 282,
+    "total_deployments": 537,
     "audited_contracts": 0,
-    "unaudited_contracts": 84,
+    "unaudited_contracts": 82,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 77,
+    "contracts_verified_unaudited": 75,
     "contracts_verified_by_bytecode": 7,
     "contracts_unverified": 200,
     "coverage_pct": 0,
     "total_audits": 8,
     "scoreable_audits": 0,
     "dl_tvl_usd": 26552200,
-    "tvl_usd": 319180540.17869073,
+    "tvl_usd": 19333323.21700372,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
       "arbitrum": 761941.23,
@@ -56,11 +56,11 @@
       "celo": 282251.27,
       "ethereum": 16153065.95,
       "optimism": 74308.37,
-      "polygon": 300510818.8,
+      "polygon": 663601.83,
       "sonic": 21363.48,
       "unichain": 26646.96
     },
-    "asd_usd": 319180540.17869073,
+    "asd_usd": 19333323.21700372,
     "website_url": "https://app.allbridge.io",
     "chains": [
       "arbitrum",
@@ -89,46 +89,20 @@
     }
   },
   "topography": {
-    "project_purpose": "Allbridge is a cross-chain bridge that enables users to transfer tokens between different blockchains. It offers both a classic bridge for wrapped token transfers and a newer Core bridge that uses liquidity pools and LayerZero's OFT standard for native cross-chain swaps.",
+    "project_purpose": "Allbridge is a cross-chain bridge for transferring assets between blockchains. Its current Allbridge Core product supports cross-chain swaps and transfers of native stablecoins using liquidity pools, while Allbridge Classic is the legacy wrapped-token bridge. LayerZero/OFT should only be referenced for specific adapter contracts when directly supported by scope evidence.",
     "relationship_narrative": "Allbridge Classic and Allbridge Core are separate bridge implementations that do not share infrastructure. The Classic bridge is being deprecated in favor of Core, which uses a different architecture based on liquidity pools and OFT adapters.",
     "product_family_count": 5
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 282,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0xa3fa99a148fa48d14ed51d610c367c61876997f1",
-      "name": "QiStablecoin",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Allbridge Classic",
-      "tvl_usd": 299847216.96168697,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "QiStablecoin",
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xa3fa99a148fa48d14ed51d610c367c61876997f1",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 299847216.96168697,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 137,
       "chain_name": "polygon",
@@ -1203,55 +1177,6 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x5729126891355e3c2626338151dd50cc0415e071",
-      "name": "Attestations",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "celo",
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Attestations",
-      "deployments": [
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x5729126891355e3c2626338151dd50cc0415e071",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x936d74304a17440488e02197285a2ea5f6dd40a8",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xf65903343712820ef19090c15051687b9363758c",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
     },
     {
       "chain_id": 42220,
@@ -11901,9 +11826,9 @@
   ],
   "origin_summary": {
     "native": 144,
-    "upstream": 14,
+    "upstream": 13,
     "standard_library": 6,
-    "needs_review": 120
+    "needs_review": 119
   },
   "scope_matching_notes": {
     "match_method_counts": {},

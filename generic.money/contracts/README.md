@@ -1,12 +1,11 @@
 # generic.money — Contract Index
 
-13 unique implementations on ethereum · 26 deployments · 9 audited · 3 unaudited · 1 unverified
+12 unique implementations on ethereum · 25 deployments · 9 audited · 2 unaudited · 1 unverified
 
-## adapter (3)
+## adapter (2)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [AggregationRouterV6](./ethereum-1/0x111111125421ca6dc452d289314280a0f8842a65/) | ethereum | [`0x111111...842a65`](./ethereum-1/0x111111125421ca6dc452d289314280a0f8842a65/) | ⚠️ Unaudited | Verified |
 | [LayerZeroAdapter](./ethereum-1/0x05a166797e784d49ba880b289647eccb29b0144e/) | ethereum | [`0x05a166...b0144e`](./ethereum-1/0x05a166797e784d49ba880b289647eccb29b0144e/) | ✅ Audited | Verified |
 | [OneInchSwapper (2 deployments)](./ethereum-1/0xb2368497691f4c6e9b7acede4efc7831417aeffc/) | ethereum | 2 deployments: ethereum [`0xb23684...7aeffc`](./ethereum-1/0xb2368497691f4c6e9b7acede4efc7831417aeffc/); ethereum `0xc1c8db...200a50` | ✅ Audited | Verified |
 

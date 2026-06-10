@@ -7,8 +7,8 @@
 - Project: Giza (`giza`)
 - Website: [https://www.gizatech.xyz/](https://www.gizatech.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:04.325Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:35:04.757Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: base, plasma
 - Contract surface: 16 unique implementations (28 raw deployments)
 - DeFi Llama TVL: $4,630,526.82

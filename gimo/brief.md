@@ -5,8 +5,8 @@
 - Project: Gimo (`gimo`)
 - Website: [https://gimofinance.xyz/](https://gimofinance.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T21:23:55.775Z
-- Pipeline run: correction-skeletal-description-fix-topography
+- Generated: 2026-06-10T23:35:05.368Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $8,657,848.66

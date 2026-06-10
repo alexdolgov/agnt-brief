@@ -7,8 +7,8 @@
 - Project: Generic.Money (`generic.money`)
 - Website: [https://www.generic.money/](https://www.generic.money/)
 - Lifecycle: declining (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:04.317Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:35:03.614Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: ethereum
 - Contract surface: 12 unique implementations (25 raw deployments)
 - DeFi Llama TVL: $3,740,768.64

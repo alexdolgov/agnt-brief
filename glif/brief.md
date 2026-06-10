@@ -5,8 +5,8 @@
 - Project: GLIF (`glif`)
 - Website: [https://glif.io](https://glif.io)
 - Lifecycle: active (Tier 0, 90% below peak)
-- Generated: 2026-06-10T20:59:04.330Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:33:58.288Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: base
 - Contract surface: 6 unique implementations (13 raw deployments)
 - DeFi Llama TVL: $33,718,896.73

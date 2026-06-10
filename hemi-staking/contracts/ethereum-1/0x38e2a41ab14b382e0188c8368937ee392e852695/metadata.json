@@ -1,0 +1,17 @@
+{
+  "address": "0x38e2a41ab14b382e0188c8368937ee392e852695",
+  "chain_id": 1,
+  "contract_name": "LiquidationFacet",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 49,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-10T23:49:27.315Z"
+}

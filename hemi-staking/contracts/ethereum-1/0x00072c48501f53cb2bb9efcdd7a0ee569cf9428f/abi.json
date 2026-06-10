@@ -1,0 +1,167 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "MathOverflowedMulDiv",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ITroveManager",
+        "name": "troveManager",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "time",
+        "type": "uint256"
+      }
+    ],
+    "name": "calculateInterestIndexByTime",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "currentInterestIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "interestFactor",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ITroveManager",
+        "name": "troveManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "time",
+        "type": "uint256"
+      }
+    ],
+    "name": "getNicrByTime",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ITroveManager",
+        "name": "troveManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_borrower",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "time",
+        "type": "uint256"
+      }
+    ],
+    "name": "getNicrListByTime",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "sortedTrovesAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      }
+    ],
+    "name": "getNode",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "exist",
+        "type": "bool"
+      },
+      {
+        "internalType": "address",
+        "name": "nextId",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "prevId",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ITroveManager",
+        "name": "troveManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "time",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTroveCollAndDebtByTime",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

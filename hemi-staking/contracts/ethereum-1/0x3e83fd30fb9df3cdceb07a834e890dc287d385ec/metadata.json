@@ -1,0 +1,17 @@
+{
+  "address": "0x3e83fd30fb9df3cdceb07a834e890dc287d385ec",
+  "chain_id": 1,
+  "contract_name": "MultiTroveGetter",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 10,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-10T23:49:27.424Z"
+}

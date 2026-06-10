@@ -7,8 +7,8 @@
 - Project: Hashport (`hashport`)
 - Website: [https://www.hashport.network](https://www.hashport.network)
 - Lifecycle: dead (Tier 1, sunsetting)
-- Generated: 2026-06-10T20:59:04.551Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:48:33.350Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: arbitrum, aurora, avalanche, base, cronos, ethereum, fantom, moonbeam, optimism, polygon
 - Contract surface: 21 unique implementations (297 raw deployments)
 - DeFi Llama TVL: $1,536,497.14

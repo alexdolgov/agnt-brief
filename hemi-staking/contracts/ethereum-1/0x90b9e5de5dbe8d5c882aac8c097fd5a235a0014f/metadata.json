@@ -1,0 +1,17 @@
+{
+  "address": "0x90b9e5de5dbe8d5c882aac8c097fd5a235a0014f",
+  "chain_id": 1,
+  "contract_name": "CoreFacet",
+  "compiler_version": "v0.8.22+commit.4fc1097e",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "shanghai",
+  "license": null,
+  "verified": true,
+  "proxy": false,
+  "source_provider": "etherscan",
+  "source_file_count": 32,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-10T23:49:28.079Z"
+}

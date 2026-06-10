@@ -1,0 +1,103 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ITroveManager",
+        "name": "troveManager",
+        "type": "address"
+      },
+      {
+        "internalType": "int256",
+        "name": "_startIdx",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_count",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "name": "getMultipleSortedTroves",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "coll",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "stake",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "snapshotCollateral",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "snapshotDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nominalICR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "currentICR",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "entireDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "entireColl",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingDebtReward",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pendingCollReward",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct CombinedTroveData[]",
+        "name": "_troves",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

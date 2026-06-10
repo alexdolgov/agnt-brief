@@ -5,8 +5,8 @@
 - Project: Hegic (`hegic`)
 - Website: [https://www.hegic.co/?ref=0x798ff1e6d7afd28c333ee6ebe03125d30ec6ef10](https://www.hegic.co/?ref=0x798ff1e6d7afd28c333ee6ebe03125d30ec6ef10)
 - Lifecycle: active (Tier 0, 91.2% below peak)
-- Generated: 2026-06-10T20:59:04.559Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:49:19.608Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: ethereum
 - Contract surface: 63 unique implementations (97 raw deployments)
 - DeFi Llama TVL: $10,022,682.55

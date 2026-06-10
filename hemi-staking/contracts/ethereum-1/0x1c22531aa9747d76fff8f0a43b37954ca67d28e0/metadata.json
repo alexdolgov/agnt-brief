@@ -1,0 +1,18 @@
+{
+  "address": "0x1c22531aa9747d76fff8f0a43b37954ca67d28e0",
+  "chain_id": 1,
+  "contract_name": "SumerProxy",
+  "compiler_version": "v0.8.19+commit.7dd6d404",
+  "optimization_used": true,
+  "runs": 200,
+  "evm_version": "paris",
+  "license": "MIT",
+  "verified": true,
+  "proxy": true,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 91,
+  "constructor_arguments": "",
+  "implementation_address": "0xbeb120827ce309c306baec7a4c4d0eec9fc37f0a",
+  "fetched_at": "2026-06-10T23:49:26.404Z"
+}

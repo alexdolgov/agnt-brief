@@ -1,0 +1,75 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_satoshiXApp",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getActiveTroveManagersForAccount",
+    "outputs": [
+      {
+        "internalType": "contract ITroveManager[]",
+        "name": "",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllCollateralsAndTroveManagers",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "collateral",
+            "type": "address"
+          },
+          {
+            "internalType": "address[]",
+            "name": "troveManagers",
+            "type": "address[]"
+          }
+        ],
+        "internalType": "struct Collateral[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "satoshiXApp",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

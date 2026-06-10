@@ -5,8 +5,8 @@
 - Project: Hemi Staking (`hemi-staking`)
 - Website: [https://app.hemi.xyz/en/stake/dashboard/](https://app.hemi.xyz/en/stake/dashboard/)
 - Lifecycle: active (Tier 0, 92.5% below peak)
-- Generated: 2026-06-10T20:59:04.573Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:49:23.019Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: bsc, ethereum, optimism, swellchain
 - Contract surface: 120 unique implementations (207 raw deployments)
 - DeFi Llama TVL: $36,924,885.97

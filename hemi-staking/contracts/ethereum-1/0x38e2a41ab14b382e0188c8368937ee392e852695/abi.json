@@ -1,0 +1,372 @@
+[
+  {
+    "inputs": [],
+    "name": "Ownable__NotOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "Ownable__NotTransitiveOwner",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "_currentEpoch",
+        "type": "uint128"
+      }
+    ],
+    "name": "EpochUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_G",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "_epoch",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "_scale",
+        "type": "uint128"
+      }
+    ],
+    "name": "G_Updated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_liquidatedDebt",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_liquidatedColl",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_collGasCompensation",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_debtGasCompensation",
+        "type": "uint256"
+      }
+    ],
+    "name": "Liquidation",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_troveManager",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_liquidatedDebt",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_liquidatedColl",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_collGasCompensation",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_debtGasCompensation",
+        "type": "uint256"
+      }
+    ],
+    "name": "LiquidationTroves",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_P",
+        "type": "uint256"
+      }
+    ],
+    "name": "P_Updated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "previousAdminRole",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "newAdminRole",
+        "type": "bytes32"
+      }
+    ],
+    "name": "RoleAdminChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleGranted",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "bytes32",
+        "name": "role",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "sender",
+        "type": "address"
+      }
+    ],
+    "name": "RoleRevoked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "idx",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_S",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "_epoch",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "_scale",
+        "type": "uint128"
+      }
+    ],
+    "name": "S_Updated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "_currentScale",
+        "type": "uint128"
+      }
+    ],
+    "name": "ScaleUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_newBalance",
+        "type": "uint256"
+      }
+    ],
+    "name": "StabilityPoolDebtBalanceUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_debt",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_coll",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "_operation",
+        "type": "uint8"
+      }
+    ],
+    "name": "TroveLiquidated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ITroveManager",
+        "name": "troveManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "_troveArray",
+        "type": "address[]"
+      }
+    ],
+    "name": "batchLiquidateTroves",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ITroveManager",
+        "name": "troveManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "borrower",
+        "type": "address"
+      }
+    ],
+    "name": "liquidate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract ITroveManager",
+        "name": "troveManager",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxTrovesToLiquidate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxICR",
+        "type": "uint256"
+      }
+    ],
+    "name": "liquidateTroves",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "address": "0x5a7749f83b81b301cab5f48eb8516b986daef23d",
+  "chain_id": 10,
+  "contract_name": "L2ERC721Bridge",
+  "compiler_version": "v0.8.15+commit.e14f2714",
+  "optimization_used": true,
+  "runs": 10000,
+  "evm_version": "london",
+  "license": "MIT",
+  "verified": true,
+  "proxy": false,
+  "source_provider": "sourcify",
+  "sourcify_match": "full_match",
+  "source_file_count": 26,
+  "constructor_arguments": "",
+  "implementation_address": null,
+  "fetched_at": "2026-06-10T23:49:25.139Z"
+}

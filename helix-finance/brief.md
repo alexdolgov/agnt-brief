@@ -5,8 +5,8 @@
 - Project: HELIX Finance (`helix-finance`)
 - Website: [https://helixfinance.io/](https://helixfinance.io/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:04.565Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:47:18.507Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: ethereum
 - Contract surface: 9 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $10,995,873.69

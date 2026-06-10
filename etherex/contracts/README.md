@@ -1,6 +1,6 @@
 # etherex — Contract Index
 
-58 unique implementations on linea · 130 deployments · 20 audited · 27 unaudited · 11 unverified
+58 unique implementations on linea · 130 deployments · 17 audited · 30 unaudited · 11 unverified
 
 ## adapter (3)
 
@@ -25,7 +25,7 @@
 | RamsesV3PositionManager | linea | `0xb56542...cd1798` | ✅ Audited | Verified |
 | [TimeLock](./linea-59144/0xf9a15373c36f50e0dea03e80a568f03392d89944/) | linea | [`0xf9a153...d89944`](./linea-59144/0xf9a15373c36f50e0dea03e80a568f03392d89944/) | ⚠️ Unaudited | Verified |
 
-## operational_periphery (11)
+## operational_periphery (12)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -37,7 +37,8 @@
 | [FrogAirdrop (2 deployments)](./linea-59144/0x97b1b762ae52e1fe4a96dd6db6f15e117ee38912/) | linea | 2 deployments: linea [`0x97b1b7...e38912`](./linea-59144/0x97b1b762ae52e1fe4a96dd6db6f15e117ee38912/); linea `0xbe9d87...3a78c3` | ⚠️ Unaudited | Verified |
 | [GaugeV3 (7 deployments)](./linea-59144/0x18068c050d237d46310f59f40559bd0c6b3b0b25/) | linea | 7 deployments: linea [`0x18068c...3b0b25`](./linea-59144/0x18068c050d237d46310f59f40559bd0c6b3b0b25/); linea `0x499aed...dd8fcb`; linea `0x84b465...04201b`; linea `0x9270d3...f81a74`; linea `0x9d5c0e...dc9cb4`; linea `0xeba9eb...eacb40`; linea `0xfb8561...c4950d` | ✅ Audited | Verified |
 | [Minter (4 deployments)](./linea-59144/0x0b6d3b42861ee8abfcaac818033694e758ecc3eb/) | linea | 4 deployments: linea [`0x0b6d3b...ecc3eb`](./linea-59144/0x0b6d3b42861ee8abfcaac818033694e758ecc3eb/); linea `0x462e26...d2a966`; linea `0x76da79...da9f8f`; linea `0xf83962...0b6255` | ✅ Audited | Verified |
-| [Oracle](./linea-59144/0x389df9430143880ddb13bdd5fd30daf2d57e7d55/) | linea | [`0x389df9...7e7d55`](./linea-59144/0x389df9430143880ddb13bdd5fd30daf2d57e7d55/) | ✅ Audited | Verified |
+| [Oracle](./linea-59144/0x389df9430143880ddb13bdd5fd30daf2d57e7d55/) | linea | [`0x389df9...7e7d55`](./linea-59144/0x389df9430143880ddb13bdd5fd30daf2d57e7d55/) | ⚠️ Unaudited | Verified |
+| [Position](./linea-59144/0x2832e19221631e7082926e2bb354497613bf9d6f/) | linea | [`0x2832e1...bf9d6f`](./linea-59144/0x2832e19221631e7082926e2bb354497613bf9d6f/) | ⚠️ Unaudited | Verified |
 | RamsesTreasuryHelper | linea | `0x15325a...5636a5` | ✅ Audited | Verified |
 | [UniversalAirdrop](./linea-59144/0xae16b93d29aadccb9fc616aabfbca95682d13dcf/) | linea | [`0xae16b9...d13dcf`](./linea-59144/0xae16b93d29aadccb9fc616aabfbca95682d13dcf/) | ⚠️ Unaudited | Verified |
 
@@ -71,7 +72,7 @@
 |---|---|---|---|---|
 | [NonfungibleTokenPositionDescriptor](./linea-59144/0xfc65c6308765ebbb0d87df8b6502674b868453c4/) | linea | [`0xfc65c6...8453c4`](./linea-59144/0xfc65c6308765ebbb0d87df8b6502674b868453c4/) | ⚠️ Unaudited | Verified |
 
-## unknown (29)
+## unknown (28)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -82,8 +83,7 @@
 | GaugeFactory (2 deployments) | linea | 2 deployments: linea `0x1ddf72...7944b3`; linea [`0xd766d9...c4a200`](./linea-59144/0xd766d9da469c4a7d325b66ffcf33139650c4a200/) | ⚠️ Unaudited | Verified |
 | [MevModule (3 deployments)](./linea-59144/0x614f116c0e64190512d4764b4c2122f9e2703abd/) | linea | 3 deployments: linea [`0x614f11...703abd`](./linea-59144/0x614f116c0e64190512d4764b4c2122f9e2703abd/); linea `0x90fc1f...b4940d`; linea `0xdf2787...088d5b` | ⚠️ Unaudited | Verified |
 | [MinimalizedFeePusher (2 deployments)](./linea-59144/0x1b4e17d4263a7f751d8965ae514293c0461c4efb/) | linea | 2 deployments: linea [`0x1b4e17...1c4efb`](./linea-59144/0x1b4e17d4263a7f751d8965ae514293c0461c4efb/); linea `0x98af61...eb4a8c` | ⚠️ Unaudited | Verified |
-| [Position](./linea-59144/0x2832e19221631e7082926e2bb354497613bf9d6f/) | linea | [`0x2832e1...bf9d6f`](./linea-59144/0x2832e19221631e7082926e2bb354497613bf9d6f/) | ✅ Audited | Verified |
-| [ProtocolActions](./linea-59144/0x34413f3cddafef7db46f92296a7cea444b3140fd/) | linea | [`0x34413f...3140fd`](./linea-59144/0x34413f3cddafef7db46f92296a7cea444b3140fd/) | ✅ Audited | Verified |
+| [ProtocolActions](./linea-59144/0x34413f3cddafef7db46f92296a7cea444b3140fd/) | linea | [`0x34413f...3140fd`](./linea-59144/0x34413f3cddafef7db46f92296a7cea444b3140fd/) | ⚠️ Unaudited | Verified |
 | [Revivoor](./linea-59144/0x5da9735b19cdd050b6ada1b31ef52ae704c5a3e9/) | linea | [`0x5da973...c5a3e9`](./linea-59144/0x5da9735b19cdd050b6ada1b31ef52ae704c5a3e9/) | ⚠️ Unaudited | Verified |
 | [RewardValidator (2 deployments)](./linea-59144/0x7930ec744ff2a62c34ac730afd9e7cc462b1e0fc/) | linea | 2 deployments: linea [`0x7930ec...b1e0fc`](./linea-59144/0x7930ec744ff2a62c34ac730afd9e7cc462b1e0fc/); linea `0xe57600...c0a97c` | ✅ Audited | Verified |
 | [REX33 (5 deployments)](./linea-59144/0x312b67a8de4291ce2c3628d24fa62eb04f433ec0/) | linea | 5 deployments: linea [`0x312b67...433ec0`](./linea-59144/0x312b67a8de4291ce2c3628d24fa62eb04f433ec0/); linea `0xbf42f6...639dff`; linea `0xc4b578...31509c`; linea `0xccfc11...f15749`; linea `0xe4eeb4...f051c4` | ✅ Audited | Verified |

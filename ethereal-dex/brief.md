@@ -5,8 +5,8 @@
 - Project: Ethereal DEX (`ethereal-dex`)
 - Website: [https://app.ethereal.trade/](https://app.ethereal.trade/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:02.314Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:10:13.301Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $30,717,765.08

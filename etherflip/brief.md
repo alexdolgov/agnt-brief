@@ -4,8 +4,8 @@
 
 - Project: EtherFlip (`etherflip`)
 - Lifecycle: active (Tier 0, 56.3% below peak)
-- Generated: 2026-06-10T20:59:02.341Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:09:04.463Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: ethereum
 - Contract surface: 7 unique implementations (12 raw deployments)
 - DeFi Llama TVL: $1,577,166.36

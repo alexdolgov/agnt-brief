@@ -5,8 +5,8 @@
 - Project: EthicHub (`ethichub`)
 - Website: [https://ethichub.com](https://ethichub.com)
 - Lifecycle: active (Tier 0, 78.9% below peak)
-- Generated: 2026-06-10T20:59:03.830Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:09:50.674Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: celo, ethereum, gnosis
 - Contract surface: 58 unique implementations (213 raw deployments)
 - DeFi Llama TVL: $4,025,199.68

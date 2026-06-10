@@ -5,8 +5,8 @@
 - Project: Etherfuse (`etherfuse`)
 - Website: [https://www.etherfuse.com/](https://www.etherfuse.com/)
 - Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-10T20:59:02.346Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:10:11.682Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: base, polygon
 - Contract surface: 25 unique implementations (58 raw deployments)
 - DeFi Llama TVL: $5,405,525.69

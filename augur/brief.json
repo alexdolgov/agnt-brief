@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "augur",
-  "generated_at": "2026-05-24T18:30:59.537Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:48:32.362Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b05b29-7564",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "augur",
@@ -35,8 +35,8 @@
     "coverage_pct": 64.1,
     "total_audits": 7,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 1692013.71481,
-    "tvl_usd": 1692013.71481,
+    "dl_tvl_usd": 1669254.78354,
+    "tvl_usd": 1669254.78354,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Augur is a decentralized prediction market protocol that allows users to create and trade shares in the outcome of events. It uses a native token (Cash) for trading and a Universe contract to manage market creation and resolution.",
+    "project_purpose": "Augur is a decentralized prediction-market and oracle protocol for creating, trading, and resolving markets on event outcomes. Its legacy core contracts include components such as Universe and Cash for market infrastructure and settlement, while Augur's reporting, dispute, fork, migration, and current prediction-market/oracle system center on REP/REPv2 rather than Cash as a native token.",
     "relationship_narrative": "The Delegator proxy delegates calls to the Cash implementation, enabling upgradeability. The Universe contract likely references Cash for market operations, forming a shared infrastructure for the prediction market.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 39,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

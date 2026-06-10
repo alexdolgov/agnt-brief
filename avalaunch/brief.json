@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "avalaunch",
-  "generated_at": "2026-05-23T10:14:11.528Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:46:23.519Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b05b29-7564",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "avalaunch",
     "tier": 0,
@@ -22,20 +22,20 @@
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 39,
-    "total_addresses": 143,
-    "unique_implementations": 39,
-    "total_deployments": 143,
+    "total_contracts": 38,
+    "total_addresses": 142,
+    "unique_implementations": 38,
+    "total_deployments": 142,
     "audited_contracts": 11,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 2,
     "contracts_verified_audited": 11,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 25,
-    "coverage_pct": 78.6,
+    "coverage_pct": 84.6,
     "total_audits": 13,
     "scoreable_audits": 13,
-    "dl_tvl_usd": 6950864.100860001,
+    "dl_tvl_usd": 6835452.4777999995,
     "tvl_usd": 31336841.96494775,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Avalaunch is a decentralized exchange and launchpad protocol on Avalanche, enabling token swaps, liquidity provision, and staking. It features a native XAVA token used for governance, farming rewards, and allocation staking to participate in token sales.",
+    "project_purpose": "Avalaunch is an Avalanche-based launchpad and fundraising platform for token pools and sales. Its infrastructure includes XAVA allocation staking, airdrops, and related sale participation and reward mechanisms. XAVA is evidenced as being used for staking/allocation access and farming or reward-related usage; token-swap DEX functionality, liquidity provision, and governance usage should not be claimed unless separately supported by verified project-owned contracts or documentation.",
     "relationship_narrative": "The XavaToken is the central asset, used across AllocationStaking for launchpad access and FarmingXava for liquidity mining rewards. Proxies like TransparentUpgradeableProxy enable upgradeability for staking contracts, while PangolinPair facilitates XAVA liquidity on the Pangolin DEX.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 38,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1337,37 +1342,6 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x42152bdd72de8d6767fe3b4e17a221d6985e8b25",
-      "name": "PangolinPair",
-      "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "pangolin",
-      "product_line": "Avalaunch",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PangolinPair",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x42152bdd72de8d6767fe3b4e17a221d6985e8b25",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
       "contamination_flag": null
     },
     {
@@ -2666,35 +2640,35 @@
       "auditor": "Paladin",
       "tier": 2,
       "contracts_covered": 10,
-      "coverage_pct": 71.4,
+      "coverage_pct": 76.9,
       "latest_audit": "2023-01"
     },
     {
       "auditor": "CoinFabrik",
       "tier": 2,
       "contracts_covered": 8,
-      "coverage_pct": 57.1,
+      "coverage_pct": 61.5,
       "latest_audit": "2022-03"
     },
     {
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 6,
-      "coverage_pct": 42.9,
+      "coverage_pct": 46.2,
       "latest_audit": "2022-01"
     },
     {
       "auditor": "HashEx",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 21.4,
+      "coverage_pct": 23.1,
       "latest_audit": "2021-09"
     },
     {
       "auditor": "CertiK",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 14.3,
+      "coverage_pct": 15.4,
       "latest_audit": "2021-05"
     }
   ],
@@ -2712,7 +2686,7 @@
   ],
   "origin_summary": {
     "native": 31,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 3,
     "needs_review": 4
   },

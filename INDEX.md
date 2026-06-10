@@ -53,12 +53,12 @@
 | [asseto-cash+](./asseto-cash+/) | $1.4M | 0.0% | ? | declining | 1 | 2 | 2026-06-10 |
 | [asymmetry](./asymmetry/) | $37.1M | 0.0% | $37.1M | declining | 0 | 203 | 2026-06-10 |
 | [atlendis](./atlendis/) | $4.3M | 14.3% | $4.3M | active | 2 | 43 | 2026-06-10 |
-| [augur](./augur/) | $1.7M | 64.1% | ? | active | 7 | 39 | 2026-05-24 |
-| [aura](./aura/) | $277.0M | 19.0% | $238.3M | declining | 18 | 502 | 2026-05-31 |
-| [aurora-plus](./aurora-plus/) | $2.0M | 33.3% | ? | active | 3 | 31 | 2026-05-24 |
-| [autofarm](./autofarm/) | $6.1M | 0.0% | ? | dead | 1 | 10 | 2026-05-25 |
+| [augur](./augur/) | $1.7M | 64.1% | ? | active | 7 | 39 | 2026-06-10 |
+| [aura](./aura/) | $107.0M | 19.4% | $68.2M | active | 18 | 497 | 2026-06-10 |
+| [aurora-plus](./aurora-plus/) | $2.3M | 33.3% | ? | active | 3 | 31 | 2026-06-10 |
+| [autofarm](./autofarm/) | $6.1M | 0.0% | ? | declining | 1 | 10 | 2026-06-10 |
 | [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 0 | 570 | 2026-05-31 |
-| [avalaunch](./avalaunch/) | $31.3M | 78.6% | ? | unknown | 13 | 39 | 2026-05-23 |
+| [avalaunch](./avalaunch/) | $31.3M | 84.6% | ? | active | 13 | 38 | 2026-06-10 |
 | [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | unknown | 3 | 61 | 2026-05-26 |
 | [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-05-31 |
 | [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-05-25 |

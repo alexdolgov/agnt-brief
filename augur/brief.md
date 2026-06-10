@@ -5,17 +5,17 @@
 - Project: Augur (`augur`)
 - Website: [https://augur.net/](https://augur.net/)
 - Lifecycle: active (Tier 0, 87.4% below peak)
-- Generated: 2026-05-24T18:30:59.537Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:48:32.362Z
+- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
 - Chains: ethereum
 - Contract surface: 39 unique implementations (42 raw deployments)
-- DeFi Llama TVL: $1,692,013.71
+- DeFi Llama TVL: $1,669,254.78
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Augur is a decentralized prediction market protocol that allows users to create and trade shares in the outcome of events. It uses a native token (Cash) for trading and a Universe contract to manage market creation and resolution.
+Augur is a decentralized prediction-market and oracle protocol for creating, trading, and resolving markets on event outcomes. Its legacy core contracts include components such as Universe and Cash for market infrastructure and settlement, while Augur's reporting, dispute, fork, migration, and current prediction-market/oracle system center on REP/REPv2 rather than Cash as a native token.
 
 ### Architecture
 

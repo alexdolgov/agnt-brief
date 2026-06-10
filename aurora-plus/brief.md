@@ -5,17 +5,17 @@
 - Project: Aurora Plus (`aurora-plus`)
 - Website: [https://aurora.plus/](https://aurora.plus/)
 - Lifecycle: active (Tier 0, 94.8% below peak)
-- Generated: 2026-05-24T15:47:32.456Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:49:35.157Z
+- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
 - Chains: aurora
 - Contract surface: 31 unique implementations (74 raw deployments)
-- DeFi Llama TVL: $2,007,682.18
+- DeFi Llama TVL: $2,273,021.18
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Aurora Plus is a staking and farming protocol on the Aurora chain that allows users to earn rewards by staking tokens.
+Aurora+ is a membership program for Aurora users that provides benefits such as free transactions and rewards from staking AURORA tokens.
 
 ### Architecture
 

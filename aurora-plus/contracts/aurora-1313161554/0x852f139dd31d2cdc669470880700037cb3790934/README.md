@@ -4,7 +4,7 @@
 |---|---|
 | Chain | aurora (1313161554) |
 | Address | `0x852f139dd31d2cdc669470880700037cb3790934` |
-| Role | unknown |
+| Role | operational_periphery |
 | Origin | needs_review |
 | Audited | No |
 | Audits | n/a |

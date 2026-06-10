@@ -1,22 +1,22 @@
 # Agentic Audit Brief: Autofarm
 
-⚠️ Lifecycle status: DEAD - TVL changed 3.6% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 3.6% over 90 days
 
 ## Project Overview
 
 - Project: Autofarm (`autofarm`)
-- Lifecycle: dead (Tier 0, 99.7% below peak)
-- Generated: 2026-05-25T13:31:20.178Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: declining (Tier 0, 99.7% below peak)
+- Generated: 2026-06-10T20:48:30.302Z
+- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
 - Chains: aurora, avalanche, boba, bsc, celo, cronos, fantom, gnosis, harmony, heco, moonbeam, moonriver, polygon
 - Contract surface: 10 unique implementations (16 raw deployments)
-- DeFi Llama TVL: $6,104,494.72
+- DeFi Llama TVL: $6,050,499.25
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Autofarm is a yield aggregator that automatically compounds user deposits across multiple DeFi protocols to maximize returns. It operates on numerous blockchains, offering vaults that optimize yield farming strategies.
+Autofarm is a DeFi suite best known for its multi-chain yield-vault and auto-compounding products, which aggregate user deposits across DeFi protocols to optimize yield farming strategies. Its broader ecosystem has also included AutoSwap/DEX aggregation functionality as tracked in DefiLlama metadata.
 
 ### Architecture
 
@@ -36,7 +36,7 @@ The Autofarm family consists of core vault contracts (AutoFarmV2_CrossChain) dep
 - Latest audit: n/a (unknown)
 - Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

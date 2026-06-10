@@ -1,6 +1,6 @@
 # avalaunch — Contract Index
 
-39 unique implementations on avalanche · 143 deployments · 11 audited · 3 unaudited · 25 unverified
+38 unique implementations on avalanche · 142 deployments · 11 audited · 2 unaudited · 25 unverified
 
 ## governance (1)
 
@@ -34,7 +34,7 @@
 | [AvalaunchNFT](./avalanche-43114/0xe29561fdc8a759742403d537dd1fadcaba0b346a/) | avalanche | [`0xe29561...0b346a`](./avalanche-43114/0xe29561fdc8a759742403d537dd1fadcaba0b346a/) | ⚠️ Unaudited | Verified |
 | [XavaToken (6 deployments)](./avalanche-43114/0x1a7931de2b1ca136d54bd46f51892e0f0e23fde8/) | avalanche | 6 deployments: avalanche [`0x1a7931...23fde8`](./avalanche-43114/0x1a7931de2b1ca136d54bd46f51892e0f0e23fde8/); avalanche `0x897ee1...7ace17`; avalanche `0x90ee87...22e2cc`; avalanche `0xc8d815...8c4433`; avalanche `0xd1c3f9...166fc4`; avalanche `0xfbd59a...b7be2b` | ✅ Audited | Verified |
 
-## unknown (32)
+## unknown (31)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -45,7 +45,6 @@
 | [AvalaunchSale (2 deployments)](./avalanche-43114/0x0a1a9eb0d984f1c194c85bace2070724101272e3/) | avalanche | 2 deployments: avalanche [`0x0a1a9e...1272e3`](./avalanche-43114/0x0a1a9eb0d984f1c194c85bace2070724101272e3/); avalanche `0xea3283...77f75a` | ✅ Audited | Verified |
 | [AvalaunchSaleV2 (2 deployments)](./avalanche-43114/0x4e05033e96ecb624507835ffccb451ecea1e7156/) | avalanche | 2 deployments: avalanche [`0x4e0503...1e7156`](./avalanche-43114/0x4e05033e96ecb624507835ffccb451ecea1e7156/); avalanche `0x74bafb...2de47d` | ✅ Audited | Verified |
 | [FarmingXava (2 deployments)](./avalanche-43114/0x6e125b68f0f1963b09add1b755049e66f53cc1ea/) | avalanche | 2 deployments: avalanche [`0x6e125b...3cc1ea`](./avalanche-43114/0x6e125b68f0f1963b09add1b755049e66f53cc1ea/); avalanche `0xe82aae...034a68` | ✅ Audited | Verified |
-| [PangolinPair](./avalanche-43114/0x42152bdd72de8d6767fe3b4e17a221d6985e8b25/) | avalanche | [`0x42152b...5e8b25`](./avalanche-43114/0x42152bdd72de8d6767fe3b4e17a221d6985e8b25/) | ⚠️ Unaudited | Verified |
 | UnnamedContract | avalanche | `0x089a3f...b1f539` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x0e5505...ac2fc6` | ❓ Unverified | Unverified |
 | UnnamedContract | avalanche | `0x17fdfd...22173e` | ❓ Unverified | Unverified |

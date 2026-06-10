@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "aurora-plus",
-  "generated_at": "2026-05-24T15:47:32.456Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:49:35.157Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b05b29-7564",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "aurora-plus",
@@ -35,8 +35,8 @@
     "coverage_pct": 33.3,
     "total_audits": 3,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 2007682.18129,
-    "tvl_usd": 2007682.18129,
+    "dl_tvl_usd": 2273021.18498,
+    "tvl_usd": 2273021.18498,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,9 +56,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Aurora Plus is a staking and farming protocol on the Aurora chain that allows users to earn rewards by staking tokens.",
+    "project_purpose": "Aurora+ is a membership program for Aurora users that provides benefits such as free transactions and rewards from staking AURORA tokens.",
     "relationship_narrative": "The protocol consists of a single product family with a token contract (EvmErc20) and its proxy (ERC1967Proxy), sharing the same infrastructure.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 31,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

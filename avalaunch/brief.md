@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Avalaunch
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Avalaunch (`avalaunch`)
 - Website: [https://avalaunch.app](https://avalaunch.app)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-05-23T10:14:11.528Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:46:23.519Z
+- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
 - Chains: avalanche
-- Contract surface: 39 unique implementations (143 raw deployments)
-- DeFi Llama TVL: $6,950,864.10
+- Contract surface: 38 unique implementations (142 raw deployments)
+- DeFi Llama TVL: $6,835,452.48
 - On-chain TVL (included contracts): $31,336,841.96
 - TVL by chain: Avalanche $31,336,841.96
 
 ## Project Description
 
-Avalaunch is a decentralized exchange and launchpad protocol on Avalanche, enabling token swaps, liquidity provision, and staking. It features a native XAVA token used for governance, farming rewards, and allocation staking to participate in token sales.
+Avalaunch is an Avalanche-based launchpad and fundraising platform for token pools and sales. Its infrastructure includes XAVA allocation staking, airdrops, and related sale participation and reward mechanisms. XAVA is evidenced as being used for staking/allocation access and farming or reward-related usage; token-swap DEX functionality, liquidity provision, and governance usage should not be claimed unless separately supported by verified project-owned contracts or documentation.
 
 ### Architecture
 
@@ -25,29 +23,28 @@ The XavaToken is the central asset, used across AllocationStaking for launchpad 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 11/14 (78.6%)
-- Verified + Unaudited implementations: 3
+- Verified implementations audited: 11/13 (84.6%)
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 25
-- Unique implementations: 39
-- Raw deployments: 143
+- Unique implementations: 38
+- Raw deployments: 142
 - Audits discovered: 13
 - Scoreable audits (matched contracts): 13
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-01 (stale)
 - Staleness: 0 fresh, 0 aging, 13 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Paladin | Tier 2 | 10 | 71.4% | 2023-01 |
-| CoinFabrik | Tier 2 | 8 | 57.1% | 2022-03 |
-| unknown | Tier 2 | 6 | 42.9% | 2022-01 |
-| HashEx | Tier 2 | 3 | 21.4% | 2021-09 |
-| CertiK | Tier 2 | 2 | 14.3% | 2021-05 |
+| Paladin | Tier 2 | 10 | 76.9% | 2023-01 |
+| CoinFabrik | Tier 2 | 8 | 61.5% | 2022-03 |
+| unknown | Tier 2 | 6 | 46.2% | 2022-01 |
+| HashEx | Tier 2 | 3 | 23.1% | 2021-09 |
+| CertiK | Tier 2 | 2 | 15.4% | 2021-05 |
 
 ## Contract Surface
 
@@ -67,12 +64,11 @@ The XavaToken is the central asset, used across AllocationStaking for launchpad 
 | FarmingXava | unknown | avalanche | 2 deployments: avalanche [`0x6e125b...3cc1ea`](./contracts/avalanche-43114/0x6e125b68f0f1963b09add1b755049e66f53cc1ea/); avalanche `0xe82aae...034a68` | ✅ Audited |
 | SalesFactory | registry | avalanche | 5 deployments: avalanche [`0x29f351...b7fc7b`](./contracts/avalanche-43114/0x29f351cdd647195553263924cc3abb017cb7fc7b/); avalanche `0x2d37e5...5b0e2f`; avalanche `0x4c858d...df4542`; avalanche `0x9eb3fe...2fb2c6`; avalanche `0xd124d2...16d172` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployments | Audit Status |
 |---|---|---|---|---|
 | AvalaunchNFT | token | avalanche | [`0xe29561...0b346a`](./contracts/avalanche-43114/0xe29561fdc8a759742403d537dd1fadcaba0b346a/) | ⚠️ Unaudited |
-| PangolinPair | unknown | avalanche | [`0x42152b...5e8b25`](./contracts/avalanche-43114/0x42152bdd72de8d6767fe3b4e17a221d6985e8b25/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | avalanche | 3 deployments: avalanche [`0x796ec8...9914c0`](./contracts/avalanche-43114/0x796ec8bee2871dd820f176730669848d909914c0/); avalanche `0x951aa2...9d29e3`; avalanche `0xc21a52...1916bb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -150,7 +146,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 31 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 3 |
 | needs_review | 4 |
 

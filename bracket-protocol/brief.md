@@ -5,8 +5,8 @@
 - Project: Bracket Protocol (`bracket-protocol`)
 - Website: [https://www.bracket.fi/](https://www.bracket.fi/)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-06-10T20:59:01.113Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:12:31.739Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: arbitrum, ethereum
 - Contract surface: 58 unique implementations (146 raw deployments)
 - DeFi Llama TVL: $3,082,190.00

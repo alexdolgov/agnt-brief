@@ -5,8 +5,8 @@
 - Project: Bridgers (`bridgers`)
 - Website: [https://bridgers.ai/](https://bridgers.ai/)
 - Lifecycle: active (Tier 0, 40.4% below peak)
-- Generated: 2026-06-10T20:59:01.123Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:12:32.439Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: arbitrum, avalanche, base, ethereum, fantom, linea, optimism, polygon
 - Contract surface: 6 unique implementations (10 raw deployments)
 - DeFi Llama TVL: $1,599,052.31

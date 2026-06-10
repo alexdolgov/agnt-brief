@@ -1,6 +1,6 @@
 # bracket-protocol — Contract Index
 
-60 unique implementations across 2 chains · 150 deployments · 8 audited · 40 unaudited · 12 unverified
+58 unique implementations across 2 chains · 146 deployments · 8 audited · 38 unaudited · 12 unverified
 
 ## adapter (2)
 
@@ -39,7 +39,7 @@
 |---|---|---|---|---|
 | [OsTokenConfig (3 deployments)](./ethereum-1/0x287d1e2a8de183a8bf8f2b09fa1340fbd766eb59/) | ethereum | 3 deployments: ethereum [`0x287d1e...66eb59`](./ethereum-1/0x287d1e2a8de183a8bf8f2b09fa1340fbd766eb59/); ethereum `0x2aae83...a22120`; ethereum `0xe88222...fb1cd5` | ⚠️ Unaudited | Verified |
 
-## operational_periphery (9)
+## operational_periphery (8)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -48,7 +48,6 @@
 | [EthOsTokenVaultEscrow](./ethereum-1/0x09e84205df7c68907e619d07afd90143c5763605/) | ethereum | [`0x09e842...763605`](./ethereum-1/0x09e84205df7c68907e619d07afd90143c5763605/) | ⚠️ Unaudited | Verified |
 | [Keeper (2 deployments)](./ethereum-1/0x435192a898a5ee86bbc8951471e5fbe721ba3f7a/) | ethereum | 2 deployments: ethereum [`0x435192...ba3f7a`](./ethereum-1/0x435192a898a5ee86bbc8951471e5fbe721ba3f7a/); ethereum `0x6b5815...b487b5` | ⚠️ Unaudited | Verified |
 | [Oracles](./ethereum-1/0xf0c1670364d4b5c4e9dc8062cdd45068d9c678d6/) | ethereum | [`0xf0c167...c678d6`](./ethereum-1/0xf0c1670364d4b5c4e9dc8062cdd45068d9c678d6/) | ⚠️ Unaudited | Verified |
-| [PriceFeed (2 deployments)](./ethereum-1/0x8023518b2192fb5384dadc596765b3dd1cdfe471/) | ethereum | 2 deployments: ethereum [`0x802351...dfe471`](./ethereum-1/0x8023518b2192fb5384dadc596765b3dd1cdfe471/); ethereum `0xb31f53...11d702` | ⚠️ Unaudited | Verified |
 | [RewardSplitter (3 deployments)](./ethereum-1/0x439b60d3c886e711dad30cf23a2bbd5388febcd9/) | ethereum | 3 deployments: ethereum [`0x439b60...febcd9`](./ethereum-1/0x439b60d3c886e711dad30cf23a2bbd5388febcd9/); ethereum `0x67561c...6aca9b`; ethereum `0xe00512...5b1902` | ⚠️ Unaudited | Verified |
 | [RewardSplitterFactory (3 deployments)](./ethereum-1/0x256af27ce81282a0491a5361172c1db08f6cc5f8/) | ethereum | 3 deployments: ethereum [`0x256af2...6cc5f8`](./ethereum-1/0x256af27ce81282a0491a5361172c1db08f6cc5f8/); ethereum `0x8c512f...8b1dba`; ethereum `0x90a942...797449` | ⚠️ Unaudited | Verified |
 | [SharedMevEscrow (2 deployments)](./ethereum-1/0x07a98f01f5a91043f1396f101a21e91e90488a2f/) | ethereum | 2 deployments: ethereum [`0x07a98f...488a2f`](./ethereum-1/0x07a98f01f5a91043f1396f101a21e91e90488a2f/); ethereum `0x48319f...20ff86` | ⚠️ Unaudited | Verified |
@@ -69,11 +68,10 @@
 | [VaultFactoryV2 (2 deployments)](./ethereum-1/0x01323e0054651adf2c10ce90351439840559c256/) | ethereum | 2 deployments: ethereum [`0x01323e...59c256`](./ethereum-1/0x01323e0054651adf2c10ce90351439840559c256/); ethereum `0x20249e...9207e1` | ⚠️ Unaudited | Verified |
 | [VaultsRegistry (2 deployments)](./ethereum-1/0x3a0008a588772446f6e656133c2d5029cc4fc20e/) | ethereum | 2 deployments: ethereum [`0x3a0008...4fc20e`](./ethereum-1/0x3a0008a588772446f6e656133c2d5029cc4fc20e/); ethereum `0xbbe532...ba0bc2` | ⚠️ Unaudited | Verified |
 
-## token (6)
+## token (5)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [OsToken (2 deployments)](./ethereum-1/0x475e7d2bd7428deb68deaa933dbf0d5850b96702/) | ethereum | 2 deployments: ethereum [`0x475e7d...b96702`](./ethereum-1/0x475e7d2bd7428deb68deaa933dbf0d5850b96702/); ethereum `0xf1c9ac...190e38` | ⚠️ Unaudited | Verified |
 | [OsTokenFlashLoans](./ethereum-1/0xebe12d858e55ddc5fc5a8153dc3e117824fbf5d2/) | ethereum | [`0xebe12d...fbf5d2`](./ethereum-1/0xebe12d858e55ddc5fc5a8153dc3e117824fbf5d2/) | ⚠️ Unaudited | Verified |
 | [RewardEthToken](./ethereum-1/0x01d34aee72325f1d4a748f13c2169404523ecee0/) | ethereum | [`0x01d34a...3ecee0`](./ethereum-1/0x01d34aee72325f1d4a748f13c2169404523ecee0/) | ⚠️ Unaudited | Verified |
 | [RSETH](./ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | ethereum | [`0xa1290d...99e5a7`](./ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | ⚠️ Unaudited | Verified |

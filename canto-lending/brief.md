@@ -7,8 +7,8 @@
 - Project: Canto Lending (`canto-lending`)
 - Website: [https://canto.io/lending](https://canto.io/lending)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:01.250Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:19:41.785Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: canto, ethereum
 - Contract surface: 84 unique implementations (84 raw deployments)
 - DeFi Llama TVL: $3,025,530.14

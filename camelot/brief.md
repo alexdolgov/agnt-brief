@@ -5,8 +5,8 @@
 - Project: Camelot (`camelot`)
 - Website: [https://camelot.exchange/](https://camelot.exchange/)
 - Lifecycle: active (Tier 0, 81.9% below peak)
-- Generated: 2026-06-10T20:59:01.241Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:16:34.088Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: arbitrum
 - Contract surface: 118 unique implementations (208 raw deployments)
 - DeFi Llama TVL: $26,054,683.00

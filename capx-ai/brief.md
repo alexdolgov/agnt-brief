@@ -5,8 +5,8 @@
 - Project: Capx AI (`capx-ai`)
 - Website: [https://capx.ai](https://capx.ai)
 - Lifecycle: active (Tier 0, 19.2% below peak)
-- Generated: 2026-06-10T20:59:01.253Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:18:30.991Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $2,143,133.58

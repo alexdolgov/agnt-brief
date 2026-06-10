@@ -5,8 +5,8 @@
 - Project: Canopy (`canopy`)
 - Website: [https://app.canopyhub.xyz](https://app.canopyhub.xyz)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:01.245Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:17:39.999Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,338,781.87

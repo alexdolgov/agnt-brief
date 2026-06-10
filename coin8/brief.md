@@ -4,8 +4,8 @@
 
 - Project: Coin8 (`coin8`)
 - Lifecycle: unknown
-- Generated: 2026-06-10T21:23:55.743Z
-- Pipeline run: correction-skeletal-description-fix-topography
+- Generated: 2026-06-10T22:28:10.147Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $53,739,805.15

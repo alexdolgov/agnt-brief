@@ -5,8 +5,8 @@
 - Project: Clearpool (`clearpool`)
 - Website: [https://clearpool.finance](https://clearpool.finance)
 - Lifecycle: active (Tier 0, 31.2% below peak)
-- Generated: 2026-06-10T20:59:01.405Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:30:21.140Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: avalanche, base, ethereum, mantle, optimism, polygon, polygon-zkevm
 - Contract surface: 61 unique implementations (220 raw deployments)
 - DeFi Llama TVL: $42,176,788.00

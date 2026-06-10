@@ -5,8 +5,8 @@
 - Project: CLever (`clever`)
 - Website: [https://clever.aladdin.club/](https://clever.aladdin.club/)
 - Lifecycle: active (Tier 0, 83.1% below peak)
-- Generated: 2026-06-10T20:59:01.451Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:28:09.965Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: ethereum
 - Contract surface: 76 unique implementations (174 raw deployments)
 - DeFi Llama TVL: $5,614,458.12

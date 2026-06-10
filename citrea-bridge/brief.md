@@ -5,8 +5,8 @@
 - Project: Citrea Bridge (`citrea-bridge`)
 - Website: [https://citrea.xyz/bridge](https://citrea.xyz/bridge)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:01.397Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:30:39.583Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: ethereum
 - Contract surface: 3 unique implementations (5 raw deployments)
 - DeFi Llama TVL: $6,637,260.87

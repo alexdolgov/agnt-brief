@@ -1,6 +1,6 @@
 # clever — Contract Index
 
-78 unique implementations on ethereum · 180 deployments · 7 audited · 61 unaudited · 10 unverified
+76 unique implementations on ethereum · 174 deployments · 7 audited · 59 unaudited · 10 unverified
 
 ## adapter (4)
 
@@ -11,7 +11,7 @@
 | [SdCrvCompounder](./ethereum-1/0x43e54c2e7b3e294de3a155785f52ab49d87b9922/) | ethereum | [`0x43e54c...7b9922`](./ethereum-1/0x43e54c2e7b3e294de3a155785f52ab49d87b9922/) | ⚠️ Unaudited | Verified |
 | [TokenZapLogic (5 deployments)](./ethereum-1/0x21cea3a3cd10ae1feb0759750970b7e86d33cac5/) | ethereum | 5 deployments: ethereum [`0x21cea3...33cac5`](./ethereum-1/0x21cea3a3cd10ae1feb0759750970b7e86d33cac5/); ethereum `0x6258b0...96c425`; ethereum `0x858d62...c5346f`; ethereum `0xd06986...8292b1`; ethereum `0xebdb53...1a718e` | ⚠️ Unaudited | Verified |
 
-## core_logic (11)
+## core_logic (9)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -24,8 +24,6 @@
 | [CvxCrvStakingWrapperStrategy](./ethereum-1/0x94cc627db80253056b2130aac39abb252a75f345/) | ethereum | [`0x94cc62...75f345`](./ethereum-1/0x94cc627db80253056b2130aac39abb252a75f345/) | ⚠️ Unaudited | Verified |
 | [CvxFxsStakingStrategy](./ethereum-1/0x36925622dc537c65cd6433703f7aeda5929b1cbf/) | ethereum | [`0x369256...9b1cbf`](./ethereum-1/0x36925622dc537c65cd6433703f7aeda5929b1cbf/) | ⚠️ Unaudited | Verified |
 | [RebalancePool (2 deployments)](./ethereum-1/0x3415fcd2885c486e2d848403d51077f7176473c7/) | ethereum | 2 deployments: ethereum [`0x3415fc...6473c7`](./ethereum-1/0x3415fcd2885c486e2d848403d51077f7176473c7/); ethereum `0xa677d9...01a49e` | ⚠️ Unaudited | Verified |
-| [StakeDAOCRVVault (5 deployments)](./ethereum-1/0x0e20d8b0ec57ca8157d9bc2beec2c28a80eaae8a/) | ethereum | 5 deployments: ethereum [`0x0e20d8...eaae8a`](./ethereum-1/0x0e20d8b0ec57ca8157d9bc2beec2c28a80eaae8a/); ethereum `0x2b3e72...e1e3f6`; ethereum `0x7dd09b...8acda6`; ethereum `0xe86cf5...6e4aad`; ethereum `0xf29faf...d254c1` | ⚠️ Unaudited | Verified |
-| [Vault](./ethereum-1/0xba12222222228d8ba445958a75a0704d566bf2c8/) | ethereum | [`0xba1222...6bf2c8`](./ethereum-1/0xba12222222228d8ba445958a75a0704d566bf2c8/) | ⚠️ Unaudited | Verified |
 
 ## governance (2)
 

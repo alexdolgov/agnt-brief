@@ -5,8 +5,8 @@
 - Project: Bonzo Finance (`bonzo-finance`)
 - Website: [https://bonzo.finance/](https://bonzo.finance/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:01.061Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:06:10.449Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $22,968,423.00

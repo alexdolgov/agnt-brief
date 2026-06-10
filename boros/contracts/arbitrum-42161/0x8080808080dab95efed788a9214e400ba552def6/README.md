@@ -7,7 +7,7 @@
 | Role | adapter |
 | Origin | native |
 | Audited | Yes |
-| Audits | [ChainSecurity-Router and AMM.pdf](https://github.com/pendle-finance/boros-core-public/blob/main/audits/ChainSecurity/ChainSecurity-Router%20and%20AMM.pdf) |
+| Audits | [ChainSecurity-Router and AMM.pdf](https://github.com/pendle-finance/boros-core-public/blob/main/audits/ChainSecurity/ChainSecurity-Router%20and%20AMM.pdf); [Pendle___Boros___Market_&_MarketHub_Audit_Report_by_WatchPug_rev2.pdf](https://github.com/pendle-finance/boros-core-public/blob/main/audits/WatchPug/Pendle___Boros___Market_%26_MarketHub_Audit_Report_by_WatchPug_rev2.pdf) |
 | Deployments | 1 (arbitrum [`0x8080808080dab95efed788a9214e400ba552def6`](../0x8080808080dab95efed788a9214e400ba552def6/)) |
 | Proxy | Yes → `0x2348b9...a527e0` |
 | Source | Sourcify (full match) |

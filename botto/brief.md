@@ -5,8 +5,8 @@
 - Project: Botto (`botto`)
 - Website: [https://botto.com/](https://botto.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:01.069Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:08:14.646Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: base, ethereum
 - Contract surface: 18 unique implementations (33 raw deployments)
 - DeFi Llama TVL: $4,107,150.78

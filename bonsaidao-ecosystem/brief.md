@@ -5,8 +5,8 @@
 - Project: BonsaiDAO Ecosystem (`bonsaidao-ecosystem`)
 - Website: [https://bonsaidao.xyz/](https://bonsaidao.xyz/)
 - Lifecycle: active (Tier 0, 94.1% below peak)
-- Generated: 2026-06-10T20:59:01.053Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:08:13.029Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: arbitrum, base, berachain
 - Contract surface: 190 unique implementations (432 raw deployments)
 - DeFi Llama TVL: $1,080,777.00

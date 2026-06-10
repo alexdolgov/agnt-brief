@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "boros",
-  "generated_at": "2026-06-10T20:59:01.064Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-10T22:08:17.382Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-7a87",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "boros",
@@ -34,7 +34,7 @@
     "contracts_unverified": 0,
     "coverage_pct": 100,
     "total_audits": 5,
-    "scoreable_audits": 2,
+    "scoreable_audits": 3,
     "dl_tvl_usd": 10311393.61508,
     "tvl_usd": 10311393.61508,
     "tvl_source": "defillama",
@@ -97,7 +97,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2064"
+        "audit-2064",
+        "audit-2067"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -130,7 +131,8 @@
         }
       ],
       "audits_covering": [
-        "audit-2065"
+        "audit-2065",
+        "audit-2067"
       ],
       "is_audited": true,
       "source_verified": true,
@@ -288,12 +290,44 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AccessControlEnumerableUpgradeable",
+        "AccountLib",
+        "CreateCompute",
+        "FIndexLib",
+        "FIndexOracle",
+        "FixedWindowObservationLib",
+        "IERC20",
+        "IERC20Metadata",
+        "IFIndexOracle",
+        "IMarket",
+        "IMarketHub",
+        "IMarketSetting",
+        "IPAccessManagerCore",
+        "MarginManager",
+        "MarketFactory",
+        "MarketHub",
+        "MarketImpliedRateLib",
+        "MarketOrderAndOtc",
+        "MarketSetAndView",
+        "OrderBookUtils",
+        "PMath",
+        "PaymentLib",
+        "PendleAccessController",
+        "PendleRolesConstants",
+        "PendleRolesPlugin",
+        "Storage",
+        "TickMath",
+        "TradeLib",
+        "TransparentUpgradeableProxy",
+        "UUPSUpgradeable",
+        "VMResultLib"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -325,6 +359,13 @@
       "contracts_covered": 2,
       "coverage_pct": 100,
       "latest_audit": "2025-08"
+    },
+    {
+      "auditor": "WatchPug",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 100,
+      "latest_audit": "2025-07"
     }
   ],
   "coverage_gaps": [],
@@ -336,10 +377,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 2
+      "extraction_exact": 4
     },
     "extraction_confidence_counts": {
-      "high": 2
+      "high": 3
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -347,10 +388,6 @@
       {
         "audit_id": 2066,
         "report_name": "Pendle-Spearbit-Security-Review-August-2025.pdf"
-      },
-      {
-        "audit_id": 2067,
-        "report_name": "Pendle___Boros___Market_&_MarketHub_Audit_Report_by_WatchPug_rev2.pdf"
       },
       {
         "audit_id": 2068,

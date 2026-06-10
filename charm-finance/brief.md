@@ -7,8 +7,8 @@
 - Project: Charm Finance (`charm-finance`)
 - Website: [https://www.charm.fi/](https://www.charm.fi/)
 - Lifecycle: declining (Tier 0, 82% below peak)
-- Generated: 2026-06-10T20:59:01.392Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:27:18.766Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: berachain, blast, boba, ethereum, linea, scroll
 - Contract surface: 10 unique implementations (21 raw deployments)
 - DeFi Llama TVL: $2,343,526.00

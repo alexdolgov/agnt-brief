@@ -5,8 +5,8 @@
 - Project: CHATEAU (`chateau`)
 - Website: [https://www.chateau.capital](https://www.chateau.capital)
 - Lifecycle: active (Tier 0, 17.1% below peak)
-- Generated: 2026-06-10T20:59:01.394Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:25:12.903Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: hyperliquid, plasma
 - Contract surface: 5 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $1,036,282.93

@@ -5,8 +5,8 @@
 - Project: Chainflip (`chainflip`)
 - Website: [https://chainflip.io/](https://chainflip.io/)
 - Lifecycle: active (Tier 0, 47.3% below peak)
-- Generated: 2026-06-10T20:59:01.370Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:27:19.524Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: arbitrum, ethereum
 - Contract surface: 12 unique implementations (114 raw deployments)
 - DeFi Llama TVL: $35,876,563.00

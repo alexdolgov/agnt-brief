@@ -5,8 +5,8 @@
 - Project: ChainGPT (`chaingpt`)
 - Website: [https://pad.chaingpt.org/staking-pools](https://pad.chaingpt.org/staking-pools)
 - Lifecycle: active (Tier 0, 92.6% below peak)
-- Generated: 2026-06-10T20:59:01.377Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:25:12.908Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, polygon
 - Contract surface: 87 unique implementations (92 raw deployments)
 - DeFi Llama TVL: $4,610,938.17

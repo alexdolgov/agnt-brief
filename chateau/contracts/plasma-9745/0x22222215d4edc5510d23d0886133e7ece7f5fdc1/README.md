@@ -4,7 +4,7 @@
 |---|---|
 | Chain | plasma (9745) |
 | Address | `0x22222215d4edc5510d23d0886133e7ece7f5fdc1` |
-| Role | unknown |
+| Role | token |
 | Origin | native |
 | Audited | Yes |
 | Audits | [Chateau - Zenith Audit Report.pdf](https://github.com/zenith-security/reports/blob/main/reports/Chateau%20-%20Zenith%20Audit%20Report.pdf) |

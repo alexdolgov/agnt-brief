@@ -5,8 +5,8 @@
 - Project: Hakka Finance (`hakka-finance`)
 - Website: [https://hakka.finance/](https://hakka.finance/)
 - Lifecycle: active (Tier 0, 70.8% below peak)
-- Generated: 2026-06-10T20:59:04.452Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:42:53.164Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: ethereum
 - Contract surface: 37 unique implementations (50 raw deployments)
 - DeFi Llama TVL: $4,644,553.15

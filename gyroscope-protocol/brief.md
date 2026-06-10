@@ -7,8 +7,8 @@
 - Project: Gyroscope Protocol (`gyroscope-protocol`)
 - Website: [https://app.gyro.finance/](https://app.gyro.finance/)
 - Lifecycle: declining (Tier 0, 99.1% below peak)
-- Generated: 2026-06-10T20:59:04.437Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:43:18.563Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: arbitrum, avalanche, base, ethereum, gnosis, optimism, polygon, polygon-zkevm, sei, sonic
 - Contract surface: 233 unique implementations (503 raw deployments)
 - DeFi Llama TVL: $500,181.80

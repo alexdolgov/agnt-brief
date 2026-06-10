@@ -72,7 +72,7 @@
 | [ProtocolFeeControllerMigration](./base-8453/0x1b6f057520b4e826271d47b8bdab98e35af17e59/) | base | [`0x1b6f05...f17e59`](./base-8453/0x1b6f057520b4e826271d47b8bdab98e35af17e59/) | ⚠️ Unaudited | Verified |
 | [ProtocolFeesWithdrawer](./base-8453/0xacf05be5134d64d150d153818f8c67ee36996650/) | base | [`0xacf05b...996650`](./base-8453/0xacf05be5134d64d150d153818f8c67ee36996650/) | ⚠️ Unaudited | Verified |
 | [ReserveStewardshipIncentives](./ethereum-1/0x5c73d4e5349ffd392e62fa6bed994bb449d94f86/) | ethereum | [`0x5c73d4...d94f86`](./ethereum-1/0x5c73d4e5349ffd392e62fa6bed994bb449d94f86/) | ✅ Audited | Verified |
-| RewardsClaimer | arbitrum | `0x238fbf...818b0a` | ⚠️ Unaudited | Verified |
+| [RewardsClaimer](./arbitrum-42161/0x238fbf9b7594681838fb563c417937eb95818b0a/) | arbitrum | [`0x238fbf...818b0a`](./arbitrum-42161/0x238fbf9b7594681838fb563c417937eb95818b0a/) | ⚠️ Unaudited | Verified |
 | [Simple Vesting Escrow](./sonic-146/0x455a56994df75ef70795c7a2d6a1d40534b72aeb/) | sonic | [`0x455a56...b72aeb`](./sonic-146/0x455a56994df75ef70795c7a2d6a1d40534b72aeb/) | ⚠️ Unaudited | Verified |
 | [SonicStakingWithdrawRequestHelper](./sonic-146/0x52b16e3d7d25ba64f242e59f9a74799ecc432d78/) | sonic | [`0x52b16e...432d78`](./sonic-146/0x52b16e3d7d25ba64f242e59f9a74799ecc432d78/) | ⚠️ Unaudited | Verified |
 | [StableLPOracleFactory (3 deployments)](./optimism-10/0xa0de078cd5cfa7088821b83e0bd7545ccfb7c883/) | optimism | 3 deployments: optimism [`0xa0de07...b7c883`](./optimism-10/0xa0de078cd5cfa7088821b83e0bd7545ccfb7c883/); optimism `0xb96524...ba40e9`; optimism `0xc4c494...1cf468` | ⚠️ Unaudited | Verified |

@@ -5,8 +5,8 @@
 - Project: H2 Finance (`h2-finance`)
 - Website: [https://h2.finance](https://h2.finance)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:04.447Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:41:57.785Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $3,568,233.00

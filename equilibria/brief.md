@@ -7,8 +7,8 @@
 - Project: Equilibria (`equilibria`)
 - Website: [https://equilibria.fi/home](https://equilibria.fi/home)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-10T20:59:02.300Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:08:06.695Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: arbitrum, base, berachain, bsc, ethereum, hyperliquid, mantle, optimism, plasma, sonic
 - Contract surface: 119 unique implementations (833 raw deployments)
 - DeFi Llama TVL: $18,142,263.85

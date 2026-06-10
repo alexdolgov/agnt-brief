@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "equilibre",
-  "generated_at": "2026-06-10T21:23:55.754Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-topography",
+  "generated_at": "2026-06-10T23:04:55.867Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-22cc",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "equilibre",

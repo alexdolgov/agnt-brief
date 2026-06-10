@@ -1,6 +1,6 @@
 # equilibria — Contract Index
 
-120 unique implementations across 10 chains · 834 deployments · 15 audited · 71 unaudited · 34 unverified
+119 unique implementations across 10 chains · 833 deployments · 15 audited · 70 unaudited · 34 unverified
 
 ## adapter (5)
 
@@ -97,7 +97,7 @@
 |---|---|---|---|---|
 | [LRTProxy (6 deployments)](./ethereum-1/0x01e97ae62edf041fea7a466778ce2803dea91f70/) | ethereum | 6 deployments: ethereum [`0x01e97a...a91f70`](./ethereum-1/0x01e97ae62edf041fea7a466778ce2803dea91f70/); ethereum `0x542744...7dc4e9`; ethereum `0x59a2d1...32fde2`; ethereum `0xacdafc...60c039`; ethereum `0xd72b94...94243a`; ethereum `0xeb628b...3a48a0` | ⚠️ Unaudited | Verified |
 | [OUpgradeable (2 deployments)](./hyperliquid-999/0xad11a8beb98bbf61dbb1aa0f6d6f2ecd87b35afa/) | hyperliquid | 2 deployments: hyperliquid [`0xad11a8...b35afa`](./hyperliquid-999/0xad11a8beb98bbf61dbb1aa0f6d6f2ecd87b35afa/); hyperliquid `0xcd9a74...5aa7c8` | ⚠️ Unaudited | Verified |
-| TransparentUpgradeableProxy (19 deployments) | plasma | 19 deployments: ethereum `0x28ab7b...ecd7bf`; ethereum `0x6f2ff0...d5fd09`; bsc `0x86a201...a818c5`; bsc `0xc00371...9ef9dc`; base `0x0cf6ab...80e139`; base `0x96c4a4...19ad8e`; plasma `0x0140de...91d3bc`; plasma `0x22fc5a...ce4455`; plasma `0x2350ea...709913`; plasma `0x357f55...25e849`; plasma `0x4f1cdf...3d3452`; plasma `0x500d5e...84d3d6`; plasma `0x52f0bb...789ca5`; plasma `0x5e73e7...ea4531`; plasma `0x7700eb...ed33b1`; plasma `0x9cb59c...cc7353`; plasma `0xa6ec3c...9f05c3`; plasma `0xfe80d6...740b2b`; berachain `0x187520...84b0ab` | ⚠️ Unaudited | Verified |
+| [TransparentUpgradeableProxy (19 deployments)](./plasma-9745/0x0140de476f49b6b42f7b73612b6dc317ab91d3bc/) | plasma | 19 deployments: ethereum `0x28ab7b...ecd7bf`; ethereum `0x6f2ff0...d5fd09`; bsc `0x86a201...a818c5`; bsc `0xc00371...9ef9dc`; base `0x0cf6ab...80e139`; base `0x96c4a4...19ad8e`; plasma [`0x0140de...91d3bc`](./plasma-9745/0x0140de476f49b6b42f7b73612b6dc317ab91d3bc/); plasma `0x22fc5a...ce4455`; plasma `0x2350ea...709913`; plasma `0x357f55...25e849`; plasma `0x4f1cdf...3d3452`; plasma `0x500d5e...84d3d6`; plasma `0x52f0bb...789ca5`; plasma `0x5e73e7...ea4531`; plasma `0x7700eb...ed33b1`; plasma `0x9cb59c...cc7353`; plasma `0xa6ec3c...9f05c3`; plasma `0xfe80d6...740b2b`; berachain `0x187520...84b0ab` | ⚠️ Unaudited | Verified |
 
 ## registry (2)
 
@@ -106,7 +106,7 @@
 | [UpgradeableBeacon (43 deployments)](./hyperliquid-999/0x00807f12343a039acce6c9446696c818b53966f5/) | hyperliquid | 43 deployments: ethereum `0x07dc38...83de3c`; ethereum `0x0aab38...d6baab`; ethereum `0x358def...e8b6d8`; ethereum `0x60f3ca...cf27d7`; ethereum `0x779125...fa3c80`; ethereum `0x96f906...9e2498`; ethereum `0xca5d2c...c60968`; ethereum `0xccf949...5dc593`; ethereum `0xfcddfb...c7d1ec`; optimism `0x07dc38...83de3c`; optimism `0x666136...64f340`; optimism `0xf303f7...7c812b`; bsc `0x6f6163...6d8ca8`; bsc `0xbdd61e...0af179`; bsc `0xca93b4...a3b91b`; bsc `0xd804ab...9087ed`; sonic `0x187520...84b0ab`; sonic `0x672618...a73de9`; sonic `0xd8d51c...aae903`; sonic `0xf7498d...052981`; hyperliquid [`0x00807f...3966f5`](./hyperliquid-999/0x00807f12343a039acce6c9446696c818b53966f5/); hyperliquid `0x183b30...b75e78`; hyperliquid `0x2386f0...a56cdf`; hyperliquid `0x245f1d...37a960`; hyperliquid `0x26ae16...186f5c`; hyperliquid `0x55f140...0433a8`; hyperliquid `0xb0d718...78eb7a`; hyperliquid `0xf2d038...f7ca80`; mantle `0xa2cb78...e1ea19`; mantle `0xd8d51c...aae903`; mantle `0xf7498d...052981`; base `0x26ae16...186f5c`; base `0x950904...df354e`; base `0xf7498d...052981`; arbitrum `0x421c2c...c47ff0`; arbitrum `0x43a5bf...bd8c5f`; arbitrum `0x4b4f09...769db8`; arbitrum `0xd1705b...aeba15`; berachain `0x3a4db3...10d4b3`; berachain `0x55f140...0433a8`; berachain `0xa6ec3c...9f05c3`; berachain `0xb213f2...1247b5`; berachain `0xc3aa06...b451db` | ⚠️ Unaudited | Verified |
 | [VaultDepositTokenFactory (5 deployments)](./ethereum-1/0x027df5ca0596bac018330bce9b9263263a63e5fb/) | ethereum | 5 deployments: ethereum [`0x027df5...63e5fb`](./ethereum-1/0x027df5ca0596bac018330bce9b9263263a63e5fb/); ethereum `0x05eaaa...10f7a0`; ethereum `0x5eebaf...7dbb62`; ethereum `0xea2db4...edbf88`; ethereum `0xedc3bb...59be3f` | ✅ Audited | Verified |
 
-## token (19)
+## token (18)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -121,7 +121,6 @@
 | [ERC20MintBurn (19 deployments)](./hyperliquid-999/0x02c033574b6ca02ddae8e0b4070d551149d981e4/) | hyperliquid | 19 deployments: optimism `0xc7517f...421e32`; optimism `0xd8967b...73ec27`; bsc `0x0dc8b9...5279ce`; bsc `0xa929e8...e06599`; sonic `0x357f55...25e849`; sonic `0xc7517f...421e32`; hyperliquid [`0x02c033...d981e4`](./hyperliquid-999/0x02c033574b6ca02ddae8e0b4070d551149d981e4/); hyperliquid `0x4f1cdf...3d3452`; mantle `0x357f55...25e849`; mantle `0xc7517f...421e32`; base `0x02c033...d981e4`; base `0xd8967b...73ec27`; plasma `0x6ee066...01b923`; arbitrum `0x03b611...0c83e8`; arbitrum `0x6cea12...63afb8`; arbitrum `0xbda88a...f6035b`; arbitrum `0xf2d038...f7ca80`; berachain `0xc7517f...421e32`; berachain `0xd8967b...73ec27` | ⚠️ Unaudited | Verified |
 | [L2StandardERC20 (2 deployments)](./mantle-5000/0x3e7ef8f50246f725885102e8238cbba33f276747/) | mantle | 2 deployments: mantle [`0x3e7ef8...276747`](./mantle-5000/0x3e7ef8f50246f725885102e8238cbba33f276747/); mantle `0x9e1028...6840e0` | ⚠️ Unaudited | Verified |
 | [MintedERC20 (3 deployments)](./sonic-146/0x48540d1140331277b9157a096e40e6f5506fc335/) | sonic | 3 deployments: sonic [`0x48540d...6fc335`](./sonic-146/0x48540d1140331277b9157a096e40e6f5506fc335/); sonic `0x9cacb5...7e8c6b`; sonic `0xf1ef7d...71a74b` | ⚠️ Unaudited | Verified |
-| [Pendle](./mantle-5000/0xd27b18915e7acc8fd6ac75db6766a80f8d2f5729/) | mantle | [`0xd27b18...2f5729`](./mantle-5000/0xd27b18915e7acc8fd6ac75db6766a80f8d2f5729/) | ⚠️ Unaudited | Verified |
 | [PendleOFT](./plasma-9745/0x17bac5f906c9a0282ac06a59958d85796c831f24/) | plasma | [`0x17bac5...831f24`](./plasma-9745/0x17bac5f906c9a0282ac06a59958d85796c831f24/) | ⚠️ Unaudited | Verified |
 | [StandardArbERC20 (3 deployments)](./arbitrum-42161/0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8/) | arbitrum | 3 deployments: arbitrum [`0x0c880f...a8c9e8`](./arbitrum-42161/0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8/); arbitrum `0xbfbcfe...bbad9c`; arbitrum `0xd48482...242ac3` | ⚠️ Unaudited | Verified |
 | [TokenImplementation (2 deployments)](./bsc-56/0x374ca32fd7934c5d43240e1e73fa9b2283468609/) | bsc | 2 deployments: bsc [`0x374ca3...468609`](./bsc-56/0x374ca32fd7934c5d43240e1e73fa9b2283468609/); bsc `0x5fec85...5bd6bc` | ⚠️ Unaudited | Verified |

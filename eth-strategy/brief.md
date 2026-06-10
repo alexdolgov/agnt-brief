@@ -5,8 +5,8 @@
 - Project: ETH Strategy (`eth-strategy`)
 - Website: [https://www.ethstrat.xyz/](https://www.ethstrat.xyz/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:02.311Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:06:56.835Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: ethereum
 - Contract surface: 49 unique implementations (161 raw deployments)
 - DeFi Llama TVL: $3,883,275.14

@@ -5,8 +5,8 @@
 - Project: Enosys (`enosys`)
 - Website: [https://enosys.global](https://enosys.global)
 - Lifecycle: active (Tier 0, 81.3% below peak)
-- Generated: 2026-06-10T20:59:02.217Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:06:07.555Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-22cc
 - Chains: ethereum
 - Contract surface: 2 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $26,899,011.00

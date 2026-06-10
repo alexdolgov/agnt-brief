@@ -5,8 +5,8 @@
 - Project: BulbaSwap (`bulbaswap`)
 - Website: [https://bulbaswap.io](https://bulbaswap.io)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:01.183Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:55.732Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $9,041,874.00
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+BulbaSwap is a decentralized exchange (DEX) protocol enabling users to swap tokens, provide liquidity, and earn fees. It supports multiple automated market maker (AMM) versions, including V2 and V3, to offer flexible trading and liquidity provision options.
 
 ## Audit Coverage Summary
 

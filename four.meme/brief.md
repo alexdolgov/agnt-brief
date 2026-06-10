@@ -5,8 +5,8 @@
 - Project: four.meme (`four.meme`)
 - Website: [https://four.meme?code=DZ9DF74J64FA](https://four.meme?code=DZ9DF74J64FA)
 - Lifecycle: active (Tier 0, 54.7% below peak)
-- Generated: 2026-06-10T20:59:04.053Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:55.768Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: bsc
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $4,904,447.58
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Four.meme is a launchpad protocol on BSC that enables users to create and trade meme tokens. It provides a platform for token launches and initial liquidity events.
 
 ## Audit Coverage Summary
 

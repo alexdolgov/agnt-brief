@@ -5,8 +5,8 @@
 - Project: P2PB2B (`p2pb2b`)
 - Website: [https://p2pb2b.com/](https://p2pb2b.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:09.165Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:55.804Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $4,842,591.76
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+P2PB2B is a centralized cryptocurrency exchange (CEX) that facilitates trading of digital assets. It provides a platform for users to buy, sell, and manage cryptocurrencies with various trading pairs and order types.
 
 ## Audit Coverage Summary
 

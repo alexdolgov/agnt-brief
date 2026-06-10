@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "alphax",
-  "generated_at": "2026-06-10T20:58:56.813Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-10T21:23:55.144Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-topography",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "alphax",
@@ -59,7 +59,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "AlphaX is a derivatives protocol that enables users to trade perpetual contracts and other derivative products on-chain. It uses vault-based architecture to manage liquidity and positions.",
     "relationship_narrative": null,
     "product_family_count": 1
   },

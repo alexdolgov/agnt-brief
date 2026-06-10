@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "klaystation",
-  "generated_at": "2026-06-10T20:59:06.727Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-10T21:23:55.779Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-topography",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "klaystation",
@@ -66,7 +66,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "KLAYstation is a liquid staking protocol on Klaytn that allows users to stake KLAY tokens and receive a liquid staking derivative in return, enabling them to earn staking rewards while maintaining liquidity.",
     "relationship_narrative": null,
     "product_family_count": 1
   },

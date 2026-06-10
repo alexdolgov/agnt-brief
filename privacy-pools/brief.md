@@ -5,8 +5,8 @@
 - Project: Privacy Pools (`privacy-pools`)
 - Website: [https://privacypools.com/](https://privacypools.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:09.375Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:55.810Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: arbitrum, ethereum, optimism
 - Contract surface: 1 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $6,624,610.42
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Privacy Pools is a protocol enabling private transactions on Ethereum, Optimism, and Arbitrum One. It allows users to deposit and withdraw funds while preserving privacy through zero-knowledge proofs.
 
 ## Audit Coverage Summary
 

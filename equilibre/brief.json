@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "equilibre",
-  "generated_at": "2026-06-10T20:59:02.261Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-10T21:23:55.754Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-topography",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "equilibre",
@@ -56,7 +56,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Equilibre is a decentralized exchange (DEX) on the Kava chain, enabling users to swap tokens and provide liquidity through automated market-making pools.",
     "relationship_narrative": null,
     "product_family_count": 1
   },

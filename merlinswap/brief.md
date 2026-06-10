@@ -7,8 +7,8 @@
 - Project: MerlinSwap (`merlinswap`)
 - Website: [https://merlinswap.org](https://merlinswap.org)
 - Lifecycle: declining (Tier 0, 94.8% below peak)
-- Generated: 2026-06-10T20:59:07.468Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:55.786Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: merlin
 - Contract surface: 2 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $8,429,329.40
@@ -22,7 +22,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+MerlinSwap is a decentralized exchange (DEX) protocol on the Merlin chain, enabling users to swap tokens and provide liquidity through automated market-making pools.
 
 ## Audit Coverage Summary
 

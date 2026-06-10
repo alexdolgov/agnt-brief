@@ -5,8 +5,8 @@
 - Project: sICX (`sicx`)
 - Website: [https://icon.community](https://icon.community)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:16.062Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:56.339Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $1,271,277.42
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+sICX is a liquid staking protocol that allows users to stake ICX tokens and receive sICX, a liquid staking derivative representing their staked position plus accrued rewards.
 
 ## Audit Coverage Summary
 

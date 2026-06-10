@@ -4,8 +4,8 @@
 
 - Project: Equilibre (`equilibre`)
 - Lifecycle: active (Tier 0, 85.7% below peak)
-- Generated: 2026-06-10T20:59:02.261Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:55.754Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $6,901,350.08
@@ -19,7 +19,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Equilibre is a decentralized exchange (DEX) on the Kava chain, enabling users to swap tokens and provide liquidity through automated market-making pools.
 
 ## Audit Coverage Summary
 

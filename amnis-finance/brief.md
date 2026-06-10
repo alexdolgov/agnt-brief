@@ -5,8 +5,8 @@
 - Project: Amnis Finance (`amnis-finance`)
 - Website: [https://amnis.finance](https://amnis.finance)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:58:57.406Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:55.720Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $11,919,450.60
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Amnis Finance is a liquid staking protocol that allows users to stake assets and receive liquid derivative tokens representing their staked positions, enabling participation in DeFi while earning staking rewards.
 
 ## Audit Coverage Summary
 

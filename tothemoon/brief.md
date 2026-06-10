@@ -5,8 +5,8 @@
 - Project: Tothemoon (`tothemoon`)
 - Website: [https://tothemoon.com](https://tothemoon.com)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:17.528Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:56.346Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $2,401,152.60
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Tothemoon is a centralized exchange (CEX) platform that facilitates cryptocurrency trading and related financial services. It operates off-chain with no on-chain smart contracts, relying on a traditional order book and custodial model.
 
 ## Audit Coverage Summary
 

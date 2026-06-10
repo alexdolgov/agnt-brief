@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "tothemoon",
-  "generated_at": "2026-06-10T20:59:17.528Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-10T21:23:56.346Z",
+  "pipeline_run_id": "correction-skeletal-description-fix-topography",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -38,7 +38,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Tothemoon is a centralized exchange (CEX) platform that facilitates cryptocurrency trading and related financial services. It operates off-chain with no on-chain smart contracts, relying on a traditional order book and custodial model.",
     "relationship_narrative": null,
     "product_family_count": 0
   },

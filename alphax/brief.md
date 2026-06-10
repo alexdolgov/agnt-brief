@@ -5,8 +5,8 @@
 - Project: AlphaX (`alphax`)
 - Website: [https://alphax.com/](https://alphax.com/)
 - Lifecycle: active (Tier 0, 12.5% below peak)
-- Generated: 2026-06-10T20:58:56.813Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:55.144Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: arbitrum, ethereum
 - Contract surface: 1 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $1,486,770.27
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+AlphaX is a derivatives protocol that enables users to trade perpetual contracts and other derivative products on-chain. It uses vault-based architecture to manage liquidity and positions.
 
 ## Audit Coverage Summary
 

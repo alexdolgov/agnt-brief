@@ -7,8 +7,8 @@
 - Project: KLAYstation (`klaystation`)
 - Website: [https://klaystation.io](https://klaystation.io)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:06.727Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:55.779Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: klaytn
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $0.00
@@ -22,7 +22,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+KLAYstation is a liquid staking protocol on Klaytn that allows users to stake KLAY tokens and receive a liquid staking derivative in return, enabling them to earn staking rewards while maintaining liquidity.
 
 ## Audit Coverage Summary
 

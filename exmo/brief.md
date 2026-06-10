@@ -5,8 +5,8 @@
 - Project: Exmo (`exmo`)
 - Website: [https://exmo.com](https://exmo.com)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:59:03.963Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:23:55.761Z
+- Pipeline run: correction-skeletal-description-fix-topography
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $2,840,011.80
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Exmo is a centralized cryptocurrency exchange (CEX) that facilitates trading of digital assets. It provides a platform for users to buy, sell, and manage cryptocurrencies.
 
 ## Audit Coverage Summary
 

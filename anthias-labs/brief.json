@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "anthias-labs",
-  "generated_at": "2026-05-31T07:11:25.255Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:32:37.675Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "anthias-labs",
     "tier": 0,
@@ -33,7 +33,7 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 3,
+    "total_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 21649055.52288,
     "tvl_usd": 705349.1696107285,
@@ -48,19 +48,24 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2024-03",
-    "audit_freshness": "stale",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 2
+      "stale": 0,
+      "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "Anthias Labs provides risk curation services for DeFi protocols, deploying and managing vaults that optimize yield and risk parameters. The project operates on Base and utilizes VaultV2 and MetaMorpho contracts to implement these strategies.",
+    "project_purpose": "Anthias Labs is a boutique on-chain advisory, DeFi risk-management, monitoring, research, and open-source tooling firm. Its public materials support risk curation, system design, advisory, monitoring, and research activity for DeFi systems on Base, including recorded VaultV2 and MetaMorpho contract surfaces, but do not substantiate a general claim that Anthias deploys and manages vaults to optimize yield. The provenance and implementation authorship of the MetaMorpho contracts should remain unresolved unless independently confirmed.",
     "relationship_narrative": "All contracts are deployed under the single Anthias Labs family, with VaultV2 and MetaMorpho contracts likely sharing common risk management logic and infrastructure, though no explicit supporting contracts are identified.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 2,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -193,71 +198,7 @@
       "contamination_flag": null
     }
   ],
-  "audits": [
-    {
-      "audit_id": 6091,
-      "audit_key": "audit-6091",
-      "report_name": "Liquidity Providers Taking Position of Volatility.pdf",
-      "report_url": "https://github.com/anthias-labs/research/blob/main/Liquidity%20Providers%20Taking%20Position%20of%20Volatility.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2024-03",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6092,
-      "audit_key": "audit-6092",
-      "report_name": "Anthias Liquip Score Measuring Liquidation Probability.pdf",
-      "report_url": "https://github.com/anthias-labs/research/blob/main/Anthias%20Liquip%20Score%20Measuring%20Liquidation%20Probability.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 6093,
-      "audit_key": "audit-6093",
-      "report_name": "A Framework for Designing Corruption-Resistant Operator Networks.pdf",
-      "report_url": "https://github.com/anthias-labs/research/blob/main/A%20Framework%20for%20Designing%20Corruption-Resistant%20Operator%20Networks.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    }
-  ],
+  "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -282,20 +223,7 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 6091,
-        "report_name": "Liquidity Providers Taking Position of Volatility.pdf"
-      },
-      {
-        "audit_id": 6092,
-        "report_name": "Anthias Liquip Score Measuring Liquidation Probability.pdf"
-      },
-      {
-        "audit_id": 6093,
-        "report_name": "A Framework for Designing Corruption-Resistant Operator Networks.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

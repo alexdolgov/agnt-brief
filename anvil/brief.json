@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "anvil",
-  "generated_at": "2026-05-22T18:01:46.316Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:35:42.881Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "anvil",
     "tier": 0,
@@ -35,7 +35,7 @@
     "coverage_pct": 100,
     "total_audits": 4,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 18349659.61118,
+    "dl_tvl_usd": 17516974.9305,
     "tvl_usd": 672999.9497697239,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -61,9 +61,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Anvil is a collateral management protocol that enables users to deposit assets into vaults and receive letters of credit, which can be used to access liquidity or credit lines. It provides time-based collateral pools and a letter of credit system to facilitate secure, overcollateralized lending.",
+    "project_purpose": "Anvil is a collateral-management protocol for fully backed credit and letter-of-credit guarantees. It enables users to deposit collateral into vaults and issue letters of credit or credit guarantees backed by that collateral, rather than operating primarily as an overcollateralized lending market.",
     "relationship_narrative": "The CollateralVault holds user deposits and interacts with TimeBasedCollateralPool for time-locked collateral management, while the LetterOfCredit contract issues credit instruments backed by the vault's collateral.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 3,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

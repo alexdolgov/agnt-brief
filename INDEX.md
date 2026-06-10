@@ -33,11 +33,11 @@
 | [amnis-finance](./amnis-finance/) | $11.9M | 0.0% | ? | unknown | 3 | 0 | 2026-06-10 |
 | [angle](./angle/) | $1.4B | 1.7% | $1.4B | declining | 1 | 547 | 2026-06-10 |
 | [angles](./angles/) | $441.0K | 4.0% | $7.5 | active | 1 | 40 | 2026-06-10 |
-| [angstrom](./angstrom/) | $11.3M | 7.7% | ? | active | 3 | 13 | 2026-05-23 |
-| [ankr](./ankr/) | $47.4 | 13.6% | $47.4 | active | 14 | 32 | 2026-05-25 |
-| [antarctic](./antarctic/) | $9.6M | 0.0% | ? | active | 0 | 11 | 2026-05-31 |
-| [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | unknown | 3 | 2 | 2026-05-31 |
-| [anvil](./anvil/) | $673.0K | 100.0% | ? | unknown | 4 | 3 | 2026-05-22 |
+| [angstrom](./angstrom/) | $11.3M | 7.7% | ? | declining | 3 | 13 | 2026-06-10 |
+| [ankr](./ankr/) | $21.7M | 0.0% | ? | active | 14 | 6 | 2026-06-10 |
+| [antarctic](./antarctic/) | $9.6M | 0.0% | ? | active | 0 | 11 | 2026-06-10 |
+| [anthias-labs](./anthias-labs/) | $705.3K | 0.0% | $705.3K | active | 0 | 2 | 2026-06-10 |
+| [anvil](./anvil/) | $673.0K | 100.0% | ? | declining | 4 | 3 | 2026-06-10 |
 | [anzen-finance](./anzen-finance/) | $671.2K | 35.0% | $10.9K | declining | 6 | 48 | 2026-05-23 |
 | [ao-bridge](./ao-bridge/) | $54.0M | 0.0% | ? | active | 0 | 3 | 2026-05-31 |
 | [apechain-bridge](./apechain-bridge/) | $138.2M | 0.0% | $138.2M | active | 0 | 9 | 2026-05-31 |

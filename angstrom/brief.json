@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "angstrom",
-  "generated_at": "2026-05-23T02:24:54.754Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "active",
+  "generated_at": "2026-06-10T20:35:49.051Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "angstrom",
     "tier": 0,
@@ -35,8 +35,8 @@
     "coverage_pct": 7.7,
     "total_audits": 3,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 11346885.84739,
-    "tvl_usd": 11346885.84739,
+    "dl_tvl_usd": 11258670.8788,
+    "tvl_usd": 11258670.8788,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -59,9 +59,14 @@
     }
   },
   "topography": {
-    "project_purpose": "Angstrom is a decentralized exchange protocol operating across Ethereum and Base. It provides MEV-aware trading infrastructure with governance controls and L2-specific hook factories.",
+    "project_purpose": "Angstrom is a hybrid DEX built on Uniswap V4, currently tracked on Ethereum. It uses app-level sequencing and batch auctions to redirect MEV value to liquidity providers and swappers. Base deployments should be treated separately as live contract surface unless documentation proves an active Base product with TVL.",
     "relationship_narrative": "The L1 family provides governance and core DEX logic, while L2 instances leverage a factory for deployment and MEV tax features. The AngstromInspector likely serves both layers for trade analysis.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 13,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

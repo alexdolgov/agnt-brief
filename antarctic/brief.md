@@ -5,8 +5,8 @@
 - Project: Antarctic (`antarctic`)
 - Website: [https://www.antarctic.exchange/](https://www.antarctic.exchange/)
 - Lifecycle: active (Tier 0, 22.7% below peak)
-- Generated: 2026-05-31T07:09:19.092Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:32:37.744Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: arbitrum
 - Contract surface: 11 unique implementations (14 raw deployments)
 - DeFi Llama TVL: $9,578,553.40
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Antarctic is a derivatives protocol on Arbitrum One that allows users to stake liquidity provider tokens (AHLP and AMLP) to earn rewards. It provides staking contracts for these LP tokens, enabling yield generation from liquidity provision.
+Antarctic is an active perpetual futures DEX on Arbitrum. The identified AHLP and AMLP liquidity-provider token staking contracts represent a discovered LP/staking subsystem within the broader protocol, rather than the full project purpose or complete contract surface.
 
 ### Architecture
 

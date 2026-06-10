@@ -1,21 +1,23 @@
 # Agentic Audit Brief: Angstrom
 
+⚠️ Lifecycle status: DECLINING - TVL changed 21.2% over 90 days
+
 ## Project Overview
 
 - Project: Angstrom (`angstrom`)
 - Website: [https://angstrom.xyz/](https://angstrom.xyz/)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-23T02:24:54.754Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, TVL trajectory)
+- Generated: 2026-06-10T20:35:49.051Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: base, ethereum
 - Contract surface: 13 unique implementations (14 raw deployments)
-- DeFi Llama TVL: $11,346,885.85
+- DeFi Llama TVL: $11,258,670.88
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Angstrom is a decentralized exchange protocol operating across Ethereum and Base. It provides MEV-aware trading infrastructure with governance controls and L2-specific hook factories.
+Angstrom is a hybrid DEX built on Uniswap V4, currently tracked on Ethereum. It uses app-level sequencing and batch auctions to redirect MEV value to liquidity providers and swappers. Base deployments should be treated separately as live contract surface unless documentation proves an active Base product with TVL.
 
 ### Architecture
 
@@ -35,6 +37,7 @@ The L1 family provides governance and core DEX logic, while L2 instances leverag
 - Latest audit: 2025-07 (fresh)
 - Staleness: 1 fresh, 2 aging, 0 stale, 0 unknown
 - Tier 1 coverage: 7.7% (Spearbit)
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

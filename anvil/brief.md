@@ -1,23 +1,23 @@
 # Agentic Audit Brief: Anvil
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 52.6% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 52.6% over 90 days
 
 ## Project Overview
 
 - Project: Anvil (`anvil`)
 - Website: [https://anvil.xyz/](https://anvil.xyz/)
-- Lifecycle: unknown (Tier 0, 83.3% below peak)
-- Generated: 2026-05-22T18:01:46.316Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: declining (Tier 0, 83.3% below peak)
+- Generated: 2026-06-10T20:35:42.881Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
 - Contract surface: 3 unique implementations (7 raw deployments)
-- DeFi Llama TVL: $18,349,659.61
+- DeFi Llama TVL: $17,516,974.93
 - On-chain TVL (included contracts): $672,999.95
 - TVL by chain: Ethereum $672,999.95
 
 ## Project Description
 
-Anvil is a collateral management protocol that enables users to deposit assets into vaults and receive letters of credit, which can be used to access liquidity or credit lines. It provides time-based collateral pools and a letter of credit system to facilitate secure, overcollateralized lending.
+Anvil is a collateral-management protocol for fully backed credit and letter-of-credit guarantees. It enables users to deposit collateral into vaults and issue letters of credit or credit guarantees backed by that collateral, rather than operating primarily as an overcollateralized lending market.
 
 ### Architecture
 
@@ -37,7 +37,7 @@ The CollateralVault holds user deposits and interacts with TimeBasedCollateralPo
 - Latest audit: 2025-10 (fresh)
 - Staleness: 1 fresh, 2 aging, 1 stale, 0 unknown
 - Tier 1 coverage: 100.0% (OpenZeppelin, Trail of Bits)
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

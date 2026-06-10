@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Anthias Labs
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Anthias Labs (`anthias-labs`)
 - Website: [https://anthias.xyz](https://anthias.xyz)
-- Lifecycle: unknown (Tier 0, 19.4% below peak)
-- Generated: 2026-05-31T07:11:25.255Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Lifecycle: active (Tier 0, 19.4% below peak)
+- Generated: 2026-06-10T20:32:37.675Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: base
 - Contract surface: 2 unique implementations (9 raw deployments)
 - DeFi Llama TVL: $21,649,055.52
@@ -17,7 +15,7 @@
 
 ## Project Description
 
-Anthias Labs provides risk curation services for DeFi protocols, deploying and managing vaults that optimize yield and risk parameters. The project operates on Base and utilizes VaultV2 and MetaMorpho contracts to implement these strategies.
+Anthias Labs is a boutique on-chain advisory, DeFi risk-management, monitoring, research, and open-source tooling firm. Its public materials support risk curation, system design, advisory, monitoring, and research activity for DeFi systems on Base, including recorded VaultV2 and MetaMorpho contract surfaces, but do not substantiate a general claim that Anthias deploys and manages vaults to optimize yield. The provenance and implementation authorship of the MetaMorpho contracts should remain unresolved unless independently confirmed.
 
 ### Architecture
 
@@ -31,13 +29,12 @@ All contracts are deployed under the single Anthias Labs family, with VaultV2 an
 - Unverified implementations: 0
 - Unique implementations: 2
 - Raw deployments: 9
-- Audits discovered: 3
+- Audits discovered: 0
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $705,349.17
-- Latest audit: 2024-03 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
+- Latest audit: n/a (unknown)
+- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $705,349.17 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -78,9 +75,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Liquidity Providers Taking Position of Volatility.pdf](https://github.com/anthias-labs/research/blob/main/Liquidity%20Providers%20Taking%20Position%20of%20Volatility.pdf) | unknown | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
-| [Anthias Liquip Score Measuring Liquidation Probability.pdf](https://github.com/anthias-labs/research/blob/main/Anthias%20Liquip%20Score%20Measuring%20Liquidation%20Probability.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [A Framework for Designing Corruption-Resistant Operator Networks.pdf](https://github.com/anthias-labs/research/blob/main/A%20Framework%20for%20Designing%20Corruption-Resistant%20Operator%20Networks.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -103,15 +97,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [6091] Liquidity Providers Taking Position of Volatility.pdf
-- [6092] Anthias Liquip Score Measuring Liquidation Probability.pdf
-- [6093] A Framework for Designing Corruption-Resistant Operator Networks.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

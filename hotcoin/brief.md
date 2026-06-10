@@ -5,8 +5,8 @@
 - Project: Hotcoin (`hotcoin`)
 - Website: [https://www.hotcoin.com/](https://www.hotcoin.com/)
 - Lifecycle: active (Tier 0, 75.7% below peak)
-- Generated: 2026-06-10T20:59:04.681Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T23:53:27.983Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-08cb
 - Chains: scroll
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $5,391,703.23

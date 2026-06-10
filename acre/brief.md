@@ -1,23 +1,21 @@
 # Agentic Audit Brief: Acre
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Acre (`acre`)
 - Website: [https://acre.fi](https://acre.fi)
-- Lifecycle: unknown (Tier 0, 31.9% below peak)
-- Generated: 2026-05-23T21:52:37.716Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Lifecycle: active (Tier 0, 31.9% below peak)
+- Generated: 2026-06-10T20:10:38.609Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: ethereum
-- Contract surface: 220 unique implementations (570 raw deployments)
-- DeFi Llama TVL: $4,297,446.72
+- Contract surface: 220 unique implementations (568 raw deployments)
+- DeFi Llama TVL: $4,266,336.18
 - On-chain TVL (included contracts): $3.02
 - TVL by chain: Ethereum $3.02
 
 ## Project Description
 
-Acre is a yield-bearing tokenization protocol that issues wrapped tokens (e.g., acreBTC, mRE7BTC) representing deposits into yield-generating strategies. It provides deposit and redemption vaults, data feeds, and allocation infrastructure to manage and distribute yield across multiple asset types.
+Acre is a Bitcoin yield protocol centered on BTC/tBTC deposits into an ERC-4626 auto-compounding vault, with acreBTC as the receipt token representing a user's vault position and accrued yield. It should not be described as a broad multi-asset Midas-style mToken issuance platform unless those products are separately attested as Acre-owned.
 
 ### Architecture
 
@@ -30,14 +28,13 @@ The Acre family provides the foundational Bitcoin yield token (acreBTC) and its 
 - Verified by bytecode match: 0
 - Unverified implementations: 13
 - Unique implementations: 220
-- Raw deployments: 570
-- Audits discovered: 5
+- Raw deployments: 568
+- Audits discovered: 4
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): $3.02
 - Latest audit: 2024-08 (aging)
-- Staleness: 0 fresh, 1 aging, 1 stale, 3 unknown
+- Staleness: 0 fresh, 1 aging, 1 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $3.02 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -170,7 +167,7 @@ The Acre family provides the foundational Bitcoin yield token (acreBTC) and its 
 | MPortofinoDataFeed | unknown | ethereum | 2 deployments: ethereum [`0x21f3bc...0ea749`](./contracts/ethereum-1/0x21f3bcfa912f674c2af3bed5bf8e47a3f40ea749/); ethereum `0xd91546...48719b` | ⚠️ Unaudited |
 | MPortofinoDepositVault | core_logic | ethereum | 2 deployments: ethereum [`0x9a5cf6...2d8387`](./contracts/ethereum-1/0x9a5cf6c0a1cee5226e31e3d0a81f2ca2462d8387/); ethereum `0xc5efb1...d344a8` | ⚠️ Unaudited |
 | MPortofinoRedemptionVaultWithSwapper | adapter | ethereum | 2 deployments: ethereum [`0xa9111d...0b0c31`](./contracts/ethereum-1/0xa9111ddd2cf8e2727ab08e6f2adb9c53480b0c31/); ethereum `0xb02cc7...346cca` | ⚠️ Unaudited |
-| mRE7 | unknown | ethereum | 2 deployments: ethereum [`0x87c905...afb0cf`](./contracts/ethereum-1/0x87c9053c819bb28e0d73d33059e1b3da80afb0cf/); ethereum `0xe08462...417893` | ⚠️ Unaudited |
+| mRE7 | unknown | ethereum | [`0x87c905...afb0cf`](./contracts/ethereum-1/0x87c9053c819bb28e0d73d33059e1b3da80afb0cf/) | ⚠️ Unaudited |
 | mRE7BTC | unknown | ethereum | 2 deployments: ethereum [`0x9fb442...9f661a`](./contracts/ethereum-1/0x9fb442d6b612a6dcd2acc67bb53771ef1d9f661a/); ethereum `0xe4b2e0...80aded` | ⚠️ Unaudited |
 | MRe7BtcCustomAggregatorFeed | unknown | ethereum | 2 deployments: ethereum [`0x091f97...af383b`](./contracts/ethereum-1/0x091f974e277a19485b9a713ac768850bc5af383b/); ethereum `0x9de073...eb8967` | ⚠️ Unaudited |
 | MRe7BtcDataFeed | unknown | ethereum | 2 deployments: ethereum [`0xb5d648...74186d`](./contracts/ethereum-1/0xb5d6483c556bc6810b55b983315016fcb374186d/); ethereum `0xfb2804...0ef23e` | ⚠️ Unaudited |
@@ -229,7 +226,7 @@ The Acre family provides the foundational Bitcoin yield token (acreBTC) and its 
 | TACmMEV | unknown | ethereum | 2 deployments: ethereum [`0x1d3147...910202`](./contracts/ethereum-1/0x1d3147d11c88f5008db19cb5dd945ae682910202/); ethereum `0xc2c265...083b46` | ⚠️ Unaudited |
 | TACmMevDepositVault | core_logic | ethereum | 2 deployments: ethereum [`0x18f7f9...ee8648`](./contracts/ethereum-1/0x18f7f9f20c495a7f4868ba807c64a5d0a9ee8648/); ethereum `0xc35b2a...c86557` | ⚠️ Unaudited |
 | TACmMevRedemptionVault | core_logic | ethereum | 2 deployments: ethereum [`0x1a57ab...e128cc`](./contracts/ethereum-1/0x1a57aba59d50b192f8440e205e3b8b885be128cc/); ethereum `0xdce7eb...b0f504` | ⚠️ Unaudited |
-| tBTC | unknown | ethereum | 2 deployments: ethereum [`0x4eed11...fde211`](./contracts/ethereum-1/0x4eed111a10c25a739b0d72bd2383f958b9fde211/); ethereum `0x6b6b87...0857e4` | ⚠️ Unaudited |
+| tBTC | unknown | ethereum | [`0x6b6b87...0857e4`](./contracts/ethereum-1/0x6b6b870c7f449266a9f40f94eca5a6ff9b0857e4/) | ⚠️ Unaudited |
 | TBtcCustomAggregatorFeed | unknown | ethereum | 2 deployments: ethereum [`0x65c4e0...0f15ca`](./contracts/ethereum-1/0x65c4e04cc26aadd1ec95c54cd6dba61a270f15ca/); ethereum `0xb164b2...22ca30` | ⚠️ Unaudited |
 | TBtcDataFeed | unknown | ethereum | 2 deployments: ethereum [`0x5a096a...90bf1d`](./contracts/ethereum-1/0x5a096ac89eaef68930352a15da49e4eb8590bf1d/); ethereum `0xf7c450...589b3e` | ⚠️ Unaudited |
 | TBtcDepositVault | core_logic | ethereum | 3 deployments: ethereum [`0xafcc1c...a352b5`](./contracts/ethereum-1/0xafcc1c556ee0436c10a3054b3d615abb93a352b5/); ethereum `0xce4117...e01afc`; ethereum `0xe4b767...a46fd1` | ⚠️ Unaudited |
@@ -304,7 +301,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Read Report](https://drive.google.com/file/d/1dbK5gCyRQURiPJloJXZOTNLaowtaeMip/view) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Read Report](https://github.com/thesis/defense_public_security-audit-reports/blob/main/PDFs/240517_Thesis_Defense-Acre_Smart_Contracts_Security_Audit_Report.pdf) | yAudit | Audit | 2024-05 | stale | Direct | contract_name | 1 | high |
 | [Read Report](https://github.com/thesis/defense_public_security-audit-reports/blob/main/PDFs/240808_Thesis_Defense-Mezo-Acre_stBTC_Smart_Contracts_Security_Audit_Report.pdf) | yAudit | Audit | 2024-08 | aging | Direct | contract_name | 1 | high |
-| [thesis.co/defense](https://thesis.co/defense) | Thesis Defense | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -397,7 +393,6 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x7c5b87...7aa26c`](./contracts/ethereum-1/0x7c5b87e3bde1c70ad11d546a513e305bc07aa26c/) | TACmEDGE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x375af4...ae36d8`](./contracts/ethereum-1/0x375af40dd6772bb9ad216ad7cbe4d8f91eae36d8/) | TACmEdgeRedemptionVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1d3147...910202`](./contracts/ethereum-1/0x1d3147d11c88f5008db19cb5dd945ae682910202/) | TACmMEV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4eed11...fde211`](./contracts/ethereum-1/0x4eed111a10c25a739b0d72bd2383f958b9fde211/) | tBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x72cca9...761e96`](./contracts/ethereum-1/0x72cca9794018c10ce47af3fc8d47e167d0761e96/) | tETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x42e82b...1215b5`](./contracts/ethereum-1/0x42e82b2ee52cdc922cfed82bfcef90ada31215b5/) | TEthCustomAggregatorFeed | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x46eab5...d09e78`](./contracts/ethereum-1/0x46eab5259e1a2f18cbbfeeaa093130a456d09e78/) | TEthDepositVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -420,16 +415,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 105 |
+| native | 104 |
 | upstream | 0 |
-| standard_library | 101 |
+| standard_library | 102 |
 | needs_review | 14 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 3
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: high=2
 - Match method counts: extraction_exact=2
@@ -438,6 +433,5 @@ Zero-match audit list:
 
 - [2605] Read Report
 - [2606] Read Report
-- [2609] thesis.co/defense
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -5,17 +5,17 @@
 - Project: Accumulated Finance (`accumulated-finance`)
 - Website: [https://accumulated.finance](https://accumulated.finance)
 - Lifecycle: active (Tier 0, 73.2% below peak)
-- Generated: 2026-05-25T20:11:48.265Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:12:19.116Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: arbitrum, bsc, ethereum, manta, sei
 - Contract surface: 43 unique implementations (54 raw deployments)
-- DeFi Llama TVL: $1,581,479.00
+- DeFi Llama TVL: $1,557,983.00
 - On-chain TVL (included contracts): $12,187.76
 - TVL by chain: Ethereum $12,187.76
 
 ## Project Description
 
-Accumulated Finance is a multi-chain DeFi protocol offering lending and liquid staking products. It enables users to earn yield on assets through lending markets and to stake tokens to receive liquid staking derivatives that can be used across DeFi.
+Accumulated Finance is an omnichain liquid staking protocol that also offers LST lending and leverage staking products, with an AEVM app-chain component. It enables users to stake assets for liquid staking tokens and use those LSTs across supported DeFi markets and chains.
 
 ### Architecture
 
@@ -29,11 +29,11 @@ The lending and liquid staking families share the same deployer cluster and some
 - Unverified implementations: 8
 - Unique implementations: 43
 - Raw deployments: 54
-- Audits discovered: 6
+- Audits discovered: 3
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $12,187.76
-- Latest audit: 2024-06 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 5 unknown
+- Latest audit: 2024-06 (stale)
+- Staleness: 0 fresh, 0 aging, 1 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -117,12 +117,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [hats.finance](https://hats.finance/) | Hats Finance | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
-| [metatrust.io](https://metatrust.io/) | MetaTrust | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [auditagent.nethermind.io](https://auditagent.nethermind.io/) | Nethermind AuditAgent | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [HatsFinance-Audit.md](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/HatsFinance-Audit.md) | HatsFinance | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 | [Nethermind-AuditAgent-Audit.md](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/Nethermind-AuditAgent-Audit.md) | Nethermind | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [audit-metatrust-2024-06-29.pdf](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/audit-metatrust-2024-06-29.pdf) | MetaTrust | Audit | 2024-06 | aging | Direct | n/a | 0 | n/a |
+| [audit-metatrust-2024-06-29.pdf](https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/audit-metatrust-2024-06-29.pdf) | MetaTrust | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -176,16 +173,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 6
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [3030] hats.finance
-- [3031] metatrust.io
-- [3032] auditagent.nethermind.io
 - [3666] HatsFinance-Audit.md
 - [3667] Nethermind-AuditAgent-Audit.md
 - [3668] audit-metatrust-2024-06-29.pdf

@@ -5,21 +5,22 @@
 - Project: ABC Pool (`abc-pool`)
 - Website: [https://confluxpos.cn](https://confluxpos.cn)
 - Lifecycle: unknown
-- Generated: 2026-05-23T12:17:48.423Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:10:08.636Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $6,289,645.71
+- DeFi Llama TVL: $5,958,075.93
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-ABC Pool is a staking protocol that allows users to deposit tokens and earn rewards. It provides a simple staking pool mechanism for yield generation.
-
-### Architecture
-
-The protocol consists of a single staking pool family with no additional infrastructure or shared components.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

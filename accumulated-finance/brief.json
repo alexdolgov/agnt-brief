@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "accumulated-finance",
-  "generated_at": "2026-05-25T20:11:48.265Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
+  "generated_at": "2026-06-10T20:12:19.116Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "accumulated-finance",
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 8,
     "coverage_pct": 0,
-    "total_audits": 6,
+    "total_audits": 3,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1581479,
+    "dl_tvl_usd": 1557983,
     "tvl_usd": 12187.755633347677,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -53,18 +53,23 @@
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2024-06",
-    "audit_freshness": "aging",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 1,
-      "stale": 0,
-      "unknown": 5
+      "aging": 0,
+      "stale": 1,
+      "unknown": 2
     }
   },
   "topography": {
-    "project_purpose": "Accumulated Finance is a multi-chain DeFi protocol offering lending and liquid staking products. It enables users to earn yield on assets through lending markets and to stake tokens to receive liquid staking derivatives that can be used across DeFi.",
+    "project_purpose": "Accumulated Finance is an omnichain liquid staking protocol that also offers LST lending and leverage staking products, with an AEVM app-chain component. It enables users to stake assets for liquid staking tokens and use those LSTs across supported DeFi markets and chains.",
     "relationship_narrative": "The lending and liquid staking families share the same deployer cluster and some contract addresses (e.g., stZETA appears in both), indicating a unified codebase and potential token flows between lending pools and staking derivatives. The liquid staking family includes multiple token-specific staking contracts that likely integrate with the lending markets for collateral or yield strategies.",
     "product_family_count": 2
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 43,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -1506,69 +1511,6 @@
   ],
   "audits": [
     {
-      "audit_id": 3030,
-      "audit_key": "audit-3030",
-      "report_name": "hats.finance",
-      "report_url": "https://hats.finance/",
-      "auditor": "Hats Finance",
-      "audit_type": "contest",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3031,
-      "audit_key": "audit-3031",
-      "report_name": "metatrust.io",
-      "report_url": "https://metatrust.io/",
-      "auditor": "MetaTrust",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 3032,
-      "audit_key": "audit-3032",
-      "report_name": "auditagent.nethermind.io",
-      "report_url": "https://auditagent.nethermind.io/",
-      "auditor": "Nethermind AuditAgent",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 3666,
       "audit_key": "audit-3666",
       "report_name": "HatsFinance-Audit.md",
@@ -1617,7 +1559,7 @@
       "report_url": "https://github.com/AccumulatedFinance/contracts-v2/blob/master/audits/audit-metatrust-2024-06-29.pdf",
       "auditor": "MetaTrust",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
@@ -1967,18 +1909,6 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 3030,
-        "report_name": "hats.finance"
-      },
-      {
-        "audit_id": 3031,
-        "report_name": "metatrust.io"
-      },
-      {
-        "audit_id": 3032,
-        "report_name": "auditagent.nethermind.io"
-      },
       {
         "audit_id": 3666,
         "report_name": "HatsFinance-Audit.md"

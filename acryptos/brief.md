@@ -1,14 +1,12 @@
 # Agentic Audit Brief: ACryptoS
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 0.2% over 90 days
-
 ## Project Overview
 
 - Project: ACryptoS (`acryptos`)
 - Website: [https://www.acryptos.com/](https://www.acryptos.com/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-05-30T10:34:57.036Z
-- Pipeline run: v2-pipeline-2026-05-30-255779-2e4e
+- Lifecycle: active (Tier 1, declining)
+- Generated: 2026-06-10T20:13:37.904Z
+- Pipeline run: v2-pipeline-2026-06-10-b79301-df6b
 - Chains: bsc
 - Contract surface: 311 unique implementations (676 raw deployments)
 - DeFi Llama TVL: $10,551,959.93
@@ -29,7 +27,6 @@
 - Latest audit: 2021-11 (stale)
 - Staleness: 0 fresh, 0 aging, 5 stale, 2 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $253,012.60 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

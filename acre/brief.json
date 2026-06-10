@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "acre",
-  "generated_at": "2026-05-23T21:52:37.716Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:10:38.609Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
+  "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "acre",
     "tier": 0,
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 220,
-    "total_addresses": 570,
+    "total_addresses": 568,
     "unique_implementations": 220,
-    "total_deployments": 570,
+    "total_deployments": 568,
     "audited_contracts": 1,
     "unaudited_contracts": 206,
     "contracts_verified_audited": 1,
@@ -33,9 +33,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 13,
     "coverage_pct": 0.5,
-    "total_audits": 5,
+    "total_audits": 4,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 4297446.72229,
+    "dl_tvl_usd": 4266336.17571,
     "tvl_usd": 3.0211119999999996,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -54,13 +54,18 @@
       "fresh": 0,
       "aging": 1,
       "stale": 1,
-      "unknown": 3
+      "unknown": 2
     }
   },
   "topography": {
-    "project_purpose": "Acre is a yield-bearing tokenization protocol that issues wrapped tokens (e.g., acreBTC, mRE7BTC) representing deposits into yield-generating strategies. It provides deposit and redemption vaults, data feeds, and allocation infrastructure to manage and distribute yield across multiple asset types.",
+    "project_purpose": "Acre is a Bitcoin yield protocol centered on BTC/tBTC deposits into an ERC-4626 auto-compounding vault, with acreBTC as the receipt token representing a user's vault position and accrued yield. It should not be described as a broad multi-asset Midas-style mToken issuance platform unless those products are separately attested as Acre-owned.",
     "relationship_narrative": "The Acre family provides the foundational Bitcoin yield token (acreBTC) and its deposit/redemption infrastructure, while mRe7BTC and mRe7YIELD are separate product lines with their own vaults. All families share a common pattern of using proxy-upgraded vaults and data feeds, and the Acre family's MidasAllocator may be used to manage yield across multiple products.",
     "product_family_count": 4
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 220,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -5617,15 +5622,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xe084623e02beaca3e8d1e7f356003a9e04417893",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -8217,26 +8213,17 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x4eed111a10c25a739b0d72bd2383f958b9fde211",
+      "address": "0x6b6b870c7f449266a9f40f94eca5a6ff9b0857e4",
       "name": "tBTC",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x4eed111a10c25a739b0d72bd2383f958b9fde211",
       "impl_name": "tBTC",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4eed111a10c25a739b0d72bd2383f958b9fde211",
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -10141,27 +10128,6 @@
       "extraction_confidence": "high",
       "scope_section_found": true,
       "repo_reference_count": 0
-    },
-    {
-      "audit_id": 2609,
-      "audit_key": "audit-2609",
-      "report_name": "thesis.co/defense",
-      "report_url": "https://thesis.co/defense",
-      "auditor": "Thesis Defense",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
@@ -11027,16 +10993,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x4eed111a10c25a739b0d72bd2383f958b9fde211",
-      "name": "tBTC",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x72cca9794018c10ce47af3fc8d47e167d0761e96",
       "name": "tETH",
       "role": "unknown",
@@ -11206,9 +11162,9 @@
     }
   ],
   "origin_summary": {
-    "native": 105,
+    "native": 104,
     "upstream": 0,
-    "standard_library": 101,
+    "standard_library": 102,
     "needs_review": 14
   },
   "scope_matching_notes": {
@@ -11228,10 +11184,6 @@
       {
         "audit_id": 2606,
         "report_name": "Read Report"
-      },
-      {
-        "audit_id": 2609,
-        "report_name": "thesis.co/defense"
       }
     ],
     "inherited_remapped_matches": []

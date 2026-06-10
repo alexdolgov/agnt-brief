@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "abc-pool",
-  "generated_at": "2026-05-23T12:17:48.423Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-22-eff36e-2ebb",
+  "generated_at": "2026-06-10T20:10:08.636Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b79301-df6b",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -19,8 +19,8 @@
     "coverage_pct": 0,
     "total_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6289645.70905,
-    "tvl_usd": 6289645.70905,
+    "dl_tvl_usd": 5958075.92789,
+    "tvl_usd": 5958075.92789,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -38,9 +38,14 @@
     }
   },
   "topography": {
-    "project_purpose": "ABC Pool is a staking protocol that allows users to deposit tokens and earn rewards. It provides a simple staking pool mechanism for yield generation.",
-    "relationship_narrative": "The protocol consists of a single staking pool family with no additional infrastructure or shared components.",
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 0,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

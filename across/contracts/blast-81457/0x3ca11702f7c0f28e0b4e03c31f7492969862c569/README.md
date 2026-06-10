@@ -6,8 +6,8 @@
 | Address | `0x3ca11702f7c0f28e0b4e03c31f7492969862c569` |
 | Role | operational_periphery |
 | Origin | native |
-| Audited | Yes |
-| Audits | [the Perpetual Multiparty template](https://www.openzeppelin.com/news/uma-audit-phase-4); [various incremental pull requests over a longer engagement](https://www.openzeppelin.com/news/uma-continuous-audit) |
+| Audited | No |
+| Audits | n/a |
 | Deployments | 1 (blast [`0x3ca11702f7c0f28e0b4e03c31f7492969862c569`](../0x3ca11702f7c0f28e0b4e03c31f7492969862c569/)) |
 | Proxy | No |
 | Source | Sourcify (full match) |

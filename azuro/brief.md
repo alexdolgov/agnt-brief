@@ -5,17 +5,17 @@
 - Project: Azuro (`azuro`)
 - Website: [https://azuro.org](https://azuro.org)
 - Lifecycle: active (Tier 0, 89.5% below peak)
-- Generated: 2026-05-25T15:27:03.250Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Generated: 2026-06-10T20:50:46.484Z
+- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
 - Chains: arbitrum, base, bsc, gnosis, linea, polygon
 - Contract surface: 304 unique implementations (1870 raw deployments)
-- DeFi Llama TVL: $1,040,052.15
+- DeFi Llama TVL: $1,067,238.73
 - On-chain TVL (included contracts): $3,135.53
 - TVL by chain: Base $3,135.53 | Gnosis $0.00 | Polygon $0.00
 
 ## Project Description
 
-Azuro is a decentralized prediction market protocol that enables users to bet on event outcomes across multiple chains. It provides infrastructure for creating and resolving markets, managing liquidity pools, and facilitating payouts.
+Azuro is infrastructure for on-chain betting and prediction markets, providing liquidity, market, oracle/resolution, and payout tooling for applications built on the protocol. It should not be characterized primarily as project-owned cross-chain asset movement infrastructure unless supported by Azuro-specific documentation or audited code.
 
 ### Architecture
 

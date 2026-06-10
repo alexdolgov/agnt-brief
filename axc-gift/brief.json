@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "axc-gift",
-  "generated_at": "2026-05-31T07:27:19.079Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-31-ab6275-1b32",
+  "generated_at": "2026-06-10T20:50:46.111Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b05b29-7564",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "axc-gift",
@@ -58,9 +58,14 @@
     }
   },
   "topography": {
-    "project_purpose": "AXC GIFT is a tokenized real-world asset (RWA) protocol on BSC, enabling users to hold and transfer shares of an underlying asset via a single token contract.",
-    "relationship_narrative": "The protocol consists of a single product family with one core token contract, so there are no cross-family relationships or shared infrastructure.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 1,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],

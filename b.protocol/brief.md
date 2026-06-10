@@ -1,23 +1,23 @@
 # Agentic Audit Brief: B.Protocol
 
-⚠️ Lifecycle status: DEAD - TVL changed 1.0% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL changed 1.0% over 90 days
 
 ## Project Overview
 
 - Project: B.Protocol (`b.protocol`)
 - Website: [https://app.bprotocol.org/](https://app.bprotocol.org/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-05-25T16:59:16.554Z
-- Pipeline run: v2-pipeline-2026-05-25-eff36e-79e6
+- Lifecycle: declining (Tier 1, dead)
+- Generated: 2026-06-10T20:51:53.143Z
+- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
 - Chains: arbitrum, ethereum, fantom, polygon
 - Contract surface: 162 unique implementations (323 raw deployments)
-- DeFi Llama TVL: $1,787,702.97
+- DeFi Llama TVL: $1,784,728.19
 - On-chain TVL (included contracts): $79,003.72
 - TVL by chain: Polygon $73,825.94 | Ethereum $5,177.78
 
 ## Project Description
 
-B.Protocol is a DeFi protocol that optimizes liquidations by allowing users to backstop lending markets and share in liquidation proceeds. It integrates with lending platforms like Compound and Hundred Finance to provide a more efficient liquidation mechanism.
+B.Protocol is a liquidation and backstop protocol that lets users backstop lending markets and share in liquidation proceeds. It has deployments across Ethereum, Polygon, Arbitrum, and Fantom; scraped address-list headings should be treated as deployment groups rather than separate product lines.
 
 ### Architecture
 
@@ -31,20 +31,19 @@ The B.Protocol family provides governance and core liquidation logic, while the 
 - Unverified implementations: 63
 - Unique implementations: 162
 - Raw deployments: 323
-- Audits discovered: 5
-- Scoreable audits (matched contracts): 5
+- Audits discovered: 4
+- Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): $79,003.72
 - Latest audit: 2021-12 (stale)
-- Staleness: 0 fresh, 0 aging, 5 stale, 0 unknown
-- Tier 1 coverage: 2.0% (Code4rena)
-- Note: This protocol is classified as [dead]. ASD of $79,003.72 represents exposure in a protocol with dead activity.
+- Staleness: 0 fresh, 0 aging, 4 stale, 0 unknown
+- Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of $79,003.72 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
 | Solidified | Tier 2 | 4 | 4.0% | 2021-02 |
-| Code4rena | Tier 1 | 2 | 2.0% | 2021-02 |
 | Fixed Point Solutions | Tier 2 | 1 | 1.0% | 2021-12 |
 
 ## Contract Surface
@@ -246,7 +245,6 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [MakerDAO Integration](https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Backstop%20Protocol%20%5B02.10.2020%5D.pdf) | Solidified | Audit | 2020-10 | stale | Direct | contract_name | 9 | high |
-| [**Compound Integration**](https://github.com/solidified-platform/audits/blob/60778395ae2f78fc1caec0085bfa96c6f70c4573/Audit%20Report%20-%20B-Protocol%20%5B16.02.2021%5D.pdf) | Code4rena | Contest | 2021-02 | stale | Direct | contract_name | 5 | high |
 | [**Liquity Integration**](https://github.com/Fixed-Point-Solutions/published-work/blob/master/SmartContractAudits/FPS_B.AMM_Liquity_Assessment_FINAL.pdf) | Fixed Point Solutions | Audit | 2021-07 | stale | Direct | contract_name | 13 | high |
 | [**Compound Compatible Platforms (Hundred, Fuse)**](https://github.com/Fixed-Point-Solutions/published-work/blob/master/SmartContractAudits/FPS_B.AMM_Rari_Assessment_FINAL.pdf) | Fixed Point Solutions | Audit | 2021-12 | stale | Direct | contract_name | 13 | high |
 | [Audit Report - B-Protocol [16.02.2021].pdf](https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20B-Protocol%20%5B16.02.2021%5D.pdf) | Solidified | Audit | 2021-02 | stale | Direct | contract_name | 5 | high |
@@ -347,7 +345,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=5
-- Match method counts: extraction_exact=45
+- Extraction confidence breakdown: high=4
+- Match method counts: extraction_exact=40
 
 Fork inheritance lineage and inherited audits are included when available.

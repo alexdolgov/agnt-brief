@@ -5,17 +5,17 @@
 - Project: B-Lucky (`b-lucky`)
 - Website: [https://b-lucky.gg/](https://b-lucky.gg/)
 - Lifecycle: active (Tier 0, 47.7% below peak)
-- Generated: 2026-05-25T07:18:28.080Z
-- Pipeline run: v2-pipeline-2026-05-22-eff36e-2ebb
+- Generated: 2026-06-10T20:52:46.606Z
+- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
 - Chains: bsc
 - Contract surface: 16 unique implementations (16 raw deployments)
-- DeFi Llama TVL: $1,036,989.61
+- DeFi Llama TVL: $1,016,214.98
 - On-chain TVL (included contracts): $2,200,551.18
 - TVL by chain: Bsc $2,200,551.18
 
 ## Project Description
 
-B-Lucky is a luck-based gaming protocol on BSC that allows users to participate in games of chance, likely involving token wagering and payouts. The protocol includes a dedicated token and a set of game contracts deployed from two main addresses.
+B-Lucky is a decentralized on-chain lottery protocol on BSC/BNB Chain.
 
 ### Architecture
 

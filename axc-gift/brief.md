@@ -5,21 +5,22 @@
 - Project: AXC GIFT (`axc-gift`)
 - Website: [https://axc.xyz](https://axc.xyz)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-05-31T07:27:19.079Z
-- Pipeline run: v2-pipeline-2026-05-31-ab6275-1b32
+- Generated: 2026-06-10T20:50:46.111Z
+- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $5,290,517.00
 - On-chain TVL (included contracts): $5,290,517.00
 - TVL by chain: Bsc $5,290,517.00
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-AXC GIFT is a tokenized real-world asset (RWA) protocol on BSC, enabling users to hold and transfer shares of an underlying asset via a single token contract.
-
-### Architecture
-
-The protocol consists of a single product family with one core token contract, so there are no cross-family relationships or shared infrastructure.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Audit Coverage Summary
 

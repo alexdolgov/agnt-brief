@@ -59,11 +59,11 @@
 | [autofarm](./autofarm/) | $6.1M | 0.0% | ? | declining | 1 | 10 | 2026-06-10 |
 | [autofinance](./autofinance/) | $175.7M | 0.0% | $175.7M | transitioning | 0 | 570 | 2026-05-31 |
 | [avalaunch](./avalaunch/) | $31.3M | 84.6% | ? | active | 13 | 38 | 2026-06-10 |
-| [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | unknown | 3 | 61 | 2026-05-26 |
-| [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-05-31 |
-| [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-05-25 |
-| [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-05-25 |
-| [b.protocol](./b.protocol/) | $79.0K | 5.1% | $79.0K | dead | 5 | 162 | 2026-05-25 |
+| [avantis](./avantis/) | $196.5M | 68.8% | $150.9M | declining | 3 | 61 | 2026-06-10 |
+| [axc-gift](./axc-gift/) | $5.3M | 0.0% | $5.3M | active | 0 | 1 | 2026-06-10 |
+| [azuro](./azuro/) | $3.1K | 6.6% | $3.1K | active | 3 | 304 | 2026-06-10 |
+| [b-lucky](./b-lucky/) | $2.2M | 0.0% | $2.2M | active | 1 | 16 | 2026-06-10 |
+| [b.protocol](./b.protocol/) | $79.0K | 5.1% | $79.0K | declining | 4 | 162 | 2026-06-10 |
 | [babydogecoin](./babydogecoin/) | $166.4M | 0.0% | $166.4M | declining | 1 | 54 | 2026-05-25 |
 | [babyswap](./babyswap/) | $241.1K | 1.5% | $241.1K | dead | 1 | 113 | 2026-05-25 |
 | [backedfi](./backedfi/) | $33.3M | 0.0% | $33.3M | unknown | 0 | 2 | 2026-05-31 |

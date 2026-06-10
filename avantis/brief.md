@@ -1,14 +1,14 @@
 # Agentic Audit Brief: Avantis
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 49.8% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 49.8% over 90 days
 
 ## Project Overview
 
 - Project: Avantis (`avantis`)
 - Website: [https://www.avantisfi.com/referral?code=DefiLlama](https://www.avantisfi.com/referral?code=DefiLlama)
-- Lifecycle: unknown (Tier 0, 61.9% below peak)
-- Generated: 2026-05-26T12:15:45.347Z
-- Pipeline run: v2-pipeline-2026-05-26-695c23-aaf8
+- Lifecycle: declining (Tier 0, 61.9% below peak)
+- Generated: 2026-06-10T20:51:55.511Z
+- Pipeline run: v2-pipeline-2026-06-10-b05b29-7564
 - Chains: base
 - Contract surface: 61 unique implementations (240 raw deployments)
 - DeFi Llama TVL: $45,493,850.13
@@ -37,7 +37,7 @@ The Avantis family shares infrastructure through proxy-upgraded contracts for tr
 - Latest audit: 2024-09 (aging)
 - Staleness: 0 fresh, 1 aging, 2 stale, 0 unknown
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $150,918,147.34 represents exposure in a protocol with unknown activity.
+- Note: This protocol is classified as [declining]. ASD of $150,918,147.34 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

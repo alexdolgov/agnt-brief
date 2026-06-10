@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "b.protocol",
-  "generated_at": "2026-05-25T16:59:16.554Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-25-eff36e-79e6",
-  "lifecycle_status": "dead",
+  "generated_at": "2026-06-10T20:51:53.143Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b05b29-7564",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "b.protocol",
     "tier": 1,
@@ -43,9 +43,9 @@
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 63,
     "coverage_pct": 5.1,
-    "total_audits": 5,
-    "scoreable_audits": 5,
-    "dl_tvl_usd": 1787702.97188,
+    "total_audits": 4,
+    "scoreable_audits": 4,
+    "dl_tvl_usd": 1784728.18769,
     "tvl_usd": 79003.71967359887,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -60,23 +60,26 @@
       "fantom",
       "polygon"
     ],
-    "tier1_coverage_pct": 2,
-    "tier1_auditors": [
-      "Code4rena"
-    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
     "latest_audit_date": "2021-12",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 5,
+      "stale": 4,
       "unknown": 0
     }
   },
   "topography": {
-    "project_purpose": "B.Protocol is a DeFi protocol that optimizes liquidations by allowing users to backstop lending markets and share in liquidation proceeds. It integrates with lending platforms like Compound and Hundred Finance to provide a more efficient liquidation mechanism.",
+    "project_purpose": "B.Protocol is a liquidation and backstop protocol that lets users backstop lending markets and share in liquidation proceeds. It has deployments across Ethereum, Polygon, Arbitrum, and Fantom; scraped address-list headings should be treated as deployment groups rather than separate product lines.",
     "relationship_narrative": "The B.Protocol family provides governance and core liquidation logic, while the Contract Addresses families deploy BAMM and Vault contracts that interact with lending markets. All families share the BAMM concept, with the Arbitrum family extending it to a new chain, and the B.Protocol family integrating with Compound-like tokens via CErc20Delegator proxies.",
     "product_family_count": 3
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 162,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -4026,7 +4029,6 @@
       ],
       "audits_covering": [
         "audit-2976",
-        "audit-2977",
         "audit-2980"
       ],
       "is_audited": true,
@@ -4171,7 +4173,6 @@
         }
       ],
       "audits_covering": [
-        "audit-2977",
         "audit-2980"
       ],
       "is_audited": true,
@@ -6599,40 +6600,6 @@
       "repo_reference_count": 0
     },
     {
-      "audit_id": 2977,
-      "audit_key": "audit-2977",
-      "report_name": "**Compound Integration**",
-      "report_url": "https://github.com/solidified-platform/audits/blob/60778395ae2f78fc1caec0085bfa96c6f70c4573/Audit%20Report%20-%20B-Protocol%20%5B16.02.2021%5D.pdf",
-      "auditor": "Code4rena",
-      "audit_type": "contest",
-      "freshness": "stale",
-      "date": "2021-02",
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
-      "extracted_names": [
-        "AbsAvatarBase",
-        "AbsBToken",
-        "AbsCToken",
-        "AbsComptroller",
-        "Avatar",
-        "BComptroller",
-        "BErc20",
-        "BEther",
-        "IBTokenScore",
-        "Import",
-        "Pool",
-        "Registry"
-      ],
-      "matched_contracts": 5,
-      "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0
-    },
-    {
       "audit_id": 2978,
       "audit_key": "audit-2978",
       "report_name": "**Liquity Integration**",
@@ -6723,13 +6690,6 @@
       "tier": 2,
       "contracts_covered": 4,
       "coverage_pct": 4,
-      "latest_audit": "2021-02"
-    },
-    {
-      "auditor": "Code4rena",
-      "tier": 1,
-      "contracts_covered": 2,
-      "coverage_pct": 2,
       "latest_audit": "2021-02"
     },
     {
@@ -7490,10 +7450,10 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 45
+      "extraction_exact": 40
     },
     "extraction_confidence_counts": {
-      "high": 5
+      "high": 4
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

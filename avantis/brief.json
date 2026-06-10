@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "avantis",
-  "generated_at": "2026-05-26T12:15:45.347Z",
-  "pipeline_run_id": "v2-pipeline-2026-05-26-695c23-aaf8",
-  "lifecycle_status": "unknown",
+  "generated_at": "2026-06-10T20:51:55.511Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-b05b29-7564",
+  "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "avantis",
     "tier": 0,
@@ -61,6 +61,11 @@
     "project_purpose": "Avantis is a derivatives protocol on Base that enables leveraged trading and liquidity provisioning. Users can trade synthetic assets and provide liquidity through tranche-based vaults, with risk managed by a VaultManager.",
     "relationship_narrative": "The Avantis family shares infrastructure through proxy-upgraded contracts for trading, storage, and pricing. Tranche and VaultManager handle liquidity and risk, while Trading and TradingStorage manage order execution and state, all relying on PriceAggregator for oracle data.",
     "product_family_count": 1
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 61,
+    "has_non_token_contracts": true,
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],

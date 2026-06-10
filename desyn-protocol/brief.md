@@ -7,8 +7,8 @@
 - Project: DeSyn Protocol (`desyn-protocol`)
 - Website: [https://www.desyn.io/#/](https://www.desyn.io/#/)
 - Lifecycle: declining (Tier 1, dead)
-- Generated: 2026-06-10T20:59:01.843Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:51:53.369Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: ethereum, mode
 - Contract surface: 11 unique implementations (15 raw deployments)
 - DeFi Llama TVL: $10,730,444.00

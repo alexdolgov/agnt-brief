@@ -1,18 +1,12 @@
 # derivadex — Contract Index
 
-9 unique implementations on ethereum · 10 deployments · 0 audited · 7 unaudited · 2 unverified
+8 unique implementations on ethereum · 9 deployments · 0 audited · 6 unaudited · 2 unverified
 
 ## registry (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
 | [DIFundTokenFactory](./ethereum-1/0xe49478b6973e7c9e0236081c89c609643f4ff91c/) | ethereum | [`0xe49478...4ff91c`](./ethereum-1/0xe49478b6973e7c9e0236081c89c609643f4ff91c/) | ⚠️ Unaudited | Verified |
-
-## token (1)
-
-| Contract | Chain | Deployments | Audit Status | Source |
-|---|---|---|---|---|
-| CErc20Delegate | ethereum | `0xf650c3...07dcc9` | ⚠️ Unaudited | Verified |
 
 ## unknown (7)
 

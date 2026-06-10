@@ -5,8 +5,8 @@
 - Project: Bitway (`bitway`)
 - Website: [https://bitway.com/](https://bitway.com/)
 - Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-10T20:59:00.509Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T21:59:56.105Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: bsc
 - Contract surface: 8 unique implementations (30 raw deployments)
 - DeFi Llama TVL: $60,775,264.39

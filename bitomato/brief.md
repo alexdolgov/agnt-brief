@@ -5,8 +5,8 @@
 - Project: BiTomato (`bitomato`)
 - Website: [https://bitomato.com/](https://bitomato.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-10T20:58:59.726Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:00:16.169Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-7a87
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $2,598,667.08

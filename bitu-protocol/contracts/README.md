@@ -1,12 +1,11 @@
 # bitu-protocol — Contract Index
 
-5 unique implementations on bsc · 5 deployments · 3 audited · 2 unaudited · 0 unverified
+4 unique implementations on bsc · 4 deployments · 3 audited · 1 unaudited · 0 unverified
 
-## token (2)
+## token (1)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
-| [BEP20Token](./bsc-56/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c/) | bsc | [`0x7130d2...3ead9c`](./bsc-56/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c/) | ⚠️ Unaudited | Verified |
 | [BEP20USDT](./bsc-56/0x55d398326f99059ff775485246999027b3197955/) | bsc | [`0x55d398...197955`](./bsc-56/0x55d398326f99059ff775485246999027b3197955/) | ⚠️ Unaudited | Verified |
 
 ## unknown (3)

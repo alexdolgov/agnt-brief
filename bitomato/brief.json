@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bitomato",
-  "generated_at": "2026-06-10T20:58:59.726Z",
-  "pipeline_run_id": "correction-skeletal-description-fix-all",
+  "generated_at": "2026-06-10T22:00:16.169Z",
+  "pipeline_run_id": "v2-pipeline-2026-06-10-5b3b54-7a87",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {

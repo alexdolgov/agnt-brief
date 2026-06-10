@@ -5,8 +5,8 @@
 - Project: dTRINITY (`dtrinity`)
 - Website: [https://dtrinity.org/](https://dtrinity.org/)
 - Lifecycle: active (Tier 0, 35.2% below peak)
-- Generated: 2026-06-10T20:59:02.028Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:57:51.424Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: ethereum, fraxtal, sonic
 - Contract surface: 209 unique implementations (580 raw deployments)
 - DeFi Llama TVL: $2,367,174.00

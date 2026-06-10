@@ -5,8 +5,8 @@
 - Project: DyorSwap (`dyorswap`)
 - Website: [https://dyorswap.finance/?chainId=34443](https://dyorswap.finance/?chainId=34443)
 - Lifecycle: active (Tier 0, 71.7% below peak)
-- Generated: 2026-06-10T20:59:02.055Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:57:51.552Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: blast, ink, merlin, mode, plasma, sonic, unichain
 - Contract surface: 93 unique implementations (97 raw deployments)
 - DeFi Llama TVL: $2,243,589.00

@@ -5,8 +5,8 @@
 - Project: Easedefi.org (`easedefi.org`)
 - Website: [https://easedefi.org](https://easedefi.org)
 - Lifecycle: active (Tier 0, 66.3% below peak)
-- Generated: 2026-06-10T20:59:02.057Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:59:58.078Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $4,371,974.69

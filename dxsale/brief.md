@@ -5,8 +5,8 @@
 - Project: DxSale (`dxsale`)
 - Website: [https://dx.app](https://dx.app)
 - Lifecycle: active (Tier 0, 76% below peak)
-- Generated: 2026-06-10T20:59:02.046Z
-- Pipeline run: correction-skeletal-description-fix-all
+- Generated: 2026-06-10T22:57:52.165Z
+- Pipeline run: v2-pipeline-2026-06-10-5b3b54-03d9
 - Chains: arbitrum, avalanche, base, bsc, celo, ethereum, fantom, gnosis, harmony, moonriver, polygon
 - Contract surface: 352 unique implementations (388 raw deployments)
 - DeFi Llama TVL: $25,965,918.43

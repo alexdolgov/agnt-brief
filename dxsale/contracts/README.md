@@ -1,6 +1,6 @@
 # dxsale — Contract Index
 
-353 unique implementations across 11 chains · 389 deployments · 0 audited · 16 unaudited · 337 unverified
+352 unique implementations across 11 chains · 388 deployments · 0 audited · 15 unaudited · 337 unverified
 
 ## adapter (2)
 
@@ -9,7 +9,7 @@
 | [RouterDeployer (2 deployments)](./avalanche-43114/0xa5da59f5126ee48ffd44e184c489ef8b2e7cd7f9/) | avalanche | 2 deployments: avalanche [`0xa5da59...7cd7f9`](./avalanche-43114/0xa5da59f5126ee48ffd44e184c489ef8b2e7cd7f9/); avalanche `0xef8b07...ad2e25` | ⚠️ Unaudited | Verified |
 | [RouterInterface](./avalanche-43114/0xd5071536d1a2aff6db130917b4c1fa7b8daf47ff/) | avalanche | [`0xd50715...af47ff`](./avalanche-43114/0xd5071536d1a2aff6db130917b4c1fa7b8daf47ff/) | ⚠️ Unaudited | Verified |
 
-## token (9)
+## token (8)
 
 | Contract | Chain | Deployments | Audit Status | Source |
 |---|---|---|---|---|
@@ -18,7 +18,6 @@
 | [DxCustomDividendToken](./avalanche-43114/0x2f1b52419009f8ab9c934ba559897904dd6b0284/) | avalanche | [`0x2f1b52...6b0284`](./avalanche-43114/0x2f1b52419009f8ab9c934ba559897904dd6b0284/) | ⚠️ Unaudited | Verified |
 | [DxNativeDividendToken (2 deployments)](./avalanche-43114/0x4bf72a0d761bc31dca243ca5ee572dedf34e3604/) | avalanche | 2 deployments: avalanche [`0x4bf72a...4e3604`](./avalanche-43114/0x4bf72a0d761bc31dca243ca5ee572dedf34e3604/); avalanche `0xe1cd76...c74ed5` | ⚠️ Unaudited | Verified |
 | [DxStandardToken](./ethereum-1/0x1d37fb68b2679200844b57b2cf7a17260271589e/) | ethereum | [`0x1d37fb...71589e`](./ethereum-1/0x1d37fb68b2679200844b57b2cf7a17260271589e/) | ⚠️ Unaudited | Verified |
-| [GGGTOKEN](./bsc-56/0x25900017b3e7b6190f76451f5c89d01553206e77/) | bsc | [`0x259000...206e77`](./bsc-56/0x25900017b3e7b6190f76451f5c89d01553206e77/) | ⚠️ Unaudited | Verified |
 | [TestTimToken](./arbitrum-42161/0xfc40767d0ae11c7f08e156b59fa2e54bba2ce378/) | arbitrum | [`0xfc4076...2ce378`](./arbitrum-42161/0xfc40767d0ae11c7f08e156b59fa2e54bba2ce378/) | ⚠️ Unaudited | Verified |
 | [TokenAuditVerify (6 deployments)](./gnosis-100/0x52c4986c4dba182270ab205502c084d290150c81/) | gnosis | 6 deployments: ethereum `0x66e7ce...2bdc91`; gnosis [`0x52c498...150c81`](./gnosis-100/0x52c4986c4dba182270ab205502c084d290150c81/); polygon `0x9c47ff...d51b15`; arbitrum `0x974252...c7d9e9`; celo `0xce576f...4f8907`; avalanche `0xbd8c57...f341b9` | ⚠️ Unaudited | Verified |
 | [TokenKYCVerify (6 deployments)](./polygon-137/0x04e21e0c4749e77ba69b290df61de965233cbf48/) | polygon | 6 deployments: ethereum `0xb3d252...3c096a`; gnosis `0x7fb80f...3e3df0`; polygon [`0x04e21e...3cbf48`](./polygon-137/0x04e21e0c4749e77ba69b290df61de965233cbf48/); arbitrum `0x9aba45...58f755`; celo `0x126546...459b78`; avalanche `0xdad207...5b71fb` | ⚠️ Unaudited | Verified |
